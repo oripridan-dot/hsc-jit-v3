@@ -1,0 +1,31 @@
+{
+  "brand": "waterstone",
+  "brand_full_name": "Waterstone",
+  "official_site": "",
+  "support_site": "",
+  "halilit_url": "https://www.halilit.com/brands/waterstone",
+  "categories": [],
+  "product_discovery": {
+    "product_list_urls": [],
+    "documentation_urls": [
+      "https://www.waterstoneguitars.com",
+      "https://www.waterstoneguitars.com/bass-guitars/",
+      "https://www.waterstoneguitars.com/support/",
+      "https://www.waterstoneguitars.com/contact/"
+    ],
+    "sitemap_url": ""
+  },
+  "estimates": {
+    "total_products": 0,
+    "total_manuals": 0,
+    "total_spec_sheets": 0,
+    "total_guides": 0
+  },
+  "metadata": {
+    "tier": 2,
+    "priority": "high",
+    "last_updated": "2026-01-07",
+    "catalog_status": "template",
+    "scraping_complexity": "unknown"
+  }
+}

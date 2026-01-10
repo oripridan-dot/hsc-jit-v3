@@ -1,0 +1,34 @@
+{
+  "brand": "boss",
+  "brand_full_name": "BOSS",
+  "official_site": "https://www.boss.info",
+  "support_site": "https://www.boss.info/global/support/",
+  "halilit_url": "https://www.halilit.com/brands/boss",
+  "categories": [],
+  "product_discovery": {
+    "product_list_urls": [
+      "https://www.boss.info/global/products/"
+    ],
+    "documentation_urls": [
+      "https://www.boss.info/global/support/by_product/",
+      "https://www.boss.info/global/support/",
+      "https://www.boss.info/global/products/",
+      "https://www.boss.info/global/support/updates_drivers/",
+      "https://www.boss.info/global/support/knowledge_base/"
+    ],
+    "sitemap_url": ""
+  },
+  "estimates": {
+    "total_products": 0,
+    "total_manuals": 0,
+    "total_spec_sheets": 0,
+    "total_guides": 0
+  },
+  "metadata": {
+    "tier": 1,
+    "priority": "critical",
+    "last_updated": "2026-01-07",
+    "catalog_status": "verified",
+    "scraping_complexity": "unknown"
+  }
+}

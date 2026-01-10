@@ -1,0 +1,38 @@
+{
+  "brand": "nord",
+  "brand_full_name": "Nord",
+  "official_site": "https://www.nordkeyboards.com",
+  "support_site": "https://www.nordkeyboards.com/support",
+  "halilit_url": "https://www.halilit.com/brands/nord",
+  "categories": [
+    "Keyboards",
+    "Stage Pianos",
+    "Synthesizers"
+  ],
+  "product_discovery": {
+    "product_list_urls": [
+      "https://www.nordkeyboards.com/products"
+    ],
+    "documentation_urls": [
+      "https://www.nordkeyboards.com/support/manuals",
+      "https://www.nordkeyboards.com/downloads",
+      "https://www.nordkeyboards.com/support",
+      "https://www.nordkeyboards.com/sound-libraries",
+      "https://www.nordkeyboards.com/support/software-tools"
+    ],
+    "sitemap_url": ""
+  },
+  "estimates": {
+    "total_products": 0,
+    "total_manuals": 0,
+    "total_spec_sheets": 0,
+    "total_guides": 0
+  },
+  "metadata": {
+    "tier": 1,
+    "priority": "critical",
+    "last_updated": "2026-01-07",
+    "catalog_status": "ready",
+    "scraping_complexity": "unknown"
+  }
+}

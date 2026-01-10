@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+redis
+httpx
+jinja2
+python-multipart
+beautifulsoup4
+thefuzz
