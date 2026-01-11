@@ -5,7 +5,7 @@
     "hq": "Hamamatsu, Japan 🇯🇵",
     "founded": 1972,
     "website": "https://www.roland.com",
-    "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
+    "logo_url": "/static/assets/brands/roland.png",
     "description": "A leading manufacturer and distributor of electronic musical instruments, including keyboards and synthesizers, guitar products, electronic percussion, and recording equipment."
   },
   "products": [
@@ -16,7 +16,7 @@
       "category": "Electronic Drums",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/td-17kvx2_top_gal.jpg",
+        "main": "/static/assets/products/roland-td17kvx2.webp",
         "thumbnail": "https://static.roland.com/assets/images/products/gallery/td-17kvx2_top_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
@@ -65,7 +65,7 @@
       "category": "Headphones",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/rh-300_angle_gal.jpg",
+        "main": "/static/assets/products/roland-rh300.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -81,7 +81,7 @@
       "category": "Accessories",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/ne-10_angle_gal.jpg",
+        "main": "/static/assets/products/roland-ne10.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -97,7 +97,7 @@
       "category": "Accessories",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/dap-3x_angle_gal.jpg",
+        "main": "/static/assets/products/roland-dap3x.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -113,7 +113,7 @@
       "category": "Drum Pads",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/pd-120_angle_gal.jpg",
+        "main": "/static/assets/products/roland-pd120.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -129,7 +129,7 @@
       "category": "Electronic Drums",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/td-17kv_top_gal.jpg",
+        "main": "/static/assets/products/roland-td17kv.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -151,7 +151,7 @@
       "category": "Electronic Drums",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/td-27kv_top_gal.jpg",
+        "main": "/static/assets/products/roland-td27kv.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -173,7 +173,7 @@
       "category": "Drum Pedals",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/assets/images/products/gallery/pds-20_angle_gal.jpg",
+        "main": "/static/assets/products/roland-pds20.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
