@@ -6,5 +6,38 @@
     "website": "https://www.presonus.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "presonus-presonus-audio-interface-2x2-audio",
+      "name": "PreSonus Audio Interface 2x2",
+      "brand": "presonus",
+      "category": "Audio Interface",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/presonus-presonus-audio-interface-2x2-audio.webp",
+        "thumbnail": "/static/assets/products/presonus-presonus-audio-interface-2x2-audio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/presonus-presonus-audio-interface-2x2-audio.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "presonus-presonus-audio-interface-4x4-audio",
+      "name": "PreSonus Audio Interface 4x4",
+      "brand": "presonus",
+      "category": "Audio Interface",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/presonus-presonus-audio-interface-4x4-audio.webp",
+        "thumbnail": "/static/assets/products/presonus-presonus-audio-interface-4x4-audio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/presonus-presonus-audio-interface-4x4-audio.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

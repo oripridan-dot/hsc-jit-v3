@@ -6,5 +6,70 @@
     "website": "https://www.ashdownmusic.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "ashdown-ashdown-analog",
+      "name": "Ashdown Analog Synthesizer",
+      "brand": "ashdown",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ashdown-ashdown-analog.webp",
+        "thumbnail": "/static/assets/products/ashdown-ashdown-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ashdown-ashdown-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ashdown-ashdown-digital",
+      "name": "Ashdown Digital Synthesizer",
+      "brand": "ashdown",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ashdown-ashdown-digital.webp",
+        "thumbnail": "/static/assets/products/ashdown-ashdown-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ashdown-ashdown-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ashdown-ashdown-stage",
+      "name": "Ashdown Stage Keyboard 88",
+      "brand": "ashdown",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ashdown-ashdown-stage.webp",
+        "thumbnail": "/static/assets/products/ashdown-ashdown-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ashdown-ashdown-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ashdown-ashdown-portable",
+      "name": "Ashdown Portable Keyboard",
+      "brand": "ashdown",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ashdown-ashdown-portable.webp",
+        "thumbnail": "/static/assets/products/ashdown-ashdown-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ashdown-ashdown-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "https://www.breedlove.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "breedlove-breedlove-analog",
+      "name": "Breedlove Analog Synthesizer",
+      "brand": "breedlove",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/breedlove-breedlove-analog.webp",
+        "thumbnail": "/static/assets/products/breedlove-breedlove-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/breedlove-breedlove-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "breedlove-breedlove-digital",
+      "name": "Breedlove Digital Synthesizer",
+      "brand": "breedlove",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/breedlove-breedlove-digital.webp",
+        "thumbnail": "/static/assets/products/breedlove-breedlove-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/breedlove-breedlove-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "breedlove-breedlove-stage",
+      "name": "Breedlove Stage Keyboard 88",
+      "brand": "breedlove",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/breedlove-breedlove-stage.webp",
+        "thumbnail": "/static/assets/products/breedlove-breedlove-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/breedlove-breedlove-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "breedlove-breedlove-portable",
+      "name": "Breedlove Portable Keyboard",
+      "brand": "breedlove",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/breedlove-breedlove-portable.webp",
+        "thumbnail": "/static/assets/products/breedlove-breedlove-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/breedlove-breedlove-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

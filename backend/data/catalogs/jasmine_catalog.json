@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "jasmine-jasmine-analog",
+      "name": "Jasmine Analog Synthesizer",
+      "brand": "jasmine",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/jasmine-jasmine-analog.webp",
+        "thumbnail": "/static/assets/products/jasmine-jasmine-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/jasmine-jasmine-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "jasmine-jasmine-digital",
+      "name": "Jasmine Digital Synthesizer",
+      "brand": "jasmine",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/jasmine-jasmine-digital.webp",
+        "thumbnail": "/static/assets/products/jasmine-jasmine-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/jasmine-jasmine-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "jasmine-jasmine-stage",
+      "name": "Jasmine Stage Keyboard 88",
+      "brand": "jasmine",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/jasmine-jasmine-stage.webp",
+        "thumbnail": "/static/assets/products/jasmine-jasmine-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/jasmine-jasmine-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "jasmine-jasmine-portable",
+      "name": "Jasmine Portable Keyboard",
+      "brand": "jasmine",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/jasmine-jasmine-portable.webp",
+        "thumbnail": "/static/assets/products/jasmine-jasmine-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/jasmine-jasmine-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

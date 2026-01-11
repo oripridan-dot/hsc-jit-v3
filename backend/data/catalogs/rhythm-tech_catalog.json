@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "rhythm-tech-rhythm-tech-analog-synthesizer-synthesizer",
+      "name": "Rhythm Tech Analog Synthesizer",
+      "brand": "rhythm-tech",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rhythm-tech-rhythm-tech-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/rhythm-tech-rhythm-tech-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rhythm-tech-rhythm-tech-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rhythm-tech-rhythm-tech-digital-synthesizer-synthesizer",
+      "name": "Rhythm Tech Digital Synthesizer",
+      "brand": "rhythm-tech",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rhythm-tech-rhythm-tech-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/rhythm-tech-rhythm-tech-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rhythm-tech-rhythm-tech-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rhythm-tech-rhythm-tech-stage-keyboard-88-stage",
+      "name": "Rhythm Tech Stage Keyboard 88",
+      "brand": "rhythm-tech",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rhythm-tech-rhythm-tech-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/rhythm-tech-rhythm-tech-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rhythm-tech-rhythm-tech-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rhythm-tech-rhythm-tech-portable-keyboard-portable",
+      "name": "Rhythm Tech Portable Keyboard",
+      "brand": "rhythm-tech",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rhythm-tech-rhythm-tech-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/rhythm-tech-rhythm-tech-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rhythm-tech-rhythm-tech-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

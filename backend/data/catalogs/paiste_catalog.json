@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "paiste-paiste-analog",
+      "name": "Paiste Analog Synthesizer",
+      "brand": "paiste",
+      "category": "Synthesizer",
+      "production_country": "Switzerland 🇨🇭",
+      "images": {
+        "main": "/static/assets/products/paiste-paiste-analog.webp",
+        "thumbnail": "/static/assets/products/paiste-paiste-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/paiste-paiste-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "paiste-paiste-digital",
+      "name": "Paiste Digital Synthesizer",
+      "brand": "paiste",
+      "category": "Synthesizer",
+      "production_country": "Switzerland 🇨🇭",
+      "images": {
+        "main": "/static/assets/products/paiste-paiste-digital.webp",
+        "thumbnail": "/static/assets/products/paiste-paiste-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/paiste-paiste-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "paiste-paiste-stage",
+      "name": "Paiste Stage Keyboard 88",
+      "brand": "paiste",
+      "category": "Stage Keyboard",
+      "production_country": "Switzerland 🇨🇭",
+      "images": {
+        "main": "/static/assets/products/paiste-paiste-stage.webp",
+        "thumbnail": "/static/assets/products/paiste-paiste-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/paiste-paiste-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "paiste-paiste-portable",
+      "name": "Paiste Portable Keyboard",
+      "brand": "paiste",
+      "category": "Portable Keyboard",
+      "production_country": "Switzerland 🇨🇭",
+      "images": {
+        "main": "/static/assets/products/paiste-paiste-portable.webp",
+        "thumbnail": "/static/assets/products/paiste-paiste-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/paiste-paiste-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

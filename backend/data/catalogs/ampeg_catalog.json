@@ -6,5 +6,70 @@
     "website": "https://www.ampeg.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "ampeg-ampeg-analog",
+      "name": "Ampeg Analog Synthesizer",
+      "brand": "ampeg",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ampeg-ampeg-analog.webp",
+        "thumbnail": "/static/assets/products/ampeg-ampeg-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ampeg-ampeg-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ampeg-ampeg-digital",
+      "name": "Ampeg Digital Synthesizer",
+      "brand": "ampeg",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ampeg-ampeg-digital.webp",
+        "thumbnail": "/static/assets/products/ampeg-ampeg-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ampeg-ampeg-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ampeg-ampeg-stage",
+      "name": "Ampeg Stage Keyboard 88",
+      "brand": "ampeg",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ampeg-ampeg-stage.webp",
+        "thumbnail": "/static/assets/products/ampeg-ampeg-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ampeg-ampeg-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ampeg-ampeg-portable",
+      "name": "Ampeg Portable Keyboard",
+      "brand": "ampeg",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ampeg-ampeg-portable.webp",
+        "thumbnail": "/static/assets/products/ampeg-ampeg-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ampeg-ampeg-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

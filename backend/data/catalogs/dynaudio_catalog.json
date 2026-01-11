@@ -6,5 +6,38 @@
     "website": "https://www.dynaudio.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "dynaudio-dynaudio-audio-interface-2x2-audio",
+      "name": "Dynaudio Audio Interface 2x2",
+      "brand": "dynaudio",
+      "category": "Audio Interface",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dynaudio-dynaudio-audio-interface-2x2-audio.webp",
+        "thumbnail": "/static/assets/products/dynaudio-dynaudio-audio-interface-2x2-audio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dynaudio-dynaudio-audio-interface-2x2-audio.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "dynaudio-dynaudio-audio-interface-4x4-audio",
+      "name": "Dynaudio Audio Interface 4x4",
+      "brand": "dynaudio",
+      "category": "Audio Interface",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dynaudio-dynaudio-audio-interface-4x4-audio.webp",
+        "thumbnail": "/static/assets/products/dynaudio-dynaudio-audio-interface-4x4-audio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dynaudio-dynaudio-audio-interface-4x4-audio.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

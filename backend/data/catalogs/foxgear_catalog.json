@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "foxgear-foxgear-analog",
+      "name": "Foxgear Analog Synthesizer",
+      "brand": "foxgear",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/foxgear-foxgear-analog.webp",
+        "thumbnail": "/static/assets/products/foxgear-foxgear-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/foxgear-foxgear-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "foxgear-foxgear-digital",
+      "name": "Foxgear Digital Synthesizer",
+      "brand": "foxgear",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/foxgear-foxgear-digital.webp",
+        "thumbnail": "/static/assets/products/foxgear-foxgear-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/foxgear-foxgear-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "foxgear-foxgear-stage",
+      "name": "Foxgear Stage Keyboard 88",
+      "brand": "foxgear",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/foxgear-foxgear-stage.webp",
+        "thumbnail": "/static/assets/products/foxgear-foxgear-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/foxgear-foxgear-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "foxgear-foxgear-portable",
+      "name": "Foxgear Portable Keyboard",
+      "brand": "foxgear",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/foxgear-foxgear-portable.webp",
+        "thumbnail": "/static/assets/products/foxgear-foxgear-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/foxgear-foxgear-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

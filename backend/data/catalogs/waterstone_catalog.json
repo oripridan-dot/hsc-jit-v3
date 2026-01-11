@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "waterstone-waterstone-analog",
+      "name": "Waterstone Analog Synthesizer",
+      "brand": "waterstone",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/waterstone-waterstone-analog.webp",
+        "thumbnail": "/static/assets/products/waterstone-waterstone-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/waterstone-waterstone-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "waterstone-waterstone-digital",
+      "name": "Waterstone Digital Synthesizer",
+      "brand": "waterstone",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/waterstone-waterstone-digital.webp",
+        "thumbnail": "/static/assets/products/waterstone-waterstone-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/waterstone-waterstone-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "waterstone-waterstone-stage",
+      "name": "Waterstone Stage Keyboard 88",
+      "brand": "waterstone",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/waterstone-waterstone-stage.webp",
+        "thumbnail": "/static/assets/products/waterstone-waterstone-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/waterstone-waterstone-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "waterstone-waterstone-portable",
+      "name": "Waterstone Portable Keyboard",
+      "brand": "waterstone",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/waterstone-waterstone-portable.webp",
+        "thumbnail": "/static/assets/products/waterstone-waterstone-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/waterstone-waterstone-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "xotic-xotic-analog",
+      "name": "Xotic Analog Synthesizer",
+      "brand": "xotic",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xotic-xotic-analog.webp",
+        "thumbnail": "/static/assets/products/xotic-xotic-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xotic-xotic-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "xotic-xotic-digital",
+      "name": "Xotic Digital Synthesizer",
+      "brand": "xotic",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xotic-xotic-digital.webp",
+        "thumbnail": "/static/assets/products/xotic-xotic-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xotic-xotic-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "xotic-xotic-stage",
+      "name": "Xotic Stage Keyboard 88",
+      "brand": "xotic",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xotic-xotic-stage.webp",
+        "thumbnail": "/static/assets/products/xotic-xotic-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xotic-xotic-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "xotic-xotic-portable",
+      "name": "Xotic Portable Keyboard",
+      "brand": "xotic",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xotic-xotic-portable.webp",
+        "thumbnail": "/static/assets/products/xotic-xotic-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xotic-xotic-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

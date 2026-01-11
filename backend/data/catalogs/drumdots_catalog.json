@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "drumdots-drumdots-drum",
+      "name": "Drumdots Drum Kit 5-Piece",
+      "brand": "drumdots",
+      "category": "Drum Kit",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/drumdots-drumdots-drum.webp",
+        "thumbnail": "/static/assets/products/drumdots-drumdots-drum.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/drumdots-drumdots-drum.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "drumdots-drumdots-electronic",
+      "name": "Drumdots Electronic Drum Kit",
+      "brand": "drumdots",
+      "category": "Electronic Drum Kit",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/drumdots-drumdots-electronic.webp",
+        "thumbnail": "/static/assets/products/drumdots-drumdots-electronic.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/drumdots-drumdots-electronic.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "drumdots-drumdots-cymbal",
+      "name": "Drumdots Cymbal Pack",
+      "brand": "drumdots",
+      "category": "Cymbal",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/drumdots-drumdots-cymbal.webp",
+        "thumbnail": "/static/assets/products/drumdots-drumdots-cymbal.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/drumdots-drumdots-cymbal.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "drumdots-drumdots-percussion",
+      "name": "Drumdots Percussion Pad",
+      "brand": "drumdots",
+      "category": "Percussion Pad",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/drumdots-drumdots-percussion.webp",
+        "thumbnail": "/static/assets/products/drumdots-drumdots-percussion.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/drumdots-drumdots-percussion.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

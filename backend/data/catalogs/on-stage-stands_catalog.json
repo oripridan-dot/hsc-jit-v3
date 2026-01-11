@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "on-stage-stands-on-stage-stands-analog-synthesizer-synthesizer",
+      "name": "On Stage Stands Analog Synthesizer",
+      "brand": "on-stage-stands",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/on-stage-stands-on-stage-stands-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/on-stage-stands-on-stage-stands-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/on-stage-stands-on-stage-stands-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "on-stage-stands-on-stage-stands-digital-synthesizer-synthesizer",
+      "name": "On Stage Stands Digital Synthesizer",
+      "brand": "on-stage-stands",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/on-stage-stands-on-stage-stands-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/on-stage-stands-on-stage-stands-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/on-stage-stands-on-stage-stands-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "on-stage-stands-on-stage-stands-stage-keyboard-88-stage",
+      "name": "On Stage Stands Stage Keyboard 88",
+      "brand": "on-stage-stands",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/on-stage-stands-on-stage-stands-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/on-stage-stands-on-stage-stands-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/on-stage-stands-on-stage-stands-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "on-stage-stands-on-stage-stands-portable-keyboard-portable",
+      "name": "On Stage Stands Portable Keyboard",
+      "brand": "on-stage-stands",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/on-stage-stands-on-stage-stands-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/on-stage-stands-on-stage-stands-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/on-stage-stands-on-stage-stands-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

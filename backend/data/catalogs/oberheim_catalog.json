@@ -6,5 +6,70 @@
     "website": "https://www.oberheim.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "oberheim-oberheim-analog",
+      "name": "Oberheim Analog Synthesizer",
+      "brand": "oberheim",
+      "category": "Synthesizer",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/oberheim-oberheim-analog.webp",
+        "thumbnail": "/static/assets/products/oberheim-oberheim-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/oberheim-oberheim-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "oberheim-oberheim-digital",
+      "name": "Oberheim Digital Synthesizer",
+      "brand": "oberheim",
+      "category": "Synthesizer",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/oberheim-oberheim-digital.webp",
+        "thumbnail": "/static/assets/products/oberheim-oberheim-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/oberheim-oberheim-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "oberheim-oberheim-stage",
+      "name": "Oberheim Stage Keyboard 88",
+      "brand": "oberheim",
+      "category": "Stage Keyboard",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/oberheim-oberheim-stage.webp",
+        "thumbnail": "/static/assets/products/oberheim-oberheim-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/oberheim-oberheim-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "oberheim-oberheim-portable",
+      "name": "Oberheim Portable Keyboard",
+      "brand": "oberheim",
+      "category": "Portable Keyboard",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/oberheim-oberheim-portable.webp",
+        "thumbnail": "/static/assets/products/oberheim-oberheim-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/oberheim-oberheim-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

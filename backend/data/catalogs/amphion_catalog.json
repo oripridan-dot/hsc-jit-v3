@@ -6,5 +6,70 @@
     "website": "https://www.amphionpro.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "amphion-amphion-analog",
+      "name": "Amphion Analog Synthesizer",
+      "brand": "amphion",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/amphion-amphion-analog.webp",
+        "thumbnail": "/static/assets/products/amphion-amphion-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/amphion-amphion-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "amphion-amphion-digital",
+      "name": "Amphion Digital Synthesizer",
+      "brand": "amphion",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/amphion-amphion-digital.webp",
+        "thumbnail": "/static/assets/products/amphion-amphion-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/amphion-amphion-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "amphion-amphion-stage",
+      "name": "Amphion Stage Keyboard 88",
+      "brand": "amphion",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/amphion-amphion-stage.webp",
+        "thumbnail": "/static/assets/products/amphion-amphion-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/amphion-amphion-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "amphion-amphion-portable",
+      "name": "Amphion Portable Keyboard",
+      "brand": "amphion",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/amphion-amphion-portable.webp",
+        "thumbnail": "/static/assets/products/amphion-amphion-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/amphion-amphion-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

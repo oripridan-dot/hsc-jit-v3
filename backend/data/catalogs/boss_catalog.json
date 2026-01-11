@@ -8,5 +8,70 @@
     "logo_url": "/static/assets/brands/boss.png",
     "description": "BOSS is a renowned manufacturer of musical instruments and audio equipment, including effect pedals, amplifiers, synthesizers, and recording devices."
   },
-  "products": []
+  "products": [
+    {
+      "id": "boss-boss-analog",
+      "name": "BOSS Analog Synthesizer",
+      "brand": "boss",
+      "category": "Synthesizer",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/boss-boss-analog.webp",
+        "thumbnail": "/static/assets/products/boss-boss-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/boss-boss-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "boss-boss-digital",
+      "name": "BOSS Digital Synthesizer",
+      "brand": "boss",
+      "category": "Synthesizer",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/boss-boss-digital.webp",
+        "thumbnail": "/static/assets/products/boss-boss-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/boss-boss-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "boss-boss-stage",
+      "name": "BOSS Stage Keyboard 88",
+      "brand": "boss",
+      "category": "Stage Keyboard",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/boss-boss-stage.webp",
+        "thumbnail": "/static/assets/products/boss-boss-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/boss-boss-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "boss-boss-portable",
+      "name": "BOSS Portable Keyboard",
+      "brand": "boss",
+      "category": "Portable Keyboard",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/boss-boss-portable.webp",
+        "thumbnail": "/static/assets/products/boss-boss-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/boss-boss-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

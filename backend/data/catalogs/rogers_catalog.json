@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "rogers-rogers-analog",
+      "name": "Rogers Analog Synthesizer",
+      "brand": "rogers",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rogers-rogers-analog.webp",
+        "thumbnail": "/static/assets/products/rogers-rogers-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rogers-rogers-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rogers-rogers-digital",
+      "name": "Rogers Digital Synthesizer",
+      "brand": "rogers",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rogers-rogers-digital.webp",
+        "thumbnail": "/static/assets/products/rogers-rogers-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rogers-rogers-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rogers-rogers-stage",
+      "name": "Rogers Stage Keyboard 88",
+      "brand": "rogers",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rogers-rogers-stage.webp",
+        "thumbnail": "/static/assets/products/rogers-rogers-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rogers-rogers-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rogers-rogers-portable",
+      "name": "Rogers Portable Keyboard",
+      "brand": "rogers",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rogers-rogers-portable.webp",
+        "thumbnail": "/static/assets/products/rogers-rogers-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rogers-rogers-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

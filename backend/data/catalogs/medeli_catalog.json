@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "medeli-medeli-analog",
+      "name": "Medeli Analog Synthesizer",
+      "brand": "medeli",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/medeli-medeli-analog.webp",
+        "thumbnail": "/static/assets/products/medeli-medeli-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/medeli-medeli-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "medeli-medeli-digital",
+      "name": "Medeli Digital Synthesizer",
+      "brand": "medeli",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/medeli-medeli-digital.webp",
+        "thumbnail": "/static/assets/products/medeli-medeli-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/medeli-medeli-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "medeli-medeli-stage",
+      "name": "Medeli Stage Keyboard 88",
+      "brand": "medeli",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/medeli-medeli-stage.webp",
+        "thumbnail": "/static/assets/products/medeli-medeli-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/medeli-medeli-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "medeli-medeli-portable",
+      "name": "Medeli Portable Keyboard",
+      "brand": "medeli",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/medeli-medeli-portable.webp",
+        "thumbnail": "/static/assets/products/medeli-medeli-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/medeli-medeli-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

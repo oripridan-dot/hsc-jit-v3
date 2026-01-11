@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "maestro-maestro-analog",
+      "name": "Maestro Analog Synthesizer",
+      "brand": "maestro",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maestro-maestro-analog.webp",
+        "thumbnail": "/static/assets/products/maestro-maestro-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maestro-maestro-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maestro-maestro-digital",
+      "name": "Maestro Digital Synthesizer",
+      "brand": "maestro",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maestro-maestro-digital.webp",
+        "thumbnail": "/static/assets/products/maestro-maestro-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maestro-maestro-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maestro-maestro-stage",
+      "name": "Maestro Stage Keyboard 88",
+      "brand": "maestro",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maestro-maestro-stage.webp",
+        "thumbnail": "/static/assets/products/maestro-maestro-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maestro-maestro-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maestro-maestro-portable",
+      "name": "Maestro Portable Keyboard",
+      "brand": "maestro",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maestro-maestro-portable.webp",
+        "thumbnail": "/static/assets/products/maestro-maestro-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maestro-maestro-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

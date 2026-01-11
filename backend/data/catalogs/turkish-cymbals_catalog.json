@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "turkish-cymbals-turkish-cymbals-analog-synthesizer-synthesizer",
+      "name": "Turkish Cymbals Analog Synthesizer",
+      "brand": "turkish-cymbals",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/turkish-cymbals-turkish-cymbals-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/turkish-cymbals-turkish-cymbals-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/turkish-cymbals-turkish-cymbals-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "turkish-cymbals-turkish-cymbals-digital-synthesizer-synthesizer",
+      "name": "Turkish Cymbals Digital Synthesizer",
+      "brand": "turkish-cymbals",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/turkish-cymbals-turkish-cymbals-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/turkish-cymbals-turkish-cymbals-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/turkish-cymbals-turkish-cymbals-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "turkish-cymbals-turkish-cymbals-stage-keyboard-88-stage",
+      "name": "Turkish Cymbals Stage Keyboard 88",
+      "brand": "turkish-cymbals",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/turkish-cymbals-turkish-cymbals-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/turkish-cymbals-turkish-cymbals-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/turkish-cymbals-turkish-cymbals-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "turkish-cymbals-turkish-cymbals-portable-keyboard-portable",
+      "name": "Turkish Cymbals Portable Keyboard",
+      "brand": "turkish-cymbals",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/turkish-cymbals-turkish-cymbals-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/turkish-cymbals-turkish-cymbals-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/turkish-cymbals-turkish-cymbals-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

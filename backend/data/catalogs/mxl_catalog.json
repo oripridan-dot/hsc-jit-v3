@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "mxl-mxl-analog",
+      "name": "MXL Analog Synthesizer",
+      "brand": "mxl",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/mxl-mxl-analog.webp",
+        "thumbnail": "/static/assets/products/mxl-mxl-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/mxl-mxl-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "mxl-mxl-digital",
+      "name": "MXL Digital Synthesizer",
+      "brand": "mxl",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/mxl-mxl-digital.webp",
+        "thumbnail": "/static/assets/products/mxl-mxl-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/mxl-mxl-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "mxl-mxl-stage",
+      "name": "MXL Stage Keyboard 88",
+      "brand": "mxl",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/mxl-mxl-stage.webp",
+        "thumbnail": "/static/assets/products/mxl-mxl-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/mxl-mxl-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "mxl-mxl-portable",
+      "name": "MXL Portable Keyboard",
+      "brand": "mxl",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/mxl-mxl-portable.webp",
+        "thumbnail": "/static/assets/products/mxl-mxl-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/mxl-mxl-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

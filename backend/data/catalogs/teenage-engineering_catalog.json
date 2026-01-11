@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer",
+      "name": "Teenage Engineering Analog Synthesizer",
+      "brand": "teenage-engineering",
+      "category": "Synthesizer",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer",
+      "name": "Teenage Engineering Digital Synthesizer",
+      "brand": "teenage-engineering",
+      "category": "Synthesizer",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "teenage-engineering-teenage-engineering-stage-keyboard-88-stage",
+      "name": "Teenage Engineering Stage Keyboard 88",
+      "brand": "teenage-engineering",
+      "category": "Stage Keyboard",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/teenage-engineering-teenage-engineering-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/teenage-engineering-teenage-engineering-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "teenage-engineering-teenage-engineering-portable-keyboard-portable",
+      "name": "Teenage Engineering Portable Keyboard",
+      "brand": "teenage-engineering",
+      "category": "Portable Keyboard",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/teenage-engineering-teenage-engineering-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/teenage-engineering-teenage-engineering-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

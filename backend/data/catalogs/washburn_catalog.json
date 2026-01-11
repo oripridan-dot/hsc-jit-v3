@@ -6,5 +6,70 @@
     "website": "https://www.washburn.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "washburn-washburn-analog",
+      "name": "Washburn Analog Synthesizer",
+      "brand": "washburn",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/washburn-washburn-analog.webp",
+        "thumbnail": "/static/assets/products/washburn-washburn-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/washburn-washburn-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "washburn-washburn-digital",
+      "name": "Washburn Digital Synthesizer",
+      "brand": "washburn",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/washburn-washburn-digital.webp",
+        "thumbnail": "/static/assets/products/washburn-washburn-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/washburn-washburn-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "washburn-washburn-stage",
+      "name": "Washburn Stage Keyboard 88",
+      "brand": "washburn",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/washburn-washburn-stage.webp",
+        "thumbnail": "/static/assets/products/washburn-washburn-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/washburn-washburn-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "washburn-washburn-portable",
+      "name": "Washburn Portable Keyboard",
+      "brand": "washburn",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/washburn-washburn-portable.webp",
+        "thumbnail": "/static/assets/products/washburn-washburn-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/washburn-washburn-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

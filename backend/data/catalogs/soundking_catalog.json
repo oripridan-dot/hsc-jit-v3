@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "soundking-soundking-analog",
+      "name": "Soundking Analog Synthesizer",
+      "brand": "soundking",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/soundking-soundking-analog.webp",
+        "thumbnail": "/static/assets/products/soundking-soundking-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/soundking-soundking-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "soundking-soundking-digital",
+      "name": "Soundking Digital Synthesizer",
+      "brand": "soundking",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/soundking-soundking-digital.webp",
+        "thumbnail": "/static/assets/products/soundking-soundking-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/soundking-soundking-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "soundking-soundking-stage",
+      "name": "Soundking Stage Keyboard 88",
+      "brand": "soundking",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/soundking-soundking-stage.webp",
+        "thumbnail": "/static/assets/products/soundking-soundking-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/soundking-soundking-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "soundking-soundking-portable",
+      "name": "Soundking Portable Keyboard",
+      "brand": "soundking",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/soundking-soundking-portable.webp",
+        "thumbnail": "/static/assets/products/soundking-soundking-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/soundking-soundking-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "ocean-schmidt-ocean-schmidt-analog-synthesizer-synthesizer",
+      "name": "Ocean Schmidt Analog Synthesizer",
+      "brand": "ocean-schmidt",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ocean-schmidt-ocean-schmidt-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/ocean-schmidt-ocean-schmidt-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ocean-schmidt-ocean-schmidt-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ocean-schmidt-ocean-schmidt-digital-synthesizer-synthesizer",
+      "name": "Ocean Schmidt Digital Synthesizer",
+      "brand": "ocean-schmidt",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ocean-schmidt-ocean-schmidt-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/ocean-schmidt-ocean-schmidt-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ocean-schmidt-ocean-schmidt-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ocean-schmidt-ocean-schmidt-stage-keyboard-88-stage",
+      "name": "Ocean Schmidt Stage Keyboard 88",
+      "brand": "ocean-schmidt",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ocean-schmidt-ocean-schmidt-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/ocean-schmidt-ocean-schmidt-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ocean-schmidt-ocean-schmidt-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ocean-schmidt-ocean-schmidt-portable-keyboard-portable",
+      "name": "Ocean Schmidt Portable Keyboard",
+      "brand": "ocean-schmidt",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ocean-schmidt-ocean-schmidt-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/ocean-schmidt-ocean-schmidt-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ocean-schmidt-ocean-schmidt-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

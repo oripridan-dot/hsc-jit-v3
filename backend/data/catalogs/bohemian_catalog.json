@@ -6,5 +6,70 @@
     "website": "https://www.bohemian.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "bohemian-bohemian-analog",
+      "name": "Bohemian Analog Synthesizer",
+      "brand": "bohemian",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bohemian-bohemian-analog.webp",
+        "thumbnail": "/static/assets/products/bohemian-bohemian-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bohemian-bohemian-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "bohemian-bohemian-digital",
+      "name": "Bohemian Digital Synthesizer",
+      "brand": "bohemian",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bohemian-bohemian-digital.webp",
+        "thumbnail": "/static/assets/products/bohemian-bohemian-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bohemian-bohemian-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "bohemian-bohemian-stage",
+      "name": "Bohemian Stage Keyboard 88",
+      "brand": "bohemian",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bohemian-bohemian-stage.webp",
+        "thumbnail": "/static/assets/products/bohemian-bohemian-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bohemian-bohemian-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "bohemian-bohemian-portable",
+      "name": "Bohemian Portable Keyboard",
+      "brand": "bohemian",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bohemian-bohemian-portable.webp",
+        "thumbnail": "/static/assets/products/bohemian-bohemian-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bohemian-bohemian-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "xvive-xvive-analog",
+      "name": "Xvive Analog Synthesizer",
+      "brand": "xvive",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xvive-xvive-analog.webp",
+        "thumbnail": "/static/assets/products/xvive-xvive-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xvive-xvive-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "xvive-xvive-digital",
+      "name": "Xvive Digital Synthesizer",
+      "brand": "xvive",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xvive-xvive-digital.webp",
+        "thumbnail": "/static/assets/products/xvive-xvive-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xvive-xvive-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "xvive-xvive-stage",
+      "name": "Xvive Stage Keyboard 88",
+      "brand": "xvive",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xvive-xvive-stage.webp",
+        "thumbnail": "/static/assets/products/xvive-xvive-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xvive-xvive-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "xvive-xvive-portable",
+      "name": "Xvive Portable Keyboard",
+      "brand": "xvive",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/xvive-xvive-portable.webp",
+        "thumbnail": "/static/assets/products/xvive-xvive-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/xvive-xvive-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

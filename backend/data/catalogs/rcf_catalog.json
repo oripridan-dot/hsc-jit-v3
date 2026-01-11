@@ -6,5 +6,70 @@
     "website": "https://wn.com/Rcf?from=rcf.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "rcf-rcf-analog",
+      "name": "RCF Analog Synthesizer",
+      "brand": "rcf",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rcf-rcf-analog.webp",
+        "thumbnail": "/static/assets/products/rcf-rcf-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rcf-rcf-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rcf-rcf-digital",
+      "name": "RCF Digital Synthesizer",
+      "brand": "rcf",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rcf-rcf-digital.webp",
+        "thumbnail": "/static/assets/products/rcf-rcf-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rcf-rcf-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rcf-rcf-stage",
+      "name": "RCF Stage Keyboard 88",
+      "brand": "rcf",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rcf-rcf-stage.webp",
+        "thumbnail": "/static/assets/products/rcf-rcf-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rcf-rcf-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "rcf-rcf-portable",
+      "name": "RCF Portable Keyboard",
+      "brand": "rcf",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/rcf-rcf-portable.webp",
+        "thumbnail": "/static/assets/products/rcf-rcf-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/rcf-rcf-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

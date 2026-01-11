@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "keith-mcmillen-keith-mcmillen-instruments-analog-synthesizer-synthesizer",
+      "name": "Keith McMillen Instruments Analog Synthesizer",
+      "brand": "keith-mcmillen",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/keith-mcmillen-keith-mcmillen-instruments-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "keith-mcmillen-keith-mcmillen-instruments-digital-synthesizer-synthesizer",
+      "name": "Keith McMillen Instruments Digital Synthesizer",
+      "brand": "keith-mcmillen",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/keith-mcmillen-keith-mcmillen-instruments-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "keith-mcmillen-keith-mcmillen-instruments-stage-keyboard-88-stage",
+      "name": "Keith McMillen Instruments Stage Keyboard 88",
+      "brand": "keith-mcmillen",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/keith-mcmillen-keith-mcmillen-instruments-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "keith-mcmillen-keith-mcmillen-instruments-portable-keyboard-portable",
+      "name": "Keith McMillen Instruments Portable Keyboard",
+      "brand": "keith-mcmillen",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/keith-mcmillen-keith-mcmillen-instruments-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/keith-mcmillen-keith-mcmillen-instruments-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "studiologic-studiologic-analog",
+      "name": "Studiologic Analog Synthesizer",
+      "brand": "studiologic",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/studiologic-studiologic-analog.webp",
+        "thumbnail": "/static/assets/products/studiologic-studiologic-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/studiologic-studiologic-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "studiologic-studiologic-digital",
+      "name": "Studiologic Digital Synthesizer",
+      "brand": "studiologic",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/studiologic-studiologic-digital.webp",
+        "thumbnail": "/static/assets/products/studiologic-studiologic-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/studiologic-studiologic-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "studiologic-studiologic-stage",
+      "name": "Studiologic Stage Keyboard 88",
+      "brand": "studiologic",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/studiologic-studiologic-stage.webp",
+        "thumbnail": "/static/assets/products/studiologic-studiologic-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/studiologic-studiologic-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "studiologic-studiologic-portable",
+      "name": "Studiologic Portable Keyboard",
+      "brand": "studiologic",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/studiologic-studiologic-portable.webp",
+        "thumbnail": "/static/assets/products/studiologic-studiologic-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/studiologic-studiologic-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

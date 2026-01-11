@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "tombo-tombo-analog",
+      "name": "Tombo Analog Synthesizer",
+      "brand": "tombo",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/tombo-tombo-analog.webp",
+        "thumbnail": "/static/assets/products/tombo-tombo-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/tombo-tombo-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "tombo-tombo-digital",
+      "name": "Tombo Digital Synthesizer",
+      "brand": "tombo",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/tombo-tombo-digital.webp",
+        "thumbnail": "/static/assets/products/tombo-tombo-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/tombo-tombo-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "tombo-tombo-stage",
+      "name": "Tombo Stage Keyboard 88",
+      "brand": "tombo",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/tombo-tombo-stage.webp",
+        "thumbnail": "/static/assets/products/tombo-tombo-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/tombo-tombo-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "tombo-tombo-portable",
+      "name": "Tombo Portable Keyboard",
+      "brand": "tombo",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/tombo-tombo-portable.webp",
+        "thumbnail": "/static/assets/products/tombo-tombo-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/tombo-tombo-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

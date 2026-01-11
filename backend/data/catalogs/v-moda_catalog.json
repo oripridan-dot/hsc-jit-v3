@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "v-moda-v-moda-analog",
+      "name": "V-MODA Analog Synthesizer",
+      "brand": "v-moda",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/v-moda-v-moda-analog.webp",
+        "thumbnail": "/static/assets/products/v-moda-v-moda-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/v-moda-v-moda-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "v-moda-v-moda-digital",
+      "name": "V-MODA Digital Synthesizer",
+      "brand": "v-moda",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/v-moda-v-moda-digital.webp",
+        "thumbnail": "/static/assets/products/v-moda-v-moda-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/v-moda-v-moda-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "v-moda-v-moda-stage",
+      "name": "V-MODA Stage Keyboard 88",
+      "brand": "v-moda",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/v-moda-v-moda-stage.webp",
+        "thumbnail": "/static/assets/products/v-moda-v-moda-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/v-moda-v-moda-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "v-moda-v-moda-portable",
+      "name": "V-MODA Portable Keyboard",
+      "brand": "v-moda",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/v-moda-v-moda-portable.webp",
+        "thumbnail": "/static/assets/products/v-moda-v-moda-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/v-moda-v-moda-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

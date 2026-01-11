@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "maton-maton-analog",
+      "name": "Maton Analog Synthesizer",
+      "brand": "maton",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maton-maton-analog.webp",
+        "thumbnail": "/static/assets/products/maton-maton-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maton-maton-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maton-maton-digital",
+      "name": "Maton Digital Synthesizer",
+      "brand": "maton",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maton-maton-digital.webp",
+        "thumbnail": "/static/assets/products/maton-maton-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maton-maton-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maton-maton-stage",
+      "name": "Maton Stage Keyboard 88",
+      "brand": "maton",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maton-maton-stage.webp",
+        "thumbnail": "/static/assets/products/maton-maton-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maton-maton-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maton-maton-portable",
+      "name": "Maton Portable Keyboard",
+      "brand": "maton",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maton-maton-portable.webp",
+        "thumbnail": "/static/assets/products/maton-maton-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maton-maton-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

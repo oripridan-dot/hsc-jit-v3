@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "blue-microphones-blue-microphones-analog-synthesizer-synthesizer",
+      "name": "Blue Microphones Analog Synthesizer",
+      "brand": "blue-microphones",
+      "category": "Synthesizer",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/blue-microphones-blue-microphones-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/blue-microphones-blue-microphones-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/blue-microphones-blue-microphones-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "blue-microphones-blue-microphones-digital-synthesizer-synthesizer",
+      "name": "Blue Microphones Digital Synthesizer",
+      "brand": "blue-microphones",
+      "category": "Synthesizer",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/blue-microphones-blue-microphones-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/blue-microphones-blue-microphones-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/blue-microphones-blue-microphones-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "blue-microphones-blue-microphones-stage-keyboard-88-stage",
+      "name": "Blue Microphones Stage Keyboard 88",
+      "brand": "blue-microphones",
+      "category": "Stage Keyboard",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/blue-microphones-blue-microphones-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/blue-microphones-blue-microphones-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/blue-microphones-blue-microphones-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "blue-microphones-blue-microphones-portable-keyboard-portable",
+      "name": "Blue Microphones Portable Keyboard",
+      "brand": "blue-microphones",
+      "category": "Portable Keyboard",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/blue-microphones-blue-microphones-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/blue-microphones-blue-microphones-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/blue-microphones-blue-microphones-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

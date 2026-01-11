@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "hiwatt-hiwatt-analog",
+      "name": "Hiwatt Analog Synthesizer",
+      "brand": "hiwatt",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/hiwatt-hiwatt-analog.webp",
+        "thumbnail": "/static/assets/products/hiwatt-hiwatt-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/hiwatt-hiwatt-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "hiwatt-hiwatt-digital",
+      "name": "Hiwatt Digital Synthesizer",
+      "brand": "hiwatt",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/hiwatt-hiwatt-digital.webp",
+        "thumbnail": "/static/assets/products/hiwatt-hiwatt-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/hiwatt-hiwatt-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "hiwatt-hiwatt-stage",
+      "name": "Hiwatt Stage Keyboard 88",
+      "brand": "hiwatt",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/hiwatt-hiwatt-stage.webp",
+        "thumbnail": "/static/assets/products/hiwatt-hiwatt-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/hiwatt-hiwatt-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "hiwatt-hiwatt-portable",
+      "name": "Hiwatt Portable Keyboard",
+      "brand": "hiwatt",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/hiwatt-hiwatt-portable.webp",
+        "thumbnail": "/static/assets/products/hiwatt-hiwatt-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/hiwatt-hiwatt-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "https://www.spectormusic.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "spector-spector-analog",
+      "name": "Spector Analog Synthesizer",
+      "brand": "spector",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/spector-spector-analog.webp",
+        "thumbnail": "/static/assets/products/spector-spector-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/spector-spector-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "spector-spector-digital",
+      "name": "Spector Digital Synthesizer",
+      "brand": "spector",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/spector-spector-digital.webp",
+        "thumbnail": "/static/assets/products/spector-spector-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/spector-spector-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "spector-spector-stage",
+      "name": "Spector Stage Keyboard 88",
+      "brand": "spector",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/spector-spector-stage.webp",
+        "thumbnail": "/static/assets/products/spector-spector-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/spector-spector-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "spector-spector-portable",
+      "name": "Spector Portable Keyboard",
+      "brand": "spector",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/spector-spector-portable.webp",
+        "thumbnail": "/static/assets/products/spector-spector-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/spector-spector-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

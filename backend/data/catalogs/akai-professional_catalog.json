@@ -2,9 +2,78 @@
   "brand_identity": {
     "id": "akai-professional",
     "name": "Akai Professional",
-    "hq": "Unknown",
+    "hq": "Cumberland, Rhode Island, USA 🇺🇸",
     "website": "https://www.akaipro.com",
-    "logo_url": ""
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Akai_Professional_logo.svg"
   },
-  "products": []
+  "products": [
+    {
+      "id": "akai-professional-mpc-one-plus",
+      "name": "Akai MPC One+",
+      "brand": "akai-professional",
+      "category": "Sampler / Production Center",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/akai-professional-mpc-one-plus.webp",
+        "thumbnail": "/static/assets/products/akai-professional-mpc-one-plus.webp",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/49/Akai_Professional_logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://www.akaipro.com/mpc-one-plus"
+      },
+      "relationships": []
+    },
+    {
+      "id": "akai-professional-force",
+      "name": "Akai Force",
+      "brand": "akai-professional",
+      "category": "Standalone Music Production System",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/akai-professional-force.webp",
+        "thumbnail": "/static/assets/products/akai-professional-force.webp",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/49/Akai_Professional_logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://www.akaipro.com/force"
+      },
+      "relationships": []
+    },
+    {
+      "id": "akai-professional-mpk-mini-plus",
+      "name": "Akai MPK Mini Plus",
+      "brand": "akai-professional",
+      "category": "MIDI Controller Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/akai-professional-mpk-mini-plus.webp",
+        "thumbnail": "/static/assets/products/akai-professional-mpk-mini-plus.webp",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/49/Akai_Professional_logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://www.akaipro.com/mpk-mini-plus"
+      },
+      "relationships": []
+    },
+    {
+      "id": "akai-professional-apc-key-25-mk2",
+      "name": "Akai APC Key 25 Mk2",
+      "brand": "akai-professional",
+      "category": "MIDI Controller Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/akai-professional-apc-key-25-mk2.webp",
+        "thumbnail": "/static/assets/products/akai-professional-apc-key-25-mk2.webp",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/49/Akai_Professional_logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://www.akaipro.com/apc-key-25-mk2"
+      },
+      "relationships": []
+    }
+  ]
 }

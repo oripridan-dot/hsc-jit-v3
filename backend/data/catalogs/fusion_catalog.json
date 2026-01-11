@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "fusion-fusion-analog",
+      "name": "Fusion Analog Synthesizer",
+      "brand": "fusion",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-fusion-analog.webp",
+        "thumbnail": "/static/assets/products/fusion-fusion-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-fusion-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "fusion-fusion-digital",
+      "name": "Fusion Digital Synthesizer",
+      "brand": "fusion",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-fusion-digital.webp",
+        "thumbnail": "/static/assets/products/fusion-fusion-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-fusion-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "fusion-fusion-stage",
+      "name": "Fusion Stage Keyboard 88",
+      "brand": "fusion",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-fusion-stage.webp",
+        "thumbnail": "/static/assets/products/fusion-fusion-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-fusion-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "fusion-fusion-portable",
+      "name": "Fusion Portable Keyboard",
+      "brand": "fusion",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-fusion-portable.webp",
+        "thumbnail": "/static/assets/products/fusion-fusion-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-fusion-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

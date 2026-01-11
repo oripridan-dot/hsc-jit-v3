@@ -6,5 +6,70 @@
     "website": "https://pearldrum.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "pearl-pearl-drum",
+      "name": "Pearl Drum Kit 5-Piece",
+      "brand": "pearl",
+      "category": "Drum Kit",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/pearl-pearl-drum.webp",
+        "thumbnail": "/static/assets/products/pearl-pearl-drum.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/pearl-pearl-drum.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "pearl-pearl-electronic",
+      "name": "Pearl Electronic Drum Kit",
+      "brand": "pearl",
+      "category": "Electronic Drum Kit",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/pearl-pearl-electronic.webp",
+        "thumbnail": "/static/assets/products/pearl-pearl-electronic.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/pearl-pearl-electronic.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "pearl-pearl-cymbal",
+      "name": "Pearl Cymbal Pack",
+      "brand": "pearl",
+      "category": "Cymbal",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/pearl-pearl-cymbal.webp",
+        "thumbnail": "/static/assets/products/pearl-pearl-cymbal.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/pearl-pearl-cymbal.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "pearl-pearl-percussion",
+      "name": "Pearl Percussion Pad",
+      "brand": "pearl",
+      "category": "Percussion Pad",
+      "production_country": "Japan 🇯🇵",
+      "images": {
+        "main": "/static/assets/products/pearl-pearl-percussion.webp",
+        "thumbnail": "/static/assets/products/pearl-pearl-percussion.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/pearl-pearl-percussion.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

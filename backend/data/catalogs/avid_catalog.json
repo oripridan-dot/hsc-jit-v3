@@ -6,5 +6,70 @@
     "website": "https://www.avid.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "avid-avid-analog",
+      "name": "Avid Analog Synthesizer",
+      "brand": "avid",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/avid-avid-analog.webp",
+        "thumbnail": "/static/assets/products/avid-avid-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/avid-avid-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "avid-avid-digital",
+      "name": "Avid Digital Synthesizer",
+      "brand": "avid",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/avid-avid-digital.webp",
+        "thumbnail": "/static/assets/products/avid-avid-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/avid-avid-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "avid-avid-stage",
+      "name": "Avid Stage Keyboard 88",
+      "brand": "avid",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/avid-avid-stage.webp",
+        "thumbnail": "/static/assets/products/avid-avid-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/avid-avid-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "avid-avid-portable",
+      "name": "Avid Portable Keyboard",
+      "brand": "avid",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/avid-avid-portable.webp",
+        "thumbnail": "/static/assets/products/avid-avid-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/avid-avid-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

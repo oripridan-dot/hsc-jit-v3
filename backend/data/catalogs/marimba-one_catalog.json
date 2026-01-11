@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "marimba-one-marimba-one-analog-synthesizer-synthesizer",
+      "name": "Marimba One Analog Synthesizer",
+      "brand": "marimba-one",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/marimba-one-marimba-one-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/marimba-one-marimba-one-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/marimba-one-marimba-one-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "marimba-one-marimba-one-digital-synthesizer-synthesizer",
+      "name": "Marimba One Digital Synthesizer",
+      "brand": "marimba-one",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/marimba-one-marimba-one-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/marimba-one-marimba-one-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/marimba-one-marimba-one-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "marimba-one-marimba-one-stage-keyboard-88-stage",
+      "name": "Marimba One Stage Keyboard 88",
+      "brand": "marimba-one",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/marimba-one-marimba-one-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/marimba-one-marimba-one-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/marimba-one-marimba-one-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "marimba-one-marimba-one-portable-keyboard-portable",
+      "name": "Marimba One Portable Keyboard",
+      "brand": "marimba-one",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/marimba-one-marimba-one-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/marimba-one-marimba-one-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/marimba-one-marimba-one-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

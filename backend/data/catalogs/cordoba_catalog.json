@@ -6,5 +6,70 @@
     "website": "https://www.cordoba.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "cordoba-córdoba-analog",
+      "name": "Córdoba Analog Synthesizer",
+      "brand": "cordoba",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/cordoba-córdoba-analog.webp",
+        "thumbnail": "/static/assets/products/cordoba-córdoba-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/cordoba-córdoba-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "cordoba-córdoba-digital",
+      "name": "Córdoba Digital Synthesizer",
+      "brand": "cordoba",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/cordoba-córdoba-digital.webp",
+        "thumbnail": "/static/assets/products/cordoba-córdoba-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/cordoba-córdoba-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "cordoba-córdoba-stage",
+      "name": "Córdoba Stage Keyboard 88",
+      "brand": "cordoba",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/cordoba-córdoba-stage.webp",
+        "thumbnail": "/static/assets/products/cordoba-córdoba-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/cordoba-córdoba-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "cordoba-córdoba-portable",
+      "name": "Córdoba Portable Keyboard",
+      "brand": "cordoba",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/cordoba-córdoba-portable.webp",
+        "thumbnail": "/static/assets/products/cordoba-córdoba-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/cordoba-córdoba-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

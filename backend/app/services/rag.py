@@ -1,3 +1,4 @@
+import os
 import json
 import logging
 import redis
@@ -6,6 +7,11 @@ from typing import List, Dict, Any, Optional
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Feature flag
+RAG_ENABLED = os.getenv("RAG_ENABLED", "false").lower() in {"1", "true", "yes", "on"}
+RAG_MODEL_NAME = os.getenv("RAG_MODEL", "all-MiniLM-L6-v2")
+REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
 # Try to import heavy ML libraries
 try:
@@ -18,27 +24,46 @@ except ImportError:
     SentenceTransformer = None
     np = None
 
-# Initialize Redis
-try:
-    redis_client = redis.Redis(host='localhost', port=6379, db=0, decode_responses=False) # Vectors are bytes
-except Exception as e:
-    redis_client = None
+# Initialize Redis lazily based on feature flag
+redis_client = None
+if RAG_ENABLED:
+    try:
+        redis_client = redis.from_url(REDIS_URL, decode_responses=False)
+    except Exception as e:
+        logger.warning(f"⚠️  Redis not available for RAG: {e}")
+        redis_client = None
 
 class EphemeralRAG:
     def __init__(self):
         self.model = None
-        if ML_AVAILABLE:
-            try:
-                # Load a very small, fast model
-                self.model = SentenceTransformer('all-MiniLM-L6-v2')
-            except Exception as e:
-                logger.error(f"Failed to load generic model: {e}")
+        self.enabled = False
+
+        if not RAG_ENABLED:
+            logger.info("RAG disabled via RAG_ENABLED flag. Skipping model/redis init.")
+            return
+
+        if not ML_AVAILABLE:
+            logger.warning("RAG disabled: missing ML dependencies (sentence-transformers / numpy).")
+            return
+
+        if not redis_client:
+            logger.warning("RAG disabled: Redis unavailable. Check REDIS_URL or service status.")
+            return
+
+        try:
+            # Load a very small, fast model
+            self.model = SentenceTransformer(RAG_MODEL_NAME)
+            self.enabled = True
+            logger.info(f"RAG enabled with model '{RAG_MODEL_NAME}'.")
+        except Exception as e:
+            logger.error(f"Failed to load RAG model '{RAG_MODEL_NAME}': {e}")
+            self.model = None
 
     def index(self, session_id: str, content: str, chunk_size: int = 500) -> bool:
         """
         Chunks content, embeds it, and stores in Redis under session_id.
         """
-        if not self.model or not redis_client:
+        if not self.enabled or not self.model or not redis_client:
             return False
             
         # 1. Chunking (Simple sliding window or per sentence)
@@ -71,7 +96,7 @@ class EphemeralRAG:
         """
         Retrieves relevant chunks for the query.
         """
-        if not self.model or not redis_client:
+        if not self.enabled or not self.model or not redis_client:
             return "" # Fail gracefully
             
         key = f"sess:{session_id}:vectors"

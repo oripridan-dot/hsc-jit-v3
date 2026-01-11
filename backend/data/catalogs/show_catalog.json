@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "show-show-analog",
+      "name": "Show Analog Synthesizer",
+      "brand": "show",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/show-show-analog.webp",
+        "thumbnail": "/static/assets/products/show-show-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/show-show-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "show-show-digital",
+      "name": "Show Digital Synthesizer",
+      "brand": "show",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/show-show-digital.webp",
+        "thumbnail": "/static/assets/products/show-show-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/show-show-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "show-show-stage",
+      "name": "Show Stage Keyboard 88",
+      "brand": "show",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/show-show-stage.webp",
+        "thumbnail": "/static/assets/products/show-show-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/show-show-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "show-show-portable",
+      "name": "Show Portable Keyboard",
+      "brand": "show",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/show-show-portable.webp",
+        "thumbnail": "/static/assets/products/show-show-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/show-show-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

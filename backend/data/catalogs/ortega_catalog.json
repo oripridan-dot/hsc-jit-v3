@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "ortega-ortega-analog",
+      "name": "Ortega Analog Synthesizer",
+      "brand": "ortega",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ortega-ortega-analog.webp",
+        "thumbnail": "/static/assets/products/ortega-ortega-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ortega-ortega-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ortega-ortega-digital",
+      "name": "Ortega Digital Synthesizer",
+      "brand": "ortega",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ortega-ortega-digital.webp",
+        "thumbnail": "/static/assets/products/ortega-ortega-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ortega-ortega-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ortega-ortega-stage",
+      "name": "Ortega Stage Keyboard 88",
+      "brand": "ortega",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ortega-ortega-stage.webp",
+        "thumbnail": "/static/assets/products/ortega-ortega-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ortega-ortega-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ortega-ortega-portable",
+      "name": "Ortega Portable Keyboard",
+      "brand": "ortega",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ortega-ortega-portable.webp",
+        "thumbnail": "/static/assets/products/ortega-ortega-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ortega-ortega-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

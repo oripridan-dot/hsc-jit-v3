@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "montarbo-montarbo-analog",
+      "name": "Montarbo Analog Synthesizer",
+      "brand": "montarbo",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/montarbo-montarbo-analog.webp",
+        "thumbnail": "/static/assets/products/montarbo-montarbo-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/montarbo-montarbo-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "montarbo-montarbo-digital",
+      "name": "Montarbo Digital Synthesizer",
+      "brand": "montarbo",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/montarbo-montarbo-digital.webp",
+        "thumbnail": "/static/assets/products/montarbo-montarbo-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/montarbo-montarbo-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "montarbo-montarbo-stage",
+      "name": "Montarbo Stage Keyboard 88",
+      "brand": "montarbo",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/montarbo-montarbo-stage.webp",
+        "thumbnail": "/static/assets/products/montarbo-montarbo-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/montarbo-montarbo-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "montarbo-montarbo-portable",
+      "name": "Montarbo Portable Keyboard",
+      "brand": "montarbo",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/montarbo-montarbo-portable.webp",
+        "thumbnail": "/static/assets/products/montarbo-montarbo-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/montarbo-montarbo-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

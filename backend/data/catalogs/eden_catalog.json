@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "eden-eden-analog",
+      "name": "Eden Analog Synthesizer",
+      "brand": "eden",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eden-eden-analog.webp",
+        "thumbnail": "/static/assets/products/eden-eden-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eden-eden-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "eden-eden-digital",
+      "name": "Eden Digital Synthesizer",
+      "brand": "eden",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eden-eden-digital.webp",
+        "thumbnail": "/static/assets/products/eden-eden-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eden-eden-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "eden-eden-stage",
+      "name": "Eden Stage Keyboard 88",
+      "brand": "eden",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eden-eden-stage.webp",
+        "thumbnail": "/static/assets/products/eden-eden-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eden-eden-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "eden-eden-portable",
+      "name": "Eden Portable Keyboard",
+      "brand": "eden",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eden-eden-portable.webp",
+        "thumbnail": "/static/assets/products/eden-eden-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eden-eden-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

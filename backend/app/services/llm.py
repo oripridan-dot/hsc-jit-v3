@@ -8,20 +8,24 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 try:
-    import google.generativeai as genai
+    from google import genai
+    from google.genai import types as genai_types
     HAS_GEMINI = True
 except ImportError:
     HAS_GEMINI = False
+    genai = None
+    genai_types = None
 
 class GeminiService:
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY")
-        self.model = None
+        self.model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+        self.client = None
+
         if HAS_GEMINI and self.api_key:
-            genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel('gemini-2.0-flash')
+            self.client = genai.Client(api_key=self.api_key)
         elif not HAS_GEMINI:
-            logger.warning("google-generativeai package missing.")
+            logger.warning("google-genai package missing.")
         else:
             logger.warning("GEMINI_API_KEY not set.")
 
@@ -44,7 +48,7 @@ class GeminiService:
             return None
 
     async def stream_answer(self, context: str, query: str, image_data: Optional[str] = None) -> AsyncGenerator[str, None]:
-        if not self.model:
+        if not self.client:
             yield "Thinking... (AI disconnected: missing key or libs)"
             return
 
@@ -73,17 +77,30 @@ class GeminiService:
                 decoded = self._decode_image(image_data)
                 if not decoded:
                     yield "Image could not be processed. Proceeding with text-only answer."
-                    response = await self.model.generate_content_async(prompt, stream=True)
+                    response = self.client.models.generate_content_stream(
+                        model=self.model_name,
+                        contents=prompt,
+                    )
                 else:
                     image_bytes, mime_type = decoded
-                    parts = [prompt, {"mime_type": mime_type, "data": image_bytes}]
-                    response = await self.model.generate_content_async(parts, stream=True)
+                    parts = [
+                        genai_types.Part.from_text(prompt),
+                        genai_types.Part.from_bytes(image_bytes, mime_type),
+                    ]
+                    response = self.client.models.generate_content_stream(
+                        model=self.model_name,
+                        contents=parts,
+                    )
             else:
-                response = await self.model.generate_content_async(prompt, stream=True)
+                response = self.client.models.generate_content_stream(
+                    model=self.model_name,
+                    contents=prompt,
+                )
 
-            async for chunk in response:
-                if chunk.text:
-                    yield chunk.text
+            for chunk in response:
+                chunk_text = getattr(chunk, "text", None)
+                if chunk_text:
+                    yield chunk_text
         except Exception as e:
             logger.error(f"Gemini Error: {e}")
             yield f"Error generating answer: {e}"

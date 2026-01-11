@@ -6,5 +6,70 @@
     "website": "https://remo.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "remo-remo-analog",
+      "name": "Remo Analog Synthesizer",
+      "brand": "remo",
+      "category": "Synthesizer",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/remo-remo-analog.webp",
+        "thumbnail": "/static/assets/products/remo-remo-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/remo-remo-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "remo-remo-digital",
+      "name": "Remo Digital Synthesizer",
+      "brand": "remo",
+      "category": "Synthesizer",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/remo-remo-digital.webp",
+        "thumbnail": "/static/assets/products/remo-remo-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/remo-remo-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "remo-remo-stage",
+      "name": "Remo Stage Keyboard 88",
+      "brand": "remo",
+      "category": "Stage Keyboard",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/remo-remo-stage.webp",
+        "thumbnail": "/static/assets/products/remo-remo-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/remo-remo-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "remo-remo-portable",
+      "name": "Remo Portable Keyboard",
+      "brand": "remo",
+      "category": "Portable Keyboard",
+      "production_country": "USA 🇺🇸",
+      "images": {
+        "main": "/static/assets/products/remo-remo-portable.webp",
+        "thumbnail": "/static/assets/products/remo-remo-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/remo-remo-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,38 @@
     "website": "https://www.krkmusic.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "krk-krk-studio-monitor-5-studio",
+      "name": "KRK Studio Monitor 5\"",
+      "brand": "krk",
+      "category": "Studio Monitor",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/krk-krk-studio-monitor-5-studio.webp",
+        "thumbnail": "/static/assets/products/krk-krk-studio-monitor-5-studio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/krk-krk-studio-monitor-5-studio.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "krk-krk-studio-monitor-8-studio",
+      "name": "KRK Studio Monitor 8\"",
+      "brand": "krk",
+      "category": "Studio Monitor",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/krk-krk-studio-monitor-8-studio.webp",
+        "thumbnail": "/static/assets/products/krk-krk-studio-monitor-8-studio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/krk-krk-studio-monitor-8-studio.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

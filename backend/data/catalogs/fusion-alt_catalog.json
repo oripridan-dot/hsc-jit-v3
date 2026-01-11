@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "fusion-alt-fusion-alternate-analog-synthesizer-synthesizer",
+      "name": "Fusion (Alternate) Analog Synthesizer",
+      "brand": "fusion-alt",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-alt-fusion-alternate-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/fusion-alt-fusion-alternate-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-alt-fusion-alternate-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "fusion-alt-fusion-alternate-digital-synthesizer-synthesizer",
+      "name": "Fusion (Alternate) Digital Synthesizer",
+      "brand": "fusion-alt",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-alt-fusion-alternate-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/fusion-alt-fusion-alternate-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-alt-fusion-alternate-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "fusion-alt-fusion-alternate-stage-keyboard-88-stage",
+      "name": "Fusion (Alternate) Stage Keyboard 88",
+      "brand": "fusion-alt",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-alt-fusion-alternate-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/fusion-alt-fusion-alternate-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-alt-fusion-alternate-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "fusion-alt-fusion-alternate-portable-keyboard-portable",
+      "name": "Fusion (Alternate) Portable Keyboard",
+      "brand": "fusion-alt",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/fusion-alt-fusion-alternate-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/fusion-alt-fusion-alternate-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/fusion-alt-fusion-alternate-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

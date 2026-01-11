@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "eaw-eaw-analog",
+      "name": "EAW Analog Synthesizer",
+      "brand": "eaw",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eaw-eaw-analog.webp",
+        "thumbnail": "/static/assets/products/eaw-eaw-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eaw-eaw-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "eaw-eaw-digital",
+      "name": "EAW Digital Synthesizer",
+      "brand": "eaw",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eaw-eaw-digital.webp",
+        "thumbnail": "/static/assets/products/eaw-eaw-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eaw-eaw-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "eaw-eaw-stage",
+      "name": "EAW Stage Keyboard 88",
+      "brand": "eaw",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eaw-eaw-stage.webp",
+        "thumbnail": "/static/assets/products/eaw-eaw-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eaw-eaw-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "eaw-eaw-portable",
+      "name": "EAW Portable Keyboard",
+      "brand": "eaw",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/eaw-eaw-portable.webp",
+        "thumbnail": "/static/assets/products/eaw-eaw-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/eaw-eaw-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

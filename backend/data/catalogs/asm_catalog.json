@@ -6,5 +6,70 @@
     "website": "https://www.asm.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "asm-asm-analog",
+      "name": "ASM Analog Synthesizer",
+      "brand": "asm",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/asm-asm-analog.webp",
+        "thumbnail": "/static/assets/products/asm-asm-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/asm-asm-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "asm-asm-digital",
+      "name": "ASM Digital Synthesizer",
+      "brand": "asm",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/asm-asm-digital.webp",
+        "thumbnail": "/static/assets/products/asm-asm-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/asm-asm-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "asm-asm-stage",
+      "name": "ASM Stage Keyboard 88",
+      "brand": "asm",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/asm-asm-stage.webp",
+        "thumbnail": "/static/assets/products/asm-asm-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/asm-asm-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "asm-asm-portable",
+      "name": "ASM Portable Keyboard",
+      "brand": "asm",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/asm-asm-portable.webp",
+        "thumbnail": "/static/assets/products/asm-asm-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/asm-asm-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

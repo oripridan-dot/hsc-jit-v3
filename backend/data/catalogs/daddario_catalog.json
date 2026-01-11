@@ -6,5 +6,70 @@
     "website": "https://www.daddario.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "daddario-daddario-analog",
+      "name": "D'Addario Analog Synthesizer",
+      "brand": "daddario",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/daddario-daddario-analog.webp",
+        "thumbnail": "/static/assets/products/daddario-daddario-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/daddario-daddario-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "daddario-daddario-digital",
+      "name": "D'Addario Digital Synthesizer",
+      "brand": "daddario",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/daddario-daddario-digital.webp",
+        "thumbnail": "/static/assets/products/daddario-daddario-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/daddario-daddario-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "daddario-daddario-stage",
+      "name": "D'Addario Stage Keyboard 88",
+      "brand": "daddario",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/daddario-daddario-stage.webp",
+        "thumbnail": "/static/assets/products/daddario-daddario-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/daddario-daddario-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "daddario-daddario-portable",
+      "name": "D'Addario Portable Keyboard",
+      "brand": "daddario",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/daddario-daddario-portable.webp",
+        "thumbnail": "/static/assets/products/daddario-daddario-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/daddario-daddario-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,38 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "solar-guitars-solar-guitars-electric-guitar-electric",
+      "name": "Solar Guitars Electric Guitar",
+      "brand": "solar-guitars",
+      "category": "Electric Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/solar-guitars-solar-guitars-electric-guitar-electric.webp",
+        "thumbnail": "/static/assets/products/solar-guitars-solar-guitars-electric-guitar-electric.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/solar-guitars-solar-guitars-electric-guitar-electric.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "solar-guitars-solar-guitars-acoustic-guitar-acoustic",
+      "name": "Solar Guitars Acoustic Guitar",
+      "brand": "solar-guitars",
+      "category": "Acoustic Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/solar-guitars-solar-guitars-acoustic-guitar-acoustic.webp",
+        "thumbnail": "/static/assets/products/solar-guitars-solar-guitars-acoustic-guitar-acoustic.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/solar-guitars-solar-guitars-acoustic-guitar-acoustic.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

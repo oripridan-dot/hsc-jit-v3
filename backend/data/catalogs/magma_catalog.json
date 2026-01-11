@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "magma-magma-analog",
+      "name": "Magma Analog Synthesizer",
+      "brand": "magma",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/magma-magma-analog.webp",
+        "thumbnail": "/static/assets/products/magma-magma-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/magma-magma-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "magma-magma-digital",
+      "name": "Magma Digital Synthesizer",
+      "brand": "magma",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/magma-magma-digital.webp",
+        "thumbnail": "/static/assets/products/magma-magma-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/magma-magma-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "magma-magma-stage",
+      "name": "Magma Stage Keyboard 88",
+      "brand": "magma",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/magma-magma-stage.webp",
+        "thumbnail": "/static/assets/products/magma-magma-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/magma-magma-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "magma-magma-portable",
+      "name": "Magma Portable Keyboard",
+      "brand": "magma",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/magma-magma-portable.webp",
+        "thumbnail": "/static/assets/products/magma-magma-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/magma-magma-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "bespeco-bespeco-analog",
+      "name": "Bespeco Analog Synthesizer",
+      "brand": "bespeco",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bespeco-bespeco-analog.webp",
+        "thumbnail": "/static/assets/products/bespeco-bespeco-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bespeco-bespeco-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "bespeco-bespeco-digital",
+      "name": "Bespeco Digital Synthesizer",
+      "brand": "bespeco",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bespeco-bespeco-digital.webp",
+        "thumbnail": "/static/assets/products/bespeco-bespeco-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bespeco-bespeco-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "bespeco-bespeco-stage",
+      "name": "Bespeco Stage Keyboard 88",
+      "brand": "bespeco",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bespeco-bespeco-stage.webp",
+        "thumbnail": "/static/assets/products/bespeco-bespeco-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bespeco-bespeco-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "bespeco-bespeco-portable",
+      "name": "Bespeco Portable Keyboard",
+      "brand": "bespeco",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/bespeco-bespeco-portable.webp",
+        "thumbnail": "/static/assets/products/bespeco-bespeco-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/bespeco-bespeco-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "https://www.steinberg.net",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "steinberg-steinberg-analog",
+      "name": "Steinberg Analog Synthesizer",
+      "brand": "steinberg",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/steinberg-steinberg-analog.webp",
+        "thumbnail": "/static/assets/products/steinberg-steinberg-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/steinberg-steinberg-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "steinberg-steinberg-digital",
+      "name": "Steinberg Digital Synthesizer",
+      "brand": "steinberg",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/steinberg-steinberg-digital.webp",
+        "thumbnail": "/static/assets/products/steinberg-steinberg-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/steinberg-steinberg-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "steinberg-steinberg-stage",
+      "name": "Steinberg Stage Keyboard 88",
+      "brand": "steinberg",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/steinberg-steinberg-stage.webp",
+        "thumbnail": "/static/assets/products/steinberg-steinberg-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/steinberg-steinberg-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "steinberg-steinberg-portable",
+      "name": "Steinberg Portable Keyboard",
+      "brand": "steinberg",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/steinberg-steinberg-portable.webp",
+        "thumbnail": "/static/assets/products/steinberg-steinberg-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/steinberg-steinberg-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

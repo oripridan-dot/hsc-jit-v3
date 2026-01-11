@@ -6,5 +6,70 @@
     "website": "https://www.allen-heath.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "allen-and-heath-allen-heath-analog-synthesizer-synthesizer",
+      "name": "Allen & Heath Analog Synthesizer",
+      "brand": "allen-and-heath",
+      "category": "Synthesizer",
+      "production_country": "UK 🇬🇧",
+      "images": {
+        "main": "/static/assets/products/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "allen-and-heath-allen-heath-digital-synthesizer-synthesizer",
+      "name": "Allen & Heath Digital Synthesizer",
+      "brand": "allen-and-heath",
+      "category": "Synthesizer",
+      "production_country": "UK 🇬🇧",
+      "images": {
+        "main": "/static/assets/products/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "allen-and-heath-allen-heath-stage-keyboard-88-stage",
+      "name": "Allen & Heath Stage Keyboard 88",
+      "brand": "allen-and-heath",
+      "category": "Stage Keyboard",
+      "production_country": "UK 🇬🇧",
+      "images": {
+        "main": "/static/assets/products/allen-and-heath-allen-heath-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/allen-and-heath-allen-heath-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "allen-and-heath-allen-heath-portable-keyboard-portable",
+      "name": "Allen & Heath Portable Keyboard",
+      "brand": "allen-and-heath",
+      "category": "Portable Keyboard",
+      "production_country": "UK 🇬🇧",
+      "images": {
+        "main": "/static/assets/products/allen-and-heath-allen-heath-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/allen-and-heath-allen-heath-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "headrush-headrush-analog",
+      "name": "HeadRush Analog Synthesizer",
+      "brand": "headrush",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headrush-headrush-analog.webp",
+        "thumbnail": "/static/assets/products/headrush-headrush-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headrush-headrush-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "headrush-headrush-digital",
+      "name": "HeadRush Digital Synthesizer",
+      "brand": "headrush",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headrush-headrush-digital.webp",
+        "thumbnail": "/static/assets/products/headrush-headrush-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headrush-headrush-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "headrush-headrush-stage",
+      "name": "HeadRush Stage Keyboard 88",
+      "brand": "headrush",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headrush-headrush-stage.webp",
+        "thumbnail": "/static/assets/products/headrush-headrush-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headrush-headrush-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "headrush-headrush-portable",
+      "name": "HeadRush Portable Keyboard",
+      "brand": "headrush",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headrush-headrush-portable.webp",
+        "thumbnail": "/static/assets/products/headrush-headrush-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headrush-headrush-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

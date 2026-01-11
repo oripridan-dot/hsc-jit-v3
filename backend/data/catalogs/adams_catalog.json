@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "adams-adams-analog",
+      "name": "Adams Analog Synthesizer",
+      "brand": "adams",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/adams-adams-analog.webp",
+        "thumbnail": "/static/assets/products/adams-adams-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/adams-adams-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "adams-adams-digital",
+      "name": "Adams Digital Synthesizer",
+      "brand": "adams",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/adams-adams-digital.webp",
+        "thumbnail": "/static/assets/products/adams-adams-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/adams-adams-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "adams-adams-stage",
+      "name": "Adams Stage Keyboard 88",
+      "brand": "adams",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/adams-adams-stage.webp",
+        "thumbnail": "/static/assets/products/adams-adams-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/adams-adams-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "adams-adams-portable",
+      "name": "Adams Portable Keyboard",
+      "brand": "adams",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/adams-adams-portable.webp",
+        "thumbnail": "/static/assets/products/adams-adams-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/adams-adams-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

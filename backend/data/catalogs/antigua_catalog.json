@@ -6,5 +6,70 @@
     "website": "https://www.antigua.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "antigua-antigua-analog",
+      "name": "Antigua Analog Synthesizer",
+      "brand": "antigua",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/antigua-antigua-analog.webp",
+        "thumbnail": "/static/assets/products/antigua-antigua-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/antigua-antigua-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "antigua-antigua-digital",
+      "name": "Antigua Digital Synthesizer",
+      "brand": "antigua",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/antigua-antigua-digital.webp",
+        "thumbnail": "/static/assets/products/antigua-antigua-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/antigua-antigua-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "antigua-antigua-stage",
+      "name": "Antigua Stage Keyboard 88",
+      "brand": "antigua",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/antigua-antigua-stage.webp",
+        "thumbnail": "/static/assets/products/antigua-antigua-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/antigua-antigua-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "antigua-antigua-portable",
+      "name": "Antigua Portable Keyboard",
+      "brand": "antigua",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/antigua-antigua-portable.webp",
+        "thumbnail": "/static/assets/products/antigua-antigua-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/antigua-antigua-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

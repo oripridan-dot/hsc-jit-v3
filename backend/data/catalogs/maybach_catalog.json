@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "maybach-maybach-analog",
+      "name": "Maybach Analog Synthesizer",
+      "brand": "maybach",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maybach-maybach-analog.webp",
+        "thumbnail": "/static/assets/products/maybach-maybach-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maybach-maybach-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maybach-maybach-digital",
+      "name": "Maybach Digital Synthesizer",
+      "brand": "maybach",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maybach-maybach-digital.webp",
+        "thumbnail": "/static/assets/products/maybach-maybach-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maybach-maybach-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maybach-maybach-stage",
+      "name": "Maybach Stage Keyboard 88",
+      "brand": "maybach",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maybach-maybach-stage.webp",
+        "thumbnail": "/static/assets/products/maybach-maybach-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maybach-maybach-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "maybach-maybach-portable",
+      "name": "Maybach Portable Keyboard",
+      "brand": "maybach",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/maybach-maybach-portable.webp",
+        "thumbnail": "/static/assets/products/maybach-maybach-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/maybach-maybach-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

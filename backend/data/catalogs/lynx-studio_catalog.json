@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "lynx-studio-lynx-studio-technology-analog-synthesizer-synthesizer",
+      "name": "Lynx Studio Technology Analog Synthesizer",
+      "brand": "lynx-studio",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/lynx-studio-lynx-studio-technology-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/lynx-studio-lynx-studio-technology-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/lynx-studio-lynx-studio-technology-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "lynx-studio-lynx-studio-technology-digital-synthesizer-synthesizer",
+      "name": "Lynx Studio Technology Digital Synthesizer",
+      "brand": "lynx-studio",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/lynx-studio-lynx-studio-technology-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/lynx-studio-lynx-studio-technology-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/lynx-studio-lynx-studio-technology-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "lynx-studio-lynx-studio-technology-stage-keyboard-88-stage",
+      "name": "Lynx Studio Technology Stage Keyboard 88",
+      "brand": "lynx-studio",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/lynx-studio-lynx-studio-technology-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/lynx-studio-lynx-studio-technology-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/lynx-studio-lynx-studio-technology-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "lynx-studio-lynx-studio-technology-portable-keyboard-portable",
+      "name": "Lynx Studio Technology Portable Keyboard",
+      "brand": "lynx-studio",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/lynx-studio-lynx-studio-technology-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/lynx-studio-lynx-studio-technology-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/lynx-studio-lynx-studio-technology-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

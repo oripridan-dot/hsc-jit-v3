@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "headliner-headliner-analog",
+      "name": "Headliner Analog Synthesizer",
+      "brand": "headliner",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headliner-headliner-analog.webp",
+        "thumbnail": "/static/assets/products/headliner-headliner-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headliner-headliner-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "headliner-headliner-digital",
+      "name": "Headliner Digital Synthesizer",
+      "brand": "headliner",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headliner-headliner-digital.webp",
+        "thumbnail": "/static/assets/products/headliner-headliner-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headliner-headliner-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "headliner-headliner-stage",
+      "name": "Headliner Stage Keyboard 88",
+      "brand": "headliner",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headliner-headliner-stage.webp",
+        "thumbnail": "/static/assets/products/headliner-headliner-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headliner-headliner-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "headliner-headliner-portable",
+      "name": "Headliner Portable Keyboard",
+      "brand": "headliner",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/headliner-headliner-portable.webp",
+        "thumbnail": "/static/assets/products/headliner-headliner-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/headliner-headliner-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "vintage-vintage-analog",
+      "name": "Vintage Analog Synthesizer",
+      "brand": "vintage",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/vintage-vintage-analog.webp",
+        "thumbnail": "/static/assets/products/vintage-vintage-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/vintage-vintage-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "vintage-vintage-digital",
+      "name": "Vintage Digital Synthesizer",
+      "brand": "vintage",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/vintage-vintage-digital.webp",
+        "thumbnail": "/static/assets/products/vintage-vintage-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/vintage-vintage-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "vintage-vintage-stage",
+      "name": "Vintage Stage Keyboard 88",
+      "brand": "vintage",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/vintage-vintage-stage.webp",
+        "thumbnail": "/static/assets/products/vintage-vintage-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/vintage-vintage-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "vintage-vintage-portable",
+      "name": "Vintage Portable Keyboard",
+      "brand": "vintage",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/vintage-vintage-portable.webp",
+        "thumbnail": "/static/assets/products/vintage-vintage-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/vintage-vintage-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "esp-esp-analog",
+      "name": "ESP Analog Synthesizer",
+      "brand": "esp",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/esp-esp-analog.webp",
+        "thumbnail": "/static/assets/products/esp-esp-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/esp-esp-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "esp-esp-digital",
+      "name": "ESP Digital Synthesizer",
+      "brand": "esp",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/esp-esp-digital.webp",
+        "thumbnail": "/static/assets/products/esp-esp-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/esp-esp-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "esp-esp-stage",
+      "name": "ESP Stage Keyboard 88",
+      "brand": "esp",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/esp-esp-stage.webp",
+        "thumbnail": "/static/assets/products/esp-esp-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/esp-esp-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "esp-esp-portable",
+      "name": "ESP Portable Keyboard",
+      "brand": "esp",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/esp-esp-portable.webp",
+        "thumbnail": "/static/assets/products/esp-esp-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/esp-esp-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

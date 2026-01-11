@@ -6,5 +6,38 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "lsg-guitars-lsg-guitars-electric-guitar-electric",
+      "name": "LSG Guitars Electric Guitar",
+      "brand": "lsg-guitars",
+      "category": "Electric Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/lsg-guitars-lsg-guitars-electric-guitar-electric.webp",
+        "thumbnail": "/static/assets/products/lsg-guitars-lsg-guitars-electric-guitar-electric.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/lsg-guitars-lsg-guitars-electric-guitar-electric.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "lsg-guitars-lsg-guitars-acoustic-guitar-acoustic",
+      "name": "LSG Guitars Acoustic Guitar",
+      "brand": "lsg-guitars",
+      "category": "Acoustic Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/lsg-guitars-lsg-guitars-acoustic-guitar-acoustic.webp",
+        "thumbnail": "/static/assets/products/lsg-guitars-lsg-guitars-acoustic-guitar-acoustic.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/lsg-guitars-lsg-guitars-acoustic-guitar-acoustic.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

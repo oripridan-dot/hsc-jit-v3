@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "halilit-akd1-halilit-akd-1-analog-synthesizer-synthesizer",
+      "name": "Halilit AKD-1 Analog Synthesizer",
+      "brand": "halilit-akd1",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-akd1-halilit-akd-1-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/halilit-akd1-halilit-akd-1-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-akd1-halilit-akd-1-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "halilit-akd1-halilit-akd-1-digital-synthesizer-synthesizer",
+      "name": "Halilit AKD-1 Digital Synthesizer",
+      "brand": "halilit-akd1",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-akd1-halilit-akd-1-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/halilit-akd1-halilit-akd-1-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-akd1-halilit-akd-1-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "halilit-akd1-halilit-akd-1-stage-keyboard-88-stage",
+      "name": "Halilit AKD-1 Stage Keyboard 88",
+      "brand": "halilit-akd1",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-akd1-halilit-akd-1-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/halilit-akd1-halilit-akd-1-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-akd1-halilit-akd-1-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "halilit-akd1-halilit-akd-1-portable-keyboard-portable",
+      "name": "Halilit AKD-1 Portable Keyboard",
+      "brand": "halilit-akd1",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-akd1-halilit-akd-1-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/halilit-akd1-halilit-akd-1-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-akd1-halilit-akd-1-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

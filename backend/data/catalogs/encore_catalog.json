@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "encore-encore-analog",
+      "name": "Encore Analog Synthesizer",
+      "brand": "encore",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/encore-encore-analog.webp",
+        "thumbnail": "/static/assets/products/encore-encore-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/encore-encore-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "encore-encore-digital",
+      "name": "Encore Digital Synthesizer",
+      "brand": "encore",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/encore-encore-digital.webp",
+        "thumbnail": "/static/assets/products/encore-encore-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/encore-encore-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "encore-encore-stage",
+      "name": "Encore Stage Keyboard 88",
+      "brand": "encore",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/encore-encore-stage.webp",
+        "thumbnail": "/static/assets/products/encore-encore-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/encore-encore-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "encore-encore-portable",
+      "name": "Encore Portable Keyboard",
+      "brand": "encore",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/encore-encore-portable.webp",
+        "thumbnail": "/static/assets/products/encore-encore-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/encore-encore-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

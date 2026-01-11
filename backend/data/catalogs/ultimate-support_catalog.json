@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "ultimate-support-ultimate-support-analog-synthesizer-synthesizer",
+      "name": "Ultimate Support Analog Synthesizer",
+      "brand": "ultimate-support",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ultimate-support-ultimate-support-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/ultimate-support-ultimate-support-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ultimate-support-ultimate-support-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ultimate-support-ultimate-support-digital-synthesizer-synthesizer",
+      "name": "Ultimate Support Digital Synthesizer",
+      "brand": "ultimate-support",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ultimate-support-ultimate-support-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/ultimate-support-ultimate-support-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ultimate-support-ultimate-support-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ultimate-support-ultimate-support-stage-keyboard-88-stage",
+      "name": "Ultimate Support Stage Keyboard 88",
+      "brand": "ultimate-support",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ultimate-support-ultimate-support-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/ultimate-support-ultimate-support-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ultimate-support-ultimate-support-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "ultimate-support-ultimate-support-portable-keyboard-portable",
+      "name": "Ultimate Support Portable Keyboard",
+      "brand": "ultimate-support",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/ultimate-support-ultimate-support-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/ultimate-support-ultimate-support-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/ultimate-support-ultimate-support-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

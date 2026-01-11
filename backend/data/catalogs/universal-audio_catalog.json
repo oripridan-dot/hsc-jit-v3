@@ -6,5 +6,38 @@
     "website": "https://www.uaudio.com",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "universal-audio-universal-audio-audio-interface-2x2-audio",
+      "name": "Universal Audio Audio Interface 2x2",
+      "brand": "universal-audio",
+      "category": "Audio Interface",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/universal-audio-universal-audio-audio-interface-2x2-audio.webp",
+        "thumbnail": "/static/assets/products/universal-audio-universal-audio-audio-interface-2x2-audio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/universal-audio-universal-audio-audio-interface-2x2-audio.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "universal-audio-universal-audio-audio-interface-4x4-audio",
+      "name": "Universal Audio Audio Interface 4x4",
+      "brand": "universal-audio",
+      "category": "Audio Interface",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/universal-audio-universal-audio-audio-interface-4x4-audio.webp",
+        "thumbnail": "/static/assets/products/universal-audio-universal-audio-audio-interface-4x4-audio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/universal-audio-universal-audio-audio-interface-4x4-audio.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

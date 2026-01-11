@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "dangelico-dangelico-analog",
+      "name": "D'Angelico Analog Synthesizer",
+      "brand": "dangelico",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dangelico-dangelico-analog.webp",
+        "thumbnail": "/static/assets/products/dangelico-dangelico-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dangelico-dangelico-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "dangelico-dangelico-digital",
+      "name": "D'Angelico Digital Synthesizer",
+      "brand": "dangelico",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dangelico-dangelico-digital.webp",
+        "thumbnail": "/static/assets/products/dangelico-dangelico-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dangelico-dangelico-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "dangelico-dangelico-stage",
+      "name": "D'Angelico Stage Keyboard 88",
+      "brand": "dangelico",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dangelico-dangelico-stage.webp",
+        "thumbnail": "/static/assets/products/dangelico-dangelico-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dangelico-dangelico-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "dangelico-dangelico-portable",
+      "name": "D'Angelico Portable Keyboard",
+      "brand": "dangelico",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dangelico-dangelico-portable.webp",
+        "thumbnail": "/static/assets/products/dangelico-dangelico-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dangelico-dangelico-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

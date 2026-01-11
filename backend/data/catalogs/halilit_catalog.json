@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "halilit-halilit-analog",
+      "name": "Halilit Analog Synthesizer",
+      "brand": "halilit",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-halilit-analog.webp",
+        "thumbnail": "/static/assets/products/halilit-halilit-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-halilit-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "halilit-halilit-digital",
+      "name": "Halilit Digital Synthesizer",
+      "brand": "halilit",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-halilit-digital.webp",
+        "thumbnail": "/static/assets/products/halilit-halilit-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-halilit-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "halilit-halilit-stage",
+      "name": "Halilit Stage Keyboard 88",
+      "brand": "halilit",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-halilit-stage.webp",
+        "thumbnail": "/static/assets/products/halilit-halilit-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-halilit-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "halilit-halilit-portable",
+      "name": "Halilit Portable Keyboard",
+      "brand": "halilit",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/halilit-halilit-portable.webp",
+        "thumbnail": "/static/assets/products/halilit-halilit-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/halilit-halilit-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

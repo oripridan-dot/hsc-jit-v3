@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "sound-reference-ue-sound-reference-ultimate-ears-analog-synthesizer-synthesizer",
+      "name": "Sound Reference (Ultimate Ears) Analog Synthesizer",
+      "brand": "sound-reference-ue",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-ue-sound-reference-ultimate-ears-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "sound-reference-ue-sound-reference-ultimate-ears-digital-synthesizer-synthesizer",
+      "name": "Sound Reference (Ultimate Ears) Digital Synthesizer",
+      "brand": "sound-reference-ue",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-ue-sound-reference-ultimate-ears-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "sound-reference-ue-sound-reference-ultimate-ears-stage-keyboard-88-stage",
+      "name": "Sound Reference (Ultimate Ears) Stage Keyboard 88",
+      "brand": "sound-reference-ue",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-ue-sound-reference-ultimate-ears-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "sound-reference-ue-sound-reference-ultimate-ears-portable-keyboard-portable",
+      "name": "Sound Reference (Ultimate Ears) Portable Keyboard",
+      "brand": "sound-reference-ue",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/sound-reference-ue-sound-reference-ultimate-ears-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-ue-sound-reference-ultimate-ears-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

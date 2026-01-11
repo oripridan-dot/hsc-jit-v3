@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "gon-bops-gon-bops-analog-synthesizer-synthesizer",
+      "name": "Gon Bops Analog Synthesizer",
+      "brand": "gon-bops",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/gon-bops-gon-bops-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/gon-bops-gon-bops-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/gon-bops-gon-bops-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "gon-bops-gon-bops-digital-synthesizer-synthesizer",
+      "name": "Gon Bops Digital Synthesizer",
+      "brand": "gon-bops",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/gon-bops-gon-bops-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/gon-bops-gon-bops-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/gon-bops-gon-bops-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "gon-bops-gon-bops-stage-keyboard-88-stage",
+      "name": "Gon Bops Stage Keyboard 88",
+      "brand": "gon-bops",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/gon-bops-gon-bops-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/gon-bops-gon-bops-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/gon-bops-gon-bops-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "gon-bops-gon-bops-portable-keyboard-portable",
+      "name": "Gon Bops Portable Keyboard",
+      "brand": "gon-bops",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/gon-bops-gon-bops-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/gon-bops-gon-bops-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/gon-bops-gon-bops-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

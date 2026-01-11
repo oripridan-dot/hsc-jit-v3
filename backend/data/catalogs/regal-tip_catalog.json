@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "regal-tip-regal-tip-analog-synthesizer-synthesizer",
+      "name": "Regal Tip Analog Synthesizer",
+      "brand": "regal-tip",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/regal-tip-regal-tip-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/regal-tip-regal-tip-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/regal-tip-regal-tip-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "regal-tip-regal-tip-digital-synthesizer-synthesizer",
+      "name": "Regal Tip Digital Synthesizer",
+      "brand": "regal-tip",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/regal-tip-regal-tip-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/regal-tip-regal-tip-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/regal-tip-regal-tip-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "regal-tip-regal-tip-stage-keyboard-88-stage",
+      "name": "Regal Tip Stage Keyboard 88",
+      "brand": "regal-tip",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/regal-tip-regal-tip-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/regal-tip-regal-tip-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/regal-tip-regal-tip-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "regal-tip-regal-tip-portable-keyboard-portable",
+      "name": "Regal Tip Portable Keyboard",
+      "brand": "regal-tip",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/regal-tip-regal-tip-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/regal-tip-regal-tip-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/regal-tip-regal-tip-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "sound-reference-sound-reference-analog-synthesizer-synthesizer",
+      "name": "Sound Reference Analog Synthesizer",
+      "brand": "sound-reference",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-sound-reference-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/sound-reference-sound-reference-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-sound-reference-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "sound-reference-sound-reference-digital-synthesizer-synthesizer",
+      "name": "Sound Reference Digital Synthesizer",
+      "brand": "sound-reference",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-sound-reference-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/sound-reference-sound-reference-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-sound-reference-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "sound-reference-sound-reference-stage-keyboard-88-stage",
+      "name": "Sound Reference Stage Keyboard 88",
+      "brand": "sound-reference",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-sound-reference-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/sound-reference-sound-reference-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-sound-reference-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "sound-reference-sound-reference-portable-keyboard-portable",
+      "name": "Sound Reference Portable Keyboard",
+      "brand": "sound-reference",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/sound-reference-sound-reference-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/sound-reference-sound-reference-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/sound-reference-sound-reference-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

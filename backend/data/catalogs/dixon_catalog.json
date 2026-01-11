@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "dixon-dixon-analog",
+      "name": "Dixon Analog Synthesizer",
+      "brand": "dixon",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dixon-dixon-analog.webp",
+        "thumbnail": "/static/assets/products/dixon-dixon-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dixon-dixon-analog.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "dixon-dixon-digital",
+      "name": "Dixon Digital Synthesizer",
+      "brand": "dixon",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dixon-dixon-digital.webp",
+        "thumbnail": "/static/assets/products/dixon-dixon-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dixon-dixon-digital.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "dixon-dixon-stage",
+      "name": "Dixon Stage Keyboard 88",
+      "brand": "dixon",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dixon-dixon-stage.webp",
+        "thumbnail": "/static/assets/products/dixon-dixon-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dixon-dixon-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "dixon-dixon-portable",
+      "name": "Dixon Portable Keyboard",
+      "brand": "dixon",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/dixon-dixon-portable.webp",
+        "thumbnail": "/static/assets/products/dixon-dixon-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/dixon-dixon-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

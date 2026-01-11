@@ -6,5 +6,38 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "guitar-pro-guitar-pro-electric-guitar-electric",
+      "name": "Guitar Pro Electric Guitar",
+      "brand": "guitar-pro",
+      "category": "Electric Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/guitar-pro-guitar-pro-electric-guitar-electric.webp",
+        "thumbnail": "/static/assets/products/guitar-pro-guitar-pro-electric-guitar-electric.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/guitar-pro-guitar-pro-electric-guitar-electric.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "guitar-pro-guitar-pro-acoustic-guitar-acoustic",
+      "name": "Guitar Pro Acoustic Guitar",
+      "brand": "guitar-pro",
+      "category": "Acoustic Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/guitar-pro-guitar-pro-acoustic-guitar-acoustic.webp",
+        "thumbnail": "/static/assets/products/guitar-pro-guitar-pro-acoustic-guitar-acoustic.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/guitar-pro-guitar-pro-acoustic-guitar-acoustic.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }

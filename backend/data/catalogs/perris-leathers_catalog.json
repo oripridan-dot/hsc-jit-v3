@@ -6,5 +6,70 @@
     "website": "",
     "logo_url": ""
   },
-  "products": []
+  "products": [
+    {
+      "id": "perris-leathers-perri-s-leathers-analog-synthesizer-synthesizer",
+      "name": "Perri's Leathers Analog Synthesizer",
+      "brand": "perris-leathers",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/perris-leathers-perri-s-leathers-analog-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/perris-leathers-perri-s-leathers-analog-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/perris-leathers-perri-s-leathers-analog-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "perris-leathers-perri-s-leathers-digital-synthesizer-synthesizer",
+      "name": "Perri's Leathers Digital Synthesizer",
+      "brand": "perris-leathers",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/perris-leathers-perri-s-leathers-digital-synthesizer-synthesizer.webp",
+        "thumbnail": "/static/assets/products/perris-leathers-perri-s-leathers-digital-synthesizer-synthesizer.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/perris-leathers-perri-s-leathers-digital-synthesizer-synthesizer.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "perris-leathers-perri-s-leathers-stage-keyboard-88-stage",
+      "name": "Perri's Leathers Stage Keyboard 88",
+      "brand": "perris-leathers",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/perris-leathers-perri-s-leathers-stage-keyboard-88-stage.webp",
+        "thumbnail": "/static/assets/products/perris-leathers-perri-s-leathers-stage-keyboard-88-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/perris-leathers-perri-s-leathers-stage-keyboard-88-stage.pdf"
+      },
+      "relationships": []
+    },
+    {
+      "id": "perris-leathers-perri-s-leathers-portable-keyboard-portable",
+      "name": "Perri's Leathers Portable Keyboard",
+      "brand": "perris-leathers",
+      "category": "Portable Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/perris-leathers-perri-s-leathers-portable-keyboard-portable.webp",
+        "thumbnail": "/static/assets/products/perris-leathers-perri-s-leathers-portable-keyboard-portable.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/perris-leathers-perri-s-leathers-portable-keyboard-portable.pdf"
+      },
+      "relationships": []
+    }
+  ]
 }
