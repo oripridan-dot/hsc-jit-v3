@@ -16,6 +16,7 @@ export interface RelatedItem {
   id: string;
   name: string;
   category?: string;
+  production_country?: string;
   type: string;
   image?: string;
 }
@@ -38,11 +39,12 @@ interface WebSocketStore {
   messages: string[]; // For chat history / answers
   relatedItems: RelatedItem[]; // Hydrated related items from context
   selectedBrand: BrandIdentity | null;
+  attachedImage: string | null;
 
   actions: {
     connect: (url: string) => void;
     sendTyping: (text: string) => void;
-    lockAndQuery: (product: Prediction, query: string) => void;
+    lockAndQuery: (product: Prediction, query: string, imageData?: string | null) => void;
     navigateToProduct: (productId: string, query: string) => void;
     openBrandModal: (brand: BrandIdentity) => void;
     closeBrandModal: () => void;
@@ -56,6 +58,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   messages: [],
   relatedItems: [],
   selectedBrand: null,
+  attachedImage: null,
 
   actions: {
     connect: (url: string) => {
@@ -130,22 +133,24 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
       }
     },
 
-    lockAndQuery: (product: Prediction, query: string) => {
+    lockAndQuery: (product: Prediction, query: string, imageData?: string | null) => {
       const { socket } = get();
-      set({ status: 'LOCKED', lastPrediction: product, messages: [], relatedItems: [] });
+      set({ status: 'LOCKED', lastPrediction: product, messages: [], relatedItems: [], attachedImage: imageData || null });
       
       if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({ 
-            type: 'lock_and_query', 
+            type: 'query', 
             product_id: product.id, 
-            query 
+            query,
+            content: query,
+            image: imageData || undefined
         }));
       }
     },
 
     navigateToProduct: (productId: string, query: string) => {
       const { socket } = get();
-      set({ status: 'LOCKED', messages: [], relatedItems: [] });
+      set({ status: 'LOCKED', messages: [], relatedItems: [], attachedImage: null });
       
       if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({ 

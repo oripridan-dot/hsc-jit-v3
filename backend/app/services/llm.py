@@ -1,6 +1,8 @@
 import os
+import re
+import base64
 import logging
-from typing import AsyncGenerator
+from typing import AsyncGenerator, Optional, Tuple
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -23,7 +25,25 @@ class GeminiService:
         else:
             logger.warning("GEMINI_API_KEY not set.")
 
-    async def stream_answer(self, context: str, query: str) -> AsyncGenerator[str, None]:
+    def _decode_image(self, image_data: str) -> Optional[Tuple[bytes, str]]:
+        """Decode a base64 string (data URL or raw) into bytes and mime type."""
+        try:
+            mime_type = "image/png"
+            # data URL handling
+            data_url_match = re.match(r"data:(image/[a-zA-Z0-9.+-]+);base64,(.*)", image_data)
+            if data_url_match:
+                mime_type = data_url_match.group(1)
+                b64_content = data_url_match.group(2)
+            else:
+                b64_content = image_data
+
+            decoded = base64.b64decode(b64_content)
+            return decoded, mime_type
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.warning("Failed to decode image payload: %s", exc)
+            return None
+
+    async def stream_answer(self, context: str, query: str, image_data: Optional[str] = None) -> AsyncGenerator[str, None]:
         if not self.model:
             yield "Thinking... (AI disconnected: missing key or libs)"
             return
@@ -31,13 +51,13 @@ class GeminiService:
         prompt = f"""
     You are a technical support expert with deep product knowledge. Use the provided context to answer accurately and helpfully.
 
-    INSTRUCTIONS:
-    - First, read the BRAND CONTEXT and RELATED PRODUCTS sections (if present in the context) and use them.
-    - If the user asks about quality, origin, or manufacturing, explicitly mention the production country once.
-    - If related products are provided, mention at least one by exact name when relevant (e.g., recommended accessories).
-    - Prefer concise, well-structured paragraphs (avoid choppy sentence fragments).
-    - Cite or reference the manual when appropriate (e.g., "According to the official manual...").
-    - Maintain a helpful, technical, and professional tone.
+    CRITICAL INSTRUCTIONS - ALWAYS FOLLOW:
+    1. **START YOUR RESPONSE** by mentioning: "This product is from [Brand Name] ([Brand HQ with flag]) and is manufactured in [Production Country with flag]."
+    2. First, read the BRAND CONTEXT and RELATED PRODUCTS sections in the context below.
+    3. When relevant, mention related products by their exact names (e.g., "Consider the Roland RH-300 headphones..." or "The Noise Eater (NE-10) is perfect for apartments...").
+    4. Prefer concise, well-structured paragraphs (avoid choppy sentence fragments).
+    5. Cite or reference the manual when appropriate (e.g., "According to the official manual...").
+    6. Maintain a helpful, technical, and professional tone.
 
     Context (includes manual excerpts, brand info, and related products):
     {context}
@@ -48,9 +68,19 @@ class GeminiService:
     """
 
         try:
-            # properly use async generation if available, else wrap
-            # google-generativeai v0.3+ supports async
-            response = await self.model.generate_content_async(prompt, stream=True)
+            # If an image is provided, send multimodal prompt
+            if image_data:
+                decoded = self._decode_image(image_data)
+                if not decoded:
+                    yield "Image could not be processed. Proceeding with text-only answer."
+                    response = await self.model.generate_content_async(prompt, stream=True)
+                else:
+                    image_bytes, mime_type = decoded
+                    parts = [prompt, {"mime_type": mime_type, "data": image_bytes}]
+                    response = await self.model.generate_content_async(parts, stream=True)
+            else:
+                response = await self.model.generate_content_async(prompt, stream=True)
+
             async for chunk in response:
                 if chunk.text:
                     yield chunk.text

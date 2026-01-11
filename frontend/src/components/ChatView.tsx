@@ -1,9 +1,10 @@
 import React from 'react';
 import { useWebSocketStore } from '../store/useWebSocketStore';
 import { SmartMessage } from './SmartMessage';
+import { SmartImage } from './shared/SmartImage';
 
 export const ChatView: React.FC = () => {
-  const { messages, lastPrediction, relatedItems, actions, status } = useWebSocketStore();
+    const { messages, lastPrediction, relatedItems, actions, status, attachedImage } = useWebSocketStore();
 
   // Only show chat view if we have messages or if we are in a state that implies active conversation
   // status: LOCKED or ANSWERING or has messages
@@ -23,11 +24,11 @@ export const ChatView: React.FC = () => {
                       className="relative w-12 h-12 rounded-full bg-slate-200 p-2 hover:scale-105 active:scale-95 transition shadow-lg overflow-hidden flex-shrink-0 group"
                       title="View Brand Identity"
                   >
-                      <img 
-                        src={lastPrediction.brand_identity.logo_url} 
-                        alt="Logo" 
-                        className="w-full h-full object-contain" 
-                      />
+                                            <SmartImage 
+                                                src={lastPrediction.brand_identity.logo_url}
+                                                alt={lastPrediction.brand_identity.name || 'Brand'}
+                                                className="w-full h-full" 
+                                            />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                   </button>
                )}
@@ -50,8 +51,16 @@ export const ChatView: React.FC = () => {
            </div>
        )}
        
-       {/* Message Stream */}
-       <div className="space-y-3 pl-2">
+             {/* Message Stream */}
+             <div className="space-y-3 pl-2">
+                     {attachedImage && (
+                         <div className="flex items-center space-x-3">
+                             <div className="text-xs text-slate-400 uppercase tracking-widest">Attached image</div>
+                             <div className="w-20 h-20 rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                                 <SmartImage src={attachedImage} alt="Attachment" className="w-full h-full" />
+                             </div>
+                         </div>
+                     )}
            {messages.length === 0 && status === 'LOCKED' && (
                <div className="text-slate-500 italic text-sm animate-pulse">
                    Engine locked. Requesting manuals...

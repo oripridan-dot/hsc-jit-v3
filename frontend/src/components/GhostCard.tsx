@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWebSocketStore } from '../store/useWebSocketStore';
+import { SmartImage } from './shared/SmartImage';
 
 export const GhostCard: React.FC = () => {
   const { lastPrediction, status, actions } = useWebSocketStore();
@@ -51,13 +52,10 @@ export const GhostCard: React.FC = () => {
             title={`View ${brand.name} details`}
           >
             <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-all">
-              <img 
-                src={brand.logo_url} 
+              <SmartImage
+                src={brand.logo_url}
                 alt={brand.name}
-                className="w-8 h-8 object-contain"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
-                }}
+                className="w-8 h-8"
               />
             </div>
           </button>
@@ -65,10 +63,10 @@ export const GhostCard: React.FC = () => {
         
         {imgUrl ? (
             <div className="relative w-full h-40 mb-3 bg-white/5 rounded-xl overflow-hidden flex items-center justify-center">
-                <img 
-                    src={imgUrl} 
-                    alt={lastPrediction.name} 
-                    className="max-w-full max-h-full object-contain p-2 hover:scale-110 transition-transform duration-500"
+                <SmartImage
+                  src={imgUrl}
+                  alt={lastPrediction.name}
+                  className="max-w-full max-h-full p-2"
                 />
             </div>
         ) : (
@@ -78,12 +76,29 @@ export const GhostCard: React.FC = () => {
         )}
         
         <div className="relative z-10">
-            <h3 className="text-white font-bold text-lg leading-tight mb-1">
-                {lastPrediction.name}
+            <h3 className="text-white font-bold text-lg leading-tight mb-1 flex items-center gap-2 flex-wrap">
+                <span>{lastPrediction.name}</span>
+                {/* Production Country Badge */}
+                {lastPrediction.production_country && (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 whitespace-nowrap">
+                        Made in {lastPrediction.production_country}
+                    </span>
+                )}
             </h3>
-            <p className="text-slate-400 text-xs font-mono uppercase tracking-wider">
-                {lastPrediction.id}
-            </p>
+            <div className="flex items-center gap-2 text-slate-400 text-xs">
+                <p className="font-mono uppercase tracking-wider">
+                    {lastPrediction.id}
+                </p>
+                {/* Brand HQ Info */}
+                {brand && brand.hq && (
+                    <>
+                        <span className="text-slate-600">•</span>
+                        <p className="text-slate-400">
+                            {brand.name}: {brand.hq}
+                        </p>
+                    </>
+                )}
+            </div>
         </div>
 
         {/* Status Indicator */}

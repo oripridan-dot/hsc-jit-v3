@@ -5,7 +5,7 @@
     "hq": "Hamamatsu, Japan 🇯🇵",
     "founded": 1972,
     "website": "https://www.roland.com",
-    "logo_url": "https://www.roland.com/images/logo_main.svg",
+    "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
     "description": "A leading manufacturer and distributor of electronic musical instruments, including keyboards and synthesizers, guitar products, electronic percussion, and recording equipment."
   },
   "products": [
@@ -16,8 +16,8 @@
       "category": "Electronic Drums",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/products/td-17kvx2/images/td-17kvx2_main.jpg",
-        "thumbnail": "https://static.roland.com/products/td-17kvx2/images/td-17kvx2_thumb.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/td-17kvx2_top_gal.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/gallery/td-17kvx2_top_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -26,12 +26,36 @@
         "backup_url": "https://www.roland.com/global/support/by_product/td-17kvx2/owners_manuals/"
       },
       "relationships": [
-        { "type": "accessory", "target_id": "roland-rh300", "label": "Recommended Headphones" },
-        { "type": "accessory", "target_id": "roland-ne10", "label": "Noise Eater (Essential for Apartments)" },
-        { "type": "accessory", "target_id": "roland-dap3x", "label": "Essential Bundle" },
-        { "type": "related", "target_id": "roland-td17kv", "label": "Same Family" },
-        { "type": "related", "target_id": "roland-td27kv", "label": "Upgraded Model" },
-        { "type": "spare_part", "target_id": "roland-pd120", "label": "Replacement Pad" }
+        {
+          "type": "accessory",
+          "target_id": "roland-rh300",
+          "label": "Recommended Headphones"
+        },
+        {
+          "type": "accessory",
+          "target_id": "roland-ne10",
+          "label": "Noise Eater (Essential for Apartments)"
+        },
+        {
+          "type": "accessory",
+          "target_id": "roland-dap3x",
+          "label": "Essential Bundle"
+        },
+        {
+          "type": "related",
+          "target_id": "roland-td17kv",
+          "label": "Same Family"
+        },
+        {
+          "type": "related",
+          "target_id": "roland-td27kv",
+          "label": "Upgraded Model"
+        },
+        {
+          "type": "spare_part",
+          "target_id": "roland-pd120",
+          "label": "Replacement Pad"
+        }
       ]
     },
     {
@@ -41,7 +65,7 @@
       "category": "Headphones",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/products/rh-300/features/images/hero.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/rh-300_angle_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -57,7 +81,7 @@
       "category": "Accessories",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/products/ne-10/features/images/hero.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/ne-10_angle_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -73,7 +97,7 @@
       "category": "Accessories",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/products/dap-3x/images/hero.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/dap-3x_angle_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -89,7 +113,7 @@
       "category": "Drum Pads",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/products/pd-120/images/hero.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/pd-120_angle_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -105,7 +129,7 @@
       "category": "Electronic Drums",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/products/td-17kv/features/images/hero.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/td-17kv_top_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -113,7 +137,11 @@
         "url": "https://www.roland.com/global/products/td-17kv/"
       },
       "relationships": [
-        { "type": "related", "target_id": "roland-td17kvx2", "label": "Upgraded Model" }
+        {
+          "type": "related",
+          "target_id": "roland-td17kvx2",
+          "label": "Upgraded Model"
+        }
       ]
     },
     {
@@ -123,7 +151,7 @@
       "category": "Electronic Drums",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "https://static.roland.com/products/td-27kv/features/images/hero.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/td-27kv_top_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {
@@ -131,7 +159,11 @@
         "url": "https://www.roland.com/global/products/td-27kv/"
       },
       "relationships": [
-        { "type": "related", "target_id": "roland-td17kvx2", "label": "Lower Model" }
+        {
+          "type": "related",
+          "target_id": "roland-td17kvx2",
+          "label": "Lower Model"
+        }
       ]
     },
     {
@@ -141,7 +173,7 @@
       "category": "Drum Pedals",
       "production_country": "China 🇨🇳",
       "images": {
-        "main": "https://static.roland.com/products/pds-20/images/hero.jpg",
+        "main": "https://static.roland.com/assets/images/products/gallery/pds-20_angle_gal.jpg",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
       },
       "documentation": {

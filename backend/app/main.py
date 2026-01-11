@@ -10,6 +10,9 @@ from typing import Any, Dict, Optional
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from starlette.requests import Request
+from starlette.responses import Response
 
 # Load environment variables (e.g. GEMINI_API_KEY)
 load_dotenv()
@@ -25,6 +28,9 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="HSC JIT v3 - Psychic Engine")
 
+# Serve self-hosted assets (logos, product shots)
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -32,6 +38,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.middleware("http")
+async def add_cache_headers(request: Request, call_next):
+    response: Response = await call_next(request)
+    if request.url.path.startswith("/static/"):
+        response.headers.setdefault("Cache-Control", "public, max-age=31536000, immutable")
+    return response
 
 @app.on_event("startup")
 async def startup_event() -> None:
@@ -101,7 +115,15 @@ async def websocket_endpoint(ws: WebSocket) -> None:
                 
             elif msg_type in ["query", "lock_and_query"]:
                 product_id = payload.get("product_id")
-                query_text = payload.get("query")
+                query_text = payload.get("query") or payload.get("content") or ""
+                image_data = payload.get("image")
+
+                if not product_id:
+                    await ws.send_json({
+                        "type": "status",
+                        "msg": "Error: No product selected."
+                    })
+                    continue
                 
                 # 1. Send status: fetching
                 await ws.send_json({
@@ -174,7 +196,7 @@ async def websocket_endpoint(ws: WebSocket) -> None:
                 full_context = retrieved_context + brand_context + related_context
                 
                 has_answers = False
-                async for chunk in llm.stream_answer(full_context, query_text):
+                async for chunk in llm.stream_answer(full_context, query_text, image_data=image_data):
                     has_answers = True
                     await ws.send_json({
                         "type": "answer_chunk",

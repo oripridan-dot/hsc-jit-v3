@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useWebSocketStore } from './store/useWebSocketStore';
 import { GhostCard } from './components/GhostCard';
 import { BrandCard } from './components/BrandCard';
@@ -9,6 +9,8 @@ import './index.css';
 function App() {
   const { actions, status } = useWebSocketStore();
   const [inputText, setInputText] = useState('');
+  const [imageData, setImageData] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
   
   // Connect on mount
   useEffect(() => {
@@ -26,14 +28,36 @@ function App() {
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
-        const { lastPrediction, actions } = useWebSocketStore.getState();
-        if (lastPrediction) {
-            // For demo, we just ask a fixed question if user hits enter on a prediction
-            actions.lockAndQuery(lastPrediction, "How do I reset this device?"); 
-            setInputText('');
-        }
+        submitQuery();
     }
   }
+
+  const submitQuery = () => {
+    const { lastPrediction, actions } = useWebSocketStore.getState();
+    if (!lastPrediction) return;
+
+    const query = inputText.trim() || "How do I reset this device?";
+    actions.lockAndQuery(lastPrediction, query, imageData);
+    setInputText('');
+    setImageData(null);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (!file.type.startsWith('image/')) {
+      alert('Please select an image file');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setImageData(reader.result as string);
+    };
+    reader.readAsDataURL(file);
+  };
 
   return (
     <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center p-4 relative overflow-hidden">
@@ -57,15 +81,47 @@ function App() {
         {/* Search Input - Hide when locked? Or keep as "Command Bar"? Keep. */}
         <div className="relative group">
             <div className={`absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-xl transition duration-500 blur ${status === 'SNIFFING' ? 'opacity-75' : 'opacity-20 group-hover:opacity-40'}`}></div>
-            <input
-                type="text"
-                value={inputText}
-                onChange={handleInput}
-                onKeyDown={handleKeyDown}
-                placeholder="Type a product (e.g. 'Roland TD')..."
-                className="relative w-full bg-slate-900/90 text-white placeholder-slate-500 border border-slate-700 rounded-xl px-6 py-4 text-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all font-light"
-                autoFocus
-            />
+            <div className="relative w-full bg-slate-900/90 text-white placeholder-slate-500 border border-slate-700 rounded-xl px-4 py-3 flex items-center space-x-3 focus-within:ring-2 focus-within:ring-blue-500/50 transition-all">
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="p-2 rounded-lg hover:bg-white/5 active:scale-95 transition"
+                  title="Attach an image"
+                >
+                  📎
+                </button>
+                <input
+                    type="text"
+                    value={inputText}
+                    onChange={handleInput}
+                    onKeyDown={handleKeyDown}
+                    placeholder="Type a product (e.g. 'Roland TD')..."
+                    className="flex-1 bg-transparent outline-none text-xl font-light"
+                    autoFocus
+                />
+                <button
+                  type="button"
+                  onClick={submitQuery}
+                  className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 active:scale-95 transition text-sm font-semibold"
+                >
+                  Send
+                </button>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={handleFileSelect}
+                />
+            </div>
+            {imageData && (
+              <div className="absolute -bottom-16 left-2 flex items-center space-x-2 bg-slate-900/90 border border-slate-800 rounded-xl px-3 py-2 shadow-lg">
+                <div className="w-10 h-10 rounded-lg overflow-hidden border border-white/10">
+                  <img src={imageData} alt="Preview" className="w-full h-full object-cover" />
+                </div>
+                <div className="text-xs text-slate-300">Image attached</div>
+              </div>
+            )}
         </div>
 
         {/* Chat / Content View */}

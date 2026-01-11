@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWebSocketStore } from '../store/useWebSocketStore';
+import { SmartImage } from './shared/SmartImage';
 
 interface RelatedItem {
   id: string;
   name: string;
   category?: string;
+  production_country?: string;
   type: string;
   image?: string;
 }
@@ -64,10 +66,10 @@ export const ContextRail: React.FC = () => {
                     {/* Image or Icon */}
                     {item.image ? (
                       <div className="w-full h-24 bg-slate-700 rounded mb-2 overflow-hidden flex items-center justify-center">
-                        <img
+                        <SmartImage
                           src={item.image}
                           alt={item.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full"
                         />
                       </div>
                     ) : (
@@ -83,6 +85,13 @@ export const ContextRail: React.FC = () => {
                     <p className="text-xs text-slate-400 truncate mt-1">
                       {item.category || 'Product'}
                     </p>
+                    
+                    {/* Production Country Badge */}
+                    {item.production_country && (
+                      <p className="text-xs text-emerald-400/80 mt-1 truncate">
+                        {item.production_country}
+                      </p>
+                    )}
                     
                     {/* Relationship Badge */}
                     <div className="mt-2">

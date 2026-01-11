@@ -141,6 +141,7 @@ class CatalogService:
                                 "id": target.get("id"),
                                 "name": target.get("name"),
                                 "category": target.get("category"),
+                                "production_country": target.get("production_country"),
                                 "type": rel_type,
                                 "label": rel_type.replace("_", " ").title(),
                                 "image": target.get("images", {}).get("main")
@@ -155,6 +156,7 @@ class CatalogService:
                         "id": target.get("id"),
                         "name": target.get("name"),
                         "category": target.get("category"),
+                        "production_country": target.get("production_country"),
                         "type": rel.get("type", "related"),
                         "label": rel.get("label", "Related"),
                         "image": target.get("images", {}).get("main")

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWebSocketStore } from '../store/useWebSocketStore';
+import { SmartImage } from './shared/SmartImage';
 
 export const BrandCard: React.FC = () => {
   const { selectedBrand, actions } = useWebSocketStore();
@@ -43,10 +44,10 @@ export const BrandCard: React.FC = () => {
                     {selectedBrand.hq.includes('Japan') ? '🇯🇵' : '🌍'}
                 </div>
                 
-                <img 
-                    src={selectedBrand.logo_url} 
-                    alt={selectedBrand.name} 
-                    className="max-h-full max-w-[80%] object-contain filter drop-shadow-lg"
+                <SmartImage
+                    src={selectedBrand.logo_url}
+                    alt={selectedBrand.name}
+                    className="max-h-full max-w-[80%]"
                 />
             </div>
 
