@@ -1,33 +1,10 @@
 {
-  "brand": "m-audio",
-  "brand_full_name": "M-Audio",
-  "official_site": "https://www.m-audio.com",
-  "support_site": "https://www.m-audio.com/support",
-  "halilit_url": "https://www.halilit.com/brands/m-audio",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [
-      "https://www.m-audio.com/products"
-    ],
-    "documentation_urls": [
-      "https://m-audio.com",
-      "https://m-audio.com/products",
-      "https://m-audio.com/support",
-      "https://m-audio.com/downloads"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "m-audio",
+    "name": "M-Audio",
+    "hq": "Unknown",
+    "website": "https://www.m-audio.com",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 2,
-    "priority": "high",
-    "last_updated": "2026-01-07",
-    "catalog_status": "verified",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

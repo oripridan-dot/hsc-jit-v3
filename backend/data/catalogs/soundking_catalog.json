@@ -1,30 +1,10 @@
 {
-  "brand": "soundking",
-  "brand_full_name": "Soundking",
-  "official_site": "",
-  "support_site": "",
-  "halilit_url": "https://www.halilit.com/brands/soundking",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [],
-    "documentation_urls": [
-      "https://www.soundkingmusic.com",
-      "https://www.soundkingmusic.com/products/",
-      "https://www.soundkingmusic.com/support/"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "soundking",
+    "name": "Soundking",
+    "hq": "Unknown",
+    "website": "",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 3,
-    "priority": "medium",
-    "last_updated": "2026-01-07",
-    "catalog_status": "template",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

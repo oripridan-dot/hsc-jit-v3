@@ -10,8 +10,10 @@ class CatalogService:
     Loads all brand catalog JSONs from backend/data/catalogs/ into memory.
 
     Produces:
-    - self.products: List[Dict[str, Any]] raw product entries
+    - self.products: List[Dict[str, Any]] raw product entries with injected brand info.
+    - self.brands: Dict[str, Dict[str, Any]] map of brand_id -> brand_identity
     - self.search_texts: List[str] human-friendly strings for fuzzy matching
+    - self.product_map: Dict[str, Dict[str, Any]] map of product_id -> product for fast lookup
     """
 
     def __init__(self, catalogs_dir: Optional[Path] = None) -> None:
@@ -22,7 +24,9 @@ class CatalogService:
         self.catalogs_dir = Path(catalogs_dir)
 
         self.products: List[Dict[str, Any]] = []
+        self.brands: Dict[str, Dict[str, Any]] = {}  # Store brand identities
         self.search_texts: List[str] = []
+        self.product_map: Dict[str, Dict[str, Any]] = {}  # Fast product lookup by ID
 
         self._load_catalogs()
 
@@ -35,59 +39,132 @@ class CatalogService:
                 with json_path.open("r", encoding="utf-8") as f:
                     data = json.load(f)
             except Exception as e:
-                # Skip malformed files but continue loading others
                 print(f"[CatalogService] Failed to read {json_path.name}: {e}")
                 continue
 
-            brand_slug = json_path.stem.replace("_catalog", "")
+            products_list = []
+            brand_id = None
+            brand_info = {}
 
-            # Normalize different possible structures
-            if isinstance(data, list):
-                entries = data
-            elif isinstance(data, dict):
-                # Common schemas: { products: [...] } or single object
-                if "products" in data and isinstance(data["products"], list):
-                    entries = data["products"]
-                else:
-                    entries = [data]
-            else:
-                entries = []
+            # New Schema: Dict with 'brand_identity' and 'products'
+            if isinstance(data, dict) and "brand_identity" in data:
+                brand_info = data["brand_identity"]
+                brand_id = brand_info.get("id")
+                if brand_id:
+                    self.brands[brand_id] = brand_info
+                
+                products_list = data.get("products", [])
+            
+            # Legacy fallback
+            elif isinstance(data, list):
+                products_list = data
+            elif isinstance(data, dict) and "products" in data:
+                products_list = data["products"]
 
-            for entry in entries:
-                if not isinstance(entry, dict):
-                    continue
-                enriched = {**entry}
-                # Enrich with brand slug if not present
-                enriched.setdefault("brand", brand_slug)
-                self.products.append(enriched)
-                self.search_texts.append(self._make_search_text(enriched))
+            # Process products
+            for p in products_list:
+                # Inject brand info if available and not present
+                if brand_info:
+                    p["brand_identity"] = brand_info
+                    if "brand" not in p and brand_id:
+                        p["brand"] = brand_id
+                
+                self.products.append(p)
+                
+                # Add to product_map for fast lookup
+                if p.get("id"):
+                    self.product_map[p["id"]] = p
+                
+                # Create detailed search text
+                # "Roland TD-17KVX (Electronic Drums) - Malaysia"
+                search_parts = [p.get("name", "")]
+                if p.get("id"):
+                    search_parts.append(p["id"])
+                
+                # Add keywords for better fuzzy matching
+                if "category" in p:
+                    search_parts.append(p["category"])
+                
+                self.search_texts.append(" ".join(str(s) for s in search_parts if s))
 
-        # Basic sanity log
-        print(f"[CatalogService] Loaded {len(self.products)} products from {self.catalogs_dir}")
-
-    @staticmethod
-    def _make_search_text(product: Dict[str, Any]) -> str:
-        """
-        Build a human-friendly string for fuzzy matching. Tries several common keys.
-        """
-        candidates = []
-        # Common name-like fields
-        for key in ("product_name", "name", "model", "title", "sku"):
-            val = product.get(key)
-            if isinstance(val, str) and val.strip():
-                candidates.append(val.strip())
-
-        # Brand
-        brand = product.get("brand")
-        if isinstance(brand, str) and brand.strip():
-            candidates.append(brand.strip())
-
-        # Combine unique parts
-        text = " ".join(dict.fromkeys(candidates)) or json.dumps(product, ensure_ascii=False)
-        return text
+        print(f"[CatalogService] Loaded {len(self.products)} products from {len(self.brands)} rich brands.")
 
     def all_products(self) -> List[Dict[str, Any]]:
         return self.products
 
     def all_search_texts(self) -> List[str]:
         return self.search_texts
+
+    def get_brand(self, brand_id: str) -> Optional[Dict[str, Any]]:
+        return self.brands.get(brand_id)
+
+    def get_product(self, product_id: str) -> Optional[Dict[str, Any]]:
+        """Fast lookup for a product by ID."""
+        return self.product_map.get(product_id)
+
+    def get_product_with_context(self, product_id: str) -> Optional[Dict[str, Any]]:
+        """
+        Returns a product with hydrated context:
+        - Full brand_identity injected
+        - Relationships resolved with target product metadata
+        
+        Returns: { 
+            "product": {...}, 
+            "brand": {...}, 
+            "context": { "related_items": [...] } 
+        }
+        """
+        product = self.get_product(product_id)
+        if not product:
+            return None
+        
+        # Get brand
+        brand = None
+        if "brand_identity" in product:
+            brand = product["brand_identity"]
+        elif product.get("brand"):
+            brand = self.get_brand(product["brand"])
+        
+        # Hydrate relationships
+        related_items = []
+        relationships = product.get("relationships", [])
+        
+        # Handle both old dict format and new list format
+        if isinstance(relationships, dict):
+            # Old format: { "compatible_accessories": ["id1", "id2"], ... }
+            for rel_type, rel_ids in relationships.items():
+                if isinstance(rel_ids, list):
+                    for target_id in rel_ids:
+                        target = self.get_product(target_id)
+                        if target:
+                            related_items.append({
+                                "id": target.get("id"),
+                                "name": target.get("name"),
+                                "category": target.get("category"),
+                                "type": rel_type,
+                                "label": rel_type.replace("_", " ").title(),
+                                "image": target.get("images", {}).get("main")
+                            })
+        elif isinstance(relationships, list):
+            # New format: [{ "type": "accessory", "target_id": "...", "label": "..." }, ...]
+            for rel in relationships:
+                target_id = rel.get("target_id")
+                target = self.get_product(target_id) if target_id else None
+                if target:
+                    related_items.append({
+                        "id": target.get("id"),
+                        "name": target.get("name"),
+                        "category": target.get("category"),
+                        "type": rel.get("type", "related"),
+                        "label": rel.get("label", "Related"),
+                        "image": target.get("images", {}).get("main")
+                    })
+        
+        return {
+            "product": product,
+            "brand": brand or {},
+            "context": {
+                "related_items": related_items
+            }
+        }
+

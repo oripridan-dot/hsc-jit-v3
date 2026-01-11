@@ -1,33 +1,10 @@
 {
-  "brand": "rcf",
-  "brand_full_name": "RCF",
-  "official_site": "https://wn.com/Rcf?from=rcf.com",
-  "support_site": "https://wn.com/Rcf?from=rcf.com/support",
-  "halilit_url": "https://www.halilit.com/brands/rcf",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [
-      "https://wn.com/Rcf?from=rcf.com/products"
-    ],
-    "documentation_urls": [
-      "https://www.rcf.it",
-      "https://www.rcf.it/en/products",
-      "https://www.rcf.it/en/support",
-      "https://www.rcf.it/en/downloads"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "rcf",
+    "name": "RCF",
+    "hq": "Unknown",
+    "website": "https://wn.com/Rcf?from=rcf.com",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 2,
-    "priority": "high",
-    "last_updated": "2026-01-07",
-    "catalog_status": "verified",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

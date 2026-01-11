@@ -1,34 +1,10 @@
 {
-  "brand": "avid",
-  "brand_full_name": "Avid",
-  "official_site": "https://www.avid.com",
-  "support_site": "https://www.avid.com/support",
-  "halilit_url": "https://www.halilit.com/brands/avid",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [
-      "https://www.avid.com/products"
-    ],
-    "documentation_urls": [
-      "https://www.avid.com/support",
-      "https://www.avid.com/products",
-      "https://www.avid.com/support/downloads",
-      "https://www.avid.com/support/knowledge-base",
-      "https://www.avid.com/learning"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "avid",
+    "name": "Avid",
+    "hq": "Unknown",
+    "website": "https://www.avid.com",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 1,
-    "priority": "critical",
-    "last_updated": "2026-01-07",
-    "catalog_status": "verified",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

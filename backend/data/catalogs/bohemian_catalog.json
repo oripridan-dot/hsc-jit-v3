@@ -1,33 +1,10 @@
 {
-  "brand": "bohemian",
-  "brand_full_name": "Bohemian",
-  "official_site": "https://www.bohemian.com",
-  "support_site": "https://www.bohemian.com/support",
-  "halilit_url": "https://www.halilit.com/brands/bohemian",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [
-      "https://www.bohemian.com/products"
-    ],
-    "documentation_urls": [
-      "https://www.bohemianmusical.com",
-      "https://www.bohemianmusical.com/guitars/",
-      "https://www.bohemianmusical.com/support/",
-      "https://www.bohemianmusical.com/care/"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "bohemian",
+    "name": "Bohemian",
+    "hq": "Unknown",
+    "website": "https://www.bohemian.com",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 2,
-    "priority": "high",
-    "last_updated": "2026-01-07",
-    "catalog_status": "verified",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

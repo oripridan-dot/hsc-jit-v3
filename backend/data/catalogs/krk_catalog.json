@@ -1,38 +1,10 @@
 {
-  "brand": "krk",
-  "brand_full_name": "KRK",
-  "official_site": "https://www.krkmusic.com",
-  "support_site": "https://www.krkmusic.com/Support",
-  "halilit_url": "https://www.halilit.com/brands/krk",
-  "categories": [
-    "Studio Monitors",
-    "Headphones",
-    "Subwoofers"
-  ],
-  "product_discovery": {
-    "product_list_urls": [
-      "https://www.krkmusic.com/Studio-Monitors"
-    ],
-    "documentation_urls": [
-      "https://www.krkmusic.com/Support/Downloads",
-      "https://www.krkmusic.com/Support",
-      "https://www.krkmusic.com/Studio-Monitors/specifications",
-      "https://www.krkmusic.com/support/manuals",
-      "https://www.krkmusic.com/support/knowledge-base"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "krk",
+    "name": "KRK",
+    "hq": "Unknown",
+    "website": "https://www.krkmusic.com",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 1,
-    "priority": "critical",
-    "last_updated": "2026-01-07",
-    "catalog_status": "ready",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

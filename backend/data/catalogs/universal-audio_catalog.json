@@ -1,34 +1,10 @@
 {
-  "brand": "universal-audio",
-  "brand_full_name": "Universal Audio",
-  "official_site": "https://www.uaudio.com",
-  "support_site": "https://help.uaudio.com",
-  "halilit_url": "https://www.halilit.com/brands/universal-audio",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [
-      "https://www.uaudio.com/hardware"
-    ],
-    "documentation_urls": [
-      "https://help.uaudio.com/hc/en-us",
-      "https://www.uaudio.com/hardware",
-      "https://help.uaudio.com/hc/en-us/categories/downloads",
-      "https://help.uaudio.com/hc/en-us/sections/manuals",
-      "https://www.uaudio.com/support/software"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "universal-audio",
+    "name": "Universal Audio",
+    "hq": "Unknown",
+    "website": "https://www.uaudio.com",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 1,
-    "priority": "critical",
-    "last_updated": "2026-01-07",
-    "catalog_status": "verified",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

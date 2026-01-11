@@ -1,34 +1,10 @@
 {
-  "brand": "warm-audio",
-  "brand_full_name": "Warm Audio",
-  "official_site": "https://www.warmaudio.com",
-  "support_site": "https://www.warmaudio.com/support/",
-  "halilit_url": "https://www.halilit.com/brands/warm-audio",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [
-      "https://www.warmaudio.com/products/"
-    ],
-    "documentation_urls": [
-      "https://www.warmaudio.com/support/",
-      "https://www.warmaudio.com/products/",
-      "https://www.warmaudio.com/support/downloads/",
-      "https://www.warmaudio.com/support/manuals/",
-      "https://www.warmaudio.com/support/knowledge-base/"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "warm-audio",
+    "name": "Warm Audio",
+    "hq": "Unknown",
+    "website": "https://www.warmaudio.com",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 1,
-    "priority": "critical",
-    "last_updated": "2026-01-07",
-    "catalog_status": "verified",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }

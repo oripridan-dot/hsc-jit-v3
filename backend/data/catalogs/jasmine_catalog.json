@@ -1,31 +1,10 @@
 {
-  "brand": "jasmine",
-  "brand_full_name": "Jasmine",
-  "official_site": "",
-  "support_site": "",
-  "halilit_url": "https://www.halilit.com/brands/jasmine",
-  "categories": [],
-  "product_discovery": {
-    "product_list_urls": [],
-    "documentation_urls": [
-      "https://www.jasminemusical.com",
-      "https://www.jasminemusical.com/guitars/",
-      "https://www.jasminemusical.com/support/",
-      "https://www.jasminemusical.com/care/"
-    ],
-    "sitemap_url": ""
+  "brand_identity": {
+    "id": "jasmine",
+    "name": "Jasmine",
+    "hq": "Unknown",
+    "website": "",
+    "logo_url": ""
   },
-  "estimates": {
-    "total_products": 0,
-    "total_manuals": 0,
-    "total_spec_sheets": 0,
-    "total_guides": 0
-  },
-  "metadata": {
-    "tier": 2,
-    "priority": "high",
-    "last_updated": "2026-01-07",
-    "catalog_status": "template",
-    "scraping_complexity": "unknown"
-  }
+  "products": []
 }
