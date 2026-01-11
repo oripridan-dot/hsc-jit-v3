@@ -69,6 +69,16 @@ class CatalogService:
                     if "brand" not in p and brand_id:
                         p["brand"] = brand_id
                 
+                # ---------------------------------------------------------
+                # NETWORK FIX: Cache Busting for Images
+                # ---------------------------------------------------------
+                # Cause: Browser cached 404s for /static/* improperly.
+                # Fix: Append query param to force browser to fetch again.
+                if "images" in p and isinstance(p["images"], dict):
+                    main_img = p["images"].get("main")
+                    if main_img and isinstance(main_img, str) and "?" not in main_img:
+                        p["images"]["main"] = f"{main_img}?v=fix3"
+                
                 self.products.append(p)
                 
                 # Add to product_map for fast lookup

@@ -72,15 +72,22 @@ def optimize_and_save(img_bytes: bytes, dest: Path, prefer_png: bool = False) ->
                 converted = img.convert("RGB")
             converted.save(dest.with_suffix(".png"), format="PNG", optimize=True)
         else:
-            converted = img.convert("RGB")
+            # Flatten transparency to white background for WebP
+            if img.mode in ('RGBA', 'LA'):
+                background = Image.new('RGB', img.size, (255, 255, 255))
+                background.paste(img, mask=img.split()[-1])
+                converted = background
+            else:
+                converted = img.convert("RGB")
             converted.save(dest.with_suffix(".webp"), format="WEBP", quality=85, method=6)
 
 
 def create_placeholder(dest: Path, text: str, prefer_png: bool = True) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     size = (512, 320) if not prefer_png else (320, 320)
-    bg = (20, 30, 40)
-    fg = (120, 200, 255)
+    # Changed to lighter background for visibility in dark mode UI
+    bg = (70, 80, 90) 
+    fg = (255, 255, 255)
     img = Image.new("RGB", size, color=bg)
     draw = ImageDraw.Draw(img)
     try:

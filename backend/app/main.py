@@ -176,7 +176,7 @@ app.add_middleware(
 @app.middleware("http")
 async def add_cache_headers(request: Request, call_next):
     response: Response = await call_next(request)
-    if request.url.path.startswith("/static/"):
+    if request.url.path.startswith("/static/") and response.status_code == 200:
         response.headers.setdefault(
             "Cache-Control", "public, max-age=31536000, immutable"
         )
