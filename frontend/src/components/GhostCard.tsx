@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useWebSocketStore } from '../store/useWebSocketStore';
 
 export const GhostCard: React.FC = () => {
-  const { lastPrediction, status } = useWebSocketStore();
+  const { lastPrediction, status, actions } = useWebSocketStore();
   
   // Show only when sniffing or locked (until answering starts taking over maybe?)
   // Blueprint says: SNIFFING -> Ghost Card. LOCKED -> Product is active.
@@ -13,6 +13,13 @@ export const GhostCard: React.FC = () => {
 
   // Resilience for image path
   const imgUrl = lastPrediction.images?.main || lastPrediction.img;
+  const brand = lastPrediction.brand_identity;
+  
+  const handleBrandClick = () => {
+    if (brand) {
+      actions.openBrandModal(brand);
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -36,6 +43,26 @@ export const GhostCard: React.FC = () => {
         <div className="absolute -top-10 -left-10 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
 
+        {/* Brand Logo - Clickable */}
+        {brand && brand.logo_url && (
+          <button
+            onClick={handleBrandClick}
+            className="absolute top-4 left-4 z-20 group relative"
+            title={`View ${brand.name} details`}
+          >
+            <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-all">
+              <img 
+                src={brand.logo_url} 
+                alt={brand.name}
+                className="w-8 h-8 object-contain"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
+              />
+            </div>
+          </button>
+        )}
+        
         {imgUrl ? (
             <div className="relative w-full h-40 mb-3 bg-white/5 rounded-xl overflow-hidden flex items-center justify-center">
                 <img 

@@ -12,6 +12,14 @@ export interface BrandIdentity {
     description?: string;
 }
 
+export interface RelatedItem {
+  id: string;
+  name: string;
+  category?: string;
+  type: string;
+  image?: string;
+}
+
 export interface Prediction {
   id: string;
   name: string;
@@ -28,13 +36,14 @@ interface WebSocketStore {
   lastPrediction: Prediction | null;
   socket: WebSocket | null;
   messages: string[]; // For chat history / answers
-  relations: any[]; // For accessories rail
+  relatedItems: RelatedItem[]; // Hydrated related items from context
   selectedBrand: BrandIdentity | null;
 
   actions: {
     connect: (url: string) => void;
     sendTyping: (text: string) => void;
     lockAndQuery: (product: Prediction, query: string) => void;
+    navigateToProduct: (productId: string, query: string) => void;
     openBrandModal: (brand: BrandIdentity) => void;
     closeBrandModal: () => void;
   };
@@ -45,7 +54,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   lastPrediction: null,
   socket: null,
   messages: [],
-  relations: [],
+  relatedItems: [],
   selectedBrand: null,
 
   actions: {
@@ -63,10 +72,17 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
         const { type, data, msg, content } = payload;
         
         if (type === 'prediction') {
-           // data is list of predictions.
+           // data is list of predictions with hydrated products
            if (Array.isArray(data) && data.length > 0) {
-             const topPred = data[0].product; 
-             set({ lastPrediction: topPred, status: 'SNIFFING' });
+             const topPred = data[0];
+             const product = topPred.product;
+             const relatedItems = topPred.context?.related_items || [];
+             
+             set({ 
+               lastPrediction: product, 
+               relatedItems: relatedItems,
+               status: 'SNIFFING' 
+             });
            } else {
              set({ lastPrediction: null, status: 'IDLE' });
            }
@@ -85,8 +101,22 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
              }));
         }
 
+        // NEW: Rich context event with brand + related items
+        if (type === 'context') {
+            const relatedItems = data?.related_items || [];
+            const brand = data?.brand;
+            
+            set({ relatedItems });
+            
+            // Auto-open brand modal if a brand is provided
+            if (brand) {
+              set({ selectedBrand: brand });
+            }
+        }
+
+        // Legacy fallback for old 'relations' event
         if (type === 'relations') {
-            set({ relations: data });
+            set({ relatedItems: data });
         }
       };
 
@@ -102,12 +132,25 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
 
     lockAndQuery: (product: Prediction, query: string) => {
       const { socket } = get();
-      set({ status: 'LOCKED', lastPrediction: product, messages: [] });
+      set({ status: 'LOCKED', lastPrediction: product, messages: [], relatedItems: [] });
       
       if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({ 
             type: 'lock_and_query', 
             product_id: product.id, 
+            query 
+        }));
+      }
+    },
+
+    navigateToProduct: (productId: string, query: string) => {
+      const { socket } = get();
+      set({ status: 'LOCKED', messages: [], relatedItems: [] });
+      
+      if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({ 
+            type: 'lock_and_query', 
+            product_id: productId, 
             query 
         }));
       }

@@ -1,8 +1,9 @@
 import React from 'react';
 import { useWebSocketStore } from '../store/useWebSocketStore';
+import { SmartMessage } from './SmartMessage';
 
 export const ChatView: React.FC = () => {
-  const { messages, lastPrediction, actions, status } = useWebSocketStore();
+  const { messages, lastPrediction, relatedItems, actions, status } = useWebSocketStore();
 
   // Only show chat view if we have messages or if we are in a state that implies active conversation
   // status: LOCKED or ANSWERING or has messages
@@ -65,11 +66,19 @@ export const ChatView: React.FC = () => {
                        {msg.replace('[STATUS]', '').trim()}
                    </div>
                ) : (
-                   <div key={i} className="text-slate-200 bg-white/5 p-4 rounded-r-xl rounded-bl-xl border-l-2 border-slate-700 text-sm leading-relaxed shadow-sm animate-fade-in-up">
-                       {msg}
+                   <div key={i} className="flex flex-col space-y-2">
+                       <SmartMessage content={msg} relatedItems={relatedItems} />
                    </div>
                );
            })}
+           
+           {/* Source Verification Badge */}
+           {messages.length > 0 && status === 'ANSWERING' && (
+               <div className="flex items-center space-x-2 pt-2 pl-4 text-xs text-slate-400 border-t border-white/10">
+                   <span>📖</span>
+                   <span>Answered from Official Manual</span>
+               </div>
+           )}
        </div>
     </div>
   );

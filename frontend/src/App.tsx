@@ -3,6 +3,7 @@ import { useWebSocketStore } from './store/useWebSocketStore';
 import { GhostCard } from './components/GhostCard';
 import { BrandCard } from './components/BrandCard';
 import { ChatView } from './components/ChatView';
+import { ContextRail } from './components/ContextRail';
 import './index.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     const host = window.location.host;
     actions.connect(`${protocol}//${host}/ws`);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -40,7 +42,7 @@ function App() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black pointer-events-none" />
 
       {/* Main Container */}
-      <div className="z-10 w-full max-w-2xl flex flex-col space-y-8 flex-1 py-10">
+      <div className="z-10 w-full max-w-2xl flex flex-col space-y-8 flex-1 py-10 pb-40">
         
         {/* Header - Fade out when active to save space? Keep it for now. */}
         <header className={`text-center space-y-2 transition-all duration-500 ${status !== 'IDLE' ? 'scale-90 opacity-80' : 'scale-100'}`}>
@@ -76,6 +78,7 @@ function App() {
       {/* Overlays */}
       <GhostCard />
       <BrandCard />
+      <ContextRail />
 
     </div>
   );
