@@ -2,9 +2,112 @@
   "brand_identity": {
     "id": "nord",
     "name": "Nord",
-    "hq": "Unknown",
+    "hq": "Stockholm, Sweden 🇸🇪",
+    "founded": 1995,
     "website": "https://www.nordkeyboards.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/nord.png",
+    "description": "Premium keyboard synthesizers and sound modules for musicians and producers worldwide. Known for innovative sound design and intuitive interfaces."
   },
-  "products": []
+  "products": [
+    {
+      "id": "nord-lead-a1",
+      "name": "Nord Lead A1",
+      "brand": "nord",
+      "category": "Synthesizer",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-lead-a1.webp",
+        "thumbnail": "https://www.nordkeyboards.com/sites/default/files/styles/product_full_view/public/2020-11/Nord_Lead_A1_silver_front_high.jpg",
+        "logo": "https://www.nordkeyboards.com/sites/default/files/styles/og_image/public/2019-06/nord-logo-dark.svg"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/sites/default/files/downloads/Nord-Lead-A1-User-Guide-EN.pdf",
+        "backup_url": "https://www.nordkeyboards.com/products/nord-lead-a1"
+      },
+      "relationships": [
+        {
+          "type": "accessory",
+          "target_id": "nord-bag-lead",
+          "label": "Gig Bag"
+        },
+        {
+          "type": "related",
+          "target_id": "nord-stage-4-88",
+          "label": "Stage Companion"
+        }
+      ]
+    },
+    {
+      "id": "nord-stage-4-88",
+      "name": "Nord Stage 4 88-Keys",
+      "brand": "nord",
+      "category": "Stage Keyboard",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-stage-4-88.webp",
+        "thumbnail": "https://www.nordkeyboards.com/sites/default/files/styles/product_full_view/public/2021-06/Nord_Stage_4_88_Main_v2.jpg",
+        "logo": "https://www.nordkeyboards.com/sites/default/files/styles/og_image/public/2019-06/nord-logo-dark.svg"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/sites/default/files/downloads/Nord-Stage-4-User-Guide-EN.pdf",
+        "backup_url": "https://www.nordkeyboards.com/products/nord-stage-4"
+      },
+      "relationships": [
+        {
+          "type": "accessory",
+          "target_id": "nord-sustain-pedal",
+          "label": "Sustain Pedal"
+        },
+        {
+          "type": "related",
+          "target_id": "nord-lead-a1",
+          "label": "Compact Alternative"
+        }
+      ]
+    },
+    {
+      "id": "nord-drum-3p",
+      "name": "Nord Drum 3P",
+      "brand": "nord",
+      "category": "Drum Machine",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-drum-3p.webp",
+        "thumbnail": "https://www.nordkeyboards.com/sites/default/files/styles/product_full_view/public/2021-06/Nord_Drum_3p.jpg",
+        "logo": "https://www.nordkeyboards.com/sites/default/files/styles/og_image/public/2019-06/nord-logo-dark.svg"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/sites/default/files/downloads/Nord-Drum-3P-User-Guide-EN.pdf",
+        "backup_url": "https://www.nordkeyboards.com/products/nord-drum-3p"
+      },
+      "relationships": [
+        {
+          "type": "related",
+          "target_id": "nord-stage-4-88",
+          "label": "Stage Companion"
+        }
+      ]
+    },
+    {
+      "id": "nord-g2x",
+      "name": "Nord G2X Module",
+      "brand": "nord",
+      "category": "Synthesizer Module",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-g2x.webp",
+        "thumbnail": "https://www.nordkeyboards.com/sites/default/files/styles/product_full_view/public/2020-02/G2X_front.jpg",
+        "logo": "https://www.nordkeyboards.com/sites/default/files/styles/og_image/public/2019-06/nord-logo-dark.svg"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/sites/default/files/downloads/G2X-User-Guide-EN.pdf",
+        "backup_url": "https://www.nordkeyboards.com/products/g2x"
+      },
+      "relationships": []
+    }
+  ]
 }
