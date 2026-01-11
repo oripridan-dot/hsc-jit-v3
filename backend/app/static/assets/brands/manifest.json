@@ -1,0 +1,539 @@
+{
+  "adam-audio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "ADAM Audio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "adams": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Adams",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "akai-professional": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Akai Professional",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "allen-and-heath": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Allen & Heath",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "ampeg": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Ampeg",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "amphion": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Amphion",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "antigua": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Antigua",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "ashdown": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Ashdown",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "asm": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "ASM",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "austrian-audio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Austrian Audio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "avid": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Avid",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "bespeco": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Bespeco",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "blue-microphones": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Blue Microphones",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "bohemian": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Bohemian",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "boss": {
+    "status": "available",
+    "source": "local",
+    "url": "/static/assets/brands/boss.png"
+  },
+  "breedlove": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Breedlove",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "cordoba": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "C\u00f3rdoba",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "daddario": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "D'Addario",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "dangelico": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "D'Angelico",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "dixon": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Dixon",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "drumdots": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Drumdots",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "dynaudio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Dynaudio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "eaw": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "EAW",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "eden": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Eden",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "encore": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Encore",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "esp": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "ESP",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "eve-audio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Eve Audio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "foxgear": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Foxgear",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "fusion-alt": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Fusion (Alternate)",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "fusion": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Fusion",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "fzone": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "FZone",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "gon-bops": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Gon Bops",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "guitar-pro": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Guitar Pro",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "halilit-akd1": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Halilit AKD-1",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "halilit": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Halilit",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "headliner": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Headliner",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "headrush": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "HeadRush",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "heritage-audio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Heritage Audio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "hiwatt": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Hiwatt",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "jasmine": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Jasmine",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "keith-mcmillen": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Keith McMillen Instruments",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "krk": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "KRK",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "lsg-guitars": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "LSG Guitars",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "lynx-studio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Lynx Studio Technology",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "m-audio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "M-Audio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "mackie": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Mackie",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "maestro": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Maestro",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "magma": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Magma",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "marimba-one": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Marimba One",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "maton": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Maton",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "maybach": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Maybach",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "medeli": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Medeli",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "montarbo": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Montarbo",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "moog": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Moog Music",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "mxl": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "MXL",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "nord": {
+    "status": "available",
+    "source": "local",
+    "url": "/static/assets/brands/nord.png"
+  },
+  "oberheim": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Oberheim",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "ocean-schmidt": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Ocean Schmidt",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "on-stage-stands": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "On Stage Stands",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "ortega": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Ortega",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "paiste": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Paiste",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "pearl": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Pearl",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "perris-leathers": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Perri's Leathers",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "presonus": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "PreSonus",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "rcf": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "RCF",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "regal-tip": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Regal Tip",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "remo": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Remo",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "rhythm-tech": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Rhythm Tech",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "rogers": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Rogers",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "roland": {
+    "status": "available",
+    "source": "local",
+    "url": "/static/assets/brands/roland.png"
+  },
+  "show": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Show",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "solar-guitars": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Solar Guitars",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "sound-reference-ue": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Sound Reference (Ultimate Ears)",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "sound-reference": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Sound Reference",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "soundking": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Soundking",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "spector": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Spector",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "steinberg": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Steinberg",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "studiologic": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Studiologic",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "teenage-engineering": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Teenage Engineering",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "tombo": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Tombo",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "turkish-cymbals": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Turkish Cymbals",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "ultimate-support": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Ultimate Support",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "universal-audio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Universal Audio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "v-moda": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "V-MODA",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "vintage": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Vintage",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "warm-audio": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Warm Audio",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "washburn": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Washburn",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "waterstone": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Waterstone",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "xotic": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Xotic",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  },
+  "xvive": {
+    "status": "fallback",
+    "source": "text_avatar",
+    "label": "Xvive",
+    "note": "Real logo needed - see docs/guides/LOGO_SOURCES.md"
+  }
+}

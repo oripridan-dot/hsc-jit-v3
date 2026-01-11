@@ -2,23 +2,64 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 .venv/
 venv/
 env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Environment
 .env
+.env.local
+.env.*.local
 
 # Node
 node_modules/
-npm-debug.log
-yarn-error.log
-
-# Mac
-.DS_Store
-
-# IDE
-.vscode/
-.idea/
-
-# Fractal specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
 frontend/dist/
 frontend/node_modules/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+*.bak
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+test_output.log
+harvest.log
+
+# Docker
+docker-compose.override.yml
+
+# Redis
+dump.rdb
+*.rdb
+
+# Backups
+backups/
+*.backup

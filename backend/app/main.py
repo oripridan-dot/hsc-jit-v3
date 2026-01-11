@@ -5,12 +5,17 @@ import json
 import uuid
 import logging
 import os
+import time
+from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 from typing import Any, Dict, Optional
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import JSONResponse
+from starlette.staticfiles import StaticFiles as StarletteStaticFiles
+from prometheus_client import CONTENT_TYPE_LATEST
 from starlette.requests import Request
 from starlette.responses import Response
 
@@ -22,14 +27,142 @@ from .services.sniffer import SnifferService
 from .services.fetcher import ContentFetcher
 from .services.rag import EphemeralRAG
 from .services.llm import GeminiService
+from .core.redis_manager import RedisPubSubManager
+from .core.cache import get_cache
+from .core.logging import setup_structured_logging, get_logger
+from .core.health import get_health_checker, router as health_router
+from .core.metrics import (
+    websocket_active_connections,
+    messages_processed,
+    websocket_errors,
+    get_prometheus_metrics,
+)
+from .core.tasks import celery_app
+from .core.validation import validate_websocket_message, safe_get_str
+from pydantic import ValidationError
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+# Setup structured logging
+setup_structured_logging(level="INFO")
+logger = get_logger(__name__)
 
-app = FastAPI(title="HSC JIT v3 - Psychic Engine")
+# Global state
+redis_manager = RedisPubSubManager(
+    redis_url=os.getenv("REDIS_URL", "redis://localhost:6379")
+)
+
+
+class ConnectionManager:
+    """Manages WebSocket connections for this instance"""
+
+    def __init__(self):
+        self.active_connections: Dict[str, WebSocket] = {}
+        self.session_metadata: Dict[str, Dict[str, Any]] = {}
+
+    async def connect(self, websocket: WebSocket, client_id: str):
+        """Register a new WebSocket connection"""
+        await websocket.accept()
+        self.active_connections[client_id] = websocket
+        self.session_metadata[client_id] = {
+            "connected_at": time.time(),
+            "messages_processed": 0,
+        }
+        websocket_active_connections.set(len(self.active_connections))
+        logger.info(
+            "WebSocket connected",
+            client_id=client_id,
+            total_connections=len(self.active_connections),
+        )
+
+    def disconnect(self, client_id: str):
+        """Unregister a WebSocket connection"""
+        if client_id in self.active_connections:
+            del self.active_connections[client_id]
+            del self.session_metadata[client_id]
+            websocket_active_connections.set(len(self.active_connections))
+            logger.info(
+                "WebSocket disconnected",
+                client_id=client_id,
+                total_connections=len(self.active_connections),
+            )
+
+    async def broadcast_to_client(self, client_id: str, message: dict):
+        """Broadcast to a specific client via Redis Pub/Sub"""
+        await redis_manager.publish(f"client:{client_id}", message)
+
+    async def send_to_client(self, client_id: str, message: dict):
+        """Send directly to client if connected to this instance"""
+        if client_id in self.active_connections:
+            try:
+                await self.active_connections[client_id].send_json(
+                    message
+                )
+            except Exception as e:
+                logger.error(
+                    "Failed to send to client",
+                    client_id=client_id,
+                    error=str(e),
+                )
+
+
+connection_manager = ConnectionManager()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Application lifecycle: startup and shutdown"""
+    # Startup
+    logger.info("Starting HSC-JIT backend...")
+
+    # Initialize Redis
+    await redis_manager.connect()
+
+    # Initialize cache with Redis client
+    cache = get_cache()
+    cache.set_redis(redis_manager.redis)
+
+    # Initialize health checker
+    health_checker = get_health_checker()
+    health_checker.set_dependencies(redis_manager, connection_manager)
+
+    # Initialize services
+    app.state.catalog = CatalogService()
+    app.state.sniffer = SnifferService(app.state.catalog)
+    app.state.fetcher = ContentFetcher()
+    app.state.rag = EphemeralRAG()
+    app.state.llm = GeminiService()
+    app.state.start_time = time.time()
+
+    # Create quick lookup map
+    app.state.product_map = {
+        p.get("id"): p
+        for p in app.state.catalog.products
+        if p.get("id")
+    }
+
+    logger.info(
+        "All services initialized",
+        products_loaded=len(app.state.product_map),
+    )
+
+    yield
+
+    # Shutdown
+    logger.info("Shutting down HSC-JIT backend...")
+    await redis_manager.disconnect()
+
+
+app = FastAPI(title="HSC JIT v3 - Psychic Engine", lifespan=lifespan)
+
+# Configure MIME types for static files (especially WebP)
+import mimetypes
+mimetypes.add_type('image/webp', '.webp')
+mimetypes.add_type('image/svg+xml', '.svg')
 
 # Serve self-hosted assets (logos, product shots)
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
+
+# Add health check router
+app.include_router(health_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -44,187 +177,304 @@ app.add_middleware(
 async def add_cache_headers(request: Request, call_next):
     response: Response = await call_next(request)
     if request.url.path.startswith("/static/"):
-        response.headers.setdefault("Cache-Control", "public, max-age=31536000, immutable")
+        response.headers.setdefault(
+            "Cache-Control", "public, max-age=31536000, immutable"
+        )
     return response
 
-@app.on_event("startup")
-async def startup_event() -> None:
-    # Initialize services
-    app.state.catalog = CatalogService()
-    app.state.sniffer = SnifferService(app.state.catalog)
-    app.state.fetcher = ContentFetcher()
-    app.state.rag = EphemeralRAG()
-    app.state.llm = GeminiService()
-    
-    # Create a quick lookup map for products
-    # CatalogService loads everything into self.products
-    app.state.product_map = {
-        p.get("id"): p for p in app.state.catalog.products if p.get("id")
-    }
-    
-    logger.info("[Startup] All Services Initialized")
 
+# ============ Metrics Endpoint ============
+@app.get("/metrics")
+async def metrics():
+    """Prometheus metrics endpoint"""
+    return Response(
+        content=get_prometheus_metrics(),
+        media_type=CONTENT_TYPE_LATEST,
+    )
+
+
+# ============ WebSocket Endpoint ============
 @app.websocket("/ws")
-async def websocket_endpoint(ws: WebSocket) -> None:
-    await ws.accept()
-    # Unique session ID for RAG isolation
+async def websocket_endpoint(ws: WebSocket, client_id: str = None) -> None:
+    """
+    Main WebSocket endpoint for real-time chat and predictions.
+    Handles typing events, queries, and streams responses.
+    """
+    client_id = client_id or str(uuid.uuid4())
+    await connection_manager.connect(ws, client_id)
+
+    # Session ID for RAG isolation
     session_id = str(uuid.uuid4())
-    logger.info(f"New WebSocket connection: {session_id}")
-    
+    logger.info(
+        "WebSocket connection established",
+        client_id=client_id,
+        session_id=session_id,
+    )
+
     try:
         while True:
             raw = await ws.receive_text()
+
             try:
                 payload: Dict[str, Any] = json.loads(raw)
             except json.JSONDecodeError:
+                messages_processed.labels(message_type="error").inc()
                 await ws.send_json({"type": "error", "message": "Invalid JSON"})
                 continue
 
+            # Validate message structure and content
+            try:
+                validated_msg = validate_websocket_message(payload)
+                if validated_msg is None:
+                    raise ValidationError("Invalid message structure")
+            except ValidationError as e:
+                messages_processed.labels(message_type="error").inc()
+                logger.warning(
+                    "Invalid WebSocket message",
+                    client_id=client_id,
+                    error=str(e),
+                    payload=payload
+                )
+                await ws.send_json({
+                    "type": "error",
+                    "message": f"Invalid message format: {str(e)}"
+                })
+                continue
+
             msg_type = payload.get("type")
-            
+            connection_manager.session_metadata[client_id]["messages_processed"] += 1
+
             if msg_type == "typing":
-                content = payload.get("content", "")
-                sniffer: SnifferService = app.state.sniffer
-                # Predict
-                predictions = sniffer.predict(str(content), limit=3)
-                
-                # Hydrate predictions with context (brand identity + related items)
-                enriched_predictions = []
-                for pred in predictions:
-                    product_id = pred.get("product", {}).get("id")
-                    if product_id:
-                        full_product_context = app.state.catalog.get_product_with_context(product_id)
-                        if full_product_context:
-                            # Merge the prediction with rich context
-                            enriched_pred = {
-                                "product": full_product_context.get("product"),
-                                "brand": full_product_context.get("brand"),
-                                "context": full_product_context.get("context"),
-                                "confidence": pred.get("confidence"),
-                                "match_text": pred.get("match_text")
-                            }
-                            enriched_predictions.append(enriched_pred)
-                    else:
-                        enriched_predictions.append(pred)
-                
-                # Send prediction event with rich context
-                await ws.send_json({
-                    "type": "prediction",
-                    "data": enriched_predictions
-                })
-                
+                await handle_typing_event(
+                    ws, app, payload, client_id
+                )
+
             elif msg_type in ["query", "lock_and_query"]:
-                product_id = payload.get("product_id")
-                query_text = payload.get("query") or payload.get("content") or ""
-                image_data = payload.get("image")
+                await handle_query_event(
+                    ws, app, payload, client_id, session_id
+                )
 
-                if not product_id:
-                    await ws.send_json({
-                        "type": "status",
-                        "msg": "Error: No product selected."
-                    })
-                    continue
-                
-                # 1. Send status: fetching
-                await ws.send_json({
-                    "type": "status",
-                    "msg": "Reading Official Manual..."
-                })
-                
-                # Retrieve product data WITH context
-                product_with_context = app.state.catalog.get_product_with_context(product_id)
-                if not product_with_context:
-                    await ws.send_json({
-                        "type": "status", 
-                        "msg": "Error: Product not found."
-                    })
-                    continue
-                
-                # Extract the actual product for fetching
-                product = product_with_context.get("product", {})
-                
-                # 2. Call Fetcher.fetch
-                fetcher: ContentFetcher = app.state.fetcher
-                manual_text = await fetcher.fetch(product)
-                
-                if not manual_text:
-                    await ws.send_json({
-                        "type": "status",
-                        "msg": "Manual unavailable or empty."
-                    })
-                    # Use fallback or just continue with empty context?
-                    # Better to inform user.
-                    await ws.send_json({
-                        "type": "answer_chunk",
-                        "content": "I couldn't find the manual for this product to answer your question."
-                    })
-                    continue
-
-                # 3. Call EphemeralRAG.index
-                rag: EphemeralRAG = app.state.rag
-                await ws.send_json({"type": "status", "msg": "Analyzing content..."})
-                
-                success = rag.index(session_id, manual_text)
-                if not success:
-                    # Fallback if RAG fails (e.g. no ML libs)
-                    logger.warning("RAG indexing failed/disabled, using raw text truncation.")
-                    retrieved_context = manual_text[:8000] # simple truncation
-                else:
-                    # Retrieve relevant context
-                    retrieved_context = rag.query(session_id, query_text)
-                
-                # 4. Call Gemini with enriched context (brand + manual)
-                llm: GeminiService = app.state.llm
-                await ws.send_json({"type": "status", "msg": "Thinking..."})
-                
-                # Build enriched context with brand information
-                brand = product_with_context.get("brand", {})
-                related_items = product_with_context.get("context", {}).get("related_items", [])
-                
-                # Create a context string that includes brand and related products for reference
-                brand_context = ""
-                if brand:
-                    brand_context = f"\n**Brand Context:**\n- Brand: {brand.get('name', '')} (HQ: {brand.get('hq', '')})\n- Product: {product.get('name', '')} (Origin: {product.get('production_country', '')})"
-                
-                related_context = ""
-                if related_items:
-                    related_names = [item.get("name") for item in related_items if item.get("name")]
-                    if related_names:
-                        related_context = f"\n**Related Products Available:** {', '.join(related_names[:3])}"
-                
-                # Combine all context
-                full_context = retrieved_context + brand_context + related_context
-                
-                has_answers = False
-                async for chunk in llm.stream_answer(full_context, query_text, image_data=image_data):
-                    has_answers = True
-                    await ws.send_json({
-                        "type": "answer_chunk",
-                        "content": chunk
-                    })
-                
-                if not has_answers:
-                     await ws.send_json({
-                        "type": "answer_chunk",
-                        "content": "No answer generated."
-                    })
-
-                # Send relations if present - ENRICHED with full context
-                await ws.send_json({
-                    "type": "context",
-                    "data": {
-                        "brand": product_with_context.get("brand"),
-                        "related_items": product_with_context.get("context", {}).get("related_items", [])
-                    }
-                })
-                    
-                await ws.send_json({"type": "final_answer", "content": ""})
+            else:
+                logger.warning(
+                    "Unknown message type",
+                    client_id=client_id,
+                    msg_type=msg_type,
+                )
 
     except WebSocketDisconnect:
-        logger.info(f"Disconnected: {session_id}")
+        connection_manager.disconnect(client_id)
+        logger.info("WebSocket disconnected gracefully", client_id=client_id)
+
     except Exception as e:
-        logger.error(f"WebSocket error: {e}")
+        websocket_errors.labels(error_type=type(e).__name__).inc()
+        logger.error(
+            "WebSocket error",
+            client_id=client_id,
+            error=str(e),
+            exc_info=True,
+        )
+        connection_manager.disconnect(client_id)
         try:
             await ws.send_json({"type": "error", "message": str(e)})
-        except:
+        except Exception:
             pass
+
+
+async def handle_typing_event(
+    ws: WebSocket, app: FastAPI, payload: Dict[str, Any], client_id: str
+):
+    """Handle typing/prediction event"""
+    content = safe_get_str(payload, "content", "", max_length=1000)
+    messages_processed.labels(message_type="typing").inc()
+
+    try:
+        sniffer: SnifferService = app.state.sniffer
+
+        # Predict products
+        predictions = sniffer.predict(str(content), limit=3)
+
+        # Hydrate with full context
+        enriched_predictions = []
+        for pred in predictions:
+            product_id = pred.get("product", {}).get("id")
+            if product_id:
+                full_context = app.state.catalog.get_product_with_context(
+                    product_id
+                )
+                if full_context:
+                    enriched_pred = {
+                        "product": full_context.get("product"),
+                        "brand": full_context.get("brand"),
+                        "context": full_context.get("context"),
+                        "confidence": pred.get("confidence"),
+                        "match_text": pred.get("match_text"),
+                    }
+                    enriched_predictions.append(enriched_pred)
+            else:
+                enriched_predictions.append(pred)
+
+        # Send predictions
+        await ws.send_json({"type": "prediction", "data": enriched_predictions})
+
+        # Speculative prefetch if high confidence
+        high_confidence_pred = next(
+            (p for p in predictions if p.get("confidence", 0) > 0.85),
+            None,
+        )
+        if high_confidence_pred:
+            product_id = high_confidence_pred.get("product", {}).get("id")
+            product = app.state.product_map.get(product_id)
+            if product and product.get("manual_url"):
+                from .core.tasks import prefetch_manual
+
+                prefetch_manual.delay(
+                    product_id, product.get("manual_url"), session_id=client_id
+                )
+                logger.debug(
+                    "Prefetch queued",
+                    product_id=product_id,
+                    client_id=client_id,
+                )
+
+    except Exception as e:
+        logger.error(
+            "Error in typing handler",
+            client_id=client_id,
+            error=str(e),
+        )
+        await ws.send_json({"type": "error", "message": str(e)})
+
+
+async def handle_query_event(
+    ws: WebSocket,
+    app: FastAPI,
+    payload: Dict[str, Any],
+    client_id: str,
+    session_id: str,
+):
+    """Handle query/lock_and_query event"""
+    product_id = payload.get("product_id")
+    query_text = payload.get("query") or payload.get("content") or ""
+    image_data = payload.get("image")
+
+    messages_processed.labels(message_type="query").inc()
+
+    if not product_id:
+        await ws.send_json(
+            {"type": "status", "msg": "Error: No product selected."}
+        )
+        return
+
+    try:
+        # Send status
+        await ws.send_json(
+            {"type": "status", "msg": "Reading Official Manual..."}
+        )
+
+        # Get product with context
+        product_with_context = (
+            app.state.catalog.get_product_with_context(product_id)
+        )
+        if not product_with_context:
+            await ws.send_json(
+                {"type": "status", "msg": "Error: Product not found."}
+            )
+            return
+
+        product = product_with_context.get("product", {})
+
+        # Fetch manual
+        fetcher: ContentFetcher = app.state.fetcher
+        manual_text = await fetcher.fetch(product)
+
+        if not manual_text:
+            await ws.send_json(
+                {
+                    "type": "answer_chunk",
+                    "content": "Manual unavailable for this product.",
+                }
+            )
+            return
+
+        # Index in RAG
+        await ws.send_json({"type": "status", "msg": "Analyzing content..."})
+        rag: EphemeralRAG = app.state.rag
+        success = rag.index(session_id, manual_text)
+
+        # Retrieve context
+        if success:
+            retrieved_context = rag.query(session_id, query_text)
+        else:
+            retrieved_context = manual_text[:8000]
+
+        # Generate answer with LLM
+        await ws.send_json({"type": "status", "msg": "Thinking..."})
+
+        llm: GeminiService = app.state.llm
+        brand = product_with_context.get("brand", {})
+        related_items = (
+            product_with_context.get("context", {}).get("related_items", [])
+        )
+
+        # Build enriched context
+        brand_context = ""
+        if brand:
+            brand_context = (
+                f"\n**Brand Context:**\n"
+                f"- Brand: {brand.get('name', '')} "
+                f"(HQ: {brand.get('hq', '')})\n"
+                f"- Product: {product.get('name', '')} "
+                f"(Origin: {product.get('production_country', '')})"
+            )
+
+        related_context = ""
+        if related_items:
+            related_names = [
+                item.get("name") for item in related_items if item.get("name")
+            ]
+            if related_names:
+                related_context = (
+                    f"\n**Related Products Available:** "
+                    f"{', '.join(related_names[:3])}"
+                )
+
+        full_context = retrieved_context + brand_context + related_context
+
+        # Stream answer
+        has_answers = False
+        async for chunk in llm.stream_answer(
+            full_context, query_text, image_data=image_data
+        ):
+            has_answers = True
+            await ws.send_json(
+                {"type": "answer_chunk", "content": chunk}
+            )
+
+        if not has_answers:
+            await ws.send_json(
+                {"type": "answer_chunk", "content": "No answer generated."}
+            )
+
+        # Send context
+        await ws.send_json(
+            {
+                "type": "context",
+                "data": {
+                    "brand": product_with_context.get("brand"),
+                    "related_items": product_with_context.get(
+                        "context", {}
+                    ).get("related_items", []),
+                },
+            }
+        )
+
+        await ws.send_json({"type": "final_answer", "content": ""})
+
+    except Exception as e:
+        logger.error(
+            "Error in query handler",
+            client_id=client_id,
+            product_id=product_id,
+            error=str(e),
+        )
+        await ws.send_json({"type": "error", "message": str(e)})

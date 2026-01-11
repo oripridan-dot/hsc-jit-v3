@@ -12,6 +12,11 @@ export default defineConfig({
         target: 'ws://localhost:8000',
         changeOrigin: true,
         ws: true
+      },
+      // Proxy static assets to backend
+      '/static': {
+        target: 'http://localhost:8000',
+        changeOrigin: true
       }
     }
   }

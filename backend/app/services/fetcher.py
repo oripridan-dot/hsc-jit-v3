@@ -1,27 +1,34 @@
 import httpx
 import fitz  # PyMuPDF
 from bs4 import BeautifulSoup
-import redis
 import hashlib
 import json
 import logging
+import os
 from typing import Dict, Any, Optional
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize Redis
-# Use decode_responses=False to handle potential binary data if we were caching files,
-# but we are caching extracted text (strings). So True is fine.
-try:
-    redis_client = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
-except Exception as e:
-    logger.error(f"Failed to connect to Redis: {e}")
-    redis_client = None
+# Use centralized Redis client
+REDIS_CLIENT = None
+
+def get_redis_client():
+    """Get centralized Redis client"""
+    global REDIS_CLIENT
+    if REDIS_CLIENT is None:
+        try:
+            from app.core.redis_manager import get_redis_client as get_manager_client
+            REDIS_CLIENT = get_manager_client()
+        except Exception as e:
+            logger.error(f"Failed to get Redis client: {e}")
+            REDIS_CLIENT = None
+    return REDIS_CLIENT
 
 def cache_decorator(ttl_seconds: int = 600):
     def decorator(func):
         async def wrapper(self, url: str, *args, **kwargs):
+            redis_client = get_redis_client()
             if not redis_client:
                 return await func(self, url, *args, **kwargs)
             

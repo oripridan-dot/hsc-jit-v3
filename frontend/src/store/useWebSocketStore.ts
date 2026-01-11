@@ -81,6 +81,17 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
              const product = topPred.product;
              const relatedItems = topPred.context?.related_items || [];
              
+             // Debug logging
+             console.log('🔍 Prediction received:', {
+               productId: product?.id,
+               productName: product?.name,
+               hasImages: !!product?.images,
+               imageMain: product?.images?.main,
+               hasBrandIdentity: !!product?.brand_identity,
+               brandLogo: product?.brand_identity?.logo_url,
+               relatedCount: relatedItems.length
+             });
+             
              set({ 
                lastPrediction: product, 
                relatedItems: relatedItems,

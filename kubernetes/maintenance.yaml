@@ -1,0 +1,105 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: backup-job
+  namespace: hsc-jit
+spec:
+  schedule: "0 2 * * *"  # Daily at 2 AM UTC
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: hsc-jit-backup-sa
+          containers:
+          - name: backup
+            image: hsc-jit-backup:latest
+            env:
+            - name: REDIS_HOST
+              value: redis-service
+            - name: POSTGRES_HOST
+              value: postgres-service
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: access_key
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: secret_key
+            volumeMounts:
+            - name: backup-scripts
+              mountPath: /scripts
+          volumes:
+          - name: backup-scripts
+            configMap:
+              name: backup-scripts
+          restartPolicy: OnFailure
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: hsc-jit-backup-sa
+  namespace: hsc-jit
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backup-scripts
+  namespace: hsc-jit
+data:
+  backup.sh: |
+    #!/bin/bash
+    set -e
+    
+    DATE=$(date +%Y%m%d_%H%M%S)
+    BACKUP_DIR="/backups"
+    mkdir -p $BACKUP_DIR
+    
+    echo "Starting backup: $DATE"
+    
+    # Backup Redis
+    echo "Backing up Redis..."
+    redis-cli -h $REDIS_HOST SAVE
+    redis-cli -h $REDIS_HOST BGSAVE
+    
+    # Backup PostgreSQL (if applicable)
+    if command -v pg_dump &> /dev/null; then
+      echo "Backing up PostgreSQL..."
+      pg_dump -h $POSTGRES_HOST -U admin hsc_jit | gzip > $BACKUP_DIR/postgres-${DATE}.sql.gz
+    fi
+    
+    # Upload to S3 (if AWS credentials provided)
+    if [ ! -z "$AWS_ACCESS_KEY_ID" ]; then
+      echo "Uploading to S3..."
+      aws s3 cp $BACKUP_DIR/ s3://hsc-jit-backups/ --recursive
+    fi
+    
+    echo "Backup completed: $DATE"
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cleanup-sessions
+  namespace: hsc-jit
+spec:
+  schedule: "0 3 * * *"  # Daily at 3 AM UTC
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: cleanup
+            image: hsc-jit-backend:latest
+            command:
+            - python
+            - -c
+            - |
+              from app.core.tasks import cleanup_old_sessions
+              cleanup_old_sessions.delay(max_age_hours=24)
+              print("Session cleanup triggered")
+            env:
+            - name: REDIS_URL
+              value: "redis://redis-service:6379"
+          restartPolicy: OnFailure

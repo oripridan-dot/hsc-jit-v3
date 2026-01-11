@@ -15,7 +15,10 @@ export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, fallbackSrc, c
     if (error) {
       return fallbackSrc || null;
     }
-    return src || fallbackSrc || null;
+    // Treat empty strings as null
+    const validSrc = src?.trim() ? src : null;
+    const validFallback = fallbackSrc?.trim() ? fallbackSrc : null;
+    return validSrc || validFallback || null;
   }, [error, fallbackSrc, src]);
 
   if (!displaySrc) {

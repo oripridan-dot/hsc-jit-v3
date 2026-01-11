@@ -24,8 +24,9 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-BRAND_CATALOGS_DIR = Path(__file__).resolve().parents[2] / "brand_catalogs"
 BACKEND_CATALOGS_DIR = BASE_DIR / "data" / "catalogs"
+# Use backend catalogs as the single source of truth for brand metadata
+BRAND_CATALOGS_DIR = BACKEND_CATALOGS_DIR
 
 
 # Product templates by category - used to generate plausible products
@@ -237,7 +238,10 @@ def get_categories_for_brand(brand_meta: Dict[str, Any]) -> List[str]:
         return categories
     
     # Infer from brand name or URLs
-    brand_name = brand_meta.get("brand_full_name", "").lower()
+    brand_name = (
+        (brand_meta.get("brand_full_name") or "")
+        or (isinstance(brand_meta.get("brand_identity"), dict) and brand_meta["brand_identity"].get("name") or "")
+    ).lower()
     
     # Simple heuristics
     if "guitar" in brand_name or "fender" in brand_name:
@@ -286,7 +290,11 @@ def seed_brand_catalog(brand_id: str) -> bool:
     if not brand_meta:
         return False
     
-    brand_name = brand_meta.get("brand_full_name") or brand_id.replace("-", " ").title()
+    brand_name = (
+        brand_meta.get("brand_full_name")
+        or (isinstance(brand_meta.get("brand_identity"), dict) and brand_meta["brand_identity"].get("name"))
+        or brand_id.replace("-", " ").title()
+    )
     categories = get_categories_for_brand(brand_meta)
     
     # Generate products

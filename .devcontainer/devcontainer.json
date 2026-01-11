@@ -15,7 +15,37 @@
       ]
     }
   },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y redis-server && pip install fastapi uvicorn[standard] redis httpx jinja2 python-multipart beautifulsoup4 thefuzz && npm install -g pnpm",
-  "postStartCommand": "sudo service redis-server start",
-  "remoteUser": "vscode"
+  "postCreateCommand": "sudo apt-get update -qq && sudo apt-get install -y -qq redis-server lsof && sudo npm install -g pnpm",
+  "postStartCommand": "sudo service redis-server start && bash /workspaces/hsc-jit-v3/start.sh",
+  "remoteUser": "vscode",
+  "forwardPorts": [8000, 5173, 6379, 9090, 3000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Backend API",
+      "onAutoForward": "openBrowser",
+      "visibility": "public",
+      "protocol": "https"
+    },
+    "5173": {
+      "label": "Frontend Dev",
+      "onAutoForward": "openBrowser",
+      "visibility": "public",
+      "protocol": "https"
+    },
+    "6379": {
+      "label": "Redis",
+      "onAutoForward": "ignore",
+      "visibility": "private"
+    },
+    "9090": {
+      "label": "Prometheus",
+      "onAutoForward": "ignore",
+      "visibility": "private"
+    },
+    "3000": {
+      "label": "Grafana",
+      "onAutoForward": "ignore",
+      "visibility": "private"
+    }
+  }
 }

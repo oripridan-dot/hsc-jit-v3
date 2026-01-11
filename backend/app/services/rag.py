@@ -1,7 +1,6 @@
 import os
 import json
 import logging
-import redis
 import hashlib
 from typing import List, Dict, Any, Optional
 
@@ -11,7 +10,6 @@ logger = logging.getLogger(__name__)
 # Feature flag
 RAG_ENABLED = os.getenv("RAG_ENABLED", "false").lower() in {"1", "true", "yes", "on"}
 RAG_MODEL_NAME = os.getenv("RAG_MODEL", "all-MiniLM-L6-v2")
-REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
 # Try to import heavy ML libraries
 try:
@@ -24,14 +22,25 @@ except ImportError:
     SentenceTransformer = None
     np = None
 
-# Initialize Redis lazily based on feature flag
-redis_client = None
+# Use centralized Redis client
+REDIS_CLIENT = None
+
+def get_redis_client():
+    """Get centralized Redis client"""
+    global REDIS_CLIENT
+    if REDIS_CLIENT is None and RAG_ENABLED:
+        try:
+            from app.core.redis_manager import get_redis_client as get_manager_client
+            REDIS_CLIENT = get_manager_client()
+        except Exception as e:
+            logger.error(f"Failed to get Redis client: {e}")
+            REDIS_CLIENT = None
+    return REDIS_CLIENT
+
+# Initialize at module load if RAG enabled
 if RAG_ENABLED:
-    try:
-        redis_client = redis.from_url(REDIS_URL, decode_responses=False)
-    except Exception as e:
-        logger.warning(f"⚠️  Redis not available for RAG: {e}")
-        redis_client = None
+    # Redis client will be obtained via get_redis_client() when needed
+    pass
 
 class EphemeralRAG:
     def __init__(self):
@@ -46,8 +55,9 @@ class EphemeralRAG:
             logger.warning("RAG disabled: missing ML dependencies (sentence-transformers / numpy).")
             return
 
+        redis_client = get_redis_client()
         if not redis_client:
-            logger.warning("RAG disabled: Redis unavailable. Check REDIS_URL or service status.")
+            logger.warning("RAG disabled: Redis unavailable. Check Redis service status.")
             return
 
         try:
@@ -63,6 +73,7 @@ class EphemeralRAG:
         """
         Chunks content, embeds it, and stores in Redis under session_id.
         """
+        redis_client = get_redis_client()
         if not self.enabled or not self.model or not redis_client:
             return False
             
@@ -96,6 +107,7 @@ class EphemeralRAG:
         """
         Retrieves relevant chunks for the query.
         """
+        redis_client = get_redis_client()
         if not self.enabled or not self.model or not redis_client:
             return "" # Fail gracefully
             
