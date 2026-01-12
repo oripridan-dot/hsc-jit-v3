@@ -21,6 +21,20 @@ export interface RelatedItem {
   image?: string;
 }
 
+export interface ImageEnhancement {
+  product_id: string;
+  product_name: string;
+  annotations: Array<{
+    type: 'display' | 'button' | 'control' | 'port' | 'indicator';
+    feature: string;
+    description: string;
+    position: 'center' | 'auto' | 'sides' | 'top' | 'bottom';
+    importance: 'high' | 'medium' | 'low';
+  }>;
+  display_content: Record<string, string>;
+  has_enhancements: boolean;
+}
+
 export interface Prediction {
   id: string;
   name: string;
@@ -41,6 +55,7 @@ interface WebSocketStore {
   relatedItems: RelatedItem[]; // Hydrated related items from context
   selectedBrand: BrandIdentity | null;
   attachedImage: string | null;
+  imageEnhancements: ImageEnhancement | null;
 
   actions: {
     connect: (url: string) => void;
@@ -49,6 +64,7 @@ interface WebSocketStore {
     navigateToProduct: (productId: string, query: string) => void;
     openBrandModal: (brand: BrandIdentity) => void;
     closeBrandModal: () => void;
+    reset: () => void;
   };
 }
 
@@ -61,6 +77,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   relatedItems: [],
   selectedBrand: null,
   attachedImage: null,
+  imageEnhancements: null,
 
   actions: {
     connect: (url: string) => {
@@ -127,6 +144,12 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
             }
         }
 
+        // NEW: Image enhancements event
+        if (type === 'image_enhancements') {
+            console.log('✨ Received image enhancements:', data);
+            set({ imageEnhancements: data });
+        }
+
         // Legacy fallback for old 'relations' event
         if (type === 'relations') {
             set({ relatedItems: data });
@@ -145,7 +168,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
 
     lockAndQuery: (product: Prediction, query: string, imageData?: string | null) => {
       const { socket } = get();
-      set({ status: 'LOCKED', lastPrediction: product, messages: [], relatedItems: [], attachedImage: imageData || null });
+      set({ status: 'LOCKED', lastPrediction: product, messages: [], relatedItems: [], attachedImage: imageData || null, imageEnhancements: null });
       
       if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({ 
@@ -160,7 +183,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
 
     navigateToProduct: (productId: string, query: string) => {
       const { socket } = get();
-      set({ status: 'LOCKED', messages: [], relatedItems: [], attachedImage: null });
+      set({ status: 'LOCKED', messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null });
       
       if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({ 
@@ -172,6 +195,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
     },
 
     openBrandModal: (brand: BrandIdentity) => set({ selectedBrand: brand }),
-    closeBrandModal: () => set({ selectedBrand: null })
+    closeBrandModal: () => set({ selectedBrand: null }),
+    reset: () => set({ status: 'IDLE', predictions: [], lastPrediction: null, messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null })
   }
 }));

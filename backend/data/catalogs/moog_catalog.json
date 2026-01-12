@@ -2,11 +2,10 @@
   "brand_identity": {
     "id": "moog",
     "name": "Moog Music",
-    "hq": "Asheville, North Carolina, USA 🇺🇸",
-    "founded": 1953,
+    "hq": "Asheville, NC, USA 🇺🇸",
     "website": "https://www.moogmusic.com",
     "logo_url": "/static/assets/brands/moog.png",
-    "description": "Legendary American synthesizer company founded by Dr. Bob Moog, known for analog synthesizers, semi-modular instruments, and expressive electronic sound design tools."
+    "description": "The pioneer of the electronic synthesizer. Moog instruments are lovingly handcrafted in the USA."
   },
   "products": [
     {
@@ -17,157 +16,55 @@
       "production_country": "USA 🇺🇸",
       "images": {
         "main": "/static/assets/products/moog-subsequent-37.webp",
-        "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/Subsequent_37_Hero.jpg",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
+        "thumbnail": "/static/assets/products/moog-subsequent-37.webp"
+      },
+      "price": 7200,
+      "description": "A (2-note) paraphonic analog synthesizer that builds upon the award-winning design of the ultra-powerful Sub 37 Tribute Edition.",
+      "specs": {
+        "Engine": "100% Analog",
+        "Keys": "37 Semi-Weighted",
+        "Sequencer": "Step Sequencer"
       },
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.moogmusic.com/products/subsequent-37"
-      },
-      "relationships": [
-        {
-          "type": "accessory",
-          "target_id": "moog-ep3",
-          "label": "Expression Pedal"
-        },
-        {
-          "type": "related",
-          "target_id": "moog-grandmother",
-          "label": "Semi-modular alternative"
-        },
-        {
-          "type": "related",
-          "target_id": "moog-mother-32",
-          "label": "Add modular voice"
-        }
-      ]
+        "type": "pdf",
+        "url": "https://api.moogmusic.com/sites/default/files/2018-01/Subsequent_37_Manual.pdf"
+      }
     },
     {
       "id": "moog-grandmother",
       "name": "Moog Grandmother",
       "brand": "moog",
-      "category": "Semi-Modular Synthesizer",
+      "category": "Semi-Modular Synth",
       "production_country": "USA 🇺🇸",
       "images": {
         "main": "/static/assets/products/moog-grandmother.webp",
-        "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/Moog_Grandmother_Hero.jpg",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
+        "thumbnail": "/static/assets/products/moog-grandmother.webp"
       },
-      "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.moogmusic.com/products/grandmother"
-      },
-      "relationships": [
-        {
-          "type": "accessory",
-          "target_id": "moog-ep3",
-          "label": "Expression Pedal"
-        },
-        {
-          "type": "related",
-          "target_id": "moog-dfam",
-          "label": "Percussion companion"
-        },
-        {
-          "type": "related",
-          "target_id": "moog-subsequent-37",
-          "label": "Keyboard alternative"
-        }
-      ]
-    },
-    {
-      "id": "moog-mother-32",
-      "name": "Moog Mother-32",
-      "brand": "moog",
-      "category": "Semi-Modular Synthesizer",
-      "production_country": "USA 🇺🇸",
-      "images": {
-        "main": "/static/assets/products/moog-mother-32.webp",
-        "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/Mother-32_Hero.jpg",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
-      },
-      "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.moogmusic.com/products/mother-32"
-      },
-      "relationships": [
-        {
-          "type": "related",
-          "target_id": "moog-dfam",
-          "label": "Rhythmic partner"
-        },
-        {
-          "type": "related",
-          "target_id": "moog-grandmother",
-          "label": "Keyboard companion"
-        },
-        {
-          "type": "accessory",
-          "target_id": "moog-ep3",
-          "label": "Expression Pedal"
-        }
-      ]
+      "price": 4500,
+      "description": "A sonic playground that harkens back to Moog's modular roots, where synthesis is not only about the end result, but the journey of discovery.",
+      "specs": {
+        "Type": "Semi-Modular",
+        "Reverb": "Hardware Spring Reverb",
+        "Patch Points": "41"
+      }
     },
     {
       "id": "moog-dfam",
       "name": "Moog DFAM",
       "brand": "moog",
-      "category": "Analog Percussion Synthesizer",
+      "category": "Drum Synthesizer",
       "production_country": "USA 🇺🇸",
       "images": {
         "main": "/static/assets/products/moog-dfam.webp",
-        "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/DFAM_Hero.jpg",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
+        "thumbnail": "/static/assets/products/moog-dfam.webp"
       },
-      "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.moogmusic.com/products/dfam"
-      },
-      "relationships": [
-        {
-          "type": "related",
-          "target_id": "moog-mother-32",
-          "label": "Pairs for modular rigs"
-        },
-        {
-          "type": "related",
-          "target_id": "moog-grandmother",
-          "label": "Clock/patch companion"
-        }
-      ]
-    },
-    {
-      "id": "moog-ep3",
-      "name": "Moog EP-3 Expression Pedal",
-      "brand": "moog",
-      "category": "Accessory",
-      "production_country": "USA 🇺🇸",
-      "images": {
-        "main": "/static/assets/products/moog-ep3.webp",
-        "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/EP-3_Hero.jpg",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
-      },
-      "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.moogmusic.com/products/ep-3-expression-pedal"
-      },
-      "relationships": [
-        {
-          "type": "accessory",
-          "target_id": "moog-subsequent-37",
-          "label": "Dynamic control"
-        },
-        {
-          "type": "accessory",
-          "target_id": "moog-grandmother",
-          "label": "Expression input"
-        },
-        {
-          "type": "accessory",
-          "target_id": "moog-mother-32",
-          "label": "CV control"
-        }
-      ]
+      "price": 2800,
+      "description": "Drummer From Another Mother. The first addition to the Mother-32 family of semi-modular synthesizers.",
+      "specs": {
+        "Type": "Analog Percussion",
+        "Sequencer": "8-Step Analog",
+        "Patch Bay": "24-Point"
+      }
     }
   ]
 }

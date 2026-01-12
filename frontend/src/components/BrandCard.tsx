@@ -39,7 +39,7 @@ export const BrandCard: React.FC = () => {
         >
             {/* Header */}
             <div className="relative h-32 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-6 border-b border-slate-800">
-                <div className="absolute top-4 right-4 text-2xl filter drop-shadow-md cursor-help" title="Origin Country">
+                <div className="absolute top-4 right-4 text-4xl filter drop-shadow-md cursor-help" title="Origin Country">
                     {/* Extract flag from HQ string if possible, or usually we have it in production_country but here it's Brand HQ */}
                     {selectedBrand.hq.includes('Japan') ? '🇯🇵' : '🌍'}
                 </div>

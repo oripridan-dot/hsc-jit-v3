@@ -1,77 +1,66 @@
 {
   "brand_identity": {
     "id": "boss",
-    "name": "BOSS Corporation",
-    "hq": "Namikaze, Shizuoka, Japan 🇯🇵",
-    "founded": 1973,
+    "name": "BOSS",
+    "hq": "Hamamatsu, Japan 🇯🇵",
     "website": "https://www.boss.info",
     "logo_url": "/static/assets/brands/boss.png",
-    "description": "BOSS is a renowned manufacturer of musical instruments and audio equipment, including effect pedals, amplifiers, synthesizers, and recording devices."
+    "description": "A division of Roland Corporation, known for its legendary compact effects pedals and multi-effects processors."
   },
   "products": [
     {
-      "id": "boss-boss-analog",
-      "name": "BOSS Analog Synthesizer",
+      "id": "boss-gt-1000",
+      "name": "BOSS GT-1000",
       "brand": "boss",
-      "category": "Synthesizer",
-      "production_country": "Japan 🇯🇵",
+      "category": "Multi-Effects",
+      "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "/static/assets/products/boss-boss-analog.webp",
-        "thumbnail": "/static/assets/products/boss-boss-analog.webp"
+        "main": "/static/assets/products/boss-gt1000.webp",
+        "thumbnail": "/static/assets/products/boss-gt1000.webp"
       },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/boss-boss-analog.pdf"
-      },
-      "relationships": []
+      "price": 4900,
+      "description": "The flagship amp/effects processor with uncompromising sound quality and unmatched musical expression.",
+      "specs": {
+        "Processing": "32-bit AD/DA, 32-bit floating point",
+        "Technology": "AIRD (Augmented Impulse Response Dynamics)",
+        "Bluetooth": "Built-in"
+      }
     },
     {
-      "id": "boss-boss-digital",
-      "name": "BOSS Digital Synthesizer",
+      "id": "boss-rc-505-mk2",
+      "name": "BOSS RC-505 MkII",
       "brand": "boss",
-      "category": "Synthesizer",
-      "production_country": "Japan 🇯🇵",
+      "category": "Loop Station",
+      "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "/static/assets/products/boss-boss-digital.webp",
-        "thumbnail": "/static/assets/products/boss-boss-digital.webp"
+        "main": "/static/assets/products/boss-rc505mk2.webp",
+        "thumbnail": "/static/assets/products/boss-rc505mk2.webp"
       },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/boss-boss-digital.pdf"
-      },
-      "relationships": []
+      "price": 2900,
+      "description": "The industry standard tabletop looper, updated and enhanced. Five stereo tracks with dedicated controls.",
+      "specs": {
+        "Tracks": "5 Stereo",
+        "Input FX": "49 Types",
+        "Track FX": "53 Types"
+      }
     },
     {
-      "id": "boss-boss-stage",
-      "name": "BOSS Stage Keyboard 88",
+      "id": "boss-katana-50",
+      "name": "BOSS Katana-50 Gen 3",
       "brand": "boss",
-      "category": "Stage Keyboard",
-      "production_country": "Japan 🇯🇵",
+      "category": "Guitar Amplifier",
+      "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "/static/assets/products/boss-boss-stage.webp",
-        "thumbnail": "/static/assets/products/boss-boss-stage.webp"
+        "main": "/static/assets/products/boss-katana50.webp",
+        "thumbnail": "/static/assets/products/boss-katana50.webp"
       },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/boss-boss-stage.pdf"
-      },
-      "relationships": []
-    },
-    {
-      "id": "boss-boss-portable",
-      "name": "BOSS Portable Keyboard",
-      "brand": "boss",
-      "category": "Portable Keyboard",
-      "production_country": "Japan 🇯🇵",
-      "images": {
-        "main": "/static/assets/products/boss-boss-portable.webp",
-        "thumbnail": "/static/assets/products/boss-boss-portable.webp"
-      },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/boss-boss-portable.pdf"
-      },
-      "relationships": []
+      "price": 1400,
+      "description": "The evolution of a modern classic. With refined Tube Logic sounds and expressiveness.",
+      "specs": {
+        "Power": "50 Watts",
+        "Speaker": "12-inch Custom",
+        "Amp Types": "6"
+      }
     }
   ]
 }

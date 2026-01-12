@@ -28,6 +28,7 @@ from .services.fetcher import ContentFetcher
 from .services.rag import EphemeralRAG
 from .services.llm import GeminiService
 from .services.price import PriceService
+from .services.image_enhancer import get_image_enhancer
 from .core.redis_manager import RedisPubSubManager
 from .core.cache import get_cache
 from .core.logging import setup_structured_logging, get_logger
@@ -484,6 +485,47 @@ async def handle_query_event(
                 },
             }
         )
+
+        # Generate image enhancements with validation
+        try:
+            enhancer = get_image_enhancer()
+            enhancements = await enhancer.generate_enhancement_data(
+                product, manual_text
+            )
+            
+            # Validate enhancement data structure before sending
+            if enhancements.get("has_enhancements"):
+                # Ensure all required fields are present and valid
+                if (
+                    isinstance(enhancements.get("annotations"), list) and
+                    isinstance(enhancements.get("display_content"), dict) and
+                    enhancements.get("product_id") and
+                    enhancements.get("product_name")
+                ):
+                    await ws.send_json(
+                        {
+                            "type": "image_enhancements",
+                            "data": enhancements
+                        }
+                    )
+                    logger.info(
+                        "Image enhancements sent",
+                        product_id=product_id,
+                        annotations=len(enhancements.get("annotations", [])),
+                        has_text=enhancements.get("has_text_content", False),
+                    )
+                else:
+                    logger.warning(
+                        "Invalid enhancement data structure",
+                        product_id=product_id,
+                        keys=list(enhancements.keys())
+                    )
+        except Exception as e:
+            logger.warning(
+                "Failed to generate image enhancements",
+                product_id=product_id,
+                error=str(e)
+            )
 
         await ws.send_json({"type": "final_answer", "content": ""})
 

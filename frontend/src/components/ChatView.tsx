@@ -37,15 +37,22 @@ export const ChatView: React.FC = () => {
                   <h3 className="text-white font-bold text-lg leading-tight flex flex-wrap items-center gap-2">
                       <span className="truncate">{lastPrediction.name}</span>
                       
-                      {/* Production Country Badge */}
+                      {/* Production Country Badge with larger flag */}
                       {lastPrediction.production_country && (
-                          <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 whitespace-nowrap">
-                              Made in {lastPrediction.production_country}
+                          <span className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 whitespace-nowrap">
+                              <span className="text-lg mr-1">{lastPrediction.production_country.match(/[\u{1F1E6}-\u{1F1FF}]{2}/u)?.[0] || ''}</span>
+                              Made in {lastPrediction.production_country.replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, '').trim()}
                           </span>
                       )}
                   </h3>
-                  <div className="text-sm text-slate-400 truncate">
-                      {lastPrediction.brand_identity?.hq || lastPrediction.id}
+                  <div className="text-sm text-slate-400 truncate flex items-center gap-2">
+                      {lastPrediction.brand_identity?.hq && (
+                          <>
+                              <span className="text-base">{lastPrediction.brand_identity.hq.match(/[\u{1F1E6}-\u{1F1FF}]{2}/u)?.[0] || '🏢'}</span>
+                              <span>{lastPrediction.brand_identity.hq.replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, '').trim()}</span>
+                          </>
+                      )}
+                      {!lastPrediction.brand_identity?.hq && <span>{lastPrediction.id}</span>}
                   </div>
                </div>
            </div>

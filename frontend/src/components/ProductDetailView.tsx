@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ConfidenceMeter } from './ui/ConfidenceMeter';
 import { PriceDisplay } from './ui/PriceDisplay';
 import { Dock } from './ui/Dock';
+import { EnhancedImageViewer } from './EnhancedImageViewer';
+import { useWebSocketStore } from '../store/useWebSocketStore';
 
 interface ProductDetailProps {
   product: {
@@ -34,6 +36,7 @@ interface ProductDetailProps {
 export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClose }) => {
   const [isZoomed, setIsZoomed] = useState(false);
   const [descExpanded, setDescExpanded] = useState(false);
+  const { imageEnhancements } = useWebSocketStore();
 
   const dockItems = [
     {
@@ -101,13 +104,13 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
                <div className="flex items-center gap-6 pt-2">
                   {product.brand_identity?.hq && (
                     <div className="flex items-center gap-2 text-sm text-slate-400 bg-slate-800/50 px-3 py-1.5 rounded-full border border-white/5">
-                       <span className="text-xl">🏢</span>
+                       <span className="text-2xl">🏢</span>
                        <span>HQ: <span className="text-slate-200 font-medium">{product.brand_identity.hq}</span></span>
                     </div>
                   )}
                   {product.production_country && (
                     <div className="flex items-center gap-2 text-sm text-slate-400 bg-slate-800/50 px-3 py-1.5 rounded-full border border-white/5">
-                       <span className="text-xl">🏭</span>
+                       <span className="text-2xl">🏭</span>
                        <span>Made in: <span className="text-slate-200 font-medium">{product.production_country}</span></span>
                     </div>
                   )}
@@ -119,7 +122,7 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
          <div className="flex-none text-right min-w-[200px]">
             <PriceDisplay price={product.price} />
             <div className="mt-2 flex justify-end">
-               <ConfidenceMeter score={product.score} compact />
+              <ConfidenceMeter score={product.score} />
             </div>
          </div>
 
@@ -139,16 +142,28 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[100px] mix-blend-screen" />
 
             <div className="relative w-full h-full flex items-center justify-center">
-                 <motion.img 
-                   src={product.image} 
-                   alt={product.name}
-                   layoutId={`product-image-${product.id}`}
-                   className="max-w-[85%] max-h-[75%] object-contain drop-shadow-2xl cursor-zoom-in hover:scale-105 transition-transform duration-500 ease-out z-10"
-                   onClick={() => setIsZoomed(true)}
-                 />
-                 <div className="absolute bottom-32 left-1/2 -translate-x-1/2 text-white/30 text-xs tracking-widest uppercase pointer-events-none">
-                    High Resolution Image • Tap to Inspect
-                 </div>
+                 {/* Use EnhancedImageViewer if enhancements are available, otherwise regular image */}
+                 {imageEnhancements?.product_id === product.id ? (
+                   <EnhancedImageViewer
+                     imageUrl={product.image}
+                     productName={product.name}
+                     enhancements={imageEnhancements}
+                     className="w-full h-full"
+                   />
+                 ) : (
+                   <>
+                     <motion.img 
+                       src={product.image} 
+                       alt={product.name}
+                       layoutId={`product-image-${product.id}`}
+                       className="max-w-[85%] max-h-[75%] object-contain drop-shadow-2xl cursor-zoom-in hover:scale-105 transition-transform duration-500 ease-out z-10"
+                       onClick={() => setIsZoomed(true)}
+                     />
+                     <div className="absolute bottom-32 left-1/2 -translate-x-1/2 text-white/30 text-xs tracking-widest uppercase pointer-events-none">
+                        High Resolution Image • Tap to Inspect
+                     </div>
+                   </>
+                 )}
             </div>
          </div>
 

@@ -8,68 +8,69 @@
   },
   "products": [
     {
-      "id": "pearl-pearl-drum",
-      "name": "Pearl Drum Kit 5-Piece",
-      "brand": "pearl",
-      "category": "Drum Kit",
-      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
-      "images": {
-        "main": "/static/assets/products/pearl-pearl-drum.webp",
-        "thumbnail": "/static/assets/products/pearl-pearl-drum.webp"
-      },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/pearl-pearl-drum.pdf"
-      },
-      "relationships": []
-    },
-    {
-      "id": "pearl-pearl-electronic",
-      "name": "Pearl Electronic Drum Kit",
-      "brand": "pearl",
-      "category": "Electronic Drum Kit",
-      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
-      "images": {
-        "main": "/static/assets/products/pearl-pearl-electronic.webp",
-        "thumbnail": "/static/assets/products/pearl-pearl-electronic.webp"
-      },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/pearl-pearl-electronic.pdf"
-      },
-      "relationships": []
-    },
-    {
-      "id": "pearl-pearl-cymbal",
-      "name": "Pearl Cymbal Pack",
-      "brand": "pearl",
-      "category": "Cymbal",
-      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
-      "images": {
-        "main": "/static/assets/products/pearl-pearl-cymbal.webp",
-        "thumbnail": "/static/assets/products/pearl-pearl-cymbal.webp"
-      },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/pearl-pearl-cymbal.pdf"
-      },
-      "relationships": []
-    },
-    {
-      "id": "pearl-pearl-percussion",
-      "name": "Pearl Percussion Pad",
-      "brand": "pearl",
-      "category": "Percussion Pad",
-      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
-      "images": {
-        "main": "/static/assets/products/pearl-pearl-percussion.webp",
-        "thumbnail": "/static/assets/products/pearl-pearl-percussion.webp"
-      },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/pearl-pearl-percussion.pdf"
-      },
-      "relationships": []
-    }
-  ]
-}
+      {
+        "brand_identity": {
+          "id": "pearl",
+          "name": "Pearl Drums",
+          "hq": "Chiba, Japan 🇯🇵",
+          "website": "https://pearldrum.com",
+          "logo_url": "/static/assets/brands/pearl.png",
+          "description": "The best reason to play drums. Pearl is a world-wide leading manufacturer of drums and percussion instruments."
+        },
+        "products": [
+          {
+            "id": "pearl-decade-maple",
+            "name": "Pearl Decade Maple",
+            "brand": "pearl",
+            "category": "Acoustic Drums",
+            "production_country": "Taiwan 🇹🇼",
+            "images": {
+              "main": "/static/assets/products/pearl-decade-maple.webp",
+              "thumbnail": "/static/assets/products/pearl-decade-maple.webp"
+            },
+            "price": 5500,
+            "description": "The only all-maple lacquered drum kit in its price range. Built for the gigging pro.",
+            "specs": {
+              "Shells": "6-ply/5.4mm Maple",
+              "Lugs": "NDL Mini Lugs",
+              "Hoops": "1.6mm Steel Triple Flanged"
+            }
+          },
+          {
+            "id": "pearl-export-exx",
+            "name": "Pearl Export EXX",
+            "brand": "pearl",
+            "category": "Acoustic Drums",
+            "production_country": "China 🇨🇳",
+            "images": {
+              "main": "/static/assets/products/pearl-export.webp",
+              "thumbnail": "/static/assets/products/pearl-export.webp"
+            },
+            "price": 3800,
+            "description": "The best selling drum set of all time. Export Series returns with the Reference-inspired Opti-Loc mounting system.",
+            "specs": {
+              "Shells": "Poplar/Mahogany",
+              "Hardware": "830 Series Included",
+              "Snare": "Matching Wood Snare"
+            }
+          },
+          {
+            "id": "pearl-eliminator",
+            "name": "Pearl Eliminator Redline",
+            "brand": "pearl",
+            "category": "Drum Pedals",
+            "production_country": "China 🇨🇳",
+            "images": {
+              "main": "/static/assets/products/pearl-eliminator.webp",
+              "thumbnail": "/static/assets/products/pearl-eliminator.webp"
+            },
+            "price": 1200,
+            "description": "The Redline is the next step forward. Like having four pedals in one, fuses the stunning power and flexibility of the original Eliminator.",
+            "specs": {
+              "Drive": "Chain Drive",
+              "Cams": "Interchangeable Cam System",
+              "Bearings": "NiNjA Bearings"
+            }
+          }
+        ]
+      }

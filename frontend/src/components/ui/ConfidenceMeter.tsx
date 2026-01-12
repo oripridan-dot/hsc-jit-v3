@@ -26,8 +26,10 @@ export const ConfidenceMeter: React.FC<ConfidenceMeterProps> = ({ score, reasoni
     label = 'Low';
   }
 
+  const containerClass = `w-full p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20 shadow-sm ${animate ? 'animate-fade-in-up' : ''}`;
+
   return (
-    <div className="w-full p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20 shadow-sm animate-fade-in-up">
+    <div className={containerClass}>
       <div className="flex justify-between items-center mb-2">
         <h3 className="text-sm font-semibold text-gray-700">🎯 AI Match Confidence</h3>
         <span className="text-xs text-gray-500 cursor-help" title="Based on model match, source verification, and data freshness">ⓘ Info</span>
