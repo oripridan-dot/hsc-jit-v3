@@ -321,10 +321,10 @@ Proprietary - Halilit Technologies
 ## 🔗 Quick Links
 
 ### 📚 Essential Documentation
-- **[SESSION_SUMMARY.md](SESSION_SUMMARY.md)** - Complete session work summary
-- **[PRODUCTION_READY_STATUS.md](PRODUCTION_READY_STATUS.md)** - Current system status
-- **[COMPLETE_OPERATIONAL_CHECKLIST.md](COMPLETE_OPERATIONAL_CHECKLIST.md)** - Daily operations guide
-- **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Master documentation index
+- **[Documentation Index](docs/INDEX.md)** - Master documentation index
+- **[Getting Started](docs/guides/GETTING_STARTED.md)** - Developer setup guide
+- **[Deployment Guide](docs/deployment/DEPLOYMENT.md)** - Production deployment & checklist
+- **[Architecture](docs/architecture/ARCHITECTURE.md)** - System design
 
 ### 🛠️ Developer Tools (New!)
 - **[tools/README.md](tools/README.md)** - Comprehensive tools guide
@@ -332,10 +332,8 @@ Proprietary - Halilit Technologies
 - `bash tools/filesystem-inspector.sh` - Audit workspace
 - `bash tools/branch-manager.sh` - Manage branches & compliance
 
-### 🏗️ Architecture & Deployment
-- [Architecture Deep Dive](docs/architecture/ARCHITECTURE.md)  
-- [Deployment Checklist](docs/deployment/DEPLOYMENT_CHECKLIST.md)
-- [Troubleshooting Guide](TROUBLESHOOTING_ASSET_LOADING.md)
+### 🏗️ Other Resources
+- [Testing Guide](docs/testing/TESTING_GUIDE.md)  
 - [API Documentation](http://localhost:8000/docs) (when running)
 
-**Status:** ✅ Production Ready | **Version:** 3.1 | **Last Updated:** January 11, 2026
+**Status:** ✅ Production Ready | **Version:** 3.1 | **Last Updated:** January 12, 2026
