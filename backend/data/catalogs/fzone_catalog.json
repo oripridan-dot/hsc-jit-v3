@@ -4,7 +4,7 @@
     "name": "FZone",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/fzone.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "FZone Analog Synthesizer",
       "brand": "fzone",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fzone-fzone-analog.webp",
         "thumbnail": "/static/assets/products/fzone-fzone-analog.webp"
@@ -28,7 +28,7 @@
       "name": "FZone Digital Synthesizer",
       "brand": "fzone",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fzone-fzone-digital.webp",
         "thumbnail": "/static/assets/products/fzone-fzone-digital.webp"
@@ -44,7 +44,7 @@
       "name": "FZone Stage Keyboard 88",
       "brand": "fzone",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fzone-fzone-stage.webp",
         "thumbnail": "/static/assets/products/fzone-fzone-stage.webp"
@@ -60,7 +60,7 @@
       "name": "FZone Portable Keyboard",
       "brand": "fzone",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fzone-fzone-portable.webp",
         "thumbnail": "/static/assets/products/fzone-fzone-portable.webp"

@@ -2,10 +2,10 @@
   "brand_identity": {
     "id": "mackie",
     "name": "Mackie",
-    "hq": "Bothell, Washington, USA 🇺🇸",
+    "hq": "Bothell, Washington, USA \ud83c\uddfa\ud83c\uddf8",
     "founded": 1988,
     "website": "https://mackie.com",
-    "logo_url": "/static/assets/brands/mackie.png",
+    "logo_url": "/static/assets/brands/mackie.jpg",
     "description": "Mackie builds rugged mixers, loudspeakers, studio monitors, and creator audio gear known for reliability and great value for live sound and content creators."
   },
   "products": [
@@ -14,7 +14,7 @@
       "name": "Mackie ProFX12v3 Mixer",
       "brand": "mackie",
       "category": "Analog Mixer",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/mackie-profx12v3.webp",
         "thumbnail": "https://mackie.com/sites/default/files/2022-06/ProFX12v3-Top.png",
@@ -47,7 +47,7 @@
       "name": "Mackie CR5-X Studio Monitors",
       "brand": "mackie",
       "category": "Studio Monitors",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/mackie-cr5x.webp",
         "thumbnail": "https://mackie.com/sites/default/files/2022-06/CR5-X-Front.png",
@@ -75,7 +75,7 @@
       "name": "Mackie Thump GO Portable PA",
       "brand": "mackie",
       "category": "Portable PA Speaker",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/mackie-thump-go.webp",
         "thumbnail": "https://mackie.com/sites/default/files/2022-06/Thump_GO-front.png",
@@ -103,7 +103,7 @@
       "name": "Mackie EM-91C Condenser Microphone",
       "brand": "mackie",
       "category": "Condenser Microphone",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/mackie-em91c.webp",
         "thumbnail": "https://mackie.com/sites/default/files/2022-06/EM-91C_Hero.png",
@@ -131,7 +131,7 @@
       "name": "Mackie MC-150 Headphones",
       "brand": "mackie",
       "category": "Headphones",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/mackie-mc150.webp",
         "thumbnail": "https://mackie.com/sites/default/files/2022-06/MC-150_Hero.png",

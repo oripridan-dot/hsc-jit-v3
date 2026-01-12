@@ -4,7 +4,7 @@
     "name": "Bespeco",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/bespeco.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Bespeco Analog Synthesizer",
       "brand": "bespeco",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bespeco-bespeco-analog.webp",
         "thumbnail": "/static/assets/products/bespeco-bespeco-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Bespeco Digital Synthesizer",
       "brand": "bespeco",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bespeco-bespeco-digital.webp",
         "thumbnail": "/static/assets/products/bespeco-bespeco-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Bespeco Stage Keyboard 88",
       "brand": "bespeco",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bespeco-bespeco-stage.webp",
         "thumbnail": "/static/assets/products/bespeco-bespeco-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Bespeco Portable Keyboard",
       "brand": "bespeco",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bespeco-bespeco-portable.webp",
         "thumbnail": "/static/assets/products/bespeco-bespeco-portable.webp"

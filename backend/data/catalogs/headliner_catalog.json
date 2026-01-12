@@ -4,7 +4,7 @@
     "name": "Headliner",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/headliner.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Headliner Analog Synthesizer",
       "brand": "headliner",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/headliner-headliner-analog.webp",
         "thumbnail": "/static/assets/products/headliner-headliner-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Headliner Digital Synthesizer",
       "brand": "headliner",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/headliner-headliner-digital.webp",
         "thumbnail": "/static/assets/products/headliner-headliner-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Headliner Stage Keyboard 88",
       "brand": "headliner",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/headliner-headliner-stage.webp",
         "thumbnail": "/static/assets/products/headliner-headliner-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Headliner Portable Keyboard",
       "brand": "headliner",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/headliner-headliner-portable.webp",
         "thumbnail": "/static/assets/products/headliner-headliner-portable.webp"

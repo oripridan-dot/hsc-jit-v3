@@ -4,7 +4,7 @@
     "name": "Tombo",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/tombo.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Tombo Analog Synthesizer",
       "brand": "tombo",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/tombo-tombo-analog.webp",
         "thumbnail": "/static/assets/products/tombo-tombo-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Tombo Digital Synthesizer",
       "brand": "tombo",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/tombo-tombo-digital.webp",
         "thumbnail": "/static/assets/products/tombo-tombo-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Tombo Stage Keyboard 88",
       "brand": "tombo",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/tombo-tombo-stage.webp",
         "thumbnail": "/static/assets/products/tombo-tombo-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Tombo Portable Keyboard",
       "brand": "tombo",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/tombo-tombo-portable.webp",
         "thumbnail": "/static/assets/products/tombo-tombo-portable.webp"

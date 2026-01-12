@@ -21,13 +21,13 @@ export const ChatView: React.FC = () => {
                {lastPrediction.brand_identity && (
                   <button 
                       onClick={() => actions.openBrandModal(lastPrediction.brand_identity!)}
-                      className="relative w-12 h-12 rounded-full bg-slate-200 p-2 hover:scale-105 active:scale-95 transition shadow-lg overflow-hidden flex-shrink-0 group"
+                      className="relative w-20 h-20 rounded-2xl bg-white p-2 hover:scale-105 active:scale-95 transition shadow-lg overflow-hidden flex-shrink-0 group"
                       title="View Brand Identity"
                   >
                                             <SmartImage 
                                                 src={lastPrediction.brand_identity.logo_url}
                                                 alt={lastPrediction.brand_identity.name || 'Brand'}
-                                                className="w-full h-full" 
+                                                className="w-full h-full object-contain" 
                                             />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                   </button>

@@ -4,7 +4,7 @@
     "name": "EAW",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/eaw.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "EAW Analog Synthesizer",
       "brand": "eaw",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/eaw-eaw-analog.webp",
         "thumbnail": "/static/assets/products/eaw-eaw-analog.webp"
@@ -28,7 +28,7 @@
       "name": "EAW Digital Synthesizer",
       "brand": "eaw",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/eaw-eaw-digital.webp",
         "thumbnail": "/static/assets/products/eaw-eaw-digital.webp"
@@ -44,7 +44,7 @@
       "name": "EAW Stage Keyboard 88",
       "brand": "eaw",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/eaw-eaw-stage.webp",
         "thumbnail": "/static/assets/products/eaw-eaw-stage.webp"
@@ -60,7 +60,7 @@
       "name": "EAW Portable Keyboard",
       "brand": "eaw",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/eaw-eaw-portable.webp",
         "thumbnail": "/static/assets/products/eaw-eaw-portable.webp"

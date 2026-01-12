@@ -4,7 +4,7 @@
     "name": "Paiste",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/paiste.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Paiste Analog Synthesizer",
       "brand": "paiste",
       "category": "Synthesizer",
-      "production_country": "Switzerland 🇨🇭",
+      "production_country": "Switzerland \ud83c\udde8\ud83c\udded",
       "images": {
         "main": "/static/assets/products/paiste-paiste-analog.webp",
         "thumbnail": "/static/assets/products/paiste-paiste-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Paiste Digital Synthesizer",
       "brand": "paiste",
       "category": "Synthesizer",
-      "production_country": "Switzerland 🇨🇭",
+      "production_country": "Switzerland \ud83c\udde8\ud83c\udded",
       "images": {
         "main": "/static/assets/products/paiste-paiste-digital.webp",
         "thumbnail": "/static/assets/products/paiste-paiste-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Paiste Stage Keyboard 88",
       "brand": "paiste",
       "category": "Stage Keyboard",
-      "production_country": "Switzerland 🇨🇭",
+      "production_country": "Switzerland \ud83c\udde8\ud83c\udded",
       "images": {
         "main": "/static/assets/products/paiste-paiste-stage.webp",
         "thumbnail": "/static/assets/products/paiste-paiste-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Paiste Portable Keyboard",
       "brand": "paiste",
       "category": "Portable Keyboard",
-      "production_country": "Switzerland 🇨🇭",
+      "production_country": "Switzerland \ud83c\udde8\ud83c\udded",
       "images": {
         "main": "/static/assets/products/paiste-paiste-portable.webp",
         "thumbnail": "/static/assets/products/paiste-paiste-portable.webp"

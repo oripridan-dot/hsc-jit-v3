@@ -4,7 +4,7 @@
     "name": "V-MODA",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/v-moda.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "V-MODA Analog Synthesizer",
       "brand": "v-moda",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/v-moda-v-moda-analog.webp",
         "thumbnail": "/static/assets/products/v-moda-v-moda-analog.webp"
@@ -28,7 +28,7 @@
       "name": "V-MODA Digital Synthesizer",
       "brand": "v-moda",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/v-moda-v-moda-digital.webp",
         "thumbnail": "/static/assets/products/v-moda-v-moda-digital.webp"
@@ -44,7 +44,7 @@
       "name": "V-MODA Stage Keyboard 88",
       "brand": "v-moda",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/v-moda-v-moda-stage.webp",
         "thumbnail": "/static/assets/products/v-moda-v-moda-stage.webp"
@@ -60,7 +60,7 @@
       "name": "V-MODA Portable Keyboard",
       "brand": "v-moda",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/v-moda-v-moda-portable.webp",
         "thumbnail": "/static/assets/products/v-moda-v-moda-portable.webp"

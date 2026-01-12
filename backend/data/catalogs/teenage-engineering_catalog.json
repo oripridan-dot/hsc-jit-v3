@@ -4,7 +4,7 @@
     "name": "Teenage Engineering",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/teenage-engineering.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Teenage Engineering Analog Synthesizer",
       "brand": "teenage-engineering",
       "category": "Synthesizer",
-      "production_country": "Sweden 🇸🇪",
+      "production_country": "Sweden \ud83c\uddf8\ud83c\uddea",
       "images": {
         "main": "/static/assets/products/teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer.webp"
@@ -28,7 +28,7 @@
       "name": "Teenage Engineering Digital Synthesizer",
       "brand": "teenage-engineering",
       "category": "Synthesizer",
-      "production_country": "Sweden 🇸🇪",
+      "production_country": "Sweden \ud83c\uddf8\ud83c\uddea",
       "images": {
         "main": "/static/assets/products/teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer.webp"
@@ -44,7 +44,7 @@
       "name": "Teenage Engineering Stage Keyboard 88",
       "brand": "teenage-engineering",
       "category": "Stage Keyboard",
-      "production_country": "Sweden 🇸🇪",
+      "production_country": "Sweden \ud83c\uddf8\ud83c\uddea",
       "images": {
         "main": "/static/assets/products/teenage-engineering-teenage-engineering-stage-keyboard-88-stage.webp",
         "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-stage-keyboard-88-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Teenage Engineering Portable Keyboard",
       "brand": "teenage-engineering",
       "category": "Portable Keyboard",
-      "production_country": "Sweden 🇸🇪",
+      "production_country": "Sweden \ud83c\uddf8\ud83c\uddea",
       "images": {
         "main": "/static/assets/products/teenage-engineering-teenage-engineering-portable-keyboard-portable.webp",
         "thumbnail": "/static/assets/products/teenage-engineering-teenage-engineering-portable-keyboard-portable.webp"

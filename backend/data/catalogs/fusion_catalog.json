@@ -4,7 +4,7 @@
     "name": "Fusion",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/fusion.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Fusion Analog Synthesizer",
       "brand": "fusion",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fusion-fusion-analog.webp",
         "thumbnail": "/static/assets/products/fusion-fusion-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Fusion Digital Synthesizer",
       "brand": "fusion",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fusion-fusion-digital.webp",
         "thumbnail": "/static/assets/products/fusion-fusion-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Fusion Stage Keyboard 88",
       "brand": "fusion",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fusion-fusion-stage.webp",
         "thumbnail": "/static/assets/products/fusion-fusion-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Fusion Portable Keyboard",
       "brand": "fusion",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/fusion-fusion-portable.webp",
         "thumbnail": "/static/assets/products/fusion-fusion-portable.webp"

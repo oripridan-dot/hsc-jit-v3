@@ -2,7 +2,7 @@
   "brand_identity": {
     "id": "roland",
     "name": "Roland Corporation",
-    "hq": "Hamamatsu, Japan 🇯🇵",
+    "hq": "Hamamatsu, Japan \ud83c\uddef\ud83c\uddf5",
     "founded": 1972,
     "website": "https://www.roland.com",
     "logo_url": "/static/assets/brands/roland.png",
@@ -14,7 +14,7 @@
       "name": "Roland TD-17KVX Gen 2",
       "brand": "roland",
       "category": "Electronic Drums",
-      "production_country": "Malaysia 🇲🇾",
+      "production_country": "Malaysia \ud83c\uddf2\ud83c\uddfe",
       "images": {
         "main": "/static/assets/products/roland-td17kvx2.webp",
         "thumbnail": "https://static.roland.com/assets/images/products/gallery/td-17kvx2_top_gal.jpg",
@@ -63,7 +63,7 @@
       "name": "Roland RH-300 Headphones",
       "brand": "roland",
       "category": "Headphones",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/roland-rh300.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
@@ -79,7 +79,7 @@
       "name": "Roland NE-10 Noise Eater",
       "brand": "roland",
       "category": "Accessories",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/roland-ne10.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
@@ -95,7 +95,7 @@
       "name": "Roland DAP-3X Drum Accessory Package",
       "brand": "roland",
       "category": "Accessories",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/roland-dap3x.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
@@ -111,7 +111,7 @@
       "name": "Roland PD-120 V-Pad",
       "brand": "roland",
       "category": "Drum Pads",
-      "production_country": "Malaysia 🇲🇾",
+      "production_country": "Malaysia \ud83c\uddf2\ud83c\uddfe",
       "images": {
         "main": "/static/assets/products/roland-pd120.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
@@ -127,7 +127,7 @@
       "name": "Roland TD-17KV",
       "brand": "roland",
       "category": "Electronic Drums",
-      "production_country": "Malaysia 🇲🇾",
+      "production_country": "Malaysia \ud83c\uddf2\ud83c\uddfe",
       "images": {
         "main": "/static/assets/products/roland-td17kv.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
@@ -149,7 +149,7 @@
       "name": "Roland TD-27KV",
       "brand": "roland",
       "category": "Electronic Drums",
-      "production_country": "Malaysia 🇲🇾",
+      "production_country": "Malaysia \ud83c\uddf2\ud83c\uddfe",
       "images": {
         "main": "/static/assets/products/roland-td27kv.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"
@@ -171,7 +171,7 @@
       "name": "Roland PDS-20 Kick Trigger Pedal",
       "brand": "roland",
       "category": "Drum Pedals",
-      "production_country": "China 🇨🇳",
+      "production_country": "China \ud83c\udde8\ud83c\uddf3",
       "images": {
         "main": "/static/assets/products/roland-pds20.webp",
         "logo": "https://static.roland.com/assets/images/logo_roland.svg"

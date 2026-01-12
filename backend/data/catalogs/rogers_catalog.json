@@ -4,7 +4,7 @@
     "name": "Rogers",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/rogers.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Rogers Analog Synthesizer",
       "brand": "rogers",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rogers-rogers-analog.webp",
         "thumbnail": "/static/assets/products/rogers-rogers-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Rogers Digital Synthesizer",
       "brand": "rogers",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rogers-rogers-digital.webp",
         "thumbnail": "/static/assets/products/rogers-rogers-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Rogers Stage Keyboard 88",
       "brand": "rogers",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rogers-rogers-stage.webp",
         "thumbnail": "/static/assets/products/rogers-rogers-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Rogers Portable Keyboard",
       "brand": "rogers",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rogers-rogers-portable.webp",
         "thumbnail": "/static/assets/products/rogers-rogers-portable.webp"

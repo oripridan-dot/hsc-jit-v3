@@ -4,7 +4,7 @@
     "name": "Hiwatt",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/hiwatt.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Hiwatt Analog Synthesizer",
       "brand": "hiwatt",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/hiwatt-hiwatt-analog.webp",
         "thumbnail": "/static/assets/products/hiwatt-hiwatt-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Hiwatt Digital Synthesizer",
       "brand": "hiwatt",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/hiwatt-hiwatt-digital.webp",
         "thumbnail": "/static/assets/products/hiwatt-hiwatt-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Hiwatt Stage Keyboard 88",
       "brand": "hiwatt",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/hiwatt-hiwatt-stage.webp",
         "thumbnail": "/static/assets/products/hiwatt-hiwatt-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Hiwatt Portable Keyboard",
       "brand": "hiwatt",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/hiwatt-hiwatt-portable.webp",
         "thumbnail": "/static/assets/products/hiwatt-hiwatt-portable.webp"

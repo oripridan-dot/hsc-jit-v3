@@ -4,7 +4,7 @@
     "name": "Montarbo",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/montarbo.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Montarbo Analog Synthesizer",
       "brand": "montarbo",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/montarbo-montarbo-analog.webp",
         "thumbnail": "/static/assets/products/montarbo-montarbo-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Montarbo Digital Synthesizer",
       "brand": "montarbo",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/montarbo-montarbo-digital.webp",
         "thumbnail": "/static/assets/products/montarbo-montarbo-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Montarbo Stage Keyboard 88",
       "brand": "montarbo",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/montarbo-montarbo-stage.webp",
         "thumbnail": "/static/assets/products/montarbo-montarbo-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Montarbo Portable Keyboard",
       "brand": "montarbo",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/montarbo-montarbo-portable.webp",
         "thumbnail": "/static/assets/products/montarbo-montarbo-portable.webp"

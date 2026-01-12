@@ -4,7 +4,7 @@
     "name": "Maestro",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/maestro.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Maestro Analog Synthesizer",
       "brand": "maestro",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maestro-maestro-analog.webp",
         "thumbnail": "/static/assets/products/maestro-maestro-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Maestro Digital Synthesizer",
       "brand": "maestro",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maestro-maestro-digital.webp",
         "thumbnail": "/static/assets/products/maestro-maestro-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Maestro Stage Keyboard 88",
       "brand": "maestro",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maestro-maestro-stage.webp",
         "thumbnail": "/static/assets/products/maestro-maestro-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Maestro Portable Keyboard",
       "brand": "maestro",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maestro-maestro-portable.webp",
         "thumbnail": "/static/assets/products/maestro-maestro-portable.webp"

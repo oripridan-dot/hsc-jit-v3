@@ -4,7 +4,7 @@
     "name": "Maybach",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/maybach.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Maybach Analog Synthesizer",
       "brand": "maybach",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maybach-maybach-analog.webp",
         "thumbnail": "/static/assets/products/maybach-maybach-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Maybach Digital Synthesizer",
       "brand": "maybach",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maybach-maybach-digital.webp",
         "thumbnail": "/static/assets/products/maybach-maybach-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Maybach Stage Keyboard 88",
       "brand": "maybach",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maybach-maybach-stage.webp",
         "thumbnail": "/static/assets/products/maybach-maybach-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Maybach Portable Keyboard",
       "brand": "maybach",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maybach-maybach-portable.webp",
         "thumbnail": "/static/assets/products/maybach-maybach-portable.webp"

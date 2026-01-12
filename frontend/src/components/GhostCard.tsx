@@ -51,11 +51,11 @@ export const GhostCard: React.FC = () => {
             className="absolute top-4 left-4 z-20 group relative"
             title={`View ${brand.name} details`}
           >
-            <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-all">
+            <div className="w-14 h-14 rounded-xl bg-white/90 backdrop-blur border border-white/20 flex items-center justify-center group-hover:bg-white transition-all shadow-lg p-2">
               <SmartImage
                 src={brand.logo_url}
                 alt={brand.name}
-                className="w-8 h-8"
+                className="w-full h-full object-contain"
               />
             </div>
           </button>

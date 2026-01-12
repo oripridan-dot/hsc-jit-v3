@@ -4,7 +4,7 @@
     "name": "Magma",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/magma.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Magma Analog Synthesizer",
       "brand": "magma",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/magma-magma-analog.webp",
         "thumbnail": "/static/assets/products/magma-magma-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Magma Digital Synthesizer",
       "brand": "magma",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/magma-magma-digital.webp",
         "thumbnail": "/static/assets/products/magma-magma-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Magma Stage Keyboard 88",
       "brand": "magma",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/magma-magma-stage.webp",
         "thumbnail": "/static/assets/products/magma-magma-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Magma Portable Keyboard",
       "brand": "magma",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/magma-magma-portable.webp",
         "thumbnail": "/static/assets/products/magma-magma-portable.webp"

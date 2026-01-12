@@ -4,7 +4,7 @@
     "name": "Vintage",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/vintage.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Vintage Analog Synthesizer",
       "brand": "vintage",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/vintage-vintage-analog.webp",
         "thumbnail": "/static/assets/products/vintage-vintage-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Vintage Digital Synthesizer",
       "brand": "vintage",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/vintage-vintage-digital.webp",
         "thumbnail": "/static/assets/products/vintage-vintage-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Vintage Stage Keyboard 88",
       "brand": "vintage",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/vintage-vintage-stage.webp",
         "thumbnail": "/static/assets/products/vintage-vintage-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Vintage Portable Keyboard",
       "brand": "vintage",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/vintage-vintage-portable.webp",
         "thumbnail": "/static/assets/products/vintage-vintage-portable.webp"

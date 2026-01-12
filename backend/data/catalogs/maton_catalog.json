@@ -4,7 +4,7 @@
     "name": "Maton",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/maton.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Maton Analog Synthesizer",
       "brand": "maton",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maton-maton-analog.webp",
         "thumbnail": "/static/assets/products/maton-maton-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Maton Digital Synthesizer",
       "brand": "maton",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maton-maton-digital.webp",
         "thumbnail": "/static/assets/products/maton-maton-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Maton Stage Keyboard 88",
       "brand": "maton",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maton-maton-stage.webp",
         "thumbnail": "/static/assets/products/maton-maton-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Maton Portable Keyboard",
       "brand": "maton",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/maton-maton-portable.webp",
         "thumbnail": "/static/assets/products/maton-maton-portable.webp"

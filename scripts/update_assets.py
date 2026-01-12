@@ -3,8 +3,9 @@ import httpx
 import json
 import os
 from pathlib import Path
-from urllib.parse import urlparse
+from bs4 import BeautifulSoup
 import shutil
+from urllib.parse import urlparse
 
 # Constants
 CATALOG_DIR = Path("/workspaces/hsc-jit-v3/backend/data/catalogs")
@@ -33,6 +34,29 @@ async def fetch_file(client, url, dest_path):
     except Exception as e:
         print(f"✗ Error: {e}")
         return False
+
+async def fetch_og_image(client, doc_url):
+    try:
+        if not doc_url or not doc_url.startswith('http'): return None
+        print(f"  Scraping {doc_url} for og:image...")
+        # Use a real user agent
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        }
+        resp = await client.get(doc_url, headers=headers, follow_redirects=True, timeout=10.0)
+        if resp.status_code != 200:
+            print(f"  Failed: {resp.status_code}")
+            return None
+        
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        og_img = soup.find('meta', property='og:image')
+        if og_img and og_img.get('content'):
+            return og_img['content']
+        return None
+    except Exception as e:
+        print(f"  Scrape Error: {e}")
+        return None
+
 
 async def process_catalog(client, file_path):
     try:
@@ -130,23 +154,40 @@ async def process_catalog(client, file_path):
         main_img = images.get('main', '')
         thumb_img = images.get('thumbnail', '')
         
-        # If we have a remote thumbnail but only a local (potential placeholder) main
-        if thumb_img and thumb_img.startswith('http'):
-            # Extract target filename from main_img if it exists and is local
-            target_filename = None
-            if main_img and main_img.startswith('/static/assets/products/'):
-                target_filename = main_img.split('/')[-1]
-            else:
-                # Create a filename
-                ext = thumb_img.split('.')[-1]
-                if len(ext) > 4: ext = 'jpg' # sanitize
-                target_filename = f"{product['id']}.{ext}"
-                # Update main img path in data
-                images['main'] = f"/static/assets/products/{target_filename}"
-                changed = True
+        # Determine if we need to fix this image
+        needs_fix = False
+        target_filename = None
+        
+        # 1. Check if local file exists and is valid size
+        if main_img and main_img.startswith('/static/assets/products/'):
+            fname = main_img.split('/')[-1]
+            fpath = PRODUCT_ASSET_DIR / fname
+            if not fpath.exists() or fpath.stat().st_size < 5000: # Re-download if < 5KB (suspicious)
+                needs_fix = True
+                target_filename = fname
+        
+        # 2. If no main image or needs fix
+        if not main_img or needs_fix:
+            if not target_filename:
+                target_filename = f"{product['id']}.webp" # default
             
-            dest_path = PRODUCT_ASSET_DIR / target_filename
-            await fetch_file(client, thumb_img, dest_path)
+            # Source 1: Thumbnail URL from catalog
+            source_url = thumb_img if thumb_img and thumb_img.startswith('http') else None
+            
+            # Source 2: Scrape documentation URL
+            if not source_url and product.get('documentation', {}).get('url'):
+                source_url = await fetch_og_image(client, product['documentation']['url'])
+                
+            if source_url:
+                dest_path = PRODUCT_ASSET_DIR / target_filename
+                if await fetch_file(client, source_url, dest_path):
+                    # verify size
+                    if dest_path.stat().st_size > 1000:
+                        images['main'] = f"/static/assets/products/{target_filename}"
+                        changed = True
+                    else:
+                        print(f"  Downloaded file too small {dest_path.stat().st_size}, ignoring.")
+                        dest_path.unlink() # delete garbage
 
     if changed:
         with open(file_path, 'w') as f:

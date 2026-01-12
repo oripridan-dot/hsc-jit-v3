@@ -4,7 +4,7 @@
     "name": "Xvive",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/xvive.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Xvive Analog Synthesizer",
       "brand": "xvive",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xvive-xvive-analog.webp",
         "thumbnail": "/static/assets/products/xvive-xvive-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Xvive Digital Synthesizer",
       "brand": "xvive",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xvive-xvive-digital.webp",
         "thumbnail": "/static/assets/products/xvive-xvive-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Xvive Stage Keyboard 88",
       "brand": "xvive",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xvive-xvive-stage.webp",
         "thumbnail": "/static/assets/products/xvive-xvive-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Xvive Portable Keyboard",
       "brand": "xvive",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xvive-xvive-portable.webp",
         "thumbnail": "/static/assets/products/xvive-xvive-portable.webp"

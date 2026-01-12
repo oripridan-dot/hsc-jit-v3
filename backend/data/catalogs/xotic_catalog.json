@@ -4,7 +4,7 @@
     "name": "Xotic",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/xotic.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Xotic Analog Synthesizer",
       "brand": "xotic",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xotic-xotic-analog.webp",
         "thumbnail": "/static/assets/products/xotic-xotic-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Xotic Digital Synthesizer",
       "brand": "xotic",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xotic-xotic-digital.webp",
         "thumbnail": "/static/assets/products/xotic-xotic-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Xotic Stage Keyboard 88",
       "brand": "xotic",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xotic-xotic-stage.webp",
         "thumbnail": "/static/assets/products/xotic-xotic-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Xotic Portable Keyboard",
       "brand": "xotic",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/xotic-xotic-portable.webp",
         "thumbnail": "/static/assets/products/xotic-xotic-portable.webp"

@@ -4,7 +4,7 @@
     "name": "Medeli",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/medeli.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Medeli Analog Synthesizer",
       "brand": "medeli",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/medeli-medeli-analog.webp",
         "thumbnail": "/static/assets/products/medeli-medeli-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Medeli Digital Synthesizer",
       "brand": "medeli",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/medeli-medeli-digital.webp",
         "thumbnail": "/static/assets/products/medeli-medeli-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Medeli Stage Keyboard 88",
       "brand": "medeli",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/medeli-medeli-stage.webp",
         "thumbnail": "/static/assets/products/medeli-medeli-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Medeli Portable Keyboard",
       "brand": "medeli",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/medeli-medeli-portable.webp",
         "thumbnail": "/static/assets/products/medeli-medeli-portable.webp"

@@ -4,7 +4,7 @@
     "name": "ESP",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/esp.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "ESP Analog Synthesizer",
       "brand": "esp",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/esp-esp-analog.webp",
         "thumbnail": "/static/assets/products/esp-esp-analog.webp"
@@ -28,7 +28,7 @@
       "name": "ESP Digital Synthesizer",
       "brand": "esp",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/esp-esp-digital.webp",
         "thumbnail": "/static/assets/products/esp-esp-digital.webp"
@@ -44,7 +44,7 @@
       "name": "ESP Stage Keyboard 88",
       "brand": "esp",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/esp-esp-stage.webp",
         "thumbnail": "/static/assets/products/esp-esp-stage.webp"
@@ -60,7 +60,7 @@
       "name": "ESP Portable Keyboard",
       "brand": "esp",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/esp-esp-portable.webp",
         "thumbnail": "/static/assets/products/esp-esp-portable.webp"

@@ -4,7 +4,7 @@
     "name": "Dixon",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/dixon.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Dixon Analog Synthesizer",
       "brand": "dixon",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/dixon-dixon-analog.webp",
         "thumbnail": "/static/assets/products/dixon-dixon-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Dixon Digital Synthesizer",
       "brand": "dixon",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/dixon-dixon-digital.webp",
         "thumbnail": "/static/assets/products/dixon-dixon-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Dixon Stage Keyboard 88",
       "brand": "dixon",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/dixon-dixon-stage.webp",
         "thumbnail": "/static/assets/products/dixon-dixon-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Dixon Portable Keyboard",
       "brand": "dixon",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/dixon-dixon-portable.webp",
         "thumbnail": "/static/assets/products/dixon-dixon-portable.webp"

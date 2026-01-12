@@ -4,7 +4,7 @@
     "name": "Jasmine",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/jasmine.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Jasmine Analog Synthesizer",
       "brand": "jasmine",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/jasmine-jasmine-analog.webp",
         "thumbnail": "/static/assets/products/jasmine-jasmine-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Jasmine Digital Synthesizer",
       "brand": "jasmine",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/jasmine-jasmine-digital.webp",
         "thumbnail": "/static/assets/products/jasmine-jasmine-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Jasmine Stage Keyboard 88",
       "brand": "jasmine",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/jasmine-jasmine-stage.webp",
         "thumbnail": "/static/assets/products/jasmine-jasmine-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Jasmine Portable Keyboard",
       "brand": "jasmine",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/jasmine-jasmine-portable.webp",
         "thumbnail": "/static/assets/products/jasmine-jasmine-portable.webp"

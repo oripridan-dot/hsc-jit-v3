@@ -4,7 +4,7 @@
     "name": "Marimba One",
     "hq": "Unknown",
     "website": "",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/marimba-one.jpg"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Marimba One Analog Synthesizer",
       "brand": "marimba-one",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/marimba-one-marimba-one-analog-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/marimba-one-marimba-one-analog-synthesizer-synthesizer.webp"
@@ -28,7 +28,7 @@
       "name": "Marimba One Digital Synthesizer",
       "brand": "marimba-one",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/marimba-one-marimba-one-digital-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/marimba-one-marimba-one-digital-synthesizer-synthesizer.webp"
@@ -44,7 +44,7 @@
       "name": "Marimba One Stage Keyboard 88",
       "brand": "marimba-one",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/marimba-one-marimba-one-stage-keyboard-88-stage.webp",
         "thumbnail": "/static/assets/products/marimba-one-marimba-one-stage-keyboard-88-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Marimba One Portable Keyboard",
       "brand": "marimba-one",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/marimba-one-marimba-one-portable-keyboard-portable.webp",
         "thumbnail": "/static/assets/products/marimba-one-marimba-one-portable-keyboard-portable.webp"
