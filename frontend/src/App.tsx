@@ -1,13 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useWebSocketStore } from './store/useWebSocketStore';
-import { GhostCard } from './components/GhostCard';
-import { BrandCard } from './components/BrandCard';
+import { ProductDetailView } from './components/ProductDetailView';
 import { ChatView } from './components/ChatView';
-import { ContextRail } from './components/ContextRail';
+import { GhostCard } from './components/GhostCard';
 import './index.css';
 
 function App() {
-  const { actions, status } = useWebSocketStore();
+  const { actions, status, predictions, lastPrediction } = useWebSocketStore();
   const [inputText, setInputText] = useState('');
   const [imageData, setImageData] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
@@ -17,7 +16,6 @@ function App() {
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     const host = window.location.host;
     actions.connect(`${protocol}//${host}/ws`);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,23 +24,18 @@ function App() {
     actions.sendTyping(txt);
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-        submitQuery();
-    }
-  }
-
   const submitQuery = () => {
-    const { lastPrediction, actions } = useWebSocketStore.getState();
-    if (!lastPrediction) return;
+    const target = lastPrediction || predictions[0];
+    if (!target) return;
 
-    const query = inputText.trim() || "How do I reset this device?";
-    actions.lockAndQuery(lastPrediction, query, imageData);
+    const query = inputText.trim() || target.name || "Details";
+    actions.lockAndQuery(target, query, imageData);
     setInputText('');
     setImageData(null);
-    if (fileInputRef.current) {
-      fileInputRef.current.value = '';
-    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') submitQuery();
   };
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -59,83 +52,142 @@ function App() {
     reader.readAsDataURL(file);
   };
 
+  // Map predictions to Zen Cards format
+  const zenResults = useMemo(() => {
+    return predictions.map(p => ({
+      id: p.id,
+      name: p.name,
+      image: p.images?.main || p.img || '', // Handle varied schema
+      price: (p as any).price || 0, // Should be fetched
+      description: (p as any).description || `Professional ${p.brand || ''} gear for serious musicians.`,
+      brand: p.brand || 'Music',
+      brand_identity: p.brand_identity, // Pass through identity
+      production_country: p.production_country,
+      category: (p as any).category,
+      family: (p as any).family,
+      manual_url: (p as any).manual_url,
+      score: (p as any).confidence || 0.9,
+      specs: (p as any).specs || { "Category": "Instrument", "Type": "Pro Audio" },
+      accessories: (p as any).accessories,
+      related: (p as any).related,
+      full_description: (p as any).full_description
+    }));
+  }, [predictions]);
+
+  // Effect to fetch prices for results
+  useEffect(() => {
+    predictions.forEach(p => {
+       if (!(p as any).priceFetched) {
+           (p as any).priceFetched = true;
+           fetch(`/api/price/${encodeURIComponent(p.name)}`)
+             .then(r => r.json())
+             .then(data => {
+                // Ideally update store, but for now we just log/mock
+             })
+             .catch(() => {});
+       }
+    });
+  }, [predictions]);
+
+  const isChatMode = status === 'LOCKED' || status === 'ANSWERING';
+  const showDetail = !isChatMode && status === 'SNIFFING' && zenResults.length > 0;
+
   return (
-    <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center p-4 relative overflow-hidden">
-      
-      {/* Background Ambience */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black pointer-events-none" />
+    <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-blue-500/30 overflow-x-hidden">
+        {/* Ambient Backlight */}
+        <div className="fixed inset-0 pointer-events-none z-0">
+           <div className="absolute top-[-20%] left-[20%] w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[120px] mix-blend-screen animate-pulse-gentle" />
+           <div className="absolute bottom-[-10%] right-[10%] w-[500px] h-[500px] bg-emerald-900/10 rounded-full blur-[100px] mix-blend-screen animate-pulse-gentle" style={{ animationDelay: '1s' }} />
+        </div>
 
-      {/* Main Container */}
-      <div className="z-10 w-full max-w-2xl flex flex-col space-y-8 flex-1 py-10 pb-40">
-        
-        {/* Header - Fade out when active to save space? Keep it for now. */}
-        <header className={`text-center space-y-2 transition-all duration-500 ${status !== 'IDLE' ? 'scale-90 opacity-80' : 'scale-100'}`}>
-            <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
-                HSC JIT v3
-            </h1>
-            <p className="text-slate-400 text-sm tracking-widest uppercase">
-                The Psychic Engine {status !== 'IDLE' && `• ${status}`}
-            </p>
-        </header>
+        <div className="relative z-10 container mx-auto px-4 py-8 flex flex-col min-h-screen">
+          
+          {/* Header */}
+          <header className={`flex flex-col items-center justify-center transition-all duration-700 ${isChatMode || showDetail ? 'min-h-[10vh] mb-8' : 'min-h-[30vh]'}`}>
+             <div className="text-center space-y-4">
+               <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 tracking-tight animate-fade-in-up">
+                 HSC JIT v3
+               </h1>
+               <p className={`text-slate-400 text-sm tracking-widest font-light uppercase transition-opacity duration-500 ${(isChatMode || showDetail) ? 'opacity-0 h-0 hidden' : 'opacity-100'}`}>
+                 The Zen Search Engine
+               </p>
+             </div>
+          </header>
 
-        {/* Search Input - Hide when locked? Or keep as "Command Bar"? Keep. */}
-        <div className="relative group">
-            <div className={`absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-xl transition duration-500 blur ${status === 'SNIFFING' ? 'opacity-75' : 'opacity-20 group-hover:opacity-40'}`}></div>
-            <div className="relative w-full bg-slate-900/90 text-white placeholder-slate-500 border border-slate-700 rounded-xl px-4 py-3 flex items-center space-x-3 focus-within:ring-2 focus-within:ring-blue-500/50 transition-all">
-                <button
-                  type="button"
-                  onClick={() => fileInputRef.current?.click()}
-                  className="p-2 rounded-lg hover:bg-white/5 active:scale-95 transition"
-                  title="Attach an image"
-                >
-                  📎
-                </button>
-                <input
-                    type="text"
-                    value={inputText}
-                    onChange={handleInput}
-                    onKeyDown={handleKeyDown}
-                    placeholder="Type a product (e.g. 'Roland TD')..."
-                    className="flex-1 bg-transparent outline-none text-xl font-light"
-                    autoFocus
-                />
-                <button
-                  type="button"
-                  onClick={submitQuery}
-                  className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 active:scale-95 transition text-sm font-semibold"
-                >
-                  Send
-                </button>
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/*"
-                  className="hidden"
-                  onChange={handleFileSelect}
-                />
-            </div>
-            {imageData && (
-              <div className="absolute -bottom-16 left-2 flex items-center space-x-2 bg-slate-900/90 border border-slate-800 rounded-xl px-3 py-2 shadow-lg">
-                <div className="w-10 h-10 rounded-lg overflow-hidden border border-white/10">
-                  <img src={imageData} alt="Preview" className="w-full h-full object-cover" />
+          {/* Search Bar */}
+          <div className={`w-full max-w-2xl mx-auto transition-all duration-500 transform ${isChatMode || showDetail ? 'translate-y-0 scale-95 mb-8' : 'translate-y-0'}`}>
+             <div className="relative group z-30">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500" />
+                <div className="relative bg-slate-900 border border-slate-700/50 rounded-2xl overflow-hidden shadow-2xl flex items-center">
+                   
+                   {/* File Input Trigger */}
+                   <button 
+                     onClick={() => fileInputRef.current?.click()}
+                     className="pl-4 pr-2 text-slate-400 hover:text-white transition-colors"
+                     title="Search with Image"
+                   >
+                     {imageData ? (
+                       <div className="w-8 h-8 rounded overflow-hidden border border-blue-500">
+                         <img src={imageData} className="w-full h-full object-cover" />
+                       </div>
+                     ) : (
+                       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                       </svg>
+                     )}
+                   </button>
+                   <input
+                      type="text"
+                      className="w-full bg-transparent p-6 text-xl text-white placeholder-slate-500 outline-none font-light"
+                      placeholder="What are you looking for today?"
+                      value={inputText}
+                      onChange={handleInput}
+                      onKeyDown={handleKeyDown}
+                      autoFocus
+                   />
+                   <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleFileSelect}
+                   />
                 </div>
-                <div className="text-xs text-slate-300">Image attached</div>
-              </div>
-            )}
+             </div>
+          </div>
+
+          {/* Main Content Area */}
+          <main className="flex-1 w-full mx-auto transition-all duration-500 pb-20">
+             
+             {showDetail && (
+               /* Show Solid Product Page for Top Result */
+               <ProductDetailView product={zenResults[0]} />
+             )}
+             
+             {isChatMode && (
+               <div className="bg-slate-900/50 border border-slate-800/50 rounded-3xl p-1 shadow-2xl backdrop-blur-sm animate-scale-in flex-1 min-h-[600px] max-w-5xl mx-auto">
+                  <div className="h-full overflow-hidden rounded-2xl relative">
+                     <ChatView />
+                  </div>
+               </div>
+             )}
+             
+             {/* If multiple results and we want to allow selecting others, 
+                 we could list them small below, but user asked for solid page.
+                 We stick to the top result detail view. 
+             */}
+             
+             {!isChatMode && !showDetail && zenResults.length === 0 && (
+                <div className="text-center text-slate-600 mt-20">
+                  <p className="animate-pulse">Start typing to see the magic...</p>
+                </div>
+             )}
+
+          </main>
+          
+          <GhostCard />
+
         </div>
-
-        {/* Chat / Content View */}
-        <div className="flex-1 w-full relative">
-            <ChatView />
-        </div>
-
-      </div>
-
-      {/* Overlays */}
-      <GhostCard />
-      <BrandCard />
-      <ContextRail />
-
     </div>
   );
 }

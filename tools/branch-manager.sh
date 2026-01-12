@@ -79,7 +79,6 @@ validate_branch() {
     # Check required files
     echo -n "Checking required files... "
     if [[ -f "${PROJECT_ROOT}/requirements.txt" ]] && \
-       [[ -f "${PROJECT_ROOT}/backend/requirements.txt" ]] && \
        [[ -f "${PROJECT_ROOT}/frontend/package.json" ]]; then
         echo -e "${GREEN}✓${NC}"
     else

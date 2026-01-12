@@ -20,6 +20,7 @@ class HealthStatus(BaseModel):
     memory_usage_percent: float
     cpu_usage_percent: float
     active_connections: int
+    product_count: int
     uptime_seconds: float
     timestamp: str
 
@@ -37,12 +38,14 @@ class HealthChecker:
     def __init__(self):
         self.redis_manager = None
         self.connection_manager = None
+        self.catalog_service = None
         self.start_time = time.time()
 
-    def set_dependencies(self, redis_manager, connection_manager):
+    def set_dependencies(self, redis_manager, connection_manager, catalog_service=None):
         """Inject dependencies"""
         self.redis_manager = redis_manager
         self.connection_manager = connection_manager
+        self.catalog_service = catalog_service
 
     async def get_health_status(self) -> HealthStatus:
         """Get current health status"""
@@ -57,6 +60,11 @@ class HealthChecker:
             if self.connection_manager
             else 0
         )
+        
+        product_count = 0
+        if self.catalog_service and hasattr(self.catalog_service, 'products'):
+             product_count = len(self.catalog_service.products)
+             
         uptime = time.time() - self.start_time
 
         # Determine overall status
@@ -73,6 +81,7 @@ class HealthChecker:
             memory_usage_percent=memory_percent,
             cpu_usage_percent=cpu_percent,
             active_connections=active_connections,
+            product_count=product_count,
             uptime_seconds=uptime,
             timestamp=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         )

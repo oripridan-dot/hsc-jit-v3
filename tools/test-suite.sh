@@ -83,14 +83,19 @@ echo ""
     echo "## Frontend Tests"
     echo ""
     
-    test_case "Frontend dev server (5173 or 5174)" "curl -s http://localhost:5173/ >/dev/null || curl -s http://localhost:5174/ >/dev/null" && {
-        PORT=$(curl -s -o /dev/null -w '%{http_code}' http://localhost:5173/ | grep -q 200 && echo 5173 || echo 5174)
+    # Determine running port
+    PORT=5173
+    if curl -s http://localhost:5174/ >/dev/null; then
+        PORT=5174
+    fi
+
+    test_case "Frontend dev server (5173 or 5174)" "curl -s http://localhost:$PORT/ >/dev/null" && {
         echo "✅ Frontend running on port $PORT"
     } || {
         echo "❌ Frontend not responding on 5173 or 5174"
     }
     
-    test_case "Frontend proxy working" "curl -s -o /dev/null -w '%{http_code}' http://localhost:5174/static/assets/products/roland-td17kvx2.webp | grep -q 200" && {
+    test_case "Frontend proxy working" "curl -s -o /dev/null -w '%{http_code}' http://localhost:$PORT/static/assets/products/roland-td17kvx2.webp | grep -q 200" && {
         echo "✅ Vite proxy forwarding to backend"
     } || {
         echo "❌ Vite proxy not working"
@@ -132,7 +137,7 @@ echo ""
     echo "## Configuration Tests"
     echo ""
     
-    test_case "Backend requirements.txt valid" "[[ -f ${PROJECT_ROOT}/backend/requirements.txt ]]" && {
+    test_case "Backend requirements.txt valid" "[[ -f ${PROJECT_ROOT}/requirements.txt ]]" && {
         echo "✅ Backend dependencies file exists"
     } || {
         echo "❌ Backend dependencies missing"

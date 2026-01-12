@@ -27,6 +27,7 @@ from .services.sniffer import SnifferService
 from .services.fetcher import ContentFetcher
 from .services.rag import EphemeralRAG
 from .services.llm import GeminiService
+from .services.price import PriceService
 from .core.redis_manager import RedisPubSubManager
 from .core.cache import get_cache
 from .core.logging import setup_structured_logging, get_logger
@@ -122,7 +123,6 @@ async def lifespan(app: FastAPI):
 
     # Initialize health checker
     health_checker = get_health_checker()
-    health_checker.set_dependencies(redis_manager, connection_manager)
 
     # Initialize services
     app.state.catalog = CatalogService()
@@ -131,6 +131,9 @@ async def lifespan(app: FastAPI):
     app.state.rag = EphemeralRAG()
     app.state.llm = GeminiService()
     app.state.start_time = time.time()
+    
+    # Set dependencies for health check (now that catalog is ready)
+    health_checker.set_dependencies(redis_manager, connection_manager, app.state.catalog)
 
     # Create quick lookup map
     app.state.product_map = {
@@ -166,6 +169,17 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 # Add health check router
 app.include_router(health_router)
+
+# ============ Price Endpoint ============
+@app.get("/api/price/{query}")
+async def get_price(query: str):
+    """
+    Get price and availability for a product.
+    """
+    result = await PriceService.get_price(query)
+    if not result:
+        return JSONResponse(status_code=404, content={"message": "Product not found or price unavailable"})
+    return result
 
 app.add_middleware(
     CORSMiddleware,

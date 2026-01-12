@@ -34,7 +34,8 @@ export interface Prediction {
 
 interface WebSocketStore {
   status: AppStatus;
-  lastPrediction: Prediction | null;
+  predictions: Prediction[]; // List of all predictions
+  lastPrediction: Prediction | null; // Top prediction or selected
   socket: WebSocket | null;
   messages: string[]; // For chat history / answers
   relatedItems: RelatedItem[]; // Hydrated related items from context
@@ -53,6 +54,7 @@ interface WebSocketStore {
 
 export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   status: 'IDLE',
+  predictions: [],
   lastPrediction: null,
   socket: null,
   messages: [],
@@ -79,26 +81,23 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
            if (Array.isArray(data) && data.length > 0) {
              const topPred = data[0];
              const product = topPred.product;
+             // Map backend format to frontend format if needed
+             const mappedPredictions = data.map((item: any) => ({
+                ...(item.product || {}),
+                confidence: item.confidence,
+                match_text: item.match_text
+             }));
+
              const relatedItems = topPred.context?.related_items || [];
              
-             // Debug logging
-             console.log('🔍 Prediction received:', {
-               productId: product?.id,
-               productName: product?.name,
-               hasImages: !!product?.images,
-               imageMain: product?.images?.main,
-               hasBrandIdentity: !!product?.brand_identity,
-               brandLogo: product?.brand_identity?.logo_url,
-               relatedCount: relatedItems.length
-             });
-             
              set({ 
+               predictions: mappedPredictions,
                lastPrediction: product, 
                relatedItems: relatedItems,
                status: 'SNIFFING' 
              });
            } else {
-             set({ lastPrediction: null, status: 'IDLE' });
+             set({ predictions: [], lastPrediction: null, status: 'IDLE' });
            }
         }
         
