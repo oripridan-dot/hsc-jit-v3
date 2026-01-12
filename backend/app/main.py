@@ -159,7 +159,10 @@ mimetypes.add_type('image/webp', '.webp')
 mimetypes.add_type('image/svg+xml', '.svg')
 
 # Serve self-hosted assets (logos, product shots)
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
+# Use absolute path to ensure it works regardless of CWD
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_DIR = os.path.join(BASE_DIR, "static")
+app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 # Add health check router
 app.include_router(health_router)

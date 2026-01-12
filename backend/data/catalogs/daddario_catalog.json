@@ -4,7 +4,7 @@
     "name": "D'Addario",
     "hq": "Unknown",
     "website": "https://www.daddario.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/daddario.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "D'Addario Analog Synthesizer",
       "brand": "daddario",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/daddario-daddario-analog.webp",
         "thumbnail": "/static/assets/products/daddario-daddario-analog.webp"
@@ -28,7 +28,7 @@
       "name": "D'Addario Digital Synthesizer",
       "brand": "daddario",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/daddario-daddario-digital.webp",
         "thumbnail": "/static/assets/products/daddario-daddario-digital.webp"
@@ -44,7 +44,7 @@
       "name": "D'Addario Stage Keyboard 88",
       "brand": "daddario",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/daddario-daddario-stage.webp",
         "thumbnail": "/static/assets/products/daddario-daddario-stage.webp"
@@ -60,7 +60,7 @@
       "name": "D'Addario Portable Keyboard",
       "brand": "daddario",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/daddario-daddario-portable.webp",
         "thumbnail": "/static/assets/products/daddario-daddario-portable.webp"

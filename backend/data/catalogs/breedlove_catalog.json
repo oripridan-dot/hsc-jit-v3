@@ -4,7 +4,7 @@
     "name": "Breedlove",
     "hq": "Unknown",
     "website": "https://www.breedlove.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/breedlove.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Breedlove Analog Synthesizer",
       "brand": "breedlove",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/breedlove-breedlove-analog.webp",
         "thumbnail": "/static/assets/products/breedlove-breedlove-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Breedlove Digital Synthesizer",
       "brand": "breedlove",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/breedlove-breedlove-digital.webp",
         "thumbnail": "/static/assets/products/breedlove-breedlove-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Breedlove Stage Keyboard 88",
       "brand": "breedlove",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/breedlove-breedlove-stage.webp",
         "thumbnail": "/static/assets/products/breedlove-breedlove-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Breedlove Portable Keyboard",
       "brand": "breedlove",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/breedlove-breedlove-portable.webp",
         "thumbnail": "/static/assets/products/breedlove-breedlove-portable.webp"

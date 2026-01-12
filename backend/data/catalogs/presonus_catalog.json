@@ -4,7 +4,7 @@
     "name": "PreSonus",
     "hq": "Unknown",
     "website": "https://www.presonus.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/presonus.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "PreSonus Audio Interface 2x2",
       "brand": "presonus",
       "category": "Audio Interface",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/presonus-presonus-audio-interface-2x2-audio.webp",
         "thumbnail": "/static/assets/products/presonus-presonus-audio-interface-2x2-audio.webp"
@@ -28,7 +28,7 @@
       "name": "PreSonus Audio Interface 4x4",
       "brand": "presonus",
       "category": "Audio Interface",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/presonus-presonus-audio-interface-4x4-audio.webp",
         "thumbnail": "/static/assets/products/presonus-presonus-audio-interface-4x4-audio.webp"

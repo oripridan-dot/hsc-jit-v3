@@ -4,7 +4,7 @@
     "name": "Remo",
     "hq": "Unknown",
     "website": "https://remo.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/remo.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Remo Analog Synthesizer",
       "brand": "remo",
       "category": "Synthesizer",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/remo-remo-analog.webp",
         "thumbnail": "/static/assets/products/remo-remo-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Remo Digital Synthesizer",
       "brand": "remo",
       "category": "Synthesizer",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/remo-remo-digital.webp",
         "thumbnail": "/static/assets/products/remo-remo-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Remo Stage Keyboard 88",
       "brand": "remo",
       "category": "Stage Keyboard",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/remo-remo-stage.webp",
         "thumbnail": "/static/assets/products/remo-remo-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Remo Portable Keyboard",
       "brand": "remo",
       "category": "Portable Keyboard",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/remo-remo-portable.webp",
         "thumbnail": "/static/assets/products/remo-remo-portable.webp"

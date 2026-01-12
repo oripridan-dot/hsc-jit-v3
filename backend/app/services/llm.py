@@ -9,14 +9,17 @@ logger = logging.getLogger(__name__)
 
 try:
     from google import genai
-    from google.genai import types
+    from google.genai import types as genai_types
     HAS_GEMINI = True
 except ImportError:
     HAS_GEMINI = False
+    genai = None
+    genai_types = None
 
 class GeminiService:
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY")
+        self.model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
         self.client = None
 
         if HAS_GEMINI and self.api_key:
@@ -40,7 +43,7 @@ class GeminiService:
 
             decoded = base64.b64decode(b64_content)
             return decoded, mime_type
-        except Exception as exc:
+        except Exception as exc:  # pragma: no cover - defensive
             logger.warning("Failed to decode image payload: %s", exc)
             return None
 
@@ -49,7 +52,7 @@ class GeminiService:
             yield "Thinking... (AI disconnected: missing key or libs)"
             return
 
-        sys_prompt = f"""
+        prompt = f"""
     You are a technical support expert with deep product knowledge. Use the provided context to answer accurately and helpfully.
 
     CRITICAL INSTRUCTIONS - ALWAYS FOLLOW:
@@ -69,30 +72,38 @@ class GeminiService:
     """
 
         try:
-            contents = [query]
-            
             # If an image is provided, send multimodal prompt
             if image_data:
                 decoded = self._decode_image(image_data)
-                if decoded:
-                    image_bytes, mime_type = decoded
-                    contents.append(types.Part.from_bytes(data=image_bytes, mime_type=mime_type))
-                else:
+                if not decoded:
                     yield "Image could not be processed. Proceeding with text-only answer."
-            # Generate stream
-            response = self.client.models.generate_content_stream(
-                model='gemini-2.0-flash',
-                contents=contents,
-                config=types.GenerateContentConfig(
-                    system_instruction=sys_prompt,
-                    temperature=0.3
+                    response = self.client.models.generate_content(
+                        model=self.model_name,
+                        contents=prompt,
+                        stream=True,
+                    )
+                else:
+                    image_bytes, mime_type = decoded
+                    parts = [
+                        genai_types.Part.from_text(prompt),
+                        genai_types.Part.from_bytes(image_bytes, mime_type),
+                    ]
+                    response = self.client.models.generate_content(
+                        model=self.model_name,
+                        contents=parts,
+                        stream=True,
+                    )
+            else:
+                response = self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=prompt,
+                    stream=True,
                 )
-            )
 
             for chunk in response:
-                if chunk.text:
-                    yield chunk.text
-                    
+                chunk_text = getattr(chunk, "text", None)
+                if chunk_text:
+                    yield chunk_text
         except Exception as e:
             logger.error(f"Gemini Error: {e}")
             yield f"Error generating answer: {e}"

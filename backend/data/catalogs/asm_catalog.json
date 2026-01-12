@@ -4,7 +4,7 @@
     "name": "ASM",
     "hq": "Unknown",
     "website": "https://www.asm.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/asm.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "ASM Analog Synthesizer",
       "brand": "asm",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/asm-asm-analog.webp",
         "thumbnail": "/static/assets/products/asm-asm-analog.webp"
@@ -28,7 +28,7 @@
       "name": "ASM Digital Synthesizer",
       "brand": "asm",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/asm-asm-digital.webp",
         "thumbnail": "/static/assets/products/asm-asm-digital.webp"
@@ -44,7 +44,7 @@
       "name": "ASM Stage Keyboard 88",
       "brand": "asm",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/asm-asm-stage.webp",
         "thumbnail": "/static/assets/products/asm-asm-stage.webp"
@@ -60,7 +60,7 @@
       "name": "ASM Portable Keyboard",
       "brand": "asm",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/asm-asm-portable.webp",
         "thumbnail": "/static/assets/products/asm-asm-portable.webp"

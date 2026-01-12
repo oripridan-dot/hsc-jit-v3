@@ -4,7 +4,7 @@
     "name": "RCF",
     "hq": "Unknown",
     "website": "https://wn.com/Rcf?from=rcf.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/rcf.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "RCF Analog Synthesizer",
       "brand": "rcf",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rcf-rcf-analog.webp",
         "thumbnail": "/static/assets/products/rcf-rcf-analog.webp"
@@ -28,7 +28,7 @@
       "name": "RCF Digital Synthesizer",
       "brand": "rcf",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rcf-rcf-digital.webp",
         "thumbnail": "/static/assets/products/rcf-rcf-digital.webp"
@@ -44,7 +44,7 @@
       "name": "RCF Stage Keyboard 88",
       "brand": "rcf",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rcf-rcf-stage.webp",
         "thumbnail": "/static/assets/products/rcf-rcf-stage.webp"
@@ -60,7 +60,7 @@
       "name": "RCF Portable Keyboard",
       "brand": "rcf",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/rcf-rcf-portable.webp",
         "thumbnail": "/static/assets/products/rcf-rcf-portable.webp"

@@ -1,73 +1,73 @@
 {
   "brand_identity": {
     "id": "cordoba",
-    "name": "Córdoba",
+    "name": "C\u00f3rdoba",
     "hq": "Unknown",
     "website": "https://www.cordoba.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/cordoba.png"
   },
   "products": [
     {
-      "id": "cordoba-córdoba-analog",
-      "name": "Córdoba Analog Synthesizer",
+      "id": "cordoba-c\u00f3rdoba-analog",
+      "name": "C\u00f3rdoba Analog Synthesizer",
       "brand": "cordoba",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
-        "main": "/static/assets/products/cordoba-córdoba-analog.webp",
-        "thumbnail": "/static/assets/products/cordoba-córdoba-analog.webp"
+        "main": "/static/assets/products/cordoba-c\u00f3rdoba-analog.webp",
+        "thumbnail": "/static/assets/products/cordoba-c\u00f3rdoba-analog.webp"
       },
       "documentation": {
         "type": "pdf",
-        "url": "https://example.com/docs/cordoba-córdoba-analog.pdf"
+        "url": "https://example.com/docs/cordoba-c\u00f3rdoba-analog.pdf"
       },
       "relationships": []
     },
     {
-      "id": "cordoba-córdoba-digital",
-      "name": "Córdoba Digital Synthesizer",
+      "id": "cordoba-c\u00f3rdoba-digital",
+      "name": "C\u00f3rdoba Digital Synthesizer",
       "brand": "cordoba",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
-        "main": "/static/assets/products/cordoba-córdoba-digital.webp",
-        "thumbnail": "/static/assets/products/cordoba-córdoba-digital.webp"
+        "main": "/static/assets/products/cordoba-c\u00f3rdoba-digital.webp",
+        "thumbnail": "/static/assets/products/cordoba-c\u00f3rdoba-digital.webp"
       },
       "documentation": {
         "type": "pdf",
-        "url": "https://example.com/docs/cordoba-córdoba-digital.pdf"
+        "url": "https://example.com/docs/cordoba-c\u00f3rdoba-digital.pdf"
       },
       "relationships": []
     },
     {
-      "id": "cordoba-córdoba-stage",
-      "name": "Córdoba Stage Keyboard 88",
+      "id": "cordoba-c\u00f3rdoba-stage",
+      "name": "C\u00f3rdoba Stage Keyboard 88",
       "brand": "cordoba",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
-        "main": "/static/assets/products/cordoba-córdoba-stage.webp",
-        "thumbnail": "/static/assets/products/cordoba-córdoba-stage.webp"
+        "main": "/static/assets/products/cordoba-c\u00f3rdoba-stage.webp",
+        "thumbnail": "/static/assets/products/cordoba-c\u00f3rdoba-stage.webp"
       },
       "documentation": {
         "type": "pdf",
-        "url": "https://example.com/docs/cordoba-córdoba-stage.pdf"
+        "url": "https://example.com/docs/cordoba-c\u00f3rdoba-stage.pdf"
       },
       "relationships": []
     },
     {
-      "id": "cordoba-córdoba-portable",
-      "name": "Córdoba Portable Keyboard",
+      "id": "cordoba-c\u00f3rdoba-portable",
+      "name": "C\u00f3rdoba Portable Keyboard",
       "brand": "cordoba",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
-        "main": "/static/assets/products/cordoba-córdoba-portable.webp",
-        "thumbnail": "/static/assets/products/cordoba-córdoba-portable.webp"
+        "main": "/static/assets/products/cordoba-c\u00f3rdoba-portable.webp",
+        "thumbnail": "/static/assets/products/cordoba-c\u00f3rdoba-portable.webp"
       },
       "documentation": {
         "type": "pdf",
-        "url": "https://example.com/docs/cordoba-córdoba-portable.pdf"
+        "url": "https://example.com/docs/cordoba-c\u00f3rdoba-portable.pdf"
       },
       "relationships": []
     }

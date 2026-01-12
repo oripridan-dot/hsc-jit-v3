@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+</head>
+<body style="background: #333; color: white;">
+    <h1>Image Test</h1>
+    
+    <h2>1. Direct Path (No Query)</h2>
+    <img src="/static/assets/products/roland-rh300.webp" width="200" style="border: 2px solid green" onerror="this.style.borderColor='red'"/>
+
+    <h2>2. With Query Param</h2>
+    <img src="/static/assets/products/roland-rh300.webp?v=fix1" width="200" style="border: 2px solid green" onerror="this.style.borderColor='red'"/>
+
+    <h2>3. Akai</h2>
+    <img src="/static/assets/products/akai-professional-mpc-one-plus.webp?v=fix1" width="200" style="border: 2px solid green" onerror="this.style.borderColor='red'"/>
+</body>
+</html>

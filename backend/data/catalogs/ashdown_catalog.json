@@ -4,7 +4,7 @@
     "name": "Ashdown",
     "hq": "Unknown",
     "website": "https://www.ashdownmusic.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/ashdown.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Ashdown Analog Synthesizer",
       "brand": "ashdown",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ashdown-ashdown-analog.webp",
         "thumbnail": "/static/assets/products/ashdown-ashdown-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Ashdown Digital Synthesizer",
       "brand": "ashdown",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ashdown-ashdown-digital.webp",
         "thumbnail": "/static/assets/products/ashdown-ashdown-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Ashdown Stage Keyboard 88",
       "brand": "ashdown",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ashdown-ashdown-stage.webp",
         "thumbnail": "/static/assets/products/ashdown-ashdown-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Ashdown Portable Keyboard",
       "brand": "ashdown",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ashdown-ashdown-portable.webp",
         "thumbnail": "/static/assets/products/ashdown-ashdown-portable.webp"

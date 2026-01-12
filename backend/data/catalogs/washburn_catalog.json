@@ -4,7 +4,7 @@
     "name": "Washburn",
     "hq": "Unknown",
     "website": "https://www.washburn.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/washburn.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Washburn Analog Synthesizer",
       "brand": "washburn",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/washburn-washburn-analog.webp",
         "thumbnail": "/static/assets/products/washburn-washburn-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Washburn Digital Synthesizer",
       "brand": "washburn",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/washburn-washburn-digital.webp",
         "thumbnail": "/static/assets/products/washburn-washburn-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Washburn Stage Keyboard 88",
       "brand": "washburn",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/washburn-washburn-stage.webp",
         "thumbnail": "/static/assets/products/washburn-washburn-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Washburn Portable Keyboard",
       "brand": "washburn",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/washburn-washburn-portable.webp",
         "thumbnail": "/static/assets/products/washburn-washburn-portable.webp"

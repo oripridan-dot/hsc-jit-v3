@@ -4,7 +4,7 @@
     "name": "Amphion",
     "hq": "Unknown",
     "website": "https://www.amphionpro.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/amphion.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Amphion Analog Synthesizer",
       "brand": "amphion",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/amphion-amphion-analog.webp",
         "thumbnail": "/static/assets/products/amphion-amphion-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Amphion Digital Synthesizer",
       "brand": "amphion",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/amphion-amphion-digital.webp",
         "thumbnail": "/static/assets/products/amphion-amphion-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Amphion Stage Keyboard 88",
       "brand": "amphion",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/amphion-amphion-stage.webp",
         "thumbnail": "/static/assets/products/amphion-amphion-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Amphion Portable Keyboard",
       "brand": "amphion",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/amphion-amphion-portable.webp",
         "thumbnail": "/static/assets/products/amphion-amphion-portable.webp"

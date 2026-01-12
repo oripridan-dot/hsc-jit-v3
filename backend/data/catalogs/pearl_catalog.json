@@ -4,7 +4,7 @@
     "name": "Pearl",
     "hq": "Unknown",
     "website": "https://pearldrum.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/pearl.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Pearl Drum Kit 5-Piece",
       "brand": "pearl",
       "category": "Drum Kit",
-      "production_country": "Japan 🇯🇵",
+      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
       "images": {
         "main": "/static/assets/products/pearl-pearl-drum.webp",
         "thumbnail": "/static/assets/products/pearl-pearl-drum.webp"
@@ -28,7 +28,7 @@
       "name": "Pearl Electronic Drum Kit",
       "brand": "pearl",
       "category": "Electronic Drum Kit",
-      "production_country": "Japan 🇯🇵",
+      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
       "images": {
         "main": "/static/assets/products/pearl-pearl-electronic.webp",
         "thumbnail": "/static/assets/products/pearl-pearl-electronic.webp"
@@ -44,7 +44,7 @@
       "name": "Pearl Cymbal Pack",
       "brand": "pearl",
       "category": "Cymbal",
-      "production_country": "Japan 🇯🇵",
+      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
       "images": {
         "main": "/static/assets/products/pearl-pearl-cymbal.webp",
         "thumbnail": "/static/assets/products/pearl-pearl-cymbal.webp"
@@ -60,7 +60,7 @@
       "name": "Pearl Percussion Pad",
       "brand": "pearl",
       "category": "Percussion Pad",
-      "production_country": "Japan 🇯🇵",
+      "production_country": "Japan \ud83c\uddef\ud83c\uddf5",
       "images": {
         "main": "/static/assets/products/pearl-pearl-percussion.webp",
         "thumbnail": "/static/assets/products/pearl-pearl-percussion.webp"

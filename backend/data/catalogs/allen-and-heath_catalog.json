@@ -4,7 +4,7 @@
     "name": "Allen & Heath",
     "hq": "Unknown",
     "website": "https://www.allen-heath.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/allen-and-heath.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Allen & Heath Analog Synthesizer",
       "brand": "allen-and-heath",
       "category": "Synthesizer",
-      "production_country": "UK 🇬🇧",
+      "production_country": "UK \ud83c\uddec\ud83c\udde7",
       "images": {
         "main": "/static/assets/products/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.webp"
@@ -28,7 +28,7 @@
       "name": "Allen & Heath Digital Synthesizer",
       "brand": "allen-and-heath",
       "category": "Synthesizer",
-      "production_country": "UK 🇬🇧",
+      "production_country": "UK \ud83c\uddec\ud83c\udde7",
       "images": {
         "main": "/static/assets/products/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.webp"
@@ -44,7 +44,7 @@
       "name": "Allen & Heath Stage Keyboard 88",
       "brand": "allen-and-heath",
       "category": "Stage Keyboard",
-      "production_country": "UK 🇬🇧",
+      "production_country": "UK \ud83c\uddec\ud83c\udde7",
       "images": {
         "main": "/static/assets/products/allen-and-heath-allen-heath-stage-keyboard-88-stage.webp",
         "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-stage-keyboard-88-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Allen & Heath Portable Keyboard",
       "brand": "allen-and-heath",
       "category": "Portable Keyboard",
-      "production_country": "UK 🇬🇧",
+      "production_country": "UK \ud83c\uddec\ud83c\udde7",
       "images": {
         "main": "/static/assets/products/allen-and-heath-allen-heath-portable-keyboard-portable.webp",
         "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-portable-keyboard-portable.webp"

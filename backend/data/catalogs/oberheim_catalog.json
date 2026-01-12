@@ -4,7 +4,7 @@
     "name": "Oberheim",
     "hq": "Unknown",
     "website": "https://www.oberheim.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/oberheim.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Oberheim Analog Synthesizer",
       "brand": "oberheim",
       "category": "Synthesizer",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/oberheim-oberheim-analog.webp",
         "thumbnail": "/static/assets/products/oberheim-oberheim-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Oberheim Digital Synthesizer",
       "brand": "oberheim",
       "category": "Synthesizer",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/oberheim-oberheim-digital.webp",
         "thumbnail": "/static/assets/products/oberheim-oberheim-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Oberheim Stage Keyboard 88",
       "brand": "oberheim",
       "category": "Stage Keyboard",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/oberheim-oberheim-stage.webp",
         "thumbnail": "/static/assets/products/oberheim-oberheim-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Oberheim Portable Keyboard",
       "brand": "oberheim",
       "category": "Portable Keyboard",
-      "production_country": "USA 🇺🇸",
+      "production_country": "USA \ud83c\uddfa\ud83c\uddf8",
       "images": {
         "main": "/static/assets/products/oberheim-oberheim-portable.webp",
         "thumbnail": "/static/assets/products/oberheim-oberheim-portable.webp"

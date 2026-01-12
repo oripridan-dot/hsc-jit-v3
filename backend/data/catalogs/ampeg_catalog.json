@@ -4,7 +4,7 @@
     "name": "Ampeg",
     "hq": "Unknown",
     "website": "https://www.ampeg.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/ampeg.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Ampeg Analog Synthesizer",
       "brand": "ampeg",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ampeg-ampeg-analog.webp",
         "thumbnail": "/static/assets/products/ampeg-ampeg-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Ampeg Digital Synthesizer",
       "brand": "ampeg",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ampeg-ampeg-digital.webp",
         "thumbnail": "/static/assets/products/ampeg-ampeg-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Ampeg Stage Keyboard 88",
       "brand": "ampeg",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ampeg-ampeg-stage.webp",
         "thumbnail": "/static/assets/products/ampeg-ampeg-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Ampeg Portable Keyboard",
       "brand": "ampeg",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/ampeg-ampeg-portable.webp",
         "thumbnail": "/static/assets/products/ampeg-ampeg-portable.webp"

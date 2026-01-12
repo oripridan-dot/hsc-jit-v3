@@ -4,7 +4,7 @@
     "name": "Avid",
     "hq": "Unknown",
     "website": "https://www.avid.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/avid.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Avid Analog Synthesizer",
       "brand": "avid",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/avid-avid-analog.webp",
         "thumbnail": "/static/assets/products/avid-avid-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Avid Digital Synthesizer",
       "brand": "avid",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/avid-avid-digital.webp",
         "thumbnail": "/static/assets/products/avid-avid-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Avid Stage Keyboard 88",
       "brand": "avid",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/avid-avid-stage.webp",
         "thumbnail": "/static/assets/products/avid-avid-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Avid Portable Keyboard",
       "brand": "avid",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/avid-avid-portable.webp",
         "thumbnail": "/static/assets/products/avid-avid-portable.webp"

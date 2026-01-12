@@ -4,7 +4,7 @@
     "name": "KRK",
     "hq": "Unknown",
     "website": "https://www.krkmusic.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/krk.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "KRK Studio Monitor 5\"",
       "brand": "krk",
       "category": "Studio Monitor",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/krk-krk-studio-monitor-5-studio.webp",
         "thumbnail": "/static/assets/products/krk-krk-studio-monitor-5-studio.webp"
@@ -28,7 +28,7 @@
       "name": "KRK Studio Monitor 8\"",
       "brand": "krk",
       "category": "Studio Monitor",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/krk-krk-studio-monitor-8-studio.webp",
         "thumbnail": "/static/assets/products/krk-krk-studio-monitor-8-studio.webp"

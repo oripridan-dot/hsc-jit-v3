@@ -4,7 +4,7 @@
     "name": "Antigua",
     "hq": "Unknown",
     "website": "https://www.antigua.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/antigua.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Antigua Analog Synthesizer",
       "brand": "antigua",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/antigua-antigua-analog.webp",
         "thumbnail": "/static/assets/products/antigua-antigua-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Antigua Digital Synthesizer",
       "brand": "antigua",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/antigua-antigua-digital.webp",
         "thumbnail": "/static/assets/products/antigua-antigua-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Antigua Stage Keyboard 88",
       "brand": "antigua",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/antigua-antigua-stage.webp",
         "thumbnail": "/static/assets/products/antigua-antigua-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Antigua Portable Keyboard",
       "brand": "antigua",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/antigua-antigua-portable.webp",
         "thumbnail": "/static/assets/products/antigua-antigua-portable.webp"

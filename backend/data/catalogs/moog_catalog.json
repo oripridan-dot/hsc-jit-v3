@@ -5,7 +5,7 @@
     "hq": "Asheville, North Carolina, USA 🇺🇸",
     "founded": 1953,
     "website": "https://www.moogmusic.com",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg",
+    "logo_url": "/static/assets/brands/moog.png",
     "description": "Legendary American synthesizer company founded by Dr. Bob Moog, known for analog synthesizers, semi-modular instruments, and expressive electronic sound design tools."
   },
   "products": [
@@ -16,7 +16,7 @@
       "category": "Analog Synthesizer",
       "production_country": "USA 🇺🇸",
       "images": {
-        "main": "https://cdn.moogmusic.com/sites/default/files/2022-06/Subsequent_37_Hero.jpg",
+        "main": "/static/assets/products/moog-subsequent-37.webp",
         "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/Subsequent_37_Hero.jpg",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
       },
@@ -49,7 +49,7 @@
       "category": "Semi-Modular Synthesizer",
       "production_country": "USA 🇺🇸",
       "images": {
-        "main": "https://cdn.moogmusic.com/sites/default/files/2022-06/Moog_Grandmother_Hero.jpg",
+        "main": "/static/assets/products/moog-grandmother.webp",
         "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/Moog_Grandmother_Hero.jpg",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
       },
@@ -82,7 +82,7 @@
       "category": "Semi-Modular Synthesizer",
       "production_country": "USA 🇺🇸",
       "images": {
-        "main": "https://cdn.moogmusic.com/sites/default/files/2022-06/Mother-32_Hero.jpg",
+        "main": "/static/assets/products/moog-mother-32.webp",
         "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/Mother-32_Hero.jpg",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
       },
@@ -115,7 +115,7 @@
       "category": "Analog Percussion Synthesizer",
       "production_country": "USA 🇺🇸",
       "images": {
-        "main": "https://cdn.moogmusic.com/sites/default/files/2022-06/DFAM_Hero.jpg",
+        "main": "/static/assets/products/moog-dfam.webp",
         "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/DFAM_Hero.jpg",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
       },
@@ -143,7 +143,7 @@
       "category": "Accessory",
       "production_country": "USA 🇺🇸",
       "images": {
-        "main": "https://cdn.moogmusic.com/sites/default/files/2022-06/EP-3_Hero.jpg",
+        "main": "/static/assets/products/moog-ep3.webp",
         "thumbnail": "https://cdn.moogmusic.com/sites/default/files/2022-06/EP-3_Hero.jpg",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Moog_Logo.svg"
       },

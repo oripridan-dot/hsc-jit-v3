@@ -4,7 +4,7 @@
     "name": "Bohemian",
     "hq": "Unknown",
     "website": "https://www.bohemian.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/bohemian.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Bohemian Analog Synthesizer",
       "brand": "bohemian",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bohemian-bohemian-analog.webp",
         "thumbnail": "/static/assets/products/bohemian-bohemian-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Bohemian Digital Synthesizer",
       "brand": "bohemian",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bohemian-bohemian-digital.webp",
         "thumbnail": "/static/assets/products/bohemian-bohemian-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Bohemian Stage Keyboard 88",
       "brand": "bohemian",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bohemian-bohemian-stage.webp",
         "thumbnail": "/static/assets/products/bohemian-bohemian-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Bohemian Portable Keyboard",
       "brand": "bohemian",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/bohemian-bohemian-portable.webp",
         "thumbnail": "/static/assets/products/bohemian-bohemian-portable.webp"

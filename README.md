@@ -52,10 +52,40 @@ cd frontend && pnpm install && pnpm dev
 ```
 
 ### Access Points
-- **Frontend:** http://localhost:5173
+- **Frontend:** http://localhost:5173 or http://localhost:5174 (see Port Management below)
 - **API Docs:** http://localhost:8000/docs  
 - **WebSocket:** ws://localhost:8000/ws
 - **Health:** http://localhost:8000/health
+
+### 🚨 CRITICAL: First-Time Setup Requirements
+
+Before the system will work correctly, **you MUST run these steps:**
+
+```bash
+# 1. Generate product images and brand logos (REQUIRED)
+cd backend
+python scripts/harvest_assets.py
+# This creates 340 product images + 90 brand logos
+
+# 2. Restart the backend (MANDATORY)
+pkill -f uvicorn
+sleep 2
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+# CatalogService loads JSON at startup - restart picks up new paths
+```
+
+**Why is this required?**
+- `harvest_assets.py` updates catalog JSON files with local image paths
+- CatalogService caches JSON in memory at startup
+- Backend restart loads the updated catalog with correct image URLs
+- Without this, images will show 404 errors
+
+**Port Management:**
+- Frontend may run on port 5174 instead of 5173 if that port is in use
+- This is normal - Vite automatically selects an available port
+- All functionality works the same regardless of which port is used
+
+📖 **Full Documentation:** [PRODUCTION_READY_STATUS.md](PRODUCTION_READY_STATUS.md)
 
 ---
 
@@ -290,10 +320,22 @@ Proprietary - Halilit Technologies
 
 ## 🔗 Quick Links
 
-- [Full Documentation Index](docs/DOCUMENTATION_INDEX.md)
+### 📚 Essential Documentation
+- **[SESSION_SUMMARY.md](SESSION_SUMMARY.md)** - Complete session work summary
+- **[PRODUCTION_READY_STATUS.md](PRODUCTION_READY_STATUS.md)** - Current system status
+- **[COMPLETE_OPERATIONAL_CHECKLIST.md](COMPLETE_OPERATIONAL_CHECKLIST.md)** - Daily operations guide
+- **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Master documentation index
+
+### 🛠️ Developer Tools (New!)
+- **[tools/README.md](tools/README.md)** - Comprehensive tools guide
+- `bash tools/test-suite.sh` - Run all tests
+- `bash tools/filesystem-inspector.sh` - Audit workspace
+- `bash tools/branch-manager.sh` - Manage branches & compliance
+
+### 🏗️ Architecture & Deployment
 - [Architecture Deep Dive](docs/architecture/ARCHITECTURE.md)  
 - [Deployment Checklist](docs/deployment/DEPLOYMENT_CHECKLIST.md)
-- [Test Results](docs/testing/TEST_EXECUTION_SUMMARY.md)
+- [Troubleshooting Guide](TROUBLESHOOTING_ASSET_LOADING.md)
 - [API Documentation](http://localhost:8000/docs) (when running)
 
-**Status:** ✅ Production Ready | **Version:** 3.1 | **Last Updated:** January 2026
+**Status:** ✅ Production Ready | **Version:** 3.1 | **Last Updated:** January 11, 2026

@@ -27,7 +27,6 @@ class RedisPubSubManager:
                 decode_responses=True,
                 max_connections=50,  # Connection pooling
                 socket_keepalive=True,
-                socket_keepalive_intvl=15,
             )
             self.pubsub = self.redis.pubsub()
             logger.info("Redis Pub/Sub connected successfully")

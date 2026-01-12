@@ -4,7 +4,7 @@
     "name": "Steinberg",
     "hq": "Unknown",
     "website": "https://www.steinberg.net",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/steinberg.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Steinberg Analog Synthesizer",
       "brand": "steinberg",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/steinberg-steinberg-analog.webp",
         "thumbnail": "/static/assets/products/steinberg-steinberg-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Steinberg Digital Synthesizer",
       "brand": "steinberg",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/steinberg-steinberg-digital.webp",
         "thumbnail": "/static/assets/products/steinberg-steinberg-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Steinberg Stage Keyboard 88",
       "brand": "steinberg",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/steinberg-steinberg-stage.webp",
         "thumbnail": "/static/assets/products/steinberg-steinberg-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Steinberg Portable Keyboard",
       "brand": "steinberg",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/steinberg-steinberg-portable.webp",
         "thumbnail": "/static/assets/products/steinberg-steinberg-portable.webp"

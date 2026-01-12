@@ -4,7 +4,7 @@
     "name": "Spector",
     "hq": "Unknown",
     "website": "https://www.spectormusic.com",
-    "logo_url": ""
+    "logo_url": "/static/assets/brands/spector.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Spector Analog Synthesizer",
       "brand": "spector",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/spector-spector-analog.webp",
         "thumbnail": "/static/assets/products/spector-spector-analog.webp"
@@ -28,7 +28,7 @@
       "name": "Spector Digital Synthesizer",
       "brand": "spector",
       "category": "Synthesizer",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/spector-spector-digital.webp",
         "thumbnail": "/static/assets/products/spector-spector-digital.webp"
@@ -44,7 +44,7 @@
       "name": "Spector Stage Keyboard 88",
       "brand": "spector",
       "category": "Stage Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/spector-spector-stage.webp",
         "thumbnail": "/static/assets/products/spector-spector-stage.webp"
@@ -60,7 +60,7 @@
       "name": "Spector Portable Keyboard",
       "brand": "spector",
       "category": "Portable Keyboard",
-      "production_country": "Unknown 🌍",
+      "production_country": "Unknown \ud83c\udf0d",
       "images": {
         "main": "/static/assets/products/spector-spector-portable.webp",
         "thumbnail": "/static/assets/products/spector-spector-portable.webp"
