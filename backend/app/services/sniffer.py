@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import random
 from typing import Any, Dict, List
 
 from thefuzz import fuzz, process
@@ -20,8 +21,17 @@ class SnifferService:
 
     def predict(self, partial_text: str, limit: int = 3) -> List[Dict[str, Any]]:
         text = (partial_text or "").strip()
+        
+        # If no text provided, return random sample of products to populate the catalog
         if not text:
-            return []
+            all_products = self.catalog.all_products()
+            sample_size = min(limit, len(all_products))
+            sampled = random.sample(all_products, sample_size)
+            return [{
+                "product": product,
+                "confidence": 100,
+                "match_text": product.get("name", "Unknown"),
+            } for product in sampled]
 
         # Use a robust scorer for mixed-length inputs
         matches = process.extract(text, self._choices, scorer=fuzz.WRatio, limit=limit)

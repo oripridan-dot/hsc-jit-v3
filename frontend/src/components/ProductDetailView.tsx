@@ -43,16 +43,25 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
       label: "Official Manual",
       icon: <svg className="w-full h-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>,
       href: product.manual_url,
+      priority: 'tech-support'
+    },
+    {
+       label: "FAQ & Troubleshooting",
+       icon: <svg className="w-full h-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+      href: "#support",
+      priority: 'tech-support'
+    },
+    {
+       label: "Support",
+       icon: <svg className="w-full h-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>,
+       href: "#support",
+       priority: 'tech-support'
     },
     {
        label: "Brand Website",
        icon: <svg className="w-full h-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9-9a9 9 0 00-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>,
        href: product.brand_identity?.website || `https://www.google.com/search?q=${product.brand}`,
-    },
-    {
-       label: "Support",
-       icon: <svg className="w-full h-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>,
-       href: "#support", // Placeholder
+       priority: 'sales'
     },
   ];
 
@@ -131,12 +140,12 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
 
       {/* =========================================================================
           MAIN STAGE
-          Left: Visuals | Right: Info
+          Right: Info (Tech Support First) | Left: Visuals (Secondary)
       ========================================================================= */}
-      <div className="flex-1 flex flex-col lg:flex-row overflow-hidden relative">
+      <div className="flex-1 flex flex-col-reverse lg:flex-row overflow-hidden relative">
          
-         {/* LEFT PANE: Visuals */}
-         <div className="flex-1 lg:flex-[1.4] bg-gradient-to-br from-slate-900 via-[#0B1120] to-black relative flex items-center justify-center p-8 group overflow-hidden">
+         {/* LEFT PANE: Visuals (secondary on larger screens) */}
+         <div className="flex-1 lg:flex-[0.8] bg-gradient-to-br from-slate-900 via-[#0B1120] to-black relative flex items-center justify-center p-8 group overflow-hidden order-2 lg:order-2">
             {/* Background blobs for mood */}
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] mix-blend-screen" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[100px] mix-blend-screen" />
@@ -168,26 +177,48 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
          </div>
 
 
-         {/* RIGHT PANE: Info Panel */}
-         <div className="flex-1 lg:flex-1 bg-slate-900/30 backdrop-blur-xl border-l border-white/5 overflow-y-auto custom-scrollbar p-8 pb-32">
+         {/* RIGHT PANE: Info Panel (PRIMARY - Tech Support/Info First) */}
+         <div className="flex-1 lg:flex-[1.2] bg-slate-900/30 backdrop-blur-xl border-l border-white/5 overflow-y-auto custom-scrollbar p-8 pb-32 order-1 lg:order-1 lg:border-l-0 lg:border-r border-white/5">
             
-            {/* H2 Most Important Info */}
+            {/* H2 Technical Specifications - MOST IMPORTANT */}
             <section className="mb-8">
-               <h2 className="text-base font-bold text-white uppercase tracking-widest mb-4 flex items-center gap-2">
-                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-                 Core Specifications
+               <h2 className="text-lg font-bold text-white uppercase tracking-widest mb-6 flex items-center gap-2 pb-4 border-b border-blue-500/30">
+                 <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                 Technical Specifications
                </h2>
-               <div className="grid grid-cols-2 gap-3">
-                  {Object.entries(product.specs).slice(0, 6).map(([key, val]) => (
-                    <div key={key} className="bg-white/5 p-3 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
-                       <div className="text-slate-500 text-xs uppercase font-semibold mb-1">{key.replace(/_/g, ' ')}</div>
-                       <div className="text-slate-200 font-medium truncate" title={String(val)}>{val}</div>
+               <div className="grid grid-cols-2 gap-4 mb-6">
+                  {Object.entries(product.specs).slice(0, 8).map(([key, val]) => (
+                    <div key={key} className="bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                       <div className="text-slate-400 text-xs uppercase font-bold mb-2 tracking-wider">{key.replace(/_/g, ' ')}</div>
+                       <div className="text-slate-100 font-semibold text-sm" title={String(val)}>{val}</div>
                     </div>
                   ))}
                </div>
             </section>
 
-            {/* Foldable Full Description */}
+            {/* Quick Support Links */}
+            <section className="mb-8 p-4 bg-blue-500/10 border border-blue-500/30 rounded-xl">
+               <h3 className="text-sm font-bold text-blue-300 uppercase tracking-widest mb-3 flex items-center gap-2">
+                 <span className="text-lg">🆘</span>
+                 Quick Support
+               </h3>
+               <div className="space-y-2">
+                 <a href={product.manual_url || '#'} className="block text-sm text-blue-300 hover:text-blue-200 transition-colors flex items-center gap-2">
+                   <span>📘</span> Official Manual & Documentation
+                 </a>
+                 <a href="#" className="block text-sm text-blue-300 hover:text-blue-200 transition-colors flex items-center gap-2">
+                   <span>⚙️</span> Troubleshooting & FAQ
+                 </a>
+                 <a href="#" className="block text-sm text-blue-300 hover:text-blue-200 transition-colors flex items-center gap-2">
+                   <span>🔧</span> Maintenance & Care
+                 </a>
+                 <a href={product.brand_identity?.website || '#'} className="block text-sm text-blue-300 hover:text-blue-200 transition-colors flex items-center gap-2">
+                   <span>🌐</span> Manufacturer Support
+                 </a>
+               </div>
+            </section>
+
+            {/* Detailed Description */}
             <section className="mb-8 border-t border-white/5 pt-6">
                <button 
                  onClick={() => setDescExpanded(!descExpanded)}
@@ -195,7 +226,7 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
                >
                  <h2 className="text-base font-bold text-white uppercase tracking-widest flex items-center gap-2">
                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                   In-Depth Analysis
+                   Technical Overview
                  </h2>
                  <span className={`text-slate-500 transition-transform duration-300 ${descExpanded ? 'rotate-180' : ''}`}>▼</span>
                </button>
@@ -204,13 +235,11 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
                  {(descExpanded || product.full_description) && (
                    <motion.div 
                      initial={false}
-                     animate={{ height: descExpanded ? 'auto' : '100px', opacity: 1 }}
+                     animate={{ height: descExpanded ? 'auto' : '120px', opacity: 1 }}
                      className="relative overflow-hidden mt-4"
                    >
                      <div className="prose prose-invert prose-sm text-slate-400 leading-relaxed font-light">
                         {product.full_description || product.description}
-                        <br/><br/>
-                        <p>Detailed technical architecture and design philosophy...</p>
                      </div>
                      {!descExpanded && (
                        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-slate-900 to-transparent pointer-events-none" />
@@ -219,16 +248,16 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
                  )}
                </AnimatePresence>
                {!descExpanded && (
-                  <button onClick={() => setDescExpanded(true)} className="text-blue-400 text-xs mt-2 hover:underline uppercase tracking-wide">Read full analysis</button>
+                  <button onClick={() => setDescExpanded(true)} className="text-blue-400 text-xs mt-2 hover:underline uppercase tracking-wide">Read full details</button>
                )}
             </section>
 
 
-            {/* Accessories / Related (Swipe) */}
+            {/* Accessories / Related (Swipe) - LAST SECTION */}
             <section className="mb-8 border-t border-white/5 pt-6">
-                <h2 className="text-base font-bold text-white uppercase tracking-widest mb-4 flex items-center gap-2">
-                   <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                   Ecosystem & Accessories
+                <h2 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+                   <span className="w-1.5 h-1.5 rounded-full bg-slate-600"></span>
+                   Compatible Accessories (Optional)
                 </h2>
                 
                 <div className="flex overflow-x-auto gap-4 pb-4 -mx-2 px-2 snap-x hide-scrollbar">

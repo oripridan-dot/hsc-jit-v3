@@ -308,8 +308,9 @@ async def handle_typing_event(
     try:
         sniffer: SnifferService = app.state.sniffer
 
-        # Predict products
-        predictions = sniffer.predict(str(content), limit=3)
+        # Predict products - use higher limit for empty searches to populate catalog
+        search_limit = 50 if not content or len(content.strip()) == 0 else 10
+        predictions = sniffer.predict(str(content), limit=search_limit)
 
         # Hydrate with full context
         enriched_predictions = []

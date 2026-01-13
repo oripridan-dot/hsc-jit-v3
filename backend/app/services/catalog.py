@@ -50,6 +50,13 @@ class CatalogService:
             if isinstance(data, dict) and "brand_identity" in data:
                 brand_info = data["brand_identity"]
                 brand_id = brand_info.get("id")
+                
+                # Cache bust brand logos too
+                if brand_info and "logo_url" in brand_info:
+                    logo_url = brand_info["logo_url"]
+                    if logo_url and isinstance(logo_url, str) and "?" not in logo_url:
+                        brand_info["logo_url"] = f"{logo_url}?v=fix3"
+                
                 if brand_id:
                     self.brands[brand_id] = brand_info
                 
