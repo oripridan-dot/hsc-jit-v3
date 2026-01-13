@@ -103,7 +103,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Only deploy when KUBE_CONFIG_ENABLED is set to 'true'
+    # This allows CI/CD to pass for environments without a Kubernetes cluster configured
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.KUBE_CONFIG_ENABLED == 'true'
     
     steps:
     - uses: actions/checkout@v3
