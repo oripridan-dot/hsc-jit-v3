@@ -1,0 +1,21 @@
+# Trivy Configuration
+# Security scanning configuration for HSC-JIT
+
+scan:
+  # Severity levels to report
+  severity: 
+    - CRITICAL
+    - HIGH
+    - MEDIUM
+  
+  # Skip specific check types
+  skip-check:
+    - AVD-DS-0001  # Optional: Skip specific checks if needed
+
+# Report configuration
+report:
+  format: sarif
+  output: trivy-results.sarif
+
+# Ignore file
+ignorefile: .trivyignore
