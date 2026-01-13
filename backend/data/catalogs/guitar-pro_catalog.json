@@ -21,23 +21,21 @@
         "type": "pdf",
         "url": "https://example.com/docs/guitar-pro-guitar-pro-electric-guitar-electric.pdf"
       },
-      "relationships": []
-    },
-    {
-      "id": "guitar-pro-guitar-pro-acoustic-guitar-acoustic",
-      "name": "Guitar Pro Acoustic Guitar",
-      "brand": "guitar-pro",
-      "category": "Acoustic Guitar",
-      "production_country": "Unknown 🌍",
-      "images": {
-        "main": "/static/assets/products/guitar-pro-guitar-pro-acoustic-guitar-acoustic.webp",
-        "thumbnail": "/static/assets/products/guitar-pro-guitar-pro-acoustic-guitar-acoustic.webp"
+      "relationships": [],
+      "price": 2000,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
       },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/guitar-pro-guitar-pro-acoustic-guitar-acoustic.pdf"
-      },
-      "relationships": []
+      "description": "Guitar Pro Electric Guitar - Quality electric guitar with versatile tone. Great for all genres and playing styles.",
+      "family": "Electric Guitar",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
     }
   ]
 }

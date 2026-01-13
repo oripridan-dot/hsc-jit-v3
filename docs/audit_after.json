@@ -1,0 +1,4161 @@
+{
+  "summary": {
+    "total_brands": 90,
+    "total_products": 273,
+    "brands_with_issues": 88,
+    "products_with_issues": 248,
+    "issue_counts": {
+      "PLACEHOLDER_URL": 241,
+      "FAKE_PRODUCT": 1,
+      "MISSING_DOC": 5,
+      "MISSING_IMAGE": 1
+    }
+  },
+  "brands": {
+    "adam-audio": {
+      "brand_name": "ADAM Audio",
+      "products": [
+        {
+          "id": "adam-audio-adam-audio-audio-interface-2x2-audio",
+          "name": "ADAM Audio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/adam-audio-adam-audio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "adam-audio-adam-audio-audio-interface-4x4-audio",
+          "name": "ADAM Audio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/adam-audio-adam-audio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "adams": {
+      "brand_name": "Adams",
+      "products": [
+        {
+          "id": "adams-adams-analog",
+          "name": "Adams Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/adams-adams-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "adams-adams-digital",
+          "name": "Adams Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/adams-adams-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "adams-adams-stage",
+          "name": "Adams Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/adams-adams-stage.pdf"
+            }
+          ]
+        },
+        {
+          "id": "adams-special-edition-1",
+          "name": "Adams Analog Synthesizer Special Edition 1",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/adams-special-edition-1.pdf"
+            }
+          ]
+        },
+        {
+          "id": "adams-special-edition-2",
+          "name": "Adams Digital Synthesizer Special Edition 2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/adams-special-edition-2.pdf"
+            }
+          ]
+        },
+        {
+          "id": "adams-special-edition-3",
+          "name": "Adams Stage Keyboard 88 Special Edition 3",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/adams-special-edition-3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "adams-special-edition-5",
+          "name": "Adams Analog Analog Synthesizer Special Edition 5",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/adams-special-edition-5.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 7,
+        "products_with_issues": 7,
+        "placeholder_urls": 7,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "akai-professional": {
+      "brand_name": "Akai Professional",
+      "products": [
+        {
+          "id": "akai-professional-mpk-mini-plus",
+          "name": "Akai MPK Mini Plus",
+          "issues": [
+            {
+              "type": "FAKE_PRODUCT",
+              "message": "Product appears to be placeholder/generated (variant-N pattern)",
+              "field": "name",
+              "value": "Akai MPK Mini Plus"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 4,
+        "products_with_issues": 1,
+        "placeholder_urls": 0,
+        "missing_docs": 0,
+        "fake_products": 1
+      }
+    },
+    "allen-and-heath": {
+      "brand_name": "Allen & Heath",
+      "products": [
+        {
+          "id": "allen-and-heath-allen-heath-analog-synthesizer-synthesizer",
+          "name": "Allen & Heath Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "allen-and-heath-allen-heath-digital-synthesizer-synthesizer",
+          "name": "Allen & Heath Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "allen-and-heath-allen-heath-stage-keyboard-88-stage",
+          "name": "Allen & Heath Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/allen-and-heath-allen-heath-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        },
+        {
+          "id": "allen-and-heath-special-edition-1",
+          "name": "Allen & Heath Analog Synthesizer Special Edition 1",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/allen-and-heath-special-edition-1.pdf"
+            }
+          ]
+        },
+        {
+          "id": "allen-and-heath-special-edition-2",
+          "name": "Allen & Heath Digital Synthesizer Special Edition 2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/allen-and-heath-special-edition-2.pdf"
+            }
+          ]
+        },
+        {
+          "id": "allen-and-heath-special-edition-3",
+          "name": "Allen & Heath Stage Keyboard 88 Special Edition 3",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/allen-and-heath-special-edition-3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "allen-and-heath-special-edition-5",
+          "name": "Allen & Heath Analog Analog Synthesizer Special Edition 5",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/allen-and-heath-special-edition-5.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 7,
+        "products_with_issues": 7,
+        "placeholder_urls": 7,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "ampeg": {
+      "brand_name": "Ampeg",
+      "products": [
+        {
+          "id": "ampeg-ampeg-analog",
+          "name": "Ampeg Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ampeg-ampeg-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ampeg-ampeg-digital",
+          "name": "Ampeg Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ampeg-ampeg-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ampeg-ampeg-stage",
+          "name": "Ampeg Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ampeg-ampeg-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "amphion": {
+      "brand_name": "Amphion",
+      "products": [
+        {
+          "id": "amphion-amphion-analog",
+          "name": "Amphion Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/amphion-amphion-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "amphion-amphion-digital",
+          "name": "Amphion Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/amphion-amphion-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "amphion-amphion-stage",
+          "name": "Amphion Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/amphion-amphion-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "antigua": {
+      "brand_name": "Antigua",
+      "products": [
+        {
+          "id": "antigua-antigua-analog",
+          "name": "Antigua Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/antigua-antigua-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "antigua-antigua-digital",
+          "name": "Antigua Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/antigua-antigua-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "antigua-antigua-stage",
+          "name": "Antigua Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/antigua-antigua-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "ashdown": {
+      "brand_name": "Ashdown",
+      "products": [
+        {
+          "id": "ashdown-ashdown-analog",
+          "name": "Ashdown Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ashdown-ashdown-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ashdown-ashdown-digital",
+          "name": "Ashdown Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ashdown-ashdown-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ashdown-ashdown-stage",
+          "name": "Ashdown Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ashdown-ashdown-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "asm": {
+      "brand_name": "ASM",
+      "products": [
+        {
+          "id": "asm-asm-analog",
+          "name": "ASM Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/asm-asm-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "asm-asm-digital",
+          "name": "ASM Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/asm-asm-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "asm-asm-stage",
+          "name": "ASM Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/asm-asm-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "austrian-audio": {
+      "brand_name": "Austrian Audio",
+      "products": [
+        {
+          "id": "austrian-audio-austrian-audio-audio-interface-2x2-audio",
+          "name": "Austrian Audio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/austrian-audio-austrian-audio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "austrian-audio-austrian-audio-audio-interface-4x4-audio",
+          "name": "Austrian Audio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/austrian-audio-austrian-audio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "avid": {
+      "brand_name": "Avid",
+      "products": [
+        {
+          "id": "avid-avid-analog",
+          "name": "Avid Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/avid-avid-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "avid-avid-digital",
+          "name": "Avid Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/avid-avid-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "avid-avid-stage",
+          "name": "Avid Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/avid-avid-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "bespeco": {
+      "brand_name": "Bespeco",
+      "products": [
+        {
+          "id": "bespeco-bespeco-analog",
+          "name": "Bespeco Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/bespeco-bespeco-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "bespeco-bespeco-digital",
+          "name": "Bespeco Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/bespeco-bespeco-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "bespeco-bespeco-stage",
+          "name": "Bespeco Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/bespeco-bespeco-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "blue-microphones": {
+      "brand_name": "Blue Microphones",
+      "products": [
+        {
+          "id": "blue-microphones-blue-microphones-analog-synthesizer-synthesizer",
+          "name": "Blue Microphones Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/blue-microphones-blue-microphones-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "blue-microphones-blue-microphones-digital-synthesizer-synthesizer",
+          "name": "Blue Microphones Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/blue-microphones-blue-microphones-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "blue-microphones-blue-microphones-stage-keyboard-88-stage",
+          "name": "Blue Microphones Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/blue-microphones-blue-microphones-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "bohemian": {
+      "brand_name": "Bohemian",
+      "products": [
+        {
+          "id": "bohemian-bohemian-analog",
+          "name": "Bohemian Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/bohemian-bohemian-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "bohemian-bohemian-digital",
+          "name": "Bohemian Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/bohemian-bohemian-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "bohemian-bohemian-stage",
+          "name": "Bohemian Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/bohemian-bohemian-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "boss": {
+      "brand_name": "BOSS",
+      "products": [
+        {
+          "id": "boss-gt-1000",
+          "name": "BOSS GT-1000",
+          "issues": [
+            {
+              "type": "MISSING_DOC",
+              "message": "No documentation URL provided",
+              "field": "documentation",
+              "value": "Not provided"
+            }
+          ]
+        },
+        {
+          "id": "boss-rc-505-mk2",
+          "name": "BOSS RC-505 MkII",
+          "issues": [
+            {
+              "type": "MISSING_DOC",
+              "message": "No documentation URL provided",
+              "field": "documentation",
+              "value": "Not provided"
+            }
+          ]
+        },
+        {
+          "id": "boss-katana-50",
+          "name": "BOSS Katana-50 Gen 3",
+          "issues": [
+            {
+              "type": "MISSING_DOC",
+              "message": "No documentation URL provided",
+              "field": "documentation",
+              "value": "Not provided"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 0,
+        "missing_docs": 3,
+        "fake_products": 0
+      }
+    },
+    "breedlove": {
+      "brand_name": "Breedlove",
+      "products": [
+        {
+          "id": "breedlove-breedlove-analog",
+          "name": "Breedlove Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/breedlove-breedlove-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "breedlove-breedlove-digital",
+          "name": "Breedlove Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/breedlove-breedlove-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "breedlove-breedlove-stage",
+          "name": "Breedlove Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/breedlove-breedlove-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "cordoba": {
+      "brand_name": "Córdoba",
+      "products": [
+        {
+          "id": "cordoba-córdoba-analog",
+          "name": "Córdoba Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/cordoba-córdoba-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "cordoba-córdoba-digital",
+          "name": "Córdoba Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/cordoba-córdoba-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "cordoba-córdoba-stage",
+          "name": "Córdoba Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/cordoba-córdoba-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "daddario": {
+      "brand_name": "D'Addario",
+      "products": [
+        {
+          "id": "daddario-daddario-analog",
+          "name": "D'Addario Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/daddario-daddario-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "daddario-daddario-digital",
+          "name": "D'Addario Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/daddario-daddario-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "daddario-daddario-stage",
+          "name": "D'Addario Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/daddario-daddario-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "dangelico": {
+      "brand_name": "D'Angelico",
+      "products": [
+        {
+          "id": "dangelico-dangelico-analog",
+          "name": "D'Angelico Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dangelico-dangelico-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "dangelico-dangelico-digital",
+          "name": "D'Angelico Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dangelico-dangelico-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "dangelico-dangelico-stage",
+          "name": "D'Angelico Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dangelico-dangelico-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "dixon": {
+      "brand_name": "Dixon",
+      "products": [
+        {
+          "id": "dixon-dixon-analog",
+          "name": "Dixon Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dixon-dixon-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "dixon-dixon-digital",
+          "name": "Dixon Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dixon-dixon-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "dixon-dixon-stage",
+          "name": "Dixon Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dixon-dixon-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "drumdots": {
+      "brand_name": "Drumdots",
+      "products": [
+        {
+          "id": "drumdots-drumdots-drum",
+          "name": "Drumdots Drum Kit 5-Piece",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/drumdots-drumdots-drum.pdf"
+            }
+          ]
+        },
+        {
+          "id": "drumdots-drumdots-cymbal",
+          "name": "Drumdots Cymbal Pack",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/drumdots-drumdots-cymbal.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "dynaudio": {
+      "brand_name": "Dynaudio",
+      "products": [
+        {
+          "id": "dynaudio-dynaudio-audio-interface-2x2-audio",
+          "name": "Dynaudio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dynaudio-dynaudio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "dynaudio-dynaudio-audio-interface-4x4-audio",
+          "name": "Dynaudio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/dynaudio-dynaudio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "eaw": {
+      "brand_name": "EAW",
+      "products": [
+        {
+          "id": "eaw-eaw-analog",
+          "name": "EAW Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eaw-eaw-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "eaw-eaw-digital",
+          "name": "EAW Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eaw-eaw-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "eaw-eaw-stage",
+          "name": "EAW Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eaw-eaw-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "eden": {
+      "brand_name": "Eden",
+      "products": [
+        {
+          "id": "eden-eden-analog",
+          "name": "Eden Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eden-eden-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "eden-eden-digital",
+          "name": "Eden Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eden-eden-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "eden-eden-stage",
+          "name": "Eden Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eden-eden-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "encore": {
+      "brand_name": "Encore",
+      "products": [
+        {
+          "id": "encore-encore-analog",
+          "name": "Encore Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/encore-encore-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "encore-encore-digital",
+          "name": "Encore Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/encore-encore-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "encore-encore-stage",
+          "name": "Encore Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/encore-encore-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "esp": {
+      "brand_name": "ESP",
+      "products": [
+        {
+          "id": "esp-esp-analog",
+          "name": "ESP Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/esp-esp-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "esp-esp-digital",
+          "name": "ESP Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/esp-esp-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "esp-esp-stage",
+          "name": "ESP Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/esp-esp-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "eve-audio": {
+      "brand_name": "Eve Audio",
+      "products": [
+        {
+          "id": "eve-audio-eve-audio-audio-interface-2x2-audio",
+          "name": "Eve Audio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eve-audio-eve-audio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "eve-audio-eve-audio-audio-interface-4x4-audio",
+          "name": "Eve Audio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/eve-audio-eve-audio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "foxgear": {
+      "brand_name": "Foxgear",
+      "products": [
+        {
+          "id": "foxgear-foxgear-analog",
+          "name": "Foxgear Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/foxgear-foxgear-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "foxgear-foxgear-digital",
+          "name": "Foxgear Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/foxgear-foxgear-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "foxgear-foxgear-stage",
+          "name": "Foxgear Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/foxgear-foxgear-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "fusion-alt": {
+      "brand_name": "Fusion (Alternate)",
+      "products": [
+        {
+          "id": "fusion-alt-fusion-alternate-analog-synthesizer-synthesizer",
+          "name": "Fusion (Alternate) Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fusion-alt-fusion-alternate-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fusion-alt-fusion-alternate-digital-synthesizer-synthesizer",
+          "name": "Fusion (Alternate) Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fusion-alt-fusion-alternate-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fusion-alt-fusion-alternate-stage-keyboard-88-stage",
+          "name": "Fusion (Alternate) Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fusion-alt-fusion-alternate-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "fusion": {
+      "brand_name": "Fusion",
+      "products": [
+        {
+          "id": "fusion-fusion-analog",
+          "name": "Fusion Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fusion-fusion-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fusion-fusion-digital",
+          "name": "Fusion Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fusion-fusion-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fusion-fusion-stage",
+          "name": "Fusion Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fusion-fusion-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "fzone": {
+      "brand_name": "FZone",
+      "products": [
+        {
+          "id": "fzone-fzone-analog",
+          "name": "FZone Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fzone-fzone-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fzone-fzone-digital",
+          "name": "FZone Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fzone-fzone-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fzone-fzone-stage",
+          "name": "FZone Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/fzone-fzone-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "gon-bops": {
+      "brand_name": "Gon Bops",
+      "products": [
+        {
+          "id": "gon-bops-gon-bops-analog-synthesizer-synthesizer",
+          "name": "Gon Bops Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/gon-bops-gon-bops-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "gon-bops-gon-bops-digital-synthesizer-synthesizer",
+          "name": "Gon Bops Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/gon-bops-gon-bops-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "gon-bops-gon-bops-stage-keyboard-88-stage",
+          "name": "Gon Bops Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/gon-bops-gon-bops-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "guitar-pro": {
+      "brand_name": "Guitar Pro",
+      "products": [
+        {
+          "id": "guitar-pro-guitar-pro-electric-guitar-electric",
+          "name": "Guitar Pro Electric Guitar",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/guitar-pro-guitar-pro-electric-guitar-electric.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 1,
+        "products_with_issues": 1,
+        "placeholder_urls": 1,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "halilit-akd1": {
+      "brand_name": "Halilit AKD-1",
+      "products": [
+        {
+          "id": "halilit-akd1-halilit-akd-1-analog-synthesizer-synthesizer",
+          "name": "Halilit AKD-1 Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/halilit-akd1-halilit-akd-1-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "halilit-akd1-halilit-akd-1-digital-synthesizer-synthesizer",
+          "name": "Halilit AKD-1 Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/halilit-akd1-halilit-akd-1-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "halilit-akd1-halilit-akd-1-stage-keyboard-88-stage",
+          "name": "Halilit AKD-1 Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/halilit-akd1-halilit-akd-1-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "halilit": {
+      "brand_name": "Halilit",
+      "products": [
+        {
+          "id": "halilit-halilit-analog",
+          "name": "Halilit Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/halilit-halilit-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "halilit-halilit-digital",
+          "name": "Halilit Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/halilit-halilit-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "halilit-halilit-stage",
+          "name": "Halilit Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/halilit-halilit-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "headliner": {
+      "brand_name": "Headliner",
+      "products": [
+        {
+          "id": "headliner-headliner-analog",
+          "name": "Headliner Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/headliner-headliner-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "headliner-headliner-digital",
+          "name": "Headliner Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/headliner-headliner-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "headliner-headliner-stage",
+          "name": "Headliner Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/headliner-headliner-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "headrush": {
+      "brand_name": "HeadRush",
+      "products": [
+        {
+          "id": "headrush-headrush-analog",
+          "name": "HeadRush Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/headrush-headrush-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "headrush-headrush-digital",
+          "name": "HeadRush Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/headrush-headrush-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "headrush-headrush-stage",
+          "name": "HeadRush Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/headrush-headrush-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "heritage-audio": {
+      "brand_name": "Heritage Audio",
+      "products": [
+        {
+          "id": "heritage-audio-heritage-audio-audio-interface-2x2-audio",
+          "name": "Heritage Audio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/heritage-audio-heritage-audio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "heritage-audio-heritage-audio-audio-interface-4x4-audio",
+          "name": "Heritage Audio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/heritage-audio-heritage-audio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "hiwatt": {
+      "brand_name": "Hiwatt",
+      "products": [
+        {
+          "id": "hiwatt-hiwatt-analog",
+          "name": "Hiwatt Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/hiwatt-hiwatt-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "hiwatt-hiwatt-digital",
+          "name": "Hiwatt Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/hiwatt-hiwatt-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "hiwatt-hiwatt-stage",
+          "name": "Hiwatt Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/hiwatt-hiwatt-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "jasmine": {
+      "brand_name": "Jasmine",
+      "products": [
+        {
+          "id": "jasmine-jasmine-analog",
+          "name": "Jasmine Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/jasmine-jasmine-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "jasmine-jasmine-digital",
+          "name": "Jasmine Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/jasmine-jasmine-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "jasmine-jasmine-stage",
+          "name": "Jasmine Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/jasmine-jasmine-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "keith-mcmillen": {
+      "brand_name": "Keith McMillen Instruments",
+      "products": [
+        {
+          "id": "keith-mcmillen-keith-mcmillen-instruments-analog-synthesizer-synthesizer",
+          "name": "Keith McMillen Instruments Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/keith-mcmillen-keith-mcmillen-instruments-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "keith-mcmillen-keith-mcmillen-instruments-digital-synthesizer-synthesizer",
+          "name": "Keith McMillen Instruments Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/keith-mcmillen-keith-mcmillen-instruments-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "keith-mcmillen-keith-mcmillen-instruments-stage-keyboard-88-stage",
+          "name": "Keith McMillen Instruments Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/keith-mcmillen-keith-mcmillen-instruments-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "krk": {
+      "brand_name": "KRK",
+      "products": [
+        {
+          "id": "krk-krk-studio-monitor-5-studio",
+          "name": "KRK Studio Monitor 5\"",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/krk-krk-studio-monitor-5-studio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "krk-krk-studio-monitor-8-studio",
+          "name": "KRK Studio Monitor 8\"",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/krk-krk-studio-monitor-8-studio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "lsg-guitars": {
+      "brand_name": "LSG Guitars",
+      "products": [
+        {
+          "id": "lsg-guitars-lsg-guitars-electric-guitar-electric",
+          "name": "LSG Guitars Electric Guitar",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/lsg-guitars-lsg-guitars-electric-guitar-electric.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 1,
+        "products_with_issues": 1,
+        "placeholder_urls": 1,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "lynx-studio": {
+      "brand_name": "Lynx Studio Technology",
+      "products": [
+        {
+          "id": "lynx-studio-lynx-studio-technology-analog-synthesizer-synthesizer",
+          "name": "Lynx Studio Technology Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/lynx-studio-lynx-studio-technology-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "lynx-studio-lynx-studio-technology-digital-synthesizer-synthesizer",
+          "name": "Lynx Studio Technology Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/lynx-studio-lynx-studio-technology-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "lynx-studio-lynx-studio-technology-stage-keyboard-88-stage",
+          "name": "Lynx Studio Technology Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/lynx-studio-lynx-studio-technology-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "m-audio": {
+      "brand_name": "M-Audio",
+      "products": [
+        {
+          "id": "m-audio-m-audio-audio-interface-2x2-audio",
+          "name": "M-Audio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/m-audio-m-audio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "m-audio-m-audio-audio-interface-4x4-audio",
+          "name": "M-Audio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/m-audio-m-audio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "mackie": {
+      "brand_name": "Mackie",
+      "products": [],
+      "issues": [],
+      "stats": {
+        "total_products": 5,
+        "products_with_issues": 0,
+        "placeholder_urls": 0,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "maestro": {
+      "brand_name": "Maestro",
+      "products": [
+        {
+          "id": "maestro-maestro-analog",
+          "name": "Maestro Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maestro-maestro-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "maestro-maestro-digital",
+          "name": "Maestro Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maestro-maestro-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "maestro-maestro-stage",
+          "name": "Maestro Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maestro-maestro-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "magma": {
+      "brand_name": "Magma",
+      "products": [
+        {
+          "id": "magma-magma-analog",
+          "name": "Magma Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/magma-magma-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "magma-magma-digital",
+          "name": "Magma Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/magma-magma-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "magma-magma-stage",
+          "name": "Magma Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/magma-magma-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "marimba-one": {
+      "brand_name": "Marimba One",
+      "products": [
+        {
+          "id": "marimba-one-marimba-one-analog-synthesizer-synthesizer",
+          "name": "Marimba One Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/marimba-one-marimba-one-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "marimba-one-marimba-one-digital-synthesizer-synthesizer",
+          "name": "Marimba One Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/marimba-one-marimba-one-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "marimba-one-marimba-one-stage-keyboard-88-stage",
+          "name": "Marimba One Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/marimba-one-marimba-one-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "maton": {
+      "brand_name": "Maton",
+      "products": [
+        {
+          "id": "maton-maton-analog",
+          "name": "Maton Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maton-maton-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "maton-maton-digital",
+          "name": "Maton Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maton-maton-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "maton-maton-stage",
+          "name": "Maton Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maton-maton-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "maybach": {
+      "brand_name": "Maybach",
+      "products": [
+        {
+          "id": "maybach-maybach-analog",
+          "name": "Maybach Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maybach-maybach-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "maybach-maybach-digital",
+          "name": "Maybach Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maybach-maybach-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "maybach-maybach-stage",
+          "name": "Maybach Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/maybach-maybach-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "medeli": {
+      "brand_name": "Medeli",
+      "products": [
+        {
+          "id": "medeli-medeli-analog",
+          "name": "Medeli Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/medeli-medeli-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "medeli-medeli-digital",
+          "name": "Medeli Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/medeli-medeli-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "medeli-medeli-stage",
+          "name": "Medeli Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/medeli-medeli-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "montarbo": {
+      "brand_name": "Montarbo",
+      "products": [
+        {
+          "id": "montarbo-montarbo-analog",
+          "name": "Montarbo Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/montarbo-montarbo-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "montarbo-montarbo-digital",
+          "name": "Montarbo Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/montarbo-montarbo-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "montarbo-montarbo-stage",
+          "name": "Montarbo Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/montarbo-montarbo-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "moog": {
+      "brand_name": "Moog Music",
+      "products": [],
+      "issues": [],
+      "stats": {
+        "total_products": 8,
+        "products_with_issues": 0,
+        "placeholder_urls": 0,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "mxl": {
+      "brand_name": "MXL",
+      "products": [
+        {
+          "id": "mxl-mxl-analog",
+          "name": "MXL Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/mxl-mxl-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "mxl-mxl-digital",
+          "name": "MXL Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/mxl-mxl-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "mxl-mxl-stage",
+          "name": "MXL Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/mxl-mxl-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "nord": {
+      "brand_name": "Nord Keyboards",
+      "products": [
+        {
+          "id": "nord-piano-5",
+          "name": "Nord Piano 5",
+          "issues": [
+            {
+              "type": "MISSING_DOC",
+              "message": "No documentation URL provided",
+              "field": "documentation",
+              "value": "Not provided"
+            }
+          ]
+        },
+        {
+          "id": "nord-lead-a1",
+          "name": "Nord Lead A1",
+          "issues": [
+            {
+              "type": "MISSING_DOC",
+              "message": "No documentation URL provided",
+              "field": "documentation",
+              "value": "Not provided"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 2,
+        "placeholder_urls": 0,
+        "missing_docs": 2,
+        "fake_products": 0
+      }
+    },
+    "oberheim": {
+      "brand_name": "Oberheim",
+      "products": [
+        {
+          "id": "oberheim-oberheim-analog",
+          "name": "Oberheim Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/oberheim-oberheim-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "oberheim-oberheim-digital",
+          "name": "Oberheim Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/oberheim-oberheim-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "oberheim-oberheim-stage",
+          "name": "Oberheim Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/oberheim-oberheim-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "ocean-schmidt": {
+      "brand_name": "Ocean Schmidt",
+      "products": [
+        {
+          "id": "ocean-schmidt-ocean-schmidt-analog-synthesizer-synthesizer",
+          "name": "Ocean Schmidt Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ocean-schmidt-ocean-schmidt-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ocean-schmidt-ocean-schmidt-digital-synthesizer-synthesizer",
+          "name": "Ocean Schmidt Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ocean-schmidt-ocean-schmidt-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ocean-schmidt-ocean-schmidt-stage-keyboard-88-stage",
+          "name": "Ocean Schmidt Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ocean-schmidt-ocean-schmidt-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "on-stage-stands": {
+      "brand_name": "On Stage Stands",
+      "products": [
+        {
+          "id": "on-stage-stands-on-stage-stands-analog-synthesizer-synthesizer",
+          "name": "On Stage Stands Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/on-stage-stands-on-stage-stands-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "on-stage-stands-on-stage-stands-digital-synthesizer-synthesizer",
+          "name": "On Stage Stands Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/on-stage-stands-on-stage-stands-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "on-stage-stands-on-stage-stands-stage-keyboard-88-stage",
+          "name": "On Stage Stands Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/on-stage-stands-on-stage-stands-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "ortega": {
+      "brand_name": "Ortega",
+      "products": [
+        {
+          "id": "ortega-ortega-analog",
+          "name": "Ortega Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ortega-ortega-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ortega-ortega-digital",
+          "name": "Ortega Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ortega-ortega-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ortega-ortega-stage",
+          "name": "Ortega Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ortega-ortega-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "paiste": {
+      "brand_name": "Paiste",
+      "products": [
+        {
+          "id": "paiste-paiste-analog",
+          "name": "Paiste Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/paiste-paiste-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "paiste-paiste-digital",
+          "name": "Paiste Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/paiste-paiste-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "paiste-paiste-stage",
+          "name": "Paiste Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/paiste-paiste-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "pearl": {
+      "brand_name": "Pearl",
+      "products": [
+        {
+          "id": "pearl-eliminator",
+          "name": "Pearl Eliminator",
+          "issues": [
+            {
+              "type": "MISSING_IMAGE",
+              "message": "Product image path is missing",
+              "field": "images.main",
+              "value": "Missing"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 1,
+        "products_with_issues": 1,
+        "placeholder_urls": 0,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "perris-leathers": {
+      "brand_name": "Perri's Leathers",
+      "products": [
+        {
+          "id": "perris-leathers-perri-s-leathers-analog-synthesizer-synthesizer",
+          "name": "Perri's Leathers Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/perris-leathers-perri-s-leathers-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "perris-leathers-perri-s-leathers-digital-synthesizer-synthesizer",
+          "name": "Perri's Leathers Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/perris-leathers-perri-s-leathers-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "perris-leathers-perri-s-leathers-stage-keyboard-88-stage",
+          "name": "Perri's Leathers Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/perris-leathers-perri-s-leathers-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "presonus": {
+      "brand_name": "PreSonus",
+      "products": [
+        {
+          "id": "presonus-presonus-audio-interface-2x2-audio",
+          "name": "PreSonus Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/presonus-presonus-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "presonus-presonus-audio-interface-4x4-audio",
+          "name": "PreSonus Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/presonus-presonus-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "rcf": {
+      "brand_name": "RCF",
+      "products": [
+        {
+          "id": "rcf-rcf-analog",
+          "name": "RCF Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rcf-rcf-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "rcf-rcf-digital",
+          "name": "RCF Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rcf-rcf-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "rcf-rcf-stage",
+          "name": "RCF Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rcf-rcf-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "regal-tip": {
+      "brand_name": "Regal Tip",
+      "products": [
+        {
+          "id": "regal-tip-regal-tip-analog-synthesizer-synthesizer",
+          "name": "Regal Tip Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/regal-tip-regal-tip-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "regal-tip-regal-tip-digital-synthesizer-synthesizer",
+          "name": "Regal Tip Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/regal-tip-regal-tip-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "regal-tip-regal-tip-stage-keyboard-88-stage",
+          "name": "Regal Tip Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/regal-tip-regal-tip-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "remo": {
+      "brand_name": "Remo",
+      "products": [
+        {
+          "id": "remo-remo-analog",
+          "name": "Remo Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/remo-remo-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "remo-remo-digital",
+          "name": "Remo Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/remo-remo-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "remo-remo-stage",
+          "name": "Remo Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/remo-remo-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "rhythm-tech": {
+      "brand_name": "Rhythm Tech",
+      "products": [
+        {
+          "id": "rhythm-tech-rhythm-tech-analog-synthesizer-synthesizer",
+          "name": "Rhythm Tech Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rhythm-tech-rhythm-tech-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "rhythm-tech-rhythm-tech-digital-synthesizer-synthesizer",
+          "name": "Rhythm Tech Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rhythm-tech-rhythm-tech-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "rhythm-tech-rhythm-tech-stage-keyboard-88-stage",
+          "name": "Rhythm Tech Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rhythm-tech-rhythm-tech-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "rogers": {
+      "brand_name": "Rogers",
+      "products": [
+        {
+          "id": "rogers-rogers-analog",
+          "name": "Rogers Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rogers-rogers-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "rogers-rogers-digital",
+          "name": "Rogers Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rogers-rogers-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "rogers-rogers-stage",
+          "name": "Rogers Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/rogers-rogers-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "roland": {
+      "brand_name": "Roland Corporation",
+      "products": [
+        {
+          "id": "roland-special-edition-1",
+          "name": "Roland TD-17KVX Gen 2 Special Edition 1",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/roland-special-edition-1.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 9,
+        "products_with_issues": 1,
+        "placeholder_urls": 1,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "show": {
+      "brand_name": "Show",
+      "products": [
+        {
+          "id": "show-show-analog",
+          "name": "Show Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/show-show-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "show-show-digital",
+          "name": "Show Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/show-show-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "show-show-stage",
+          "name": "Show Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/show-show-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "solar-guitars": {
+      "brand_name": "Solar Guitars",
+      "products": [
+        {
+          "id": "solar-guitars-solar-guitars-electric-guitar-electric",
+          "name": "Solar Guitars Electric Guitar",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/solar-guitars-solar-guitars-electric-guitar-electric.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 1,
+        "products_with_issues": 1,
+        "placeholder_urls": 1,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "sound-reference-ue": {
+      "brand_name": "Sound Reference (Ultimate Ears)",
+      "products": [
+        {
+          "id": "sound-reference-ue-sound-reference-ultimate-ears-analog-synthesizer-synthesizer",
+          "name": "Sound Reference (Ultimate Ears) Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/sound-reference-ue-sound-reference-ultimate-ears-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "sound-reference-ue-sound-reference-ultimate-ears-digital-synthesizer-synthesizer",
+          "name": "Sound Reference (Ultimate Ears) Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/sound-reference-ue-sound-reference-ultimate-ears-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "sound-reference-ue-sound-reference-ultimate-ears-stage-keyboard-88-stage",
+          "name": "Sound Reference (Ultimate Ears) Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/sound-reference-ue-sound-reference-ultimate-ears-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "sound-reference": {
+      "brand_name": "Sound Reference",
+      "products": [
+        {
+          "id": "sound-reference-sound-reference-analog-synthesizer-synthesizer",
+          "name": "Sound Reference Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/sound-reference-sound-reference-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "sound-reference-sound-reference-digital-synthesizer-synthesizer",
+          "name": "Sound Reference Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/sound-reference-sound-reference-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "sound-reference-sound-reference-stage-keyboard-88-stage",
+          "name": "Sound Reference Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/sound-reference-sound-reference-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "soundking": {
+      "brand_name": "Soundking",
+      "products": [
+        {
+          "id": "soundking-soundking-analog",
+          "name": "Soundking Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/soundking-soundking-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "soundking-soundking-digital",
+          "name": "Soundking Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/soundking-soundking-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "soundking-soundking-stage",
+          "name": "Soundking Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/soundking-soundking-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "spector": {
+      "brand_name": "Spector",
+      "products": [
+        {
+          "id": "spector-spector-analog",
+          "name": "Spector Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/spector-spector-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "spector-spector-digital",
+          "name": "Spector Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/spector-spector-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "spector-spector-stage",
+          "name": "Spector Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/spector-spector-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "steinberg": {
+      "brand_name": "Steinberg",
+      "products": [
+        {
+          "id": "steinberg-steinberg-analog",
+          "name": "Steinberg Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/steinberg-steinberg-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "steinberg-steinberg-digital",
+          "name": "Steinberg Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/steinberg-steinberg-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "steinberg-steinberg-stage",
+          "name": "Steinberg Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/steinberg-steinberg-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "studiologic": {
+      "brand_name": "Studiologic",
+      "products": [
+        {
+          "id": "studiologic-studiologic-analog",
+          "name": "Studiologic Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/studiologic-studiologic-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "studiologic-studiologic-digital",
+          "name": "Studiologic Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/studiologic-studiologic-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "studiologic-studiologic-stage",
+          "name": "Studiologic Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/studiologic-studiologic-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "teenage-engineering": {
+      "brand_name": "Teenage Engineering",
+      "products": [
+        {
+          "id": "teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer",
+          "name": "Teenage Engineering Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/teenage-engineering-teenage-engineering-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer",
+          "name": "Teenage Engineering Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/teenage-engineering-teenage-engineering-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "teenage-engineering-teenage-engineering-stage-keyboard-88-stage",
+          "name": "Teenage Engineering Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/teenage-engineering-teenage-engineering-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "tombo": {
+      "brand_name": "Tombo",
+      "products": [
+        {
+          "id": "tombo-tombo-analog",
+          "name": "Tombo Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/tombo-tombo-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "tombo-tombo-digital",
+          "name": "Tombo Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/tombo-tombo-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "tombo-tombo-stage",
+          "name": "Tombo Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/tombo-tombo-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "turkish-cymbals": {
+      "brand_name": "Turkish Cymbals",
+      "products": [
+        {
+          "id": "turkish-cymbals-turkish-cymbals-analog-synthesizer-synthesizer",
+          "name": "Turkish Cymbals Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/turkish-cymbals-turkish-cymbals-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "turkish-cymbals-turkish-cymbals-digital-synthesizer-synthesizer",
+          "name": "Turkish Cymbals Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/turkish-cymbals-turkish-cymbals-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "turkish-cymbals-turkish-cymbals-stage-keyboard-88-stage",
+          "name": "Turkish Cymbals Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/turkish-cymbals-turkish-cymbals-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "ultimate-support": {
+      "brand_name": "Ultimate Support",
+      "products": [
+        {
+          "id": "ultimate-support-ultimate-support-analog-synthesizer-synthesizer",
+          "name": "Ultimate Support Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ultimate-support-ultimate-support-analog-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ultimate-support-ultimate-support-digital-synthesizer-synthesizer",
+          "name": "Ultimate Support Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ultimate-support-ultimate-support-digital-synthesizer-synthesizer.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ultimate-support-ultimate-support-stage-keyboard-88-stage",
+          "name": "Ultimate Support Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/ultimate-support-ultimate-support-stage-keyboard-88-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "universal-audio": {
+      "brand_name": "Universal Audio",
+      "products": [
+        {
+          "id": "universal-audio-universal-audio-audio-interface-2x2-audio",
+          "name": "Universal Audio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/universal-audio-universal-audio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "universal-audio-universal-audio-audio-interface-4x4-audio",
+          "name": "Universal Audio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/universal-audio-universal-audio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "v-moda": {
+      "brand_name": "V-MODA",
+      "products": [
+        {
+          "id": "v-moda-v-moda-analog",
+          "name": "V-MODA Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/v-moda-v-moda-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "v-moda-v-moda-digital",
+          "name": "V-MODA Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/v-moda-v-moda-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "v-moda-v-moda-stage",
+          "name": "V-MODA Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/v-moda-v-moda-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "vintage": {
+      "brand_name": "Vintage",
+      "products": [
+        {
+          "id": "vintage-vintage-analog",
+          "name": "Vintage Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/vintage-vintage-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "vintage-vintage-digital",
+          "name": "Vintage Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/vintage-vintage-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "vintage-vintage-stage",
+          "name": "Vintage Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/vintage-vintage-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "warm-audio": {
+      "brand_name": "Warm Audio",
+      "products": [
+        {
+          "id": "warm-audio-warm-audio-audio-interface-2x2-audio",
+          "name": "Warm Audio Audio Interface 2x2",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/warm-audio-warm-audio-audio-interface-2x2-audio.pdf"
+            }
+          ]
+        },
+        {
+          "id": "warm-audio-warm-audio-audio-interface-4x4-audio",
+          "name": "Warm Audio Audio Interface 4x4",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/warm-audio-warm-audio-audio-interface-4x4-audio.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 2,
+        "products_with_issues": 2,
+        "placeholder_urls": 2,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "washburn": {
+      "brand_name": "Washburn",
+      "products": [
+        {
+          "id": "washburn-washburn-analog",
+          "name": "Washburn Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/washburn-washburn-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "washburn-washburn-digital",
+          "name": "Washburn Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/washburn-washburn-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "washburn-washburn-stage",
+          "name": "Washburn Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/washburn-washburn-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "waterstone": {
+      "brand_name": "Waterstone",
+      "products": [
+        {
+          "id": "waterstone-waterstone-analog",
+          "name": "Waterstone Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/waterstone-waterstone-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "waterstone-waterstone-digital",
+          "name": "Waterstone Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/waterstone-waterstone-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "waterstone-waterstone-stage",
+          "name": "Waterstone Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/waterstone-waterstone-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "xotic": {
+      "brand_name": "Xotic",
+      "products": [
+        {
+          "id": "xotic-xotic-analog",
+          "name": "Xotic Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/xotic-xotic-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "xotic-xotic-digital",
+          "name": "Xotic Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/xotic-xotic-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "xotic-xotic-stage",
+          "name": "Xotic Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/xotic-xotic-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    },
+    "xvive": {
+      "brand_name": "Xvive",
+      "products": [
+        {
+          "id": "xvive-xvive-analog",
+          "name": "Xvive Analog Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/xvive-xvive-analog.pdf"
+            }
+          ]
+        },
+        {
+          "id": "xvive-xvive-digital",
+          "name": "Xvive Digital Synthesizer",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/xvive-xvive-digital.pdf"
+            }
+          ]
+        },
+        {
+          "id": "xvive-xvive-stage",
+          "name": "Xvive Stage Keyboard 88",
+          "issues": [
+            {
+              "type": "PLACEHOLDER_URL",
+              "message": "Documentation URL is placeholder (example.com)",
+              "field": "documentation.url",
+              "value": "https://example.com/docs/xvive-xvive-stage.pdf"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "stats": {
+        "total_products": 3,
+        "products_with_issues": 3,
+        "placeholder_urls": 3,
+        "missing_docs": 0,
+        "fake_products": 0
+      }
+    }
+  },
+  "timestamp": "2026-01-13"
+}

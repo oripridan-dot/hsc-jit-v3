@@ -168,6 +168,20 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 # Add health check router
 app.include_router(health_router)
 
+# ============ Brands Endpoint ============
+@app.get("/api/brands")
+async def get_all_brands():
+    """
+    Get all brand identities with product counts.
+    Returns: [{ "id": "moog", "name": "Moog Music", "product_count": 8, "logo_url": "...", ... }]
+    """
+    catalog = CatalogService()
+    brands = catalog.get_all_brands()
+    return {
+        "total_brands": len(brands),
+        "brands": brands
+    }
+
 # ============ Price Endpoint ============
 @app.get("/api/price/{query}")
 async def get_price(query: str):

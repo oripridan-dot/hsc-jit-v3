@@ -119,6 +119,26 @@ class CatalogService:
         """Fast lookup for a product by ID."""
         return self.product_map.get(product_id)
 
+    def get_all_brands(self) -> List[Dict[str, Any]]:
+        """
+        Returns list of all brand identities with product counts.
+        Format: [{ "id": "moog", "name": "Moog Music", "product_count": 8, "logo_url": "...", ... }]
+        """
+        brands_list = []
+        for brand_id, brand_info in self.brands.items():
+            # Count products for this brand
+            product_count = sum(1 for p in self.products if p.get("brand") == brand_id)
+            
+            brand_data = {
+                **brand_info,
+                "product_count": product_count
+            }
+            brands_list.append(brand_data)
+        
+        # Sort by name
+        brands_list.sort(key=lambda x: x.get("name", ""))
+        return brands_list
+
     def get_product_with_context(self, product_id: str) -> Optional[Dict[str, Any]]:
         """
         Returns a product with hydrated context:

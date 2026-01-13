@@ -15,7 +15,7 @@
       "category": "Multi-Effects",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "/static/assets/products/boss-gt1000.webp",
+        "main": "/static/assets/products/boss-gt-1000.webp",
         "thumbnail": "/static/assets/products/boss-gt1000.webp"
       },
       "price": 4900,
@@ -24,6 +24,13 @@
         "Processing": "32-bit AD/DA, 32-bit floating point",
         "Technology": "AIRD (Augmented Impulse Response Dynamics)",
         "Bluetooth": "Built-in"
+      },
+      "family": "Multi-Effects",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
       }
     },
     {
@@ -33,7 +40,7 @@
       "category": "Loop Station",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "/static/assets/products/boss-rc505mk2.webp",
+        "main": "/static/assets/products/boss-rc-505-mk2.webp",
         "thumbnail": "/static/assets/products/boss-rc505mk2.webp"
       },
       "price": 2900,
@@ -42,6 +49,13 @@
         "Tracks": "5 Stereo",
         "Input FX": "49 Types",
         "Track FX": "53 Types"
+      },
+      "family": "Loop Station",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
       }
     },
     {
@@ -51,7 +65,7 @@
       "category": "Guitar Amplifier",
       "production_country": "Malaysia 🇲🇾",
       "images": {
-        "main": "/static/assets/products/boss-katana50.webp",
+        "main": "/static/assets/products/boss-katana-50.webp",
         "thumbnail": "/static/assets/products/boss-katana50.webp"
       },
       "price": 1400,
@@ -60,6 +74,13 @@
         "Power": "50 Watts",
         "Speaker": "12-inch Custom",
         "Amp Types": "6"
+      },
+      "family": "Guitar Amplifier",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "52cm × 32cm × 22cm",
+        "in_stock": true,
+        "rating": 4.2
       }
     }
   ]

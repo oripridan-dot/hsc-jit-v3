@@ -12,7 +12,7 @@
       "name": "Allen & Heath Analog Synthesizer",
       "brand": "allen-and-heath",
       "category": "Synthesizer",
-      "production_country": "UK \ud83c\uddec\ud83c\udde7",
+      "production_country": "UK 🇬🇧",
       "images": {
         "main": "/static/assets/products/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.webp"
@@ -21,14 +21,29 @@
         "type": "pdf",
         "url": "https://example.com/docs/allen-and-heath-allen-heath-analog-synthesizer-synthesizer.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3500,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Allen & Heath Analog Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
     },
     {
       "id": "allen-and-heath-allen-heath-digital-synthesizer-synthesizer",
       "name": "Allen & Heath Digital Synthesizer",
       "brand": "allen-and-heath",
       "category": "Synthesizer",
-      "production_country": "UK \ud83c\uddec\ud83c\udde7",
+      "production_country": "UK 🇬🇧",
       "images": {
         "main": "/static/assets/products/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.webp",
         "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.webp"
@@ -37,14 +52,29 @@
         "type": "pdf",
         "url": "https://example.com/docs/allen-and-heath-allen-heath-digital-synthesizer-synthesizer.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3513,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Allen & Heath Digital Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
     },
     {
       "id": "allen-and-heath-allen-heath-stage-keyboard-88-stage",
       "name": "Allen & Heath Stage Keyboard 88",
       "brand": "allen-and-heath",
       "category": "Stage Keyboard",
-      "production_country": "UK \ud83c\uddec\ud83c\udde7",
+      "production_country": "UK 🇬🇧",
       "images": {
         "main": "/static/assets/products/allen-and-heath-allen-heath-stage-keyboard-88-stage.webp",
         "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-stage-keyboard-88-stage.webp"
@@ -53,23 +83,146 @@
         "type": "pdf",
         "url": "https://example.com/docs/allen-and-heath-allen-heath-stage-keyboard-88-stage.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 4026,
+      "specs": {
+        "Keys": "73-88",
+        "Touch Response": "Yes",
+        "Built-in Sounds": "1000+",
+        "MIDI": "Yes"
+      },
+      "description": "Allen & Heath Stage Keyboard 88 - Performance keyboard designed for live stage use. Lightweight yet powerful with extensive sound library.",
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "52cm × 32cm × 22cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
     },
     {
-      "id": "allen-and-heath-allen-heath-portable-keyboard-portable",
-      "name": "Allen & Heath Portable Keyboard",
+      "id": "allen-and-heath-special-edition-1",
+      "name": "Allen & Heath Analog Synthesizer Special Edition 1",
       "brand": "allen-and-heath",
-      "category": "Portable Keyboard",
-      "production_country": "UK \ud83c\uddec\ud83c\udde7",
+      "category": "Synthesizer",
+      "production_country": "UK 🇬🇧",
       "images": {
-        "main": "/static/assets/products/allen-and-heath-allen-heath-portable-keyboard-portable.webp",
-        "thumbnail": "/static/assets/products/allen-and-heath-allen-heath-portable-keyboard-portable.webp"
+        "main": "/static/assets/products/allen-and-heath-special-edition-1.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-special-edition-1.webp"
       },
       "documentation": {
         "type": "pdf",
-        "url": "https://example.com/docs/allen-and-heath-allen-heath-portable-keyboard-portable.pdf"
+        "url": "https://example.com/allen-and-heath-special-edition-1.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3760,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Allen & Heath Analog Synthesizer Special Edition 1 - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "70cm × 30cm × 25cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "allen-and-heath-special-edition-2",
+      "name": "Allen & Heath Digital Synthesizer Special Edition 2",
+      "brand": "allen-and-heath",
+      "category": "Synthesizer",
+      "production_country": "UK 🇬🇧",
+      "images": {
+        "main": "/static/assets/products/allen-and-heath-special-edition-2.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-special-edition-2.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/allen-and-heath-special-edition-2.pdf"
+      },
+      "relationships": [],
+      "price": 3773,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Allen & Heath Digital Synthesizer Special Edition 2 - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "71cm × 31cm × 26cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "allen-and-heath-special-edition-3",
+      "name": "Allen & Heath Stage Keyboard 88 Special Edition 3",
+      "brand": "allen-and-heath",
+      "category": "Stage Keyboard",
+      "production_country": "UK 🇬🇧",
+      "images": {
+        "main": "/static/assets/products/allen-and-heath-special-edition-3.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-special-edition-3.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/allen-and-heath-special-edition-3.pdf"
+      },
+      "relationships": [],
+      "price": 4286,
+      "specs": {
+        "Keys": "73-88",
+        "Touch Response": "Yes",
+        "Built-in Sounds": "1000+",
+        "MIDI": "Yes"
+      },
+      "description": "Allen & Heath Stage Keyboard 88 Special Edition 3 - Performance keyboard designed for live stage use. Lightweight yet powerful with extensive sound library.",
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "72cm × 32cm × 27cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
+    },
+    {
+      "id": "allen-and-heath-special-edition-5",
+      "name": "Allen & Heath Analog Analog Synthesizer Special Edition 5",
+      "brand": "allen-and-heath",
+      "category": "Synthesizer",
+      "production_country": "UK 🇬🇧",
+      "images": {
+        "main": "/static/assets/products/allen-and-heath-special-edition-5.webp",
+        "thumbnail": "/static/assets/products/allen-and-heath-special-edition-5.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/allen-and-heath-special-edition-5.pdf"
+      },
+      "relationships": [],
+      "price": 3812,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Allen & Heath Analog Analog Synthesizer Special Edition 5 - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 6.5,
+        "dimensions": "74cm × 34cm × 29cm",
+        "in_stock": true,
+        "rating": 4.4
+      }
     }
   ]
 }

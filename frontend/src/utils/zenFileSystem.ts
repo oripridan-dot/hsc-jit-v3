@@ -13,117 +13,117 @@ export interface FileNode {
 }
 
 // Comprehensive Brand Logo Mapping - All 90+ Brands (Exact Names from Catalogs)
-const BRAND_LOGOS: Record<string, string> = {
+const BRAND_LOGOS: Record<string, { emoji: string; image?: string }> = {
   // Keyboards & Synthesizers
-  'Roland Corporation': '🎹',
-  'Nord Keyboards': '🎹',
-  'Moog Music': '🎛️',
-  'Korg': '🎹',
-  'Akai Professional': '🎮',
-  'Teenage Engineering': '🎮',
-  'Studiologic': '🎹',
-  'Oberheim': '🎛️',
-  'M-Audio': '🎚️',
-  'Medeli': '🎹',
+  'Roland Corporation': { emoji: '🎹', image: 'https://cdnjs.cloudflare.com/ajax/libs/simple-icons/7.23.0/roland.svg' },
+  'Nord Keyboards': { emoji: '🎹' },
+  'Moog Music': { emoji: '🎛️' },
+  'Korg': { emoji: '🎹' },
+  'Akai Professional': { emoji: '🎮' },
+  'Teenage Engineering': { emoji: '🎮' },
+  'Studiologic': { emoji: '🎹' },
+  'Oberheim': { emoji: '🎛️' },
+  'M-Audio': { emoji: '🎚️' },
+  'Medeli': { emoji: '🎹' },
   
   // Drums & Percussion
-  'Pearl': '🥁',
-  'Paiste': '🥁',
-  'Remo': '🥁',
-  'Dixon': '🥁',
-  'Adams': '🥁',
-  'Rogers': '🥁',
-  'Gon Bops': '🪘',
-  'Rhythm Tech': '🪘',
-  'Regal Tip': '🥁',
-  'Drumdots': '🥁',
-  'Turkish Cymbals': '🥁',
-  'Marimba One': '🎼',
+  'Pearl': { emoji: '🥁' },
+  'Paiste': { emoji: '🥁' },
+  'Remo': { emoji: '🥁' },
+  'Dixon': { emoji: '🥁' },
+  'Adams': { emoji: '🥁' },
+  'Rogers': { emoji: '🥁' },
+  'Gon Bops': { emoji: '🪘' },
+  'Rhythm Tech': { emoji: '🪘' },
+  'Regal Tip': { emoji: '🥁' },
+  'Drumdots': { emoji: '🥁' },
+  'Turkish Cymbals': { emoji: '🥁' },
+  'Marimba One': { emoji: '🎼' },
   
   // Guitars & Basses
-  'ESP': '🎸',
-  'Washburn': '🎸',
-  'Spector': '🎸',
-  'Breedlove': '🎸',
-  'Córdoba': '🎸',
-  "D'Angelico": '🎸',
-  'Maton': '🎸',
-  'Maybach': '🎸',
-  'Waterstone': '🎸',
-  'Heritage Audio': '🎸',
-  'Solar Guitars': '🎸',
-  'LSG Guitars': '🎸',
-  'Bohemian': '🎸',
-  'Antigua': '🎸',
-  'Ortega': '🎸',
-  'Encore': '🎸',
-  'Jasmine': '🎸',
-  'Ocean Schmidt': '🎸',
-  'Vintage': '🎸',
+  'ESP': { emoji: '🎸' },
+  'Washburn': { emoji: '🎸' },
+  'Spector': { emoji: '🎸' },
+  'Breedlove': { emoji: '🎸' },
+  'Córdoba': { emoji: '🎸' },
+  "D'Angelico": { emoji: '🎸' },
+  'Maton': { emoji: '🎸' },
+  'Maybach': { emoji: '🎸' },
+  'Waterstone': { emoji: '🎸' },
+  'Heritage Audio': { emoji: '🎸' },
+  'Solar Guitars': { emoji: '🎸' },
+  'LSG Guitars': { emoji: '🎸' },
+  'Bohemian': { emoji: '🎸' },
+  'Antigua': { emoji: '🎸' },
+  'Ortega': { emoji: '🎸' },
+  'Encore': { emoji: '🎸' },
+  'Jasmine': { emoji: '🎸' },
+  'Ocean Schmidt': { emoji: '🎸' },
+  'Vintage': { emoji: '🎸' },
   
   // Guitar Effects & Pedals
-  'BOSS': '🎛️',
-  'Xotic': '🎛️',
-  'Foxgear': '🎛️',
-  'HeadRush': '🎛️',
-  'Xvive': '🎛️',
+  'BOSS': { emoji: '🎛️' },
+  'Xotic': { emoji: '🎛️' },
+  'Foxgear': { emoji: '🎛️' },
+  'HeadRush': { emoji: '🎛️' },
+  'Xvive': { emoji: '🎛️' },
   
   // Amplifiers
-  'Ampeg': '🔊',
-  'Ashdown': '🔊',
-  'Eden': '🔊',
-  'Hiwatt': '🔊',
+  'Ampeg': { emoji: '🔊' },
+  'Ashdown': { emoji: '🔊' },
+  'Eden': { emoji: '🔊' },
+  'Hiwatt': { emoji: '🔊' },
   
   // Pro Audio & Monitors
-  'RCF': '🔊',
-  'PreSonus': '🎚️',
-  'ADAM Audio': '🔊',
-  'Dynaudio': '🔊',
-  'Eve Audio': '🔊',
-  'KRK': '🔊',
-  'Amphion': '🔊',
-  'EAW': '🔊',
-  'Mackie': '🔊',
-  'Montarbo': '🔊',
-  'Soundking': '🔊',
+  'RCF': { emoji: '🔊' },
+  'PreSonus': { emoji: '🎚️' },
+  'ADAM Audio': { emoji: '🔊' },
+  'Dynaudio': { emoji: '🔊' },
+  'Eve Audio': { emoji: '🔊' },
+  'KRK': { emoji: '🔊' },
+  'Amphion': { emoji: '🔊' },
+  'EAW': { emoji: '🔊' },
+  'Mackie': { emoji: '🔊', image: 'https://cdnjs.cloudflare.com/ajax/libs/simple-icons/7.23.0/mackie.svg' },
+  'Montarbo': { emoji: '🔊' },
+  'Soundking': { emoji: '🔊' },
   
   // Microphones
-  'Blue Microphones': '🎤',
-  'Austrian Audio': '🎤',
-  'MXL': '🎤',
+  'Blue Microphones': { emoji: '🎤' },
+  'Austrian Audio': { emoji: '🎤' },
+  'MXL': { emoji: '🎤' },
   
   // Mixing & Recording
-  'Allen & Heath': '🎚️',
-  'Avid': '🎚️',
-  'Steinberg': '🎚️',
-  'Universal Audio': '🎚️',
-  'Warm Audio': '🎚️',
-  'Lynx Studio Technology': '🎚️',
+  'Allen & Heath': { emoji: '🎚️' },
+  'Avid': { emoji: '🎚️' },
+  'Steinberg': { emoji: '🎚️' },
+  'Universal Audio': { emoji: '🎚️' },
+  'Warm Audio': { emoji: '🎚️' },
+  'Lynx Studio Technology': { emoji: '🎚️' },
   
   // Accessories
-  'Halilit': '🎵',
-  'Halilit AKD-1': '🎵',
-  "D'Addario": '🎼',
-  "Perri's Leathers": '🎼',
-  'On Stage Stands': '🎼',
-  'Ultimate Support': '🎼',
-  'Guitar Pro': '🎼',
-  'Show': '🎼',
-  'Bespeco': '🎼',
-  'Magma': '🎼',
-  'FZone': '🎼',
-  'ASM': '🎼',
-  'Maestro': '🎼',
+  'Halilit': { emoji: '🎵' },
+  'Halilit AKD-1': { emoji: '🎵' },
+  "D'Addario": { emoji: '🎼' },
+  "Perri's Leathers": { emoji: '🎼' },
+  'On Stage Stands': { emoji: '🎼' },
+  'Ultimate Support': { emoji: '🎼' },
+  'Guitar Pro': { emoji: '🎼' },
+  'Show': { emoji: '🎼' },
+  'Bespeco': { emoji: '🎼' },
+  'Magma': { emoji: '🎼' },
+  'FZone': { emoji: '🎼' },
+  'ASM': { emoji: '🎼' },
+  'Maestro': { emoji: '🎼' },
   
   // DJ & Production
-  'V-MODA': '🎧',
-  'Keith McMillen Instruments': '🎮',
-  'Fusion': '🎚️',
-  'Fusion (Alternate)': '🎚️',
-  'Sound Reference': '🎚️',
-  'Sound Reference (Ultimate Ears)': '🎚️',
-  'Tombo': '🎵',
-  'Headliner': '🎧'
+  'V-MODA': { emoji: '🎧' },
+  'Keith McMillen Instruments': { emoji: '🎮' },
+  'Fusion': { emoji: '🎚️' },
+  'Fusion (Alternate)': { emoji: '🎚️' },
+  'Sound Reference': { emoji: '🎚️' },
+  'Sound Reference (Ultimate Ears)': { emoji: '🎚️' },
+  'Tombo': { emoji: '🎵' },
+  'Headliner': { emoji: '🎧' }
 };
 
 // Helper to calculate folder stats
@@ -161,10 +161,7 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
       const brandProducts = brands[brand];
       const brandCategories: Record<string, Prediction[]> = {};
       
-      // Extract brand logo from first product's brand_identity
-      const brandLogoUrl = brandProducts[0]?.brand_identity?.logo_url || '';
-      const brandIdentityName = brandProducts[0]?.brand_identity?.name || brand;
-      
+      // Populate brand categories
       brandProducts.forEach(p => {
         const catName = ((p as any).category as string | undefined) || 'Products';
         if (!brandCategories[catName]) brandCategories[catName] = [];
@@ -189,13 +186,20 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
         }))
       }));
       
+      // Extract brand logo from first product's brand_identity or BRAND_LOGOS mapping
+      const brandLogoUrl = brandProducts[0]?.brand_identity?.logo_url || '';
+      const brandIdentityName = brandProducts[0]?.brand_identity?.name || brand;
+      const logoMapping = BRAND_LOGOS[brandIdentityName];
+      const finalLogoUrl = brandLogoUrl || logoMapping?.image || '';
+      const emojiIcon = logoMapping?.emoji || '🏢';
+      
       return {
         id: `brand-${brand}`,
         name: brandIdentityName,
         type: 'brand' as const,
-        icon: BRAND_LOGOS[brandIdentityName] || '🏢', // Emoji fallback only
-        image: brandLogoUrl, // Real brand logo (preferred)
-        logoUrl: brandLogoUrl,
+        icon: emojiIcon, // Emoji fallback
+        image: finalLogoUrl, // Real brand logo (preferred)
+        logoUrl: finalLogoUrl,
         items: brandProducts,
         meta: getStats(brandProducts),
         children: categoryChildren
@@ -241,4 +245,24 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
       }
     ]
   };
+};
+
+// Find a path from root to a node by id. Returns an array of FileNodes from root to target.
+export const findPathById = (root: FileNode, targetId: string): FileNode[] => {
+  const path: FileNode[] = [];
+
+  const dfs = (node: FileNode): boolean => {
+    path.push(node);
+    if (node.id === targetId) return true;
+    if (node.children) {
+      for (const child of node.children) {
+        if (dfs(child)) return true;
+      }
+    }
+    path.pop();
+    return false;
+  };
+
+  const found = dfs(root);
+  return found ? path : [root];
 };

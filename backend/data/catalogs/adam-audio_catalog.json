@@ -12,7 +12,7 @@
       "name": "ADAM Audio Audio Interface 2x2",
       "brand": "adam-audio",
       "category": "Audio Interface",
-      "production_country": "Germany \ud83c\udde9\ud83c\uddea",
+      "production_country": "Germany 🇩🇪",
       "images": {
         "main": "/static/assets/products/adam-audio-adam-audio-audio-interface-2x2-audio.webp",
         "thumbnail": "/static/assets/products/adam-audio-adam-audio-audio-interface-2x2-audio.webp"
@@ -21,14 +21,29 @@
         "type": "pdf",
         "url": "https://example.com/docs/adam-audio-adam-audio-audio-interface-2x2-audio.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 1500,
+      "specs": {
+        "I/O": "2x2 to 8x8",
+        "Connectivity": "USB/Thunderbolt",
+        "Latency": "<2ms",
+        "Resolution": "24-bit/192kHz"
+      },
+      "description": "ADAM Audio Audio Interface 2x2 - Professional audio interface for recording and production. Low-latency performance with premium converters.",
+      "family": "Audio Interface",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
     },
     {
       "id": "adam-audio-adam-audio-audio-interface-4x4-audio",
       "name": "ADAM Audio Audio Interface 4x4",
       "brand": "adam-audio",
       "category": "Audio Interface",
-      "production_country": "Germany \ud83c\udde9\ud83c\uddea",
+      "production_country": "Germany 🇩🇪",
       "images": {
         "main": "/static/assets/products/adam-audio-adam-audio-audio-interface-4x4-audio.webp",
         "thumbnail": "/static/assets/products/adam-audio-adam-audio-audio-interface-4x4-audio.webp"
@@ -37,7 +52,22 @@
         "type": "pdf",
         "url": "https://example.com/docs/adam-audio-adam-audio-audio-interface-4x4-audio.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 1513,
+      "specs": {
+        "I/O": "2x2 to 8x8",
+        "Connectivity": "USB/Thunderbolt",
+        "Latency": "<2ms",
+        "Resolution": "24-bit/192kHz"
+      },
+      "description": "ADAM Audio Audio Interface 4x4 - Professional audio interface for recording and production. Low-latency performance with premium converters.",
+      "family": "Audio Interface",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
     }
   ]
 }

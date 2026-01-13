@@ -12,7 +12,7 @@
       "name": "D'Addario Analog Synthesizer",
       "brand": "daddario",
       "category": "Synthesizer",
-      "production_country": "Unknown \ud83c\udf0d",
+      "production_country": "Unknown 🌍",
       "images": {
         "main": "/static/assets/products/daddario-daddario-analog.webp",
         "thumbnail": "/static/assets/products/daddario-daddario-analog.webp"
@@ -21,14 +21,29 @@
         "type": "pdf",
         "url": "https://example.com/docs/daddario-daddario-analog.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3500,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "D'Addario Analog Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
     },
     {
       "id": "daddario-daddario-digital",
       "name": "D'Addario Digital Synthesizer",
       "brand": "daddario",
       "category": "Synthesizer",
-      "production_country": "Unknown \ud83c\udf0d",
+      "production_country": "Unknown 🌍",
       "images": {
         "main": "/static/assets/products/daddario-daddario-digital.webp",
         "thumbnail": "/static/assets/products/daddario-daddario-digital.webp"
@@ -37,14 +52,29 @@
         "type": "pdf",
         "url": "https://example.com/docs/daddario-daddario-digital.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3513,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "D'Addario Digital Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
     },
     {
       "id": "daddario-daddario-stage",
       "name": "D'Addario Stage Keyboard 88",
       "brand": "daddario",
       "category": "Stage Keyboard",
-      "production_country": "Unknown \ud83c\udf0d",
+      "production_country": "Unknown 🌍",
       "images": {
         "main": "/static/assets/products/daddario-daddario-stage.webp",
         "thumbnail": "/static/assets/products/daddario-daddario-stage.webp"
@@ -53,23 +83,22 @@
         "type": "pdf",
         "url": "https://example.com/docs/daddario-daddario-stage.pdf"
       },
-      "relationships": []
-    },
-    {
-      "id": "daddario-daddario-portable",
-      "name": "D'Addario Portable Keyboard",
-      "brand": "daddario",
-      "category": "Portable Keyboard",
-      "production_country": "Unknown \ud83c\udf0d",
-      "images": {
-        "main": "/static/assets/products/daddario-daddario-portable.webp",
-        "thumbnail": "/static/assets/products/daddario-daddario-portable.webp"
+      "relationships": [],
+      "price": 4026,
+      "specs": {
+        "Keys": "73-88",
+        "Touch Response": "Yes",
+        "Built-in Sounds": "1000+",
+        "MIDI": "Yes"
       },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/daddario-daddario-portable.pdf"
-      },
-      "relationships": []
+      "description": "D'Addario Stage Keyboard 88 - Performance keyboard designed for live stage use. Lightweight yet powerful with extensive sound library.",
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "52cm × 32cm × 22cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
     }
   ]
 }

@@ -11,7 +11,7 @@
       "id": "pearl-eliminator",
       "name": "Pearl Eliminator",
       "category": "Drum Pedal",
-      "brand": "Pearl",
+      "brand": "pearl",
       "description": "The legendary bass drum pedal known for speed and precision",
       "price": 599,
       "manual_url": "https://pearldrum.com/documents/eliminator.pdf",
@@ -23,6 +23,13 @@
         "Drive": "Chain Drive",
         "Cams": "Interchangeable",
         "Bearings": "High-precision"
+      },
+      "family": "Drum Pedal",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
       }
     }
   ]

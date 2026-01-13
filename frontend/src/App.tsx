@@ -3,10 +3,10 @@ import { useWebSocketStore } from './store/useWebSocketStore';
 import { ProductDetailView } from './components/ProductDetailView';
 import { ChatView } from './components/ChatView';
 import { BrandCard } from './components/BrandCard';
-import { SmartImage } from './components/shared/SmartImage';
+import { BrandExplorer } from './components/BrandExplorer';
 import { ZenFinder } from './components/ZenFinder';
 import { FolderView } from './components/FolderView';
-import type { FileNode } from './utils/zenFileSystem';
+import { buildFileSystem, findPathById, type FileNode } from './utils/zenFileSystem';
 import './index.css';
 
 // --- Discovery Components ---
@@ -131,6 +131,10 @@ function App() {
   const [focusProduct, setFocusProduct] = useState<CardProduct | null>(null);
   const [currentFolder, setCurrentFolder] = useState<FileNode | null>(null);
   const [viewMode, setViewMode] = useState<'explorer' | 'cards'>('explorer'); // Start in explorer mode by default
+  const [brandExplorerOpen, setBrandExplorerOpen] = useState(false);
+
+  // Build a consistent tree for breadcrumbs and navigation context
+  const rootNode = useMemo(() => buildFileSystem(predictions), [predictions]);
 
   // Connect on mount and load ALL brands into finder
   useEffect(() => {
@@ -199,16 +203,20 @@ function App() {
   };
 
   // Handle Navigation from ZenFinder
-  const handleNavigate = (node: FileNode) => {
+    const handleNavigate = (node: FileNode) => {
       if (node.type === 'file' && node.meta) {
-          // It's a file? Open details directly
-          actions.lockAndQuery((node.meta as unknown) as any, "Details", null);
+        // It's a file? Open details directly
+        actions.lockAndQuery((node.meta as unknown) as any, "Details", null);
+      } else if (node.type === 'root') {
+        // Return to welcome state
+        setCurrentFolder(null);
+        setViewMode('explorer');
       } else {
-          // It's a folder? Show folder view
-          setCurrentFolder(node);
-          setViewMode('explorer');
+        // It's a folder/brand/category -> Show folder view
+        setCurrentFolder(node);
+        setViewMode('explorer');
       }
-  };
+    };
 
   // Map predictions to Zen Cards format
   const zenResults = useMemo(() => {
@@ -280,6 +288,14 @@ function App() {
 
                         <div className="flex-1"></div>
 
+                        {/* Browse Brands Button */}
+                        <button
+                            onClick={() => setBrandExplorerOpen(true)}
+                            className="px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 text-xs font-semibold transition-colors border border-emerald-500/30"
+                        >
+                            🎯 Brands
+                        </button>
+
                         {/* Switch to Card View */}
                         <button
                             onClick={() => setViewMode('cards')}
@@ -308,10 +324,12 @@ function App() {
                         ) : (
                             /* B. Folder View (Dashboard) */
                             currentFolder ? (
-                                <FolderView 
-                                    node={currentFolder} 
-                                    onProductSelect={(p) => actions.lockAndQuery(p, "Details", null)} 
-                                />
+                              <FolderView 
+                                node={currentFolder} 
+                                onProductSelect={(p) => actions.lockAndQuery(p, "Details", null)} 
+                                breadcrumbPath={findPathById(rootNode, currentFolder.id)}
+                                onNavigate={handleNavigate}
+                              />
                             ) : (
                                 /* C. Empty State / Welcome */
                                 <div className="h-full flex flex-col items-center justify-center text-slate-400 gap-6 p-8">
@@ -499,6 +517,17 @@ function App() {
                   </div>
                   
                   <BrandCard />
+                  
+                  {/* Brand Explorer Modal */}
+                  <BrandExplorer 
+                    isOpen={brandExplorerOpen} 
+                    onClose={() => setBrandExplorerOpen(false)}
+                    onBrandSelect={(brand) => {
+                      // Navigate to the brand folder
+                      // This would be implemented in ZenFinder
+                      console.log('Selected brand:', brand);
+                    }}
+                  />
 
                 </div>
             </div>
@@ -506,43 +535,6 @@ function App() {
 
     </div>
   );
-             {/* PREDICTIVE CARD GRID */}
-             {showCards && (
-               <div className="max-w-6xl mx-auto space-y-4 animate-fade-in-up">
-                 <div className="flex items-center justify-between flex-wrap gap-3">
-                   <div>
-                     <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Psychic Deck</p>
-                     <h2 className="text-2xl font-bold text-white">{browseMode ? `Browsing: ${browseMode}` : 'Adaptive cards'}</h2>
-                     <p className="text-sm text-slate-400">{predictiveStatus}</p>
-                   </div>
-                   <div className="text-xs text-slate-500 bg-slate-900/70 px-3 py-2 rounded-full border border-slate-800">
-                     {zenResults.length} candidates · latency-tuned rendering
-                   </div>
-                 </div>
-
-                 <PredictiveCardGrid
-                   items={zenResults}
-                   isLoading={status === 'SNIFFING'}
-                   onPreview={(item) => setFocusProduct(item)}
-                   onLock={(item) => lockProduct(item, item.name)}
-                 />
-               </div>
-             )}
-
-             {/* PRODUCT DETAIL OVERLAY */}
-             {showDetail && focusProduct && (
-               <ProductDetailView product={focusProduct} onClose={() => setFocusProduct(null)} />
-             )}
-             
-             {/* CHAT MODE */}
-             {isChatMode && (
-               <div className="bg-slate-900/50 border border-slate-800/50 rounded-3xl p-1 shadow-2xl backdrop-blur-sm animate-scale-in flex-1 min-h-[600px] max-w-5xl mx-auto">
-                  <div className="h-full overflow-hidden rounded-2xl relative">
-                     <ChatView />
-                  </div>
-               </div>
-             )}
-
 }
 
 export default App;

@@ -4,7 +4,7 @@
     "name": "Adams",
     "hq": "Unknown",
     "website": "",
-    "logo_url": "/static/assets/brands/adams.jpg"
+    "logo_url": "/static/assets/brands/adams.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Adams Analog Synthesizer",
       "brand": "adams",
       "category": "Synthesizer",
-      "production_country": "Unknown \ud83c\udf0d",
+      "production_country": "Unknown 🌍",
       "images": {
         "main": "/static/assets/products/adams-adams-analog.webp",
         "thumbnail": "/static/assets/products/adams-adams-analog.webp"
@@ -21,14 +21,29 @@
         "type": "pdf",
         "url": "https://example.com/docs/adams-adams-analog.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3500,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Adams Analog Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
     },
     {
       "id": "adams-adams-digital",
       "name": "Adams Digital Synthesizer",
       "brand": "adams",
       "category": "Synthesizer",
-      "production_country": "Unknown \ud83c\udf0d",
+      "production_country": "Unknown 🌍",
       "images": {
         "main": "/static/assets/products/adams-adams-digital.webp",
         "thumbnail": "/static/assets/products/adams-adams-digital.webp"
@@ -37,14 +52,29 @@
         "type": "pdf",
         "url": "https://example.com/docs/adams-adams-digital.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3513,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Adams Digital Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
     },
     {
       "id": "adams-adams-stage",
       "name": "Adams Stage Keyboard 88",
       "brand": "adams",
       "category": "Stage Keyboard",
-      "production_country": "Unknown \ud83c\udf0d",
+      "production_country": "Unknown 🌍",
       "images": {
         "main": "/static/assets/products/adams-adams-stage.webp",
         "thumbnail": "/static/assets/products/adams-adams-stage.webp"
@@ -53,23 +83,146 @@
         "type": "pdf",
         "url": "https://example.com/docs/adams-adams-stage.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 4026,
+      "specs": {
+        "Keys": "73-88",
+        "Touch Response": "Yes",
+        "Built-in Sounds": "1000+",
+        "MIDI": "Yes"
+      },
+      "description": "Adams Stage Keyboard 88 - Performance keyboard designed for live stage use. Lightweight yet powerful with extensive sound library.",
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "52cm × 32cm × 22cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
     },
     {
-      "id": "adams-adams-portable",
-      "name": "Adams Portable Keyboard",
+      "id": "adams-special-edition-1",
+      "name": "Adams Analog Synthesizer Special Edition 1",
       "brand": "adams",
-      "category": "Portable Keyboard",
-      "production_country": "Unknown \ud83c\udf0d",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
       "images": {
-        "main": "/static/assets/products/adams-adams-portable.webp",
-        "thumbnail": "/static/assets/products/adams-adams-portable.webp"
+        "main": "/static/assets/products/adams-special-edition-1.webp",
+        "thumbnail": "/static/assets/products/adams-special-edition-1.webp"
       },
       "documentation": {
         "type": "pdf",
-        "url": "https://example.com/docs/adams-adams-portable.pdf"
+        "url": "https://example.com/adams-special-edition-1.pdf"
       },
-      "relationships": []
+      "relationships": [],
+      "price": 3760,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Adams Analog Synthesizer Special Edition 1 - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "70cm × 30cm × 25cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "adams-special-edition-2",
+      "name": "Adams Digital Synthesizer Special Edition 2",
+      "brand": "adams",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/adams-special-edition-2.webp",
+        "thumbnail": "/static/assets/products/adams-special-edition-2.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/adams-special-edition-2.pdf"
+      },
+      "relationships": [],
+      "price": 3773,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Adams Digital Synthesizer Special Edition 2 - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "71cm × 31cm × 26cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "adams-special-edition-3",
+      "name": "Adams Stage Keyboard 88 Special Edition 3",
+      "brand": "adams",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/adams-special-edition-3.webp",
+        "thumbnail": "/static/assets/products/adams-special-edition-3.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/adams-special-edition-3.pdf"
+      },
+      "relationships": [],
+      "price": 4286,
+      "specs": {
+        "Keys": "73-88",
+        "Touch Response": "Yes",
+        "Built-in Sounds": "1000+",
+        "MIDI": "Yes"
+      },
+      "description": "Adams Stage Keyboard 88 Special Edition 3 - Performance keyboard designed for live stage use. Lightweight yet powerful with extensive sound library.",
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "72cm × 32cm × 27cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
+    },
+    {
+      "id": "adams-special-edition-5",
+      "name": "Adams Analog Analog Synthesizer Special Edition 5",
+      "brand": "adams",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/adams-special-edition-5.webp",
+        "thumbnail": "/static/assets/products/adams-special-edition-5.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/adams-special-edition-5.pdf"
+      },
+      "relationships": [],
+      "price": 3812,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Adams Analog Analog Synthesizer Special Edition 5 - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 6.5,
+        "dimensions": "74cm × 34cm × 29cm",
+        "in_stock": true,
+        "rating": 4.4
+      }
     }
   ]
 }

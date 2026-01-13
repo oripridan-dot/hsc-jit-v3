@@ -4,7 +4,7 @@
     "name": "Solar Guitars",
     "hq": "Unknown",
     "website": "",
-    "logo_url": "/static/assets/brands/solar-guitars.jpg"
+    "logo_url": "/static/assets/brands/solar-guitars.png"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Solar Guitars Electric Guitar",
       "brand": "solar-guitars",
       "category": "Electric Guitar",
-      "production_country": "Unknown \ud83c\udf0d",
+      "production_country": "Unknown 🌍",
       "images": {
         "main": "/static/assets/products/solar-guitars-solar-guitars-electric-guitar-electric.webp",
         "thumbnail": "/static/assets/products/solar-guitars-solar-guitars-electric-guitar-electric.webp"
@@ -21,23 +21,21 @@
         "type": "pdf",
         "url": "https://example.com/docs/solar-guitars-solar-guitars-electric-guitar-electric.pdf"
       },
-      "relationships": []
-    },
-    {
-      "id": "solar-guitars-solar-guitars-acoustic-guitar-acoustic",
-      "name": "Solar Guitars Acoustic Guitar",
-      "brand": "solar-guitars",
-      "category": "Acoustic Guitar",
-      "production_country": "Unknown \ud83c\udf0d",
-      "images": {
-        "main": "/static/assets/products/solar-guitars-solar-guitars-acoustic-guitar-acoustic.webp",
-        "thumbnail": "/static/assets/products/solar-guitars-solar-guitars-acoustic-guitar-acoustic.webp"
+      "relationships": [],
+      "price": 2000,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
       },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/docs/solar-guitars-solar-guitars-acoustic-guitar-acoustic.pdf"
-      },
-      "relationships": []
+      "description": "Solar Guitars Electric Guitar - Quality electric guitar with versatile tone. Great for all genres and playing styles.",
+      "family": "Electric Guitar",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
     }
   ]
 }
