@@ -400,8 +400,8 @@ After reading the docs:
 
 ---
 
-**Version:** HSC-JIT v3.1  
+**Version:** HSC-JIT v3.2  
 **Status:** ✅ Production Ready  
-**Last Updated:** January 11, 2025
+**Last Updated:** January 13, 2026
 
 **Next Step:** Read [README_PRODUCTION.md](README_PRODUCTION.md) →

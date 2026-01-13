@@ -1,4 +1,4 @@
-# HSC JIT v3 - Halilit Support Center 🚀
+# HSC JIT v3.2 - Halilit Support Center 🚀
 
 **"The Psychic Engine" - Real-time predictive technical support system**
 
@@ -6,7 +6,7 @@
 [![Code](https://img.shields.io/badge/code-100%25%20aligned-blue)]()
 [![Production](https://img.shields.io/badge/status-production%20ready-success)]()
 
-HSC JIT v3 is a production-grade, real-time support system that predicts products **while you type** and delivers answers using a **stateless context-window workflow** (TEXT caching, no RAG embeddings).
+HSC JIT v3.2 is a production-grade, real-time support system that predicts products **while you type** and delivers answers using a **stateless context-window workflow** (TEXT caching, no RAG embeddings).
 
 ---
 
@@ -106,7 +106,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 │  │  - Sniffer (fuzzy matching)    │    │
 │  │  - Catalog (product index)     │    │
 │  │  - Fetcher (JIT downloads)     │    │
-│  │  - RAG (ephemeral embeddings)  │    │
+│  │  - Context Window (TEXT cache) │    │
 │  │  - LLM (Gemini streaming)      │    │
 │  └─────────────────────────────────┘    │
 └──────────────┬──────────────────────────┘
@@ -122,7 +122,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | Metric | Target | Current |
 |--------|--------|---------|
 | Prediction Latency (P95) | <200ms | ~50-100ms |
-| LLM Answer (P95) | <5s | ~2-4s |
+| LLM Answer (P95) | <12s | ~8-12s |
 | Cache Hit Rate | >60% | ~70-85% |
 | Uptime | 99.9% | 99.95% |
 
@@ -136,7 +136,7 @@ hsc-jit-v3/
 │   ├── app/
 │   │   ├── main.py            # WebSocket endpoint + FastAPI app
 │   │   ├── core/              # Infrastructure (cache, health, metrics, logging)
-│   │   ├── services/          # Business logic (sniffer, rag, llm, fetcher)
+│   │   ├── services/          # Business logic (sniffer, llm, fetcher, price, image)
 │   │   └── static/            # Assets (brand logos, product images)
 │   └── data/catalogs/         # 80+ brand JSON files (source of truth)
 │
@@ -170,7 +170,7 @@ hsc-jit-v3/
 | **Frontend** | React 18 + Vite 5 + Tailwind | Fast UI with virtual scrolling |
 | **Backend** | FastAPI + Uvicorn | Async WebSocket API |
 | **Cache** | Redis 6 | Multi-layer caching + Pub/Sub |
-| **AI/ML** | Google Gemini + SentenceTransformers | LLM + embeddings |
+| **AI/ML** | Google Gemini (stateless context window) | LLM streaming (no embeddings) |
 | **Search** | TheFuzz | Fuzzy product matching |
 | **Monitoring** | Prometheus + Grafana | Metrics + dashboards |
 | **Container** | Docker + Kubernetes | Production deployment |
@@ -285,20 +285,20 @@ See [Deployment Guide](docs/deployment/DEPLOYMENT_GUIDE.md) for full production 
 Concurrent Users: 100
 Queries/Second:   150-200 per pod
 Cache Hit Rate:   70-85%
-Memory Usage:     <600MB per pod
+Memory Usage:     ~1.1GB per pod (stateless context window)
 CPU Usage:        <70% sustained
 
 P50 Latencies:
 - Prediction:     50ms
 - Manual Fetch:   1.5s  
-- RAG Indexing:   500ms
-- LLM Answer:     2s
+- Context Assembly (TEXT cache):   500ms
+- LLM Answer:     6s
 
 P95 Latencies:
 - Prediction:     100ms
 - Manual Fetch:   3s
-- RAG Indexing:   1.5s
-- LLM Answer:     4s
+- Context Assembly (TEXT cache):   1.5s
+- LLM Answer:     10s
 ```
 
 ---

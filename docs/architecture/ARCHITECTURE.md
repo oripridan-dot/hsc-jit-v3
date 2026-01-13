@@ -38,9 +38,8 @@
 
     ┌─────────────────────────────────┐
     │  CELERY WORKERS (Task Queue)    │
-    │  - PDF Prefetch                 │
-    │  - Session Cleanup              │
-    │  - Cache Regenration            │
+    │  - Cache regeneration           │
+    │  - Product index refresh        │
     └─────────────────────────────────┘
 
     ┌─────────────────────────────────┐
@@ -59,8 +58,8 @@
 | **Frontend** | React + Vite + Tailwind | UI with message virtualization |
 | **Backend** | FastAPI + Uvicorn | WebSocket API, real-time streaming |
 | **Cache** | Redis Pub/Sub | Multi-instance state + hot cache |
-| **Database** | PostgreSQL | Persistent storage |
-| **Tasks** | Celery + Redis | Background async processing |
+| **Database** | None (stateless). Optional PostgreSQL for analytics | No persistent app data |
+| **Tasks** | Celery + Redis (optional) | Cache regeneration and maintenance |
 | **Metrics** | Prometheus | Performance monitoring |
 | **Dashboards** | Grafana | Real-time visualization |
 | **Logs** | ELK / JSON logs | Structured logging |
@@ -104,8 +103,8 @@
 |-----------|-----|-----|-----|
 | Prediction (typing) | 50ms | 100ms | 200ms |
 | Manual fetch | 1.5s | 3s | 5s |
-| RAG indexing | 500ms | 1.5s | 3s |
-| LLM answer generation | 2s | 4s | 8s |
+| Context assembly (TEXT cache) | 500ms | 1.5s | 3s |
+| LLM answer generation | 6s | 10s | 12s |
 | WebSocket round-trip | 20ms | 50ms | 100ms |
 
 ### Throughput

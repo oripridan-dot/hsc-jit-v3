@@ -146,19 +146,19 @@ kubectl scale deployment/backend -n hsc-jit --replicas=3
 **Deployment Steps:**
 ```bash
 # 1. Build and tag new images
-docker build -t hsc-jit-backend:v3.1.x ./backend
-docker build -t hsc-jit-frontend:v3.1.x ./frontend
+docker build -t hsc-jit-backend:v3.2.x ./backend
+docker build -t hsc-jit-frontend:v3.2.x ./frontend
 
 # 2. Push to registry
-docker tag hsc-jit-backend:v3.1.x gcr.io/your-project/hsc-jit-backend:v3.1.x
-docker push gcr.io/your-project/hsc-jit-backend:v3.1.x
+docker tag hsc-jit-backend:v3.2.x gcr.io/your-project/hsc-jit-backend:v3.2.x
+docker push gcr.io/your-project/hsc-jit-backend:v3.2.x
 
 # Same for frontend...
 
 # 3. Update Kubernetes manifests
 cd kubernetes/
-sed -i 's/:v3.1.[0-9]*/:v3.1.x/g' backend-deployment.yaml
-sed -i 's/:v3.1.[0-9]*/:v3.1.x/g' frontend-deployment.yaml
+sed -i 's/:v3.2.[0-9]*/:v3.2.x/g' backend-deployment.yaml
+sed -i 's/:v3.2.[0-9]*/:v3.2.x/g' frontend-deployment.yaml
 
 # 4. Apply changes (rolling update)
 kubectl apply -f backend-deployment.yaml
