@@ -9,13 +9,17 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/ws': {
-        target: 'ws://127.0.0.1:8000',
+        target: 'ws://localhost:8000',
         changeOrigin: true,
         ws: true
       },
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true
+      },
       // Proxy static assets to backend
       '/static': {
-        target: 'http://127.0.0.1:8000',
+        target: 'http://localhost:8000',
         changeOrigin: true
       }
     }

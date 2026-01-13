@@ -60,7 +60,7 @@ interface WebSocketStore {
   scenarioMode: ScenarioMode; // New: scenario context (studio/live/general)
 
   actions: {
-    connect: (url: string) => void;
+    connect: (url?: string) => void;
     sendTyping: (text: string) => void;
     lockAndQuery: (product: Prediction, query: string, imageData?: string | null, scenario?: ScenarioMode) => void;
     navigateToProduct: (productId: string, query: string, scenario?: ScenarioMode) => void;
@@ -84,10 +84,40 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   scenarioMode: 'general', // New: default scenario mode
 
   actions: {
-    connect: (url: string) => {
+    connect: (url?: string) => {
       if (get().socket) return;
-      
-      const ws = new WebSocket(url);
+
+      // Resolve WebSocket endpoint with fallbacks:
+      // 1) VITE_WS_URL if provided
+      // 2) Relative path /ws (proxied by Vite dev server)
+      // 3) Same host with port 8000 (Codespaces/port-forward default)
+      // 4) Same origin
+      const resolvedUrl = (() => {
+        if (url) return url;
+
+        const envUrl = import.meta.env.VITE_WS_URL as string | undefined;
+        if (envUrl) return envUrl;
+
+        const envPort = import.meta.env.VITE_WS_PORT as string | undefined;
+        const loc = window.location;
+        const protocol = loc.protocol === 'https:' ? 'wss:' : 'ws:';
+
+        // 1) Explicit port override
+        if (envPort && loc.hostname) {
+          return `${protocol}//${loc.hostname}:${envPort}/ws`;
+        }
+
+        // 2) GitHub Codespaces / app.github.dev: swap to -8000 suffix for backend
+        if (loc.hostname.endsWith('.app.github.dev')) {
+          const replaced = loc.hostname.replace(/-\d+\.app\.github\.dev$/, '-8000.app.github.dev');
+          return `${protocol}//${replaced}/ws`;
+        }
+
+        // 3) Use relative path (works with Vite proxy)
+        return `${protocol}//${loc.host}/ws`;
+      })();
+
+      const ws = new WebSocket(resolvedUrl);
       
       ws.onopen = () => {
         console.log('🔌 Connected to Psychic Engine');

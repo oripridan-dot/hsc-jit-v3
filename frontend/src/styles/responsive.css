@@ -1,0 +1,444 @@
+/**
+ * Responsive Design Utilities
+ * Mobile-first responsive patterns
+ */
+
+/* ============================================================================
+   MOBILE NAVIGATION & LAYOUT
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  /* Stack product detail vertically on mobile */
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Full-width modals on mobile */
+  .modal-container {
+    position: fixed;
+    inset: 0;
+    border-radius: 1rem 1rem 0 0;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  /* Single column grid on mobile */
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Smaller images on mobile */
+  .image-carousel {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Compact spacing on mobile */
+  .page-padding {
+    padding: 1rem;
+  }
+
+  .section-gap {
+    gap: 2rem;
+  }
+
+  /* Hide desktop-only elements */
+  .hide-mobile {
+    display: none;
+  }
+
+  /* Adjust font sizes for mobile */
+  .responsive-heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* Full-width buttons on mobile */
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  /* Sticky header on mobile */
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+  }
+
+  /* Adjust chat height on mobile */
+  .ai-chat-mobile {
+    height: 400px;
+  }
+
+  /* Swipe-friendly interactive areas */
+  [role='button'],
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Increased spacing between form fields */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ============================================================================
+   TABLET ADJUSTMENTS
+   ============================================================================ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* 2-column grid on tablet */
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Show tablet-specific elements */
+  .show-tablet {
+    display: block;
+  }
+
+  /* Medium spacing on tablet */
+  .page-padding {
+    padding: 1.5rem;
+  }
+
+  /* Responsive heading size */
+  .responsive-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* ============================================================================
+   DESKTOP
+   ============================================================================ */
+
+@media (min-width: 1024px) {
+  /* 3-4 column grid on desktop */
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .brand-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* Side-by-side product detail */
+  .product-detail-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /* Show desktop-only elements */
+  .show-desktop {
+    display: block;
+  }
+
+  /* Comfortable spacing on desktop */
+  .page-padding {
+    padding: 2rem;
+  }
+
+  .section-gap {
+    gap: 3rem;
+  }
+
+  /* Responsive heading size */
+  .responsive-heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  /* Horizontal button group on desktop */
+  .button-group {
+    flex-direction: row;
+  }
+}
+
+/* ============================================================================
+   LARGE DESKTOP (1280px+)
+   ============================================================================ */
+
+@media (min-width: 1280px) {
+  /* 4-column grid on large desktop */
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* More generous spacing */
+  .page-padding {
+    padding: 3rem;
+  }
+
+  /* Max width container */
+  .container-max {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================================================================
+   EXTRA LARGE DESKTOP (1920px+)
+   ============================================================================ */
+
+@media (min-width: 1920px) {
+  /* Even more space on ultra-wide screens */
+  .page-padding {
+    padding: 4rem;
+  }
+
+  .container-max {
+    max-width: 1600px;
+  }
+
+  /* 5-column grid on ultra-wide */
+  .product-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* ============================================================================
+   TOUCH DEVICES (Phones, Tablets)
+   ============================================================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  button,
+  a,
+  [role='button'] {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  /* More spacing between interactive elements */
+  .interactive-group {
+    gap: 1rem;
+  }
+
+  /* Remove hover effects that don't work on touch */
+  .group:hover {
+    transform: none;
+  }
+
+  /* Keep focus visible on touch */
+  button:focus,
+  a:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  /* Disable hover transforms on touch devices */
+  .hover\:scale-105 {
+    transform: scale(1);
+  }
+
+  .group-hover\:scale-105:hover {
+    transform: scale(1);
+  }
+
+  /* Larger text on touch devices */
+  input,
+  select,
+  textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  /* More generous scrolling areas */
+  .scrollable {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================================================================
+   HOVER DEVICES (Desktop, Laptop)
+   ============================================================================ */
+
+@media (hover: hover) and (pointer: fine) {
+  /* Enable hover effects */
+  .group:hover {
+    transform: translateY(-4px);
+  }
+
+  /* Show tooltips on hover */
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Smooth hover transitions */
+  button,
+  a {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* ============================================================================
+   LANDSCAPE ORIENTATION
+   ============================================================================ */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  /* Reduce vertical spacing on short landscapes */
+  .page-padding {
+    padding: 0.5rem;
+  }
+
+  .section-gap {
+    gap: 1rem;
+  }
+
+  /* Hide non-essential content */
+  .hide-landscape {
+    display: none;
+  }
+
+  /* Compact modals */
+  .modal-container {
+    max-height: 90vh;
+  }
+}
+
+/* ============================================================================
+   PORTRAIT ORIENTATION
+   ============================================================================ */
+
+@media (orientation: portrait) {
+  /* Full-width modals in portrait */
+  .modal-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Show portrait-specific layouts */
+  .show-portrait {
+    display: block;
+  }
+}
+
+/* ============================================================================
+   DARK MODE / LIGHT MODE SUPPORT
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  /* Already using dark theme as default */
+}
+
+@media (prefers-color-scheme: light) {
+  /* Support for light mode (future enhancement) */
+  /* For now, we're dark-only */
+}
+
+/* ============================================================================
+   REDUCED MOTION
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable animations */
+  .animate-pulse,
+  .animate-spin,
+  .animate-bounce {
+    animation: none !important;
+  }
+}
+
+/* ============================================================================
+   HIGH CONTRAST MODE
+   ============================================================================ */
+
+@media (prefers-contrast: more) {
+  /* Increase border contrast */
+  .border-default {
+    border-color: var(--color-border-hover);
+  }
+
+  /* Stronger text contrast */
+  .text-secondary {
+    color: var(--color-text-primary);
+  }
+
+  /* More visible focus states */
+  .focus-ring:focus {
+    box-shadow: 0 0 0 4px var(--color-primary) !important;
+  }
+}
+
+/* ============================================================================
+   SMALL SCREEN LAYOUT FIXES
+   ============================================================================ */
+
+@media (max-width: 640px) {
+  /* Full-width forms */
+  .form-input {
+    width: 100%;
+  }
+
+  /* Stack tabs vertically */
+  [role='tablist'] {
+    flex-direction: column;
+  }
+
+  /* Collapse navigation */
+  .navigation {
+    flex-direction: column;
+  }
+
+  /* Simplify modals */
+  .modal-content {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+/* ============================================================================
+   PRINT STYLES
+   ============================================================================ */
+
+@media print {
+  /* Hide interactive elements */
+  button,
+  input,
+  textarea,
+  [role='button'] {
+    display: none !important;
+  }
+
+  /* Optimize for print */
+  body {
+    background: white;
+    color: black;
+  }
+
+  /* Show full content */
+  .hide-print {
+    display: none !important;
+  }
+
+  /* Page breaks */
+  .page-break {
+    page-break-after: always;
+  }
+
+  /* Avoid element breaks */
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+}

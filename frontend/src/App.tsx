@@ -138,9 +138,7 @@ function App() {
 
   // Connect on mount and load ALL brands into finder
   useEffect(() => {
-    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    const host = window.location.host;
-    actions.connect(`${protocol}//${host}/ws`);
+    actions.connect(); // Let the store figure out the correct WS URL
     
     // Load initial catalog - send empty string to get random sample
     // This will populate the finder with diverse brands
