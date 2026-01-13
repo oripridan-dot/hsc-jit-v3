@@ -6,19 +6,20 @@
 [![Code](https://img.shields.io/badge/code-100%25%20aligned-blue)]()
 [![Production](https://img.shields.io/badge/status-production%20ready-success)]()
 
-HSC JIT v3 is a production-grade, real-time support system that predicts products **while you type** and delivers instant technical answers using Just-In-Time document retrieval and AI-powered RAG.
+HSC JIT v3 is a production-grade, real-time support system that predicts products **while you type** and delivers answers using a **stateless context-window workflow** (TEXT caching, no RAG embeddings).
 
 ---
 
-## 🎯 Core Concept: Zero-Latency, JIT Architecture
+## 🎯 Core Concept: Stateless Context Window
 
-Unlike traditional systems that pre-index everything, v3 **indexes nothing** until necessary:
+Instead of maintaining embedding indexes, v3 keeps the flow simple and reliable:
 
-1. **The Map** - 80+ brand catalog JSONs with validated product/manual URLs
+1. **The Map** - 90 brand catalog JSONs with validated product/manual URLs
 2. **The Sniffer** - WebSocket service with fuzzy matching on keystrokes  
-3. **The Reader** - JIT agent that downloads, indexes, and answers—all in real-time
+3. **The Fetcher** - Downloads PDF/HTML, caches TEXT in Redis (optional)
+4. **The LLM** - Reads the cached text directly (context window) and streams the answer
 
-**Result:** Sub-200ms prediction, 2-4s full answers, 70%+ cache hit rate
+**Result:** Predictable 8-12s answers (cold/warm), zero state drift, minimal dependencies
 
 ---
 

@@ -25,7 +25,6 @@ load_dotenv()
 from .services.catalog import CatalogService
 from .services.sniffer import SnifferService
 from .services.fetcher import ContentFetcher
-from .services.rag import EphemeralRAG
 from .services.llm import GeminiService
 from .services.price import PriceService
 from .services.image_enhancer import get_image_enhancer
@@ -39,7 +38,6 @@ from .core.metrics import (
     websocket_errors,
     get_prometheus_metrics,
 )
-from .core.tasks import celery_app
 from .core.validation import validate_websocket_message, safe_get_str
 from pydantic import ValidationError
 
@@ -128,8 +126,9 @@ async def lifespan(app: FastAPI):
     # Initialize services
     app.state.catalog = CatalogService()
     app.state.sniffer = SnifferService(app.state.catalog)
-    app.state.fetcher = ContentFetcher()
-    app.state.rag = EphemeralRAG()
+    # Initialize ContentFetcher with Redis for TEXT caching
+    app.state.fetcher = ContentFetcher()  # Redis optional, fetcher works standalone
+    # RAG removed - using direct context window approach
     app.state.llm = GeminiService()
     app.state.start_time = time.time()
     
@@ -221,12 +220,9 @@ async def websocket_endpoint(ws: WebSocket, client_id: str = None) -> None:
     client_id = client_id or str(uuid.uuid4())
     await connection_manager.connect(ws, client_id)
 
-    # Session ID for RAG isolation
-    session_id = str(uuid.uuid4())
     logger.info(
         "WebSocket connection established",
         client_id=client_id,
-        session_id=session_id,
     )
 
     try:
@@ -269,7 +265,7 @@ async def websocket_endpoint(ws: WebSocket, client_id: str = None) -> None:
 
             elif msg_type in ["query", "lock_and_query"]:
                 await handle_query_event(
-                    ws, app, payload, client_id, session_id
+                    ws, app, payload, client_id
                 )
 
             else:
@@ -335,26 +331,6 @@ async def handle_typing_event(
         # Send predictions
         await ws.send_json({"type": "prediction", "data": enriched_predictions})
 
-        # Speculative prefetch if high confidence
-        high_confidence_pred = next(
-            (p for p in predictions if p.get("confidence", 0) > 0.85),
-            None,
-        )
-        if high_confidence_pred:
-            product_id = high_confidence_pred.get("product", {}).get("id")
-            product = app.state.product_map.get(product_id)
-            if product and product.get("manual_url"):
-                from .core.tasks import prefetch_manual
-
-                prefetch_manual.delay(
-                    product_id, product.get("manual_url"), session_id=client_id
-                )
-                logger.debug(
-                    "Prefetch queued",
-                    product_id=product_id,
-                    client_id=client_id,
-                )
-
     except Exception as e:
         logger.error(
             "Error in typing handler",
@@ -369,12 +345,12 @@ async def handle_query_event(
     app: FastAPI,
     payload: Dict[str, Any],
     client_id: str,
-    session_id: str,
 ):
     """Handle query/lock_and_query event"""
     product_id = payload.get("product_id")
     query_text = payload.get("query") or payload.get("content") or ""
     image_data = payload.get("image")
+    scenario = payload.get("scenario", "general")  # New: scenario mode
 
     messages_processed.labels(message_type="query").inc()
 
@@ -416,15 +392,9 @@ async def handle_query_event(
             return
 
         # Index in RAG
-        await ws.send_json({"type": "status", "msg": "Analyzing content..."})
-        rag: EphemeralRAG = app.state.rag
-        success = rag.index(session_id, manual_text)
-
-        # Retrieve context
-        if success:
-            retrieved_context = rag.query(session_id, query_text)
-        else:
-            retrieved_context = manual_text[:8000]
+        # Skip RAG - use context window directly (stateless approach)
+        # Trim to reasonable size for LLM (Gemini handles ~100k tokens)
+        retrieved_context = manual_text[:50000]
 
         # Generate answer with LLM
         await ws.send_json({"type": "status", "msg": "Thinking..."})
@@ -453,16 +423,16 @@ async def handle_query_event(
             ]
             if related_names:
                 related_context = (
-                    f"\n**Related Products Available:** "
-                    f"{', '.join(related_names[:3])}"
+                    f"\n**Official Accessories:** "
+                    f"{', '.join(related_names[:5])}"
                 )
 
         full_context = retrieved_context + brand_context + related_context
 
-        # Stream answer
+        # Stream answer with scenario context
         has_answers = False
         async for chunk in llm.stream_answer(
-            full_context, query_text, image_data=image_data
+            full_context, query_text, image_data=image_data, scenario=scenario
         ):
             has_answers = True
             await ws.send_json(
@@ -474,7 +444,7 @@ async def handle_query_event(
                 {"type": "answer_chunk", "content": "No answer generated."}
             )
 
-        # Send context
+        # Send context with scenario metadata
         await ws.send_json(
             {
                 "type": "context",
@@ -483,6 +453,7 @@ async def handle_query_event(
                     "related_items": product_with_context.get(
                         "context", {}
                     ).get("related_items", []),
+                    "scenario": scenario,
                 },
             }
         )

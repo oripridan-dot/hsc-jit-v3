@@ -2,6 +2,7 @@ import React from 'react';
 import { useWebSocketStore } from '../store/useWebSocketStore';
 import { SmartMessage } from './SmartMessage';
 import { SmartImage } from './shared/SmartImage';
+import { ScenarioToggle } from './ScenarioToggle';
 
 export const ChatView: React.FC = () => {
     const { messages, lastPrediction, relatedItems, actions, status, attachedImage } = useWebSocketStore();
@@ -14,6 +15,9 @@ export const ChatView: React.FC = () => {
 
   return (
     <div className="w-full space-y-6">
+       {/* Scenario Mode Toggle */}
+       <ScenarioToggle />
+
        {/* Product Context Header */}
        {lastPrediction && (
            <div className="flex items-center space-x-4 p-4 bg-white/5 rounded-2xl border border-white/10 shadow-xl backdrop-blur-sm">

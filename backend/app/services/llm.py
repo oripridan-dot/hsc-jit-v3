@@ -47,10 +47,31 @@ class GeminiService:
             logger.warning("Failed to decode image payload: %s", exc)
             return None
 
-    async def stream_answer(self, context: str, query: str, image_data: Optional[str] = None) -> AsyncGenerator[str, None]:
+    async def stream_answer(self, context: str, query: str, image_data: Optional[str] = None, scenario: str = "general") -> AsyncGenerator[str, None]:
         if not self.client:
             yield "Thinking... (AI disconnected: missing key or libs)"
             return
+
+        # Build scenario-specific guidance
+        scenario_guidance = ""
+        if scenario == "studio":
+            scenario_guidance = """
+    
+    SCENARIO: Studio/Home Recording Mode
+    - Prioritize technical accuracy and setup instructions
+    - Mention latency/buffer considerations when relevant
+    - Suggest workflow optimization for recording/production
+    - Avoid warnings about real-time performance unless critical
+    """
+        elif scenario == "live":
+            scenario_guidance = """
+    
+    SCENARIO: Live Performance Mode
+    - Highlight reliability and stage-readiness
+    - **WARNING:** Mention when operations cause audio interruption (e.g., saving presets stops sound)
+    - Suggest quick workarounds for live scenarios
+    - Prioritize fail-safe procedures
+    """
 
         prompt = f"""
     You are a technical support expert with deep product knowledge. Use the provided context to answer accurately and helpfully.
@@ -58,10 +79,10 @@ class GeminiService:
     CRITICAL INSTRUCTIONS - ALWAYS FOLLOW:
     1. **START YOUR RESPONSE** by mentioning: "This product is from [Brand Name] ([Brand HQ with flag]) and is manufactured in [Production Country with flag]."
     2. First, read the BRAND CONTEXT and RELATED PRODUCTS sections in the context below.
-    3. When relevant, mention related products by their exact names (e.g., "Consider the Roland RH-300 headphones..." or "The Noise Eater (NE-10) is perfect for apartments...").
-    4. Prefer concise, well-structured paragraphs (avoid choppy sentence fragments).
-    5. Cite or reference the manual when appropriate (e.g., "According to the official manual...").
-    6. Maintain a helpful, technical, and professional tone.
+    3. **ANSWER SECTION:** Provide the core technical answer using ONLY the manual context. Use [MANUAL: page X] citations.
+    4. **SMART PAIRING SECTION:** If the question relates to a feature or workflow, suggest ONE official accessory from the "Official Accessories" list that enhances that feature. Mark with [SUGGESTION: <product_name>].
+    5. **PRO TIP SECTION:** Add a field note with real-world usage advice, workarounds, or warnings. Mark with [PRO TIP:].
+    6. Maintain a helpful, technical, and professional tone.{scenario_guidance}
 
     Context (includes manual excerpts, brand info, and related products):
     {context}
