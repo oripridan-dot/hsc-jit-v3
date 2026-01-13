@@ -1,0 +1,53 @@
+# HSC-JIT v3.2 - Production Dependencies
+# Python 3.11+ Required
+
+# ============ Core Web Framework ============
+fastapi==0.128.0
+uvicorn[standard]==0.34.0
+pydantic==2.10.5
+python-multipart==0.0.18
+
+# ============ Async & Redis ============
+redis==5.2.0
+httpx==0.28.1
+aioredis==2.0.1
+
+# ============ AI/ML & LLM ============
+google-genai==1.0.0
+sentence-transformers==3.3.1
+numpy==1.26.4
+scipy==1.11.4
+scikit-learn==1.3.2
+
+# ============ Data Processing ============
+beautifulsoup4==4.12.3
+pymupdf==1.24.14
+pillow==11.0.0
+thefuzz==0.22.1
+
+# ============ Web Templating ============
+jinja2==3.1.4
+
+# ============ Environment & Secrets ============
+python-dotenv==1.0.1
+
+# ============ Task Queue & Async ============
+celery[redis]==5.4.0
+
+# ============ Database ============
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+
+# ============ Monitoring & Logging ============
+prometheus-client==0.21.1
+python-json-logger==3.2.1
+psutil==6.1.1
+
+# ============ Serialization ============
+msgpack==1.1.0
+
+# ============ Development & Testing ============
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+ruff==0.8.4
