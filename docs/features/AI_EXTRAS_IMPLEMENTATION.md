@@ -1,4 +1,4 @@
-# HSC JIT v3: AI Extras Feature Implementation
+# HSC JIT v3.3: AI Extras Feature Implementation
 
 ## Overview
 
@@ -352,4 +352,4 @@ Adjust in `ScenarioToggle.tsx` and `SmartMessage.tsx`:
 
 **Status**: ✅ Implementation Complete  
 **Last Updated**: January 13, 2026  
-**Version**: HSC JIT v3.2 (AI Extras)
+**Version**: HSC JIT v3.3 (AI Extras)

@@ -1,8 +1,8 @@
-# HSC-JIT v3: Complete Production Architecture - Navigation Guide
+# HSC-JIT v3.3: Complete Production Architecture - Navigation Guide
 
 ## 📚 Documentation Index
 
-This is your navigation hub for HSC-JIT v3 production architecture. Start here.
+This is your navigation hub for HSC-JIT v3.3 production architecture. Start here.
 
 ---
 
@@ -400,7 +400,7 @@ After reading the docs:
 
 ---
 
-**Version:** HSC-JIT v3.2  
+**Version:** HSC-JIT v3.3  
 **Status:** ✅ Production Ready  
 **Last Updated:** January 13, 2026
 

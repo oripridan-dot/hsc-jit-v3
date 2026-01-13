@@ -337,4 +337,4 @@ For questions, refer to the documentation files or review the implementation in 
 
 *Last Updated: January 13, 2026*  
 *Status: Production Ready*  
-*Version: HSC JIT v3.2*
+*Version: HSC JIT v3.3*

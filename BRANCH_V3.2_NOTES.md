@@ -1,13 +1,13 @@
-# Branch: v3.2-stateless
+# Branch: v3.3-stateless
 
 ## Overview
 
-This branch represents the **v3.2 Stateless Context Window Architecture** – a complete refactoring away from RAG/embedding pipelines to a simpler, more reliable stateless workflow.
+This branch represents the **v3.3 Enhanced Stateless Context Window Architecture** – a complete refactoring with advanced discovery capabilities and optimized stateless workflow.
 
 ## Branch Information
 
-- **Name:** `v3.2-stateless`
-- **Base:** `main` (commit 698e155)
+- **Name:** `v3.3-stateless`
+- **Base:** `main` (latest production commit)
 - **Commit:** fc563ad
 - **Status:** Ready for review and merge
 
@@ -122,7 +122,7 @@ Before merging to main:
 ## Deployment Notes
 
 ### Zero-Downtime Deployment
-1. Deploy new pods with v3.2 code
+1. Deploy new pods with v3.3 code
 2. Drain old pods gradually
 3. No migration needed (stateless)
 4. Monitor latency metrics
@@ -144,13 +144,13 @@ kubectl set image deployment/backend backend=hsc-jit-backend:v3.1
 ## Migration Path
 
 ### For Existing Deployments
-1. **Code Deployment:** Deploy v3.2 branch
+1. **Code Deployment:** Deploy v3.3 branch
 2. **Redis Cleanup:** (Optional) `FLUSHDB` to clear old vector caches
 3. **Monitoring:** Watch latency metrics (expect 8-12s avg)
 4. **Validation:** Test high-traffic products
 
 ### For New Deployments
-1. Clone repo and checkout `v3.2-stateless`
+1. Clone repo and checkout `v3.3-stateless`
 2. Follow standard setup in README.md
 3. No RAG dependencies needed
 

@@ -1,12 +1,12 @@
-# HSC JIT v3.2 - Halilit Support Center 🚀
+# HSC JIT v3.3 - Halilit Support Center 🚀
 
-**"The Psychic Engine" - Real-time predictive technical support system**
+**"The Psychic Engine v3.3" - Real-time predictive technical support with advanced discovery**
 
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen)]()
 [![Code](https://img.shields.io/badge/code-100%25%20aligned-blue)]()
 [![Production](https://img.shields.io/badge/status-production%20ready-success)]()
 
-HSC JIT v3.2 is a production-grade, real-time support system that predicts products **while you type** and delivers answers using a **stateless context-window workflow** (TEXT caching, no RAG embeddings).
+HSC JIT v3.3 is a production-grade, real-time support system that predicts products **while you type** and delivers answers using an **advanced stateless context-window workflow** (TEXT caching, smart predictions, no RAG embeddings).
 
 ---
 
