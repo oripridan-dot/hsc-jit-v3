@@ -137,15 +137,12 @@ def get_country_for_brand(brand_id: str) -> str:
         "martin": "USA 🇺🇸",
         "martin-guitars": "USA 🇺🇸",
         "takamine": "Japan 🇯🇵",
-        "yamaha": "Japan 🇯🇵",
         "daw": "France 🇫🇷",
         "presonus": "USA 🇺🇸",
         "mackie": "USA 🇺🇸",
         "allen-and-heath": "UK 🇬🇧",
         "soundcraft": "UK 🇬🇧",
-        "behringer": "Germany 🇩🇪",
         "tc-electronic": "Denmark 🇩🇰",
-        "boss": "Japan 🇯🇵",
         "line6": "USA 🇺🇸",
     }
     return country_map.get(brand_id.lower(), "Unknown 🌍")

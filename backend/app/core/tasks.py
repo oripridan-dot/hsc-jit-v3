@@ -1,7 +1,6 @@
 """Background task queue using Celery for heavy operations."""
 
 from celery import Celery, Task
-from celery.signals import task_postrun, task_prerun
 import logging
 from typing import Dict, Any
 
@@ -63,11 +62,9 @@ def regenerate_product_cache(self) -> Dict[str, Any]:
 
         from app.services.sniffer import SnifferService
         from app.services.catalog import CatalogService
-        from app.core.cache import get_cache
 
         catalog = CatalogService()
         sniffer = SnifferService(catalog)
-        cache = get_cache()
 
         # Pre-warm cache with common searches
         common_brands = catalog.get_top_brands(limit=100)

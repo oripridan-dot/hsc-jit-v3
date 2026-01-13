@@ -2,10 +2,7 @@ import httpx
 import fitz  # PyMuPDF
 from bs4 import BeautifulSoup
 import hashlib
-import json
 import logging
-import os
-import time
 from typing import Dict, Any, Optional
 
 logging.basicConfig(level=logging.INFO)

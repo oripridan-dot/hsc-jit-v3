@@ -2,9 +2,8 @@
 
 import redis.asyncio as aioredis
 import logging
-from typing import Dict, Set, Optional, AsyncGenerator
+from typing import Set, Optional, AsyncGenerator
 import json
-import asyncio
 
 logger = logging.getLogger(__name__)
 

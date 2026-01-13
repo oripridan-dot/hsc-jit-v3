@@ -1,20 +1,17 @@
 from __future__ import annotations
 
-import asyncio
 import json
 import uuid
-import logging
 import os
 import time
 from contextlib import asynccontextmanager
 from dotenv import load_dotenv
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse
-from starlette.staticfiles import StaticFiles as StarletteStaticFiles
 from prometheus_client import CONTENT_TYPE_LATEST
 from starlette.requests import Request
 from starlette.responses import Response
@@ -22,6 +19,7 @@ from starlette.responses import Response
 # Load environment variables (e.g. GEMINI_API_KEY)
 load_dotenv()
 
+# ruff: noqa: E402 - imports after load_dotenv() is intentional
 from .services.catalog import CatalogService
 from .services.sniffer import SnifferService
 from .services.fetcher import ContentFetcher
@@ -157,7 +155,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="HSC JIT v3 - Psychic Engine", lifespan=lifespan)
 
 # Configure MIME types for static files (especially WebP)
-import mimetypes
+import mimetypes  # noqa: E402
 mimetypes.add_type('image/webp', '.webp')
 mimetypes.add_type('image/svg+xml', '.svg')
 

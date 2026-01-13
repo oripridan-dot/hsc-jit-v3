@@ -1,7 +1,7 @@
 import httpx
 from bs4 import BeautifulSoup
 import re
-from typing import Optional, Dict, Any, List
+from typing import Optional, Dict, Any
 from ..core.logging import get_logger
 
 logger = get_logger(__name__)
@@ -64,7 +64,7 @@ class PriceService:
                 if not name_el or not price_el:
                     return None
 
-                name = name_el.get_text(strip=True)
+                # Extract product URL and price
                 url = name_el['href']
                 price_text = price_el.get_text(strip=True)
                 # Parse price "₪12,999" -> 12999
