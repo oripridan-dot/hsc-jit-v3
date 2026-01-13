@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 
 type AppStatus = 'IDLE' | 'SNIFFING' | 'LOCKED' | 'ANSWERING';
+type ScenarioMode = 'general' | 'studio' | 'live';
 
 export interface BrandIdentity {
     id: string;
@@ -56,12 +57,14 @@ interface WebSocketStore {
   selectedBrand: BrandIdentity | null;
   attachedImage: string | null;
   imageEnhancements: ImageEnhancement | null;
+  scenarioMode: ScenarioMode; // New: scenario context (studio/live/general)
 
   actions: {
     connect: (url: string) => void;
     sendTyping: (text: string) => void;
-    lockAndQuery: (product: Prediction, query: string, imageData?: string | null) => void;
-    navigateToProduct: (productId: string, query: string) => void;
+    lockAndQuery: (product: Prediction, query: string, imageData?: string | null, scenario?: ScenarioMode) => void;
+    navigateToProduct: (productId: string, query: string, scenario?: ScenarioMode) => void;
+    setScenarioMode: (mode: ScenarioMode) => void;
     openBrandModal: (brand: BrandIdentity) => void;
     closeBrandModal: () => void;
     reset: () => void;
@@ -78,6 +81,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   selectedBrand: null,
   attachedImage: null,
   imageEnhancements: null,
+  scenarioMode: 'general', // New: default scenario mode
 
   actions: {
     connect: (url: string) => {
@@ -166,8 +170,9 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
       }
     },
 
-    lockAndQuery: (product: Prediction, query: string, imageData?: string | null) => {
-      const { socket } = get();
+    lockAndQuery: (product: Prediction, query: string, imageData?: string | null, scenario?: ScenarioMode) => {
+      const { socket, scenarioMode } = get();
+      const activeScenario = scenario || scenarioMode;
       set({ status: 'LOCKED', lastPrediction: product, messages: [], relatedItems: [], attachedImage: imageData || null, imageEnhancements: null });
       
       if (socket && socket.readyState === WebSocket.OPEN) {
@@ -176,26 +181,31 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
             product_id: product.id, 
             query,
             content: query,
-            image: imageData || undefined
+            image: imageData || undefined,
+            scenario: activeScenario
         }));
       }
     },
 
-    navigateToProduct: (productId: string, query: string) => {
-      const { socket } = get();
+    navigateToProduct: (productId: string, query: string, scenario?: ScenarioMode) => {
+      const { socket, scenarioMode } = get();
+      const activeScenario = scenario || scenarioMode;
       set({ status: 'LOCKED', messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null });
       
       if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({ 
             type: 'lock_and_query', 
             product_id: productId, 
-            query 
+            query,
+            scenario: activeScenario
         }));
       }
     },
 
+    setScenarioMode: (mode: ScenarioMode) => set({ scenarioMode: mode }),
+
     openBrandModal: (brand: BrandIdentity) => set({ selectedBrand: brand }),
     closeBrandModal: () => set({ selectedBrand: null }),
-    reset: () => set({ status: 'IDLE', predictions: [], lastPrediction: null, messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null })
+    reset: () => set({ status: 'IDLE', predictions: [], lastPrediction: null, messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null, scenarioMode: 'general' })
   }
 }));

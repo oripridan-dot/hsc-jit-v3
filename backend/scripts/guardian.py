@@ -126,7 +126,7 @@ def main():
         print(f"❌ Directory not found: {catalogs_dir}")
         sys.exit(1)
 
-    print(f"🛡️  Guardian Phase 1: Building product index...")
+    print("🛡️  Guardian Phase 1: Building product index...")
     
     # First pass: collect all product IDs
     all_product_ids: Set[str] = set()
@@ -142,7 +142,7 @@ def main():
             pass
     
     print(f"📚 Found {len(all_product_ids)} products across all catalogs.\n")
-    print(f"🛡️  Guardian Phase 2: Validating schemas & relationships...")
+    print("🛡️  Guardian Phase 2: Validating schemas & relationships...")
     
     total_failures = 0
     files_checked = 0

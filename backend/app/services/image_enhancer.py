@@ -10,7 +10,7 @@ Enhanced with:
 - Readable label identification
 """
 import logging
-from typing import Dict, Any, List, Optional, Set
+from typing import Dict, Any, List
 import re
 
 logger = logging.getLogger(__name__)

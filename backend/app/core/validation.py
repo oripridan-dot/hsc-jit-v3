@@ -25,6 +25,7 @@ class QueryMessage(BaseModel):
     type: str = Field(..., pattern="^(query|lock_and_query)$")
     product_id: str = Field(..., min_length=1, max_length=200)
     question: Optional[str] = Field(None, max_length=2000)
+    scenario: Optional[str] = Field("general", pattern="^(studio|live|general)$")
     
     @field_validator('product_id')
     @classmethod

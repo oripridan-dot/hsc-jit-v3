@@ -1,5 +1,7 @@
 # HSC-JIT v3: Production Architecture Summary
 
+> **Update (v3.2):** The active architecture now uses a **stateless context window** workflow (TEXT caching, no RAG embeddings). See `STATELESS_CONTEXT_WINDOW.md` for the authoritative design. The diagrams below remain for historical context.
+
 ## System Overview
 
 ```

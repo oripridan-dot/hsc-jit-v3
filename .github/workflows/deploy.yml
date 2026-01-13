@@ -48,8 +48,7 @@ jobs:
     
     - name: Run backend tests
       run: |
-        cd backend
-        pytest tests/ --cov=app --cov-report=xml
+        pytest tests/ --cov=backend/app --cov-report=xml
       env:
         REDIS_URL: redis://localhost:6379
     

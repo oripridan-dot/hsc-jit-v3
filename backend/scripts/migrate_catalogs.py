@@ -8,7 +8,7 @@ New schema: { "brand_identity": { "id": "...", "name": "...", ... }, "products":
 import json
 import sys
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 
 def extract_brand_id(filename: str) -> str:
