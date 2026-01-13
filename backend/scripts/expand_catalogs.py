@@ -11,7 +11,6 @@ Strategy:
 import json
 import logging
 from pathlib import Path
-from typing import Dict, List, Any
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
@@ -170,7 +169,7 @@ def main():
         total_after += added
     
     logger.info("=" * 60)
-    logger.info(f"✅ Expansion complete!")
+    logger.info("✅ Expansion complete!")
     logger.info(f"   Before: {total_before} products")
     logger.info(f"   After:  {total_before + total_after} products")
     logger.info(f"   Added:  +{total_after} products")

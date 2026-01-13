@@ -10,7 +10,6 @@ This script:
 """
 
 import json
-import asyncio
 import httpx
 from pathlib import Path
 from typing import Dict, Any, Optional
@@ -209,13 +208,13 @@ def main():
         logger.info(f"✓ {brand_id}: {len(products)} products completed")
     
     logger.info("=" * 70)
-    logger.info(f"✅ Completion done!")
+    logger.info("✅ Completion done!")
     logger.info(f"   Total products: {total}")
-    logger.info(f"   All products now have:")
-    logger.info(f"   - Price (ILS)")
-    logger.info(f"   - Specifications")
-    logger.info(f"   - Full description")
-    logger.info(f"   - Metadata (weight, dimensions, stock, rating)")
+    logger.info("   All products now have:")
+    logger.info("   - Price (ILS)")
+    logger.info("   - Specifications")
+    logger.info("   - Full description")
+    logger.info("   - Metadata (weight, dimensions, stock, rating)")
 
 
 if __name__ == "__main__":
