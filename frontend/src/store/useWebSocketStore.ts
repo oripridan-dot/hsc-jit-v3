@@ -1,16 +1,17 @@
 import { create } from 'zustand';
+import { unifiedStateManager } from './unifiedRouter';
 
 type AppStatus = 'IDLE' | 'SNIFFING' | 'LOCKED' | 'ANSWERING';
 type ScenarioMode = 'general' | 'studio' | 'live';
 
 export interface BrandIdentity {
-    id: string;
-    name: string;
-    hq: string;
-    founded?: number;
-    website: string;
-    logo_url: string;
-    description?: string;
+  id: string;
+  name: string;
+  hq: string;
+  founded?: number;
+  website: string;
+  logo_url: string;
+  description?: string;
 }
 
 export interface RelatedItem {
@@ -40,11 +41,13 @@ export interface Prediction {
   id: string;
   name: string;
   // Support both schema structures just in case
-  images?: { main: string }; 
+  images?: { main: string; thumbnail?: string };
   img?: string; // from blueprint example "img" in prediction event
   brand?: string;
   production_country?: string;
   brand_identity?: BrandIdentity;
+  score: number; // The user used score in App.tsx "item.score > 0.8" but it was missing in the interface shown before?
+  category?: string; // Also used in App.tsx
 }
 
 interface WebSocketStore {
@@ -60,7 +63,7 @@ interface WebSocketStore {
   scenarioMode: ScenarioMode; // New: scenario context (studio/live/general)
 
   actions: {
-    connect: (url?: string) => void;
+    connect: ()  => void;
     sendTyping: (text: string) => void;
     lockAndQuery: (product: Prediction, query: string, imageData?: string | null, scenario?: ScenarioMode) => void;
     navigateToProduct: (productId: string, query: string, scenario?: ScenarioMode) => void;
@@ -84,135 +87,78 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   scenarioMode: 'general', // New: default scenario mode
 
   actions: {
-    connect: (url?: string) => {
-      if (get().socket) return;
+    connect: ()  => {
+      // Use unified state manager's WebSocket connection
+      // It already handles connection logic and auto-reconnect
+      console.log('🔌 Using unified state manager connection');
 
-      // Resolve WebSocket endpoint with fallbacks:
-      // 1) VITE_WS_URL if provided
-      // 2) Relative path /ws (proxied by Vite dev server)
-      // 3) Same host with port 8000 (Codespaces/port-forward default)
-      // 4) Same origin
-      const resolvedUrl = (() => {
-        if (url) return url;
-
-        const envUrl = import.meta.env.VITE_WS_URL as string | undefined;
-        if (envUrl) return envUrl;
-
-        const envPort = import.meta.env.VITE_WS_PORT as string | undefined;
-        const loc = window.location;
-        const protocol = loc.protocol === 'https:' ? 'wss:' : 'ws:';
-
-        // 1) Explicit port override
-        if (envPort && loc.hostname) {
-          return `${protocol}//${loc.hostname}:${envPort}/ws`;
-        }
-
-        // 2) GitHub Codespaces / app.github.dev: swap to -8000 suffix for backend
-        if (loc.hostname.endsWith('.app.github.dev')) {
-          const replaced = loc.hostname.replace(/-\d+\.app\.github\.dev$/, '-8000.app.github.dev');
-          return `${protocol}//${replaced}/ws`;
-        }
-
-        // 3) Use relative path (works with Vite proxy)
-        return `${protocol}//${loc.host}/ws`;
-      })();
-
-      const ws = new WebSocket(resolvedUrl);
-      
-      ws.onopen = () => {
-        console.log('🔌 Connected to Psychic Engine');
-      };
-
-      ws.onmessage = (event) => {
-        const payload = JSON.parse(event.data);
-        const { type, data, msg, content } = payload;
-        
-        if (type === 'prediction') {
-           // data is list of predictions with hydrated products
-           if (Array.isArray(data) && data.length > 0) {
-             const topPred = data[0];
-             const product = topPred.product;
-             // Map backend format to frontend format if needed
-             const mappedPredictions = data.map((item: any) => ({
-                ...(item.product || {}),
-                confidence: item.confidence,
-                match_text: item.match_text
-             }));
-
-             const relatedItems = topPred.context?.related_items || [];
-             
-             set({ 
-               predictions: mappedPredictions,
-               lastPrediction: product, 
-               relatedItems: relatedItems,
-               status: 'SNIFFING' 
-             });
-           } else {
-             set({ predictions: [], lastPrediction: null, status: 'IDLE' });
-           }
-        }
-        
-        if (type === 'status') {
-            set((state) => ({ 
-                status: 'ANSWERING',
-                messages: [...state.messages, `[STATUS] ${msg}`]
-            }));
-        }
-        
-        if (type === 'answer_chunk') {
-             set((state) => ({
-                 messages: [...state.messages, content]
-             }));
-        }
-
-        // NEW: Rich context event with brand + related items
-        if (type === 'context') {
-            const relatedItems = data?.related_items || [];
-            const brand = data?.brand;
-            
-            set({ relatedItems });
-            
-            // Auto-open brand modal if a brand is provided
-            if (brand) {
-              set({ selectedBrand: brand });
-            }
-        }
-
-        // NEW: Image enhancements event
-        if (type === 'image_enhancements') {
-            console.log('✨ Received image enhancements:', data);
-            set({ imageEnhancements: data });
-        }
-
-        // Legacy fallback for old 'relations' event
-        if (type === 'relations') {
-            set({ relatedItems: data });
+      // Subscribe to unified state manager events
+      const handlePredictions = (products: any[]) => {
+        if (products && products.length > 0) {
+          set({
+            predictions: products,
+            lastPrediction: products[0],
+            status: 'SNIFFING'
+          });
+        } else {
+          set({ predictions: [], lastPrediction: null, status: 'IDLE' });
         }
       };
 
-      set({ socket: ws });
+      const handleProgress = (_: any) => {
+        if (_.stage === 'complete') {
+          set({ status: 'IDLE' });
+        } else {
+          set({ status: 'ANSWERING' });
+        }
+      };
+
+      const handleStream = (chunk: string) => {
+        set((state) => ({
+          messages: [...state.messages, chunk]
+        }));
+      };
+
+      const handleComplete = (_: any) => {
+        set({ status: 'IDLE' });
+      };
+
+      const handleError = (_: any) => {
+        console.error("WebSocket error", _);
+        set({ status: 'IDLE' });
+      };
+
+      unifiedStateManager.subscribe('predictions', handlePredictions);
+      unifiedStateManager.subscribe('progress', handleProgress);
+      unifiedStateManager.subscribe('stream', handleStream);
+      unifiedStateManager.subscribe('complete', handleComplete);
+      unifiedStateManager.subscribe('error', handleError);
+
+      // Store cleanup
+      set({
+        socket: null // Not storing raw socket since unified manager handles it
+      });
     },
 
     sendTyping: (text: string) => {
-      const { socket } = get();
-      if (socket && socket.readyState === WebSocket.OPEN) {
-        socket.send(JSON.stringify({ type: 'typing', content: text }));
-      }
+      // Send typing event for real-time predictions
+      unifiedStateManager.sendTyping(text);
+      set({ status: 'SNIFFING' });
     },
 
     lockAndQuery: (product: Prediction, query: string, imageData?: string | null, scenario?: ScenarioMode) => {
       const { socket, scenarioMode } = get();
       const activeScenario = scenario || scenarioMode;
       set({ status: 'LOCKED', lastPrediction: product, messages: [], relatedItems: [], attachedImage: imageData || null, imageEnhancements: null });
-      
+
       if (socket && socket.readyState === WebSocket.OPEN) {
-        socket.send(JSON.stringify({ 
-            type: 'query', 
-            product_id: product.id, 
-            query,
-            content: query,
-            image: imageData || undefined,
-            scenario: activeScenario
+        socket.send(JSON.stringify({
+          type: 'query',
+          product_id: product.id,
+          query,
+          content: query,
+          image: imageData || undefined,
+          scenario: activeScenario
         }));
       }
     },
@@ -221,13 +167,13 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
       const { socket, scenarioMode } = get();
       const activeScenario = scenario || scenarioMode;
       set({ status: 'LOCKED', messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null });
-      
+
       if (socket && socket.readyState === WebSocket.OPEN) {
-        socket.send(JSON.stringify({ 
-            type: 'lock_and_query', 
-            product_id: productId, 
-            query,
-            scenario: activeScenario
+        socket.send(JSON.stringify({
+          type: 'lock_and_query',
+          product_id: productId,
+          query,
+          scenario: activeScenario
         }));
       }
     },

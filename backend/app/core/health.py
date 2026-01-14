@@ -21,6 +21,7 @@ class HealthStatus(BaseModel):
     cpu_usage_percent: float
     active_connections: int
     product_count: int
+    brand_count: int
     uptime_seconds: float
     timestamp: str
 
@@ -62,8 +63,15 @@ class HealthChecker:
         )
         
         product_count = 0
+        brand_count = 0
         if self.catalog_service and hasattr(self.catalog_service, 'products'):
              product_count = len(self.catalog_service.products)
+             # Count unique brands
+             brands = set()
+             for product in self.catalog_service.products:
+                 if product.get('brand'):
+                     brands.add(product['brand'])
+             brand_count = len(brands)
              
         uptime = time.time() - self.start_time
 
@@ -82,6 +90,7 @@ class HealthChecker:
             cpu_usage_percent=cpu_percent,
             active_connections=active_connections,
             product_count=product_count,
+            brand_count=brand_count,
             uptime_seconds=uptime,
             timestamp=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         )

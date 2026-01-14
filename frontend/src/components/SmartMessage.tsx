@@ -160,7 +160,7 @@ export const SmartMessage: React.FC<SmartMessageProps> = ({ content, relatedItem
                   `Tell me more about the ${product.name}`
                 );
               }}
-              className="text-blue-400 hover:text-blue-300 underline cursor-pointer font-medium transition-colors active:text-blue-500"
+              className="text-accent-secondary hover:text-accent-secondary/80 underline cursor-pointer font-medium transition-colors active:text-accent-secondary"
               title={`Click to learn more about ${product.name}`}
             >
               {match[1]}
@@ -203,12 +203,12 @@ export const SmartMessage: React.FC<SmartMessageProps> = ({ content, relatedItem
 
       if (section.type === 'suggestion') {
         return (
-          <div key={idx} className="mt-4 p-3 bg-amber-500/10 rounded-lg border-l-2 border-amber-500/50">
+          <div key={idx} className="mt-4 p-3 bg-accent-primary/10 rounded-lg border-l-2 border-accent-primary/50">
             <div className="flex items-start space-x-2">
-              <span className="text-amber-400 text-lg flex-shrink-0">💡</span>
+              <span className="text-accent-primary text-lg flex-shrink-0">💡</span>
               <div className="flex-1 min-w-0">
-                <div className="text-xs font-semibold uppercase text-amber-300/70 tracking-widest">Smart Pairing</div>
-                <div className="text-sm text-amber-100 mt-1">{section.text}</div>
+                <div className="text-xs font-semibold uppercase text-accent-primary/70 tracking-widest">Smart Pairing</div>
+                <div className="text-sm text-text-primary mt-1">{section.text}</div>
               </div>
             </div>
           </div>
@@ -217,12 +217,12 @@ export const SmartMessage: React.FC<SmartMessageProps> = ({ content, relatedItem
 
       if (section.type === 'pro_tip') {
         return (
-          <div key={idx} className="mt-4 p-3 bg-indigo-500/10 rounded-lg border-l-2 border-indigo-500/50">
+          <div key={idx} className="mt-4 p-3 bg-accent-secondary/10 rounded-lg border-l-2 border-accent-secondary/50">
             <div className="flex items-start space-x-2">
-              <span className="text-indigo-400 text-lg flex-shrink-0">⚡</span>
+              <span className="text-accent-secondary text-lg flex-shrink-0">⚡</span>
               <div className="flex-1 min-w-0">
-                <div className="text-xs font-semibold uppercase text-indigo-300/70 tracking-widest">Pro Tip</div>
-                <div className="text-sm text-indigo-100 mt-1">{section.text}</div>
+                <div className="text-xs font-semibold uppercase text-accent-secondary/70 tracking-widest">Pro Tip</div>
+                <div className="text-sm text-text-primary mt-1">{section.text}</div>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ export const SmartMessage: React.FC<SmartMessageProps> = ({ content, relatedItem
 
       // Raw/manual references
       return (
-        <div key={idx} className="text-xs text-slate-400 italic mt-2 pl-2 border-l border-slate-600">
+        <div key={idx} className="text-xs text-text-muted italic mt-2 pl-2 border-l border-border-base">
           📖 {section.text}
         </div>
       );
@@ -239,7 +239,7 @@ export const SmartMessage: React.FC<SmartMessageProps> = ({ content, relatedItem
   };
 
   return (
-    <div className="text-slate-200 bg-white/5 p-4 rounded-r-xl rounded-bl-xl border-l-2 border-slate-700 text-sm leading-relaxed shadow-sm animate-fade-in-up">
+    <div className="text-text-primary bg-bg-surface/50 p-4 rounded-r-xl rounded-bl-xl border-l-2 border-border-base text-sm leading-relaxed shadow-sm animate-fade-in-up">
       {renderSections()}
     </div>
   );

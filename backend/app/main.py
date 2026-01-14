@@ -1,4 +1,24 @@
 from __future__ import annotations
+from pydantic import ValidationError
+from .core.validation import validate_websocket_message, safe_get_str
+from .core.metrics import (
+    websocket_active_connections,
+    messages_processed,
+    websocket_errors,
+    get_prometheus_metrics,
+)
+from .core.health import get_health_checker, router as health_router
+from .core.logging import setup_structured_logging, get_logger
+from .core.cache import get_cache
+from .core.redis_manager import RedisPubSubManager
+from .services.image_enhancer import get_image_enhancer
+from .services.price import PriceService
+from .services.skills import MCPSkills
+from .services.llm import GeminiService
+from .services.fetcher import ContentFetcher
+from .services.sniffer import SnifferService
+from .services.catalog import CatalogService
+from .services.unified_router import UnifiedQueryRouter
 
 import json
 import uuid
@@ -20,24 +40,6 @@ from starlette.responses import Response
 load_dotenv()
 
 # ruff: noqa: E402 - imports after load_dotenv() is intentional
-from .services.catalog import CatalogService
-from .services.sniffer import SnifferService
-from .services.fetcher import ContentFetcher
-from .services.llm import GeminiService
-from .services.price import PriceService
-from .services.image_enhancer import get_image_enhancer
-from .core.redis_manager import RedisPubSubManager
-from .core.cache import get_cache
-from .core.logging import setup_structured_logging, get_logger
-from .core.health import get_health_checker, router as health_router
-from .core.metrics import (
-    websocket_active_connections,
-    messages_processed,
-    websocket_errors,
-    get_prometheus_metrics,
-)
-from .core.validation import validate_websocket_message, safe_get_str
-from pydantic import ValidationError
 
 # Setup structured logging
 setup_structured_logging(level="INFO")
@@ -129,9 +131,19 @@ async def lifespan(app: FastAPI):
     # RAG removed - using direct context window approach
     app.state.llm = GeminiService()
     app.state.start_time = time.time()
-    
+
+    # Initialize unified router for Explorer/PromptBar integration
+    app.state.unified_router = UnifiedQueryRouter(
+        sniffer_service=app.state.sniffer,
+        catalog_service=app.state.catalog,
+        fetcher_service=app.state.fetcher,
+        llm_service=app.state.llm,
+        cache=cache
+    )
+
     # Set dependencies for health check (now that catalog is ready)
-    health_checker.set_dependencies(redis_manager, connection_manager, app.state.catalog)
+    health_checker.set_dependencies(
+        redis_manager, connection_manager, app.state.catalog)
 
     # Create quick lookup map
     app.state.product_map = {
@@ -168,7 +180,24 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 # Add health check router
 app.include_router(health_router)
 
+# ============ Products Endpoint ============
+
+
+@app.get("/api/products")
+async def get_all_products():
+    """
+    Get all products from the catalog.
+    Used for full hydration of the frontend file system.
+    """
+    catalog = CatalogService()
+    return {
+        "count": len(catalog.products),
+        "products": catalog.products
+    }
+
 # ============ Brands Endpoint ============
+
+
 @app.get("/api/brands")
 async def get_all_brands():
     """
@@ -183,6 +212,8 @@ async def get_all_brands():
     }
 
 # ============ Price Endpoint ============
+
+
 @app.get("/api/price/{query}")
 async def get_price(query: str):
     """
@@ -272,6 +303,12 @@ async def websocket_endpoint(ws: WebSocket, client_id: str = None) -> None:
 
             if msg_type == "typing":
                 await handle_typing_event(
+                    ws, app, payload, client_id
+                )
+
+            elif msg_type == "unified_query":
+                # New unified handler for Explorer/PromptBar
+                await handle_unified_query_event(
                     ws, app, payload, client_id
                 )
 
@@ -390,9 +427,37 @@ async def handle_query_event(
 
         product = product_with_context.get("product", {})
 
-        # Fetch manual
+        # Attempt MCP tool-calling to retrieve manual or take other actions
+        llm: GeminiService = app.state.llm
+        skills = MCPSkills(app.state.catalog, app.state.fetcher)
+
+        # Provide minimal context so the AI can decide tool args (e.g., product_id)
+        product_context = (
+            f"Product ID: {product.get('id', '')}\n"
+            f"Product Name: {product.get('name', '')}\n"
+            f"Brand: {product.get('brand', '')}\n"
+        )
+
+        tool_result = await llm.answer_with_tools(query_text, skills, context=product_context)
+
+        # Default manual text via fetcher (fallback)
         fetcher: ContentFetcher = app.state.fetcher
-        manual_text = await fetcher.fetch(product)
+        manual_text = ""
+
+        if tool_result.get("type") == "tool_result":
+            tr = tool_result.get("data", {})
+            if tr.get("tool") == "read_manual":
+                # Use the tool's manual if provided
+                manual_text = (tr.get("result") or {}).get("manual_text", "")
+            elif tr.get("tool") == "search_products":
+                # If the AI decided to search instead, stream predictions back
+                results = tr.get("result") or []
+                await ws.send_json({"type": "prediction", "data": results})
+                # Continue answering if we also have a locked product
+
+        if not manual_text:
+            # Fallback to direct fetch
+            manual_text = await fetcher.fetch(product)
 
         if not manual_text:
             await ws.send_json(
@@ -403,15 +468,12 @@ async def handle_query_event(
             )
             return
 
-        # Index in RAG
-        # Skip RAG - use context window directly (stateless approach)
         # Trim to reasonable size for LLM (Gemini handles ~100k tokens)
         retrieved_context = manual_text[:50000]
 
         # Generate answer with LLM
         await ws.send_json({"type": "status", "msg": "Thinking..."})
 
-        llm: GeminiService = app.state.llm
         brand = product_with_context.get("brand", {})
         related_items = (
             product_with_context.get("context", {}).get("related_items", [])
@@ -476,7 +538,7 @@ async def handle_query_event(
             enhancements = await enhancer.generate_enhancement_data(
                 product, manual_text
             )
-            
+
             # Validate enhancement data structure before sending
             if enhancements.get("has_enhancements"):
                 # Ensure all required fields are present and valid
@@ -518,6 +580,56 @@ async def handle_query_event(
             "Error in query handler",
             client_id=client_id,
             product_id=product_id,
+            error=str(e),
+        )
+        await ws.send_json({"type": "error", "message": str(e)})
+
+
+async def handle_unified_query_event(
+    ws: WebSocket,
+    app: FastAPI,
+    payload: Dict[str, Any],
+    client_id: str,
+):
+    """
+    Handle unified query from Explorer or PromptBar
+
+    Expected payload:
+    {
+        "type": "unified_query",
+        "query": "user query text",
+        "source": "explorer" | "promptbar",
+        "filters": {"brand": "...", "category": "..."} (optional)
+    }
+    """
+    query = payload.get("query", "")
+    source = payload.get("source", "promptbar")
+    filters = payload.get("filters")
+
+    messages_processed.labels(message_type="unified_query").inc()
+
+    if not query:
+        await ws.send_json({
+            "type": "error",
+            "message": "Query text is required"
+        })
+        return
+
+    try:
+        router: UnifiedQueryRouter = app.state.unified_router
+        await router.process_query(
+            query=query,
+            websocket=ws,
+            session_id=client_id,
+            source=source,
+            filters=filters
+        )
+    except Exception as e:
+        logger.error(
+            "Error in unified query handler",
+            client_id=client_id,
+            query=query,
+            source=source,
             error=str(e),
         )
         await ws.send_json({"type": "error", "message": str(e)})

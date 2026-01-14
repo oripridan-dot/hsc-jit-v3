@@ -11,6 +11,7 @@ interface Brand {
   description?: string;
   founded?: number;
   product_count: number;
+  brand_number?: string;
 }
 
 interface BrandExplorerProps {
@@ -27,6 +28,7 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
   const [brands, setBrands] = useState<Brand[]>([]);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+  const [sortOption, setSortOption] = useState<'count' | 'alpha' | 'id'>('count');
 
   // Fetch brands from /api/brands
   useEffect(() => {
@@ -39,11 +41,7 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
         const data = await response.json();
         
         if (data.brands) {
-          // Sort by product count descending
-          const sorted = data.brands.sort((a: Brand, b: Brand) => 
-            (b.product_count || 0) - (a.product_count || 0)
-          );
-          setBrands(sorted);
+          setBrands(data.brands);
         }
       } catch (error) {
         console.error('Failed to fetch brands:', error);
@@ -62,10 +60,24 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
     return matchesSearch;
   });
 
+  const sortedBrands = [...filteredBrands].sort((a, b) => {
+    if (sortOption === 'count') {
+        return (b.product_count || 0) - (a.product_count || 0);
+    } else if (sortOption === 'alpha') {
+        return a.name.localeCompare(b.name);
+    } else if (sortOption === 'id') {
+         const numA = parseInt(a.brand_number || '999999');
+         const numB = parseInt(b.brand_number || '999999');
+         if (numA !== numB && !isNaN(numA) && !isNaN(numB)) return numA - numB;
+         return (a.brand_number || a.id).localeCompare(b.brand_number || b.id);
+    }
+    return 0;
+  });
+
   // Group brands by product count
-  const productionReady = filteredBrands.filter(b => (b.product_count || 0) >= 5);
-  const developing = filteredBrands.filter(b => (b.product_count || 0) < 5 && (b.product_count || 0) > 0);
-  const empty = filteredBrands.filter(b => (b.product_count || 0) === 0);
+  const productionReady = sortedBrands.filter(b => (b.product_count || 0) >= 5);
+  const developing = sortedBrands.filter(b => (b.product_count || 0) < 5 && (b.product_count || 0) > 0);
+  const empty = sortedBrands.filter(b => (b.product_count || 0) === 0);
 
   if (!isOpen) return null;
 
@@ -90,8 +102,8 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
           className="
             relative
             w-full max-w-6xl max-h-[90vh]
-            bg-slate-900
-            border border-slate-700
+            bg-bg-base
+            border border-white/10
             rounded-2xl
             shadow-2xl
             overflow-hidden
@@ -99,38 +111,47 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
           "
         >
           {/* Header */}
-          <div className="px-8 py-6 border-b border-slate-800 bg-gradient-to-r from-slate-800 to-slate-900">
+          <div className="px-8 py-6 border-b border-white/10 bg-gradient-to-r from-bg-card to-bg-base">
             <div className="flex items-center justify-between gap-4">
               <div>
-                <h1 className="text-2xl font-bold text-white">Brand Explorer</h1>
-                <p className="text-sm text-slate-400 mt-1">
+                <h1 className="text-2xl font-bold text-text-primary">Brand Explorer</h1>
+                <p className="text-sm text-text-muted mt-1">
                   {brands.length} total brands available
                 </p>
               </div>
               <button
                 onClick={onClose}
-                className="text-slate-400 hover:text-slate-200 transition-colors text-xl"
+                className="text-text-muted hover:text-text-primary transition-colors text-xl"
               >
                 ✕
               </button>
             </div>
 
-            {/* Search Bar */}
-            <div className="mt-4">
+            {/* Search Bar & Sort */}
+            <div className="mt-4 flex gap-4">
               <input
                 type="text"
                 placeholder="Search brands by name or ID..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="
-                  w-full px-4 py-2 
-                  bg-slate-800/50 border border-slate-700 
+                  flex-1 px-4 py-2 
+                  bg-bg-surface/50 border border-border-subtle 
                   rounded-lg 
-                  text-white placeholder-slate-500
-                  focus:outline-none focus:ring-2 focus:ring-blue-500
+                  text-text-primary placeholder-text-muted
+                  focus:outline-none focus:ring-2 focus:ring-accent-primary
                   transition
                 "
               />
+              <select 
+                value={sortOption}
+                onChange={(e) => setSortOption(e.target.value as any)}
+                className="px-4 py-2 bg-bg-surface/50 border border-border-subtle rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-primary transition"
+              >
+                  <option value="count">Count (Tier)</option>
+                  <option value="alpha">A-Z</option>
+                  <option value="id">Brand ID</option>
+              </select>
             </div>
           </div>
 
@@ -141,7 +162,7 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
                 {Array.from({ length: 8 }).map((_, i) => (
                   <div
                     key={i}
-                    className="h-48 rounded-lg bg-slate-800/50 border border-slate-700 animate-pulse"
+                    className="h-48 rounded-lg bg-bg-surface/50 border border-border-subtle animate-pulse"
                   />
                 ))}
               </div>
@@ -151,23 +172,24 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
                 {productionReady.length > 0 && (
                   <div>
                     <div className="flex items-center gap-2 mb-4">
-                      <h2 className="text-lg font-bold text-white">
+                      <h2 className="text-lg font-bold text-text-primary">
                         Production Ready
                       </h2>
-                      <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-xs font-mono rounded-full border border-emerald-500/30">
+                      <span className="px-3 py-1 bg-status-success/20 text-status-success text-xs font-mono rounded-full border border-status-success/30">
                         {productionReady.length}
                       </span>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-max">
                       {productionReady.map((brand) => (
-                        <BrandCard
-                          key={brand.id}
-                          brand={brand}
-                          onSelect={() => {
-                            onBrandSelect?.(brand);
-                            onClose();
-                          }}
-                        />
+                        <div key={brand.id} className="h-80">
+                          <BrandCard
+                            brand={brand}
+                            onSelect={() => {
+                              onBrandSelect?.(brand);
+                              onClose();
+                            }}
+                          />
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -177,24 +199,25 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
                 {developing.length > 0 && (
                   <div>
                     <div className="flex items-center gap-2 mb-4">
-                      <h2 className="text-lg font-bold text-white">
+                      <h2 className="text-lg font-bold text-text-primary">
                         In Development
                       </h2>
-                      <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-mono rounded-full border border-blue-500/30">
+                      <span className="px-3 py-1 bg-accent-primary/20 text-accent-primary text-xs font-mono rounded-full border border-accent-primary/30">
                         {developing.length}
                       </span>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-max">
                       {developing.map((brand) => (
-                        <BrandCard
-                          key={brand.id}
-                          brand={brand}
-                          onSelect={() => {
-                            onBrandSelect?.(brand);
-                            onClose();
-                          }}
-                          variant="developing"
-                        />
+                        <div key={brand.id} className="h-80">
+                          <BrandCard
+                            brand={brand}
+                            onSelect={() => {
+                              onBrandSelect?.(brand);
+                              onClose();
+                            }}
+                            variant="developing"
+                          />
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -204,24 +227,25 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
                 {empty.length > 0 && (
                   <div>
                     <div className="flex items-center gap-2 mb-4">
-                      <h2 className="text-lg font-bold text-slate-400">
+                      <h2 className="text-lg font-bold text-text-muted">
                         No Products Yet
                       </h2>
-                      <span className="px-3 py-1 bg-slate-700/50 text-slate-400 text-xs font-mono rounded-full border border-slate-600/30">
+                      <span className="px-3 py-1 bg-bg-surface/50 text-text-muted text-xs font-mono rounded-full border border-border-subtle/30">
                         {empty.length}
                       </span>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-max">
                       {empty.map((brand) => (
-                        <BrandCard
-                          key={brand.id}
-                          brand={brand}
-                          onSelect={() => {
-                            onBrandSelect?.(brand);
-                            onClose();
-                          }}
-                          variant="empty"
-                        />
+                        <div key={brand.id} className="h-80">
+                          <BrandCard
+                            brand={brand}
+                            onSelect={() => {
+                              onBrandSelect?.(brand);
+                              onClose();
+                            }}
+                            variant="empty"
+                          />
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -229,7 +253,7 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
 
                 {filteredBrands.length === 0 && !loading && (
                   <div className="text-center py-12">
-                    <p className="text-slate-400 text-lg">
+                    <p className="text-text-muted text-lg">
                       No brands found matching "{searchTerm}"
                     </p>
                   </div>
@@ -239,18 +263,18 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
           </div>
 
           {/* Footer Stats */}
-          <div className="px-8 py-4 border-t border-slate-800 bg-slate-950/50 grid grid-cols-3 gap-4 text-center">
+          <div className="px-8 py-4 border-t border-border-subtle bg-bg-base/50 grid grid-cols-3 gap-4 text-center">
             <div>
-              <p className="text-2xl font-bold text-emerald-400">{productionReady.length}</p>
-              <p className="text-xs text-slate-400">Production Ready</p>
+              <p className="text-2xl font-bold text-status-success">{productionReady.length}</p>
+              <p className="text-xs text-text-muted">Production Ready</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-blue-400">{developing.length}</p>
-              <p className="text-xs text-slate-400">In Development</p>
+              <p className="text-2xl font-bold text-accent-primary">{developing.length}</p>
+              <p className="text-xs text-text-muted">In Development</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-slate-500">{brands.reduce((sum, b) => sum + (b.product_count || 0), 0)}</p>
-              <p className="text-xs text-slate-400">Total Products</p>
+              <p className="text-2xl font-bold text-text-secondary">{brands.reduce((sum, b) => sum + (b.product_count || 0), 0)}</p>
+              <p className="text-xs text-text-muted">Total Products</p>
             </div>
           </div>
         </motion.div>
@@ -268,57 +292,74 @@ interface BrandCardProps {
 
 const BrandCard: React.FC<BrandCardProps> = ({ brand, onSelect, variant = 'ready' }) => {
   const bgClasses = {
-    ready: 'bg-slate-800/60 border-emerald-500/30 hover:border-emerald-500 hover:shadow-emerald-500/20',
-    developing: 'bg-slate-800/40 border-blue-500/20 hover:border-blue-500 hover:shadow-blue-500/10',
-    empty: 'bg-slate-950/40 border-slate-700/50 hover:border-slate-600 opacity-60'
+    ready: 'bg-gradient-to-br from-bg-surface/80 to-bg-surface/40 border-status-success/30 hover:border-status-success/80 hover:shadow-lg hover:shadow-status-success/20',
+    developing: 'bg-gradient-to-br from-bg-surface/60 to-bg-surface/30 border-accent-primary/20 hover:border-accent-primary/60 hover:shadow-lg hover:shadow-accent-primary/10',
+    empty: 'bg-bg-base/40 border-border-subtle/50 hover:border-border-subtle opacity-60'
   };
 
   return (
     <motion.button
       onClick={onSelect}
       disabled={variant === 'empty'}
-      whileHover={variant !== 'empty' ? { y: -4 } : {}}
+      whileHover={variant !== 'empty' ? { y: -6 } : {}}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       className={`
-        relative w-full p-4 rounded-lg border transition-all
+        relative w-full h-full rounded-xl border transition-all overflow-hidden
         ${bgClasses[variant]}
         ${variant === 'empty' ? 'cursor-not-allowed' : 'cursor-pointer'}
-        group
+        group flex flex-col
       `}
     >
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-surface/30 pointer-events-none" />
+
       {/* Quality Badge */}
       {variant === 'ready' && (
-        <div className="absolute top-2 right-2 px-2 py-1 bg-emerald-500/20 rounded-full text-[10px] font-bold text-emerald-300 border border-emerald-500/40">
+        <div className="absolute top-3 right-3 z-10 px-2.5 py-1 bg-status-success/25 rounded-full text-[10px] font-bold text-status-success border border-status-success/50 backdrop-blur-sm">
           ✓ READY
         </div>
       )}
       {variant === 'developing' && (
-        <div className="absolute top-2 right-2 px-2 py-1 bg-blue-500/20 rounded-full text-[10px] font-bold text-blue-300 border border-blue-500/40">
+        <div className="absolute top-3 right-3 z-10 px-2.5 py-1 bg-accent-primary/25 rounded-full text-[10px] font-bold text-accent-secondary border border-accent-primary/50 backdrop-blur-sm">
           • DEV
         </div>
       )}
 
-      {/* Logo */}
-      <div className="h-24 flex items-center justify-center mb-3 bg-slate-950/50 rounded">
+      {/* Logo Section - Larger */}
+      <div className="h-40 flex items-center justify-center flex-shrink-0 bg-gradient-to-b from-bg-surface/50 to-bg-base/50 border-b border-border-subtle/30 group-hover:from-bg-surface/70 group-hover:to-bg-surface/50 transition-colors">
         <SmartImage
           src={brand.logo_url}
           alt={brand.name}
-          className="max-h-full max-w-[90%] object-contain group-hover:scale-110 transition-transform"
+          className="max-h-[85%] max-w-[85%] object-contain group-hover:scale-125 transition-transform duration-300"
         />
       </div>
 
-      {/* Info */}
-      <div className="text-left">
-        <h3 className="font-bold text-white text-sm truncate group-hover:text-blue-300 transition-colors">
+      {/* Info Section */}
+      <div className="p-4 flex-1 flex flex-col text-left relative z-10">
+        <h3 className="font-bold text-text-primary text-sm group-hover:text-accent-secondary transition-colors line-clamp-2">
           {brand.name}
         </h3>
-        <p className="text-[11px] text-slate-400 mt-1">{brand.hq}</p>
         
-        {/* Product Count */}
-        <div className="mt-2 pt-2 border-t border-slate-700/50">
-          <p className="text-xs font-mono text-slate-500">
-            {brand.product_count || 0} products
-          </p>
+        {/* HQ Location */}
+        <p className="text-[11px] text-text-muted mt-2 flex items-center gap-1.5">
+          <span className="text-lg">🏢</span>
+          <span className="truncate">{brand.hq || 'Location unknown'}</span>
+        </p>
+
+        {/* Spacer */}
+        <div className="flex-1" />
+
+        {/* Product Count Badge */}
+        <div className="mt-3 pt-3 border-t border-border-subtle/40 flex items-center justify-between">
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-mono font-bold text-status-success">
+              {brand.product_count || 0}
+            </span>
+            <span className="text-[10px] text-text-muted">
+              {(brand.product_count || 0) === 1 ? 'product' : 'products'}
+            </span>
+          </div>
+          <span className="text-lg">📦</span>
         </div>
       </div>
     </motion.button>

@@ -45,6 +45,9 @@ export interface Brand {
   description?: string;
   products?: Product[];
   productCount?: number;
+  productionCountries?: string[];
+  brandColor?: string; // Primary brand color (hex)
+  brandColorAlt?: string; // Secondary brand color (hex)
 }
 
 export interface SearchResult {

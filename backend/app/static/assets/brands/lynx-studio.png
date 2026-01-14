@@ -1,0 +1,589 @@
+<!doctype html>
+<html>
+<head lang="en-US">
+
+
+	<!-- Meta -->
+	<title>Lynx Studio Technology, Inc.</title>
+	<meta name="description" content="We engineer the finest tools to help audio professionals create even better sound." />
+
+	<!-- View -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- iOS icons -->
+	<meta name="apple-mobile-web-app-title" content="Lynx" />
+	<link rel="apple-touch-icon" href="/assets/img/icon.png" />
+
+	<!-- Windows icons -->
+	<meta name="application-name" content="Lynx" />
+	<meta name="msapplication-TileColor" content="#fff" />
+	<meta name="msapplication-square" content="/assets/img/icon.png" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+	<!-- Facebook share -->
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Lynx Studio Technology, Inc." />
+	<meta property="og:description" content="We engineer the finest tools to help audio professionals create even better sound." />
+	<meta property="og:url" content="https://www.lynxstudio.com/" />
+	<meta property="og:site_name" content="Lynx Studio Technology" />
+	<meta property="og:image" content="https://cdn.lynxstudio.com/go/wp-content/uploads/aurora-n-2-2-1200x800.jpg" />
+	<meta property="og:image:width" content="1200" /><meta property="og:image:height" content="800" />	
+
+	<!-- Twitter share -->
+	<meta name="twitter:card" content="Lynx Studio Technology, Inc." />
+	<meta name="twitter:title" content="Lynx Studio Technology, Inc." />
+	<meta name="twitter:description" content="We engineer the finest tools to help audio professionals create even better sound." />
+	<meta name="twitter:image" content="https://cdn.lynxstudio.com/go/wp-content/uploads/aurora-n-2-2-1200x800.jpg" />
+	
+	<!-- Facebook Pixel -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '205265903448340'); 
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=205265903448340&ev=PageView
+		&noscript=1"/>
+	</noscript>
+
+	<!-- The human(s) who built this site -->
+	<link rel="author" type="text/plain" href="/humans.txt" />
+
+	<!-- Visual -->
+		
+	<link rel="stylesheet" type="text/css" href="/assets/style-min.css?rel=1656103346058" />
+
+
+</head>
+<body class="page-home">
+
+
+	<!-- Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-93308608-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	
+	<nav>
+	<a href="/">
+		<img class="light" src="/assets/img/logo-light.png" alt="Lynx Studio" />
+		<img class="dark" src="/assets/img/logo-dark.png" alt="Lynx Studio" />
+	</a>
+
+	<ul>
+			<li><a href="/products/" >Products</a>
+</li>
+		
+		<li class="page_item page-item-598"><a href="/about/">About</a></li>
+    
+			<li><a href="/blog/" >Blog</a>
+</li>
+		
+		<li><a href="/downloads/">Downloads</a></li>
+		
+		<li><a class="noajax" href="//support.lynxstudio.com">Support</a></li>
+		
+		<li class="cart">
+			<a class="noajax" href="/cart/">
+				<img class="dark" src="/assets/img/icon-cart.png" />
+				<img class="light" src="/assets/img/icon-cart-white.png" />
+				<span>0</span>
+			</a>
+		</li>
+	</ul>
+</nav>	<div class="berger">
+		<div class="divs">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+
+
+	<main class="wrap-ajax">
+<section class="hero-slider-mob">
+	
+	
+			<div class="slide active">
+				<img class="good cover" data-load="first" data-src="/go/wp-content/uploads/lynx_Mesa_Hero1a_2400x1600-1400x850.jpg" />
+				<img class="giveheight" src="/assets/img/giveheight-videoratio.png" />
+			</div>
+			
+		
+
+		</div>
+	
+
+		</div>
+	
+
+		</div>
+	
+
+		</div>
+		
+</section>
+
+
+
+
+<section class="hero-slider">
+
+	
+			<div class="slide active">
+				<img class="bad cover" data-load="first" data-src="/go/wp-content/uploads/lynx_Mesa_Hero1a_2400x1600-300x182.jpg" />
+				<img class="good cover" data-load="second" data-src="/go/wp-content/uploads/lynx_Mesa_Hero1a_2400x1600-1400x850.jpg" />
+
+		
+
+			<div class="colourlay"></div>
+
+
+		</div>
+	
+			<div class="slide">
+				<img class="bad cover" data-src="/go/wp-content/uploads/AuroraN-3n-Tim-300x182.jpg" />
+				<img class="good cover" data-src="/go/wp-content/uploads/AuroraN-3n-Tim-1400x850.jpg" />
+
+		
+
+			<div class="colourlay"></div>
+
+
+		</div>
+	
+			<div class="slide">
+				<img class="bad cover" data-src="/go/wp-content/uploads/Hilo-Wood-2-300x182.jpg" />
+				<img class="good cover" data-src="/go/wp-content/uploads/Hilo-Wood-2-1400x850.jpg" />
+
+		
+
+			<div class="colourlay"></div>
+
+
+		</div>
+	
+			<div class="slide">
+				<img class="bad cover" data-src="/go/wp-content/uploads/AuroraN-5n-Tim-300x182.jpg" />
+				<img class="good cover" data-src="/go/wp-content/uploads/AuroraN-5n-Tim-1400x850.jpg" />
+
+		
+
+			<div class="colourlay"></div>
+
+
+		</div>
+	<div class="wrap">
+		<a class="active" href="/products/mesa/">
+
+	
+				<h2>
+					<span class="product-text"><span class="underline">Mesa</span>.</span>
+
+					<span>The</span>
+
+												<span class="text-adjective active">
+						
+						intuitive&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						portable&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						versatile&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						thunderbolt 3&nbsp;
+						</span>
+						
+
+					<span class="text-end">desktop interface.</span>
+				</h2>
+
+			</a> 
+		<a href="/products/aurora-n/">
+
+	
+				<h2>
+					<span class="product-text"><span class="underline">Aurora(n)</span>.</span>
+
+					<span>The</span>
+
+												<span class="text-adjective active">
+						
+						next generation&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						32 channel&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						future-proof&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						definitive&nbsp;
+						</span>
+						
+
+					<span class="text-end">studio workhorse.</span>
+				</h2>
+
+			</a> 
+		<a href="/products/hilo2/">
+
+	
+				<h2>
+					<span class="product-text"><span class="underline">Hilo 2</span>.</span>
+
+					<span>The</span>
+
+												<span class="text-adjective active">
+						
+						transparent&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						faithful&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						trusted&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						smarter&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						touchscreen&nbsp;
+						</span>
+						
+
+					<span class="text-end">studio multi tool.</span>
+				</h2>
+
+			</a> 
+		<a href="/products/aurora-n/">
+
+	
+				<h2>
+					<span class="product-text"><span class="underline">Aurora(n)</span>.</span>
+
+					<span>The</span>
+
+												<span class="text-adjective active">
+						
+						next generation&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						32 channel&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						future-proof&nbsp;
+						</span>
+													<span class="text-adjective">
+						
+						definitive&nbsp;
+						</span>
+						
+
+					<span class="text-end">studio workhorse.</span>
+				</h2>
+
+			</a> 		<div class="image-circle">
+					<img data-src="https://cdn.lynxstudio.com/go/wp-content/uploads/lynx_Mesa_Hero1a_2400x1600-250x250.jpg" alt="" />
+			
+							<img class="active" data-load="second" data-src="https://cdn.lynxstudio.com/go/wp-content/uploads/AuroraN-3n-Tim-250x250.jpg" alt="" />
+			
+							<img data-src="https://cdn.lynxstudio.com/go/wp-content/uploads/Hilo-Wood-2-250x250.jpg" alt="" />
+			
+							<img data-src="https://cdn.lynxstudio.com/go/wp-content/uploads/AuroraN-5n-Tim-250x250.jpg" alt="" />
+			
+			 </div> 
+
+
+
+	<div class="circle-anim"></div>
+	
+	</div>
+
+</section>
+
+
+
+
+
+<div class="notification">
+	
+        <a href="https://www.lynxstudio.com/custom-shop/"><span>Latest:</span> Build you own Aurora(n) HERE &rarr;</span> 
+
+
+</div>
+
+
+
+
+
+<section class="titleh1">
+	<h1 data-scroll class="icon-sine">We engineer the finest tools to help audio professionals create <a href="/about">even better sound</a>.</h1>
+</section>
+
+<section class="x2-outlink">
+
+	
+
+	<div>
+		<a data-scroll class="img" href="/blog/lynx-chats-with-producer-songwriter-and-musical-director-aron-forbes-2/">
+			<img data-src="https://cdn.lynxstudio.com/go/wp-content/uploads/lynx_afthumb_0923-800x550.jpg" data-src-retina="https://cdn.lynxstudio.com/go/wp-content/uploads/lynx_afthumb_0923-1600x1100.jpg" alt="" />
+			<img class="giveheight" src="/assets/img/giveheight-productshome-thumb.png" />
+		</a>
+
+		<span class="wrap-text" data-attr="twolinks">
+			<h2>Aron Forbes is a producer, songwriter, and musical director whose acclaimed work has paired him with artists including Billie Eilish, Finneas, Halsey, Banks, and many others for live and studio creative work. Check out his perspective on Lynx tools like the Aurora(n) and Hilo, as well as immersive sound and many other topics!</h2>
+			<p>Lynx Chats with Producer, Songwriter, and Musical Director Aron Forbes</p>
+			<span class="arrow-link"></span>
+		</span>
+	</div>
+	<a data-attr="thelink" href="/blog/lynx-chats-with-producer-songwriter-and-musical-director-aron-forbes-2/"></a>
+	
+	
+	<div>
+		<a data-scroll class="img" href="/blog/lynx-announces-dolby-atmos-compatibility-for-the-acclaimed-auroran-audio-interface-converter/">
+			<img data-src="https://cdn.lynxstudio.com/go/wp-content/uploads/lynx_news_auroran_1200_0423-800x550.jpg" data-src-retina="https://cdn.lynxstudio.com/go/wp-content/uploads/lynx_news_auroran_1200_0423-1600x1100.jpg" alt="" />
+			<img class="giveheight" src="/assets/img/giveheight-productshome-thumb.png" />
+		</a>
+			
+		<span class="wrap-text" data-attr="twolinks">
+			<h2>Lynx Studio Technology has announced compatibility between their acclaimed Aurora(n) audio interface/converter and Dolby Atmos, a revolutionary spatial audio technology for the most immersive sound experience. Atmos expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects with neither horizontal nor vertical limitation.
+</h2>
+			<p>Aurora(n) Now Does Atmos!</p>
+			<span class="arrow-link"></span>
+		</span>
+	</div>
+	<a data-attr="thelink" href="/blog/lynx-announces-dolby-atmos-compatibility-for-the-acclaimed-auroran-audio-interface-converter/"></a>
+
+</section>
+
+
+
+
+<section class="titleh1">
+	<h2 data-scroll class="green icon-sine">We take pride in our industry leading support. <a href="//support.lynxstudio.com">Find your answer here</a>.</h2>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="wrap-listlinks">	
+	<ul class="list-links">
+		<li class="heading">
+			<h3><a href="/blog/"><span>Latest:</span> Blog</a></h3>
+		</li>
+		
+				
+			
+			
+					
+			<li>
+				<a href="/blog/lynx-mesa-review-in-recording-magazine-november-2025/">Lynx Mesa Review in Recording Magazine (November 2025)<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+			</li>
+			
+					
+			<li>
+				<a href="/blog/lynx-dealer-spotlight-sunset-audio-solutions/">Lynx Dealer Spotlight: Sunset Audio Solutions<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+			</li>
+			
+					
+			<li>
+				<a href="/blog/lynx-chats-with-mastering-engineer-bernie-becker/">Lynx Chats with Mastering Engineer Bernie Becker<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+			</li>
+			
+					
+			<li>
+				<a href="/blog/lynx-mesa-review-in-sound-on-sound-magazine-october-2025/">Lynx Mesa Review in Sound On Sound Magazine (October 2025)<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+			</li>
+			
+					
+			<li>
+				<a href="/blog/lynx-dealer-spotlight-guitar-center/">Lynx Dealer Spotlight: Guitar Center<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+			</li>
+			
+			</ul>
+	
+	<ul class="list-links">
+		<li class="heading">
+			<h3><a href="/downloads/"><span>Latest:</span> Downloads</a></h3>
+		</li>
+		
+					
+											
+										
+				<li>
+					<a href="/downloads/aurora-n/firmware-update-for-auroran">Aurora(n): Firmware Update 1.34 for Aurora(n)<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+				</li>
+					
+					
+						
+											
+										
+				<li>
+					<a href="/downloads/aurora-n/lmdig-firmware">Aurora(n): Firmware Update 3.0 for LM-DIG installed in Aurora(n)<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+				</li>
+					
+					
+						
+											
+										
+				<li>
+					<a href="/downloads/mesa/mesa-firmware">Mesa: Mesa Firmware Version 1.7<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+				</li>
+					
+					
+						
+											
+										
+				<li>
+					<a href="/downloads/hilo2/lynx-lt-dante-firmware-update">Hilo2: Lynx LT-DANTE Firmware Update Version 1.3<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+				</li>
+					
+					
+						
+											
+										
+				<li>
+					<a href="/downloads/mesa/mesa-user-manual">Mesa: Mesa User Manual<span class="overlay-grad"></span><span class="arrow-link"></span></a>
+				</li>
+					
+					
+						
+			</ul>
+</section>
+
+
+
+<section class="slideshow">
+
+    <div class="wrap-slideshow ">
+
+                <div class="slide">
+                        <a href="/products/mesa/"><img class="float active" data-src="/go/wp-content/uploads/lynx_Mesa_Hero1a_2400x1600-1400x850.jpg" alt="" /></a>
+
+                        
+                                                    </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+	</main><!-- wrap-ajax -->
+	
+	<!-- MAILCHIMP -->
+	<div class="mailchimp">
+		<form action="//lynxstudio.us15.list-manage.com/subscribe/post?u=29ce17d05ed9e7e51aecc6e1c&amp;id=40a4427e88" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			
+		    <div id="mc_embed_signup_scroll">
+				
+				<div class="mc-field-group">
+					<label>Stay up to date. Subscribe to our newsletter:</label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</div>
+				
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				
+			    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+				    <input type="text" name="b_29ce17d05ed9e7e51aecc6e1c_40a4427e88" tabindex="-1" value="">
+				</div>
+				
+			</div>
+		    
+		</form>
+	</div>
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+	
+
+	<footer>
+		<ul class="social">
+			<li><a href="//www.facebook.com/lynxstudio/" target="_blank">Facebook</a></li>
+			<li><a href="//www.youtube.com/user/LynxStudioTech" target="_blank">Youtube</a></li>
+		</ul>
+
+		<a class="footer-logo" href="/">
+			<img src="/assets/img/logo-dark.png" alt="Lynx Studio" />
+		</a>
+
+		<ul>
+
+				<li><a href="/products/" >Products</a>
+</li>
+			
+			<li class="page_item page-item-598"><a href="/about/">About</a></li>
+	    
+				<li><a href="/blog/" >Blog</a>
+</li>
+			
+			<li><a href="/downloads/">Downloads</a></li>
+		
+			<li><a class="noajax" href="//support.lynxstudio.com">Support</a></li>
+
+		</ul>
+	</footer>
+
+	<div class="icon-load"><div><div></div></div></div>
+	<div class="which-respond"></div>
+
+
+
+		<!-- Scripts -->
+	<script type="text/javascript" src="/assets/site-min.js?rel=1745861758442"></script>
+
+
+	
+
+</body>
+</html>

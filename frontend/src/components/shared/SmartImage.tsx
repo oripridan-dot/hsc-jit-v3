@@ -31,7 +31,7 @@ export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, fallbackSrc, c
   if (!displaySrc) {
     return (
       <div
-        className={`flex items-center justify-center bg-gradient-to-br from-blue-500/20 to-purple-500/20 text-white/80 font-bold text-2xl uppercase rounded ${className || ''}`}
+        className={`flex items-center justify-center bg-gradient-to-br from-accent-primary/20 to-accent-secondary/20 text-text-primary/80 font-bold text-2xl uppercase rounded ${className || ''}`}
       >
         {alt?.[0] || '?'}
       </div>
@@ -55,12 +55,12 @@ export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, fallbackSrc, c
         className={`w-full h-full object-contain transition-opacity duration-200 ${loaded ? 'opacity-100' : 'opacity-0'}`}
       />
       {!loaded && !error && (
-        <div className="absolute inset-0 bg-slate-800/40 animate-pulse flex items-center justify-center" aria-hidden="true">
-          <div className="text-white/60 text-xs">...</div>
+        <div className="absolute inset-0 bg-bg-surface/40 animate-pulse flex items-center justify-center" aria-hidden="true">
+          <div className="text-text-muted text-xs">...</div>
         </div>
       )}
       {error && !fallbackSrc && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-500/20 to-purple-500/20 text-white/80 font-bold text-2xl uppercase rounded">
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-accent-primary/20 to-accent-secondary/20 text-text-primary/80 font-bold text-2xl uppercase rounded">
           {alt?.[0] || '?'}
         </div>
       )}

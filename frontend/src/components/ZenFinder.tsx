@@ -32,19 +32,21 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
         data-folder={node.id}
         className={`
           group flex items-center justify-between py-2 px-3 cursor-pointer transition-all duration-200 rounded-lg mx-1 mb-1
-          ${isActive ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/40 ring-2 ring-blue-400' : 'text-slate-300 hover:text-white hover:bg-slate-700/70 border border-slate-700/50'}
+          ${isActive 
+            ? 'bg-accent-primary text-black shadow-lg shadow-accent-primary/20 ring-1 ring-accent-primary/50' 
+            : 'text-text-muted hover:text-text-primary hover:bg-bg-surface/50 border border-transparent hover:border-white/5'}
         `}
         style={{ paddingLeft: `${depth * 12 + 12}px` }}
       >
         <div className="flex items-center gap-3 overflow-hidden">
           {/* Always prefer image/logo over emoji icons - 3x larger for brands */}
           {node.type === 'brand' ? (
-            <div className="w-14 h-14 rounded-lg flex-shrink-0 bg-gradient-to-br from-blue-600/40 to-slate-700/40 p-1.5 flex items-center justify-center border-2 border-slate-600/80 shadow-md">
+            <div className="w-14 h-14 rounded-lg flex-shrink-0 bg-bg-surface/50 p-1.5 flex items-center justify-center border border-white/10 shadow-sm">
               {hasImage ? (
                 <img 
                   src={node.image} 
                   alt={node.name}
-                  className="w-full h-full object-contain drop-shadow-lg"
+                  className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
@@ -55,7 +57,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
               )}
             </div>
           ) : (
-            <div className="w-10 h-10 rounded flex-shrink-0 bg-slate-700/30 p-1 flex items-center justify-center">
+            <div className={`w-10 h-10 rounded flex-shrink-0 bg-bg-surface/30 p-1 flex items-center justify-center ${hasImage ? 'bg-white' : ''}`}>
               {hasImage ? (
                 <img 
                   src={node.image} 
@@ -74,7 +76,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
               </span>
             </div>
           )}
-          <span className={`text-sm truncate ${isActive ? 'font-semibold tracking-wide' : 'font-medium'}`}>
+          <span className={`text-sm truncate ${isActive ? 'font-bold' : 'font-medium'}`}>
             {node.name}
           </span>
         </div>
@@ -83,7 +85,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
         {count > 0 && (
            <span className={`
              text-[10px] font-mono font-bold px-2 py-1 rounded-md transition-colors
-             ${isActive ? 'bg-blue-400 text-blue-950' : 'bg-slate-700/80 text-slate-200 group-hover:bg-slate-600'}
+             ${isActive ? 'bg-black/20 text-black' : 'bg-bg-card text-text-muted group-hover:bg-bg-base'}
            `}>
              {count}
            </span>
@@ -97,7 +99,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-l border-slate-800/50 ml-4"
+            className="overflow-hidden border-l border-white/5 ml-4"
           >
             {node.children!.map((child: FileNode) => (
               <TreeNode 
@@ -120,15 +122,15 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
 interface ZenFinderProps {
   onNavigate: (node: FileNode) => void;
   searchQuery: string;
+  products?: any[];
 }
 
-export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery }) => {
+export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery, products }) => {
   const { predictions, lastPrediction, actions } = useWebSocketStore();
   
-  // In a real app, this "catalog" would ideally be the FULL static catalog, 
-  // but here we merge predictions + some mock data or just rely on what we have.
-  // For the purpose of this demo, we assume 'predictions' contains our working set.
-  const rootNode = useMemo(() => buildFileSystem(predictions), [predictions]);
+  // Use passed products (from full catalog or search) or fallback to store predictions
+  const data = products || predictions;
+  const rootNode = useMemo(() => buildFileSystem(data), [data]);
 
   const [expandedIds, setExpandedIds] = useState<string[]>(['root', 'brands-root']);
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -201,20 +203,20 @@ export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery })
   }, []);
 
   return (
-    <div className="w-72 h-full flex flex-col bg-slate-950 border-r border-slate-800/50 flex-shrink-0 relative">
+    <div className="w-72 h-full flex flex-col bg-bg-base border-r border-white/5 flex-shrink-0 relative">
         {/* Finder Header */}
-        <div className="p-5 pb-3 border-b border-slate-800/80 bg-gradient-to-b from-slate-900 to-slate-950">
-            <h2 className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-2 drop-shadow">
+        <div className="p-5 pb-3 border-b border-white/5 bg-bg-surface/50">
+            <h2 className="text-xs font-bold text-accent-primary uppercase tracking-widest mb-2 drop-shadow">
                 Halilit Explorer
             </h2>
-            <div className="flex items-center justify-between text-slate-300 text-[10px] font-mono font-semibold">
+            <div className="flex items-center justify-between text-text-muted text-[10px] font-mono font-semibold">
                <span>System Active</span>
-               <span className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"/> v3.0</span>
+               <span className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-status-success animate-pulse"/> v3.4</span>
             </div>
         </div>
 
         {/* Scrollable Tree */}
-        <div className="flex-1 overflow-y-auto px-2 pb-4 scrollbar-thin scrollbar-thumb-blue-600/60 scrollbar-track-slate-900">
+        <div className="flex-1 overflow-y-auto px-2 pb-4 scrollbar-thin scrollbar-thumb-accent-primary/60 scrollbar-track-bg-surface">
             <TreeNode 
                 node={rootNode} 
                 activeId={activeId} 
@@ -225,10 +227,10 @@ export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery })
         </div>
         
         {/* Bottom "Insight" Bar */}
-        <div className="p-3 border-t-2 border-slate-700 bg-slate-900 backdrop-blur">
-             <div className="flex justify-between items-center text-[10px] text-slate-300 font-mono font-semibold">
-                 <div>IDX: <span className="text-blue-400">{predictions.length}</span></div>
-                 <div>MEM: <span className="text-emerald-400">42MB</span></div>
+        <div className="p-3 border-t border-white/5 bg-bg-surface/30 backdrop-blur">
+             <div className="flex justify-between items-center text-[10px] text-text-muted font-mono font-semibold">
+                 <div>IDX: <span className="text-accent-primary">{predictions.length}</span></div>
+                 <div>MEM: <span className="text-status-success">42MB</span></div>
              </div>
         </div>
     </div>

@@ -38,18 +38,18 @@ export const ChatView: React.FC = () => {
                )}
                
                <div className="flex-1 min-w-0">
-                  <h3 className="text-white font-bold text-lg leading-tight flex flex-wrap items-center gap-2">
+                  <h3 className="text-text-primary font-bold text-lg leading-tight flex flex-wrap items-center gap-2">
                       <span className="truncate">{lastPrediction.name}</span>
                       
                       {/* Production Country Badge with larger flag */}
                       {lastPrediction.production_country && (
-                          <span className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 whitespace-nowrap">
+                          <span className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-accent-secondary/20 text-accent-secondary border border-accent-secondary/30 whitespace-nowrap">
                               <span className="text-lg mr-1">{lastPrediction.production_country.match(/[\u{1F1E6}-\u{1F1FF}]{2}/u)?.[0] || ''}</span>
                               Made in {lastPrediction.production_country.replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, '').trim()}
                           </span>
                       )}
                   </h3>
-                  <div className="text-sm text-slate-400 truncate flex items-center gap-2">
+                  <div className="text-sm text-text-muted truncate flex items-center gap-2">
                       {lastPrediction.brand_identity?.hq && (
                           <>
                               <span className="text-base">{lastPrediction.brand_identity.hq.match(/[\u{1F1E6}-\u{1F1FF}]{2}/u)?.[0] || '🏢'}</span>
@@ -66,14 +66,14 @@ export const ChatView: React.FC = () => {
              <div className="space-y-3 pl-2">
                      {attachedImage && (
                          <div className="flex items-center space-x-3">
-                             <div className="text-xs text-slate-400 uppercase tracking-widest">Attached image</div>
+                             <div className="text-xs text-text-muted uppercase tracking-widest">Attached image</div>
                              <div className="w-20 h-20 rounded-xl overflow-hidden border border-white/10 bg-white/5">
                                  <SmartImage src={attachedImage} alt="Attachment" className="w-full h-full" />
                              </div>
                          </div>
                      )}
            {messages.length === 0 && status === 'LOCKED' && (
-               <div className="text-slate-500 italic text-sm animate-pulse">
+               <div className="text-text-dimmed italic text-sm animate-pulse">
                    Engine locked. Requesting manuals...
                </div>
            )}
@@ -82,7 +82,7 @@ export const ChatView: React.FC = () => {
                // Simple heuristic to style status messages differently from answer chunks
                const isStatus = msg.startsWith('[STATUS]');
                return isStatus ? (
-                   <div key={i} className="text-emerald-400/80 text-xs font-mono uppercase tracking-widest pl-4 border-l-2 border-emerald-500/50">
+                   <div key={i} className="text-accent-success/80 text-xs font-mono uppercase tracking-widest pl-4 border-l-2 border-accent-success/50">
                        {msg.replace('[STATUS]', '').trim()}
                    </div>
                ) : (
@@ -94,7 +94,7 @@ export const ChatView: React.FC = () => {
            
            {/* Source Verification Badge */}
            {messages.length > 0 && status === 'ANSWERING' && (
-               <div className="flex items-center space-x-2 pt-2 pl-4 text-xs text-slate-400 border-t border-white/10">
+               <div className="flex items-center space-x-2 pt-2 pl-4 text-xs text-text-muted border-t border-white/10">
                    <span>📖</span>
                    <span>Answered from Official Manual</span>
                </div>

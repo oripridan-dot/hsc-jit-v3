@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { SmartImage } from './shared/SmartImage';
+import { getBrandColors } from '../utils/brandColors';
 import type { FileNode } from '../utils/zenFileSystem';
 import type { Prediction } from '../store/useWebSocketStore';
 
@@ -18,15 +19,15 @@ const StatCard: React.FC<StatCardProps> = ({ label, value, sub, icon, delay }) =
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay }}
-    className="bg-slate-800/80 border-2 border-slate-600/80 rounded-xl p-4 flex items-center gap-4 flex-1 hover:border-blue-500/60 hover:bg-slate-800 transition-all shadow-md"
+    className="bg-bg-card/80 border border-border-subtle rounded-xl p-4 flex items-center gap-4 flex-1 hover:border-accent-primary/60 hover:bg-bg-card transition-all shadow-md"
   >
-    <div className="w-12 h-12 rounded-lg bg-blue-600/30 text-blue-300 flex items-center justify-center text-2xl shadow-md">
+    <div className="w-12 h-12 rounded-lg bg-accent-primary/30 text-accent-secondary flex items-center justify-center text-2xl shadow-md">
       {icon}
     </div>
     <div>
-       <div className="text-2xl font-bold text-white tracking-tight drop-shadow">{value}</div>
-       <div className="text-xs text-slate-300 font-semibold uppercase tracking-wider">{label}</div>
-       {sub && <div className="text-[10px] text-emerald-300 mt-0.5 font-medium">{sub}</div>}
+       <div className="text-2xl font-bold text-text-primary tracking-tight drop-shadow">{value}</div>
+       <div className="text-xs text-text-muted font-semibold uppercase tracking-wider">{label}</div>
+       {sub && <div className="text-[10px] text-status-success mt-0.5 font-medium">{sub}</div>}
     </div>
   </motion.div>
 );
@@ -41,6 +42,13 @@ interface FolderViewProps {
 export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, breadcrumbPath, onNavigate }) => {
   const isBrand = node.type === 'brand';
   const items = node.items || [];
+
+  // Brand World Theme
+  const brandColors = isBrand ? getBrandColors(node.id.replace('brand-', '')) : null;
+  const style = brandColors ? {
+      '--accent-primary': brandColors.primary,
+      '--accent-secondary': brandColors.secondary,
+  } as React.CSSProperties : undefined;
   
   // Active Analytics
   const stats = useMemo(() => {
@@ -61,12 +69,12 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
   }, [items]);
 
   return (
-    <div className="h-full flex flex-col bg-slate-950 overflow-hidden relative">
+    <div className="h-full flex flex-col bg-bg-base overflow-hidden relative" style={style}>
         {/* Dynamic Background Watermark */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-b from-blue-900/10 to-transparent rounded-full blur-[100px] pointer-events-none translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-b from-accent-primary/10 to-transparent rounded-full blur-[100px] pointer-events-none translate-x-1/2 -translate-y-1/2" />
 
         {/* 0. Breadcrumbs */}
-        <div className="px-8 pt-6 z-10 bg-slate-950/50 py-4">
+        <div className="px-8 pt-6 z-10 bg-bg-base/50 py-4">
           <nav className="flex items-center gap-2 text-xs">
             {(() => {
               // Remove generic folder nodes from breadcrumbs for clarity
@@ -80,13 +88,13 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                     <button
                       onClick={() => onNavigate(n)}
                       disabled={isLast}
-                      className={`px-3 py-1.5 rounded-lg border-2 font-bold transition-all ${isLast ? 'border-blue-500 bg-blue-600/40 text-blue-200 cursor-default shadow-lg' : 'border-slate-600 bg-slate-700/60 text-slate-200 hover:bg-slate-600/80 hover:border-blue-500/60'}`}
+                      className={`px-3 py-1.5 rounded-lg border font-bold transition-all ${isLast ? 'border-accent-primary bg-accent-primary/40 text-accent-secondary cursor-default shadow-lg' : 'border-border-subtle bg-bg-surface/60 text-text-muted hover:bg-bg-surface/80 hover:border-accent-primary/60'}`}
                       title={label}
                     >
                       <span className="mr-1.5 text-lg">{icon}</span>
                       <span className="uppercase tracking-wider text-[10px]">{label}</span>
                     </button>
-                    {!isLast && <span className="text-slate-600 font-bold">/</span>}
+                    {!isLast && <span className="text-text-muted font-bold">/</span>}
                   </div>
                 );
               });
@@ -95,9 +103,9 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
         </div>
 
                 {/* 1. Dashboard Header */}
-        <div className="p-8 pb-6 z-10 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950">
+        <div className="p-8 pb-6 z-10 bg-gradient-to-r from-bg-base via-bg-surface to-bg-base">
             <div className="flex items-center gap-6 mb-8">
-               <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-600/40 to-slate-700/40 backdrop-blur border-3 border-blue-400 shadow-2xl shadow-blue-500/40 flex items-center justify-center p-4">
+               <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent-primary/40 to-bg-surface/40 backdrop-blur border border-accent-primary/50 shadow-2xl shadow-accent-primary/20 flex items-center justify-center p-4">
                   {(node.image || node.logoUrl) ? (
                     <SmartImage 
                       src={node.image || node.logoUrl} 
@@ -110,11 +118,11 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                </div>
                <div>
                   <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xs font-bold px-3 py-1 rounded-lg bg-blue-600 text-white border border-blue-400 uppercase tracking-widest shadow-lg">
+                      <span className="text-xs font-bold px-3 py-1 rounded-lg bg-accent-primary text-text-primary border border-accent-primary/50 uppercase tracking-widest shadow-lg">
                           {isBrand ? 'Distributor Catalog' : 'Directory'}
                       </span>
                   </div>
-                  <h1 className="text-4xl font-bold text-white tracking-tight drop-shadow-lg">{node.name}</h1>
+                  <h1 className="text-4xl font-bold text-text-primary tracking-tight drop-shadow-lg">{node.name}</h1>
                </div>
             </div>
 
@@ -160,8 +168,8 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
         </div>
 
         {/* 3. The Grid (File Content) */}
-        <div className="flex-1 overflow-y-auto px-8 pb-20 scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-slate-800">
-             <h3 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-4 border-b-2 border-blue-500/50 pb-3">
+        <div className="flex-1 overflow-y-auto px-8 pb-20 scrollbar-thin scrollbar-thumb-accent-primary scrollbar-track-bg-surface">
+             <h3 className="text-sm font-bold text-accent-primary uppercase tracking-widest mb-4 border-b border-accent-primary/50 pb-3">
                  Contents
              </h3>
              
@@ -179,13 +187,14 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                              animate={{ opacity: 1, scale: 1 }}
                              transition={{ delay: idx * 0.03 }}
                              onClick={() => onProductSelect(item)}
-                             className="group relative flex flex-col bg-slate-800/60 border-2 border-slate-700/80 rounded-xl overflow-hidden hover:bg-slate-700/80 hover:border-blue-500/80 transition-all duration-300 text-left shadow-lg hover:shadow-blue-500/20"
+                             className="group relative flex flex-col bg-bg-card/60 border border-border-subtle rounded-xl overflow-hidden hover:bg-bg-card/80 hover:border-accent-primary/80 transition-all duration-300 text-left shadow-lg hover:shadow-accent-primary/20"
                          >
                              {/* Image Area */}
-                             <div className="aspect-square bg-slate-700/50 relative p-3 flex items-center justify-center group-hover:bg-slate-600/60 transition-colors border-b border-slate-600/50">
+                             <div className="aspect-square bg-bg-surface/50 relative p-3 flex items-center justify-center group-hover:bg-bg-surface/60 transition-colors border-b border-border-subtle/50">
                                  {(item.images?.main || (item as any).img) ? (
                                     <SmartImage 
-                                        src={item.images?.main || (item as any).img} 
+                                        src={item.images?.main || (item as any).img}
+                                        fallbackSrc={item.images?.thumbnail}
                                         alt={item.name}
                                         className="max-w-[90%] max-h-[90%] object-contain drop-shadow-xl group-hover:scale-125 transition-transform duration-500" 
                                     />
@@ -195,13 +204,13 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                              </div>
                              
                              {/* Meta */}
-                             <div className="p-3 bg-slate-900/50">
-                                 <h4 className="text-sm font-semibold text-white truncate group-hover:text-blue-300 transition-colors">
+                             <div className="p-3 bg-bg-surface/50">
+                                 <h4 className="text-sm font-semibold text-text-primary truncate group-hover:text-accent-secondary transition-colors">
                                      {item.name}
                                  </h4>
                                  <div className="flex justify-between items-center mt-2 gap-2">
-                                    <span className="text-[10px] text-slate-300 uppercase tracking-wide truncate pr-2 font-medium">{((item as any).category as string) || 'N/A'}</span>
-                                    <span className="text-xs font-bold text-green-400 bg-green-900/30 px-2 py-1 rounded">₪{((item as any).price || 0).toLocaleString()}</span>
+                                    <span className="text-[10px] text-text-muted uppercase tracking-wide truncate pr-2 font-medium">{((item as any).category as string) || 'N/A'}</span>
+                                    <span className="text-xs font-bold text-status-success bg-status-success/10 px-2 py-1 rounded">₪{((item as any).price || 0).toLocaleString()}</span>
                                  </div>
                              </div>
                          </motion.button>

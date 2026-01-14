@@ -21,7 +21,7 @@ class TypingMessage(BaseModel):
 
 
 class QueryMessage(BaseModel):
-    """Validation model for query messages"""
+    """Validation model for legacy query messages"""
     type: str = Field(..., pattern="^(query|lock_and_query)$")
     product_id: str = Field(..., min_length=1, max_length=200)
     question: Optional[str] = Field(None, max_length=2000)
@@ -44,6 +44,26 @@ class QueryMessage(BaseModel):
         return ''.join(char for char in v if char.isprintable() or char.isspace())
 
 
+class UnifiedQueryMessage(BaseModel):
+    """Validation model for unified queries (Explorer/PromptBar)"""
+    type: str = Field(..., pattern="^unified_query$")
+    query: str = Field(..., min_length=1, max_length=2000)
+    source: str = Field('explorer', pattern="^(explorer|promptbar)$")
+    filters: Optional[Dict[str, Any]] = None
+
+    @field_validator('query')
+    @classmethod
+    def sanitize_query(cls, v: str) -> str:
+        return ''.join(char for char in v[:2000] if char.isprintable() or char.isspace())
+
+
+class SyncStateMessage(BaseModel):
+    """Validation model for initial state sync"""
+    type: str = Field(..., pattern="^sync_state$")
+    context: Optional[Dict[str, Any]] = None
+    history: Optional[list] = None
+
+
 def validate_websocket_message(raw_data: Dict[str, Any]) -> Optional[BaseModel]:
     """
     Validate incoming WebSocket message.
@@ -63,8 +83,15 @@ def validate_websocket_message(raw_data: Dict[str, Any]) -> Optional[BaseModel]:
         return TypingMessage(**raw_data)
     elif msg_type in ["query", "lock_and_query"]:
         return QueryMessage(**raw_data)
+    elif msg_type == "unified_query":
+        return UnifiedQueryMessage(**raw_data)
+    elif msg_type == "sync_state":
+        return SyncStateMessage(**raw_data)
     else:
-        raise ValidationError(f"Unknown message type: {msg_type}")
+        # Allow unknown types to pass through without killing the socket,
+        # but log them for investigation.
+        logger.warning("Unknown WebSocket message type", extra={"msg_type": msg_type})
+        return None
 
 
 def safe_get_str(data: Dict[str, Any], key: str, default: str = "", max_length: int = 1000) -> str:

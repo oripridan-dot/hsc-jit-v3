@@ -24,16 +24,16 @@ const DockItem = ({ mouseX, icon, label, onClick, href }: DockItemProps) => {
     <motion.div
       ref={ref}
       style={{ width, height: width }}
-      className="aspect-square rounded-2xl bg-slate-800/50 border border-slate-700/50 backdrop-blur-md flex items-center justify-center shadow-lg cursor-pointer hover:bg-slate-700/50 relative group"
+      className="aspect-square rounded-2xl bg-bg-surface/50 border border-border-base backdrop-blur-md flex items-center justify-center shadow-lg cursor-pointer hover:bg-bg-surface relative group"
       onClick={onClick}
       whileHover={{ y: -10 }}
     >
-      <div className="w-6 h-6 text-white group-hover:scale-125 transition-transform duration-200">
+      <div className="w-6 h-6 text-text-primary group-hover:scale-125 transition-transform duration-200">
         {icon}
       </div>
       
       {/* Tooltip */}
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-700">
+      <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-bg-base text-text-primary text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-border-base">
         {label}
       </div>
     </motion.div>
@@ -68,7 +68,7 @@ export const Dock: React.FC<DockProps> = ({ items }) => {
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
     >
-      <div className="flex items-end gap-2 p-3 bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl">
+      <div className="flex items-end gap-2 p-3 bg-bg-base/40 backdrop-blur-xl border border-border-subtle rounded-3xl shadow-2xl">
         {items.map((item, idx) => (
           <DockItem key={idx} mouseX={mouseX} {...item} />
         ))}

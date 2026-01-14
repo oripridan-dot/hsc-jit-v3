@@ -129,14 +129,14 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
       {/* Main Image Container */}
       <div
         ref={imageRef}
-        className="relative w-full aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-700/30 group"
+        className="relative w-full aspect-square bg-bg-base rounded-xl overflow-hidden border border-border-base group"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseUp}
       >
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-bg-surface to-bg-base" />
 
         {/* Main Image */}
         <motion.div
@@ -164,7 +164,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute top-4 right-4 flex items-center gap-1 bg-green-500/20 backdrop-blur-sm border border-green-500/30 rounded-full px-3 py-1 text-xs font-semibold text-green-300"
+            className="absolute top-4 right-4 flex items-center gap-1 bg-accent-success/20 backdrop-blur-sm border border-accent-success/30 rounded-full px-3 py-1 text-xs font-semibold text-accent-success"
           >
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -175,7 +175,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
 
         {/* Zoom Indicator */}
         {zoom > 1 && (
-          <div className="absolute bottom-4 left-4 bg-slate-900/80 backdrop-blur-sm rounded-lg px-3 py-1 text-xs font-semibold text-blue-300">
+          <div className="absolute bottom-4 left-4 bg-bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1 text-xs font-semibold text-accent-secondary">
             {zoom.toFixed(1)}x
           </div>
         )}
@@ -188,7 +188,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
             exit={{ opacity: 0 }}
             className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
           >
-            <div className="text-white text-sm font-medium">
+            <div className="text-text-primary text-sm font-medium">
               Tap to zoom
             </div>
           </motion.div>
@@ -208,8 +208,8 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
                 className={`
                   flex-shrink-0 w-16 h-20 rounded-lg overflow-hidden border-2 transition-all
                   ${selectedImage === image
-                    ? 'border-blue-500 ring-2 ring-blue-500/30'
-                    : 'border-slate-700/30 hover:border-slate-600/50'
+                    ? 'border-accent-primary ring-2 ring-accent-primary/30'
+                    : 'border-border-base hover:border-border-strong'
                   }
                 `}
               >
@@ -225,7 +225,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
       )}
 
       {/* Image Info */}
-      <div className="flex items-center justify-between text-xs text-slate-400">
+      <div className="flex items-center justify-between text-xs text-text-muted">
         <span>{images.indexOf(selectedImage) + 1} / {images.length}</span>
         <div className="flex gap-2">
           <span>Tap/pinch to zoom</span>

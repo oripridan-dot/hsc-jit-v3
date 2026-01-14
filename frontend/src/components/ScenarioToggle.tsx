@@ -39,8 +39,8 @@ export const ScenarioToggle: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center space-x-2 p-3 bg-white/5 rounded-xl border border-white/10">
-      <span className="text-xs font-semibold uppercase text-slate-400 tracking-widest">Context</span>
+    <div className="flex items-center space-x-2 p-3 bg-bg-surface/50 rounded-xl border border-border-subtle">
+      <span className="text-xs font-semibold uppercase text-text-muted tracking-widest">Context</span>
       <div className="flex space-x-1">
         {SCENARIOS.map((scenario) => (
           <button
@@ -49,8 +49,8 @@ export const ScenarioToggle: React.FC = () => {
             className={`
               flex items-center space-x-1.5 px-3 py-1.5 rounded-lg transition-all duration-200
               ${scenarioMode === scenario.id
-                ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50'
-                : 'bg-white/5 text-slate-400 border border-white/10 hover:bg-white/10'
+                ? 'bg-tertiary/30 text-tertiary border border-tertiary/50'
+                : 'bg-bg-surface text-text-muted border border-border-subtle hover:bg-bg-surface/80'
               }
             `}
             title={scenario.description}

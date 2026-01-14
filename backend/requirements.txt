@@ -49,5 +49,11 @@ msgpack==1.1.0
 # ============ Development & Testing ============
 pytest==8.3.4
 pytest-asyncio==0.24.0
+
+# --- Autonomous Core (Sentinel + MCP) ---
+rich==13.7.0          # For Sentinel dashboard UI
+typer==0.9.0          # CLI commands for Agent
+croniter==2.0.1       # For scheduling Sentinel checks
+pytest-asyncio==0.24.0
 pytest-cov==6.0.0
 ruff==0.8.4

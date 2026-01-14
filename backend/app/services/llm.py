@@ -2,7 +2,7 @@ import os
 import re
 import base64
 import logging
-from typing import AsyncGenerator, Optional, Tuple
+from typing import AsyncGenerator, Optional, Tuple, Any, Dict
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -128,3 +128,77 @@ class GeminiService:
         except Exception as e:
             logger.error(f"Gemini Error: {e}")
             yield f"Error generating answer: {e}"
+
+    async def answer_with_tools(self, query: str, skills: Any, context: Optional[str] = None) -> Dict[str, Any]:
+        """
+        Attempt Gemini function calling using provided skills. Falls back to plain text answer.
+        Returns structured result: { "type": "tool_result"|"text", "data": Any }
+        """
+        # If no client, fallback
+        if not self.client:
+            return {"type": "text", "data": "AI unavailable (missing key or library)."}
+
+        tools_def = []
+        try:
+            # Expect skills to have get_tools_definition()
+            tools_def = skills.get_tools_definition()
+        except Exception:
+            tools_def = []
+
+        user_prompt = (
+            "You are a helpful assistant. If a tool is more appropriate to satisfy the user request, "
+            "call one of the available tools with correct parameters. Otherwise, respond in text."
+        )
+        if context:
+            user_prompt += f"\nContext:\n{context}\n"
+
+        # Build request; best-effort tools integration
+        try:
+            # If the SDK supports tools, attach them
+            kwargs: Dict[str, Any] = {"model": self.model_name, "contents": query}
+            if genai_types is not None and hasattr(genai_types, "Tool") and tools_def:
+                tool_objs = []
+                for t in tools_def:
+                    try:
+                        tool_objs.append(genai_types.Tool(
+                            name=t.get("name"),
+                            description=t.get("description"),
+                            parameters=t.get("parameters"),
+                        ))
+                    except Exception:
+                        pass
+                if tool_objs:
+                    kwargs["tools"] = tool_objs
+            
+            # Include system instruction if supported
+            if genai_types is not None and hasattr(genai_types, "SystemInstruction"):
+                kwargs["system_instruction"] = user_prompt
+
+            response = self.client.models.generate_content(**kwargs)
+
+            # Parse tool call if present
+            # Different SDK versions have different shapes; inspect defensively
+            # Look for function_call inside candidate parts
+            if hasattr(response, "candidates"):
+                for cand in getattr(response, "candidates", []) or []:
+                    parts = getattr(getattr(cand, "content", None), "parts", []) or []
+                    for part in parts:
+                        fc = getattr(part, "function_call", None)
+                        if fc and hasattr(fc, "name"):
+                            name = getattr(fc, "name", "")
+                            raw_args = getattr(fc, "args", {})
+                            # Ensure args is dict-like
+                            args_dict = raw_args if isinstance(raw_args, dict) else {}
+                            try:
+                                tool_result = await skills.execute(name, args_dict)
+                                return {"type": "tool_result", "data": {"tool": name, "result": tool_result}}
+                            except Exception as e:
+                                logger.error(f"Tool execution failed: {e}")
+                                return {"type": "text", "data": f"Tool execution failed: {e}"}
+
+            # If no tool call, return text
+            text = getattr(response, "text", None) or str(response)
+            return {"type": "text", "data": text}
+        except Exception as e:
+            logger.error(f"Gemini tool-call error: {e}")
+            return {"type": "text", "data": f"Error: {e}"}
