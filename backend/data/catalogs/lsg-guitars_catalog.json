@@ -1,0 +1,41 @@
+{
+  "brand_identity": {
+    "id": "lsg-guitars",
+    "name": "LSG Guitars",
+    "hq": "Unknown",
+    "website": "",
+    "logo_url": ""
+  },
+  "products": [
+    {
+      "id": "lsg-guitars-lsg-guitars-electric-guitar-electric",
+      "name": "LSG Guitars Electric Guitar",
+      "brand": "lsg-guitars",
+      "category": "Electric Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/lsg-guitars-lsg-guitars-electric-guitar-electric.webp",
+        "thumbnail": "/static/assets/products/lsg-guitars-lsg-guitars-electric-guitar-electric.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/lsg-guitars-lsg-guitars-electric-guitar-electric.pdf"
+      },
+      "relationships": [],
+      "price": 2000,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
+      },
+      "description": "LSG Guitars Electric Guitar - Quality electric guitar with versatile tone. Great for all genres and playing styles.",
+      "family": "Electric Guitar",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    }
+  ]
+}

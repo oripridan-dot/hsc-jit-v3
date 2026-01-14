@@ -1,0 +1,104 @@
+{
+  "brand_identity": {
+    "id": "antigua",
+    "name": "Antigua",
+    "hq": "Unknown",
+    "website": "https://www.antigua.com",
+    "logo_url": "/static/assets/brands/antigua.png"
+  },
+  "products": [
+    {
+      "id": "antigua-antigua-analog",
+      "name": "Antigua Analog Synthesizer",
+      "brand": "antigua",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/antigua-antigua-analog.webp",
+        "thumbnail": "/static/assets/products/antigua-antigua-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/antigua-antigua-analog.pdf"
+      },
+      "relationships": [],
+      "price": 3500,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Antigua Analog Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "antigua-antigua-digital",
+      "name": "Antigua Digital Synthesizer",
+      "brand": "antigua",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/antigua-antigua-digital.webp",
+        "thumbnail": "/static/assets/products/antigua-antigua-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/antigua-antigua-digital.pdf"
+      },
+      "relationships": [],
+      "price": 3513,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "Antigua Digital Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "antigua-antigua-stage",
+      "name": "Antigua Stage Keyboard 88",
+      "brand": "antigua",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/antigua-antigua-stage.webp",
+        "thumbnail": "/static/assets/products/antigua-antigua-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/antigua-antigua-stage.pdf"
+      },
+      "relationships": [],
+      "price": 4026,
+      "specs": {
+        "Keys": "73-88",
+        "Touch Response": "Yes",
+        "Built-in Sounds": "1000+",
+        "MIDI": "Yes"
+      },
+      "description": "Antigua Stage Keyboard 88 - Performance keyboard designed for live stage use. Lightweight yet powerful with extensive sound library.",
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "52cm × 32cm × 22cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "brand_identity": {
+    "id": "mackie",
+    "name": "Mackie",
+    "hq": "Bothell, Washington, USA 🇺🇸",
+    "founded": 1988,
+    "website": "https://mackie.com",
+    "logo_url": "/static/assets/brands/mackie.png",
+    "description": "Mackie builds rugged mixers, loudspeakers, studio monitors, and creator audio gear known for reliability and great value for live sound and content creators."
+  },
+  "products": [
+    {
+      "id": "mackie-profx12v3",
+      "name": "Mackie ProFX12v3 Mixer",
+      "brand": "mackie",
+      "category": "Analog Mixer",
+      "production_country": "China 🇨🇳",
+      "images": {
+        "main": "/static/assets/products/mackie-profx12v3.webp",
+        "thumbnail": "https://mackie.com/sites/default/files/2022-06/ProFX12v3-Top.png",
+        "logo": "https://mackie.com/themes/custom/mackie/logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://mackie.com/en/products/mixers/profxv3-series.html"
+      },
+      "relationships": [
+        {
+          "type": "accessory",
+          "target_id": "mackie-em91c",
+          "label": "Condenser mic for vocals"
+        },
+        {
+          "type": "accessory",
+          "target_id": "mackie-mc150",
+          "label": "Closed-back monitoring"
+        },
+        {
+          "type": "related",
+          "target_id": "mackie-cr5x",
+          "label": "Studio monitor pairing"
+        }
+      ],
+      "price": 2000,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
+      },
+      "description": "Mackie ProFX12v3 Mixer - Professional audio equipment with premium quality and performance.",
+      "family": "Analog Mixer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "mackie-cr5x",
+      "name": "Mackie CR5-X Studio Monitors",
+      "brand": "mackie",
+      "category": "Studio Monitors",
+      "production_country": "China 🇨🇳",
+      "images": {
+        "main": "/static/assets/products/mackie-cr5x.webp",
+        "thumbnail": "https://mackie.com/sites/default/files/2022-06/CR5-X-Front.png",
+        "logo": "https://mackie.com/themes/custom/mackie/logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://mackie.com/en/products/creators/creative-reference-multimedia-monitors/cr-x-series.html"
+      },
+      "relationships": [
+        {
+          "type": "related",
+          "target_id": "mackie-profx12v3",
+          "label": "Mixer-friendly reference"
+        },
+        {
+          "type": "accessory",
+          "target_id": "mackie-mc150",
+          "label": "Quiet monitoring option"
+        }
+      ],
+      "price": 2001,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
+      },
+      "description": "Mackie CR5-X Studio Monitors - Professional audio equipment with premium quality and performance.",
+      "family": "Studio Monitors",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "mackie-thump-go",
+      "name": "Mackie Thump GO Portable PA",
+      "brand": "mackie",
+      "category": "Portable PA Speaker",
+      "production_country": "China 🇨🇳",
+      "images": {
+        "main": "/static/assets/products/mackie-thump-go.webp",
+        "thumbnail": "https://mackie.com/sites/default/files/2022-06/Thump_GO-front.png",
+        "logo": "https://mackie.com/themes/custom/mackie/logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://mackie.com/en/products/loudspeakers/thump-series/thump-go-8-portable-battery-powered-loudspeaker.html"
+      },
+      "relationships": [
+        {
+          "type": "related",
+          "target_id": "mackie-profx12v3",
+          "label": "Run with mixer"
+        },
+        {
+          "type": "accessory",
+          "target_id": "mackie-em91c",
+          "label": "Battery-friendly mic"
+        }
+      ],
+      "price": 2002,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
+      },
+      "description": "Mackie Thump GO Portable PA - Professional audio equipment with premium quality and performance.",
+      "family": "Portable PA Speaker",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "52cm × 32cm × 22cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
+    },
+    {
+      "id": "mackie-em91c",
+      "name": "Mackie EM-91C Condenser Microphone",
+      "brand": "mackie",
+      "category": "Condenser Microphone",
+      "production_country": "China 🇨🇳",
+      "images": {
+        "main": "/static/assets/products/mackie-em91c.webp",
+        "thumbnail": "https://mackie.com/sites/default/files/2022-06/EM-91C_Hero.png",
+        "logo": "https://mackie.com/themes/custom/mackie/logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://mackie.com/en/products/creators/emerald-microphones/em-series-microphones.html"
+      },
+      "relationships": [
+        {
+          "type": "accessory",
+          "target_id": "mackie-profx12v3",
+          "label": "Plug-and-play vocal chain"
+        },
+        {
+          "type": "related",
+          "target_id": "mackie-thump-go",
+          "label": "Pair for portable PA"
+        }
+      ],
+      "price": 2003,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
+      },
+      "description": "Mackie EM-91C Condenser Microphone - Professional audio equipment with premium quality and performance.",
+      "family": "Condenser Microphone",
+      "metadata": {
+        "weight_kg": 5.5,
+        "dimensions": "53cm × 33cm × 23cm",
+        "in_stock": true,
+        "rating": 4.3
+      }
+    },
+    {
+      "id": "mackie-mc150",
+      "name": "Mackie MC-150 Headphones",
+      "brand": "mackie",
+      "category": "Headphones",
+      "production_country": "China 🇨🇳",
+      "images": {
+        "main": "/static/assets/products/mackie-mc150.webp",
+        "thumbnail": "https://mackie.com/sites/default/files/2022-06/MC-150_Hero.png",
+        "logo": "https://mackie.com/themes/custom/mackie/logo.svg"
+      },
+      "documentation": {
+        "type": "html_scrape",
+        "url": "https://mackie.com/en/products/creators/mc-series-headphones/mc-150-closed-back-headphones.html"
+      },
+      "relationships": [
+        {
+          "type": "accessory",
+          "target_id": "mackie-profx12v3",
+          "label": "Cue mix monitoring"
+        },
+        {
+          "type": "accessory",
+          "target_id": "mackie-cr5x",
+          "label": "Silent practice"
+        }
+      ],
+      "price": 2004,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
+      },
+      "description": "Mackie MC-150 Headphones - Professional audio equipment with premium quality and performance.",
+      "family": "Headphones",
+      "metadata": {
+        "weight_kg": 6.5,
+        "dimensions": "54cm × 34cm × 24cm",
+        "in_stock": true,
+        "rating": 4.4
+      }
+    }
+  ]
+}

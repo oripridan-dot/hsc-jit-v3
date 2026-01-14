@@ -1,4 +1,4 @@
-# Unified Router - Halilit Smart Catalog JIT v3
+# Halilit Smart Catalog JIT v3.4 - Unified Router
 
 A production-grade, real-time product discovery system powered by a unified query router architecture. Seamless integration of Explorer and PromptBar interfaces through single WebSocket connection.
 
@@ -20,6 +20,7 @@ A production-grade, real-time product discovery system powered by a unified quer
 ## Quick Start
 
 ### Prerequisites
+
 ```bash
 # Backend
 pip install -r backend/requirements.txt
@@ -31,12 +32,14 @@ cd frontend && pnpm install
 ### Run Locally
 
 **Terminal 1 - Backend:**
+
 ```bash
 cd backend
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 **Terminal 2 - Frontend:**
+
 ```bash
 cd frontend && pnpm dev
 ```
@@ -48,12 +51,14 @@ Access at: `http://localhost:5174`
 ### WebSocket `/ws`
 
 **Typing (Real-time predictions)**
+
 ```json
 {"type": "typing", "content": "moog"}
 → {"type": "prediction", "data": [products]}
 ```
 
 **Unified Query**
+
 ```json
 {"type": "unified_query", "query": "How to use filter?", "source": "explorer"}
 → LLM-powered response via ChatView
@@ -71,7 +76,7 @@ hsc-jit-v3/
 ├── backend/
 │   ├── app/
 │   │   ├── main.py           # FastAPI + WebSocket
-│   │   ├── services/         
+│   │   ├── services/
 │   │   │   ├── unified_router.py ← Core logic
 │   │   │   ├── catalog.py
 │   │   │   ├── sniffer.py
@@ -100,6 +105,7 @@ hsc-jit-v3/
 ## Status
 
 ✅ **Production Ready**
+
 - Unified router fully integrated
 - Real-time predictions working
 - 1,860 products across 90 brands

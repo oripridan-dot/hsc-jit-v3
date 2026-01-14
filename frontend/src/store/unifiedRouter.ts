@@ -1,5 +1,5 @@
 /**
- * HSC JIT v3.3 - Unified Query Router
+ * HSC JIT v3.4 - Unified Query Router
  * Seamlessly connects Explorer and PromptBar as access points to the same intelligent engine
  * 
  * Architecture Philosophy:
@@ -7,6 +7,8 @@
  * - Unified state management
  * - Context-aware routing
  * - Seamless handoff between UI components
+ * - Backend fallback handling
+ * - Connection state monitoring
  */
 
 import type {
@@ -15,6 +17,7 @@ import type {
   ProductMatch as PMatch,
   ConversationState as CState,
 } from './unifiedTypes';
+import { useWebSocketStore } from './useWebSocketStore';
 
 
 // ============================================================================
@@ -32,6 +35,9 @@ class UnifiedStateManager {
   }
 
   // WebSocket initialization with reconnection logic
+  private reconnectAttempts = 0;
+  private maxReconnectAttempts = 3;
+
   private initializeWebSocket() {
     const resolveWsUrl = (): string => {
       try {
@@ -39,7 +45,15 @@ class UnifiedStateManager {
         const envUrl = (import.meta as any)?.env?.VITE_WS_URL;
         if (envUrl) return envUrl;
 
-        // Use Vite's proxy in development - it handles Codespaces correctly
+        // Production deployment: use configured backend URL
+        const apiUrl = (import.meta as any)?.env?.VITE_API_URL;
+        if (apiUrl) {
+          const url = new URL(apiUrl);
+          const proto = url.protocol === 'https:' ? 'wss' : 'ws';
+          return `${proto}://${url.host}/ws`;
+        }
+
+        // Development: Use Vite's proxy
         const isSecure = window.location.protocol === 'https:';
         const proto = isSecure ? 'wss' : 'ws';
 
@@ -52,10 +66,15 @@ class UnifiedStateManager {
     };
 
     const connect = () => {
-      this.wsConnection = new WebSocket(resolveWsUrl());
+      const wsUrl = resolveWsUrl();
+      console.log('[UnifiedRouter] Attempting to connect to:', wsUrl);
+
+      this.wsConnection = new WebSocket(wsUrl);
 
       this.wsConnection.onopen = () => {
         console.log('[UnifiedRouter] ✅ WebSocket connected to:', this.wsConnection?.url);
+        this.reconnectAttempts = 0; // Reset counter on successful connection
+        useWebSocketStore.setState({ connectionState: 1 }); // OPEN
         this.syncState();
 
         // Send initial empty typing to load the catalog with all brands
@@ -71,11 +90,23 @@ class UnifiedStateManager {
 
       this.wsConnection.onerror = (error) => {
         console.error('[UnifiedRouter] WebSocket error:', error);
+        useWebSocketStore.setState({ connectionState: 3 }); // CLOSED
       };
 
       this.wsConnection.onclose = () => {
-        console.log('[UnifiedRouter] WebSocket disconnected, reconnecting...');
-        setTimeout(connect, 3000);
+        useWebSocketStore.setState({ connectionState: 3 }); // CLOSED
+        this.reconnectAttempts++;
+
+        if (this.reconnectAttempts <= this.maxReconnectAttempts) {
+          console.log(`[UnifiedRouter] WebSocket disconnected, reconnecting... (attempt ${this.reconnectAttempts}/${this.maxReconnectAttempts})`);
+          useWebSocketStore.setState({ connectionState: 0 }); // CONNECTING
+          setTimeout(connect, 3000);
+        } else {
+          console.error('[UnifiedRouter] ❌ Failed to connect after', this.maxReconnectAttempts, 'attempts');
+          console.error('📍 Backend not available. Please ensure the backend server is running.');
+          console.error('💡 For local development: Run `docker compose up` or start backend with `uvicorn app.main:app`');
+          console.error('💡 For production: Set VITE_API_URL environment variable to your backend URL');
+        }
       };
     };
 

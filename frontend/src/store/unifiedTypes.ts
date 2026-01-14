@@ -1,5 +1,6 @@
 /**
- * HSC JIT v3.3 - Unified Router Type Definitions
+ * HSC JIT v3.4 - Unified Router Type Definitions
+ * Type-safe interfaces for WebSocket communication and state management
  */
 
 export interface WebSocketMessage {

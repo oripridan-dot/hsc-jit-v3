@@ -1,0 +1,73 @@
+{
+  "brand_identity": {
+    "id": "krk",
+    "name": "KRK",
+    "hq": "Unknown",
+    "website": "https://www.krkmusic.com",
+    "logo_url": "/static/assets/brands/krk.png"
+  },
+  "products": [
+    {
+      "id": "krk-krk-studio-monitor-5-studio",
+      "name": "KRK Studio Monitor 5\"",
+      "brand": "krk",
+      "category": "Studio Monitor",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/krk-krk-studio-monitor-5-studio.webp",
+        "thumbnail": "/static/assets/products/krk-krk-studio-monitor-5-studio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/krk-krk-studio-monitor-5-studio.pdf"
+      },
+      "relationships": [],
+      "price": 1200,
+      "specs": {
+        "Frequency": "50Hz-20kHz",
+        "Power": "60-120W",
+        "Connectivity": "XLR/RCA",
+        "Frequency Response": "±2dB"
+      },
+      "description": "KRK Studio Monitor 5\" - Accurate nearfield studio monitor for critical listening and mixing. Flat frequency response for uncolored sound.",
+      "family": "Studio Monitor",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "krk-krk-studio-monitor-8-studio",
+      "name": "KRK Studio Monitor 8\"",
+      "brand": "krk",
+      "category": "Studio Monitor",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/krk-krk-studio-monitor-8-studio.webp",
+        "thumbnail": "/static/assets/products/krk-krk-studio-monitor-8-studio.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/krk-krk-studio-monitor-8-studio.pdf"
+      },
+      "relationships": [],
+      "price": 1213,
+      "specs": {
+        "Frequency": "50Hz-20kHz",
+        "Power": "60-120W",
+        "Connectivity": "XLR/RCA",
+        "Frequency Response": "±2dB"
+      },
+      "description": "KRK Studio Monitor 8\" - Accurate nearfield studio monitor for critical listening and mixing. Flat frequency response for uncolored sound.",
+      "family": "Studio Monitor",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
+    }
+  ]
+}

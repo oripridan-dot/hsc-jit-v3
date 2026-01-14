@@ -1,0 +1,219 @@
+{
+  "brand_identity": {
+    "id": "nord",
+    "name": "Nord Keyboards",
+    "hq": "Stockholm, Sweden 🇸🇪",
+    "website": "https://www.nordkeyboards.com",
+    "support_url": "https://www.nordkeyboards.com/support",
+    "logo_url": "/static/assets/brands/nord.png",
+    "description": "Handmade in Sweden, Nord keyboards are famous for their award-winning stage pianos, synthesizers, and organs. Known for their distinctive red finish and premium build quality."
+  },
+  "products": [
+    {
+      "id": "nord-stage-4",
+      "name": "Nord Stage 4",
+      "brand": "nord",
+      "category": "Stage Keyboard",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-stage-4.webp",
+        "thumbnail": "/static/assets/products/nord-stage-4.webp"
+      },
+      "price": 4999,
+      "description": "The new generation flagship stage keyboard featuring Nord's latest Piano, Organ and Synth engines. Features a redesigned panel with dedicated LED faders for each layer, enabling unprecedented hands-on control. The Stage 4 combines the powerful sounds from the Nord Sample Library, Nord Piano Library, and advanced synthesis for the ultimate performance instrument.",
+      "specifications": {
+        "Keys": "88 Fully Weighted or 73/76 Semi-Weighted",
+        "Synth Engine": "Nord Wave 2 Engine",
+        "Piano Polyphony": "120 voices",
+        "Organ Type": "Nord C2D Organ",
+        "Effects": "3 independent effect sections per layer",
+        "Memory": "2GB for samples",
+        "Weight": "18.3 kg (88 key)"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/products/nord-stage-4",
+        "version": "1.0"
+      },
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 18.3,
+        "dimensions": "131.5 × 28 × 10.5 cm",
+        "in_stock": true,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": "nord-piano-5",
+      "name": "Nord Piano 5",
+      "brand": "nord",
+      "category": "Stage Piano",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-piano-5.webp",
+        "thumbnail": "/static/assets/products/nord-piano-5.webp"
+      },
+      "price": 3499,
+      "description": "The Nord Piano 5 features dual piano engines, dual sample synths, and twice the memory of its predecessor for the ultimate piano experience. With 120-voice polyphony and the acclaimed Triple Sensor keybed, it delivers exceptional feel and response. Includes an extensive factory sound library and supports user samples from the Nord Piano Library and Nord Sample Library.",
+      "specifications": {
+        "Keys": "88 Triple Sensor keybed",
+        "Piano Engines": "2 independent engines",
+        "Sample Synths": "2 independent synths",
+        "Memory": "2GB Piano Library",
+        "Polyphony": "120 voices",
+        "Effects": "Reverb, Compressor, EQ",
+        "Weight": "18.5 kg"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/products/nord-piano-5",
+        "version": "1.2"
+      },
+      "family": "Stage Piano",
+      "metadata": {
+        "weight_kg": 18.5,
+        "dimensions": "131.1 × 29.1 × 10.6 cm",
+        "in_stock": true,
+        "rating": 4.9
+      }
+    },
+    {
+      "id": "nord-electro-6",
+      "name": "Nord Electro 6",
+      "brand": "nord",
+      "category": "Stage Keyboard",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-electro-6.webp",
+        "thumbnail": "/static/assets/products/nord-electro-6.webp"
+      },
+      "price": 2799,
+      "description": "The Nord Electro 6 series offers the classic soul of vintage electromechanical and acoustic instruments with powerful hands-on controls and a streamlined interface. Features the award-winning Nord C2D organ, seamless sound switching, and three independent sound sections. Available in three keyboard sizes: 61 semi-weighted waterfall, 73 semi-weighted, or 73 weighted (HP73).",
+      "specifications": {
+        "Keys": "61/73 Semi-Weighted or 73 HP Weighted",
+        "Organ": "Nord C2D with rotary speaker sim",
+        "Piano": "Nord Piano Library",
+        "Sample Synth": "Nord Sample Library 3.0",
+        "Effects": "Tremolo, Pan, Wah, Drive, Reverb, Delay",
+        "Polyphony": "Piano 60 voices, Sample 30 voices",
+        "Weight": "8-12 kg depending on model"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/products/nord-electro-6",
+        "version": "1.8"
+      },
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 10.0,
+        "dimensions": "Varies by model",
+        "in_stock": true,
+        "rating": 4.8
+      }
+    },
+    {
+      "id": "nord-wave-2",
+      "name": "Nord Wave 2",
+      "brand": "nord",
+      "category": "Synthesizer",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-wave-2.webp",
+        "thumbnail": "/static/assets/products/nord-wave-2.webp"
+      },
+      "price": 3199,
+      "description": "A powerful 4-part performance synthesizer combining Virtual Analog synthesis, Samples, FM, and Wavetable synthesis with an intuitive workflow and hands-on controls. The Nord Wave 2 features a new panel design with dedicated OLED displays, streamlined layout, and our acclaimed performance synth features including Polyphonic Unison and built-in effects.",
+      "specifications": {
+        "Synthesis Types": "Virtual Analog, FM, Wavetable, Sample",
+        "Oscillators": "2 per voice",
+        "Polyphony": "48 voices",
+        "Parts": "4 independent performance layers",
+        "Filters": "Multi-mode filters with self-oscillation",
+        "Effects": "Reverb, Delay, Chorus, Flanger, Phaser",
+        "Arpeggiator": "Advanced with pattern control",
+        "Keys": "61 semi-weighted waterfall"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/products/nord-wave-2",
+        "version": "2.1"
+      },
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 7.3,
+        "dimensions": "98.7 × 28 × 10.5 cm",
+        "in_stock": true,
+        "rating": 4.7
+      }
+    },
+    {
+      "id": "nord-lead-a1",
+      "name": "Nord Lead A1",
+      "brand": "nord",
+      "category": "Synthesizer",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-lead-a1.webp",
+        "thumbnail": "/static/assets/products/nord-lead-a1.webp"
+      },
+      "price": 1799,
+      "description": "Versatile and affordable analog modeling synthesizer with a unique oscillator concept and familiar Nord interface. The Lead A1 delivers rich, dynamic sounds with minimal programming. Features 4-part multitimbral capability, extensive modulation options, and the signature Nord sound quality in a compact, lightweight package perfect for any setup.",
+      "specifications": {
+        "Type": "Analog Modeling",
+        "Polyphony": "24 voices",
+        "Timbrality": "4 parts",
+        "Oscillators": "2 per voice with unique configuration",
+        "Filters": "24dB Low Pass with resonance",
+        "LFO": "2 LFOs per voice",
+        "Effects": "Delay, Reverb",
+        "Keys": "49 velocity-sensitive"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/products/nord-lead-a1",
+        "version": "1.5"
+      },
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.7,
+        "dimensions": "82.5 × 28 × 8.5 cm",
+        "in_stock": true,
+        "rating": 4.6
+      }
+    },
+    {
+      "id": "nord-drum-3p",
+      "name": "Nord Drum 3P",
+      "brand": "nord",
+      "category": "Drum Machine",
+      "production_country": "Sweden 🇸🇪",
+      "images": {
+        "main": "/static/assets/products/nord-drum-3p.webp",
+        "thumbnail": "/static/assets/products/nord-drum-3p.webp"
+      },
+      "price": 499,
+      "description": "Six-channel digital percussion synthesizer in an ultra-portable format. The Nord Drum 3P provides hands-on control with dedicated knobs for every important parameter, making sound design immediate and intuitive. Includes an extensive factory library of acoustic and electronic drum sounds, with the ability to create everything from realistic acoustic kits to otherworldly electronic percussion.",
+      "specifications": {
+        "Channels": "6 independent sound channels",
+        "Sound Engine": "Advanced percussion synthesis",
+        "Velocity Response": "Dynamics and articulation sensitive",
+        "Outputs": "6 individual outputs + stereo mix",
+        "Pads": "6 velocity-sensitive pads",
+        "Presets": "99 programs, 299 sounds",
+        "Connectivity": "MIDI In/Out, USB"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://www.nordkeyboards.com/products/nord-drum-3p",
+        "version": "1.0"
+      },
+      "family": "Drums & Percussion",
+      "metadata": {
+        "weight_kg": 0.6,
+        "dimensions": "21.8 × 17.8 × 4.3 cm",
+        "in_stock": true,
+        "rating": 4.5
+      }
+    }
+  ]
+}

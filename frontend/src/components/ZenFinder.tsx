@@ -210,7 +210,7 @@ export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery, p
                 Halilit Explorer
             </h2>
             <div className="flex items-center justify-between text-text-muted text-[10px] font-mono font-semibold">
-               <span>System Active</span>
+               <span>Unified Router</span>
                <span className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-status-success animate-pulse"/> v3.4</span>
             </div>
         </div>

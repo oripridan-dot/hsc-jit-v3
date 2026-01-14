@@ -61,9 +61,10 @@ interface WebSocketStore {
   attachedImage: string | null;
   imageEnhancements: ImageEnhancement | null;
   scenarioMode: ScenarioMode; // New: scenario context (studio/live/general)
+  connectionState: number; // WebSocket connection state (0=CONNECTING, 1=OPEN, 2=CLOSING, 3=CLOSED)
 
   actions: {
-    connect: ()  => void;
+    connect: () => void;
     sendTyping: (text: string) => void;
     lockAndQuery: (product: Prediction, query: string, imageData?: string | null, scenario?: ScenarioMode) => void;
     navigateToProduct: (productId: string, query: string, scenario?: ScenarioMode) => void;
@@ -85,15 +86,16 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
   attachedImage: null,
   imageEnhancements: null,
   scenarioMode: 'general', // New: default scenario mode
+  connectionState: 0, // CONNECTING state initially
 
   actions: {
-    connect: ()  => {
+    connect: () => {
       // Use unified state manager's WebSocket connection
       // It already handles connection logic and auto-reconnect
       console.log('🔌 Using unified state manager connection');
 
       // Subscribe to unified state manager events
-      const handlePredictions = (products: any[]) => {
+      const handlePredictions = (products: Prediction[]) => {
         if (products && products.length > 0) {
           set({
             predictions: products,
@@ -105,8 +107,8 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
         }
       };
 
-      const handleProgress = (_: any) => {
-        if (_.stage === 'complete') {
+      const handleProgress = (data: { stage?: string }) => {
+        if (data.stage === 'complete') {
           set({ status: 'IDLE' });
         } else {
           set({ status: 'ANSWERING' });
@@ -119,12 +121,12 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
         }));
       };
 
-      const handleComplete = (_: any) => {
+      const handleComplete = () => {
         set({ status: 'IDLE' });
       };
 
-      const handleError = (_: any) => {
-        console.error("WebSocket error", _);
+      const handleError = (data: Record<string, unknown>) => {
+        console.error("WebSocket error", data);
         set({ status: 'IDLE' });
       };
 

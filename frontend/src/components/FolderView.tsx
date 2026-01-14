@@ -116,13 +116,13 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                     <span className="text-4xl">{node.icon || (isBrand ? '🏢' : '📂')}</span>
                   )}
                </div>
-               <div>
+               <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                       <span className="text-xs font-bold px-3 py-1 rounded-lg bg-accent-primary text-text-primary border border-accent-primary/50 uppercase tracking-widest shadow-lg">
                           {isBrand ? 'Distributor Catalog' : 'Directory'}
                       </span>
                   </div>
-                  <h1 className="text-4xl font-bold text-text-primary tracking-tight drop-shadow-lg">{node.name}</h1>
+                  <h1 className="text-4xl font-bold text-text-primary tracking-tight drop-shadow-lg break-words">{node.name}</h1>
                </div>
             </div>
 

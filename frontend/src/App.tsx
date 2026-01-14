@@ -1,20 +1,24 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useWebSocketStore, type Prediction } from './store/useWebSocketStore';
 import { ChatView } from './components/ChatView';
 import { BrandExplorer } from './components/BrandExplorer';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
 import { ZenFinder } from './components/ZenFinder';
 import { FolderView } from './components/FolderView';
+import { BackendUnavailable } from './components/BackendUnavailable';
 import { buildFileSystem, findPathById, type FileNode } from './utils/zenFileSystem';
 import { getBrandColors } from './utils/brandColors';
 import './index.css';
 
 function App() {
-  const { actions, status, predictions, lastPrediction } = useWebSocketStore();
+  const { actions, status, predictions, lastPrediction, connectionState } = useWebSocketStore();
   const [inputText, setInputText] = useState('');
   const [currentFolder, setCurrentFolder] = useState<FileNode | null>(null);
   const [brandExplorerOpen, setBrandExplorerOpen] = useState(false);
   const [fullCatalog, setFullCatalog] = useState<Prediction[]>([]);
+  const [backendAvailable, setBackendAvailable] = useState(true);
+  const [connectionAttempted, setConnectionAttempted] = useState(false);
+  const connectionAttemptedRef = useRef(false);
 
   // Hydrate full catalog on mount
   useEffect(() => {
@@ -54,20 +58,45 @@ function App() {
      return {};
   }, [activeBrandColors]);
 
-  // Connect on mount and load ALL brands into finder
+  // Connect on mount and monitor backend availability
   useEffect(() => {
+    if (connectionAttemptedRef.current) return;
+    connectionAttemptedRef.current = true;
+    setConnectionAttempted(true);
     actions.connect(); // Let the store figure out the correct WS URL
   }, [actions]);
 
+  // Monitor connection state changes
+  useEffect(() => {
+    if (connectionAttemptedRef.current) {
+      if (connectionState === 1) {
+        setBackendAvailable(true);
+      } else if (connectionState === 3) {
+        // After first connection attempt fails, mark as unavailable
+        const timer = setTimeout(() => setBackendAvailable(false), 500);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [connectionState]);
+
   // Load initial catalog sample once when predictions are empty
   useEffect(() => {
-    if (predictions.length === 0) {
+    if (predictions.length === 0 && backendAvailable) {
       const t = setTimeout(() => {
         actions.sendTyping('');
       }, 500);
       return () => clearTimeout(t);
     }
-  }, [predictions.length, actions]);
+  }, [predictions.length, actions, backendAvailable]);
+
+  // Show backend unavailable screen if connection failed
+  if (!backendAvailable && connectionAttempted) {
+    return <BackendUnavailable onRetry={() => {
+      setBackendAvailable(true);
+      setConnectionAttempted(false);
+      actions.connect();
+    }} />;
+  }
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const txt = e.target.value;
@@ -114,7 +143,7 @@ function App() {
   const isChatMode = status === 'LOCKED' || status === 'ANSWERING';
 
   return (
-    <div className="flex h-screen w-screen bg-bg-base text-text-primary overflow-hidden font-sans selection:bg-accent-primary/30" style={appStyle}>
+    <div className="flex fixed inset-0 bg-bg-base text-text-primary overflow-hidden font-sans selection:bg-accent-primary/30" style={appStyle}>
         
         {/* Brand Ambient Background */}
         <div className={`absolute inset-0 pointer-events-none z-0 transition-opacity duration-1000 ${activeBrandColors ? 'opacity-100' : 'opacity-0'}`}>
@@ -182,7 +211,8 @@ function App() {
                         <div className="h-full flex flex-col items-center justify-center text-text-muted gap-6 p-8">
                             <div className="text-7xl animate-bounce-slow">🌌</div>
                             <div className="text-center space-y-3">
-                                <h2 className="text-2xl font-bold text-text-primary">Welcome to Halilit Explorer</h2>
+                                <h2 className="text-2xl font-bold text-text-primary">Halilit Smart Catalog v3.4</h2>
+                                <p className="text-sm text-accent-primary font-semibold">Unified Router Architecture</p>
                                 <p className="text-text-muted max-w-md">
                                     {predictions.length === 0 ? (
                                         <>Loading catalog... <span className="animate-pulse">●</span></>

@@ -1,12 +1,14 @@
 """
-HSC JIT v3.3 - Backend Unified Router Service
+HSC JIT v3.4 - Backend Unified Router Service
 Consolidates Explorer and PromptBar logic into a single intelligent routing system
 
 Key Features:
 - Unified query processing
-- Smart context management
+- Smart context management  
 - Seamless product discovery
 - Optimized caching strategy
+- Real-time streaming predictions
+- LLM-powered responses
 """
 
 from typing import Dict, List, Optional, Literal, AsyncGenerator

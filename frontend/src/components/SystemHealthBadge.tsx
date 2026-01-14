@@ -43,14 +43,14 @@ export const SystemHealthBadge = () => {
 
   // If healthy, you can choose to hide it or show a green indicator. We'll keep a subtle green.
   return (
-    <div className={`fixed bottom-2 right-2 text-[10px] px-2 py-1 rounded border font-mono ${colorClasses}`}>
-      <span className="mr-1">🛡️</span>
-      <span className="font-semibold tracking-widest">{status.toUpperCase()}</span>
+    <div className={`fixed bottom-4 right-4 text-xs px-3 py-2 rounded-lg border font-mono shadow-lg ${colorClasses} z-50`}>
+      <span className="mr-1.5">🛡️</span>
+      <span className="font-semibold tracking-wider">{status.toUpperCase()}</span>
       {health.last_audit && (
-        <span className="ml-2 opacity-75">• {new Date(health.last_audit).toLocaleTimeString()}</span>
+        <span className="ml-2 opacity-90">• {new Date(health.last_audit).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</span>
       )}
       {health.metrics && typeof health.metrics.broken === 'number' && (
-        <span className="ml-2 opacity-75">• broken: {health.metrics.broken}</span>
+        <span className="ml-2 opacity-90">• broken: {health.metrics.broken}</span>
       )}
     </div>
   );

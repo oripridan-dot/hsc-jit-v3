@@ -1,0 +1,104 @@
+{
+  "brand_identity": {
+    "id": "asm",
+    "name": "ASM",
+    "hq": "Unknown",
+    "website": "https://www.asm.com",
+    "logo_url": "/static/assets/brands/asm.png"
+  },
+  "products": [
+    {
+      "id": "asm-asm-analog",
+      "name": "ASM Analog Synthesizer",
+      "brand": "asm",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/asm-asm-analog.webp",
+        "thumbnail": "/static/assets/products/asm-asm-analog.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/asm-asm-analog.pdf"
+      },
+      "relationships": [],
+      "price": 3500,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "ASM Analog Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "asm-asm-digital",
+      "name": "ASM Digital Synthesizer",
+      "brand": "asm",
+      "category": "Synthesizer",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/asm-asm-digital.webp",
+        "thumbnail": "/static/assets/products/asm-asm-digital.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/asm-asm-digital.pdf"
+      },
+      "relationships": [],
+      "price": 3513,
+      "specs": {
+        "Oscillators": "2-3",
+        "MIDI": "Yes",
+        "Keys": "49-88",
+        "Polyphony": "16-64 voices"
+      },
+      "description": "ASM Digital Synthesizer - Professional synthesizer with rich sound design capabilities. Features analog warmth with digital flexibility.",
+      "family": "Synthesizer",
+      "metadata": {
+        "weight_kg": 3.5,
+        "dimensions": "51cm × 31cm × 21cm",
+        "in_stock": true,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "asm-asm-stage",
+      "name": "ASM Stage Keyboard 88",
+      "brand": "asm",
+      "category": "Stage Keyboard",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/asm-asm-stage.webp",
+        "thumbnail": "/static/assets/products/asm-asm-stage.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/asm-asm-stage.pdf"
+      },
+      "relationships": [],
+      "price": 4026,
+      "specs": {
+        "Keys": "73-88",
+        "Touch Response": "Yes",
+        "Built-in Sounds": "1000+",
+        "MIDI": "Yes"
+      },
+      "description": "ASM Stage Keyboard 88 - Performance keyboard designed for live stage use. Lightweight yet powerful with extensive sound library.",
+      "family": "Stage Keyboard",
+      "metadata": {
+        "weight_kg": 4.5,
+        "dimensions": "52cm × 32cm × 22cm",
+        "in_stock": true,
+        "rating": 4.2
+      }
+    }
+  ]
+}

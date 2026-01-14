@@ -1,0 +1,41 @@
+{
+  "brand_identity": {
+    "id": "solar-guitars",
+    "name": "Solar Guitars",
+    "hq": "Unknown",
+    "website": "",
+    "logo_url": "/static/assets/brands/solar-guitars.png"
+  },
+  "products": [
+    {
+      "id": "solar-guitars-solar-guitars-electric-guitar-electric",
+      "name": "Solar Guitars Electric Guitar",
+      "brand": "solar-guitars",
+      "category": "Electric Guitar",
+      "production_country": "Unknown 🌍",
+      "images": {
+        "main": "/static/assets/products/solar-guitars-solar-guitars-electric-guitar-electric.webp",
+        "thumbnail": "/static/assets/products/solar-guitars-solar-guitars-electric-guitar-electric.webp"
+      },
+      "documentation": {
+        "type": "pdf",
+        "url": "https://example.com/docs/solar-guitars-solar-guitars-electric-guitar-electric.pdf"
+      },
+      "relationships": [],
+      "price": 2000,
+      "specs": {
+        "Quality": "Premium",
+        "Professional Grade": "Yes",
+        "Warranty": "2 Years"
+      },
+      "description": "Solar Guitars Electric Guitar - Quality electric guitar with versatile tone. Great for all genres and playing styles.",
+      "family": "Electric Guitar",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    }
+  ]
+}

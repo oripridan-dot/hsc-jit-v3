@@ -1,0 +1,36 @@
+{
+  "brand_identity": {
+    "id": "pearl",
+    "name": "Pearl",
+    "hq": "Tokyo, Japan",
+    "website": "https://pearldrum.com",
+    "logo_url": "/static/assets/brands/pearl.png"
+  },
+  "products": [
+    {
+      "id": "pearl-eliminator",
+      "name": "Pearl Eliminator",
+      "category": "Drum Pedal",
+      "brand": "pearl",
+      "description": "The legendary bass drum pedal known for speed and precision",
+      "price": 599,
+      "manual_url": "https://pearldrum.com/documents/eliminator.pdf",
+      "documentation": {
+        "url": "https://pearldrum.com/documents/eliminator.pdf",
+        "type": "pdf"
+      },
+      "specs": {
+        "Drive": "Chain Drive",
+        "Cams": "Interchangeable",
+        "Bearings": "High-precision"
+      },
+      "family": "Drum Pedal",
+      "metadata": {
+        "weight_kg": 2.5,
+        "dimensions": "50cm × 30cm × 20cm",
+        "in_stock": true,
+        "rating": 4.0
+      }
+    }
+  ]
+}
