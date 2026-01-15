@@ -37,7 +37,7 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
     const fetchBrands = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/api/brands');
+        const response = await fetch(`/api/brands?v=${Date.now()}`, { cache: 'no-store' });
         const data = await response.json();
         
         if (data.brands) {

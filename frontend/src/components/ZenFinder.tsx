@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWebSocketStore } from '../store/useWebSocketStore';
 import { buildFileSystem, type FileNode } from '../utils/zenFileSystem';
+import { getOptimizedImageUrl } from '../utils/imageOptimization';
 
 interface TreeNodeProps {
   node: FileNode;
@@ -44,7 +45,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
             <div className="w-14 h-14 rounded-lg flex-shrink-0 bg-bg-surface/50 p-1.5 flex items-center justify-center border border-white/10 shadow-sm">
               {hasImage ? (
                 <img 
-                  src={node.image} 
+                  src={getOptimizedImageUrl(node.image || '', 'thumbnail')} 
                   alt={node.name}
                   className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
                   onError={(e) => {
@@ -60,7 +61,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
             <div className={`w-10 h-10 rounded flex-shrink-0 bg-bg-surface/30 p-1 flex items-center justify-center ${hasImage ? 'bg-white' : ''}`}>
               {hasImage ? (
                 <img 
-                  src={node.image} 
+                  src={getOptimizedImageUrl(node.image || '', 'thumbnail')} 
                   alt={node.name}
                   className="w-full h-full object-contain"
                   onError={(e) => {
@@ -76,7 +77,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
               </span>
             </div>
           )}
-          <span className={`text-sm truncate ${isActive ? 'font-bold' : 'font-medium'}`}>
+          <span className={`text-sm ${isActive ? 'font-bold' : 'font-medium'} whitespace-nowrap overflow-hidden text-ellipsis`}>
             {node.name}
           </span>
         </div>
@@ -181,17 +182,11 @@ export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery, p
               setActiveId(targetId);
               onNavigate(brandNode);
             }, 0);
-         } else {
-            // Fallback: ask backend to populate predictions for this brand
-            actions.sendTyping(lastPrediction.brand);
-            // Ensure brands root is visible
-            setTimeout(() => {
-              setExpandedIds(prev => Array.from(new Set([...prev, 'brands-root'])));
-              setActiveId(null);
-            }, 0);
          }
+         // Removed: Fallback that caused infinite loop
+         // The brand should already be in the tree from fullCatalog
     }
-  }, [lastPrediction, rootNode, onNavigate, actions, activeId]);
+  }, [lastPrediction, rootNode, onNavigate, activeId]);
 
   const handleSelect = useCallback((node: FileNode) => {
     setActiveId(node.id);
@@ -203,7 +198,7 @@ export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery, p
   }, []);
 
   return (
-    <div className="w-72 h-full flex flex-col bg-bg-base border-r border-white/5 flex-shrink-0 relative">
+    <div className="w-80 h-full flex flex-col bg-bg-base border-r border-white/5 flex-shrink-0 relative">
         {/* Finder Header */}
         <div className="p-5 pb-3 border-b border-white/5 bg-bg-surface/50">
             <h2 className="text-xs font-bold text-accent-primary uppercase tracking-widest mb-2 drop-shadow">

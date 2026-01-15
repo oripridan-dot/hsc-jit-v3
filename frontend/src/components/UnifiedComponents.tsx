@@ -7,6 +7,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { unifiedStateManager } from '../store/unifiedRouter';
 import type { ProductMatch, ProgressUpdate } from '../store/unifiedTypes';
+import { getOptimizedImageUrl } from '../utils/imageOptimization';
 
 // ============================================================================
 // SHARED HOOKS
@@ -179,7 +180,7 @@ export const Explorer: React.FC = () => {
       {selectedProduct && (
         <div className="response-panel">
           <div className="product-header">
-            <img src={selectedProduct.image_url} alt={selectedProduct.name} />
+            <img src={getOptimizedImageUrl(selectedProduct.image_url || '', 'medium')} alt={selectedProduct.name} />
             <div>
               <h3>{selectedProduct.name}</h3>
               <p>{selectedProduct.brand}</p>
@@ -269,7 +270,7 @@ export const PromptBar: React.FC = () => {
                 }`}
                 onClick={() => selectProduct(product.id)}
               >
-                <img src={product.image_url} alt="" />
+                <img src={getOptimizedImageUrl(product.image_url || '', 'thumbnail')} alt="" />
                 <span>{product.name}</span>
                 <span className="score">{(product.score * 100).toFixed(0)}%</span>
               </button>
@@ -324,7 +325,7 @@ const ProductCard: React.FC<{
       onClick={onSelect}
     >
       <div className="product-image">
-        <img src={product.image_url} alt={product.name} />
+        <img src={getOptimizedImageUrl(product.image_url || '', 'thumbnail')} alt={product.name} />
       </div>
       <div className="product-info">
         <h4>{product.name}</h4>

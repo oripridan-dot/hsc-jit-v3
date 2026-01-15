@@ -1,0 +1,47 @@
+{
+  "roland": {
+    "name": "Roland",
+    "slogan": "Inspire. Create. Connect.",
+    "logo_url": "https://static.roland.com/assets/images/shared/roland_logo.svg",
+    "headquarters": "Hamamatsu, Japan",
+    "production_locations": ["Japan", "Taiwan", "Malaysia", "Italy"],
+    "founded": 1972,
+    "website": "https://www.roland.com"
+  },
+  "nord": {
+    "name": "Nord",
+    "slogan": "The Legend Lives On",
+    "logo_url": "https://www.nordkeyboards.com/sites/default/files/nord-logo-2019.svg",
+    "headquarters": "Stockholm, Sweden",
+    "production_locations": ["Sweden"],
+    "founded": 1995,
+    "website": "https://www.nordkeyboards.com"
+  },
+  "yamaha": {
+    "name": "Yamaha",
+    "slogan": "Make Waves",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Yamaha_Motor_logo.svg/512px-Yamaha_Motor_logo.svg.png",
+    "headquarters": "Hamamatsu, Japan",
+    "production_locations": ["Japan", "China", "Indonesia", "India"],
+    "founded": 1887,
+    "website": "https://www.yamaha.com"
+  },
+  "korg": {
+    "name": "Korg",
+    "slogan": "Inspired by Music",
+    "logo_url": "https://www.korg.com/us/images/logo.svg",
+    "headquarters": "Tokyo, Japan",
+    "production_locations": ["Japan", "China"],
+    "founded": 1962,
+    "website": "https://www.korg.com"
+  },
+  "arturia": {
+    "name": "Arturia",
+    "slogan": "Your Sound. Your Style.",
+    "logo_url": "https://www.arturia.com/images/logo.svg",
+    "headquarters": "Grenoble, France",
+    "production_locations": ["France", "China"],
+    "founded": 1999,
+    "website": "https://www.arturia.com"
+  }
+}

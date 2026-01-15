@@ -1,6 +1,53 @@
-# React + TypeScript + Vite
+# HSC JIT v3.4 - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React + TypeScript frontend with **Studio-Grade Hardware Aesthetic** design system.
+
+## 🎨 Design System
+
+This project features a custom design system inspired by professional audio hardware:
+
+- **Color Palette:** Zinc (neutral metal) + Amber (analog warmth)
+- **Components:** Type-safe, accessible, with hardware-style interactions
+- **Audio Feedback:** Synthesized UI sounds using Web Audio API
+- **Documentation:** Comprehensive style guide and migration docs
+
+### Design System Files
+
+- [`DESIGN_SYSTEM_V2.md`](./DESIGN_SYSTEM_V2.md) - Complete migration guide
+- [`STYLE_GUIDE.md`](./STYLE_GUIDE.md) - Visual specifications & usage
+- [`DESIGN_REFINEMENT_COMPLETE.md`](./DESIGN_REFINEMENT_COMPLETE.md) - Implementation summary
+
+### Quick Start with Design System
+
+```tsx
+import {
+  BrandCard,
+  StatusLED,
+  Button,
+  audioFeedback
+} from '@/design-system';
+
+// Hardware-style card with audio feedback
+<BrandCard
+  name="Moog"
+  status="active"
+  onClick={() => {
+    audioFeedback.click(); // Automatic in BrandCard
+    handleSelect();
+  }}
+/>
+
+// Status indicator with LED glow
+<StatusLED color="amber" size="md" pulse />
+```
+
+### Demo Component
+
+See [`DesignSystemDemo.tsx`](./src/components/DesignSystemDemo.tsx) for interactive examples.
+
+---
+
+## 🚀 Tech Stack
 
 Currently, two official plugins are available:
 
@@ -17,9 +64,9 @@ If you are developing a production application, we recommend updating the config
 
 ```js
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
 
@@ -34,40 +81,40 @@ export default defineConfig([
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```
 
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
 // eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
       // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
+      reactX.configs["recommended-typescript"],
       // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```

@@ -1,34 +1,49 @@
 /**
  * Image Optimization Utilities
- * Lazy loading, responsive images, and performance optimization
+ * Uses backend image optimization service for compression and lazy loading
  */
 
-const standardSizes = [320, 640, 1024, 1280, 1536, 1920, 2560];
+type ImagePreset = 'thumbnail' | 'medium' | 'large' | 'original';
 
 /**
- * Generate srcset for responsive images
+ * Get optimized image URL from backend optimization service
  */
-export function generateImageSrcSet(baseUrl: string, sizes: number[] = standardSizes): string {
-  return sizes.map((size) => `${baseUrl}?w=${size} ${size}w`).join(', ');
+export function getOptimizedImageUrl(
+  imageUrl: string,
+  preset: ImagePreset = 'medium'
+): string {
+  if (!imageUrl) return '';
+
+  // If it's already an optimization endpoint call, return as-is
+  if (imageUrl.includes('/api/images/optimize/')) {
+    return imageUrl;
+  }
+
+  // For external URLs (http:// or https://), return as-is
+  // We can't optimize external images through our service
+  if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
+    return imageUrl;
+  }
+
+  // For local images (relative paths or just filenames)
+  // Extract filename from path
+  const filename = imageUrl.split('/').pop() || '';
+
+  // Use backend optimization endpoint
+  return `/api/images/optimize/${filename}?preset=${preset}`;
 }
 
 /**
- * Get optimal image size based on container width
+ * Preload optimized image
  */
-export function getOptimalImageSize(containerWidth: number): number {
-  const optimalSize = standardSizes.find((size) => size >= containerWidth * window.devicePixelRatio);
-  return optimalSize || standardSizes[standardSizes.length - 1];
-}
-
-/**
- * Preload image
- */
-export function preloadImage(url: string): Promise<void> {
+export function preloadImage(url: string, preset: ImagePreset = 'medium'): Promise<void> {
   return new Promise((resolve, reject) => {
     const img = new Image();
+    const optimizedUrl = getOptimizedImageUrl(url, preset);
+
     img.onload = () => resolve();
     img.onerror = () => reject(new Error(`Failed to preload image: ${url}`));
-    img.src = url;
+    img.src = optimizedUrl;
   });
 }
 
@@ -75,49 +90,31 @@ export function lazyLoadImage(
 export function optimizeImageUrl(
   url: string,
   options: {
-    width?: number;
-    height?: number;
-    quality?: number;
-    format?: 'webp' | 'jpg' | 'png';
+    preset?: ImagePreset;
   } = {}
 ): string {
-  const params = new URLSearchParams();
-
-  if (options.width) params.append('w', String(options.width));
-  if (options.height) params.append('h', String(options.height));
-  if (options.quality) params.append('q', String(options.quality));
-  if (options.format) params.append('f', options.format);
-
-  const separator = url.includes('?') ? '&' : '?';
-  return params.toString() ? `${url}${separator}${params.toString()}` : url;
+  return getOptimizedImageUrl(url, options.preset || 'medium');
 }
 
 /**
- * Check WebP support
+ * Check WebP support (always true since backend converts to WebP)
  */
 export function supportsWebP(): boolean {
-  const canvas = document.createElement('canvas');
-  canvas.width = canvas.height = 1;
-  return canvas.toDataURL('image/webp').includes('webp');
+  return true;
 }
 
 /**
- * Get best image format
+ * Get best image format (always WebP since backend handles conversion)
  */
-export function getBestImageFormat(): 'webp' | 'jpg' {
-  return supportsWebP() ? 'webp' : 'jpg';
+export function getBestImageFormat(): 'webp' {
+  return 'webp';
 }
 
 /**
  * Generate thumbnail URL
  */
-export function generateThumbnailUrl(url: string, size: number = 200): string {
-  return optimizeImageUrl(url, {
-    width: size,
-    height: size,
-    quality: 80,
-    format: getBestImageFormat(),
-  });
+export function generateThumbnailUrl(url: string): string {
+  return getOptimizedImageUrl(url, 'thumbnail');
 }
 
 /**

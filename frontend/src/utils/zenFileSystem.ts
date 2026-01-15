@@ -7,6 +7,16 @@ export interface FileNode {
   icon?: string; // Emoji fallback
   image?: string; // URL for brand logo or product thumbnail (preferred over icon)
   logoUrl?: string; // Explicit brand logo URL from brand_identity
+  brandIdentity?: {
+    id: string;
+    name: string;
+    slogan?: string;
+    logo_url?: string;
+    headquarters?: string;
+    production_locations?: string[];
+    founded?: number;
+    website?: string;
+  };
   children?: FileNode[];
   meta?: Record<string, unknown>; // Stores stats like { count: 12, totalValue: 50000 }
   items?: Prediction[]; // The actual products inside
@@ -25,7 +35,7 @@ const BRAND_LOGOS: Record<string, { emoji: string; image?: string }> = {
   'Oberheim': { emoji: '🎛️' },
   'M-Audio': { emoji: '🎚️' },
   'Medeli': { emoji: '🎹' },
-  
+
   // Drums & Percussion
   'Pearl': { emoji: '🥁' },
   'Paiste': { emoji: '🥁' },
@@ -39,7 +49,7 @@ const BRAND_LOGOS: Record<string, { emoji: string; image?: string }> = {
   'Drumdots': { emoji: '🥁' },
   'Turkish Cymbals': { emoji: '🥁' },
   'Marimba One': { emoji: '🎼' },
-  
+
   // Guitars & Basses
   'ESP': { emoji: '🎸' },
   'Washburn': { emoji: '🎸' },
@@ -60,20 +70,20 @@ const BRAND_LOGOS: Record<string, { emoji: string; image?: string }> = {
   'Jasmine': { emoji: '🎸' },
   'Ocean Schmidt': { emoji: '🎸' },
   'Vintage': { emoji: '🎸' },
-  
+
   // Guitar Effects & Pedals
   'BOSS': { emoji: '🎛️' },
   'Xotic': { emoji: '🎛️' },
   'Foxgear': { emoji: '🎛️' },
   'HeadRush': { emoji: '🎛️' },
   'Xvive': { emoji: '🎛️' },
-  
+
   // Amplifiers
   'Ampeg': { emoji: '🔊' },
   'Ashdown': { emoji: '🔊' },
   'Eden': { emoji: '🔊' },
   'Hiwatt': { emoji: '🔊' },
-  
+
   // Pro Audio & Monitors
   'RCF': { emoji: '🔊' },
   'PreSonus': { emoji: '🎚️' },
@@ -86,12 +96,12 @@ const BRAND_LOGOS: Record<string, { emoji: string; image?: string }> = {
   'Mackie': { emoji: '🔊', image: 'https://cdnjs.cloudflare.com/ajax/libs/simple-icons/7.23.0/mackie.svg' },
   'Montarbo': { emoji: '🔊' },
   'Soundking': { emoji: '🔊' },
-  
+
   // Microphones
   'Blue Microphones': { emoji: '🎤' },
   'Austrian Audio': { emoji: '🎤' },
   'MXL': { emoji: '🎤' },
-  
+
   // Mixing & Recording
   'Allen & Heath': { emoji: '🎚️' },
   'Avid': { emoji: '🎚️' },
@@ -99,7 +109,7 @@ const BRAND_LOGOS: Record<string, { emoji: string; image?: string }> = {
   'Universal Audio': { emoji: '🎚️' },
   'Warm Audio': { emoji: '🎚️' },
   'Lynx Studio Technology': { emoji: '🎚️' },
-  
+
   // Accessories
   'Halilit': { emoji: '🎵' },
   'Halilit AKD-1': { emoji: '🎵' },
@@ -114,7 +124,7 @@ const BRAND_LOGOS: Record<string, { emoji: string; image?: string }> = {
   'FZone': { emoji: '🎼' },
   'ASM': { emoji: '🎼' },
   'Maestro': { emoji: '🎼' },
-  
+
   // DJ & Production
   'V-MODA': { emoji: '🎧' },
   'Keith McMillen Instruments': { emoji: '🎮' },
@@ -160,14 +170,14 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
       // Group products within this brand by category
       const brandProducts = brands[brand];
       const brandCategories: Record<string, Prediction[]> = {};
-      
+
       // Populate brand categories
       brandProducts.forEach(p => {
         const catName = ((p as any).category as string | undefined) || 'Products';
         if (!brandCategories[catName]) brandCategories[catName] = [];
         brandCategories[catName].push(p);
       });
-      
+
       // Create category folders with product files
       const categoryChildren: FileNode[] = Object.keys(brandCategories).map(cat => ({
         id: `${brand}-${cat}`,
@@ -185,14 +195,15 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
           meta: { price: (product as any).price || 0 }
         }))
       }));
-      
+
       // Extract brand logo from first product's brand_identity or BRAND_LOGOS mapping
       const brandLogoUrl = brandProducts[0]?.brand_identity?.logo_url || '';
       const brandIdentityName = brandProducts[0]?.brand_identity?.name || brand;
+      const brandIdentityData = brandProducts[0]?.brand_identity;
       const logoMapping = BRAND_LOGOS[brandIdentityName];
       const finalLogoUrl = brandLogoUrl || logoMapping?.image || '';
       const emojiIcon = logoMapping?.emoji || '🏢';
-      
+
       return {
         id: `brand-${brand}`,
         name: brandIdentityName,
@@ -200,6 +211,7 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
         icon: emojiIcon, // Emoji fallback
         image: finalLogoUrl, // Real brand logo (preferred)
         logoUrl: finalLogoUrl,
+        brandIdentity: brandIdentityData,
         items: brandProducts,
         meta: getStats(brandProducts),
         children: categoryChildren

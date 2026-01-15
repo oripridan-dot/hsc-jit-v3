@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { getOptimizedImageUrl } from '../utils/imageOptimization';
 
 interface ImageGalleryProps {
   images: string[];
@@ -153,7 +154,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
           onClick={handleImageClick}
         >
           <img
-            src={selectedImage}
+            src={getOptimizedImageUrl(selectedImage, 'large')}
             alt="Product"
             className="max-w-full max-h-full object-contain pointer-events-none select-none"
           />
@@ -214,7 +215,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
                 `}
               >
                 <img
-                  src={image}
+                  src={getOptimizedImageUrl(image, 'thumbnail')}
                   alt={`Thumbnail ${idx + 1}`}
                   className="w-full h-full object-cover"
                 />
