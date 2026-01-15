@@ -1,0 +1,32 @@
+{
+  "brand_id": "arturia",
+  "base_url": "https://www.arturia.com/products",
+  "product_list_selector": "main",
+  "product_item_selector": "div",
+  "pagination": {
+    "type": "none",
+    "next_button_selector": null
+  },
+  "fields": {
+    "name": {
+      "selector": "h5",
+      "attribute": "text"
+    },
+    "image_url": {
+      "selector": "img",
+      "attribute": "src"
+    },
+    "detail_url": {
+      "selector": "a",
+      "attribute": "href"
+    },
+    "price": {
+      "selector": null,
+      "attribute": "text"
+    },
+    "category": {
+      "selector": null,
+      "attribute": "text"
+    }
+  }
+}

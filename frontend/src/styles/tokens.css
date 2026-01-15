@@ -8,11 +8,11 @@
      COLORS - Semantic Naming
      ============================================================================ */
   
-  /* Primary Brand */
-  --color-primary: rgb(59 130 246);              /* Blue-500 */
-  --color-primary-hover: rgb(37 99 235);         /* Blue-600 */
-  --color-primary-light: rgba(59 130 246 / 0.1); /* Blue-500 @ 10% */
-  --color-primary-dark: rgb(29 78 216);          /* Blue-700 */
+  /* Primary Brand - "Live Signal" Amber (Hardware LCD/Tube warmth) */
+  --color-primary: rgb(245 158 11);              /* Amber-500 */
+  --color-primary-hover: rgb(217 119 6);         /* Amber-600 */
+  --color-primary-light: rgba(245 158 11 / 0.1); /* Amber-500 @ 10% */
+  --color-primary-dark: rgb(180 83 9);           /* Amber-700 */
   
   /* Status Colors */
   --color-success: rgb(34 197 94);               /* Green-500 */
@@ -22,23 +22,27 @@
   --color-error: rgb(239 68 68);                 /* Red-500 */
   --color-error-light: rgba(239 68 68 / 0.1);    /* Red-500 @ 10% */
   
-  /* Background */
-  --color-bg-base: rgb(15 23 42);                /* Slate-900 */
-  --color-bg-elevated: rgb(30 41 59);            /* Slate-800 */
-  --color-bg-overlay: rgb(51 65 85);             /* Slate-700 */
-  --color-bg-surface: rgb(71 85 105);            /* Slate-600 */
+  /* Background - Zinc (Neutral Metal/Rack chassis) */
+  --color-bg-base: rgb(9 9 11);                  /* Zinc-950 */
+  --color-bg-elevated: rgb(24 24 27);            /* Zinc-900 */
+  --color-bg-overlay: rgb(39 39 42);             /* Zinc-800 */
+  --color-bg-surface: rgb(63 63 70);             /* Zinc-700 */
   
-  /* Text */
-  --color-text-primary: rgb(241 245 249);        /* Slate-100 */
-  --color-text-secondary: rgb(148 163 184);      /* Slate-400 */
-  --color-text-tertiary: rgb(71 85 105);         /* Slate-600 */
-  --color-text-muted: rgb(51 65 85);             /* Slate-700 */
+  /* Hardware Textures */
+  --glass-border: 1px solid rgba(255 255 255 / 0.08);
+  --metal-border: 2px solid rgba(39 39 42 / 0.6);
   
-  /* Borders & Dividers */
-  --color-border: rgb(51 65 85);                 /* Slate-700 */
-  --color-border-hover: rgb(71 85 105);          /* Slate-600 */
+  /* Text - Zinc palette */
+  --color-text-primary: rgb(250 250 250);        /* Zinc-50 */
+  --color-text-secondary: rgb(161 161 170);      /* Zinc-400 */
+  --color-text-tertiary: rgb(82 82 91);          /* Zinc-600 */
+  --color-text-muted: rgb(63 63 70);             /* Zinc-700 */
+  
+  /* Borders & Dividers - Zinc palette */
+  --color-border: rgb(39 39 42);                 /* Zinc-800 */
+  --color-border-hover: rgb(63 63 70);           /* Zinc-700 */
   --color-border-focus: var(--color-primary);
-  --color-divider: rgba(148 163 184 / 0.1);
+  --color-divider: rgba(161 161 170 / 0.1);
   
   /* ============================================================================
      SPACING - 4px Base Unit
@@ -92,10 +96,13 @@
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   
-  /* Glow Effects */
-  --shadow-glow-primary: 0 0 20px rgba(59 130 246 / 0.3);
-  --shadow-glow-success: 0 0 20px rgba(34 197 94 / 0.3);
-  --shadow-glow-error: 0 0 20px rgba(239 68 68 / 0.3);
+  /* Glow Effects - Hardware LED simulation */
+  --shadow-glow-primary: 0 0 20px rgba(245 158 11 / 0.4);
+  --shadow-glow-success: 0 0 20px rgba(16 185 129 / 0.5);
+  --shadow-glow-error: 0 0 20px rgba(239 68 68 / 0.5);
+  --shadow-led-amber: 0 0 8px rgba(245 158 11 / 0.6);
+  --shadow-led-green: 0 0 8px rgba(16 185 129 / 0.6);
+  --shadow-led-red: 0 0 8px rgba(239 68 68 / 0.6);
   
   /* ============================================================================
      BORDER RADIUS

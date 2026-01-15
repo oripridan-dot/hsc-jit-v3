@@ -1,13 +1,21 @@
 import React, { useMemo, useState, useEffect } from 'react';
+import { getOptimizedImageUrl } from '../../utils/imageOptimization';
 
 interface SmartImageProps {
   src?: string | null;
   alt: string;
   fallbackSrc?: string;
   className?: string;
+  preset?: 'thumbnail' | 'medium' | 'large' | 'original';
 }
 
-export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, fallbackSrc, className }) => {
+export const SmartImage: React.FC<SmartImageProps> = ({ 
+  src, 
+  alt, 
+  fallbackSrc, 
+  className,
+  preset = 'medium' 
+}) => {
   const [error, setError] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
@@ -16,11 +24,21 @@ export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, fallbackSrc, c
     const validSrc = src?.trim() ? src : null;
     const validFallback = fallbackSrc?.trim() ? fallbackSrc : null;
     
+    let imageSrc: string | null = null;
+    
     if (error && validFallback) {
-      return validFallback;
+      imageSrc = validFallback;
+    } else {
+      imageSrc = validSrc || validFallback || null;
     }
-    return validSrc || validFallback || null;
-  }, [error, fallbackSrc, src]);
+    
+    // Apply optimization if we have a valid source
+    if (imageSrc) {
+      return getOptimizedImageUrl(imageSrc, preset);
+    }
+    
+    return null;
+  }, [error, fallbackSrc, src, preset]);
 
   // Reset error and loaded state when src changes
   useEffect(() => {

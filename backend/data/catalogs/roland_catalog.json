@@ -1,331 +1,138 @@
 {
   "brand_identity": {
     "id": "roland",
-    "name": "Roland Corporation",
-    "hq": "Hamamatsu, Japan 🇯🇵",
-    "founded": 1972,
-    "website": "https://www.roland.com",
-    "logo_url": "/static/assets/brands/roland.png",
-    "description": "A leading manufacturer and distributor of electronic musical instruments, including keyboards and synthesizers, guitar products, electronic percussion, and recording equipment."
+    "name": "Roland",
+    "website": "https://www.roland.com/us/categories/pianos/",
+    "logo_url": null,
+    "hq": null
   },
   "products": [
     {
-      "id": "roland-td17kvx2",
-      "name": "Roland TD-17KVX Gen 2",
+      "id": "roland-grand-pianos",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Electronic Drums",
-      "production_country": "Malaysia 🇲🇾",
+      "name": "Grand Pianos",
       "images": {
-        "main": "/static/assets/products/roland-td17kvx2.webp",
-        "thumbnail": "https://static.roland.com/assets/images/products/gallery/td-17kvx2_top_gal.jpg",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_grand_pianos.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_grand_pianos.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "pdf",
-        "url": "https://static.roland.com/assets/media/pdf/TD-17_eng02_W.pdf",
-        "backup_url": "https://www.roland.com/global/support/by_product/td-17kvx2/owners_manuals/"
-      },
-      "relationships": [
-        {
-          "type": "accessory",
-          "target_id": "roland-rh300",
-          "label": "Recommended Headphones"
-        },
-        {
-          "type": "accessory",
-          "target_id": "roland-ne10",
-          "label": "Noise Eater (Essential for Apartments)"
-        },
-        {
-          "type": "accessory",
-          "target_id": "roland-dap3x",
-          "label": "Essential Bundle"
-        },
-        {
-          "type": "related",
-          "target_id": "roland-td17kv",
-          "label": "Same Family"
-        },
-        {
-          "type": "related",
-          "target_id": "roland-td27kv",
-          "label": "Upgraded Model"
-        },
-        {
-          "type": "spare_part",
-          "target_id": "roland-pd120",
-          "label": "Replacement Pad"
-        }
-      ],
-      "price": 2500,
-      "specs": {
-        "Pads": "8-12",
-        "Trigger Inputs": "4-8",
-        "Sounds": "500+",
-        "MIDI": "Yes"
-      },
-      "description": "Roland TD-17KVX Gen 2 - Versatile electronic drum kit perfect for practice and performance. Responsive triggers and extensive customization.",
-      "family": "Electronic Drums",
-      "metadata": {
-        "weight_kg": 2.5,
-        "dimensions": "50cm × 30cm × 20cm",
-        "in_stock": true,
-        "rating": 4.0
+        "url": "https://www.roland.com/us/categories/pianos/grand_pianos/",
+        "type": "html"
       }
     },
     {
-      "id": "roland-rh300",
-      "name": "Roland RH-300 Headphones",
+      "id": "roland-upright-pianos",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Headphones",
-      "production_country": "China 🇨🇳",
+      "name": "Upright Pianos",
       "images": {
-        "main": "/static/assets/products/roland-rh300.webp",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_upright_pianos.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_upright_pianos.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.roland.com/global/products/rh-300/"
-      },
-      "relationships": [],
-      "price": 2001,
-      "specs": {
-        "Quality": "Premium",
-        "Professional Grade": "Yes",
-        "Warranty": "2 Years"
-      },
-      "description": "Roland RH-300 Headphones - Professional audio equipment with premium quality and performance.",
-      "family": "Headphones",
-      "metadata": {
-        "weight_kg": 3.5,
-        "dimensions": "51cm × 31cm × 21cm",
-        "in_stock": true,
-        "rating": 4.1
+        "url": "https://www.roland.com/us/categories/pianos/upright_pianos/",
+        "type": "html"
       }
     },
     {
-      "id": "roland-ne10",
-      "name": "Roland NE-10 Noise Eater",
+      "id": "roland-portable-pianos",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Accessories",
-      "production_country": "China 🇨🇳",
+      "name": "Portable Pianos",
       "images": {
-        "main": "/static/assets/products/roland-ne10.webp",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_portable_pianos.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_portable_pianos.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.roland.com/global/products/ne-10/"
-      },
-      "relationships": [],
-      "price": 2002,
-      "specs": {
-        "Quality": "Premium",
-        "Professional Grade": "Yes",
-        "Warranty": "2 Years"
-      },
-      "description": "Roland NE-10 Noise Eater - Professional audio equipment with premium quality and performance.",
-      "family": "Accessories",
-      "metadata": {
-        "weight_kg": 4.5,
-        "dimensions": "52cm × 32cm × 22cm",
-        "in_stock": true,
-        "rating": 4.2
+        "url": "https://www.roland.com/us/categories/pianos/portable_pianos/",
+        "type": "html"
       }
     },
     {
-      "id": "roland-dap3x",
-      "name": "Roland DAP-3X Drum Accessory Package",
+      "id": "roland-stage-pianos",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Accessories",
-      "production_country": "China 🇨🇳",
+      "name": "Stage Pianos",
       "images": {
-        "main": "/static/assets/products/roland-dap3x.webp",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_stage_pianos.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_stage_pianos.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.roland.com/global/products/dap-3x/"
-      },
-      "relationships": [],
-      "price": 2003,
-      "specs": {
-        "Quality": "Premium",
-        "Professional Grade": "Yes",
-        "Warranty": "2 Years"
-      },
-      "description": "Roland DAP-3X Drum Accessory Package - Professional audio equipment with premium quality and performance.",
-      "family": "Accessories",
-      "metadata": {
-        "weight_kg": 5.5,
-        "dimensions": "53cm × 33cm × 23cm",
-        "in_stock": true,
-        "rating": 4.3
+        "url": "https://www.roland.com/us/categories/pianos/stage_pianos/",
+        "type": "html"
       }
     },
     {
-      "id": "roland-pd120",
-      "name": "Roland PD-120 V-Pad",
+      "id": "roland-educationpractice",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Drum Pads",
-      "production_country": "Malaysia 🇲🇾",
+      "name": "Education/Practice",
       "images": {
-        "main": "/static/assets/products/roland-pd120.webp",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_education_practice.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_education_practice.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.roland.com/global/products/pd-120/"
-      },
-      "relationships": [],
-      "price": 2004,
-      "specs": {
-        "Quality": "Premium",
-        "Professional Grade": "Yes",
-        "Warranty": "2 Years"
-      },
-      "description": "Roland PD-120 V-Pad - Professional audio equipment with premium quality and performance.",
-      "family": "Drum Pads",
-      "metadata": {
-        "weight_kg": 6.5,
-        "dimensions": "54cm × 34cm × 24cm",
-        "in_stock": true,
-        "rating": 4.4
+        "url": "https://www.roland.com/us/categories/pianos/education_practice/",
+        "type": "html"
       }
     },
     {
-      "id": "roland-td17kv",
-      "name": "Roland TD-17KV",
+      "id": "roland-apps",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Electronic Drums",
-      "production_country": "Malaysia 🇲🇾",
+      "name": "Apps",
       "images": {
-        "main": "/static/assets/products/roland-td17kv.webp",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_piano_apps.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_piano_apps.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.roland.com/global/products/td-17kv/"
-      },
-      "relationships": [
-        {
-          "type": "related",
-          "target_id": "roland-td17kvx2",
-          "label": "Upgraded Model"
-        }
-      ],
-      "price": 2565,
-      "specs": {
-        "Pads": "8-12",
-        "Trigger Inputs": "4-8",
-        "Sounds": "500+",
-        "MIDI": "Yes"
-      },
-      "description": "Roland TD-17KV - Versatile electronic drum kit perfect for practice and performance. Responsive triggers and extensive customization.",
-      "family": "Electronic Drums",
-      "metadata": {
-        "weight_kg": 7.5,
-        "dimensions": "55cm × 35cm × 25cm",
-        "in_stock": true,
-        "rating": 4.5
+        "url": "https://www.roland.com/us/categories/pianos/apps/",
+        "type": "html"
       }
     },
     {
-      "id": "roland-td27kv",
-      "name": "Roland TD-27KV",
+      "id": "roland-headphones",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Electronic Drums",
-      "production_country": "Malaysia 🇲🇾",
+      "name": "Headphones",
       "images": {
-        "main": "/static/assets/products/roland-td27kv.webp",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_sm_headphones.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_sm_headphones.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.roland.com/global/products/td-27kv/"
-      },
-      "relationships": [
-        {
-          "type": "related",
-          "target_id": "roland-td17kvx2",
-          "label": "Lower Model"
-        }
-      ],
-      "price": 2578,
-      "specs": {
-        "Pads": "8-12",
-        "Trigger Inputs": "4-8",
-        "Sounds": "500+",
-        "MIDI": "Yes"
-      },
-      "description": "Roland TD-27KV - Versatile electronic drum kit perfect for practice and performance. Responsive triggers and extensive customization.",
-      "family": "Electronic Drums",
-      "metadata": {
-        "weight_kg": 8.5,
-        "dimensions": "56cm × 36cm × 26cm",
-        "in_stock": true,
-        "rating": 4.6
+        "url": "https://www.roland.com/us/categories/accessories/headphones/",
+        "type": "html"
       }
     },
     {
-      "id": "roland-pds20",
-      "name": "Roland PDS-20 Kick Trigger Pedal",
+      "id": "roland-accessories",
+      "brand_id": "roland",
       "brand": "roland",
-      "category": "Drum Pedals",
-      "production_country": "China 🇨🇳",
+      "name": "Accessories",
       "images": {
-        "main": "/static/assets/products/roland-pds20.webp",
-        "logo": "https://static.roland.com/assets/images/logo_roland.svg"
+        "main": "https://static.roland.com/assets/images/products/categories/rct_sm_piano_accessories.jpg",
+        "thumbnail": "https://static.roland.com/assets/images/products/categories/rct_sm_piano_accessories.jpg"
       },
+      "category": null,
+      "price": null,
       "documentation": {
-        "type": "html_scrape",
-        "url": "https://www.roland.com/global/products/pds-20/"
-      },
-      "relationships": [],
-      "price": 2007,
-      "specs": {
-        "Quality": "Premium",
-        "Professional Grade": "Yes",
-        "Warranty": "2 Years"
-      },
-      "description": "Roland PDS-20 Kick Trigger Pedal - Professional audio equipment with premium quality and performance.",
-      "family": "Drum Pedals",
-      "metadata": {
-        "weight_kg": 9.5,
-        "dimensions": "57cm × 37cm × 27cm",
-        "in_stock": true,
-        "rating": 4.7
-      }
-    },
-    {
-      "id": "roland-special-edition-1",
-      "name": "Roland TD-17KVX Gen 2 Special Edition 1",
-      "brand": "roland",
-      "category": "Electronic Drums",
-      "production_country": "Malaysia 🇲🇾",
-      "images": {
-        "main": "/static/assets/products/roland-special-edition-1.webp",
-        "thumbnail": "/static/assets/products/roland-special-edition-1.webp"
-      },
-      "documentation": {
-        "type": "pdf",
-        "url": "https://example.com/roland-special-edition-1.pdf"
-      },
-      "relationships": [],
-      "price": 2669,
-      "specs": {
-        "Pads": "8-12",
-        "Trigger Inputs": "4-8",
-        "Sounds": "500+",
-        "MIDI": "Yes"
-      },
-      "description": "Roland TD-17KVX Gen 2 Special Edition 1 - Versatile electronic drum kit perfect for practice and performance. Responsive triggers and extensive customization.",
-      "family": "Electronic Drums",
-      "metadata": {
-        "weight_kg": 5.5,
-        "dimensions": "63cm × 43cm × 33cm",
-        "in_stock": true,
-        "rating": 4.3
+        "url": "https://www.roland.com/us/categories/pianos/accessories/",
+        "type": "html"
       }
     }
   ]

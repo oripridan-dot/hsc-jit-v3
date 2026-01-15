@@ -11,18 +11,18 @@ from .core.health import get_health_checker, router as health_router
 from .core.logging import setup_structured_logging, get_logger
 from .core.cache import get_cache
 from .core.redis_manager import RedisPubSubManager
-from .services.image_enhancer import get_image_enhancer
-from .services.price import PriceService
-from .services.skills import MCPSkills
 from .services.llm import GeminiService
 from .services.fetcher import ContentFetcher
 from .services.sniffer import SnifferService
 from .services.catalog import CatalogService
 from .services.unified_router import UnifiedQueryRouter
+from .services.harvester import HarvesterService
+from .services.image_optimizer import get_image_optimizer
 
 import json
 import uuid
 import os
+import io
 import time
 from contextlib import asynccontextmanager
 from dotenv import load_dotenv
@@ -214,15 +214,198 @@ async def get_all_brands():
 # ============ Price Endpoint ============
 
 
-@app.get("/api/price/{query}")
-async def get_price(query: str):
+# Price endpoint removed - stub service deleted
+
+
+# ============ Image Optimization Endpoints ============
+
+
+@app.get("/api/images/proxy")
+async def proxy_external_image(url: str):
     """
-    Get price and availability for a product.
+    Proxy external images to bypass CORS restrictions
+
+    Example: GET /api/images/proxy?url=https://example.com/image.png
     """
-    result = await PriceService.get_price(query)
-    if not result:
-        return JSONResponse(status_code=404, content={"message": "Product not found or price unavailable"})
-    return result
+    import httpx
+    from starlette.responses import StreamingResponse
+
+    if not url or not (url.startswith('http://') or url.startswith('https://')):
+        return JSONResponse(
+            status_code=400,
+            content={"error": "Invalid URL"}
+        )
+
+    try:
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            response = await client.get(url)
+
+            if response.status_code != 200:
+                return JSONResponse(
+                    status_code=response.status_code,
+                    content={
+                        "error": f"Failed to fetch image: {response.status_code}"}
+                )
+
+            # Determine content type from response or URL
+            content_type = response.headers.get('content-type', 'image/png')
+
+            return StreamingResponse(
+                io.BytesIO(response.content),
+                media_type=content_type,
+                headers={
+                    "Cache-Control": "public, max-age=86400",  # 1 day
+                    "Access-Control-Allow-Origin": "*"
+                }
+            )
+    except Exception as e:
+        logger.error(f"Failed to proxy image: {e}")
+        return JSONResponse(
+            status_code=500,
+            content={"error": f"Failed to fetch image: {str(e)}"}
+        )
+
+
+@app.get("/api/images/optimize/{image_name}")
+async def get_optimized_image(
+    image_name: str,
+    preset: str = "medium"
+):
+    """
+    Get an optimized version of an image
+
+    Presets:
+    - thumbnail: 400px wide, 80% quality
+    - medium: 800px wide, 85% quality (default)
+    - large: 1600px wide, 90% quality
+    - original: full size, 95% quality
+
+    Example: GET /api/images/optimize/nord-wave-2.webp?preset=thumbnail
+    """
+    from pathlib import Path
+    from starlette.responses import StreamingResponse
+
+    optimizer = get_image_optimizer()
+    image_path = Path(f"app/static/assets/products/{image_name}")
+
+    if not image_path.exists():
+        return JSONResponse(
+            status_code=404,
+            content={"error": "Image not found"}
+        )
+
+    if preset not in ["thumbnail", "medium", "large", "original"]:
+        preset = "medium"
+
+    compressed = await optimizer.compress_image(image_path, preset=preset)
+
+    if not compressed:
+        return JSONResponse(
+            status_code=500,
+            content={"error": "Failed to optimize image"}
+        )
+
+    return StreamingResponse(
+        io.BytesIO(compressed),
+        media_type="image/webp",
+        headers={
+            "Cache-Control": "public, max-age=31536000",  # 1 year
+            "X-Image-Preset": preset
+        }
+    )
+
+
+@app.post("/api/images/batch-optimize")
+async def batch_optimize_images(directory: str = "products", preset: str = "medium", dry_run: bool = False):
+    """
+    Batch optimize all images in a directory
+
+    Example: POST /api/images/batch-optimize?directory=products&preset=medium&dry_run=true
+    """
+    optimizer = get_image_optimizer()
+    stats = await optimizer.batch_compress_directory(directory, preset, dry_run)
+    return stats
+
+
+@app.delete("/api/images/cache")
+async def clear_image_cache(pattern: str = "*"):
+    """Clear the image cache"""
+    optimizer = get_image_optimizer()
+    count = optimizer.clear_cache(pattern)
+    return {"cleared": count}
+
+
+# ============ Harvester Endpoints (The Fuel Pump) ============
+
+
+@app.post("/api/harvest/{brand_id}")
+async def trigger_harvest(brand_id: str, max_pages: int = 5):
+    """
+    Trigger the harvester to scrape and populate catalog for a brand.
+    Requires that the brand already has a scrape_config.json (generated by diplomat.py).
+
+    Example: POST /api/harvest/roland?max_pages=3
+    """
+    harvester = HarvesterService()
+    result = await harvester.harvest_brand(brand_id, max_pages=max_pages)
+
+    if result["success"]:
+        return {
+            "success": True,
+            "message": f"Harvested {result['products_found']} products for {brand_id}",
+            "products_found": result["products_found"],
+            "catalog_path": result["catalog_path"]
+        }
+    else:
+        return JSONResponse(
+            status_code=400,
+            content={
+                "success": False,
+                "error": result.get("error", "Unknown error")
+            }
+        )
+
+
+@app.get("/api/harvest/status/{brand_id}")
+async def get_harvest_status(brand_id: str):
+    """
+    Check harvest status for a brand:
+    - Does it have a scrape config (from diplomat)?
+    - Does it have a populated catalog?
+    - How many products?
+
+    Example: GET /api/harvest/status/roland
+    """
+    harvester = HarvesterService()
+    status = harvester.get_harvest_status(brand_id)
+    return status
+
+
+@app.get("/api/harvest/status")
+async def get_all_harvest_status():
+    """
+    Get harvest status for all brands in the system.
+    Shows which brands are ready to harvest vs already harvested.
+    """
+    catalog = CatalogService()
+    harvester = HarvesterService()
+
+    brands = catalog.get_all_brands()
+    statuses = []
+
+    for brand in brands:
+        brand_id = brand["id"]
+        harvest_status = harvester.get_harvest_status(brand_id)
+        statuses.append({
+            **brand,
+            "harvest_status": harvest_status
+        })
+
+    return {
+        "total_brands": len(statuses),
+        "brands": statuses
+    }
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -427,37 +610,12 @@ async def handle_query_event(
 
         product = product_with_context.get("product", {})
 
-        # Attempt MCP tool-calling to retrieve manual or take other actions
+        # Get LLM and fetcher services
         llm: GeminiService = app.state.llm
-        skills = MCPSkills(app.state.catalog, app.state.fetcher)
-
-        # Provide minimal context so the AI can decide tool args (e.g., product_id)
-        product_context = (
-            f"Product ID: {product.get('id', '')}\n"
-            f"Product Name: {product.get('name', '')}\n"
-            f"Brand: {product.get('brand', '')}\n"
-        )
-
-        tool_result = await llm.answer_with_tools(query_text, skills, context=product_context)
-
-        # Default manual text via fetcher (fallback)
         fetcher: ContentFetcher = app.state.fetcher
-        manual_text = ""
 
-        if tool_result.get("type") == "tool_result":
-            tr = tool_result.get("data", {})
-            if tr.get("tool") == "read_manual":
-                # Use the tool's manual if provided
-                manual_text = (tr.get("result") or {}).get("manual_text", "")
-            elif tr.get("tool") == "search_products":
-                # If the AI decided to search instead, stream predictions back
-                results = tr.get("result") or []
-                await ws.send_json({"type": "prediction", "data": results})
-                # Continue answering if we also have a locked product
-
-        if not manual_text:
-            # Fallback to direct fetch
-            manual_text = await fetcher.fetch(product)
+        # Direct manual fetch (MCP Skills stub removed)
+        manual_text = await fetcher.fetch(product)
 
         if not manual_text:
             await ws.send_json(
@@ -532,47 +690,7 @@ async def handle_query_event(
             }
         )
 
-        # Generate image enhancements with validation
-        try:
-            enhancer = get_image_enhancer()
-            enhancements = await enhancer.generate_enhancement_data(
-                product, manual_text
-            )
-
-            # Validate enhancement data structure before sending
-            if enhancements.get("has_enhancements"):
-                # Ensure all required fields are present and valid
-                if (
-                    isinstance(enhancements.get("annotations"), list) and
-                    isinstance(enhancements.get("display_content"), dict) and
-                    enhancements.get("product_id") and
-                    enhancements.get("product_name")
-                ):
-                    await ws.send_json(
-                        {
-                            "type": "image_enhancements",
-                            "data": enhancements
-                        }
-                    )
-                    logger.info(
-                        "Image enhancements sent",
-                        product_id=product_id,
-                        annotations=len(enhancements.get("annotations", [])),
-                        has_text=enhancements.get("has_text_content", False),
-                    )
-                else:
-                    logger.warning(
-                        "Invalid enhancement data structure",
-                        product_id=product_id,
-                        keys=list(enhancements.keys())
-                    )
-        except Exception as e:
-            logger.warning(
-                "Failed to generate image enhancements",
-                product_id=product_id,
-                error=str(e)
-            )
-
+        # Stream response
         await ws.send_json({"type": "final_answer", "content": ""})
 
     except Exception as e:

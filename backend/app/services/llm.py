@@ -16,6 +16,7 @@ except ImportError:
     genai = None
     genai_types = None
 
+
 class GeminiService:
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY")
@@ -34,7 +35,8 @@ class GeminiService:
         try:
             mime_type = "image/png"
             # data URL handling
-            data_url_match = re.match(r"data:(image/[a-zA-Z0-9.+-]+);base64,(.*)", image_data)
+            data_url_match = re.match(
+                r"data:(image/[a-zA-Z0-9.+-]+);base64,(.*)", image_data)
             if data_url_match:
                 mime_type = data_url_match.group(1)
                 b64_content = data_url_match.group(2)
@@ -101,7 +103,6 @@ class GeminiService:
                     response = self.client.models.generate_content(
                         model=self.model_name,
                         contents=prompt,
-                        stream=True,
                     )
                 else:
                     image_bytes, mime_type = decoded
@@ -112,19 +113,18 @@ class GeminiService:
                     response = self.client.models.generate_content(
                         model=self.model_name,
                         contents=parts,
-                        stream=True,
                     )
             else:
                 response = self.client.models.generate_content(
                     model=self.model_name,
                     contents=prompt,
-                    stream=True,
                 )
 
-            for chunk in response:
-                chunk_text = getattr(chunk, "text", None)
-                if chunk_text:
-                    yield chunk_text
+            # Handle non-streaming response
+            if hasattr(response, 'text'):
+                yield response.text
+            else:
+                yield str(response)
         except Exception as e:
             logger.error(f"Gemini Error: {e}")
             yield f"Error generating answer: {e}"
@@ -155,7 +155,8 @@ class GeminiService:
         # Build request; best-effort tools integration
         try:
             # If the SDK supports tools, attach them
-            kwargs: Dict[str, Any] = {"model": self.model_name, "contents": query}
+            kwargs: Dict[str, Any] = {
+                "model": self.model_name, "contents": query}
             if genai_types is not None and hasattr(genai_types, "Tool") and tools_def:
                 tool_objs = []
                 for t in tools_def:
@@ -169,7 +170,7 @@ class GeminiService:
                         pass
                 if tool_objs:
                     kwargs["tools"] = tool_objs
-            
+
             # Include system instruction if supported
             if genai_types is not None and hasattr(genai_types, "SystemInstruction"):
                 kwargs["system_instruction"] = user_prompt
@@ -181,14 +182,16 @@ class GeminiService:
             # Look for function_call inside candidate parts
             if hasattr(response, "candidates"):
                 for cand in getattr(response, "candidates", []) or []:
-                    parts = getattr(getattr(cand, "content", None), "parts", []) or []
+                    parts = getattr(
+                        getattr(cand, "content", None), "parts", []) or []
                     for part in parts:
                         fc = getattr(part, "function_call", None)
                         if fc and hasattr(fc, "name"):
                             name = getattr(fc, "name", "")
                             raw_args = getattr(fc, "args", {})
                             # Ensure args is dict-like
-                            args_dict = raw_args if isinstance(raw_args, dict) else {}
+                            args_dict = raw_args if isinstance(
+                                raw_args, dict) else {}
                             try:
                                 tool_result = await skills.execute(name, args_dict)
                                 return {"type": "tool_result", "data": {"tool": name, "result": tool_result}}

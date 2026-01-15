@@ -22,7 +22,7 @@ function App() {
 
   // Hydrate full catalog on mount
   useEffect(() => {
-      fetch('/api/products')
+      fetch(`/api/products?v=${Date.now()}`, { cache: 'no-store' })
         .then(res => res.json())
         .then(data => {
             if (data.products) setFullCatalog(data.products);
@@ -30,8 +30,9 @@ function App() {
         .catch(console.error);
   }, []);
 
-  // Build a consistent tree: use full catalog when idle, predictions when searching
-  const displayProducts = (inputText.length === 0 && status === 'IDLE') ? fullCatalog : predictions;
+  // Build a consistent tree: use full catalog for browsing, predictions only during active search
+  // Default to predictions if fullCatalog hasn't loaded yet
+  const displayProducts = inputText.length > 0 ? predictions : (fullCatalog.length > 0 ? fullCatalog : predictions);
   const rootNode = useMemo(() => buildFileSystem(displayProducts), [displayProducts]);
 
   // --- Brand Styling Logic ---
@@ -78,16 +79,6 @@ function App() {
       }
     }
   }, [connectionState]);
-
-  // Load initial catalog sample once when predictions are empty
-  useEffect(() => {
-    if (predictions.length === 0 && backendAvailable) {
-      const t = setTimeout(() => {
-        actions.sendTyping('');
-      }, 500);
-      return () => clearTimeout(t);
-    }
-  }, [predictions.length, actions, backendAvailable]);
 
   // Show backend unavailable screen if connection failed
   if (!backendAvailable && connectionAttempted) {

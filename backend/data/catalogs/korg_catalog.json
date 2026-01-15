@@ -1,0 +1,23 @@
+{
+  "brand_identity": {
+    "id": "korg",
+    "name": "Korg",
+    "website": "https://www.korg.com/us/products/synthesizers/",
+    "logo_url": null,
+    "hq": null
+  },
+  "products": [
+    {
+      "id": "korg-synthesizers-keyboards",
+      "brand_id": "korg",
+      "brand": "korg",
+      "name": "Synthesizers / Keyboards",
+      "images": {
+        "main": "https://cdn.korg.com/us/products/upload/8c8a4cd311b745e0e0ab0c7e4cc03d7a_pc.jpg",
+        "thumbnail": "https://cdn.korg.com/us/products/upload/8c8a4cd311b745e0e0ab0c7e4cc03d7a_pc.jpg"
+      },
+      "category": "Synthesizers / Keyboards",
+      "price": null
+    }
+  ]
+}
