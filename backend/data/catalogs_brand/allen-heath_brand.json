@@ -1,0 +1,60 @@
+{
+  "brand_id": "allen-heath",
+  "brand": "Allen & Heath",
+  "scraping_strategy": "manual_list",
+  "products": [
+    {
+      "name": "SQ-5",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/sq-5/"
+    },
+    {
+      "name": "SQ-6",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/sq-6/"
+    },
+    {
+      "name": "SQ-7",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/sq-7/"
+    },
+    {
+      "name": "Avantis",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/avantis/"
+    },
+    {
+      "name": "dLive S Class",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/dlive/"
+    },
+    {
+      "name": "QU-16",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/qu-16/"
+    },
+    {
+      "name": "QU-24",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/qu-24/"
+    },
+    {
+      "name": "QU-32",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/qu-32/"
+    },
+    {
+      "name": "ZED-10",
+      "category": "Analog Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/zed-10/"
+    },
+    {
+      "name": "ZED-12FX",
+      "category": "Analog Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/zed-12fx/"
+    }
+  ],
+  "product_count": 10,
+  "scraped_count": 10,
+  "timestamp": "2026-01-15T20:27:38.559895Z"
+}

@@ -1,0 +1,73 @@
+{
+  "brand_id": "eve-audio",
+  "total_products": 10,
+  "products": [
+    {
+      "name": "Product Selector",
+      "brand_id": "eve-audio",
+      "normalized": "product selector",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Product Advisor",
+      "brand_id": "eve-audio",
+      "normalized": "product advisor",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Adapter Plate For K M Mounts",
+      "brand_id": "eve-audio",
+      "normalized": "adapter plate for k m mounts",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Mic Thread Wall Mount",
+      "brand_id": "eve-audio",
+      "normalized": "mic thread wall mount",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Rear Panel Wall Mount",
+      "brand_id": "eve-audio",
+      "normalized": "rear panel wall mount",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Sc203",
+      "brand_id": "eve-audio",
+      "normalized": "sc203",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Sc203 Master Link Extension Cable",
+      "brand_id": "eve-audio",
+      "normalized": "sc203 master link extension cable",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Sc203 Mic Thread Mounting Bracket",
+      "brand_id": "eve-audio",
+      "normalized": "sc203 mic thread mounting bracket",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Sc203 Transport Soft Case",
+      "brand_id": "eve-audio",
+      "normalized": "sc203 transport soft case",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Sc204",
+      "brand_id": "eve-audio",
+      "normalized": "sc204",
+      "source": "PRIMARY"
+    }
+  ],
+  "statistics": {
+    "primary": 10,
+    "secondary": 0,
+    "halilit_only": 0
+  },
+  "timestamp": "2026-01-15T20:27:38.622783",
+  "status": "success"
+}

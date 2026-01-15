@@ -1,13 +1,7 @@
 {
   "brand_id": "krk-systems",
-  "total_products": 18,
+  "total_products": 17,
   "products": [
-    {
-      "name": "Enjoy a 20% discount on all our products!",
-      "price": "",
-      "brand_id": "krk-systems",
-      "source": "SECONDARY"
-    },
     {
       "halilit_id": "7194696",
       "item_code": "21-RP8G5",
@@ -23,7 +17,7 @@
       "currency": "ILS",
       "eilat_price_ils": 1116.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -41,7 +35,7 @@
       "currency": "ILS",
       "eilat_price_ils": 940.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -59,7 +53,7 @@
       "currency": "ILS",
       "eilat_price_ils": 699.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -77,7 +71,7 @@
       "currency": "ILS",
       "eilat_price_ils": 699.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -94,7 +88,7 @@
       "currency": "ILS",
       "eilat_price_ils": 592.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -111,7 +105,7 @@
       "currency": "ILS",
       "eilat_price_ils": 592.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -128,7 +122,7 @@
       "currency": "ILS",
       "eilat_price_ils": 592.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -145,7 +139,7 @@
       "currency": "ILS",
       "eilat_price_ils": 649.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -162,7 +156,7 @@
       "currency": "ILS",
       "eilat_price_ils": 805.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -179,7 +173,7 @@
       "currency": "ILS",
       "eilat_price_ils": 592.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -197,7 +191,7 @@
       "currency": "ILS",
       "eilat_price_ils": 2701.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -215,7 +209,7 @@
       "currency": "ILS",
       "eilat_price_ils": 318.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -233,7 +227,7 @@
       "currency": "ILS",
       "eilat_price_ils": 479.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -251,7 +245,7 @@
       "currency": "ILS",
       "eilat_price_ils": 1294.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -269,7 +263,7 @@
       "currency": "ILS",
       "eilat_price_ils": 1055.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -287,7 +281,7 @@
       "currency": "ILS",
       "eilat_price_ils": 1545.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -305,16 +299,15 @@
       "currency": "ILS",
       "eilat_price_ils": 1189.0,
       "brand": "krk-systems",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     }
   ],
   "statistics": {
-    "primary": 0,
-    "secondary": 1,
-    "halilit_only": 17,
-    "total": 18
+    "primary": 17,
+    "secondary": 0,
+    "halilit_only": 0
   },
-  "timestamp": "2026-01-15T15:00:00",
+  "timestamp": "2026-01-15T20:27:38.627803",
   "status": "success"
 }

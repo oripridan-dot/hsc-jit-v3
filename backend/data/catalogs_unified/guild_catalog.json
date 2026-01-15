@@ -1,0 +1,217 @@
+{
+  "brand_id": "guild",
+  "total_products": 34,
+  "products": [
+    {
+      "name": "Guitars",
+      "brand_id": "guild",
+      "normalized": "guitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "GuitarsAcoustic GuitarsElectric GuitarsBassesExclusives",
+      "brand_id": "guild",
+      "normalized": "guitarsacoustic guitarselectric guitarsbassesexclusives",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Acoustic Guitars",
+      "brand_id": "guild",
+      "normalized": "acoustic guitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Electric Guitars",
+      "brand_id": "guild",
+      "normalized": "electric guitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Basses",
+      "brand_id": "guild",
+      "normalized": "basses",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Exclusives",
+      "brand_id": "guild",
+      "normalized": "exclusives",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SupportF.A.Q.ManualsWarranty PolicyProduct RegistrationProduct CareHistory of My GuildModel ArchiveP",
+      "brand_id": "guild",
+      "normalized": "supportfaqmanualswarranty policyproduct registrationproduct carehistory of my guildmodel archivep",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "F.A.Q.",
+      "brand_id": "guild",
+      "normalized": "faq",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Manuals",
+      "brand_id": "guild",
+      "normalized": "manuals",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Warranty Policy",
+      "brand_id": "guild",
+      "normalized": "warranty policy",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Product Registration",
+      "brand_id": "guild",
+      "normalized": "product registration",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Product Care",
+      "brand_id": "guild",
+      "normalized": "product care",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "History of My Guild",
+      "brand_id": "guild",
+      "normalized": "history of my guild",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Model Archive",
+      "brand_id": "guild",
+      "normalized": "model archive",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Privacy Policy",
+      "brand_id": "guild",
+      "normalized": "privacy policy",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Find a Dealer",
+      "brand_id": "guild",
+      "normalized": "find a dealer",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Guild Shop",
+      "brand_id": "guild",
+      "normalized": "guild shop",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "LanguageEnglish\u65e5\u672c\u8a9e",
+      "brand_id": "guild",
+      "normalized": "languageenglish\u65e5\u672c\u8a9e",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "English",
+      "brand_id": "guild",
+      "normalized": "english",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Sign In",
+      "brand_id": "guild",
+      "normalized": "sign in",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "NEW POLARA DELUXE & LIMITED NIGHT EDITION",
+      "brand_id": "guild",
+      "normalized": "new polara deluxe  limited night edition",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "NEW GUILD USA",
+      "brand_id": "guild",
+      "normalized": "new guild usa",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "GUILD USA & DR STRINGS",
+      "brand_id": "guild",
+      "normalized": "guild usa  dr strings",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "BY SERIES",
+      "brand_id": "guild",
+      "normalized": "by series",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "BY SHAPE",
+      "brand_id": "guild",
+      "normalized": "by shape",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "BY STYLE",
+      "brand_id": "guild",
+      "normalized": "by style",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "BASS GUITARS",
+      "brand_id": "guild",
+      "normalized": "bass guitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ACOUSTICGUITARS",
+      "brand_id": "guild",
+      "normalized": "acousticguitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ELECTRICGUITARS",
+      "brand_id": "guild",
+      "normalized": "electricguitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "BASSGUITARS",
+      "brand_id": "guild",
+      "normalized": "bassguitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "FEATURED ARTIST: THE LION HEART",
+      "brand_id": "guild",
+      "normalized": "featured artist the lion heart",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SUPPORT",
+      "brand_id": "guild",
+      "normalized": "support",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "COMPANY",
+      "brand_id": "guild",
+      "normalized": "company",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "GET UPDATES ON OUR LATEST PRODUCTS AND SALES",
+      "brand_id": "guild",
+      "normalized": "get updates on our latest products and sales",
+      "source": "PRIMARY"
+    }
+  ],
+  "statistics": {
+    "primary": 34,
+    "secondary": 0,
+    "halilit_only": 0
+  },
+  "timestamp": "2026-01-15T20:27:38.624599",
+  "status": "success"
+}

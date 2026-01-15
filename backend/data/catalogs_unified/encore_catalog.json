@@ -1,0 +1,55 @@
+{
+  "brand_id": "encore",
+  "total_products": 6,
+  "products": [
+    {
+      "name": "E99 Electric Guitar Pack",
+      "category": "Electric Guitar Packs",
+      "url": "https://www.encoremusicalinstruments.com/products/e99",
+      "source": "PRIMARY",
+      "brand_id": "encore"
+    },
+    {
+      "name": "E375 Electric Guitar",
+      "category": "Electric Guitars",
+      "url": "https://www.encoremusicalinstruments.com/products/e375",
+      "source": "PRIMARY",
+      "brand_id": "encore"
+    },
+    {
+      "name": "E6 Acoustic Guitar",
+      "category": "Acoustic Guitars",
+      "url": "https://www.encoremusicalinstruments.com/products/e6",
+      "source": "PRIMARY",
+      "brand_id": "encore"
+    },
+    {
+      "name": "E4 4-String Bass",
+      "category": "Bass Guitars",
+      "url": "https://www.encoremusicalinstruments.com/products/e4-bass",
+      "source": "PRIMARY",
+      "brand_id": "encore"
+    },
+    {
+      "name": "EBP-4 Bass Guitar Pack",
+      "category": "Bass Packs",
+      "url": "https://www.encoremusicalinstruments.com/products/ebp-4",
+      "source": "PRIMARY",
+      "brand_id": "encore"
+    },
+    {
+      "name": "U2 Ukulele",
+      "category": "Ukuleles",
+      "url": "https://www.encoremusicalinstruments.com/products/u2-ukulele",
+      "source": "PRIMARY",
+      "brand_id": "encore"
+    }
+  ],
+  "statistics": {
+    "primary": 6,
+    "secondary": 0,
+    "halilit_only": 0
+  },
+  "timestamp": "2026-01-15T20:27:38.621642",
+  "status": "success"
+}

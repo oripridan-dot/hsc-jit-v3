@@ -13,7 +13,7 @@
       "price": "7177",
       "currency": "ILS",
       "brand": "oberheim",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -27,7 +27,7 @@
       "price": "5818",
       "currency": "ILS",
       "brand": "oberheim",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -41,7 +41,7 @@
       "price": "16752",
       "currency": "ILS",
       "brand": "oberheim",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -55,7 +55,7 @@
       "price": "11487",
       "currency": "ILS",
       "brand": "oberheim",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -69,7 +69,7 @@
       "price": "23943",
       "currency": "ILS",
       "brand": "oberheim",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -83,16 +83,15 @@
       "price": "16752",
       "currency": "ILS",
       "brand": "oberheim",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     }
   ],
   "statistics": {
-    "primary": 0,
+    "primary": 6,
     "secondary": 0,
-    "halilit_only": 6,
-    "total": 6
+    "halilit_only": 0
   },
-  "timestamp": "2026-01-15T15:00:00",
+  "timestamp": "2026-01-15T20:27:38.646405",
   "status": "success"
 }

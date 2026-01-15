@@ -1,0 +1,787 @@
+{
+  "brand_id": "ashdown-engineering",
+  "total_products": 129,
+  "products": [
+    {
+      "name": "FacebookX (Twitter)InstagramYouTubeTikTokLinkedIn",
+      "brand_id": "ashdown-engineering",
+      "normalized": "facebookx twitterinstagramyoutubetiktoklinkedin",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "EnglishEnglishFran\u00e7aisDeutsch",
+      "brand_id": "ashdown-engineering",
+      "normalized": "englishenglishfran\u00e7aisdeutsch",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "English",
+      "brand_id": "ashdown-engineering",
+      "normalized": "english",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "United Kingdom (GBP \u00a3)",
+      "brand_id": "ashdown-engineering",
+      "normalized": "united kingdom gbp ",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Products",
+      "brand_id": "ashdown-engineering",
+      "normalized": "products",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "History",
+      "brand_id": "ashdown-engineering",
+      "normalized": "history",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Artists",
+      "brand_id": "ashdown-engineering",
+      "normalized": "artists",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "News",
+      "brand_id": "ashdown-engineering",
+      "normalized": "news",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SHOP",
+      "brand_id": "ashdown-engineering",
+      "normalized": "shop",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Contact Us",
+      "brand_id": "ashdown-engineering",
+      "normalized": "contact us",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Dealers",
+      "brand_id": "ashdown-engineering",
+      "normalized": "dealers",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "LoginFacebookX (Twitter)InstagramYouTubeTikTokLinkedIn",
+      "brand_id": "ashdown-engineering",
+      "normalized": "loginfacebookx twitterinstagramyoutubetiktoklinkedin",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SearchSite navigation",
+      "brand_id": "ashdown-engineering",
+      "normalized": "searchsite navigation",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Search",
+      "brand_id": "ashdown-engineering",
+      "normalized": "search",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Site navigation",
+      "brand_id": "ashdown-engineering",
+      "normalized": "site navigation",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Ashdown Engineering",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ashdown engineering",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ProductsProducts",
+      "brand_id": "ashdown-engineering",
+      "normalized": "productsproducts",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "HistoryHistory",
+      "brand_id": "ashdown-engineering",
+      "normalized": "historyhistory",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ArtistsArtists",
+      "brand_id": "ashdown-engineering",
+      "normalized": "artistsartists",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "NewsNews",
+      "brand_id": "ashdown-engineering",
+      "normalized": "newsnews",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SHOPSHOP",
+      "brand_id": "ashdown-engineering",
+      "normalized": "shopshop",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Contact UsContact Us",
+      "brand_id": "ashdown-engineering",
+      "normalized": "contact uscontact us",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "DealersDealers",
+      "brand_id": "ashdown-engineering",
+      "normalized": "dealersdealers",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SearchLoginCart0Site navigation",
+      "brand_id": "ashdown-engineering",
+      "normalized": "searchlogincart0site navigation",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Login",
+      "brand_id": "ashdown-engineering",
+      "normalized": "login",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Cart0",
+      "brand_id": "ashdown-engineering",
+      "normalized": "cart0",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Your cart is currently empty.Not sure where to start?Try these collections:Continue shopping",
+      "brand_id": "ashdown-engineering",
+      "normalized": "your cart is currently emptynot sure where to starttry these collectionscontinue shopping",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Continue shopping",
+      "brand_id": "ashdown-engineering",
+      "normalized": "continue shopping",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Order note",
+      "brand_id": "ashdown-engineering",
+      "normalized": "order note",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Shipping",
+      "brand_id": "ashdown-engineering",
+      "normalized": "shipping",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Discount",
+      "brand_id": "ashdown-engineering",
+      "normalized": "discount",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Order special instructions",
+      "brand_id": "ashdown-engineering",
+      "normalized": "order special instructions",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Estimate shipping rates",
+      "brand_id": "ashdown-engineering",
+      "normalized": "estimate shipping rates",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Clear",
+      "brand_id": "ashdown-engineering",
+      "normalized": "clear",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Home",
+      "brand_id": "ashdown-engineering",
+      "normalized": "home",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Menu",
+      "brand_id": "ashdown-engineering",
+      "normalized": "menu",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "0Cart",
+      "brand_id": "ashdown-engineering",
+      "normalized": "0cart",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Account",
+      "brand_id": "ashdown-engineering",
+      "normalized": "account",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "#spotthevuBritishampspecialistsFamily run since 1997, Ashdown have been providing the tools that ins",
+      "brand_id": "ashdown-engineering",
+      "normalized": "spotthevubritishampspecialistsfamily run since 1997 ashdown have been providing the tools that ins",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Collections",
+      "brand_id": "ashdown-engineering",
+      "normalized": "collections",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK Made Custom Shop15",
+      "brand_id": "ashdown-engineering",
+      "normalized": "uk made custom shop15",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Signature Series10",
+      "brand_id": "ashdown-engineering",
+      "normalized": "signature series10",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ASHDOWN ABM EVO IV7",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukashdown abm evo iv7",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ABM EVO IV10",
+      "brand_id": "ashdown-engineering",
+      "normalized": "abm evo iv10",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ROOTMASTER EVO-III8",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rootmaster evoiii8",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ORIGINAL EVO2",
+      "brand_id": "ashdown-engineering",
+      "normalized": "original evo2",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "The Studio Range8",
+      "brand_id": "ashdown-engineering",
+      "normalized": "the studio range8",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Peacemaker2",
+      "brand_id": "ashdown-engineering",
+      "normalized": "peacemaker2",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SX-LINE8",
+      "brand_id": "ashdown-engineering",
+      "normalized": "sxline8",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "KT LINE4",
+      "brand_id": "ashdown-engineering",
+      "normalized": "kt line4",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ROASTED BASSES4",
+      "brand_id": "ashdown-engineering",
+      "normalized": "roasted basses4",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "latestnewsfromashdown",
+      "brand_id": "ashdown-engineering",
+      "normalized": "latestnewsfromashdown",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "engineered to lastfrombedroomtostadium",
+      "brand_id": "ashdown-engineering",
+      "normalized": "engineered to lastfrombedroomtostadium",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ASHDOWN ABM EVO IV",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukashdown abm evo iv",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ROOTMASTER EVO-III",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rootmaster evoiii",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringUK-ABM-300-EVO IV\u00a3949.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringukabm300evo iv94900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "View",
+      "brand_id": "ashdown-engineering",
+      "normalized": "view",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringUK-ABM-300-EVO IV\u00a3949.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringukabm300evo iv94900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown Engineering",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineering",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-300-EVO IV\u00a3949.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm300evo iv94900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-300-EVO IV",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm300evo iv",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3949.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "94900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringUK-ABM-600-EVO IV\u00a31,099.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringukabm600evo iv109900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringUK-ABM-600-EVO IV\u00a31,099.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringukabm600evo iv109900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-600-EVO IV\u00a31,099.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm600evo iv109900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-600-EVO IV",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm600evo iv",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a31,099.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "109900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringUK-ABM-112H-EVO IV\u00a3889.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringukabm112hevo iv88900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringUK-ABM-112H-EVO IV\u00a3889.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringukabm112hevo iv88900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-112H-EVO IV\u00a3889.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm112hevo iv88900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-112H-EVO IV",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm112hevo iv",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3889.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "88900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringUK-ABM-115H-EVO IV\u00a3949.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringukabm115hevo iv94900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringUK-ABM-115H-EVO IV\u00a3949.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringukabm115hevo iv94900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-115H-EVO IV\u00a3949.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm115hevo iv94900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-115H-EVO IV",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm115hevo iv",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringUK-ABM-210H-EVO IV\u00a3999.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringukabm210hevo iv99900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringUK-ABM-210H-EVO IV\u00a3999.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringukabm210hevo iv99900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-210H-EVO IV\u00a3999.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm210hevo iv99900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-210H-EVO IV",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm210hevo iv",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3999.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "99900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringUK-ABM-410H-EVO IV\u00a31,229.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringukabm410hevo iv122900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringUK-ABM-410H-EVO IV\u00a31,229.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringukabm410hevo iv122900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-410H-EVO IV\u00a31,229.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm410hevo iv122900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "UK-ABM-410H-EVO IV",
+      "brand_id": "ashdown-engineering",
+      "normalized": "ukabm410hevo iv",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a31,229.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "122900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringRM-800-EVO III\u00a3899.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringrm800evo iii89900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringRM-800-EVO III\u00a3899.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringrm800evo iii89900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-800-EVO III\u00a3899.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm800evo iii89900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-800-EVO III",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm800evo iii",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3899.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "89900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringRM-500-EVO III\u00a3799.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringrm500evo iii79900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringRM-500-EVO III\u00a3799.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringrm500evo iii79900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-500-EVO III\u00a3799.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm500evo iii79900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-500-EVO III",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm500evo iii",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3799.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "79900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringRM-110T-EVO III\u00a3299.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringrm110tevo iii29900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringRM-110T-EVO III\u00a3299.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringrm110tevo iii29900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-110T-EVO III\u00a3299.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm110tevo iii29900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-110T-EVO III",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm110tevo iii",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3299.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "29900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringRM-112T-EVO III\u00a3299.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringrm112tevo iii29900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringRM-112T-EVO III\u00a3299.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringrm112tevo iii29900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-112T-EVO III\u00a3299.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm112tevo iii29900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-112T-EVO III",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm112tevo iii",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringRM-115T-EVO III\u00a3329.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringrm115tevo iii32900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringRM-115T-EVO III\u00a3329.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringrm115tevo iii32900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-115T-EVO III\u00a3329.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm115tevo iii32900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-115T-EVO III",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm115tevo iii",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3329.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "32900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ViewVendor:Ashdown EngineeringRM-210T-EVO III\u00a3379.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "viewvendorashdown engineeringrm210tevo iii37900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Vendor:Ashdown EngineeringRM-210T-EVO III\u00a3379.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "vendorashdown engineeringrm210tevo iii37900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-210T-EVO III\u00a3379.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm210tevo iii37900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "RM-210T-EVO III",
+      "brand_id": "ashdown-engineering",
+      "normalized": "rm210tevo iii",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "\u00a3379.00",
+      "brand_id": "ashdown-engineering",
+      "normalized": "37900",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Quick linksDealersRegister Your ProductSchematicsWarranty InfoPrivacy PolicyTerms of ServiceRefund p",
+      "brand_id": "ashdown-engineering",
+      "normalized": "quick linksdealersregister your productschematicswarranty infoprivacy policyterms of servicerefund p",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Quick links",
+      "brand_id": "ashdown-engineering",
+      "normalized": "quick links",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "01621 857853info@ashdownmusic.co.uk",
+      "brand_id": "ashdown-engineering",
+      "normalized": "01621 857853infoashdownmusiccouk",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "LanguageEnglishEnglishCountry/regionUnited Kingdom (GBP \u00a3)United Kingdom (GBP \u00a3)",
+      "brand_id": "ashdown-engineering",
+      "normalized": "languageenglishenglishcountryregionunited kingdom gbp united kingdom gbp ",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "LanguageEnglishEnglish",
+      "brand_id": "ashdown-engineering",
+      "normalized": "languageenglishenglish",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Country/regionUnited Kingdom (GBP \u00a3)United Kingdom (GBP \u00a3)",
+      "brand_id": "ashdown-engineering",
+      "normalized": "countryregionunited kingdom gbp united kingdom gbp ",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "We value your privacy",
+      "brand_id": "ashdown-engineering",
+      "normalized": "we value your privacy",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Your cart is currently empty.",
+      "brand_id": "ashdown-engineering",
+      "normalized": "your cart is currently empty",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Weusecookies",
+      "brand_id": "ashdown-engineering",
+      "normalized": "weusecookies",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Britishampspecialists",
+      "brand_id": "ashdown-engineering",
+      "normalized": "britishampspecialists",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "frombedroomtostadium",
+      "brand_id": "ashdown-engineering",
+      "normalized": "frombedroomtostadium",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "WEengineerproductstolastthetestoftime,ontheroadorinthestudio",
+      "brand_id": "ashdown-engineering",
+      "normalized": "weengineerproductstolastthetestoftimeontheroadorinthestudio",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Better Bass",
+      "brand_id": "ashdown-engineering",
+      "normalized": "better bass",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Since '97",
+      "brand_id": "ashdown-engineering",
+      "normalized": "since 97",
+      "source": "PRIMARY"
+    }
+  ],
+  "statistics": {
+    "primary": 129,
+    "secondary": 0,
+    "halilit_only": 0
+  },
+  "timestamp": "2026-01-15T20:27:38.607048",
+  "status": "success"
+}

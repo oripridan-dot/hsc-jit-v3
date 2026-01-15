@@ -1,0 +1,83 @@
+{
+  "brand_id": "allen-heath",
+  "total_products": 10,
+  "products": [
+    {
+      "name": "SQ-5",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/sq-5/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "SQ-6",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/sq-6/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "SQ-7",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/sq-7/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "Avantis",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/avantis/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "dLive S Class",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/dlive/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "QU-16",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/qu-16/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "QU-24",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/qu-24/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "QU-32",
+      "category": "Digital Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/qu-32/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "ZED-10",
+      "category": "Analog Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/zed-10/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    },
+    {
+      "name": "ZED-12FX",
+      "category": "Analog Mixers",
+      "url": "https://www.allen-heath.com/ahproducts/zed-12fx/",
+      "source": "PRIMARY",
+      "brand_id": "allen-heath"
+    }
+  ],
+  "statistics": {
+    "primary": 10,
+    "secondary": 0,
+    "halilit_only": 0
+  },
+  "timestamp": "2026-01-15T20:27:38.602054",
+  "status": "success"
+}

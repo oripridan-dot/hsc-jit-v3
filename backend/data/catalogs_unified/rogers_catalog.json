@@ -13,7 +13,7 @@
       "price": "2864",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -27,7 +27,7 @@
       "price": "2659",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -41,7 +41,7 @@
       "price": "3576",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -55,7 +55,7 @@
       "price": "2454",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -69,7 +69,7 @@
       "price": "17445",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -83,7 +83,7 @@
       "price": "3576",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -97,7 +97,7 @@
       "price": "4320",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -111,7 +111,7 @@
       "price": "3576",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -125,16 +125,15 @@
       "price": "3576",
       "currency": "ILS",
       "brand": "rogers",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     }
   ],
   "statistics": {
-    "primary": 0,
+    "primary": 9,
     "secondary": 0,
-    "halilit_only": 9,
-    "total": 9
+    "halilit_only": 0
   },
-  "timestamp": "2026-01-15T15:00:00",
+  "timestamp": "2026-01-15T20:27:38.673947",
   "status": "success"
 }

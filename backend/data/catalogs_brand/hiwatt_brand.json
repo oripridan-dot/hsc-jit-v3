@@ -1,0 +1,45 @@
+{
+  "brand_id": "hiwatt",
+  "brand": "Hiwatt",
+  "scraping_strategy": "manual_list",
+  "products": [
+    {
+      "name": "DR103",
+      "category": "Guitar Amplifiers",
+      "url": "https://www.hiwatt.com/amplifiers/dr103"
+    },
+    {
+      "name": "DR504",
+      "category": "Guitar Amplifiers",
+      "url": "https://www.hiwatt.com/amplifiers/dr504"
+    },
+    {
+      "name": "SA212",
+      "category": "Guitar Amplifiers",
+      "url": "https://www.hiwatt.com/amplifiers/sa212"
+    },
+    {
+      "name": "T20",
+      "category": "Guitar Amplifiers",
+      "url": "https://www.hiwatt.com/amplifiers/t20"
+    },
+    {
+      "name": "Little J",
+      "category": "Guitar Amplifiers",
+      "url": "https://www.hiwatt.com/amplifiers/little-j"
+    },
+    {
+      "name": "HG100",
+      "category": "Bass Amplifiers",
+      "url": "https://www.hiwatt.com/amplifiers/hg100"
+    },
+    {
+      "name": "SE4123",
+      "category": "Guitar Cabinets",
+      "url": "https://www.hiwatt.com/cabinets/se4123"
+    }
+  ],
+  "product_count": 7,
+  "scraped_count": 7,
+  "timestamp": "2026-01-15T20:27:38.560771Z"
+}

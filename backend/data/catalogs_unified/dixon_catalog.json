@@ -1,0 +1,69 @@
+{
+  "brand_id": "dixon",
+  "total_products": 8,
+  "products": [
+    {
+      "name": "Spark 5-Piece Drum Kit",
+      "category": "Drum Sets",
+      "url": "https://www.dixondrums.com/products/spark-drum-set",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    },
+    {
+      "name": "Jet Pro 5-Piece Drum Kit",
+      "category": "Drum Sets",
+      "url": "https://www.dixondrums.com/products/jet-pro",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    },
+    {
+      "name": "Artisan 5-Piece Drum Kit",
+      "category": "Drum Sets",
+      "url": "https://www.dixondrums.com/products/artisan",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    },
+    {
+      "name": "Gregg Bissonette Signature Snare",
+      "category": "Snare Drums",
+      "url": "https://www.dixondrums.com/products/gregg-bissonette",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    },
+    {
+      "name": "PSH614 14x6.5 Snare",
+      "category": "Snare Drums",
+      "url": "https://www.dixondrums.com/products/psh614",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    },
+    {
+      "name": "Dixon Hi-Hat Stand",
+      "category": "Hardware",
+      "url": "https://www.dixondrums.com/products/hi-hat-stand",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    },
+    {
+      "name": "Dixon Snare Stand",
+      "category": "Hardware",
+      "url": "https://www.dixondrums.com/products/snare-stand",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    },
+    {
+      "name": "Dixon Cymbal Stand",
+      "category": "Hardware",
+      "url": "https://www.dixondrums.com/products/cymbal-stand",
+      "source": "PRIMARY",
+      "brand_id": "dixon"
+    }
+  ],
+  "statistics": {
+    "primary": 8,
+    "secondary": 0,
+    "halilit_only": 0
+  },
+  "timestamp": "2026-01-15T20:27:38.620330",
+  "status": "success"
+}

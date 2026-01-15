@@ -17,7 +17,7 @@
       "currency": "ILS",
       "eilat_price_ils": 1949.0,
       "brand": "headrush-fx",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -34,7 +34,7 @@
       "currency": "ILS",
       "eilat_price_ils": 2283.0,
       "brand": "headrush-fx",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -51,7 +51,7 @@
       "currency": "ILS",
       "eilat_price_ils": 4196.0,
       "brand": "headrush-fx",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     },
     {
@@ -68,16 +68,15 @@
       "currency": "ILS",
       "eilat_price_ils": 3845.0,
       "brand": "headrush-fx",
-      "source": "HALILIT_ONLY",
+      "source": "PRIMARY",
       "distributor": "Halilit Music Center"
     }
   ],
   "statistics": {
-    "primary": 0,
+    "primary": 4,
     "secondary": 0,
-    "halilit_only": 4,
-    "total": 4
+    "halilit_only": 0
   },
-  "timestamp": "2026-01-15T15:00:00",
+  "timestamp": "2026-01-15T20:27:38.625165",
   "status": "success"
 }

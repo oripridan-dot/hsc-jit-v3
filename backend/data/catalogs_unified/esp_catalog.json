@@ -1,0 +1,439 @@
+{
+  "brand_id": "esp",
+  "total_products": 71,
+  "products": [
+    {
+      "name": "Entry Page",
+      "brand_id": "esp",
+      "normalized": "entry page",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Notice",
+      "brand_id": "esp",
+      "normalized": "notice",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ProductsGuitar/Bass FinderGuitarsBassesESP USALimited AvailabilityPlayer GradeCasesApparel & Accesso",
+      "brand_id": "esp",
+      "normalized": "productsguitarbass finderguitarsbassesesp usalimited availabilityplayer gradecasesapparel  accesso",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Guitar/Bass Finder",
+      "brand_id": "esp",
+      "normalized": "guitarbass finder",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Guitars",
+      "brand_id": "esp",
+      "normalized": "guitars",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Basses",
+      "brand_id": "esp",
+      "normalized": "basses",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ESP USA",
+      "brand_id": "esp",
+      "normalized": "esp usa",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Limited Availability",
+      "brand_id": "esp",
+      "normalized": "limited availability",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Player Grade",
+      "brand_id": "esp",
+      "normalized": "player grade",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Cases",
+      "brand_id": "esp",
+      "normalized": "cases",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Apparel & Accessories",
+      "brand_id": "esp",
+      "normalized": "apparel  accessories",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "International Only",
+      "brand_id": "esp",
+      "normalized": "international only",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Custom ShopOverviewCustom GalleryCustom Order FormESP Original Series",
+      "brand_id": "esp",
+      "normalized": "custom shopoverviewcustom gallerycustom order formesp original series",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Overview",
+      "brand_id": "esp",
+      "normalized": "overview",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Custom Gallery",
+      "brand_id": "esp",
+      "normalized": "custom gallery",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Custom Order Form",
+      "brand_id": "esp",
+      "normalized": "custom order form",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ESP Original Series",
+      "brand_id": "esp",
+      "normalized": "esp original series",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ESP USAOverview / ModelsConfiguratorDealers & Distributors",
+      "brand_id": "esp",
+      "normalized": "esp usaoverview  modelsconfiguratordealers  distributors",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Overview / Models",
+      "brand_id": "esp",
+      "normalized": "overview  models",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Configurator",
+      "brand_id": "esp",
+      "normalized": "configurator",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Dealers & Distributors",
+      "brand_id": "esp",
+      "normalized": "dealers  distributors",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "News",
+      "brand_id": "esp",
+      "normalized": "news",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "MediaESP VideosProduct DemosAll Access SpotlightsTraining/EducationTech CornerESP Ads",
+      "brand_id": "esp",
+      "normalized": "mediaesp videosproduct demosall access spotlightstrainingeducationtech corneresp ads",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ESP Videos",
+      "brand_id": "esp",
+      "normalized": "esp videos",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Product Demos",
+      "brand_id": "esp",
+      "normalized": "product demos",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "All Access Spotlights",
+      "brand_id": "esp",
+      "normalized": "all access spotlights",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Training/Education",
+      "brand_id": "esp",
+      "normalized": "trainingeducation",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Tech Corner",
+      "brand_id": "esp",
+      "normalized": "tech corner",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ESP Ads",
+      "brand_id": "esp",
+      "normalized": "esp ads",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "DealersDealer LocatorOnline DealersUSA Series Dealers & DistributorsInternational DealersInternation",
+      "brand_id": "esp",
+      "normalized": "dealersdealer locatoronline dealersusa series dealers  distributorsinternational dealersinternation",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Dealer Locator",
+      "brand_id": "esp",
+      "normalized": "dealer locator",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Online Dealers",
+      "brand_id": "esp",
+      "normalized": "online dealers",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "USA Series Dealers & Distributors",
+      "brand_id": "esp",
+      "normalized": "usa series dealers  distributors",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "International Dealers",
+      "brand_id": "esp",
+      "normalized": "international dealers",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "International Distributors",
+      "brand_id": "esp",
+      "normalized": "international distributors",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ArtistsArtist RosterArtist Photo Gallery",
+      "brand_id": "esp",
+      "normalized": "artistsartist rosterartist photo gallery",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Artist Roster",
+      "brand_id": "esp",
+      "normalized": "artist roster",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Artist Photo Gallery",
+      "brand_id": "esp",
+      "normalized": "artist photo gallery",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SupportCustomer ServiceWarranty RegistrationESP WarrantyShop ESP Return PolicyFAQOwner's ManualProdu",
+      "brand_id": "esp",
+      "normalized": "supportcustomer servicewarranty registrationesp warrantyshop esp return policyfaqowners manualprodu",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Customer Service",
+      "brand_id": "esp",
+      "normalized": "customer service",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Warranty Registration",
+      "brand_id": "esp",
+      "normalized": "warranty registration",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ESP Warranty",
+      "brand_id": "esp",
+      "normalized": "esp warranty",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Shop ESP Return Policy",
+      "brand_id": "esp",
+      "normalized": "shop esp return policy",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Owner's Manual",
+      "brand_id": "esp",
+      "normalized": "owners manual",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Product Archives",
+      "brand_id": "esp",
+      "normalized": "product archives",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Dealer Downloads",
+      "brand_id": "esp",
+      "normalized": "dealer downloads",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "CommunitySign UpEventsPhotosVideosMembersConduct Policy",
+      "brand_id": "esp",
+      "normalized": "communitysign upeventsphotosvideosmembersconduct policy",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Sign Up",
+      "brand_id": "esp",
+      "normalized": "sign up",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Events",
+      "brand_id": "esp",
+      "normalized": "events",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Photos",
+      "brand_id": "esp",
+      "normalized": "photos",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Videos",
+      "brand_id": "esp",
+      "normalized": "videos",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Members",
+      "brand_id": "esp",
+      "normalized": "members",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Conduct Policy",
+      "brand_id": "esp",
+      "normalized": "conduct policy",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Careers",
+      "brand_id": "esp",
+      "normalized": "careers",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "8 Comments",
+      "brand_id": "esp",
+      "normalized": "8 comments",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "$1,899.00with case",
+      "brand_id": "esp",
+      "normalized": "189900with case",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Michael R.wroteFebruary 28, 2024 21:47That's ESP GL Skulls and SnakesLike(0)Dislike(0)",
+      "brand_id": "esp",
+      "normalized": "michael rwrotefebruary 28 2024 2147thats esp gl skulls and snakeslike0dislike0",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Adam M.wroteJuly 13, 2023 19:17Whatcha think of the E-2 lineup these days, worth the extra cash or j",
+      "brand_id": "esp",
+      "normalized": "adam mwrotejuly 13 2023 1917whatcha think of the e2 lineup these days worth the extra cash or j",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "JH-600 CTM",
+      "brand_id": "esp",
+      "normalized": "jh600 ctm",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "ProductsGuitar FinderGuitarsCases",
+      "brand_id": "esp",
+      "normalized": "productsguitar finderguitarscases",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Guitar Finder",
+      "brand_id": "esp",
+      "normalized": "guitar finder",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Takamine GalleryVideosProduct DemosTech CornerPhotosTakamine Ads",
+      "brand_id": "esp",
+      "normalized": "takamine galleryvideosproduct demostech cornerphotostakamine ads",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Takamine Ads",
+      "brand_id": "esp",
+      "normalized": "takamine ads",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "DealersDealer LocatorOnline DealersInternational Dealers",
+      "brand_id": "esp",
+      "normalized": "dealersdealer locatoronline dealersinternational dealers",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "SupportContact SupportWarranty RegistrationTakamine WarrantyFAQDealer Downloads",
+      "brand_id": "esp",
+      "normalized": "supportcontact supportwarranty registrationtakamine warrantyfaqdealer downloads",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Contact Support",
+      "brand_id": "esp",
+      "normalized": "contact support",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "Takamine Warranty",
+      "brand_id": "esp",
+      "normalized": "takamine warranty",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "CommunitySign UpPhotosVideosMembersConduct Policy",
+      "brand_id": "esp",
+      "normalized": "communitysign upphotosvideosmembersconduct policy",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "0 Comments",
+      "brand_id": "esp",
+      "normalized": "0 comments",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "$4,599.00with case",
+      "brand_id": "esp",
+      "normalized": "459900with case",
+      "source": "PRIMARY"
+    },
+    {
+      "name": "EF450C TT BB",
+      "brand_id": "esp",
+      "normalized": "ef450c tt bb",
+      "source": "PRIMARY"
+    }
+  ],
+  "statistics": {
+    "primary": 71,
+    "secondary": 0,
+    "halilit_only": 0
+  },
+  "timestamp": "2026-01-15T20:27:38.622118",
+  "status": "success"
+}

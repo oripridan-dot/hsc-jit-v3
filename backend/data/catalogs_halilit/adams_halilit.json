@@ -1,0 +1,38 @@
+{
+  "brand_id": "adams",
+  "products": [
+    {
+      "name": "Cloudflare Ray ID:9be80d719d5a0a53",
+      "brand_id": "adams",
+      "normalized": "cloudflare ray id9be80d719d5a0a53"
+    },
+    {
+      "name": "Your IP:Click to reveal20.61.126.209\u2022",
+      "brand_id": "adams",
+      "normalized": "your ipclick to reveal2061126209"
+    },
+    {
+      "name": "Performance & security byCloudflare",
+      "brand_id": "adams",
+      "normalized": "performance  security bycloudflare"
+    },
+    {
+      "name": "You are unable to accessadams-music.com",
+      "brand_id": "adams",
+      "normalized": "you are unable to accessadamsmusiccom"
+    },
+    {
+      "name": "Why have I been blocked?",
+      "brand_id": "adams",
+      "normalized": "why have i been blocked"
+    },
+    {
+      "name": "What can I do to resolve this?",
+      "brand_id": "adams",
+      "normalized": "what can i do to resolve this"
+    }
+  ],
+  "product_count": 6,
+  "source": "brand_website_reference",
+  "timestamp": "2026-01-15T20:16:50.095682"
+}

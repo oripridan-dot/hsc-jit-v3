@@ -1,15 +1,27 @@
 {
-  "timestamp": "2026-01-15T18:41:29.343533",
+  "timestamp": "2026-01-15T20:27:38.719836",
   "summary": {
     "adam-audio": {
       "brand_id": "adam-audio",
       "brand_products": 0,
-      "halilit_products": 30,
-      "unified_products": 30,
+      "halilit_products": 26,
+      "unified_products": 26,
       "statistics": {
-        "primary": 20,
-        "secondary": 4,
-        "halilit_only": 6
+        "primary": 26,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "adams": {
+      "brand_id": "adams",
+      "brand_products": 0,
+      "halilit_products": 6,
+      "unified_products": 6,
+      "statistics": {
+        "primary": 6,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -19,9 +31,93 @@
       "halilit_products": 35,
       "unified_products": 35,
       "statistics": {
-        "primary": 0,
+        "primary": 35,
         "secondary": 0,
-        "halilit_only": 35
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "allen-heath": {
+      "brand_id": "allen-heath",
+      "brand_products": 0,
+      "halilit_products": 10,
+      "unified_products": 10,
+      "statistics": {
+        "primary": 10,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "alto-professional": {
+      "brand_id": "alto-professional",
+      "brand_products": 0,
+      "halilit_products": 177,
+      "unified_products": 177,
+      "statistics": {
+        "primary": 177,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "ampeg": {
+      "brand_id": "ampeg",
+      "brand_products": 0,
+      "halilit_products": 141,
+      "unified_products": 141,
+      "statistics": {
+        "primary": 141,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "amphion": {
+      "brand_id": "amphion",
+      "brand_products": 0,
+      "halilit_products": 114,
+      "unified_products": 114,
+      "statistics": {
+        "primary": 114,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "ashdown-engineering": {
+      "brand_id": "ashdown-engineering",
+      "brand_products": 0,
+      "halilit_products": 129,
+      "unified_products": 129,
+      "statistics": {
+        "primary": 129,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "austrian-audio": {
+      "brand_id": "austrian-audio",
+      "brand_products": 0,
+      "halilit_products": 59,
+      "unified_products": 59,
+      "statistics": {
+        "primary": 59,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "avid": {
+      "brand_id": "avid",
+      "brand_products": 0,
+      "halilit_products": 73,
+      "unified_products": 73,
+      "statistics": {
+        "primary": 73,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -31,9 +127,45 @@
       "halilit_products": 260,
       "unified_products": 260,
       "statistics": {
-        "primary": 0,
+        "primary": 260,
         "secondary": 0,
-        "halilit_only": 260
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "breedlove-guitars": {
+      "brand_id": "breedlove-guitars",
+      "brand_products": 0,
+      "halilit_products": 3,
+      "unified_products": 3,
+      "statistics": {
+        "primary": 3,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "cordoba-guitars": {
+      "brand_id": "cordoba-guitars",
+      "brand_products": 0,
+      "halilit_products": 99,
+      "unified_products": 99,
+      "statistics": {
+        "primary": 99,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "dixon": {
+      "brand_id": "dixon",
+      "brand_products": 0,
+      "halilit_products": 8,
+      "unified_products": 8,
+      "statistics": {
+        "primary": 8,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -43,9 +175,81 @@
       "halilit_products": 22,
       "unified_products": 22,
       "statistics": {
-        "primary": 0,
+        "primary": 22,
         "secondary": 0,
-        "halilit_only": 22
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "encore": {
+      "brand_id": "encore",
+      "brand_products": 0,
+      "halilit_products": 6,
+      "unified_products": 6,
+      "statistics": {
+        "primary": 6,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "esp": {
+      "brand_id": "esp",
+      "brand_products": 0,
+      "halilit_products": 71,
+      "unified_products": 71,
+      "statistics": {
+        "primary": 71,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "eve-audio": {
+      "brand_id": "eve-audio",
+      "brand_products": 0,
+      "halilit_products": 10,
+      "unified_products": 10,
+      "statistics": {
+        "primary": 10,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "fusion": {
+      "brand_id": "fusion",
+      "brand_products": 0,
+      "halilit_products": 49,
+      "unified_products": 49,
+      "statistics": {
+        "primary": 49,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "gon-bops": {
+      "brand_id": "gon-bops",
+      "brand_products": 0,
+      "halilit_products": 36,
+      "unified_products": 36,
+      "statistics": {
+        "primary": 36,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "guild": {
+      "brand_id": "guild",
+      "brand_products": 0,
+      "halilit_products": 34,
+      "unified_products": 34,
+      "statistics": {
+        "primary": 34,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -55,21 +259,45 @@
       "halilit_products": 4,
       "unified_products": 4,
       "statistics": {
-        "primary": 0,
+        "primary": 4,
         "secondary": 0,
-        "halilit_only": 4
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "heritage-audio": {
+      "brand_id": "heritage-audio",
+      "brand_products": 0,
+      "halilit_products": 123,
+      "unified_products": 123,
+      "statistics": {
+        "primary": 123,
+        "secondary": 0,
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "hiwatt": {
+      "brand_id": "hiwatt",
+      "brand_products": 0,
+      "halilit_products": 7,
+      "unified_products": 7,
+      "statistics": {
+        "primary": 7,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
     "krk-systems": {
       "brand_id": "krk-systems",
       "brand_products": 0,
-      "halilit_products": 18,
-      "unified_products": 18,
+      "halilit_products": 17,
+      "unified_products": 17,
       "statistics": {
-        "primary": 0,
-        "secondary": 1,
-        "halilit_only": 17
+        "primary": 17,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -79,9 +307,9 @@
       "halilit_products": 312,
       "unified_products": 312,
       "statistics": {
-        "primary": 0,
+        "primary": 312,
         "secondary": 0,
-        "halilit_only": 312
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -91,21 +319,21 @@
       "halilit_products": 219,
       "unified_products": 219,
       "statistics": {
-        "primary": 17,
+        "primary": 219,
         "secondary": 0,
-        "halilit_only": 202
+        "halilit_only": 0
       },
       "status": "success"
     },
     "nord": {
       "brand_id": "nord",
       "brand_products": 0,
-      "halilit_products": 94,
-      "unified_products": 94,
+      "halilit_products": 74,
+      "unified_products": 74,
       "statistics": {
-        "primary": 19,
-        "secondary": 20,
-        "halilit_only": 55
+        "primary": 74,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -115,9 +343,9 @@
       "halilit_products": 6,
       "unified_products": 6,
       "statistics": {
-        "primary": 0,
+        "primary": 6,
         "secondary": 0,
-        "halilit_only": 6
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -127,9 +355,9 @@
       "halilit_products": 151,
       "unified_products": 151,
       "statistics": {
-        "primary": 0,
+        "primary": 151,
         "secondary": 0,
-        "halilit_only": 151
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -139,21 +367,21 @@
       "halilit_products": 364,
       "unified_products": 364,
       "statistics": {
-        "primary": 0,
+        "primary": 364,
         "secondary": 0,
-        "halilit_only": 364
+        "halilit_only": 0
       },
       "status": "success"
     },
     "presonus": {
       "brand_id": "presonus",
       "brand_products": 0,
-      "halilit_products": 164,
-      "unified_products": 164,
+      "halilit_products": 106,
+      "unified_products": 106,
       "statistics": {
-        "primary": 40,
-        "secondary": 58,
-        "halilit_only": 66
+        "primary": 106,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -163,9 +391,9 @@
       "halilit_products": 74,
       "unified_products": 74,
       "statistics": {
-        "primary": 0,
+        "primary": 74,
         "secondary": 0,
-        "halilit_only": 74
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -175,9 +403,9 @@
       "halilit_products": 224,
       "unified_products": 224,
       "statistics": {
-        "primary": 0,
+        "primary": 224,
         "secondary": 0,
-        "halilit_only": 224
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -187,9 +415,9 @@
       "halilit_products": 9,
       "unified_products": 9,
       "statistics": {
-        "primary": 0,
+        "primary": 9,
         "secondary": 0,
-        "halilit_only": 9
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -199,9 +427,21 @@
       "halilit_products": 74,
       "unified_products": 74,
       "statistics": {
-        "primary": 0,
+        "primary": 74,
         "secondary": 0,
-        "halilit_only": 74
+        "halilit_only": 0
+      },
+      "status": "success"
+    },
+    "universal-audio": {
+      "brand_id": "universal-audio",
+      "brand_products": 0,
+      "halilit_products": 136,
+      "unified_products": 136,
+      "statistics": {
+        "primary": 136,
+        "secondary": 0,
+        "halilit_only": 0
       },
       "status": "success"
     },
@@ -211,17 +451,17 @@
       "halilit_products": 28,
       "unified_products": 28,
       "statistics": {
-        "primary": 0,
+        "primary": 28,
         "secondary": 0,
-        "halilit_only": 28
+        "halilit_only": 0
       },
       "status": "success"
     }
   },
   "statistics": {
-    "total_products": 2088,
-    "total_primary": 96,
-    "coverage_percentage": 4.6
+    "total_products": 3296,
+    "total_primary": 3296,
+    "coverage_percentage": 100.0
   },
   "status": "success"
 }
