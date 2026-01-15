@@ -16,21 +16,27 @@ Usage:
     python ecosystem_orchestrator.py --brand=nord     # Single brand update
 """
 
+
+import sys
+from pathlib import Path
+
+# Add backend root to path (for 'app' imports)
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+# Add scripts dir (for local modules if needed)
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from halilit_scraper import HalilitScraper
 from brand_website_scraper import BrandWebsiteScraper
 import asyncio
 import argparse
 import json
 import logging
-from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Any, Optional
 from difflib import SequenceMatcher
 from urllib.parse import quote_plus
 
-# Import existing scrapers
-import sys
-sys.path.insert(0, str(Path(__file__).parent))
+# Import existing scrapers (Legacy block removed, replaced by top imports)
 
 
 logging.basicConfig(

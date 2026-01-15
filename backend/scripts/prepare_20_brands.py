@@ -39,31 +39,33 @@ NEW_BRANDS_CONFIG = {
     "hiwatt": ("Hiwatt", "https://www.hiwatt.co.uk/products"),
 }
 
+
 async def main():
     logger.info("="*80)
     logger.info("🚀 EXPANDING TO 20 NEW BRANDS")
     logger.info("="*80 + "\n")
-    
+
     # Add to ultra scraper config
     logger.info("Step 1: Updating ultra scraper with new brands...")
     ultra_scraper_file = BACKEND_DIR / "scripts" / "ultra_scraper_100_percent.py"
-    
+
     # Run scraper for new brands
     logger.info("\nStep 2: Running ultra scraper...")
     cmd = [
         "python3",
         str(BACKEND_DIR / "scripts" / "ultra_scraper_100_percent.py")
     ]
-    
+
     # For now, just log that we would scrape these
     logger.info(f"\n📋 Ready to scrape {len(NEW_BRANDS_CONFIG)} new brands:")
     for brand_id, (name, url) in NEW_BRANDS_CONFIG.items():
         logger.info(f"   • {name:25} ({brand_id})")
-    
+
     logger.info("\n" + "="*80)
     logger.info("✅ CONFIGURATION COMPLETE")
     logger.info(f"   New brands ready: {len(NEW_BRANDS_CONFIG)}")
-    logger.info(f"   Total system capacity: {18 + len(NEW_BRANDS_CONFIG)} brands")
+    logger.info(
+        f"   Total system capacity: {18 + len(NEW_BRANDS_CONFIG)} brands")
     logger.info("="*80)
     logger.info("\n💡 To complete expansion:")
     logger.info("   1. Run: python3 scripts/scrape_new_brands.py")
