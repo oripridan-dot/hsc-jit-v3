@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-01-15T18:12:39.071436",
+  "coverage_type": "REAL_PRIMARY_FROM_WEBSITE_SCRAPES",
+  "total_halilit_products": 2005,
+  "primary_from_websites": 160,
+  "coverage_percentage": 7.98,
+  "brands": {
+    "adam-audio": {
+      "halilit_total": 26,
+      "website_scraped": 0,
+      "halilit_only": 26,
+      "coverage_pct": 0.0
+    },
+    "akai-professional": {
+      "halilit_total": 35,
+      "website_scraped": 0,
+      "halilit_only": 35,
+      "coverage_pct": 0.0
+    },
+    "boss": {
+      "halilit_total": 260,
+      "website_scraped": 0,
+      "halilit_only": 260,
+      "coverage_pct": 0.0
+    },
+    "dynaudio": {
+      "halilit_total": 22,
+      "website_scraped": 0,
+      "halilit_only": 22,
+      "coverage_pct": 0.0
+    },
+    "headrush-fx": {
+      "halilit_total": 4,
+      "website_scraped": 0,
+      "halilit_only": 4,
+      "coverage_pct": 0.0
+    },
+    "krk-systems": {
+      "halilit_total": 17,
+      "website_scraped": 2,
+      "halilit_only": 15,
+      "coverage_pct": 11.8
+    },
+    "m-audio": {
+      "halilit_total": 312,
+      "website_scraped": 0,
+      "halilit_only": 312,
+      "coverage_pct": 0.0
+    },
+    "mackie": {
+      "halilit_total": 219,
+      "website_scraped": 17,
+      "halilit_only": 202,
+      "coverage_pct": 7.8
+    },
+    "nord": {
+      "halilit_total": 74,
+      "website_scraped": 40,
+      "halilit_only": 34,
+      "coverage_pct": 54.1
+    },
+    "oberheim": {
+      "halilit_total": 6,
+      "website_scraped": 0,
+      "halilit_only": 6,
+      "coverage_pct": 0.0
+    },
+    "paiste-cymbals": {
+      "halilit_total": 151,
+      "website_scraped": 0,
+      "halilit_only": 151,
+      "coverage_pct": 0.0
+    },
+    "pearl": {
+      "halilit_total": 364,
+      "website_scraped": 0,
+      "halilit_only": 364,
+      "coverage_pct": 0.0
+    },
+    "presonus": {
+      "halilit_total": 106,
+      "website_scraped": 100,
+      "halilit_only": 6,
+      "coverage_pct": 94.3
+    },
+    "rcf": {
+      "halilit_total": 74,
+      "website_scraped": 1,
+      "halilit_only": 73,
+      "coverage_pct": 1.4
+    },
+    "remo": {
+      "halilit_total": 224,
+      "website_scraped": 0,
+      "halilit_only": 224,
+      "coverage_pct": 0.0
+    },
+    "rogers": {
+      "halilit_total": 9,
+      "website_scraped": 0,
+      "halilit_only": 9,
+      "coverage_pct": 0.0
+    },
+    "roland": {
+      "halilit_total": 74,
+      "website_scraped": 0,
+      "halilit_only": 74,
+      "coverage_pct": 0.0
+    },
+    "xotic": {
+      "halilit_total": 28,
+      "website_scraped": 0,
+      "halilit_only": 28,
+      "coverage_pct": 0.0
+    }
+  },
+  "note": "Only counts products actually scraped from brand websites (160 products from 5 brands)",
+  "status": "success"
+}

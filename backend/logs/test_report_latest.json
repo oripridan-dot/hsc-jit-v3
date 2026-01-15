@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-01-15T17:56:47.803156",
+  "global_metrics": {
+    "total_products": 2048,
+    "primary_products": 37,
+    "coverage_percentage": 1.81,
+    "target": 80
+  },
+  "brands": {
+    "adam-audio": {
+      "total": 25,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "akai-professional": {
+      "total": 35,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "boss": {
+      "total": 74,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "dynaudio": {
+      "total": 22,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "headrush-fx": {
+      "total": 14,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "krk-systems": {
+      "total": 22,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "m-audio": {
+      "total": 32,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "mackie": {
+      "total": 219,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "nord": {
+      "total": 38,
+      "primary": 37,
+      "coverage": 97.4
+    },
+    "oberheim": {
+      "total": 6,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "paiste-cymbals": {
+      "total": 151,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "pearl": {
+      "total": 364,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "presonus": {
+      "total": 106,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "rcf": {
+      "total": 179,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "remo": {
+      "total": 224,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "rogers": {
+      "total": 9,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "roland": {
+      "total": 500,
+      "primary": 0,
+      "coverage": 0.0
+    },
+    "xotic": {
+      "total": 28,
+      "primary": 0,
+      "coverage": 0.0
+    }
+  },
+  "status": "EARLY_STAGE"
+}

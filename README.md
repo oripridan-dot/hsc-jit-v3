@@ -10,6 +10,7 @@ A production-ready product intelligence platform that combines brand website dat
 - **Halilit Distributor (SECONDARY)**: Real-time pricing, SKUs, stock availability
 
 The system automatically synchronizes and classifies products into three categories:
+
 - **PRIMARY**: Found on both brand website AND Halilit (complete product intelligence)
 - **SECONDARY**: Brand website only (comprehensive specs, pending distributor)
 - **HALILIT_ONLY**: Distributor only (accessories, legacy products)
@@ -29,12 +30,14 @@ cd frontend && pnpm install
 ### Run Development Environment
 
 **Terminal 1 - Backend:**
+
 ```bash
 cd backend
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 **Terminal 2 - Frontend:**
+
 ```bash
 cd frontend && pnpm dev
 ```
@@ -77,23 +80,27 @@ Access at: `http://localhost:5173`
 ## Key Features
 
 ### 🔄 Intelligent Synchronization
+
 - Automated brand website scraping with multi-page support
 - Real-time Halilit distributor integration
 - Fuzzy matching (85% similarity threshold) for product pairing
 - Automatic duplicate detection and deduplication
 
 ### 📊 Dual-Source Analytics
+
 - Real-time coverage dashboard showing PRIMARY/SECONDARY/HALILIT_ONLY distribution
 - Per-brand synchronization metrics
 - Global statistics across entire ecosystem
 - Source attribution for every product
 
 ### 🎯 Visual Classification
+
 - Product badges showing data source (emerald/violet/amber color coding)
 - Tooltip explanations for each classification
 - Inline indicators in product listings and detail views
 
 ### 🚀 Production Ready
+
 - 262 total products across 18 brands
 - 12 PRIMARY products (4.6% dual-source matched)
 - 1 SECONDARY product (brand website exclusive)
@@ -154,6 +161,7 @@ hsc-jit-v3/
 ### REST Endpoints
 
 **`GET /api/dual-source-intelligence`**
+
 ```json
 {
   "strategy": "dual-source-brand-first",
@@ -165,8 +173,12 @@ hsc-jit-v3/
     "halilit_only_products": 249,
     "dual_source_coverage": 4.6
   },
-  "brands": [/* brand-level metrics */],
-  "source_breakdown": {/* classification details */}
+  "brands": [
+    /* brand-level metrics */
+  ],
+  "source_breakdown": {
+    /* classification details */
+  }
 }
 ```
 
@@ -208,6 +220,7 @@ python scripts/ecosystem_orchestrator.py --brand=nord
 ### View Dual-Source Intelligence
 
 Open the UI and click the **"🔀 Dual-Source"** button in the top bar to see:
+
 - Global statistics across all brands
 - Source breakdown (PRIMARY/SECONDARY/HALILIT_ONLY)
 - Per-brand coverage analysis with percentages
@@ -242,6 +255,7 @@ tail -f backend/logs/ecosystem/automation.log
 - All API endpoints validated
 
 **Next Optimization Targets:**
+
 - Increase PRIMARY coverage (currently 4.6% → target 80%+)
 - Enhance brand website scrapers for Roland, Pearl, Mackie, Remo, Paiste
 - Automated daily synchronization via cron
@@ -258,6 +272,7 @@ docker-compose up -d
 ### Environment Variables
 
 Create `.env` file:
+
 ```
 GEMINI_API_KEY=your_key_here
 REDIS_URL=redis://localhost:6379

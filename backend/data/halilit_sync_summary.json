@@ -1,15 +1,7 @@
 {
-  "timestamp": "2026-01-15T09:22:20.986595",
-  "halilit_sync": {
-    "status": "complete",
-    "products": 2047,
-    "brands": 18,
-    "last_run": "2026-01-15T09:22:20.986601"
-  },
-  "unified_catalog": {
-    "status": "complete",
-    "total_products": 2060,
-    "brands": 18
-  },
-  "system_status": "healthy"
+  "timestamp": "2026-01-15T18:41:29.343930",
+  "total_products": 2088,
+  "primary_products": 96,
+  "coverage_percentage": 4.6,
+  "status": "success"
 }

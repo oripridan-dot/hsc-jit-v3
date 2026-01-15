@@ -1,0 +1,36 @@
+{
+  "brand_id": "adam-audio",
+  "timestamp": "2026-01-15T18:55:03.294457",
+  "scrape_status": "SUCCESS",
+  "products_scraped": 0,
+  "expected_count": 26,
+  "deviation_pct": 100.0,
+  "scraping_config": {
+    "primary_url": "https://www.adam-audio.com/en/products",
+    "wait_for": ".product-item",
+    "selectors": {
+      "product_item": ".product, [data-product]",
+      "name": ".product-name, h2",
+      "price": ".price, [data-price]"
+    },
+    "pagination": {
+      "method": "none"
+    },
+    "timeout_ms": 15000
+  },
+  "sample_products": [],
+  "total_fields_per_product": 0,
+  "instructions": {
+    "1_load_page": "Navigate to https://www.adam-audio.com/en/products",
+    "2_wait": "Wait for element: .product-item",
+    "3_pagination": "none",
+    "4_extract": "Extract all products using selectors: ['product_item', 'name', 'price']",
+    "5_validate": "Expect approximately 26 products",
+    "6_alert_condition": "Alert if count deviates >50% from 26"
+  },
+  "notes": "Studio monitors - German brand",
+  "tested_urls": [
+    "https://www.adam-audio.com/en/products",
+    "https://www.adam-audio.com/products"
+  ]
+}
