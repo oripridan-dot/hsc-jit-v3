@@ -8,6 +8,7 @@ All images and data are official and approved by brands.
 Source: https://www.halilit.com/g/5193-Brand/{brand-id}
 """
 
+from app.utils.hebrew import detect_hebrew, normalize_model_from_text, extract_price_ils, extract_multiple_prices
 import asyncio
 import json
 import re
@@ -20,6 +21,31 @@ import sys
 
 # Add backend to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Hebrew utils
+
+# Brand number mapping (Halilit internal IDs)
+BRAND_HALILIT_IDS = {
+    'roland': '87',
+    'rcf': '61',
+    'nord': 'nord',
+    'boss': 'boss',
+    'pearl': 'pearl',
+    'yamaha': 'yamaha',
+    'akai-professional': 'akai-professional',
+    'adam-audio': 'adam-audio',
+    'dynaudio': 'dynaudio',
+    'krk-systems': 'krk-systems',
+    'm-audio': 'm-audio',
+    'mackie': 'mackie',
+    'oberheim': 'oberheim',
+    'paiste-cymbals': 'paiste-cymbals',
+    'presonus': 'presonus',
+    'remo': 'remo',
+    'rogers': 'rogers',
+    'xotic': 'xotic',
+    'headrush-fx': 'headrush-fx'
+}
 
 
 class HalilitScraper:
@@ -68,31 +94,33 @@ class HalilitScraper:
 
                     # Extract products from this page
                     products = self._extract_products(soup, brand_id)
-                    
+
                     # Deduplicate by product ID/URL
                     new_products = []
                     for product in products:
                         # Create unique key from halilit_id, url, or name
                         product_key = (
-                            product.get('halilit_id') or 
-                            product.get('url') or 
+                            product.get('halilit_id') or
+                            product.get('url') or
                             product.get('name')
                         )
                         if product_key and product_key not in seen_ids:
                             seen_ids.add(product_key)
                             new_products.append(product)
-                    
+
                     if not new_products:
                         pages_with_no_new_products += 1
                         print(f"      ⚠️  No new products found (all duplicates)")
                         # Stop if we get 2 consecutive pages with no new products
                         if pages_with_no_new_products >= 2:
-                            print(f"      🛑 Stopping - no new products for {pages_with_no_new_products} pages")
+                            print(
+                                f"      🛑 Stopping - no new products for {pages_with_no_new_products} pages")
                             break
                     else:
                         pages_with_no_new_products = 0
                         all_products.extend(new_products)
-                        print(f"      ✓ Found {len(new_products)} new products (total: {len(all_products)})")
+                        print(
+                            f"      ✓ Found {len(new_products)} new products (total: {len(all_products)})")
 
                     pages_scraped += 1
 
@@ -105,7 +133,8 @@ class HalilitScraper:
                     next_url = self._find_next_page(soup, current_url)
                     if not next_url or next_url == current_url:
                         # Fallback: try explicit ?page=N pagination if no next link was found
-                        candidate = self._increment_page_url(brand_url, page_counter + 1)
+                        candidate = self._increment_page_url(
+                            brand_url, page_counter + 1)
                         if candidate and candidate != current_url and pages_scraped < max_pages:
                             current_url = candidate
                             page_counter += 1
@@ -187,6 +216,12 @@ class HalilitScraper:
             product['url'] = name_elem.get('href', '')
             if product['url'] and not product['url'].startswith('http'):
                 product['url'] = f"{self.base_url}{product['url']}"
+            # Hebrew-localized title and normalized model for matching
+            product['title_he'] = product['name'] if detect_hebrew(
+                product['name']) else None
+            norm_model = normalize_model_from_text(product['name'])
+            if norm_model:
+                product['normalized_sku'] = norm_model
 
         # Product ID from URL if not already set
         if 'url' in product and not product.get('halilit_id'):
@@ -210,19 +245,27 @@ class HalilitScraper:
                 product['image_url'] = img_url
                 product['thumbnail_url'] = img_url
 
-        # Price
-        price_elem = (
-            item.select_one('.price') or
-            item.select_one('.product_price') or
-            item.select_one('[class*="price"]')
-        )
-        if price_elem:
-            price_text = price_elem.get_text(strip=True)
-            # Extract numbers
-            price_match = re.search(r'[\d,]+', price_text.replace(',', ''))
-            if price_match:
-                product['price'] = price_match.group(0)
-                product['currency'] = 'ILS'  # Halilit is Israeli
+        # Price - extract all three types
+        price_container = item  # The entire item is the price container
+        prices = extract_multiple_prices(price_container)
+
+        # Store all available prices
+        if prices['regular_price']:
+            product['price_ils'] = prices['regular_price']
+            product['price'] = str(int(prices['regular_price']))
+            product['currency'] = 'ILS'
+
+        if prices['original_price']:
+            product['original_price_ils'] = prices['original_price']
+
+        if prices['eilat_price']:
+            product['eilat_price_ils'] = prices['eilat_price']
+
+        # If no regular price but have eilat, use eilat as main
+        if not prices['regular_price'] and prices['eilat_price']:
+            product['price_ils'] = prices['eilat_price']
+            product['price'] = str(int(prices['eilat_price']))
+            product['currency'] = 'ILS'
 
         # Availability
         stock_elem = item.select_one('.stock_status, .availability')
@@ -268,6 +311,7 @@ class HalilitScraper:
             "source": "halilit",
             "distributor": "Halilit Music Center",
             "brand_id": brand_id,
+            "halilit_brand_number": BRAND_HALILIT_IDS.get(brand_id),
             "total_products": data['total_products'],
             "products": data['products'],
             "metadata": {

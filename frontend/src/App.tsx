@@ -5,6 +5,7 @@ import { BrandExplorer } from './components/BrandExplorer';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
 import { SyncMonitor } from './components/SyncMonitor';
 import { ProductCoverageStats } from './components/ProductCoverageStats';
+import { DualSourceIntelligence } from './components/DualSourceIntelligence';
 import { ZenFinder } from './components/ZenFinder';
 import { FolderView } from './components/FolderView';
 import { BackendUnavailable } from './components/BackendUnavailable';
@@ -19,6 +20,7 @@ function App() {
   const [brandExplorerOpen, setBrandExplorerOpen] = useState(false);
   const [syncMonitorOpen, setSyncMonitorOpen] = useState(false);
   const [coverageStatsOpen, setCoverageStatsOpen] = useState(false);
+  const [dualSourceOpen, setDualSourceOpen] = useState(false);
   const [fullCatalog, setFullCatalog] = useState<Prediction[]>([]);
   const [backendAvailable, setBackendAvailable] = useState(true);
   const [connectionAttempted, setConnectionAttempted] = useState(false);
@@ -188,6 +190,13 @@ function App() {
                 >
                     🔄 Sync Status
                 </button>
+                {/* Dual Source Intelligence Button */}
+                <button
+                    onClick={() => setDualSourceOpen(true)}
+                    className="px-3 py-1.5 rounded-lg bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 text-xs font-semibold transition-colors border border-indigo-500/30"
+                >
+                    🔀 Dual-Source
+                </button>
             </div>
 
             {/* Main Content Area */}
@@ -326,6 +335,7 @@ function App() {
           }}
         />
         <ProductCoverageStats isOpen={coverageStatsOpen} onClose={() => setCoverageStatsOpen(false)} />
+        <DualSourceIntelligence isOpen={dualSourceOpen} onClose={() => setDualSourceOpen(false)} />
 
     </div>
   );

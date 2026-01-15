@@ -2,6 +2,8 @@ import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { getBrandColors } from '../utils/brandColors';
 import { getCountryFlag } from '../utils/countryFlags';
+import { DualSourceBadge } from './ui/DualSourceBadge';
+import { getProductClassification } from '../utils/productClassification';
 import type { FileNode } from '../utils/zenFileSystem';
 import type { Prediction } from '../store/useWebSocketStore';
 
@@ -240,6 +242,15 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                          >
                              {/* Image Area */}
                              <div className="aspect-square bg-white/95 relative p-4 flex items-center justify-center group-hover:bg-white transition-colors">
+                                 {/* Dual Source Badge Overlay */}
+                                 <div className="absolute top-1 left-1 z-10">
+                                     <DualSourceBadge 
+                                         classification={getProductClassification(item as unknown as Record<string, unknown>)} 
+                                         size="sm"
+                                         showIcon={false}
+                                         showTooltip={false}
+                                     />
+                                 </div>
                                  {imageUrl ? (
                                     <img 
                                         src={`/api/images/optimize/${imageUrl}?preset=thumbnail`}

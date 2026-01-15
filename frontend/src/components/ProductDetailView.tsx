@@ -4,6 +4,8 @@ import { ConfidenceMeter } from './ui/ConfidenceMeter';
 import { PriceDisplay } from './ui/PriceDisplay';
 import { Dock } from './ui/Dock';
 import { ImageGallery } from './ImageGallery';
+import { DualSourceBadge } from './ui/DualSourceBadge';
+import { getProductClassification } from '../utils/productClassification';
 import { AIImageEnhancer } from '../services/AIImageEnhancer';
 
 interface ProductDetailProps {
@@ -147,6 +149,11 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
                   {product.category}
                 </span>
               )}
+              {/* Dual Source Badge */}
+              <DualSourceBadge 
+                classification={getProductClassification(product as unknown as Record<string, unknown>)} 
+                size="sm"
+              />
             </div>
             <p className="text-text-muted text-sm line-clamp-2">{product.description}</p>
             <div className="flex items-center gap-4 mt-3 flex-wrap">

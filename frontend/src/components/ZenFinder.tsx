@@ -127,7 +127,7 @@ interface ZenFinderProps {
 }
 
 export const ZenFinder: React.FC<ZenFinderProps> = ({ onNavigate, searchQuery, products }) => {
-  const { predictions, lastPrediction, actions } = useWebSocketStore();
+  const { predictions, lastPrediction } = useWebSocketStore();
   
   // Use passed products (from full catalog or search) or fallback to store predictions
   const data = products || predictions;

@@ -11,6 +11,7 @@ Features:
 - Automatic error recovery
 """
 
+from scripts.ecosystem_orchestrator import EcosystemOrchestrator
 import asyncio
 import json
 import logging
@@ -23,7 +24,6 @@ import sys
 BACKEND_DIR = Path(__file__).parent.parent
 sys.path.insert(0, str(BACKEND_DIR))
 
-from scripts.ecosystem_orchestrator import EcosystemOrchestrator
 
 # Setup logging
 LOGS_DIR = BACKEND_DIR / "logs" / "ecosystem"
@@ -65,21 +65,21 @@ class EcosystemAutomationManager:
         """Run complete ecosystem sync for all 18 brands."""
         logger.info("🚀 FULL ECOSYSTEM SYNC STARTING")
         logger.info("="*80)
-        
+
         start_time = datetime.now()
-        
+
         try:
             await self.orchestrator.run_full_sync()
-            
+
             elapsed = (datetime.now() - start_time).total_seconds()
             logger.info("="*80)
             logger.info(f"✅ FULL SYNC COMPLETED in {elapsed:.1f}s")
-            
+
             status = self.load_status()
             status['last_full_sync'] = datetime.now().isoformat()
             status['last_full_sync_status'] = 'success'
             self.save_status(status)
-            
+
         except Exception as e:
             logger.error(f"❌ FULL SYNC FAILED: {e}", exc_info=True)
             status = self.load_status()
@@ -90,10 +90,10 @@ class EcosystemAutomationManager:
         """Run quick pricing update from Halilit only."""
         logger.info("⚡ QUICK SYNC (HALILIT PRICING UPDATE)")
         logger.info("="*80)
-        
+
         start_time = datetime.now()
         brands = self.orchestrator.get_all_brands()
-        
+
         try:
             for brand_id in brands:
                 try:
@@ -101,16 +101,16 @@ class EcosystemAutomationManager:
                     await self.orchestrator.scrape_halilit_catalog(brand_id)
                 except Exception as e:
                     logger.warning(f"  ⚠️  Failed to update {brand_id}: {e}")
-            
+
             elapsed = (datetime.now() - start_time).total_seconds()
             logger.info("="*80)
             logger.info(f"✅ QUICK SYNC COMPLETED in {elapsed:.1f}s")
-            
+
             status = self.load_status()
             status['last_quick_sync'] = datetime.now().isoformat()
             status['last_quick_sync_status'] = 'success'
             self.save_status(status)
-            
+
         except Exception as e:
             logger.error(f"❌ QUICK SYNC FAILED: {e}", exc_info=True)
             status = self.load_status()
@@ -120,23 +120,24 @@ class EcosystemAutomationManager:
     async def run_health_check(self):
         """Run hourly health check."""
         logger.info("🏥 HEALTH CHECK")
-        
+
         status = self.load_status()
         timestamp = datetime.now().isoformat()
-        
+
         try:
             # Check key files exist
             catalogs_dir = self.data_dir / "catalogs_unified"
-            catalog_count = len(list(catalogs_dir.glob("*_catalog.json"))) if catalogs_dir.exists() else 0
-            
+            catalog_count = len(list(catalogs_dir.glob(
+                "*_catalog.json"))) if catalogs_dir.exists() else 0
+
             logger.info(f"  ✅ System healthy")
             logger.info(f"  📊 Catalogs: {catalog_count}")
-            
+
             status['last_health_check'] = timestamp
             status['health_status'] = 'healthy'
             status['catalog_count'] = catalog_count
             self.save_status(status)
-            
+
         except Exception as e:
             logger.error(f"  ⚠️  Health check failed: {e}")
             status['health_status'] = f'unhealthy: {str(e)}'
@@ -147,7 +148,7 @@ class EcosystemAutomationManager:
         logger.info("🔬 WEEKLY DEEP ANALYSIS")
         logger.info("="*80)
         await self.run_full_sync()
-        
+
         status = self.load_status()
         status['last_analysis'] = datetime.now().isoformat()
         self.save_status(status)
@@ -156,23 +157,24 @@ class EcosystemAutomationManager:
 async def main():
     """Main automation loop."""
     import argparse
-    
-    parser = argparse.ArgumentParser(description="Ecosystem Automation Manager")
+
+    parser = argparse.ArgumentParser(
+        description="Ecosystem Automation Manager")
     parser.add_argument(
         '--mode',
         choices=['full', 'quick', 'health', 'analysis', 'continuous'],
         default='continuous',
         help='Operation mode'
     )
-    
+
     args = parser.parse_args()
     manager = EcosystemAutomationManager()
-    
+
     logger.info(f"🚀 ECOSYSTEM AUTOMATION MANAGER")
     logger.info(f"   Mode: {args.mode}")
     logger.info(f"   Started: {datetime.now()}")
     logger.info("="*80)
-    
+
     try:
         if args.mode == 'full':
             await manager.run_full_sync()
@@ -185,9 +187,10 @@ async def main():
         elif args.mode == 'continuous':
             # Simulate continuous operation (for testing)
             logger.info("⚠️  CONTINUOUS MODE: Manual scheduling required")
-            logger.info("   In production, use: python ecosystem_automation_manager.py --mode=full")
+            logger.info(
+                "   In production, use: python ecosystem_automation_manager.py --mode=full")
             await manager.run_health_check()
-        
+
     except KeyboardInterrupt:
         logger.info("\n⏹️  AUTOMATION STOPPED")
     except Exception as e:

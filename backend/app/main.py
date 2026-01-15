@@ -282,6 +282,128 @@ async def get_all_brands():
         "brands": brands
     }
 
+# ============ Dual Source Intelligence Endpoint ============
+
+
+@app.get("/api/dual-source-intelligence")
+async def get_dual_source_intelligence():
+    """
+    Get comprehensive dual-source synchronization intelligence.
+    Aggregates data from multiple sources to show brand coverage, source distribution, and sync health.
+    """
+    from pathlib import Path
+    import json
+    
+    backend_dir = Path(__file__).parent.parent
+    data_dir = backend_dir / "data"
+    
+    # Load all the dual-source data files
+    dual_source_strategy = {}
+    ecosystem_report = {}
+    orchestration_report = {}
+    halilit_sync = {}
+    
+    try:
+        # Read dual source strategy
+        strategy_file = data_dir / "dual_source_strategy.json"
+        if strategy_file.exists():
+            with open(strategy_file) as f:
+                dual_source_strategy = json.load(f)
+        
+        # Read ecosystem sync report
+        ecosystem_file = data_dir / "ecosystem_sync_report.json"
+        if ecosystem_file.exists():
+            with open(ecosystem_file) as f:
+                ecosystem_report = json.load(f)
+        
+        # Read orchestration report
+        orchestration_file = data_dir / "orchestration_report.json"
+        if orchestration_file.exists():
+            with open(orchestration_file) as f:
+                orchestration_report = json.load(f)
+        
+        # Read Halilit sync summary
+        halilit_file = data_dir / "halilit_sync_summary.json"
+        if halilit_file.exists():
+            with open(halilit_file) as f:
+                halilit_sync = json.load(f)
+    except Exception as e:
+        logger.error(f"Error loading dual-source data: {e}")
+    
+    # Aggregate brand-level intelligence
+    brands_intelligence = {}
+    
+    # Get brand data from ecosystem report (most detailed)
+    if ecosystem_report.get("brands"):
+        for brand_id, brand_data in ecosystem_report["brands"].items():
+            stats = brand_data.get("statistics", {})
+            brands_intelligence[brand_id] = {
+                "brand_id": brand_id,
+                "brand_products": brand_data.get("brand_products", 0),
+                "halilit_products": brand_data.get("halilit_products", 0),
+                "unified_products": brand_data.get("unified_products", 0),
+                "primary_count": stats.get("primary", 0),  # Both sources
+                "secondary_count": stats.get("secondary", 0),  # Brand only
+                "halilit_only_count": stats.get("halilit_only", 0),  # Halilit only
+                "coverage_percentage": (stats.get("primary", 0) / brand_data.get("halilit_products", 1) * 100) if brand_data.get("halilit_products", 0) > 0 else 0,
+                "last_sync": ecosystem_report.get("timestamp", ""),
+                "status": brand_data.get("status", "unknown")
+            }
+    
+    # Fall back to orchestration report for brands not in ecosystem
+    if orchestration_report.get("summary"):
+        for brand_id, brand_data in orchestration_report["summary"].items():
+            if brand_id not in brands_intelligence:
+                brands_intelligence[brand_id] = {
+                    "brand_id": brand_id,
+                    "brand_products": brand_data.get("brand_products", 0),
+                    "halilit_products": brand_data.get("halilit_products", 0),
+                    "unified_products": brand_data.get("unified_products", 0),
+                    "primary_count": 0,
+                    "secondary_count": 0,
+                    "halilit_only_count": brand_data.get("halilit_products", 0),
+                    "coverage_percentage": 0,
+                    "last_sync": orchestration_report.get("timestamp", ""),
+                    "status": brand_data.get("status", "unknown")
+                }
+    
+    # Calculate global statistics
+    total_primary = sum(b.get("primary_count", 0) for b in brands_intelligence.values())
+    total_secondary = sum(b.get("secondary_count", 0) for b in brands_intelligence.values())
+    total_halilit_only = sum(b.get("halilit_only_count", 0) for b in brands_intelligence.values())
+    total_unified = sum(b.get("unified_products", 0) for b in brands_intelligence.values())
+    
+    return {
+        "strategy": dual_source_strategy.get("source_strategy", "dual-source-brand-first"),
+        "version": dual_source_strategy.get("version", "3.5"),
+        "last_update": ecosystem_report.get("timestamp") or orchestration_report.get("timestamp", ""),
+        "global_stats": {
+            "total_products": total_unified,
+            "primary_products": total_primary,  # Both sources matched
+            "secondary_products": total_secondary,  # Brand website only
+            "halilit_only_products": total_halilit_only,  # Halilit distributor only
+            "dual_source_coverage": round((total_primary / total_unified * 100) if total_unified > 0 else 0, 1),
+        },
+        "brands": sorted(brands_intelligence.values(), key=lambda x: x["unified_products"], reverse=True),
+        "source_breakdown": {
+            "PRIMARY": {
+                "count": total_primary,
+                "description": "Products found in both brand website AND Halilit",
+                "badge": "Official + Price"
+            },
+            "SECONDARY": {
+                "count": total_secondary,
+                "description": "Products from brand website only, not in Halilit",
+                "badge": "Brand Direct"
+            },
+            "HALILIT_ONLY": {
+                "count": total_halilit_only,
+                "description": "Products from Halilit only, not on brand website",
+                "badge": "Available from Distributor"
+            }
+        }
+    }
+
 # ============ Price Endpoint ============
 
 

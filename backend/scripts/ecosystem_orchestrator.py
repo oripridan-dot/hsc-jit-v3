@@ -16,6 +16,8 @@ Usage:
     python ecosystem_orchestrator.py --brand=nord     # Single brand update
 """
 
+from halilit_scraper import HalilitScraper
+from brand_website_scraper import BrandWebsiteScraper
 import asyncio
 import argparse
 import json
@@ -30,8 +32,6 @@ from urllib.parse import quote_plus
 import sys
 sys.path.insert(0, str(Path(__file__).parent))
 
-from brand_website_scraper import BrandWebsiteScraper
-from halilit_scraper import HalilitScraper
 
 logging.basicConfig(
     level=logging.INFO,
@@ -53,10 +53,10 @@ class EcosystemOrchestrator:
         self.brand_catalogs_dir = self.data_dir / "catalogs_brand"
         self.halilit_catalogs_dir = self.data_dir / "catalogs_halilit"
         self.unified_catalogs_dir = self.data_dir / "catalogs_unified"
-        
+
         # Ensure directories exist
         self.unified_catalogs_dir.mkdir(parents=True, exist_ok=True)
-        
+
         self.brand_scraper = BrandWebsiteScraper(data_dir=self.data_dir)
         self.halilit_scraper = HalilitScraper()
 
@@ -86,7 +86,7 @@ class EcosystemOrchestrator:
     async def scrape_brand_website(self, brand_id: str) -> Dict[str, Any]:
         """Scrape a single brand website."""
         logger.info(f"🔍 Scraping brand website: {brand_id}")
-        
+
         # Load brand config
         config_path = self.brands_dir / brand_id / "scrape_config.json"
         if not config_path.exists():
@@ -114,7 +114,7 @@ class EcosystemOrchestrator:
     async def scrape_halilit_catalog(self, brand_id: str) -> Dict[str, Any]:
         """Scrape Halilit distributor for a brand."""
         logger.info(f"📦 Scraping Halilit catalog: {brand_id}")
-        
+
         # Build Halilit brand name from metadata
         metadata_path = self.brands_dir / "brands_metadata.json"
         halilit_brand_name = None
@@ -140,7 +140,8 @@ class EcosystemOrchestrator:
             result = await self.halilit_scraper.scrape_brand(brand_id, brand_url)
 
             # Persist Halilit catalog for downstream merge
-            output_path = self.halilit_catalogs_dir / f"{brand_id}_halilit.json"
+            output_path = self.halilit_catalogs_dir / \
+                f"{brand_id}_halilit.json"
             payload = {
                 **result,
                 "timestamp": datetime.now().isoformat(),
@@ -160,18 +161,18 @@ class EcosystemOrchestrator:
     def merge_catalogs(self, brand_id: str) -> Dict[str, Any]:
         """Merge brand and Halilit catalogs with ecosystem intelligence."""
         logger.info(f"🔗 Merging catalogs for: {brand_id}")
-        
+
         # Load brand catalog
         brand_path = self.brand_catalogs_dir / f"{brand_id}_brand.json"
         halilit_path = self.halilit_catalogs_dir / f"{brand_id}_halilit.json"
-        
+
         brand_data = {"products": [], "total_products": 0}
         halilit_data = {"products": [], "total_products": 0}
-        
+
         if brand_path.exists():
             with open(brand_path) as f:
                 brand_data = json.load(f)
-        
+
         if halilit_path.exists():
             with open(halilit_path) as f:
                 halilit_data = json.load(f)
@@ -183,13 +184,14 @@ class EcosystemOrchestrator:
         for brand_prod in brand_data.get("products", []):
             best_match = None
             best_score = 0.0
-            
+
             for hal_prod in halilit_data.get("products", []):
-                score = self._similarity(brand_prod.get("name", ""), hal_prod.get("name", ""))
+                score = self._similarity(brand_prod.get(
+                    "name", ""), hal_prod.get("name", ""))
                 if score > best_score:
                     best_score = score
                     best_match = hal_prod
-            
+
             if best_match and best_score >= 0.85:
                 # PRIMARY: Brand content + Halilit pricing
                 merged = {**brand_prod, **best_match}
@@ -198,7 +200,8 @@ class EcosystemOrchestrator:
                 merged['last_updated'] = datetime.now().isoformat()
                 unified_products.append(merged)
                 matched_halilit_ids.add(id(best_match))
-                logger.info(f"  ✅ PRIMARY: {brand_prod.get('name')} ({best_score:.2f})")
+                logger.info(
+                    f"  ✅ PRIMARY: {brand_prod.get('name')} ({best_score:.2f})")
             else:
                 # SECONDARY: Brand-only (no pricing yet)
                 brand_prod['source'] = 'SECONDARY'
@@ -235,14 +238,15 @@ class EcosystemOrchestrator:
         logger.info(f"  💾 Saved: {len(unified_products)} unified products")
         logger.info(f"    PRIMARY: {unified['statistics']['primary']}")
         logger.info(f"    SECONDARY: {unified['statistics']['secondary']}")
-        logger.info(f"    HALILIT_ONLY: {unified['statistics']['halilit_only']}")
+        logger.info(
+            f"    HALILIT_ONLY: {unified['statistics']['halilit_only']}")
 
         return unified
 
     def _similarity(self, a: str, b: str) -> float:
         """Calculate string similarity for product matching."""
         import re
-        
+
         def normalize(text):
             # Remove Hebrew characters (non-ASCII)
             text = re.sub(r'[^\x00-\x7F]+', ' ', text)
@@ -251,7 +255,7 @@ class EcosystemOrchestrator:
             text = re.sub(r'[^\w\s]', ' ', text)
             text = re.sub(r'\s+', ' ', text).strip()
             return text
-        
+
         return SequenceMatcher(None, normalize(a), normalize(b)).ratio()
 
     async def run_full_sync(self, brands: Optional[List[str]] = None):
@@ -261,7 +265,7 @@ class EcosystemOrchestrator:
 
         logger.info(f"🚀 Starting Full Ecosystem Sync for {len(brands)} brands")
         logger.info(f"   Brands: {', '.join(brands)}")
-        
+
         results = {
             'timestamp': datetime.now().isoformat(),
             'mode': 'full',
@@ -272,17 +276,17 @@ class EcosystemOrchestrator:
             logger.info(f"\n{'='*60}")
             logger.info(f"Processing: {brand_id.upper()}")
             logger.info(f"{'='*60}")
-            
+
             try:
                 # Step 1: Scrape brand website
                 brand_result = await self.scrape_brand_website(brand_id)
-                
+
                 # Step 2: Scrape Halilit (if needed)
                 halilit_result = await self.scrape_halilit_catalog(brand_id)
-                
+
                 # Step 3: Merge with intelligence
                 unified_result = self.merge_catalogs(brand_id)
-                
+
                 results['brands'][brand_id] = {
                     'brand_products': brand_result.get('total_products', 0),
                     'halilit_products': halilit_result.get('total_products', 0),
@@ -290,7 +294,7 @@ class EcosystemOrchestrator:
                     'statistics': unified_result.get('statistics', {}),
                     'status': 'success'
                 }
-                
+
             except Exception as e:
                 logger.error(f"❌ Failed to process {brand_id}: {e}")
                 results['brands'][brand_id] = {
@@ -307,7 +311,7 @@ class EcosystemOrchestrator:
         logger.info(f"✅ ECOSYSTEM SYNC COMPLETE")
         logger.info(f"{'='*60}")
         logger.info(f"Report saved: {report_path}")
-        
+
         return results
 
     async def run_quick_sync(self, brands: Optional[List[str]] = None):
@@ -316,7 +320,7 @@ class EcosystemOrchestrator:
             brands = self.get_all_brands()
 
         logger.info(f"⚡ Quick Sync: {len(brands)} brands (Halilit only)")
-        
+
         for brand_id in brands:
             try:
                 # Only update Halilit (pricing/stock changes faster)
@@ -328,22 +332,24 @@ class EcosystemOrchestrator:
 
 
 async def main():
-    parser = argparse.ArgumentParser(description='Ecosystem Intelligence Orchestrator v3.5')
+    parser = argparse.ArgumentParser(
+        description='Ecosystem Intelligence Orchestrator v3.5')
     parser.add_argument('--mode', choices=['full', 'quick'], default='full',
                         help='Sync mode: full (brand+halilit) or quick (halilit only)')
     parser.add_argument('--brand', type=str, help='Single brand to process')
-    parser.add_argument('--brands', nargs='+', help='Multiple brands to process')
-    
+    parser.add_argument('--brands', nargs='+',
+                        help='Multiple brands to process')
+
     args = parser.parse_args()
-    
+
     orchestrator = EcosystemOrchestrator()
-    
+
     brands = None
     if args.brand:
         brands = [args.brand]
     elif args.brands:
         brands = args.brands
-    
+
     if args.mode == 'full':
         await orchestrator.run_full_sync(brands)
     else:

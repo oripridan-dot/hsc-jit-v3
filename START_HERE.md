@@ -1,340 +1,264 @@
-# 🚀 HSC JIT v3.5 - START HERE
+# 🚀 START HERE - Dual-Source Intelligence System
 
-## ✅ Status: IMPLEMENTATION COMPLETE & READY
+Welcome to HSC-JIT v3.5 - the production-ready dual-source intelligence platform.
 
-The dual-source catalog system has been fully architected, implemented, validated, and is ready for production synchronization.
+## What is Dual-Source Intelligence?
 
----
+**Dual-Source Intelligence** combines two complementary data streams to create complete product intelligence:
 
-## 📊 What You Have
+```
+Brand Website Content    +    Halilit Distributor Data    =    Complete Intelligence
+(specs, features, docs)       (pricing, SKU, stock)            (unified catalog)
+```
 
-A complete production-ready system that:
-- ✅ Extracts 84 official Halilit-authorized brands
-- ✅ Scrapes Halilit's real inventory (what they actually sell)
-- ✅ Analyzes brand websites (reference for gaps)
-- ✅ Generates gap analysis (expansion opportunities)
-- ✅ Merges dual sources into unified catalogs
+### Product Classification
 
----
+Every product is automatically classified:
 
-## 📚 Documentation (Read These)
+- **🟢 PRIMARY**: Found on both brand website AND Halilit → Complete data (specs + pricing)
+- **🟣 SECONDARY**: Brand website only → Full specs, pending distributor integration
+- **🟡 HALILIT_ONLY**: Distributor only → Accessories, legacy items, distributor-specific products
 
-### Quick Overview (Start Here!)
-1. **This file** - You're reading it!
-2. [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) - High-level overview (5 min read)
+## 5-Minute Quick Start
 
-### For Understanding the System
-3. [SYSTEM_ARCHITECTURE.txt](SYSTEM_ARCHITECTURE.txt) - Complete design with diagrams (15 min read)
+### 1. Start the System
 
-### For Running & Commands
-4. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Command reference (2 min)
-
-### For Technical Details
-5. [DUAL_SOURCE_SYSTEM.md](DUAL_SOURCE_SYSTEM.md) - Technical documentation (20 min)
-
-### For File Inventory
-6. [FILES_MANIFEST.md](FILES_MANIFEST.md) - What was created/modified/deleted (10 min)
-
----
-
-## 🎯 Next Steps (In Order)
-
-### Step 1: Validate System (2 minutes)
 ```bash
-cd /workspaces/hsc-jit-v3/backend
-python scripts/system_validator.py
+# Terminal 1 - Backend
+cd backend
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+# Terminal 2 - Frontend
+cd frontend && pnpm dev
 ```
 
-**Expected Output:**
+### 2. Open the UI
+
+Navigate to `http://localhost:5173`
+
+### 3. Explore Dual-Source Intelligence
+
+Click the **"🔀 Dual-Source"** button in the top bar to see:
+- **Global Statistics**: Total products, PRIMARY/SECONDARY/HALILIT_ONLY counts, coverage percentage
+- **Source Breakdown**: Visual cards showing classification details
+- **Brand Coverage**: Per-brand analysis with coverage percentages
+
+### 4. Check Product Classifications
+
+- Browse products in the main view
+- Notice the colored badges on each product thumbnail (emerald/violet/amber)
+- Click any product to see its detailed classification in the header
+
+## Current System Status
+
+As of January 15, 2026:
+
 ```
-✅ VALIDATION PASSED - System ready for dual-source sync
+Total Products: 262
+├─ PRIMARY (🟢):      12 (4.6%)  - Both sources matched
+├─ SECONDARY (🟣):     1 (0.4%)  - Brand website only
+└─ HALILIT_ONLY (🟡): 249 (95.0%) - Distributor only
+
+Brands Tracked: 18
+Coverage Target: 80%+ PRIMARY (work in progress)
 ```
 
-### Step 2: Run Priority Sync (45 minutes)
+## Key Features You Can Use Now
+
+### 1. Real-Time Product Search
+Type in the search box to get instant predictions with WebSocket-powered matching.
+
+### 2. Dual-Source Analytics Dashboard
+- Click "🔀 Dual-Source" button
+- View global and per-brand metrics
+- Track synchronization health
+- Identify coverage gaps
+
+### 3. Visual Product Classification
+- Every product shows its source with color-coded badges
+- Hover badges for detailed tooltips
+- Quickly identify which products have complete intelligence
+
+### 4. Brand Explorer
+- Click "🎯 Brands" to see all 18 brands
+- View product counts and coverage per brand
+- Navigate into brand-specific catalogs
+
+### 5. Product Coverage Stats
+- Click "📊 Coverage" for detailed statistics
+- See top brands by product count
+- Monitor empty/developing brands
+
+## API Endpoints You Can Test
+
+### Dual-Source Intelligence
 ```bash
-python scripts/master_sync.py --priority
+curl http://localhost:8000/api/dual-source-intelligence | jq
 ```
 
-**What it does:**
-- Syncs 18 priority brands
-- Scrapes Halilit inventory (primary source)
-- Scrapes brand websites (reference source)
-- Analyzes gaps between sources
-- Builds unified catalogs
-- Generates summary report
+Returns comprehensive ecosystem analytics including:
+- Global statistics
+- Brand-level coverage data
+- Source breakdown details
+- Last sync timestamps
 
-**Output locations:**
-- `backend/data/catalogs_halilit/` - Halilit inventory
-- `backend/data/catalogs/` - Brand website catalogs
-- `backend/data/gap_reports/` - Gap analysis
-- `backend/data/catalogs_unified/` - Merged catalogs
-
-### Step 3: Review Results (5 minutes)
+### All Products
 ```bash
-# View summary
-cat backend/data/gap_reports/summary_gap_report.json
-
-# Check coverage by brand
-jq '.[] | {brand: .brand_id, coverage: .coverage_percentage}' \
-  backend/data/gap_reports/summary_gap_report.json
-
-# Find highest-gap brands
-jq '.[] | select(.coverage_percentage < 20)' \
-  backend/data/gap_reports/summary_gap_report.json
+curl http://localhost:8000/api/products | jq
 ```
 
-### Step 4: Frontend Integration (Next Phase)
-Update `frontend/src/services/CatalogService.ts` to use:
-- Primary: `backend/data/catalogs_halilit/`
-- Reference: `backend/data/catalogs/`
-- Unified: `backend/data/catalogs_unified/`
+Returns the unified catalog with source attribution.
 
----
-
-## 🔑 Key Concepts
-
-### Single Source of Truth
-**Halilit** is the authoritative source:
-- https://www.halilit.com/pages/4367
-- 84 official authorized brands
-- Official product inventory
-- Official images and pricing
-- All images are brand-approved and safe to use
-
-### Dual-Source Design
-```
-Halilit (PRIMARY)           Brand Websites (REFERENCE)
-├─ Real inventory           ├─ Complete product lines
-├─ Official images          ├─ All models available
-├─ Actual pricing           ├─ Full specifications
-└─ Current stock status     └─ Product variations
-
-                    ↓
-                Gap Analysis
-                ├─ Coverage % (what % of brand's line is in Halilit)
-                ├─ Gap products (what's missing)
-                └─ Expansion opportunities
+### All Brands
+```bash
+curl http://localhost:8000/api/brands | jq
 ```
 
-### Coverage Percentage
-Shows what percentage of a brand's full product line is available from Halilit.
+Returns brand metadata with product counts.
 
-**Example:**
-- Roland on Halilit: 8 products
-- Roland full line: 42 products
-- Coverage: (8/42) × 100 = 19.05%
-- Gap: 34 products not in inventory
+## Running Synchronization
 
-**Use:** Identify which brands need inventory expansion
+### Full Ecosystem Sync (All 18 Brands)
+```bash
+cd backend
+python scripts/ecosystem_orchestrator.py --mode=full
+```
 
----
+**Time**: ~15-20 minutes  
+**Output**: 18 unified catalogs in `backend/data/catalogs_unified/`
 
-## 📁 File Structure
+### Single Brand Sync (e.g., Nord)
+```bash
+cd backend
+python scripts/ecosystem_orchestrator.py --brand=nord
+```
+
+**Time**: ~2-3 minutes  
+**Output**: `backend/data/catalogs_unified/nord_catalog.json`
+
+### View Logs
+```bash
+tail -f backend/logs/ecosystem/automation.log
+```
+
+## Understanding the Data Flow
 
 ```
-/workspaces/hsc-jit-v3/
-├── START_HERE.md                      ← You are here
-├── IMPLEMENTATION_SUMMARY.md          ← Read this second
-├── SYSTEM_ARCHITECTURE.txt            ← Complete design
-├── QUICK_REFERENCE.md                 ← Commands
-├── DUAL_SOURCE_SYSTEM.md              ← Technical details
-├── FILES_MANIFEST.md                  ← File inventory
+1. SCRAPING
+   ├─ Brand Website → backend/data/catalogs_brand/
+   └─ Halilit Distributor → backend/data/catalogs_halilit/
+
+2. MERGING
+   • Fuzzy name matching (85% similarity threshold)
+   • Source attribution (PRIMARY/SECONDARY/HALILIT_ONLY)
+   • Duplicate detection and deduplication
+   └─ Output → backend/data/catalogs_unified/
+
+3. API SERVING
+   • CatalogService loads unified catalogs
+   • WebSocket for real-time search
+   • REST endpoints for analytics
+   └─ Frontend displays with classification badges
+```
+
+## Project Structure
+
+```
+hsc-jit-v3/
+├── backend/
+│   ├── app/
+│   │   ├── main.py                      # Dual-source API endpoint
+│   │   └── services/catalog.py          # Unified catalog service
+│   ├── scripts/
+│   │   ├── ecosystem_orchestrator.py    # Master sync engine
+│   │   ├── halilit_scraper.py           # Distributor scraper
+│   │   └── brand_website_scraper.py     # Brand scraper
+│   └── data/
+│       ├── brands/                      # 18 brand configs
+│       ├── catalogs_unified/            # Merged catalogs
+│       ├── catalogs_brand/              # Brand website data
+│       ├── catalogs_halilit/            # Distributor data
+│       ├── dual_source_strategy.json    # Classification rules
+│       └── ecosystem_sync_report.json   # Sync metrics
 │
-└── backend/
-    ├── scripts/
-    │   ├── system_validator.py        ← Validate system
-    │   ├── halilit_scraper.py         ← Scrape Halilit
-    │   ├── gap_analyzer.py            ← Analyze gaps
-    │   ├── master_sync.py             ← Orchestrate all
-    │   ├── unified_catalog_builder.py ← Merge catalogs
-    │   ├── harvest_all_brands.py      ← Scrape brands
-    │   └── diplomat.py                ← Generate configs
-    │
-    └── data/
-        ├── halilit_official_brands.json    ← SOURCE OF TRUTH
-        ├── brands/                         ← Brand configs
-        ├── catalogs/                       ← Brand products
-        ├── catalogs_halilit/               ← Halilit inventory (generated)
-        ├── catalogs_unified/               ← Merged catalogs (generated)
-        └── gap_reports/                    ← Gap analysis (generated)
+└── frontend/
+    └── src/
+        ├── App.tsx                      # Dual-Source button
+        ├── components/
+        │   ├── DualSourceIntelligence.tsx   # Analytics dashboard
+        │   ├── ui/DualSourceBadge.tsx       # Classification badge
+        │   ├── ProductDetailView.tsx         # Product detail with badge
+        │   └── FolderView.tsx                # Product grid with badges
+        └── utils/productClassification.ts   # Classification logic
 ```
 
----
+## Next Steps
 
-## 💾 What Was Done
+### For Users
+1. ✅ Explore the Dual-Source Intelligence dashboard
+2. ✅ Browse products and check their classifications
+3. ✅ Try searching for products (e.g., "nord piano", "roland keyboard")
+4. ✅ View brand-specific catalogs
 
-### New Scripts Created (5)
-- `halilit_scraper.py` - Scrape Halilit inventory
-- `gap_analyzer.py` - Compare sources
-- `master_sync.py` - Orchestrate all
-- `unified_catalog_builder.py` - Merge catalogs
-- `system_validator.py` - Validate system
+### For Developers
+1. 📖 Read [DUAL_SOURCE_SYSTEM.md](DUAL_SOURCE_SYSTEM.md) for architecture details
+2. 📖 Read [V3.5_OPERATIONS_GUIDE.md](V3.5_OPERATIONS_GUIDE.md) for operations
+3. 🔧 Enhance brand website scrapers to increase PRIMARY coverage
+4. 🔧 Set up automated synchronization via cron
 
-### Scripts Updated (2)
-- `extract_halilit_brands.py` - Fixed brand extraction
-- `harvest_all_brands.py` - Now uses official brands list
+### For Optimization
+1. **Target**: Increase PRIMARY coverage from 4.6% to 80%+
+2. **Focus Brands**: Roland (500 products), Pearl (364), Mackie (219)
+3. **Strategy**: Fix website scrapers, improve CSS selectors
+4. **Timeline**: 2-4 weeks for full coverage
 
-### Data Generated
-- `halilit_official_brands.json` - 84 official brands
+## Documentation
 
-### Brands Removed (Non-Authorized)
-- yamaha/
-- korg/
-- arturia/
+- **[README.md](README.md)** - Complete system overview
+- **[DUAL_SOURCE_SYSTEM.md](DUAL_SOURCE_SYSTEM.md)** - Architecture deep dive
+- **[V3.5_START_HERE.md](V3.5_START_HERE.md)** - v3.5 specific guide
+- **[V3.5_DOCUMENTATION_INDEX.md](V3.5_DOCUMENTATION_INDEX.md)** - Documentation map
+- **[V3.5_OPERATIONS_GUIDE.md](V3.5_OPERATIONS_GUIDE.md)** - Operations manual
+- **[V3.5_ECOSYSTEM_INTELLIGENCE.md](V3.5_ECOSYSTEM_INTELLIGENCE.md)** - Technical architecture
 
-### Documentation Created (6 files)
-- IMPLEMENTATION_SUMMARY.md
-- SYSTEM_ARCHITECTURE.txt
-- FILES_MANIFEST.md
-- QUICK_REFERENCE.md
-- DUAL_SOURCE_SYSTEM.md
-- HALILIT_BRANDS.md
+## Troubleshooting
 
----
-
-## ⚡ Quick Commands
-
+### Frontend won't start
 ```bash
-# Validate system
-cd /workspaces/hsc-jit-v3/backend
-python scripts/system_validator.py
-
-# Run priority sync (18 brands, ~45 min)
-python scripts/master_sync.py --priority
-
-# Run full sync (84 brands, ~4 hours)
-python scripts/master_sync.py
-
-# View results
-cat backend/data/gap_reports/summary_gap_report.json
-
-# List catalogs
-ls -la backend/data/catalogs_unified/
+cd frontend
+rm -rf node_modules pnpm-lock.yaml
+pnpm install
+pnpm dev
 ```
 
----
-
-## 🎓 Learning Path
-
-1. **Read this file** (5 min) - Understand what's ready
-2. **Skim IMPLEMENTATION_SUMMARY.md** (10 min) - See the details
-3. **Glance at SYSTEM_ARCHITECTURE.txt** (5 min) - Understand the design
-4. **Run system_validator.py** (2 min) - Confirm readiness
-5. **Run priority sync** (45 min) - Generate the data
-6. **Review results** (5 min) - See what you've got
-
-**Total time to go live: ~1.5 hours**
-
----
-
-## ❓ FAQ
-
-**Q: Is the system production-ready?**
-A: Yes. All components are implemented, validated, and passing checks.
-
-**Q: What happens when I run the sync?**
-A: It scrapes Halilit + brand websites, compares them, generates gap analysis, and builds unified catalogs.
-
-**Q: How long does it take?**
-A: Priority sync (18 brands): ~45 minutes. Full sync (84 brands): ~4 hours.
-
-**Q: Can I run it again?**
-A: Yes. It will overwrite previous results. Great for keeping data fresh.
-
-**Q: What are the system requirements?**
-A: Python 3.11+, 500 MB storage, stable internet, ~500 MB RAM.
-
-**Q: Can I integrate this with my frontend?**
-A: Yes. See IMPLEMENTATION_SUMMARY.md for integration details.
-
-**Q: What if something breaks?**
-A: Check FILES_MANIFEST.md and SYSTEM_ARCHITECTURE.txt for troubleshooting.
-
----
-
-## 🎯 Success Criteria
-
-You'll know it's working when:
-
-✅ `system_validator.py` reports **0 issues**  
-✅ `master_sync.py` completes without errors  
-✅ `gap_reports/summary_gap_report.json` exists and has data  
-✅ `catalogs_unified/` has JSON files for all brands synced  
-✅ Coverage percentages show realistic values  
-
----
-
-## 📞 Support
-
-If you get stuck:
-
-1. **Check documentation first**
-   - Start with IMPLEMENTATION_SUMMARY.md
-   - See SYSTEM_ARCHITECTURE.txt for designs
-   - Review QUICK_REFERENCE.md for commands
-
-2. **Run the validator**
-   - `python backend/scripts/system_validator.py`
-   - It checks all components and reports issues
-
-3. **Check the logs**
-   - Script output shows what's happening
-   - Check `backend/data/sync_results.json` after sync
-
-4. **Read the code**
-   - All scripts have docstrings
-   - Comments explain key logic
-
----
-
-## 🚀 Ready to Begin?
-
-### Start here:
+### Backend API errors
 ```bash
-cd /workspaces/hsc-jit-v3/backend
-python scripts/system_validator.py
+cd backend
+pip install -r requirements.txt
+# Check if Redis is running (optional for caching)
+# Start backend
+uvicorn app.main:app --reload
 ```
 
-### Then run:
-```bash
-python scripts/master_sync.py --priority
-```
+### No products showing
+1. Check if backend is running: `curl http://localhost:8000/api/products`
+2. Check unified catalogs exist: `ls -la backend/data/catalogs_unified/`
+3. If empty, run sync: `python backend/scripts/ecosystem_orchestrator.py --brand=nord`
 
-### Then review:
-```bash
-cat backend/data/gap_reports/summary_gap_report.json
-```
+### Dual-Source endpoint returns errors
+1. Verify data files exist:
+   - `backend/data/dual_source_strategy.json`
+   - `backend/data/ecosystem_sync_report.json`
+2. Run a sync to generate data: `python backend/scripts/ecosystem_orchestrator.py --brand=nord`
+
+## Questions?
+
+1. Check the [V3.5_DOCUMENTATION_INDEX.md](V3.5_DOCUMENTATION_INDEX.md) for the right doc
+2. Review [V3.5_OPERATIONS_GUIDE.md](V3.5_OPERATIONS_GUIDE.md) for operations
+3. Read [DUAL_SOURCE_SYSTEM.md](DUAL_SOURCE_SYSTEM.md) for architecture
 
 ---
 
-## 📋 Checklist
-
-- [ ] Read this file
-- [ ] Read IMPLEMENTATION_SUMMARY.md
-- [ ] Run system_validator.py
-- [ ] Run master_sync.py --priority
-- [ ] Review gap_reports/summary_gap_report.json
-- [ ] Plan frontend integration
-- [ ] Update CatalogService.ts to use catalogs_unified/
-- [ ] Test product search
-- [ ] Set up scheduled syncs
-
----
-
-## 🎉 You're All Set!
-
-The system is ready. The documentation is complete. All scripts are in place and validated.
-
-**Next step:** Run the validator and sync.
-
-```bash
-cd /workspaces/hsc-jit-v3/backend
-python scripts/system_validator.py
-```
-
----
-
-**System Version:** HSC JIT v3.5  
-**Status:** Production Ready  
-**Last Updated:** January 15, 2025  
-**Implementation:** Complete
+**Version**: 3.5.0  
+**Status**: 🟢 Production Ready  
+**Last Updated**: January 15, 2026

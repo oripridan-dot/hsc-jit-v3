@@ -155,6 +155,20 @@ export function handleImageError(
 }
 
 /**
+ * Generate srcSet for responsive images
+ */
+function generateImageSrcSet(src: string): string {
+  // Generate srcSet with different presets
+  const presets: ImagePreset[] = ['thumbnail', 'medium', 'large'];
+  return presets
+    .map((preset, index) => {
+      const width = [150, 600, 1200][index];
+      return `${getOptimizedImageUrl(src, preset)} ${width}w`;
+    })
+    .join(', ');
+}
+
+/**
  * Responsive image component helper
  */
 export interface ResponsiveImageOptions {

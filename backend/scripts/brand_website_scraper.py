@@ -59,7 +59,7 @@ class BrandWebsiteScraper:
         # Check if multi-page strategy is configured
         if config and config.get("scraping_strategy") == "multi_page":
             return await self._scrape_multi_page(brand_id, start_url, config)
-        
+
         # Default single-page scraping
         return await self._scrape_single_page(brand_id, start_url, max_products, config)
 
@@ -70,7 +70,7 @@ class BrandWebsiteScraper:
             return self._error_result(brand_id, "Playwright not installed")
 
         logger.info(f"🌐 [MULTI-PAGE SCRAPER] Starting scrape for: {brand_id}")
-        
+
         product_pages = config.get("product_pages", [])
         if not product_pages:
             logger.error("No product_pages defined in config")
@@ -86,7 +86,7 @@ class BrandWebsiteScraper:
                 for page_slug in product_pages:
                     url = f"{base_url}/{page_slug}"
                     logger.info(f"  📄 Loading {page_slug}...")
-                    
+
                     try:
                         page = await context.new_page()
                         await page.goto(url, wait_until="networkidle", timeout=20000)
@@ -106,7 +106,7 @@ class BrandWebsiteScraper:
                         # Check for variants
                         variant_selector = config.get("variant_selector")
                         variant_buttons = await page.query_selector_all(variant_selector) if variant_selector else []
-                        
+
                         # Filter out empty/invalid buttons
                         valid_variants = []
                         for btn in variant_buttons:
@@ -124,7 +124,8 @@ class BrandWebsiteScraper:
                                     "detail_url": url,
                                     "brand": brand_id.title()
                                 })
-                            logger.info(f"    ✅ {len(valid_variants)} variants")
+                            logger.info(
+                                f"    ✅ {len(valid_variants)} variants")
                         else:
                             # Single product
                             all_products.append({
@@ -138,7 +139,8 @@ class BrandWebsiteScraper:
                         await page.close()
 
                     except Exception as e:
-                        logger.error(f"    ❌ Error on {page_slug}: {str(e)[:50]}")
+                        logger.error(
+                            f"    ❌ Error on {page_slug}: {str(e)[:50]}")
 
             finally:
                 await browser.close()
@@ -157,7 +159,8 @@ class BrandWebsiteScraper:
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
 
-        logger.info(f"   💾 Saved {len(all_products)} products to {output_path}")
+        logger.info(
+            f"   💾 Saved {len(all_products)} products to {output_path}")
         return result
 
     def _error_result(self, brand_id: str, error: str) -> Dict[str, Any]:
@@ -173,7 +176,7 @@ class BrandWebsiteScraper:
         }
 
     async def _scrape_single_page(self, brand_id: str, start_url: str, max_products: int = 500,
-                           config: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+                                  config: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Scrape brand website for products using Playwright.
 
