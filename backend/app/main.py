@@ -18,6 +18,7 @@ from .services.catalog import CatalogService
 from .services.unified_router import UnifiedQueryRouter
 from .services.harvester import HarvesterService
 from .services.image_optimizer import get_image_optimizer
+from .services.sync_status import SyncStatusService
 
 import json
 import uuid
@@ -193,6 +194,76 @@ async def get_all_products():
     return {
         "count": len(catalog.products),
         "products": catalog.products
+    }
+
+# ============ Sync Status Endpoint ============
+
+
+@app.get("/api/sync-status")
+async def get_sync_status():
+    """
+    Get real-time sync progress and status.
+    Used for monitoring dashboard in the UI.
+    """
+    sync_service = SyncStatusService()
+    return sync_service.get_sync_status()
+
+
+# ============ System Health for Frontend Badge ============
+
+
+@app.get("/api/system-health")
+async def get_system_health():
+    """
+    Get system health status for frontend badge.
+    Returns simplified health status for UI display.
+    """
+    from pathlib import Path
+    import json
+    from datetime import datetime
+
+    # Try to read the health check file from elite monitor
+    backend_dir = Path(__file__).parent.parent
+    health_file = backend_dir / "data" / "catalogs_unified" / "health_check.json"
+
+    if health_file.exists():
+        try:
+            with open(health_file) as f:
+                health_data = json.load(f)
+
+            # Convert to frontend format
+            status = "healthy"
+            if health_data.get("issues"):
+                status = "error" if len(
+                    health_data["issues"]) > 2 else "degraded"
+            elif health_data.get("merge_status") == "⏭️ NOT_RUN":
+                status = "checking"
+
+            return {
+                "status": status,
+                "last_audit": health_data.get("timestamp", datetime.now().isoformat()),
+                "metrics": {
+                    "total": health_data.get("total_products", 0),
+                    "broken": len(health_data.get("issues", [])),
+                    "ok": health_data.get("total_products", 0) - len(health_data.get("issues", []))
+                }
+            }
+        except Exception as e:
+            logger.error(f"Error reading health file: {e}")
+
+    # Fallback: use catalog count
+    catalog = app.state.catalog
+    product_count = len(catalog.products) if hasattr(
+        catalog, 'products') else 0
+
+    return {
+        "status": "healthy" if product_count > 0 else "missing",
+        "last_audit": datetime.now().isoformat(),
+        "metrics": {
+            "total": product_count,
+            "broken": 0,
+            "ok": product_count
+        }
     }
 
 # ============ Brands Endpoint ============

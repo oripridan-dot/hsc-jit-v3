@@ -1,31 +1,31 @@
 {
   "brand_id": "roland",
-  "base_url": "https://www.roland.com/us/categories/pianos/",
-  "product_list_selector": ".category-list ul.cf",
-  "product_item_selector": "li",
+  "base_url": "https://www.roland.com/products/",
+  "product_list_selector": ".product-list, .products-container",
+  "product_item_selector": ".product-card, .product-item, [data-product-id]",
   "pagination": {
-    "type": "none",
-    "next_button_selector": null
+    "type": "scroll",
+    "next_button_selector": ".load-more, .next-page"
   },
   "fields": {
     "name": {
-      "selector": "h3",
+      "selector": ".product-name, .product-title, h2, h3",
       "attribute": "text"
     },
     "image_url": {
-      "selector": "img",
-      "attribute": "data-src"
+      "selector": "img.product-image, .product-img img",
+      "attribute": "src"
     },
     "detail_url": {
-      "selector": "a",
+      "selector": "a.product-link, a",
       "attribute": "href"
     },
     "price": {
-      "selector": null,
+      "selector": ".price, .product-price, [data-price]",
       "attribute": "text"
     },
     "category": {
-      "selector": null,
+      "selector": ".category, .product-category",
       "attribute": "text"
     }
   }

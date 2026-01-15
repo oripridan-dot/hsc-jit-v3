@@ -1,0 +1,25 @@
+{
+  "total_brands": 2,
+  "brands": [
+    {
+      "brand_id": "nord",
+      "halilit_count": 37,
+      "brand_count": 5,
+      "gap_count": 4,
+      "coverage": 20.0
+    },
+    {
+      "brand_id": "roland",
+      "halilit_count": 500,
+      "brand_count": 8,
+      "gap_count": 8,
+      "coverage": 0.0
+    }
+  ],
+  "totals": {
+    "halilit_products": 537,
+    "brand_products": 13,
+    "total_gap": 12,
+    "average_coverage": 10.0
+  }
+}

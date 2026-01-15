@@ -1,0 +1,690 @@
+{
+  "brand_identity": {
+    "id": "m-audio",
+    "name": "M Audio"
+  },
+  "products": [
+    {
+      "id": "m-audio-m-audio-uber-mic-usb-microphone",
+      "brand": "m-audio",
+      "name": "M-Audio Uber Mic USB Microphone",
+      "category": "מיקרופונים לאולפן",
+      "price": "552",
+      "currency": "ILS",
+      "sku": "52-UBEMIC",
+      "halilit_id": "1576253",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2470195/original/2b8a4c7f00a3fb094c592ae6cc5ba502.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2470195/original/2b8a4c7f00a3fb094c592ae6cc5ba502.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/1576253-m-audio-uber-mic-professional-usb-microphone\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-m-track-duo-hd-producer-pack",
+      "brand": "m-audio",
+      "name": "M-Audio M-Track Duo HD Producer Pack",
+      "category": "חבילות אולפן",
+      "price": "909",
+      "currency": "ILS",
+      "sku": "52-MTRACKDUOHDPACK",
+      "halilit_id": "7994981",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16744724/original/71aa46af38ca3bb3fd15a13af22866d7.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16744724/original/71aa46af38ca3bb3fd15a13af22866d7.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/7994981-m-audio-m-track-duo-hd-audio-interface\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-מוניטור-אולפני-m-audio-forty-eighty",
+      "brand": "m-audio",
+      "name": "מוניטור אולפני M-Audio Forty Eighty",
+      "category": "מוניטורים לאולפן",
+      "price": "1065",
+      "currency": "ILS",
+      "sku": "52-FORTYEIGHTY",
+      "halilit_id": "7589745",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15854069/original/420db456b933a67e34f51fd87ef82064.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15854069/original/420db456b933a67e34f51fd87ef82064.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/7589745-m-audio-forty-eighty-studio-monitor\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-air-1924-vocal-studio-pro",
+      "brand": "m-audio",
+      "name": "M-Audio AIR 192|4 Vocal Studio Pro",
+      "category": "חבילות אולפן",
+      "price": "1051",
+      "currency": "ILS",
+      "sku": "52-AIR192X4SPRO",
+      "halilit_id": "3460992",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6079757/original/8967153a11bf12d73fe5a7b3dcae69db.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6079757/original/8967153a11bf12d73fe5a7b3dcae69db.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3460992-m-audio-air-192-4-vocal-studio-pro\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-oxygen-49-mkv",
+      "brand": "m-audio",
+      "name": "M-Audio Oxygen 49 MKV",
+      "category": "מקלדות שליטה",
+      "price": "728",
+      "currency": "ILS",
+      "sku": "52-OXYGEN49MKV",
+      "halilit_id": "4632764",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8781315/original/97a9764bf081093c84248ef48e61a327.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8781315/original/97a9764bf081093c84248ef48e61a327.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4632764-m-audio-oxygen-49-mkv\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-m-track-duo-hd-audio-interface",
+      "brand": "m-audio",
+      "name": "M-Audio M-Track Duo HD Audio Interface",
+      "category": "כרטיסי קול וממירי אודיו",
+      "price": "428",
+      "currency": "ILS",
+      "sku": "52-MTRACKDUOHD",
+      "halilit_id": "7990475",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16735943/original/1af60470b5cb4073536bcad0313ad40b.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16735943/original/1af60470b5cb4073536bcad0313ad40b.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/7990475-m-audio-m-track-duo-hd-audio-interface\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-oxygen-pro-mini",
+      "brand": "m-audio",
+      "name": "M-Audio Oxygen Pro Mini",
+      "category": "מקלדות שליטה",
+      "price": "552",
+      "currency": "ILS",
+      "sku": "52-OXYGENPROMINI",
+      "halilit_id": "4746444",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9085255/original/2961c8d44e24c087357e345851b28ae8.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9085255/original/2961c8d44e24c087357e345851b28ae8.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4746444-m-audio-oxygen-pro-mini\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-מוניטור-אולפני-m-audio-forty-sixty",
+      "brand": "m-audio",
+      "name": "מוניטור אולפני M-Audio Forty Sixty",
+      "category": "מוניטורים לאולפן",
+      "price": "774",
+      "currency": "ILS",
+      "sku": "52-FORTYSIXTY",
+      "halilit_id": "7589587",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15853451/original/ada1696b554e31c947e2ee606f2b220b.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15853451/original/ada1696b554e31c947e2ee606f2b220b.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/7589587-m-audio-forty-sixty-studio-monitor\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-oxygen-pro-61",
+      "brand": "m-audio",
+      "name": "M-Audio Oxygen Pro 61",
+      "category": "מקלדות שליטה",
+      "price": "1191",
+      "currency": "ILS",
+      "sku": "52-OXYGENPRO61",
+      "halilit_id": "3460822",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6079366/original/8d1466bb5f6ab1e2a04c8266461d2d6e.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6079366/original/8d1466bb5f6ab1e2a04c8266461d2d6e.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3460822-m-audio-oxygen-61-pro\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-oxygen-61-mkv",
+      "brand": "m-audio",
+      "name": "M-Audio Oxygen 61 MKV",
+      "category": "מקלדות שליטה",
+      "price": "1022",
+      "currency": "ILS",
+      "sku": "52-OXYGEN61MKV",
+      "halilit_id": "4632581",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8780606/original/33da17c7cc1140838da3aec197875e0a.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8780606/original/33da17c7cc1140838da3aec197875e0a.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4632581-m-audio-oxygen-61-mkv\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-oxygen-25-mkv",
+      "brand": "m-audio",
+      "name": "M-Audio Oxygen 25 MKV",
+      "category": "מקלדות שליטה",
+      "price": "500",
+      "currency": "ILS",
+      "sku": "52-OXYGEN25MKV",
+      "halilit_id": "4633097",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8782063/original/a513db05ebf0e1e7b15b04a2fbe39753.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8782063/original/a513db05ebf0e1e7b15b04a2fbe39753.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4633097-m-audio-oxygen-25-mkv\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-oxygen-pro-25",
+      "brand": "m-audio",
+      "name": "M-Audio Oxygen Pro 25",
+      "category": "מקלדות שליטה",
+      "price": "824",
+      "currency": "ILS",
+      "sku": "52-OXYGENPRO25",
+      "halilit_id": "3460678",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6079273/original/37906285a68fee1b075c50ebf0a549eb.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6079273/original/37906285a68fee1b075c50ebf0a549eb.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3460678-m-audio-oxygen-pro-25\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-air-19214",
+      "brand": "m-audio",
+      "name": "M-Audio AIR 192|14",
+      "category": "כסאח! כרטיסי קול",
+      "price": "1441",
+      "currency": "ILS",
+      "sku": "52-AIR192X14",
+      "halilit_id": "2737250",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4603991/original/9c03dcd44231987b431ab2410d96855c.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4603991/original/9c03dcd44231987b431ab2410d96855c.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/2737250-m-audio-air-192-14\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-air-1926",
+      "brand": "m-audio",
+      "name": "M-Audio AIR 192|6",
+      "category": "כסאח! כרטיסי קול",
+      "price": "642",
+      "currency": "ILS",
+      "sku": "52-AIR192X6",
+      "halilit_id": "2737523",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4604357/original/64d0deb59e234775d00c96bd298ee442.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4604357/original/64d0deb59e234775d00c96bd298ee442.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/2737523-m-audio-air-192-6-audio-interface\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-air-1928",
+      "brand": "m-audio",
+      "name": "M-Audio AIR 192|8",
+      "category": "כסאח! כרטיסי קול",
+      "price": "855",
+      "currency": "ILS",
+      "sku": "52-AIR192X8",
+      "halilit_id": "3098516",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5312697/original/3b1a2f68097653d6da8581619bea1984.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5312697/original/3b1a2f68097653d6da8581619bea1984.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3098516-m-audio-air-192-8\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-זוג-מוניטורים-m-audio-bx4",
+      "brand": "m-audio",
+      "name": "זוג מוניטורים M-Audio BX4",
+      "category": "מוניטורים לאולפן",
+      "price": "552",
+      "currency": "ILS",
+      "sku": "52-BX4PAIR",
+      "halilit_id": "3419045",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5984912/original/8c7c94de611634efc507b9160d3d37fd.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5984912/original/8c7c94de611634efc507b9160d3d37fd.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3419045-m-audio-bx4\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-oxygen-pro-49",
+      "brand": "m-audio",
+      "name": "M-Audio Oxygen Pro 49",
+      "category": "מקלדות שליטה",
+      "price": "1007",
+      "currency": "ILS",
+      "sku": "52-OXYGENPRO49",
+      "halilit_id": "3968441",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7129696/original/923c92f0e90abb4ae1be444408ef2191.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7129696/original/923c92f0e90abb4ae1be444408ef2191.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3968441-m-audio-oxygen-pro-49\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-m-track-solo",
+      "brand": "m-audio",
+      "name": "M-Audio M-Track Solo",
+      "category": "כרטיסי קול וממירי אודיו",
+      "price": "228",
+      "currency": "ILS",
+      "sku": "52-MTRACK-SOLO2",
+      "halilit_id": "3674062",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6465225/original/e0aa619cb0455d94184182d77922febe.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6465225/original/e0aa619cb0455d94184182d77922febe.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3674062-m-audio-m-track-solo\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-m-game-rgb-dual",
+      "brand": "m-audio",
+      "name": "M-Audio M-Game RGB Dual",
+      "category": "כסאח! וידאו ושידור",
+      "price": "907",
+      "currency": "ILS",
+      "sku": "52-MGAMERGBDUAL",
+      "halilit_id": "5619411",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11295933/original/ddaaae110c203b8f61e022fe4a0d7d60.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11295933/original/ddaaae110c203b8f61e022fe4a0d7d60.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/5619411-m-audio-m-game-rgb-dual-\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-air-hub",
+      "brand": "m-audio",
+      "name": "M-Audio AIR Hub",
+      "category": "כרטיסי קול וממירי אודיו",
+      "price": "426",
+      "currency": "ILS",
+      "sku": "52-AIRXHUB",
+      "halilit_id": "3237592",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5593217/original/6963d6bf3788ecb1fd104b7451cd04d1.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5593217/original/6963d6bf3788ecb1fd104b7451cd04d1.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3237592-m-audio-air-hub-audio-interface\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-m-game-solo",
+      "brand": "m-audio",
+      "name": "M-Audio M-Game Solo",
+      "category": "כסאח! וידאו ושידור",
+      "price": "581",
+      "currency": "ILS",
+      "sku": "52-MGAMESOLO",
+      "halilit_id": "5615343",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11285020/original/2092f47aa773200ea4200a126b6dcd88.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11285020/original/2092f47aa773200ea4200a126b6dcd88.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/5615343-m-audio-m-game-solo\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-m-track-duo",
+      "brand": "m-audio",
+      "name": "M-Audio M-Track Duo",
+      "category": "כרטיסי קול וממירי אודיו",
+      "price": "287",
+      "currency": "ILS",
+      "sku": "52-MTRACK-DUO",
+      "halilit_id": "3676914",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6469118/original/3dde7e38369318d5d00675ca1b12d788.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6469118/original/3dde7e38369318d5d00675ca1b12d788.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3676914-m-audio-m-track-duo\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-keystation-mini-32-mk3",
+      "brand": "m-audio",
+      "name": "M-Audio Keystation Mini 32 MK3",
+      "category": "מקלדות שליטה",
+      "price": "228",
+      "currency": "ILS",
+      "sku": "52-KS-MINI32III",
+      "halilit_id": "2491409",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4117816/original/7109d9555d39d2317a7bb537952adcce.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4117816/original/7109d9555d39d2317a7bb537952adcce.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/2491409-m-audio-keystation-mini-32-mk3\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-hammer-88",
+      "brand": "m-audio",
+      "name": "M-Audio Hammer 88",
+      "category": "מקלדות שליטה",
+      "price": "2552",
+      "currency": "ILS",
+      "sku": "52-HAMMER88",
+      "halilit_id": "1337768",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2037583/original/20390b4b692183cf7664a8c9a6bfb541.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2037583/original/20390b4b692183cf7664a8c9a6bfb541.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/1337768-m-audio-hammer-88\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-keystation-61-mk3",
+      "brand": "m-audio",
+      "name": "M-Audio Keystation 61 MK3",
+      "category": "מקלדות שליטה",
+      "price": "809",
+      "currency": "ILS",
+      "sku": "52-KS61III",
+      "halilit_id": "2492611",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4119378/original/1aeac30f655f750a44fca8b8729a415d.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4119378/original/1aeac30f655f750a44fca8b8729a415d.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/2492611-m-audio-keystation-61-mk3\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-keystation-88-mk3",
+      "brand": "m-audio",
+      "name": "M-Audio Keystation 88 mk3",
+      "category": "מקלדות שליטה",
+      "price": "1206",
+      "currency": "ILS",
+      "sku": "52-KS88III",
+      "halilit_id": "3294890",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5721901/original/c42345fe5122fc0d1065b16066f7aa24.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5721901/original/c42345fe5122fc0d1065b16066f7aa24.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3294890-m-audio-keystation-88-mk3-keyboard-midi-controller\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-keystation-49-mk3",
+      "brand": "m-audio",
+      "name": "M-Audio Keystation 49 MK3",
+      "category": "מקלדות שליטה",
+      "price": "456",
+      "currency": "ILS",
+      "sku": "52-KS49III",
+      "halilit_id": "2115501",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3422584/original/39394dee486618663660179af7ff05af.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3422584/original/39394dee486618663660179af7ff05af.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/2115501-m-audio-keystation-49-mk3\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-פדל-ססטיין-m-audio-sp-2",
+      "brand": "m-audio",
+      "name": "פדל ססטיין M-Audio SP-2",
+      "category": "אביזרים לקלידים",
+      "price": "88",
+      "currency": "ILS",
+      "sku": "52-SP2",
+      "halilit_id": "447419",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/561249/original/242d875b2d002d9d82d95430611b4748.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/561249/original/242d875b2d002d9d82d95430611b4748.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/447419-m-audio-sp-2-professional-piano-style-pedal\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-זוג-מוניטורים-m-audio-bx3-bt",
+      "brand": "m-audio",
+      "name": "זוג מוניטורים M-Audio BX3 BT",
+      "category": "מוניטורים לאולפן",
+      "price": "561",
+      "currency": "ILS",
+      "sku": "52-BX3PAIRBT",
+      "halilit_id": "6000842",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12527073/original/1631921142c5fdc5f2b4f1362e94f8f0.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12527073/original/1631921142c5fdc5f2b4f1362e94f8f0.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/6000842-m-audio-bx3-bt-bluetooth-monitors\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-זוג-מוניטורים-m-audio-bx4-bt",
+      "brand": "m-audio",
+      "name": "זוג מוניטורים M-Audio BX4 BT",
+      "category": "מוניטורים לאולפן",
+      "price": "606",
+      "currency": "ILS",
+      "sku": "52-BX4PAIRBT",
+      "halilit_id": "6072523",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12700197/original/fccbb4143e8890e59d230fe9432ba5b8.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12700197/original/fccbb4143e8890e59d230fe9432ba5b8.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/6072523-m-audio-bx4-bt-bluetooth-monitors\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-מוניטור-אולפני-m-audio-bx5-d3",
+      "brand": "m-audio",
+      "name": "מוניטור אולפני M-Audio BX5-D3",
+      "category": "מוניטורים לאולפן",
+      "price": "530",
+      "currency": "ILS",
+      "sku": "52-BX5D3",
+      "halilit_id": "2238445",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3606459/original/23acf04d83667e29f5f3037979f8892c.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3606459/original/23acf04d83667e29f5f3037979f8892c.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/2238445-m-audio-bx-5d3-studio-monitor\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "m-audio-m-audio-hammer-88-pro",
+      "brand": "m-audio",
+      "name": "M-Audio Hammer 88 Pro",
+      "category": "מקלדות שליטה",
+      "price": "3184",
+      "currency": "ILS",
+      "sku": "52-HAMMER88PRO",
+      "halilit_id": "3971936",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9602258/original/a59f902d98355e7677c5af76867a5dd8.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9602258/original/a59f902d98355e7677c5af76867a5dd8.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/3971936-m-audio-hammer-88-pro\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 0,
+    "halilit_products": 32,
+    "unified_products": 32,
+    "primary_count": 0,
+    "secondary_count": 0,
+    "halilit_only_count": 32,
+    "timestamp": "2026-01-15T11:43:39.422700"
+  }
+}

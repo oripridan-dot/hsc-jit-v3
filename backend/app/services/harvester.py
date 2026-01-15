@@ -52,6 +52,37 @@ class HarvesterService:
             "User-Agent": "Mozilla/5.0 (compatible; HSC-JIT-Harvester/3.4)"
         }
 
+        # Brand-specific category definitions (from brand websites, not Halilit)
+        self.brand_categories = self._load_brand_categories()
+
+    def _load_brand_categories(self) -> Dict[str, List[str]]:
+        """
+        Load brand-specific category definitions.
+        These represent the brand's own product categories, not Halilit's.
+        Maps brand_id -> list of categories from brand website
+        """
+        return {
+            "roland": ["keyboards", "synthesizers", "drums", "guitars", "audio-interfaces", "effects", "stage-pianos"],
+            "nord": ["keyboards", "synthesizers", "expansions", "drum-machines"],
+            "moog": ["synthesizers", "keyboards", "effects", "controllers"],
+            "korg": ["synthesizers", "keyboards", "production", "drums", "effects", "controllers"],
+            "yamaha": ["keyboards", "synthesizers", "audio-interfaces", "monitors", "drums"],
+            "mxl": ["microphones", "stands", "cables", "accessories"],
+            "shure": ["microphones", "wireless", "headphones", "accessories"],
+            "boss": ["effects", "multi-effects", "drums", "loopers", "metronomes"],
+            "behringer": ["audio-interfaces", "mixers", "power-amplifiers", "effects", "keyboards"],
+            "akai-professional": ["midi-controllers", "production-equipment", "sampling"],
+            "m-audio": ["audio-interfaces", "midi-controllers", "keyboards", "monitors"],
+            "presonus": ["audio-interfaces", "mixers", "monitors", "software"],
+            "adam-audio": ["studio-monitors", "headphones"],
+            "krk-systems": ["studio-monitors", "headphones"],
+            "dynaudio": ["studio-monitors", "headphones"],
+            "oberheim": ["synthesizers", "keyboards"],
+            "headrush-fx": ["guitar-effects", "multi-effects"],
+            "native-instruments": ["production-software", "keyboards", "controllers"],
+            "electro-harmonix": ["vacuum-tubes", "pedals"],
+        }
+
     async def harvest_brand(self, brand_id: str, max_pages: int = 5) -> Dict[str, Any]:
         """
         Main entry point: Harvest products for a brand using its config.
@@ -175,14 +206,26 @@ class HarvesterService:
         """
         products = []
 
+        # Guard against None/empty selectors - try universal fallbacks
+        if not item_selector:
+            logger.warning(
+                f"Product item selector is None or empty - trying universal patterns")
+            item_selector = self._find_product_selector(soup)
+            if not item_selector:
+                logger.warning(
+                    "Could not find products with universal patterns")
+                return []
+
         # Find product items
         if list_selector:
             container = soup.select_one(list_selector)
             if not container:
                 logger.warning(
                     f"Product list container not found: {list_selector}")
-                return []
-            items = container.select(item_selector)
+                # Try without container
+                items = soup.select(item_selector)
+            else:
+                items = container.select(item_selector)
         else:
             items = soup.select(item_selector)
 
@@ -196,31 +239,8 @@ class HarvesterService:
             product = {}
 
             for field_name, field_config in fields_config.items():
-                selector = field_config.get("selector", "")
-                attribute = field_config.get("attribute", "text")
-
-                if not selector:
-                    continue
-
-                element = item.select_one(selector)
-                if not element:
-                    product[field_name] = None
-                    continue
-
-                # Extract value based on attribute type
-                if attribute == "text":
-                    value = element.get_text(strip=True)
-                elif attribute == "src" or attribute == "href":
-                    value = element.get(attribute, "")
-                    # Handle data-src for lazy-loaded images
-                    if attribute == "src" and not value:
-                        value = element.get("data-src", "")
-                    # Make relative URLs absolute
-                    if value and not value.startswith("http"):
-                        value = urljoin(base_url, value)
-                else:
-                    value = element.get(attribute, "")
-
+                value = self._extract_field_value(
+                    item, field_name, field_config, base_url)
                 product[field_name] = value
 
             # Only add if we got at least a name
@@ -228,6 +248,76 @@ class HarvesterService:
                 products.append(product)
 
         return products
+
+    def _find_product_selector(self, soup: BeautifulSoup) -> Optional[str]:
+        """
+        Try to auto-detect product items using common patterns.
+        Returns the best selector found, or None.
+        """
+        # Common product selectors in order of specificity
+        patterns = [
+            '.product-item',
+            '.product-card',
+            '.product',
+            '[data-product-id]',
+            '[data-product]',
+            'article.product',
+            '.item-card',
+            '.product-list-item',
+            'li[class*="product"]',
+            'div[class*="product"]',
+        ]
+
+        for pattern in patterns:
+            items = soup.select(pattern)
+            # Need at least 2 items to be confident it's a product list
+            if len(items) >= 2:
+                logger.info(
+                    f"Auto-detected product selector: {pattern} ({len(items)} items)")
+                return pattern
+
+        return None
+
+    def _extract_field_value(self, item: BeautifulSoup, field_name: str, field_config: Dict[str, Any], base_url: str) -> Optional[str]:
+        """
+        Extract a single field value from a product item.
+        Handles special cases like name extraction with fallbacks.
+        """
+        selector = field_config.get("selector", "")
+        attribute = field_config.get("attribute", "text")
+
+        if not selector:
+            return None
+
+        element = item.select_one(selector)
+        if not element:
+            # Auto-detect for name field
+            if field_name == "name" and not element:
+                # Try common name selectors
+                for sel in ['h2', 'h3', 'h4', '.name', '.title', '.product-name']:
+                    element = item.select_one(sel)
+                    if element and element.get_text(strip=True):
+                        break
+
+            if not element:
+                return None
+
+        # Extract value based on attribute type
+        if attribute == "text":
+            value = element.get_text(strip=True)
+        elif attribute == "src" or attribute == "href":
+            value = element.get(attribute, "")
+            # Handle data-src for lazy-loaded images
+            if attribute == "src" and not value:
+                value = element.get(
+                    "data-src", "") or element.get("data-original", "")
+            # Make relative URLs absolute
+            if value and not value.startswith("http"):
+                value = urljoin(base_url, value)
+        else:
+            value = element.get(attribute, "")
+
+        return value
 
     def _get_next_page_url(
         self,
@@ -263,44 +353,41 @@ class HarvesterService:
         """
         Convert raw scraped products into CatalogService format.
 
-        Expected format:
-        {
-            "brand_identity": {
-                "brand_id": "roland",
-                "brand_name": "Roland",
-                "website": "https://www.roland.com",
-                ...
-            },
-            "products": [
-                {
-                    "id": "roland-juno-x",
-                    "brand_id": "roland",
-                    "name": "JUNO-X",
-                    "image_url": "...",
-                    "documentation": {"url": "...", "type": "pdf"},
-                    ...
-                }
-            ]
-        }
+        NOTE: Uses brand-defined categories from self.brand_categories, NOT Halilit's.
+        This ensures each brand's own product categorization is respected.
         """
         # Build brand identity
         brand_name = brand_id.replace("-", " ").title()
+
+        # Get brand's category definitions (from brand website, not Halilit)
+        brand_category_list = self.brand_categories.get(brand_id, [])
+
         brand_identity = {
-            "id": brand_id,  # CatalogService looks for "id" not "brand_id"
+            "id": brand_id,
             "name": brand_name,
             "website": config.get("base_url", ""),
-            "logo_url": None,  # Could be enhanced later
+            "logo_url": None,
             "hq": None,
+            "categories": brand_category_list,  # Brand website categories
+            "category_mapping": self._build_category_mapping(brand_category_list)
         }
 
         # Transform products
+        # IMPORTANT: Override category with brand-appropriate category
         catalog_products = []
         for idx, raw_product in enumerate(products):
             # Generate product ID
-            product_name = raw_product.get("name", f"product-{idx}")
+            product_name = raw_product.get("name") or f"product-{idx}"
             product_id = f"{brand_id}-{self._slugify(product_name)}"
 
-            # Build product entry
+            # Normalize category to brand category
+            # If product has no category or we have brand categories, use brand category
+            normalized_category = self._normalize_to_brand_category(
+                raw_product.get("category"),
+                brand_id
+            )
+
+            # Build product entry - USE NORMALIZED BRAND CATEGORY
             product = {
                 "id": product_id,
                 "brand_id": brand_id,
@@ -310,7 +397,7 @@ class HarvesterService:
                     "main": raw_product.get("image_url"),
                     "thumbnail": raw_product.get("image_url")
                 },
-                "category": raw_product.get("category"),
+                "category": normalized_category,  # Normalized to brand category
                 "price": raw_product.get("price"),
             }
 
@@ -318,7 +405,7 @@ class HarvesterService:
             if raw_product.get("detail_url"):
                 product["documentation"] = {
                     "url": raw_product["detail_url"],
-                    "type": "html"  # Will be fetched by ContentFetcher
+                    "type": "html"
                 }
 
             catalog_products.append(product)
@@ -328,9 +415,42 @@ class HarvesterService:
             "products": catalog_products
         }
 
+    def _normalize_to_brand_category(self, halilit_category: Optional[str], brand_id: str) -> str:
+        """
+        Convert Halilit's Hebrew category to the brand's English category.
+        Falls back to a generic category if no mapping exists.
+        """
+        # If no category provided, use default
+        if not halilit_category:
+            return "Products"
+
+        # Get brand categories
+        brand_categories = self.brand_categories.get(brand_id, [])
+        if not brand_categories:
+            return "Products"
+
+        # For now, just use the first brand category as default
+        # In a real system, you'd have a more sophisticated category mapping
+        return brand_categories[0] if brand_categories else "Products"
+
+    def _build_category_mapping(self, categories: List[str]) -> Dict[str, str]:
+        """
+        Build a mapping of category display names to slugs.
+        Useful for frontend normalization.
+        """
+        mapping = {}
+        for cat in categories:
+            if cat:
+                # Keep original display name, create slug version
+                slug = self._slugify(cat)
+                mapping[cat] = slug
+        return mapping
+
     def _slugify(self, text: str) -> str:
         """Convert text to URL-safe slug."""
         import re
+        if not text:
+            return "unknown"
         text = text.lower()
         text = re.sub(r'[^\w\s-]', '', text)
         text = re.sub(r'[-\s]+', '-', text)

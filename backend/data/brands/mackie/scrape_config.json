@@ -1,0 +1,32 @@
+{
+  "brand_id": "mackie",
+  "base_url": "https://www.mackie.com/products",
+  "product_list_selector": ".product-grid, .products-container",
+  "product_item_selector": ".product-card, .product-item",
+  "pagination": {
+    "type": "button",
+    "next_button_selector": ".load-more, .next"
+  },
+  "fields": {
+    "name": {
+      "selector": ".product-name, h2, h3",
+      "attribute": "text"
+    },
+    "image_url": {
+      "selector": "img",
+      "attribute": "src"
+    },
+    "detail_url": {
+      "selector": "a",
+      "attribute": "href"
+    },
+    "price": {
+      "selector": ".price",
+      "attribute": "text"
+    },
+    "category": {
+      "selector": ".category",
+      "attribute": "text"
+    }
+  }
+}

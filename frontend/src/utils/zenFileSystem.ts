@@ -4,9 +4,9 @@ export interface FileNode {
   id: string;
   name: string;
   type: 'root' | 'folder' | 'brand' | 'category' | 'file';
-  icon?: string; // Emoji fallback
-  image?: string; // URL for brand logo or product thumbnail (preferred over icon)
-  logoUrl?: string; // Explicit brand logo URL from brand_identity
+  icon?: string;
+  image?: string;
+  logoUrl?: string;
   brandIdentity?: {
     id: string;
     name: string;
@@ -16,10 +16,12 @@ export interface FileNode {
     production_locations?: string[];
     founded?: number;
     website?: string;
+    categories?: string[];
+    category_mapping?: Record<string, string>;
   };
   children?: FileNode[];
-  meta?: Record<string, unknown>; // Stores stats like { count: 12, totalValue: 50000 }
-  items?: Prediction[]; // The actual products inside
+  meta?: Record<string, unknown>;
+  items?: Prediction[];
 }
 
 // Comprehensive Brand Logo Mapping - All 90+ Brands (Exact Names from Catalogs)
@@ -167,34 +169,40 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
   // 2. Build Brand Nodes with categories and products
   const brandNodes: FileNode[] = Object.keys(brands)
     .map((brand) => {
-      // Group products within this brand by category
       const brandProducts = brands[brand];
-      const brandCategories: Record<string, Prediction[]> = {};
+      const brandIdentity = brandProducts[0]?.brand_identity;
 
-      // Populate brand categories
-      brandProducts.forEach(p => {
-        const catName = ((p as any).category as string | undefined) || 'Products';
-        if (!brandCategories[catName]) brandCategories[catName] = [];
-        brandCategories[catName].push(p);
-      });
+      // Get categories from brand identity (from brand website, not Halilit)
+      const brandCategories = brandIdentity?.categories || [];
 
-      // Create category folders with product files
-      const categoryChildren: FileNode[] = Object.keys(brandCategories).map(cat => ({
-        id: `${brand}-${cat}`,
-        name: cat,
-        type: 'category' as const,
-        icon: '📦',
-        meta: getStats(brandCategories[cat]),
-        children: brandCategories[cat].map(product => ({
-          id: product.id,
-          name: product.name,
-          type: 'file' as const,
-          icon: '📄',
-          image: product.images?.main || (product as any).img || '',
-          items: [product],
-          meta: { price: (product as any).price || 0 }
+      // Build category nodes from brand's own categories
+      const categoryChildren: FileNode[] = brandCategories.length > 0
+        ? brandCategories.map(cat => ({
+          id: `${brand}-${cat}`,
+          name: cat,
+          type: 'category' as const,
+          icon: '📦',
+          meta: getStats(brandProducts.filter(p => (p as any).category === cat)),
+          items: brandProducts.filter(p => (p as any).category === cat),
+          children: []
         }))
-      }));
+        : // Fallback: if no brand categories, group by actual product categories
+        Object.keys(
+          brandProducts.reduce((acc, p) => {
+            const catName = ((p as any).category as string | undefined) || 'Products';
+            if (!acc[catName]) acc[catName] = [];
+            acc[catName].push(p);
+            return acc;
+          }, {} as Record<string, Prediction[]>)
+        ).map(cat => ({
+          id: `${brand}-${cat}`,
+          name: cat,
+          type: 'category' as const,
+          icon: '📦',
+          meta: getStats(brandProducts.filter(p => ((p as any).category as string | undefined) === cat)),
+          items: brandProducts.filter(p => ((p as any).category as string | undefined) === cat),
+          children: []
+        }));
 
       // Extract brand logo from first product's brand_identity or BRAND_LOGOS mapping
       const brandLogoUrl = brandProducts[0]?.brand_identity?.logo_url || '';
@@ -208,8 +216,8 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
         id: `brand-${brand}`,
         name: brandIdentityName,
         type: 'brand' as const,
-        icon: emojiIcon, // Emoji fallback
-        image: finalLogoUrl, // Real brand logo (preferred)
+        icon: emojiIcon,
+        image: finalLogoUrl,
         logoUrl: finalLogoUrl,
         brandIdentity: brandIdentityData,
         items: brandProducts,
@@ -217,7 +225,7 @@ export const buildFileSystem = (products: Prediction[]): FileNode => {
         children: categoryChildren
       };
     })
-    .sort((a, b) => (b.meta?.count as number) - (a.meta?.count as number)); // Sort by biggest brands
+    .sort((a, b) => (b.meta?.count as number) - (a.meta?.count as number));
 
   // 3. Build Category Nodes
   const categoryNodes: FileNode[] = Object.keys(categories)

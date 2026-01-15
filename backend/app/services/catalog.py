@@ -20,19 +20,22 @@ class CatalogService:
         # Resolve default catalogs directory relative to this file
         if catalogs_dir is None:
             backend_dir = Path(__file__).resolve().parents[2]
+            # Use catalogs directory which has flattened unified data
             catalogs_dir = backend_dir / "data" / "catalogs"
         self.catalogs_dir = Path(catalogs_dir)
 
         self.products: List[Dict[str, Any]] = []
         self.brands: Dict[str, Dict[str, Any]] = {}  # Store brand identities
         self.search_texts: List[str] = []
-        self.product_map: Dict[str, Dict[str, Any]] = {}  # Fast product lookup by ID
+        # Fast product lookup by ID
+        self.product_map: Dict[str, Dict[str, Any]] = {}
 
         self._load_catalogs()
 
     def _load_catalogs(self) -> None:
         if not self.catalogs_dir.exists():
-            raise FileNotFoundError(f"Catalogs directory not found: {self.catalogs_dir}")
+            raise FileNotFoundError(
+                f"Catalogs directory not found: {self.catalogs_dir}")
 
         for json_path in sorted(self.catalogs_dir.glob("*.json")):
             try:
@@ -50,18 +53,18 @@ class CatalogService:
             if isinstance(data, dict) and "brand_identity" in data:
                 brand_info = data["brand_identity"]
                 brand_id = brand_info.get("id")
-                
+
                 # Cache bust brand logos too
                 if brand_info and "logo_url" in brand_info:
                     logo_url = brand_info["logo_url"]
                     if logo_url and isinstance(logo_url, str) and "?" not in logo_url:
                         brand_info["logo_url"] = f"{logo_url}?v=fix3"
-                
+
                 if brand_id:
                     self.brands[brand_id] = brand_info
-                
+
                 products_list = data.get("products", [])
-            
+
             # Legacy fallback
             elif isinstance(data, list):
                 products_list = data
@@ -75,7 +78,7 @@ class CatalogService:
                     p["brand_identity"] = brand_info
                     if "brand" not in p and brand_id:
                         p["brand"] = brand_id
-                
+
                 # ---------------------------------------------------------
                 # NETWORK FIX: Cache Busting for Images
                 # ---------------------------------------------------------
@@ -85,26 +88,28 @@ class CatalogService:
                     main_img = p["images"].get("main")
                     if main_img and isinstance(main_img, str) and "?" not in main_img:
                         p["images"]["main"] = f"{main_img}?v=fix3"
-                
+
                 self.products.append(p)
-                
+
                 # Add to product_map for fast lookup
                 if p.get("id"):
                     self.product_map[p["id"]] = p
-                
+
                 # Create detailed search text
                 # "Roland TD-17KVX (Electronic Drums) - Malaysia"
                 search_parts = [p.get("name", "")]
                 if p.get("id"):
                     search_parts.append(p["id"])
-                
+
                 # Add keywords for better fuzzy matching
                 if "category" in p:
                     search_parts.append(p["category"])
-                
-                self.search_texts.append(" ".join(str(s) for s in search_parts if s))
 
-        print(f"[CatalogService] Loaded {len(self.products)} products from {len(self.brands)} rich brands.")
+                self.search_texts.append(" ".join(str(s)
+                                         for s in search_parts if s))
+
+        print(
+            f"[CatalogService] Loaded {len(self.products)} products from {len(self.brands)} rich brands.")
 
     def all_products(self) -> List[Dict[str, Any]]:
         return self.products
@@ -127,14 +132,15 @@ class CatalogService:
         brands_list = []
         for brand_id, brand_info in self.brands.items():
             # Count products for this brand
-            product_count = sum(1 for p in self.products if p.get("brand") == brand_id)
-            
+            product_count = sum(
+                1 for p in self.products if p.get("brand") == brand_id)
+
             brand_data = {
                 **brand_info,
                 "product_count": product_count
             }
             brands_list.append(brand_data)
-        
+
         # Sort by name
         brands_list.sort(key=lambda x: x.get("name", ""))
         return brands_list
@@ -144,7 +150,7 @@ class CatalogService:
         Returns a product with hydrated context:
         - Full brand_identity injected
         - Relationships resolved with target product metadata
-        
+
         Returns: { 
             "product": {...}, 
             "brand": {...}, 
@@ -154,18 +160,18 @@ class CatalogService:
         product = self.get_product(product_id)
         if not product:
             return None
-        
+
         # Get brand
         brand = None
         if "brand_identity" in product:
             brand = product["brand_identity"]
         elif product.get("brand"):
             brand = self.get_brand(product["brand"])
-        
+
         # Hydrate relationships
         related_items = []
         relationships = product.get("relationships", [])
-        
+
         # Handle both old dict format and new list format
         if isinstance(relationships, dict):
             # Old format: { "compatible_accessories": ["id1", "id2"], ... }
@@ -198,7 +204,7 @@ class CatalogService:
                         "label": rel.get("label", "Related"),
                         "image": target.get("images", {}).get("main")
                     })
-        
+
         return {
             "product": product,
             "brand": brand or {},
@@ -206,4 +212,3 @@ class CatalogService:
                 "related_items": related_items
             }
         }
-

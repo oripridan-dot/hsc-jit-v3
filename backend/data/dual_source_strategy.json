@@ -1,0 +1,107 @@
+{
+  "source_strategy": "dual-source-brand-first",
+  "version": "3.5",
+  "description": "Brand website data (specs, images, docs) with Halilit pricing & SKU",
+  
+  "data_sources": {
+    "primary": {
+      "name": "Brand Official Websites",
+      "priority": 1,
+      "data_fields": [
+        "product_name",
+        "description",
+        "specifications",
+        "features",
+        "images_high_res",
+        "gallery",
+        "documentation",
+        "manual_url",
+        "brand_product_url",
+        "categories",
+        "model_number"
+      ]
+    },
+    "secondary": {
+      "name": "Halilit Music Center (Israel)",
+      "priority": 2,
+      "data_fields": [
+        "price",
+        "sku_item_code",
+        "stock_status",
+        "images_fallback",
+        "availability",
+        "distributor_info"
+      ]
+    }
+  },
+
+  "product_classification": {
+    "PRIMARY": {
+      "definition": "Found on both brand website AND Halilit",
+      "data_composition": {
+        "product_content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit",
+        "images": "brand (primary) + halilit (fallback)",
+        "verification": "dual_source_matched"
+      },
+      "badge": "Official + Price"
+    },
+    "SECONDARY": {
+      "definition": "Found on brand website ONLY, not in Halilit",
+      "data_composition": {
+        "product_content": "brand_website",
+        "pricing": "check_brand_website",
+        "sku": "from_brand_website",
+        "images": "brand_website",
+        "verification": "brand_source_only"
+      },
+      "badge": "Brand Direct"
+    },
+    "HALILIT_ONLY": {
+      "definition": "Found in Halilit ONLY, not on brand website",
+      "data_composition": {
+        "product_content": "halilit",
+        "pricing": "halilit",
+        "sku": "halilit",
+        "images": "halilit",
+        "verification": "halilit_archive"
+      },
+      "badge": "Available from Distributor",
+      "note": "Consider contacting brand for current status"
+    }
+  },
+
+  "image_strategy": {
+    "priority_order": [
+      "brand_website_main_image",
+      "brand_website_high_res",
+      "brand_website_gallery",
+      "halilit_images",
+      "placeholder_generated"
+    ],
+    "minimum_resolution": {
+      "main": "600x600px",
+      "thumbnail": "150x150px",
+      "gallery": "400x400px"
+    },
+    "requirement": "All products MUST have at least thumbnail image"
+  },
+
+  "price_currency": {
+    "source": "Halilit",
+    "currency": "ILS",
+    "note": "Israeli Shekel from official distributor"
+  },
+
+  "implementation_priority": [
+    "Ensure all products have complete names from brand source",
+    "Capture high-resolution images from brand websites",
+    "Extract technical specifications and features",
+    "Include documentation URLs and manuals",
+    "Match with Halilit for pricing and SKU",
+    "Mark source classification clearly",
+    "Validate all products have images",
+    "Create fallback to Halilit for missing brand data"
+  ]
+}

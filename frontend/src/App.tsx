@@ -3,6 +3,8 @@ import { useWebSocketStore, type Prediction } from './store/useWebSocketStore';
 import { ChatView } from './components/ChatView';
 import { BrandExplorer } from './components/BrandExplorer';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
+import { SyncMonitor } from './components/SyncMonitor';
+import { ProductCoverageStats } from './components/ProductCoverageStats';
 import { ZenFinder } from './components/ZenFinder';
 import { FolderView } from './components/FolderView';
 import { BackendUnavailable } from './components/BackendUnavailable';
@@ -15,6 +17,8 @@ function App() {
   const [inputText, setInputText] = useState('');
   const [currentFolder, setCurrentFolder] = useState<FileNode | null>(null);
   const [brandExplorerOpen, setBrandExplorerOpen] = useState(false);
+  const [syncMonitorOpen, setSyncMonitorOpen] = useState(false);
+  const [coverageStatsOpen, setCoverageStatsOpen] = useState(false);
   const [fullCatalog, setFullCatalog] = useState<Prediction[]>([]);
   const [backendAvailable, setBackendAvailable] = useState(true);
   const [connectionAttempted, setConnectionAttempted] = useState(false);
@@ -170,6 +174,20 @@ function App() {
                 >
                     🎯 Brands
                 </button>
+                {/* Coverage Stats Button */}
+                <button
+                    onClick={() => setCoverageStatsOpen(true)}
+                    className="px-3 py-1.5 rounded-lg bg-accent-secondary/20 hover:bg-accent-secondary/30 text-accent-secondary text-xs font-semibold transition-colors border border-accent-secondary/30"
+                >
+                    📊 Coverage
+                </button>
+                {/* Sync Monitor Button */}
+                <button
+                    onClick={() => setSyncMonitorOpen(true)}
+                    className="px-3 py-1.5 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 text-xs font-semibold transition-colors border border-blue-500/30"
+                >
+                    🔄 Sync Status
+                </button>
             </div>
 
             {/* Main Content Area */}
@@ -208,9 +226,47 @@ function App() {
                                     {predictions.length === 0 ? (
                                         <>Loading catalog... <span className="animate-pulse">●</span></>
                                     ) : (
-                                        'Select a brand or category from the sidebar to begin exploring'
+                                        `Explore ${displayProducts.length.toLocaleString()} products across ${rootNode.children?.[0]?.children?.length || 0} brands`
                                     )}
                                 </p>
+                                
+                                {/* Quick Stats */}
+                                {predictions.length > 0 && (
+                                    <div className="mt-8 grid grid-cols-3 gap-4 max-w-2xl">
+                                        <button
+                                            onClick={() => setCoverageStatsOpen(true)}
+                                            className="bg-bg-surface/50 border border-border-subtle rounded-xl p-6 hover:border-accent-primary/50 transition-all group cursor-pointer"
+                                        >
+                                            <div className="text-4xl mb-2">📦</div>
+                                            <div className="text-3xl font-bold text-status-success mb-1 group-hover:scale-110 transition-transform">
+                                                {displayProducts.length.toLocaleString()}
+                                            </div>
+                                            <div className="text-xs text-text-muted uppercase tracking-wider">Products</div>
+                                        </button>
+                                        
+                                        <button
+                                            onClick={() => setBrandExplorerOpen(true)}
+                                            className="bg-bg-surface/50 border border-border-subtle rounded-xl p-6 hover:border-accent-primary/50 transition-all group cursor-pointer"
+                                        >
+                                            <div className="text-4xl mb-2">🏢</div>
+                                            <div className="text-3xl font-bold text-accent-primary mb-1 group-hover:scale-110 transition-transform">
+                                                {rootNode.children?.[0]?.children?.length || 0}
+                                            </div>
+                                            <div className="text-xs text-text-muted uppercase tracking-wider">Brands</div>
+                                        </button>
+                                        
+                                        <button
+                                            onClick={() => setCoverageStatsOpen(true)}
+                                            className="bg-bg-surface/50 border border-border-subtle rounded-xl p-6 hover:border-accent-primary/50 transition-all group cursor-pointer"
+                                        >
+                                            <div className="text-4xl mb-2">📊</div>
+                                            <div className="text-3xl font-bold text-accent-secondary mb-1 group-hover:scale-110 transition-transform">
+                                                {Math.round(displayProducts.length / (rootNode.children?.[0]?.children?.length || 1))}
+                                            </div>
+                                            <div className="text-xs text-text-muted uppercase tracking-wider">Avg/Brand</div>
+                                        </button>
+                                    </div>
+                                )}
                             </div>
                             {predictions.length > 0 && (
                                 <div className="flex gap-3">
@@ -245,6 +301,23 @@ function App() {
         </div>
 
         {/* Brand Explorer Modal */}
+        {/* Sync Monitor Modal */}
+        {syncMonitorOpen && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+            <div className="max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="relative">
+                <button
+                  onClick={() => setSyncMonitorOpen(false)}
+                  className="absolute -top-2 -right-2 z-10 p-2 bg-gray-800 hover:bg-gray-700 rounded-full text-white border border-gray-600"
+                >
+                  ✕
+                </button>
+                <SyncMonitor />
+              </div>
+            </div>
+          </div>
+        )}
+
         <BrandExplorer 
           isOpen={brandExplorerOpen} 
           onClose={() => setBrandExplorerOpen(false)}
@@ -252,6 +325,7 @@ function App() {
             console.log('Selected brand:', brand);
           }}
         />
+        <ProductCoverageStats isOpen={coverageStatsOpen} onClose={() => setCoverageStatsOpen(false)} />
 
     </div>
   );

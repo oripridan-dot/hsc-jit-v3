@@ -1,32 +1,29 @@
 {
   "brand_id": "nord",
-  "base_url": "https://www.nordkeyboards.com/products/",
-  "product_list_selector": ".ProductCardList_ProductCardList__Grid__hppCp",
-  "product_item_selector": "a[href^='/products/']",
-  "pagination": {
-    "type": "none",
-    "next_button_selector": null
-  },
+  "base_url": "https://www.nordkeyboards.com/products",
+  "scraping_strategy": "multi_page",
+  "product_pages": [
+    "nord-drum-3p",
+    "nord-electro-6",
+    "nord-grand-2",
+    "nord-lead-a1",
+    "nord-organ-3",
+    "nord-piano-6",
+    "nord-stage-4",
+    "nord-wave-2"
+  ],
+  "product_item_selector": "h1",
+  "variant_selector": "button[class*=\"Product\"]",
+  "consent_selectors": [],
+  "post_load_wait_ms": 2000,
   "fields": {
     "name": {
-      "selector": "h2.sr-only",
+      "selector": "h1",
       "attribute": "text"
     },
     "image_url": {
-      "selector": "img",
+      "selector": "img[src*=\"product\"], img[src*=\"nord\"], img[alt]",
       "attribute": "src"
-    },
-    "detail_url": {
-      "selector": "",
-      "attribute": "href"
-    },
-    "price": {
-      "selector": null,
-      "attribute": "text"
-    },
-    "category": {
-      "selector": null,
-      "attribute": "text"
     }
   }
 }

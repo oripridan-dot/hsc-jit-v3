@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-01-15T11:27:03.082486",
+  "total_brands": 18,
+  "brands_synced": 7,
+  "brands_failed": 11,
+  "summary": {
+    "adam-audio": {
+      "status": "success",
+      "brand_products": 0,
+      "halilit_products": 25,
+      "unified_products": 25
+    },
+    "akai-professional": {
+      "status": "success",
+      "brand_products": 0,
+      "halilit_products": 35,
+      "unified_products": 35
+    },
+    "boss": {
+      "status": "success",
+      "brand_products": 0,
+      "halilit_products": 74,
+      "unified_products": 74
+    },
+    "dynaudio": {
+      "status": "success",
+      "brand_products": 0,
+      "halilit_products": 22,
+      "unified_products": 22
+    },
+    "headrush-fx": {
+      "status": "success",
+      "brand_products": 0,
+      "halilit_products": 14,
+      "unified_products": 14
+    },
+    "krk-systems": {
+      "status": "success",
+      "brand_products": 0,
+      "halilit_products": 22,
+      "unified_products": 22
+    },
+    "m-audio": {
+      "status": "success",
+      "brand_products": 0,
+      "halilit_products": 32,
+      "unified_products": 32
+    },
+    "mackie": {
+      "status": "failed",
+      "error": "invalid state"
+    },
+    "nord": {
+      "status": "failed",
+      "error": "coroutine ignored GeneratorExit"
+    },
+    "oberheim": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "paiste-cymbals": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "pearl": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "presonus": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "rcf": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "remo": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "rogers": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "roland": {
+      "status": "failed",
+      "error": "no running event loop"
+    },
+    "xotic": {
+      "status": "failed",
+      "error": "no running event loop"
+    }
+  }
+}

@@ -17,15 +17,23 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
   const items = node.items || [];
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   
-  // Extract unique categories
+  // Get categories from brand identity (brand website categories, not Halilit)
   const categories = useMemo(() => {
+    if (isBrand && node.brandIdentity?.categories) {
+      // Use categories from brand identity (from brand website)
+      return Array.isArray(node.brandIdentity.categories) 
+        ? node.brandIdentity.categories 
+        : [];
+    }
+    
+    // Fallback: extract from products (for compatibility)
     const cats = new Set<string>();
     items.forEach(item => {
       const cat = (item as any).category as string | undefined;
       if (cat) cats.add(cat);
     });
     return Array.from(cats).sort();
-  }, [items]);
+  }, [items, isBrand, node.brandIdentity]);
   
   // Filter items by selected category
   const filteredItems = useMemo(() => {

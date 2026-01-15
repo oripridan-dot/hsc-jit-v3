@@ -12,6 +12,8 @@ export interface BrandIdentity {
   website: string;
   logo_url: string;
   description?: string;
+  categories?: string[];
+  category_mapping?: Record<string, string>;
 }
 
 export interface RelatedItem {

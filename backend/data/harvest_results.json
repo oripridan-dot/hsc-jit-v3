@@ -2,55 +2,163 @@
   {
     "brand_id": "roland",
     "brand_name": "Roland",
-    "url": "https://www.roland.com/us/categories/pianos/",
-    "diplomat_success": true,
-    "harvest_success": true,
-    "products_found": 8,
-    "error": null
-  },
-  {
-    "brand_id": "nord",
-    "brand_name": "Nord",
-    "url": "https://www.nordkeyboards.com/products/",
+    "url": "https://www.halilit.com/g/5193-%D7%99%D7%A6%D7%A8%D7%9F/33109-Roland",
     "diplomat_success": true,
     "harvest_success": false,
     "products_found": 0,
     "error": "No products extracted"
   },
   {
-    "brand_id": "moog",
-    "brand_name": "Moog",
-    "url": "https://www.moogmusic.com/products",
-    "diplomat_success": false,
-    "harvest_success": false,
-    "products_found": 0,
-    "error": "Config not found: /workspaces/hsc-jit-v3/backend/data/brands/moog/scrape_config.json. Run diplomat.py first."
-  },
-  {
-    "brand_id": "yamaha",
-    "brand_name": "Yamaha",
-    "url": "https://usa.yamaha.com/products/music_production/synthesizers/index.html",
+    "brand_id": "nord",
+    "brand_name": "Nord",
+    "url": "https://www.halilit.com/g/5193-Brand/213927-Nord",
     "diplomat_success": true,
     "harvest_success": false,
     "products_found": 0,
-    "error": "'NoneType' object has no attribute 'replace'"
+    "error": "No products extracted"
   },
   {
-    "brand_id": "korg",
-    "brand_name": "Korg",
-    "url": "https://www.korg.com/us/products/synthesizers/",
+    "brand_id": "oberheim",
+    "brand_name": "Oberheim",
+    "url": "https://www.halilit.com/g/5193-Brand/421719-Oberheim",
     "diplomat_success": true,
-    "harvest_success": true,
-    "products_found": 1,
-    "error": null
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
   },
   {
-    "brand_id": "arturia",
-    "brand_name": "Arturia",
-    "url": "https://www.arturia.com/products",
+    "brand_id": "presonus",
+    "brand_name": "Presonus",
+    "url": "https://www.halilit.com/g/5193-Brand/148566-PreSonus",
     "diplomat_success": true,
-    "harvest_success": true,
-    "products_found": 4,
-    "error": null
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "m-audio",
+    "brand_name": "M-Audio",
+    "url": "https://www.halilit.com/g/5193-Brand/33167-M-Audio",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "akai-professional",
+    "brand_name": "Akai Professional",
+    "url": "https://www.halilit.com/g/5193-%D7%99%D7%A6%D7%A8%D7%9F/33135-Akai-professional",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "adam-audio",
+    "brand_name": "Adam Audio",
+    "url": "https://www.halilit.com/g/5193-Brand/207910-ADAM-Audio",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "krk-systems",
+    "brand_name": "KRK Systems",
+    "url": "https://www.halilit.com/g/5193-Brand/140907-KRK-Systems",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "dynaudio",
+    "brand_name": "Dynaudio",
+    "url": "https://www.halilit.com/g/5193-Brand/92050-Dynaudio",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "boss",
+    "brand_name": "Boss",
+    "url": "https://www.halilit.com/g/5193-%D7%99%D7%A6%D7%A8%D7%9F/33105-Boss",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "headrush-fx",
+    "brand_name": "Headrush Fx",
+    "url": "https://www.halilit.com/g/5193-Brand/151043-HeadRush-FX",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "xotic",
+    "brand_name": "Xotic",
+    "url": "https://www.halilit.com/g/5193-Brand/347345-Xotic",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "rcf",
+    "brand_name": "RCF",
+    "url": "https://www.halilit.com/g/5193-%D7%99%D7%A6%D7%A8%D7%9F/33208-Rcf",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "mackie",
+    "brand_name": "Mackie",
+    "url": "https://www.halilit.com/g/5193-%D7%99%D7%A6%D7%A8%D7%9F/33102-Mackie",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "pearl",
+    "brand_name": "Pearl",
+    "url": "https://www.halilit.com/g/5193-%D7%99%D7%A6%D7%A8%D7%9F/33183-Pearl",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "rogers",
+    "brand_name": "Rogers",
+    "url": "https://www.halilit.com/g/5193-Brand/222925-ROGERS",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "paiste-cymbals",
+    "brand_name": "Paiste Cymbals",
+    "url": "https://www.halilit.com/g/5193-Brand/33187-Paiste-Cymbals",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
+  },
+  {
+    "brand_id": "remo",
+    "brand_name": "Remo",
+    "url": "https://www.halilit.com/g/5193-Brand/33220-Remo",
+    "diplomat_success": true,
+    "harvest_success": false,
+    "products_found": 0,
+    "error": "No products extracted"
   }
 ]

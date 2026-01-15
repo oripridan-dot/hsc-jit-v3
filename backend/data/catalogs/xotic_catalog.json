@@ -1,0 +1,606 @@
+{
+  "brand_identity": {
+    "id": "xotic",
+    "name": "Xotic"
+  },
+  "products": [
+    {
+      "id": "xotic-פדל-בוסטראוברדרייב-xotic-soul-driven",
+      "brand": "xotic",
+      "name": "פדל בוסטר/אוברדרייב Xotic Soul Driven",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "949",
+      "currency": "ILS",
+      "sku": "30-SD",
+      "halilit_id": "4819735",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9247946/original/383614ac9d3d0af8be9c5e9bf50fce8e.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9247946/original/383614ac9d3d0af8be9c5e9bf50fce8e.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4819735-xotic-soul-driven\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-פדל-בוסטר-לבס-xotic-ep-booster",
+      "brand": "xotic",
+      "name": "פדל בוסטר לבס Xotic EP Booster",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "684",
+      "currency": "ILS",
+      "sku": "30-EPB",
+      "halilit_id": "4819512",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252034/original/4f77d1f357efc386b773b775fed6fa51.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252034/original/4f77d1f357efc386b773b775fed6fa51.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4819512-xotic-ep-booster\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-bb-preamp-v15",
+      "brand": "xotic",
+      "name": "Xotic BB PREAMP V1.5",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "949",
+      "currency": "ILS",
+      "sku": "30-BBPV1.5",
+      "halilit_id": "4812617",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9240852/original/0f262544b88ed5859dbb3a573f496990.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9240852/original/0f262544b88ed5859dbb3a573f496990.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4812617-xotic-bb-preamp-v1-5\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-גיטרה-חשמלית-xotic-xsc-1-candy-apple-red",
+      "brand": "xotic",
+      "name": "גיטרה חשמלית Xotic XSC-1 Candy Apple Red",
+      "category": "גיטרות חשמליות ",
+      "price": "15293",
+      "currency": "ILS",
+      "sku": "30-XSC1-CAR",
+      "halilit_id": "4879435",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9427178/original/677deb420fac645df467a4f019e5666c.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9427178/original/677deb420fac645df467a4f019e5666c.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4879435-xotic-california-classic-xsc-1-candy-apple-red\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-פדל-בוסטר-לגיטרה-בס-xotic-bass-rc-booster-v2",
+      "brand": "xotic",
+      "name": "פדל בוסטר לגיטרה בס Xotic Bass RC Booster V2",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "949",
+      "currency": "ILS",
+      "sku": "30-BRCBV2",
+      "halilit_id": "4813900",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9310462/original/f9fcdf2b66ed6b1849d3f4962ffd27df.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9310462/original/f9fcdf2b66ed6b1849d3f4962ffd27df.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4813900-xotic-bass-rc-booster-v2\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-פדל-בוסטר-xotic-super-sweet-booster",
+      "brand": "xotic",
+      "name": "פדל בוסטר Xotic Super Sweet Booster",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "684",
+      "currency": "ILS",
+      "sku": "30-SSB",
+      "halilit_id": "4820044",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252593/original/902339051ccb26b955df525e5eaed691.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252593/original/902339051ccb26b955df525e5eaed691.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4820044-xotic-super-sweet-booster\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-גיטרה-חשמלית-xotic-xscpro-2-aged",
+      "brand": "xotic",
+      "name": "גיטרה חשמלית Xotic XSCPRO-2 Aged",
+      "category": "גיטרות חשמליות ",
+      "price": "12460",
+      "currency": "ILS",
+      "sku": "30-XSCPRO2-BK",
+      "halilit_id": "4870741",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9412097/original/569635fce0c78b2d1c07bbf165cfbbf5.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9412097/original/569635fce0c78b2d1c07bbf165cfbbf5.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4870741-xotic-xscpro-2-aged\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-xvp-250k-volume-pedal",
+      "brand": "xotic",
+      "name": "Xotic XVP-250K Volume Pedal",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "794",
+      "currency": "ILS",
+      "sku": "30-XVP250K",
+      "halilit_id": "4821404",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9257486/original/2edfca6729daf47fe4c44d3351c6897e.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9257486/original/2edfca6729daf47fe4c44d3351c6897e.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4821404-xotic-xvp-250k-volume-pedal\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-גיטרה-חשמלית-xotic-xsc-1-light-aging-sonic-blue",
+      "brand": "xotic",
+      "name": "גיטרה חשמלית Xotic XSC-1 Light Aging Sonic Blue",
+      "category": "גיטרות חשמליות ",
+      "price": "14160",
+      "currency": "ILS",
+      "sku": "30-XSC1-S.BLUE",
+      "halilit_id": "4879526",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9427461/original/62d7fd24031c64a599babfd54c2a7397.png",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9427461/original/62d7fd24031c64a599babfd54c2a7397.png"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4879526-xotic-california-classic-xsc-1-light-aging-sonic-blue\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-robotalk-2",
+      "brand": "xotic",
+      "name": "Xotic Robotalk 2",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "1184",
+      "currency": "ILS",
+      "sku": "30-RT2",
+      "halilit_id": "4820910",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9255989/original/372db97348786a055b87ff0b34f4f62f.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9255989/original/372db97348786a055b87ff0b34f4f62f.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4820910-xotic-robotalk-2\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-sp-compressor",
+      "brand": "xotic",
+      "name": "Xotic SP Compressor",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "772",
+      "currency": "ILS",
+      "sku": "30-SPC",
+      "halilit_id": "4819890",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252075/original/f313be48c3336319268d50fd4ca0f8ef.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252075/original/f313be48c3336319268d50fd4ca0f8ef.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4819890-xotic-sp-compressor\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-גיטרה-חשמלית-xotic-xscpro-2-aged",
+      "brand": "xotic",
+      "name": "גיטרה חשמלית Xotic XSCPRO-2 Aged",
+      "category": "גיטרות חשמליות ",
+      "price": "12460",
+      "currency": "ILS",
+      "sku": "30-XSCPRO2-WH",
+      "halilit_id": "4871355",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9428300/original/4a17eee6c48f9bdd55dd55c2f6a6e757.png",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9428300/original/4a17eee6c48f9bdd55dd55c2f6a6e757.png"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4871355-xotic-xscpro-2-aged\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-גיטרה-חשמלית-xotic-xscpro-2-aged",
+      "brand": "xotic",
+      "name": "גיטרה חשמלית Xotic XSCPRO-2 Aged",
+      "category": "גיטרות חשמליות ",
+      "price": "12460",
+      "currency": "ILS",
+      "sku": "30-XSCPRO2-LB",
+      "halilit_id": "4869824",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9409574/original/4106ffba2e40080df1abeebcdff64e4a.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9409574/original/4106ffba2e40080df1abeebcdff64e4a.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4869824-xotic-xscpro-2-aged\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-פדל-באפרבוסטר-xotic-super-clean-buffer",
+      "brand": "xotic",
+      "name": "פדל באפר/בוסטר Xotic Super Clean Buffer",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "684",
+      "currency": "ILS",
+      "sku": "30-SCB",
+      "halilit_id": "4820163",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9253112/original/e7885a1c59a6ebd83a6e4c9ab5f590ec.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9253112/original/e7885a1c59a6ebd83a6e4c9ab5f590ec.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4820163-xotic-super-clean-buffer\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-גיטרה-חשמלית-xotic-xsc-1-3-tone-burst",
+      "brand": "xotic",
+      "name": "גיטרה חשמלית Xotic XSC-1 3 Tone Burst",
+      "category": "גיטרות חשמליות ",
+      "price": "14160",
+      "currency": "ILS",
+      "sku": "30-XSC1-3TB",
+      "halilit_id": "4879321",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9426880/original/543e966848f884a3499e3372f7c59d51.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9426880/original/543e966848f884a3499e3372f7c59d51.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4879321-xotic-california-classic-xsc-1-3-tone-burst-light-aged\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-sl-drive",
+      "brand": "xotic",
+      "name": "Xotic SL DRIVE",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "728",
+      "currency": "ILS",
+      "sku": "30-SLD",
+      "halilit_id": "4819966",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252283/original/e64921510b16a150460c4b49381d5bfb.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252283/original/e64921510b16a150460c4b49381d5bfb.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4819966-xotic-sl-drive\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-xw-1-wah",
+      "brand": "xotic",
+      "name": "Xotic XW-1 WAH",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "1464",
+      "currency": "ILS",
+      "sku": "30-XW1",
+      "halilit_id": "4823056",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9263844/original/c850b0e8944b4a85590bcd07fd76a931.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9263844/original/c850b0e8944b4a85590bcd07fd76a931.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4823056-xotic-xw-1-wah\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-rv-60-neck-pick-up",
+      "brand": "xotic",
+      "name": "Xotic RV-60 Neck Pick Up",
+      "category": "אביזרים לגיטרה",
+      "price": "434",
+      "currency": "ILS",
+      "sku": "30-RV60N",
+      "halilit_id": "4828436",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9285214/original/b1a2dbff27b17a24ea546152f300e37b.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9285214/original/b1a2dbff27b17a24ea546152f300e37b.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4828436-xotic-rv-60-neck-pick-up\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-rv-50-single-coil-pick-up-set",
+      "brand": "xotic",
+      "name": "Xotic RV-50 Single Coil Pick Up set",
+      "category": "אביזרים לגיטרה",
+      "price": "1161",
+      "currency": "ILS",
+      "sku": "30-RV50SET",
+      "halilit_id": "4836208",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9335029/original/5306192be52989f6ce42490b412de73a.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9335029/original/5306192be52989f6ce42490b412de73a.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4836208-xotic-rv-50-single-coil-pick-up-set\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-rv-50-middle-pick-up",
+      "brand": "xotic",
+      "name": "Xotic RV-50 Middle Pick Up",
+      "category": "אביזרים לגיטרה",
+      "price": "434",
+      "currency": "ILS",
+      "sku": "30-RV50M",
+      "halilit_id": "4823413",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9264375/original/25834e7a4f4952e03de2c92666d79700.png",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9264375/original/25834e7a4f4952e03de2c92666d79700.png"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4823413-xotic-rv-50-middle-pick-up\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-rv-60-bridge-pick-up",
+      "brand": "xotic",
+      "name": "Xotic RV-60 Bridge Pick Up",
+      "category": "אביזרים לגיטרה",
+      "price": "434",
+      "currency": "ILS",
+      "sku": "30-RV60B",
+      "halilit_id": "4827790",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9282306/original/7714d8801dcb87959cda5daf0d05cb01.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9282306/original/7714d8801dcb87959cda5daf0d05cb01.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4827790-xotic-rv-60-bridge-pick-up\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-rv-60-middle-pick-up-paf",
+      "brand": "xotic",
+      "name": "Xotic RV-60 Middle Pick Up Paf",
+      "category": "אביזרים לגיטרה",
+      "price": "846",
+      "currency": "ILS",
+      "sku": "30-RVPAFFS",
+      "halilit_id": "4825523",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9274322/original/46f1d5d6758fe87eb697b808c11e984e.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9274322/original/46f1d5d6758fe87eb697b808c11e984e.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4825523-xotic-rv-60-middle-pick-up-paf\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-rv-60-middle-pick-up",
+      "brand": "xotic",
+      "name": "Xotic RV-60 Middle Pick Up",
+      "category": "אביזרים לגיטרה",
+      "price": "434",
+      "currency": "ILS",
+      "sku": "30-RV60M",
+      "halilit_id": "4836301",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9313758/original/c2169bedde4bece31271ffad02c24a64.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9313758/original/c2169bedde4bece31271ffad02c24a64.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4836301-xotic-rv-60-middle-pick-up\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-rv-50-neck-and-bridge-pick-up",
+      "brand": "xotic",
+      "name": "Xotic RV-50 Neck and BRIDGE Pick Up",
+      "category": "אביזרים לגיטרה",
+      "price": "434",
+      "currency": "ILS",
+      "sku": "30-RV50NB",
+      "halilit_id": "4826347",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9276379/original/82ca244fed60a66ddfb374c06a05551f.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9276379/original/82ca244fed60a66ddfb374c06a05551f.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4826347-xotic-rv-50-neck-and-bridge-pick-up\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-פדל-בוסטר-xotic-rc-booster-v2",
+      "brand": "xotic",
+      "name": "פדל בוסטר Xotic RC Booster V2",
+      "category": "פדלים ומולטי אפקט ",
+      "price": "949",
+      "currency": "ILS",
+      "sku": "30-RCBV2",
+      "halilit_id": "4819967",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252286/original/8ab8858b4e9bc5f6a02d28928ae21c51.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252286/original/8ab8858b4e9bc5f6a02d28928ae21c51.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4819967-xotic-rc-booster-v2\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-all-brass-patch-cable-12-inch",
+      "brand": "xotic",
+      "name": "Xotic All-Brass Patch Cable 12 inch",
+      "category": "כבל פאץ' / אפקטים",
+      "price": "169",
+      "currency": "ILS",
+      "sku": "30-XPC12X2",
+      "halilit_id": "4830815",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9290851/original/c78ed92ffcd310ca153a98aabc70c0a9.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9290851/original/c78ed92ffcd310ca153a98aabc70c0a9.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4830815-xotic-all-brass-patch-cable-12-inch\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-xotic-all-brass-patch-cable-6-inch",
+      "brand": "xotic",
+      "name": "Xotic All-Brass Patch Cable 6 inch",
+      "category": "כבל פאץ' / אפקטים",
+      "price": "154",
+      "currency": "ILS",
+      "sku": "30-XPC6X2",
+      "halilit_id": "4830921",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9291059/original/da7a217bbe4289188e847620becc9b6d.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9291059/original/da7a217bbe4289188e847620becc9b6d.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4830921-xotic-all-brass-patch-cable-6-inch\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    },
+    {
+      "id": "xotic-גיטרה-חשמלית-xotic-xsc-1-medium-aged-vintage-white",
+      "brand": "xotic",
+      "name": "גיטרה חשמלית Xotic XSC-1 Medium Aged Vintage White",
+      "category": "גיטרות חשמליות ",
+      "price": "14160",
+      "currency": "ILS",
+      "sku": "30-XSC1-VW",
+      "halilit_id": "4879633",
+      "images": {
+        "main": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9428542/original/6c80ddb7bcf7c2cb26ee604344a9ba81.jpg",
+        "thumbnail": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9428542/original/6c80ddb7bcf7c2cb26ee604344a9ba81.jpg"
+      },
+      "halilit_product_url": "https://www.halilit.com  /items/4879633-xotic-xsc-1-medium-aged-vintage-white\n",
+      "source": "HALILIT_ONLY",
+      "source_details": {
+        "content": "halilit",
+        "pricing": "halilit",
+        "note": "Not currently listed on brand website"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 0,
+    "halilit_products": 28,
+    "unified_products": 28,
+    "primary_count": 0,
+    "secondary_count": 0,
+    "halilit_only_count": 28,
+    "timestamp": "2026-01-15T10:19:26.426138"
+  }
+}

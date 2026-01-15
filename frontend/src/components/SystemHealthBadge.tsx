@@ -18,7 +18,7 @@ export const SystemHealthBadge = () => {
 
     const load = async () => {
       try {
-        const res = await fetch('/static/system_health.json', { cache: 'no-store' });
+        const res = await fetch('/api/system-health', { cache: 'no-store' });
         if (!res.ok) throw new Error('Not available');
         const json = await res.json();
         if (!cancelled) setHealth(json as HealthReport);

@@ -1,0 +1,242 @@
+================================================================================
+                    OPTION 2: HYBRID APPROACH SUMMARY
+================================================================================
+
+YOUR REQUIREMENTS (Clarified):
+✅ Halilit = Primary source for: Prices, SKU, Images, Brands list
+✅ Brand Websites = Primary source for: Specs, Manuals, Documentation, Knowledge
+✅ Mark products: PRIMARY (in both) / SECONDARY (brand-only)
+✅ You want the most complete solution
+
+================================================================================
+                           DATA FLOW ARCHITECTURE
+================================================================================
+
+┌─────────────────┐         ┌──────────────────┐
+│  HALILIT.COM    │         │ BRAND WEBSITES   │
+│  (2,227 prods)  │         │ (5K-10K prods)   │
+└────────┬────────┘         └────────┬─────────┘
+         │                           │
+         │ Prices                    │ Specs
+         │ SKU                       │ Manuals
+         │ Images                    │ Content
+         │                           │
+         └──────────┬────────────────┘
+                    │
+              ┌─────▼──────┐
+              │   MERGER   │
+              │            │
+              │ Match by:  │
+              │ • SKU      │
+              │ • Name     │
+              │ • Sim.     │
+              └─────┬──────┘
+                    │
+         ┌──────────┴──────────┐
+         │                     │
+    ┌────▼────┐          ┌────▼────┐
+    │ PRIMARY │          │SECONDARY│
+    │ (both)  │          │(brand)  │
+    │ 2,227   │          │ 4K-7K   │
+    └─────────┘          └─────────┘
+         │                     │
+         └──────────┬──────────┘
+                    │
+            ┌───────▼────────┐
+            │ UNIFIED CATALOG│
+            │  7K-12K items  │
+            │ Ready for UI   │
+            └────────────────┘
+
+================================================================================
+                        WEEKLY SYNC SCHEDULE
+================================================================================
+
+MON 2 AM  → Halilit Sync      (45 min)  ✅ Already working
+TUE 2 AM  → Brand Site Sync   (1-2 hrs) 🔧 New: Playwright
+WED 4 AM  → Merge Catalogs    (10 min)  🔧 New: Intelligent merge
+           → User data ready  ✅ Complete unified view
+
+================================================================================
+                    ONGOING MAINTENANCE BREAKDOWN
+================================================================================
+
+WEEKLY (3-4 hours):
+  • Monitor sync logs          (15 min)
+  • Check for failures         (15 min)
+  • Verify data quality        (30 min)
+  • Review coverage metrics    (30 min)
+
+MONTHLY (2 hours):
+  • Quality review             (45 min)
+  • Identify broken sites      (30 min)
+  • Plan optimizations         (45 min)
+
+AS-NEEDED (When sites break):
+  • Debug HTML structure       (15 min)
+  • Update CSS selectors       (15-30 min)
+  • Re-run sync                (varies)
+  → Total: ~1 hour per incident (happens 1-2x/month)
+
+ANNUAL EFFORT: ~140-180 hours
+  = 1 FTE @ 10-15 hours/week OR
+  = 1 part-timer + automation
+
+================================================================================
+                          INFRASTRUCTURE
+================================================================================
+
+Installation:
+  $ pip install -r requirements-playwright.txt
+  $ playwright install chromium
+
+Cron Jobs (Fully Automated):
+  0 2 * * 1  → halilit_sync.sh
+  0 2 * * 2  → brand_sync.sh
+  0 4 * * 3  → merge_catalogs.sh
+
+Storage:
+  • Halilit catalogs: 2 MB
+  • Brand catalogs: 10-20 MB
+  • Unified: 15-25 MB
+  • Growth: ~5-10% per month
+  • Total: <100 MB/year
+
+Cost:
+  • Server compute: $0 (existing)
+  • Storage: $0-1/month
+  • Bandwidth: <$1/month
+  • Tools: $0 (open source)
+  ─────────────────────────
+  TOTAL: ~$50-200/year
+
+================================================================================
+                       WHEN THINGS BREAK
+================================================================================
+
+Issue: "0 products found from brand X"
+  Cause: Website layout changed
+  Time: ~30 min to fix
+  Solution: Update CSS selectors, re-run
+
+Issue: "Playwright memory leak"
+  Cause: Unclosed browser contexts
+  Time: 15 min to identify, 30 min to fix
+  Solution: Upgrade library, increase memory limit
+
+Issue: "Matching accuracy low"
+  Cause: Similar product names confusing merger
+  Time: 30 min to diagnose
+  Solution: Adjust similarity threshold, use fuzzy matching
+
+Issue: "Sync taking >3 hours"
+  Cause: Brand site is slow or has many products
+  Time: 15 min to identify
+  Solution: Split into incremental sync, optimize selectors
+
+Frequency: 1-2x per month (totals ~4 hours/month)
+
+================================================================================
+                      YOUR DECISION CHECKLIST
+================================================================================
+
+If you want Option 2, you need to:
+
+✅ Install Playwright
+✅ Configure brand websites to scrape
+✅ Set up cron jobs for automated syncs
+✅ Monitor logs weekly (15-30 min)
+✅ Fix broken selectors when sites change (1-2 hours, 1-2x/month)
+✅ Review matching accuracy monthly (1 hour)
+✅ Dedicate 1 developer (10-15 hours/month) OR use automation
+
+Benefits:
+  ✅ Complete product catalogs (7K-12K products)
+  ✅ Both pricing AND specifications
+  ✅ User can see full picture before buying
+  ✅ Halilit prices always correct
+  ✅ Brand documentation always available
+  ✅ Clear PRIMARY/SECONDARY labeling
+  ✅ Fully automated after setup
+
+Tradeoffs:
+  ❌ 2 weeks setup time (vs 1 day for Option 1)
+  ❌ 10-15 hours/month maintenance (vs <1 hour)
+  ❌ More complexity (but well-documented)
+  ❌ Occasional selector updates needed
+  ❌ Requires developer to monitor
+
+================================================================================
+                            FILES CREATED
+================================================================================
+
+✅ /backend/scripts/brand_website_scraper.py
+   → JavaScript-enabled brand website scraper using Playwright
+   → Auto-detects product selectors
+   → Extracts specs, manuals, content
+
+✅ /backend/scripts/merge_catalog.py
+   → Intelligent product matching (SKU + name similarity)
+   → Marks PRIMARY (both) / SECONDARY (brand-only)
+   → Creates unified catalog with source attribution
+
+✅ /backend/app/services/harvester.py (UPDATED)
+   → Auto-detection fallbacks for missing selectors
+   → Smarter field extraction with multiple selector attempts
+   → Better handling of lazy-loaded content
+
+✅ /backend/MAINTENANCE_GUIDE.md
+   → Comprehensive guide to maintaining the system
+   → Common issues and solutions
+   → Automation strategies
+   → Success metrics
+
+✅ /OPTION_2_IMPLEMENTATION.md
+   → Complete implementation plan
+   → Setup instructions
+   → Troubleshooting guide
+   → Weekly schedule
+   → Roadmap for 3 months
+
+================================================================================
+                         IMPLEMENTATION TIMELINE
+================================================================================
+
+Week 1:
+  Day 1-2: Install Playwright, configure first brands
+  Day 3-4: Test scrapers, debug selectors
+  Day 5: Set up cron jobs, finalize configs
+
+Week 2:
+  Day 1-2: Run first full sync (Halilit + Brand sites)
+  Day 3-4: Test merger, verify PRIMARY/SECONDARY marking
+  Day 5: Deploy to production, monitor logs
+
+Week 3:
+  Days 1-7: Monitor first week of automated syncs
+  Fix any selector issues
+  Optimize slow brands
+  Train team on maintenance
+
+Week 4:
+  Ready for launch
+  Frontend integration with unified catalog
+  Users see complete data with source attribution
+
+================================================================================
+                           NEXT STEPS
+================================================================================
+
+1. REVIEW this plan with your team
+2. DECIDE: Proceed with Option 2?
+3. ALLOCATE: Assign 1 developer for setup
+4. TIMELINE: Schedule 4 weeks for full implementation
+5. START: Begin with test brands (Roland, Nord)
+
+Questions about implementation?
+- See: /backend/MAINTENANCE_GUIDE.md
+- See: /OPTION_2_IMPLEMENTATION.md
+
+Ready to proceed? 🚀
+
+================================================================================

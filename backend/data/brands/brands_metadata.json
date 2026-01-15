@@ -1,47 +1,45 @@
 {
+  "source": "https://www.halilit.com/pages/4367",
+  "distributor": "Halilit Music Center",
+  "note": "Official authorized brands only - Single source of truth",
   "roland": {
     "name": "Roland",
     "slogan": "Inspire. Create. Connect.",
-    "logo_url": "https://static.roland.com/assets/images/shared/roland_logo.svg",
+    "logo_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/112215/original/25cacc25540905d7798636c3a40ebff4.png",
     "headquarters": "Hamamatsu, Japan",
-    "production_locations": ["Japan", "Taiwan", "Malaysia", "Italy"],
+    "production_locations": ["Japan", "Taiwan", "Malaysia"],
     "founded": 1972,
-    "website": "https://www.roland.com"
+    "website": "https://www.roland.com",
+    "authorized": true
   },
   "nord": {
     "name": "Nord",
     "slogan": "The Legend Lives On",
-    "logo_url": "https://www.nordkeyboards.com/sites/default/files/nord-logo-2019.svg",
+    "logo_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/346225/original/f8abf9a1618614a1ed75296484685583.png",
     "headquarters": "Stockholm, Sweden",
     "production_locations": ["Sweden"],
     "founded": 1995,
-    "website": "https://www.nordkeyboards.com"
+    "website": "https://www.nordkeyboards.com",
+    "authorized": true
   },
-  "yamaha": {
-    "name": "Yamaha",
-    "slogan": "Make Waves",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Yamaha_Motor_logo.svg/512px-Yamaha_Motor_logo.svg.png",
+  "boss": {
+    "name": "Boss",
+    "slogan": "Legendary Guitar Effects",
+    "logo_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/112214/original/39aad9498bd6845d69ba20c4389043e1.png",
     "headquarters": "Hamamatsu, Japan",
-    "production_locations": ["Japan", "China", "Indonesia", "India"],
-    "founded": 1887,
-    "website": "https://www.yamaha.com"
+    "production_locations": ["Japan"],
+    "founded": 1973,
+    "website": "https://www.boss.info",
+    "authorized": true
   },
-  "korg": {
-    "name": "Korg",
-    "slogan": "Inspired by Music",
-    "logo_url": "https://www.korg.com/us/images/logo.svg",
-    "headquarters": "Tokyo, Japan",
-    "production_locations": ["Japan", "China"],
-    "founded": 1962,
-    "website": "https://www.korg.com"
-  },
-  "arturia": {
-    "name": "Arturia",
-    "slogan": "Your Sound. Your Style.",
-    "logo_url": "https://www.arturia.com/images/logo.svg",
-    "headquarters": "Grenoble, France",
-    "production_locations": ["France", "China"],
-    "founded": 1999,
-    "website": "https://www.arturia.com"
+  "akai-professional": {
+    "name": "Akai Professional",
+    "slogan": "Create. Perform. Pioneer.",
+    "logo_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/33110/medium/83987b544c1add08afcdb0a18e3f6948.png",
+    "headquarters": "Cumberland, USA",
+    "production_locations": ["USA", "China"],
+    "founded": 1984,
+    "website": "https://www.akaipro.com",
+    "authorized": true
   }
 }

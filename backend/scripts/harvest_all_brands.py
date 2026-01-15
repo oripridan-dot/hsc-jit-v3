@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
 Automated brand harvesting using Diplomat (AI config generator) + Harvester (scraper).
-This script processes multiple brands sequentially to build the product catalog.
+This script processes ONLY official Halilit-authorized brands from their website.
+
+Source of Truth: https://www.halilit.com/pages/4367
 """
 
-from app.services.harvester import HarvesterService
 from scripts.diplomat import Diplomat
+from app.services.harvester import HarvesterService
 import asyncio
 import json
 import sys
@@ -16,20 +18,59 @@ from typing import Dict, List
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 
-# Brands to harvest with their product pages
-BRANDS_TO_HARVEST = [
-    {"id": "roland", "name": "Roland",
-        "url": "https://www.roland.com/us/categories/pianos/", "max_pages": 10},
-    {"id": "nord", "name": "Nord",
-        "url": "https://www.nordkeyboards.com/products/", "max_pages": 5},
-    {"id": "moog", "name": "Moog",
-        "url": "https://www.moogmusic.com/products", "max_pages": 5},
-    {"id": "yamaha", "name": "Yamaha",
-        "url": "https://usa.yamaha.com/products/music_production/synthesizers/index.html", "max_pages": 10},
-    {"id": "korg", "name": "Korg",
-        "url": "https://www.korg.com/us/products/synthesizers/", "max_pages": 10},
-    {"id": "arturia", "name": "Arturia",
-        "url": "https://www.arturia.com/products", "max_pages": 5},
+# Load official Halilit brands
+def load_official_brands() -> List[Dict]:
+    """Load the official Halilit brand list (single source of truth)"""
+    brands_file = Path(__file__).parent.parent / "data" / \
+        "halilit_official_brands.json"
+
+    if not brands_file.exists():
+        print("⚠️  Official brands file not found. Run extract_halilit_brands.py first!")
+        return []
+
+    with open(brands_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    return data.get('brands', [])
+
+
+# Priority brands to harvest (based on Halilit's key product lines)
+# These are confirmed authorized brands from https://www.halilit.com/pages/4367
+PRIORITY_BRANDS = [
+    # Synthesizers & Digital Pianos
+    {"id": "roland", "categories": [
+        "synthesizers", "pianos", "drums"], "max_pages": 15},
+    {"id": "nord", "categories": [
+        "keyboards", "synthesizers"], "max_pages": 5},
+    {"id": "oberheim", "categories": ["synthesizers"], "max_pages": 3},
+
+    # Audio Interfaces & Controllers
+    {"id": "presonus", "categories": [
+        "audio-interfaces", "mixers"], "max_pages": 10},
+    {"id": "m-audio",
+        "categories": ["audio-interfaces", "midi"], "max_pages": 10},
+    {"id": "akai-professional",
+        "categories": ["midi-controllers"], "max_pages": 8},
+
+    # Studio Monitors
+    {"id": "adam-audio", "categories": ["monitors"], "max_pages": 5},
+    {"id": "krk-systems", "categories": ["monitors"], "max_pages": 5},
+    {"id": "dynaudio", "categories": ["monitors"], "max_pages": 5},
+
+    # Guitar Effects
+    {"id": "boss", "categories": ["effects"], "max_pages": 15},
+    {"id": "headrush-fx", "categories": ["effects"], "max_pages": 5},
+    {"id": "xotic", "categories": ["effects"], "max_pages": 3},
+
+    # PA Systems
+    {"id": "rcf", "categories": ["pa-systems"], "max_pages": 10},
+    {"id": "mackie", "categories": ["pa-systems", "mixers"], "max_pages": 10},
+
+    # Drums & Percussion
+    {"id": "pearl", "categories": ["drums"], "max_pages": 10},
+    {"id": "rogers", "categories": ["drums"], "max_pages": 5},
+    {"id": "paiste-cymbals", "categories": ["cymbals"], "max_pages": 5},
+    {"id": "remo", "categories": ["drum-heads"], "max_pages": 5},
 ]
 
 
@@ -168,10 +209,48 @@ class BrandHarvestOrchestrator:
 
 async def main():
     """Main entry point"""
+    print("\n🎯 Halilit Official Brand Harvester")
+    print("=" * 80)
+    print("Source: https://www.halilit.com/pages/4367")
+    print("=" * 80)
+
+    # Load official brands
+    official_brands = load_official_brands()
+    if not official_brands:
+        print("❌ Failed to load official brands. Exiting.")
+        return
+
+    print(f"\n✅ Loaded {len(official_brands)} official Halilit brands")
+
+    # Filter to priority brands only
+    brands_to_harvest = []
+    for priority in PRIORITY_BRANDS:
+        brand_id = priority["id"]
+        # Find in official list
+        official = next(
+            (b for b in official_brands if b["id"] == brand_id), None)
+        if official:
+            brands_to_harvest.append({
+                "id": brand_id,
+                "name": official["name"],
+                "url": official["url"],  # Use Halilit's URL
+                "max_pages": priority.get("max_pages", 5),
+                "categories": priority.get("categories", [])
+            })
+        else:
+            print(
+                f"⚠️  Priority brand '{brand_id}' not found in official list - SKIPPING")
+
+    print(f"\n📋 Harvesting {len(brands_to_harvest)} priority brands:\n")
+    for i, b in enumerate(brands_to_harvest, 1):
+        print(f"  {i:2}. {b['name']:30} ({b['id']})")
+
+    print("\n")
+
     orchestrator = BrandHarvestOrchestrator()
 
     try:
-        await orchestrator.harvest_all(BRANDS_TO_HARVEST)
+        await orchestrator.harvest_all(brands_to_harvest)
         orchestrator.print_summary()
 
         # Save results to file
@@ -182,6 +261,7 @@ async def main():
             json.dump(orchestrator.results, f, indent=2)
 
         print(f"\n💾 Results saved to: {results_file}")
+        print("\n✅ All harvested brands are officially authorized by Halilit!")
 
     except KeyboardInterrupt:
         print("\n\n⚠️  Harvest interrupted by user")
