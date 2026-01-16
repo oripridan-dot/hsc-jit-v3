@@ -1,0 +1,1257 @@
+{
+  "brand_identity": {
+    "id": "austrian-audio",
+    "name": "Austrian Audio"
+  },
+  "products": [
+    {
+      "id": "unknown-home",
+      "name": "Home",
+      "title_en": "Home",
+      "title_he": "Home",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Home",
+        "thumbnail": "https://via.placeholder.com/100?text=Home"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-profile",
+      "name": "Profile",
+      "title_en": "Profile",
+      "title_he": "Profile",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Profile",
+        "thumbnail": "https://via.placeholder.com/100?text=Profile"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-celebrating-5-years-of-excellencethe-new-hi-x18-more-than-a-limited-special-edition-its-an-anniv",
+      "name": "CELEBRATING 5 YEARS OF EXCELLENCEThe new Hi-X18: More than a limited special edition – it’s an anniv",
+      "title_en": "CELEBRATING 5 YEARS OF EXCELLENCEThe new Hi-X18: More than a limited special edition – it’s an anniv",
+      "title_he": "CELEBRATING 5 YEARS OF EXCELLENCEThe new Hi-X18: More than a limited special edition – it’s an anniv",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=CELEBRATING 5 YEARS ",
+        "thumbnail": "https://via.placeholder.com/100?text=CELEBRATIN"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-microphones",
+      "name": "Microphones",
+      "title_en": "Microphones",
+      "title_he": "Microphones",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Microphones",
+        "thumbnail": "https://via.placeholder.com/100?text=Microphone"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-headphones",
+      "name": "Headphones",
+      "title_en": "Headphones",
+      "title_he": "Headphones",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Headphones",
+        "thumbnail": "https://via.placeholder.com/100?text=Headphones"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-fi",
+      "name": "Hi-Fi",
+      "title_en": "Hi-Fi",
+      "title_he": "Hi-Fi",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-Fi",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-Fi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-oc-s10-299900-229900-265000a-masterpiece-of-sounddiscover-oc-s10",
+      "name": "OC-S10$ 2,999.00£ 2,299.00€ 2.650,00A Masterpiece of SoundDiscover OC-S10",
+      "title_en": "OC-S10$ 2,999.00£ 2,299.00€ 2.650,00A Masterpiece of SoundDiscover OC-S10",
+      "title_he": "OC-S10$ 2,999.00£ 2,299.00€ 2.650,00A Masterpiece of SoundDiscover OC-S10",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=OC-S10$ 2,999.00£ 2,",
+        "thumbnail": "https://via.placeholder.com/100?text=OC-S10$ 2,"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-oc818-dual-set-go-219900-149900-169900dual-set-godiscover-oc818-dual-set-go",
+      "name": "OC818 Dual Set Go$ 2,199.00£ 1,499.00€ 1.699,00Dual Set GoDiscover OC818 Dual Set Go",
+      "title_en": "OC818 Dual Set Go$ 2,199.00£ 1,499.00€ 1.699,00Dual Set GoDiscover OC818 Dual Set Go",
+      "title_he": "OC818 Dual Set Go$ 2,199.00£ 1,499.00€ 1.699,00Dual Set GoDiscover OC818 Dual Set Go",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=OC818 Dual Set Go$ 2",
+        "thumbnail": "https://via.placeholder.com/100?text=OC818 Dual"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-oc818-139900-89900-102900the-new-viennese-classicdiscover-oc818",
+      "name": "OC818$ 1,399.00£ 899.00€ 1.029,00The New Viennese ClassicDiscover OC818",
+      "title_en": "OC818$ 1,399.00£ 899.00€ 1.029,00The New Viennese ClassicDiscover OC818",
+      "title_he": "OC818 Dual Set Go$ 2,199.00£ 1,499.00€ 1.699,00Dual Set GoDiscover OC818 Dual Set Go",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=OC818$ 1,399.00£ 899",
+        "thumbnail": "https://via.placeholder.com/100?text=OC818$ 1,3"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-od505-32900-22900-24900the-best-of-two-worldsdiscover-od505",
+      "name": "OD505$ 329.00£ 229.00€ 249,00The Best Of Two WorldsDiscover OD505",
+      "title_en": "OD505$ 329.00£ 229.00€ 249,00The Best Of Two WorldsDiscover OD505",
+      "title_he": "OD505$ 329.00£ 229.00€ 249,00The Best Of Two WorldsDiscover OD505",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=OD505$ 329.00£ 229.0",
+        "thumbnail": "https://via.placeholder.com/100?text=OD505$ 329"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-cc8-sc-59900-44900-49900where-focus-becomes-formdiscover-cc8-sc",
+      "name": "CC8-SC$ 599.00£ 449.00€ 499,00Where focus becomes formDiscover CC8-SC",
+      "title_en": "CC8-SC$ 599.00£ 449.00€ 499,00Where focus becomes formDiscover CC8-SC",
+      "title_he": "CC8-SC$ 599.00£ 449.00€ 499,00Where focus becomes formDiscover CC8-SC",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=CC8-SC$ 599.00£ 449.",
+        "thumbnail": "https://via.placeholder.com/100?text=CC8-SC$ 59"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-cc8-49900-39900-44900a-new-era-of-accuracydiscover-cc8",
+      "name": "CC8$ 499.00£ 399.00€ 449,00A New Era of AccuracyDiscover CC8",
+      "title_en": "CC8$ 499.00£ 399.00€ 449,00A New Era of AccuracyDiscover CC8",
+      "title_he": "CC8$ 499.00£ 399.00€ 449,00A New Era of AccuracyDiscover CC8",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=CC8$ 499.00£ 399.00€",
+        "thumbnail": "https://via.placeholder.com/100?text=CC8$ 499.0"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micreator-studio-24900-18900-8999create-anywhere-capture-everythingdiscover-micreator-studio",
+      "name": "MiCreator Studio$ 249.00£ 189.00€ 89,99Create anywhere, capture everything.Discover MiCreator Studio",
+      "title_en": "MiCreator Studio$ 249.00£ 189.00€ 89,99Create anywhere, capture everything.Discover MiCreator Studio",
+      "title_he": "MiCreator Studio$ 249.00£ 189.00€ 89,99Create anywhere, capture everything.Discover MiCreator Studio",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MiCreator Studio$ 24",
+        "thumbnail": "https://via.placeholder.com/100?text=MiCreator "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-composer-269900-224900-249900your-music-comes-alivediscover-the-composer",
+      "name": "The Composer$ 2,699.00£ 2,249.00€ 2.499,00Your music comes alive.Discover The Composer",
+      "title_en": "The Composer$ 2,699.00£ 2,249.00€ 2.499,00Your music comes alive.Discover The Composer",
+      "title_he": "The Composer$ 2,699.00£ 2,249.00€ 2.499,00Your music comes alive.Discover The Composer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Composer$ 2,699.",
+        "thumbnail": "https://via.placeholder.com/100?text=The Compos"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x60-49900-29999-34995a-modern-day-studio-classicdiscover-hi-x60",
+      "name": "Hi-X60$ 499.00£ 299.99€ 349,95A Modern-Day Studio ClassicDiscover Hi-X60",
+      "title_en": "Hi-X60$ 499.00£ 299.99€ 349,95A Modern-Day Studio ClassicDiscover Hi-X60",
+      "title_he": "Hi-X60$ 499.00£ 299.99€ 349,95A Modern-Day Studio ClassicDiscover Hi-X60",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X60$ 499.00£ 299.",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X60$ 49"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x65-49900-29999-34995hear-everything-sacrifice-nothingdiscover-hi-x65",
+      "name": "Hi-X65$ 499.00£ 299.99€ 349,95Hear everything. Sacrifice nothing.Discover Hi-X65",
+      "title_en": "Hi-X65$ 499.00£ 299.99€ 349,95Hear everything. Sacrifice nothing.Discover Hi-X65",
+      "title_he": "Hi-X65$ 499.00£ 299.99€ 349,95Hear everything. Sacrifice nothing.Discover Hi-X65",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X65$ 499.00£ 299.",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X65$ 49"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x25bt-19900-12999-12995studio-sound-on-the-godiscover-hi-x25bt",
+      "name": "Hi-X25BT$ 199.00£ 129.99€ 129,95Studio Sound. On-The-Go.Discover Hi-X25BT",
+      "title_en": "Hi-X25BT$ 199.00£ 129.99€ 129,95Studio Sound. On-The-Go.Discover Hi-X25BT",
+      "title_he": "Hi-X25BT$ 199.00£ 129.99€ 129,95Studio Sound. On-The-Go.Discover Hi-X25BT",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X25BT$ 199.00£ 12",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X25BT$ "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x20-16900-11999-12995hear-more-feel-morediscover-hi-x20",
+      "name": "Hi-X20$ 169.00£ 119.99€ 129,95Hear More. Feel More.Discover Hi-X20",
+      "title_en": "Hi-X20$ 169.00£ 119.99€ 129,95Hear More. Feel More.Discover Hi-X20",
+      "title_he": "Hi-X20$ 169.00£ 119.99€ 129,95Hear More. Feel More.Discover Hi-X20",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X20$ 169.00£ 119.",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X20$ 16"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-composer-269900-224900-249900your-music-comes-alivediscover-the-composerfull-score-one",
+      "name": "The Composer$ 2,699.00£ 2,249.00€ 2.499,00Your music comes alive.Discover The ComposerFull Score one",
+      "title_en": "The Composer$ 2,699.00£ 2,249.00€ 2.499,00Your music comes alive.Discover The ComposerFull Score one",
+      "title_he": "The Composer$ 2,699.00£ 2,249.00€ 2.499,00Your music comes alive.Discover The Composer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Composer$ 2,699.",
+        "thumbnail": "https://via.placeholder.com/100?text=The Compos"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-full-score-one-159900-129900-149900mesmerizing-listening-pleasurediscover-full-score-one",
+      "name": "Full Score one$ 1,599.00£ 1,299.00€ 1.499,00Mesmerizing listening pleasure.Discover Full Score one",
+      "title_en": "Full Score one$ 1,599.00£ 1,299.00€ 1.499,00Mesmerizing listening pleasure.Discover Full Score one",
+      "title_he": "Full Score one$ 1,599.00£ 1,299.00€ 1.499,00Mesmerizing listening pleasure.Discover Full Score one",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Full Score one$ 1,59",
+        "thumbnail": "https://via.placeholder.com/100?text=Full Score"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-follow-us",
+      "name": "Follow Us",
+      "title_en": "Follow Us",
+      "title_he": "Follow Us",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Follow Us",
+        "thumbnail": "https://via.placeholder.com/100?text=Follow Us"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-dein-warenkorb-ist-leer",
+      "name": "Dein Warenkorb ist leer.",
+      "title_en": "Dein Warenkorb ist leer.",
+      "title_he": "Dein Warenkorb ist leer.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Dein Warenkorb ist l",
+        "thumbnail": "https://via.placeholder.com/100?text=Dein Waren"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-zwischensumme-0versand-und-rabattcodes-werden-beim-checkout-hinzugefügtzur-kasse",
+      "name": "ZWISCHENSUMME :€0Versand- und Rabattcodes werden beim Checkout hinzugefügt.Zur Kasse",
+      "title_en": "ZWISCHENSUMME :€0Versand- und Rabattcodes werden beim Checkout hinzugefügt.Zur Kasse",
+      "title_he": "ZWISCHENSUMME :€0Versand- und Rabattcodes werden beim Checkout hinzugefügt.Zur Kasse",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ZWISCHENSUMME :€0Ver",
+        "thumbnail": "https://via.placeholder.com/100?text=ZWISCHENSU"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-discover",
+      "name": "DISCOVER",
+      "title_en": "DISCOVER",
+      "title_he": "DISCOVER",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=DISCOVER",
+        "thumbnail": "https://via.placeholder.com/100?text=DISCOVER"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-celebrating-5-years-of-excellence",
+      "name": "CELEBRATING 5 YEARS OF EXCELLENCE",
+      "title_en": "CELEBRATING 5 YEARS OF EXCELLENCE",
+      "title_he": "CELEBRATING 5 YEARS OF EXCELLENCE",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=CELEBRATING 5 YEARS ",
+        "thumbnail": "https://via.placeholder.com/100?text=CELEBRATIN"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-making-passion-heard",
+      "name": "Making Passion Heard",
+      "title_en": "Making Passion Heard",
+      "title_he": "Making Passion Heard",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Making Passion Heard",
+        "thumbnail": "https://via.placeholder.com/100?text=Making Pas"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-oc-s10",
+      "name": "OC-S10",
+      "title_en": "OC-S10",
+      "title_he": "OC-S10$ 2,999.00£ 2,299.00€ 2.650,00A Masterpiece of SoundDiscover OC-S10",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=OC-S10",
+        "thumbnail": "https://via.placeholder.com/100?text=OC-S10"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-oc818-dual-set-go",
+      "name": "OC818 Dual Set Go",
+      "title_en": "OC818 Dual Set Go",
+      "title_he": "OC818 Dual Set Go$ 2,199.00£ 1,499.00€ 1.699,00Dual Set GoDiscover OC818 Dual Set Go",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=OC818 Dual Set Go",
+        "thumbnail": "https://via.placeholder.com/100?text=OC818 Dual"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-cc8-sc",
+      "name": "CC8-SC",
+      "title_en": "CC8-SC",
+      "title_he": "CC8-SC$ 599.00£ 449.00€ 499,00Where focus becomes formDiscover CC8-SC",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=CC8-SC",
+        "thumbnail": "https://via.placeholder.com/100?text=CC8-SC"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micreator-studio",
+      "name": "MiCreator Studio",
+      "title_en": "MiCreator Studio",
+      "title_he": "MiCreator Studio",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MiCreator Studio",
+        "thumbnail": "https://via.placeholder.com/100?text=MiCreator "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-composer",
+      "name": "The Composer",
+      "title_en": "The Composer",
+      "title_he": "The Composer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Composer",
+        "thumbnail": "https://via.placeholder.com/100?text=The Compos"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x60",
+      "name": "Hi-X60",
+      "title_en": "Hi-X60",
+      "title_he": "Hi-X60$ 499.00£ 299.99€ 349,95A Modern-Day Studio ClassicDiscover Hi-X60",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X60",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X60"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x65",
+      "name": "Hi-X65",
+      "title_en": "Hi-X65",
+      "title_he": "Hi-X65$ 499.00£ 299.99€ 349,95Hear everything. Sacrifice nothing.Discover Hi-X65",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X65",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X65"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x25bt",
+      "name": "Hi-X25BT",
+      "title_en": "Hi-X25BT",
+      "title_he": "Hi-X25BT$ 199.00£ 129.99€ 129,95Studio Sound. On-The-Go.Discover Hi-X25BT",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X25BT",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X25BT"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hi-x20",
+      "name": "Hi-X20",
+      "title_en": "Hi-X20",
+      "title_he": "Hi-X20$ 169.00£ 119.99€ 129,95Hear More. Feel More.Discover Hi-X20",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Hi-X20",
+        "thumbnail": "https://via.placeholder.com/100?text=Hi-X20"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-full-score-one",
+      "name": "Full Score one",
+      "title_en": "Full Score one",
+      "title_he": "Full Score one",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Full Score one",
+        "thumbnail": "https://via.placeholder.com/100?text=Full Score"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-its-the-best-modern-microphone-ive-heard-since-forever",
+      "name": "“It’s the best modern microphone I’ve heard… since forever!”",
+      "title_en": "“It’s the best modern microphone I’ve heard… since forever!”",
+      "title_he": "“It’s the best modern microphone I’ve heard… since forever!”",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=“It’s the best moder",
+        "thumbnail": "https://via.placeholder.com/100?text=“It’s the "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-mighty-od5",
+      "name": "The Mighty OD5",
+      "title_en": "The Mighty OD5",
+      "title_he": "The Mighty OD5",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Mighty OD5",
+        "thumbnail": "https://via.placeholder.com/100?text=The Mighty"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-hi-x60-offers-a-seamless-transition-between-speakers-and-headphones-without-any-noticeable-difference",
+      "name": "The Hi-X60 offers a seamless transition between speakers and headphones without any noticeable difference.",
+      "title_en": "The Hi-X60 offers a seamless transition between speakers and headphones without any noticeable difference.",
+      "title_he": "Hi-X60$ 499.00£ 299.99€ 349,95A Modern-Day Studio ClassicDiscover Hi-X60",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Hi-X60 offers a ",
+        "thumbnail": "https://via.placeholder.com/100?text=The Hi-X60"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-on-stage-it-is-important-that-emotions-thoughts-and-subtleties-in-the-voice-reach-the-audience",
+      "name": "On stage, it is important that emotions, thoughts and subtleties in the voice reach the audience.",
+      "title_en": "On stage, it is important that emotions, thoughts and subtleties in the voice reach the audience.",
+      "title_he": "On stage, it is important that emotions, thoughts and subtleties in the voice reach the audience.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=On stage, it is impo",
+        "thumbnail": "https://via.placeholder.com/100?text=On stage, "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-oc-mics-are-absolutely-outstanding",
+      "name": "The OC mics are absolutely outstanding.",
+      "title_en": "The OC mics are absolutely outstanding.",
+      "title_he": "The OC mics are absolutely outstanding.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The OC mics are abso",
+        "thumbnail": "https://via.placeholder.com/100?text=The OC mic"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-we-recorded-a-new-song-recently-with-the-oc818-and-it-sounds-fantastic",
+      "name": "We recorded a new song recently with the OC818 and it sounds fantastic!.",
+      "title_en": "We recorded a new song recently with the OC818 and it sounds fantastic!.",
+      "title_he": "OC818 Dual Set Go$ 2,199.00£ 1,499.00€ 1.699,00Dual Set GoDiscover OC818 Dual Set Go",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=We recorded a new so",
+        "thumbnail": "https://via.placeholder.com/100?text=We recorde"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-most-realistic-high-end-i-ever-heard-on-a-pair-of-headphones",
+      "name": "The most realistic High End I ever heard on a pair of headphones.",
+      "title_en": "The most realistic High End I ever heard on a pair of headphones.",
+      "title_he": "Headphones",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The most realistic H",
+        "thumbnail": "https://via.placeholder.com/100?text=The most r"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-as-a-performing-artist-my-voice-and-its-clarity-are-everything",
+      "name": "As a performing artist, my voice and its clarity are everything.",
+      "title_en": "As a performing artist, my voice and its clarity are everything.",
+      "title_he": "As a performing artist, my voice and its clarity are everything.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=As a performing arti",
+        "thumbnail": "https://via.placeholder.com/100?text=As a perfo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tweety-gonzalez",
+      "name": "Tweety Gonzalez",
+      "title_en": "Tweety Gonzalez",
+      "title_he": "Tweety Gonzalez",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Tweety Gonzalez",
+        "thumbnail": "https://via.placeholder.com/100?text=Tweety Gon"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-cécile-nordegg",
+      "name": "Cécile Nordegg",
+      "title_en": "Cécile Nordegg",
+      "title_he": "Cécile Nordegg",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Cécile Nordegg",
+        "thumbnail": "https://via.placeholder.com/100?text=Cécile Nor"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-joe-barresi",
+      "name": "Joe Barresi",
+      "title_en": "Joe Barresi",
+      "title_he": "Joe Barresi",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Joe Barresi",
+        "thumbnail": "https://via.placeholder.com/100?text=Joe Barres"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-omega-diatribe",
+      "name": "Omega Diatribe",
+      "title_en": "Omega Diatribe",
+      "title_he": "Omega Diatribe",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Omega Diatribe",
+        "thumbnail": "https://via.placeholder.com/100?text=Omega Diat"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elise-trouw",
+      "name": "Elise Trouw",
+      "title_en": "Elise Trouw",
+      "title_he": "Elise Trouw",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Elise Trouw",
+        "thumbnail": "https://via.placeholder.com/100?text=Elise Trou"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-adrian-schinoff",
+      "name": "Adrian Schinoff",
+      "title_en": "Adrian Schinoff",
+      "title_he": "Adrian Schinoff",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Adrian Schinoff",
+        "thumbnail": "https://via.placeholder.com/100?text=Adrian Sch"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-daniela-milagros",
+      "name": "Daniela Milagros",
+      "title_en": "Daniela Milagros",
+      "title_he": "Daniela Milagros",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Daniela Milagros",
+        "thumbnail": "https://via.placeholder.com/100?text=Daniela Mi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-austrian_audio-feed",
+      "name": "austrian_audio Feed",
+      "title_en": "austrian_audio Feed",
+      "title_he": "austrian_audio Feed",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=austrian_audio Feed",
+        "thumbnail": "https://via.placeholder.com/100?text=austrian_a"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-stay-informed",
+      "name": "Stay Informed!",
+      "title_en": "Stay Informed!",
+      "title_he": "Stay Informed!",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Stay Informed!",
+        "thumbnail": "https://via.placeholder.com/100?text=Stay Infor"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-content-info",
+      "name": "Content Info",
+      "title_en": "Content Info",
+      "title_he": "Content Info",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Content Info",
+        "thumbnail": "https://via.placeholder.com/100?text=Content In"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-categories",
+      "name": "Categories",
+      "title_en": "Categories",
+      "title_he": "Categories",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Categories",
+        "thumbnail": "https://via.placeholder.com/100?text=Categories"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-product",
+      "name": "Product",
+      "title_en": "Product",
+      "title_he": "Product",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Product",
+        "thumbnail": "https://via.placeholder.com/100?text=Product"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-austrian-audio",
+      "name": "Austrian Audio",
+      "title_en": "Austrian Audio",
+      "title_he": "austrian_audio Feed",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Austrian Audio",
+        "thumbnail": "https://via.placeholder.com/100?text=Austrian A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-contact-us",
+      "name": "Contact Us",
+      "title_en": "Contact Us",
+      "title_he": "Contact Us",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Contact Us",
+        "thumbnail": "https://via.placeholder.com/100?text=Contact Us"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-we-use-cookies",
+      "name": "We use cookies",
+      "title_en": "We use cookies",
+      "title_he": "We use cookies",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=We use cookies",
+        "thumbnail": "https://via.placeholder.com/100?text=We use coo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 59,
+    "halilit_products": 59,
+    "unified_products": 59,
+    "primary_count": 59,
+    "secondary_count": 0,
+    "halilit_only_count": 0,
+    "timestamp": "2026-01-16T02:01:12.935875"
+  }
+}

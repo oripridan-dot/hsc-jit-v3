@@ -103,16 +103,16 @@ class BrandWebsiteScraper:
                         if not base_title:
                             title_elem = await page.query_selector('h1')
                             base_title = await title_elem.text_content() if title_elem else page_slug
-                        
+
                         base_title = base_title.strip()
 
                         # Ensure we have an image
                         image_url = extracted_data.get("image_url")
                         if image_url and not image_url.startswith('http'):
-                             parsed_base = urlparse(base_url)
-                             base_domain = f"{parsed_base.scheme}://{parsed_base.netloc}"
-                             image_url = urljoin(base_domain, image_url)
-                        
+                            parsed_base = urlparse(base_url)
+                            base_domain = f"{parsed_base.scheme}://{parsed_base.netloc}"
+                            image_url = urljoin(base_domain, image_url)
+
                         # Capture category
                         category = extracted_data.get("category")
 
@@ -135,7 +135,8 @@ class BrandWebsiteScraper:
                             "brand_product_url": url
                         }
                         # Remove None values
-                        common_data = {k: v for k, v in common_data.items() if v}
+                        common_data = {k: v for k,
+                                       v in common_data.items() if v}
 
                         if len(valid_variants) > 1:
                             # Multiple variants
@@ -490,7 +491,8 @@ class BrandWebsiteScraper:
                         match = re.search(regex_pattern, val, re.IGNORECASE)
                         if match:
                             # Use first group if available, else full match
-                            val = match.group(1) if match.groups() else match.group(0)
+                            val = match.group(
+                                1) if match.groups() else match.group(0)
                         else:
                             val = None
 

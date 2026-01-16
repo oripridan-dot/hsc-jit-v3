@@ -35,6 +35,18 @@ from typing import Any, Dict, List, Optional, Set
 from datetime import datetime
 from difflib import SequenceMatcher
 import re
+import sys
+
+# Add backend root to path to allow imports from app
+backend_dir = Path(__file__).resolve().parents[1]
+sys.path.append(str(backend_dir))
+
+try:
+    from app.utils.hebrew import normalize_for_matching
+except ImportError:
+    # Fallback if running relative to script location differently
+    sys.path.append(str(backend_dir.parent))
+    from backend.app.utils.hebrew import normalize_for_matching
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -49,11 +61,17 @@ class DualSourceMerger:
             data_dir = backend_dir / "data"
 
         self.data_dir = Path(data_dir)
-        self.brand_dir = self.data_dir / "catalogs_brand"  # Brand website products
+        # Use Locked Contracts as the source for Brand data if available
+        self.locked_dir = self.data_dir / "contracts" / "locked"
+        self.brand_dir = self.data_dir / "catalogs_brand"  # Fallback
         self.halilit_dir = self.data_dir / \
             "catalogs_halilit"  # Halilit products (price/sku)
         self.catalogs_dir = self.data_dir / "catalogs"  # Output
         self.catalogs_dir.mkdir(parents=True, exist_ok=True)
+
+        # New Output Dir
+        self.unified_dir = self.data_dir / "catalogs_unified"
+        self.unified_dir.mkdir(parents=True, exist_ok=True)
 
     def merge_all_brands(self, brands: Optional[List[str]] = None) -> Dict[str, Any]:
         """Merge all brands using dual-source strategy."""
@@ -90,25 +108,50 @@ class DualSourceMerger:
             logger.info(f"Processing: {brand_id}")
             logger.info(f"{'─'*70}")
 
-            # Load both sources
-            brand_data = self._load_catalog(
-                self.brand_dir / f"{brand_id}_brand.json"
-            )
+            # USE LOCKED CONTRACT if available
+            contract_file = self.locked_dir / f"{brand_id}_contract.json"
+            brand_file = self.brand_dir / f"{brand_id}_brand.json"
+
+            clean_brand_products = []
+            data = None
+
+            if contract_file.exists():
+                logger.info(f"  🔒 Using LOCKED CONTRACT: {contract_file}")
+                data = self._load_catalog(contract_file)
+                if data:
+                    clean_brand_products = data.get("products", [])
+            elif brand_file.exists():
+                logger.info(
+                    f"  ⚠️  No Contract. Using RAW SCRAPE: {brand_file}")
+                data = self._load_catalog(brand_file)
+                if data:
+                    # Filter polluted raw data
+                    raw_prods = data.get("products", [])
+                    for bp in raw_prods:
+                        is_polluted = (
+                            bp.get("source") == "halilit" or
+                            "halilit_id" in bp or
+                            "price_ils" in bp
+                        )
+                        if not is_polluted:
+                            clean_brand_products.append(bp)
+            else:
+                logger.warning("  ❌ No Brand Data source found.")
+
             halilit_data = self._load_catalog(
                 self.halilit_dir / f"{brand_id}_halilit.json"
             )
-
-            brand_products = brand_data.get(
-                "products", []) if brand_data else []
             halilit_products = halilit_data.get(
                 "products", []) if halilit_data else []
+
+            brand_products = clean_brand_products
 
             logger.info(f"  📱 Brand Website: {len(brand_products)} products")
             logger.info(f"  💰 Halilit: {len(halilit_products)} products")
 
             # Get brand identity (from either source)
             brand_identity = (
-                brand_data.get("brand_identity", {}) if brand_data
+                data.get("brand_identity", {}) if data
                 else halilit_data.get("brand_identity", {})
             )
             if not brand_identity.get("id"):
@@ -186,7 +229,8 @@ class DualSourceMerger:
         # Create Halilit lookup by normalized name for matching
         halilit_by_name = {}
         for h_prod in halilit_products:
-            name_norm = self._normalize_name(h_prod.get("name", ""))
+            # We pass brand_id to help strip it out
+            name_norm = self._normalize_name(h_prod.get("name", ""), brand_id)
             if name_norm:
                 if name_norm not in halilit_by_name:
                     halilit_by_name[name_norm] = []
@@ -197,7 +241,7 @@ class DualSourceMerger:
         # Process brand products (primary source)
         for brand_prod in brand_products:
             brand_name = brand_prod.get("name", "Unknown")
-            brand_name_norm = self._normalize_name(brand_name)
+            brand_name_norm = self._normalize_name(brand_name, brand_id)
 
             # Find matching Halilit product
             halilit_match = None
@@ -216,6 +260,8 @@ class DualSourceMerger:
                     brand_prod, halilit_match
                 )
                 unified_prod["source"] = "PRIMARY"
+                # Verified Locally (Tier 1)
+                unified_prod["confidence_score"] = 1.0
                 unified_prod["source_details"] = {
                     "content": "brand_website",
                     "pricing": "halilit",
@@ -226,6 +272,8 @@ class DualSourceMerger:
                 # SECONDARY: Brand-only product
                 unified_prod = self._prepare_brand_product(brand_prod)
                 unified_prod["source"] = "SECONDARY"
+                # Global Orphan (Tier 2)
+                unified_prod["confidence_score"] = 0.8
                 unified_prod["source_details"] = {
                     "content": "brand_website",
                     "pricing": "check_brand",
@@ -251,6 +299,7 @@ class DualSourceMerger:
                 # HALILIT-ONLY: Not found on brand website
                 unified_prod = self._prepare_halilit_product(halilit_prod)
                 unified_prod["source"] = "HALILIT_ONLY"
+                unified_prod["confidence_score"] = 0.6  # Local Ghost (Tier 3)
                 unified_prod["source_details"] = {
                     "content": "halilit",
                     "pricing": "halilit",
@@ -269,12 +318,15 @@ class DualSourceMerger:
             "id": brand_prod.get("id") or f"{brand_prod.get('brand', 'unknown')}-{self._slugify(brand_prod.get('name', ''))}",
             "brand": brand_prod.get("brand"),
             "name": brand_prod.get("name", halilit_prod.get("name")),
+            "title_en": brand_prod.get("name"),
+            "title_he": halilit_prod.get("name"),
             "description": brand_prod.get("description", ""),
             "specs": brand_prod.get("specs", {}),
             "category": brand_prod.get("category", halilit_prod.get("category")),
 
             # Commerce data from Halilit
             "price": halilit_prod.get("price"),
+            "price_ils": halilit_prod.get("price"),
             "currency": halilit_prod.get("currency", "ILS"),
             "sku": halilit_prod.get("item_code") or halilit_prod.get("sku"),
             "halilit_id": halilit_prod.get("halilit_id"),
@@ -332,14 +384,10 @@ class DualSourceMerger:
             "halilit_product_url": halilit_prod.get("url"),
         }
 
-    def _normalize_name(self, name: str) -> str:
-        """Normalize product name for matching."""
-        if not name:
-            return ""
-        # Remove special chars, convert to lowercase, remove extra spaces
-        normalized = re.sub(r'[^\w\s]', '', str(name).lower())
-        normalized = re.sub(r'\s+', ' ', normalized).strip()
-        return normalized
+    def _normalize_name(self, name: str, brand_id: Optional[str] = None) -> str:
+        """Normalize product name for matching using the sophisticated Hebrew utils."""
+        # Use brand_id as hint to remove brand name from model string
+        return normalize_for_matching(name, brand_name=brand_id)
 
     def _slugify(self, text: str) -> str:
         """Convert text to URL-safe slug."""
@@ -359,7 +407,7 @@ class DualSourceMerger:
             return None
 
 
-async def main():
+def main():
     """Run the merger."""
     merger = DualSourceMerger()
     result = merger.merge_all_brands()
@@ -373,4 +421,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

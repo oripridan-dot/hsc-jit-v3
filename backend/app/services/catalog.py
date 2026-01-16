@@ -38,6 +38,10 @@ class CatalogService:
                 f"Catalogs directory not found: {self.catalogs_dir}")
 
         for json_path in sorted(self.catalogs_dir.glob("*.json")):
+            # Temporary Filter: Only load Roland and Boss as requested
+            if "roland" not in json_path.name.lower() and "boss" not in json_path.name.lower():
+                continue
+
             try:
                 with json_path.open("r", encoding="utf-8") as f:
                     data = json.load(f)
@@ -95,9 +99,22 @@ class CatalogService:
                 if p.get("id"):
                     self.product_map[p["id"]] = p
 
-                # Create detailed search text
-                # "Roland TD-17KVX (Electronic Drums) - Malaysia"
-                search_parts = [p.get("name", "")]
+                # Create detailed search text (Rosetta Stone Logic)
+                # Combines: English Title + Hebrew Title + Category + Brand
+                search_parts = []
+
+                # Add Name/Title_EN
+                name_val = p.get("name", "")
+                title_en = p.get("title_en", "")
+                if name_val:
+                    search_parts.append(name_val)
+                if title_en and title_en != name_val:
+                    search_parts.append(title_en)
+
+                # Add Hebrew Title (Crucial for Local Search)
+                if p.get("title_he"):
+                    search_parts.append(p["title_he"])
+
                 if p.get("id"):
                     search_parts.append(p["id"])
 

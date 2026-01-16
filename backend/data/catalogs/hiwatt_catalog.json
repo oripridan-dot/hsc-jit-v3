@@ -1,0 +1,172 @@
+{
+  "brand_identity": {
+    "id": "hiwatt",
+    "name": "Hiwatt"
+  },
+  "products": [
+    {
+      "id": "unknown-dr103",
+      "brand": null,
+      "name": "DR103",
+      "description": "",
+      "specs": {},
+      "category": "Guitar Amplifiers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=DR103",
+        "thumbnail": "https://via.placeholder.com/100?text=DR103"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.hiwatt.com/amplifiers/dr103",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-dr504",
+      "brand": null,
+      "name": "DR504",
+      "description": "",
+      "specs": {},
+      "category": "Guitar Amplifiers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=DR504",
+        "thumbnail": "https://via.placeholder.com/100?text=DR504"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.hiwatt.com/amplifiers/dr504",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-sa212",
+      "brand": null,
+      "name": "SA212",
+      "description": "",
+      "specs": {},
+      "category": "Guitar Amplifiers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SA212",
+        "thumbnail": "https://via.placeholder.com/100?text=SA212"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.hiwatt.com/amplifiers/sa212",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-t20",
+      "brand": null,
+      "name": "T20",
+      "description": "",
+      "specs": {},
+      "category": "Guitar Amplifiers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=T20",
+        "thumbnail": "https://via.placeholder.com/100?text=T20"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.hiwatt.com/amplifiers/t20",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-little-j",
+      "brand": null,
+      "name": "Little J",
+      "description": "",
+      "specs": {},
+      "category": "Guitar Amplifiers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Little J",
+        "thumbnail": "https://via.placeholder.com/100?text=Little J"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.hiwatt.com/amplifiers/little-j",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-hg100",
+      "brand": null,
+      "name": "HG100",
+      "description": "",
+      "specs": {},
+      "category": "Bass Amplifiers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HG100",
+        "thumbnail": "https://via.placeholder.com/100?text=HG100"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.hiwatt.com/amplifiers/hg100",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-se4123",
+      "brand": null,
+      "name": "SE4123",
+      "description": "",
+      "specs": {},
+      "category": "Guitar Cabinets",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SE4123",
+        "thumbnail": "https://via.placeholder.com/100?text=SE4123"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.hiwatt.com/cabinets/se4123",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 7,
+    "halilit_products": 0,
+    "unified_products": 7,
+    "primary_count": 0,
+    "secondary_count": 7,
+    "halilit_only_count": 0,
+    "timestamp": "2026-01-16T02:01:13.053242"
+  }
+}

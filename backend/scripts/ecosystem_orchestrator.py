@@ -17,6 +17,16 @@ Usage:
 """
 
 
+from urllib.parse import quote_plus
+from difflib import SequenceMatcher
+from typing import Dict, List, Any, Optional
+from datetime import datetime
+import logging
+import json
+import argparse
+import asyncio
+from brand_website_scraper import BrandWebsiteScraper
+from halilit_scraper import HalilitScraper
 import sys
 from pathlib import Path
 
@@ -25,16 +35,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 # Add scripts dir (for local modules if needed)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from halilit_scraper import HalilitScraper
-from brand_website_scraper import BrandWebsiteScraper
-import asyncio
-import argparse
-import json
-import logging
-from datetime import datetime
-from typing import Dict, List, Any, Optional
-from difflib import SequenceMatcher
-from urllib.parse import quote_plus
 
 # Import existing scrapers (Legacy block removed, replaced by top imports)
 

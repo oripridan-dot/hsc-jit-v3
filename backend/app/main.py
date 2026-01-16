@@ -293,35 +293,35 @@ async def get_dual_source_intelligence():
     """
     from pathlib import Path
     import json
-    
+
     backend_dir = Path(__file__).parent.parent
     data_dir = backend_dir / "data"
-    
+
     # Load all the dual-source data files
     dual_source_strategy = {}
     ecosystem_report = {}
     orchestration_report = {}
     halilit_sync = {}
-    
+
     try:
         # Read dual source strategy
         strategy_file = data_dir / "dual_source_strategy.json"
         if strategy_file.exists():
             with open(strategy_file) as f:
                 dual_source_strategy = json.load(f)
-        
+
         # Read ecosystem sync report
         ecosystem_file = data_dir / "ecosystem_sync_report.json"
         if ecosystem_file.exists():
             with open(ecosystem_file) as f:
                 ecosystem_report = json.load(f)
-        
+
         # Read orchestration report
         orchestration_file = data_dir / "orchestration_report.json"
         if orchestration_file.exists():
             with open(orchestration_file) as f:
                 orchestration_report = json.load(f)
-        
+
         # Read Halilit sync summary
         halilit_file = data_dir / "halilit_sync_summary.json"
         if halilit_file.exists():
@@ -329,13 +329,17 @@ async def get_dual_source_intelligence():
                 halilit_sync = json.load(f)
     except Exception as e:
         logger.error(f"Error loading dual-source data: {e}")
-    
+
     # Aggregate brand-level intelligence
     brands_intelligence = {}
-    
+
     # Get brand data from ecosystem report (most detailed)
     if ecosystem_report.get("brands"):
         for brand_id, brand_data in ecosystem_report["brands"].items():
+            # Temporary Filter: Only report Roland and Boss
+            if brand_id not in ["roland", "boss"]:
+                continue
+
             stats = brand_data.get("statistics", {})
             brands_intelligence[brand_id] = {
                 "brand_id": brand_id,
@@ -344,15 +348,20 @@ async def get_dual_source_intelligence():
                 "unified_products": brand_data.get("unified_products", 0),
                 "primary_count": stats.get("primary", 0),  # Both sources
                 "secondary_count": stats.get("secondary", 0),  # Brand only
-                "halilit_only_count": stats.get("halilit_only", 0),  # Halilit only
+                # Halilit only
+                "halilit_only_count": stats.get("halilit_only", 0),
                 "coverage_percentage": (stats.get("primary", 0) / brand_data.get("halilit_products", 1) * 100) if brand_data.get("halilit_products", 0) > 0 else 0,
                 "last_sync": ecosystem_report.get("timestamp", ""),
                 "status": brand_data.get("status", "unknown")
             }
-    
+
     # Fall back to orchestration report for brands not in ecosystem
     if orchestration_report.get("summary"):
         for brand_id, brand_data in orchestration_report["summary"].items():
+            # Temporary Filter: Only report Roland and Boss
+            if brand_id not in ["roland", "boss"]:
+                continue
+
             if brand_id not in brands_intelligence:
                 brands_intelligence[brand_id] = {
                     "brand_id": brand_id,
@@ -366,13 +375,17 @@ async def get_dual_source_intelligence():
                     "last_sync": orchestration_report.get("timestamp", ""),
                     "status": brand_data.get("status", "unknown")
                 }
-    
+
     # Calculate global statistics
-    total_primary = sum(b.get("primary_count", 0) for b in brands_intelligence.values())
-    total_secondary = sum(b.get("secondary_count", 0) for b in brands_intelligence.values())
-    total_halilit_only = sum(b.get("halilit_only_count", 0) for b in brands_intelligence.values())
-    total_unified = sum(b.get("unified_products", 0) for b in brands_intelligence.values())
-    
+    total_primary = sum(b.get("primary_count", 0)
+                        for b in brands_intelligence.values())
+    total_secondary = sum(b.get("secondary_count", 0)
+                          for b in brands_intelligence.values())
+    total_halilit_only = sum(b.get("halilit_only_count", 0)
+                             for b in brands_intelligence.values())
+    total_unified = sum(b.get("unified_products", 0)
+                        for b in brands_intelligence.values())
+
     return {
         "strategy": dual_source_strategy.get("source_strategy", "dual-source-brand-first"),
         "version": dual_source_strategy.get("version", "3.5"),

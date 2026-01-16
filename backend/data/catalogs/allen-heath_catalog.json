@@ -1,0 +1,238 @@
+{
+  "brand_identity": {
+    "id": "allen-heath",
+    "name": "Allen Heath"
+  },
+  "products": [
+    {
+      "id": "unknown-sq-5",
+      "brand": null,
+      "name": "SQ-5",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SQ-5",
+        "thumbnail": "https://via.placeholder.com/100?text=SQ-5"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/sq-5/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-sq-6",
+      "brand": null,
+      "name": "SQ-6",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SQ-6",
+        "thumbnail": "https://via.placeholder.com/100?text=SQ-6"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/sq-6/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-sq-7",
+      "brand": null,
+      "name": "SQ-7",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SQ-7",
+        "thumbnail": "https://via.placeholder.com/100?text=SQ-7"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/sq-7/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-avantis",
+      "brand": null,
+      "name": "Avantis",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Avantis",
+        "thumbnail": "https://via.placeholder.com/100?text=Avantis"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/avantis/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-dlive-s-class",
+      "brand": null,
+      "name": "dLive S Class",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=dLive S Class",
+        "thumbnail": "https://via.placeholder.com/100?text=dLive S Cl"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/dlive/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-qu-16",
+      "brand": null,
+      "name": "QU-16",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=QU-16",
+        "thumbnail": "https://via.placeholder.com/100?text=QU-16"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/qu-16/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-qu-24",
+      "brand": null,
+      "name": "QU-24",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=QU-24",
+        "thumbnail": "https://via.placeholder.com/100?text=QU-24"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/qu-24/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-qu-32",
+      "brand": null,
+      "name": "QU-32",
+      "description": "",
+      "specs": {},
+      "category": "Digital Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=QU-32",
+        "thumbnail": "https://via.placeholder.com/100?text=QU-32"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/qu-32/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-zed-10",
+      "brand": null,
+      "name": "ZED-10",
+      "description": "",
+      "specs": {},
+      "category": "Analog Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ZED-10",
+        "thumbnail": "https://via.placeholder.com/100?text=ZED-10"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/zed-10/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-zed-12fx",
+      "brand": null,
+      "name": "ZED-12FX",
+      "description": "",
+      "specs": {},
+      "category": "Analog Mixers",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ZED-12FX",
+        "thumbnail": "https://via.placeholder.com/100?text=ZED-12FX"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": "https://www.allen-heath.com/ahproducts/zed-12fx/",
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 10,
+    "halilit_products": 0,
+    "unified_products": 10,
+    "primary_count": 0,
+    "secondary_count": 10,
+    "halilit_only_count": 0,
+    "timestamp": "2026-01-16T02:01:12.899839"
+  }
+}

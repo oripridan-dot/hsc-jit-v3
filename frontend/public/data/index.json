@@ -1,0 +1,274 @@
+{
+  "build_timestamp": "2026-01-16T02:49:03.115436Z",
+  "version": "3.6",
+  "brands": [
+    {
+      "id": "adam-audio",
+      "name": "Adam Audio",
+      "product_count": 25,
+      "verified_count": 25,
+      "data_file": "adam-audio.json"
+    },
+    {
+      "id": "adams",
+      "name": "Adams",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "adams.json"
+    },
+    {
+      "id": "akai-professional",
+      "name": "Akai Professional",
+      "product_count": 35,
+      "verified_count": 0,
+      "data_file": "akai-professional.json"
+    },
+    {
+      "id": "allen-heath",
+      "name": "Allen Heath",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "allen-heath.json"
+    },
+    {
+      "id": "alto-professional",
+      "name": "Alto Professional",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "alto-professional.json"
+    },
+    {
+      "id": "ampeg",
+      "name": "Ampeg",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "ampeg.json"
+    },
+    {
+      "id": "amphion",
+      "name": "Amphion",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "amphion.json"
+    },
+    {
+      "id": "ashdown-engineering",
+      "name": "Ashdown Engineering",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "ashdown-engineering.json"
+    },
+    {
+      "id": "austrian-audio",
+      "name": "Austrian Audio",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "austrian-audio.json"
+    },
+    {
+      "id": "avid",
+      "name": "Avid",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "avid.json"
+    },
+    {
+      "id": "boss",
+      "name": "Boss",
+      "product_count": 197,
+      "verified_count": 0,
+      "data_file": "boss.json"
+    },
+    {
+      "id": "breedlove-guitars",
+      "name": "Breedlove Guitars",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "breedlove-guitars.json"
+    },
+    {
+      "id": "cordoba-guitars",
+      "name": "Cordoba Guitars",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "cordoba-guitars.json"
+    },
+    {
+      "id": "dixon",
+      "name": "Dixon",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "dixon.json"
+    },
+    {
+      "id": "dynaudio",
+      "name": "Dynaudio",
+      "product_count": 22,
+      "verified_count": 0,
+      "data_file": "dynaudio.json"
+    },
+    {
+      "id": "encore",
+      "name": "Encore",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "encore.json"
+    },
+    {
+      "id": "esp",
+      "name": "Esp",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "esp.json"
+    },
+    {
+      "id": "eve-audio",
+      "name": "Eve Audio",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "eve-audio.json"
+    },
+    {
+      "id": "fusion",
+      "name": "Fusion",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "fusion.json"
+    },
+    {
+      "id": "gon-bops",
+      "name": "Gon Bops",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "gon-bops.json"
+    },
+    {
+      "id": "guild",
+      "name": "Guild",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "guild.json"
+    },
+    {
+      "id": "headrush-fx",
+      "name": "Headrush Fx",
+      "product_count": 4,
+      "verified_count": 0,
+      "data_file": "headrush-fx.json"
+    },
+    {
+      "id": "heritage-audio",
+      "name": "Heritage Audio",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "heritage-audio.json"
+    },
+    {
+      "id": "hiwatt",
+      "name": "Hiwatt",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "hiwatt.json"
+    },
+    {
+      "id": "krk-systems",
+      "name": "Krk Systems",
+      "product_count": 17,
+      "verified_count": 0,
+      "data_file": "krk-systems.json"
+    },
+    {
+      "id": "m-audio",
+      "name": "M Audio",
+      "product_count": 312,
+      "verified_count": 26,
+      "data_file": "m-audio.json"
+    },
+    {
+      "id": "mackie",
+      "name": "Mackie",
+      "product_count": 219,
+      "verified_count": 0,
+      "data_file": "mackie.json"
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "product_count": 13,
+      "verified_count": 0,
+      "data_file": "nord.json"
+    },
+    {
+      "id": "oberheim",
+      "name": "Oberheim",
+      "product_count": 6,
+      "verified_count": 0,
+      "data_file": "oberheim.json"
+    },
+    {
+      "id": "paiste-cymbals",
+      "name": "Paiste Cymbals",
+      "product_count": 151,
+      "verified_count": 0,
+      "data_file": "paiste-cymbals.json"
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "product_count": 364,
+      "verified_count": 0,
+      "data_file": "pearl.json"
+    },
+    {
+      "id": "presonus",
+      "name": "Presonus",
+      "product_count": 97,
+      "verified_count": 0,
+      "data_file": "presonus.json"
+    },
+    {
+      "id": "rcf",
+      "name": "Rcf",
+      "product_count": 74,
+      "verified_count": 0,
+      "data_file": "rcf.json"
+    },
+    {
+      "id": "remo",
+      "name": "Remo",
+      "product_count": 224,
+      "verified_count": 0,
+      "data_file": "remo.json"
+    },
+    {
+      "id": "rogers",
+      "name": "Rogers",
+      "product_count": 9,
+      "verified_count": 0,
+      "data_file": "rogers.json"
+    },
+    {
+      "id": "roland",
+      "name": "Roland",
+      "product_count": 229,
+      "verified_count": 0,
+      "data_file": "roland.json"
+    },
+    {
+      "id": "universal-audio",
+      "name": "Universal Audio",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "universal-audio.json"
+    },
+    {
+      "id": "xotic",
+      "name": "Xotic",
+      "product_count": 28,
+      "verified_count": 0,
+      "data_file": "xotic.json"
+    }
+  ],
+  "total_products": 2026,
+  "total_verified": 51
+}

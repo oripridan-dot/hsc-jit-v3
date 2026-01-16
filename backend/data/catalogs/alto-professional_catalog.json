@@ -1,0 +1,3735 @@
+{
+  "brand_identity": {
+    "id": "alto-professional",
+    "name": "Alto Professional"
+  },
+  "products": [
+    {
+      "id": "unknown-sx-sub1515-passive-subwoofer",
+      "name": "SX-SUB1515\" Passive Subwoofer",
+      "title_en": "SX-SUB1515\" Passive Subwoofer",
+      "title_he": "SX-SUB1515\" Passive Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SX-SUB1515\" Passive ",
+        "thumbnail": "https://via.placeholder.com/100?text=SX-SUB1515"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sx-sub1818-passive-subwoofer",
+      "name": "SX-SUB1818\" Passive Subwoofer",
+      "title_en": "SX-SUB1818\" Passive Subwoofer",
+      "title_he": "SX-SUB1818\" Passive Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SX-SUB1818\" Passive ",
+        "thumbnail": "https://via.placeholder.com/100?text=SX-SUB1818"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sx1122-way-12-passive-loudspeaker",
+      "name": "SX1122-Way 12\" Passive Loudspeaker",
+      "title_en": "SX1122-Way 12\" Passive Loudspeaker",
+      "title_he": "SX1122-Way 12\" Passive Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SX1122-Way 12\" Passi",
+        "thumbnail": "https://via.placeholder.com/100?text=SX1122-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sx1152-way-15-passive-loudspeaker",
+      "name": "SX1152-Way 15\" Passive Loudspeaker",
+      "title_en": "SX1152-Way 15\" Passive Loudspeaker",
+      "title_he": "SX1152-Way 15\" Passive Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SX1152-Way 15\" Passi",
+        "thumbnail": "https://via.placeholder.com/100?text=SX1152-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sx215dual-15-2-way-passive-speaker-system",
+      "name": "SX215Dual 15\" 2-Way Passive Speaker System",
+      "title_en": "SX215Dual 15\" 2-Way Passive Speaker System",
+      "title_he": "SX215Dual 15\" 2-Way Passive Speaker System",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SX215Dual 15\" 2-Way ",
+        "thumbnail": "https://via.placeholder.com/100?text=SX215Dual "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa-fb-1tourmax-line-array-flybar",
+      "name": "SXA FB-1TOURMAX Line Array Flybar",
+      "title_en": "SXA FB-1TOURMAX Line Array Flybar",
+      "title_he": "SXA FB-1TOURMAX Line Array Flybar",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA FB-1TOURMAX Line",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA FB-1TO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa-sat-hdtourmax-sxa28p-speaker-connector-hardware",
+      "name": "SXA SAT HDTOURMAX SXA28P Speaker Connector Hardware",
+      "title_en": "SXA SAT HDTOURMAX SXA28P Speaker Connector Hardware",
+      "title_he": "SXA SAT HDTOURMAX SXA28P Speaker Connector Hardware",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA SAT HDTOURMAX SX",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA SAT HD"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa-sub-hdtourmax-sxa18p-subwoofer-connector-hardware",
+      "name": "SXA SUB HDTOURMAX SXA18P Subwoofer Connector Hardware",
+      "title_en": "SXA SUB HDTOURMAX SXA18P Subwoofer Connector Hardware",
+      "title_he": "SXA SUB HDTOURMAX SXA18P Subwoofer Connector Hardware",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA SUB HDTOURMAX SX",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA SUB HD"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa18p18-vented-line-array-subwoofer",
+      "name": "SXA18P18\" Vented Line Array Subwoofer",
+      "title_en": "SXA18P18\" Vented Line Array Subwoofer",
+      "title_he": "SXA18P18\" Vented Line Array Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA18P18\" Vented Lin",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA18P18\" "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa28pprofessional-2-way-line-array-loudspeaker",
+      "name": "SXA28PProfessional 2-way Line Array Loudspeaker",
+      "title_en": "SXA28PProfessional 2-way Line Array Loudspeaker",
+      "title_he": "SXA28PProfessional 2-way Line Array Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA28PProfessional 2",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA28PProf"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxm112aactive-800-watt-2-way-stage-monitor",
+      "name": "SXM112AActive 800 Watt 2-Way Stage Monitor",
+      "title_en": "SXM112AActive 800 Watt 2-Way Stage Monitor",
+      "title_he": "SXM112AActive 800 Watt 2-Way Stage Monitor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXM112AActive 800 Wa",
+        "thumbnail": "https://via.placeholder.com/100?text=SXM112AAct"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-empire-tmx80-dfx-with-2x-sx112complete-pa-package-with-12-speakers",
+      "name": "EMPIRE TMX80 DFX with 2x SX112Complete PA Package with 12\" speakers",
+      "title_en": "EMPIRE TMX80 DFX with 2x SX112Complete PA Package with 12\" speakers",
+      "title_he": "EMPIRE TMX80 DFX with 2x SX112Complete PA Package with 12\" speakers",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=EMPIRE TMX80 DFX wit",
+        "thumbnail": "https://via.placeholder.com/100?text=EMPIRE TMX"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-empire-tmx80-dfx-with-2x-sx115complete-pa-package-with-15-speakers",
+      "name": "EMPIRE TMX80 DFX with 2x SX115Complete PA Package with 15\" speakers",
+      "title_en": "EMPIRE TMX80 DFX with 2x SX115Complete PA Package with 15\" speakers",
+      "title_he": "EMPIRE TMX80 DFX with 2x SX112Complete PA Package with 12\" speakers",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=EMPIRE TMX80 DFX wit",
+        "thumbnail": "https://via.placeholder.com/100?text=EMPIRE TMX"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black1010-2-way-2400-watt-loudspeaker-with-wireless-connectivity",
+      "name": "Black1010\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "title_en": "Black1010\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "title_he": "Black1010\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black1010\" 2-Way 240",
+        "thumbnail": "https://via.placeholder.com/100?text=Black1010\""
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black1212-2-way-2400-watt-loudspeaker-with-wireless-connectivity",
+      "name": "Black1212\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "title_en": "Black1212\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "title_he": "Black1212\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black1212\" 2-Way 240",
+        "thumbnail": "https://via.placeholder.com/100?text=Black1212\""
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black1515-2-way-2400-watt-loudspeaker-with-wireless-connectivity",
+      "name": "Black1515\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "title_en": "Black1515\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "title_he": "Black1515\" 2-Way 2400 Watt Loudspeaker With Wireless Connectivity",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black1515\" 2-Way 240",
+        "thumbnail": "https://via.placeholder.com/100?text=Black1515\""
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black-15-sub2400-watt-15-active-subwoofer",
+      "name": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "title_en": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black 15 Sub2400 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=Black 15 S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black-18-sub2400-watt-18-active-subwoofer",
+      "name": "Black 18 Sub2400 Watt 18\" Active Subwoofer",
+      "title_en": "Black 18 Sub2400 Watt 18\" Active Subwoofer",
+      "title_he": "Black 18 Sub2400 Watt 18\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black 18 Sub2400 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=Black 18 S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tsl115active-loudspeaker-with-circular-led-array",
+      "name": "TSL115Active Loudspeaker with Circular LED Array",
+      "title_en": "TSL115Active Loudspeaker with Circular LED Array",
+      "title_he": "TSL115Active Loudspeaker with Circular LED Array",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSL115Active Loudspe",
+        "thumbnail": "https://via.placeholder.com/100?text=TSL115Acti"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts115-vibeactive-800-watt-2-way-15-loudspeaker-with-media-player",
+      "name": "TS115 VibeActive 800 Watt 2-Way 15\" Loudspeaker with Media Player",
+      "title_en": "TS115 VibeActive 800 Watt 2-Way 15\" Loudspeaker with Media Player",
+      "title_he": "TS115 VibeActive 800 Watt 2-Way 15\" Loudspeaker with Media Player",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS115 VibeActive 800",
+        "thumbnail": "https://via.placeholder.com/100?text=TS115 Vibe"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts112wactive-800-watt-2-way-12-loudspeaker-with-wireless-connectivity",
+      "name": "TS112WActive 800 Watt 2-Way 12'' Loudspeaker with Wireless Connectivity",
+      "title_en": "TS112WActive 800 Watt 2-Way 12'' Loudspeaker with Wireless Connectivity",
+      "title_he": "TS112WActive 800 Watt 2-Way 12'' Loudspeaker with Wireless Connectivity",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS112WActive 800 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=TS112WActi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts115wactive-800-watt-2-way-15-loudspeaker-with-wireless-connectivity",
+      "name": "TS115WActive 800 Watt 2-Way 15\" Loudspeaker with Wireless Connectivity",
+      "title_en": "TS115WActive 800 Watt 2-Way 15\" Loudspeaker with Wireless Connectivity",
+      "title_he": "TS115WActive 800 Watt 2-Way 15\" Loudspeaker with Wireless Connectivity",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS115WActive 800 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=TS115WActi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts110aactive-600-watt-2-way-10-loudspeaker",
+      "name": "TS110AActive 600 Watt 2-Way 10\" Loudspeaker",
+      "title_en": "TS110AActive 600 Watt 2-Way 10\" Loudspeaker",
+      "title_he": "TS110AActive 600 Watt 2-Way 10\" Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS110AActive 600 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=TS110AActi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts112aactive-800-watt-2-way-12-loudspeaker",
+      "name": "TS112AActive 800 Watt 2-Way 12\" Loudspeaker",
+      "title_en": "TS112AActive 800 Watt 2-Way 12\" Loudspeaker",
+      "title_he": "TS112AActive 800 Watt 2-Way 12\" Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS112AActive 800 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=TS112AActi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts112passive-800-watt-2-way-12-loudspeaker",
+      "name": "TS112Passive 800 Watt 2-Way 12\" Loudspeaker",
+      "title_en": "TS112Passive 800 Watt 2-Way 12\" Loudspeaker",
+      "title_he": "TS112Passive 800 Watt 2-Way 12\" Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS112Passive 800 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=TS112Passi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts115passive-1000-watt-2-way-15-loudspeaker",
+      "name": "TS115Passive 1000 Watt 2-Way 15\" Loudspeaker",
+      "title_en": "TS115Passive 1000 Watt 2-Way 15\" Loudspeaker",
+      "title_he": "TS115Passive 1000 Watt 2-Way 15\" Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS115Passive 1000 Wa",
+        "thumbnail": "https://via.placeholder.com/100?text=TS115Passi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts115aactive-800-watt-2-way-15-loudspeaker",
+      "name": "TS115AActive 800 Watt 2-Way 15\" Loudspeaker",
+      "title_en": "TS115AActive 800 Watt 2-Way 15\" Loudspeaker",
+      "title_he": "TS115AActive 800 Watt 2-Way 15\" Loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS115AActive 800 Wat",
+        "thumbnail": "https://via.placeholder.com/100?text=TS115AActi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tssub12active-600-watt-12-subwoofer",
+      "name": "TSSUB12Active 600 Watt 12\" Subwoofer",
+      "title_en": "TSSUB12Active 600 Watt 12\" Subwoofer",
+      "title_he": "TSSUB12Active 600 Watt 12\" Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSSUB12Active 600 Wa",
+        "thumbnail": "https://via.placeholder.com/100?text=TSSUB12Act"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tssub15active-1200-watt-15-subwoofer",
+      "name": "TSSUB15Active 1200 Watt 15\" Subwoofer",
+      "title_en": "TSSUB15Active 1200 Watt 15\" Subwoofer",
+      "title_he": "TSSUB15Active 1200 Watt 15\" Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSSUB15Active 1200 W",
+        "thumbnail": "https://via.placeholder.com/100?text=TSSUB15Act"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tssub18active-1200-watt-18-subwoofer",
+      "name": "TSSUB18Active 1200 Watt 18\" Subwoofer",
+      "title_en": "TSSUB18Active 1200 Watt 18\" Subwoofer",
+      "title_he": "TSSUB18Active 1200 Watt 18\" Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSSUB18Active 1200 W",
+        "thumbnail": "https://via.placeholder.com/100?text=TSSUB18Act"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms88-2-way-passive-speaker-cabinet",
+      "name": "MS88\" 2-way Passive Speaker Cabinet",
+      "title_en": "MS88\" 2-way Passive Speaker Cabinet",
+      "title_he": "MS88\" 2-way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS88\" 2-way Passive ",
+        "thumbnail": "https://via.placeholder.com/100?text=MS88\" 2-wa"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms1212-2-way-passive-speaker-cabinet",
+      "name": "MS1212'' 2-Way Passive Speaker Cabinet",
+      "title_en": "MS1212'' 2-Way Passive Speaker Cabinet",
+      "title_he": "MS1212'' 2-Way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS1212'' 2-Way Passi",
+        "thumbnail": "https://via.placeholder.com/100?text=MS1212'' 2"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms1515-2-way-passive-speaker-cabinet",
+      "name": "MS1515'' 2-Way Passive Speaker Cabinet",
+      "title_en": "MS1515'' 2-Way Passive Speaker Cabinet",
+      "title_he": "MS1515'' 2-Way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS1515'' 2-Way Passi",
+        "thumbnail": "https://via.placeholder.com/100?text=MS1515'' 2"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms152dual-15-2-way-passive-speaker-cabinet",
+      "name": "MS152Dual 15'' 2-Way Passive Speaker Cabinet",
+      "title_en": "MS152Dual 15'' 2-Way Passive Speaker Cabinet",
+      "title_he": "MS152Dual 15'' 2-Way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS152Dual 15'' 2-Way",
+        "thumbnail": "https://via.placeholder.com/100?text=MS152Dual "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms15315-3-way-passive-speaker-cabinet",
+      "name": "MS15315'' 3-Way Passive Speaker Cabinet",
+      "title_en": "MS15315'' 3-Way Passive Speaker Cabinet",
+      "title_he": "MS15315'' 3-Way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS15315'' 3-Way Pass",
+        "thumbnail": "https://via.placeholder.com/100?text=MS15315'' "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms154dual-15-3-way-passive-speaker-cabinet",
+      "name": "MS154DUAL 15'' 3-Way Passive Speaker Cabinet",
+      "title_en": "MS154DUAL 15'' 3-Way Passive Speaker Cabinet",
+      "title_he": "MS154DUAL 15'' 3-Way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS154DUAL 15'' 3-Way",
+        "thumbnail": "https://via.placeholder.com/100?text=MS154DUAL "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms12s12-passive-subwoofer-speaker-cabinet",
+      "name": "MS12S12\" Passive Subwoofer Speaker Cabinet",
+      "title_en": "MS12S12\" Passive Subwoofer Speaker Cabinet",
+      "title_he": "MS12S12\" Passive Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS12S12\" Passive Sub",
+        "thumbnail": "https://via.placeholder.com/100?text=MS12S12\" P"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms15s15-passive-subwoofer-speaker-cabinet",
+      "name": "MS15S15'' Passive Subwoofer Speaker Cabinet",
+      "title_en": "MS15S15'' Passive Subwoofer Speaker Cabinet",
+      "title_he": "MS15S15'' Passive Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS15S15'' Passive Su",
+        "thumbnail": "https://via.placeholder.com/100?text=MS15S15'' "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms18s18-passive-subwoofer-speaker-cabinet",
+      "name": "MS18S18'' Passive Subwoofer Speaker Cabinet",
+      "title_en": "MS18S18'' Passive Subwoofer Speaker Cabinet",
+      "title_he": "MS18S18'' Passive Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS18S18'' Passive Su",
+        "thumbnail": "https://via.placeholder.com/100?text=MS18S18'' "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms8a8-2-way-active-speaker-cabinet-16-preset-modlling-digital-power-amp-module",
+      "name": "MS8A8\" 2-Way Active Speaker Cabinet, 16 Preset Modlling Digital Power Amp. Module",
+      "title_en": "MS8A8\" 2-Way Active Speaker Cabinet, 16 Preset Modlling Digital Power Amp. Module",
+      "title_he": "MS8A8\" 2-Way Active Speaker Cabinet, 16 Preset Modlling Digital Power Amp. Module",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS8A8\" 2-Way Active ",
+        "thumbnail": "https://via.placeholder.com/100?text=MS8A8\" 2-W"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms12a12-2-way-active-speaker-cabinet-digital-power-amp-module",
+      "name": "MS12A12'' 2-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "title_en": "MS12A12'' 2-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "title_he": "MS12A12'' 2-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS12A12'' 2-Way Acti",
+        "thumbnail": "https://via.placeholder.com/100?text=MS12A12'' "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms15a15-2-way-active-speaker-cabinet-digital-power-amp-moule",
+      "name": "MS15A15'' 2-Way Active Speaker Cabinet, Digital Power Amp. Moule",
+      "title_en": "MS15A15'' 2-Way Active Speaker Cabinet, Digital Power Amp. Moule",
+      "title_he": "MS15A15'' 2-Way Active Speaker Cabinet, Digital Power Amp. Moule",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS15A15'' 2-Way Acti",
+        "thumbnail": "https://via.placeholder.com/100?text=MS15A15'' "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms152adual-15-2-way-active-speaker-cabinet-digital-power-amp-module",
+      "name": "MS152ADual 15'' 2-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "title_en": "MS152ADual 15'' 2-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "title_he": "MS152ADual 15'' 2-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS152ADual 15'' 2-Wa",
+        "thumbnail": "https://via.placeholder.com/100?text=MS152ADual"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms153a15-3-way-active-speaker-cabinet-digital-power-amp-moudle",
+      "name": "MS153A15'' 3-Way Active Speaker Cabinet, Digital Power Amp. Moudle",
+      "title_en": "MS153A15'' 3-Way Active Speaker Cabinet, Digital Power Amp. Moudle",
+      "title_he": "MS153A15'' 3-Way Active Speaker Cabinet, Digital Power Amp. Moudle",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS153A15'' 3-Way Act",
+        "thumbnail": "https://via.placeholder.com/100?text=MS153A15''"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms154adual-15-3-way-active-speaker-cabinet-digital-power-amp-module",
+      "name": "MS154ADual 15'' 3-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "title_en": "MS154ADual 15'' 3-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "title_he": "MS154ADual 15'' 3-Way Active Speaker Cabinet, Digital Power Amp. Module",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS154ADual 15'' 3-Wa",
+        "thumbnail": "https://via.placeholder.com/100?text=MS154ADual"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms12sa12-active-subwoofer-speaker-cabinet-digital-power-amp-module",
+      "name": "MS12SA12\" Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "title_en": "MS12SA12\" Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "title_he": "MS12SA12\" Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS12SA12\" Active Sub",
+        "thumbnail": "https://via.placeholder.com/100?text=MS12SA12\" "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms15sa15-active-subwoofer-speaker-cabinet-digital-power-amp-module",
+      "name": "MS15SA15'' Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "title_en": "MS15SA15'' Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "title_he": "MS15SA15'' Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS15SA15'' Active Su",
+        "thumbnail": "https://via.placeholder.com/100?text=MS15SA15''"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms18sa18-active-subwoofer-speaker-cabinet-digital-power-amp-module",
+      "name": "MS18SA18'' Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "title_en": "MS18SA18'' Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "title_he": "MS18SA18'' Active Subwoofer Speaker Cabinet, Digital Power Amp. Module",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS18SA18'' Active Su",
+        "thumbnail": "https://via.placeholder.com/100?text=MS18SA18''"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms8ma8-2-way-bi-amp-modelling-speaker-monitors",
+      "name": "MS8MA8\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "title_en": "MS8MA8\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "title_he": "MS8MA8\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS8MA8\" 2-Way Bi-Amp",
+        "thumbnail": "https://via.placeholder.com/100?text=MS8MA8\" 2-"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms10ma10-2-way-bi-amp-modelling-speaker-monitors",
+      "name": "MS10MA10\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "title_en": "MS10MA10\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "title_he": "MS10MA10\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS10MA10\" 2-Way Bi-A",
+        "thumbnail": "https://via.placeholder.com/100?text=MS10MA10\" "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms12ma12-2-way-bi-amp-modelling-speaker-monitors",
+      "name": "MS12MA12\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "title_en": "MS12MA12\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "title_he": "MS12MA12\" 2-Way Bi-Amp Modelling Speaker Monitors",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS12MA12\" 2-Way Bi-A",
+        "thumbnail": "https://via.placeholder.com/100?text=MS12MA12\" "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr400p12-2-way-passive-speaker-cabinet-12-woofer-135-compression-driver",
+      "name": "SR400P12\" 2-way Passive Speaker Cabinet, 12\" woofer, 1.35\" compression driver",
+      "title_en": "SR400P12\" 2-way Passive Speaker Cabinet, 12\" woofer, 1.35\" compression driver",
+      "title_he": "SR400P12\" 2-way Passive Speaker Cabinet, 12\" woofer, 1.35\" compression driver",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR400P12\" 2-way Pass",
+        "thumbnail": "https://via.placeholder.com/100?text=SR400P12\" "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr400a2-way-powered-speaker-with-dsp-module-12-woofer-135-compression-driver",
+      "name": "SR400A2-Way Powered Speaker with DSP Module, 12\" Woofer, 1.35\" Compression Driver",
+      "title_en": "SR400A2-Way Powered Speaker with DSP Module, 12\" Woofer, 1.35\" Compression Driver",
+      "title_he": "SR400A2-Way Powered Speaker with DSP Module, 12\" Woofer, 1.35\" Compression Driver",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR400A2-Way Powered ",
+        "thumbnail": "https://via.placeholder.com/100?text=SR400A2-Wa"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr500a2-way-powered-speaker-with-dsp-module-15-woofer-135-compression-driver",
+      "name": "SR500A2-Way Powered Speaker with DSP Module, 15\" Woofer, 1.35\" Compression Driver",
+      "title_en": "SR500A2-Way Powered Speaker with DSP Module, 15\" Woofer, 1.35\" Compression Driver",
+      "title_he": "SR500A2-Way Powered Speaker with DSP Module, 15\" Woofer, 1.35\" Compression Driver",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR500A2-Way Powered ",
+        "thumbnail": "https://via.placeholder.com/100?text=SR500A2-Wa"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr500sapowered-15-long-excursion-subwoofer-with-dsp-processor",
+      "name": "SR500SAPowered 15'' Long Excursion Subwoofer with DSP Processor",
+      "title_en": "SR500SAPowered 15'' Long Excursion Subwoofer with DSP Processor",
+      "title_he": "SR500SAPowered 15'' Long Excursion Subwoofer with DSP Processor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR500SAPowered 15'' ",
+        "thumbnail": "https://via.placeholder.com/100?text=SR500SAPow"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr800sa15-compact-subwoofer-active-speaker-cabinet",
+      "name": "SR800SA15\" Compact subwoofer Active Speaker Cabinet",
+      "title_en": "SR800SA15\" Compact subwoofer Active Speaker Cabinet",
+      "title_he": "SR800SA15\" Compact subwoofer Active Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR800SA15\" Compact s",
+        "thumbnail": "https://via.placeholder.com/100?text=SR800SA15\""
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-2-litepack-evo10-neodymium-woofer-2-way-active-speaker-with-dsp",
+      "name": "PS 2 LITEPACK EVO10\" Neodymium Woofer 2-Way Active Speaker With DSP",
+      "title_en": "PS 2 LITEPACK EVO10\" Neodymium Woofer 2-Way Active Speaker With DSP",
+      "title_he": "PS 2 LITEPACK EVO10\" Neodymium Woofer 2-Way Active Speaker With DSP",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 2 LITEPACK EVO10\"",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 2 LITEP"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4-litepack-evo12-neodymium-woofer-2-way-active-speaker-with-dsp",
+      "name": "PS 4 LITEPACK EVO12'' Neodymium Woofer 2-Way Active Speaker With DSP",
+      "title_en": "PS 4 LITEPACK EVO12'' Neodymium Woofer 2-Way Active Speaker With DSP",
+      "title_he": "PS 4 LITEPACK EVO12'' Neodymium Woofer 2-Way Active Speaker With DSP",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4 LITEPACK EVO12'",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4 LITEP"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5-litepack-evo2-way-bi-amp-with-modeller",
+      "name": "PS 5 LITEPACK EVO2-Way Bi-Amp. with Modeller",
+      "title_en": "PS 5 LITEPACK EVO2-Way Bi-Amp. with Modeller",
+      "title_he": "PS 5 LITEPACK EVO2-Way Bi-Amp. with Modeller",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5 LITEPACK EVO2-W",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5 LITEP"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4la-evo2-way-12-active-speaker-plastic-cabinets",
+      "name": "PS 4LA EVO2-Way 12\" Active Speaker Plastic Cabinets",
+      "title_en": "PS 4LA EVO2-Way 12\" Active Speaker Plastic Cabinets",
+      "title_he": "PS 4LA EVO2-Way 12\" Active Speaker Plastic Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4LA EVO2-Way 12\" ",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4LA EVO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5la-evo2-way-15-active-speaker-plastic-cabinets",
+      "name": "PS 5LA EVO2-Way 15\" Active Speaker Plastic Cabinets",
+      "title_en": "PS 5LA EVO2-Way 15\" Active Speaker Plastic Cabinets",
+      "title_he": "PS 5LA EVO2-Way 15\" Active Speaker Plastic Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5LA EVO2-Way 15\" ",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5LA EVO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4ha2-way-12-vented-active-speaker-cabinets",
+      "name": "PS 4HA2-Way 12'' Vented Active Speaker Cabinets",
+      "title_en": "PS 4HA2-Way 12'' Vented Active Speaker Cabinets",
+      "title_he": "PS 4HA2-Way 12'' Vented Active Speaker Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4HA2-Way 12'' Ven",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4HA2-Wa"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5ha2-way-15-vented-active-speaker-cabinets",
+      "name": "PS 5HA2-Way 15'' Vented Active Speaker Cabinets",
+      "title_en": "PS 5HA2-Way 15'' Vented Active Speaker Cabinets",
+      "title_he": "PS 5HA2-Way 15'' Vented Active Speaker Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5HA2-Way 15'' Ven",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5HA2-Wa"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4l2-way-12-vented-passive-speaker-cabinets",
+      "name": "PS 4L2-Way 12\" Vented Passive Speaker Cabinets",
+      "title_en": "PS 4L2-Way 12\" Vented Passive Speaker Cabinets",
+      "title_he": "PS 4L2-Way 12\" Vented Passive Speaker Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4L2-Way 12\" Vente",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4L2-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4h2-way-12-vented-passive-speaker-cabinets",
+      "name": "PS 4H2-Way 12\" Vented Passive Speaker Cabinets",
+      "title_en": "PS 4H2-Way 12\" Vented Passive Speaker Cabinets",
+      "title_he": "PS 4H2-Way 12\" Vented Passive Speaker Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4H2-Way 12\" Vente",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4H2-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5l2-way-15-vented-passive-speaker-cabinets",
+      "name": "PS 5L2-Way 15\" Vented Passive Speaker Cabinets",
+      "title_en": "PS 5L2-Way 15\" Vented Passive Speaker Cabinets",
+      "title_he": "PS 5L2-Way 15\" Vented Passive Speaker Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5L2-Way 15\" Vente",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5L2-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5h2-way-15-vented-passive-speaker-cabinets",
+      "name": "PS 5H2-Way 15\" Vented Passive Speaker Cabinets",
+      "title_en": "PS 5H2-Way 15\" Vented Passive Speaker Cabinets",
+      "title_he": "PS 5H2-Way 15\" Vented Passive Speaker Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5H2-Way 15\" Vente",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5H2-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-22-way-10-vented-passive-speaker-cabinet",
+      "name": "PS 22-Way 10'' Vented Passive Speaker Cabinet",
+      "title_en": "PS 22-Way 10'' Vented Passive Speaker Cabinet",
+      "title_he": "PS 22-Way 10'' Vented Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 22-Way 10'' Vente",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 22-Way "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-2a2-way-10-vented-active-speaker-cabinet",
+      "name": "PS 2A2-Way 10'' Vented Active Speaker Cabinet",
+      "title_en": "PS 2A2-Way 10'' Vented Active Speaker Cabinet",
+      "title_he": "PS 2A2-Way 10'' Vented Active Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 2A2-Way 10'' Vent",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 2A2-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-3a2-way-12-vented-active-speaker-cabinet",
+      "name": "PS 3A2-Way 12'' Vented Active Speaker Cabinet",
+      "title_en": "PS 3A2-Way 12'' Vented Active Speaker Cabinet",
+      "title_he": "PS 3A2-Way 12'' Vented Active Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 3A2-Way 12'' Vent",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 3A2-Way"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-2tw2-way-8-vented-passive-speaker-cabinet",
+      "name": "PS 2TW2-Way 8\" Vented Passive Speaker Cabinet",
+      "title_en": "PS 2TW2-Way 8\" Vented Passive Speaker Cabinet",
+      "title_he": "PS 2TW2-Way 8\" Vented Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 2TW2-Way 8\" Vente",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 2TW2-Wa"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-2twa2-way-8-vented-active-speaker-cabinet-150w",
+      "name": "PS 2TWA2-Way 8\" Vented Active Speaker Cabinet, 150W",
+      "title_en": "PS 2TWA2-Way 8\" Vented Active Speaker Cabinet, 150W",
+      "title_he": "PS 2TWA2-Way 8\" Vented Active Speaker Cabinet, 150W",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 2TWA2-Way 8\" Vent",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 2TWA2-W"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-1010-2-way-passive-speaker-cabinet-1-compression-driver",
+      "name": "ELVIS 1010\" 2-Way Passive Speaker Cabinet, 1'' Compression Driver",
+      "title_en": "ELVIS 1010\" 2-Way Passive Speaker Cabinet, 1'' Compression Driver",
+      "title_he": "ELVIS 1010\" 2-Way Passive Speaker Cabinet, 1'' Compression Driver",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 1010\" 2-Way Pa",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 1010"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12-mkii12-2-way-passive-speaker-cabinet",
+      "name": "ELVIS 12 MKII12\" 2-way Passive Speaker Cabinet",
+      "title_en": "ELVIS 12 MKII12\" 2-way Passive Speaker Cabinet",
+      "title_he": "ELVIS 12 MKII12\" 2-way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12 MKII12\" 2-w",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12 M"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15-mkii15-2-way-passive-speaker-cabinet",
+      "name": "ELVIS 15 MKII15\" 2-way Passive Speaker Cabinet",
+      "title_en": "ELVIS 15 MKII15\" 2-way Passive Speaker Cabinet",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15 MKII15\" 2-w",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15 M"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12m-mkii12-2-way-passive-monitor-speaker-cabinet",
+      "name": "ELVIS 12M MKII12\" 2-way Passive Monitor Speaker Cabinet",
+      "title_en": "ELVIS 12M MKII12\" 2-way Passive Monitor Speaker Cabinet",
+      "title_he": "ELVIS 12M MKII12\" 2-way Passive Monitor Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12M MKII12\" 2-",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12M "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15m15-2-way-passive-monitor-speaker-cabinet-1-compression-driver",
+      "name": "ELVIS 15M15\" 2-Way Passive Monitor Speaker Cabinet, 1\" Compression Driver",
+      "title_en": "ELVIS 15M15\" 2-Way Passive Monitor Speaker Cabinet, 1\" Compression Driver",
+      "title_he": "ELVIS 15M15\" 2-Way Passive Monitor Speaker Cabinet, 1\" Compression Driver",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15M15\" 2-Way P",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15M1"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12s12-passive-subwoofer-speaker-cabinet",
+      "name": "ELVIS 12S12\" Passive Subwoofer Speaker Cabinet",
+      "title_en": "ELVIS 12S12\" Passive Subwoofer Speaker Cabinet",
+      "title_he": "ELVIS 12S12\" Passive Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12S12\" Passive",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12S1"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15s-mkii15-passive-subwoofer-speaker-cabinet",
+      "name": "ELVIS 15S MKII15\" Passive Subwoofer Speaker Cabinet",
+      "title_en": "ELVIS 15S MKII15\" Passive Subwoofer Speaker Cabinet",
+      "title_he": "ELVIS 15S MKII15\" Passive Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15S MKII15\" Pa",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15S "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-152xl3-way-vented-cabinet-15-woofer-x-2-1-compression-driver-passive-cabinet",
+      "name": "ELVIS 15.2XL3-Way Vented cabinet, 15\" Woofer x 2, 1\" Compression Driver, Passive Cabinet",
+      "title_en": "ELVIS 15.2XL3-Way Vented cabinet, 15\" Woofer x 2, 1\" Compression Driver, Passive Cabinet",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15.2XL3-Way Ve",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15.2"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-152xla2-way-vented-cabinet-15-woofer-x-2-1-compression-driver-active-cabinet",
+      "name": "ELVIS 15.2XLA2-Way Vented cabinet, 15\" Woofer x 2, 1\" Compression Driver, Active Cabinet",
+      "title_en": "ELVIS 15.2XLA2-Way Vented cabinet, 15\" Woofer x 2, 1\" Compression Driver, Active Cabinet",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15.2XLA2-Way V",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15.2"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-10a2-way-active-speaker-system-10-woofer-1-compression-driver",
+      "name": "ELVIS 10A2-Way Active Speaker System, 10\" Woofer, 1\" Compression Driver",
+      "title_en": "ELVIS 10A2-Way Active Speaker System, 10\" Woofer, 1\" Compression Driver",
+      "title_he": "ELVIS 10A2-Way Active Speaker System, 10\" Woofer, 1\" Compression Driver",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 10A2-Way Activ",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 10A2"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12a-mkii2-way-12-active-speaker-cabinet",
+      "name": "ELVIS 12A MKII2-way 12\" Active Speaker Cabinet",
+      "title_en": "ELVIS 12A MKII2-way 12\" Active Speaker Cabinet",
+      "title_he": "ELVIS 12A MKII2-way 12\" Active Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12A MKII2-way ",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12A "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15a-mkii2-way-15-active-speaker-cabinet",
+      "name": "ELVIS 15A MKII2-way 15\" Active Speaker Cabinet",
+      "title_en": "ELVIS 15A MKII2-way 15\" Active Speaker Cabinet",
+      "title_he": "ELVIS 15A MKII2-way 15\" Active Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15A MKII2-way ",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15A "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12sa12-subwoofer-power-amp-electronic-crossover",
+      "name": "ELVIS 12SA12\" Subwoofer, Power Amp, Electronic Crossover",
+      "title_en": "ELVIS 12SA12\" Subwoofer, Power Amp, Electronic Crossover",
+      "title_he": "ELVIS 12SA12\" Subwoofer, Power Amp, Electronic Crossover",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12SA12\" Subwoo",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15sa-mkii15-active-subwoofer-speaker-cabinet",
+      "name": "ELVIS 15SA MKII15\" Active Subwoofer Speaker Cabinet",
+      "title_en": "ELVIS 15SA MKII15\" Active Subwoofer Speaker Cabinet",
+      "title_he": "ELVIS 15SA MKII15\" Active Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15SA MKII15\" A",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12ma-mkii2-way-12-active-monitor-speaker-cabinet",
+      "name": "ELVIS 12MA MKII2-way 12\" Active Monitor Speaker Cabinet",
+      "title_en": "ELVIS 12MA MKII2-way 12\" Active Monitor Speaker Cabinet",
+      "title_he": "ELVIS 12MA MKII2-way 12\" Active Monitor Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12MA MKII2-way",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12MA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15ma2-way-stage-monitor-15-woofer-1-compression-driver-power-amp",
+      "name": "ELVIS 15MA2-Way Stage Monitor, 15\" Woofer, 1\" Compression Driver, Power Amp",
+      "title_en": "ELVIS 15MA2-Way Stage Monitor, 15\" Woofer, 1\" Compression Driver, Power Amp",
+      "title_he": "ELVIS 15MA2-Way Stage Monitor, 15\" Woofer, 1\" Compression Driver, Power Amp",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15MA2-Way Stag",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15MA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pam5passive-personal-monitor",
+      "name": "PAM5Passive Personal Monitor",
+      "title_en": "PAM5Passive Personal Monitor",
+      "title_he": "PAM5Passive Personal Monitor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PAM5Passive Personal",
+        "thumbnail": "https://via.placeholder.com/100?text=PAM5Passiv"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pam5aamplified-personal-monitor",
+      "name": "PAM5AAmplified Personal Monitor",
+      "title_en": "PAM5AAmplified Personal Monitor",
+      "title_he": "PAM5AAmplified Personal Monitor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PAM5AAmplified Perso",
+        "thumbnail": "https://via.placeholder.com/100?text=PAM5AAmpli"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-3",
+      "name": "MICRO 3",
+      "title_en": "MICRO 3",
+      "title_he": "MICRO 3",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MICRO 3",
+        "thumbnail": "https://via.placeholder.com/100?text=MICRO 3"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-3a",
+      "name": "MICRO 3A",
+      "title_en": "MICRO 3A",
+      "title_he": "MICRO 3A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MICRO 3A",
+        "thumbnail": "https://via.placeholder.com/100?text=MICRO 3A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-4",
+      "name": "MICRO 4",
+      "title_en": "MICRO 4",
+      "title_he": "MICRO 3",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MICRO 4",
+        "thumbnail": "https://via.placeholder.com/100?text=MICRO 4"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-m3anear-field-active-monitor",
+      "name": "M3ANear - Field Active Monitor",
+      "title_en": "M3ANear - Field Active Monitor",
+      "title_he": "M3ANear - Field Active Monitor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=M3ANear - Field Acti",
+        "thumbnail": "https://via.placeholder.com/100?text=M3ANear - "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-m4anear-field-active-monitor",
+      "name": "M4ANear - Field Active Monitor",
+      "title_en": "M4ANear - Field Active Monitor",
+      "title_he": "M4ANear - Field Active Monitor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=M4ANear - Field Acti",
+        "thumbnail": "https://via.placeholder.com/100?text=M4ANear - "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-m5anear-field-active-monitor",
+      "name": "M5ANear - Field Active Monitor",
+      "title_en": "M5ANear - Field Active Monitor",
+      "title_he": "M5ANear - Field Active Monitor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=M5ANear - Field Acti",
+        "thumbnail": "https://via.placeholder.com/100?text=M5ANear - "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts2081100-watt-8-inch-2-way-powered-loudspeaker",
+      "name": "TS2081100-watt 8-Inch 2-way powered loudspeaker",
+      "title_en": "TS2081100-watt 8-Inch 2-way powered loudspeaker",
+      "title_he": "TS2081100-watt 8-Inch 2-way powered loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS2081100-watt 8-Inc",
+        "thumbnail": "https://via.placeholder.com/100?text=TS2081100-"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts2101100-watt-10-inch-2-way-powered-loudspeaker",
+      "name": "TS2101100-watt 10-Inch 2-way powered loudspeaker",
+      "title_en": "TS2101100-watt 10-Inch 2-way powered loudspeaker",
+      "title_he": "TS2101100-watt 10-Inch 2-way powered loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS2101100-watt 10-In",
+        "thumbnail": "https://via.placeholder.com/100?text=TS2101100-"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts2121100-watt-12-inch-2-way-powered-loudspeaker",
+      "name": "TS2121100-watt 12-Inch 2-way powered loudspeaker",
+      "title_en": "TS2121100-watt 12-Inch 2-way powered loudspeaker",
+      "title_he": "TS2121100-watt 12-Inch 2-way powered loudspeaker",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS2121100-watt 12-In",
+        "thumbnail": "https://via.placeholder.com/100?text=TS2121100-"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts212wh1100-watt-12-inch-2-way-powered-loudspeaker-in-white-for-installation",
+      "name": "TS212WH1100-watt 12-Inch 2-way powered loudspeaker in white for installation",
+      "title_en": "TS212WH1100-watt 12-Inch 2-way powered loudspeaker in white for installation",
+      "title_he": "TS212WH1100-watt 12-Inch 2-way powered loudspeaker in white for installation",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS212WH1100-watt 12-",
+        "thumbnail": "https://via.placeholder.com/100?text=TS212WH110"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sx-sub15",
+      "name": "SX-SUB15",
+      "title_en": "SX-SUB15",
+      "title_he": "SX-SUB15",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SX-SUB15",
+        "thumbnail": "https://via.placeholder.com/100?text=SX-SUB15"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sx-sub18",
+      "name": "SX-SUB18",
+      "title_en": "SX-SUB18",
+      "title_he": "SX-SUB18",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SX-SUB18",
+        "thumbnail": "https://via.placeholder.com/100?text=SX-SUB18"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa-fb-1",
+      "name": "SXA FB-1",
+      "title_en": "SXA FB-1",
+      "title_he": "SXA FB-1",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA FB-1",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA FB-1"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa-sat-hd",
+      "name": "SXA SAT HD",
+      "title_en": "SXA SAT HD",
+      "title_he": "SXA SAT HD",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA SAT HD",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA SAT HD"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa-sub-hd",
+      "name": "SXA SUB HD",
+      "title_en": "SXA SUB HD",
+      "title_he": "SXA SAT HD",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA SUB HD",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA SUB HD"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa18p",
+      "name": "SXA18P",
+      "title_en": "SXA18P",
+      "title_he": "SXA SUB HDTOURMAX SXA18P Subwoofer Connector Hardware",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA18P",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA18P"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxa28p",
+      "name": "SXA28P",
+      "title_en": "SXA28P",
+      "title_he": "SXA SAT HDTOURMAX SXA28P Speaker Connector Hardware",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXA28P",
+        "thumbnail": "https://via.placeholder.com/100?text=SXA28P"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sxm112a",
+      "name": "SXM112A",
+      "title_en": "SXM112A",
+      "title_he": "SXM112A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SXM112A",
+        "thumbnail": "https://via.placeholder.com/100?text=SXM112A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-empire-tmx80-dfx-with-2x-sx112",
+      "name": "EMPIRE TMX80 DFX with 2x SX112",
+      "title_en": "EMPIRE TMX80 DFX with 2x SX112",
+      "title_he": "EMPIRE TMX80 DFX with 2x SX112Complete PA Package with 12\" speakers",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=EMPIRE TMX80 DFX wit",
+        "thumbnail": "https://via.placeholder.com/100?text=EMPIRE TMX"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-empire-tmx80-dfx-with-2x-sx115",
+      "name": "EMPIRE TMX80 DFX with 2x SX115",
+      "title_en": "EMPIRE TMX80 DFX with 2x SX115",
+      "title_he": "EMPIRE TMX80 DFX with 2x SX112Complete PA Package with 12\" speakers",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=EMPIRE TMX80 DFX wit",
+        "thumbnail": "https://via.placeholder.com/100?text=EMPIRE TMX"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black10",
+      "name": "Black10",
+      "title_en": "Black10",
+      "title_he": "Black10",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black10",
+        "thumbnail": "https://via.placeholder.com/100?text=Black10"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black12",
+      "name": "Black12",
+      "title_en": "Black12",
+      "title_he": "Black12",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black12",
+        "thumbnail": "https://via.placeholder.com/100?text=Black12"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black15",
+      "name": "Black15",
+      "title_en": "Black15",
+      "title_he": "Black15",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black15",
+        "thumbnail": "https://via.placeholder.com/100?text=Black15"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black-15-sub",
+      "name": "Black 15 Sub",
+      "title_en": "Black 15 Sub",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black 15 Sub",
+        "thumbnail": "https://via.placeholder.com/100?text=Black 15 S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-black-18-sub",
+      "name": "Black 18 Sub",
+      "title_en": "Black 18 Sub",
+      "title_he": "Black 18 Sub2400 Watt 18\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Black 18 Sub",
+        "thumbnail": "https://via.placeholder.com/100?text=Black 18 S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tsl115",
+      "name": "TSL115",
+      "title_en": "TSL115",
+      "title_he": "TSL115",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSL115",
+        "thumbnail": "https://via.placeholder.com/100?text=TSL115"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts115-vibe",
+      "name": "TS115 Vibe",
+      "title_en": "TS115 Vibe",
+      "title_he": "TS115 VibeActive 800 Watt 2-Way 15\" Loudspeaker with Media Player",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS115 Vibe",
+        "thumbnail": "https://via.placeholder.com/100?text=TS115 Vibe"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts112w",
+      "name": "TS112W",
+      "title_en": "TS112W",
+      "title_he": "TS112W",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS112W",
+        "thumbnail": "https://via.placeholder.com/100?text=TS112W"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts115w",
+      "name": "TS115W",
+      "title_en": "TS115W",
+      "title_he": "TS115W",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS115W",
+        "thumbnail": "https://via.placeholder.com/100?text=TS115W"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts110a",
+      "name": "TS110A",
+      "title_en": "TS110A",
+      "title_he": "TS110A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS110A",
+        "thumbnail": "https://via.placeholder.com/100?text=TS110A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts112a",
+      "name": "TS112A",
+      "title_en": "TS112A",
+      "title_he": "TS112A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS112A",
+        "thumbnail": "https://via.placeholder.com/100?text=TS112A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts115a",
+      "name": "TS115A",
+      "title_en": "TS115A",
+      "title_he": "TS115A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS115A",
+        "thumbnail": "https://via.placeholder.com/100?text=TS115A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tssub12",
+      "name": "TSSUB12",
+      "title_en": "TSSUB12",
+      "title_he": "TSSUB12",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSSUB12",
+        "thumbnail": "https://via.placeholder.com/100?text=TSSUB12"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tssub15",
+      "name": "TSSUB15",
+      "title_en": "TSSUB15",
+      "title_he": "TSSUB15",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSSUB15",
+        "thumbnail": "https://via.placeholder.com/100?text=TSSUB15"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-tssub18",
+      "name": "TSSUB18",
+      "title_en": "TSSUB18",
+      "title_he": "TSSUB18",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TSSUB18",
+        "thumbnail": "https://via.placeholder.com/100?text=TSSUB18"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms152a",
+      "name": "MS152A",
+      "title_en": "MS152A",
+      "title_he": "MS152A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS152A",
+        "thumbnail": "https://via.placeholder.com/100?text=MS152A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms153a",
+      "name": "MS153A",
+      "title_en": "MS153A",
+      "title_he": "MS153A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS153A",
+        "thumbnail": "https://via.placeholder.com/100?text=MS153A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms154a",
+      "name": "MS154A",
+      "title_en": "MS154A",
+      "title_he": "MS154A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS154A",
+        "thumbnail": "https://via.placeholder.com/100?text=MS154A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms12sa",
+      "name": "MS12SA",
+      "title_en": "MS12SA",
+      "title_he": "MS12SA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS12SA",
+        "thumbnail": "https://via.placeholder.com/100?text=MS12SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms15sa",
+      "name": "MS15SA",
+      "title_en": "MS15SA",
+      "title_he": "MS15SA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS15SA",
+        "thumbnail": "https://via.placeholder.com/100?text=MS15SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms18sa",
+      "name": "MS18SA",
+      "title_en": "MS18SA",
+      "title_he": "MS18SA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS18SA",
+        "thumbnail": "https://via.placeholder.com/100?text=MS18SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms10ma",
+      "name": "MS10MA",
+      "title_en": "MS10MA",
+      "title_he": "MS10MA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS10MA",
+        "thumbnail": "https://via.placeholder.com/100?text=MS10MA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ms12ma",
+      "name": "MS12MA",
+      "title_en": "MS12MA",
+      "title_he": "MS12MA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MS12MA",
+        "thumbnail": "https://via.placeholder.com/100?text=MS12MA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr400p",
+      "name": "SR400P",
+      "title_en": "SR400P",
+      "title_he": "SR400P",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR400P",
+        "thumbnail": "https://via.placeholder.com/100?text=SR400P"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr400a",
+      "name": "SR400A",
+      "title_en": "SR400A",
+      "title_he": "SR400A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR400A",
+        "thumbnail": "https://via.placeholder.com/100?text=SR400A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr500a",
+      "name": "SR500A",
+      "title_en": "SR500A",
+      "title_he": "SR500A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR500A",
+        "thumbnail": "https://via.placeholder.com/100?text=SR500A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr500sa",
+      "name": "SR500SA",
+      "title_en": "SR500SA",
+      "title_he": "SR500SA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR500SA",
+        "thumbnail": "https://via.placeholder.com/100?text=SR500SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sr800sa",
+      "name": "SR800SA",
+      "title_en": "SR800SA",
+      "title_he": "SR800SA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SR800SA",
+        "thumbnail": "https://via.placeholder.com/100?text=SR800SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-2-litepack-evo",
+      "name": "PS 2 LITEPACK EVO",
+      "title_en": "PS 2 LITEPACK EVO",
+      "title_he": "PS 2 LITEPACK EVO",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 2 LITEPACK EVO",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 2 LITEP"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4-litepack-evo",
+      "name": "PS 4 LITEPACK EVO",
+      "title_en": "PS 4 LITEPACK EVO",
+      "title_he": "PS 2 LITEPACK EVO",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4 LITEPACK EVO",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4 LITEP"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5-litepack-evo",
+      "name": "PS 5 LITEPACK EVO",
+      "title_en": "PS 5 LITEPACK EVO",
+      "title_he": "PS 2 LITEPACK EVO",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5 LITEPACK EVO",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5 LITEP"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4la-evo",
+      "name": "PS 4LA EVO",
+      "title_en": "PS 4LA EVO",
+      "title_he": "PS 4LA EVO2-Way 12\" Active Speaker Plastic Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4LA EVO",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4LA EVO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5la-evo",
+      "name": "PS 5LA EVO",
+      "title_en": "PS 5LA EVO",
+      "title_he": "PS 5LA EVO2-Way 15\" Active Speaker Plastic Cabinets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5LA EVO",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5LA EVO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-4ha",
+      "name": "PS 4HA",
+      "title_en": "PS 4HA",
+      "title_he": "PS 4HA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 4HA",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 4HA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-5ha",
+      "name": "PS 5HA",
+      "title_en": "PS 5HA",
+      "title_he": "PS 5HA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 5HA",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 5HA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-2tw",
+      "name": "PS 2TW",
+      "title_en": "PS 2TW",
+      "title_he": "PS 2TW",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 2TW",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 2TW"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ps-2twa",
+      "name": "PS 2TWA",
+      "title_en": "PS 2TWA",
+      "title_he": "PS 2TWA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PS 2TWA",
+        "thumbnail": "https://via.placeholder.com/100?text=PS 2TWA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-10",
+      "name": "ELVIS 10",
+      "title_en": "ELVIS 10",
+      "title_he": "ELVIS 10",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 10",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 10"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12-mkii",
+      "name": "ELVIS 12 MKII",
+      "title_en": "ELVIS 12 MKII",
+      "title_he": "ELVIS 12 MKII12\" 2-way Passive Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12 MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12 M"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15-mkii",
+      "name": "ELVIS 15 MKII",
+      "title_en": "ELVIS 15 MKII",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15 MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15 M"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12m-mkii",
+      "name": "ELVIS 12M MKII",
+      "title_en": "ELVIS 12M MKII",
+      "title_he": "ELVIS 12M MKII12\" 2-way Passive Monitor Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12M MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12M "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15m",
+      "name": "ELVIS 15M",
+      "title_en": "ELVIS 15M",
+      "title_he": "ELVIS 15M",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15M",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15M"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12s",
+      "name": "ELVIS 12S",
+      "title_en": "ELVIS 12S",
+      "title_he": "ELVIS 12S",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12S",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15s-mkii",
+      "name": "ELVIS 15S MKII",
+      "title_en": "ELVIS 15S MKII",
+      "title_he": "ELVIS 15S MKII15\" Passive Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15S MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15S "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-152xl",
+      "name": "ELVIS 15.2XL",
+      "title_en": "ELVIS 15.2XL",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15.2XL",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15.2"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-152xla",
+      "name": "ELVIS 15.2XLA",
+      "title_en": "ELVIS 15.2XLA",
+      "title_he": "Black 15 Sub2400 Watt 15\" Active Subwoofer",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15.2XLA",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15.2"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-10a",
+      "name": "ELVIS 10A",
+      "title_en": "ELVIS 10A",
+      "title_he": "ELVIS 10A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 10A",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 10A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12a-mkii",
+      "name": "ELVIS 12A MKII",
+      "title_en": "ELVIS 12A MKII",
+      "title_he": "ELVIS 12A MKII2-way 12\" Active Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12A MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12A "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15a-mkii",
+      "name": "ELVIS 15A MKII",
+      "title_en": "ELVIS 15A MKII",
+      "title_he": "ELVIS 15A MKII2-way 15\" Active Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15A MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15A "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12sa",
+      "name": "ELVIS 12SA",
+      "title_en": "ELVIS 12SA",
+      "title_he": "ELVIS 12SA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12SA",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15sa-mkii",
+      "name": "ELVIS 15SA MKII",
+      "title_en": "ELVIS 15SA MKII",
+      "title_he": "ELVIS 15SA MKII15\" Active Subwoofer Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15SA MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15SA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-12ma-mkii",
+      "name": "ELVIS 12MA MKII",
+      "title_en": "ELVIS 12MA MKII",
+      "title_he": "ELVIS 12MA MKII2-way 12\" Active Monitor Speaker Cabinet",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 12MA MKII",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 12MA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-elvis-15ma",
+      "name": "ELVIS 15MA",
+      "title_en": "ELVIS 15MA",
+      "title_he": "ELVIS 15MA",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ELVIS 15MA",
+        "thumbnail": "https://via.placeholder.com/100?text=ELVIS 15MA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ts212wh",
+      "name": "TS212WH",
+      "title_en": "TS212WH",
+      "title_he": "TS212WH",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TS212WH",
+        "thumbnail": "https://via.placeholder.com/100?text=TS212WH"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-documents-downloadsuser-guidequickstart-guidefirmware-update-guidefirmware-v104-updatewindows-dri",
+      "name": "Documents & DownloadsUser GuideQuickstart GuideFirmware Update GuideFirmware v1.04 UpdateWindows Dri",
+      "title_en": "Documents & DownloadsUser GuideQuickstart GuideFirmware Update GuideFirmware v1.04 UpdateWindows Dri",
+      "title_he": "Documents & DownloadsUser GuideQuickstart GuideFirmware Update GuideFirmware v1.04 UpdateWindows Dri",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Documents & Download",
+        "thumbnail": "https://via.placeholder.com/100?text=Documents "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-user-guide",
+      "name": "User Guide",
+      "title_en": "User Guide",
+      "title_he": "User Guide",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=User Guide",
+        "thumbnail": "https://via.placeholder.com/100?text=User Guide"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-quickstart-guide",
+      "name": "Quickstart Guide",
+      "title_en": "Quickstart Guide",
+      "title_he": "Quickstart Guide",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Quickstart Guide",
+        "thumbnail": "https://via.placeholder.com/100?text=Quickstart"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-firmware-update-guide",
+      "name": "Firmware Update Guide",
+      "title_en": "Firmware Update Guide",
+      "title_he": "Firmware Update Guide",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Firmware Update Guid",
+        "thumbnail": "https://via.placeholder.com/100?text=Firmware U"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-firmware-v104-update",
+      "name": "Firmware v1.04 Update",
+      "title_en": "Firmware v1.04 Update",
+      "title_he": "Documents & DownloadsUser GuideQuickstart GuideFirmware Update GuideFirmware v1.04 UpdateWindows Dri",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Firmware v1.04 Updat",
+        "thumbnail": "https://via.placeholder.com/100?text=Firmware v"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-windows-driver-v102",
+      "name": "Windows Driver v1.02",
+      "title_en": "Windows Driver v1.02",
+      "title_he": "Documents & DownloadsUser GuideQuickstart GuideFirmware Update GuideFirmware v1.04 UpdateWindows Dri",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Windows Driver v1.02",
+        "thumbnail": "https://via.placeholder.com/100?text=Windows Dr"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-relatedproducts",
+      "name": "RELATEDProducts",
+      "title_en": "RELATEDProducts",
+      "title_he": "RELATEDProducts",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=RELATEDProducts",
+        "thumbnail": "https://via.placeholder.com/100?text=RELATEDPro"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-documents-downloads",
+      "name": "Documents & Downloads",
+      "title_en": "Documents & Downloads",
+      "title_he": "Documents & Downloads",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Documents & Download",
+        "thumbnail": "https://via.placeholder.com/100?text=Documents "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-documents-downloadsproduct-overviewuser-guide",
+      "name": "Documents & DownloadsProduct OverviewUser Guide",
+      "title_en": "Documents & DownloadsProduct OverviewUser Guide",
+      "title_he": "Documents & DownloadsProduct OverviewUser Guide",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Documents & Download",
+        "thumbnail": "https://via.placeholder.com/100?text=Documents "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-product-overview",
+      "name": "Product Overview",
+      "title_en": "Product Overview",
+      "title_he": "Product Overview",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Product Overview",
+        "thumbnail": "https://via.placeholder.com/100?text=Product Ov"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-techinformation",
+      "name": "TECHINFORMATION",
+      "title_en": "TECHINFORMATION",
+      "title_he": "TECHINFORMATION",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=TECHINFORMATION",
+        "thumbnail": "https://via.placeholder.com/100?text=TECHINFORM"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-relatedproductsbluetooth-audio-adapter",
+      "name": "RELATEDProductsBluetooth Audio Adapter",
+      "title_en": "RELATEDProductsBluetooth Audio Adapter",
+      "title_he": "RELATEDProductsBluetooth Audio Adapter",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=RELATEDProductsBluet",
+        "thumbnail": "https://via.placeholder.com/100?text=RELATEDPro"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-relatedproductsstereo-bluetooth-adapter",
+      "name": "RELATEDProductsStereo Bluetooth Adapter",
+      "title_en": "RELATEDProductsStereo Bluetooth Adapter",
+      "title_he": "RELATEDProductsStereo Bluetooth Adapter",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=RELATEDProductsStere",
+        "thumbnail": "https://via.placeholder.com/100?text=RELATEDPro"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 177,
+    "halilit_products": 177,
+    "unified_products": 177,
+    "primary_count": 177,
+    "secondary_count": 0,
+    "halilit_only_count": 0,
+    "timestamp": "2026-01-16T02:01:12.906080"
+  }
+}

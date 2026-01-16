@@ -4,26 +4,28 @@ interface ConfidenceMeterProps {
   score: number; // 0 to 1
   reasoning?: string[];
   animate?: boolean;
+  price?: number | string;
 }
 
-export const ConfidenceMeter: React.FC<ConfidenceMeterProps> = ({ score, reasoning = [], animate = true }) => {
+export const ConfidenceMeter: React.FC<ConfidenceMeterProps> = ({ score, reasoning = [], animate = true, price }) => {
   const percentage = Math.round(score * 100);
   
   let colorClass = 'bg-red-500';
   let label = 'Low Confidence';
   
-  if (percentage >= 90) {
+  // Tier System Implementation
+  if (percentage === 100) {
     colorClass = 'bg-green-600';
-    label = 'Very High';
-  } else if (percentage >= 75) {
-    colorClass = 'bg-green-400';
-    label = 'High';
+    label = 'Verified Locally';
+  } else if (percentage >= 80) {
+    colorClass = 'bg-amber-500';
+    label = 'Global Orphan';
   } else if (percentage >= 60) {
-    colorClass = 'bg-yellow-400';
-    label = 'Medium';
-  } else if (percentage >= 40) {
-    colorClass = 'bg-orange-400';
-    label = 'Low';
+    colorClass = 'bg-gray-400';
+    label = 'Legacy Item';
+  } else {
+    colorClass = 'bg-red-400';
+    label = 'Unverified';
   }
 
   const containerClass = `w-full p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20 shadow-sm ${animate ? 'animate-fade-in-up' : ''}`;
@@ -43,7 +45,14 @@ export const ConfidenceMeter: React.FC<ConfidenceMeterProps> = ({ score, reasoni
       </div>
       
       <div className="flex justify-between items-end mb-3">
-        <span className="text-2xl font-bold text-gray-800">{percentage}%</span>
+        <div className="flex flex-col">
+          <span className="text-2xl font-bold text-gray-800">{percentage}%</span>
+          {percentage === 100 && price && (
+             <span className="text-xs font-bold text-green-700 mt-1">
+               ₪{Number(price).toLocaleString()} ILS
+             </span>
+          )}
+        </div>
         <span className={`text-sm font-medium ${colorClass.replace('bg-', 'text-')}`}>{label}</span>
       </div>
 

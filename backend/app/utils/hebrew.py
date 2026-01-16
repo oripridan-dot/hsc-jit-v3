@@ -274,3 +274,55 @@ def detect_variant_info(text: Optional[str]) -> dict:
         result['color'] = color_match.group(1).lower()
 
     return result
+
+
+def normalize_for_matching(text: str, brand_name: Optional[str] = None) -> str:
+    """
+    Isolates the alphanumeric model code from mixed Hebrew/English text for robust matching.
+    Input: "פסנתר חשמלי Roland FP-30X שחור", brand="Roland"
+    Output: "FP30X" (Normalized for comparison)
+    """
+    if not text:
+        return ""
+
+    # 1. Remove all Hebrew characters and Nikkud
+    no_hebrew = HEBREW_RANGE.sub('', text)
+    no_hebrew = NIKKUD_RANGE.sub('', no_hebrew)
+
+    # 2. Remove common localized noise words & Category words (Case insensitive)
+    # e.g., "Black", "White", "Series", "MKII", "W/Stand"
+    noise_pattern = r'(?i)\b(black|white|series|bundle|set|with|stand|bk|wh|digital|piano|guitar|drum|bass|keyboard|synthesizer|studio|monitor)\b'
+    clean_text = re.sub(noise_pattern, '', no_hebrew)
+
+    # 3. Remove Brand Name if provided (critical to avoid matching on "Roland")
+    if brand_name:
+        clean_text = re.sub(
+            r'(?i)\b' + re.escape(brand_name) + r'\b', '', clean_text)
+
+    # 4. Smart Model Extraction
+    # Instead of first match, look for "Model-like" tokens implementation
+    # Split into potential tokens
+    tokens = re.findall(r'[a-zA-Z0-9\-]+', clean_text)
+
+    best_candidate = ""
+    for token in tokens:
+        # Strict filter: Must be > 1 char
+        if len(token) < 2:
+            continue
+
+        # Optimization: If it has a digit, it is 99% the model number (e.g. FP-30, TLM103)
+        if re.search(r'\d', token):
+            best_candidate = token
+            break
+
+    # If no digit-token found, take the longest remaining token (e.g. "Telecaster", "Stratocaster")
+    if not best_candidate and tokens:
+        # Filter out short tokens again just in case
+        valid_tokens = [t for t in tokens if len(t) > 2]
+        if valid_tokens:
+            best_candidate = max(valid_tokens, key=len)
+
+    if best_candidate:
+        return best_candidate.replace('-', '').upper()
+
+    return ""

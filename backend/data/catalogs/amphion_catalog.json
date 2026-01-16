@@ -1,0 +1,2413 @@
+{
+  "brand_identity": {
+    "id": "amphion",
+    "name": "Amphion"
+  },
+  "products": [
+    {
+      "id": "unknown-necessary",
+      "name": "Necessary",
+      "title_en": "Necessary",
+      "title_he": "Necessary",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Necessary",
+        "thumbnail": "https://via.placeholder.com/100?text=Necessary"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-preferences",
+      "name": "Preferences",
+      "title_en": "Preferences",
+      "title_he": "Preferences",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Preferences",
+        "thumbnail": "https://via.placeholder.com/100?text=Preference"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-statistics",
+      "name": "Statistics",
+      "title_en": "Statistics",
+      "title_he": "Statistics",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Statistics",
+        "thumbnail": "https://via.placeholder.com/100?text=Statistics"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-marketing",
+      "name": "Marketing",
+      "title_en": "Marketing",
+      "title_he": "Marketing",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Marketing",
+        "thumbnail": "https://via.placeholder.com/100?text=Marketing"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-heliumhelium510highly-versatile-bookshelf-loudspeakerread-morehelium520ccenter-speaker-designed-to",
+      "name": "HeliumHelium510Highly versatile bookshelf loudspeaker.Read moreHelium520CCenter speaker designed to",
+      "title_en": "HeliumHelium510Highly versatile bookshelf loudspeaker.Read moreHelium520CCenter speaker designed to",
+      "title_he": "HeliumHelium510Highly versatile bookshelf loudspeaker.Read moreHelium520CCenter speaker designed to",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HeliumHelium510Highl",
+        "thumbnail": "https://via.placeholder.com/100?text=HeliumHeli"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-helium510highly-versatile-bookshelf-loudspeakerread-more",
+      "name": "Helium510Highly versatile bookshelf loudspeaker.Read more",
+      "title_en": "Helium510Highly versatile bookshelf loudspeaker.Read more",
+      "title_he": "Helium510Highly versatile bookshelf loudspeaker.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Helium510Highly vers",
+        "thumbnail": "https://via.placeholder.com/100?text=Helium510H"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-helium520ccenter-speaker-designed-to-work-with-all-helium-modelsread-more",
+      "name": "Helium520CCenter speaker designed to work with all Helium models.Read more",
+      "title_en": "Helium520CCenter speaker designed to work with all Helium models.Read more",
+      "title_he": "Helium520CCenter speaker designed to work with all Helium models.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Helium520CCenter spe",
+        "thumbnail": "https://via.placeholder.com/100?text=Helium520C"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon0zero-compromise-desktop-loudspeakerread-more",
+      "name": "Argon0Zero compromise desktop loudspeaker.Read more",
+      "title_en": "Argon0Zero compromise desktop loudspeaker.Read more",
+      "title_he": "Argon0Zero compromise desktop loudspeaker.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon0Zero compromis",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon0Zero"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon1reference-quality-bookshelf-loudspeakerread-more",
+      "name": "Argon1Reference-quality bookshelf loudspeaker.Read more",
+      "title_en": "Argon1Reference-quality bookshelf loudspeaker.Read more",
+      "title_he": "Argon1Reference-quality bookshelf loudspeaker.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon1Reference-qual",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon1Refe"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3senjoy-studio-quality-sound-at-homeread-more",
+      "name": "Argon3SEnjoy studio quality sound at home.Read more",
+      "title_en": "Argon3SEnjoy studio quality sound at home.Read more",
+      "title_he": "Argon3SEnjoy studio quality sound at home.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3SEnjoy studio ",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3SEnj"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3x-newenjoy-studio-quality-sound-at-homeread-more",
+      "name": "Argon3X - NewEnjoy studio quality sound at home.Read more",
+      "title_en": "Argon3X - NewEnjoy studio quality sound at home.Read more",
+      "title_he": "Argon3X - NewEnjoy studio quality sound at home.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3X - NewEnjoy s",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3X - "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3lsstudio-quality-with-added-weight-of-a-floorstanderread-more",
+      "name": "Argon3LSStudio quality with added weight of a floorstander.Read more",
+      "title_en": "Argon3LSStudio quality with added weight of a floorstander.Read more",
+      "title_he": "Argon3LSStudio quality with added weight of a floorstander.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3LSStudio quali",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3LSSt"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3lx-newstudio-quality-with-added-weight-of-a-floorstanderread-more",
+      "name": "Argon3LX - NewStudio quality with added weight of a floorstander.Read more",
+      "title_en": "Argon3LX - NewStudio quality with added weight of a floorstander.Read more",
+      "title_he": "Argon3LX - NewStudio quality with added weight of a floorstander.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3LX - NewStudio",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3LX -"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon7lsbreathtaking-performance-with-deep-emotional-impactread-more",
+      "name": "Argon7LSBreathtaking performance with deep emotional impact.Read more",
+      "title_en": "Argon7LSBreathtaking performance with deep emotional impact.Read more",
+      "title_he": "Argon7LSBreathtaking performance with deep emotional impact.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon7LSBreathtaking",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon7LSBr"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon7lx-newbreathtaking-performance-with-deep-emotional-impactread-more",
+      "name": "Argon7LX - NewBreathtaking performance with deep emotional impact.Read more",
+      "title_en": "Argon7LX - NewBreathtaking performance with deep emotional impact.Read more",
+      "title_he": "Argon7LX - NewBreathtaking performance with deep emotional impact.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon7LX - NewBreath",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon7LX -"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon5ccenter-speaker-designed-to-work-with-all-argon-modelsread-more",
+      "name": "Argon5CCenter speaker designed to work with all Argon models.Read more",
+      "title_en": "Argon5CCenter speaker designed to work with all Argon models.Read more",
+      "title_he": "Argon5CCenter speaker designed to work with all Argon models.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon5CCenter speake",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon5CCen"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-kryptonkrypton3xour-floorstanding-reference-project-25-years-in-the-makingread-more",
+      "name": "KryptonKrypton3XOur floorstanding reference project 25 years in the making.Read more",
+      "title_en": "KryptonKrypton3XOur floorstanding reference project 25 years in the making.Read more",
+      "title_he": "KryptonKrypton3XOur floorstanding reference project 25 years in the making.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=KryptonKrypton3XOur ",
+        "thumbnail": "https://via.placeholder.com/100?text=KryptonKry"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-krypton3xour-floorstanding-reference-project-25-years-in-the-makingread-more",
+      "name": "Krypton3XOur floorstanding reference project 25 years in the making.Read more",
+      "title_en": "Krypton3XOur floorstanding reference project 25 years in the making.Read more",
+      "title_he": "Krypton3XOur floorstanding reference project 25 years in the making.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Krypton3XOur floorst",
+        "thumbnail": "https://via.placeholder.com/100?text=Krypton3XO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one12extreme-nearfields-for-studio-or-on-to-goread-more",
+      "name": "One12Extreme-nearfields for studio or on-to-go.Read more",
+      "title_en": "One12Extreme-nearfields for studio or on-to-go.Read more",
+      "title_he": "One12Extreme-nearfields for studio or on-to-go.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One12Extreme-nearfie",
+        "thumbnail": "https://via.placeholder.com/100?text=One12Extre"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one15nearfields-to-make-better-decisions-fasterread-more",
+      "name": "One15Nearfields to make better decisions faster.Read more",
+      "title_en": "One15Nearfields to make better decisions faster.Read more",
+      "title_he": "One15Nearfields to make better decisions faster.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One15Nearfields to m",
+        "thumbnail": "https://via.placeholder.com/100?text=One15Nearf"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one18the-trusty-all-rounder-for-any-applicationread-more",
+      "name": "One18The trusty all-rounder for any application.Read more",
+      "title_en": "One18The trusty all-rounder for any application.Read more",
+      "title_he": "One18The trusty all-rounder for any application.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One18The trusty all-",
+        "thumbnail": "https://via.placeholder.com/100?text=One18The t"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one18x-newthe-trusty-all-rounder-for-any-applicationread-more",
+      "name": "One18X - NewThe trusty all-rounder for any application.Read more",
+      "title_en": "One18X - NewThe trusty all-rounder for any application.Read more",
+      "title_he": "One18X - NewThe trusty all-rounder for any application.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One18X - NewThe trus",
+        "thumbnail": "https://via.placeholder.com/100?text=One18X - N"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-two15speed-and-detail-in-a-larger-packageread-more",
+      "name": "Two15Speed and detail in a larger package.Read more",
+      "title_en": "Two15Speed and detail in a larger package.Read more",
+      "title_he": "Two15Speed and detail in a larger package.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Two15Speed and detai",
+        "thumbnail": "https://via.placeholder.com/100?text=Two15Speed"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-two18the-trusted-choice-for-worlds-top-engineersread-more",
+      "name": "Two18The trusted choice for world’s top engineers.Read more",
+      "title_en": "Two18The trusted choice for world’s top engineers.Read more",
+      "title_he": "Two18The trusted choice for world’s top engineers.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Two18The trusted cho",
+        "thumbnail": "https://via.placeholder.com/100?text=Two18The t"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-two18x-newthe-trusted-choice-for-worlds-top-engineersread-more",
+      "name": "Two18X - NewThe trusted choice for world’s top engineers.Read more",
+      "title_en": "Two18X - NewThe trusted choice for world’s top engineers.Read more",
+      "title_he": "Two18X - NewThe trusted choice for world’s top engineers.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Two18X - NewThe trus",
+        "thumbnail": "https://via.placeholder.com/100?text=Two18X - N"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one25asealed-full-range-packedwith-punch-and-powerread-more",
+      "name": "One25ASealed full range packedwith punch and power.Read more",
+      "title_en": "One25ASealed full range packedwith punch and power.Read more",
+      "title_he": "One25ASealed full range packedwith punch and power.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One25ASealed full ra",
+        "thumbnail": "https://via.placeholder.com/100?text=One25ASeal"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-base-systemsflexbase25easy-to-setup-and-intuitive-to-adjustread-morebasetwo25elevate-your-monitors",
+      "name": "Base systemsFlexBase25Easy to setup and intuitive to adjust.Read moreBaseTwo25Elevate your monitors",
+      "title_en": "Base systemsFlexBase25Easy to setup and intuitive to adjust.Read moreBaseTwo25Elevate your monitors",
+      "title_he": "Base systemsFlexBase25Easy to setup and intuitive to adjust.Read moreBaseTwo25Elevate your monitors",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Base systemsFlexBase",
+        "thumbnail": "https://via.placeholder.com/100?text=Base syste"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-flexbase25easy-to-setup-and-intuitive-to-adjustread-more",
+      "name": "FlexBase25Easy to setup and intuitive to adjust.Read more",
+      "title_en": "FlexBase25Easy to setup and intuitive to adjust.Read more",
+      "title_he": "FlexBase25Easy to setup and intuitive to adjust.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=FlexBase25Easy to se",
+        "thumbnail": "https://via.placeholder.com/100?text=FlexBase25"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-basetwo25elevate-your-monitors-to-new-heightsread-more",
+      "name": "BaseTwo25Elevate your monitors to new heights.Read more",
+      "title_en": "BaseTwo25Elevate your monitors to new heights.Read more",
+      "title_he": "BaseTwo25Elevate your monitors to new heights.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=BaseTwo25Elevate you",
+        "thumbnail": "https://via.placeholder.com/100?text=BaseTwo25E"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-power-amplifiersamp700making-most-of-your-studio-monitorsread-moreamp400exceptional-level-of-multic",
+      "name": "Power amplifiersAmp700Making most of your studio monitors.Read moreAmp400Exceptional level of multic",
+      "title_en": "Power amplifiersAmp700Making most of your studio monitors.Read moreAmp400Exceptional level of multic",
+      "title_he": "Power amplifiersAmp700Making most of your studio monitors.Read moreAmp400Exceptional level of multic",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Power amplifiersAmp7",
+        "thumbnail": "https://via.placeholder.com/100?text=Power ampl"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amp700making-most-of-your-studio-monitorsread-more",
+      "name": "Amp700Making most of your studio monitors.Read more",
+      "title_en": "Amp700Making most of your studio monitors.Read more",
+      "title_he": "Amp700Making most of your studio monitors.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amp700Making most of",
+        "thumbnail": "https://via.placeholder.com/100?text=Amp700Maki"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amp400exceptional-level-of-multichannel-amplificationread-more",
+      "name": "Amp400Exceptional level of multichannel amplification.Read more",
+      "title_en": "Amp400Exceptional level of multichannel amplification.Read more",
+      "title_he": "Amp400Exceptional level of multichannel amplification.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amp400Exceptional le",
+        "thumbnail": "https://via.placeholder.com/100?text=Amp400Exce"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-beautifully-immersive",
+      "name": "Beautifully immersive",
+      "title_en": "Beautifully immersive",
+      "title_he": "Beautifully immersive",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Beautifully immersiv",
+        "thumbnail": "https://via.placeholder.com/100?text=Beautifull"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-color-gridscolor-grid-12color-grid-12read-morecolor-grid-15color-grid-15read-morecolor-grid-18c",
+      "name": "Color gridsColor grid 12\"Color grid 12\"Read moreColor grid 15\"Color grid 15\"Read moreColor grid 18\"C",
+      "title_en": "Color gridsColor grid 12\"Color grid 12\"Read moreColor grid 15\"Color grid 15\"Read moreColor grid 18\"C",
+      "title_he": "Color gridsColor grid 12\"Color grid 12\"Read moreColor grid 15\"Color grid 15\"Read moreColor grid 18\"C",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Color gridsColor gri",
+        "thumbnail": "https://via.placeholder.com/100?text=Color grid"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-color-grid-12color-grid-12read-more",
+      "name": "Color grid 12\"Color grid 12\"Read more",
+      "title_en": "Color grid 12\"Color grid 12\"Read more",
+      "title_he": "Color gridsColor grid 12\"Color grid 12\"Read moreColor grid 15\"Color grid 15\"Read moreColor grid 18\"C",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Color grid 12\"Color ",
+        "thumbnail": "https://via.placeholder.com/100?text=Color grid"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-color-grid-15color-grid-15read-more",
+      "name": "Color grid 15\"Color grid 15\"Read more",
+      "title_en": "Color grid 15\"Color grid 15\"Read more",
+      "title_he": "Color grid 15\"Color grid 15\"Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Color grid 15\"Color ",
+        "thumbnail": "https://via.placeholder.com/100?text=Color grid"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-color-grid-18color-grid-18read-more",
+      "name": "Color grid 18\"Color grid 18\"Read more",
+      "title_en": "Color grid 18\"Color grid 18\"Read more",
+      "title_he": "Color grid 18\"Color grid 18\"Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Color grid 18\"Color ",
+        "thumbnail": "https://via.placeholder.com/100?text=Color grid"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-wall-ceiling-mountswall-mountswall-mountsread-moreadaptoradaptorread-more",
+      "name": "Wall & ceiling mountsWall mountsWall mountsRead moreAdaptorAdaptorRead more",
+      "title_en": "Wall & ceiling mountsWall mountsWall mountsRead moreAdaptorAdaptorRead more",
+      "title_he": "Wall & ceiling mountsWall mountsWall mountsRead moreAdaptorAdaptorRead more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Wall & ceiling mount",
+        "thumbnail": "https://via.placeholder.com/100?text=Wall & cei"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-wall-mountswall-mountsread-more",
+      "name": "Wall mountsWall mountsRead more",
+      "title_en": "Wall mountsWall mountsRead more",
+      "title_he": "Wall mountsWall mountsRead more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Wall mountsWall moun",
+        "thumbnail": "https://via.placeholder.com/100?text=Wall mount"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-adaptoradaptorread-more",
+      "name": "AdaptorAdaptorRead more",
+      "title_en": "AdaptorAdaptorRead more",
+      "title_he": "AdaptorAdaptorRead more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=AdaptorAdaptorRead m",
+        "thumbnail": "https://via.placeholder.com/100?text=AdaptorAda"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-speaker-cablescablescablesread-more",
+      "name": "Speaker cablesCablesCablesRead more",
+      "title_en": "Speaker cablesCablesCablesRead more",
+      "title_he": "Speaker cablesCablesCablesRead more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Speaker cablesCables",
+        "thumbnail": "https://via.placeholder.com/100?text=Speaker ca"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-cablescablesread-more",
+      "name": "CablesCablesRead more",
+      "title_en": "CablesCablesRead more",
+      "title_he": "CablesCablesRead more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=CablesCablesRead mor",
+        "thumbnail": "https://via.placeholder.com/100?text=CablesCabl"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-where-to-buy",
+      "name": "Where to buy",
+      "title_en": "Where to buy",
+      "title_he": "Where to buy",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Where to buy",
+        "thumbnail": "https://via.placeholder.com/100?text=Where to b"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-technical-supportcontact-formstechnical-information",
+      "name": "Technical supportContact formsTechnical information",
+      "title_en": "Technical supportContact formsTechnical information",
+      "title_he": "Technical supportContact formsTechnical information",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Technical supportCon",
+        "thumbnail": "https://via.placeholder.com/100?text=Technical "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-contact-forms",
+      "name": "Contact forms",
+      "title_en": "Contact forms",
+      "title_he": "Contact forms",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Contact forms",
+        "thumbnail": "https://via.placeholder.com/100?text=Contact fo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-technical-information",
+      "name": "Technical information",
+      "title_en": "Technical information",
+      "title_he": "Technical information",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Technical informatio",
+        "thumbnail": "https://via.placeholder.com/100?text=Technical "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amphion-globallynewsuser-storiesmedia-publicationsevents",
+      "name": "Amphion globallyNewsUser storiesMedia publicationsEvents",
+      "title_en": "Amphion globallyNewsUser storiesMedia publicationsEvents",
+      "title_he": "Amphion globallyNewsUser storiesMedia publicationsEvents",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amphion globallyNews",
+        "thumbnail": "https://via.placeholder.com/100?text=Amphion gl"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-news",
+      "name": "News",
+      "title_en": "News",
+      "title_he": "News",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=News",
+        "thumbnail": "https://via.placeholder.com/100?text=News"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-user-stories",
+      "name": "User stories",
+      "title_en": "User stories",
+      "title_he": "User stories",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=User stories",
+        "thumbnail": "https://via.placeholder.com/100?text=User stori"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-media-publications",
+      "name": "Media publications",
+      "title_en": "Media publications",
+      "title_he": "Media publications",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Media publications",
+        "thumbnail": "https://via.placeholder.com/100?text=Media publ"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-events",
+      "name": "Events",
+      "title_en": "Events",
+      "title_he": "Events",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Events",
+        "thumbnail": "https://via.placeholder.com/100?text=Events"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-brand-assetsimage-banklogo-guidelines",
+      "name": "Brand assetsImage bankLogo & guidelines",
+      "title_en": "Brand assetsImage bankLogo & guidelines",
+      "title_he": "Brand assetsImage bankLogo & guidelines",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Brand assetsImage ba",
+        "thumbnail": "https://via.placeholder.com/100?text=Brand asse"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-image-bank",
+      "name": "Image bank",
+      "title_en": "Image bank",
+      "title_he": "Image bank",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Image bank",
+        "thumbnail": "https://via.placeholder.com/100?text=Image bank"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-logo-guidelines",
+      "name": "Logo & guidelines",
+      "title_en": "Logo & guidelines",
+      "title_he": "Logo & guidelines",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Logo & guidelines",
+        "thumbnail": "https://via.placeholder.com/100?text=Logo & gui"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-about-us",
+      "name": "About us",
+      "title_en": "About us",
+      "title_he": "About us",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=About us",
+        "thumbnail": "https://via.placeholder.com/100?text=About us"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-home",
+      "name": "Home",
+      "title_en": "Home",
+      "title_he": "Home",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Home",
+        "thumbnail": "https://via.placeholder.com/100?text=Home"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-studio",
+      "brand": null,
+      "name": "Studio",
+      "description": "",
+      "specs": {},
+      "category": null,
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Studio",
+        "thumbnail": "https://via.placeholder.com/100?text=Studio"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": null,
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-accessories",
+      "name": "Accessories",
+      "title_en": "Accessories",
+      "title_he": "Accessories",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Accessories",
+        "thumbnail": "https://via.placeholder.com/100?text=Accessorie"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-dealers",
+      "name": "Dealers",
+      "title_en": "Dealers",
+      "title_he": "Dealers",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Dealers",
+        "thumbnail": "https://via.placeholder.com/100?text=Dealers"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-which-speaker-to-choose",
+      "name": "Which speaker to choose",
+      "title_en": "Which speaker to choose",
+      "title_he": "Which speaker to choose",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Which speaker to cho",
+        "thumbnail": "https://via.placeholder.com/100?text=Which spea"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-service-center",
+      "name": "Service center",
+      "title_en": "Service center",
+      "title_he": "Service center",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Service center",
+        "thumbnail": "https://via.placeholder.com/100?text=Service ce"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-contact-form",
+      "name": "Contact form",
+      "title_en": "Contact form",
+      "title_he": "Contact forms",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Contact form",
+        "thumbnail": "https://via.placeholder.com/100?text=Contact fo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-amphion-argon7lx-floor-standers-are-some-of-t",
+      "name": "“The Amphion Argon7LX floor-standers are some of t",
+      "title_en": "“The Amphion Argon7LX floor-standers are some of t",
+      "title_he": "Argon7LX - NewBreathtaking performance with deep emotional impact.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=“The Amphion Argon7L",
+        "thumbnail": "https://via.placeholder.com/100?text=“The Amphi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amphion-design-does-not-chase-trends-it-outlives",
+      "name": "Amphion design does not chase trends; it outlives",
+      "title_en": "Amphion design does not chase trends; it outlives",
+      "title_he": "Amphion design does not chase trends; it outlives",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amphion design does ",
+        "thumbnail": "https://via.placeholder.com/100?text=Amphion de"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one18x-earns-a-2025-gear-of-the-year-editors-pick",
+      "name": "One18X earns a 2025 Gear of the Year Editor’s Pick",
+      "title_en": "One18X earns a 2025 Gear of the Year Editor’s Pick",
+      "title_he": "One18X - NewThe trusty all-rounder for any application.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One18X earns a 2025 ",
+        "thumbnail": "https://via.placeholder.com/100?text=One18X ear"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amp700-assembly-amphionfactory-amp700-studio",
+      "name": "Amp700 assembly \n\n#AmphionFactory #Amp700 #studio",
+      "title_en": "Amp700 assembly \n\n#AmphionFactory #Amp700 #studio",
+      "title_he": "Amp700 assembly \n\n#AmphionFactory #Amp700 #studio",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amp700 assembly \n\n#A",
+        "thumbnail": "https://via.placeholder.com/100?text=Amp700 ass"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-productshome-audiostudio-products",
+      "name": "ProductsHome audioStudio products",
+      "title_en": "ProductsHome audioStudio products",
+      "title_he": "ProductsHome audioStudio products",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=ProductsHome audioSt",
+        "thumbnail": "https://via.placeholder.com/100?text=ProductsHo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-home-audio",
+      "name": "Home audio",
+      "title_en": "Home audio",
+      "title_he": "Home audio",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Home audio",
+        "thumbnail": "https://via.placeholder.com/100?text=Home audio"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-studio-products",
+      "name": "Studio products",
+      "title_en": "Studio products",
+      "title_he": "Studio products",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Studio products",
+        "thumbnail": "https://via.placeholder.com/100?text=Studio pro"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-informationaccessorieswhere-to-buy",
+      "name": "InformationAccessoriesWhere to buy",
+      "title_en": "InformationAccessoriesWhere to buy",
+      "title_he": "InformationAccessoriesWhere to buy",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=InformationAccessori",
+        "thumbnail": "https://via.placeholder.com/100?text=Informatio"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-supportamphion-globallytechnical-support",
+      "name": "SupportAmphion globallyTechnical support",
+      "title_en": "SupportAmphion globallyTechnical support",
+      "title_he": "SupportAmphion globallyTechnical support",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SupportAmphion globa",
+        "thumbnail": "https://via.placeholder.com/100?text=SupportAmp"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amphion-globally",
+      "name": "Amphion globally",
+      "title_en": "Amphion globally",
+      "title_he": "Amphion globally",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amphion globally",
+        "thumbnail": "https://via.placeholder.com/100?text=Amphion gl"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-technical-support",
+      "name": "Technical support",
+      "title_en": "Technical support",
+      "title_he": "Technical support",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Technical support",
+        "thumbnail": "https://via.placeholder.com/100?text=Technical "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-aboutbrand-assetsabout-us",
+      "name": "AboutBrand assetsAbout us",
+      "title_en": "AboutBrand assetsAbout us",
+      "title_he": "AboutBrand assetsAbout us",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=AboutBrand assetsAbo",
+        "thumbnail": "https://via.placeholder.com/100?text=AboutBrand"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-brand-assets",
+      "name": "Brand assets",
+      "title_en": "Brand assets",
+      "title_he": "Brand assets",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Brand assets",
+        "thumbnail": "https://via.placeholder.com/100?text=Brand asse"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-this-website-uses-cookies",
+      "name": "This website uses cookies",
+      "title_en": "This website uses cookies",
+      "title_he": "This website uses cookies",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=This website uses co",
+        "thumbnail": "https://via.placeholder.com/100?text=This websi"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-show-details",
+      "name": "Show details",
+      "title_en": "Show details",
+      "title_he": "Show details",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Show details",
+        "thumbnail": "https://via.placeholder.com/100?text=Show detai"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-helium510",
+      "name": "Helium510",
+      "title_en": "Helium510",
+      "title_he": "Helium510",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Helium510",
+        "thumbnail": "https://via.placeholder.com/100?text=Helium510"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-helium520c",
+      "name": "Helium520C",
+      "title_en": "Helium520C",
+      "title_he": "Helium520C",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Helium520C",
+        "thumbnail": "https://via.placeholder.com/100?text=Helium520C"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon0",
+      "name": "Argon0",
+      "title_en": "Argon0",
+      "title_he": "Argon0",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon0",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon0"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon1",
+      "name": "Argon1",
+      "title_en": "Argon1",
+      "title_he": "Argon1",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon1",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon1"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3s",
+      "name": "Argon3S",
+      "title_en": "Argon3S",
+      "title_he": "Argon3S",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3S",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3x-new",
+      "name": "Argon3X - New",
+      "title_en": "Argon3X - New",
+      "title_he": "Argon3X - NewEnjoy studio quality sound at home.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3X - New",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3X - "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3ls",
+      "name": "Argon3LS",
+      "title_en": "Argon3LS",
+      "title_he": "Argon3LS",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3LS",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3LS"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3lx-new",
+      "name": "Argon3LX - New",
+      "title_en": "Argon3LX - New",
+      "title_he": "Argon3LX - NewStudio quality with added weight of a floorstander.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3LX - New",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3LX -"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon7ls",
+      "name": "Argon7LS",
+      "title_en": "Argon7LS",
+      "title_he": "Argon7LS",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon7LS",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon7LS"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon7lx-new",
+      "name": "Argon7LX - New",
+      "title_en": "Argon7LX - New",
+      "title_he": "Argon7LX - NewBreathtaking performance with deep emotional impact.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon7LX - New",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon7LX -"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon5c",
+      "name": "Argon5C",
+      "title_en": "Argon5C",
+      "title_he": "Argon5C",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon5C",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon5C"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-krypton3x",
+      "name": "Krypton3X",
+      "title_en": "Krypton3X",
+      "title_he": "Krypton3X",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Krypton3X",
+        "thumbnail": "https://via.placeholder.com/100?text=Krypton3X"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one18x-new",
+      "name": "One18X - New",
+      "title_en": "One18X - New",
+      "title_he": "One18X - NewThe trusty all-rounder for any application.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One18X - New",
+        "thumbnail": "https://via.placeholder.com/100?text=One18X - N"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-two18x-new",
+      "name": "Two18X - New",
+      "title_en": "Two18X - New",
+      "title_he": "Two18X - NewThe trusted choice for world’s top engineers.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Two18X - New",
+        "thumbnail": "https://via.placeholder.com/100?text=Two18X - N"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one25a",
+      "name": "One25A",
+      "title_en": "One25A",
+      "title_he": "One25A",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One25A",
+        "thumbnail": "https://via.placeholder.com/100?text=One25A"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-flexbase25",
+      "name": "FlexBase25",
+      "title_en": "FlexBase25",
+      "title_he": "FlexBase25",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=FlexBase25",
+        "thumbnail": "https://via.placeholder.com/100?text=FlexBase25"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-basetwo25",
+      "name": "BaseTwo25",
+      "title_en": "BaseTwo25",
+      "title_he": "BaseTwo25",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=BaseTwo25",
+        "thumbnail": "https://via.placeholder.com/100?text=BaseTwo25"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amp700",
+      "name": "Amp700",
+      "title_en": "Amp700",
+      "title_he": "Amp700 assembly \n\n#AmphionFactory #Amp700 #studio",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amp700",
+        "thumbnail": "https://via.placeholder.com/100?text=Amp700"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amp400",
+      "name": "Amp400",
+      "title_en": "Amp400",
+      "title_he": "Amp400",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amp400",
+        "thumbnail": "https://via.placeholder.com/100?text=Amp400"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-color-grid-12",
+      "name": "Color grid 12\"",
+      "title_en": "Color grid 12\"",
+      "title_he": "Color gridsColor grid 12\"Color grid 12\"Read moreColor grid 15\"Color grid 15\"Read moreColor grid 18\"C",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Color grid 12\"",
+        "thumbnail": "https://via.placeholder.com/100?text=Color grid"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-color-grid-15",
+      "name": "Color grid 15\"",
+      "title_en": "Color grid 15\"",
+      "title_he": "Color grid 15\"Color grid 15\"Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Color grid 15\"",
+        "thumbnail": "https://via.placeholder.com/100?text=Color grid"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-color-grid-18",
+      "name": "Color grid 18\"",
+      "title_en": "Color grid 18\"",
+      "title_he": "Color grid 18\"Color grid 18\"Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Color grid 18\"",
+        "thumbnail": "https://via.placeholder.com/100?text=Color grid"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-wall-mounts",
+      "name": "Wall mounts",
+      "title_en": "Wall mounts",
+      "title_he": "Wall mounts",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Wall mounts",
+        "thumbnail": "https://via.placeholder.com/100?text=Wall mount"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-adaptor",
+      "name": "Adaptor",
+      "title_en": "Adaptor",
+      "title_he": "Adaptor",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Adaptor",
+        "thumbnail": "https://via.placeholder.com/100?text=Adaptor"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-cables",
+      "name": "Cables",
+      "title_en": "Cables",
+      "title_he": "Cables",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Cables",
+        "thumbnail": "https://via.placeholder.com/100?text=Cables"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-endurance-through-quality",
+      "name": "Endurance through quality",
+      "title_en": "Endurance through quality",
+      "title_he": "Endurance through quality",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Endurance through qu",
+        "thumbnail": "https://via.placeholder.com/100?text=Endurance "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-100-handmade-in-finland",
+      "name": "100% handmade in Finland",
+      "title_en": "100% handmade in Finland",
+      "title_he": "100% handmade in Finland",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=100% handmade in Fin",
+        "thumbnail": "https://via.placeholder.com/100?text=100% handm"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-decorate-with-sound",
+      "name": "Decorate with sound",
+      "title_en": "Decorate with sound",
+      "title_he": "Decorate with sound",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Decorate with sound",
+        "thumbnail": "https://via.placeholder.com/100?text=Decorate w"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3x",
+      "name": "Argon3X",
+      "title_en": "Argon3X",
+      "title_he": "Argon3X - NewEnjoy studio quality sound at home.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3X",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3X"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon3lx",
+      "name": "Argon3LX",
+      "title_en": "Argon3LX",
+      "title_he": "Argon3LX - NewStudio quality with added weight of a floorstander.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon3LX",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon3LX"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-argon7lx",
+      "name": "Argon7LX",
+      "title_en": "Argon7LX",
+      "title_he": "Argon7LX - NewBreathtaking performance with deep emotional impact.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Argon7LX",
+        "thumbnail": "https://via.placeholder.com/100?text=Argon7LX"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amp4008",
+      "name": "Amp400.8",
+      "title_en": "Amp400.8",
+      "title_he": "Amp400",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amp400.8",
+        "thumbnail": "https://via.placeholder.com/100?text=Amp400.8"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amp40012",
+      "name": "Amp400.12",
+      "title_en": "Amp400.12",
+      "title_he": "Amp400",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Amp400.12",
+        "thumbnail": "https://via.placeholder.com/100?text=Amp400.12"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-one18x",
+      "name": "One18X",
+      "title_en": "One18X",
+      "title_he": "One18X - NewThe trusty all-rounder for any application.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=One18X",
+        "thumbnail": "https://via.placeholder.com/100?text=One18X"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-two18x",
+      "name": "Two18X",
+      "title_en": "Two18X",
+      "title_he": "Two18X - NewThe trusted choice for world’s top engineers.Read more",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Two18X",
+        "thumbnail": "https://via.placeholder.com/100?text=Two18X"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-need-assistance",
+      "name": "Need assistance?",
+      "title_en": "Need assistance?",
+      "title_he": "Need assistance?",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Need assistance?",
+        "thumbnail": "https://via.placeholder.com/100?text=Need assis"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-amphion_loudspeakers",
+      "name": "amphion_loudspeakers",
+      "title_en": "amphion_loudspeakers",
+      "title_he": "amphion_loudspeakers",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=amphion_loudspeakers",
+        "thumbnail": "https://via.placeholder.com/100?text=amphion_lo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 114,
+    "halilit_products": 114,
+    "unified_products": 114,
+    "primary_count": 113,
+    "secondary_count": 1,
+    "halilit_only_count": 0,
+    "timestamp": "2026-01-16T02:01:12.921269"
+  }
+}

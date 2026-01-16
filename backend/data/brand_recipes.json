@@ -1,0 +1,52 @@
+{
+    "roland": {
+        "start_url": "https://www.roland.com/us/products/",
+        "link_pattern": "/products/[^/]+/",
+        "discovery_depth": 2,
+        "selectors": {
+            "name_strategies": ["h1", "og:title"],
+            "category_strategies": ["og_description_pattern", "breadcrumb", "url_path"],
+            "image_strategies": ["og:image"],
+            "description_strategies": ["og:description"]
+        },
+        "cleaning": {
+            "remove_brand_prefix": true,
+            "strip_versions": ["V2", "MKII"]
+        }
+    },
+    "boss": {
+        "start_url": "https://www.boss.info/us/products/",
+        "link_pattern": "/products/[^/]+/",
+        "discovery_depth": 2,
+        "selectors": {
+            "name_strategies": ["h1", "og:title"],
+            "category_strategies": ["og_description_pattern", "breadcrumb", "url_path"],
+            "image_strategies": ["og:image"],
+            "description_strategies": ["og:description"]
+        },
+        "cleaning": {
+            "remove_brand_prefix": true
+        }
+    },
+    "nord": {
+        "start_url": "https://www.nordkeyboards.com/products",
+        "link_pattern": "/products/[^/]+",
+        "discovery_depth": 1,
+        "selectors": {
+            "name_strategies": ["h1", "title"],
+            "category_strategies": ["meta_description_keywords", "url_path"],
+            "image_strategies": ["og:image", ".product-image img"]
+        },
+        "meta_keywords": ["Piano", "Organ", "Synth", "Drum", "Stage", "Grand", "Electro", "Lead", "Wave"]
+    },
+    "pearl": {
+        "start_url": "https://pearldrum.com/products",
+        "link_pattern": "/products/[^/]+/[^/]+",
+        "discovery_depth": 3,
+        "selectors": {
+            "name_strategies": ["h1"],
+            "category_strategies": ["breadcrumb", "url_path"],
+            "image_strategies": ["og:image"]
+        }
+    }
+}

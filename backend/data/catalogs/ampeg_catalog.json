@@ -1,0 +1,2980 @@
+{
+  "brand_identity": {
+    "id": "ampeg",
+    "name": "Ampeg"
+  },
+  "products": [
+    {
+      "id": "unknown-products",
+      "name": "Products",
+      "title_en": "Products",
+      "title_he": "Products",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Products",
+        "thumbnail": "https://via.placeholder.com/100?text=Products"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-artists",
+      "name": "Artists",
+      "title_en": "Artists",
+      "title_he": "Artists",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Artists",
+        "thumbnail": "https://via.placeholder.com/100?text=Artists"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-history",
+      "name": "History",
+      "title_en": "History",
+      "title_he": "History",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=History",
+        "thumbnail": "https://via.placeholder.com/100?text=History"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-blog",
+      "name": "Blog",
+      "title_en": "Blog",
+      "title_he": "Blog",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Blog",
+        "thumbnail": "https://via.placeholder.com/100?text=Blog"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-downloads",
+      "name": "Downloads",
+      "title_en": "Downloads",
+      "title_he": "Downloads",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Downloads",
+        "thumbnail": "https://via.placeholder.com/100?text=Downloads"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-support",
+      "name": "Support",
+      "title_en": "Support",
+      "title_he": "Support",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Support",
+        "thumbnail": "https://via.placeholder.com/100?text=Support"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-shop",
+      "name": "Shop",
+      "title_en": "Shop",
+      "title_he": "Shop",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Shop",
+        "thumbnail": "https://via.placeholder.com/100?text=Shop"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-bass-headsventureheritageclassicmicroportaflexpro",
+      "name": "Bass HeadsVentureHeritageClassicMicroPortaflexPro",
+      "title_en": "Bass HeadsVentureHeritageClassicMicroPortaflexPro",
+      "title_he": "Bass HeadsVentureHeritageClassicMicroPortaflexPro",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Bass HeadsVentureHer",
+        "thumbnail": "https://via.placeholder.com/100?text=Bass Heads"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture",
+      "name": "Venture",
+      "title_en": "Venture",
+      "title_he": "Venture",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-heritage",
+      "name": "Heritage",
+      "title_en": "Heritage",
+      "title_he": "Heritage",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Heritage",
+        "thumbnail": "https://via.placeholder.com/100?text=Heritage"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-classic",
+      "name": "Classic",
+      "title_en": "Classic",
+      "title_he": "Classic",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Classic",
+        "thumbnail": "https://via.placeholder.com/100?text=Classic"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro",
+      "name": "Micro",
+      "title_en": "Micro",
+      "title_he": "Micro",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Micro",
+        "thumbnail": "https://via.placeholder.com/100?text=Micro"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-portaflex",
+      "name": "Portaflex",
+      "title_en": "Portaflex",
+      "title_he": "Portaflex",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Portaflex",
+        "thumbnail": "https://via.placeholder.com/100?text=Portaflex"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-bass-cabsventureheritageclassicportaflex",
+      "name": "Bass CabsVentureHeritageClassicPortaflex",
+      "title_en": "Bass CabsVentureHeritageClassicPortaflex",
+      "title_he": "Bass CabsVentureHeritageClassicPortaflex",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Bass CabsVentureHeri",
+        "thumbnail": "https://via.placeholder.com/100?text=Bass CabsV"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-bass-combosrocket-bass",
+      "name": "Bass CombosRocket Bass",
+      "title_en": "Bass CombosRocket Bass",
+      "title_he": "Bass CombosRocket Bass",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Bass CombosRocket Ba",
+        "thumbnail": "https://via.placeholder.com/100?text=Bass Combo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-rocket-bass",
+      "name": "Rocket Bass",
+      "title_en": "Rocket Bass",
+      "title_he": "Rocket Bass",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Rocket Bass",
+        "thumbnail": "https://via.placeholder.com/100?text=Rocket Bas"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pedals-effectssgt-discr-diclassic-bass-preampscrambler-bass-overdriveliquifieropto-comp",
+      "name": "Pedals / EffectsSGT-DISCR-DIClassic Bass PreampScrambler Bass OverdriveLiquifierOpto Comp",
+      "title_en": "Pedals / EffectsSGT-DISCR-DIClassic Bass PreampScrambler Bass OverdriveLiquifierOpto Comp",
+      "title_he": "Pedals / EffectsSGT-DISCR-DIClassic Bass PreampScrambler Bass OverdriveLiquifierOpto Comp",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Pedals / EffectsSGT-",
+        "thumbnail": "https://via.placeholder.com/100?text=Pedals / E"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sgt-di",
+      "name": "SGT-DI",
+      "title_en": "SGT-DI",
+      "title_he": "SGT-DI",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SGT-DI",
+        "thumbnail": "https://via.placeholder.com/100?text=SGT-DI"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-scr-di",
+      "name": "SCR-DI",
+      "title_en": "SCR-DI",
+      "title_he": "SCR-DI",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SCR-DI",
+        "thumbnail": "https://via.placeholder.com/100?text=SCR-DI"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-classic-bass-preamp",
+      "name": "Classic Bass Preamp",
+      "title_en": "Classic Bass Preamp",
+      "title_he": "Classic",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Classic Bass Preamp",
+        "thumbnail": "https://via.placeholder.com/100?text=Classic Ba"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-scrambler-bass-overdrive",
+      "name": "Scrambler Bass Overdrive",
+      "title_en": "Scrambler Bass Overdrive",
+      "title_he": "Scrambler Bass Overdrive",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Scrambler Bass Overd",
+        "thumbnail": "https://via.placeholder.com/100?text=Scrambler "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-liquifier",
+      "name": "Liquifier",
+      "title_en": "Liquifier",
+      "title_he": "Liquifier",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Liquifier",
+        "thumbnail": "https://via.placeholder.com/100?text=Liquifier"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-opto-comp",
+      "name": "Opto Comp",
+      "title_en": "Opto Comp",
+      "title_he": "Opto Comp",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Opto Comp",
+        "thumbnail": "https://via.placeholder.com/100?text=Opto Comp"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-softwaresvt-suite",
+      "name": "SoftwareSVT Suite",
+      "title_en": "SoftwareSVT Suite",
+      "title_he": "SoftwareSVT Suite",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SoftwareSVT Suite",
+        "thumbnail": "https://via.placeholder.com/100?text=SoftwareSV"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-suite",
+      "name": "SVT Suite",
+      "title_en": "SVT Suite",
+      "title_he": "SVT Suite",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT Suite",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT Suite"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sign-in",
+      "name": "Sign In",
+      "title_en": "Sign In",
+      "title_he": "Sign In",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Sign In",
+        "thumbnail": "https://via.placeholder.com/100?text=Sign In"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sgt-di-blue-line-anniversary-editiontheall-in-one-bass-box",
+      "name": "SGT-DI Blue Line Anniversary EditionTHEALL-IN-ONE BASS BOX",
+      "title_en": "SGT-DI Blue Line Anniversary EditionTHEALL-IN-ONE BASS BOX",
+      "title_he": "SGT-DI Blue Line Anniversary EditionTHEALL-IN-ONE BASS BOX",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SGT-DI Blue Line Ann",
+        "thumbnail": "https://via.placeholder.com/100?text=SGT-DI Blu"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-75-years-of-ampegcelebrate-75-years-of-iconic-tones-together",
+      "name": "75 Years of AmpegCelebrate 75 years of iconic tones together.",
+      "title_en": "75 Years of AmpegCelebrate 75 years of iconic tones together.",
+      "title_he": "75 Years of AmpegCelebrate 75 years of iconic tones together.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=75 Years of AmpegCel",
+        "thumbnail": "https://via.placeholder.com/100?text=75 Years o"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venturego-anywhere",
+      "name": "VentureGo Anywhere",
+      "title_en": "VentureGo Anywhere",
+      "title_he": "VentureGo Anywhere",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=VentureGo Anywhere",
+        "thumbnail": "https://via.placeholder.com/100?text=VentureGo "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-bass-heads",
+      "name": "Bass Heads",
+      "title_en": "Bass Heads",
+      "title_he": "Bass Heads",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Bass Heads",
+        "thumbnail": "https://via.placeholder.com/100?text=Bass Heads"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-bass-cabs",
+      "name": "Bass Cabs",
+      "title_en": "Bass Cabs",
+      "title_he": "Bass Cabs",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Bass Cabs",
+        "thumbnail": "https://via.placeholder.com/100?text=Bass Cabs"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-bass-combos",
+      "name": "Bass Combos",
+      "title_en": "Bass Combos",
+      "title_he": "Bass Combos",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Bass Combos",
+        "thumbnail": "https://via.placeholder.com/100?text=Bass Combo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pedals-effects",
+      "name": "Pedals / Effects",
+      "title_en": "Pedals / Effects",
+      "title_he": "Pedals / Effects",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Pedals / Effects",
+        "thumbnail": "https://via.placeholder.com/100?text=Pedals / E"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-software",
+      "name": "Software",
+      "title_en": "Software",
+      "title_he": "Software",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Software",
+        "thumbnail": "https://via.placeholder.com/100?text=Software"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-theall-in-one-bass-box",
+      "name": "THEALL-IN-ONE BASS BOX",
+      "title_en": "THEALL-IN-ONE BASS BOX",
+      "title_he": "THEALL-IN-ONE BASS BOX",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=THEALL-IN-ONE BASS B",
+        "thumbnail": "https://via.placeholder.com/100?text=THEALL-IN-"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-celebrate-75-years-of-iconic-tones-together",
+      "name": "Celebrate 75 years of iconic tones together.",
+      "title_en": "Celebrate 75 years of iconic tones together.",
+      "title_he": "75 Years of AmpegCelebrate 75 years of iconic tones together.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Celebrate 75 years o",
+        "thumbnail": "https://via.placeholder.com/100?text=Celebrate "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-go-anywhere",
+      "name": "Go Anywhere",
+      "title_en": "Go Anywhere",
+      "title_he": "Go Anywhere",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Go Anywhere",
+        "thumbnail": "https://via.placeholder.com/100?text=Go Anywher"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ampegproduct-feedback",
+      "name": "AMPEGPRODUCT FEEDBACK",
+      "title_en": "AMPEGPRODUCT FEEDBACK",
+      "title_he": "AMPEGPRODUCT FEEDBACK",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=AMPEGPRODUCT FEEDBAC",
+        "thumbnail": "https://via.placeholder.com/100?text=AMPEGPRODU"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-company",
+      "name": "Company",
+      "title_en": "Company",
+      "title_he": "Company",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Company",
+        "thumbnail": "https://via.placeholder.com/100?text=Company"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-stay-informed",
+      "name": "STAY INFORMED",
+      "title_en": "STAY INFORMED",
+      "title_he": "STAY INFORMED",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=STAY INFORMED",
+        "thumbnail": "https://via.placeholder.com/100?text=STAY INFOR"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-compare",
+      "name": "Compare",
+      "title_en": "Compare",
+      "title_he": "Compare",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Compare",
+        "thumbnail": "https://via.placeholder.com/100?text=Compare"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hardwareventure-seriesrocket-bassclassic-seriesheritage-seriesmicro-seriesportaflex-seriespro-neo-se",
+      "name": "HardwareVenture SeriesRocket BassClassic SeriesHeritage SeriesMicro SeriesPortaflex SeriesPro Neo Se",
+      "title_en": "HardwareVenture SeriesRocket BassClassic SeriesHeritage SeriesMicro SeriesPortaflex SeriesPro Neo Se",
+      "title_he": "HardwareVenture SeriesRocket BassClassic SeriesHeritage SeriesMicro SeriesPortaflex SeriesPro Neo Se",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HardwareVenture Seri",
+        "thumbnail": "https://via.placeholder.com/100?text=HardwareVe"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-series",
+      "name": "Venture Series",
+      "title_en": "Venture Series",
+      "title_he": "Venture",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture Series",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture Se"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-classic-series",
+      "name": "Classic Series",
+      "title_en": "Classic Series",
+      "title_he": "Classic",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Classic Series",
+        "thumbnail": "https://via.placeholder.com/100?text=Classic Se"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-heritage-series",
+      "name": "Heritage Series",
+      "title_en": "Heritage Series",
+      "title_he": "Heritage",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Heritage Series",
+        "thumbnail": "https://via.placeholder.com/100?text=Heritage S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-series",
+      "name": "Micro Series",
+      "title_en": "Micro Series",
+      "title_he": "Micro",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Micro Series",
+        "thumbnail": "https://via.placeholder.com/100?text=Micro Seri"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-portaflex-series",
+      "name": "Portaflex Series",
+      "title_en": "Portaflex Series",
+      "title_he": "Portaflex",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Portaflex Series",
+        "thumbnail": "https://via.placeholder.com/100?text=Portaflex "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pro-neo-series",
+      "name": "Pro Neo Series",
+      "title_en": "Pro Neo Series",
+      "title_he": "Pro Neo Series",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Pro Neo Series",
+        "thumbnail": "https://via.placeholder.com/100?text=Pro Neo Se"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-pro-series",
+      "name": "SVT Pro Series",
+      "title_en": "SVT Pro Series",
+      "title_he": "SVT Pro Series",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT Pro Series",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT Pro Se"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-ba-series",
+      "brand": null,
+      "name": "BA Series",
+      "description": "",
+      "specs": {},
+      "category": null,
+      "images": {
+        "main": "https://via.placeholder.com/400?text=BA Series",
+        "thumbnail": "https://via.placeholder.com/100?text=BA Series"
+      },
+      "documentation": {},
+      "manual_url": null,
+      "brand_product_url": null,
+      "source": "SECONDARY",
+      "confidence_score": 0.8,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "check_brand",
+        "availability": "verify_with_brand"
+      }
+    },
+    {
+      "id": "unknown-pedals",
+      "name": "Pedals",
+      "title_en": "Pedals",
+      "title_he": "Pedals",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Pedals",
+        "thumbnail": "https://via.placeholder.com/100?text=Pedals"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-certified-refurbished",
+      "name": "Certified Refurbished",
+      "title_en": "Certified Refurbished",
+      "title_he": "Certified Refurbished",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Certified Refurbishe",
+        "thumbnail": "https://via.placeholder.com/100?text=Certified "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-all-hardware",
+      "name": "All Hardware",
+      "title_en": "All Hardware",
+      "title_he": "All Hardware",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=All Hardware",
+        "thumbnail": "https://via.placeholder.com/100?text=All Hardwa"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-accessoriescovers-and-bagsfootswitchesgrillespower-suppliespartsstoolsall-accessories",
+      "name": "AccessoriesCovers and BagsFootswitchesGrillesPower SuppliesPartsStoolsAll Accessories",
+      "title_en": "AccessoriesCovers and BagsFootswitchesGrillesPower SuppliesPartsStoolsAll Accessories",
+      "title_he": "AccessoriesCovers and BagsFootswitchesGrillesPower SuppliesPartsStoolsAll Accessories",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=AccessoriesCovers an",
+        "thumbnail": "https://via.placeholder.com/100?text=Accessorie"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-covers-and-bags",
+      "name": "Covers and Bags",
+      "title_en": "Covers and Bags",
+      "title_he": "Covers and Bags",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Covers and Bags",
+        "thumbnail": "https://via.placeholder.com/100?text=Covers and"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-footswitches",
+      "name": "Footswitches",
+      "title_en": "Footswitches",
+      "title_he": "Footswitches",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Footswitches",
+        "thumbnail": "https://via.placeholder.com/100?text=Footswitch"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-grilles",
+      "name": "Grilles",
+      "title_en": "Grilles",
+      "title_he": "Grilles",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Grilles",
+        "thumbnail": "https://via.placeholder.com/100?text=Grilles"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-power-supplies",
+      "name": "Power Supplies",
+      "title_en": "Power Supplies",
+      "title_he": "Power Supplies",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Power Supplies",
+        "thumbnail": "https://via.placeholder.com/100?text=Power Supp"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-parts",
+      "name": "Parts",
+      "title_en": "Parts",
+      "title_he": "Parts",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Parts",
+        "thumbnail": "https://via.placeholder.com/100?text=Parts"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-stools",
+      "name": "Stools",
+      "title_en": "Stools",
+      "title_he": "Stools",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Stools",
+        "thumbnail": "https://via.placeholder.com/100?text=Stools"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-all-accessories",
+      "name": "All Accessories",
+      "title_en": "All Accessories",
+      "title_he": "All Accessories",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=All Accessories",
+        "thumbnail": "https://via.placeholder.com/100?text=All Access"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-merch",
+      "name": "Merch",
+      "title_en": "Merch",
+      "title_he": "Merch",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Merch",
+        "thumbnail": "https://via.placeholder.com/100?text=Merch"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-informationabout-uscustomer-servicecustomer-servicemy-accountview-cartmy-orderscontact-us",
+      "name": "InformationAbout UsCustomer ServiceCustomer ServiceMy AccountView CartMy OrdersContact Us",
+      "title_en": "InformationAbout UsCustomer ServiceCustomer ServiceMy AccountView CartMy OrdersContact Us",
+      "title_he": "InformationAbout UsCustomer ServiceCustomer ServiceMy AccountView CartMy OrdersContact Us",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=InformationAbout UsC",
+        "thumbnail": "https://via.placeholder.com/100?text=Informatio"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-information",
+      "name": "Information",
+      "title_en": "Information",
+      "title_he": "Information",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Information",
+        "thumbnail": "https://via.placeholder.com/100?text=Informatio"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-customer-service",
+      "name": "Customer Service",
+      "title_en": "Customer Service",
+      "title_he": "Customer Service",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Customer Service",
+        "thumbnail": "https://via.placeholder.com/100?text=Customer S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hear-venture-seriespress-play-to-hear-some-of-the-sounds-youll-be-able-to-get-from-the-venture-seri",
+      "name": "HEAR VENTURE SERIESPress Play to hear some of the sounds you’ll be able to get from the Venture Seri",
+      "title_en": "HEAR VENTURE SERIESPress Play to hear some of the sounds you’ll be able to get from the Venture Seri",
+      "title_he": "HEAR VENTURE SERIESPress Play to hear some of the sounds you’ll be able to get from the Venture Seri",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HEAR VENTURE SERIESP",
+        "thumbnail": "https://via.placeholder.com/100?text=HEAR VENTU"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-venture-vb-88-bass-cab-weighs-67-pounds-and-handles-800-watts-rms1600-watts-program-power-4ω",
+      "name": "The Venture VB-88 bass cab weighs 67 pounds and handles 800 watts RMS/1600 watts Program power (4Ω).",
+      "title_en": "The Venture VB-88 bass cab weighs 67 pounds and handles 800 watts RMS/1600 watts Program power (4Ω).",
+      "title_he": "The Venture VB-88 bass cab weighs 67 pounds and handles 800 watts RMS/1600 watts Program power (4Ω).",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Venture VB-88 ba",
+        "thumbnail": "https://via.placeholder.com/100?text=The Ventur"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-venture-vb-210-bass-cab-weighs-28-pounds-and-handles-300-watts-rms600-watts-program-power-8ω",
+      "name": "The Venture VB-210 bass cab weighs 28 pounds and handles 300 watts RMS/600 watts Program power (8Ω).",
+      "title_en": "The Venture VB-210 bass cab weighs 28 pounds and handles 300 watts RMS/600 watts Program power (8Ω).",
+      "title_he": "The Venture VB-210 bass cab weighs 28 pounds and handles 300 watts RMS/600 watts Program power (8Ω).",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Venture VB-210 b",
+        "thumbnail": "https://via.placeholder.com/100?text=The Ventur"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-venture-vb-115-bass-cab-weighs-34-pounds-and-handles-250-watts-rms500-watts-program-power-8ω",
+      "name": "The Venture VB-115 bass cab weighs 34 pounds and handles 250 watts RMS/500 watts Program power (8Ω).",
+      "title_en": "The Venture VB-115 bass cab weighs 34 pounds and handles 250 watts RMS/500 watts Program power (8Ω).",
+      "title_he": "The Venture VB-115 bass cab weighs 34 pounds and handles 250 watts RMS/500 watts Program power (8Ω).",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Venture VB-115 b",
+        "thumbnail": "https://via.placeholder.com/100?text=The Ventur"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-venture-vb-112-bass-cab-weighs-265-pounds-and-handles-250-watts-rms500-watts-program-power-8ω",
+      "name": "The Venture VB-112 bass cab weighs 26.5 pounds and handles 250 watts RMS/500 watts Program power (8Ω",
+      "title_en": "The Venture VB-112 bass cab weighs 26.5 pounds and handles 250 watts RMS/500 watts Program power (8Ω",
+      "title_he": "The Venture VB-112 bass cab weighs 26.5 pounds and handles 250 watts RMS/500 watts Program power (8Ω",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Venture VB-112 b",
+        "thumbnail": "https://via.placeholder.com/100?text=The Ventur"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-series-bass-heads-and-cabs",
+      "name": "Venture Series Bass Heads and Cabs",
+      "title_en": "Venture Series Bass Heads and Cabs",
+      "title_he": "Venture",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture Series Bass ",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture Se"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-powerful-eq-section",
+      "name": "Powerful EQ Section",
+      "title_en": "Powerful EQ Section",
+      "title_he": "Powerful EQ Section",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Powerful EQ Section",
+        "thumbnail": "https://via.placeholder.com/100?text=Powerful E"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sgt-overdrive-section",
+      "name": "SGT Overdrive Section",
+      "title_en": "SGT Overdrive Section",
+      "title_he": "SGT Overdrive Section",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SGT Overdrive Sectio",
+        "thumbnail": "https://via.placeholder.com/100?text=SGT Overdr"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-balanced-xlr-line-out",
+      "name": "Balanced XLR Line Out",
+      "title_en": "Balanced XLR Line Out",
+      "title_he": "Balanced XLR Line Out",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Balanced XLR Line Ou",
+        "thumbnail": "https://via.placeholder.com/100?text=Balanced X"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-effects-loop-with-mix-controlv7-v12-only",
+      "name": "Effects Loop with Mix Control(V7 & V12 only)",
+      "title_en": "Effects Loop with Mix Control(V7 & V12 only)",
+      "title_he": "Effects Loop with Mix Control(V7 & V12 only)",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Effects Loop with Mi",
+        "thumbnail": "https://via.placeholder.com/100?text=Effects Lo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-effects-loop-with-mix-control-v7-v12-only",
+      "name": "Effects Loop with Mix Control (V7 & V12 only)",
+      "title_en": "Effects Loop with Mix Control (V7 & V12 only)",
+      "title_he": "Effects Loop with Mix Control(V7 & V12 only)",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Effects Loop with Mi",
+        "thumbnail": "https://via.placeholder.com/100?text=Effects Lo"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-compressionv7-v12-only",
+      "name": "Compression(V7 & V12 only)",
+      "title_en": "Compression(V7 & V12 only)",
+      "title_he": "Effects Loop with Mix Control(V7 & V12 only)",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Compression(V7 & V12",
+        "thumbnail": "https://via.placeholder.com/100?text=Compressio"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-compression-v12-v7",
+      "name": "Compression (V12, V7)",
+      "title_en": "Compression (V12, V7)",
+      "title_he": "Compression (V12, V7)",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Compression (V12, V7",
+        "thumbnail": "https://via.placeholder.com/100?text=Compressio"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-additional-controls",
+      "name": "Additional Controls",
+      "title_en": "Additional Controls",
+      "title_he": "Additional Controls",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Additional Controls",
+        "thumbnail": "https://via.placeholder.com/100?text=Additional"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-additional-io",
+      "name": "Additional I/O",
+      "title_en": "Additional I/O",
+      "title_he": "Additional Controls",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Additional I/O",
+        "thumbnail": "https://via.placeholder.com/100?text=Additional"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-class-d-power",
+      "name": "Class D Power",
+      "title_en": "Class D Power",
+      "title_he": "Class D Power",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Class D Power",
+        "thumbnail": "https://via.placeholder.com/100?text=Class D Po"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-variable-high-frequency-attenuator",
+      "name": "Variable High-Frequency Attenuator",
+      "title_en": "Variable High-Frequency Attenuator",
+      "title_he": "Variable High-Frequency Attenuator",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Variable High-Freque",
+        "thumbnail": "https://via.placeholder.com/100?text=Variable H"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hear-venture-series",
+      "name": "HEAR VENTURE SERIES",
+      "title_en": "HEAR VENTURE SERIES",
+      "title_he": "Venture",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HEAR VENTURE SERIES",
+        "thumbnail": "https://via.placeholder.com/100?text=HEAR VENTU"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-click-play-to-hear-samples",
+      "name": "Click play to hear samples.",
+      "title_en": "Click play to hear samples.",
+      "title_he": "Click play to hear samples.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Click play to hear s",
+        "thumbnail": "https://via.placeholder.com/100?text=Click play"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-v12",
+      "name": "Venture V12",
+      "title_en": "Venture V12",
+      "title_he": "Compression (V12, V7)",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture V12",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture V1"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-v7",
+      "name": "Venture V7",
+      "title_en": "Venture V7",
+      "title_he": "Effects Loop with Mix Control(V7 & V12 only)",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture V7",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture V7"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-v3",
+      "name": "Venture V3",
+      "title_en": "Venture V3",
+      "title_he": "Venture V3",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture V3",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture V3"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-vb-88",
+      "name": "Venture VB-88",
+      "title_en": "Venture VB-88",
+      "title_he": "The Venture VB-88 bass cab weighs 67 pounds and handles 800 watts RMS/1600 watts Program power (4Ω).",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture VB-88",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture VB"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-vb-410",
+      "name": "Venture VB-410",
+      "title_en": "Venture VB-410",
+      "title_he": "Venture VB-410",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture VB-410",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture VB"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-vb-212",
+      "name": "Venture VB-212",
+      "title_en": "Venture VB-212",
+      "title_he": "Venture VB-212",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture VB-212",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture VB"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-vb-210",
+      "name": "Venture VB-210",
+      "title_en": "Venture VB-210",
+      "title_he": "The Venture VB-210 bass cab weighs 28 pounds and handles 300 watts RMS/600 watts Program power (8Ω).",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture VB-210",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture VB"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-vb-115",
+      "name": "Venture VB-115",
+      "title_en": "Venture VB-115",
+      "title_he": "The Venture VB-115 bass cab weighs 34 pounds and handles 250 watts RMS/500 watts Program power (8Ω).",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture VB-115",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture VB"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-venture-vb-112",
+      "name": "Venture VB-112",
+      "title_en": "Venture VB-112",
+      "title_he": "The Venture VB-112 bass cab weighs 26.5 pounds and handles 250 watts RMS/500 watts Program power (8Ω",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Venture VB-112",
+        "thumbnail": "https://via.placeholder.com/100?text=Venture VB"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-heritage-svt-cl-is-designed-and-assembled-in-the-usa-and-built-with-exceptional-components",
+      "name": "The Heritage SVT-CL is designed and assembled in the U.S.A., and built with exceptional components.",
+      "title_en": "The Heritage SVT-CL is designed and assembled in the U.S.A., and built with exceptional components.",
+      "title_he": "The Heritage SVT-CL is designed and assembled in the U.S.A., and built with exceptional components.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Heritage SVT-CL ",
+        "thumbnail": "https://via.placeholder.com/100?text=The Herita"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-heritage-svt-810e-is-fully-stocked-with-custom-made-10-eminence-usa-drivers-to-deliver-that",
+      "name": "The Heritage SVT-810E is fully stocked with custom-made 10\" Eminence U.S.A. drivers to deliver that",
+      "title_en": "The Heritage SVT-810E is fully stocked with custom-made 10\" Eminence U.S.A. drivers to deliver that",
+      "title_he": "The Heritage SVT-810E is fully stocked with custom-made 10\" Eminence U.S.A. drivers to deliver that",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Heritage SVT-810",
+        "thumbnail": "https://via.placeholder.com/100?text=The Herita"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-heritage-svt-810av-was-designed-to-match-the-50th-anniversary-svt-head-with-the-same-vintage-st",
+      "name": "The Heritage SVT-810AV was designed to match the 50th Anniversary SVT head, with the same vintage st",
+      "title_en": "The Heritage SVT-810AV was designed to match the 50th Anniversary SVT head, with the same vintage st",
+      "title_he": "The Heritage SVT-810AV was designed to match the 50th Anniversary SVT head, with the same vintage st",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Heritage SVT-810",
+        "thumbnail": "https://via.placeholder.com/100?text=The Herita"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-heritage-svt-410hlf-offers-custom-made-10-eminence-usa-drivers-and-is-ampegs-premium-full",
+      "name": "The Heritage SVT-410HLF offers custom-made 10\" Eminence U.S.A. drivers, and is Ampeg's premium, full",
+      "title_en": "The Heritage SVT-410HLF offers custom-made 10\" Eminence U.S.A. drivers, and is Ampeg's premium, full",
+      "title_he": "The Heritage SVT-410HLF offers custom-made 10\" Eminence U.S.A. drivers, and is Ampeg's premium, full",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The Heritage SVT-410",
+        "thumbnail": "https://via.placeholder.com/100?text=The Herita"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-best-of-the-best",
+      "name": "THE BEST OF THE BEST",
+      "title_en": "THE BEST OF THE BEST",
+      "title_he": "THE BEST OF THE BEST",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=THE BEST OF THE BEST",
+        "thumbnail": "https://via.placeholder.com/100?text=THE BEST O"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-heritage-50th-anniversary-svt",
+      "name": "Heritage 50th Anniversary SVT",
+      "title_en": "Heritage 50th Anniversary SVT",
+      "title_he": "Heritage 50th Anniversary SVT",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Heritage 50th Annive",
+        "thumbnail": "https://via.placeholder.com/100?text=Heritage 5"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hsvt-cl",
+      "name": "HSVT-CL",
+      "title_en": "HSVT-CL",
+      "title_he": "HSVT-CL",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HSVT-CL",
+        "thumbnail": "https://via.placeholder.com/100?text=HSVT-CL"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hsvt-810e",
+      "name": "HSVT-810E",
+      "title_en": "HSVT-810E",
+      "title_he": "HSVT-810E",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HSVT-810E",
+        "thumbnail": "https://via.placeholder.com/100?text=HSVT-810E"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hsvt-810av",
+      "name": "HSVT-810AV",
+      "title_en": "HSVT-810AV",
+      "title_he": "HSVT-810AV",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HSVT-810AV",
+        "thumbnail": "https://via.placeholder.com/100?text=HSVT-810AV"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-hsvt-410hlf",
+      "name": "HSVT-410HLF",
+      "title_en": "HSVT-410HLF",
+      "title_he": "HSVT-410HLF",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=HSVT-410HLF",
+        "thumbnail": "https://via.placeholder.com/100?text=HSVT-410HL"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-svt-cl-is-an-all-tube-bass-amp-that-delivers-300-watts-of-classic-bass-tone-the-svt-cl-is-the-d",
+      "name": "The SVT-CL is an all-tube bass amp that delivers 300-watts of classic bass tone. The SVT-CL is the d",
+      "title_en": "The SVT-CL is an all-tube bass amp that delivers 300-watts of classic bass tone. The SVT-CL is the d",
+      "title_he": "The SVT-CL is an all-tube bass amp that delivers 300-watts of classic bass tone. The SVT-CL is the d",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The SVT-CL is an all",
+        "thumbnail": "https://via.placeholder.com/100?text=The SVT-CL"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-svt-15e-has-a-custom-designed-15-speaker-that-generates-low-end-like-nobodys-businessall-the",
+      "name": "The SVT-15E has a custom-designed 15\" speaker that generates low end like nobody’s business—all the",
+      "title_en": "The SVT-15E has a custom-designed 15\" speaker that generates low end like nobody’s business—all the",
+      "title_he": "The SVT-15E has a custom-designed 15\" speaker that generates low end like nobody’s business—all the",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The SVT-15E has a cu",
+        "thumbnail": "https://via.placeholder.com/100?text=The SVT-15"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-svt-212av-features-2x12-custom-eminencelf-drivers-and-a-1-compression-driver-with-3-way-level",
+      "name": "The SVT-212AV features 2x12\" custom Eminence®LF drivers and a 1\" compression driver with 3-way level",
+      "title_en": "The SVT-212AV features 2x12\" custom Eminence®LF drivers and a 1\" compression driver with 3-way level",
+      "title_he": "The SVT-212AV features 2x12\" custom Eminence®LF drivers and a 1\" compression driver with 3-way level",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The SVT-212AV featur",
+        "thumbnail": "https://via.placeholder.com/100?text=The SVT-21"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-svt-210av-is-ideal-situations-where-traditional-cabinets-can-be-too-loud-or-too-large-the-svt-2",
+      "name": "The SVT-210AV is ideal situations where traditional cabinets can be too loud or too large. The SVT-2",
+      "title_en": "The SVT-210AV is ideal situations where traditional cabinets can be too loud or too large. The SVT-2",
+      "title_he": "The SVT-210AV is ideal situations where traditional cabinets can be too loud or too large. The SVT-2",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The SVT-210AV is ide",
+        "thumbnail": "https://via.placeholder.com/100?text=The SVT-21"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-svt-112av-features-a-12-custom-eminence-lf-driver-and-a-1-compression-driver-with-3-way-level",
+      "name": "The SVT-112AV features a 12\" custom Eminence LF driver and a 1\" compression driver with 3-way level",
+      "title_en": "The SVT-112AV features a 12\" custom Eminence LF driver and a 1\" compression driver with 3-way level",
+      "title_he": "The SVT-112AV features a 12\" custom Eminence LF driver and a 1\" compression driver with 3-way level",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The SVT-112AV featur",
+        "thumbnail": "https://via.placeholder.com/100?text=The SVT-11"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-a-rite-of-passage",
+      "name": "A RITE OF PASSAGE",
+      "title_en": "A RITE OF PASSAGE",
+      "title_he": "A RITE OF PASSAGE",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=A RITE OF PASSAGE",
+        "thumbnail": "https://via.placeholder.com/100?text=A RITE OF "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-cl",
+      "name": "SVT-CL",
+      "title_en": "SVT-CL",
+      "title_he": "SVT-CL",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-CL",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-CL"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-810e",
+      "name": "SVT-810E",
+      "title_en": "SVT-810E",
+      "title_he": "The Heritage SVT-810E is fully stocked with custom-made 10\" Eminence U.S.A. drivers to deliver that",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-810E",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-810E"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-610hlf",
+      "name": "SVT-610HLF",
+      "title_en": "SVT-610HLF",
+      "title_he": "SVT-610HLF",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-610HLF",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-610HLF"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-410hlf",
+      "name": "SVT-410HLF",
+      "title_en": "SVT-410HLF",
+      "title_he": "The Heritage SVT-410HLF offers custom-made 10\" Eminence U.S.A. drivers, and is Ampeg's premium, full",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-410HLF",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-410HLF"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-15e",
+      "name": "SVT-15E",
+      "title_en": "SVT-15E",
+      "title_he": "The SVT-15E has a custom-designed 15\" speaker that generates low end like nobody’s business—all the",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-15E",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-15E"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-810av",
+      "name": "SVT-810AV",
+      "title_en": "SVT-810AV",
+      "title_he": "The Heritage SVT-810AV was designed to match the 50th Anniversary SVT head, with the same vintage st",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-810AV",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-810AV"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-212av",
+      "name": "SVT-212AV",
+      "title_en": "SVT-212AV",
+      "title_he": "The SVT-212AV features 2x12\" custom Eminence®LF drivers and a 1\" compression driver with 3-way level",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-212AV",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-212AV"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-210av",
+      "name": "SVT-210AV",
+      "title_en": "SVT-210AV",
+      "title_he": "The SVT-210AV is ideal situations where traditional cabinets can be too loud or too large. The SVT-2",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-210AV",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-210AV"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-112av",
+      "name": "SVT-112AV",
+      "title_en": "SVT-112AV",
+      "title_he": "The SVT-112AV features a 12\" custom Eminence LF driver and a 1\" compression driver with 3-way level",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-112AV",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-112AV"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-mini-masterpiece",
+      "name": "MINI MASTERPIECE",
+      "title_en": "MINI MASTERPIECE",
+      "title_he": "MINI MASTERPIECE",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MINI MASTERPIECE",
+        "thumbnail": "https://via.placeholder.com/100?text=MINI MASTE"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-vr-stack",
+      "name": "MICRO-VR STACK",
+      "title_en": "MICRO-VR STACK",
+      "title_he": "MICRO-VR STACK",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MICRO-VR STACK",
+        "thumbnail": "https://via.placeholder.com/100?text=MICRO-VR S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-vr-head",
+      "name": "MICRO-VR HEAD",
+      "title_en": "MICRO-VR HEAD",
+      "title_he": "MICRO-VR STACK",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MICRO-VR HEAD",
+        "thumbnail": "https://via.placeholder.com/100?text=MICRO-VR H"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-210av-cabinet",
+      "name": "SVT-210AV CABINET",
+      "title_en": "SVT-210AV CABINET",
+      "title_he": "The SVT-210AV is ideal situations where traditional cabinets can be too loud or too large. The SVT-2",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-210AV CABINET",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-210AV "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-cl-stack",
+      "name": "MICRO-CL STACK",
+      "title_en": "MICRO-CL STACK",
+      "title_he": "MICRO-CL STACK",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MICRO-CL STACK",
+        "thumbnail": "https://via.placeholder.com/100?text=MICRO-CL S"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-micro-cl-head",
+      "name": "MICRO-CL HEAD",
+      "title_en": "MICRO-CL HEAD",
+      "title_he": "MICRO-CL STACK",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MICRO-CL HEAD",
+        "thumbnail": "https://via.placeholder.com/100?text=MICRO-CL H"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-mc-210e-cabinet",
+      "name": "MC-210E CABINET",
+      "title_en": "MC-210E CABINET",
+      "title_he": "MC-210E CABINET",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MC-210E CABINET",
+        "thumbnail": "https://via.placeholder.com/100?text=MC-210E CA"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-pf-410hlf-is-an-800-watt-8ω-bass-enclosure-featuring-four-10-eminence-speakers-and-a-selectabl",
+      "name": "The PF-410HLF is an 800-watt, 8Ω bass enclosure featuring four 10\" Eminence speakers and a selectabl",
+      "title_en": "The PF-410HLF is an 800-watt, 8Ω bass enclosure featuring four 10\" Eminence speakers and a selectabl",
+      "title_he": "The PF-410HLF is an 800-watt, 8Ω bass enclosure featuring four 10\" Eminence speakers and a selectabl",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The PF-410HLF is an ",
+        "thumbnail": "https://via.placeholder.com/100?text=The PF-410"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-retro-vibe-modern-features-exceptional-portability",
+      "name": "Retro Vibe, Modern Features, Exceptional Portability",
+      "title_en": "Retro Vibe, Modern Features, Exceptional Portability",
+      "title_he": "The Heritage SVT-CL is designed and assembled in the U.S.A., and built with exceptional components.",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=Retro Vibe, Modern F",
+        "thumbnail": "https://via.placeholder.com/100?text=Retro Vibe"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pf-50t-and-pf-20t",
+      "name": "PF-50T and PF-20T",
+      "title_en": "PF-50T and PF-20T",
+      "title_he": "PF-50T and PF-20T",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PF-50T and PF-20T",
+        "thumbnail": "https://via.placeholder.com/100?text=PF-50T and"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-modern-sound-legacy-looks",
+      "name": "MODERN SOUND, LEGACY LOOKS",
+      "title_en": "MODERN SOUND, LEGACY LOOKS",
+      "title_he": "MODERN SOUND, LEGACY LOOKS",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=MODERN SOUND, LEGACY",
+        "thumbnail": "https://via.placeholder.com/100?text=MODERN SOU"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pf-50t",
+      "name": "PF-50T",
+      "title_en": "PF-50T",
+      "title_he": "PF-50T and PF-20T",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PF-50T",
+        "thumbnail": "https://via.placeholder.com/100?text=PF-50T"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pf-20t",
+      "name": "PF-20T",
+      "title_en": "PF-20T",
+      "title_he": "PF-20T",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PF-20T",
+        "thumbnail": "https://via.placeholder.com/100?text=PF-20T"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pf-410hlf",
+      "name": "PF-410HLF",
+      "title_en": "PF-410HLF",
+      "title_he": "The PF-410HLF is an 800-watt, 8Ω bass enclosure featuring four 10\" Eminence speakers and a selectabl",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PF-410HLF",
+        "thumbnail": "https://via.placeholder.com/100?text=PF-410HLF"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pf-210he",
+      "name": "PF-210HE",
+      "title_en": "PF-210HE",
+      "title_he": "PF-210HE",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PF-210HE",
+        "thumbnail": "https://via.placeholder.com/100?text=PF-210HE"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pf-115he",
+      "name": "PF-115HE",
+      "title_en": "PF-115HE",
+      "title_he": "PF-115HE",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PF-115HE",
+        "thumbnail": "https://via.placeholder.com/100?text=PF-115HE"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-the-svt-3pro-offers-svt-tone-and-performance-with-a-few-modern-enhancements-in-a-convenient-2u-rac",
+      "name": "The SVT-3PRO offers SVT tone and performance (with a few modern enhancements) in a convenient 2U rac",
+      "title_en": "The SVT-3PRO offers SVT tone and performance (with a few modern enhancements) in a convenient 2U rac",
+      "title_he": "The SVT-3PRO offers SVT tone and performance (with a few modern enhancements) in a convenient 2U rac",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=The SVT-3PRO offers ",
+        "thumbnail": "https://via.placeholder.com/100?text=The SVT-3P"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-pro-series",
+      "name": "PRO SERIES",
+      "title_en": "PRO SERIES",
+      "title_he": "Pro Neo Series",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=PRO SERIES",
+        "thumbnail": "https://via.placeholder.com/100?text=PRO SERIES"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-sculpt-your-sound",
+      "name": "SCULPT YOUR SOUND",
+      "title_en": "SCULPT YOUR SOUND",
+      "title_he": "SCULPT YOUR SOUND",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SCULPT YOUR SOUND",
+        "thumbnail": "https://via.placeholder.com/100?text=SCULPT YOU"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-do-it-all-flexibility",
+      "name": "DO-IT-ALL FLEXIBILITY",
+      "title_en": "DO-IT-ALL FLEXIBILITY",
+      "title_he": "DO-IT-ALL FLEXIBILITY",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=DO-IT-ALL FLEXIBILIT",
+        "thumbnail": "https://via.placeholder.com/100?text=DO-IT-ALL "
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-7pro",
+      "name": "SVT-7PRO",
+      "title_en": "SVT-7PRO",
+      "title_he": "SVT-7PRO",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-7PRO",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-7PRO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-4pro",
+      "name": "SVT-4PRO",
+      "title_en": "SVT-4PRO",
+      "title_he": "SVT-4PRO",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-4PRO",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-4PRO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    },
+    {
+      "id": "unknown-svt-3pro",
+      "name": "SVT-3PRO",
+      "title_en": "SVT-3PRO",
+      "title_he": "The SVT-3PRO offers SVT tone and performance (with a few modern enhancements) in a convenient 2U rac",
+      "description": "",
+      "specs": {},
+      "currency": "ILS",
+      "images": {
+        "main": "https://via.placeholder.com/400?text=SVT-3PRO",
+        "thumbnail": "https://via.placeholder.com/100?text=SVT-3PRO"
+      },
+      "documentation": {},
+      "source": "PRIMARY",
+      "confidence_score": 1.0,
+      "source_details": {
+        "content": "brand_website",
+        "pricing": "halilit",
+        "sku": "halilit"
+      }
+    }
+  ],
+  "metadata": {
+    "source_strategy": "brand-website-first",
+    "brand_products": 141,
+    "halilit_products": 141,
+    "unified_products": 141,
+    "primary_count": 140,
+    "secondary_count": 1,
+    "halilit_only_count": 0,
+    "timestamp": "2026-01-16T02:01:12.914360"
+  }
+}

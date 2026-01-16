@@ -1,0 +1,239 @@
+{
+  "timestamp": "2026-01-16T02:01:12.892077",
+  "strategy": "Brand-Website-First with Halilit Price/SKU",
+  "total_brands": 38,
+  "total_products": 4246,
+  "primary_products": 1682,
+  "secondary_products": 751,
+  "halilit_only_products": 1813,
+  "brands": {
+    "adam-audio": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 26,
+      "images_added": 0
+    },
+    "adams": {
+      "primary": 6,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 6
+    },
+    "akai-professional": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 35,
+      "images_added": 0
+    },
+    "allen-heath": {
+      "primary": 0,
+      "secondary": 10,
+      "halilit_only": 0,
+      "images_added": 10
+    },
+    "alto-professional": {
+      "primary": 177,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 177
+    },
+    "ampeg": {
+      "primary": 140,
+      "secondary": 1,
+      "halilit_only": 0,
+      "images_added": 141
+    },
+    "amphion": {
+      "primary": 113,
+      "secondary": 1,
+      "halilit_only": 0,
+      "images_added": 114
+    },
+    "ashdown-engineering": {
+      "primary": 129,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 129
+    },
+    "austrian-audio": {
+      "primary": 59,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 59
+    },
+    "avid": {
+      "primary": 73,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 73
+    },
+    "boss": {
+      "primary": 401,
+      "secondary": 137,
+      "halilit_only": 119,
+      "images_added": 0
+    },
+    "breedlove-guitars": {
+      "primary": 3,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 3
+    },
+    "cordoba-guitars": {
+      "primary": 98,
+      "secondary": 1,
+      "halilit_only": 0,
+      "images_added": 99
+    },
+    "dixon": {
+      "primary": 0,
+      "secondary": 8,
+      "halilit_only": 0,
+      "images_added": 8
+    },
+    "dynaudio": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 22,
+      "images_added": 0
+    },
+    "encore": {
+      "primary": 0,
+      "secondary": 6,
+      "halilit_only": 0,
+      "images_added": 6
+    },
+    "esp": {
+      "primary": 71,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 71
+    },
+    "eve-audio": {
+      "primary": 10,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 10
+    },
+    "fusion": {
+      "primary": 48,
+      "secondary": 1,
+      "halilit_only": 0,
+      "images_added": 49
+    },
+    "gon-bops": {
+      "primary": 36,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 36
+    },
+    "guild": {
+      "primary": 32,
+      "secondary": 2,
+      "halilit_only": 0,
+      "images_added": 34
+    },
+    "headrush-fx": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 4,
+      "images_added": 0
+    },
+    "heritage-audio": {
+      "primary": 121,
+      "secondary": 2,
+      "halilit_only": 0,
+      "images_added": 123
+    },
+    "hiwatt": {
+      "primary": 0,
+      "secondary": 7,
+      "halilit_only": 0,
+      "images_added": 7
+    },
+    "krk-systems": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 17,
+      "images_added": 0
+    },
+    "m-audio": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 312,
+      "images_added": 0
+    },
+    "mackie": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 219,
+      "images_added": 0
+    },
+    "nord": {
+      "primary": 13,
+      "secondary": 0,
+      "halilit_only": 27,
+      "images_added": 0
+    },
+    "oberheim": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 6,
+      "images_added": 0
+    },
+    "paiste-cymbals": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 151,
+      "images_added": 0
+    },
+    "pearl": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 364,
+      "images_added": 0
+    },
+    "presonus": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 106,
+      "images_added": 0
+    },
+    "rcf": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 74,
+      "images_added": 0
+    },
+    "remo": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 224,
+      "images_added": 0
+    },
+    "rogers": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 9,
+      "images_added": 0
+    },
+    "roland": {
+      "primary": 16,
+      "secondary": 575,
+      "halilit_only": 70,
+      "images_added": 0
+    },
+    "universal-audio": {
+      "primary": 136,
+      "secondary": 0,
+      "halilit_only": 0,
+      "images_added": 136
+    },
+    "xotic": {
+      "primary": 0,
+      "secondary": 0,
+      "halilit_only": 28,
+      "images_added": 0
+    }
+  }
+}

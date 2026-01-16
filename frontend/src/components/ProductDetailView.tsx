@@ -174,7 +174,7 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
           <div className="flex-shrink-0 text-right">
             <PriceDisplay price={product.price} />
             <div className="mt-3 text-sm">
-              <ConfidenceMeter score={product.score} />
+              <ConfidenceMeter score={product.score} price={product.price} />
             </div>
           </div>
         </div>

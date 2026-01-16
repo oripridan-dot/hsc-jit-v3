@@ -1,0 +1,732 @@
+{
+  "brand_id": "boss",
+  "total_scraped": 66,
+  "compliant_count": 57,
+  "compliance_rate": 0.8636363636363636,
+  "products": [
+    {
+      "id": "boss-XS-1\nPoly-Shifter",
+      "brand": "boss",
+      "name": "XS-1\nPoly Shifter",
+      "category": "Poly Shifter",
+      "description": "XS-1: Poly Shifter - Rapid Retuning, Flawless Sound",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/xs-1_main.jpg",
+      "specs": {
+        "tagline": "Rapid Retuning, Flawless Sound"
+      },
+      "source_url": "https://www.boss.info/us/products/xs-1/"
+    },
+    {
+      "id": "boss-GX-1\nGuitar-Effects-Processor",
+      "brand": "boss",
+      "name": "GX-1\nGuitar Effects Processor",
+      "category": "Guitar Effects Processor",
+      "description": "GX-1: Guitar Effects Processor - Your Ultimate Guitar Companion",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/gx-1_top_main.jpg",
+      "specs": {
+        "tagline": "Your Ultimate Guitar Companion"
+      },
+      "source_url": "https://www.boss.info/us/products/gx-1/"
+    },
+    {
+      "id": "boss-FS-5U/FS-5L",
+      "brand": "boss",
+      "name": "FS-5U/FS-5L",
+      "category": "Foot Switch -",
+      "description": "FS-5U/FS-5L: Foot Switch - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/fs_5u_angle_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/fs-5u_5l/"
+    },
+    {
+      "id": "boss-BMIDI-1-35\nMIDI-Cable",
+      "brand": "boss",
+      "name": "BMIDI-1-35\nMIDI Cable",
+      "category": "Midi Cable",
+      "description": "BMIDI-1-35: MIDI Cable - Maximize the Power of Your BOSS Gear with MIDI Connectivity",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bmidi-1-35_main.jpg",
+      "specs": {
+        "tagline": "Maximize the Power of Your BOSS Gear with MIDI Connectivity"
+      },
+      "source_url": "https://www.boss.info/us/products/bmidi-1-35/"
+    },
+    {
+      "id": "boss-GX-100\nGuitar-Effects-Processor",
+      "brand": "boss",
+      "name": "GX-100\nGuitar Effects Processor",
+      "category": "Guitar Effects Processor",
+      "description": "GX-100: Guitar Effects Processor - Color Your Music with Inspiring Tone",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/gx-100_main.jpg",
+      "specs": {
+        "tagline": "Color Your Music with Inspiring Tone"
+      },
+      "source_url": "https://www.boss.info/us/products/gx-100/"
+    },
+    {
+      "id": "boss-BSB-20-BLK",
+      "brand": "boss",
+      "name": "BSB-20-BLK",
+      "category": "Instrument Strap -",
+      "description": "BSB-20-BLK: Instrument Strap - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bsb-20-blk_knot_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bsb-20-blk/"
+    },
+    {
+      "id": "boss-BMIDI-5-35",
+      "brand": "boss",
+      "name": "BMIDI-5-35",
+      "category": "Midi Cable",
+      "description": "BMIDI-5-35: MIDI Cable - MIDI cable with 3.5 mm TRS and straight 5-pin connectors",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bmidi-5-35_main.jpg",
+      "specs": {
+        "tagline": "MIDI cable with 3.5 mm TRS and straight 5-pin connectors"
+      },
+      "source_url": "https://www.boss.info/us/products/bmidi-5-35/"
+    },
+    {
+      "id": "boss-BSH-20-NAT",
+      "brand": "boss",
+      "name": "BSH-20-NAT",
+      "category": "Instrument Strap -",
+      "description": "BSH-20-NAT: Instrument Strap - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bsh-20-nat_knot_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bsh-20-nat/"
+    },
+    {
+      "id": "boss-GX-1B\nBass-Effects-Processor",
+      "brand": "boss",
+      "name": "GX-1B\nBass Effects Processor",
+      "category": "Bass Effects Processor",
+      "description": "GX-1B: Bass Effects Processor - Your Ultimate Bass Companion",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/gx-1b_top_main.jpg",
+      "specs": {
+        "tagline": "Your Ultimate Bass Companion"
+      },
+      "source_url": "https://www.boss.info/us/products/gx-1b/"
+    },
+    {
+      "id": "boss-EV-30",
+      "brand": "boss",
+      "name": "EV-30",
+      "category": "Dual Expression Pedal",
+      "description": "EV-30: Dual Expression Pedal - Big Expression in a Small Footprint",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/ev-30_main.jpg",
+      "specs": {
+        "tagline": "Big Expression in a Small Footprint"
+      },
+      "source_url": "https://www.boss.info/us/products/ev-30/"
+    },
+    {
+      "id": "boss-FS-1-WL\nWireless-Footswitch",
+      "brand": "boss",
+      "name": "FS-1-WL\nWireless Footswitch",
+      "category": "Wireless Footswitch",
+      "description": "FS-1-WL: Wireless Footswitch - Wireless Foot Control for Digital Music Scores, YouTube, DAWs, Instruments, and Beyond",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/fs-1-wl_main.jpg",
+      "specs": {
+        "tagline": "Wireless Foot Control for Digital Music Scores, YouTube, DAWs, Instruments, and Beyond"
+      },
+      "source_url": "https://www.boss.info/us/products/fs-1-wl/"
+    },
+    {
+      "id": "boss-FS-6",
+      "brand": "boss",
+      "name": "FS-6",
+      "category": "Dual Footswitch",
+      "description": "FS-6: Dual Footswitch - Double Your Switching Power",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/fs_6_top_main.jpg",
+      "specs": {
+        "tagline": "Double Your Switching Power"
+      },
+      "source_url": "https://www.boss.info/us/products/fs-6/"
+    },
+    {
+      "id": "boss-GT-1000\nGuitar-Effects-Processor",
+      "brand": "boss",
+      "name": "GT-1000\nGuitar Effects Processor",
+      "category": "Guitar Effects Processor",
+      "description": "GT-1000: Guitar Effects Processor - Industry-Leading Tone with Breakthrough BOSS Technology",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/gt-1000_main.jpg",
+      "specs": {
+        "tagline": "Industry-Leading Tone with Breakthrough BOSS Technology"
+      },
+      "source_url": "https://www.boss.info/us/products/gt-1000/"
+    },
+    {
+      "id": "boss-EURUS-GS-1\nElectronic-Guitar",
+      "brand": "boss",
+      "name": "EURUS GS-1\nElectronic Guitar",
+      "category": "Electronic Guitar",
+      "description": "EURUS GS-1: Electronic Guitar - A Bold New Voice for Sound Innovators",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/eurus_gs-1_main.jpg",
+      "specs": {
+        "tagline": "A Bold New Voice for Sound Innovators"
+      },
+      "source_url": "https://www.boss.info/us/products/eurus_gs-1/"
+    },
+    {
+      "id": "boss-CB-BU10\nUtility-Gig-Bag",
+      "brand": "boss",
+      "name": "CB-BU10\nUtility Gig Bag",
+      "category": "Utility Gig Bag",
+      "description": "CB-BU10: Utility Gig Bag - The Ultimate Utility Bag for Your Music Gear",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/cb-bu10_main.jpg",
+      "specs": {
+        "tagline": "The Ultimate Utility Bag for Your Music Gear"
+      },
+      "source_url": "https://www.boss.info/us/products/cb-bu10/"
+    },
+    {
+      "id": "boss-BRIDGE-CAST",
+      "brand": "boss",
+      "name": "BRIDGE CAST",
+      "category": "Dual Bus Gaming Mixer",
+      "description": "BRIDGE CAST: Dual Bus Gaming Mixer - Pro Sound for Pro Gamers",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bridge_cast_top_main.jpg",
+      "specs": {
+        "tagline": "Pro Sound for Pro Gamers"
+      },
+      "source_url": "https://www.roland.com/us/products/bridge_cast/"
+    },
+    {
+      "id": "boss-BCK-6",
+      "brand": "boss",
+      "name": "BCK-6",
+      "category": "Solderless Pedalboard Cable Kit",
+      "description": "BCK-6: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bck-6_package_front_main.jpg",
+      "specs": {
+        "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
+      },
+      "source_url": "https://www.boss.info/us/products/bck-6/"
+    },
+    {
+      "id": "boss-BSS-25-BLK",
+      "brand": "boss",
+      "name": "BSS-25-BLK",
+      "category": "Instrument Strap -",
+      "description": "BSS-25-BLK: Instrument Strap - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bss-25-blk_knot_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bss-25-blk/"
+    },
+    {
+      "id": "boss-TR-1000-RHYTHM-CREATOR",
+      "brand": "boss",
+      "name": "TR-1000 RHYTHM CREATOR",
+      "category": "Rhythm Creator",
+      "description": "TR-1000: Rhythm Creator - Tomorrow Returns",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/tr-1000_top_main.jpg",
+      "specs": {
+        "tagline": "Tomorrow Returns"
+      },
+      "source_url": "https://www.roland.com/us/products/tr-1000/"
+    },
+    {
+      "id": "boss-BIC-10A\nInstrument-Cable",
+      "brand": "boss",
+      "name": "BIC-10A\nInstrument Cable",
+      "category": "Instrument Cable",
+      "description": "BIC-10A: Instrument Cable - Instrument Cable with Straight and Right-Angle Connectors",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bic-10a_main.jpg",
+      "specs": {
+        "tagline": "Instrument Cable with Straight and Right-Angle Connectors"
+      },
+      "source_url": "https://www.boss.info/us/products/bic-10a/"
+    },
+    {
+      "id": "boss-CB-BM-M\nMulti-Effects-Case",
+      "brand": "boss",
+      "name": "CB-BM-M\nMulti-Effects Case",
+      "category": "Multi-Effects Case",
+      "description": "CB-BM-M: Multi-Effects Case - Stylish Case for the GT-1000, GX-100, ME-90, and ME-90B",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/cb-bm-m_main.jpg",
+      "specs": {
+        "tagline": "Stylish Case for the GT-1000, GX-100, ME-90, and ME-90B"
+      },
+      "source_url": "https://www.boss.info/us/products/cb-bm-m/"
+    },
+    {
+      "id": "boss-BPC-4\nPatch-Cable",
+      "brand": "boss",
+      "name": "BPC-4\nPatch Cable",
+      "category": "Patch Cable",
+      "description": "BPC-4: Patch Cable - Space-Saving Pedal Patch Cable with Slimline Pancake Plugs",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bpc-4_main.jpg",
+      "specs": {
+        "tagline": "Space-Saving Pedal Patch Cable with Slimline Pancake Plugs"
+      },
+      "source_url": "https://www.boss.info/us/products/bpc-4/"
+    },
+    {
+      "id": "boss-BSL-25-BLK",
+      "brand": "boss",
+      "name": "BSL-25-BLK",
+      "category": "Instrument Strap -",
+      "description": "BSL-25-BLK: Instrument Strap - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bsl-25-blk_knot_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bsl-25-blk/"
+    },
+    {
+      "id": "boss-BSL-25-BRN",
+      "brand": "boss",
+      "name": "BSL-25-BRN",
+      "category": "Instrument Strap -",
+      "description": "BSL-25-BRN: Instrument Strap - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bsl-25-brn_knot_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bsl-25-brn/"
+    },
+    {
+      "id": "boss-CB-ME80",
+      "brand": "boss",
+      "name": "CB-ME80",
+      "category": "Boss Me-90/Me-80/Gt-1000/Gx-100 Bag",
+      "description": "CB-ME80: BOSS ME-90/ME-80/GT-1000/GX-100 Bag - Custom Bag for the BOSS ME-90/ME-80/GT-1000/GX-100",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/cb-me80_angle_main.jpg",
+      "specs": {
+        "tagline": "Custom Bag for the BOSS ME-90/ME-80/GT-1000/GX-100"
+      },
+      "source_url": "https://www.boss.info/us/products/cb-me80/"
+    },
+    {
+      "id": "boss-FSC-10\nFootswitch-Cap",
+      "brand": "boss",
+      "name": "FSC-10\nFootswitch Cap",
+      "category": "Footswitch Cap",
+      "description": "FSC-10: Footswitch Cap - High-Quality Footswitch Cap for Select BOSS Products",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/fsc-10_top_main.jpg",
+      "specs": {
+        "tagline": "High-Quality Footswitch Cap for Select BOSS Products"
+      },
+      "source_url": "https://www.boss.info/us/products/fsc-10/"
+    },
+    {
+      "id": "boss-ME-90B\nBass-Multiple-Effects",
+      "brand": "boss",
+      "name": "ME-90B\nBass Multiple Effects",
+      "category": "Bass Multiple Effects",
+      "description": "ME-90B: Bass Multiple Effects - Create and Perform in the Moment",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/me-90b_main.jpg",
+      "specs": {
+        "tagline": "Create and Perform in the Moment"
+      },
+      "source_url": "https://www.boss.info/us/products/me-90b/"
+    },
+    {
+      "id": "boss-BCC-3-TRA\nInterconnect-Cable",
+      "brand": "boss",
+      "name": "BCC-3-TRA\nInterconnect Cable",
+      "category": "Interconnect Cable",
+      "description": "BCC-3-TRA: Interconnect Cable - Stage-Ready TRS Cable for Footswitches, Expression Pedals, and Audio Connections",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bcc-3-tra_main.jpg",
+      "specs": {
+        "tagline": "Stage-Ready TRS Cable for Footswitches, Expression Pedals, and Audio Connections"
+      },
+      "source_url": "https://www.boss.info/us/products/bcc-3-tra/"
+    },
+    {
+      "id": "boss-GT-1000CORE\nGuitar-Effects-Processor",
+      "brand": "boss",
+      "name": "GT-1000CORE\nGuitar Effects Processor",
+      "category": "Guitar Effects Processor",
+      "description": "GT-1000CORE: Guitar Effects Processor - The Core of Your Creative Vision",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/gt-1000core_main.jpg",
+      "specs": {
+        "tagline": "The Core of Your Creative Vision"
+      },
+      "source_url": "https://www.boss.info/us/products/gt-1000core/"
+    },
+    {
+      "id": "boss-Vereinfachen-Sie-die-Cookies-Compliance-und-das-Einwilligungsmanagement",
+      "brand": "boss",
+      "name": "Vereinfachen Sie die Cookies-Compliance und das Einwilligungsmanagement",
+      "category": "Decken Sie Versteckte Tracker Auf, Maximieren Sie Ihre Opt-In-Raten Und Stellen Sie Sicher, Dass Sie Die Datenschutzbestimmungen Einhalten.",
+      "description": "Verwalten Sie Cookie-Einwilligungen auf Ihren Websites: Decken Sie versteckte Tracker auf, maximieren Sie Ihre Opt-In-Raten und stellen Sie sicher, dass Sie die Datenschutzbestimmungen einhalten.",
+      "msrp": null,
+      "image_url": "/content/dam/onetrust/OT-thumbnail-OneTrust-green-gradient.png",
+      "specs": {},
+      "source_url": "https://www.onetrust.com/de/products/cookie-consent/"
+    },
+    {
+      "id": "boss-PS-6",
+      "brand": "boss",
+      "name": "PS-6",
+      "category": "Harmonist",
+      "description": "PS-6: Harmonist - Four Intelligent Pitch Effects in a Stompbox",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/ps-6_top_main.jpg",
+      "specs": {
+        "tagline": "Four Intelligent Pitch Effects in a Stompbox"
+      },
+      "source_url": "https://www.boss.info/us/products/ps-6/"
+    },
+    {
+      "id": "boss-NEXTONE-SPECIAL\nGuitar-Amplifier",
+      "brand": "boss",
+      "name": "NEXTONE SPECIAL\nGuitar Amplifier",
+      "category": "Guitar Amplifier",
+      "description": "Nextone Special: Guitar Amplifier - A Modern Boutique Experience for Serious Players",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/nextone_special_main.jpg",
+      "specs": {
+        "tagline": "A Modern Boutique Experience for Serious Players"
+      },
+      "source_url": "https://www.boss.info/us/products/nextone_special/"
+    },
+    {
+      "id": "boss-BIC-PC\nInstrument-Cable",
+      "brand": "boss",
+      "name": "BIC-PC\nInstrument Cable",
+      "category": "Instrument Cable",
+      "description": "BIC-PC: Instrument Cable - Short Patch Cable for Compact Pedals",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bic-pc_main.jpg",
+      "specs": {
+        "tagline": "Short Patch Cable for Compact Pedals"
+      },
+      "source_url": "https://www.boss.info/us/products/bic-pc/"
+    },
+    {
+      "id": "boss-BSC-20-BLK",
+      "brand": "boss",
+      "name": "BSC-20-BLK",
+      "category": "Instrument Strap -",
+      "description": "BSC-20-BLK: Instrument Strap - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bsc-20-blk_knot_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bsc-20-blk/"
+    },
+    {
+      "id": "boss-XS-100\nPoly-Shifter",
+      "brand": "boss",
+      "name": "XS-100\nPoly Shifter",
+      "category": "Poly Shifter",
+      "description": "XS-100: Poly Shifter - Unrivaled Dynamic Pitch Expression",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/xs-100_main.jpg",
+      "specs": {
+        "tagline": "Unrivaled Dynamic Pitch Expression"
+      },
+      "source_url": "https://www.boss.info/us/products/xs-100/"
+    },
+    {
+      "id": "boss-BCK-24\nSolderless-Pedalboard-Cable-Kit",
+      "brand": "boss",
+      "name": "BCK-24\nSolderless Pedalboard Cable Kit",
+      "category": "Solderless Pedalboard Cable Kit",
+      "description": "BCK-24: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bck-24_package_front_main.jpg",
+      "specs": {
+        "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
+      },
+      "source_url": "https://www.boss.info/us/products/bck-24/"
+    },
+    {
+      "id": "boss-ME-90\nGuitar-Multiple-Effects",
+      "brand": "boss",
+      "name": "ME-90\nGuitar Multiple Effects",
+      "category": "Guitar Multiple Effects",
+      "description": "ME-90: Guitar Multiple Effects - Dial in Professional Sounds in Seconds",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/me-90_main.jpg",
+      "specs": {
+        "tagline": "Dial in Professional Sounds in Seconds"
+      },
+      "source_url": "https://www.boss.info/us/products/me-90/"
+    },
+    {
+      "id": "boss-BSC-3",
+      "brand": "boss",
+      "name": "BSC-3",
+      "category": "Speaker Cable -",
+      "description": "BSC-3: Speaker Cable - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bsc-3_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bsc-3/"
+    },
+    {
+      "id": "boss-OC-5\nOctave",
+      "brand": "boss",
+      "name": "OC-5\nOctave",
+      "category": "Octave",
+      "description": "OC-5: Octave - The New Standard in Octave Pedals",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/oc-5_main.jpg",
+      "specs": {
+        "tagline": "The New Standard in Octave Pedals"
+      },
+      "source_url": "https://www.boss.info/us/products/oc-5/"
+    },
+    {
+      "id": "boss-BSH-20-BLK",
+      "brand": "boss",
+      "name": "BSH-20-BLK",
+      "category": "Instrument Strap -",
+      "description": "BSH-20-BLK: Instrument Strap - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bsh-20-blk_knot_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/bsh-20-blk/"
+    },
+    {
+      "id": "boss-CB-BM-S\nMulti-Effects-Case",
+      "brand": "boss",
+      "name": "CB-BM-S\nMulti-Effects Case",
+      "category": "Multi-Effects Case",
+      "description": "CB-BM-S: Multi-Effects Case - Stylish Case for the GX-10, GT-1, and GT-1B",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/cb-bm-s_main.jpg",
+      "specs": {
+        "tagline": "Stylish Case for the GX-10, GT-1, and GT-1B"
+      },
+      "source_url": "https://www.boss.info/us/products/cb-bm-s/"
+    },
+    {
+      "id": "boss-BAS-1\nAmplifier-Stand",
+      "brand": "boss",
+      "name": "BAS-1\nAmplifier Stand",
+      "category": "Amplifier Stand",
+      "description": "BAS-1: Amplifier Stand - Adjustable Tilt-Back Stand with Telescoping Support Arm",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bas-1_main.jpg",
+      "specs": {
+        "tagline": "Adjustable Tilt-Back Stand with Telescoping Support Arm"
+      },
+      "source_url": "https://www.boss.info/us/products/bas-1/"
+    },
+    {
+      "id": "boss-BOSS-Effects-Pedals",
+      "brand": "boss",
+      "name": "BOSS Effects Pedals",
+      "category": "Software Effects",
+      "description": "BOSS Effects Pedals: Software Effects - Timeless BOSS effects. Now in your DAW.",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/rc_boss_effects_pedals_main.jpg",
+      "specs": {
+        "tagline": "Timeless BOSS effects. Now in your DAW."
+      },
+      "source_url": "https://www.roland.com/us/products/rc_boss_effects_pedals/"
+    },
+    {
+      "id": "boss-FS-7",
+      "brand": "boss",
+      "name": "FS-7",
+      "category": "Dual Footswitch",
+      "description": "FS-7: Dual Footswitch - Space-Saving, Multifunctional Dual Footswitch",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/fs-7_angle_main.jpg",
+      "specs": {
+        "tagline": "Space-Saving, Multifunctional Dual Footswitch"
+      },
+      "source_url": "https://www.boss.info/us/products/fs-7/"
+    },
+    {
+      "id": "boss-EV-1-WL\nWireless-MIDI-Expression-Pedal",
+      "brand": "boss",
+      "name": "EV-1-WL\nWireless MIDI Expression Pedal",
+      "category": "Wireless Midi Expression Pedal",
+      "description": "EV-1-WL: Wireless MIDI Expression Pedal - Take Control of Your MIDI Music World",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/ev-1-wl_angle_main.jpg",
+      "specs": {
+        "tagline": "Take Control of Your MIDI Music World"
+      },
+      "source_url": "https://www.boss.info/us/products/ev-1-wl/"
+    },
+    {
+      "id": "boss-GX-10\nGuitar-Effects-Processor",
+      "brand": "boss",
+      "name": "GX-10\nGuitar Effects Processor",
+      "category": "Guitar Effects Processor",
+      "description": "GX-10: Guitar Effects Processor - Colorful Tones, Portable Design",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/gx-10_main.jpg",
+      "specs": {
+        "tagline": "Colorful Tones, Portable Design"
+      },
+      "source_url": "https://www.boss.info/us/products/gx-10/"
+    },
+    {
+      "id": "boss-EV-5",
+      "brand": "boss",
+      "name": "EV-5",
+      "category": "Expression Pedal",
+      "description": "EV-5: Expression Pedal - Expression Pedal",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/ev-5_angle_main.jpg",
+      "specs": {
+        "tagline": "Expression Pedal"
+      },
+      "source_url": "https://www.boss.info/us/products/ev-5/"
+    },
+    {
+      "id": "boss-GA-FC",
+      "brand": "boss",
+      "name": "GA-FC",
+      "category": "Foot Controller",
+      "description": "GA-FC: Foot Controller - Floor Control for Roland and BOSS amps",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/ga-fc_top_main.jpg",
+      "specs": {
+        "tagline": "Floor Control for Roland and BOSS amps"
+      },
+      "source_url": "https://www.boss.info/us/products/ga-fc/"
+    },
+    {
+      "id": "boss-BCK-2",
+      "brand": "boss",
+      "name": "BCK-2",
+      "category": "Solderless Pedalboard Cable Kit",
+      "description": "BCK-2: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bck-2_package_front_main.jpg",
+      "specs": {
+        "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
+      },
+      "source_url": "https://www.boss.info/us/products/bck-2/"
+    },
+    {
+      "id": "boss-BCK-12\nSolderless-Pedalboard-Cable-Kit",
+      "brand": "boss",
+      "name": "BCK-12\nSolderless Pedalboard Cable Kit",
+      "category": "Solderless Pedalboard Cable Kit",
+      "description": "BCK-12: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bck-12_package_front_main.jpg",
+      "specs": {
+        "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
+      },
+      "source_url": "https://www.boss.info/us/products/bck-12/"
+    },
+    {
+      "id": "boss-BIC-10A-BK\nInstrument-Cable",
+      "brand": "boss",
+      "name": "BIC-10A-BK\nInstrument Cable",
+      "category": "Instrument Cable",
+      "description": "BIC-10A-BK: Instrument Cable - Express Yourself with Colorful BOSS Cables",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bic-10a-bk_main.jpg",
+      "specs": {
+        "tagline": "Express Yourself with Colorful BOSS Cables"
+      },
+      "source_url": "https://www.boss.info/us/products/bic-10a-bk/"
+    },
+    {
+      "id": "boss-FV-500H/FV-500L",
+      "brand": "boss",
+      "name": "FV-500H/FV-500L",
+      "category": "Volume Pedal",
+      "description": "FV-500H/FV-500L: Volume Pedal - Industrial-Strength Power Pedal",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/fv_500h_main.jpg",
+      "specs": {
+        "tagline": "Industrial-Strength Power Pedal"
+      },
+      "source_url": "https://www.boss.info/us/products/fv-500h_500l/"
+    },
+    {
+      "id": "boss-PX-1\nPlugout-FX",
+      "brand": "boss",
+      "name": "PX-1\nPlugout FX",
+      "category": "Plugout Fx",
+      "description": "PX-1: Plugout FX - Timeless Effects, Infinite Inspiration",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/px-1_top_main.jpg",
+      "specs": {
+        "tagline": "Timeless Effects, Infinite Inspiration"
+      },
+      "source_url": "https://www.boss.info/us/products/px-1/"
+    },
+    {
+      "id": "boss-PSA-Series",
+      "brand": "boss",
+      "name": "PSA Series",
+      "category": "Power Adaptor -",
+      "description": "PSA Series: Power Adaptor - ",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/PSA-120S2_main.jpg",
+      "specs": {},
+      "source_url": "https://www.boss.info/us/products/psa_series/"
+    },
+    {
+      "id": "boss-BIC-1AA\nInstrument-Cable",
+      "brand": "boss",
+      "name": "BIC-1AA\nInstrument Cable",
+      "category": "Instrument Cable",
+      "description": "BIC-1AA: Instrument Cable - Patch/Pedal Cable with Right-Angle Connectors",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bic-1aa_main.jpg",
+      "specs": {
+        "tagline": "Patch/Pedal Cable with Right-Angle Connectors"
+      },
+      "source_url": "https://www.boss.info/us/products/bic-1aa/"
+    },
+    {
+      "id": "boss-BCC-1-3535\nMIDI-Cable",
+      "brand": "boss",
+      "name": "BCC-1-3535\nMIDI Cable",
+      "category": "Midi Cable",
+      "description": "BCC-1-3535: MIDI Cable - Expand the Power of Your BOSS Gear with MIDI Connectivity",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bcc-1-3535_main.jpg",
+      "specs": {
+        "tagline": "Expand the Power of Your BOSS Gear with MIDI Connectivity"
+      },
+      "source_url": "https://www.boss.info/us/products/bcc-1-3535/"
+    },
+    {
+      "id": "boss-BIC-5\nInstrument-Cable",
+      "brand": "boss",
+      "name": "BIC-5\nInstrument Cable",
+      "category": "Instrument Cable",
+      "description": "BIC-5: Instrument Cable - Instrument Cable with Straight Connectors",
+      "msrp": null,
+      "image_url": "https://static.roland.com/assets/images/products/main/bic-5_main.jpg",
+      "specs": {
+        "tagline": "Instrument Cable with Straight Connectors"
+      },
+      "source_url": "https://www.boss.info/us/products/bic-5/"
+    }
+  ],
+  "rejection_reasons": {
+    "1 validation error for ProductContract\ncategory\n  Value error, Category 'General' is too generic": 8,
+    "1 validation error for ProductContract\ncategory\n  Value error, Category 'Bluetooth® Adaptor' contains non-English characters": 1
+  },
+  "is_locked": false
+}
