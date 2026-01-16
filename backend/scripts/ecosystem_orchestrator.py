@@ -200,7 +200,7 @@ class EcosystemOrchestrator:
 
             if best_match and best_score >= 0.85:
                 # PRIMARY: Brand content + Halilit pricing
-                merged = {**brand_prod, **best_match}
+                merged = {**best_match, **brand_prod}
                 merged['source'] = 'PRIMARY'
                 merged['match_score'] = round(best_score, 2)
                 merged['last_updated'] = datetime.now().isoformat()

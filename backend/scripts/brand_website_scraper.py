@@ -92,16 +92,29 @@ class BrandWebsiteScraper:
                         await page.goto(url, wait_until="networkidle", timeout=20000)
                         await page.wait_for_timeout(config.get("post_load_wait_ms", 2000))
 
-                        # Get product title
-                        title_elem = await page.query_selector('h1')
-                        base_title = await title_elem.text_content() if title_elem else page_slug
+                        # Extract fields using config (supports name, image_url, category, etc.)
+                        fields_cfg = config.get("fields", {})
+                        extracted_data = {}
+                        if fields_cfg:
+                            extracted_data = await self._extract_product_item_custom(page, fields_cfg)
+
+                        # Ensure we have a name
+                        base_title = extracted_data.get("name")
+                        if not base_title:
+                            title_elem = await page.query_selector('h1')
+                            base_title = await title_elem.text_content() if title_elem else page_slug
+                        
                         base_title = base_title.strip()
 
-                        # Get image
-                        img = await page.query_selector(config["fields"]["image_url"]["selector"])
-                        image_url = await img.get_attribute('src') if img else None
+                        # Ensure we have an image
+                        image_url = extracted_data.get("image_url")
                         if image_url and not image_url.startswith('http'):
-                            image_url = 'https://www.nordkeyboards.com' + image_url
+                             parsed_base = urlparse(base_url)
+                             base_domain = f"{parsed_base.scheme}://{parsed_base.netloc}"
+                             image_url = urljoin(base_domain, image_url)
+                        
+                        # Capture category
+                        category = extracted_data.get("category")
 
                         # Check for variants
                         variant_selector = config.get("variant_selector")
@@ -115,6 +128,15 @@ class BrandWebsiteScraper:
                             if text and text not in ["Models", ""]:
                                 valid_variants.append(text)
 
+                        common_data = {
+                            "category": category,
+                            "specs": extracted_data.get("specs"),
+                            "description": extracted_data.get("description"),
+                            "brand_product_url": url
+                        }
+                        # Remove None values
+                        common_data = {k: v for k, v in common_data.items() if v}
+
                         if len(valid_variants) > 1:
                             # Multiple variants
                             for variant_name in valid_variants:
@@ -122,7 +144,8 @@ class BrandWebsiteScraper:
                                     "name": variant_name,
                                     "image_url": image_url,
                                     "detail_url": url,
-                                    "brand": brand_id.title()
+                                    "brand": brand_id.title(),
+                                    **common_data
                                 })
                             logger.info(
                                 f"    ✅ {len(valid_variants)} variants")
@@ -132,7 +155,8 @@ class BrandWebsiteScraper:
                                 "name": base_title,
                                 "image_url": image_url,
                                 "detail_url": url,
-                                "brand": brand_id.title()
+                                "brand": brand_id.title(),
+                                **common_data
                             })
                             logger.info(f"    ✅ {base_title}")
 
@@ -440,10 +464,12 @@ class BrandWebsiteScraper:
     async def _extract_product_item_custom(self, item, fields_cfg: Dict[str, Any]) -> Dict[str, Any]:
         """Extract fields using config-provided selectors/attributes."""
         product: Dict[str, Any] = {}
+        import re
 
         for field_name, cfg in fields_cfg.items():
             selector = cfg.get("selector")
             attribute = cfg.get("attribute", "text")
+            regex_pattern = cfg.get("regex")
 
             if not selector:
                 continue
@@ -460,7 +486,16 @@ class BrandWebsiteScraper:
                     val = await elem.get_attribute(attribute)
 
                 if val:
-                    product[field_name] = val
+                    if regex_pattern:
+                        match = re.search(regex_pattern, val, re.IGNORECASE)
+                        if match:
+                            # Use first group if available, else full match
+                            val = match.group(1) if match.groups() else match.group(0)
+                        else:
+                            val = None
+
+                    if val:
+                        product[field_name] = val.strip()
             except Exception:
                 continue
 
