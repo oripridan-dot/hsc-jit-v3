@@ -122,56 +122,136 @@ class DataCleaner:
         Normalize category names for consistency
         
         Examples:
-            "Drum Machines" -> "Drums"
-            "synthesizer" -> "Synthesizers"
-            "PIANO" -> "Pianos"
+            "Bass Chorus" -> "Effects"
+            "Acoustic Amplifier" -> "Amplifiers"
+            "MIDI Cable" -> "Cables & Accessories"
+            "עורות לתופים" -> "Drums & Percussion"
         """
         if not category:
             return "Uncategorized"
         
-        # Category mapping for common variations
-        CATEGORY_MAP = {
-            "drum": "Drums",
-            "drums": "Drums",
-            "drum machine": "Drums",
-            "drum machines": "Drums",
-            "synthesizer": "Synthesizers",
-            "synthesizers": "Synthesizers",
-            "synth": "Synthesizers",
-            "synths": "Synthesizers",
-            "keyboard": "Keyboards",
-            "keyboards": "Keyboards",
-            "piano": "Pianos",
-            "pianos": "Pianos",
-            "digital piano": "Pianos",
-            "electric piano": "Pianos",
-            "guitar": "Guitars",
-            "guitars": "Guitars",
-            "bass": "Bass",
-            "basses": "Bass",
-            "bass guitar": "Bass",
-            "amplifier": "Amplifiers",
-            "amplifiers": "Amplifiers",
-            "amp": "Amplifiers",
-            "amps": "Amplifiers",
-            "effect": "Effects",
-            "effects": "Effects",
-            "pedal": "Effects",
-            "pedals": "Effects",
-            "audio interface": "Audio Interfaces",
-            "interface": "Audio Interfaces",
-            "microphone": "Microphones",
-            "microphones": "Microphones",
-            "mic": "Microphones",
-            "mics": "Microphones",
-            "monitor": "Monitors",
-            "monitors": "Monitors",
-            "speaker": "Monitors",
-            "speakers": "Monitors",
+        category_lower = category.strip().lower()
+        
+        # Hebrew category mapping
+        hebrew_mappings = {
+            'תוף': 'Drums & Percussion',
+            'עור': 'Drums & Percussion',
+            'מצילות': 'Drums & Percussion',
+            'כלי הקשה': 'Drums & Percussion',
+            'הקשה': 'Drums & Percussion',
+            'סנר': 'Drums & Percussion',
+            'טמטם': 'Drums & Percussion',
+            'בס': 'Drums & Percussion',
+            'מערכת': 'Drums & Percussion',
+            'מוניטור': 'Monitors & Speakers',
+            'רמקול': 'Monitors & Speakers',
+            'מיקרופון': 'Microphones',
+            'מיקסר': 'Audio Equipment',
+            'כרטיס קול': 'Audio Equipment',
+            'ממיר': 'Audio Equipment',
+            'אוזניות': 'Accessories',
+            'אביזר': 'Accessories',
+            'פדל': 'Effects & Pedals',
+            'אפקט': 'Effects & Pedals',
+            'מגבר': 'Amplifiers',
+            'הגברה': 'Amplifiers',
+            'קדם מגבר': 'Amplifiers',
+            'מעבד': 'Audio Equipment',
+            'מקלדת': 'Synthesizers & Keys',
+            'סינתי': 'Synthesizers & Keys',
+            'בלוג': 'Software & Apps',
+            'חלילית': 'Software & Apps',
+            'משטח': 'Synthesizers & Keys',
+            'שליטה': 'Synthesizers & Keys',
+            'שלט': 'Software & Apps',
+            'צילום': 'Microphones',
+            'שידור': 'Microphones',
+            'חבילת': 'Audio Equipment',
+            'אולפן': 'Audio Equipment',
+            'כבל': 'Cables & Accessories'
         }
         
-        normalized = category.strip().lower()
-        return CATEGORY_MAP.get(normalized, category.title())
+        # Check Hebrew keywords
+        for hebrew_word, english_category in hebrew_mappings.items():
+            if hebrew_word in category_lower:
+                return english_category
+        
+        # Parent category mapping with keyword matching
+        # Check for keywords in the category string
+        
+        # Drums & Percussion
+        if any(word in category_lower for word in ['drum', 'percussion', 'cymbal', 'snare', 'kick', 'tom']):
+            return "Drums & Percussion"
+        
+        # Synthesizers & Keys
+        if any(word in category_lower for word in ['synth', 'keyboard', 'piano', 'organ', 'stage', 'electro']):
+            return "Synthesizers & Keys"
+        
+        # Guitars
+        if 'guitar' in category_lower and 'bass' not in category_lower and 'pick' not in category_lower and 'cable' not in category_lower and 'strap' not in category_lower:
+            return "Guitars"
+        
+        # Bass
+        if 'bass' in category_lower and any(word in category_lower for word in ['guitar', 'amp', 'effect', 'driver', 'comp', 'chorus', 'overdrive', 'equalizer', 'limiter', 'preamp']):
+            return "Bass"
+        
+        # Amplifiers & Cabinets
+        if any(word in category_lower for word in ['amplifier', 'amp', 'cabinet', 'head', 'combo']) and 'stand' not in category_lower:
+            return "Amplifiers"
+        
+        # Effects & Processors
+        if any(word in category_lower for word in [
+            'effect', 'pedal', 'distortion', 'overdrive', 'fuzz', 'chorus', 'delay', 
+            'reverb', 'compressor', 'equalizer', 'eq', 'wah', 'phaser', 'flanger',
+            'tremolo', 'vibrato', 'boost', 'preamp', 'loop station', 'switcher',
+            'harmonist', 'octave', 'pitch', 'metal zone', 'blues driver', 'noise suppressor'
+        ]):
+            return "Effects & Pedals"
+        
+        # Audio Equipment
+        if any(word in category_lower for word in [
+            'audio', 'mixer', 'interface', 'recorder', 'player', 'streaming'
+        ]):
+            return "Audio Equipment"
+        
+        # Cables & Connectors
+        if any(word in category_lower for word in [
+            'cable', 'connector', 'adapter', 'jack', 'xlr', 'patch', 'instrument cable',
+            'midi cable', 'speaker cable'
+        ]):
+            return "Cables & Accessories"
+        
+        # Microphones
+        if any(word in category_lower for word in ['microphone', 'mic']):
+            return "Microphones"
+        
+        # Monitors & Speakers
+        if any(word in category_lower for word in ['monitor', 'speaker', 'studio monitor']):
+            return "Monitors & Speakers"
+        
+        # Accessories
+        if any(word in category_lower for word in [
+            'bag', 'case', 'pouch', 'stand', 'strap', 'pick', 'string',
+            'tuner', 'metronome', 't-shirt', 'shirt', 'carrying', 'gig bag',
+            'footswitch', 'foot switch', 'adaptor', 'power adaptor', 'pedal board',
+            'pedalboard', 'parallel', 'cord', 'dr. beat', 'dr beat'
+        ]):
+            return "Accessories"
+        
+        # Software & Apps
+        if any(word in category_lower for word in [
+            'app', 'software', 'bluetooth adaptor', 'wireless transmitter', 'wireless system',
+            'wireless footswitch', 'wireless midi'
+        ]):
+            return "Software & Apps"
+        
+        # If no match found, try to use the original category but clean it up
+        # Remove numbers and hyphens from the end
+        cleaned = category.strip()
+        if cleaned:
+            return cleaned
+        
+        return "Other"
     
     def clean_product(self, product: Dict) -> Dict:
         """
@@ -193,9 +273,12 @@ class DataCleaner:
             elif value is not None:  # Keep non-None values
                 cleaned[key] = value
         
-        # Normalize category if present
-        if "category" in cleaned:
+        # Normalize category if present - ALWAYS APPLY
+        if "category" in cleaned and cleaned["category"]:
             cleaned["category"] = self.normalize_category(cleaned["category"])
+        elif "category" in product:
+            # Even if empty, try to normalize
+            cleaned["category"] = self.normalize_category(product.get("category", ""))
         
         return cleaned
     

@@ -138,9 +138,13 @@ class CatalogBuilder:
         
         # Step 1: Clean and deduplicate
         logger.info("Step 1/4: Cleaning and deduplicating...")
-        cleaned_products = self.cleaner.deduplicate(brand_data.get("products", []))
+        # First clean each product (includes category normalization)
+        cleaned_products = [self.cleaner.clean_product(p) for p in brand_data.get("products", [])]
+        # Then deduplicate
+        unique_products = self.cleaner.deduplicate(cleaned_products)
+        # Finally validate
         validated_products = [
-            p for p in cleaned_products 
+            p for p in unique_products 
             if self.cleaner.validate_required_fields(p)
         ]
         logger.info(f"After cleaning: {len(validated_products)} unique valid products")

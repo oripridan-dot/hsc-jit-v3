@@ -2,7 +2,7 @@
   "brand_id": "boss",
   "brand_name": "Boss",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T02:49:00.588463Z",
+  "build_timestamp": "2026-01-16T08:42:44.595103Z",
   "stats": {
     "total_products": 197,
     "verified_products": 0,
@@ -15,9 +15,9 @@
       "name": "BPK-12-WT",
       "url": "https://www.boss.info/us/products/bpk-12-wt/",
       "image_url": "https://gcms.roland.com/RolandComSite/media/assets/images/products/main/bpk-wt_top_main.jpg",
-      "description": "BPK-12-WT: Thin Celluloid Guitar Picks—White Pearl 12 Pack - ",
+      "description": "BPK-12-WT: Thin Celluloid Guitar Picks—White Pearl 12 Pack -",
       "brand": "boss",
-      "category": "Thin Celluloid Guitar Picks—White Pearl 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -29,7 +29,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sy-1000_main.jpg",
       "description": "SY-1000: Guitar Synthesizer - Soar Into the Infinite",
       "brand": "boss",
-      "category": "Guitar Synthesizer",
+      "category": "Synthesizers & Keys",
       "specs": {
         "tagline": "Soar Into the Infinite"
       },
@@ -43,7 +43,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gt-1000_main.jpg",
       "description": "GT-1000: Guitar Effects Processor - Industry-Leading Tone with Breakthrough BOSS Technology",
       "brand": "boss",
-      "category": "Guitar Effects Processor",
+      "category": "Guitars",
       "specs": {
         "tagline": "Industry-Leading Tone with Breakthrough BOSS Technology"
       },
@@ -57,7 +57,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gigcaster_5_main.jpg",
       "description": "Gigcaster 5: Audio Streaming Mixer - All-in-One Audio Hub for Streaming Musicians",
       "brand": "boss",
-      "category": "Audio Streaming Mixer",
+      "category": "Audio Equipment",
       "specs": {
         "tagline": "All-in-One Audio Hub for Streaming Musicians"
       },
@@ -71,7 +71,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bas-1_main.jpg",
       "description": "BAS-1: Amplifier Stand - Adjustable Tilt-Back Stand with Telescoping Support Arm",
       "brand": "boss",
-      "category": "Amplifier Stand",
+      "category": "Accessories",
       "specs": {
         "tagline": "Adjustable Tilt-Back Stand with Telescoping Support Arm"
       },
@@ -85,7 +85,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-202_top_main.jpg",
       "description": "RC-202: Loop Station - Fingertip Looping for Progressive Music Creators",
       "brand": "boss",
-      "category": "Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Fingertip Looping for Progressive Music Creators"
       },
@@ -113,7 +113,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bmidi-1-35_main.jpg",
       "description": "BMIDI-1-35: MIDI Cable - Maximize the Power of Your BOSS Gear with MIDI Connectivity",
       "brand": "boss",
-      "category": "MIDI Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Maximize the Power of Your BOSS Gear with MIDI Connectivity"
       },
@@ -127,7 +127,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rv-200_main.jpg",
       "description": "RV-200: Reverb - Ambient Bliss",
       "brand": "boss",
-      "category": "Reverb",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Ambient Bliss"
       },
@@ -141,7 +141,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vg-800_main.jpg",
       "description": "VG-800: V-Guitar Processor - Take Your Performances Beyond Reality",
       "brand": "boss",
-      "category": "V-Guitar Processor",
+      "category": "Guitars",
       "specs": {
         "tagline": "Take Your Performances Beyond Reality"
       },
@@ -155,7 +155,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ev-5_angle_main.jpg",
       "description": "EV-5: Expression Pedal - Expression Pedal",
       "brand": "boss",
-      "category": "Expression Pedal",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Expression Pedal"
       },
@@ -169,7 +169,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/od-1x_top_main.jpg",
       "description": "OD-1X: OverDrive - Plug Into the Ultimate Overdrive Experience",
       "brand": "boss",
-      "category": "OverDrive",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Plug Into the Ultimate Overdrive Experience"
       },
@@ -183,7 +183,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fv_500h_main.jpg",
       "description": "FV-500H/FV-500L: Volume Pedal - Industrial-Strength Power Pedal",
       "brand": "boss",
-      "category": "Volume Pedal",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Industrial-Strength Power Pedal"
       },
@@ -225,7 +225,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fs-7_angle_main.jpg",
       "description": "FS-7: Dual Footswitch - Space-Saving, Multifunctional Dual Footswitch",
       "brand": "boss",
-      "category": "Dual Footswitch",
+      "category": "Accessories",
       "specs": {
         "tagline": "Space-Saving, Multifunctional Dual Footswitch"
       },
@@ -239,7 +239,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/kataba-air_ex_main.jpg",
       "description": "KATANA-AIR EX: Guitar Amplifier - Professional Sound in a Wireless Desktop Amp",
       "brand": "boss",
-      "category": "Guitar Amplifier",
+      "category": "Guitars",
       "specs": {
         "tagline": "Professional Sound in a Wireless Desktop Amp"
       },
@@ -253,7 +253,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-505mk2_main.jpg",
       "description": "RC-505mkII: Loop Station - Looping Magic at Your Fingertips",
       "brand": "boss",
-      "category": "Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Looping Magic at Your Fingertips"
       },
@@ -267,7 +267,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rv-500_main.jpg",
       "description": "RV-500: Reverb - Interstellar Toolbox",
       "brand": "boss",
-      "category": "Reverb",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Interstellar Toolbox"
       },
@@ -281,7 +281,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/katana-go_main.jpg",
       "description": "KATANA:GO: Personal Headphone Guitar Amplifier - Katana in Your Pocket",
       "brand": "boss",
-      "category": "GO: Personal Headphone Guitar Amplifier",
+      "category": "Guitars",
       "specs": {
         "tagline": "Katana in Your Pocket"
       },
@@ -295,7 +295,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gx-1b_top_main.jpg",
       "description": "GX-1B: Bass Effects Processor - Your Ultimate Bass Companion",
       "brand": "boss",
-      "category": "Bass Effects Processor",
+      "category": "Bass",
       "specs": {
         "tagline": "Your Ultimate Bass Companion"
       },
@@ -309,7 +309,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/CE-2W_main.jpg",
       "description": "CE-2W: Chorus - The World’s First Chorus Sounds, Reborn with Waza Craft",
       "brand": "boss",
-      "category": "Chorus",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "The World’s First Chorus Sounds, Reborn with Waza Craft"
       },
@@ -321,9 +321,9 @@
       "name": "BSL-25-BRN",
       "url": "https://www.boss.info/us/products/bsl-25-brn/",
       "image_url": "https://static.roland.com/assets/images/products/main/bsl-25-brn_knot_main.jpg",
-      "description": "BSL-25-BRN: Instrument Strap - ",
+      "description": "BSL-25-BRN: Instrument Strap -",
       "brand": "boss",
-      "category": "Instrument Strap -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -335,7 +335,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gx-10_main.jpg",
       "description": "GX-10: Guitar Effects Processor - Colorful Tones, Portable Design",
       "brand": "boss",
-      "category": "Guitar Effects Processor",
+      "category": "Guitars",
       "specs": {
         "tagline": "Colorful Tones, Portable Design"
       },
@@ -347,9 +347,9 @@
       "name": "FS-5U/FS-5L",
       "url": "https://www.boss.info/us/products/fs-5u_5l/features/",
       "image_url": "https://static.roland.com/assets/images/products/main/fs_5u_angle_main.jpg",
-      "description": "FS-5U/FS-5L: Foot Switch - ",
+      "description": "FS-5U/FS-5L: Foot Switch -",
       "brand": "boss",
-      "category": "Foot Switch -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -361,7 +361,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/mt-2w_main.jpg",
       "description": "MT-2W: Metal Zone - A High-Gain Icon, Evolved with Waza Innovation",
       "brand": "boss",
-      "category": "Metal Zone",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A High-Gain Icon, Evolved with Waza Innovation"
       },
@@ -375,7 +375,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-1_top_main.jpg",
       "description": "RC-1: Loop Station - Step One to Looping",
       "brand": "boss",
-      "category": "Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Step One to Looping"
       },
@@ -403,7 +403,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-eg10_main.jpg",
       "description": "CB-EG10: Guitar Gig Bag - High-Quality Protection in a Lightweight Design",
       "brand": "boss",
-      "category": "Guitar Gig Bag",
+      "category": "Guitars",
       "specs": {
         "tagline": "High-Quality Protection in a Lightweight Design"
       },
@@ -417,7 +417,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gx-1_top_main.jpg",
       "description": "GX-1: Guitar Effects Processor - Your Ultimate Guitar Companion",
       "brand": "boss",
-      "category": "Guitar Effects Processor",
+      "category": "Guitars",
       "specs": {
         "tagline": "Your Ultimate Guitar Companion"
       },
@@ -445,7 +445,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/nextone_special_main.jpg",
       "description": "Nextone Special: Guitar Amplifier - A Modern Boutique Experience for Serious Players",
       "brand": "boss",
-      "category": "Guitar Amplifier",
+      "category": "Guitars",
       "specs": {
         "tagline": "A Modern Boutique Experience for Serious Players"
       },
@@ -459,7 +459,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bic-10a-bk_main.jpg",
       "description": "BIC-10A-BK: Instrument Cable - Express Yourself with Colorful BOSS Cables",
       "brand": "boss",
-      "category": "Instrument Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Express Yourself with Colorful BOSS Cables"
       },
@@ -473,7 +473,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fs_6_top_main.jpg",
       "description": "FS-6: Dual Footswitch - Double Your Switching Power",
       "brand": "boss",
-      "category": "Dual Footswitch",
+      "category": "Accessories",
       "specs": {
         "tagline": "Double Your Switching Power"
       },
@@ -487,7 +487,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gigcaster_8_main.jpg",
       "description": "Gigcaster 8: Audio Streaming Mixer - All-in-One Audio Hub for Streaming Musicians",
       "brand": "boss",
-      "category": "Audio Streaming Mixer",
+      "category": "Audio Equipment",
       "specs": {
         "tagline": "All-in-One Audio Hub for Streaming Musicians"
       },
@@ -501,7 +501,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bp-1w_main.jpg",
       "description": "BP-1W: Booster/Preamp - Sonic Sweetener",
       "brand": "boss",
-      "category": "Booster/Preamp",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "Sonic Sweetener"
       },
@@ -515,7 +515,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sd-1w_top_main.jpg",
       "description": "SD-1W: SUPER OverDrive - The Sweet Overdrive Tone Has a Prime Redesign",
       "brand": "boss",
-      "category": "SUPER OverDrive",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "The Sweet Overdrive Tone Has a Prime Redesign"
       },
@@ -529,7 +529,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/katana-mini_x_main.jpg",
       "description": "KATANA-MINI X: Guitar Amplifier - Inspiring Quality, Minimal Design",
       "brand": "boss",
-      "category": "Guitar Amplifier",
+      "category": "Guitars",
       "specs": {
         "tagline": "Inspiring Quality, Minimal Design"
       },
@@ -557,7 +557,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fsc-10_top_main.jpg",
       "description": "FSC-10: Footswitch Cap - High-Quality Footswitch Cap for Select BOSS Products",
       "brand": "boss",
-      "category": "Footswitch Cap",
+      "category": "Accessories",
       "specs": {
         "tagline": "High-Quality Footswitch Cap for Select BOSS Products"
       },
@@ -571,7 +571,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bcc-3-tra_main.jpg",
       "description": "BCC-3-TRA: Interconnect Cable - Stage-Ready TRS Cable for Footswitches, Expression Pedals, and Audio Connections",
       "brand": "boss",
-      "category": "Interconnect Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Stage-Ready TRS Cable for Footswitches, Expression Pedals, and Audio Connections"
       },
@@ -585,7 +585,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-ktngo_main.jpg",
       "description": "CB-KTNGO: Carrying Pouch - Carrying Pouch for KATANA:GO",
       "brand": "boss",
-      "category": "Carrying Pouch",
+      "category": "Accessories",
       "specs": {
         "tagline": "Carrying Pouch for KATANA:GO"
       },
@@ -599,7 +599,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sy_300_top_main.jpg",
       "description": "SY-300: Guitar Synthesizer - Explore New Dimensions of Sound with Any Guitar",
       "brand": "boss",
-      "category": "Guitar Synthesizer",
+      "category": "Synthesizers & Keys",
       "specs": {
         "tagline": "Explore New Dimensions of Sound with Any Guitar"
       },
@@ -613,7 +613,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sde-3_main.jpg",
       "description": "SDE-3: Dual Digital Delay - Timeless Inspiration",
       "brand": "boss",
-      "category": "Dual Digital Delay",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Timeless Inspiration"
       },
@@ -625,9 +625,9 @@
       "name": "BPK-12-CT",
       "url": "https://www.boss.info/us/products/bpk-12-ct/",
       "image_url": "https://static.roland.com/assets/images/products/main/bpk-ct_top_main.jpg",
-      "description": "BPK-12-CT: Thin Celluloid Guitar Picks—Camo 12 Pack - ",
+      "description": "BPK-12-CT: Thin Celluloid Guitar Picks—Camo 12 Pack -",
       "brand": "boss",
-      "category": "Thin Celluloid Guitar Picks—Camo 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -639,7 +639,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-bm-m_main.jpg",
       "description": "CB-BM-M: Multi-Effects Case - Stylish Case for the GT-1000, GX-100, ME-90, and ME-90B",
       "brand": "boss",
-      "category": "Multi-Effects Case",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Stylish Case for the GT-1000, GX-100, ME-90, and ME-90B"
       },
@@ -653,7 +653,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/eurus_gs-1_main.jpg",
       "description": "EURUS GS-1: Electronic Guitar - A Bold New Voice for Sound Innovators",
       "brand": "boss",
-      "category": "Electronic Guitar",
+      "category": "Synthesizers & Keys",
       "specs": {
         "tagline": "A Bold New Voice for Sound Innovators"
       },
@@ -667,7 +667,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-bm-s_main.jpg",
       "description": "CB-BM-S: Multi-Effects Case - Stylish Case for the GX-10, GT-1, and GT-1B",
       "brand": "boss",
-      "category": "Multi-Effects Case",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Stylish Case for the GX-10, GT-1, and GT-1B"
       },
@@ -681,7 +681,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bf_3_top_main.jpg",
       "description": "BF-3: Flanger - The Flanger Gets a Face-Lift",
       "brand": "boss",
-      "category": "Flanger",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "The Flanger Gets a Face-Lift"
       },
@@ -695,7 +695,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dm-101_main.jpg",
       "description": "DM-101: Delay Machine - Meet the Ultimate Analog Delay",
       "brand": "boss",
-      "category": "Delay Machine",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Meet the Ultimate Analog Delay"
       },
@@ -709,7 +709,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/BOSS_TUNER_app_main.jpg",
       "description": "BOSS Tuner App: Chromatic Tuner App - An authentic BOSS tuner for your smartphone or tablet",
       "brand": "boss",
-      "category": "Chromatic Tuner App",
+      "category": "Accessories",
       "specs": {
         "tagline": "An authentic BOSS tuner for your smartphone or tablet"
       },
@@ -721,9 +721,9 @@
       "name": "BSH-20-BLK",
       "url": "https://www.boss.info/us/products/bsh-20-blk/",
       "image_url": "https://static.roland.com/assets/images/products/main/bsh-20-blk_knot_main.jpg",
-      "description": "BSH-20-BLK: Instrument Strap - ",
+      "description": "BSH-20-BLK: Instrument Strap -",
       "brand": "boss",
-      "category": "Instrument Strap -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -735,7 +735,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-rc505_main.jpg",
       "description": "CB-RC505: Carrying Bag - Slimline Backpack for the RC-505mkII and RC-505 Loop Stations",
       "brand": "boss",
-      "category": "Carrying Bag",
+      "category": "Accessories",
       "specs": {
         "tagline": "Slimline Backpack for the RC-505mkII and RC-505 Loop Stations"
       },
@@ -749,7 +749,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/waza-air_bass_main.jpg",
       "description": "WAZA-AIR BASS: Wireless Personal Bass Amplification System - An Immersive New Sound and Practice Experience for Bassists",
       "brand": "boss",
-      "category": "Wireless Personal Bass Amplification System",
+      "category": "Bass",
       "specs": {
         "tagline": "An Immersive New Sound and Practice Experience for Bassists"
       },
@@ -763,7 +763,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/js-10_front_main.jpg",
       "description": "eBand JS-10: Audio Player with Guitar Effects - New-Generation Jam Band with Full-Range 2.1 Sound",
       "brand": "boss",
-      "category": "Audio Player with Guitar Effects",
+      "category": "Guitars",
       "specs": {
         "tagline": "New-Generation Jam Band with Full-Range 2.1 Sound"
       },
@@ -775,9 +775,9 @@
       "name": "BCB-30",
       "url": "https://www.boss.info/us/products/bcb-30/",
       "image_url": "https://static.roland.com/assets/images/products/main/bcb_30_open_top_main.jpg",
-      "description": "BCB-30: Pedal Board - ",
+      "description": "BCB-30: Pedal Board -",
       "brand": "boss",
-      "category": "Pedal Board -",
+      "category": "Effects & Pedals",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -789,7 +789,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tu-3w_top_main.jpg",
       "description": "TU-3W: Chromatic Tuner - The Leading Stompbox Tuner, Refined with Waza Expertise",
       "brand": "boss",
-      "category": "Chromatic Tuner",
+      "category": "Accessories",
       "specs": {
         "tagline": "The Leading Stompbox Tuner, Refined with Waza Expertise"
       },
@@ -803,7 +803,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ev-30_main.jpg",
       "description": "EV-30: Dual Expression Pedal - Big Expression in a Small Footprint",
       "brand": "boss",
-      "category": "Dual Expression Pedal",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Big Expression in a Small Footprint"
       },
@@ -817,7 +817,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bcb-30x_main.jpg",
       "description": "BCB-30X: Pedal Board - Small, Rugged, and Fully Customizable",
       "brand": "boss",
-      "category": "Pedal Board",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Small, Rugged, and Fully Customizable"
       },
@@ -859,7 +859,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-eg01_main.jpg",
       "description": "CB-EG01: Guitar Gig Bag - Slimline Guitar Bag for Traveling Light",
       "brand": "boss",
-      "category": "Guitar Gig Bag",
+      "category": "Guitars",
       "specs": {
         "tagline": "Slimline Guitar Bag for Traveling Light"
       },
@@ -901,7 +901,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bcc-1-3535_main.jpg",
       "description": "BCC-1-3535: MIDI Cable - Expand the Power of Your BOSS Gear with MIDI Connectivity",
       "brand": "boss",
-      "category": "MIDI Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Expand the Power of Your BOSS Gear with MIDI Connectivity"
       },
@@ -915,7 +915,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sde-3000evh_main.jpg",
       "description": "SDE-3000EVH: Dual Digital Delay - BOSS and EVH Unite to Bring You the Legendary Eddie Van Halen Dual Delay Sound",
       "brand": "boss",
-      "category": "Dual Digital Delay",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "BOSS and EVH Unite to Bring You the Legendary Eddie Van Halen Dual Delay Sound"
       },
@@ -929,7 +929,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bic-p10a_main.jpg",
       "description": "BIC-P10A: Premium Instrument Cable - Unmatched Fidelity for Guitar and Bass",
       "brand": "boss",
-      "category": "Premium Instrument Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Unmatched Fidelity for Guitar and Bass"
       },
@@ -943,7 +943,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ds-1w_main.jpg",
       "description": "DS-1W: Distortion - The Classic BOSS Distortion, Enhanced with Waza Craftsmanship",
       "brand": "boss",
-      "category": "Distortion",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "The Classic BOSS Distortion, Enhanced with Waza Craftsmanship"
       },
@@ -957,7 +957,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/odb_3_main.jpg",
       "description": "ODB-3: Bass OverDrive - Crunchy Overdrive Effects for Bass",
       "brand": "boss",
-      "category": "Bass OverDrive",
+      "category": "Bass",
       "specs": {
         "tagline": "Crunchy Overdrive Effects for Bass"
       },
@@ -971,7 +971,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/oc-5_main.jpg",
       "description": "OC-5: Octave - The New Standard in Octave Pedals",
       "brand": "boss",
-      "category": "Octave",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "The New Standard in Octave Pedals"
       },
@@ -985,7 +985,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bmidi-5-35_main.jpg",
       "description": "BMIDI-5-35: MIDI Cable - MIDI cable with 3.5 mm TRS and straight 5-pin connectors",
       "brand": "boss",
-      "category": "MIDI Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "MIDI cable with 3.5 mm TRS and straight 5-pin connectors"
       },
@@ -999,7 +999,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ps-6_top_main.jpg",
       "description": "PS-6: Harmonist - Four Intelligent Pitch Effects in a Stompbox",
       "brand": "boss",
-      "category": "Harmonist",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Four Intelligent Pitch Effects in a Stompbox"
       },
@@ -1013,7 +1013,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bck-2_package_front_main.jpg",
       "description": "BCK-2: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
       "brand": "boss",
-      "category": "Solderless Pedalboard Cable Kit",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
       },
@@ -1041,7 +1041,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wl-60t_main.jpg",
       "description": "WL-60T: Wireless Transmitter - Transmitter for the WL-60 Wireless System",
       "brand": "boss",
-      "category": "Wireless Transmitter",
+      "category": "Software & Apps",
       "specs": {
         "tagline": "Transmitter for the WL-60 Wireless System"
       },
@@ -1055,7 +1055,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bc_1x_top_main.jpg",
       "description": "BC-1X: Bass Comp - Intelligent Multiband Compression for Dynamic Players",
       "brand": "boss",
-      "category": "Bass Comp",
+      "category": "Bass",
       "specs": {
         "tagline": "Intelligent Multiband Compression for Dynamic Players"
       },
@@ -1069,7 +1069,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ad-10_main.jpg",
       "description": "AD-10: Acoustic Preamp - Advanced Tone Tools for Serious Acoustic Players",
       "brand": "boss",
-      "category": "Acoustic Preamp",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "Advanced Tone Tools for Serious Acoustic Players"
       },
@@ -1083,7 +1083,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wl-t_main.jpg",
       "description": "WL-T: Wireless Transmitter - Spare Transmitter for the WL Series, KATANA-AIR and WAZA-AIR",
       "brand": "boss",
-      "category": "Wireless Transmitter",
+      "category": "Software & Apps",
       "specs": {
         "tagline": "Spare Transmitter for the WL Series, KATANA-AIR and WAZA-AIR"
       },
@@ -1097,7 +1097,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/waza-air_main.jpg",
       "description": "WAZA-AIR: Wireless Personal Guitar Amplification System - A Revolutionary New Tone Experience for Guitar",
       "brand": "boss",
-      "category": "Wireless Personal Guitar Amplification System",
+      "category": "Guitars",
       "specs": {
         "tagline": "A Revolutionary New Tone Experience for Guitar"
       },
@@ -1111,7 +1111,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/acoustic_singer_live_main.jpg",
       "description": "Acoustic Singer Live: Acoustic Amplifier - The Acoustic Stage Amp Redefined",
       "brand": "boss",
-      "category": "Acoustic Amplifier",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "The Acoustic Stage Amp Redefined"
       },
@@ -1125,7 +1125,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/br-80_top_mtr_main.jpg",
       "description": "MICRO BR BR-80: Digital Recorder - Plug into the Ultimate Micro Studio",
       "brand": "boss",
-      "category": "Digital Recorder",
+      "category": "Audio Equipment",
       "specs": {
         "tagline": "Plug into the Ultimate Micro Studio"
       },
@@ -1137,9 +1137,9 @@
       "name": "BCB-90X\nPedal Board",
       "url": "https://www.boss.info/us/products/bcb-90x/",
       "image_url": "https://static.roland.com/assets/images/products/main/bcb-90x_main.jpg",
-      "description": "BCB-90X: Pedal Board - Create a Custom Layout with Your Favorite Stomps ",
+      "description": "BCB-90X: Pedal Board - Create a Custom Layout with Your Favorite Stomps",
       "brand": "boss",
-      "category": "Pedal Board",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Create a Custom Layout with Your Favorite Stomps"
       },
@@ -1153,7 +1153,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-bu10_main.jpg",
       "description": "CB-BU10: Utility Gig Bag - The Ultimate Utility Bag for Your Music Gear",
       "brand": "boss",
-      "category": "Utility Gig Bag",
+      "category": "Accessories",
       "specs": {
         "tagline": "The Ultimate Utility Bag for Your Music Gear"
       },
@@ -1181,7 +1181,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/lmb3_main.jpg",
       "description": "LMB-3: Bass Limiter/Enhancer - Smooth Tone, Every Time",
       "brand": "boss",
-      "category": "Bass Limiter/Enhancer",
+      "category": "Bass",
       "specs": {
         "tagline": "Smooth Tone, Every Time"
       },
@@ -1195,7 +1195,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bluetooth_audio_midi_dual_adaptor_main.jpg",
       "description": "Bluetooth® Audio MIDI Dual Adaptor: Bluetooth® Adaptor - Wireless Expansion Adaptor",
       "brand": "boss",
-      "category": "Bluetooth Adaptor",
+      "category": "Accessories",
       "specs": {
         "tagline": "Wireless Expansion Adaptor"
       },
@@ -1209,7 +1209,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bic-5_main.jpg",
       "description": "BIC-5: Instrument Cable - Instrument Cable with Straight Connectors",
       "brand": "boss",
-      "category": "Instrument Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Instrument Cable with Straight Connectors"
       },
@@ -1221,9 +1221,9 @@
       "name": "BSC-3",
       "url": "https://www.boss.info/us/products/bsc-3/",
       "image_url": "https://static.roland.com/assets/images/products/main/bsc-3_main.jpg",
-      "description": "BSC-3: Speaker Cable - ",
+      "description": "BSC-3: Speaker Cable -",
       "brand": "boss",
-      "category": "Speaker Cable -",
+      "category": "Cables & Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1235,7 +1235,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ch_1_main.jpg",
       "description": "CH-1: SUPER Chorus - Super Sound, Super Simple",
       "brand": "boss",
-      "category": "SUPER Chorus",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Super Sound, Super Simple"
       },
@@ -1249,7 +1249,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ir-2_main.jpg",
       "description": "IR-2: Amp & Cabinet - Take Your Signature Sound Everywhere",
       "brand": "boss",
-      "category": "Amp & Cabinet",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "Take Your Signature Sound Everywhere"
       },
@@ -1261,7 +1261,7 @@
       "name": "AB-2",
       "url": "https://www.boss.info/us/products/ab-2/",
       "image_url": "https://static.roland.com/assets/images/products/main/ab_2_top_main.jpg",
-      "description": "AB-2: 2-Way Selector - ",
+      "description": "AB-2: 2-Way Selector -",
       "brand": "boss",
       "category": "2-Way Selector -",
       "specs": {},
@@ -1275,7 +1275,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tr2_main.jpg",
       "description": "TR-2: Tremolo - Classic Tremolo Sounds!",
       "brand": "boss",
-      "category": "Tremolo",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Classic Tremolo Sounds!"
       },
@@ -1289,7 +1289,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-10r_main.jpg",
       "description": "RC-10R: Rhythm Loop Station - Perform at the Speed of Inspiration",
       "brand": "boss",
-      "category": "Rhythm Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Perform at the Speed of Inspiration"
       },
@@ -1303,7 +1303,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ir-200_main.jpg",
       "description": "IR-200: Amp & IR Cabinet - Direct Amp and IR Power for Performance, Recording, and Practice",
       "brand": "boss",
-      "category": "Amp & IR Cabinet",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "Direct Amp and IR Power for Performance, Recording, and Practice"
       },
@@ -1317,7 +1317,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gt-1b_main.jpg",
       "description": "GT-1B: Bass Effects Processor - Premium Bass Tone in an Ultra-Compact Package",
       "brand": "boss",
-      "category": "Bass Effects Processor",
+      "category": "Bass",
       "specs": {
         "tagline": "Premium Bass Tone in an Ultra-Compact Package"
       },
@@ -1331,7 +1331,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/me-90_main.jpg",
       "description": "ME-90: Guitar Multiple Effects - Dial in Professional Sounds in Seconds",
       "brand": "boss",
-      "category": "Guitar Multiple Effects",
+      "category": "Guitars",
       "specs": {
         "tagline": "Dial in Professional Sounds in Seconds"
       },
@@ -1357,9 +1357,9 @@
       "name": "PCS-20A",
       "url": "https://www.boss.info/us/products/pcs-20a/",
       "image_url": "https://static.roland.com/assets/images/products/main/pcs_20a_main.jpg",
-      "description": "PCS-20A: Parallel DC Cord - ",
+      "description": "PCS-20A: Parallel DC Cord -",
       "brand": "boss",
-      "category": "Parallel DC Cord -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1371,7 +1371,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bic-10a_main.jpg",
       "description": "BIC-10A: Instrument Cable - Instrument Cable with Straight and Right-Angle Connectors",
       "brand": "boss",
-      "category": "Instrument Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Instrument Cable with Straight and Right-Angle Connectors"
       },
@@ -1385,7 +1385,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ac-22lx_main.jpg",
       "description": "AC-22LX: Acoustic Amplifier - A Full-Immersion Acoustic Experience",
       "brand": "boss",
-      "category": "Acoustic Amplifier",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "A Full-Immersion Acoustic Experience"
       },
@@ -1397,9 +1397,9 @@
       "name": "BPK-12-MT",
       "url": "https://www.boss.info/us/products/bpk-12-mt/",
       "image_url": "https://static.roland.com/assets/images/products/main/bpk-mt_top_main.jpg",
-      "description": "BPK-12-MT: Thin Celluloid Guitar Picks—Mosaic 12 Pack - ",
+      "description": "BPK-12-MT: Thin Celluloid Guitar Picks—Mosaic 12 Pack -",
       "brand": "boss",
-      "category": "Thin Celluloid Guitar Picks—Mosaic 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1409,9 +1409,9 @@
       "name": "BPK-12-BT",
       "url": "https://www.boss.info/us/products/bpk-12-bt/",
       "image_url": "https://static.roland.com/assets/images/products/main/bpk-bt_top_main.jpg",
-      "description": "BPK-12-BT: Thin Celluloid Guitar Picks—Black 12 Pack - ",
+      "description": "BPK-12-BT: Thin Celluloid Guitar Picks—Black 12 Pack -",
       "brand": "boss",
-      "category": "Thin Celluloid Guitar Picks—Black 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1423,7 +1423,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fs-1-wl_main.jpg",
       "description": "FS-1-WL: Wireless Footswitch - Wireless Foot Control for Digital Music Scores, YouTube, DAWs, Instruments, and Beyond",
       "brand": "boss",
-      "category": "Wireless Footswitch",
+      "category": "Accessories",
       "specs": {
         "tagline": "Wireless Foot Control for Digital Music Scores, YouTube, DAWs, Instruments, and Beyond"
       },
@@ -1435,9 +1435,9 @@
       "name": "BPK-12-OT",
       "url": "https://www.boss.info/us/products/bpk-12-ot/",
       "image_url": "https://gcms.roland.com/RolandComSite/media/assets/images/products/main/bpk-ot_top_main.jpg",
-      "description": "BPK-12-OT: Thin Celluloid Guitar Picks—Ocean Turquoise 12 Pack - ",
+      "description": "BPK-12-OT: Thin Celluloid Guitar Picks—Ocean Turquoise 12 Pack -",
       "brand": "boss",
-      "category": "Thin Celluloid Guitar Picks—Ocean Turquoise 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1463,7 +1463,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wl-20_wl-20l_main.jpg",
       "description": "WL-20/WL-20L: Wireless System - Wireless Freedom Made Easy",
       "brand": "boss",
-      "category": "Wireless System",
+      "category": "Software & Apps",
       "specs": {
         "tagline": "Wireless Freedom Made Easy"
       },
@@ -1477,7 +1477,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-wz-air_main.jpg",
       "description": "CB-WZ-AIR: Carrying Case - Custom Case for WAZA-AIR and WAZA-AIR BASS",
       "brand": "boss",
-      "category": "Carrying Case",
+      "category": "Accessories",
       "specs": {
         "tagline": "Custom Case for WAZA-AIR and WAZA-AIR BASS"
       },
@@ -1491,7 +1491,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-500_main.jpg",
       "description": "RC-500: Loop Station - Dual-Track Powerhouse",
       "brand": "boss",
-      "category": "Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Dual-Track Powerhouse"
       },
@@ -1503,9 +1503,9 @@
       "name": "BSL-25-BLK",
       "url": "https://www.boss.info/us/products/bsl-25-blk/",
       "image_url": "https://static.roland.com/assets/images/products/main/bsl-25-blk_knot_main.jpg",
-      "description": "BSL-25-BLK: Instrument Strap - ",
+      "description": "BSL-25-BLK: Instrument Strap -",
       "brand": "boss",
-      "category": "Instrument Strap -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1531,7 +1531,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dd_500_top_main.jpg",
       "description": "DD-500: Digital Delay - Masterful Sound, Extraordinary Creative Power",
       "brand": "boss",
-      "category": "Digital Delay",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Masterful Sound, Extraordinary Creative Power"
       },
@@ -1545,7 +1545,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ms-3_main.jpg",
       "description": "MS-3: Multi Effects Switcher - Pedalboard Integration Evolved",
       "brand": "boss",
-      "category": "Multi Effects Switcher",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Pedalboard Integration Evolved"
       },
@@ -1557,9 +1557,9 @@
       "name": "PSA Series",
       "url": "https://www.boss.info/us/products/psa_series/",
       "image_url": "https://static.roland.com/assets/images/products/main/PSA-120S2_main.jpg",
-      "description": "PSA Series: Power Adaptor - ",
+      "description": "PSA Series: Power Adaptor -",
       "brand": "boss",
-      "category": "Power Adaptor -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1571,7 +1571,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/db30_main.jpg",
       "description": "DB-30: Dr. Beat - The Take-Along Dr. Beat",
       "brand": "boss",
-      "category": "Dr. Beat",
+      "category": "Accessories",
       "specs": {
         "tagline": "The Take-Along Dr. Beat"
       },
@@ -1585,7 +1585,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-5_main.jpg",
       "description": "RC-5: Loop Station - Your Essential Creative Companion",
       "brand": "boss",
-      "category": "Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Your Essential Creative Companion"
       },
@@ -1597,9 +1597,9 @@
       "name": "FV-50H/FV-50L",
       "url": "https://www.boss.info/us/products/fv-50h_50l/",
       "image_url": "https://static.roland.com/assets/images/products/main/fv50l_main.jpg",
-      "description": "FV-50H/FV-50L: Volume Pedal - ",
+      "description": "FV-50H/FV-50L: Volume Pedal -",
       "brand": "boss",
-      "category": "Volume Pedal -",
+      "category": "Effects & Pedals",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1611,7 +1611,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aw-3_top_main.jpg",
       "description": "AW-3: Dynamic Wah - Unbelievable “Talking” Wah Effects!",
       "brand": "boss",
-      "category": "Dynamic Wah",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Unbelievable “Talking” Wah Effects!"
       },
@@ -1639,7 +1639,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sy-200_main.jpg",
       "description": "SY-200: Synthesizer - A World of Synth Tones at Your Feet",
       "brand": "boss",
-      "category": "Synthesizer",
+      "category": "Synthesizers & Keys",
       "specs": {
         "tagline": "A World of Synth Tones at Your Feet"
       },
@@ -1653,7 +1653,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dd-8_main.jpg",
       "description": "DD-8: Digital Delay - Diverse Sonic Range, Maximum Delay Power",
       "brand": "boss",
-      "category": "Digital Delay",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Diverse Sonic Range, Maximum Delay Power"
       },
@@ -1667,7 +1667,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ba_pc_15_top_br_main.jpg",
       "description": "BA-PC15: Earphones/Guitar Cable Set - Earphones & Guitar Cable for MICRO BR",
       "brand": "boss",
-      "category": "Earphones/Guitar Cable Set",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Earphones & Guitar Cable for MICRO BR"
       },
@@ -1679,9 +1679,9 @@
       "name": "CCB-MT2TSC",
       "url": "https://www.boss.info/us/products/ccb-mt2tsc/",
       "image_url": "https://static.roland.com/assets/images/products/main/ccb-mt2tsc_main.jpg",
-      "description": "CCB-MT2TSC: BOSS MT-2 Metal Zone Pedal T-Shirt - ",
+      "description": "CCB-MT2TSC: BOSS MT-2 Metal Zone Pedal T-Shirt -",
       "brand": "boss",
-      "category": "BOSS MT-2 Metal Zone Pedal T-Shirt -",
+      "category": "Effects & Pedals",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1693,7 +1693,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tu-30_top_main.jpg",
       "description": "TU-30: Tuner & Metronome - The Essential Practice Companion",
       "brand": "boss",
-      "category": "Tuner & Metronome",
+      "category": "Accessories",
       "specs": {
         "tagline": "The Essential Practice Companion"
       },
@@ -1707,7 +1707,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bck-6_package_front_main.jpg",
       "description": "BCK-6: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
       "brand": "boss",
-      "category": "Solderless Pedalboard Cable Kit",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
       },
@@ -1721,7 +1721,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fz-1w_main.jpg",
       "description": "FZ-1W: Fuzz - Redefined Vintage Fuzz and Versatile Modern Tones, Brought Together with Waza Craftsmanship",
       "brand": "boss",
-      "category": "Fuzz",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Redefined Vintage Fuzz and Versatile Modern Tones, Brought Together with Waza Craftsmanship"
       },
@@ -1735,7 +1735,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ns-1x_main.jpg",
       "description": "NS-1X: Noise Suppressor - Noise No More",
       "brand": "boss",
-      "category": "Noise Suppressor",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Noise No More"
       },
@@ -1747,7 +1747,7 @@
       "name": "DI-1",
       "url": "https://www.boss.info/us/products/di-1/",
       "image_url": "https://static.roland.com/assets/images/products/main/di1_angle_main.jpg",
-      "description": "DI-1: Direct Box - ",
+      "description": "DI-1: Direct Box -",
       "brand": "boss",
       "category": "Direct Box -",
       "specs": {},
@@ -1761,7 +1761,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sde-3000d_main.jpg",
       "description": "SDE-3000D: Dual Digital Delay - A Vintage Digital Delay Legend, Reborn",
       "brand": "boss",
-      "category": "Dual Digital Delay",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A Vintage Digital Delay Legend, Reborn"
       },
@@ -1775,7 +1775,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gm-800_main.jpg",
       "description": "GM-800: Guitar Synthesizer - BOSS Guitar Synthesis Evolves with the Power of ZEN-Core",
       "brand": "boss",
-      "category": "Guitar Synthesizer",
+      "category": "Synthesizers & Keys",
       "specs": {
         "tagline": "BOSS Guitar Synthesis Evolves with the Power of ZEN-Core"
       },
@@ -1789,7 +1789,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ce_5_top_main.jpg",
       "description": "CE-5: Chorus Ensemble - Classic BOSS Chorus with Modern Versatility",
       "brand": "boss",
-      "category": "Chorus Ensemble",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Classic BOSS Chorus with Modern Versatility"
       },
@@ -1803,7 +1803,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ge_7_main.jpg",
       "description": "GE-7: Equalizer - Essential Tone Sculptor",
       "brand": "boss",
-      "category": "Equalizer",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Essential Tone Sculptor"
       },
@@ -1817,7 +1817,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tu-3_top_main.jpg",
       "description": "TU-3: Chromatic Tuner - The Gold Standard in Stage Tuning",
       "brand": "boss",
-      "category": "Chromatic Tuner",
+      "category": "Accessories",
       "specs": {
         "tagline": "The Gold Standard in Stage Tuning"
       },
@@ -1831,7 +1831,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/es-5_top_main.jpg",
       "description": "ES-5: Effects Switching System - Unlimited Possibilities in Limited Space",
       "brand": "boss",
-      "category": "Effects Switching System",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Unlimited Possibilities in Limited Space"
       },
@@ -1845,7 +1845,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/acoustic_singer_live_lt_main.jpg",
       "description": "Acoustic Singer Live LT: Acoustic Amplifier - The Acoustic Stage Amp Redefined",
       "brand": "boss",
-      "category": "Acoustic Amplifier",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "The Acoustic Stage Amp Redefined"
       },
@@ -1859,7 +1859,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tu-01_top_main.jpg",
       "description": "TU-01: Clip-On Chromatic Tuner - Compact and Easy-to-Use Clip-On",
       "brand": "boss",
-      "category": "Clip-On Chromatic Tuner",
+      "category": "Accessories",
       "specs": {
         "tagline": "Compact and Easy-to-Use Clip-On"
       },
@@ -1873,7 +1873,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bpc-4_main.jpg",
       "description": "BPC-4: Patch Cable - Space-Saving Pedal Patch Cable with Slimline Pancake Plugs",
       "brand": "boss",
-      "category": "Patch Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Space-Saving Pedal Patch Cable with Slimline Pancake Plugs"
       },
@@ -1901,7 +1901,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wl-60_main.jpg",
       "description": "WL-60: Wireless System - Wireless Freedom, Easy Visual Set Up",
       "brand": "boss",
-      "category": "Wireless System",
+      "category": "Software & Apps",
       "specs": {
         "tagline": "Wireless Freedom, Easy Visual Set Up"
       },
@@ -1915,7 +1915,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wl-30xlr_main.jpg",
       "description": "WL-30XLR: Wireless System - A Plug-and-Play Wireless Mic Experience",
       "brand": "boss",
-      "category": "Wireless System",
+      "category": "Software & Apps",
       "specs": {
         "tagline": "A Plug-and-Play Wireless Mic Experience"
       },
@@ -1929,7 +1929,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bb-1x_top_main.jpg",
       "description": "BB-1X: Bass Driver - The Modern Solution for the Modern Bassist",
       "brand": "boss",
-      "category": "Bass Driver",
+      "category": "Bass",
       "specs": {
         "tagline": "The Modern Solution for the Modern Bassist"
       },
@@ -1955,9 +1955,9 @@
       "name": "BSS-25-BLK",
       "url": "https://www.boss.info/us/products/bss-25-blk/",
       "image_url": "https://static.roland.com/assets/images/products/main/bss-25-blk_knot_main.jpg",
-      "description": "BSS-25-BLK: Instrument Strap - ",
+      "description": "BSS-25-BLK: Instrument Strap -",
       "brand": "boss",
-      "category": "Instrument Strap -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1969,7 +1969,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/eq-200_main.jpg",
       "description": "EQ-200: Graphic Equalizer - Simply Sophisticated",
       "brand": "boss",
-      "category": "Graphic Equalizer",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Simply Sophisticated"
       },
@@ -1993,9 +1993,9 @@
       "name": "BSC-20-BLK",
       "url": "https://www.boss.info/us/products/bsc-20-blk/",
       "image_url": "https://static.roland.com/assets/images/products/main/bsc-20-blk_knot_main.jpg",
-      "description": "BSC-20-BLK: Instrument Strap - ",
+      "description": "BSC-20-BLK: Instrument Strap -",
       "brand": "boss",
-      "category": "Instrument Strap -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2007,7 +2007,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ad-2_main.jpg",
       "description": "AD-2: Acoustic Preamp - Natural Acoustic Sound Everywhere You Play",
       "brand": "boss",
-      "category": "Acoustic Preamp",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "Natural Acoustic Sound Everywhere You Play"
       },
@@ -2021,7 +2021,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/geb_7_main.jpg",
       "description": "GEB-7: Bass Equalizer - Precise Tonal Control",
       "brand": "boss",
-      "category": "Bass Equalizer",
+      "category": "Bass",
       "specs": {
         "tagline": "Precise Tonal Control"
       },
@@ -2035,7 +2035,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/od_3_main.jpg",
       "description": "OD-3: OverDrive - Natural Overdrive with Endless Sustain!",
       "brand": "boss",
-      "category": "OverDrive",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Natural Overdrive with Endless Sustain!"
       },
@@ -2049,7 +2049,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bcb_60_inside_main.jpg",
       "description": "BCB-60: Pedal Board - A Versatile Pedalboard for All Your Gear",
       "brand": "boss",
-      "category": "Pedal Board",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A Versatile Pedalboard for All Your Gear"
       },
@@ -2063,7 +2063,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bd-2w_top_main.jpg",
       "description": "BD-2W: Blues Driver - Responsiveness Outshined With a Modernized Vintage Vibe",
       "brand": "boss",
-      "category": "Blues Driver",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Responsiveness Outshined With a Modernized Vintage Vibe"
       },
@@ -2105,7 +2105,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tu-3s_top_main.jpg",
       "description": "TU-3S: Chromatic Tuner - World-Standard Performance in a Tiny Footprint",
       "brand": "boss",
-      "category": "Chromatic Tuner",
+      "category": "Accessories",
       "specs": {
         "tagline": "World-Standard Performance in a Tiny Footprint"
       },
@@ -2119,7 +2119,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/db-90_top_main.jpg",
       "description": "DB-90: Dr. Beat - The Versatile and Professional Dr. Beat",
       "brand": "boss",
-      "category": "Dr. Beat",
+      "category": "Accessories",
       "specs": {
         "tagline": "The Versatile and Professional Dr. Beat"
       },
@@ -2147,7 +2147,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/es-8_top_main.jpg",
       "description": "ES-8: Effects Switching System - Foot-Stomping Creativity",
       "brand": "boss",
-      "category": "Effects Switching System",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Foot-Stomping Creativity"
       },
@@ -2175,7 +2175,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ev-1-wl_angle_main.jpg",
       "description": "EV-1-WL: Wireless MIDI Expression Pedal - Take Control of Your MIDI Music World",
       "brand": "boss",
-      "category": "Wireless MIDI Expression Pedal",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Take Control of Your MIDI Music World"
       },
@@ -2187,9 +2187,9 @@
       "name": "TU-05\nClip-On Tuner",
       "url": "https://www.boss.info/us/products/tu-05/",
       "image_url": "https://static.roland.com/assets/images/products/main/tu-05_main.jpg",
-      "description": "TU-05: Clip-On Tuner - Large Color Display and Rechargeable Convenience ",
+      "description": "TU-05: Clip-On Tuner - Large Color Display and Rechargeable Convenience",
       "brand": "boss",
-      "category": "Clip-On Tuner",
+      "category": "Accessories",
       "specs": {
         "tagline": "Large Color Display and Rechargeable Convenience"
       },
@@ -2203,7 +2203,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/acoustic_singer_pro_main.jpg",
       "description": "Acoustic Singer Pro: Acoustic Amplifier - The Acoustic Stage Amp Redefined",
       "brand": "boss",
-      "category": "Acoustic Amplifier",
+      "category": "Amplifiers",
       "specs": {
         "tagline": "The Acoustic Stage Amp Redefined"
       },
@@ -2217,7 +2217,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tu-03_main.jpg",
       "description": "TU-03: Clip-On Tuner & Metronome - Two Essential Music Tools on Your Headstock",
       "brand": "boss",
-      "category": "Clip-On Tuner & Metronome",
+      "category": "Accessories",
       "specs": {
         "tagline": "Two Essential Music Tools on Your Headstock"
       },
@@ -2231,7 +2231,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gt-1000core_main.jpg",
       "description": "GT-1000CORE: Guitar Effects Processor - The Core of Your Creative Vision",
       "brand": "boss",
-      "category": "Guitar Effects Processor",
+      "category": "Guitars",
       "specs": {
         "tagline": "The Core of Your Creative Vision"
       },
@@ -2245,7 +2245,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ve-2_top_main.jpg",
       "description": "VE-2: Vocal Harmonist - Studio Level Vocals in an Easy-to-Use Stompbox",
       "brand": "boss",
-      "category": "Vocal Harmonist",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Studio Level Vocals in an Easy-to-Use Stompbox"
       },
@@ -2257,9 +2257,9 @@
       "name": "BSH-20-NAT",
       "url": "https://www.boss.info/us/products/bsh-20-nat/",
       "image_url": "https://static.roland.com/assets/images/products/main/bsh-20-nat_knot_main.jpg",
-      "description": "BSH-20-NAT: Instrument Strap - ",
+      "description": "BSH-20-NAT: Instrument Strap -",
       "brand": "boss",
-      "category": "Instrument Strap -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2271,7 +2271,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/me-90b_main.jpg",
       "description": "ME-90B: Bass Multiple Effects - Create and Perform in the Moment",
       "brand": "boss",
-      "category": "Bass Multiple Effects",
+      "category": "Bass",
       "specs": {
         "tagline": "Create and Perform in the Moment"
       },
@@ -2283,9 +2283,9 @@
       "name": "BPK-12-ST",
       "url": "https://www.boss.info/us/products/bpk-12-st/",
       "image_url": "https://static.roland.com/assets/images/products/main/bpk-st_top_main.jpg",
-      "description": "BPK-12-ST: Thin Celluloid Guitar Picks—Shell 12 Pack - ",
+      "description": "BPK-12-ST: Thin Celluloid Guitar Picks—Shell 12 Pack -",
       "brand": "boss",
-      "category": "Thin Celluloid Guitar Picks—Shell 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2295,9 +2295,9 @@
       "name": "BPK-12-D50",
       "url": "https://www.boss.info/us/products/bpk-12-d50/",
       "image_url": "https://static.roland.com/assets/images/products/main/bpk-d50_top_main.jpg",
-      "description": "BPK-12-D50: Delrin Guitar Picks—.50 mm 12 Pack - ",
+      "description": "BPK-12-D50: Delrin Guitar Picks—.50 mm 12 Pack -",
       "brand": "boss",
-      "category": "Delrin Guitar Picks—.50 mm 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2309,7 +2309,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ds-1x_top_main.jpg",
       "description": "DS-1X: Distortion - Plug Into the Future of Distortion",
       "brand": "boss",
-      "category": "Distortion",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Plug Into the Future of Distortion"
       },
@@ -2321,9 +2321,9 @@
       "name": "BPK-12-AT",
       "url": "https://www.boss.info/us/products/bpk-12-at/",
       "image_url": "https://static.roland.com/assets/images/products/main/bpk-at_top_main.jpg",
-      "description": "BPK-12-AT: Thin Celluloid Guitar Picks—Abalone 12 Pack - ",
+      "description": "BPK-12-AT: Thin Celluloid Guitar Picks—Abalone 12 Pack -",
       "brand": "boss",
-      "category": "Thin Celluloid Guitar Picks—Abalone 12 Pack -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2335,7 +2335,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/pw_3_angle_main.jpg",
       "description": "PW-3: Wah Pedal - Pro Tones, Compact Design",
       "brand": "boss",
-      "category": "Wah Pedal",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Pro Tones, Compact Design"
       },
@@ -2349,7 +2349,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wl-50_main.jpg",
       "description": "WL-50: Wireless System　 - Wireless Freedom for Pedalboards",
       "brand": "boss",
-      "category": "Wireless System",
+      "category": "Software & Apps",
       "specs": {
         "tagline": "Wireless Freedom for Pedalboards"
       },
@@ -2375,9 +2375,9 @@
       "name": "BCB-1000\nPedal Board",
       "url": "https://www.boss.info/us/products/bcb-1000/",
       "image_url": "https://static.roland.com/assets/images/products/main/bcb-1000_main.jpg",
-      "description": "BCB-1000: Pedal Board - Suitcase-Style Design for Maximum Mobility ",
+      "description": "BCB-1000: Pedal Board - Suitcase-Style Design for Maximum Mobility",
       "brand": "boss",
-      "category": "Pedal Board",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Suitcase-Style Design for Maximum Mobility"
       },
@@ -2391,7 +2391,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bck-12_package_front_main.jpg",
       "description": "BCK-12: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
       "brand": "boss",
-      "category": "Solderless Pedalboard Cable Kit",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
       },
@@ -2405,7 +2405,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bck-24_package_front_main.jpg",
       "description": "BCK-24: Solderless Pedalboard Cable Kit - A Premium Solderless Solution for Wiring Your Pedalboard",
       "brand": "boss",
-      "category": "Solderless Pedalboard Cable Kit",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A Premium Solderless Solution for Wiring Your Pedalboard"
       },
@@ -2417,9 +2417,9 @@
       "name": "TU-02\nClip-On Tuner",
       "url": "https://www.boss.info/us/products/tu-02/",
       "image_url": "https://static.roland.com/assets/images/products/main/tu-02_main.jpg",
-      "description": "TU-02: Clip-On Tuner - Bright Color Display with Adjustable Viewing Angle ",
+      "description": "TU-02: Clip-On Tuner - Bright Color Display with Adjustable Viewing Angle",
       "brand": "boss",
-      "category": "Clip-On Tuner",
+      "category": "Accessories",
       "specs": {
         "tagline": "Bright Color Display with Adjustable Viewing Angle"
       },
@@ -2447,7 +2447,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bic-1aa_main.jpg",
       "description": "BIC-1AA: Instrument Cable - Patch/Pedal Cable with Right-Angle Connectors",
       "brand": "boss",
-      "category": "Instrument Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Patch/Pedal Cable with Right-Angle Connectors"
       },
@@ -2459,9 +2459,9 @@
       "name": "BSB-20-BLK",
       "url": "https://www.boss.info/us/products/bsb-20-blk/",
       "image_url": "https://static.roland.com/assets/images/products/main/bsb-20-blk_knot_main.jpg",
-      "description": "BSB-20-BLK: Instrument Strap - ",
+      "description": "BSB-20-BLK: Instrument Strap -",
       "brand": "boss",
-      "category": "Instrument Strap -",
+      "category": "Accessories",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2473,7 +2473,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bsm-20-bw_main.jpg",
       "description": "BSM-20-BW: Instrument Strap - Quality Instrument Strap with the BOSS Monogram Logo",
       "brand": "boss",
-      "category": "Instrument Strap",
+      "category": "Accessories",
       "specs": {
         "tagline": "Quality Instrument Strap with the BOSS Monogram Logo"
       },
@@ -2487,7 +2487,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ceb_3_top_main.jpg",
       "description": "CEB-3: Bass Chorus - A Chorus Pedal with Built-in Crossover",
       "brand": "boss",
-      "category": "Bass Chorus",
+      "category": "Bass",
       "specs": {
         "tagline": "A Chorus Pedal with Built-in Crossover"
       },
@@ -2501,7 +2501,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gt-1_main.jpg",
       "description": "GT-1: Guitar Effects Processor - Premium Tone for Players On the Go",
       "brand": "boss",
-      "category": "Guitar Effects Processor",
+      "category": "Guitars",
       "specs": {
         "tagline": "Premium Tone for Players On the Go"
       },
@@ -2515,7 +2515,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vb-2w_top_main.jpg",
       "description": "VB-2W: Vibrato - True Vibrato Expression, Reborn with Waza Innovation",
       "brand": "boss",
-      "category": "Vibrato",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "True Vibrato Expression, Reborn with Waza Innovation"
       },
@@ -2529,7 +2529,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gx-100_main.jpg",
       "description": "GX-100: Guitar Effects Processor - Color Your Music with Inspiring Tone",
       "brand": "boss",
-      "category": "Guitar Effects Processor",
+      "category": "Guitars",
       "specs": {
         "tagline": "Color Your Music with Inspiring Tone"
       },
@@ -2543,7 +2543,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bic-pc_main.jpg",
       "description": "BIC-PC: Instrument Cable - Short Patch Cable for Compact Pedals",
       "brand": "boss",
-      "category": "Instrument Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Short Patch Cable for Compact Pedals"
       },
@@ -2557,7 +2557,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ba-br80s_front_main.jpg",
       "description": "BA-BR80S: Silicone Case/Pouch Set for BR-80 - Accessory Set for MICRO BR BR-80",
       "brand": "boss",
-      "category": "Silicone Case/Pouch Set for BR-80",
+      "category": "Accessories",
       "specs": {
         "tagline": "Accessory Set for MICRO BR BR-80"
       },
@@ -2571,7 +2571,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cp-1x_main.jpg",
       "description": "CP-1X: Compressor - Next-Generation Guitar Compressor for Expressive Players",
       "brand": "boss",
-      "category": "Compressor",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Next-Generation Guitar Compressor for Expressive Players"
       },
@@ -2585,7 +2585,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bic-p10_main.jpg",
       "description": "BIC-P10: Premium Instrument Cable - Unmatched Fidelity for Guitar and Bass",
       "brand": "boss",
-      "category": "Premium Instrument Cable",
+      "category": "Cables & Accessories",
       "specs": {
         "tagline": "Unmatched Fidelity for Guitar and Bass"
       },
@@ -2613,7 +2613,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dd-200_main.jpg",
       "description": "DD-200: Digital Delay - Simply Sophisticated",
       "brand": "boss",
-      "category": "Digital Delay",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Simply Sophisticated"
       },
@@ -2641,7 +2641,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-600_main.jpg",
       "description": "RC-600: Loop Station - A Floor-Based Looper Like No Other",
       "brand": "boss",
-      "category": "Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "A Floor-Based Looper Like No Other"
       },
@@ -2669,7 +2669,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dm-2w_top_main.jpg",
       "description": "DM-2W: Delay - Now, the Legendary Analog Delay Is Back With a Modern Edge",
       "brand": "boss",
-      "category": "Delay",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "Now, the Legendary Analog Delay Is Back With a Modern Edge"
       },
@@ -2683,7 +2683,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-me80_angle_main.jpg",
       "description": "CB-ME80: BOSS ME-90/ME-80/GT-1000/GX-100 Bag - Custom Bag for the BOSS ME-90/ME-80/GT-1000/GX-100",
       "brand": "boss",
-      "category": "BOSS ME-90/ME-80/GT-1000/GX-100 Bag",
+      "category": "Accessories",
       "specs": {
         "tagline": "Custom Bag for the BOSS ME-90/ME-80/GT-1000/GX-100"
       },
@@ -2697,7 +2697,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc-505_top_main.jpg",
       "description": "RC-505: Loop Station - The Flagship Tabletop Looper, Now More Powerful Than Ever",
       "brand": "boss",
-      "category": "Loop Station",
+      "category": "Effects & Pedals",
       "specs": {
         "tagline": "The Flagship Tabletop Looper, Now More Powerful Than Ever"
       },
@@ -2711,7 +2711,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sy-1_main.jpg",
       "description": "SY-1: Synthesizer - Journey to New Sonic Frontiers",
       "brand": "boss",
-      "category": "Synthesizer",
+      "category": "Synthesizers & Keys",
       "specs": {
         "tagline": "Journey to New Sonic Frontiers"
       },

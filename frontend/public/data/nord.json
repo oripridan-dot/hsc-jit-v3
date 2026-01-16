@@ -2,11 +2,11 @@
   "brand_id": "nord",
   "brand_name": "Nord",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T02:49:22.866601Z",
+  "build_timestamp": "2026-01-16T08:42:45.960859Z",
   "stats": {
     "total_products": 13,
-    "verified_products": 11,
-    "verification_rate": 84.62,
+    "verified_products": 0,
+    "verification_rate": 0.0,
     "original_count": 13,
     "removed_duplicates": 0
   },
@@ -16,52 +16,40 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/N3P_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-drum-3p",
       "brand": "Nord",
-      "category": "Drum",
+      "category": "Drums & Percussion",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-drum-3p",
-      "verified": true,
-      "verification_confidence": 1.0,
-      "halilit_price": "30960",
-      "halilit_category": "כלי הקשה ופדים אלקטרוניים",
-      "match_quality": "excellent"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Electro 6D 73",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "brand": "Nord",
-      "category": "Electro",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6",
-      "verified": true,
-      "verification_confidence": 0.9,
-      "halilit_price": "93830",
-      "halilit_category": "פסנתרי במה ותחנות עבודה",
-      "match_quality": "good"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Electro 6D 61",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "brand": "Nord",
-      "category": "Electro",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6",
-      "verified": true,
-      "verification_confidence": 1.0,
-      "halilit_price": "79750",
-      "halilit_category": "פסנתרי במה ותחנות עבודה",
-      "match_quality": "excellent"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Electro 6 HP",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "brand": "Nord",
-      "category": "Electro",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6",
-      "verified": true,
-      "verification_confidence": 1.0,
-      "halilit_price": "103210",
-      "halilit_category": "פסנתרי במה ותחנות עבודה",
-      "match_quality": "excellent"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Grand",
@@ -70,11 +58,8 @@
       "brand": "Nord",
       "category": "Grand",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-grand-2",
-      "verified": true,
-      "verification_confidence": 1.0,
-      "halilit_price": "143340",
-      "halilit_category": "פסנתרים דיגיטליים",
-      "match_quality": "excellent"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Lead A1",
@@ -83,18 +68,15 @@
       "brand": "Nord",
       "category": "Lead",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-lead-a1",
-      "verified": true,
-      "verification_confidence": 1.0,
-      "halilit_price": "68500",
-      "halilit_category": "סינתיסייזרים  ",
-      "match_quality": "excellent"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Organ 3",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/AgGiJQoE/Organ3%20logo%20beta.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-organ-3",
       "brand": "Nord",
-      "category": "Organ",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-organ-3",
       "verified": false,
       "verification_confidence": 0.0
@@ -104,65 +86,50 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/DCBsGZq6/Nord%20Piano%206%20logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-piano-6",
       "brand": "Nord",
-      "category": "Piano",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-piano-6",
-      "verified": true,
-      "verification_confidence": 0.8824,
-      "halilit_price": "162000",
-      "halilit_category": "פסנתרי במה ותחנות עבודה",
-      "match_quality": "good"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Piano 6 73",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/DCBsGZq6/Nord%20Piano%206%20logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-piano-6",
       "brand": "Nord",
-      "category": "Piano",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-piano-6",
-      "verified": true,
-      "verification_confidence": 0.8824,
-      "halilit_price": "151800",
-      "halilit_category": "פסנתרי במה ותחנות עבודה",
-      "match_quality": "good"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Stage 4 88",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "brand": "Nord",
-      "category": "Stage",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4",
-      "verified": true,
-      "verification_confidence": 1.0,
-      "halilit_price": "201430",
-      "halilit_category": "פסנתרי במה ותחנות עבודה",
-      "match_quality": "excellent"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Stage 4 73",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "brand": "Nord",
-      "category": "Stage",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4",
-      "verified": true,
-      "verification_confidence": 0.8824,
-      "halilit_price": "182700",
-      "halilit_category": "פסנתרים דיגיטליים",
-      "match_quality": "good"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Stage 4 Compact",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "brand": "Nord",
-      "category": "Stage",
+      "category": "Synthesizers & Keys",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4",
-      "verified": true,
-      "verification_confidence": 1.0,
-      "halilit_price": "173330",
-      "halilit_category": "פסנתרי במה ותחנות עבודה",
-      "match_quality": "excellent"
+      "verified": false,
+      "verification_confidence": 0.0
     },
     {
       "name": "Nord Wave 2",
