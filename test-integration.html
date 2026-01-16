@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>v3.6 Integration Test</title>
+    <style>
+        body { font-family: system-ui; padding: 20px; max-width: 800px; margin: 0 auto; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .info { background: #d1ecf1; color: #0c5460; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>🧪 HSC JIT v3.6 Integration Test</h1>
+    <div id="results"></div>
+    
+    <script type="module">
+        const results = document.getElementById('results');
+        
+        function log(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `status ${type}`;
+            div.innerHTML = message;
+            results.appendChild(div);
+        }
+        
+        async function runTests() {
+            const startTime = performance.now();
+            
+            // Test 1: Load index
+            log('📦 Test 1: Loading index.json...');
+            try {
+                const indexResponse = await fetch('/data/index.json');
+                const index = await indexResponse.json();
+                log(`✅ Loaded index: ${index.total_products} products, ${index.brands.length} brands`, 'success');
+                log(`<pre>${JSON.stringify(index, null, 2).substring(0, 300)}...</pre>`);
+            } catch (error) {
+                log(`❌ Failed to load index: ${error.message}`, 'error');
+                return;
+            }
+            
+            // Test 2: Load brand catalog
+            log('📦 Test 2: Loading nord.json...');
+            try {
+                const nordResponse = await fetch('/data/nord.json');
+                const nord = await nordResponse.json();
+                log(`✅ Loaded Nord: ${nord.stats.total_products} products, ${nord.stats.verification_rate}% verified`, 'success');
+                log(`<pre>${JSON.stringify(nord.products[0], null, 2)}</pre>`);
+            } catch (error) {
+                log(`❌ Failed to load Nord: ${error.message}`, 'error');
+            }
+            
+            // Test 3: Check Fuse.js availability
+            log('🔍 Test 3: Checking Fuse.js...');
+            try {
+                const Fuse = (await import('https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.mjs')).default;
+                
+                // Load all products
+                const indexResponse = await fetch('/data/index.json');
+                const index = await indexResponse.json();
+                
+                const allProducts = [];
+                for (const brand of index.brands.slice(0, 5)) { // Test with first 5 brands
+                    const response = await fetch(`/data/${brand.id}.json`);
+                    const catalog = await response.json();
+                    allProducts.push(...catalog.products);
+                }
+                
+                // Test search
+                const searchStart = performance.now();
+                const fuse = new Fuse(allProducts, {
+                    keys: ['name', 'brand', 'category'],
+                    threshold: 0.3
+                });
+                const results = fuse.search('piano');
+                const searchTime = performance.now() - searchStart;
+                
+                log(`✅ Search working: Found ${results.length} results in ${searchTime.toFixed(2)}ms`, 'success');
+                if (results.length > 0) {
+                    log(`<pre>${JSON.stringify(results[0].item, null, 2)}</pre>`);
+                }
+            } catch (error) {
+                log(`❌ Search test failed: ${error.message}`, 'error');
+            }
+            
+            const totalTime = performance.now() - startTime;
+            log(`<h2>🎉 Tests completed in ${totalTime.toFixed(2)}ms</h2>`, 'success');
+        }
+        
+        runTests();
+    </script>
+</body>
+</html>
