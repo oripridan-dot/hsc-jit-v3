@@ -1,8 +1,14 @@
 {
   "brand_id": "roland",
-  "brand_name": "Roland",
+  "brand_name": "Roland Corporation",
+  "brand_website": "https://www.roland.com",
+  "brand_color": "#ED1C24",
+  "secondary_color": "#FFA500",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Leading manufacturer of electronic musical instruments and music production equipment.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:48.005370Z",
+  "build_timestamp": "2026-01-16T09:06:58.271727Z",
   "stats": {
     "total_products": 229,
     "verified_products": 0,
@@ -17,7 +23,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sh-01_top_main.jpg",
       "description": "GAIA SH-01: Synthesizer - Flash Back, Flash Forward",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "Flash Back, Flash Forward"
       },
@@ -31,7 +37,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bridge_cast_one_top_main.jpg",
       "description": "BRIDGE CAST ONE: Dual Bus Streaming Mixer - Pro Sound, Simple Operation",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "Dual Bus Streaming Mixer",
       "specs": {
         "tagline": "Pro Sound, Simple Operation"
       },
@@ -59,7 +65,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/jupiter-xm_main.jpg",
       "description": "JUPITER-Xm: Synthesizer - JUPITER Rising",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "JUPITER Rising"
       },
@@ -73,7 +79,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/roland_cloud_connect_box_main.jpg",
       "description": "Roland Cloud Connect: Pro Membership and Wireless Adapter - This Changes Everything",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Pro Membership and Wireless Adapter",
       "specs": {
         "tagline": "This Changes Everything"
       },
@@ -87,7 +93,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ev-5_angle_main.jpg",
       "description": "EV-5: Expression Pedal - Expression Pedal",
       "brand": "roland",
-      "category": "Effects & Pedals",
+      "category": "Expression Pedal",
       "specs": {
         "tagline": "Expression Pedal"
       },
@@ -115,7 +121,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vmh-d1_01_main.jpg",
       "description": "VMH-D1: V-Drums Headphones - The Ultimate Headphones for Electronic Drumming",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums Headphones",
       "specs": {
         "tagline": "The Ultimate Headphones for Electronic Drumming"
       },
@@ -157,7 +163,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/blues_cube_stage_front_main.jpg",
       "description": "Blues Cube Stage: Guitar Amplifier - Authentic Tube Tone for Top Players",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier",
       "specs": {
         "tagline": "Authentic Tube Tone for Top Players"
       },
@@ -185,7 +191,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rmidi-b3_main.jpg",
       "description": "RMIDI-B3: Black Series MIDI Cable -",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Black Series MIDI Cable -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -223,7 +229,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-404_main.jpg",
       "description": "CB-404: Carrying Case - Custom Carrying Case for the SP-404 Series",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Carrying Case",
       "specs": {
         "tagline": "Custom Carrying Case for the SP-404 Series"
       },
@@ -237,7 +243,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/k-25m_main.jpg",
       "description": "K-25m: Keyboard Unit - Portable keyboard for Roland Boutique modules",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Keyboard Unit",
       "specs": {
         "tagline": "Portable keyboard for Roland Boutique modules"
       },
@@ -251,7 +257,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bridge_cast_x_top_main.jpg",
       "description": "BRIDGE CAST X: Dual Bus Streaming Mixer and Video Capture - Unify Your Streaming Setup",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "Dual Bus Streaming Mixer and Video Capture",
       "specs": {
         "tagline": "Unify Your Streaming Setup"
       },
@@ -265,7 +271,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gomixer_pro-x_top_main.jpg",
       "description": "GO:MIXER PRO-X: Audio Mixer for Smartphones - Your Sound Matters",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "MIXER PRO-X: Audio Mixer for Smartphones",
       "specs": {
         "tagline": "Your Sound Matters"
       },
@@ -279,7 +285,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/p-6_top_main.jpg",
       "description": "P-6: Creative Sampler - Roving Recorder",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Creative Sampler",
       "specs": {
         "tagline": "Roving Recorder"
       },
@@ -293,7 +299,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aerophone_editor_main.jpg",
       "description": "Aerophone Editor: iOS/Android App - Customize Your Aerophone AE-10 for Maximum Expression",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Customize Your Aerophone AE-10 for Maximum Expression"
       },
@@ -307,7 +313,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/j-6_top_main.jpg",
       "description": "J-6: Chord Synthesizer - Inspiration Machine",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Chord Synthesizer",
       "specs": {
         "tagline": "Inspiration Machine"
       },
@@ -335,7 +341,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gokeys_3-mu_top_main.jpg",
       "description": "GO:KEYS 3: Music Creation Keyboard - Unlock Your Inner Musician",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "KEYS 3: Music Creation Keyboard",
       "specs": {
         "tagline": "Unlock Your Inner Musician"
       },
@@ -349,7 +355,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/r-07_b_main.jpg",
       "description": "R-07: High-Resolution Audio Recorder - Stylish, Ultra-Portable Recorder with Wireless Listening and Remote Control",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "High-Resolution Audio Recorder",
       "specs": {
         "tagline": "Stylish, Ultra-Portable Recorder with Wireless Listening and Remote Control"
       },
@@ -363,7 +369,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/golivecast_top_main.jpg",
       "description": "GO:LIVECAST: Livestreaming Studio for Smartphones - Pro Production for Smartphone Livestreaming",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "LIVECAST: Livestreaming Studio for Smartphones",
       "specs": {
         "tagline": "Pro Production for Smartphone Livestreaming"
       },
@@ -377,7 +383,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/btm-1_top_angle_main.jpg",
       "description": "BTM-1: Bluetooth Speaker with Instrument Input - Stream Your Favorite Music and Jam Along",
       "brand": "roland",
-      "category": "Monitors & Speakers",
+      "category": "Bluetooth Speaker with Instrument Input",
       "specs": {
         "tagline": "Stream Your Favorite Music and Jam Along"
       },
@@ -391,7 +397,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_roland_cloud_manager_main.jpg",
       "description": "Roland Cloud Manager: Management Software - Your Gateway to Iconic Sounds and New Possibilities",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Management Software",
       "specs": {
         "tagline": "Your Gateway to Iconic Sounds and New Possibilities"
       },
@@ -405,7 +411,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bridge_cast_top_main.jpg",
       "description": "BRIDGE CAST: Dual Bus Gaming Mixer - Pro Sound for Pro Gamers",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "Dual Bus Gaming Mixer",
       "specs": {
         "tagline": "Pro Sound for Pro Gamers"
       },
@@ -419,7 +425,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/xps-10x-bk_top_main.jpg",
       "description": "XPS-10X: Expandable Synthesizer - XPS Quality in a Streamlined Performance Keyboard",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Expandable Synthesizer",
       "specs": {
         "tagline": "XPS Quality in a Streamlined Performance Keyboard"
       },
@@ -433,7 +439,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vmh-s100_angle_main.jpg",
       "description": "VMH-S100: Headphones - The New Standard for Music Creation and Production",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Headphones",
       "specs": {
         "tagline": "The New Standard for Music Creation and Production"
       },
@@ -447,7 +453,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bluescube_artist212_front_main.jpg",
       "description": "Blues Cube Artist212: Guitar Amplifier - Powerful Tube Logic Tone in a Compact Twin-Speaker Combo",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier",
       "specs": {
         "tagline": "Powerful Tube Logic Tone in a Compact Twin-Speaker Combo"
       },
@@ -461,7 +467,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aerophone_pro_editor_scene_part_main.jpg",
       "description": "Aerophone Pro Editor: iOS/Android App - Customize Your Aerophone Pro and Aerophone AE-20 for Maximum Expression",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Customize Your Aerophone Pro and Aerophone AE-20 for Maximum Expression"
       },
@@ -475,7 +481,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bluescube_hot_front_main.jpg",
       "description": "Blues Cube Hot: Guitar Amplifier - Gig-Ready Blues Cube “TUBE LOGIC” Tone in a Portable Combo Amp",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier",
       "specs": {
         "tagline": "Gig-Ready Blues Cube “TUBE LOGIC” Tone in a Portable Combo Amp"
       },
@@ -489,7 +495,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sh-4d_top_main.jpg",
       "description": "SH-4d: Desktop Synthesizer - Future Retro",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Desktop Synthesizer",
       "specs": {
         "tagline": "Future Retro"
       },
@@ -503,7 +509,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rd-08_top_main.jpg",
       "description": "RD-08: Stage Piano - Essential RD",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Stage Piano",
       "specs": {
         "tagline": "Essential RD"
       },
@@ -517,7 +523,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-b88s_main.jpg",
       "description": "CB-B88S: Keyboard Bag - Carrying Bag for Slim 88-Note Keyboards",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Keyboard Bag",
       "specs": {
         "tagline": "Carrying Bag for Slim 88-Note Keyboards"
       },
@@ -545,7 +551,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rmc-b3_main.jpg",
       "description": "RMC-B3: Black Series Microphone Cable -",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Black Series Microphone Cable -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -557,7 +563,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/a-49-bk_top_main.jpg",
       "description": "A-49: MIDI Keyboard Controller - Portable Control with Pro Action",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "MIDI Keyboard Controller",
       "specs": {
         "tagline": "Portable Control with Pro Action"
       },
@@ -571,7 +577,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_tb-303_main.jpg",
       "description": "TB-303: Software Bass Line - The Sound That Gave Birth to a Movement",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Software Bass Line",
       "specs": {
         "tagline": "The Sound That Gave Birth to a Movement"
       },
@@ -585,7 +591,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wt-10_front_main.jpg",
       "description": "WT-10: Wireless Trigger Adapter - Wireless Triggering for V-Drums and Other Roland Drumming Gear",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Wireless Trigger Adapter",
       "specs": {
         "tagline": "Wireless Triggering for V-Drums and Other Roland Drumming Gear"
       },
@@ -599,7 +605,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-br07_angle_main.jpg",
       "description": "CB-BR07: Black Series Bag - R-07 Recorder Bag",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Black Series Bag",
       "specs": {
         "tagline": "R-07 Recorder Bag"
       },
@@ -613,7 +619,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/r-05_front_main.jpg",
       "description": "R-05: WAVE/MP3 Recorder - Affordable Pocket Recorder with Advanced Features",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "WAVE/MP3 Recorder",
       "specs": {
         "tagline": "Affordable Pocket Recorder with Advanced Features"
       },
@@ -683,7 +689,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/juno-d7_top_main.jpg",
       "description": "JUNO-D7: Synthesizer - The Gigging Musician’s Go-To",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "The Gigging Musician’s Go-To"
       },
@@ -697,7 +703,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/td313_back_main.jpg",
       "description": "TD313: V-Drums - Compact V-Drums 3 Series Kit with the Expandable V31 Module",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums",
       "specs": {
         "tagline": "Compact V-Drums 3 Series Kit with the Expandable V31 Module"
       },
@@ -711,7 +717,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sh-01a_main.jpg",
       "description": "SH-01A: Synthesizer - Four Times the Sounds in A Fraction of the Size",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "Four Times the Sounds in A Fraction of the Size"
       },
@@ -725,7 +731,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/blues_cube_hot_british_el84_modified_main.jpg",
       "description": "Blues Cube Hot “British EL84 Modified”: Guitar Amplifier - Special Edition Amp with Authentic British Tone and Response",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier",
       "specs": {
         "tagline": "Special Edition Amp with Authentic British Tone and Response"
       },
@@ -793,7 +799,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-rac_main.jpg",
       "description": "CB-RAC: AIRA Compact Carrying Case - Custom Case for AIRA Compact Instruments",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "AIRA Compact Carrying Case",
       "specs": {
         "tagline": "Custom Case for AIRA Compact Instruments"
       },
@@ -807,7 +813,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fs-7_angle_main.jpg",
       "description": "FS-7: Dual Footswitch - Space-Saving, Multifunctional Dual Footswitch",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Dual Footswitch",
       "specs": {
         "tagline": "Space-Saving, Multifunctional Dual Footswitch"
       },
@@ -821,7 +827,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gomixer_pro_main.jpg",
       "description": "GO:MIXER PRO: Audio Mixer for Smartphones - Use Pro-Quality Sound to Get More Followers, More Views, and Higher Engagement",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "MIXER PRO: Audio Mixer for Smartphones",
       "specs": {
         "tagline": "Use Pro-Quality Sound to Get More Followers, More Views, and Higher Engagement"
       },
@@ -835,7 +841,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rh_300_angle_main.jpg",
       "description": "RH-300: Monitor Headphones - Premium Closed-Back Studio Headphones for Pro Level Monitoring",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Monitor Headphones",
       "specs": {
         "tagline": "Premium Closed-Back Studio Headphones for Pro Level Monitoring"
       },
@@ -849,7 +855,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-v61_main.jpg",
       "description": "CB-V61: Keyboard Bag - Versatile Carrying Bag for Portable 61-Note Keyboards",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Keyboard Bag",
       "specs": {
         "tagline": "Versatile Carrying Bag for Portable 61-Note Keyboards"
       },
@@ -877,7 +883,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/beat_sync_maker_main.jpg",
       "description": "Beat Sync Maker: iOS app - Pump Up Your EDM/DJ Performance Videos with Pro Beat-Synced Visual Effects",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS app",
       "specs": {
         "tagline": "Pump Up Your EDM/DJ Performance Videos with Pro Beat-Synced Visual Effects"
       },
@@ -891,7 +897,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/s-1_top_main.jpg",
       "description": "S-1: Tweak Synthesizer - Synth classic. New twist.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Tweak Synthesizer",
       "specs": {
         "tagline": "Synth classic. New twist."
       },
@@ -905,7 +911,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/roland_chord_director_edit_main.jpg",
       "description": "Roland Chord Director: iOS/Android App - Create and Download New Chord Patterns for GO:KEYS 3 and GO:KEYS 5",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Create and Download New Chord Patterns for GO:KEYS 3 and GO:KEYS 5"
       },
@@ -919,7 +925,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/psb7_series_main.jpg",
       "description": "PSB7 Series: Power Adaptor - Power supply for select Roland and BOSS products",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Power Adaptor",
       "specs": {
         "tagline": "Power supply for select Roland and BOSS products"
       },
@@ -947,7 +953,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_v31_editor_main.jpg",
       "description": "V31 Editor: Editor Software - Graphical Editor Software for the V31 Drum Sound Module",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Editor Software",
       "specs": {
         "tagline": "Graphical Editor Software for the V31 Drum Sound Module"
       },
@@ -961,7 +967,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ks-11z_main.jpg",
       "description": "KS-11Z: Keyboard Stand - Heavy-Duty Z-Stand with Wide Adjustment Range",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Keyboard Stand",
       "specs": {
         "tagline": "Heavy-Duty Z-Stand with Wide Adjustment Range"
       },
@@ -975,7 +981,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rubix24_main.jpg",
       "description": "Rubix24: USB Audio Interface - 2-in/4-out, high-resolution interface for MAC, PC and iPad",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "USB Audio Interface",
       "specs": {
         "tagline": "2-in/4-out, high-resolution interface for MAC, PC and iPad"
       },
@@ -989,7 +995,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/jd-xi_top_main.jpg",
       "description": "JD-Xi: Interactive Analog/Digital Crossover Synthesizer - Powerful Compact Synth with Onboard Pattern Sequencer and Vocal FX",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Interactive Analog/Digital Crossover Synthesizer",
       "specs": {
         "tagline": "Powerful Compact Synth with Onboard Pattern Sequencer and Vocal FX"
       },
@@ -1015,7 +1021,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cs-10em_angle_main.jpg",
       "description": "CS-10EM: Binaural Microphones/Earphones - Two Functions in One",
       "brand": "roland",
-      "category": "Microphones",
+      "category": "Binaural Microphones/Earphones",
       "specs": {
         "tagline": "Two Functions in One"
       },
@@ -1043,7 +1049,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fp-e50_top_main.jpg",
       "description": "FP-E50: Digital Piano - A Modern Portable Piano with Powerful Entertainment Features",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Digital Piano",
       "specs": {
         "tagline": "A Modern Portable Piano with Powerful Entertainment Features"
       },
@@ -1057,7 +1063,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/v-stage_88_top_main.jpg",
       "description": "V-STAGE 88: Performance Keyboard - Always in the Moment",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Performance Keyboard",
       "specs": {
         "tagline": "Always in the Moment"
       },
@@ -1125,7 +1131,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vqd106_back_main.jpg",
       "description": "VQD106: V-Drums Quiet Design - The Quietest Kit in V-Drums History",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums Quiet Design",
       "specs": {
         "tagline": "The Quietest Kit in V-Drums History"
       },
@@ -1139,7 +1145,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sp-404a_main.jpg",
       "description": "SP-404A: Linear Wave Sampler - A Legendary Sampler Meets an Iconic Sequencer",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Linear Wave Sampler",
       "specs": {
         "tagline": "A Legendary Sampler Meets an Iconic Sequencer"
       },
@@ -1153,7 +1159,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/system-8_main.jpg",
       "description": "SYSTEM-8: PLUG-OUT Synthesizer - Sound. Control.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "PLUG-OUT Synthesizer",
       "specs": {
         "tagline": "Sound. Control."
       },
@@ -1167,7 +1173,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_zenbeats_main.jpg",
       "description": "Zenbeats: Music Creation App - Find Your Creative Flow",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Music Creation App",
       "specs": {
         "tagline": "Find Your Creative Flow"
       },
@@ -1181,7 +1187,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gopiano_go-88px_top_main.jpg",
       "description": "GO:PIANO88: Digital Piano (GO-88PX) - Exquisite Sound, Easy Operation",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "PIANO88: Digital Piano (GO-88PX)",
       "specs": {
         "tagline": "Exquisite Sound, Easy Operation"
       },
@@ -1195,7 +1201,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-b37_main.jpg",
       "description": "CB-B37: Keyboard Bag - Carrying Bag for the GAIA 2 and JUPITER-Xm Synthesizers",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Keyboard Bag",
       "specs": {
         "tagline": "Carrying Bag for the GAIA 2 and JUPITER-Xm Synthesizers"
       },
@@ -1209,7 +1215,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/jupiter-x_main.jpg",
       "description": "JUPITER-X: Synthesizer - JUPITER Rising",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "JUPITER Rising"
       },
@@ -1223,7 +1229,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vad316_angle_main.jpg",
       "description": "VAD316: V-Drums Acoustic Design - Five-Piece V-Drums Acoustic Design Kit with the Expandable V31 Module",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums Acoustic Design",
       "specs": {
         "tagline": "Five-Piece V-Drums Acoustic Design Kit with the Expandable V31 Module"
       },
@@ -1237,7 +1243,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-bpr07_angle_main.jpg",
       "description": "CB-BPR07: Black Series Bag - R-07 Recorder Pouch",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Black Series Bag",
       "specs": {
         "tagline": "R-07 Recorder Pouch"
       },
@@ -1265,7 +1271,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/op-msa1_side_main.jpg",
       "description": "OP-MSA1: Microphone Stand Adapter - Use the R-09HR/R-05/R-07 Just Like a Microphone",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Microphone Stand Adapter",
       "specs": {
         "tagline": "Use the R-09HR/R-05/R-07 Just Like a Microphone"
       },
@@ -1279,7 +1285,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ax-edge_editor_main.jpg",
       "description": "AX-Edge Editor: iOS/Android App - Customize AX-Edge Sounds to Match Your Unique Playing Style",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Customize AX-Edge Sounds to Match Your Unique Playing Style"
       },
@@ -1307,7 +1313,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_sound_canvas_va_main.jpg",
       "description": "Sound Canvas VA: Software Synthesizer - The Gold Standard in GS Sound Modules",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Software Synthesizer",
       "specs": {
         "tagline": "The Gold Standard in GS Sound Modules"
       },
@@ -1321,7 +1327,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cm_30_front_main.jpg",
       "description": "CM-30: Cube Monitor - Multi-Purpose Portable Mixing Monitor",
       "brand": "roland",
-      "category": "Monitors & Speakers",
+      "category": "Cube Monitor",
       "specs": {
         "tagline": "Multi-Purpose Portable Mixing Monitor"
       },
@@ -1335,7 +1341,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/4xcamera_maker_main.jpg",
       "description": "4XCamera Maker: iOS App - The Fast and Simple Way to Produce and Edit Multi-Angle Videos",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS App",
       "specs": {
         "tagline": "The Fast and Simple Way to Produce and Edit Multi-Angle Videos"
       },
@@ -1349,7 +1355,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cube_street_ex_angle_1_main.jpg",
       "description": "CUBE Street EX: Multi-Instrument Battery Amplifier - High-Quality Sound for Performers On the Go",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Multi-Instrument Battery Amplifier",
       "specs": {
         "tagline": "High-Quality Sound for Performers On the Go"
       },
@@ -1377,7 +1383,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/e-x10_top_main.jpg",
       "description": "E-X10: Arranger Keyboard - Trusted Roland Quality in a Stylish Portable Keyboard",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Arranger Keyboard",
       "specs": {
         "tagline": "Trusted Roland Quality in a Stylish Portable Keyboard"
       },
@@ -1405,7 +1411,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/4cy-4wt-01_set_main.jpg",
       "description": "4CY-4WT-01: DrumLink Cymbal Pack - Roland Cymbal Pack for DWe Acoustic-Electronic Wireless Convertible Drum Sets",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "DrumLink Cymbal Pack",
       "specs": {
         "tagline": "Roland Cymbal Pack for DWe Acoustic-Electronic Wireless Convertible Drum Sets"
       },
@@ -1433,7 +1439,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_v71_editor_main.jpg",
       "description": "V71 Editor: Editor Software - Graphical Editor Software for the V71 Drum Sound Module",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Editor Software",
       "specs": {
         "tagline": "Graphical Editor Software for the V71 Drum Sound Module"
       },
@@ -1447,7 +1453,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/tr-06_top_main.jpg",
       "description": "TR-06: Drumatix - Authentic TR-606. And so much more.",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "Drumatix",
       "specs": {
         "tagline": "Authentic TR-606. And so much more."
       },
@@ -1461,7 +1467,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_jupiter-8_main.jpg",
       "description": "JUPITER-8: Software Synthesizer - The king of polysynths",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Software Synthesizer",
       "specs": {
         "tagline": "The king of polysynths"
       },
@@ -1475,7 +1481,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rh-a7-bk_angle_main.jpg",
       "description": "RH-A7: Open-Air Headphones - Enjoy All the Dynamics of Your Digital Piano, Day or Night",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Open-Air Headphones",
       "specs": {
         "tagline": "Enjoy All the Dynamics of Your Digital Piano, Day or Night"
       },
@@ -1489,7 +1495,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dh-10_front_main.jpg",
       "description": "DH-10: DrumLink Hub - Compact Receiver for Roland WT-10 Wireless Trigger Adapters",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "DrumLink Hub",
       "specs": {
         "tagline": "Compact Receiver for Roland WT-10 Wireless Trigger Adapters"
       },
@@ -1517,7 +1523,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/td713_front_main.jpg",
       "description": "TD713: V-Drums - Streamlined V-Drums 7 Series Kit with the Expandable V71 Module and Advanced Pads",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums",
       "specs": {
         "tagline": "Streamlined V-Drums 7 Series Kit with the Expandable V71 Module and Advanced Pads"
       },
@@ -1531,7 +1537,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/pcs_20a_main.jpg",
       "description": "PCS-20A: Parallel DC Cord -",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Parallel DC Cord -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1543,7 +1549,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/jc_120_front_main.jpg",
       "description": "JC-120: Jazz Chorus Guitar Amplifier - Four Decades of Exceptional Sound",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Jazz Chorus Guitar Amplifier",
       "specs": {
         "tagline": "Four Decades of Exceptional Sound"
       },
@@ -1571,7 +1577,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rubix22_main.jpg",
       "description": "Rubix22: USB Audio Interface - 2-In/2-Out, High-Resolution Interface for Mac, PC and iPad",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "USB Audio Interface",
       "specs": {
         "tagline": "2-In/2-Out, High-Resolution Interface for Mac, PC and iPad"
       },
@@ -1585,7 +1591,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/kiyola_kf-25_main.jpg",
       "description": "KIYOLA KF-25: Artisan Digital Piano - Straight lines—striking angles.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Artisan Digital Piano",
       "specs": {
         "tagline": "Straight lines—striking angles."
       },
@@ -1599,7 +1605,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/v-drums_play_main.jpg",
       "description": "V-Drums Play: iOS/Android App - Simplify Your V-Drums Experience",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Simplify Your V-Drums Experience"
       },
@@ -1627,7 +1633,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gaia_2_top_main.jpg",
       "description": "GAIA 2: Synthesizer - The Shape of Sound",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "The Shape of Sound"
       },
@@ -1641,7 +1647,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ks-20x_angle_main.jpg",
       "description": "KS-20X: Keyboard Stand - Heavy-Duty Double-Braced X Stand",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Keyboard Stand",
       "specs": {
         "tagline": "Heavy-Duty Double-Braced X Stand"
       },
@@ -1655,7 +1661,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bluescube_cabinet410_front_main.jpg",
       "description": "Blues Cube Cabinet410: Guitar Amplifier Cabinet - Speaker Cabinet for Blues Cube Tour Head",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier Cabinet",
       "specs": {
         "tagline": "Speaker Cabinet for Blues Cube Tour Head"
       },
@@ -1669,7 +1675,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dp_2_angle_main.jpg",
       "description": "DP-2: Damper Pedal - Momentary footswitch for selecting tones, etc",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Damper Pedal",
       "specs": {
         "tagline": "Momentary footswitch for selecting tones, etc"
       },
@@ -1683,7 +1689,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/kiyola_kf-20_main.jpg",
       "description": "KIYOLA KF-20: Artisan Digital Piano - A smooth, curved presence.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Artisan Digital Piano",
       "specs": {
         "tagline": "A smooth, curved presence."
       },
@@ -1697,7 +1703,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gomixer_main.jpg",
       "description": "GO:MIXER: Audio Mixer for Smartphones - Perform, Mix Audio, and Record Video with Your Smartphone—All at Once",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "MIXER: Audio Mixer for Smartphones",
       "specs": {
         "tagline": "Perform, Mix Audio, and Record Video with Your Smartphone—All at Once"
       },
@@ -1711,7 +1717,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/go-88p_main.jpg",
       "description": "GO:PIANO88: Digital Piano (GO-88P) - Full-Size 88-Note Piano. Play-Anywhere Portability. Smartphone-Powered Tuition",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "PIANO88: Digital Piano (GO-88P)",
       "specs": {
         "tagline": "Full-Size 88-Note Piano. Play-Anywhere Portability. Smartphone-Powered Tuition"
       },
@@ -1725,7 +1731,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_fantom_ex_upgrade_main.jpg",
       "description": "FANTOM EX Upgrade: System Upgrade for FANTOM 6/7/8 - The EX Factor",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "System Upgrade for FANTOM 6/7/8",
       "specs": {
         "tagline": "The EX Factor"
       },
@@ -1739,7 +1745,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/blues_cube_artist_front_main.jpg",
       "description": "Blues Cube Artist: Guitar Amplifier - Authentic Tube Tone for Top Players",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier",
       "specs": {
         "tagline": "Authentic Tube Tone for Top Players"
       },
@@ -1767,7 +1773,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rd-88_ex_top_main.jpg",
       "description": "RD-88 EX: Stage Piano - Stage Piano Perfection",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Stage Piano",
       "specs": {
         "tagline": "Stage Piano Perfection"
       },
@@ -1781,7 +1787,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/jc-22_main.jpg",
       "description": "JC-22: Jazz Chorus Guitar Amplifier - Legendary Tone for Your Home",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Jazz Chorus Guitar Amplifier",
       "specs": {
         "tagline": "Legendary Tone for Your Home"
       },
@@ -1795,7 +1801,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/udc-25_angle_main.jpg",
       "description": "UDC-25: USB DC Power Supply Cable -",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "USB DC Power Supply Cable -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -1807,7 +1813,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fv_500h_main.jpg",
       "description": "FV-500H/FV-500L: Volume Pedal - Industrial-Strength Power Pedal",
       "brand": "roland",
-      "category": "Effects & Pedals",
+      "category": "Volume Pedal",
       "specs": {
         "tagline": "Industrial-Strength Power Pedal"
       },
@@ -1821,7 +1827,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/td-07kv_front_main.jpg",
       "description": "TD-07KV: V-Drums - The Next Step in Your Electronic Drumming Journey",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums",
       "specs": {
         "tagline": "The Next Step in Your Electronic Drumming Journey"
       },
@@ -1835,7 +1841,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_tr-606_main.jpg",
       "description": "TR-606: Software Rhythm Composer - The Return of an Underground Classic",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Software Rhythm Composer",
       "specs": {
         "tagline": "The Return of an Underground Classic"
       },
@@ -1849,7 +1855,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/mood_pan_mn-10_front_angle_main.jpg",
       "description": "Mood Pan: Electronic Hand Percussion (MN-10) - Pure Sound. Deep Calm.",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "Electronic Hand Percussion (MN-10)",
       "specs": {
         "tagline": "Pure Sound. Deep Calm."
       },
@@ -1863,7 +1869,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-ru10_main.jpg",
       "description": "CB-RU10: Utility Gig Bag - The Ultimate Utility Bag for Your Music Gear",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Utility Gig Bag",
       "specs": {
         "tagline": "The Ultimate Utility Bag for Your Music Gear"
       },
@@ -1877,7 +1883,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/m-10_angle_main.jpg",
       "description": "M-10: Headphones - Drive Your Beats with Authentic V-MODA Sound",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Headphones",
       "specs": {
         "tagline": "Drive Your Beats with Authentic V-MODA Sound"
       },
@@ -1919,7 +1925,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/mobile_cube_front_main.jpg",
       "description": "MOBILE CUBE: Battery-Powered Stereo Amplifier - The All-Purpose Portable Amp",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Battery-Powered Stereo Amplifier",
       "specs": {
         "tagline": "The All-Purpose Portable Amp"
       },
@@ -1933,7 +1939,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/juno-d6_top_main.jpg",
       "description": "JUNO-D6: Synthesizer - The Gigging Musician’s Go-To",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "The Gigging Musician’s Go-To"
       },
@@ -1947,7 +1953,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/se-02_main.jpg",
       "description": "SE-02: Analog Synthesizer - Vintage Sound. Unexpected Power.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Analog Synthesizer",
       "specs": {
         "tagline": "Vintage Sound. Unexpected Power."
       },
@@ -1961,7 +1967,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/a-88mk2_top_main.jpg",
       "description": "A-88MKII: MIDI Keyboard Controller - Play. Control. Rejoice.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "MIDI Keyboard Controller",
       "specs": {
         "tagline": "Play. Control. Rejoice."
       },
@@ -2017,7 +2023,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/td316_back_main.jpg",
       "description": "TD316: V-Drums - Mid-Level V-Drums 3 Series Kit with the Expandable V31 Module",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums",
       "specs": {
         "tagline": "Mid-Level V-Drums 3 Series Kit with the Expandable V31 Module"
       },
@@ -2031,7 +2037,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vr-09_editor_2_main.jpg",
       "description": "VR-09 Editor: iOS App - Control the V-Combo’s Organ and Synth Engines from Your iPad",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS App",
       "specs": {
         "tagline": "Control the V-Combo’s Organ and Synth Engines from Your iPad"
       },
@@ -2045,7 +2051,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/bluescube_tour_front_main.jpg",
       "description": "Blues Cube Tour: Guitar Amplifier - Flagship Stack with Rich, Dynamic Tone",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier",
       "specs": {
         "tagline": "Flagship Stack with Rich, Dynamic Tone"
       },
@@ -2059,7 +2065,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/roland_piano_app_main.jpg",
       "description": "Roland Piano App: iOS/Android App - Unlock the Full Creative Power of Your Roland Piano",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Unlock the Full Creative Power of Your Roland Piano"
       },
@@ -2073,7 +2079,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fantom-06_top_main.jpg",
       "description": "FANTOM-06: Synthesizer Keyboard - Unify Your Creative Vision",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer Keyboard",
       "specs": {
         "tagline": "Unify Your Creative Vision"
       },
@@ -2101,7 +2107,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vad516_angle_main.jpg",
       "description": "VAD516: V-Drums Acoustic Design - Flagship V-Drums 5 Series Kit with the Expandable V51 Module, Advanced Digital Pads, and Full-Depth Wood Shells",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums Acoustic Design",
       "specs": {
         "tagline": "Flagship V-Drums 5 Series Kit with the Expandable V51 Module, Advanced Digital Pads, and Full-Depth Wood Shells"
       },
@@ -2129,7 +2135,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sp-404sx_top_main.jpg",
       "description": "SP-404SX: Linear Wave Sampler - Turbocharging the World’s Most Popular Portable Sampler",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Linear Wave Sampler",
       "specs": {
         "tagline": "Turbocharging the World’s Most Popular Portable Sampler"
       },
@@ -2143,7 +2149,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gopiano_go-61p-a_top_main.jpg",
       "description": "GO:PIANO with Alexa Built-in: Digital Piano - Bring Music into Your Life with Alexa Technology",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "PIANO with Alexa Built-in: Digital Piano",
       "specs": {
         "tagline": "Bring Music into Your Life with Alexa Technology"
       },
@@ -2157,7 +2163,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fs_6_top_main.jpg",
       "description": "FS-6: Dual Footswitch - Double Your Switching Power",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Dual Footswitch",
       "specs": {
         "tagline": "Double Your Switching Power"
       },
@@ -2171,7 +2177,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rd-2000_ex_top_main.jpg",
       "description": "RD-2000 EX: Stage Piano - The Ultimate RD Experience",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Stage Piano",
       "specs": {
         "tagline": "The Ultimate RD Experience"
       },
@@ -2185,7 +2191,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rh_200_main.jpg",
       "description": "RH-200: Monitor Headphones - Clear, Accurate and Comfortable for Studio-Quality Monitoring",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Monitor Headphones",
       "specs": {
         "tagline": "Clear, Accurate and Comfortable for Studio-Quality Monitoring"
       },
@@ -2199,7 +2205,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wm-1_angle_main.jpg",
       "description": "WM-1: Wireless MIDI Adaptor - Wireless MIDI for a Wireless World",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Wireless MIDI Adaptor",
       "specs": {
         "tagline": "Wireless MIDI for a Wireless World"
       },
@@ -2213,7 +2219,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wna-1_angle_main.jpg",
       "description": "WNA-1: Wireless USB Adapter - Creative Connectivity with Roland Gear and Smartphone/Tablet",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Wireless USB Adapter",
       "specs": {
         "tagline": "Creative Connectivity with Roland Gear and Smartphone/Tablet"
       },
@@ -2227,7 +2233,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/PSA-120S2_main.jpg",
       "description": "PSA Series: Power Adaptor -",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Power Adaptor -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2239,7 +2245,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_v51_editor_main.jpg",
       "description": "V51 Editor: Editor Software - Graphical Editor Software for the V51 Drum Sound Module",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Editor Software",
       "specs": {
         "tagline": "Graphical Editor Software for the V51 Drum Sound Module"
       },
@@ -2253,7 +2259,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vqd106pads_back_main.jpg",
       "description": "VQD106PADS: V-Drums Quiet Design - The Quietest Kit in V-Drums History",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums Quiet Design",
       "specs": {
         "tagline": "The Quietest Kit in V-Drums History"
       },
@@ -2267,7 +2273,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fp-10_main.jpg",
       "description": "FP-10: Digital Piano - Unbeatable Performance, Unbelievable Price",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Digital Piano",
       "specs": {
         "tagline": "Unbeatable Performance, Unbelievable Price"
       },
@@ -2281,7 +2287,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/piano_designer_rev2_main.jpg",
       "description": "Piano Designer: iOS/Android App - Personalize the Sound of Your Roland Piano",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Personalize the Sound of Your Roland Piano"
       },
@@ -2295,7 +2301,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/mobile_ac_front_main.jpg",
       "description": "MOBILE AC: Acoustic Chorus - Your First Acoustic Guitar Amp",
       "brand": "roland",
-      "category": "Effects & Pedals",
+      "category": "Acoustic Chorus",
       "specs": {
         "tagline": "Your First Acoustic Guitar Amp"
       },
@@ -2309,7 +2315,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ric-g3_main.jpg",
       "description": "RIC-G3: Gold Series Instrument Cable -",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Gold Series Instrument Cable -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2321,7 +2327,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/hp704_dr_main.jpg",
       "description": "HP700 Series: Digital Piano - The Beauty of Music, in the Heart of Your Home",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Digital Piano",
       "specs": {
         "tagline": "The Beauty of Music, in the Heart of Your Home"
       },
@@ -2335,7 +2341,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rh-5_angle_main.jpg",
       "description": "RH-5: Headphones - Headphones for Everyday Music Making and Audio Playback",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Headphones",
       "specs": {
         "tagline": "Headphones for Everyday Music Making and Audio Playback"
       },
@@ -2349,7 +2355,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/dp_10_angle_main.jpg",
       "description": "DP-10: Damper Pedal - Damper Pedal",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Damper Pedal",
       "specs": {
         "tagline": "Damper Pedal"
       },
@@ -2377,7 +2383,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aerophone_lesson_fingering_main.jpg",
       "description": "Aerophone Lesson: iOS/Android App - Start Playing Right Away with Aerophone Pro and Aerophone AE-20",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Start Playing Right Away with Aerophone Pro and Aerophone AE-20"
       },
@@ -2391,7 +2397,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aerophone_go_plus_main.jpg",
       "description": "Aerophone GO Plus: iOS/Android App - More Sounds, Better Practice and Deeper Customization for Aerophone GO",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "More Sounds, Better Practice and Deeper Customization for Aerophone GO"
       },
@@ -2417,7 +2423,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rcc-5-3535_main.jpg",
       "description": "RCC-5-3535: Black Series Interconnect Cable -",
       "brand": "roland",
-      "category": "Cables & Accessories",
+      "category": "Black Series Interconnect Cable -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2429,7 +2435,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rh_a30_main.jpg",
       "description": "RH-A30: Open-Air Headphones - Premium Open-Air Headphones with a Wide Range of Applications",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Open-Air Headphones",
       "specs": {
         "tagline": "Premium Open-Air Headphones with a Wide Range of Applications"
       },
@@ -2443,7 +2449,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cb-btrmx_main.jpg",
       "description": "CB-BTRMX: Black Series Instrument Bag - Custom Bag for the TR-8S/TR-8 Rhythm Performer and MX-1 Mix Performer",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Black Series Instrument Bag",
       "specs": {
         "tagline": "Custom Bag for the TR-8S/TR-8 Rhythm Performer and MX-1 Mix Performer"
       },
@@ -2469,7 +2475,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/xps_tone_loader_main.jpg",
       "description": "XPS Tone Loader: iOS/Android App - Purchase and Install World Expansions with Your Mobile Device",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Purchase and Install World Expansions with Your Mobile Device"
       },
@@ -2483,7 +2489,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rubix44_main.jpg",
       "description": "Rubix44: USB Audio Interface - 4-in/4-out, high-resolution interface for MAC, PC and iPad",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "USB Audio Interface",
       "specs": {
         "tagline": "4-in/4-out, high-resolution interface for MAC, PC and iPad"
       },
@@ -2511,7 +2517,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/e-a7_tone_manager_main.jpg",
       "description": "E-A7 Tone Manager: Librarian/Editor Software - Librarian/editor software for the E-A7 Expandable Arranger",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Librarian/Editor Software",
       "specs": {
         "tagline": "Librarian/editor software for the E-A7 Expandable Arranger"
       },
@@ -2525,7 +2531,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/juno-x_top_main.jpg",
       "description": "JUNO-X: Programmable Polyphonic Synthesizer - Vintage heart. Modern muscle.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Programmable Polyphonic Synthesizer",
       "specs": {
         "tagline": "Vintage heart. Modern muscle."
       },
@@ -2539,7 +2545,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fp-30x-bk_top_main.jpg",
       "description": "FP-30X: Digital Piano - The Super-Popular Portable Piano—Upgraded",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Digital Piano",
       "specs": {
         "tagline": "The Super-Popular Portable Piano—Upgraded"
       },
@@ -2553,7 +2559,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/um-one_mk2_angle_main.jpg",
       "description": "UM-ONE mk2: USB MIDI Interface - Now Compatible with the iPad",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "USB MIDI Interface",
       "specs": {
         "tagline": "Now Compatible with the iPad"
       },
@@ -2567,7 +2573,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ac-33_front_angle_main.jpg",
       "description": "AC-33: Acoustic Chorus Guitar Amplifier - Super Portable, Versatile, Battery-Powered Stereo Acoustic Guitar Amp",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Acoustic Chorus Guitar Amplifier",
       "specs": {
         "tagline": "Super Portable, Versatile, Battery-Powered Stereo Acoustic Guitar Amp"
       },
@@ -2581,7 +2587,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_zenology_pro_main.jpg",
       "description": "ZENOLOGY Pro: Advanced Software Synthesizer - Be one with your sound.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Advanced Software Synthesizer",
       "specs": {
         "tagline": "Be one with your sound."
       },
@@ -2595,7 +2601,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/v-stage_76_top_main.jpg",
       "description": "V-STAGE 76: Performance Keyboard - Always in the Moment",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Performance Keyboard",
       "specs": {
         "tagline": "Always in the Moment"
       },
@@ -2609,7 +2615,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/juno-d8_top_main.jpg",
       "description": "JUNO-D8: Synthesizer - The Gigging Musician’s Go-To",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Synthesizer",
       "specs": {
         "tagline": "The Gigging Musician’s Go-To"
       },
@@ -2623,7 +2629,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rh_200s_angle_main.jpg",
       "description": "RH-200S: Monitor Headphones - Clear, Accurate and Comfortable for Studio-Quality Monitoring",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Monitor Headphones",
       "specs": {
         "tagline": "Clear, Accurate and Comfortable for Studio-Quality Monitoring"
       },
@@ -2637,7 +2643,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/ks-13_main.jpg",
       "description": "KS-13: Keyboard Stand - Stylish, Stable, and Versatile",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Keyboard Stand",
       "specs": {
         "tagline": "Stylish, Stable, and Versatile"
       },
@@ -2679,7 +2685,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/vad716-sw_front_main.jpg",
       "description": "VAD716: V-Drums Acoustic Design - Flagship V-Drums Acoustic Design Kit with the Expandable V71 Module and Advanced Pads",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums Acoustic Design",
       "specs": {
         "tagline": "Flagship V-Drums Acoustic Design Kit with the Expandable V71 Module and Advanced Pads"
       },
@@ -2705,7 +2711,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aerophone_mini_plus_main.jpg",
       "description": "Aerophone mini Plus: iOS/Android app - The Essential Companion for Aerophone mini",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android app",
       "specs": {
         "tagline": "The Essential Companion for Aerophone mini"
       },
@@ -2733,7 +2739,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/jd-xa_main.jpg",
       "description": "JD-XA: Analog/Digital Crossover Synthesizer - Analog. Digital. Magical.",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Analog/Digital Crossover Synthesizer",
       "specs": {
         "tagline": "Analog. Digital. Magical."
       },
@@ -2747,7 +2753,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gr-55-bk_top_main.jpg",
       "description": "GR-55: Guitar Synthesizer - A New Era of Sound, Power, & Performance",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Guitar Synthesizer",
       "specs": {
         "tagline": "A New Era of Sound, Power, & Performance"
       },
@@ -2761,7 +2767,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cube_street_mini_front_main.jpg",
       "description": "CUBE Street MINI: Multi-Instrument Battery Amplifier - Convenient All-in-One PA for Performers and Creators",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Multi-Instrument Battery Amplifier",
       "specs": {
         "tagline": "Convenient All-in-One PA for Performers and Creators"
       },
@@ -2775,7 +2781,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/fs_5u_angle_main.jpg",
       "description": "FS-5U/FS-5L: Foot Switch -",
       "brand": "roland",
-      "category": "Accessories",
+      "category": "Foot Switch -",
       "specs": {},
       "source": "brand_website",
       "verified": false,
@@ -2815,7 +2821,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/integra-7_editor_tone_select_main.jpg",
       "description": "INTEGRA-7 Editor: iPad App - Graphical Control of INTEGRA-7",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iPad App",
       "specs": {
         "tagline": "Graphical Control of INTEGRA-7"
       },
@@ -2829,7 +2835,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/xps-60_top_main.jpg",
       "description": "XPS-60: Expandable Synthesizer - Expanded Sounds, Enhanced Performance Features",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Expandable Synthesizer",
       "specs": {
         "tagline": "Expanded Sounds, Enhanced Performance Features"
       },
@@ -2843,7 +2849,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/m-100_pro_angle_main.jpg",
       "description": "M-100 PRO: Headphones - Serious Sound for Pro Stages",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Headphones",
       "specs": {
         "tagline": "Serious Sound for Pro Stages"
       },
@@ -2857,7 +2863,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sp-404mkii_top_waveform_main.jpg",
       "description": "SP-404MKII: Creative Sampler and Effector - The Ultimate SP Is Here",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Creative Sampler and Effector",
       "specs": {
         "tagline": "The Ultimate SP Is Here"
       },
@@ -2871,7 +2877,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/wm-1d_angle_main.jpg",
       "description": "WM-1D: Wireless MIDI Dongle - Wireless MIDI for a Wireless World",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Wireless MIDI Dongle",
       "specs": {
         "tagline": "Wireless MIDI for a Wireless World"
       },
@@ -2899,7 +2905,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aerocaster_vrc-01_ipad_main.jpg",
       "description": "AeroCaster: AeroCaster Livestreaming System - Welcome to Wireless Livestreaming",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "AeroCaster Livestreaming System",
       "specs": {
         "tagline": "Welcome to Wireless Livestreaming"
       },
@@ -2913,7 +2919,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/piano_partner_2_ver2_main.jpg",
       "description": "Piano Partner 2 Version 2.0: iOS/Android App - Maximize Learning and Enjoyment with This Exclusive Companion App for Your Roland Piano",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Maximize Learning and Enjoyment with This Exclusive Companion App for Your Roland Piano"
       },
@@ -2941,7 +2947,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/gokeys_5-gt_top_main.jpg",
       "description": "GO:KEYS 5: Music Creation Keyboard - Unlock Your Inner Musician",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "KEYS 5: Music Creation Keyboard",
       "specs": {
         "tagline": "Unlock Your Inner Musician"
       },
@@ -2955,7 +2961,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/td513_back_main.jpg",
       "description": "TD513: V-Drums - Space-Saving V-Drums 5 Series Kit with the Expandable V51 Module",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums",
       "specs": {
         "tagline": "Space-Saving V-Drums 5 Series Kit with the Expandable V51 Module"
       },
@@ -2969,7 +2975,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/virtual_stage_camera_main.jpg",
       "description": "Virtual Stage Camera: iOS/Android App - Shoot Your Video and Tour the World – From the Comfort of Your Home",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Shoot Your Video and Tour the World – From the Comfort of Your Home"
       },
@@ -2997,7 +3003,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/td516_front_main.jpg",
       "description": "TD516: V-Drums - Five-Piece V-Drums 5 Series Kit with the Expandable V51 Module and Advanced Digital Pads",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums",
       "specs": {
         "tagline": "Five-Piece V-Drums 5 Series Kit with the Expandable V51 Module and Advanced Digital Pads"
       },
@@ -3011,7 +3017,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/jc_40_front_main.jpg",
       "description": "JC-40: Jazz Chorus Guitar Amplifier - Legendary Stereo Tone, Modern Innovation",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Jazz Chorus Guitar Amplifier",
       "specs": {
         "tagline": "Legendary Stereo Tone, Modern Innovation"
       },
@@ -3025,7 +3031,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/camcorder_main.jpg",
       "description": "Camcorder for GO:MIXER: Android App - Video Recording App Designed for Use with Android Devices and Roland’s GO:MIXER",
       "brand": "roland",
-      "category": "Audio Equipment",
+      "category": "MIXER: Android App",
       "specs": {
         "tagline": "Video Recording App Designed for Use with Android Devices and Roland’s GO:MIXER"
       },
@@ -3039,7 +3045,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/4xcamera_main.jpg",
       "description": "4XCAMERA: iOS/Android App - The Easy Way to Create Split-Screen Music Videos on Your Mobile Device",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "The Easy Way to Create Split-Screen Music Videos on Your Mobile Device"
       },
@@ -3053,7 +3059,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/aerophone_brisa_plus_main.jpg",
       "description": "Aerophone Brisa Plus: iOS/Android App - Customize and Control Aerophone Brisa with Your Mobile Device",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "iOS/Android App",
       "specs": {
         "tagline": "Customize and Control Aerophone Brisa with Your Mobile Device"
       },
@@ -3067,7 +3073,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/cube-10gx_front_main.jpg",
       "description": "CUBE-10GX: Guitar Amplifier - Customizable Tones for Jamming and Practice",
       "brand": "roland",
-      "category": "Guitars",
+      "category": "Guitar Amplifier",
       "specs": {
         "tagline": "Customizable Tones for Jamming and Practice"
       },
@@ -3095,7 +3101,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rechargeable_amp_power_pack_main.jpg",
       "description": "Rechargeable Amp Power Pack: Rechargeable Amp Power Pack (BTY-NIMH/A) - Official Roland Rechargeable Battery Pack for Select Amplifiers",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Rechargeable Amp Power Pack (BTY-NIMH/A)",
       "specs": {
         "tagline": "Official Roland Rechargeable Battery Pack for Select Amplifiers"
       },
@@ -3109,7 +3115,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/e-x50_top_main.jpg",
       "description": "E-X50: Arranger Keyboard - Your Musical Centerpiece",
       "brand": "roland",
-      "category": "Synthesizers & Keys",
+      "category": "Arranger Keyboard",
       "specs": {
         "tagline": "Your Musical Centerpiece"
       },
@@ -3123,7 +3129,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_tr-909_main.jpg",
       "description": "TR-909: Software Rhythm Composer - Analog Meets Digital on the Dance Floor",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Software Rhythm Composer",
       "specs": {
         "tagline": "Analog Meets Digital on the Dance Floor"
       },
@@ -3151,7 +3157,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/td716_front_main.jpg",
       "description": "TD716: V-Drums - Flagship V-Drums 7 Series Kit with the Expandable V71 Module and Advanced Pads",
       "brand": "roland",
-      "category": "Drums & Percussion",
+      "category": "V-Drums",
       "specs": {
         "tagline": "Flagship V-Drums 7 Series Kit with the Expandable V71 Module and Advanced Pads"
       },
@@ -3165,7 +3171,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/rc_tr-808_main.jpg",
       "description": "TR-808: Software Rhythm Composer - An authentic recreation of the most famous drum machine ever made—inside your DAW.",
       "brand": "roland",
-      "category": "Software & Apps",
+      "category": "Software Rhythm Composer",
       "specs": {
         "tagline": "An authentic recreation of the most famous drum machine ever made—inside your DAW."
       },
@@ -3179,7 +3185,7 @@
       "image_url": "https://static.roland.com/assets/images/products/main/sp_404_top_main.jpg",
       "description": "SP-404: Sampling Workstation - Portable Power-Sampler with FX",
       "brand": "roland",
-      "category": "Amplifiers",
+      "category": "Sampling Workstation",
       "specs": {
         "tagline": "Portable Power-Sampler with FX"
       },

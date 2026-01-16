@@ -1,8 +1,14 @@
 {
   "brand_id": "rogers",
   "brand_name": "Rogers Drums",
+  "brand_website": "https://www.rogersdrum.com",
+  "brand_color": "#C41E3A",
+  "secondary_color": "#E74C3C",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Classic American drum kit manufacturer.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:47.794220Z",
+  "build_timestamp": "2026-01-16T09:06:58.052028Z",
   "stats": {
     "total_products": 9,
     "verified_products": 0,
@@ -14,7 +20,7 @@
     {
       "halilit_id": "7615512",
       "item_code": "36-TWR26SRM",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Roger's Tower Series 14x6.5\" Snare Drum Rogers",
       "url": "https://www.halilit.com  /items/7615512-roger-s-tower-series-14x6-5-snare-drum",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15912817/original/f9568d65c927c65a77e35ccbb4cf834f.jpg",
@@ -30,7 +36,7 @@
     {
       "halilit_id": "7615119",
       "item_code": "36-TWR24SRM",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Roger's Tower Series 14x5\" Snare Drum Rogers",
       "url": "https://www.halilit.com  /items/7615119-roger-s-tower-series-14x5-snare-drum",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15912952/original/a6242a3f1509a5e6204443e47dc264d7.jpg",
@@ -46,7 +52,7 @@
     {
       "halilit_id": "3412121",
       "item_code": "36-37-BP",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Rogers Dyna-Sonic Snare NO.37-BP",
       "url": "https://www.halilit.com  /items/3412121-rogers-beavertail-snare-drum-no-37-bp",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9602155/original/f4212b5b73ee1896bd095825d7d500a1.jpg",
@@ -62,7 +68,7 @@
     {
       "halilit_id": "7615723",
       "item_code": "36-TWR23SBV",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Roger's Tower Series 13x6\" Snare Drum Rogers",
       "url": "https://www.halilit.com  /items/7615723-roger-s-tower-series-13x6-snare-drum",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15913203/original/c7ff2caf79cec294e018f05ae54ffde4.jpg",
@@ -94,7 +100,7 @@
     {
       "halilit_id": "3412519",
       "item_code": "36-37-RR",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-RR",
       "url": "https://www.halilit.com  /items/3412519-rogers-beavertail-dyna-sonic-snare-no-37-rr",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5974092/original/1455beaf99e1540a82302b6a6bd4d706.jpg",
@@ -110,7 +116,7 @@
     {
       "halilit_id": "3412430",
       "item_code": "36-37-BSL",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-BSL",
       "url": "https://www.halilit.com  /items/3412430-rogers-beavertail-dyna-sonic-snare-no-37-bsl",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9602162/original/9bb2b9c8181ef20d64c0e062be1db5ff.jpg",
@@ -126,7 +132,7 @@
     {
       "halilit_id": "2510023",
       "item_code": "36-37-BLO",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-BLO",
       "url": "https://www.halilit.com  /items/2510023-rogers-beavertail-dyna-sonic-snare-no-37-blo",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9601966/original/eeafe4eda8dbe7278641fb25de81d704.jpg",
@@ -142,7 +148,7 @@
     {
       "halilit_id": "2510053",
       "item_code": "36-37-WMP",
-      "category": "Drums & Percussion",
+      "category": "סנרים, טמטמים ותופי בס",
       "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-WMP",
       "url": "https://www.halilit.com  /items/2510053-rogers-beavertail-dyna-sonic-snare-no-37-wmp",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9601970/original/b4a1f62e64405cf555e1871851ab891b.jpg",

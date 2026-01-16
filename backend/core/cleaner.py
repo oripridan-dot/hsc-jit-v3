@@ -257,10 +257,10 @@ class DataCleaner:
         """
         Apply all cleaning operations to a single product
         
-        - Normalize category
         - Trim whitespace
         - Remove empty strings
         - Standardize field names
+        - PRESERVE brand-specific categories from website
         """
         cleaned = {}
         
@@ -273,12 +273,10 @@ class DataCleaner:
             elif value is not None:  # Keep non-None values
                 cleaned[key] = value
         
-        # Normalize category if present - ALWAYS APPLY
-        if "category" in cleaned and cleaned["category"]:
-            cleaned["category"] = self.normalize_category(cleaned["category"])
-        elif "category" in product:
-            # Even if empty, try to normalize
-            cleaned["category"] = self.normalize_category(product.get("category", ""))
+        # DO NOT normalize categories - preserve brand-specific categories from their website!
+        # Boss uses "Loop Station", "Guitar Effects Processor"
+        # Roland uses "Synthesizer", "Creative Sampler", "GROOVEBOX"
+        # Each brand's official categorization is preserved
         
         return cleaned
     

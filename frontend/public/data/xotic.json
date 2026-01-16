@@ -1,8 +1,14 @@
 {
   "brand_id": "xotic",
-  "brand_name": "Xotic",
+  "brand_name": "Xotic Effects",
+  "brand_website": "https://www.xoticeffects.com",
+  "brand_color": "#292524",
+  "secondary_color": "#EC4899",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Premium guitar effects and bass pedals manufacturer.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:48.059360Z",
+  "build_timestamp": "2026-01-16T09:06:58.329602Z",
   "stats": {
     "total_products": 28,
     "verified_products": 0,
@@ -14,7 +20,7 @@
     {
       "halilit_id": "4819735",
       "item_code": "30-SD",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל בוסטר/אוברדרייב Xotic Soul Driven",
       "url": "https://www.halilit.com  /items/4819735-xotic-soul-driven",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9247946/original/383614ac9d3d0af8be9c5e9bf50fce8e.jpg",
@@ -30,7 +36,7 @@
     {
       "halilit_id": "4819512",
       "item_code": "30-EPB",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל בוסטר לבס Xotic EP Booster",
       "url": "https://www.halilit.com  /items/4819512-xotic-ep-booster",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252034/original/4f77d1f357efc386b773b775fed6fa51.jpg",
@@ -46,7 +52,7 @@
     {
       "halilit_id": "4812617",
       "item_code": "30-BBPV1.5",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Xotic BB PREAMP V1.5",
       "url": "https://www.halilit.com  /items/4812617-xotic-bb-preamp-v1-5",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9240852/original/0f262544b88ed5859dbb3a573f496990.jpg",
@@ -78,7 +84,7 @@
     {
       "halilit_id": "4813900",
       "item_code": "30-BRCBV2",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל בוסטר לגיטרה בס Xotic Bass RC Booster V2",
       "url": "https://www.halilit.com  /items/4813900-xotic-bass-rc-booster-v2",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9310462/original/f9fcdf2b66ed6b1849d3f4962ffd27df.jpg",
@@ -94,7 +100,7 @@
     {
       "halilit_id": "4820044",
       "item_code": "30-SSB",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל בוסטר Xotic Super Sweet Booster",
       "url": "https://www.halilit.com  /items/4820044-xotic-super-sweet-booster",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252593/original/902339051ccb26b955df525e5eaed691.jpg",
@@ -126,7 +132,7 @@
     {
       "halilit_id": "4821404",
       "item_code": "30-XVP250K",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Xotic XVP-250K Volume Pedal",
       "url": "https://www.halilit.com  /items/4821404-xotic-xvp-250k-volume-pedal",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9257486/original/2edfca6729daf47fe4c44d3351c6897e.jpg",
@@ -158,7 +164,7 @@
     {
       "halilit_id": "4820910",
       "item_code": "30-RT2",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Xotic Robotalk 2",
       "url": "https://www.halilit.com  /items/4820910-xotic-robotalk-2",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9255989/original/372db97348786a055b87ff0b34f4f62f.jpg",
@@ -174,7 +180,7 @@
     {
       "halilit_id": "4819890",
       "item_code": "30-SPC",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Xotic SP Compressor",
       "url": "https://www.halilit.com  /items/4819890-xotic-sp-compressor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252075/original/f313be48c3336319268d50fd4ca0f8ef.jpg",
@@ -222,7 +228,7 @@
     {
       "halilit_id": "4820163",
       "item_code": "30-SCB",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל באפר/בוסטר Xotic Super Clean Buffer",
       "url": "https://www.halilit.com  /items/4820163-xotic-super-clean-buffer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9253112/original/e7885a1c59a6ebd83a6e4c9ab5f590ec.jpg",
@@ -254,7 +260,7 @@
     {
       "halilit_id": "4819966",
       "item_code": "30-SLD",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Xotic SL DRIVE",
       "url": "https://www.halilit.com  /items/4819966-xotic-sl-drive",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252283/original/e64921510b16a150460c4b49381d5bfb.jpg",
@@ -270,7 +276,7 @@
     {
       "halilit_id": "4823056",
       "item_code": "30-XW1",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Xotic XW-1 WAH",
       "url": "https://www.halilit.com  /items/4823056-xotic-xw-1-wah",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9263844/original/c850b0e8944b4a85590bcd07fd76a931.jpg",
@@ -286,7 +292,7 @@
     {
       "halilit_id": "4828436",
       "item_code": "30-RV60N",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Xotic RV-60 Neck Pick Up",
       "url": "https://www.halilit.com  /items/4828436-xotic-rv-60-neck-pick-up",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9285214/original/b1a2dbff27b17a24ea546152f300e37b.jpg",
@@ -302,7 +308,7 @@
     {
       "halilit_id": "4836208",
       "item_code": "30-RV50SET",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Xotic RV-50 Single Coil Pick Up set",
       "url": "https://www.halilit.com  /items/4836208-xotic-rv-50-single-coil-pick-up-set",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9335029/original/5306192be52989f6ce42490b412de73a.jpg",
@@ -318,7 +324,7 @@
     {
       "halilit_id": "4823413",
       "item_code": "30-RV50M",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Xotic RV-50 Middle Pick Up",
       "url": "https://www.halilit.com  /items/4823413-xotic-rv-50-middle-pick-up",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9264375/original/25834e7a4f4952e03de2c92666d79700.png",
@@ -334,7 +340,7 @@
     {
       "halilit_id": "4827790",
       "item_code": "30-RV60B",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Xotic RV-60 Bridge Pick Up",
       "url": "https://www.halilit.com  /items/4827790-xotic-rv-60-bridge-pick-up",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9282306/original/7714d8801dcb87959cda5daf0d05cb01.jpg",
@@ -350,7 +356,7 @@
     {
       "halilit_id": "4825523",
       "item_code": "30-RVPAFFS",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Xotic RV-60 Middle Pick Up Paf",
       "url": "https://www.halilit.com  /items/4825523-xotic-rv-60-middle-pick-up-paf",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9274322/original/46f1d5d6758fe87eb697b808c11e984e.jpg",
@@ -366,7 +372,7 @@
     {
       "halilit_id": "4836301",
       "item_code": "30-RV60M",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Xotic RV-60 Middle Pick Up",
       "url": "https://www.halilit.com  /items/4836301-xotic-rv-60-middle-pick-up",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9313758/original/c2169bedde4bece31271ffad02c24a64.jpg",
@@ -382,7 +388,7 @@
     {
       "halilit_id": "4826347",
       "item_code": "30-RV50NB",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Xotic RV-50 Neck and BRIDGE Pick Up",
       "url": "https://www.halilit.com  /items/4826347-xotic-rv-50-neck-and-bridge-pick-up",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9276379/original/82ca244fed60a66ddfb374c06a05551f.jpg",
@@ -398,7 +404,7 @@
     {
       "halilit_id": "4819967",
       "item_code": "30-RCBV2",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל בוסטר Xotic RC Booster V2",
       "url": "https://www.halilit.com  /items/4819967-xotic-rc-booster-v2",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9252286/original/8ab8858b4e9bc5f6a02d28928ae21c51.jpg",
@@ -414,7 +420,7 @@
     {
       "halilit_id": "4830815",
       "item_code": "30-XPC12X2",
-      "category": "Effects & Pedals",
+      "category": "כבל פאץ' / אפקטים",
       "name": "Xotic All-Brass Patch Cable 12 inch",
       "url": "https://www.halilit.com  /items/4830815-xotic-all-brass-patch-cable-12-inch",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9290851/original/c78ed92ffcd310ca153a98aabc70c0a9.jpg",
@@ -430,7 +436,7 @@
     {
       "halilit_id": "4830921",
       "item_code": "30-XPC6X2",
-      "category": "Effects & Pedals",
+      "category": "כבל פאץ' / אפקטים",
       "name": "Xotic All-Brass Patch Cable 6 inch",
       "url": "https://www.halilit.com  /items/4830921-xotic-all-brass-patch-cable-6-inch",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9291059/original/da7a217bbe4289188e847620becc9b6d.jpg",

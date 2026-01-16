@@ -1,8 +1,14 @@
 {
   "brand_id": "nord",
-  "brand_name": "Nord",
+  "brand_name": "Nord Keyboards",
+  "brand_website": "https://www.nordkeyboards.com",
+  "brand_color": "#1F4E78",
+  "secondary_color": "#4472C4",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Swedish manufacturer of premium synthesizers and stage keyboards.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:45.960859Z",
+  "build_timestamp": "2026-01-16T09:06:56.486179Z",
   "stats": {
     "total_products": 13,
     "verified_products": 0,
@@ -16,7 +22,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/N3P_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-drum-3p",
       "brand": "Nord",
-      "category": "Drums & Percussion",
+      "category": "Drum",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-drum-3p",
       "verified": false,
       "verification_confidence": 0.0
@@ -26,7 +32,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Electro",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "verified": false,
       "verification_confidence": 0.0
@@ -36,7 +42,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Electro",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "verified": false,
       "verification_confidence": 0.0
@@ -46,7 +52,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Electro",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6",
       "verified": false,
       "verification_confidence": 0.0
@@ -76,7 +82,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/AgGiJQoE/Organ3%20logo%20beta.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-organ-3",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Organ",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-organ-3",
       "verified": false,
       "verification_confidence": 0.0
@@ -86,7 +92,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/DCBsGZq6/Nord%20Piano%206%20logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-piano-6",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Piano",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-piano-6",
       "verified": false,
       "verification_confidence": 0.0
@@ -96,7 +102,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/DCBsGZq6/Nord%20Piano%206%20logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-piano-6",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Piano",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-piano-6",
       "verified": false,
       "verification_confidence": 0.0
@@ -106,7 +112,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Stage",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "verified": false,
       "verification_confidence": 0.0
@@ -116,7 +122,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Stage",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "verified": false,
       "verification_confidence": 0.0
@@ -126,7 +132,7 @@
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
       "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "brand": "Nord",
-      "category": "Synthesizers & Keys",
+      "category": "Stage",
       "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4",
       "verified": false,
       "verification_confidence": 0.0

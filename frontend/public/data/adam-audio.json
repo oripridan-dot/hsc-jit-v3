@@ -1,8 +1,14 @@
 {
   "brand_id": "adam-audio",
-  "brand_name": "Adam Audio",
+  "brand_name": "ADAM Audio",
+  "brand_website": "https://www.adam-audio.com",
+  "brand_color": "#1A1A1A",
+  "secondary_color": "#4A90E2",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Premium studio monitor manufacturer for professional audio production.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:44.313790Z",
+  "build_timestamp": "2026-01-16T09:06:55.019513Z",
   "stats": {
     "total_products": 25,
     "verified_products": 25,
@@ -14,7 +20,7 @@
     {
       "halilit_id": "7679723",
       "item_code": "AA-H200",
-      "category": "Accessories",
+      "category": "אוזניות לאולפן",
       "name": "Adam Audio H-200",
       "url": "https://www.halilit.com  /items/7679723-adam-audio-h-200-headphones",
       "normalized_sku": "H-200",
@@ -30,13 +36,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "7030",
-      "halilit_category": "אוזניות לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "3418989",
       "item_code": "AA-D3V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Adam Audio D3V",
       "url": "https://www.halilit.com  /items/3418989-adam-audio-d3v-studio-monitors",
       "title_he": "זוג מוניטורים Adam Audio D3V",
@@ -53,13 +58,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "14490",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2276780",
       "item_code": "AA-T5V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio T5V",
       "url": "https://www.halilit.com  /items/2276780-adam-audio-t5v",
       "title_he": "מוניטור אולפני ADAM Audio T5V",
@@ -76,13 +80,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "8780",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "7749595",
       "item_code": "AA-D3V-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Adam Audio D3V",
       "url": "https://www.halilit.com  /items/7749595-adam-audio-d3v-studio-monitors",
       "title_he": "זוג מוניטורים Adam Audio D3V",
@@ -99,13 +102,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "14490",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2867509",
       "item_code": "AA-T8V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio T8V",
       "url": "https://www.halilit.com  /items/2867509-adam-audio-t8v-studio-monitor-",
       "title_he": "מוניטור אולפני ADAM Audio T8V",
@@ -122,13 +124,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "13170",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "4841528",
       "item_code": "AA-A7V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A7V",
       "url": "https://www.halilit.com  /items/4841528-adam-audio-a7v",
       "title_he": "מוניטור אולפני ADAM Audio A7V",
@@ -145,13 +146,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "34220",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "8234683",
       "item_code": "AA-A7V-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A7V Arctic White",
       "url": "https://www.halilit.com  /items/8234683-adam-audio-a7v-arctic-white",
       "title_he": "מוניטור אולפני ADAM Audio A7V Arctic White",
@@ -168,13 +168,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "34220",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2276816",
       "item_code": "AA-T7V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio T7V",
       "url": "https://www.halilit.com  /items/2276816-adam-audio-t7v-studio-monitor",
       "title_he": "מוניטור אולפני ADAM Audio T7V",
@@ -191,13 +190,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "11860",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "8233728",
       "item_code": "AA-A4V-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A4V Arctic White",
       "url": "https://www.halilit.com  /items/8233728-adam-audio-a4v-arctic-white",
       "title_he": "מוניטור אולפני ADAM Audio A4V Arctic White",
@@ -214,13 +212,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "22930",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "4842165",
       "item_code": "AA-A4V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A4V",
       "url": "https://www.halilit.com  /items/4842165-adam-audio-a4v",
       "title_he": "מוניטור אולפני ADAM Audio A4V",
@@ -237,13 +234,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "22930",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "5662285",
       "item_code": "AA-A8H-R",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד ימין ADAM Audio A8H",
       "url": "https://www.halilit.com  /items/5662285-adam-audio-a8h-3-way-powered-studio-monitor",
       "title_he": "מוניטור אולפני צד ימין ADAM Audio A8H",
@@ -260,13 +256,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "70270",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "7949922",
       "item_code": "AA-A8H-L",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד שמאל ADAM Audio A8H",
       "url": "https://www.halilit.com  /items/7949922-adam-audio-a8h-3-way-powered-studio-monitor",
       "title_he": "מוניטור אולפני צד שמאל ADAM Audio A8H",
@@ -283,13 +278,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "70270",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2281243",
       "item_code": "AA-SP5",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות מקצועיות לאולפן ADAM Audio Studio Pro SP-5",
       "url": "https://www.halilit.com  /items/2281243-adam-audio-studio-pro-sp-5",
       "title_he": "אוזניות מקצועיות לאולפן ADAM Audio Studio Pro SP-5",
@@ -312,7 +306,7 @@
     {
       "halilit_id": "5662027",
       "item_code": "AA-A77H",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A77H",
       "url": "https://www.halilit.com  /items/5662027-adam-audio-a77h",
       "title_he": "מוניטור אולפני ADAM Audio A77H",
@@ -329,13 +323,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "66240",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "5661915",
       "item_code": "AA-A44H",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A44H",
       "url": "https://www.halilit.com  /items/5661915-adam-audio-a44h",
       "title_he": "מוניטור אולפני ADAM Audio A44H",
@@ -352,13 +345,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "33120",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2273631",
       "item_code": "AA-SUB8",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio SUB8",
       "url": "https://www.halilit.com  /items/2273631-adam-audio-sub8",
       "title_he": "סאבוופר אולפני ADAM Audio SUB8",
@@ -375,13 +367,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "30740",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2518190",
       "item_code": "AA-T10S",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio T10S",
       "url": "https://www.halilit.com  /items/2518190-adam-audio-t10s",
       "title_he": "סאבוופר אולפני ADAM Audio T10S",
@@ -398,13 +389,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "20200",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2280832",
       "item_code": "AA-S2V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S2V",
       "url": "https://www.halilit.com  /items/2280832-adam-audio-s2v",
       "title_he": "מוניטור אולפני ADAM Audio S2V",
@@ -421,13 +411,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "70560",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2280956",
       "item_code": "AA-S3V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S3V",
       "url": "https://www.halilit.com  /items/2280956-adam-audio-s3v",
       "title_he": "מוניטור אולפני ADAM Audio S3V",
@@ -444,13 +433,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "140540",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2281055",
       "item_code": "AA-S5H",
-      "category": "Monitors & Speakers",
+      "category": "כסאח! מוניטורים אולפניים",
       "name": "מוניטור אולפני ADAM Audio S5H",
       "url": "https://www.halilit.com  /items/2281055-adam-audio-s5h",
       "title_he": "מוניטור אולפני ADAM Audio S5H",
@@ -467,13 +455,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "349410",
-      "halilit_category": "כסאח! מוניטורים אולפניים",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2280897",
       "item_code": "AA-S3H",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S3H",
       "url": "https://www.halilit.com  /items/2280897-adam-audio-s3h",
       "title_he": "מוניטור אולפני ADAM Audio S3H",
@@ -490,13 +477,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "165060",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2281169",
       "item_code": "AA-S5V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S5V",
       "url": "https://www.halilit.com  /items/2281169-adam-audio-s5v",
       "title_he": "מוניטור אולפני ADAM Audio S5V",
@@ -513,13 +499,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "428020",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2273643",
       "item_code": "AA-SUB10MK2",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio SUB10 MK2",
       "url": "https://www.halilit.com  /items/2273643-adam-audio-sub10-mk2",
       "title_he": "סאבוופר אולפני ADAM Audio SUB10 MK2",
@@ -536,13 +521,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "51820",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "1370804",
       "item_code": "AboutEVE",
-      "category": "Software & Apps",
+      "category": "בלוג חלילית+",
       "name": "הכירו את EVE Audio",
       "url": "https://www.halilit.com  /items/1370804-about-eve-audio",
       "title_he": "הכירו את EVE Audio",
@@ -553,13 +537,12 @@
       "distributor": "Halilit Music Center",
       "verified": true,
       "verification_confidence": 1.0,
-      "halilit_category": "בלוג חלילית+",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2273654",
       "item_code": "AA-SUB12",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio SUB12",
       "url": "https://www.halilit.com  /items/2273654-adam-audio-sub12",
       "title_he": "סאבוופר אולפני ADAM Audio SUB12",
@@ -576,7 +559,6 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "74660",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     }
   ]

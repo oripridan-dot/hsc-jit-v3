@@ -1,8 +1,14 @@
 {
   "brand_id": "mackie",
   "brand_name": "Mackie Designs",
+  "brand_website": "https://www.mackie.com",
+  "brand_color": "#1A1A1A",
+  "secondary_color": "#FF6B00",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Manufacturer of mixing consoles and professional audio equipment.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:45.940718Z",
+  "build_timestamp": "2026-01-16T09:06:56.467421Z",
   "stats": {
     "total_products": 219,
     "verified_products": 0,
@@ -14,7 +20,7 @@
     {
       "halilit_id": "6590726",
       "item_code": "60-MRING10",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "Mackie mRING-10 - 10\" Ring Light",
       "url": "https://www.halilit.com  /items/6590726-mackie-mring-10-10-ring-light-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13831219/original/8092edb0714411f5a41753d71e12f4cc.jpg",
@@ -30,7 +36,7 @@
     {
       "halilit_id": "6541090",
       "item_code": "60-MOBILEMIX",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie MobileMix",
       "url": "https://www.halilit.com  /items/6541090-mackie-mobilemix",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13744155/original/58c6d4c0e654a682c75efb0436bfb184.jpg",
@@ -46,7 +52,7 @@
     {
       "halilit_id": "3365926",
       "item_code": "60-DB100",
-      "category": "Accessories",
+      "category": "אביזרים לאולפן",
       "name": "Mackie DB-100",
       "url": "https://www.halilit.com  /items/3365926-mackie-db-100-desktop-microphone-boom-arm",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5885247/original/eb1f427f55b6b7e5ab10469aa9f73c0e.jpg",
@@ -62,7 +68,7 @@
     {
       "halilit_id": "6572073",
       "item_code": "60-MAINSTREAM",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie MainStream",
       "url": "https://www.halilit.com  /items/6572073-mackie-mainstream",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13809561/original/c786c3b1d807a8d79bb8ad8693381b82.jpg",
@@ -78,7 +84,7 @@
     {
       "halilit_id": "6540594",
       "item_code": "60-PROFX10V3+",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "+Mackie ProFX10v3",
       "url": "https://www.halilit.com  /items/6540594-mackie-profx10v3-analog-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13740890/original/d6fbb8fedd68cc916b13aa652bcd9d4d.jpg",
@@ -94,7 +100,7 @@
     {
       "halilit_id": "7535158",
       "item_code": "60-CR8BT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Mackie CR8BT Gen 3",
       "url": "https://www.halilit.com  /items/7535158-mackie-cr8bt-gen-3-powered-bluetooth-studio-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15732424/original/c92f8f6721d11c7b58ab243e03d1e980.jpg",
@@ -110,7 +116,7 @@
     {
       "halilit_id": "3365948",
       "item_code": "60-CHROMIUM",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון USB קונדנסר Mackie Chromium",
       "url": "https://www.halilit.com  /items/3365948-mackie-chromium-premium-usb-condenser-mic-2-channel-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5885324/original/9a871bcddf7b58c04fdee8377634b2eb.jpg",
@@ -126,7 +132,7 @@
     {
       "halilit_id": "7764029",
       "item_code": "60-BAG-SHOWBOX",
-      "category": "Accessories",
+      "category": "תיקים ואביזרים ל-DJ",
       "name": "Mackie ShowBox Gig Bag",
       "url": "https://www.halilit.com  /items/7764029-mackie-showbox-gig-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16218509/original/49fb1fa69aad207938019b02b375b386.jpg",
@@ -142,7 +148,7 @@
     {
       "halilit_id": "5428286",
       "item_code": "60-EM93M",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "מיקרופון למצלמות ומובייל Mackie EM93M",
       "url": "https://www.halilit.com  /items/5428286-mackie-em-93m-ultra-compact-shotgun-condenser-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10756964/original/addec1ef30b39ac50f5d9c5f8abfd1f9.jpg",
@@ -158,7 +164,7 @@
     {
       "halilit_id": "7534910",
       "item_code": "60-CR35BT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Mackie CR3.5BT Gen 3",
       "url": "https://www.halilit.com  /items/7534910-mackie-cr3-5bt-gen-3-powered-bluetooth-studio",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15731942/original/ae81e10e445c55875bf7d5d8a810f637.jpg",
@@ -174,7 +180,7 @@
     {
       "halilit_id": "6539843",
       "item_code": "60-PROFX6V3+",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "+Mackie ProFX6v3",
       "url": "https://www.halilit.com  /items/6539843-mackie-profx6v3-analog-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13738041/original/5a1bee28c7cd5e63711fdc3f407736e1.jpg",
@@ -190,7 +196,7 @@
     {
       "halilit_id": "7766863",
       "item_code": "60-BAG-THUMP10",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "תיק לרמקול \"Mackie Bag for Thump Speaker 10",
       "url": "https://www.halilit.com  /items/7766863--mackie-bag-for-thump-speaker-10",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16224540/original/06028f0b852ac36d2f8f5d02c4432210.jpg",
@@ -206,7 +212,7 @@
     {
       "halilit_id": "6540642",
       "item_code": "60-PROFX12V3+",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "+Mackie ProFX12v3",
       "url": "https://www.halilit.com  /items/6540642-mackie-profx12v3-analog-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13741095/original/cba3a94b827bf4fe324a48fa35ad7957.jpg",
@@ -222,7 +228,7 @@
     {
       "halilit_id": "7535221",
       "item_code": "60-CR8SBT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאב וופר Mackie CR8SBT Gen 3",
       "url": "https://www.halilit.com  /items/7535221-mackie-cr8sbt-gen-3-powered-bluetooth-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15732592/original/14af765bf0ae28386d603171ff2860c0.jpg",
@@ -238,7 +244,7 @@
     {
       "halilit_id": "6592894",
       "item_code": "60-MRING6",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "Mackie mRING-6 6\" Battery-powered Ring Light",
       "url": "https://www.halilit.com  /items/6592894-mackie-mring-6-6-battery-powered-ring-light",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13834091/original/0b5b193248010486b7a45a261d83b6a4.jpg",
@@ -254,7 +260,7 @@
     {
       "halilit_id": "7293848",
       "item_code": "60-DB200",
-      "category": "Accessories",
+      "category": "אביזרים לאולפן",
       "name": "Mackie DB-200",
       "url": "https://www.halilit.com  /items/7293848-mackie-db-200-premium-desktop-boom-arm",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15209099/original/8317b33a70cdf7aa27e9791f1f6830e9.jpg",
@@ -270,7 +276,7 @@
     {
       "halilit_id": "8252080",
       "item_code": "60-B-THRASH212/GO",
-      "category": "Accessories",
+      "category": "תיקים ואביזרים ל-DJ",
       "name": "\"Mackie bag for Thrash212 Speaker 12",
       "url": "https://www.halilit.com  /items/8252080--mackie-bag-for-thrash212-speaker-12",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17265577/original/fc08d13a2f262cb5d052560dd4c3fd24.jpg",
@@ -286,7 +292,7 @@
     {
       "halilit_id": "3365558",
       "item_code": "60-CARBON",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Mackie Carbon USB Condenser",
       "url": "https://www.halilit.com  /items/3365558-mackie-carbon-usb-condenser",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5884118/original/b71198c22f5e11320d833002fa791306.jpg",
@@ -302,7 +308,7 @@
     {
       "halilit_id": "8252090",
       "item_code": "60-B-THRASH215",
-      "category": "Accessories",
+      "category": "תיקים ואביזרים ל-DJ",
       "name": "\"Mackie bag for Thrash215 Speaker 15",
       "url": "https://www.halilit.com  /items/8252090--mackie-bag-for-thrash215-speaker-15",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17265598/original/5b2ac95ff60a87bcd717b796541935e5.jpg",
@@ -318,7 +324,7 @@
     {
       "halilit_id": "7534780",
       "item_code": "60-CR35",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים לאולפן Mackie CR3.5 Gen 3",
       "url": "https://www.halilit.com  /items/7534780-mackie-cr3-5-gen-3-studio-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15731592/original/3032cdf652b4a5cbb1d663a791c15f8c.jpg",
@@ -334,7 +340,7 @@
     {
       "halilit_id": "7535039",
       "item_code": "60-CR45",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Mackie CR4.5 Gen 3",
       "url": "https://www.halilit.com  /items/7535039-mackie-cr4-5-gen-3-powered-studio-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15732247/original/d3313276da1842163d438ece146a284e.jpg",
@@ -350,7 +356,7 @@
     {
       "halilit_id": "5428428",
       "item_code": "60-EM93MK",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "ערכת מיקרופון לצילום Mackie EM93MK",
       "url": "https://www.halilit.com  /items/5428428-mackie-em93mk-mobile-recording-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10757425/original/c4eadccbf687502bdc8a242f08808084.jpg",
@@ -366,7 +372,7 @@
     {
       "halilit_id": "6564587",
       "item_code": "60-DLZCREATORXS",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie DLZ Creator XS",
       "url": "https://www.halilit.com  /items/6564587-makcie-dlz-creator-xs-adaptive-digital-streaming-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13796203/original/b7446654862fcb09824d8391b423626b.jpg",
@@ -382,7 +388,7 @@
     {
       "halilit_id": "7535094",
       "item_code": "60-CR45BT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Mackie CR4.5BT Gen 3",
       "url": "https://www.halilit.com  /items/7535094-mackie-cr4-5bt-gen-3-powered-studio-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15732341/original/a25056e4dee4cbe76b0373a0e9d193ef.jpg",
@@ -398,7 +404,7 @@
     {
       "halilit_id": "5250552",
       "item_code": "60-CREATORSLING",
-      "category": "Accessories",
+      "category": "תיקים ואביזרים ל-DJ",
       "name": "Mackie CreatorSling - Bag",
       "url": "https://www.halilit.com  /items/5250552-mackie-creatorsling-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10369478/original/683eda87a4a6a5806747c81d42a4656f.jpg",
@@ -414,7 +420,7 @@
     {
       "halilit_id": "3788802",
       "item_code": "60-PROFX30V3",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie ProFX30 V3",
       "url": "https://www.halilit.com  /items/3788802-mackie-profx30v3",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6709619/original/ab282774d9ee4c9aa594393132ffb9f7.jpg",
@@ -430,7 +436,7 @@
     {
       "halilit_id": "5431052",
       "item_code": "60-EM99B",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "מיקרופון דינמי לשידור Mackie EM99B",
       "url": "https://www.halilit.com  /items/5431052-mackie-em99b-dynamic-broadcast-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10762345/original/d93adebf1a8f181406f10de4abc88934.jpg",
@@ -446,7 +452,7 @@
     {
       "halilit_id": "460303",
       "item_code": "60-MIX8",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie Mix8",
       "url": "https://www.halilit.com  /items/460303-mackie-mix8-8-channel-compact-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/580540/original/06e34b15dbca092dc0a4ec5f059006da.jpg",
@@ -462,7 +468,7 @@
     {
       "halilit_id": "460304",
       "item_code": "60-MIX5",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie Mix5",
       "url": "https://www.halilit.com  /items/460304-mackie-mix5-5-channel-compact-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/580542/original/354d3528d12773b93cf4d7c4ee0fa042.jpg",
@@ -478,7 +484,7 @@
     {
       "halilit_id": "2266928",
       "item_code": "60-MC150",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Mackie MC-150",
       "url": "https://www.halilit.com  /items/2266928-mackie-mc-150-professional-closed-back-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3666579/original/723f2f305c9e19f56aab880d84e5ba58.jpg",
@@ -494,7 +500,7 @@
     {
       "halilit_id": "2745137",
       "item_code": "60-MC350",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Mackie MC-350",
       "url": "https://www.halilit.com  /items/2745137-mackie-mc-350-professional-closed-back-studio-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4628894/original/fa39b11d48d54dd543909e87461e055b.jpg",
@@ -510,7 +516,7 @@
     {
       "halilit_id": "6589495",
       "item_code": "60-1604VLZ-RACK",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1604VLZ RotoPod Bracket Set",
       "url": "https://www.halilit.com  /items/6589495-mackie-1604vlz-rotopod-bracket-set",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13827855/original/cc174dca3a4897442fe6cb39e0a2cc83.jpg",
@@ -526,7 +532,7 @@
     {
       "halilit_id": "7457591",
       "item_code": "60-THUMP210XT",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump210XT",
       "url": "https://www.halilit.com  /items/7457591-mackie-thump210xt-enhanced-powered-loudspeaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15550782/original/639822ad08e30839060cac83db3dcc80.jpg",
@@ -542,7 +548,7 @@
     {
       "halilit_id": "6589500",
       "item_code": "60-1402VLZ-RACK",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1402VLZ Rack Ear Kit",
       "url": "https://www.halilit.com  /items/6589500-mackie-1402vlz-rack-ear-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13827864/original/3959f525e011acac8472ea08bf655d14.jpg",
@@ -558,7 +564,7 @@
     {
       "halilit_id": "6589503",
       "item_code": "60-1202VLZ-RACK",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1202VLZ Rack Ear Kit",
       "url": "https://www.halilit.com  /items/6589503-mackie-1202vlz-rack-ear-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13827873/original/0c2f179b4655f222cdb5bdd9b50bab94.jpg",
@@ -574,7 +580,7 @@
     {
       "halilit_id": "6585966",
       "item_code": "60-MCASTER-BAG",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie MCaster Live Bag",
       "url": "https://www.halilit.com  /items/6585966-mackie-mcaster-live-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13821704/original/f2aee0ed0d48ba09589a4d8848a3df5d.jpg",
@@ -590,7 +596,7 @@
     {
       "halilit_id": "3098479",
       "item_code": "60-BAG-PROFX16V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie PROFX16V3 Bag",
       "url": "https://www.halilit.com  /items/3098479-mackie-profx16v3-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5312560/original/bcde4673444751be564316d20f798b9c.jpg",
@@ -606,7 +612,7 @@
     {
       "halilit_id": "5241740",
       "item_code": "60-THUMP215",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump215",
       "url": "https://www.halilit.com  /items/5241740-mackie-thump215-powered-loudspeaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10339307/original/4ed8681db683a915102305809e308340.jpg",
@@ -622,7 +628,7 @@
     {
       "halilit_id": "6584210",
       "item_code": "60-MCASTERSTLIVE",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie M•Caster Studio",
       "url": "https://www.halilit.com  /items/6584210-mackie-m-caster-studio",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13817133/original/58bf0d85b9da5b5829516bf1eaaf4b61.jpg",
@@ -638,7 +644,7 @@
     {
       "halilit_id": "6190739",
       "item_code": "60-THRASH212GO",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thrash212 GO",
       "url": "https://www.halilit.com  /items/6190739-mackie-thrash212-go",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12975558/original/b1fe597ac9f1a95d8bf1d25787ab5869.jpg",
@@ -654,7 +660,7 @@
     {
       "halilit_id": "2708884",
       "item_code": "60-PROFX16V3",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie ProFX16 v3",
       "url": "https://www.halilit.com  /items/2708884-mackie-profx16v3-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4555276/original/6646d60b042c27e5830f75f93a1a6488.jpg",
@@ -670,7 +676,7 @@
     {
       "halilit_id": "5715094",
       "item_code": "60-ONYX16",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie Onyx16",
       "url": "https://www.halilit.com  /items/5715094-mackie-onyx16-16-channel-premium-analog-usb-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11575365/original/51c6088f2923e586868fa725301aa4ae.jpg",
@@ -686,7 +692,7 @@
     {
       "halilit_id": "2053782",
       "item_code": "60-DL16S",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie DL16S",
       "url": "https://www.halilit.com  /items/2053782-mackie-dl16s",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3320073/original/f994b8722e419c467c07fe0a9aa245ac.jpg",
@@ -702,7 +708,7 @@
     {
       "halilit_id": "3366045",
       "item_code": "60-ONYX24",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie Onyx 24",
       "url": "https://www.halilit.com  /items/3366045-mackie-onyx-24-analog-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5885613/original/19de6b6a758d3f75137c1a7c1ca11f8e.jpg",
@@ -718,7 +724,7 @@
     {
       "halilit_id": "6032547",
       "item_code": "60-DLZCREATOR",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie DLZ Creator Podcasting Mixer",
       "url": "https://www.halilit.com  /items/6032547-makcie-dlz-creator-podcasting-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12814136/original/d95e57b27be6ef434800e385394f74c7.png",
@@ -734,7 +740,7 @@
     {
       "halilit_id": "458419",
       "item_code": "60-MIX12FX",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie MIX12FX",
       "url": "https://www.halilit.com  /items/458419-mackie-mix12fx",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/576066/original/06c2ee9dd24fec4d9f744ed292b5c05e.jpg",
@@ -750,7 +756,7 @@
     {
       "halilit_id": "4277172",
       "item_code": "60-ONYX8",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie Onyx 8",
       "url": "https://www.halilit.com  /items/4277172-mackie-onyx-8-8-channel-premium-analog-usb-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7899841/original/b5b8f9590472c54775f6eb811ff9c733.jpg",
@@ -766,7 +772,7 @@
     {
       "halilit_id": "5714870",
       "item_code": "60-PROFX22V3",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie ProFX22 v3",
       "url": "https://www.halilit.com  /items/5714870-mackie-profx22v3-22-channel-professional-usb-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11574702/original/355fd46d3fce81168d771424cd905678.jpg",
@@ -782,7 +788,7 @@
     {
       "halilit_id": "5240252",
       "item_code": "60-PROFX12-RACKEARS",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX12v3 Rack Ear Kit",
       "url": "https://www.halilit.com  /items/5240252-mackie-profx12v3-rack-ear-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10333844/original/e6a4f746fcd2a947a4568009a8492d34.jpg",
@@ -798,7 +804,7 @@
     {
       "halilit_id": "2708930",
       "item_code": "60-PROFX12V3",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie ProFX12 v3",
       "url": "https://www.halilit.com  /items/2708930-mackie-profx12-v3-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4555303/original/3a857d92b0bdab9a58e99dbecf11620a.jpg",
@@ -814,7 +820,7 @@
     {
       "halilit_id": "5242307",
       "item_code": "60-MCASTERLIVE-W",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie M•Caster Live",
       "url": "https://www.halilit.com  /items/5242307-mackie-m-caster-live",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10358655/original/67918ac8a0bbe853dcff79a23d89eab0.jpg",
@@ -830,7 +836,7 @@
     {
       "halilit_id": "6584263",
       "item_code": "60-MCASTERSTLIVE-W",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie M•Caster Studio",
       "url": "https://www.halilit.com  /items/6584263-mackie-m-caster-studio",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13817293/original/ca6db80259ce6a0c1b753f2795968256.jpg",
@@ -846,7 +852,7 @@
     {
       "halilit_id": "5240266",
       "item_code": "60-PROFX16-RACKEARS",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX16v3 Rack Ear Kit",
       "url": "https://www.halilit.com  /items/5240266-mackie-profx16v3-rack-ear-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10333870/original/493f2bf02fdc931b604d79232a80adb1.jpg",
@@ -862,7 +868,7 @@
     {
       "halilit_id": "6589387",
       "item_code": "60-1642VLZ-RACK",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1642VLZ Rack Ear Kit",
       "url": "https://www.halilit.com  /items/6589387-mackie-1642vlz-rack-ear-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13827793/original/8dbe05d3f7e6748b404d19fad1aa9dc9.jpg",
@@ -878,7 +884,7 @@
     {
       "halilit_id": "3745996",
       "item_code": "60-SRT215",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRT215",
       "url": "https://www.halilit.com  /items/3745996-mackie-srt215",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6607622/original/8e207d5b74cd4d285105ad476e6ac45e.jpg",
@@ -894,7 +900,7 @@
     {
       "halilit_id": "3746515",
       "item_code": "60-SRT212",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRT212",
       "url": "https://www.halilit.com  /items/3746515-mackie-srt212",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6608110/original/fb0e56be8e435f265f5da051887682cf.jpg",
@@ -910,7 +916,7 @@
     {
       "halilit_id": "5250265",
       "item_code": "60-MCASTERLIVE",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Mackie M•Caster Live",
       "url": "https://www.halilit.com  /items/5250265-mackie-m-caster-live",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10368574/original/7bba27d37856f1b360f49b62b3cb45a5.jpg",
@@ -926,7 +932,7 @@
     {
       "halilit_id": "2708960",
       "item_code": "60-PROFX10V3",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie ProFX10 v3",
       "url": "https://www.halilit.com  /items/2708960-mackie-profx10-v3-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4555416/original/7c506b4887c5f760a4f18a51417f87e4.jpg",
@@ -942,7 +948,7 @@
     {
       "halilit_id": "2708977",
       "item_code": "60-PROFX6V3",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie ProFX6 v3",
       "url": "https://www.halilit.com  /items/2708977-mackie-profx6-v3-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4555468/original/4e5cb1797c75be0883be901ba4509770.jpg",
@@ -958,7 +964,7 @@
     {
       "halilit_id": "3098368",
       "item_code": "60-CR8SXBT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני Mackie CR8S-XBT",
       "url": "https://www.halilit.com  /items/3098368-mackie-cr8s-xbt-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5312343/original/f6cd8fc849705d272c87445b74cf698e.jpg",
@@ -974,7 +980,7 @@
     {
       "halilit_id": "1272832",
       "item_code": "60-1642VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 1642VLZ4",
       "url": "https://www.halilit.com  /items/1272832-mackie-1642vlz-4-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1912746/original/3f8a61645223ba860ca523486b0e7a35.jpg",
@@ -990,7 +996,7 @@
     {
       "halilit_id": "3064833",
       "item_code": "60-SRM212",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRM212 V-Class",
       "url": "https://www.halilit.com  /items/3064833-mackie-srm212-v-class-12-2000w-loudspeakers",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5224677/original/14961984ff56a8b938d248141d9251b1.jpg",
@@ -1006,7 +1012,7 @@
     {
       "halilit_id": "6583813",
       "item_code": "60-SHOWBOX",
-      "category": "Amplifiers",
+      "category": "מגברי אקוסטיות וקלאסיות",
       "name": "Mackie ShowBox All-in-one Performance Rig",
       "url": "https://www.halilit.com  /items/6583813-mackie-showbox-all-in-one-performance-rig",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13815976/original/19af848772459cc93f4a4a466618498d.jpg",
@@ -1022,7 +1028,7 @@
     {
       "halilit_id": "5240328",
       "item_code": "60-THUMP18S-COVER",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Thump18S Speaker Cover",
       "url": "https://www.halilit.com  /items/5240328-mackie-thump18s-speaker-cover",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10334040/original/0ccf9967c6cacb998041d8d5c863a746.jpg",
@@ -1038,7 +1044,7 @@
     {
       "halilit_id": "5241611",
       "item_code": "60-THUMP212XT",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump212XT",
       "url": "https://www.halilit.com  /items/5241611-mackie-thump212xt-enhanced-powered-loudspeaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10358638/original/07763cc73ed395603becc6495749db69.jpg",
@@ -1054,7 +1060,7 @@
     {
       "halilit_id": "4946188",
       "item_code": "60-THRASH215",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thrash215",
       "url": "https://www.halilit.com  /items/4946188-mackie-thrash215",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9605251/original/dce1ac9c87642fc4685485ee8c70190b.jpg",
@@ -1086,7 +1092,7 @@
     {
       "halilit_id": "5239057",
       "item_code": "60-B-THUMP15A/BST",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Thump15A & Thump15BST Speaker Bag",
       "url": "https://www.halilit.com  /items/5239057-mackie-thump15a-thump15bst-speaker-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10330083/original/db5777d76312cb4fbc2253e22f6d9398.jpg",
@@ -1102,7 +1108,7 @@
     {
       "halilit_id": "1649683",
       "item_code": "60-THUMP12BST",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump 12 Boosted",
       "url": "https://www.halilit.com  /items/1649683-mackie-thump-12-bst-active-speaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2601673/original/73af333d71a24aecdcbbf6371b6b71b2.jpg",
@@ -1118,7 +1124,7 @@
     {
       "halilit_id": "2746131",
       "item_code": "60-EM89D",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי לשירה Mackie EM-89D",
       "url": "https://www.halilit.com  /items/2746131-mackie-em-89d-dynamic-vocal-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4630831/original/51d8edfdac6f0956b01d512d7efa240d.jpg",
@@ -1134,7 +1140,7 @@
     {
       "halilit_id": "3064862",
       "item_code": "60-SRM210",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRM210 V-Class",
       "url": "https://www.halilit.com  /items/3064862-mackie-srm210-v-class-10-2000w-loudspeakers",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5224623/original/7e181744549a53a16f4c46d8d718848d.jpg",
@@ -1150,7 +1156,7 @@
     {
       "halilit_id": "3064866",
       "item_code": "60-SRM215",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRM215 V-Class",
       "url": "https://www.halilit.com  /items/3064866-mackie-v-class-srm215-15-2000w-loudspeakers",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5224720/original/f5e646e8763f5659921cc423421dde9e.jpg",
@@ -1182,7 +1188,7 @@
     {
       "halilit_id": "5240366",
       "item_code": "60-THUMP212",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump212",
       "url": "https://www.halilit.com  /items/5240366-mackie-thump212-powered-loudspeaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10334127/original/1df0daaf2d3cbb833f2ed6602a7eadb3.jpg",
@@ -1198,7 +1204,7 @@
     {
       "halilit_id": "1464882",
       "item_code": "60-MR524",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Mackie MR524",
       "url": "https://www.halilit.com  /items/1464882-mackie-mr524-studio-monitor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2274816/original/f26fb1f0db124111946b4136f1086411.jpg",
@@ -1214,7 +1220,7 @@
     {
       "halilit_id": "7460662",
       "item_code": "60-THUMP210",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump210",
       "url": "https://www.halilit.com  /items/7460662-mackie-thump210-powered-loudspeaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15555391/original/a0c1693b66b4efddbaf2d56f99a63259.jpg",
@@ -1230,7 +1236,7 @@
     {
       "halilit_id": "1228097",
       "item_code": "60-BIGKNOBSTUDIO",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Mackie Big Knob Studio",
       "url": "https://www.halilit.com  /items/1228097-mackie-big-knob-studio",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1825723/original/44949545e6fe9128c03460373a96cf90.jpg",
@@ -1246,7 +1252,7 @@
     {
       "halilit_id": "1464900",
       "item_code": "60-MR624",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Mackie MR624",
       "url": "https://www.halilit.com  /items/1464900-mackie-mr624-studio-monitor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2274863/original/c491abc5dc602661c8ac090ccdc3ca94.jpg",
@@ -1262,7 +1268,7 @@
     {
       "halilit_id": "4930633",
       "item_code": "60-THRASH212",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thrash212",
       "url": "https://www.halilit.com  /items/4930633-mackie-thrash212",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9557373/original/93fc896f859454310af9f0dff1c59334.jpg",
@@ -1278,7 +1284,7 @@
     {
       "halilit_id": "2748495",
       "item_code": "60-SRM-FLEX",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRM-Flex Portable Column",
       "url": "https://www.halilit.com  /items/2748495-mackie-srm-flex-portable-column",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4637799/original/c49a0b18ebb5b2cda32f6ea59eb52c52.jpg",
@@ -1294,7 +1300,7 @@
     {
       "halilit_id": "1650001",
       "item_code": "60-THUMP15BST",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump 15\" Boosted",
       "url": "https://www.halilit.com  /items/1650001-mackie-thump-15-bst-active-speaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2602075/original/9bf2ddd72612ce7bc2edb74bf84a63c9.jpg",
@@ -1310,7 +1316,7 @@
     {
       "halilit_id": "1272661",
       "item_code": "60-1202VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 1202VLZ4",
       "url": "https://www.halilit.com  /items/1272661-mackie-1202vlz-4-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1912419/original/a51e1530efe5758d0d01ffda73316a9c.jpg",
@@ -1326,7 +1332,7 @@
     {
       "halilit_id": "2908502",
       "item_code": "60-CR3X",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Mackie CR3-X",
       "url": "https://www.halilit.com  /items/2908502-mackie-cr3x-studio-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4927280/original/5a25cc92e35bc53c0ab05b5e4b698ddc.jpg",
@@ -1342,7 +1348,7 @@
     {
       "halilit_id": "5403478",
       "item_code": "60-MC60BT",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אלחוטיות Mackie MC-60BT",
       "url": "https://www.halilit.com  /items/5403478-mackie-mc-60bt-wireless-noise-cancelling-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14317302/original/0ac067cefb0a1a6e6a8f13887d949c22.jpg",
@@ -1358,7 +1364,7 @@
     {
       "halilit_id": "5241944",
       "item_code": "60-THUMP215XT",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump215XT",
       "url": "https://www.halilit.com  /items/5241944-mackie-thump215xt-enhanced-powered-loudspeaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10358644/original/4ccc0dcfb904bb606a0d7cbae3a33c14.jpg",
@@ -1374,7 +1380,7 @@
     {
       "halilit_id": "5239899",
       "item_code": "60-BAG-THUMPGO",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Thump GO Speaker Bag",
       "url": "https://www.halilit.com  /items/5239899-mackie-thump-go-speaker-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10332624/original/bb26b6496c7eba83d2d1284d2192ea52.jpg",
@@ -1390,7 +1396,7 @@
     {
       "halilit_id": "4912733",
       "item_code": "60-THUMPGO8",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump GO 8\" Portable Bluetooth Battery",
       "url": "https://www.halilit.com  /items/4912733-mackie-thump-go-8-portable-bluetooth-battery-powered-loudspeaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9509116/original/cecdabea939fc99e1627ad50011a351b.jpg",
@@ -1406,7 +1412,7 @@
     {
       "halilit_id": "4930402",
       "item_code": "60-ELEMENTWAVE-XLR",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "מערכת אלחוטית למיקרופון Mackie EM Wave XLR",
       "url": "https://www.halilit.com  /items/4930402-mackie-em-wave-xlr-wireless-microphone-system",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9556677/original/2c784a8f957f0598e72ee1cb8c34767b.jpg",
@@ -1422,7 +1428,7 @@
     {
       "halilit_id": "2814570",
       "item_code": "60-EMUSB",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מקצועי Mackie EM USB",
       "url": "https://www.halilit.com  /items/2814570-mackie-em-usb-cardioid-usb-condenser-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4778307/original/02c9a2316b9e7d69c3c936d8b2ca0acc.jpg",
@@ -1438,7 +1444,7 @@
     {
       "halilit_id": "1531502",
       "item_code": "60-THUMP12A",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump 12A",
       "url": "https://www.halilit.com  /items/1531502-mackie-thump-12a-powered-speakers",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2391955/original/0381f5d4a10410999a7a7d44bd009df9.jpg",
@@ -1454,7 +1460,7 @@
     {
       "halilit_id": "5239164",
       "item_code": "60-B-THUMP15A/BST-W",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Thump15A & Thump15BST Rolling Bag",
       "url": "https://www.halilit.com  /items/5239164-mackie-thump15a-thump15bst-rolling-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10330473/original/aa4b259a17ee6283c79ebabdbb7be999.jpg",
@@ -1470,7 +1476,7 @@
     {
       "halilit_id": "4602255",
       "item_code": "60-B-THUMP12A/BST",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Thump12A & Thump12BST Speaker Bag",
       "url": "https://www.halilit.com  /items/4602255-mackie-thump12a-thump12bst-speaker-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8710582/original/fa0821263ca6b384c0864b1a99abcbb4.jpg",
@@ -1486,7 +1492,7 @@
     {
       "halilit_id": "3365521",
       "item_code": "60-MC100",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות Mackie MC-100",
       "url": "https://www.halilit.com  /items/3365521-mackie-mc100-studio-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5884021/original/a99f9891573ab2fa227795ab24a90a6e.jpg",
@@ -1502,7 +1508,7 @@
     {
       "halilit_id": "4924317",
       "item_code": "60-ELEMENTWAVE-LAV",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "מערכת מיקרופון אלחוטית Mackie EM Wave LAV",
       "url": "https://www.halilit.com  /items/4924317-mackie-em-wave-lav-wireless-clip-on-microphone-system",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9537623/original/a0a091d7d6217dd9c01aef3e302049a2.jpg",
@@ -1518,7 +1524,7 @@
     {
       "halilit_id": "5398429",
       "item_code": "60-MC50BT",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אלחוטיות Mackie MC-50BT",
       "url": "https://www.halilit.com  /items/5398429-mackie-mc-50bt-wireless-noise-cancelling-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10707709/original/504606933ca66308c5e057b71cf0b89f.jpg",
@@ -1534,7 +1540,7 @@
     {
       "halilit_id": "3121824",
       "item_code": "60-PRODUCEBUNDLE",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "Mackie Producer Bundle",
       "url": "https://www.halilit.com  /items/3121824-mackie-producer-bundle",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5354802/original/745a8f0d3f3dcce6d17d3fc531ed2a77.jpg",
@@ -1550,7 +1556,7 @@
     {
       "halilit_id": "3745957",
       "item_code": "60-SRT210",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRT210",
       "url": "https://www.halilit.com  /items/3745957-mackie-srt210",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6607551/original/3eb7f945ffeee67271dede69f0a1fe4d.jpg",
@@ -1566,7 +1572,7 @@
     {
       "halilit_id": "3042215",
       "item_code": "60-CR4XBT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Mackie CR4-XBT",
       "url": "https://www.halilit.com  /items/3042215-mackie-cr4-xbt",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5177603/original/8087ea1e57304505be5b04457d28a0eb.jpg",
@@ -1582,7 +1588,7 @@
     {
       "halilit_id": "4602288",
       "item_code": "60-B-THUMP12A/BST-W",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Thump12A & Thump12BST Rolling Bag",
       "url": "https://www.halilit.com  /items/4602288-mackie-thump12a-thump12bst-rolling-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8710665/original/dc658203ea923fb2a515d529b55ef62b.jpg",
@@ -1598,7 +1604,7 @@
     {
       "halilit_id": "3284913",
       "item_code": "60-CREATERBUNDLE",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "Mackie Creator Bundle",
       "url": "https://www.halilit.com  /items/3284913-mackie-creator-bundle",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5692359/original/f7ecb1e558376b16a35ff81588042d3c.jpg",
@@ -1614,7 +1620,7 @@
     {
       "halilit_id": "3746501",
       "item_code": "60-EMUSBLTD-WHT",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון USB קונדנסר Mackie EM USB Limited Edition",
       "url": "https://www.halilit.com  /items/3746501-mackie-em-usb-ltd-arctic-white-cardioid-usb-condenser-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6608073/original/6f256fdfc711feed669180134731ffb9.jpg",
@@ -1630,7 +1636,7 @@
     {
       "halilit_id": "444359",
       "item_code": "60-SRM450-V3",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRM450 V3",
       "url": "https://www.halilit.com  /items/444359-mackie-srm450-v3-active-2-way-speaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/557517/original/69e00896ffc7d2dca3af66b413ce177d.jpg",
@@ -1646,7 +1652,7 @@
     {
       "halilit_id": "6586827",
       "item_code": "60-COVER-SRM212",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie SRM212 V-Class Speaker Cover",
       "url": "https://www.halilit.com  /items/6586827-mackie-srm212-v-class-speaker-cover",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13824183/original/73094149abf6be08d5493826912522eb.jpg",
@@ -1678,7 +1684,7 @@
     {
       "halilit_id": "2748384",
       "item_code": "60-EM91C",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Mackie EM 91C",
       "url": "https://www.halilit.com  /items/2748384-mackie-em-91c-large-diaphragm-condenser-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4637528/original/3769d35c8bf438e19bb15b76815eb091.jpg",
@@ -1694,7 +1700,7 @@
     {
       "halilit_id": "6586857",
       "item_code": "60-COVER-SRM215",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie SRM215 V-Class Speaker Cover",
       "url": "https://www.halilit.com  /items/6586857-mackie-srm215-v-class-speaker-cover",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15942742/original/e4ed486505b32245209420cc6cb9f61d.jpg",
@@ -1710,7 +1716,7 @@
     {
       "halilit_id": "5403660",
       "item_code": "60-MP20TWS",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "Mackie MP-20TWS Wireless Earphones",
       "url": "https://www.halilit.com  /items/5403660-mackie-mp-20tws-wireless-earphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10700941/original/ff371f476df2bccda46a1c64b1fcedad.jpg",
@@ -1726,7 +1732,7 @@
     {
       "halilit_id": "1714975",
       "item_code": "60-MP120",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "Mackie MP-120 In-Ear Monitors",
       "url": "https://www.halilit.com  /items/1714975-mackie-mp-120-in-ear-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2717336/original/41e1ae856f1d962447be889c86527c52.jpg",
@@ -1742,7 +1748,7 @@
     {
       "halilit_id": "3365940",
       "item_code": "60-PF100",
-      "category": "Accessories",
+      "category": "אביזרים לאולפן",
       "name": "Mackie PF-100",
       "url": "https://www.halilit.com  /items/3365940-mackie-pf-100",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5885295/original/dd5a979a22f14e32ac68b981ed8618ce.jpg",
@@ -1758,7 +1764,7 @@
     {
       "halilit_id": "5429390",
       "item_code": "60-EM98MS",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "מיקרופון שוטגאן לצילום Mackie EM98MS",
       "url": "https://www.halilit.com  /items/5429390-mackie-em98ms-shotgun-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10759946/original/7123866a25ebffebc9c207ed0a1fa2e6.jpg",
@@ -1790,7 +1796,7 @@
     {
       "halilit_id": "5245880",
       "item_code": "60-ONYX16-RACK",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Onyx16 Rack Ear Kit",
       "url": "https://www.halilit.com  /items/5245880-mackie-onyx16-rack-ear-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10353179/original/c4ec29ce765d883e4cf51f59b5bc3cca.jpg",
@@ -1806,7 +1812,7 @@
     {
       "halilit_id": "3357640",
       "item_code": "60-ONYX12",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie Onyx12",
       "url": "https://www.halilit.com  /items/3357640-mackie-onyx12",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5867725/original/0d93cafa01309e235c4002716b0ebdad.jpg",
@@ -1822,7 +1828,7 @@
     {
       "halilit_id": "5245911",
       "item_code": "60-ONYX12-RACK",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Onyx12 Rack Ear Kit",
       "url": "https://www.halilit.com  /items/5245911-mackie-onyx12-rack-ear-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10353232/original/e9f13e9bd760fc259d0af7a76055ac86.jpg",
@@ -1838,7 +1844,7 @@
     {
       "halilit_id": "2268146",
       "item_code": "60-CR-BUDS",
-      "category": "Accessories",
+      "category": "אוזניות למובייל",
       "name": "Mackie CR-Buds",
       "url": "https://www.halilit.com  /items/2268146-mackie-cr-buds",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3669657/original/91f441ff1a4c2f8a5c1d0a8f101efa8d.jpg",
@@ -1854,7 +1860,7 @@
     {
       "halilit_id": "2268157",
       "item_code": "60-CR-BUDS+",
-      "category": "Accessories",
+      "category": "אוזניות למובייל",
       "name": "Mackie CR-Buds+ Headphones",
       "url": "https://www.halilit.com  /items/2268157-mackie-cr-buds-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3669671/original/56acaa6fcb5e4798d70976283516d177.jpg",
@@ -1886,7 +1892,7 @@
     {
       "halilit_id": "5417035",
       "item_code": "60-CR6SX",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר מוגבר Mackie CR6S-X",
       "url": "https://www.halilit.com  /items/5417035-macike-cr6s-x-powered-floor-standing-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10723813/original/74c2041049117d989e062c331760452d.jpg",
@@ -1902,7 +1908,7 @@
     {
       "halilit_id": "3357518",
       "item_code": "60-EM91CU",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון USB קונדנסר Mackie EM-91CU",
       "url": "https://www.halilit.com  /items/3357518-mackie-em-91cu-usb-condenser-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5867472/original/a7e40f1305b4f307ac5ad8959bb97648.jpg",
@@ -1918,7 +1924,7 @@
     {
       "halilit_id": "2266958",
       "item_code": "60-MC250",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Mackie MC-250",
       "url": "https://www.halilit.com  /items/2266958-mackie-mc-250-professional-closed-back-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3666685/original/424101b322b1c56cdf583507f0e6c638.jpg",
@@ -1950,7 +1956,7 @@
     {
       "halilit_id": "1648728",
       "item_code": "60-ONYXPRODUCER",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Mackie Onyx Producer",
       "url": "https://www.halilit.com  /items/1648728-mackie-onyx-producer-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2599909/original/f6a7e4afa1a182b696cfb0840f561b81.jpg",
@@ -1966,7 +1972,7 @@
     {
       "halilit_id": "5242210",
       "item_code": "60-THUMP115S",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump115S",
       "url": "https://www.halilit.com  /items/5242210-mackie-thump115s-powered-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10340921/original/652a601a4f50344f17f486073f545dce.jpg",
@@ -2014,7 +2020,7 @@
     {
       "halilit_id": "5242297",
       "item_code": "60-THUMP118S",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie Thump118S",
       "url": "https://www.halilit.com  /items/5242297-mackie-thump118s-powered-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10341248/original/9a5eae1dd63a9e4505b4bad188d54e85.jpg",
@@ -2046,7 +2052,7 @@
     {
       "halilit_id": "4934089",
       "item_code": "60-CRSTEALTHBAR",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "Mackie CR StealthBar",
       "url": "https://www.halilit.com  /items/4934089-mackie-cr-stealthbar",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9571553/original/bd9dfe5825f26d286dcb83abbb2e74aa.jpg",
@@ -2078,7 +2084,7 @@
     {
       "halilit_id": "5240079",
       "item_code": "60-ONYXGOMIC",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "Mackie OnyxGO Wireless Clip-On Microphone",
       "url": "https://www.halilit.com  /items/5240079-mackie-onyxgo-wireless-clip-on-microphone-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10333133/original/ed8a1b0dc448ae5e9ddb66f0d016af02.jpg",
@@ -2094,7 +2100,7 @@
     {
       "halilit_id": "1272854",
       "item_code": "60-3204VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 3204VLZ4",
       "url": "https://www.halilit.com  /items/1272854-mackie-3204vlz-4-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1912786/original/173f235916be6924a3be91d7712f1af2.jpg",
@@ -2110,7 +2116,7 @@
     {
       "halilit_id": "6486312",
       "item_code": "60-BAG-ONYX16",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Onyx16 Carry Bag",
       "url": "https://www.halilit.com  /items/6486312-mackie-onyx16-carry-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13620358/original/7ce43ef1a2d9c65b2602506ef1b98c3c.jpg",
@@ -2126,7 +2132,7 @@
     {
       "halilit_id": "5430595",
       "item_code": "60-EM95ML",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "מיקרופון דש למצלמות ומובייל Mackie EM95ML",
       "url": "https://www.halilit.com  /items/5430595-mackie-em95ml-lavalier-microphone-with-in-line-amp",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10761854/original/7692d29642f16c67c5d05255d288dd0c.jpg",
@@ -2142,7 +2148,7 @@
     {
       "halilit_id": "4934729",
       "item_code": "60-MC40BT",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אלחוטיות Mackie MC-40BT",
       "url": "https://www.halilit.com  /items/4934729-mackie-mc-40bt-wirless-studio-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9620493/original/7a67652e3f6c70e0b4934cf8c32bd709.jpg",
@@ -2158,7 +2164,7 @@
     {
       "halilit_id": "1646929",
       "item_code": "60-ONYXARTIST",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Mackie Onyx Artist",
       "url": "https://www.halilit.com  /items/1646929-mackie-onyx-artist-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2598625/original/20f6cfe74ee157c2653e4c63a8949519.jpg",
@@ -2174,7 +2180,7 @@
     {
       "halilit_id": "6584441",
       "item_code": "60-BAG-ONYX12",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Onyx12 Carry Bag",
       "url": "https://www.halilit.com  /items/6584441-mackie-onyx12-carry-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13817567/original/c43f6629077cc82577b82df07b3cb5e9.jpg",
@@ -2190,7 +2196,7 @@
     {
       "halilit_id": "3283101",
       "item_code": "60-1402VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 1402VLZ4",
       "url": "https://www.halilit.com  /items/3283101-mackie-1402vlz4-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5687870/original/42415403b53de27670dbb43dca26a4e6.jpg",
@@ -2206,7 +2212,7 @@
     {
       "halilit_id": "446128",
       "item_code": "60-802VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 802VLZ4",
       "url": "https://www.halilit.com  /items/446128-mackie-802vlz4",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/559874/original/1edf2b7bbc1477ad0d3285e1413d34dd.jpg",
@@ -2222,7 +2228,7 @@
     {
       "halilit_id": "446129",
       "item_code": "60-402VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 402VLZ4",
       "url": "https://www.halilit.com  /items/446129-mackie-402vlz4",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/559875/original/249f3ee8b997845733552fb95986f30e.jpg",
@@ -2238,7 +2244,7 @@
     {
       "halilit_id": "1272769",
       "item_code": "60-1604VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 1604VLZ4",
       "url": "https://www.halilit.com  /items/1272769-mackie-1604vlz4-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1912644/original/e4292d874f2755604310fa4917fd7df2.jpg",
@@ -2254,7 +2260,7 @@
     {
       "halilit_id": "2745199",
       "item_code": "60-MC450",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Mackie MC-450",
       "url": "https://www.halilit.com  /items/2745199-mackie-mc-450-professional-open-back-studio-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4629041/original/0fa394b14c763bdbed407a128af054fa.jpg",
@@ -2270,7 +2276,7 @@
     {
       "halilit_id": "5240018",
       "item_code": "60-DCOVER-PROFX16V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX16v3 Dust Cover",
       "url": "https://www.halilit.com  /items/5240018-mackie-profx16v3-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10332943/original/52de1d53d8c3012c9ff426d671ad9a71.jpg",
@@ -2286,7 +2292,7 @@
     {
       "halilit_id": "3746522",
       "item_code": "60-MC350LTD-WHT",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "Mackie MC-350 LTD Arctic White",
       "url": "https://www.halilit.com  /items/3746522-mackie-mc-350-ltd-arctic-white-professional-closed-back-studio-headphones",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6608147/original/b6ffd1d31cabd5c4eb32863d280de69e.jpg",
@@ -2302,7 +2308,7 @@
     {
       "halilit_id": "5240026",
       "item_code": "60-DCOVER-PROFX22V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX22v3 Dust Cover",
       "url": "https://www.halilit.com  /items/5240026-mackie-profx22v3-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10332952/original/ff7b56305e1b3b9c437f360aa46b0c32.jpg",
@@ -2318,7 +2324,7 @@
     {
       "halilit_id": "5240033",
       "item_code": "60-DCOVER-PROFX30V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX30v3 Dust Cover",
       "url": "https://www.halilit.com  /items/5240033-mackie-profx30v3-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10332977/original/1e3ab2be0b300a98bc0925b9917a1df4.jpg",
@@ -2334,7 +2340,7 @@
     {
       "halilit_id": "6586893",
       "item_code": "60-BAG-1604VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1604VLZ3 Mixer Bag",
       "url": "https://www.halilit.com  /items/6586893-mackie-1604vlz3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13824390/original/cf12dce652792c228cbb6c8a288fa6aa.jpg",
@@ -2350,7 +2356,7 @@
     {
       "halilit_id": "3104275",
       "item_code": "60-MP240BTA",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "Mackie MP-240 BTA Bluetooth In-Ear Monitors",
       "url": "https://www.halilit.com  /items/3104275-mackie-mp-240-bta-bluetooth-in-ear-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5322050/original/b98b132b6314de0b1b29009650f374f6.jpg",
@@ -2366,7 +2372,7 @@
     {
       "halilit_id": "6586917",
       "item_code": "60-BAG-1402VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1402VLZ3 Mixer Bag",
       "url": "https://www.halilit.com  /items/6586917-mackie-1402vlz3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13824463/original/d358f92db91f7f1a604dd9855cc2ff44.jpg",
@@ -2382,7 +2388,7 @@
     {
       "halilit_id": "1713962",
       "item_code": "60-M48",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie M48",
       "url": "https://www.halilit.com  /items/1713962-mackie-m48-phantom-power",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2715089/original/fe772694d907e3ba264700c1cb28687b.jpg",
@@ -2398,7 +2404,7 @@
     {
       "halilit_id": "6586931",
       "item_code": "60-BAG-1202VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1202VLZ3 Mixer Bag",
       "url": "https://www.halilit.com  /items/6586931-mackie-1202vlz3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13824483/original/032793bf0ed4ef53b80442b5b4c028ea.jpg",
@@ -2414,7 +2420,7 @@
     {
       "halilit_id": "3098434",
       "item_code": "60-MP320",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie MP-320 In-Ear Monitors",
       "url": "https://www.halilit.com  /items/3098434-mackie-mp-320-triple-dynamic-driver-in-ear-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5312479/original/94a59f4bd4d95e583d387972293e376c.jpg",
@@ -2430,7 +2436,7 @@
     {
       "halilit_id": "6028876",
       "item_code": "60-MP460",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "Mackie MP-460 In-Ear Monitors",
       "url": "https://www.halilit.com  /items/6028876-mackie-mp-460-in-ear-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12599503/original/dc8a613efeaf546788216c5f82aa9de3.jpg",
@@ -2446,7 +2452,7 @@
     {
       "halilit_id": "6586469",
       "item_code": "60-COVER-1604VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 1604VLZ3 Mixer Cover",
       "url": "https://www.halilit.com  /items/6586469-mackie-1604vlz3-mixer-cover",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13823318/original/ed94fe957aed9b491c86bad044c08e59.jpg",
@@ -2462,7 +2468,7 @@
     {
       "halilit_id": "3098753",
       "item_code": "60-MP120BTA",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie MP-120 BTA Bluetooth In-Ear Monitors",
       "url": "https://www.halilit.com  /items/3098753-mackie-mp-120-bta-bluetooth-in-ear-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5313247/original/91dc5d1812fa55fb2e8c93760171f244.jpg",
@@ -2478,7 +2484,7 @@
     {
       "halilit_id": "1716361",
       "item_code": "60-MP220",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "Mackie MP-220 In Ear Monitors",
       "url": "https://www.halilit.com  /items/1716361-mackie-mp-220-in-ear-monitor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2720464/original/2123986e8afe7ba622103f0fa45c83c8.jpg",
@@ -2494,7 +2500,7 @@
     {
       "halilit_id": "6586769",
       "item_code": "60-COVER-2404VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 2404VLZ3 Mixer Cover",
       "url": "https://www.halilit.com  /items/6586769-mackie-2404vlz3-mixer-cover",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13824041/original/a8656e4f2639fdcd8a786a29cf49edc1.jpg",
@@ -2510,7 +2516,7 @@
     {
       "halilit_id": "6586788",
       "item_code": "60-COVER-3204VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 3204VLZ3 Mixer Cover",
       "url": "https://www.halilit.com  /items/6586788-mackie-3204vlz3-mixer-cover",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13824147/original/6e8872c06f0761792f04b7787b75e959.jpg",
@@ -2526,7 +2532,7 @@
     {
       "halilit_id": "1716392",
       "item_code": "60-MP240",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie MP-240 In-Ear Monitors",
       "url": "https://www.halilit.com  /items/1716392-mackie-mp-240-in-ear-monitor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2720518/original/142331e08604989e63564fd3e6f054bd.jpg",
@@ -2542,7 +2548,7 @@
     {
       "halilit_id": "3366062",
       "item_code": "60-MP360",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "Mackie MP-360 In-Ear Monitors",
       "url": "https://www.halilit.com  /items/3366062-mackie-mp-360-in-ear-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5885688/original/fc63ac15838c0bf16fdecd1d3ddc49e4.jpg",
@@ -2558,7 +2564,7 @@
     {
       "halilit_id": "3104208",
       "item_code": "60-MP220BTA",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie MP-220 BTA Bluetooth In-Ear Monitors",
       "url": "https://www.halilit.com  /items/3104208-mackie-mp-220-bta-bluetooth-in-ear-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5321861/original/bea66983181faababc8b788d93e0a8db.jpg",
@@ -2574,7 +2580,7 @@
     {
       "halilit_id": "6586882",
       "item_code": "60-BAG-402VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 402VLZ3 Mixer Bag",
       "url": "https://www.halilit.com  /items/6586882-mackie-402vlz3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13824366/original/a971f99a2009a9d223190abe2b9bf90e.jpg",
@@ -2590,7 +2596,7 @@
     {
       "halilit_id": "1749328",
       "item_code": "60-HM800",
-      "category": "Accessories",
+      "category": "מגברי אוזניות",
       "name": "Mackie HM-800",
       "url": "https://www.halilit.com  /items/1749328-mackie-hm-800-headphones-amplifier",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2782873/original/36da8e0c7e8e4acd3b09234fdd1027cb.jpg",
@@ -2606,7 +2612,7 @@
     {
       "halilit_id": "3283176",
       "item_code": "60-BAG-802VLZ3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie 802VLZ3 Mixer Bag",
       "url": "https://www.halilit.com  /items/3283176-mackie-802vlz3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5688069/original/2e4773cf3cc725c1e029e393e6a551bb.jpg",
@@ -2638,7 +2644,7 @@
     {
       "halilit_id": "447476",
       "item_code": "60-SRM150",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie SRM150",
       "url": "https://www.halilit.com  /items/447476-mackie-srm150-compact-powered-pa",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/561301/original/6ac73ef6e817aa8f7fa96fd3bfba66cb.jpg",
@@ -2654,7 +2660,7 @@
     {
       "halilit_id": "3098658",
       "item_code": "60-MPBTA",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie MP-BTA Bluetooth Adapter",
       "url": "https://www.halilit.com  /items/3098658-mackie-mp-bta-bluetooth-adapter",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5313025/original/f8117b792f6fa95d2e00a4d5f4646e6d.jpg",
@@ -2670,7 +2676,7 @@
     {
       "halilit_id": "2271502",
       "item_code": "60-DRM212",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie DRM212",
       "url": "https://www.halilit.com  /items/2271502-mackie-drm212-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3678951/original/842aaee6ef1e38741e171340bbb70349.jpg",
@@ -2686,7 +2692,7 @@
     {
       "halilit_id": "2745104",
       "item_code": "60-DCOVER-PROFX12V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX12 v3 Dust Cover",
       "url": "https://www.halilit.com  /items/2745104-mackie-profx12-v3-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4628787/original/88a5ca95ad096dc4e546fc3fbc236325.jpg",
@@ -2718,7 +2724,7 @@
     {
       "halilit_id": "4935190",
       "item_code": "60-BAG-ONYX8",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ONYX8 Carry Bag",
       "url": "https://www.halilit.com  /items/4935190-mackie-onyx8-carry-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9574232/original/9dbc96375ad55d7786b32d7ef81538eb.jpg",
@@ -2734,7 +2740,7 @@
     {
       "halilit_id": "2274586",
       "item_code": "60-MX3500",
-      "category": "Amplifiers",
+      "category": "מגברים למערכות הגברה",
       "name": "Mackie MX3500",
       "url": "https://www.halilit.com  /items/2274586-mackie-mx3500-power-amplifier",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3683659/original/1c9f01560b7e4ed9061e2291116ccdcc.jpg",
@@ -2750,7 +2756,7 @@
     {
       "halilit_id": "2271271",
       "item_code": "60-DRM18S",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie DRM18S",
       "url": "https://www.halilit.com  /items/2271271-mackie-drm18s-18-2000-watt-powered-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3678373/original/750b5f0055e998132cf43bed70a784bb.jpg",
@@ -2766,7 +2772,7 @@
     {
       "halilit_id": "3799857",
       "item_code": "60-BAG-FREEPLAY-LIVE",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie FreePlay LIVE Speaker Bag",
       "url": "https://www.halilit.com  /items/3799857-mackie-freeplay-live-speaker-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6727937/original/7b78c9bc6c2b27cbc1af4317c0761d2a.jpg",
@@ -2782,7 +2788,7 @@
     {
       "halilit_id": "2441272",
       "item_code": "60-BAG-DL32S",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie DL32S Bag",
       "url": "https://www.halilit.com  /items/2441272-mackie-dl32s-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9601957/original/3a47304b5e3cdf95385bf5e310821843.jpg",
@@ -2798,7 +2804,7 @@
     {
       "halilit_id": "720699",
       "item_code": "60-STUDIOSTOOL",
-      "category": "Accessories",
+      "category": "אביזרים לגיטרה",
       "name": "Mackie Studio Stool",
       "url": "https://www.halilit.com  /items/720699-mackie-studio-stool",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15942127/original/060b125a82d8a5831cc7b6d51a6803b0.jpg",
@@ -2830,7 +2836,7 @@
     {
       "halilit_id": "1718079",
       "item_code": "60-MTEST1",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie MTEST-1",
       "url": "https://www.halilit.com  /items/1718079-mackie-mtest-1",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2723744/original/e60c75ed948066cecf00884a6b9f6ce1.jpg",
@@ -2846,7 +2852,7 @@
     {
       "halilit_id": "5239876",
       "item_code": "60-BAG-PROFX22V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX22v3 Mixer Bag",
       "url": "https://www.halilit.com  /items/5239876-mackie-profx22v3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10332548/original/45bc65311ac6214024dcc6006f44639d.jpg",
@@ -2862,7 +2868,7 @@
     {
       "halilit_id": "3285832",
       "item_code": "60-TRIPOD",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie T100 Loudspeaker Tripod Stand",
       "url": "https://www.halilit.com  /items/3285832-mackie-t100-loudspeaker-tripod-stand",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5694134/original/658e87445954c7a8f2a290bf4dee267a.jpg",
@@ -2878,7 +2884,7 @@
     {
       "halilit_id": "3194441",
       "item_code": "60-BAG-PROFX10V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX10v3 Mixer Bag",
       "url": "https://www.halilit.com  /items/3194441-mackie-profx10v3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5499905/original/974930e8f559b1a631bae27953bf87c3.jpg",
@@ -2894,7 +2900,7 @@
     {
       "halilit_id": "1464915",
       "item_code": "60-MR824",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Mackie MR824",
       "url": "https://www.halilit.com  /items/1464915-mackie-mr824-studio-monitor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2274887/original/31f37001bdf2c1409640e7cee5098ffd.jpg",
@@ -2926,7 +2932,7 @@
     {
       "halilit_id": "3194462",
       "item_code": "60-BAG-PROFX12V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX12v3 Mixer Bag",
       "url": "https://www.halilit.com  /items/3194462-mackie-profx12v3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5499914/original/01b31f188464620d390dcef6b9f69a75.jpg",
@@ -2942,7 +2948,7 @@
     {
       "halilit_id": "6584161",
       "item_code": "60-MPSMALLSKIT",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie Silicone Tips (Small) Kit",
       "url": "https://www.halilit.com  /items/6584161-mackie-silicone-tips-small-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13816949/original/b480a7fc88eb4425e5d21d904e88424b.jpg",
@@ -2958,7 +2964,7 @@
     {
       "halilit_id": "7763555",
       "item_code": "60-BAG-MIXERS",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Compact Mixer Bag",
       "url": "https://www.halilit.com  /items/7763555-mackie-compact-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16218306/original/7121aa18ed36b91742307212ddc00877.jpg",
@@ -2974,7 +2980,7 @@
     {
       "halilit_id": "1464942",
       "item_code": "60-MRS10",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני Mackie MRS10 Subwoofer",
       "url": "https://www.halilit.com  /items/1464942-mackie-mrs10-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2274935/original/f0e30009f4712fd7a4e4c01cb8d10a75.jpg",
@@ -2990,7 +2996,7 @@
     {
       "halilit_id": "3799919",
       "item_code": "60-BAG-DL1608",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie DL1608 Mixer Bag",
       "url": "https://www.halilit.com  /items/3799919-mackie-dl1608-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6728446/original/23bafa121c2762701dd9c000c4c247f6.jpg",
@@ -3006,7 +3012,7 @@
     {
       "halilit_id": "6584176",
       "item_code": "60-MPMEDIUMSKIT",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie Silicone Tips (Medium) Kit",
       "url": "https://www.halilit.com  /items/6584176-mackie-silicone-tips-medium-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13816987/original/6b059bec126d033152f13a3cebeee3f2.jpg",
@@ -3022,7 +3028,7 @@
     {
       "halilit_id": "6584188",
       "item_code": "60-MPLARGESKIT",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie Silicone Tips (Large) Kit",
       "url": "https://www.halilit.com  /items/6584188-mackie-silicone-tips-large-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13817028/original/4a1eea99555d2868f0feaa3416218689.jpg",
@@ -3038,7 +3044,7 @@
     {
       "halilit_id": "2274429",
       "item_code": "60-MX2500",
-      "category": "Amplifiers",
+      "category": "מגברים למערכות הגברה",
       "name": "Mackie MX2500",
       "url": "https://www.halilit.com  /items/2274429-mackie-mx2500-power-amplifier",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3683664/original/51befe295fe2a3f6277453a3fe872708.jpg",
@@ -3054,7 +3060,7 @@
     {
       "halilit_id": "525702",
       "item_code": "60-IPWM100",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie iP-WM100 Variable Angle Wall Mount",
       "url": "https://www.halilit.com  /items/525702-mackie-ip-wm100-variable-angle-wall-mount",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/686677/original/9e2aa3eaac5db03e6eda167ce8e626d7.jpg",
@@ -3070,7 +3076,7 @@
     {
       "halilit_id": "525704",
       "item_code": "60-IPCM100",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie iP-CM100",
       "url": "https://www.halilit.com  /items/525704-mackie-ip-cm100",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/686679/original/d5406f654765b758dca204de1d463440.jpg",
@@ -3086,7 +3092,7 @@
     {
       "halilit_id": "1072265",
       "item_code": "60-BAG-PRODX4/DX8",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProDX Bag",
       "url": "https://www.halilit.com  /items/1072265-mackie-prodx-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1572167/original/a985513b041c9f8deab04de3604118f2.jpg",
@@ -3102,7 +3108,7 @@
     {
       "halilit_id": "1228170",
       "item_code": "60-BIGKNOBSTUDIO+",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Mackie Big Knob Studio Plus",
       "url": "https://www.halilit.com  /items/1228170-mackie-big-knob-studio-plus",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1825831/original/0e2664e59fd138a0d1ee1988f2e519a6.jpg",
@@ -3118,7 +3124,7 @@
     {
       "halilit_id": "3283349",
       "item_code": "60-BAG-DL16S",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie DL16S Mixer Bag",
       "url": "https://www.halilit.com  /items/3283349-mackie-dl16s-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5688203/original/c128d6862a2f8d92a9e09d42be5577bc.jpg",
@@ -3134,7 +3140,7 @@
     {
       "halilit_id": "2073496",
       "item_code": "60-HM4",
-      "category": "Accessories",
+      "category": "מגברי אוזניות",
       "name": "Mackie HM-4",
       "url": "https://www.halilit.com  /items/2073496-mackie-mh-4-headphones-amp",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3349913/original/58e372c05b46fd16f2f1b22350372c6c.jpg",
@@ -3150,7 +3156,7 @@
     {
       "halilit_id": "1227930",
       "item_code": "60-BIGKNOBPASSIVE",
-      "category": "Accessories",
+      "category": "אביזרים לאולפן",
       "name": "שלט מוניטורים Mackie Big Knob Passive",
       "url": "https://www.halilit.com  /items/1227930-mackie-big-knob-passive",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1825498/original/b048a8c3c757a2df55eddf70511194f1.jpg",
@@ -3166,7 +3172,7 @@
     {
       "halilit_id": "1467040",
       "item_code": "60-FP-LITHIUM",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Lithium Ion Battery",
       "url": "https://www.halilit.com  /items/1467040-mackie-thump-12a-powered-speaker",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2279397/original/ec77422272d2b7dbffb3fec0221953cf.jpg",
@@ -3198,7 +3204,7 @@
     {
       "halilit_id": "7766696",
       "item_code": "60-DL1608-L-KIT",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "תחנת עגינה למיקסר Mackie DL806/DL1608",
       "url": "https://www.halilit.com  /items/7766696-mackie-dl806-dl1608-service-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16224271/original/5c81b29c8da39b2f60bc25722a0fd12c.jpg",
@@ -3214,7 +3220,7 @@
     {
       "halilit_id": "3283370",
       "item_code": "60-BAG-PROFX6V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX6v3 Mixer Bag",
       "url": "https://www.halilit.com  /items/3283370-mackie-profx6v3-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5688266/original/61217c5c787841102cc40c1cdf7e39ab.jpg",
@@ -3230,7 +3236,7 @@
     {
       "halilit_id": "2271659",
       "item_code": "60-DRM215",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie DRM215",
       "url": "https://www.halilit.com  /items/2271659-mackie-drm215",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3679342/original/d526894b1c9d7132a27ca756cf269ace.jpg",
@@ -3246,7 +3252,7 @@
     {
       "halilit_id": "2053806",
       "item_code": "60-DL32S",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie DL32S",
       "url": "https://www.halilit.com  /items/2053806-mackie-dl32s",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3320141/original/e284df410eadbf6ec5b4792ed565c92e.jpg",
@@ -3262,7 +3268,7 @@
     {
       "halilit_id": "458420",
       "item_code": "60-2404VLZ4",
-      "category": "Audio Equipment",
+      "category": "מיקסרים",
       "name": "Mackie 2404VLZ4",
       "url": "https://www.halilit.com  /items/458420-mackie-2404vlz4",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/576067/original/989fdbca822aed80cf7f9d1133c3b5ac.jpg",
@@ -3278,7 +3284,7 @@
     {
       "halilit_id": "6586041",
       "item_code": "60-MPLARGEFKIT",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Mackie Foam Tips (Large) Kit",
       "url": "https://www.halilit.com  /items/6586041-mackie-foam-tips-large-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13821961/original/05685c24412550464b53b46910381663.jpg",
@@ -3294,7 +3300,7 @@
     {
       "halilit_id": "446397",
       "item_code": "60-SPM300",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie SPM300",
       "url": "https://www.halilit.com  /items/446397-mackie-spm300-speaker-pole-for-dlm-series",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/560149/original/8b58e1bea43cdbd497323a241d5fbe3d.jpg",
@@ -3310,7 +3316,7 @@
     {
       "halilit_id": "3283390",
       "item_code": "60-BAG-PROFX8",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX8\\DFX6 Mixer Bag",
       "url": "https://www.halilit.com  /items/3283390-mackie-profx8-dfx6-mixer-bag",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5688327/original/c287677cc775b6cedb835118a1804493.jpg",
@@ -3326,7 +3332,7 @@
     {
       "halilit_id": "446398",
       "item_code": "60-DLM12S",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie DLM12S",
       "url": "https://www.halilit.com  /items/446398-mackie-dlm12s",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/560150/original/da0eddea4e9247f85b183dcab226b8e6.jpg",
@@ -3342,7 +3348,7 @@
     {
       "halilit_id": "3285439",
       "item_code": "60-SPM200",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie SPM200",
       "url": "https://www.halilit.com  /items/3285439-mackie-spm200-speaker-pole",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5693402/original/f4742cc27cbef80312617f760cd0e606.jpg",
@@ -3374,7 +3380,7 @@
     {
       "halilit_id": "6584013",
       "item_code": "60-ONYX12-DCOVER",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Onyx12 Dust Cover",
       "url": "https://www.halilit.com  /items/6584013-mackie-onyx12-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13816524/original/669b401ec44274ee6faefd453dc5f0bf.jpg",
@@ -3390,7 +3396,7 @@
     {
       "halilit_id": "1749197",
       "item_code": "60-HM400",
-      "category": "Accessories",
+      "category": "מגברי אוזניות",
       "name": "Mackie HM-400",
       "url": "https://www.halilit.com  /items/1749197-mackie-hm-400-headphones-amplifier",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2782559/original/dcbad6eacd632dcfc1d619cefb217529.jpg",
@@ -3406,7 +3412,7 @@
     {
       "halilit_id": "8383183",
       "item_code": "60-THUMPSUBGO",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "סאב וופר נייד Mackie ThumpSub GO",
       "url": "https://www.halilit.com  /items/8383183-mackie-thumpsub-go-portable-subwoofer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17775966/original/1151a1bb97b71cb93a358318ea90f922.jpg",
@@ -3422,7 +3428,7 @@
     {
       "halilit_id": "749279",
       "item_code": "60-CR5BT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Mackie CR5BT Gen 3",
       "url": "https://www.halilit.com  /items/749279-mackie-cr5bt-gen-3-studio-monitors",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/1090436/original/c2f669dcf87476ffc8fa2f8f7c78f4d7.jpg",
@@ -3438,7 +3444,7 @@
     {
       "halilit_id": "2745064",
       "item_code": "60-DCOVER-PROFX10V3",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie ProFX10 v3 Dust Cover",
       "url": "https://www.halilit.com  /items/2745064-mackie-profx10-v3-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4628730/original/8c18a81c469481ef0516a8a6cf9f6724.jpg",
@@ -3454,7 +3460,7 @@
     {
       "halilit_id": "3357418",
       "item_code": "60-CRDV",
-      "category": "Accessories",
+      "category": "אביזרים לאולפן",
       "name": "Mackie CRDV",
       "url": "https://www.halilit.com  /items/3357418-mackie-crdv",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5867197/original/25bb86bc00423839fd516c28f414858e.jpg",
@@ -3470,7 +3476,7 @@
     {
       "halilit_id": "6584050",
       "item_code": "60-ONYX16-DCOVER",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Onyx16 Dust Cover",
       "url": "https://www.halilit.com  /items/6584050-mackie-onyx16-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13816625/original/611a16a3f0defba69c2da4c8bf0fa9fe.jpg",
@@ -3486,7 +3492,7 @@
     {
       "halilit_id": "5365490",
       "item_code": "60-ONYX24-DCOVER",
-      "category": "Accessories",
+      "category": "אביזרים לציוד הגברה",
       "name": "Mackie Onyx24 Dust Cover",
       "url": "https://www.halilit.com  /items/5365490-mackie-profx10-v3-dust-cover-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10616236/original/e7de8054121b1d9f2d327013c3c5f6ec.jpg",
@@ -3502,7 +3508,7 @@
     {
       "halilit_id": "448251",
       "item_code": "60-C200",
-      "category": "Monitors & Speakers",
+      "category": "רמקולים",
       "name": "Mackie C200",
       "url": "https://www.halilit.com  /items/448251-mackie-c200-compact-passive-loudspeaker-%D7%A8%D7%9E%D7%A7%D7%95%D7%9C%D7%99%D7%9D",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/562213/original/a8ceca59d07d521d71cf96752b4d429b.jpg",

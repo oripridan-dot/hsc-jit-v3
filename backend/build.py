@@ -55,9 +55,28 @@ class CatalogBuilder:
         self.cleaner = DataCleaner()
         self.matcher = HalilitMatcher()
         
+        # Load brand metadata (logos, colors, etc.)
+        self.brands_metadata = self._load_brands_metadata()
+        
         # Create output directories
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.manuals_dir.mkdir(parents=True, exist_ok=True)
+    
+    def _load_brands_metadata(self) -> Dict:
+        """Load brand metadata (logos, colors, descriptions)"""
+        metadata_file = self.data_dir / "brands_metadata.json"
+        
+        if not metadata_file.exists():
+            logger.warning(f"Brand metadata not found: {metadata_file}")
+            return {}
+        
+        try:
+            with open(metadata_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get("brands_metadata", {})
+        except Exception as e:
+            logger.error(f"Failed to load brand metadata: {e}")
+            return {}
     
     def get_available_brands(self) -> List[str]:
         """Get list of brands with existing catalog data"""
@@ -171,9 +190,19 @@ class CatalogBuilder:
         
         # Step 4: Generate output JSON
         logger.info("Step 4/4: Generating output JSON...")
+        
+        # Get brand metadata (colors, logo, description)
+        brand_meta = self.brands_metadata.get(brand_id, {})
+        
         output_data = {
             "brand_id": brand_id,
-            "brand_name": brand_data.get("brand_name", brand_id.title()),
+            "brand_name": brand_meta.get("name", brand_data.get("brand_name", brand_id.title())),
+            "brand_website": brand_meta.get("website"),
+            "brand_color": brand_meta.get("brand_color"),
+            "secondary_color": brand_meta.get("secondary_color"),
+            "text_color": brand_meta.get("text_color"),
+            "logo_url": brand_meta.get("logo_url"),
+            "description": brand_meta.get("description"),
             "source": "v3.6_static_build",
             "build_timestamp": self._get_timestamp(),
             "stats": {
@@ -229,9 +258,12 @@ class CatalogBuilder:
         # Aggregate all brand data
         for brand_id, stats in build_results.items():
             if isinstance(stats, dict) and "total_products" in stats:
+                brand_meta = self.brands_metadata.get(brand_id, {})
                 index_data["brands"].append({
                     "id": brand_id,
-                    "name": brand_id.replace("-", " ").title(),
+                    "name": brand_meta.get("name", brand_id.replace("-", " ").title()),
+                    "brand_color": brand_meta.get("brand_color"),
+                    "logo_url": brand_meta.get("logo_url"),
                     "product_count": stats["total_products"],
                     "verified_count": stats.get("verified_products", 0),
                     "data_file": f"{brand_id}.json"

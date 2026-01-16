@@ -1,8 +1,14 @@
 {
   "brand_id": "akai-professional",
   "brand_name": "Akai Professional",
+  "brand_website": "https://www.akaipro.com",
+  "brand_color": "#FF3333",
+  "secondary_color": "#FF6B6B",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Producer of MIDI controllers, samplers, and production equipment.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:44.367256Z",
+  "build_timestamp": "2026-01-16T09:06:55.069784Z",
   "stats": {
     "total_products": 35,
     "verified_products": 0,
@@ -14,7 +20,7 @@
     {
       "halilit_id": "983330",
       "item_code": "55-MPD218",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional MPD218",
       "url": "https://www.halilit.com  /items/983330-akai-professional-mpd218-pad-controller",
       "normalized_sku": "MPD218",
@@ -33,7 +39,7 @@
     {
       "halilit_id": "5585698",
       "item_code": "55-LPD8MK2",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional LPD8 MKII",
       "url": "https://www.halilit.com  /items/5585698-akai-professional-lpd8-mkii",
       "normalized_sku": "LPD8",
@@ -52,7 +58,7 @@
     {
       "halilit_id": "5569832",
       "item_code": "55-APCKEY25MK2",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional APC KEY 25 MKII",
       "url": "https://www.halilit.com  /items/5569832-akai-professional-apc-key-25-mkii",
       "normalized_sku": "25",
@@ -89,7 +95,7 @@
     {
       "halilit_id": "8529812",
       "item_code": "55-MPKMINI4-BK",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK Mini mk4",
       "url": "https://www.halilit.com  /items/8529812-Akai-Professional-MPK-Mini-Mk4",
       "normalized_sku": "MK4",
@@ -108,7 +114,7 @@
     {
       "halilit_id": "6552727",
       "item_code": "55-APC64",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional APC64",
       "url": "https://www.halilit.com  /items/6552727-akai-professional-apc64",
       "normalized_sku": "APC64",
@@ -127,7 +133,7 @@
     {
       "halilit_id": "3126463",
       "item_code": "55-MPKMINI3",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK Mini mk3",
       "url": "https://www.halilit.com  /items/3126463-akai-professional-mpk-mini-mk3",
       "normalized_sku": "MK3",
@@ -146,7 +152,7 @@
     {
       "halilit_id": "8529872",
       "item_code": "55-MPKMINI4-WH",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK Mini mk4",
       "url": "https://www.halilit.com  /items/8529872-Akai-Professional-MPK-Mini-Mk4",
       "normalized_sku": "MK4",
@@ -165,7 +171,7 @@
     {
       "halilit_id": "6624745",
       "item_code": "55-MPCKEY37",
-      "category": "Synthesizers & Keys",
+      "category": "סינתיסייזרים",
       "name": "AKAI Professional MPC Key 37",
       "url": "https://www.halilit.com  /items/6624745-akai-professional-mpc-key-37-",
       "normalized_sku": "37",
@@ -184,7 +190,7 @@
     {
       "halilit_id": "6072810",
       "item_code": "55-MPCONEMK2",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "+Akai Professional MPC ONE",
       "url": "https://www.halilit.com  /items/6072810--akai-professional-mpc-one",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12731978/original/52986ed06a7e939dbc39f32c199e9ec8.jpg",
@@ -202,7 +208,7 @@
     {
       "halilit_id": "4748295",
       "item_code": "55-MPKMINI3G",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK mini mk3 Grey",
       "url": "https://www.halilit.com  /items/4748295-akai-professional-mpk-mini-mk3-grey",
       "normalized_sku": "MK3",
@@ -239,7 +245,7 @@
     {
       "halilit_id": "2102296",
       "item_code": "55-FIRE",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional Fire",
       "url": "https://www.halilit.com  /items/2102296-akai-professional-fire",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/3396904/original/fd62dbb0733bdd2fcd51ad7ddc2372c9.jpg",
@@ -257,7 +263,7 @@
     {
       "halilit_id": "5537570",
       "item_code": "55-MPKMINIPLUS",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK mini Plus",
       "url": "https://www.halilit.com  /items/5537570-akai-professional-mpk-mini-plus",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11089580/original/a68989bbcc11c4b076f1c8e9fc7d213b.jpg",
@@ -275,7 +281,7 @@
     {
       "halilit_id": "444463",
       "item_code": "55-MPK225",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK-225",
       "url": "https://www.halilit.com  /items/444463-akai-professional-mpk-225",
       "normalized_sku": "MPK-225",
@@ -294,7 +300,7 @@
     {
       "halilit_id": "5582657",
       "item_code": "55-APCMINI2",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional APC Mini MK2",
       "url": "https://www.halilit.com  /items/5582657-akai-professional-apc-mini-mk2",
       "normalized_sku": "MK2",
@@ -313,7 +319,7 @@
     {
       "halilit_id": "5322849",
       "item_code": "55-MPKMINIPLAYMK3",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK mini Play mk3",
       "url": "https://www.halilit.com  /items/5322849-akai-professional-mpk-mini-play-mk3",
       "normalized_sku": "MK3",
@@ -332,7 +338,7 @@
     {
       "halilit_id": "4322657",
       "item_code": "55-MPCSTUDIO2",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional MPC Studio 2",
       "url": "https://www.halilit.com  /items/4322657-akai-professional-mpc-studio-2",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8014768/original/5e68cb8ad2d38b186a2cb82bbed9aff6.jpg",
@@ -350,7 +356,7 @@
     {
       "halilit_id": "742024",
       "item_code": "55-MPD226",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional MPD226",
       "url": "https://www.halilit.com  /items/742024-akai-professional-mpd226",
       "normalized_sku": "MPD226",
@@ -369,7 +375,7 @@
     {
       "halilit_id": "5585034",
       "item_code": "55-LPK25MK2",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional LPK25 MKII",
       "url": "https://www.halilit.com  /items/5585034-akai-professional-lpk25-mkii",
       "normalized_sku": "LPK25",
@@ -388,7 +394,7 @@
     {
       "halilit_id": "3996084",
       "item_code": "55-MPKMINI3R",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK Mini mk3 Red",
       "url": "https://www.halilit.com  /items/3996084-akai-professional-mpk-mini-mk3-red",
       "normalized_sku": "MK3",
@@ -407,7 +413,7 @@
     {
       "halilit_id": "3181019",
       "item_code": "55-MPKMINI3BK",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK Mini mk3 black",
       "url": "https://www.halilit.com  /items/3181019-akai-professional-mpk-mini-mk3-black",
       "normalized_sku": "MK3",
@@ -426,7 +432,7 @@
     {
       "halilit_id": "3181029",
       "item_code": "55-MPKMINI3WH",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK Mini mk3 white",
       "url": "https://www.halilit.com  /items/3181029-akai-professional-mpk-mini-mk3-white",
       "normalized_sku": "MK3",
@@ -445,7 +451,7 @@
     {
       "halilit_id": "983289",
       "item_code": "55-MPD232",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional MPD232",
       "url": "https://www.halilit.com  /items/983289-akai-professional-mpd232",
       "normalized_sku": "MPD232",
@@ -482,7 +488,7 @@
     {
       "halilit_id": "444461",
       "item_code": "55-MPK261",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK-261",
       "url": "https://www.halilit.com  /items/444461-akai-professional-mpk-261",
       "normalized_sku": "MPK-261",
@@ -519,7 +525,7 @@
     {
       "halilit_id": "444464",
       "item_code": "55-APC40MKII",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "APC40 mkII Akai Professional",
       "url": "https://www.halilit.com  /items/444464-akai-professional-apc40-mkii",
       "normalized_sku": "APC40",
@@ -538,7 +544,7 @@
     {
       "halilit_id": "444462",
       "item_code": "55-MPK249",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "Akai Professional MPK-249",
       "url": "https://www.halilit.com  /items/444462-akai-professional-mpk-249",
       "normalized_sku": "MPK-249",
@@ -576,7 +582,7 @@
     {
       "halilit_id": "445720",
       "item_code": "55-COMPRESSOR",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Akai Professional Compressor",
       "url": "https://www.halilit.com  /items/445720-akai-professional-compressor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/559458/original/90b63aab335d284651bacd5e903adb00.jpg",
@@ -594,7 +600,7 @@
     {
       "halilit_id": "445722",
       "item_code": "55-BLUES-OD",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Akai Professional Blues Overdrive",
       "url": "https://www.halilit.com  /items/445722-akai-professional-blues-overdrive",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15942103/original/7ee680c12526c620acc2e411f77dbfb2.jpg",
@@ -649,7 +655,7 @@
     {
       "halilit_id": "514737",
       "item_code": "55-MIDIMIX",
-      "category": "Synthesizers & Keys",
+      "category": "משטחי שליטה ושלטי תוכנה",
       "name": "Akai Professional MIDImix",
       "url": "https://www.halilit.com  /items/514737-akai-professional-midimix",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/667707/original/b82299e7e47cae13c009eeff68111f6b.jpg",

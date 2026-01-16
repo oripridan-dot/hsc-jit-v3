@@ -1,8 +1,14 @@
 {
   "brand_id": "m-audio",
   "brand_name": "M-Audio",
+  "brand_website": "https://www.m-audio.com",
+  "brand_color": "#0066FF",
+  "secondary_color": "#00CCFF",
+  "text_color": "#FFFFFF",
+  "logo_url": null,
+  "description": "Audio interface and MIDI controller manufacturer for music production.",
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T08:42:45.397364Z",
+  "build_timestamp": "2026-01-16T09:06:56.101376Z",
   "stats": {
     "total_products": 312,
     "verified_products": 26,
@@ -14,7 +20,7 @@
     {
       "halilit_id": "7454232",
       "item_code": "27-HA73JRII",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio 73 JR II",
       "url": "https://www.halilit.com  /items/7454232-heritage-audio-73-jr-ii-mic-preamp",
       "normalized_sku": "73",
@@ -33,7 +39,7 @@
     {
       "halilit_id": "7452953",
       "item_code": "27-HA73X2ELITE",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio HA-73X2 Elite",
       "url": "https://www.halilit.com  /items/7452953-heritage-audio-ha-73x2-elite-mic-preamp",
       "normalized_sku": "HA-73X2",
@@ -52,7 +58,7 @@
     {
       "halilit_id": "7204378",
       "item_code": "80-WAMBA",
-      "category": "Accessories",
+      "category": "אביזרים לאולפן",
       "name": "Warm Audio WA-MBA",
       "url": "https://www.halilit.com  /items/7204378-warm-audio-wa-mba-microphone-boom-arm",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15021401/original/ca4fc099c4b510de41be6a4937a73340.jpg",
@@ -70,7 +76,7 @@
     {
       "halilit_id": "6889500",
       "item_code": "80-WA19B",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי Warm Audio WA-19",
       "url": "https://www.halilit.com  /items/6889500-warm-audio-wa-19-dynamic-studio-microphone",
       "title_he": "מיקרופון דינמי Warm Audio WA-19",
@@ -90,7 +96,7 @@
     {
       "halilit_id": "6977821",
       "item_code": "80-WA19N",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי Warm Audio WA-19",
       "url": "https://www.halilit.com  /items/6977821-warm-audio-wa-19-dynamic-studio-microphone",
       "title_he": "מיקרופון דינמי Warm Audio WA-19",
@@ -110,7 +116,7 @@
     {
       "halilit_id": "7453728",
       "item_code": "27-HA73EQX2ELITE",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio HA-73 EQX2 Elite",
       "url": "https://www.halilit.com  /items/7453728-heritage-audio-ha-73-eqx2-elite",
       "normalized_sku": "HA-73",
@@ -129,7 +135,7 @@
     {
       "halilit_id": "7670561",
       "item_code": "80-WA76-D2",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA76-D2",
       "url": "https://www.halilit.com  /items/7670561-warm-audio-wa76-d2-compressor",
       "normalized_sku": "WA76-D2",
@@ -148,7 +154,7 @@
     {
       "halilit_id": "7874850",
       "item_code": "44-APE2M",
-      "category": "Accessories",
+      "category": "מגברי אוזניות",
       "name": "Universal Audio Apollo e2m",
       "url": "https://www.halilit.com  /items/7874850-apollo-e2m-stereo-headphone-amp-and-line-interface",
       "normalized_sku": "E2M",
@@ -167,7 +173,7 @@
     {
       "halilit_id": "2440998",
       "item_code": "83-LYD5-B",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio LYD 5 Black",
       "url": "https://www.halilit.com  /items/2440998-dynaudio-lyd-5-black",
       "title_he": "מוניטור אולפני Dynaudio LYD 5 Black",
@@ -186,7 +192,7 @@
     {
       "halilit_id": "7451687",
       "item_code": "27-HA73ELITE",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio HA-73 Elite",
       "url": "https://www.halilit.com  /items/7451687-heritage-audio-ha-73-elite-mic-preamp",
       "normalized_sku": "HA-73",
@@ -205,7 +211,7 @@
     {
       "halilit_id": "7450409",
       "item_code": "27-HADTT73",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio DTT-73",
       "url": "https://www.halilit.com  /items/7450409-heritage-audio-dtt-73-dual-mic-line-preamp",
       "normalized_sku": "DTT-73",
@@ -220,7 +226,7 @@
     {
       "halilit_id": "1576253",
       "item_code": "52-UBEMIC",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "M-Audio Uber Mic USB Microphone",
       "url": "https://www.halilit.com  /items/1576253-m-audio-uber-mic-professional-usb-microphone",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2470195/original/2b8a4c7f00a3fb094c592ae6cc5ba502.jpg",
@@ -238,7 +244,7 @@
     {
       "halilit_id": "890433",
       "item_code": "83-LYD5",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio LYD 5",
       "url": "https://www.halilit.com  /items/890433-dynaudio-lyd-5",
       "title_he": "מוניטור אולפני Dynaudio LYD 5",
@@ -257,7 +263,7 @@
     {
       "halilit_id": "7460930",
       "item_code": "27-HA81AELITE",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio HA-81A EQ Elite",
       "url": "https://www.halilit.com  /items/7460930-heritage-audio-ha-81a-eq-elite",
       "normalized_sku": "HA-81A",
@@ -276,7 +282,7 @@
     {
       "halilit_id": "8342093",
       "item_code": "80-WA87JR-N",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 JR",
       "url": "https://www.halilit.com  /items/8342093-warm-audio-wa-87-jr",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 JR",
@@ -296,7 +302,7 @@
     {
       "halilit_id": "8044368",
       "item_code": "80-WACX24",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר שפופרתי Warm Audio WA-CX24",
       "url": "https://www.halilit.com  /items/8044368-warm-audio-wa-cx24-tube-condenser-microphone",
       "title_he": "מיקרופון קונדנסר שפופרתי Warm Audio WA-CX24",
@@ -316,7 +322,7 @@
     {
       "halilit_id": "6312276",
       "item_code": "80-WA1B",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA-1B",
       "url": "https://www.halilit.com  /items/6312276-warm-audio-wa-1b-tube-optical-compressor",
       "normalized_sku": "WA-1B",
@@ -335,7 +341,7 @@
     {
       "halilit_id": "7453782",
       "item_code": "27-HA73EQJR",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio 73EQ JR",
       "url": "https://www.halilit.com  /items/7453782-heritage-audio-73eq-jr",
       "normalized_sku": "73EQ",
@@ -354,7 +360,7 @@
     {
       "halilit_id": "8341848",
       "item_code": "80-WA87JR-B",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 JR",
       "url": "https://www.halilit.com  /items/8341848-warm-audio-wa-87-jr",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 JR",
@@ -374,7 +380,7 @@
     {
       "halilit_id": "4131162",
       "item_code": "47-HIX65",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Austrian Audio Hi-X65 Over Ear",
       "url": "https://www.halilit.com  /items/4131162-austrian-audio-hi-x65-over-ear",
       "title_he": "אוזניות אולפן Austrian Audio Hi-X65 Over Ear",
@@ -394,7 +400,7 @@
     {
       "halilit_id": "3212124",
       "item_code": "47-HIX55OVER-EAR",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Austrian Audio Hi-X55 Over Ear",
       "url": "https://www.halilit.com  /items/3212124-haustrian-audio-hi-x55-over-ear",
       "title_he": "אוזניות אולפן Austrian Audio Hi-X55 Over Ear",
@@ -414,7 +420,7 @@
     {
       "halilit_id": "7994981",
       "item_code": "52-MTRACKDUOHDPACK",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "M-Audio M-Track Duo HD Producer Pack",
       "url": "https://www.halilit.com  /items/7994981-m-audio-m-track-duo-hd-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16744724/original/71aa46af38ca3bb3fd15a13af22866d7.jpg",
@@ -432,7 +438,7 @@
     {
       "halilit_id": "8115046",
       "item_code": "48-MESA",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Lynx Mesa Thunderbolt 3 Audio Interface",
       "url": "https://www.halilit.com  /items/8115046-lynx-mesa-thunderbolt-3-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16978118/original/8e233893d623445670e50a90563e6b31.jpg",
@@ -450,7 +456,7 @@
     {
       "halilit_id": "7670632",
       "item_code": "80-WA76-P",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל קומפרסור Warm Audio Pedal76",
       "url": "https://www.halilit.com  /items/7670632--warm-audio-pedal76-compressor-pedal",
       "title_he": "פדל קומפרסור Warm Audio Pedal76",
@@ -470,7 +476,7 @@
     {
       "halilit_id": "7456106",
       "item_code": "27-HASUCCESSOR",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio Successor",
       "url": "https://www.halilit.com  /items/7456106-heritage-audio-successor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15548886/original/3905531ecc8c4fd5b140fac9698a16d6.jpg",
@@ -488,7 +494,7 @@
     {
       "halilit_id": "7450987",
       "item_code": "27-GRANDCHILD670",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio Grandchild 670",
       "url": "https://www.halilit.com  /items/7450987-heritage-audio-grandchild-670",
       "normalized_sku": "670",
@@ -507,7 +513,7 @@
     {
       "halilit_id": "3418989",
       "item_code": "AA-D3V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Adam Audio D3V",
       "url": "https://www.halilit.com  /items/3418989-adam-audio-d3v-studio-monitors",
       "title_he": "זוג מוניטורים Adam Audio D3V",
@@ -524,13 +530,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "14490",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "8341617",
       "item_code": "80-WA47JRSE-N",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Warm Audio WA-47 JR SE",
       "url": "https://www.halilit.com  /items/8341617-warm-audio-wa-47-jr-se-condenser-microphone",
       "title_he": "מיקרופון קונדנסר Warm Audio WA-47 JR SE",
@@ -550,7 +555,7 @@
     {
       "halilit_id": "7589745",
       "item_code": "52-FORTYEIGHTY",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני M-Audio Forty Eighty",
       "url": "https://www.halilit.com  /items/7589745-m-audio-forty-eighty-studio-monitor",
       "title_he": "מוניטור אולפני M-Audio Forty Eighty",
@@ -569,7 +574,7 @@
     {
       "halilit_id": "8671346",
       "item_code": "27-HA-P-LANE436",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio P.LANE Type 436",
       "url": "https://www.halilit.com  /items/8671346-heritage-audio-p-lane-type-436",
       "normalized_sku": "436",
@@ -588,7 +593,7 @@
     {
       "halilit_id": "7671160",
       "item_code": "80-WAC1",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל Warm Audio WA-C1 Vibrato/Chorus",
       "url": "https://www.halilit.com  /items/7671160--warm-audio-wa-c1-vibrato-and-chorus-pedal",
       "title_he": "פדל Warm Audio WA-C1 Vibrato/Chorus",
@@ -608,7 +613,7 @@
     {
       "halilit_id": "7149179",
       "item_code": "27-HASUPER8",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio Super 8",
       "url": "https://www.halilit.com  /items/7149179-heritage-audio-super-8",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15503221/original/bc70fa285edf925f50787547f2604ccb.jpg",
@@ -626,7 +631,7 @@
     {
       "halilit_id": "3988607",
       "item_code": "80-WA87R2B",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 R2",
       "url": "https://www.halilit.com  /items/3988607-warm-audio-wa-87-r2-",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 R2",
@@ -646,7 +651,7 @@
     {
       "halilit_id": "3460992",
       "item_code": "52-AIR192X4SPRO",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "M-Audio AIR 192|4 Vocal Studio Pro",
       "url": "https://www.halilit.com  /items/3460992-m-audio-air-192-4-vocal-studio-pro",
       "normalized_sku": "192",
@@ -665,7 +670,7 @@
     {
       "halilit_id": "8776065",
       "item_code": "70-QUANTOMHD2",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Fender Quantum HD 2 USB-C Audio Interface Fender Studio",
       "url": "https://www.halilit.com  /items/8776065-fender-quantum-hd-2-usb-c-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19875598/original/f79bc15b07554c598b88bc7fb06b13d8.jpg",
@@ -679,7 +684,7 @@
     {
       "halilit_id": "7450251",
       "item_code": "27-HATT73",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio TT-73",
       "url": "https://www.halilit.com  /items/7450251-heritage-audio-tt-73-mic-line-preamp",
       "normalized_sku": "TT-73",
@@ -698,7 +703,7 @@
     {
       "halilit_id": "7665551",
       "item_code": "80-WA76-A2",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA76-A2",
       "url": "https://www.halilit.com  /items/7665551-warm-audio-wa76-a2-compressor",
       "normalized_sku": "WA76-A2",
@@ -717,7 +722,7 @@
     {
       "halilit_id": "8341649",
       "item_code": "80-WA87JRSE-B",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Warm Audio WA-87 JR SE",
       "url": "https://www.halilit.com  /items/8341649-warm-audio-wa-87-jr-se-condenser-microphone",
       "title_he": "מיקרופון קונדנסר Warm Audio WA-87 JR SE",
@@ -737,7 +742,7 @@
     {
       "halilit_id": "6889362",
       "item_code": "80-WA47",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Warm Audio WA-47",
       "url": "https://www.halilit.com  /items/6889362-warm-audio-wa-47-microphone",
       "title_he": "מיקרופון קונדנסר מנורות Warm Audio WA-47",
@@ -757,7 +762,7 @@
     {
       "halilit_id": "6889363",
       "item_code": "80-WA44",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון ריבון לאולפן Warm Audio WA-44",
       "url": "https://www.halilit.com  /items/6889363-warm-audio-wa-44-studio-ribbon-microphone",
       "title_he": "מיקרופון ריבון לאולפן Warm Audio WA-44",
@@ -777,7 +782,7 @@
     {
       "halilit_id": "7099544",
       "item_code": "70-QUANTUMHD2EU",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "PreSonus Quantum HD 2 USB-C Audio Interface",
       "url": "https://www.halilit.com  /items/7099544-presonus-quantum-hd-2-usb-c-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14791848/original/d368bae77dca24618b8b6fefed4bed85.jpg",
@@ -795,7 +800,7 @@
     {
       "halilit_id": "8072093",
       "item_code": "80-WAFT",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון ריבון לאולפן Warm Audio Fen-tone",
       "url": "https://www.halilit.com  /items/8072093-warm-audio-fen-tone-studio-ribbon-microphone",
       "title_he": "מיקרופון ריבון לאולפן Warm Audio Fen-tone",
@@ -814,7 +819,7 @@
     {
       "halilit_id": "7451042",
       "item_code": "27-HA609AELITE",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio HA-609A",
       "url": "https://www.halilit.com  /items/7451042-heritage-audio-ha-609a-elite",
       "normalized_sku": "HA-609A",
@@ -833,7 +838,7 @@
     {
       "halilit_id": "5652902",
       "item_code": "47-OD5",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי Austrian Audio OD5",
       "url": "https://www.halilit.com  /items/5652902-austrian-audio-od5-active-dynamic-instrument-microphone",
       "title_he": "מיקרופון דינמי Austrian Audio OD5",
@@ -871,7 +876,7 @@
     {
       "halilit_id": "7453098",
       "item_code": "27-HA73EQELITE",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio HA-73 EQ Elite",
       "url": "https://www.halilit.com  /items/7453098-heritage-audio-ha-73-eq-elite",
       "normalized_sku": "HA-73",
@@ -890,7 +895,7 @@
     {
       "halilit_id": "6864555",
       "item_code": "70-QUANTUMES2",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "PreSonus Quantum ES 2 USB-C Audio Interface",
       "url": "https://www.halilit.com  /items/6864555-presonus-quantum-es-2-usb-c-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14395814/original/851ba2c97aa6eaef7165676e1ea9111a.jpg",
@@ -908,7 +913,7 @@
     {
       "halilit_id": "2276780",
       "item_code": "AA-T5V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio T5V",
       "url": "https://www.halilit.com  /items/2276780-adam-audio-t5v",
       "title_he": "מוניטור אולפני ADAM Audio T5V",
@@ -925,13 +930,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "8780",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "4446893",
       "item_code": "47-HIX15",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Austrian Audio Hi-X15",
       "url": "https://www.halilit.com  /items/4446893-austrian-audio-hi-x15-professional-over-ear-headphones-",
       "title_he": "אוזניות אולפן Austrian Audio Hi-X15",
@@ -951,7 +955,7 @@
     {
       "halilit_id": "8499889",
       "item_code": "80-WA2FT",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "זוג מיקרופונים ריבון לאולפן Warm Audio Fen-tone",
       "url": "https://www.halilit.com  /items/8499889-warm-audio-fen-tone-studio-ribbon-microphone-pair",
       "title_he": "זוג מיקרופונים ריבון לאולפן Warm Audio Fen-tone",
@@ -970,7 +974,7 @@
     {
       "halilit_id": "4632764",
       "item_code": "52-OXYGEN49MKV",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Oxygen 49 MKV",
       "url": "https://www.halilit.com  /items/4632764-m-audio-oxygen-49-mkv",
       "normalized_sku": "49",
@@ -989,7 +993,7 @@
     {
       "halilit_id": "7665341",
       "item_code": "80-WA76-A",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA76-A",
       "url": "https://www.halilit.com  /items/7665341-warm-audio-wa76-a-compressor",
       "normalized_sku": "WA76-A",
@@ -1008,7 +1012,7 @@
     {
       "halilit_id": "6894014",
       "item_code": "80-WABEND",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל פאז Warm Audio Warm Bender",
       "url": "https://www.halilit.com  /items/6894014-warm-audio-warm-bender",
       "title_he": "פדל פאז Warm Audio Warm Bender",
@@ -1027,7 +1031,7 @@
     {
       "halilit_id": "890559",
       "item_code": "83-LYD8",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio LYD 8",
       "url": "https://www.halilit.com  /items/890559-dynaudio-lyd-8",
       "title_he": "מוניטור אולפני Dynaudio LYD 8",
@@ -1046,7 +1050,7 @@
     {
       "halilit_id": "7990475",
       "item_code": "52-MTRACKDUOHD",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "M-Audio M-Track Duo HD Audio Interface",
       "url": "https://www.halilit.com  /items/7990475-m-audio-m-track-duo-hd-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16735943/original/1af60470b5cb4073536bcad0313ad40b.jpg",
@@ -1064,7 +1068,7 @@
     {
       "halilit_id": "4746444",
       "item_code": "52-OXYGENPROMINI",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Oxygen Pro Mini",
       "url": "https://www.halilit.com  /items/4746444-m-audio-oxygen-pro-mini",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9085255/original/2961c8d44e24c087357e345851b28ae8.jpg",
@@ -1082,7 +1086,7 @@
     {
       "halilit_id": "3988942",
       "item_code": "80-WA47JR",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Warm Audio WA-47 JR",
       "url": "https://www.halilit.com  /items/3988942-warm-audio-wa-47-jr-condenser-microphone",
       "title_he": "מיקרופון קונדנסר Warm Audio WA-47 JR",
@@ -1102,7 +1106,7 @@
     {
       "halilit_id": "8336083",
       "item_code": "80-WA47JRSE-B",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Warm Audio WA-47 JR SE",
       "url": "https://www.halilit.com  /items/8336083-warm-audio-wa-47-jr-se-condenser-microphone",
       "title_he": "מיקרופון קונדנסר Warm Audio WA-47 JR SE",
@@ -1122,7 +1126,7 @@
     {
       "halilit_id": "7589587",
       "item_code": "52-FORTYSIXTY",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני M-Audio Forty Sixty",
       "url": "https://www.halilit.com  /items/7589587-m-audio-forty-sixty-studio-monitor",
       "title_he": "מוניטור אולפני M-Audio Forty Sixty",
@@ -1141,7 +1145,7 @@
     {
       "halilit_id": "3988436",
       "item_code": "80-WA87R2",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 R2",
       "url": "https://www.halilit.com  /items/3988436-warm-audio-wa-87-r2",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-87 R2",
@@ -1161,7 +1165,7 @@
     {
       "halilit_id": "8341718",
       "item_code": "80-WA87JRSE-N",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Warm Audio WA-87 JR SE",
       "url": "https://www.halilit.com  /items/8341718-warm-audio-wa-87-jr-se-condenser-microphone",
       "title_he": "מיקרופון קונדנסר Warm Audio WA-87 JR SE",
@@ -1181,7 +1185,7 @@
     {
       "halilit_id": "3460822",
       "item_code": "52-OXYGENPRO61",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Oxygen Pro 61",
       "url": "https://www.halilit.com  /items/3460822-m-audio-oxygen-61-pro",
       "normalized_sku": "61",
@@ -1200,7 +1204,7 @@
     {
       "halilit_id": "7669979",
       "item_code": "80-WA76-D",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA76-D",
       "url": "https://www.halilit.com  /items/7669979-warm-audio-wa76-d-compressor",
       "normalized_sku": "WA76-D",
@@ -1219,7 +1223,7 @@
     {
       "halilit_id": "7749595",
       "item_code": "AA-D3V-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים Adam Audio D3V",
       "url": "https://www.halilit.com  /items/7749595-adam-audio-d3v-studio-monitors",
       "title_he": "זוג מוניטורים Adam Audio D3V",
@@ -1236,13 +1240,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "14490",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "7438565",
       "item_code": "27-HABRITSTRIP",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Heritage Audio BritStrip",
       "url": "https://www.halilit.com  /items/7438565-heritage-audio-britstrip",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15504286/original/f4e7f02e41ff9195b793e889d02da4f8.jpg",
@@ -1260,7 +1263,7 @@
     {
       "halilit_id": "6871525",
       "item_code": "83-CORE5",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio Core 5",
       "url": "https://www.halilit.com  /items/6871525-dynaudio-core-5-studio-monitor",
       "title_he": "מוניטור אולפני Dynaudio Core 5",
@@ -1297,7 +1300,7 @@
     {
       "halilit_id": "7679723",
       "item_code": "AA-H200",
-      "category": "Accessories",
+      "category": "אוזניות לאולפן",
       "name": "Adam Audio H-200",
       "url": "https://www.halilit.com  /items/7679723-adam-audio-h-200-headphones",
       "normalized_sku": "H-200",
@@ -1313,13 +1316,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "7030",
-      "halilit_category": "אוזניות לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "5352697",
       "item_code": "80-WACX12",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר שפופרתי Warm Audio WA-CX12",
       "url": "https://www.halilit.com  /items/5352697-warm-audio-wa-cx12-tube-condenser-microphone",
       "title_he": "מיקרופון קונדנסר שפופרתי Warm Audio WA-CX12",
@@ -1339,7 +1341,7 @@
     {
       "halilit_id": "6871545",
       "item_code": "83-CORESUBCOMPACT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני מוגבר Dynaudio Core Sub Compact",
       "url": "https://www.halilit.com  /items/6871545-dynaudio-core-sub-compact-subwoofer",
       "title_he": "סאבוופר אולפני מוגבר Dynaudio Core Sub Compact",
@@ -1358,7 +1360,7 @@
     {
       "halilit_id": "8237562",
       "item_code": "80-WA47T",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Warm Audio WA-47T",
       "url": "https://www.halilit.com  /items/8237562-warm-audio-wa-47t-microphone",
       "title_he": "מיקרופון קונדנסר מנורות Warm Audio WA-47T",
@@ -1378,7 +1380,7 @@
     {
       "halilit_id": "7541248",
       "item_code": "54-SC207-B",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC207",
       "url": "https://www.halilit.com  /items/7541248-eve-audio-sc207-black-edition",
       "title_he": "מוניטור אולפני EVE Audio SC207",
@@ -1398,7 +1400,7 @@
     {
       "halilit_id": "6001924",
       "item_code": "80-WAMPH",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל פייזר Warm Audio Mutation Phasor II",
       "url": "https://www.halilit.com  /items/6001924-warm-audio-mutation-phasor-ii",
       "title_he": "פדל פייזר Warm Audio Mutation Phasor II",
@@ -1417,7 +1419,7 @@
     {
       "halilit_id": "7461636",
       "item_code": "44-GPMKNUC",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Knuckles '92 Dual Rec Amplifier",
       "url": "https://www.halilit.com  /items/7461636-universal-audio-uafx-knuckles-92-dual-rec-amplifier",
       "normalized_sku": "92",
@@ -1436,7 +1438,7 @@
     {
       "halilit_id": "8779524",
       "item_code": "XXXX",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "Fender Quantum Complete Bundle Fender Studio",
       "url": "https://www.halilit.com  /items/8779524-fender-quantum-complete-bundle",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19901069/original/31a5e5fa0c0df02eda99b9513060d836.jpg",
@@ -1450,7 +1452,7 @@
     {
       "halilit_id": "4632581",
       "item_code": "52-OXYGEN61MKV",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Oxygen 61 MKV",
       "url": "https://www.halilit.com  /items/4632581-m-audio-oxygen-61-mkv",
       "normalized_sku": "61",
@@ -1469,7 +1471,7 @@
     {
       "halilit_id": "7133701",
       "item_code": "41-GEMINI-GREY",
-      "category": "Synthesizers & Keys",
+      "category": "סינתיסייזרים",
       "name": "סינתיסייזר UDO Audio Super Gemini",
       "url": "https://www.halilit.com  /items/7133701-udo-audio-super-gemini-",
       "title_he": "סינתיסייזר UDO Audio Super Gemini",
@@ -1488,7 +1490,7 @@
     {
       "halilit_id": "7972358",
       "item_code": "54-EXO28",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio EXO 28",
       "url": "https://www.halilit.com  /items/7972358-eve-audio-exo-28",
       "title_he": "מוניטור אולפני EVE Audio EXO 28",
@@ -1508,7 +1510,7 @@
     {
       "halilit_id": "6688520",
       "item_code": "47-HIX60",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Austrian Audio Hi-X60 Over Ear",
       "url": "https://www.halilit.com  /items/6688520-austrian-audio-hi-x60-over-ear-headphones-",
       "title_he": "אוזניות אולפן Austrian Audio Hi-X60 Over Ear",
@@ -1528,7 +1530,7 @@
     {
       "halilit_id": "4633097",
       "item_code": "52-OXYGEN25MKV",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Oxygen 25 MKV",
       "url": "https://www.halilit.com  /items/4633097-m-audio-oxygen-25-mkv",
       "normalized_sku": "25",
@@ -1547,7 +1549,7 @@
     {
       "halilit_id": "1286410",
       "item_code": "83-LYD48-R",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד ימין Dynaudio LYD 48 Black",
       "url": "https://www.halilit.com  /items/1286410-dynaudio-lyd-48-black-studio-monitor",
       "title_he": "מוניטור אולפני צד ימין Dynaudio LYD 48 Black",
@@ -1567,7 +1569,7 @@
     {
       "halilit_id": "8582159",
       "item_code": "45-DAC-CUBASE PRO",
-      "category": "Audio Equipment",
+      "category": "תוכנות הפקה ואולפן",
       "name": "Steinberg Cubase Pro 15",
       "url": "https://www.halilit.com  /items/8582159-steinberg-cubase-pro-15",
       "normalized_sku": "15",
@@ -1586,7 +1588,7 @@
     {
       "halilit_id": "7235088",
       "item_code": "44-MICUASD3X3",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "סט מיקרופונים Universal Audio SD-3 Set",
       "url": "https://www.halilit.com  /items/7235088-universal-audio-sd-3x3-dynamic-microphones-set",
       "title_he": "סט מיקרופונים Universal Audio SD-3 Set",
@@ -1606,7 +1608,7 @@
     {
       "halilit_id": "6406160",
       "item_code": "62-EAYMSJ300",
-      "category": "Cables & Accessories",
+      "category": "כבל מתאם",
       "name": "Bespeco EAYMSJ300",
       "url": "https://www.halilit.com  /items/6406160-bespeco-eaymsj300",
       "normalized_sku": "EAYMSJ300",
@@ -1625,7 +1627,7 @@
     {
       "halilit_id": "6893845",
       "item_code": "80-WARB",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Warm Audio RingerBringer Ring Modulator",
       "url": "https://www.halilit.com  /items/6893845-warm-audio-ringerbringer-ring-modulator",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14456282/original/97765e827703d932e7c9c2be93e0aa53.jpg",
@@ -1643,7 +1645,7 @@
     {
       "halilit_id": "3212056",
       "item_code": "47-HIX50ON-EAR",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Austrian Audio Hi-X50 On Ear",
       "url": "https://www.halilit.com  /items/3212056-austrian-audio-hi-x50-on-ear",
       "title_he": "אוזניות אולפן Austrian Audio Hi-X50 On Ear",
@@ -1663,7 +1665,7 @@
     {
       "halilit_id": "2326296",
       "item_code": "70-STUDIO24C",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "PreSonus Studio 24C Audio Interface",
       "url": "https://www.halilit.com  /items/2326296-presonus-studio-24c-audio-interface",
       "normalized_sku": "24C",
@@ -1682,7 +1684,7 @@
     {
       "halilit_id": "6864925",
       "item_code": "70-QUANTUMHD8EU",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "PreSonus Quantum HD 8 USB-C Audio Interface",
       "url": "https://www.halilit.com  /items/6864925-presonus-quantum-hd-8-usb-c-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14396729/original/05bd4a1d83ee52f506dd442b965adfed.jpg",
@@ -1700,7 +1702,7 @@
     {
       "halilit_id": "6310432",
       "item_code": "44-GPM-LION",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Lion '68 Super Lead Amp",
       "url": "https://www.halilit.com  /items/6310432-universal-audio-uafx-lion-68-super-lead-amp",
       "normalized_sku": "68",
@@ -1719,7 +1721,7 @@
     {
       "halilit_id": "4871457",
       "item_code": "44-GPMDRM",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Dream '65 Reverb Amplifier",
       "url": "https://www.halilit.com  /items/4871457-universal-audio-uafx-dream-65-reverb-amplifier",
       "normalized_sku": "65",
@@ -1738,7 +1740,7 @@
     {
       "halilit_id": "3989025",
       "item_code": "80-WA84CB",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-84 Black",
       "url": "https://www.halilit.com  /items/3989025-warm-audio-wa-84-microphone",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-84 Black",
@@ -1758,7 +1760,7 @@
     {
       "halilit_id": "3949861",
       "item_code": "80-WA251",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Warm Audio WA-251",
       "url": "https://www.halilit.com  /items/3949861-warm-audio-wa-251-microphone",
       "title_he": "מיקרופון קונדנסר מנורות Warm Audio WA-251",
@@ -1778,7 +1780,7 @@
     {
       "halilit_id": "7640614",
       "item_code": "87-GCS8",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Boss Gigcaster 8",
       "url": "https://www.halilit.com  /items/7640614-boss-gigcaster-8-audio-streaming-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15961037/original/50791321ce920bd666bbb102551b6da2.jpg",
@@ -1796,7 +1798,7 @@
     {
       "halilit_id": "4872999",
       "item_code": "44-GPMWDR",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Woodrow '55 Instrument Amplifier",
       "url": "https://www.halilit.com  /items/4872999-universal-audio-uafx-woodrow-55-instrument-amplifier",
       "normalized_sku": "55",
@@ -1815,7 +1817,7 @@
     {
       "halilit_id": "5885995",
       "item_code": "44-GPMDLVRB",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Del-Verb Ambience Companion",
       "url": "https://www.halilit.com  /items/5885995-universal-audio-uafx-del-verb-ambience-companion",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12140005/original/f8fb092d6b22a32b63a1fc94b58cf215.png",
@@ -1833,7 +1835,7 @@
     {
       "halilit_id": "7331630",
       "item_code": "TE-014XS019",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering Slim Audio Cable",
       "url": "https://www.halilit.com  /items/7331630-teenage-engineering-audio-split-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282405/original/9d912d055b58dd0527f770e195062636.jpg",
@@ -1851,7 +1853,7 @@
     {
       "halilit_id": "6864687",
       "item_code": "70-QUANTUMES4",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "PreSonus Quantum ES 4 USB-C Audio Interface",
       "url": "https://www.halilit.com  /items/6864687-presonus-quantum-es-4-usb-c-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14396172/original/1eb4f56ddb4e852a36840a78fbe1b7b0.jpg",
@@ -1869,7 +1871,7 @@
     {
       "halilit_id": "7331631",
       "item_code": "TE-014XS021",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering Slim Audio Cable",
       "url": "https://www.halilit.com  /items/7331631-teenage-engineering-slim-audio-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282406/original/01404d915cd81b5a4223a2e9147260fe.jpg",
@@ -1887,7 +1889,7 @@
     {
       "halilit_id": "7331632",
       "item_code": "TE-014XS027",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering Textile Audio Cable",
       "url": "https://www.halilit.com  /items/7331632-teenage-engineering-textile-audio-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282407/original/1f5ba12d263b4a06adab2af37b2353a7.jpg",
@@ -1905,7 +1907,7 @@
     {
       "halilit_id": "882225",
       "item_code": "83-BM5MK3",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio BM5 mkIII",
       "url": "https://www.halilit.com  /items/882225-dynaudio-bm5-mkiii-studio-monitor",
       "title_he": "מוניטור אולפני Dynaudio BM5 mkIII",
@@ -1925,7 +1927,7 @@
     {
       "halilit_id": "7331634",
       "item_code": "TE-014XS035",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering slim sync cable kit",
       "url": "https://www.halilit.com  /items/7331634-teenage-engineering-slim-sync-cable-kit",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282409/original/a6cfc890abb712e2e06649c5cc128788.jpg",
@@ -1943,7 +1945,7 @@
     {
       "halilit_id": "7963955",
       "item_code": "70-ABUSB96CB",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "PreSonus AudioBox 96 Complete Bundle",
       "url": "https://www.halilit.com  /items/7963955-presonus-audiobox-96-complete-bundle",
       "normalized_sku": "96",
@@ -1962,7 +1964,7 @@
     {
       "halilit_id": "7331635",
       "item_code": "TE-014XS013",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering slim 4-pole Audio Cable curly",
       "url": "https://www.halilit.com  /items/7331635-teenage-engineering-slim-4-pole-audio-cable-curly",
       "normalized_sku": "4-POLE",
@@ -1981,7 +1983,7 @@
     {
       "halilit_id": "7448628",
       "item_code": "27-HABABYRAM",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "Heritage Audio Baby RAM",
       "url": "https://www.halilit.com  /items/7448628-heritage-audio-baby-ram",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15528813/original/70e8cddf1b5632999665d369ccc72124.jpg",
@@ -1999,7 +2001,7 @@
     {
       "halilit_id": "7331636",
       "item_code": "TE-014XS028",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering Audio Textile Cable",
       "url": "https://www.halilit.com  /items/7331636-teenage-engineering-audio-textile-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282412/original/2283f89b69b60d51833131d7192a5099.jpg",
@@ -2017,7 +2019,7 @@
     {
       "halilit_id": "2867509",
       "item_code": "AA-T8V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio T8V",
       "url": "https://www.halilit.com  /items/2867509-adam-audio-t8v-studio-monitor-",
       "title_he": "מוניטור אולפני ADAM Audio T8V",
@@ -2034,13 +2036,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "13170",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "7331637",
       "item_code": "TE-014XS030",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering Slim Audio Cable",
       "url": "https://www.halilit.com  /items/7331637-teenage-engineering-slim-audio-cable-3-5mm-3-5mm",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282413/original/f6c8e21eb9c5cb31e9c947c458d00734.jpg",
@@ -2058,7 +2059,7 @@
     {
       "halilit_id": "7331638",
       "item_code": "TE-014XS025",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering Textile Audio Cable",
       "url": "https://www.halilit.com  /items/7331638-teenage-engineering-audio-textile-split-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282414/original/719cae87b3a7f10c389b6c018d357873.jpg",
@@ -2076,7 +2077,7 @@
     {
       "halilit_id": "7331639",
       "item_code": "TE-014XS031",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering Textile Audio Cable",
       "url": "https://www.halilit.com  /items/7331639-teenage-engineering-textile-audio-split-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15282416/original/39e9ccf631ad0f811220db08797c4119.jpg",
@@ -2094,7 +2095,7 @@
     {
       "halilit_id": "7331640",
       "item_code": "TE-MC3POSYNC",
-      "category": "Cables & Accessories",
+      "category": "כבל אודיו",
       "name": "Teenage Engineering MC-3 mini sync cables 95 mm",
       "url": "https://www.halilit.com  /items/7331640-teenage-engineering-mc-3-mini-sync-cables-95-mm",
       "normalized_sku": "MC-3",
@@ -2113,7 +2114,7 @@
     {
       "halilit_id": "4841528",
       "item_code": "AA-A7V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A7V",
       "url": "https://www.halilit.com  /items/4841528-adam-audio-a7v",
       "title_he": "מוניטור אולפני ADAM Audio A7V",
@@ -2130,13 +2131,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "34220",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "4937022",
       "item_code": "47-PG16",
-      "category": "Accessories",
+      "category": "אוזניות גיימינג",
       "name": "אוזניות לגיימינג Austrian Audio PG16",
       "url": "https://www.halilit.com  /items/4937022-austrian-audio-pg16-professional-gaming-headset-",
       "title_he": "אוזניות לגיימינג Austrian Audio PG16",
@@ -2156,7 +2156,7 @@
     {
       "halilit_id": "7541317",
       "item_code": "54-SC205-B",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC205",
       "url": "https://www.halilit.com  /items/7541317-eve-audio-sc205-black-edition",
       "title_he": "מוניטור אולפני EVE Audio SC205",
@@ -2176,7 +2176,7 @@
     {
       "halilit_id": "3460678",
       "item_code": "52-OXYGENPRO25",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Oxygen Pro 25",
       "url": "https://www.halilit.com  /items/3460678-m-audio-oxygen-pro-25",
       "normalized_sku": "25",
@@ -2195,7 +2195,7 @@
     {
       "halilit_id": "6884680",
       "item_code": "54-SC4070",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC4070",
       "url": "https://www.halilit.com  /items/6884680-eve-audio-sc4070-active-studio-monitor",
       "title_he": "מוניטור אולפני EVE Audio SC4070",
@@ -2215,7 +2215,7 @@
     {
       "halilit_id": "4872776",
       "item_code": "44-GPMRUBY",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Ruby '63 Top Boost Amplifier",
       "url": "https://www.halilit.com  /items/4872776-universal-audio-uafx-ruby-63-top-boost-amplifier",
       "normalized_sku": "63",
@@ -2234,7 +2234,7 @@
     {
       "halilit_id": "882504",
       "item_code": "83-BM6A",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio BM6A",
       "url": "https://www.halilit.com  /items/882504-dynaudio-bm6a",
       "title_he": "מוניטור אולפני Dynaudio BM6A",
@@ -2254,7 +2254,7 @@
     {
       "halilit_id": "7425354",
       "item_code": "44-GPMENIG",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Enigmatic '82 Overdrive Special Amp",
       "url": "https://www.halilit.com  /items/7425354-universal-audio-uafx-enigmatic-82-overdrive-special-amp",
       "normalized_sku": "82",
@@ -2273,7 +2273,7 @@
     {
       "halilit_id": "5675086",
       "item_code": "87-BRIDGECAST",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Roland Bridge Cast",
       "url": "https://www.halilit.com  /items/5675086-roland-bridge-cast",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11489753/original/0d9ccf21fac9d981dbd6feb36d1ed3d6.jpg",
@@ -2291,7 +2291,7 @@
     {
       "halilit_id": "3989072",
       "item_code": "80-WA84CN",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-84 Nickel",
       "url": "https://www.halilit.com  /items/3989072-warm-audio-wa-84-microphone",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-84 Nickel",
@@ -2311,7 +2311,7 @@
     {
       "halilit_id": "4816210",
       "item_code": "47-OD505",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי Austrian Audio OD505",
       "url": "https://www.halilit.com  /items/4816210-austrian-audio-od505-active-dynamic-vocal-microphone",
       "title_he": "מיקרופון דינמי Austrian Audio OD505",
@@ -2331,7 +2331,7 @@
     {
       "halilit_id": "2326876",
       "item_code": "70-STUDIO26C",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "PreSonus Studio 26C USB Audio Interface",
       "url": "https://www.halilit.com  /items/2326876-presonus-studio-26c-audio-interface",
       "normalized_sku": "26C",
@@ -2350,7 +2350,7 @@
     {
       "halilit_id": "3989087",
       "item_code": "80-WA84CNST",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "זוג מיקרופונים קונדנסר Warm Audio WA-84 Stereo Pair",
       "url": "https://www.halilit.com  /items/3989087-warm-audio-wa-84-stereo-pair",
       "title_he": "זוג מיקרופונים קונדנסר Warm Audio WA-84 Stereo Pair",
@@ -2389,7 +2389,7 @@
     {
       "halilit_id": "6229347",
       "item_code": "44-GPMOXSTP",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX OX Stomp",
       "url": "https://www.halilit.com  /items/6229347-universal-audio-uafx-ox-stomp",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13056658/original/98e3a51e298e4a0e685bb169c2f3db9e.jpg",
@@ -2407,7 +2407,7 @@
     {
       "halilit_id": "7964009",
       "item_code": "70-QUANTUMESULT",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "PreSonus Quantum ES Ultimate Bundle",
       "url": "https://www.halilit.com  /items/7964009-presonus-quantum-es-ultimate-bundle",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16668256/original/70234dc0dadcb583fb9d615be143c722.jpg",
@@ -2425,7 +2425,7 @@
     {
       "halilit_id": "7971181",
       "item_code": "54-EXO25",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio EXO 25",
       "url": "https://www.halilit.com  /items/7971181-eve-audio-exo-25",
       "title_he": "מוניטור אולפני EVE Audio EXO 25",
@@ -2464,7 +2464,7 @@
     {
       "halilit_id": "7448957",
       "item_code": "27-HARAM2000",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "Heritage Audio RAM System 2000",
       "url": "https://www.halilit.com  /items/7448957-heritage-audio-ram-system-2000",
       "normalized_sku": "2000",
@@ -2483,7 +2483,7 @@
     {
       "halilit_id": "446338",
       "item_code": "54-SC205",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC205",
       "url": "https://www.halilit.com  /items/446338-eve-audio-sc205",
       "title_he": "מוניטור אולפני EVE Audio SC205",
@@ -2503,7 +2503,7 @@
     {
       "halilit_id": "3989125",
       "item_code": "80-WA84CBST",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "זוג מיקרופונים קונדנסר Warm Audio WA-84 Stereo Pair",
       "url": "https://www.halilit.com  /items/3989125-warm-audio-wa-84-stereo-pair",
       "title_he": "זוג מיקרופונים קונדנסר Warm Audio WA-84 Stereo Pair",
@@ -2523,7 +2523,7 @@
     {
       "halilit_id": "4276358",
       "item_code": "80-WA8000",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Warm Audio WA-8000",
       "url": "https://www.halilit.com  /items/4276358-warm-audio-wa-8000-",
       "title_he": "מיקרופון קונדנסר מנורות Warm Audio WA-8000",
@@ -2543,7 +2543,7 @@
     {
       "halilit_id": "7971211",
       "item_code": "54-EXO27",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio EXO 27",
       "url": "https://www.halilit.com  /items/7971211-eve-audio-exo-27",
       "title_he": "מוניטור אולפני EVE Audio EXO 27",
@@ -2563,7 +2563,7 @@
     {
       "halilit_id": "3214989",
       "item_code": "47-OC818LIVE",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "סט זוג מיקרופונים Austrian Audio OC818 Live Set",
       "url": "https://www.halilit.com  /items/3214989-austrian-audio-oc818-live-set",
       "title_he": "סט זוג מיקרופונים Austrian Audio OC818 Live Set",
@@ -2583,7 +2583,7 @@
     {
       "halilit_id": "2925198",
       "item_code": "84-EMISSARY",
-      "category": "Effects & Pedals",
+      "category": "כסאח! אפקטים",
       "name": "פדל בוסטר Walrus Audio Emissary Parallel Boost",
       "url": "https://www.halilit.com  /items/2925198-walrus-audio-emissary",
       "title_he": "פדל בוסטר Walrus Audio Emissary Parallel Boost",
@@ -2621,7 +2621,7 @@
     {
       "halilit_id": "5828761",
       "item_code": "87-GCS5",
-      "category": "Audio Equipment",
+      "category": "נתבים, מיקסרים ומטריצות",
       "name": "Boss Gigcaster 5",
       "url": "https://www.halilit.com  /items/5828761-boss-gigcaster-5-audio-streaming-mixer",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11962508/original/8c5ad7350869bd67b8aee63052ce9f74.jpg",
@@ -2639,7 +2639,7 @@
     {
       "halilit_id": "7995807",
       "item_code": "83-LYD48-L-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד שמאל Dynaudio LYD 48 White",
       "url": "https://www.halilit.com  /items/7995807-dynaudio-lyd-48-white-studio-monitor",
       "title_he": "מוניטור אולפני צד שמאל Dynaudio LYD 48 White",
@@ -2659,7 +2659,7 @@
     {
       "halilit_id": "3419045",
       "item_code": "52-BX4PAIR",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים M-Audio BX4",
       "url": "https://www.halilit.com  /items/3419045-m-audio-bx4",
       "title_he": "זוג מוניטורים M-Audio BX4",
@@ -2679,7 +2679,7 @@
     {
       "halilit_id": "3618728",
       "item_code": "44-GPM-ASTRA",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Astra Modulation Machine",
       "url": "https://www.halilit.com  /items/3618728-universal-audio-uafx-astra-modulation-machine",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6345526/original/ee068d1ff6118ab8f2b03c6392ea7402.jpg",
@@ -2697,7 +2697,7 @@
     {
       "halilit_id": "6134704",
       "item_code": "44-GPS1176",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX 1176 Studio Compressor",
       "url": "https://www.halilit.com  /items/6134704-universal-audio-uafx-1176-studio-compressor",
       "normalized_sku": "1176",
@@ -2716,7 +2716,7 @@
     {
       "halilit_id": "3968441",
       "item_code": "52-OXYGENPRO49",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Oxygen Pro 49",
       "url": "https://www.halilit.com  /items/3968441-m-audio-oxygen-pro-49",
       "normalized_sku": "49",
@@ -2735,7 +2735,7 @@
     {
       "halilit_id": "5323450",
       "item_code": "47-OD303",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי ווקאלי Austrian Audio OD303",
       "url": "https://www.halilit.com  /items/5323450-austrian-audio-od303-dynamic-vocal-microphone",
       "title_he": "מיקרופון דינמי ווקאלי Austrian Audio OD303",
@@ -2755,7 +2755,7 @@
     {
       "halilit_id": "8234683",
       "item_code": "AA-A7V-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A7V Arctic White",
       "url": "https://www.halilit.com  /items/8234683-adam-audio-a7v-arctic-white",
       "title_he": "מוניטור אולפני ADAM Audio A7V Arctic White",
@@ -2772,13 +2772,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "34220",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "8776132",
       "item_code": "70-QUANTOMHD8",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Fender Quantum HD 8 USB-C Audio Interface Fender Studio",
       "url": "https://www.halilit.com  /items/8776132-fender-quantum-hd-8-usb-c-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19876097/original/dae3cb5b60ca560cb05508e38d805947.jpg",
@@ -2792,7 +2791,7 @@
     {
       "halilit_id": "7448776",
       "item_code": "27-HARAM1000",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "Heritage Audio R.A.M 1000",
       "url": "https://www.halilit.com  /items/7448776-heritage-audio-r-a-m-1000",
       "normalized_sku": "1000",
@@ -2811,7 +2810,7 @@
     {
       "halilit_id": "2113481",
       "item_code": "83-LYD48-R-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד ימין Dynaudio LYD 48 White",
       "url": "https://www.halilit.com  /items/2113481-dynaudio-lyd-48-white-studio-monitor",
       "title_he": "מוניטור אולפני צד ימין Dynaudio LYD 48 White",
@@ -2831,7 +2830,7 @@
     {
       "halilit_id": "8582859",
       "item_code": "45-DAC-CUBASE ELEM",
-      "category": "Audio Equipment",
+      "category": "תוכנות הפקה ואולפן",
       "name": "Steinberg Cubase Elements 15",
       "url": "https://www.halilit.com  /items/8582859-steinberg-cubase-elements-15-",
       "normalized_sku": "15",
@@ -2850,7 +2849,7 @@
     {
       "halilit_id": "3674062",
       "item_code": "52-MTRACK-SOLO2",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "M-Audio M-Track Solo",
       "url": "https://www.halilit.com  /items/3674062-m-audio-m-track-solo",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6465225/original/e0aa619cb0455d94184182d77922febe.jpg",
@@ -2868,7 +2867,7 @@
     {
       "halilit_id": "6311886",
       "item_code": "44-GPSFLOW",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Flow Vintage Tremolo",
       "url": "https://www.halilit.com  /items/6311886-universal-audio-uafx-flow-vintage-tremolo",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13208027/original/64246153ef63df6f22b5edbffbab2e04.jpg",
@@ -2886,7 +2885,7 @@
     {
       "halilit_id": "2276816",
       "item_code": "AA-T7V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio T7V",
       "url": "https://www.halilit.com  /items/2276816-adam-audio-t7v-studio-monitor",
       "title_he": "מוניטור אולפני ADAM Audio T7V",
@@ -2903,13 +2902,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "11860",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "3215059",
       "item_code": "47-OC818STUDIO",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "סט מיקרופון Austrian Audio OC818 Studio Set",
       "url": "https://www.halilit.com  /items/3215059-austrian-audio-oc818-studio-set-large-diaphragm-condenser-microphone",
       "title_he": "סט מיקרופון Austrian Audio OC818 Studio Set",
@@ -2929,7 +2927,7 @@
     {
       "halilit_id": "6134995",
       "item_code": "44-GPSEVMR",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Evermore Studio Reverb",
       "url": "https://www.halilit.com  /items/6134995-universal-audio-uafx-evermore-studio-reverb",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12842622/original/19084d3ba6b35bd9015473a4771ec91c.jpg",
@@ -2947,7 +2945,7 @@
     {
       "halilit_id": "5619411",
       "item_code": "52-MGAMERGBDUAL",
-      "category": "Microphones",
+      "category": "כסאח! וידאו ושידור",
       "name": "M-Audio M-Game RGB Dual",
       "url": "https://www.halilit.com  /items/5619411-m-audio-m-game-rgb-dual-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11295933/original/ddaaae110c203b8f61e022fe4a0d7d60.jpg",
@@ -2965,7 +2963,7 @@
     {
       "halilit_id": "7198933",
       "item_code": "44-APX16DG2-ESS",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Universal Audio Apollo x16D Essentials+ Edition",
       "url": "https://www.halilit.com  /items/7198933-universal-audio-apollo-x16d-essentials-edition",
       "normalized_sku": "X16D",
@@ -2984,7 +2982,7 @@
     {
       "halilit_id": "3237592",
       "item_code": "52-AIRXHUB",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "M-Audio AIR Hub",
       "url": "https://www.halilit.com  /items/3237592-m-audio-air-hub-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5593217/original/6963d6bf3788ecb1fd104b7451cd04d1.jpg",
@@ -3002,7 +3000,7 @@
     {
       "halilit_id": "7971037",
       "item_code": "54-EXO24",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio EXO 24",
       "url": "https://www.halilit.com  /items/7971037-eve-audio-exo-24",
       "title_he": "מוניטור אולפני EVE Audio EXO 24",
@@ -3022,7 +3020,7 @@
     {
       "halilit_id": "6311647",
       "item_code": "44-GPSLA2A",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Teletronix LA-2A Studio Compressor",
       "url": "https://www.halilit.com  /items/6311647-universal-audio-uafx-teletronix-la-2a-studio-compressor",
       "normalized_sku": "LA-2A",
@@ -3041,7 +3039,7 @@
     {
       "halilit_id": "6888418",
       "item_code": "44-MICUASD3",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי מקצועי Universal Audio SD-3",
       "url": "https://www.halilit.com  /items/6888418-universal-audio-sd-3-dynamic-microphone",
       "title_he": "מיקרופון דינמי מקצועי Universal Audio SD-3",
@@ -3061,7 +3059,7 @@
     {
       "halilit_id": "7556324",
       "item_code": "47-OC818DUALSETGO",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "סט זוג מיקרופונים Austrian Audio OC818 Black Dual Set Go",
       "url": "https://www.halilit.com  /items/7556324-austrian-audio-oc818-black-dual-set-go",
       "title_he": "סט זוג מיקרופונים Austrian Audio OC818 Black Dual Set Go",
@@ -3081,7 +3079,7 @@
     {
       "halilit_id": "6140132",
       "item_code": "44-GPSORN",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX Orion Tape Echo",
       "url": "https://www.halilit.com  /items/6140132-universal-audio-uafx-orion-tape-echo",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12856010/original/a31ffd406fb69b16200da9a5201f51e0.jpg",
@@ -3099,7 +3097,7 @@
     {
       "halilit_id": "5885927",
       "item_code": "44-GPMMAX",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX MAX Preamp & Dual Compressor",
       "url": "https://www.halilit.com  /items/5885927-universal-audio-uafx-max-preamp-dual-compressor",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12138803/original/88bb56298047beb7b12293a922e8da91.png",
@@ -3117,7 +3115,7 @@
     {
       "halilit_id": "8776168",
       "item_code": "XXXX",
-      "category": "Audio Equipment",
+      "category": "חבילות אולפן",
       "name": "Fender Quantum Creator Bundle Fender Studio",
       "url": "https://www.halilit.com  /items/8776168-fender-quantum-creator-bundle",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19876341/original/5fc2646009825515fae63cd709f067a3.jpg",
@@ -3131,7 +3129,7 @@
     {
       "halilit_id": "6888427",
       "item_code": "44-MICUASD5",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי מקצועי Universal Audio SD-5",
       "url": "https://www.halilit.com  /items/6888427-universal-audio-sd-5-dynamic-microphone",
       "title_he": "מיקרופון דינמי מקצועי Universal Audio SD-5",
@@ -3151,7 +3149,7 @@
     {
       "halilit_id": "5615343",
       "item_code": "52-MGAMESOLO",
-      "category": "Microphones",
+      "category": "כסאח! וידאו ושידור",
       "name": "M-Audio M-Game Solo",
       "url": "https://www.halilit.com  /items/5615343-m-audio-m-game-solo",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11285020/original/2092f47aa773200ea4200a126b6dcd88.jpg",
@@ -3169,7 +3167,7 @@
     {
       "halilit_id": "3676914",
       "item_code": "52-MTRACK-DUO",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "M-Audio M-Track Duo",
       "url": "https://www.halilit.com  /items/3676914-m-audio-m-track-duo",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6469118/original/3dde7e38369318d5d00675ca1b12d788.jpg",
@@ -3187,7 +3185,7 @@
     {
       "halilit_id": "6888434",
       "item_code": "44-MICUASD7",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי מקצועי Universal Audio SD-7",
       "url": "https://www.halilit.com  /items/6888434-universal-audio-sd-7-dynamic-microphone",
       "title_he": "מיקרופון דינמי מקצועי Universal Audio SD-7",
@@ -3207,7 +3205,7 @@
     {
       "halilit_id": "6406136",
       "item_code": "62-EAYMSJ500",
-      "category": "Cables & Accessories",
+      "category": "כבל מתאם",
       "name": "Bespeco EAYMSJ500",
       "url": "https://www.halilit.com  /items/6406136-bespeco-eaymsj500",
       "normalized_sku": "EAYMSJ500",
@@ -3226,7 +3224,7 @@
     {
       "halilit_id": "4936442",
       "item_code": "47-OC818STUDIO-BK",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "סט מיקרופון Austrian Audio OC818 Studio Set",
       "url": "https://www.halilit.com  /items/4936442-austrian-audio-oc818-studio-set-large-diaphragm-condenser-microphone",
       "title_he": "סט מיקרופון Austrian Audio OC818 Studio Set",
@@ -3246,7 +3244,7 @@
     {
       "halilit_id": "7995388",
       "item_code": "83-LYD48-L",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד שמאל Dynaudio LYD 48 Black",
       "url": "https://www.halilit.com  /items/7995388-dynaudio-lyd-48-black-studio-monitor",
       "title_he": "מוניטור אולפני צד שמאל Dynaudio LYD 48 Black",
@@ -3266,7 +3264,7 @@
     {
       "halilit_id": "2936062",
       "item_code": "84-LUMINARYQUAD",
-      "category": "Effects & Pedals",
+      "category": "כסאח! אפקטים",
       "name": "Walrus Audio Luminary Quad Octave Generator V2",
       "url": "https://www.halilit.com  /items/2936062-walrus-audio-luminary-quad-octave-generator-v2",
       "normalized_sku": "V2",
@@ -3285,7 +3283,7 @@
     {
       "halilit_id": "7404030",
       "item_code": "44-GPMANTI",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Universal Audio UAFX ANTI 1992 High Gain Amp",
       "url": "https://www.halilit.com  /items/7404030-universal-audio-uafx-anti-1992-high-gain-amp",
       "normalized_sku": "1992",
@@ -3304,7 +3302,7 @@
     {
       "halilit_id": "5057280",
       "item_code": "07-AIMICRO",
-      "category": "Microphones",
+      "category": "מיקרופונים לצילום ושידור",
       "name": "מקליט אודיו Rode AI-Micro",
       "url": "https://www.halilit.com  /items/5057280-rode-ai-micro-compact-audio-interface",
       "title_he": "מקליט אודיו Rode AI-Micro",
@@ -3323,7 +3321,7 @@
     {
       "halilit_id": "8233728",
       "item_code": "AA-A4V-WH",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A4V Arctic White",
       "url": "https://www.halilit.com  /items/8233728-adam-audio-a4v-arctic-white",
       "title_he": "מוניטור אולפני ADAM Audio A4V Arctic White",
@@ -3340,13 +3338,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "22930",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2937094",
       "item_code": "84-VOYAGER PRE",
-      "category": "Effects & Pedals",
+      "category": "כסאח! אפקטים",
       "name": "Walrus Audio Voyager Preamp/Overdrive",
       "url": "https://www.halilit.com  /items/2937094-walrus-audio-voyager-preamp-overdrive",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/4994842/original/0b459bc3778642272a2681fa68ba1f78.jpg",
@@ -3364,7 +3361,7 @@
     {
       "halilit_id": "6312970",
       "item_code": "44-MICUA167",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Universal Audio Bock 167",
       "url": "https://www.halilit.com  /items/6312970-universal-audio-bock-167-tube-condenser-mic-",
       "title_he": "מיקרופון קונדנסר מנורות Universal Audio Bock 167",
@@ -3384,7 +3381,7 @@
     {
       "halilit_id": "2491409",
       "item_code": "52-KS-MINI32III",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Keystation Mini 32 MK3",
       "url": "https://www.halilit.com  /items/2491409-m-audio-keystation-mini-32-mk3",
       "normalized_sku": "MK3",
@@ -3403,7 +3400,7 @@
     {
       "halilit_id": "5911059",
       "item_code": "44-MICUADLX",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Universal Audio Sphere DLX modeling microphone",
       "url": "https://www.halilit.com  /items/5911059-universal-audio-sphere-dlx-modeling-microphone",
       "title_he": "מיקרופון קונדנסר לאולפן Universal Audio Sphere DLX modeling microphone",
@@ -3422,7 +3419,7 @@
     {
       "halilit_id": "6043927",
       "item_code": "80-WAWD",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל אוברדרייב Warm Audio Warmdrive",
       "url": "https://www.halilit.com  /items/6043927-warm-audio-warmdrive-overdrive-pedal",
       "title_he": "פדל אוברדרייב Warm Audio Warmdrive",
@@ -3441,7 +3438,7 @@
     {
       "halilit_id": "2327075",
       "item_code": "70-STUDIO68C",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "PreSonus Studio 68C USB Audio Interface",
       "url": "https://www.halilit.com  /items/2327075-presonus-studio-68c-usb-audio-interface",
       "normalized_sku": "68C",
@@ -3460,7 +3457,7 @@
     {
       "halilit_id": "4355896",
       "item_code": "80-512-PHP",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות מוניטור 512Audio Academy",
       "url": "https://www.halilit.com  /items/4355896-512audio-academy",
       "title_he": "אוזניות מוניטור 512Audio Academy",
@@ -3480,7 +3477,7 @@
     {
       "halilit_id": "3544634",
       "item_code": "84-JANUSTERM/FUZZ",
-      "category": "Effects & Pedals",
+      "category": "כסאח! אפקטים",
       "name": "Walrus Audio Janus Fuzz/Tremolo",
       "url": "https://www.halilit.com  /items/3544634-walrus-audio-janus-fuzz-tremolo",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6215402/original/8b3736d6b1b78f8c3c9012bd6a61a82c.jpg",
@@ -3498,7 +3495,7 @@
     {
       "halilit_id": "6043976",
       "item_code": "80-WACV",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "Warm Audio Centavo",
       "url": "https://www.halilit.com  /items/6043976-warm-audio-centavo-professional-overdrive-pedal",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12631141/original/354ad42a5e3f9d041c7275b63be1536c.jpg",
@@ -3516,7 +3513,7 @@
     {
       "halilit_id": "5909849",
       "item_code": "44-MICUALX",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Universal Audio Sphere LX modeling microphone",
       "url": "https://www.halilit.com  /items/5909849-universal-audio-sphere-lx-modeling-microphone",
       "title_he": "מיקרופון קונדנסר לאולפן Universal Audio Sphere LX modeling microphone",
@@ -3535,7 +3532,7 @@
     {
       "halilit_id": "6001771",
       "item_code": "80-ODDV1",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל אוברדרייב Warm Audio ODD Box Overdrive",
       "url": "https://www.halilit.com  /items/6001771-warm-audio-odd-box-overdrive",
       "title_he": "פדל אוברדרייב Warm Audio ODD Box Overdrive",
@@ -3554,7 +3551,7 @@
     {
       "halilit_id": "446333",
       "item_code": "54-SC307",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC307",
       "url": "https://www.halilit.com  /items/446333-eve-audio-sc307",
       "title_he": "מוניטור אולפני EVE Audio SC307",
@@ -3574,7 +3571,7 @@
     {
       "halilit_id": "3992456",
       "item_code": "80-WAFTBFOXYTO",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "אפקט פאז Warm Audio Foxy Tone Box",
       "url": "https://www.halilit.com  /items/3992456-warm-audio-foxy-tone-box",
       "title_he": "אפקט פאז Warm Audio Foxy Tone Box",
@@ -3593,7 +3590,7 @@
     {
       "halilit_id": "6312843",
       "item_code": "44-MICUA251",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Universal Audio Bock 251",
       "url": "https://www.halilit.com  /items/6312843-universal-audio-bock-251-tube-condenser-mic-",
       "title_he": "מיקרופון קונדנסר מנורות Universal Audio Bock 251",
@@ -3613,7 +3610,7 @@
     {
       "halilit_id": "4303757",
       "item_code": "80-WA73EQ",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA73-EQ",
       "url": "https://www.halilit.com  /items/4303757-warm-audio-wa73-eq",
       "normalized_sku": "WA73-EQ",
@@ -3632,7 +3629,7 @@
     {
       "halilit_id": "6043535",
       "item_code": "80-WAMPX",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA-MPX",
       "url": "https://www.halilit.com  /items/6043535-warm-audio-wa-mpx-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12630002/original/6826d24c70e404248fca6f0926ca7c42.jpg",
@@ -3650,7 +3647,7 @@
     {
       "halilit_id": "1475225",
       "item_code": "83-LYD7-BK",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio LYD 7 Black",
       "url": "https://www.halilit.com  /items/1475225-dynaudio-lyd-7-black",
       "title_he": "מוניטור אולפני Dynaudio LYD 7 Black",
@@ -3669,7 +3666,7 @@
     {
       "halilit_id": "8119456",
       "item_code": "87-M100PRO",
-      "category": "Accessories",
+      "category": "אוזניות ל-DJ",
       "name": "אוזניות V-MODA M-100 Pro",
       "url": "https://www.halilit.com  /items/8119456-v-moda-m-100-pro-headphones",
       "title_he": "אוזניות V-MODA M-100 Pro",
@@ -3689,7 +3686,7 @@
     {
       "halilit_id": "5570980",
       "item_code": "54-SC2070",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC2070",
       "url": "https://www.halilit.com  /items/5570980-eve-audio-sc2070",
       "title_he": "מוניטור אולפני EVE Audio SC2070",
@@ -3709,7 +3706,7 @@
     {
       "halilit_id": "3988389",
       "item_code": "80-WA67",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Warm Audio WA-67",
       "url": "https://www.halilit.com  /items/3988389-warm-audio-wa-67-microphone",
       "title_he": "מיקרופון קונדנסר מנורות Warm Audio WA-67",
@@ -3729,7 +3726,7 @@
     {
       "halilit_id": "1337768",
       "item_code": "52-HAMMER88",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Hammer 88",
       "url": "https://www.halilit.com  /items/1337768-m-audio-hammer-88",
       "normalized_sku": "88",
@@ -3748,7 +3745,7 @@
     {
       "halilit_id": "890540",
       "item_code": "83-LYD7",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio LYD 7",
       "url": "https://www.halilit.com  /items/890540-dynaudio-lyd-7",
       "title_he": "מוניטור אולפני Dynaudio LYD 7",
@@ -3767,7 +3764,7 @@
     {
       "halilit_id": "6893491",
       "item_code": "80-WAWL",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio Warm Lifter",
       "url": "https://www.halilit.com  /items/6893491-warm-audio-warm-lifter",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14455967/original/bf697b35267c171fbc185f1200d8e906.jpg",
@@ -3785,7 +3782,7 @@
     {
       "halilit_id": "4276404",
       "item_code": "80-WA12MK2-BK",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA12 MKII - Black",
       "url": "https://www.halilit.com  /items/4276404-warm-audio-wa12-mkii-",
       "normalized_sku": "WA12",
@@ -3804,7 +3801,7 @@
     {
       "halilit_id": "4842165",
       "item_code": "AA-A4V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A4V",
       "url": "https://www.halilit.com  /items/4842165-adam-audio-a4v",
       "title_he": "מוניטור אולפני ADAM Audio A4V",
@@ -3821,13 +3818,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "22930",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "6043838",
       "item_code": "80-WA2MPX",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA-2MPX",
       "url": "https://www.halilit.com  /items/6043838-warm-audio-wa-2mpx-",
       "normalized_sku": "WA-2MPX",
@@ -3846,7 +3842,7 @@
     {
       "halilit_id": "8119233",
       "item_code": "87-M10",
-      "category": "Accessories",
+      "category": "אוזניות ל-DJ",
       "name": "אוזניות V-MODA M-10",
       "url": "https://www.halilit.com  /items/8119233-v-moda-m-10-headphones",
       "title_he": "אוזניות V-MODA M-10",
@@ -3866,7 +3862,7 @@
     {
       "halilit_id": "4276431",
       "item_code": "80-WA12MK2-OR",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA12 MKII - Orange",
       "url": "https://www.halilit.com  /items/4276431-warm-audio-wa12-mkii-",
       "normalized_sku": "WA12",
@@ -3885,7 +3881,7 @@
     {
       "halilit_id": "3989208",
       "item_code": "80-WA73",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA-73",
       "url": "https://www.halilit.com  /items/3989208-warm-audio-wa-73-preamp",
       "normalized_sku": "WA-73",
@@ -3904,7 +3900,7 @@
     {
       "halilit_id": "8582875",
       "item_code": "45-DAC-CUBASE PRO EE",
-      "category": "Audio Equipment",
+      "category": "תוכנות הפקה ואולפן",
       "name": "Steinberg Cubase Pro 15 - בהנחה אקדמית",
       "url": "https://www.halilit.com  /items/8582875-steinberg-cubase-pro-15-education-version",
       "title_he": "Steinberg Cubase Pro 15 - בהנחה אקדמית",
@@ -3924,7 +3920,7 @@
     {
       "halilit_id": "8582884",
       "item_code": "45-DAC-CUBASE ELEM E",
-      "category": "Audio Equipment",
+      "category": "תוכנות הפקה ואולפן",
       "name": "Steinberg Cubase Elements 15 - בהנחה אקדמית",
       "url": "https://www.halilit.com  /items/8582884-steinberg-cubase-elements-15-education-version",
       "title_he": "Steinberg Cubase Elements 15 - בהנחה אקדמית",
@@ -3944,7 +3940,7 @@
     {
       "halilit_id": "4446962",
       "item_code": "47-HIX25BT",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אלחוטיות Austrian Audio Hi-X25BT",
       "url": "https://www.halilit.com  /items/4446962-austrian-audio-hi-x25bt-professional-wireless-bluetooth-over-ear-headphones",
       "title_he": "אוזניות אלחוטיות Austrian Audio Hi-X25BT",
@@ -3964,7 +3960,7 @@
     {
       "halilit_id": "3989243",
       "item_code": "80-WA273",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA273",
       "url": "https://www.halilit.com  /items/3989243-warm-audio-wa-273-preamp",
       "normalized_sku": "WA273",
@@ -3983,7 +3979,7 @@
     {
       "halilit_id": "5911554",
       "item_code": "44-MICUA187",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Universal Audio Bock 187",
       "url": "https://www.halilit.com  /items/5911554-universal-audio-bock-187-fet-condenser-mic-",
       "title_he": "מיקרופון קונדנסר לאולפן Universal Audio Bock 187",
@@ -4003,7 +3999,7 @@
     {
       "halilit_id": "3989255",
       "item_code": "80-WA2A",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "קומפרסור מנורות Warm Audio WA-2A",
       "url": "https://www.halilit.com  /items/3989255-warm-audio-wa-2a-compressor",
       "title_he": "קומפרסור מנורות Warm Audio WA-2A",
@@ -4023,7 +4019,7 @@
     {
       "halilit_id": "1645337",
       "item_code": "44-OX",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Universal Audio OX Amp Top Box",
       "url": "https://www.halilit.com  /items/1645337-universal-audio-ox-amp-top-box",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2596076/original/7673c155abbac6138fbf1f273e2427de.jpg",
@@ -4041,7 +4037,7 @@
     {
       "halilit_id": "511514",
       "item_code": "54-SC203",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים EVE Audio SC203",
       "url": "https://www.halilit.com  /items/511514-eve-audio-sc203",
       "title_he": "זוג מוניטורים EVE Audio SC203",
@@ -4061,7 +4057,7 @@
     {
       "halilit_id": "3992361",
       "item_code": "80-EQPWA",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio EQP-WA",
       "url": "https://www.halilit.com  /items/3992361-warm-audio-eqp-wa",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7276680/original/0f295a1216c4ae8d3c322d9be79d54fd.jpg",
@@ -4079,7 +4075,7 @@
     {
       "halilit_id": "4276537",
       "item_code": "80-WA273-EQ",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA273-EQ",
       "url": "https://www.halilit.com  /items/4276537-warm-audio-wa273-eq",
       "normalized_sku": "WA273-EQ",
@@ -4098,7 +4094,7 @@
     {
       "halilit_id": "1038923",
       "item_code": "05-T1",
-      "category": "Accessories",
+      "category": "אוזניות לאודיופילים",
       "name": "Beyerdynamic T 1 2nd Gen Audiophile",
       "url": "https://www.halilit.com  /items/1038923-beyerdynamic-t-1-2nd-gen-audiophile",
       "normalized_sku": "2ND",
@@ -4117,7 +4113,7 @@
     {
       "halilit_id": "5662285",
       "item_code": "AA-A8H-R",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד ימין ADAM Audio A8H",
       "url": "https://www.halilit.com  /items/5662285-adam-audio-a8h-3-way-powered-studio-monitor",
       "title_he": "מוניטור אולפני צד ימין ADAM Audio A8H",
@@ -4134,13 +4130,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "70270",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "7949922",
       "item_code": "AA-A8H-L",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד שמאל ADAM Audio A8H",
       "url": "https://www.halilit.com  /items/7949922-adam-audio-a8h-3-way-powered-studio-monitor",
       "title_he": "מוניטור אולפני צד שמאל ADAM Audio A8H",
@@ -4157,13 +4152,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "70270",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "8759397",
       "item_code": "80-DB25TRSM10",
-      "category": "Monitors & Speakers",
+      "category": "כבל מוניטור",
       "name": "Warm Audio DB25TRS",
       "url": "https://www.halilit.com  /items/8759397-warm-audio-db25trs",
       "normalized_sku": "DB25TRS",
@@ -4182,7 +4176,7 @@
     {
       "halilit_id": "8758641",
       "item_code": "80-DB25XLRF10",
-      "category": "Monitors & Speakers",
+      "category": "כבל מוניטור",
       "name": "Warm Audio DB25XLR-Female",
       "url": "https://www.halilit.com  /items/8758641-warm-audio-db25xlrf",
       "normalized_sku": "DB25XLR-FEMALE",
@@ -4201,7 +4195,7 @@
     {
       "halilit_id": "4276594",
       "item_code": "80-TB12-B",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio TB12 Tone Beast",
       "url": "https://www.halilit.com  /items/4276594-warm-audio-tb12-tone-beast",
       "normalized_sku": "TB12",
@@ -4220,7 +4214,7 @@
     {
       "halilit_id": "8758656",
       "item_code": "80-DB25XLRM10",
-      "category": "Monitors & Speakers",
+      "category": "כבל מוניטור",
       "name": "Warm Audio DB25XLR-Male",
       "url": "https://www.halilit.com  /items/8758656-warm-audio-db25xlrm",
       "normalized_sku": "DB25XLR-MALE",
@@ -4239,7 +4233,7 @@
     {
       "halilit_id": "4026009",
       "item_code": "80-XLRM-TRS",
-      "category": "Monitors & Speakers",
+      "category": "כבל מוניטור",
       "name": "Warm Audio Prem-XLRm-TRSm-6",
       "url": "https://www.halilit.com  /items/4026009-warm-audio-xlrm-trs-cable",
       "normalized_sku": "PREM-XLRM-TRSM-6",
@@ -4258,7 +4252,7 @@
     {
       "halilit_id": "2492611",
       "item_code": "52-KS61III",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Keystation 61 MK3",
       "url": "https://www.halilit.com  /items/2492611-m-audio-keystation-61-mk3",
       "normalized_sku": "MK3",
@@ -4277,7 +4271,7 @@
     {
       "halilit_id": "5247174",
       "item_code": "80-PROXLRMTRSM3",
-      "category": "Monitors & Speakers",
+      "category": "כבל מוניטור",
       "name": "Warm Audio Prem-XLRm-TRSm-3",
       "url": "https://www.halilit.com  /items/5247174-warm-audio-prem-xlrm-trsm-3",
       "normalized_sku": "PREM-XLRM-TRSM-3",
@@ -4296,7 +4290,7 @@
     {
       "halilit_id": "3447558",
       "item_code": "44-APX8HE",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Universal Audio Apollo X8 Heritage Edition",
       "url": "https://www.halilit.com  /items/3447558-universal-audio-apollo-x8-heritage-edition-",
       "normalized_sku": "X8",
@@ -4315,7 +4309,7 @@
     {
       "halilit_id": "3447574",
       "item_code": "44-APX6HE",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Universal Audio Apollo X6 Heritage Edition",
       "url": "https://www.halilit.com  /items/3447574-universal-audio-apollo-x6-heritage-edition",
       "normalized_sku": "X6",
@@ -4334,7 +4328,7 @@
     {
       "halilit_id": "2281243",
       "item_code": "AA-SP5",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות מקצועיות לאולפן ADAM Audio Studio Pro SP-5",
       "url": "https://www.halilit.com  /items/2281243-adam-audio-studio-pro-sp-5",
       "title_he": "אוזניות מקצועיות לאולפן ADAM Audio Studio Pro SP-5",
@@ -4357,7 +4351,7 @@
     {
       "halilit_id": "3988774",
       "item_code": "80-WA47JRBLK",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Warm Audio WA-47 JR",
       "url": "https://www.halilit.com  /items/3988774-warm-audio-wa-47-jr-condenser-microphone",
       "title_he": "מיקרופון קונדנסר Warm Audio WA-47 JR",
@@ -4377,7 +4371,7 @@
     {
       "halilit_id": "3992385",
       "item_code": "80-WAJPJETPHASER",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "אפקט פייזר/פאז Warm Audio Jet Phaser",
       "url": "https://www.halilit.com  /items/3992385-warm-audio-jet-phaser",
       "title_he": "אפקט פייזר/פאז Warm Audio Jet Phaser",
@@ -4396,7 +4390,7 @@
     {
       "halilit_id": "5662027",
       "item_code": "AA-A77H",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A77H",
       "url": "https://www.halilit.com  /items/5662027-adam-audio-a77h",
       "title_he": "מוניטור אולפני ADAM Audio A77H",
@@ -4413,13 +4407,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "66240",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "1648728",
       "item_code": "60-ONYXPRODUCER",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Mackie Onyx Producer",
       "url": "https://www.halilit.com  /items/1648728-mackie-onyx-producer-audio-interface",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2599909/original/f6a7e4afa1a182b696cfb0840f561b81.jpg",
@@ -4437,7 +4430,7 @@
     {
       "halilit_id": "6296436",
       "item_code": "44-MICUASC1",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Universal Audio SC-1",
       "url": "https://www.halilit.com  /items/6296436-universal-audio-sc-1-condenser-microphone",
       "title_he": "מיקרופון קונדנסר לאולפן Universal Audio SC-1",
@@ -4457,7 +4450,7 @@
     {
       "halilit_id": "3294890",
       "item_code": "52-KS88III",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Keystation 88 mk3",
       "url": "https://www.halilit.com  /items/3294890-m-audio-keystation-88-mk3-keyboard-midi-controller",
       "normalized_sku": "MK3",
@@ -4476,7 +4469,7 @@
     {
       "halilit_id": "2115501",
       "item_code": "52-KS49III",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Keystation 49 MK3",
       "url": "https://www.halilit.com  /items/2115501-m-audio-keystation-49-mk3",
       "normalized_sku": "MK3",
@@ -4495,7 +4488,7 @@
     {
       "halilit_id": "4628653",
       "item_code": "44-SD1",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי מקצועי Universal Audio SD-1",
       "url": "https://www.halilit.com  /items/4628653-universal-audio-sd-1-standard-dynamic-microphone",
       "title_he": "מיקרופון דינמי מקצועי Universal Audio SD-1",
@@ -4515,7 +4508,7 @@
     {
       "halilit_id": "5734576",
       "item_code": "44-SP1",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "זוג מיקרופונים קונדנסר Universal Audio SP-1",
       "url": "https://www.halilit.com  /items/5734576-universal-audio-sp-1-standard-pencil-microphones",
       "title_he": "זוג מיקרופונים קונדנסר Universal Audio SP-1",
@@ -4535,7 +4528,7 @@
     {
       "halilit_id": "3447477",
       "item_code": "44-APX8PHE",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Universal Audio Apollo X8P Heritage Edition",
       "url": "https://www.halilit.com  /items/3447477-universal-audio-apollo-x8p-heritage-edition",
       "normalized_sku": "X8P",
@@ -4554,7 +4547,7 @@
     {
       "halilit_id": "447419",
       "item_code": "52-SP2",
-      "category": "Accessories",
+      "category": "אביזרים לקלידים",
       "name": "פדל ססטיין M-Audio SP-2",
       "url": "https://www.halilit.com  /items/447419-m-audio-sp-2-professional-piano-style-pedal",
       "title_he": "פדל ססטיין M-Audio SP-2",
@@ -4574,7 +4567,7 @@
     {
       "halilit_id": "6000842",
       "item_code": "52-BX3PAIRBT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים M-Audio BX3 BT",
       "url": "https://www.halilit.com  /items/6000842-m-audio-bx3-bt-bluetooth-monitors",
       "title_he": "זוג מוניטורים M-Audio BX3 BT",
@@ -4594,7 +4587,7 @@
     {
       "halilit_id": "6072523",
       "item_code": "52-BX4PAIRBT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "זוג מוניטורים M-Audio BX4 BT",
       "url": "https://www.halilit.com  /items/6072523-m-audio-bx4-bt-bluetooth-monitors",
       "title_he": "זוג מוניטורים M-Audio BX4 BT",
@@ -4614,7 +4607,7 @@
     {
       "halilit_id": "5661915",
       "item_code": "AA-A44H",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio A44H",
       "url": "https://www.halilit.com  /items/5661915-adam-audio-a44h",
       "title_he": "מוניטור אולפני ADAM Audio A44H",
@@ -4631,13 +4624,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "33120",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2238445",
       "item_code": "52-BX5D3",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני M-Audio BX5-D3",
       "url": "https://www.halilit.com  /items/2238445-m-audio-bx-5d3-studio-monitor",
       "title_he": "מוניטור אולפני M-Audio BX5-D3",
@@ -4657,7 +4649,7 @@
     {
       "halilit_id": "3992353",
       "item_code": "80-BUSCOMP",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio BUS-COMP",
       "url": "https://www.halilit.com  /items/3992353-warm-audio-bus-comp-",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7185543/original/920feb24f9f8592feeb99214476699cd.jpg",
@@ -4675,7 +4667,7 @@
     {
       "halilit_id": "2273631",
       "item_code": "AA-SUB8",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio SUB8",
       "url": "https://www.halilit.com  /items/2273631-adam-audio-sub8",
       "title_he": "סאבוופר אולפני ADAM Audio SUB8",
@@ -4692,13 +4684,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "30740",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "446335",
       "item_code": "54-SC208",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC208",
       "url": "https://www.halilit.com  /items/446335-eve-audio-sc208",
       "title_he": "מוניטור אולפני EVE Audio SC208",
@@ -4718,7 +4709,7 @@
     {
       "halilit_id": "446336",
       "item_code": "54-SC207",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC207",
       "url": "https://www.halilit.com  /items/446336-eve-audio-sc207",
       "title_he": "מוניטור אולפני EVE Audio SC207",
@@ -4738,7 +4729,7 @@
     {
       "halilit_id": "446339",
       "item_code": "54-SC204",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC204",
       "url": "https://www.halilit.com  /items/446339-eve-audio-sc204",
       "title_he": "מוניטור אולפני EVE Audio SC204",
@@ -4758,7 +4749,7 @@
     {
       "halilit_id": "570011",
       "item_code": "05-T5P",
-      "category": "Accessories",
+      "category": "כסאח! אוזניות",
       "name": "אוזניות לאודיופילים Beyerdynamic T 5 P Audiophile",
       "url": "https://www.halilit.com  /items/570011-beyerdynamic-t-5-p-audiophile-tesla-over-ear-headphones",
       "title_he": "אוזניות לאודיופילים Beyerdynamic T 5 P Audiophile",
@@ -4777,7 +4768,7 @@
     {
       "halilit_id": "2518190",
       "item_code": "AA-T10S",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio T10S",
       "url": "https://www.halilit.com  /items/2518190-adam-audio-t10s",
       "title_he": "סאבוופר אולפני ADAM Audio T10S",
@@ -4794,13 +4785,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "20200",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "3989273",
       "item_code": "80-WA76",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA76",
       "url": "https://www.halilit.com  /items/3989273-warm-audio-wa-76-compressor",
       "normalized_sku": "WA76",
@@ -4819,7 +4809,7 @@
     {
       "halilit_id": "446334",
       "item_code": "54-SC305",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC305",
       "url": "https://www.halilit.com  /items/446334-eve-audio-sc305",
       "title_he": "מוניטור אולפני EVE Audio SC305",
@@ -4839,7 +4829,7 @@
     {
       "halilit_id": "2280832",
       "item_code": "AA-S2V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S2V",
       "url": "https://www.halilit.com  /items/2280832-adam-audio-s2v",
       "title_he": "מוניטור אולפני ADAM Audio S2V",
@@ -4856,13 +4846,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "70560",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2280956",
       "item_code": "AA-S3V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S3V",
       "url": "https://www.halilit.com  /items/2280956-adam-audio-s3v",
       "title_he": "מוניטור אולפני ADAM Audio S3V",
@@ -4879,13 +4868,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "140540",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "1270314",
       "item_code": "54-SC407",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC407",
       "url": "https://www.halilit.com  /items/1270314-eve-audio-sc407-monitor",
       "title_he": "מוניטור אולפני EVE Audio SC407",
@@ -4905,7 +4893,7 @@
     {
       "halilit_id": "2281055",
       "item_code": "AA-S5H",
-      "category": "Monitors & Speakers",
+      "category": "כסאח! מוניטורים אולפניים",
       "name": "מוניטור אולפני ADAM Audio S5H",
       "url": "https://www.halilit.com  /items/2281055-adam-audio-s5h",
       "title_he": "מוניטור אולפני ADAM Audio S5H",
@@ -4922,13 +4910,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "349410",
-      "halilit_category": "כסאח! מוניטורים אולפניים",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "3989141",
       "item_code": "80-WA412",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Warm Audio WA-412",
       "url": "https://www.halilit.com  /items/3989141-warm-audio-wa-412-4-channel-microphone-preamp",
       "normalized_sku": "WA-412",
@@ -4947,7 +4934,7 @@
     {
       "halilit_id": "2280897",
       "item_code": "AA-S3H",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S3H",
       "url": "https://www.halilit.com  /items/2280897-adam-audio-s3h",
       "title_he": "מוניטור אולפני ADAM Audio S3H",
@@ -4964,13 +4951,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "165060",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "6246176",
       "item_code": "80-WA8000G",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר מנורות Warm Audio WA-8000 Gold",
       "url": "https://www.halilit.com  /items/6246176-warm-audio-wa-8000-gold",
       "title_he": "מיקרופון קונדנסר מנורות Warm Audio WA-8000 Gold",
@@ -4990,7 +4976,7 @@
     {
       "halilit_id": "2281169",
       "item_code": "AA-S5V",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני ADAM Audio S5V",
       "url": "https://www.halilit.com  /items/2281169-adam-audio-s5v",
       "title_he": "מוניטור אולפני ADAM Audio S5V",
@@ -5007,13 +4993,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "428020",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "1396566",
       "item_code": "54-SC408",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC408",
       "url": "https://www.halilit.com  /items/1396566-eve-audio-sc408-monitor",
       "title_he": "מוניטור אולפני EVE Audio SC408",
@@ -5033,7 +5018,7 @@
     {
       "halilit_id": "2516585",
       "item_code": "83-CORE59",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio Core 59",
       "url": "https://www.halilit.com  /items/2516585-dynaudio-core-59-monitor",
       "title_he": "מוניטור אולפני Dynaudio Core 59",
@@ -5053,7 +5038,7 @@
     {
       "halilit_id": "882537",
       "item_code": "83-BM15A-RIGHT",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio BM15A",
       "url": "https://www.halilit.com  /items/882537-dynaudio-bm15a",
       "title_he": "מוניטור אולפני Dynaudio BM15A",
@@ -5073,7 +5058,7 @@
     {
       "halilit_id": "2273643",
       "item_code": "AA-SUB10MK2",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio SUB10 MK2",
       "url": "https://www.halilit.com  /items/2273643-adam-audio-sub10-mk2",
       "title_he": "סאבוופר אולפני ADAM Audio SUB10 MK2",
@@ -5090,13 +5075,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "51820",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "446079",
       "item_code": "44-LA610MK2",
-      "category": "Amplifiers",
+      "category": "קדם מגברים ומעבדי צליל",
       "name": "Universal Audio LA-610 MkII",
       "url": "https://www.halilit.com  /items/446079-universal-audio-la-610-mkii",
       "normalized_sku": "LA-610",
@@ -5115,7 +5099,7 @@
     {
       "halilit_id": "1427932",
       "item_code": "MTrack2x2 Tutorials",
-      "category": "Software & Apps",
+      "category": "בלוג חלילית+",
       "name": "התקנת כרטיסי קול מסדרת M-Track 2x2 מבית M-Audio | סרטוני הדרכה",
       "url": "https://www.halilit.com  /items/1427932-halilit-tutorials-m-track-2x2-guide",
       "title_he": "התקנת כרטיסי קול מסדרת M-Track 2x2 מבית M-Audio | סרטוני הדרכה",
@@ -5131,7 +5115,7 @@
     {
       "halilit_id": "4355805",
       "item_code": "80-512-SLT",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן 512Audio Skylight",
       "url": "https://www.halilit.com  /items/4355805-512audio-skylight",
       "title_he": "מיקרופון קונדנסר לאולפן 512Audio Skylight",
@@ -5151,7 +5135,7 @@
     {
       "halilit_id": "7995849",
       "item_code": "54-SC3070-L",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד שמאל EVE Audio SC3070",
       "url": "https://www.halilit.com  /items/7995849-eve-audio-sc3070-studio-monitor",
       "title_he": "מוניטור אולפני צד שמאל EVE Audio SC3070",
@@ -5171,7 +5155,7 @@
     {
       "halilit_id": "3545290",
       "item_code": "54-SC3070-R",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני צד ימין EVE Audio SC3070",
       "url": "https://www.halilit.com  /items/3545290-eve-audio-sc3070-studio-monitor",
       "title_he": "מוניטור אולפני צד ימין EVE Audio SC3070",
@@ -5191,7 +5175,7 @@
     {
       "halilit_id": "445904",
       "item_code": "54-TS108",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני EVE Audio TS108",
       "url": "https://www.halilit.com  /items/445904-eve-audio-ts108",
       "title_he": "סאבוופר אולפני EVE Audio TS108",
@@ -5211,7 +5195,7 @@
     {
       "halilit_id": "4323970",
       "item_code": "80-512-LLT",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון דינמי לשידור 512Audio Limelight",
       "url": "https://www.halilit.com  /items/4323970-512audio-limelight",
       "title_he": "מיקרופון דינמי לשידור 512Audio Limelight",
@@ -5231,7 +5215,7 @@
     {
       "halilit_id": "1270163",
       "item_code": "54-TS110",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני EVE Audio TS110 Subwoofer",
       "url": "https://www.halilit.com  /items/1270163-eve-audio-ts110-monitor-subwoofer",
       "title_he": "סאבוופר אולפני EVE Audio TS110 Subwoofer",
@@ -5251,7 +5235,7 @@
     {
       "halilit_id": "3971936",
       "item_code": "52-HAMMER88PRO",
-      "category": "Synthesizers & Keys",
+      "category": "מקלדות שליטה",
       "name": "M-Audio Hammer 88 Pro",
       "url": "https://www.halilit.com  /items/3971936-m-audio-hammer-88-pro",
       "normalized_sku": "88",
@@ -5270,7 +5254,7 @@
     {
       "halilit_id": "1370804",
       "item_code": "AboutEVE",
-      "category": "Software & Apps",
+      "category": "בלוג חלילית+",
       "name": "הכירו את EVE Audio",
       "url": "https://www.halilit.com  /items/1370804-about-eve-audio",
       "title_he": "הכירו את EVE Audio",
@@ -5281,13 +5265,12 @@
       "distributor": "Halilit Music Center",
       "verified": true,
       "verification_confidence": 1.0,
-      "halilit_category": "בלוג חלילית+",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "1270243",
       "item_code": "54-TS112-EVE",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני EVE Audio TS112 Subwoofer",
       "url": "https://www.halilit.com  /items/1270243-eve-audio-ts112-monitor-subwoofer",
       "title_he": "סאבוופר אולפני EVE Audio TS112 Subwoofer",
@@ -5307,7 +5290,7 @@
     {
       "halilit_id": "2273654",
       "item_code": "AA-SUB12",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "סאבוופר אולפני ADAM Audio SUB12",
       "url": "https://www.halilit.com  /items/2273654-adam-audio-sub12",
       "title_he": "סאבוופר אולפני ADAM Audio SUB12",
@@ -5324,13 +5307,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "74660",
-      "halilit_category": "מוניטורים לאולפן",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "2273663",
       "item_code": "AA-SUB15",
-      "category": "Monitors & Speakers",
+      "category": "כסאח! מוניטורים אולפניים",
       "name": "סאבוופר אולפני ADAM Audio SUB15",
       "url": "https://www.halilit.com  /items/2273663-adam-audio-sub15",
       "title_he": "סאבוופר אולפני ADAM Audio SUB15",
@@ -5347,13 +5329,12 @@
       "verified": true,
       "verification_confidence": 1.0,
       "halilit_price": "121970",
-      "halilit_category": "כסאח! מוניטורים אולפניים",
       "match_quality": "excellent"
     },
     {
       "halilit_id": "4936117",
       "item_code": "47-OC707",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לשירה Austrian Audio OC707",
       "url": "https://www.halilit.com  /items/4936117-austrian-audio-oc707-condenser-vocal-microphone",
       "title_he": "מיקרופון קונדנסר לשירה Austrian Audio OC707",
@@ -5373,7 +5354,7 @@
     {
       "halilit_id": "2616912",
       "item_code": "83-CORE47-R",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio Core 47",
       "url": "https://www.halilit.com  /items/2616912-dynaudio-core-47-monitor",
       "title_he": "מוניטור אולפני Dynaudio Core 47",
@@ -5393,7 +5374,7 @@
     {
       "halilit_id": "4814229",
       "item_code": "47-CC8",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Austrian Audio CC8",
       "url": "https://www.halilit.com  /items/4814229-austrian-audio-cc8-cardioid-true-condenser-microphone",
       "title_he": "מיקרופון קונדנסר Austrian Audio CC8",
@@ -5413,7 +5394,7 @@
     {
       "halilit_id": "890635",
       "item_code": "DYNAUDIO",
-      "category": "Software & Apps",
+      "category": "בלוג חלילית+",
       "name": "המוניטורים של DYNAUDIO",
       "url": "https://www.halilit.com  /items/890635-dynaudio-studio-monitors",
       "title_he": "המוניטורים של DYNAUDIO",
@@ -5428,7 +5409,7 @@
     {
       "halilit_id": "5652894",
       "item_code": "47-OC7",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר Austrian Audio OC7",
       "url": "https://www.halilit.com  /items/5652894-austrian-audio-oc7-condenser-instrument-microphone-",
       "title_he": "מיקרופון קונדנסר Austrian Audio OC7",
@@ -5448,7 +5429,7 @@
     {
       "halilit_id": "3988615",
       "item_code": "80-WA14",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-14",
       "url": "https://www.halilit.com  /items/3988615-warm-audio-wa-14-microphone",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-14",
@@ -5468,7 +5449,7 @@
     {
       "halilit_id": "5352644",
       "item_code": "80-WA47F",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "מיקרופון קונדנסר לאולפן Warm Audio WA-47F",
       "url": "https://www.halilit.com  /items/5352644-wa-47f-large-diaphragm-fet-condenser-microphone",
       "title_he": "מיקרופון קונדנסר לאולפן Warm Audio WA-47F",
@@ -5488,7 +5469,7 @@
     {
       "halilit_id": "4936034",
       "item_code": "47-CC8STERSET",
-      "category": "Audio Equipment",
+      "category": "מיקרופונים לאולפן",
       "name": "זוג מיקרופונים ואביזרים Austrian Audio CC8 Stereo Set",
       "url": "https://www.halilit.com  /items/4936034-austrian-audio-cc8-cardioid-true-condenser-microphone-set",
       "title_he": "זוג מיקרופונים ואביזרים Austrian Audio CC8 Stereo Set",
@@ -5508,7 +5489,7 @@
     {
       "halilit_id": "3131395",
       "item_code": "54-SC3012",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC3012",
       "url": "https://www.halilit.com  /items/3131395-eve-audio-sc3012-studio-monitor",
       "title_he": "מוניטור אולפני EVE Audio SC3012",
@@ -5528,7 +5509,7 @@
     {
       "halilit_id": "1770796",
       "item_code": "54-SC3010",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני EVE Audio SC3010",
       "url": "https://www.halilit.com  /items/1770796-eve-audio-sc3010-studio-monitor",
       "title_he": "מוניטור אולפני EVE Audio SC3010",
@@ -5548,7 +5529,7 @@
     {
       "halilit_id": "2516842",
       "item_code": "83-CORE7",
-      "category": "Monitors & Speakers",
+      "category": "מוניטורים לאולפן",
       "name": "מוניטור אולפני Dynaudio Core 7",
       "url": "https://www.halilit.com  /items/2516842-dynaudio-core-7-monitor",
       "title_he": "מוניטור אולפני Dynaudio Core 7",
@@ -5567,7 +5548,7 @@
     {
       "halilit_id": "7320093",
       "item_code": "80-PROXLR20",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio PRO XLR 20",
       "url": "https://www.halilit.com  /items/7320093-warm-audio-pro-xlr-20-cable",
       "normalized_sku": "20",
@@ -5586,7 +5567,7 @@
     {
       "halilit_id": "4355870",
       "item_code": "80-512-POP",
-      "category": "Accessories",
+      "category": "אביזרים לאולפן",
       "name": "512Audio 512-Pop Professional Pop Filter",
       "url": "https://www.halilit.com  /items/4355870-512-audio-512-pop-professional-pop-filter",
       "normalized_sku": "512-POP",
@@ -5605,7 +5586,7 @@
     {
       "halilit_id": "8071976",
       "item_code": "80-PROXLR100",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio PRO XLR 100",
       "url": "https://www.halilit.com  /items/8071976-warm-audio-pro-xlr-100-cable",
       "normalized_sku": "100",
@@ -5624,7 +5605,7 @@
     {
       "halilit_id": "4936233",
       "item_code": "80-PROXLR15",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio PRO XLR 15",
       "url": "https://www.halilit.com  /items/4936233-warm-audio-pro-xlr-15-microphone-cable",
       "normalized_sku": "15",
@@ -5643,7 +5624,7 @@
     {
       "halilit_id": "8778549",
       "item_code": "70-QUANTOMLT4",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Fender Quantum LT 4 Fender Studio",
       "url": "https://www.halilit.com  /items/8778549-fender-quantum-lt-4",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19897593/original/35994a84fa2048a77934c14224049ab4.jpg",
@@ -5657,7 +5638,7 @@
     {
       "halilit_id": "7320123",
       "item_code": "80-PROXLR50",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio PRO XLR 50",
       "url": "https://www.halilit.com  /items/7320123-warm-audio-pro-xlr-50-cable",
       "normalized_sku": "50",
@@ -5676,7 +5657,7 @@
     {
       "halilit_id": "7664708",
       "item_code": "80-WAHRT",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Warm Audio HeadRoom",
       "url": "https://www.halilit.com  /items/7664708-warm-audio-wa-hr-professional-studio-headphones",
       "title_he": "אוזניות אולפן Warm Audio HeadRoom",
@@ -5695,7 +5676,7 @@
     {
       "halilit_id": "7320135",
       "item_code": "80-PROTRS3",
-      "category": "Cables & Accessories",
+      "category": "כבל מתאם",
       "name": "Warm Audio Pro TRS 10",
       "url": "https://www.halilit.com  /items/7320135-warm-audio-pro-trs-10-microphone-cable",
       "normalized_sku": "10",
@@ -5714,7 +5695,7 @@
     {
       "halilit_id": "7665231",
       "item_code": "80-WAHRB",
-      "category": "Accessories",
+      "category": "אוזניות אולפן",
       "name": "אוזניות אולפן Warm Audio HeadRoom",
       "url": "https://www.halilit.com  /items/7665231-warm-audio-wa-hr-professional-studio-headphones",
       "title_he": "אוזניות אולפן Warm Audio HeadRoom",
@@ -5733,7 +5714,7 @@
     {
       "halilit_id": "4936017",
       "item_code": "80-PROXLR10",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio PRO XLR 10",
       "url": "https://www.halilit.com  /items/4936017-warm-audio-proxlr10-microphone-cable",
       "normalized_sku": "10",
@@ -5752,7 +5733,7 @@
     {
       "halilit_id": "7320150",
       "item_code": "80-PROTRS20",
-      "category": "Cables & Accessories",
+      "category": "כבל מתאם",
       "name": "Warm Audio Pro TRS 20",
       "url": "https://www.halilit.com  /items/7320150-warm-audio-pro-trs-120-microphone-cable",
       "normalized_sku": "20",
@@ -5771,7 +5752,7 @@
     {
       "halilit_id": "4025967",
       "item_code": "80-XLR10",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio Prem-XLR-10",
       "url": "https://www.halilit.com  /items/4025967-warm-audio-prem-xlr-10-cable",
       "normalized_sku": "PREM-XLR-10",
@@ -5790,7 +5771,7 @@
     {
       "halilit_id": "8552837",
       "item_code": "80-WATS",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל אוברדרייב Warm Audio Tube Squealer",
       "url": "https://www.halilit.com  /items/8552837-warm-audio-tube-squealer-overdrive-pedal",
       "title_he": "פדל אוברדרייב Warm Audio Tube Squealer",
@@ -5809,7 +5790,7 @@
     {
       "halilit_id": "4026000",
       "item_code": "80-XLR15",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio Prem-XLR-15",
       "url": "https://www.halilit.com  /items/4026000-warm-audio-prem-xlr-15-cable",
       "normalized_sku": "PREM-XLR-15",
@@ -5828,7 +5809,7 @@
     {
       "halilit_id": "4026003",
       "item_code": "80-XLR25",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio Prem-XLR-25",
       "url": "https://www.halilit.com  /items/4026003-warm-audio-prem-xlr-25-cable",
       "normalized_sku": "PREM-XLR-25",
@@ -5847,7 +5828,7 @@
     {
       "halilit_id": "4936601",
       "item_code": "80-PROXLRMTRSM6",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio PRO XLR TRSM 6",
       "url": "https://www.halilit.com  /items/4936601-warm-audio-pro-xlr-trsm-6-microphone-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10942413/original/2452ef2c3a0b0f38675779027839ff20.jpg",
@@ -5865,7 +5846,7 @@
     {
       "halilit_id": "5247151",
       "item_code": "80-PROXLR3",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio Pro XLR 3",
       "url": "https://www.halilit.com  /items/5247151-warm-audio-pro-xlr-3-microphone-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10358575/original/69ddecdebd812468b72b091607647195.jpg",
@@ -5883,7 +5864,7 @@
     {
       "halilit_id": "5247153",
       "item_code": "80-PROXLR25",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio Pro XLR 25",
       "url": "https://www.halilit.com  /items/5247153-warm-audio-pro-xlr-25-microphone-cable",
       "normalized_sku": "25",
@@ -5902,7 +5883,7 @@
     {
       "halilit_id": "5247158",
       "item_code": "80-PROTRS3",
-      "category": "Cables & Accessories",
+      "category": "כבל מתאם",
       "name": "Warm Audio Pro-TRS-3",
       "url": "https://www.halilit.com  /items/5247158-warm-audio-protrs3-microphone-cable",
       "normalized_sku": "PRO-TRS-3",
@@ -5921,7 +5902,7 @@
     {
       "halilit_id": "8778451",
       "item_code": "70-QUANTOMLT2",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Fender Quantum LT 2 Fender Studio",
       "url": "https://www.halilit.com  /items/8778451-fender-quantum-lt-2",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19897429/original/adc1a8f10b3524530cda52e28f9232fa.jpg",
@@ -5935,7 +5916,7 @@
     {
       "halilit_id": "8778965",
       "item_code": "70-QUANTOMLT16",
-      "category": "Audio Equipment",
+      "category": "כרטיסי קול וממירי אודיו",
       "name": "Fender Quantum LT 16 Fender Studio",
       "url": "https://www.halilit.com  /items/8778965-fender-quantum-lt-16",
       "normalized_sku": "16",
@@ -5950,7 +5931,7 @@
     {
       "halilit_id": "4936411",
       "item_code": "80-PROXLRFTRSM3",
-      "category": "Microphones",
+      "category": "כבל מיקרופון",
       "name": "Warm Audio PRO XLRF TRSM 3",
       "url": "https://www.halilit.com  /items/4936411-warm-audio-pro-xlrf-trsm-3-microphone-cable",
       "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9579099/original/1a7f8209b6d68632bc72525ab5b1c3d3.jpg",
@@ -5968,7 +5949,7 @@
     {
       "halilit_id": "4276707",
       "item_code": "80-PROTS10",
-      "category": "Cables & Accessories",
+      "category": "כבל גיטרה",
       "name": "Warm Audio Pro-TS-10",
       "url": "https://www.halilit.com  /items/4276707-warm-audio-pro-ts-10",
       "normalized_sku": "PRO-TS-10",
@@ -5987,7 +5968,7 @@
     {
       "halilit_id": "8552936",
       "item_code": "80-WATOT",
-      "category": "Effects & Pedals",
+      "category": "פדלים ומולטי אפקט",
       "name": "פדל אוברדרייב Warm Audio Throne of Tone",
       "url": "https://www.halilit.com  /items/8552936-warm-audio-throne-of-tone-overdrive-pedal",
       "title_he": "פדל אוברדרייב Warm Audio Throne of Tone",

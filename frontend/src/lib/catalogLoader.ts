@@ -25,6 +25,12 @@ export interface Product {
 export interface BrandCatalog {
   brand_id: string;
   brand_name: string;
+  brand_color?: string;
+  secondary_color?: string;
+  text_color?: string;
+  logo_url?: string;
+  brand_website?: string;
+  description?: string;
   source?: string;
   build_timestamp?: string;
   stats: {
@@ -45,6 +51,8 @@ export interface MasterIndex {
   brands: Array<{
     id: string;
     name: string;
+    brand_color?: string;
+    logo_url?: string;
     product_count: number;
     verified_count: number;
     data_file: string;
