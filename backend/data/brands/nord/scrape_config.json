@@ -24,6 +24,11 @@
     "image_url": {
       "selector": "img[src*=\"product\"], img[src*=\"nord\"], img[alt]",
       "attribute": "src"
+    },
+    "category": {
+      "selector": "meta[name='description']",
+      "attribute": "content",
+      "regex": "(Piano|Organ|Synth|Drum|Stage|Grand|Electro|Lead|Wave)"
     }
   }
 }
