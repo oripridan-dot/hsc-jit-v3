@@ -7,8 +7,12 @@
   "text_color": "#FFFFFF",
   "logo_url": null,
   "description": "Producer of MIDI controllers, samplers, and production equipment.",
+  "category_tree": {
+    "brand_id": "akai-professional",
+    "categories": []
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:34.184006Z",
+  "build_timestamp": "2026-01-16T09:28:30.630179Z",
   "stats": {
     "total_products": 35,
     "verified_products": 0,
@@ -34,7 +38,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "5585698",
@@ -53,7 +58,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "5569832",
@@ -72,7 +78,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "2872200",
@@ -90,7 +97,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סמפלרים וציוד להפקה מוסיקלית"
     },
     {
       "halilit_id": "8529812",
@@ -109,7 +117,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "6552727",
@@ -128,7 +137,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "3126463",
@@ -147,7 +157,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "8529872",
@@ -166,7 +177,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "6624745",
@@ -185,7 +197,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סינתיסייזרים"
     },
     {
       "halilit_id": "6072810",
@@ -203,7 +216,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "4748295",
@@ -222,7 +236,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "3125769",
@@ -240,7 +255,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סמפלרים וציוד להפקה מוסיקלית"
     },
     {
       "halilit_id": "2102296",
@@ -258,7 +274,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "5537570",
@@ -276,7 +293,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "444463",
@@ -295,7 +313,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "5582657",
@@ -314,7 +333,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "5322849",
@@ -333,7 +353,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "4322657",
@@ -351,7 +372,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "742024",
@@ -370,7 +392,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "5585034",
@@ -389,7 +412,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "3996084",
@@ -408,7 +432,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "3181019",
@@ -427,7 +452,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "3181029",
@@ -446,7 +472,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "983289",
@@ -465,7 +492,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "8517373",
@@ -483,7 +511,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סמפלרים וציוד להפקה מוסיקלית"
     },
     {
       "halilit_id": "444461",
@@ -502,7 +531,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "3137103",
@@ -520,7 +550,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי נשיפה אלקטרוניים"
     },
     {
       "halilit_id": "444464",
@@ -539,7 +570,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "444462",
@@ -558,7 +590,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מקלדות שליטה"
     },
     {
       "halilit_id": "444215",
@@ -577,7 +610,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סמפלרים וציוד להפקה מוסיקלית"
     },
     {
       "halilit_id": "445720",
@@ -595,7 +629,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "פדלים ומולטי אפקט"
     },
     {
       "halilit_id": "445722",
@@ -613,7 +648,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "פדלים ומולטי אפקט"
     },
     {
       "halilit_id": "444444",
@@ -632,7 +668,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי נשיפה אלקטרוניים"
     },
     {
       "halilit_id": "2293419",
@@ -650,7 +687,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סמפלרים וציוד להפקה מוסיקלית"
     },
     {
       "halilit_id": "514737",
@@ -668,7 +706,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     }
   ]
 }

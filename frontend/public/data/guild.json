@@ -7,8 +7,12 @@
   "text_color": null,
   "logo_url": null,
   "description": null,
+  "category_tree": {
+    "brand_id": "guild",
+    "categories": []
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:34.459339Z",
+  "build_timestamp": "2026-01-16T09:28:30.996632Z",
   "stats": {
     "total_products": 0,
     "verified_products": 0,

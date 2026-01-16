@@ -7,8 +7,294 @@
   "text_color": "#FFFFFF",
   "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
   "description": "Leading manufacturer of electronic musical instruments and music production equipment.",
+  "category_tree": {
+    "brand_id": "roland",
+    "categories": [
+      {
+        "id": "pianos",
+        "name": "Pianos",
+        "slug": "pianos",
+        "icon": "🎹",
+        "subcategories": [
+          {
+            "id": "digital-piano",
+            "name": "Digital Piano",
+            "slug": "digital-piano"
+          },
+          {
+            "id": "stage-piano",
+            "name": "Stage Piano",
+            "slug": "stage-piano"
+          },
+          {
+            "id": "artisan",
+            "name": "Artisan Series",
+            "slug": "artisan"
+          }
+        ]
+      },
+      {
+        "id": "synthesizers",
+        "name": "Synthesizers",
+        "slug": "synthesizers",
+        "icon": "🎛️",
+        "subcategories": [
+          {
+            "id": "synthesizer",
+            "name": "Synthesizers",
+            "slug": "synthesizer"
+          },
+          {
+            "id": "groovebox",
+            "name": "GROOVEBOX",
+            "slug": "groovebox"
+          },
+          {
+            "id": "desktop-synth",
+            "name": "Desktop Synth",
+            "slug": "desktop-synth"
+          },
+          {
+            "id": "analog",
+            "name": "Analog",
+            "slug": "analog"
+          },
+          {
+            "id": "bass-synth",
+            "name": "Bass Synth",
+            "slug": "bass-synth"
+          }
+        ]
+      },
+      {
+        "id": "keyboards",
+        "name": "Keyboards",
+        "slug": "keyboards",
+        "icon": "⌨️",
+        "subcategories": [
+          {
+            "id": "midi-controller",
+            "name": "MIDI Controllers",
+            "slug": "midi-controllers"
+          },
+          {
+            "id": "performance",
+            "name": "Performance Keyboards",
+            "slug": "performance"
+          },
+          {
+            "id": "sampling",
+            "name": "Samplers",
+            "slug": "samplers"
+          }
+        ]
+      },
+      {
+        "id": "guitar-bass",
+        "name": "Guitar & Bass",
+        "slug": "guitar-bass",
+        "icon": "🎸",
+        "subcategories": [
+          {
+            "id": "guitar-synth",
+            "name": "Guitar Synthesizers",
+            "slug": "guitar-synth"
+          },
+          {
+            "id": "guitar-amp",
+            "name": "Guitar Amplifiers",
+            "slug": "guitar-amps"
+          },
+          {
+            "id": "amp-cabinet",
+            "name": "Cabinets",
+            "slug": "cabinets"
+          }
+        ]
+      },
+      {
+        "id": "drums-percussion",
+        "name": "Drums & Percussion",
+        "slug": "drums-percussion",
+        "icon": "🥁",
+        "subcategories": [
+          {
+            "id": "v-drums",
+            "name": "V-Drums",
+            "slug": "v-drums"
+          },
+          {
+            "id": "percussion",
+            "name": "Electronic Percussion",
+            "slug": "percussion"
+          },
+          {
+            "id": "accessories",
+            "name": "Drum Accessories",
+            "slug": "drum-accessories"
+          }
+        ]
+      },
+      {
+        "id": "wind-instruments",
+        "name": "Wind Instruments",
+        "slug": "wind-instruments",
+        "icon": "🎺",
+        "subcategories": [
+          {
+            "id": "aerophone",
+            "name": "Aerophone",
+            "slug": "aerophone"
+          }
+        ]
+      },
+      {
+        "id": "production",
+        "name": "Production",
+        "slug": "production",
+        "icon": "🎚️",
+        "subcategories": [
+          {
+            "id": "sampler",
+            "name": "Samplers",
+            "slug": "samplers"
+          },
+          {
+            "id": "recorder",
+            "name": "Recorders",
+            "slug": "recorders"
+          },
+          {
+            "id": "rhythm",
+            "name": "Rhythm Machines",
+            "slug": "rhythm"
+          }
+        ]
+      },
+      {
+        "id": "amplifiers",
+        "name": "Amplifiers",
+        "slug": "amplifiers",
+        "icon": "🔊",
+        "subcategories": [
+          {
+            "id": "instrument-amp",
+            "name": "Instrument Amps",
+            "slug": "instrument-amps"
+          },
+          {
+            "id": "speaker",
+            "name": "Speakers",
+            "slug": "speakers"
+          }
+        ]
+      },
+      {
+        "id": "aira-dj",
+        "name": "AIRA & DJ",
+        "slug": "aira-dj",
+        "icon": "💿",
+        "subcategories": [
+          {
+            "id": "dj-controller",
+            "name": "DJ Controllers",
+            "slug": "dj-controllers"
+          },
+          {
+            "id": "aira-compact",
+            "name": "AIRA Compact",
+            "slug": "aira-compact"
+          }
+        ]
+      },
+      {
+        "id": "roland-cloud",
+        "name": "Roland Cloud",
+        "slug": "roland-cloud",
+        "icon": "☁️",
+        "subcategories": [
+          {
+            "id": "membership",
+            "name": "Membership",
+            "slug": "membership"
+          },
+          {
+            "id": "software",
+            "name": "Software",
+            "slug": "software"
+          }
+        ]
+      },
+      {
+        "id": "professional-av",
+        "name": "Professional A/V",
+        "slug": "professional-av",
+        "icon": "🎥",
+        "subcategories": [
+          {
+            "id": "streaming-mixer",
+            "name": "Streaming Mixers",
+            "slug": "streaming-mixers"
+          },
+          {
+            "id": "livestream",
+            "name": "Livestreaming",
+            "slug": "livestreaming"
+          },
+          {
+            "id": "audio-interface",
+            "name": "Audio Interfaces",
+            "slug": "audio-interfaces"
+          }
+        ]
+      },
+      {
+        "id": "accessories",
+        "name": "Accessories",
+        "slug": "accessories",
+        "icon": "🎒",
+        "subcategories": [
+          {
+            "id": "pedals",
+            "name": "Pedals & Controllers",
+            "slug": "pedals"
+          },
+          {
+            "id": "cables",
+            "name": "Cables",
+            "slug": "cables"
+          },
+          {
+            "id": "bags-cases",
+            "name": "Bags & Cases",
+            "slug": "bags-cases"
+          },
+          {
+            "id": "stands",
+            "name": "Stands",
+            "slug": "stands"
+          },
+          {
+            "id": "power",
+            "name": "Power",
+            "slug": "power"
+          },
+          {
+            "id": "headphones",
+            "name": "Headphones",
+            "slug": "headphones"
+          },
+          {
+            "id": "other",
+            "name": "Other",
+            "slug": "other"
+          }
+        ]
+      }
+    ]
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:37.705088Z",
+  "build_timestamp": "2026-01-16T09:28:33.927647Z",
   "stats": {
     "total_products": 229,
     "verified_products": 0,
@@ -29,7 +315,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "BRIDGE CAST ONE",
@@ -43,7 +334,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Bus Streaming Mixer",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "streaming-mixer",
+      "subcategory_name": "Streaming Mixers"
     },
     {
       "name": "BC TC-SC",
@@ -57,7 +353,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Blues Cube Sparkle Clean Tone Capsule",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "JUPITER-Xm\nSynthesizer",
@@ -71,7 +372,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "Roland Cloud Connect\nPro Membership and Wireless Adapter",
@@ -85,7 +391,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Pro Membership and Wireless Adapter",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "membership",
+      "subcategory_name": "Membership"
     },
     {
       "name": "EV-5",
@@ -99,7 +410,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Expression Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals",
+      "subcategory_name": "Pedals & Controllers"
     },
     {
       "name": "TR-EDITOR",
@@ -113,7 +429,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor/Librarian",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "VMH-D1\nV-Drums Headphones",
@@ -127,7 +448,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums Headphones",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "Aerophone Brisa\nDigital Wind Instrument",
@@ -141,7 +467,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Wind Instrument",
+      "main_category": "wind-instruments",
+      "main_category_name": "Wind Instruments",
+      "subcategory": "aerophone",
+      "subcategory_name": "Aerophone"
     },
     {
       "name": "Aerophone GO\nDigital Wind Instrument",
@@ -155,7 +486,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Wind Instrument",
+      "main_category": "wind-instruments",
+      "main_category_name": "Wind Instruments",
+      "subcategory": "aerophone",
+      "subcategory_name": "Aerophone"
     },
     {
       "name": "Roland - Blues Cube Stage | Guitar Amplifier",
@@ -169,7 +505,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "TR-1000 RHYTHM CREATOR",
@@ -183,7 +524,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rhythm Creator",
+      "main_category": "production",
+      "main_category_name": "Production",
+      "subcategory": "rhythm",
+      "subcategory_name": "Rhythm Machines"
     },
     {
       "name": "RMIDI-B3",
@@ -195,7 +541,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Black Series MIDI Cable -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "AIRA COMPACT",
@@ -209,7 +560,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Voice Tweaker",
+      "main_category": "aira-dj",
+      "main_category_name": "AIRA & DJ",
+      "subcategory": "aira-compact",
+      "subcategory_name": "AIRA Compact"
     },
     {
       "name": "LCL-15C",
@@ -221,7 +577,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Clip Light with Cool White LEDs -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "CB-404\nCarrying Case",
@@ -235,7 +596,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Carrying Case",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "K-25m",
@@ -249,7 +615,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Keyboard Unit"
     },
     {
       "name": "BRIDGE CAST X",
@@ -263,7 +630,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Bus Streaming Mixer and Video Capture",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "streaming-mixer",
+      "subcategory_name": "Streaming Mixers"
     },
     {
       "name": "GO:MIXER PRO-X\nAudio Mixer for Smartphones",
@@ -277,7 +649,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIXER PRO-X: Audio Mixer for Smartphones"
     },
     {
       "name": "AIRA COMPACT",
@@ -291,7 +664,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Creative Sampler",
+      "main_category": "production",
+      "main_category_name": "Production",
+      "subcategory": "sampler",
+      "subcategory_name": "Samplers"
     },
     {
       "name": "Aerophone Editor",
@@ -305,7 +683,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "AIRA COMPACT",
@@ -319,7 +702,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Chord Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "OP-AE10MP",
@@ -333,7 +721,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Replacement Mouthpiece for the Aerophone AE-10"
     },
     {
       "name": "GO:KEYS 3\nMusic Creation Keyboard",
@@ -347,7 +736,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "KEYS 3: Music Creation Keyboard",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "performance",
+      "subcategory_name": "Performance Keyboards"
     },
     {
       "name": "R-07\nHigh-Resolution Audio Recorder",
@@ -361,7 +755,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "High-Resolution Audio Recorder",
+      "main_category": "production",
+      "main_category_name": "Production",
+      "subcategory": "recorder",
+      "subcategory_name": "Recorders"
     },
     {
       "name": "GO:LIVECAST\nLivestreaming Studio for Smartphones",
@@ -375,7 +774,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "LIVECAST: Livestreaming Studio for Smartphones",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "livestream",
+      "subcategory_name": "Livestreaming"
     },
     {
       "name": "BTM-1\nBluetooth Speaker with Instrument Input",
@@ -389,7 +793,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bluetooth Speaker with Instrument Input",
+      "main_category": "amplifiers",
+      "main_category_name": "Amplifiers",
+      "subcategory": "speaker",
+      "subcategory_name": "Speakers"
     },
     {
       "name": "ROLAND CLOUD MANAGER\nManagement Software",
@@ -403,7 +812,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Management Software",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "BRIDGE CAST",
@@ -417,7 +831,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Bus Gaming Mixer",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "streaming-mixer",
+      "subcategory_name": "Streaming Mixers"
     },
     {
       "name": "XPS-10X",
@@ -431,7 +850,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Expandable Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "VMH-S100",
@@ -445,7 +869,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "Blues Cube Artist212",
@@ -459,7 +888,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "Aerophone Pro Editor",
@@ -473,7 +907,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "Blues Cube Hot",
@@ -487,7 +926,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "SYNTHESIZER SH-4d",
@@ -501,7 +945,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Desktop Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "RD-08\nStage Piano",
@@ -515,7 +964,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Stage Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "stage-piano",
+      "subcategory_name": "Stage Piano"
     },
     {
       "name": "CB-B88S\nKeyboard Bag",
@@ -529,7 +983,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Keyboard Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "GA-FC",
@@ -543,7 +1002,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Foot Controller"
     },
     {
       "name": "RMC-B3",
@@ -555,7 +1015,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Black Series Microphone Cable -"
     },
     {
       "name": "A-49",
@@ -569,7 +1030,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIDI Keyboard Controller",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "midi-controller",
+      "subcategory_name": "MIDI Controllers"
     },
     {
       "name": "TB-303",
@@ -583,7 +1049,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Software Bass Line",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "bass-synth",
+      "subcategory_name": "Bass Synth"
     },
     {
       "name": "WT-10",
@@ -597,7 +1068,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless Trigger Adapter"
     },
     {
       "name": "CB-BR07",
@@ -611,7 +1083,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Black Series Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "R-05",
@@ -625,7 +1102,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "WAVE/MP3 Recorder",
+      "main_category": "production",
+      "main_category_name": "Production",
+      "subcategory": "recorder",
+      "subcategory_name": "Recorders"
     },
     {
       "name": "Aerophone AE-10\nDigital Wind Instrument",
@@ -639,7 +1121,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Wind Instrument",
+      "main_category": "wind-instruments",
+      "main_category_name": "Wind Instruments",
+      "subcategory": "aerophone",
+      "subcategory_name": "Aerophone"
     },
     {
       "name": "MC-707\nGROOVEBOX",
@@ -653,7 +1140,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "GROOVEBOX",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "groovebox",
+      "subcategory_name": "GROOVEBOX"
     },
     {
       "name": "SPD-SX PRO APP",
@@ -667,7 +1159,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor/Librarian",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "JUPITER-X Editor",
@@ -681,7 +1178,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor/Librarian",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "JUNO-D7\nSynthesizer",
@@ -695,7 +1197,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "TD313\nV-Drums",
@@ -709,7 +1216,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "SH-01A",
@@ -723,7 +1235,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "Blues Cube Hot “British EL84 Modified”",
@@ -737,7 +1254,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "KIYOLA Series\nArtisan Digital Pianos",
@@ -749,7 +1271,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Us"
     },
     {
       "name": "OP-AE10MPH",
@@ -763,7 +1286,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Replacement Mouthpiece for the Aerophone AE-10"
     },
     {
       "name": "JUNO-X Editor",
@@ -777,7 +1301,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor/Librarian",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "TB-03",
@@ -791,7 +1320,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Line",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "bass-synth",
+      "subcategory_name": "Bass Synth"
     },
     {
       "name": "CB-RAC\nAIRA Compact Carrying Case",
@@ -805,7 +1339,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "AIRA Compact Carrying Case",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "FS-7",
@@ -819,7 +1358,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Footswitch"
     },
     {
       "name": "GO:MIXER PRO\nAudio Mixer for Smartphones",
@@ -833,7 +1373,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIXER PRO: Audio Mixer for Smartphones"
     },
     {
       "name": "RH-300\nMonitor Headphones",
@@ -847,7 +1388,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Monitor Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "CB-V61\nKeyboard Bag",
@@ -861,7 +1407,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Keyboard Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "Aerophone Pro\nDigital Wind Instrument",
@@ -875,7 +1426,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Wind Instrument",
+      "main_category": "wind-instruments",
+      "main_category_name": "Wind Instruments",
+      "subcategory": "aerophone",
+      "subcategory_name": "Aerophone"
     },
     {
       "name": "Beat Sync Maker",
@@ -889,7 +1445,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS app"
     },
     {
       "name": "AIRA COMPACT",
@@ -903,7 +1460,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Tweak Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "Roland Chord Director",
@@ -917,7 +1479,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "PSB7 Series",
@@ -931,7 +1498,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Power Adaptor",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "power",
+      "subcategory_name": "Power"
     },
     {
       "name": "GO:PODCAST\nVideo Podcasting Studio for Smartphones",
@@ -945,7 +1517,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "PODCAST: Video Podcasting Studio for Smartphones",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "livestream",
+      "subcategory_name": "Livestreaming"
     },
     {
       "name": "V31 Editor",
@@ -959,7 +1536,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor Software",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "KS-11Z\nKeyboard Stand",
@@ -973,7 +1555,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Keyboard Stand",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "stands",
+      "subcategory_name": "Stands"
     },
     {
       "name": "Rubix24",
@@ -987,7 +1574,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "USB Audio Interface",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "audio-interface",
+      "subcategory_name": "Audio Interfaces"
     },
     {
       "name": "JD-Xi",
@@ -1001,7 +1593,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Interactive Analog/Digital Crossover Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "LCL-15W",
@@ -1013,7 +1610,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Clip Light with Warm White LEDs -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "CS-10EM",
@@ -1027,7 +1629,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Binaural Microphones/Earphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "PCK-HG",
@@ -1041,7 +1648,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Cleaning Pack",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "FP-E50",
@@ -1055,7 +1667,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "V-STAGE 88\nPerformance Keyboard",
@@ -1069,7 +1686,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Performance Keyboard",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "performance",
+      "subcategory_name": "Performance Keyboards"
     },
     {
       "name": "VT-4\nVoice Transformer",
@@ -1083,7 +1705,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Voice Transformer",
+      "main_category": "aira-dj",
+      "main_category_name": "AIRA & DJ",
+      "subcategory": "aira-compact",
+      "subcategory_name": "AIRA Compact"
     },
     {
       "name": "M-UF2G",
@@ -1095,7 +1722,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "2 GB USB Flash Memory -"
     },
     {
       "name": "BC TC-UB",
@@ -1109,7 +1737,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Blues Cube Ultimate Blues Tone Capsule",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "JU-06",
@@ -1123,7 +1756,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Sound Module"
     },
     {
       "name": "VQD106\nV-Drums Quiet Design",
@@ -1137,7 +1771,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums Quiet Design",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "SP-404A",
@@ -1151,7 +1790,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Linear Wave Sampler",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "sampling",
+      "subcategory_name": "Samplers"
     },
     {
       "name": "SYSTEM-8\nPLUG-OUT Synthesizer",
@@ -1165,7 +1809,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "PLUG-OUT Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "Zenbeats",
@@ -1179,7 +1828,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Music Creation App"
     },
     {
       "name": "GO:PIANO88\nDigital Piano (GO-88PX)",
@@ -1193,7 +1843,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "PIANO88: Digital Piano (GO-88PX)",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "CB-B37\nKeyboard Bag",
@@ -1207,7 +1862,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Keyboard Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "JUPITER-X\nSynthesizer",
@@ -1221,7 +1881,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "VAD316\nV-Drums Acoustic Design",
@@ -1235,7 +1900,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums Acoustic Design",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "CB-BPR07",
@@ -1249,7 +1919,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Black Series Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "VT-12",
@@ -1263,7 +1938,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vocal Trainer"
     },
     {
       "name": "OP-MSA1",
@@ -1277,7 +1953,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Microphone Stand Adapter",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "stands",
+      "subcategory_name": "Stands"
     },
     {
       "name": "AX-Edge Editor",
@@ -1291,7 +1972,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "SP-404MKII App",
@@ -1305,7 +1991,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor/Librarian",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "Sound Canvas VA",
@@ -1319,7 +2010,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Software Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "CM-30",
@@ -1333,7 +2029,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Cube Monitor",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "amp-cabinet",
+      "subcategory_name": "Cabinets"
     },
     {
       "name": "4XCamera Maker",
@@ -1347,7 +2048,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS App"
     },
     {
       "name": "CUBE Street EX",
@@ -1361,7 +2063,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Multi-Instrument Battery Amplifier",
+      "main_category": "amplifiers",
+      "main_category_name": "Amplifiers",
+      "subcategory": "instrument-amp",
+      "subcategory_name": "Instrument Amps"
     },
     {
       "name": "BC TC-EJ",
@@ -1375,7 +2082,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Eric Johnson Blues Cube Tone Capsule",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "E-X10\nArranger Keyboard",
@@ -1389,7 +2101,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Arranger Keyboard",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "performance",
+      "subcategory_name": "Performance Keyboards"
     },
     {
       "name": "AIRA COMPACT",
@@ -1403,7 +2120,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Beat Machine",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "percussion",
+      "subcategory_name": "Electronic Percussion"
     },
     {
       "name": "4CY-4WT-01",
@@ -1417,7 +2139,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "DrumLink Cymbal Pack",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "accessories",
+      "subcategory_name": "Drum Accessories"
     },
     {
       "name": "BC TC-NY",
@@ -1431,7 +2158,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Blues Cube New York Blues Tone Capsule",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "V71 Editor",
@@ -1445,7 +2177,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor Software",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "TR-06\nDrumatix",
@@ -1459,7 +2196,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Drumatix",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "percussion",
+      "subcategory_name": "Electronic Percussion"
     },
     {
       "name": "JUPITER-8",
@@ -1473,7 +2215,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Software Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "RH-A7\nOpen-Air Headphones",
@@ -1487,7 +2234,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Open-Air Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "DH-10",
@@ -1501,7 +2253,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "DrumLink Hub",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "accessories",
+      "subcategory_name": "Drum Accessories"
     },
     {
       "name": "P-6 SampleTool",
@@ -1515,7 +2272,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor"
     },
     {
       "name": "TD713\nV-Drums",
@@ -1529,7 +2287,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "PCS-20A",
@@ -1541,7 +2304,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Parallel DC Cord -"
     },
     {
       "name": "JC-120",
@@ -1555,7 +2319,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Jazz Chorus Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "TR-08",
@@ -1569,7 +2338,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rhythm Composer",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "percussion",
+      "subcategory_name": "Electronic Percussion"
     },
     {
       "name": "Rubix22",
@@ -1583,7 +2357,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "USB Audio Interface",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "audio-interface",
+      "subcategory_name": "Audio Interfaces"
     },
     {
       "name": "KIYOLA KF-25\nArtisan Digital Piano",
@@ -1597,7 +2376,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Artisan Digital Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "V-Drums Play",
@@ -1611,7 +2395,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "TR-1000 App",
@@ -1625,7 +2414,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor/Librarian",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "GAIA 2",
@@ -1639,7 +2433,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "KS-20X\nKeyboard Stand",
@@ -1653,7 +2452,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Keyboard Stand",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "stands",
+      "subcategory_name": "Stands"
     },
     {
       "name": "Blues Cube Cabinet410",
@@ -1667,7 +2471,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier Cabinet",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "DP-2",
@@ -1681,7 +2490,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Damper Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals",
+      "subcategory_name": "Pedals & Controllers"
     },
     {
       "name": "KIYOLA KF-20\nArtisan Digital Piano",
@@ -1695,7 +2509,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Artisan Digital Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "GO:MIXER\nAudio Mixer for Smartphones",
@@ -1709,7 +2528,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIXER: Audio Mixer for Smartphones"
     },
     {
       "name": "GO:PIANO88",
@@ -1723,7 +2543,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "PIANO88: Digital Piano (GO-88P)",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "FANTOM EX Upgrade",
@@ -1737,7 +2562,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "System Upgrade for FANTOM 6/7/8"
     },
     {
       "name": "Roland - Blues Cube Artist | Guitar Amplifier",
@@ -1751,7 +2577,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "BC TC-RF",
@@ -1765,7 +2596,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Robben Ford Blues Cube Tone Capsule",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "RD-88 EX\nStage Piano",
@@ -1779,7 +2615,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Stage Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "stage-piano",
+      "subcategory_name": "Stage Piano"
     },
     {
       "name": "JC-22",
@@ -1793,7 +2634,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Jazz Chorus Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "UDC-25",
@@ -1805,7 +2651,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "USB DC Power Supply Cable -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "power",
+      "subcategory_name": "Power"
     },
     {
       "name": "FV-500H/FV-500L",
@@ -1819,7 +2670,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Volume Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals",
+      "subcategory_name": "Pedals & Controllers"
     },
     {
       "name": "TD-07KV\nV-Drums",
@@ -1833,7 +2689,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "TR-606",
@@ -1847,7 +2708,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Software Rhythm Composer",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "percussion",
+      "subcategory_name": "Electronic Percussion"
     },
     {
       "name": "Mood Pan",
@@ -1861,7 +2727,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Electronic Hand Percussion (MN-10)",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "percussion",
+      "subcategory_name": "Electronic Percussion"
     },
     {
       "name": "CB-RU10\nUtility Gig Bag",
@@ -1875,7 +2746,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Utility Gig Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "M-10",
@@ -1889,7 +2765,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "Aerophone AE-20\nDigital Wind Instrument",
@@ -1903,7 +2784,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Wind Instrument",
+      "main_category": "wind-instruments",
+      "main_category_name": "Wind Instruments",
+      "subcategory": "aerophone",
+      "subcategory_name": "Aerophone"
     },
     {
       "name": "DK-01",
@@ -1917,7 +2803,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Boutique Dock",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "MOBILE CUBE",
@@ -1931,7 +2822,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Battery-Powered Stereo Amplifier"
     },
     {
       "name": "JUNO-D6\nSynthesizer",
@@ -1945,7 +2837,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "SE-02",
@@ -1959,7 +2856,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Analog Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "A-88MKII\nMIDI Keyboard Controller",
@@ -1973,7 +2875,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIDI Keyboard Controller",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "midi-controller",
+      "subcategory_name": "MIDI Controllers"
     },
     {
       "name": "JX-03",
@@ -1987,7 +2894,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Sound Module"
     },
     {
       "name": "PCK-SS",
@@ -2001,7 +2909,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Cleaning Pack",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "Aerophone mini\nDigital Wind Instrument",
@@ -2015,7 +2928,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Wind Instrument",
+      "main_category": "wind-instruments",
+      "main_category_name": "Wind Instruments",
+      "subcategory": "aerophone",
+      "subcategory_name": "Aerophone"
     },
     {
       "name": "TD316\nV-Drums",
@@ -2029,7 +2947,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "VR-09 Editor",
@@ -2043,7 +2966,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS App"
     },
     {
       "name": "Blues Cube Tour",
@@ -2057,7 +2981,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "Roland Piano App",
@@ -2071,7 +3000,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "FANTOM-06\nSynthesizer Keyboard",
@@ -2085,7 +3019,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer Keyboard",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "GALAXIAS",
@@ -2099,7 +3038,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Super Instrument",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-synth",
+      "subcategory_name": "Guitar Synthesizers"
     },
     {
       "name": "VAD516\nV-Drums Acoustic Design",
@@ -2113,7 +3057,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums Acoustic Design",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "Roland - VERSELAB MV-1 | Song Production Studio",
@@ -2127,7 +3076,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Song Production Studio"
     },
     {
       "name": "SP-404SX",
@@ -2141,7 +3091,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Linear Wave Sampler",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "sampling",
+      "subcategory_name": "Samplers"
     },
     {
       "name": "GO:PIANO with Alexa Built-in\nDigital Piano",
@@ -2155,7 +3110,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "PIANO with Alexa Built-in: Digital Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "FS-6",
@@ -2169,7 +3129,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Footswitch"
     },
     {
       "name": "RD-2000 EX\nStage Piano",
@@ -2183,7 +3144,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Stage Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "stage-piano",
+      "subcategory_name": "Stage Piano"
     },
     {
       "name": "RH-200\nStereo Monitor Headphones",
@@ -2197,7 +3163,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Monitor Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "WM-1\nWireless MIDI Adaptor",
@@ -2211,7 +3182,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless MIDI Adaptor"
     },
     {
       "name": "WNA-1",
@@ -2225,7 +3197,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless USB Adapter"
     },
     {
       "name": "PSA Series",
@@ -2237,7 +3210,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Power Adaptor -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "power",
+      "subcategory_name": "Power"
     },
     {
       "name": "V51 Editor",
@@ -2251,7 +3229,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Editor Software",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "VQD106PADS\nV-Drums Quiet Design",
@@ -2265,7 +3248,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums Quiet Design",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "FP-10\nDigital Piano",
@@ -2279,7 +3267,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "Piano Designer",
@@ -2293,7 +3286,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "MOBILE AC",
@@ -2307,7 +3305,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Chorus",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "RIC-G3",
@@ -2319,7 +3322,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Gold Series Instrument Cable -"
     },
     {
       "name": "HP700 SERIES\nHP704｜HP702",
@@ -2333,7 +3337,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "RH-5\nMonitor Headphones",
@@ -2347,7 +3356,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "DP-10",
@@ -2361,7 +3375,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Damper Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals",
+      "subcategory_name": "Pedals & Controllers"
     },
     {
       "name": "DJ-707M\nDJ Controller",
@@ -2375,7 +3394,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "DJ Controller",
+      "main_category": "aira-dj",
+      "main_category_name": "AIRA & DJ",
+      "subcategory": "dj-controller",
+      "subcategory_name": "DJ Controllers"
     },
     {
       "name": "Aerophone Lesson",
@@ -2389,7 +3413,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "Aerophone GO Plus",
@@ -2403,7 +3432,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "LCL-25W",
@@ -2415,7 +3449,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Clip Light with Warm White LEDs -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "RCC-5-3535",
@@ -2427,7 +3466,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Black Series Interconnect Cable -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "RH-A30\nOpen-Air Headphones",
@@ -2441,7 +3485,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Open-Air Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "CB-BTRMX",
@@ -2455,7 +3504,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Black Series Instrument Bag"
     },
     {
       "name": "LCL-25C",
@@ -2467,7 +3517,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "LED Clip Light with Cool White LEDs -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "XPS Tone Loader",
@@ -2481,7 +3536,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "Rubix44\nUSB Audio Interface",
@@ -2495,7 +3555,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "USB Audio Interface",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "audio-interface",
+      "subcategory_name": "Audio Interfaces"
     },
     {
       "name": "JD-08\nSound Module",
@@ -2509,7 +3574,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Sound Module"
     },
     {
       "name": "E-A7 Tone Manager",
@@ -2523,7 +3589,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Librarian/Editor Software",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "JUNO-X",
@@ -2537,7 +3608,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Programmable Polyphonic Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "FP-30X\nDigital Piano",
@@ -2551,7 +3627,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Piano",
+      "main_category": "pianos",
+      "main_category_name": "Pianos",
+      "subcategory": "digital-piano",
+      "subcategory_name": "Digital Piano"
     },
     {
       "name": "UM-ONE mk2",
@@ -2565,7 +3646,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "USB MIDI Interface"
     },
     {
       "name": "AC-33",
@@ -2579,7 +3661,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Chorus Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "Advanced Software Synthesizer",
@@ -2593,7 +3680,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Advanced Software Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "V-STAGE 76\nPerformance Keyboard",
@@ -2607,7 +3699,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Performance Keyboard",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "performance",
+      "subcategory_name": "Performance Keyboards"
     },
     {
       "name": "JUNO-D8\nSynthesizer",
@@ -2621,7 +3718,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "RH-200S\nMonitor Headphones",
@@ -2635,7 +3737,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Monitor Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "KS-13\nKeyboard Stand",
@@ -2649,7 +3756,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Keyboard Stand",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "stands",
+      "subcategory_name": "Stands"
     },
     {
       "name": "JX-08\nSound Module",
@@ -2663,7 +3775,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Sound Module"
     },
     {
       "name": "MC-101\nGROOVEBOX",
@@ -2677,7 +3790,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "GROOVEBOX",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "groovebox",
+      "subcategory_name": "GROOVEBOX"
     },
     {
       "name": "VAD716\nV-Drums Acoustic Design",
@@ -2691,7 +3809,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums Acoustic Design",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "FANTOM EX",
@@ -2703,7 +3826,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "General"
     },
     {
       "name": "Aerophone mini Plus",
@@ -2717,7 +3841,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android app",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "TR-6S\nRhythm Performer",
@@ -2731,7 +3860,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rhythm Performer",
+      "main_category": "production",
+      "main_category_name": "Production",
+      "subcategory": "rhythm",
+      "subcategory_name": "Rhythm Machines"
     },
     {
       "name": "JD-XA",
@@ -2745,7 +3879,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Analog/Digital Crossover Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "GR-55",
@@ -2759,7 +3898,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "CUBE STREET MINI\nMulti-Instrument Battery Amplifier",
@@ -2773,7 +3917,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Multi-Instrument Battery Amplifier",
+      "main_category": "amplifiers",
+      "main_category_name": "Amplifiers",
+      "subcategory": "instrument-amp",
+      "subcategory_name": "Instrument Amps"
     },
     {
       "name": "FS-5U/FS-5L",
@@ -2785,7 +3934,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Foot Switch -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals",
+      "subcategory_name": "Pedals & Controllers"
     },
     {
       "name": "MRGKS3/5",
@@ -2799,7 +3953,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Music Rest",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "R07-WS",
@@ -2813,7 +3972,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Windscreen for R-07",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "INTEGRA-7 Editor",
@@ -2827,7 +3991,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iPad App"
     },
     {
       "name": "XPS-60",
@@ -2841,7 +4006,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Expandable Synthesizer",
+      "main_category": "synthesizers",
+      "main_category_name": "Synthesizers",
+      "subcategory": "synthesizer",
+      "subcategory_name": "Synthesizers"
     },
     {
       "name": "M-100 PRO",
@@ -2855,7 +4025,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Headphones",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "headphones",
+      "subcategory_name": "Headphones"
     },
     {
       "name": "SP-404MKII\n\nCreative Sampler and Effector",
@@ -2869,7 +4044,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Creative Sampler and Effector",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "sampling",
+      "subcategory_name": "Samplers"
     },
     {
       "name": "WM-1D\nWireless MIDI Dongle",
@@ -2883,7 +4063,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless MIDI Dongle"
     },
     {
       "name": "JU-06A\nSound Module",
@@ -2897,7 +4078,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Sound Module"
     },
     {
       "name": "AeroCaster\nLivestreaming System",
@@ -2911,7 +4093,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "AeroCaster Livestreaming System",
+      "main_category": "professional-av",
+      "main_category_name": "Professional A/V",
+      "subcategory": "livestream",
+      "subcategory_name": "Livestreaming"
     },
     {
       "name": "Piano Partner 2 Version 2.0",
@@ -2925,7 +4112,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "TR-8S\nRhythm Performer",
@@ -2939,7 +4131,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rhythm Performer",
+      "main_category": "production",
+      "main_category_name": "Production",
+      "subcategory": "rhythm",
+      "subcategory_name": "Rhythm Machines"
     },
     {
       "name": "GO:KEYS 5\nMusic Creation Keyboard",
@@ -2953,7 +4150,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "KEYS 5: Music Creation Keyboard",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "performance",
+      "subcategory_name": "Performance Keyboards"
     },
     {
       "name": "TD513\nV-Drums",
@@ -2967,7 +4169,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "Virtual Stage Camera",
@@ -2981,7 +4188,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "FC-300",
@@ -2995,7 +4207,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIDI Foot Controller",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals",
+      "subcategory_name": "Pedals & Controllers"
     },
     {
       "name": "TD516\nV-Drums",
@@ -3009,7 +4226,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "JC-40",
@@ -3023,7 +4245,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Jazz Chorus Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "Camcorder for GO:MIXER",
@@ -3037,7 +4264,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIXER: Android App"
     },
     {
       "name": "4XCAMERA",
@@ -3051,7 +4279,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "Aerophone Brisa Plus",
@@ -3065,7 +4298,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "iOS/Android App",
+      "main_category": "roland-cloud",
+      "main_category_name": "Roland Cloud",
+      "subcategory": "software",
+      "subcategory_name": "Software"
     },
     {
       "name": "CUBE-10GX",
@@ -3079,7 +4317,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "guitar-bass",
+      "main_category_name": "Guitar & Bass",
+      "subcategory": "guitar-amp",
+      "subcategory_name": "Guitar Amplifiers"
     },
     {
       "name": "JP-08",
@@ -3093,7 +4336,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Sound Module"
     },
     {
       "name": "Rechargeable Amp Power Pack",
@@ -3107,7 +4351,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rechargeable Amp Power Pack (BTY-NIMH/A)",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "power",
+      "subcategory_name": "Power"
     },
     {
       "name": "E-X50",
@@ -3121,7 +4370,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Arranger Keyboard",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "performance",
+      "subcategory_name": "Performance Keyboards"
     },
     {
       "name": "TR-909",
@@ -3135,7 +4389,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Software Rhythm Composer",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "percussion",
+      "subcategory_name": "Electronic Percussion"
     },
     {
       "name": "OP-R26CW",
@@ -3149,7 +4408,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Cover/Windscreen Set for R-26",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "TD716\nV-Drums",
@@ -3163,7 +4427,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Drums",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "v-drums",
+      "subcategory_name": "V-Drums"
     },
     {
       "name": "TR-808",
@@ -3177,7 +4446,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Software Rhythm Composer",
+      "main_category": "drums-percussion",
+      "main_category_name": "Drums & Percussion",
+      "subcategory": "percussion",
+      "subcategory_name": "Electronic Percussion"
     },
     {
       "name": "SP-404",
@@ -3191,7 +4465,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Sampling Workstation",
+      "main_category": "keyboards",
+      "main_category_name": "Keyboards",
+      "subcategory": "sampling",
+      "subcategory_name": "Samplers"
     }
   ]
 }

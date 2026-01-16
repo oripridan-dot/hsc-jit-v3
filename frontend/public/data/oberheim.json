@@ -7,8 +7,12 @@
   "text_color": "#FFFFFF",
   "logo_url": null,
   "description": "Legendary synthesizer and drum machine manufacturer.",
+  "category_tree": {
+    "brand_id": "oberheim",
+    "categories": []
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:35.669849Z",
+  "build_timestamp": "2026-01-16T09:28:32.147652Z",
   "stats": {
     "total_products": 6,
     "verified_products": 0,
@@ -31,7 +35,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סינתיסייזרים"
     },
     {
       "halilit_id": "8623225",
@@ -47,7 +52,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סינתיסייזרים"
     },
     {
       "halilit_id": "6364998",
@@ -63,7 +69,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סינתיסייזרים"
     },
     {
       "halilit_id": "6365009",
@@ -79,7 +86,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סינתיסייזרים"
     },
     {
       "halilit_id": "6365110",
@@ -95,7 +103,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סינתיסייזרים"
     },
     {
       "halilit_id": "6365130",
@@ -111,7 +120,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סינתיסייזרים"
     }
   ]
 }

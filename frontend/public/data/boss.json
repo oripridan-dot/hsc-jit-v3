@@ -7,8 +7,233 @@
   "text_color": "#FFFFFF",
   "logo_url": "https://www.boss.info/static/boss_logo.svg",
   "description": "Roland's effects and stompbox division, leader in guitar effects.",
+  "category_tree": {
+    "brand_id": "boss",
+    "categories": [
+      {
+        "id": "effects-pedals",
+        "name": "Effects Pedals",
+        "slug": "effects-pedals",
+        "icon": "🎸",
+        "subcategories": [
+          {
+            "id": "distortion",
+            "name": "Distortion",
+            "slug": "distortion"
+          },
+          {
+            "id": "modulation",
+            "name": "Modulation",
+            "slug": "modulation"
+          },
+          {
+            "id": "delay",
+            "name": "Delay",
+            "slug": "delay"
+          },
+          {
+            "id": "reverb",
+            "name": "Reverb",
+            "slug": "reverb"
+          },
+          {
+            "id": "dynamics",
+            "name": "Dynamics",
+            "slug": "dynamics"
+          },
+          {
+            "id": "filter",
+            "name": "Filter/EQ",
+            "slug": "filter-eq"
+          },
+          {
+            "id": "pitch",
+            "name": "Pitch/Synth",
+            "slug": "pitch-synth"
+          }
+        ]
+      },
+      {
+        "id": "multi-effects",
+        "name": "Multi-Effects",
+        "slug": "multi-effects",
+        "icon": "🎛️",
+        "subcategories": [
+          {
+            "id": "guitar-processors",
+            "name": "Guitar Processors",
+            "slug": "guitar-processors"
+          },
+          {
+            "id": "bass-processors",
+            "name": "Bass Processors",
+            "slug": "bass-processors"
+          }
+        ]
+      },
+      {
+        "id": "loop-station",
+        "name": "Loop Station",
+        "slug": "loop-station",
+        "icon": "🔁",
+        "subcategories": [
+          {
+            "id": "loop-pedals",
+            "name": "Loop Pedals",
+            "slug": "loop-pedals"
+          }
+        ]
+      },
+      {
+        "id": "guitar-synthesizers",
+        "name": "Guitar Synthesizers",
+        "slug": "guitar-synthesizers",
+        "icon": "🎹",
+        "subcategories": [
+          {
+            "id": "synth-pedals",
+            "name": "Synth Pedals",
+            "slug": "synth-pedals"
+          }
+        ]
+      },
+      {
+        "id": "mixers-audio",
+        "name": "Mixers & Audio Solutions",
+        "slug": "mixers-audio",
+        "icon": "🎚️",
+        "subcategories": [
+          {
+            "id": "streaming-mixers",
+            "name": "Streaming Mixers",
+            "slug": "streaming-mixers"
+          },
+          {
+            "id": "recorders",
+            "name": "Recorders",
+            "slug": "recorders"
+          }
+        ]
+      },
+      {
+        "id": "wireless",
+        "name": "Wireless",
+        "slug": "wireless",
+        "icon": "📡",
+        "subcategories": [
+          {
+            "id": "wireless-systems",
+            "name": "Wireless Systems",
+            "slug": "wireless-systems"
+          }
+        ]
+      },
+      {
+        "id": "vocal-effects",
+        "name": "Vocal Effects",
+        "slug": "vocal-effects",
+        "icon": "🎤",
+        "subcategories": [
+          {
+            "id": "vocal-processors",
+            "name": "Vocal Processors",
+            "slug": "vocal-processors"
+          }
+        ]
+      },
+      {
+        "id": "acoustic",
+        "name": "Acoustic",
+        "slug": "acoustic",
+        "icon": "🪕",
+        "subcategories": [
+          {
+            "id": "acoustic-amps",
+            "name": "Acoustic Amps",
+            "slug": "acoustic-amps"
+          },
+          {
+            "id": "acoustic-pedals",
+            "name": "Acoustic Pedals",
+            "slug": "acoustic-pedals"
+          }
+        ]
+      },
+      {
+        "id": "tuners-metronomes",
+        "name": "Tuners/Metronomes",
+        "slug": "tuners-metronomes",
+        "icon": "🎵",
+        "subcategories": [
+          {
+            "id": "tuners",
+            "name": "Tuners",
+            "slug": "tuners"
+          },
+          {
+            "id": "metronomes",
+            "name": "Metronomes",
+            "slug": "metronomes"
+          }
+        ]
+      },
+      {
+        "id": "boss-amplifiers",
+        "name": "BOSS Amplifiers",
+        "slug": "boss-amplifiers",
+        "icon": "🔊",
+        "subcategories": [
+          {
+            "id": "guitar-amps",
+            "name": "Guitar Amps",
+            "slug": "guitar-amps"
+          }
+        ]
+      },
+      {
+        "id": "roland-amplifiers",
+        "name": "Roland Amplifiers",
+        "slug": "roland-amplifiers",
+        "icon": "🔊",
+        "subcategories": []
+      },
+      {
+        "id": "accessories",
+        "name": "Accessories",
+        "slug": "accessories",
+        "icon": "🎒",
+        "subcategories": [
+          {
+            "id": "cables",
+            "name": "Cables",
+            "slug": "cables"
+          },
+          {
+            "id": "bags-cases",
+            "name": "Bags & Cases",
+            "slug": "bags-cases"
+          },
+          {
+            "id": "pedals-switches",
+            "name": "Pedals & Switches",
+            "slug": "pedals-switches"
+          },
+          {
+            "id": "power-adapters",
+            "name": "Power",
+            "slug": "power"
+          },
+          {
+            "id": "other",
+            "name": "Other",
+            "slug": "other"
+          }
+        ]
+      }
+    ]
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:34.384711Z",
+  "build_timestamp": "2026-01-16T09:28:30.894180Z",
   "stats": {
     "total_products": 197,
     "verified_products": 0,
@@ -27,7 +252,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Thin Celluloid Guitar Picks—White Pearl 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "SY-1000",
@@ -41,7 +271,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Synthesizer",
+      "main_category": "guitar-synthesizers",
+      "main_category_name": "Guitar Synthesizers",
+      "subcategory": "synth-pedals",
+      "subcategory_name": "Synth Pedals"
     },
     {
       "name": "GT-1000\nGuitar Effects Processor",
@@ -55,7 +290,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "guitar-processors",
+      "subcategory_name": "Guitar Processors"
     },
     {
       "name": "GIGCASTER 5\nAudio Streaming Mixer",
@@ -69,7 +309,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Audio Streaming Mixer",
+      "main_category": "mixers-audio",
+      "main_category_name": "Mixers & Audio Solutions",
+      "subcategory": "streaming-mixers",
+      "subcategory_name": "Streaming Mixers"
     },
     {
       "name": "BAS-1\nAmplifier Stand",
@@ -83,7 +328,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Amplifier Stand",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "RC-202",
@@ -97,7 +347,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "XS-100\nPoly Shifter",
@@ -111,7 +366,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Poly Shifter",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "pitch",
+      "subcategory_name": "Pitch/Synth"
     },
     {
       "name": "BMIDI-1-35\nMIDI Cable",
@@ -125,7 +385,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIDI Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "RV-200\nReverb",
@@ -139,7 +404,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Reverb",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "reverb",
+      "subcategory_name": "Reverb"
     },
     {
       "name": "VG-800\nV-Guitar Processor",
@@ -153,7 +423,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "V-Guitar Processor",
+      "main_category": "guitar-synthesizers",
+      "main_category_name": "Guitar Synthesizers",
+      "subcategory": "synth-pedals",
+      "subcategory_name": "Synth Pedals"
     },
     {
       "name": "EV-5",
@@ -167,7 +442,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Expression Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "OD-1X\nOverdrive",
@@ -181,7 +461,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "OverDrive",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "FV-500H/FV-500L",
@@ -195,7 +480,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Volume Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "VO-1\nVocoder",
@@ -209,7 +499,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vocoder",
+      "main_category": "vocal-effects",
+      "main_category_name": "Vocal Effects",
+      "subcategory": "vocal-processors",
+      "subcategory_name": "Vocal Processors"
     },
     {
       "name": "PX-1\nPlugout FX",
@@ -223,7 +518,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Plugout FX"
     },
     {
       "name": "FS-7",
@@ -237,7 +533,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Footswitch",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "KATANA-AIR EX\nGuitar Amplifier",
@@ -251,7 +552,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "boss-amplifiers",
+      "main_category_name": "BOSS Amplifiers",
+      "subcategory": "guitar-amps",
+      "subcategory_name": "Guitar Amps"
     },
     {
       "name": "RC-505MKII\nLoop Station",
@@ -265,7 +571,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "RV-500",
@@ -279,7 +590,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Reverb",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "reverb",
+      "subcategory_name": "Reverb"
     },
     {
       "name": "KATANA:GO\nPersonal Headphone Guitar Amplifier",
@@ -293,7 +609,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "GO: Personal Headphone Guitar Amplifier",
+      "main_category": "boss-amplifiers",
+      "main_category_name": "BOSS Amplifiers",
+      "subcategory": "guitar-amps",
+      "subcategory_name": "Guitar Amps"
     },
     {
       "name": "GX-1B\nBass Effects Processor",
@@ -307,7 +628,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "bass-processors",
+      "subcategory_name": "Bass Processors"
     },
     {
       "name": "CE-2W CHORUS",
@@ -321,7 +647,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Chorus",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "modulation",
+      "subcategory_name": "Modulation"
     },
     {
       "name": "BSL-25-BRN",
@@ -333,7 +664,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "GX-10\nGuitar Effects Processor",
@@ -347,7 +683,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "guitar-processors",
+      "subcategory_name": "Guitar Processors"
     },
     {
       "name": "FS-5U/FS-5L",
@@ -359,7 +700,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Foot Switch -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "MT-2W\nMetal Zone",
@@ -373,7 +719,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Metal Zone",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "RC-1",
@@ -387,7 +738,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "DR-01S",
@@ -401,7 +757,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rhythm Partner"
     },
     {
       "name": "CB-EG10\nGuitar Gig Bag",
@@ -415,7 +772,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Gig Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "GX-1\nGuitar Effects Processor",
@@ -429,7 +791,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "guitar-processors",
+      "subcategory_name": "Guitar Processors"
     },
     {
       "name": "VE-5",
@@ -443,7 +810,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vocal Performer",
+      "main_category": "vocal-effects",
+      "main_category_name": "Vocal Effects",
+      "subcategory": "vocal-processors",
+      "subcategory_name": "Vocal Processors"
     },
     {
       "name": "NEXTONE SPECIAL\nGuitar Amplifier",
@@ -457,7 +829,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "boss-amplifiers",
+      "main_category_name": "BOSS Amplifiers",
+      "subcategory": "guitar-amps",
+      "subcategory_name": "Guitar Amps"
     },
     {
       "name": "BIC-10A-BK\nInstrument Cable",
@@ -471,7 +848,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "FS-6",
@@ -485,7 +867,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Footswitch",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "GIGCASTER 8\nAudio Streaming Mixer",
@@ -499,7 +886,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Audio Streaming Mixer",
+      "main_category": "mixers-audio",
+      "main_category_name": "Mixers & Audio Solutions",
+      "subcategory": "streaming-mixers",
+      "subcategory_name": "Streaming Mixers"
     },
     {
       "name": "BP-1W\nBooster/Preamp",
@@ -513,7 +905,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Booster/Preamp"
     },
     {
       "name": "SD-1W",
@@ -527,7 +920,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "SUPER OverDrive",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "KATANA-MINI X\nGuitar Amplifier",
@@ -541,7 +939,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Amplifier",
+      "main_category": "boss-amplifiers",
+      "main_category_name": "BOSS Amplifiers",
+      "subcategory": "guitar-amps",
+      "subcategory_name": "Guitar Amps"
     },
     {
       "name": "RT-2\nRotary Ensemble",
@@ -555,7 +958,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rotary Ensemble"
     },
     {
       "name": "FSC-10\nFootswitch Cap",
@@ -569,7 +973,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Footswitch Cap",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "BCC-3-TRA\nInterconnect Cable",
@@ -583,7 +992,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Interconnect Cable"
     },
     {
       "name": "CB-KTNGO\nCarrying Pouch",
@@ -597,7 +1007,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Carrying Pouch",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "SY-300",
@@ -611,7 +1026,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Synthesizer",
+      "main_category": "guitar-synthesizers",
+      "main_category_name": "Guitar Synthesizers",
+      "subcategory": "synth-pedals",
+      "subcategory_name": "Synth Pedals"
     },
     {
       "name": "SDE-3\nDual Digital Delay",
@@ -625,7 +1045,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Digital Delay",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "BPK-12-CT",
@@ -637,7 +1062,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Thin Celluloid Guitar Picks—Camo 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "CB-BM-M\nMulti-Effects Case",
@@ -651,7 +1081,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Multi-Effects Case"
     },
     {
       "name": "EURUS GS-1\nElectronic Guitar",
@@ -665,7 +1096,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Electronic Guitar"
     },
     {
       "name": "CB-BM-S\nMulti-Effects Case",
@@ -679,7 +1111,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Multi-Effects Case"
     },
     {
       "name": "BF-3",
@@ -693,7 +1126,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Flanger",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "modulation",
+      "subcategory_name": "Modulation"
     },
     {
       "name": "DM-101\nDelay Machine",
@@ -707,7 +1145,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Delay Machine",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "BOSS Tuner App",
@@ -721,7 +1164,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Chromatic Tuner App",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "BSH-20-BLK",
@@ -733,7 +1181,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "CB-RC505\nCarrying Bag",
@@ -747,7 +1200,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Carrying Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "WAZA-AIR BASS\nWireless Personal Bass Amplification System",
@@ -761,7 +1219,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless Personal Bass Amplification System"
     },
     {
       "name": "eBand JS-10",
@@ -775,7 +1234,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Audio Player with Guitar Effects"
     },
     {
       "name": "BCB-30",
@@ -787,7 +1247,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Pedal Board -"
     },
     {
       "name": "TU-3W\nChromatic Tuner",
@@ -801,7 +1262,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Chromatic Tuner",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "EV-30",
@@ -815,7 +1281,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Expression Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "BCB-30X\nPedal Board",
@@ -829,7 +1300,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Pedal Board"
     },
     {
       "name": "MD-500",
@@ -843,7 +1315,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Modulation"
     },
     {
       "name": "XS-1\nPoly Shifter",
@@ -857,7 +1330,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Poly Shifter",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "pitch",
+      "subcategory_name": "Pitch/Synth"
     },
     {
       "name": "CB-EG01\nGuitar Gig Bag",
@@ -871,7 +1349,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Gig Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "AC-3",
@@ -885,7 +1368,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Simulator",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-pedals",
+      "subcategory_name": "Acoustic Pedals"
     },
     {
       "name": "SL-2\nSlicer",
@@ -899,7 +1387,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Slicer",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "pitch",
+      "subcategory_name": "Pitch/Synth"
     },
     {
       "name": "BCC-1-3535\nMIDI Cable",
@@ -913,7 +1406,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIDI Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "SDE-3000EVH\nDual Digital Delay",
@@ -927,7 +1425,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Digital Delay",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "BIC-P10A\nPremium Instrument Cable",
@@ -941,7 +1444,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Premium Instrument Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "DS-1W\nDistortion",
@@ -955,7 +1463,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Distortion",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "ODB-3",
@@ -969,7 +1482,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass OverDrive",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "OC-5\nOctave",
@@ -983,7 +1501,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Octave",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "pitch",
+      "subcategory_name": "Pitch/Synth"
     },
     {
       "name": "BMIDI-5-35",
@@ -997,7 +1520,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "MIDI Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "PS-6",
@@ -1011,7 +1539,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Harmonist",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "pitch",
+      "subcategory_name": "Pitch/Synth"
     },
     {
       "name": "BCK-2",
@@ -1025,7 +1558,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Solderless Pedalboard Cable Kit"
     },
     {
       "name": "GA-FC EX\nFoot Controller",
@@ -1039,7 +1573,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Foot Controller"
     },
     {
       "name": "WL-60T",
@@ -1053,7 +1588,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless Transmitter",
+      "main_category": "wireless",
+      "main_category_name": "Wireless",
+      "subcategory": "wireless-systems",
+      "subcategory_name": "Wireless Systems"
     },
     {
       "name": "BC-1X\nBass Comp",
@@ -1067,7 +1607,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Comp"
     },
     {
       "name": "AD-10",
@@ -1081,7 +1622,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Preamp",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-pedals",
+      "subcategory_name": "Acoustic Pedals"
     },
     {
       "name": "WL-T",
@@ -1095,7 +1641,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless Transmitter",
+      "main_category": "wireless",
+      "main_category_name": "Wireless",
+      "subcategory": "wireless-systems",
+      "subcategory_name": "Wireless Systems"
     },
     {
       "name": "WAZA-AIR\nWireless Personal Guitar Amplification System",
@@ -1109,7 +1660,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless Personal Guitar Amplification System"
     },
     {
       "name": "Acoustic Singer Live",
@@ -1123,7 +1675,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Amplifier",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-amps",
+      "subcategory_name": "Acoustic Amps"
     },
     {
       "name": "MICRO BR BR-80",
@@ -1137,7 +1694,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Recorder",
+      "main_category": "mixers-audio",
+      "main_category_name": "Mixers & Audio Solutions",
+      "subcategory": "recorders",
+      "subcategory_name": "Recorders"
     },
     {
       "name": "BCB-90X\nPedal Board",
@@ -1151,7 +1713,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Pedal Board"
     },
     {
       "name": "CB-BU10\nUtility Gig Bag",
@@ -1165,7 +1728,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Utility Gig Bag",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "VE-1",
@@ -1179,7 +1747,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vocal Echo",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "LMB-3",
@@ -1193,7 +1766,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Limiter/Enhancer",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "dynamics",
+      "subcategory_name": "Dynamics"
     },
     {
       "name": "BLUETOOTH® AUDIO MIDI DUAL ADAPTOR\nBluetooth® Adaptor",
@@ -1207,7 +1785,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bluetooth Adaptor"
     },
     {
       "name": "BIC-5\nInstrument Cable",
@@ -1221,7 +1800,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "BSC-3",
@@ -1233,7 +1817,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Speaker Cable -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "CH-1\nSUPER Chorus",
@@ -1247,7 +1836,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "SUPER Chorus",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "modulation",
+      "subcategory_name": "Modulation"
     },
     {
       "name": "IR-2\nAmp & Cabinet",
@@ -1261,7 +1855,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Amp & Cabinet"
     },
     {
       "name": "AB-2",
@@ -1273,7 +1868,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "2-Way Selector -"
     },
     {
       "name": "TR-2",
@@ -1287,7 +1883,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Tremolo",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "modulation",
+      "subcategory_name": "Modulation"
     },
     {
       "name": "RC-10R",
@@ -1301,7 +1902,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Rhythm Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "IR-200\nAmp & IR Cabinet",
@@ -1315,7 +1921,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Amp & IR Cabinet"
     },
     {
       "name": "GT-1B",
@@ -1329,7 +1936,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "bass-processors",
+      "subcategory_name": "Bass Processors"
     },
     {
       "name": "ME-90\nGuitar Multiple Effects",
@@ -1343,7 +1955,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Multiple Effects",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "guitar-processors",
+      "subcategory_name": "Guitar Processors"
     },
     {
       "name": "PH-3",
@@ -1357,7 +1974,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Phase Shifter"
     },
     {
       "name": "PCS-20A",
@@ -1369,7 +1987,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Parallel DC Cord -"
     },
     {
       "name": "BIC-10A\nInstrument Cable",
@@ -1383,7 +2002,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "AC-22LX\nAcoustic Amplifier",
@@ -1397,7 +2021,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Amplifier",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-amps",
+      "subcategory_name": "Acoustic Amps"
     },
     {
       "name": "BPK-12-MT",
@@ -1409,7 +2038,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Thin Celluloid Guitar Picks—Mosaic 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "BPK-12-BT",
@@ -1421,7 +2055,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Thin Celluloid Guitar Picks—Black 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "FS-1-WL\nWireless Footswitch",
@@ -1435,7 +2074,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless Footswitch",
+      "main_category": "wireless",
+      "main_category_name": "Wireless",
+      "subcategory": "wireless-systems",
+      "subcategory_name": "Wireless Systems"
     },
     {
       "name": "BPK-12-OT",
@@ -1447,7 +2091,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Thin Celluloid Guitar Picks—Ocean Turquoise 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "WAZA TUBE AMP EXPANDER CORE\nReactive Load Box",
@@ -1461,7 +2110,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Reactive Load Box"
     },
     {
       "name": "WL-20/WL-20L",
@@ -1475,7 +2125,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless System",
+      "main_category": "wireless",
+      "main_category_name": "Wireless",
+      "subcategory": "wireless-systems",
+      "subcategory_name": "Wireless Systems"
     },
     {
       "name": "CB-WZ-AIR\nCarrying Case",
@@ -1489,7 +2144,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Carrying Case",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "bags-cases",
+      "subcategory_name": "Bags & Cases"
     },
     {
       "name": "RC-500\nLoop Station",
@@ -1503,7 +2163,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "BSL-25-BLK",
@@ -1515,7 +2180,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "HM-2W\nHeavy Metal",
@@ -1529,7 +2199,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Heavy Metal",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "DD-500",
@@ -1543,7 +2218,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Delay",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "MS-3",
@@ -1557,7 +2237,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Multi Effects Switcher"
     },
     {
       "name": "PSA Series",
@@ -1569,7 +2250,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Power Adaptor -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "power-adapters",
+      "subcategory_name": "Power"
     },
     {
       "name": "DB-30",
@@ -1583,7 +2269,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dr. Beat",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "metronomes",
+      "subcategory_name": "Metronomes"
     },
     {
       "name": "RC-5\nLoop Station",
@@ -1597,7 +2288,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "FV-50H/FV-50L",
@@ -1609,7 +2305,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Volume Pedal -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "AW-3",
@@ -1623,7 +2324,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dynamic Wah",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "filter",
+      "subcategory_name": "Filter/EQ"
     },
     {
       "name": "GA-FC",
@@ -1637,7 +2343,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Foot Controller"
     },
     {
       "name": "SY-200\nSynthesizer",
@@ -1651,7 +2358,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer"
     },
     {
       "name": "DD-8\nDigital Delay",
@@ -1665,7 +2373,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Delay",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "BA-PC15",
@@ -1679,7 +2392,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Earphones/Guitar Cable Set"
     },
     {
       "name": "CCB-MT2TSC",
@@ -1691,7 +2405,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "BOSS MT-2 Metal Zone Pedal T-Shirt -",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "TU-30",
@@ -1705,7 +2424,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Tuner & Metronome"
     },
     {
       "name": "BCK-6",
@@ -1719,7 +2439,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Solderless Pedalboard Cable Kit"
     },
     {
       "name": "FZ-1W\nFuzz",
@@ -1733,7 +2454,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Fuzz",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "NS-1X\nNoise Suppressor",
@@ -1747,7 +2473,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Noise Suppressor",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "dynamics",
+      "subcategory_name": "Dynamics"
     },
     {
       "name": "DI-1",
@@ -1759,7 +2490,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Direct Box -"
     },
     {
       "name": "SDE-3000D\nDual Digital Delay",
@@ -1773,7 +2505,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dual Digital Delay",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "GM-800",
@@ -1787,7 +2524,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Synthesizer",
+      "main_category": "guitar-synthesizers",
+      "main_category_name": "Guitar Synthesizers",
+      "subcategory": "synth-pedals",
+      "subcategory_name": "Synth Pedals"
     },
     {
       "name": "CE-5\nChorus Ensemble",
@@ -1801,7 +2543,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Chorus Ensemble",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "modulation",
+      "subcategory_name": "Modulation"
     },
     {
       "name": "GE-7\nEqualizer",
@@ -1815,7 +2562,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Equalizer",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "filter",
+      "subcategory_name": "Filter/EQ"
     },
     {
       "name": "TU-3\nChromatic Tuner",
@@ -1829,7 +2581,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Chromatic Tuner",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "ES-5",
@@ -1843,7 +2600,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Effects Switching System"
     },
     {
       "name": "Acoustic Singer Live LT",
@@ -1857,7 +2615,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Amplifier",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-amps",
+      "subcategory_name": "Acoustic Amps"
     },
     {
       "name": "TU-01",
@@ -1871,7 +2634,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Clip-On Chromatic Tuner",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "BPC-4\nPatch Cable",
@@ -1885,7 +2653,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Patch Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "VE-8",
@@ -1899,7 +2672,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Singer",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-amps",
+      "subcategory_name": "Acoustic Amps"
     },
     {
       "name": "WL-60",
@@ -1913,7 +2691,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless System",
+      "main_category": "wireless",
+      "main_category_name": "Wireless",
+      "subcategory": "wireless-systems",
+      "subcategory_name": "Wireless Systems"
     },
     {
       "name": "WL-30XLR\nWireless System",
@@ -1927,7 +2710,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless System",
+      "main_category": "wireless",
+      "main_category_name": "Wireless",
+      "subcategory": "wireless-systems",
+      "subcategory_name": "Wireless Systems"
     },
     {
       "name": "BB-1X\nBass Driver",
@@ -1941,7 +2729,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Driver"
     },
     {
       "name": "DC-2W\nDimension C",
@@ -1955,7 +2744,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dimension C"
     },
     {
       "name": "BSS-25-BLK",
@@ -1967,7 +2757,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "EQ-200",
@@ -1981,7 +2776,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Graphic Equalizer",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "filter",
+      "subcategory_name": "Filter/EQ"
     },
     {
       "name": "GX-1\nGuitar Effects Processor",
@@ -1993,7 +2793,8 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Us"
     },
     {
       "name": "BSC-20-BLK",
@@ -2005,7 +2806,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "AD-2",
@@ -2019,7 +2825,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Preamp",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-pedals",
+      "subcategory_name": "Acoustic Pedals"
     },
     {
       "name": "GEB-7",
@@ -2033,7 +2844,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Equalizer",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "filter",
+      "subcategory_name": "Filter/EQ"
     },
     {
       "name": "OD-3",
@@ -2047,7 +2863,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "OverDrive",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "BCB-60",
@@ -2061,7 +2882,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Pedal Board"
     },
     {
       "name": "BD-2W",
@@ -2075,7 +2897,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Blues Driver",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "MD-200",
@@ -2089,7 +2916,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Modulation"
     },
     {
       "name": "RE-202\nSpace Echo",
@@ -2103,7 +2931,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Space Echo",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "TU-3S",
@@ -2117,7 +2950,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Chromatic Tuner",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "DB-90",
@@ -2131,7 +2969,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Dr. Beat",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "metronomes",
+      "subcategory_name": "Metronomes"
     },
     {
       "name": "VE-500",
@@ -2145,7 +2988,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vocal Performer",
+      "main_category": "vocal-effects",
+      "main_category_name": "Vocal Effects",
+      "subcategory": "vocal-processors",
+      "subcategory_name": "Vocal Processors"
     },
     {
       "name": "ES-8",
@@ -2159,7 +3007,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Effects Switching System"
     },
     {
       "name": "OD-200",
@@ -2173,7 +3022,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Hybrid Drive"
     },
     {
       "name": "EV-1-WL\nWireless MIDI Expression Pedal",
@@ -2187,7 +3037,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless MIDI Expression Pedal",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "pedals-switches",
+      "subcategory_name": "Pedals & Switches"
     },
     {
       "name": "TU-05\nClip-On Tuner",
@@ -2201,7 +3056,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Clip-On Tuner",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "Acoustic Singer Pro",
@@ -2215,7 +3075,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Acoustic Amplifier",
+      "main_category": "acoustic",
+      "main_category_name": "Acoustic",
+      "subcategory": "acoustic-amps",
+      "subcategory_name": "Acoustic Amps"
     },
     {
       "name": "TU-03",
@@ -2229,7 +3094,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Clip-On Tuner & Metronome",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "GT-1000CORE\nGuitar Effects Processor",
@@ -2243,7 +3113,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "guitar-processors",
+      "subcategory_name": "Guitar Processors"
     },
     {
       "name": "VE-2",
@@ -2257,7 +3132,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vocal Harmonist",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "pitch",
+      "subcategory_name": "Pitch/Synth"
     },
     {
       "name": "BSH-20-NAT",
@@ -2269,7 +3149,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "ME-90B\nBass Multiple Effects",
@@ -2283,7 +3168,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Multiple Effects",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "bass-processors",
+      "subcategory_name": "Bass Processors"
     },
     {
       "name": "BPK-12-ST",
@@ -2295,7 +3185,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Thin Celluloid Guitar Picks—Shell 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "BPK-12-D50",
@@ -2307,7 +3202,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Delrin Guitar Picks—.50 mm 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "DS-1X\nDistortion",
@@ -2321,7 +3221,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Distortion",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "distortion",
+      "subcategory_name": "Distortion"
     },
     {
       "name": "BPK-12-AT",
@@ -2333,7 +3238,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Thin Celluloid Guitar Picks—Abalone 12 Pack -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "PW-3",
@@ -2347,7 +3257,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wah Pedal",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "filter",
+      "subcategory_name": "Filter/EQ"
     },
     {
       "name": "WL-50",
@@ -2361,7 +3276,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Wireless System",
+      "main_category": "wireless",
+      "main_category_name": "Wireless",
+      "subcategory": "wireless-systems",
+      "subcategory_name": "Wireless Systems"
     },
     {
       "name": "VE-22\nVocal Performer",
@@ -2375,7 +3295,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vocal Performer",
+      "main_category": "vocal-effects",
+      "main_category_name": "Vocal Effects",
+      "subcategory": "vocal-processors",
+      "subcategory_name": "Vocal Processors"
     },
     {
       "name": "BCB-1000\nPedal Board",
@@ -2389,7 +3314,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Pedal Board"
     },
     {
       "name": "BCK-12\nSolderless Pedalboard Cable Kit",
@@ -2403,7 +3329,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Solderless Pedalboard Cable Kit"
     },
     {
       "name": "BCK-24\nSolderless Pedalboard Cable Kit",
@@ -2417,7 +3344,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Solderless Pedalboard Cable Kit"
     },
     {
       "name": "TU-02\nClip-On Tuner",
@@ -2431,7 +3359,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Clip-On Tuner",
+      "main_category": "tuners-metronomes",
+      "main_category_name": "Tuners/Metronomes",
+      "subcategory": "tuners",
+      "subcategory_name": "Tuners"
     },
     {
       "name": "MO-2",
@@ -2445,7 +3378,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Multi Overtone"
     },
     {
       "name": "BIC-1AA\nInstrument Cable",
@@ -2459,7 +3393,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "BSB-20-BLK",
@@ -2471,7 +3410,12 @@
       "specs": {},
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap -",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "BSM-20-BW\nInstrument Strap",
@@ -2485,7 +3429,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Strap",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "other",
+      "subcategory_name": "Other"
     },
     {
       "name": "CEB-3",
@@ -2499,7 +3448,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Bass Chorus",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "modulation",
+      "subcategory_name": "Modulation"
     },
     {
       "name": "GT-1",
@@ -2513,7 +3467,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "guitar-processors",
+      "subcategory_name": "Guitar Processors"
     },
     {
       "name": "VB-2W",
@@ -2527,7 +3486,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Vibrato",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "modulation",
+      "subcategory_name": "Modulation"
     },
     {
       "name": "GX-100\nGuitar Effects Processor",
@@ -2541,7 +3505,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Guitar Effects Processor",
+      "main_category": "multi-effects",
+      "main_category_name": "Multi-Effects",
+      "subcategory": "guitar-processors",
+      "subcategory_name": "Guitar Processors"
     },
     {
       "name": "BIC-PC\nInstrument Cable",
@@ -2555,7 +3524,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Instrument Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "BA-BR80S",
@@ -2569,7 +3543,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Silicone Case/Pouch Set for BR-80"
     },
     {
       "name": "CP-1X\nCompressor",
@@ -2583,7 +3558,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Compressor",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "dynamics",
+      "subcategory_name": "Dynamics"
     },
     {
       "name": "BIC-P10\nPremium Instrument Cable",
@@ -2597,7 +3577,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Premium Instrument Cable",
+      "main_category": "accessories",
+      "main_category_name": "Accessories",
+      "subcategory": "cables",
+      "subcategory_name": "Cables"
     },
     {
       "name": "CS-3\nCompression Sustainer",
@@ -2611,7 +3596,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Compression Sustainer",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "dynamics",
+      "subcategory_name": "Dynamics"
     },
     {
       "name": "DD-200",
@@ -2625,7 +3615,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Digital Delay",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "RE-2\nSpace Echo",
@@ -2639,7 +3634,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Space Echo",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "RC-600\nLoop Station",
@@ -2653,7 +3653,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "FV-30H/FV-30L",
@@ -2667,7 +3672,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Foot Volume"
     },
     {
       "name": "DM-2W",
@@ -2681,7 +3687,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Delay",
+      "main_category": "effects-pedals",
+      "main_category_name": "Effects Pedals",
+      "subcategory": "delay",
+      "subcategory_name": "Delay"
     },
     {
       "name": "CB-ME80",
@@ -2695,7 +3706,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "BOSS ME-90/ME-80/GT-1000/GX-100 Bag"
     },
     {
       "name": "RC-505",
@@ -2709,7 +3721,12 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Loop Station",
+      "main_category": "loop-station",
+      "main_category_name": "Loop Station",
+      "subcategory": "loop-pedals",
+      "subcategory_name": "Loop Pedals"
     },
     {
       "name": "SY-1\nSynthesizer",
@@ -2723,7 +3740,8 @@
       },
       "source": "brand_website",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "Synthesizer"
     }
   ]
 }

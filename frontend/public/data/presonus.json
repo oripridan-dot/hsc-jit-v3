@@ -7,8 +7,12 @@
   "text_color": "#FFFFFF",
   "logo_url": null,
   "description": "Professional audio equipment manufacturer and DAW software developer.",
+  "category_tree": {
+    "brand_id": "presonus",
+    "categories": []
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:37.079931Z",
+  "build_timestamp": "2026-01-16T09:28:33.318907Z",
   "stats": {
     "total_products": 97,
     "verified_products": 0,
@@ -31,7 +35,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "1566226",
@@ -47,7 +52,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מגברי אוזניות"
     },
     {
       "halilit_id": "7790666",
@@ -63,7 +69,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "תוכנות הפקה ואולפן"
     },
     {
       "halilit_id": "3195726",
@@ -79,7 +86,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לציוד הגברה"
     },
     {
       "halilit_id": "1570294",
@@ -95,7 +103,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "תלייה ועזרים"
     },
     {
       "halilit_id": "1697315",
@@ -111,7 +120,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "קדם מגברים ומעבדי צליל"
     },
     {
       "halilit_id": "6201345",
@@ -127,7 +137,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "6198539",
@@ -143,7 +154,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "6199629",
@@ -159,7 +171,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "6198389",
@@ -175,7 +188,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "7099544",
@@ -191,7 +205,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "6864555",
@@ -207,7 +222,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "6201559",
@@ -223,7 +239,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "8030220",
@@ -239,7 +256,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "חבילות אולפן"
     },
     {
       "halilit_id": "6201103",
@@ -255,7 +273,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "2005012",
@@ -271,7 +290,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אוזניות אולפן"
     },
     {
       "halilit_id": "2326296",
@@ -287,7 +307,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "6201626",
@@ -303,7 +324,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "6864925",
@@ -319,7 +341,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "2721055",
@@ -335,7 +358,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אוזניות לאולפן"
     },
     {
       "halilit_id": "6200876",
@@ -351,7 +375,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "6864687",
@@ -367,7 +392,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "7963955",
@@ -383,7 +409,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "חבילות אולפן"
     },
     {
       "halilit_id": "4599104",
@@ -399,7 +426,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקרופונים לאולפן"
     },
     {
       "halilit_id": "2327617",
@@ -415,7 +443,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "5170501",
@@ -431,7 +460,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! מיקרופונים"
     },
     {
       "halilit_id": "2680904",
@@ -447,7 +477,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "6201162",
@@ -463,7 +494,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "3544412",
@@ -479,7 +511,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! מיקרופונים"
     },
     {
       "halilit_id": "7964009",
@@ -495,7 +528,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "חבילות אולפן"
     },
     {
       "halilit_id": "4606838",
@@ -511,7 +545,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "3521406",
@@ -527,7 +562,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! מקלדות שליטה"
     },
     {
       "halilit_id": "2759045",
@@ -543,7 +579,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "2127752",
@@ -559,7 +596,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "2759071",
@@ -575,7 +613,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! הגברה"
     },
     {
       "halilit_id": "6199470",
@@ -591,7 +630,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "5170352",
@@ -607,7 +647,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "2421943",
@@ -623,7 +664,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "1556418",
@@ -639,7 +681,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "1563587",
@@ -655,7 +698,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אוזניות אולפן"
     },
     {
       "halilit_id": "4475594",
@@ -671,7 +715,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "6201306",
@@ -687,7 +732,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "5769949",
@@ -703,7 +749,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! הגברה"
     },
     {
       "halilit_id": "2327075",
@@ -719,7 +766,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "2972751",
@@ -735,7 +783,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "2680970",
@@ -751,7 +800,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "2327692",
@@ -767,7 +817,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "4130200",
@@ -783,7 +834,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "1740276",
@@ -799,7 +851,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כרטיסי קול וממירי אודיו"
     },
     {
       "halilit_id": "2680831",
@@ -815,7 +868,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לאולפן"
     },
     {
       "halilit_id": "4606236",
@@ -831,7 +885,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "2627156",
@@ -847,7 +902,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "1567063",
@@ -863,7 +919,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "קדם מגברים ומעבדי צליל"
     },
     {
       "halilit_id": "1566369",
@@ -879,7 +936,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "2687175",
@@ -895,7 +953,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! כרטיסי קול"
     },
     {
       "halilit_id": "1928839",
@@ -911,7 +970,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "קדם מגברים ומעבדי צליל"
     },
     {
       "halilit_id": "3481022",
@@ -927,7 +987,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקרופונים לאולפן"
     },
     {
       "halilit_id": "7831373",
@@ -943,7 +1004,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "תוכנות הפקה ואולפן"
     },
     {
       "halilit_id": "2649869",
@@ -959,7 +1021,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקרופונים לאולפן"
     },
     {
       "halilit_id": "2594749",
@@ -975,7 +1038,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקרופונים לאולפן"
     },
     {
       "halilit_id": "4606420",
@@ -991,7 +1055,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "3481122",
@@ -1007,7 +1072,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקרופונים לאולפן"
     },
     {
       "halilit_id": "1575463",
@@ -1023,7 +1089,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "2420519",
@@ -1039,7 +1106,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "רמקולים"
     },
     {
       "halilit_id": "3352120",
@@ -1055,7 +1123,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! אקססוריז"
     },
     {
       "halilit_id": "2295866",
@@ -1071,7 +1140,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "1558901",
@@ -1087,7 +1157,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לאולפן"
     },
     {
       "halilit_id": "2419321",
@@ -1103,7 +1174,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "רמקולים"
     },
     {
       "halilit_id": "2414996",
@@ -1119,7 +1191,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "1558949",
@@ -1135,7 +1208,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! כרטיסי קול"
     },
     {
       "halilit_id": "2420393",
@@ -1151,7 +1225,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "רמקולים"
     },
     {
       "halilit_id": "2291717",
@@ -1167,7 +1242,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "2537567",
@@ -1183,7 +1259,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! הגברה"
     },
     {
       "halilit_id": "3352060",
@@ -1199,7 +1276,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "2291983",
@@ -1215,7 +1293,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקרופונים לאולפן"
     },
     {
       "halilit_id": "1559056",
@@ -1231,7 +1310,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "3352083",
@@ -1247,7 +1327,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לציוד הגברה"
     },
     {
       "halilit_id": "1740569",
@@ -1263,7 +1344,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מגברי אוזניות"
     },
     {
       "halilit_id": "3351602",
@@ -1279,7 +1361,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לציוד הגברה"
     },
     {
       "halilit_id": "1740612",
@@ -1295,7 +1378,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "משטחי שליטה ושלטי תוכנה"
     },
     {
       "halilit_id": "2293829",
@@ -1311,7 +1395,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "1557077",
@@ -1327,7 +1412,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "חבילות אולפן"
     },
     {
       "halilit_id": "1575259",
@@ -1343,7 +1429,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "6276447",
@@ -1359,7 +1446,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לציוד הגברה"
     },
     {
       "halilit_id": "3138911",
@@ -1375,7 +1463,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "רמקולים"
     },
     {
       "halilit_id": "2293349",
@@ -1391,7 +1480,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "3195752",
@@ -1407,7 +1497,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לציוד הגברה"
     },
     {
       "halilit_id": "3351664",
@@ -1423,7 +1514,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לציוד הגברה"
     },
     {
       "halilit_id": "1566333",
@@ -1439,7 +1531,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מגברי אוזניות"
     },
     {
       "halilit_id": "2004865",
@@ -1455,7 +1548,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מגברי אוזניות"
     },
     {
       "halilit_id": "1571209",
@@ -1471,7 +1565,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! מוניטורים אולפניים"
     },
     {
       "halilit_id": "2296470",
@@ -1487,7 +1582,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "1575319",
@@ -1503,7 +1599,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מוניטורים לאולפן"
     },
     {
       "halilit_id": "2300841",
@@ -1519,7 +1616,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כסאח! הגברה"
     },
     {
       "halilit_id": "2296239",
@@ -1535,7 +1633,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     },
     {
       "halilit_id": "2538423",
@@ -1551,7 +1650,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לציוד הגברה"
     },
     {
       "halilit_id": "2293688",
@@ -1567,7 +1667,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מיקסרים"
     }
   ]
 }

@@ -7,8 +7,12 @@
   "text_color": "#FFFFFF",
   "logo_url": null,
   "description": "Leading manufacturer of drum heads and percussion equipment.",
+  "category_tree": {
+    "brand_id": "remo",
+    "categories": []
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:37.474796Z",
+  "build_timestamp": "2026-01-16T09:28:33.692790Z",
   "stats": {
     "total_products": 224,
     "verified_products": 0,
@@ -31,7 +35,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6551600",
@@ -47,7 +52,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3636793",
@@ -63,7 +69,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3636807",
@@ -79,7 +86,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447823",
@@ -95,7 +103,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447825",
@@ -111,7 +120,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447827",
@@ -127,7 +137,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447828",
@@ -143,7 +154,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393749",
@@ -159,7 +171,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447829",
@@ -175,7 +188,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447840",
@@ -191,7 +205,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447841",
@@ -207,7 +222,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447842",
@@ -223,7 +239,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447843",
@@ -239,7 +256,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6552420",
@@ -255,7 +273,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447845",
@@ -271,7 +290,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3342694",
@@ -287,7 +307,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393766",
@@ -303,7 +324,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447846",
@@ -319,7 +341,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6546283",
@@ -335,7 +358,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393773",
@@ -351,7 +375,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447853",
@@ -367,7 +392,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447854",
@@ -383,7 +409,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447855",
@@ -399,7 +426,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6552431",
@@ -415,7 +443,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447856",
@@ -431,7 +460,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447857",
@@ -447,7 +477,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447858",
@@ -463,7 +494,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447859",
@@ -479,7 +511,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447860",
@@ -495,7 +528,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447861",
@@ -511,7 +545,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447862",
@@ -527,7 +562,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447863",
@@ -543,7 +579,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447864",
@@ -559,7 +596,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447865",
@@ -575,7 +613,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447866",
@@ -591,7 +630,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447879",
@@ -607,7 +647,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447880",
@@ -623,7 +664,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447881",
@@ -639,7 +681,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240330",
@@ -655,7 +698,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6485642",
@@ -671,7 +715,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240333",
@@ -687,7 +732,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447885",
@@ -703,7 +749,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447887",
@@ -719,7 +766,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447888",
@@ -735,7 +783,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447889",
@@ -751,7 +800,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447890",
@@ -767,7 +817,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240595",
@@ -783,7 +834,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447891",
@@ -799,7 +851,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447892",
@@ -815,7 +868,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551968",
@@ -831,7 +885,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "7205068",
@@ -847,7 +902,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "1731036",
@@ -863,7 +919,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6485982",
@@ -879,7 +936,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2743566",
@@ -895,7 +953,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348499",
@@ -911,7 +970,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348527",
@@ -927,7 +987,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348536",
@@ -943,7 +1004,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348538",
@@ -959,7 +1021,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348543",
@@ -975,7 +1038,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348554",
@@ -991,7 +1055,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348557",
@@ -1007,7 +1072,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3348559",
@@ -1023,7 +1089,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6552409",
@@ -1039,7 +1106,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6546266",
@@ -1055,7 +1123,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447852",
@@ -1071,7 +1140,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240308",
@@ -1087,7 +1157,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551668",
@@ -1103,7 +1174,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393781",
@@ -1119,7 +1191,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240315",
@@ -1135,7 +1208,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447869",
@@ -1151,7 +1225,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393791",
@@ -1167,7 +1242,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447872",
@@ -1183,7 +1259,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447873",
@@ -1199,7 +1276,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240322",
@@ -1215,7 +1293,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447874",
@@ -1231,7 +1310,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447875",
@@ -1247,7 +1327,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447877",
@@ -1263,7 +1344,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551689",
@@ -1279,7 +1361,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "4948369",
@@ -1295,7 +1378,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6485668",
@@ -1311,7 +1395,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393872",
@@ -1327,7 +1412,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393877",
@@ -1343,7 +1429,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393881",
@@ -1359,7 +1446,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393884",
@@ -1375,7 +1463,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3633629",
@@ -1391,7 +1480,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "617698",
@@ -1407,7 +1497,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "617699",
@@ -1423,7 +1514,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "617700",
@@ -1439,7 +1531,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "617702",
@@ -1455,7 +1548,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3631606",
@@ -1471,7 +1565,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6551562",
@@ -1487,7 +1582,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6485776",
@@ -1503,7 +1599,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551578",
@@ -1519,7 +1616,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240229",
@@ -1535,7 +1633,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447876",
@@ -1551,7 +1650,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447878",
@@ -1567,7 +1667,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3240327",
@@ -1583,7 +1684,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1393867",
@@ -1599,7 +1701,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3632904",
@@ -1615,7 +1718,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2142559",
@@ -1631,7 +1735,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127464",
@@ -1647,7 +1752,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2140269",
@@ -1663,7 +1769,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142573",
@@ -1679,7 +1786,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142578",
@@ -1695,7 +1803,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142579",
@@ -1711,7 +1820,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142589",
@@ -1727,7 +1837,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142594",
@@ -1743,7 +1854,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127495",
@@ -1759,7 +1871,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551698",
@@ -1775,7 +1888,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127510",
@@ -1791,7 +1905,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127513",
@@ -1807,7 +1922,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127516",
@@ -1823,7 +1939,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127521",
@@ -1839,7 +1956,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127525",
@@ -1855,7 +1973,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142629",
@@ -1871,7 +1990,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127528",
@@ -1887,7 +2007,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142633",
@@ -1903,7 +2024,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127532",
@@ -1919,7 +2041,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127534",
@@ -1935,7 +2058,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142639",
@@ -1951,7 +2075,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127536",
@@ -1967,7 +2092,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142384",
@@ -1983,7 +2109,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2127537",
@@ -1999,7 +2126,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142644",
@@ -2015,7 +2143,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3636662",
@@ -2031,7 +2160,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142649",
@@ -2047,7 +2177,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142397",
@@ -2063,7 +2194,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2135998",
@@ -2079,7 +2211,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142654",
@@ -2095,7 +2228,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2135999",
@@ -2111,7 +2245,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136000",
@@ -2127,7 +2262,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142402",
@@ -2143,7 +2279,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136003",
@@ -2159,7 +2296,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142659",
@@ -2175,7 +2313,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136004",
@@ -2191,7 +2330,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142663",
@@ -2207,7 +2347,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136009",
@@ -2223,7 +2364,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142670",
@@ -2239,7 +2381,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142674",
@@ -2255,7 +2398,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136024",
@@ -2271,7 +2415,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142681",
@@ -2287,7 +2432,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136027",
@@ -2303,7 +2449,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136028",
@@ -2319,7 +2466,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142684",
@@ -2335,7 +2483,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136029",
@@ -2351,7 +2500,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136030",
@@ -2367,7 +2517,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136031",
@@ -2383,7 +2534,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136032",
@@ -2399,7 +2551,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136033",
@@ -2415,7 +2568,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2142689",
@@ -2431,7 +2585,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136034",
@@ -2447,7 +2602,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2136035",
@@ -2463,7 +2619,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551701",
@@ -2479,7 +2636,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447894",
@@ -2495,7 +2653,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "444430",
@@ -2511,7 +2670,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "444431",
@@ -2527,7 +2687,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "444432",
@@ -2543,7 +2704,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "444433",
@@ -2559,7 +2721,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "444434",
@@ -2575,7 +2738,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "444436",
@@ -2591,7 +2755,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "444437",
@@ -2607,7 +2772,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2311940",
@@ -2623,7 +2789,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2311943",
@@ -2639,7 +2806,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "447751",
@@ -2655,7 +2823,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2311949",
@@ -2671,7 +2840,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2311958",
@@ -2687,7 +2857,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "3936030",
@@ -2703,7 +2874,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "446751",
@@ -2719,7 +2891,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2311970",
@@ -2735,7 +2908,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448571",
@@ -2751,7 +2925,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448575",
@@ -2767,7 +2942,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "7332164",
@@ -2783,7 +2959,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "3936074",
@@ -2799,7 +2976,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "447837",
@@ -2815,7 +2993,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2311905",
@@ -2831,7 +3010,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2311921",
@@ -2847,7 +3027,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2311932",
@@ -2863,7 +3044,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6551320",
@@ -2879,7 +3061,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551328",
@@ -2895,7 +3078,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551338",
@@ -2911,7 +3095,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551340",
@@ -2927,7 +3112,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "1394801",
@@ -2943,7 +3129,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447835",
@@ -2959,7 +3146,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447836",
@@ -2975,7 +3163,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447838",
@@ -2991,7 +3180,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551441",
@@ -3007,7 +3197,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לתופים וכלי הקשה"
     },
     {
       "halilit_id": "447893",
@@ -3023,7 +3214,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "448560",
@@ -3039,7 +3231,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448561",
@@ -3055,7 +3248,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448562",
@@ -3071,7 +3265,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "447848",
@@ -3087,7 +3282,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447849",
@@ -3103,7 +3299,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447850",
@@ -3119,7 +3316,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447851",
@@ -3135,7 +3333,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "2312061",
@@ -3151,7 +3350,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "2312064",
@@ -3167,7 +3367,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6551727",
@@ -3183,7 +3384,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "446175",
@@ -3199,7 +3401,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448567",
@@ -3215,7 +3418,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448569",
@@ -3231,7 +3435,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448570",
@@ -3247,7 +3452,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6435359",
@@ -3263,7 +3469,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "3636685",
@@ -3279,7 +3486,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447833",
@@ -3295,7 +3503,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447834",
@@ -3311,7 +3520,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551832",
@@ -3327,7 +3537,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551861",
@@ -3343,7 +3554,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "447826",
@@ -3359,7 +3571,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "448555",
@@ -3375,7 +3588,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448559",
@@ -3391,7 +3605,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448564",
@@ -3407,7 +3622,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448565",
@@ -3423,7 +3639,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "448566",
@@ -3439,7 +3656,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6551351",
@@ -3455,7 +3673,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "448573",
@@ -3471,7 +3690,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "6551366",
@@ -3487,7 +3707,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "6551368",
@@ -3503,7 +3724,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "825687",
@@ -3519,7 +3741,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "447870",
@@ -3535,7 +3758,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "עורות לתופים"
     },
     {
       "halilit_id": "446365",
@@ -3551,7 +3775,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "3631548",
@@ -3567,7 +3792,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "617708",
@@ -3583,7 +3809,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "כלי הקשה"
     },
     {
       "halilit_id": "617709",
@@ -3599,7 +3826,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "אביזרים לתופים וכלי הקשה"
     }
   ]
 }

@@ -32,6 +32,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from core.cleaner import DataCleaner
 from core.matcher import HalilitMatcher
+from core.brand_contracts import BrandContractManager
 
 # Configure logging
 logging.basicConfig(
@@ -54,6 +55,7 @@ class CatalogBuilder:
         
         self.cleaner = DataCleaner()
         self.matcher = HalilitMatcher()
+        self.contract_manager = BrandContractManager()
         
         # Load brand metadata (logos, colors, etc.)
         self.brands_metadata = self._load_brands_metadata()
@@ -175,6 +177,8 @@ class CatalogBuilder:
         
         for product in validated_products:
             enriched = self.matcher.match_and_enrich(product, halilit_data)
+            # Apply brand contract (category hierarchy)
+            enriched = self.contract_manager.enrich_product(enriched)
             enriched_products.append(enriched)
         
         matched_count = sum(1 for p in enriched_products if p.get("verified"))
@@ -194,6 +198,9 @@ class CatalogBuilder:
         # Get brand metadata (colors, logo, description)
         brand_meta = self.brands_metadata.get(brand_id, {})
         
+        # Get category tree from contract
+        category_tree = self.contract_manager.get_category_tree(brand_id)
+        
         output_data = {
             "brand_id": brand_id,
             "brand_name": brand_meta.get("name", brand_data.get("brand_name", brand_id.title())),
@@ -203,6 +210,7 @@ class CatalogBuilder:
             "text_color": brand_meta.get("text_color"),
             "logo_url": brand_meta.get("logo_url"),
             "description": brand_meta.get("description"),
+            "category_tree": category_tree,
             "source": "v3.6_static_build",
             "build_timestamp": self._get_timestamp(),
             "stats": {

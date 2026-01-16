@@ -7,8 +7,12 @@
   "text_color": "#FFFFFF",
   "logo_url": null,
   "description": "Classic American drum kit manufacturer.",
+  "category_tree": {
+    "brand_id": "rogers",
+    "categories": []
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:37.494813Z",
+  "build_timestamp": "2026-01-16T09:28:33.714203Z",
   "stats": {
     "total_products": 9,
     "verified_products": 0,
@@ -31,7 +35,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     },
     {
       "halilit_id": "7615119",
@@ -47,7 +52,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     },
     {
       "halilit_id": "3412121",
@@ -63,7 +69,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     },
     {
       "halilit_id": "7615723",
@@ -79,7 +86,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     },
     {
       "halilit_id": "3412214",
@@ -95,7 +103,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "מערכות תופים"
     },
     {
       "halilit_id": "3412519",
@@ -111,7 +120,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     },
     {
       "halilit_id": "3412430",
@@ -127,7 +137,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     },
     {
       "halilit_id": "2510023",
@@ -143,7 +154,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     },
     {
       "halilit_id": "2510053",
@@ -159,7 +171,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "סנרים, טמטמים ותופי בס"
     }
   ]
 }

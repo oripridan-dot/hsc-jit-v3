@@ -7,8 +7,12 @@
   "text_color": "#FFFFFF",
   "logo_url": null,
   "description": "Digital guitar effects processor and pedalboard system.",
+  "category_tree": {
+    "brand_id": "headrush-fx",
+    "categories": []
+  },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:11:34.478621Z",
+  "build_timestamp": "2026-01-16T09:28:31.012400Z",
   "stats": {
     "total_products": 4,
     "verified_products": 0,
@@ -35,7 +39,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "פדלים ומולטי אפקט"
     },
     {
       "halilit_id": "7940880",
@@ -54,7 +59,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "פדלים ומולטי אפקט"
     },
     {
       "halilit_id": "6000997",
@@ -73,7 +79,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "פדלים ומולטי אפקט"
     },
     {
       "halilit_id": "1517026",
@@ -92,7 +99,8 @@
       "source": "halilit",
       "distributor": "Halilit Music Center",
       "verified": false,
-      "verification_confidence": 0.0
+      "verification_confidence": 0.0,
+      "original_category": "פדלים ומולטי אפקט"
     }
   ]
 }
