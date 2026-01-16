@@ -40,16 +40,22 @@ export interface ImageEnhancement {
 }
 
 export interface Prediction {
-  id: string;
+  id?: string; // Optional for v3.6 static products
   name: string;
   // Support both schema structures just in case
   images?: { main: string; thumbnail?: string };
   img?: string; // from blueprint example "img" in prediction event
+  image_url?: string; // v3.6 static format
   brand?: string;
   production_country?: string;
   brand_identity?: BrandIdentity;
-  score: number; // The user used score in App.tsx "item.score > 0.8" but it was missing in the interface shown before?
+  score?: number; // The user used score in App.tsx "item.score > 0.8"
+  confidence?: number; // v3.6 verification confidence
   category?: string; // Also used in App.tsx
+  brand_product_url?: string; // v3.6 product URL
+  verified?: boolean; // v3.6 Halilit verified
+  match_quality?: 'excellent' | 'good'; // v3.6 match quality
+  source?: 'halilit' | 'brand'; // v3.6 source indicator
 }
 
 interface WebSocketStore {
@@ -74,6 +80,7 @@ interface WebSocketStore {
     openBrandModal: (brand: BrandIdentity) => void;
     closeBrandModal: () => void;
     reset: () => void;
+    setPredictions: (predictions: Prediction[]) => void; // v3.6: For instant search
   };
 }
 
@@ -186,6 +193,11 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
 
     openBrandModal: (brand: BrandIdentity) => set({ selectedBrand: brand }),
     closeBrandModal: () => set({ selectedBrand: null }),
-    reset: () => set({ status: 'IDLE', predictions: [], lastPrediction: null, messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null, scenarioMode: 'general' })
+    reset: () => set({ status: 'IDLE', predictions: [], lastPrediction: null, messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null, scenarioMode: 'general' }),
+    
+    // v3.6: Direct prediction setter for instant search
+    setPredictions: (predictions: Prediction[]) => {
+      set({ predictions, status: 'SNIFFING' });
+    }
   }
 }));

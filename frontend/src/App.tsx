@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useWebSocketStore, type Prediction } from './store/useWebSocketStore';
+import { catalogLoader, instantSearch } from './lib';
 import { ChatView } from './components/ChatView';
 import { BrandExplorer } from './components/BrandExplorer';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
@@ -26,14 +27,41 @@ function App() {
   const [connectionAttempted, setConnectionAttempted] = useState(false);
   const connectionAttemptedRef = useRef(false);
 
-  // Hydrate full catalog on mount
+  // v3.6: Load static catalog and initialize search on mount
   useEffect(() => {
-      fetch(`/api/products?v=${Date.now()}`, { cache: 'no-store' })
-        .then(res => res.json())
-        .then(data => {
-            if (data.products) setFullCatalog(data.products);
-        })
-        .catch(console.error);
+    const initCatalog = async () => {
+      try {
+        console.log('🚀 v3.6: Initializing static catalog...');
+        
+        // Initialize instant search (loads all products)
+        await instantSearch.initialize();
+        
+        // Get all products for display
+        const products = await catalogLoader.loadAllProducts();
+        
+        // Convert to Prediction format for compatibility
+        const catalogProducts: Prediction[] = products.map(p => ({
+          name: p.name,
+          brand: p.brand,
+          category: p.category || 'Uncategorized',
+          confidence: p.verification_confidence || 0,
+          source: p.verified ? 'halilit' : 'brand',
+          image_url: p.image_url,
+          brand_product_url: p.brand_product_url || p.detail_url,
+          verified: p.verified,
+          match_quality: p.match_quality
+        }));
+        
+        setFullCatalog(catalogProducts);
+        setBackendAvailable(true);
+        console.log(`✅ Catalog loaded: ${products.length} products`);
+      } catch (error) {
+        console.error('❌ Failed to load catalog:', error);
+        setBackendAvailable(false);
+      }
+    };
+    
+    initCatalog();
   }, []);
 
   // Build a consistent tree: use full catalog for browsing, predictions only during active search
@@ -98,11 +126,31 @@ function App() {
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const txt = e.target.value;
     setInputText(txt);
-    // Show default state (empty predictions, no browse mode) when textbox is empty
+    
+    // v3.6: Use instant search instead of WebSocket
     if (txt.length === 0) {
-        actions.reset(); // Reset to default state
-    } else if (txt.length > 2) {
-        actions.sendTyping(txt);
+      actions.reset(); // Reset to default state
+    } else if (txt.length >= 2) {
+      // Instant search with Fuse.js
+      if (instantSearch.isInitialized()) {
+        const searchResults = instantSearch.search(txt, { limit: 100 });
+        
+        // Convert to Prediction format
+        const predictions: Prediction[] = searchResults.map(p => ({
+          name: p.name,
+          brand: p.brand,
+          category: p.category || 'Uncategorized',
+          confidence: p.verification_confidence || 0,
+          source: p.verified ? 'halilit' : 'brand',
+          image_url: p.image_url,
+          brand_product_url: p.brand_product_url || p.detail_url,
+          verified: p.verified,
+          match_quality: p.match_quality
+        }));
+        
+        // Update predictions directly (bypass WebSocket)
+        actions.setPredictions(predictions);
+      }
     }
   };
 
