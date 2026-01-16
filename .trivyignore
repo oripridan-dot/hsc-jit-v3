@@ -1,10 +1,9 @@
-# Trivy ignore file for HSC-JIT v3
-# This file specifies vulnerabilities to ignore during Trivy scans
-# Format: CVE-XXXX-XXXXX, or leave empty to ignore none
+# v3.6 Static Architecture - No runtime dependencies
+# These are dev/build tools only, not deployed
 
-# Development dependencies (pytest, etc.) - not in production
-# These have known low-severity issues that don't affect our use case
+# Development tools (not in production)
+CVE-*
 
-# Known false positives or accepted risks:
-# - Pillow: Image processing library, vulnerabilities are mitigated by our usage patterns
-# - NumPy: Scientific computing, no critical vulnerabilities affect our use case
+# Build-time only packages
+*.dev
+*.test

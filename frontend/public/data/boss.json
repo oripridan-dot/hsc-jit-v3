@@ -233,11 +233,11 @@
     ]
   },
   "source": "v3.6_static_build",
-  "build_timestamp": "2026-01-16T09:28:30.894180Z",
+  "build_timestamp": "2026-01-16T10:53:32.344933Z",
   "stats": {
     "total_products": 197,
-    "verified_products": 0,
-    "verification_rate": 0.0,
+    "verified_products": 2,
+    "verification_rate": 1.02,
     "original_count": 546,
     "removed_duplicates": 349
   },
@@ -1199,8 +1199,11 @@
         "tagline": "Slimline Backpack for the RC-505mkII and RC-505 Loop Stations"
       },
       "source": "brand_website",
-      "verified": false,
-      "verification_confidence": 0.0,
+      "verified": true,
+      "verification_confidence": 0.8936,
+      "halilit_price": "4520",
+      "halilit_category": "תיקים לגיטרה",
+      "match_quality": "good",
       "original_category": "Carrying Bag",
       "main_category": "accessories",
       "main_category_name": "Accessories",
@@ -2073,8 +2076,11 @@
         "tagline": "Wireless Foot Control for Digital Music Scores, YouTube, DAWs, Instruments, and Beyond"
       },
       "source": "brand_website",
-      "verified": false,
-      "verification_confidence": 0.0,
+      "verified": true,
+      "verification_confidence": 0.9153,
+      "halilit_price": "5640",
+      "halilit_category": "פדלים ומולטי אפקט ",
+      "match_quality": "good",
       "original_category": "Wireless Footswitch",
       "main_category": "wireless",
       "main_category_name": "Wireless",

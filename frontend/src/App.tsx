@@ -277,8 +277,8 @@ function App() {
                         <div className="h-full flex flex-col items-center justify-center text-text-muted gap-6 p-8">
                             <div className="text-7xl animate-bounce-slow">🌌</div>
                             <div className="text-center space-y-3">
-                                <h2 className="text-2xl font-bold text-text-primary">Halilit Smart Catalog v3.4</h2>
-                                <p className="text-sm text-accent-primary font-semibold">Unified Router Architecture</p>
+                                <h2 className="text-2xl font-bold text-text-primary">Halilit Smart Catalog v3.6</h2>
+                                <p className="text-sm text-accent-primary font-semibold">Static-First Architecture</p>
                                 <p className="text-text-muted max-w-md">
                                     {predictions.length === 0 ? (
                                         <>Loading catalog... <span className="animate-pulse">●</span></>

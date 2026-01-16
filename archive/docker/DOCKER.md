@@ -1,4 +1,4 @@
-# HSC JIT v3 - Docker Integration Guide
+# HSC JIT v3.6 - Docker Integration Guide (Legacy)
 
 ## 🐳 Quick Start
 
