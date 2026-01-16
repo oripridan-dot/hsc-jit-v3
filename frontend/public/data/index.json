@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-01-16T09:06:58.330770Z",
+  "build_timestamp": "2026-01-16T09:11:37.761004Z",
   "version": "3.6",
   "brands": [
     {
@@ -96,7 +96,7 @@
       "id": "boss",
       "name": "Boss (Roland)",
       "brand_color": "#000000",
-      "logo_url": null,
+      "logo_url": "https://www.boss.info/static/boss_logo.svg",
       "product_count": 197,
       "verified_count": 0,
       "data_file": "boss.json"
@@ -249,7 +249,7 @@
       "id": "nord",
       "name": "Nord Keyboards",
       "brand_color": "#1F4E78",
-      "logo_url": null,
+      "logo_url": "https://www.nordkeyboards.com/sites/default/files/files/nord-logo.svg",
       "product_count": 13,
       "verified_count": 0,
       "data_file": "nord.json"
@@ -276,7 +276,7 @@
       "id": "pearl",
       "name": "Pearl Corporation",
       "brand_color": "#E8E8E8",
-      "logo_url": null,
+      "logo_url": "https://www.pearldrum.com/static/pearl_logo.svg",
       "product_count": 364,
       "verified_count": 0,
       "data_file": "pearl.json"
@@ -321,7 +321,7 @@
       "id": "roland",
       "name": "Roland Corporation",
       "brand_color": "#ED1C24",
-      "logo_url": null,
+      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
       "product_count": 229,
       "verified_count": 0,
       "data_file": "roland.json"

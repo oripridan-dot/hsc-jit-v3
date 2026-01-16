@@ -4,7 +4,7 @@
       "id": "roland",
       "name": "Roland Corporation",
       "website": "https://www.roland.com",
-      "logo_url": null,
+      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
       "hq": "Shizuoka, Japan",
       "production_locations": [
         "Japan",
@@ -20,7 +20,7 @@
       "id": "nord",
       "name": "Nord Keyboards",
       "website": "https://www.nordkeyboards.com",
-      "logo_url": null,
+      "logo_url": "https://www.nordkeyboards.com/sites/default/files/files/nord-logo.svg",
       "hq": "Stockholm, Sweden",
       "production_locations": [
         "Sweden"
@@ -35,7 +35,7 @@
       "id": "moog",
       "name": "Moog Music",
       "website": "https://www.moogmusic.com",
-      "logo_url": null,
+      "logo_url": "https://www.moogmusic.com/sites/default/files/moog_logo.svg",
       "hq": "Asheville, North Carolina, USA",
       "production_locations": [
         "USA"
@@ -50,7 +50,7 @@
       "id": "korg",
       "name": "Korg",
       "website": "https://www.korg.com",
-      "logo_url": null,
+      "logo_url": "https://www.korg.com/static/korg_logo.svg",
       "hq": "Tokyo, Japan",
       "production_locations": [
         "Japan",
@@ -66,7 +66,7 @@
       "id": "yamaha",
       "name": "Yamaha Corporation",
       "website": "https://www.yamaha.com",
-      "logo_url": null,
+      "logo_url": "https://www.yamahasynth.com/images/logo.svg",
       "hq": "Hamamatsu, Japan",
       "production_locations": [
         "Japan",
@@ -83,7 +83,7 @@
       "id": "boss",
       "name": "Boss (Roland)",
       "website": "https://www.boss.info",
-      "logo_url": null,
+      "logo_url": "https://www.boss.info/static/boss_logo.svg",
       "hq": "Shizuoka, Japan",
       "production_locations": [
         "Japan"
@@ -98,7 +98,7 @@
       "id": "pearl",
       "name": "Pearl Corporation",
       "website": "https://www.pearldrum.com",
-      "logo_url": null,
+      "logo_url": "https://www.pearldrum.com/static/pearl_logo.svg",
       "hq": "Shenzhen, China",
       "production_locations": [
         "China",
@@ -114,7 +114,7 @@
       "id": "paiste",
       "name": "Paiste",
       "website": "https://www.paiste.com",
-      "logo_url": null,
+      "logo_url": "https://www.paiste.com/static/paiste_logo.svg",
       "hq": "Nottwil, Switzerland",
       "production_locations": [
         "Switzerland"
