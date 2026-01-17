@@ -7,6 +7,9 @@ echo "🚀 Starting HSC-JIT V3.7 Development Environment..."
 echo "📦 Starting Redis server..."
 sudo service redis-server start
 
+# Wait for Redis to initialize
+sleep 2
+
 # Check Redis status
 if sudo service redis-server status > /dev/null 2>&1; then
     echo "✅ Redis is running"
