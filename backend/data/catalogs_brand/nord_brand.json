@@ -1,113 +1,123 @@
 {
   "brand_id": "nord",
   "source": "brand_website",
-  "total_products": 13,
+  "total_products": 24,
   "products": [
     {
-      "name": "Nord Drum 3P",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/N3P_logo_Xheight.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-drum-3p",
-      "brand": "Nord",
-      "category": "Drum",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-drum-3p"
-    },
-    {
-      "name": "Nord Electro 6D 73",
+      "name": "Nord Electro 6",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
-      "brand": "Nord",
-      "category": "Electro",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6"
+      "category": "Nord Electro 6The Nord Electro 6 combines our award-winning emulations of vintage electro mechanical and acoustic instruments in an ultra-portable package. With 3 independent sound sections, a new streamlined user interface and the addition of Seamless Transitions, we're proud to present the most powerful and flexible Electro ever - a refined modern classic.Read more"
     },
     {
-      "name": "Nord Electro 6D 61",
+      "name": "Nord Electro 6",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
-      "brand": "Nord",
-      "category": "Electro",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6"
+      "category": "Nord Electro 6The Nord Electro 6 combines our award-winning emulations of vintage electro mechanical and acoustic instruments in an ultra-portable package. With 3 independent sound sections, a new streamlined user interface and the addition of Seamless Transitions, we're proud to present the most powerful and flexible Electro ever - a refined modern classic.Read more"
     },
     {
-      "name": "Nord Electro 6 HP",
+      "name": "Nord Electro 6",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-electro-6",
-      "brand": "Nord",
-      "category": "Electro",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-electro-6"
+      "category": "The Nord Electro 6 combines our award-winning emulations of vintage electro mechanical and acoustic instruments in an ultra-portable package. With 3 independent sound sections, a new streamlined user interface and the addition of Seamless Transitions, we're proud to present the most powerful and flexible Electro ever - a refined modern classic."
     },
     {
-      "name": "Nord Grand",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Nord_Grand_2_logo.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-grand-2",
-      "brand": "Nord",
-      "category": "Grand",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-grand-2"
-    },
-    {
-      "name": "Nord Lead A1",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NLA1_logo_Xheight.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-lead-a1",
-      "brand": "Nord",
-      "category": "Lead",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-lead-a1"
-    },
-    {
-      "name": "Nord Organ 3",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/AgGiJQoE/Organ3%20logo%20beta.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-organ-3",
-      "brand": "Nord",
-      "category": "Organ",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-organ-3"
-    },
-    {
-      "name": "Nord Piano 6 88",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/DCBsGZq6/Nord%20Piano%206%20logo.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-piano-6",
-      "brand": "Nord",
-      "category": "Piano",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-piano-6"
-    },
-    {
-      "name": "Nord Piano 6 73",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/DCBsGZq6/Nord%20Piano%206%20logo.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-piano-6",
-      "brand": "Nord",
-      "category": "Piano",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-piano-6"
-    },
-    {
-      "name": "Nord Stage 4 88",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
-      "brand": "Nord",
-      "category": "Stage",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4"
-    },
-    {
-      "name": "Nord Stage 4 73",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
-      "brand": "Nord",
-      "category": "Stage",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4"
-    },
-    {
-      "name": "Nord Stage 4 Compact",
-      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Stage4_logo.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-stage-4",
-      "brand": "Nord",
-      "category": "Stage",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-stage-4"
+      "name": "Nord Electro 6",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NE6_logo_Xheight.svg"
     },
     {
       "name": "Nord Wave 2",
       "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NW2_logo_Xheight.svg",
-      "detail_url": "https://www.nordkeyboards.com/products/nord-wave-2",
-      "brand": "Nord",
-      "category": "Wave",
-      "brand_product_url": "https://www.nordkeyboards.com/products/nord-wave-2"
+      "category": "Nord Wave 2The Nord Wave 2 is a powerful 4-part performance synthesizer combining Virtual Analog synthesis, Samples, FM and Wavetable with an intuitive layer-focused interface. With 48 voice polyphony, innovative performance features and hands-on controls, the Nord Wave 2 offers outstanding sonic possibilities with advanced layering and tweaking on the fly.Read more"
+    },
+    {
+      "name": "Nord Wave 2",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NW2_logo_Xheight.svg",
+      "category": "Nord Wave 2The Nord Wave 2 is a powerful 4-part performance synthesizer combining Virtual Analog synthesis, Samples, FM and Wavetable with an intuitive layer-focused interface. With 48 voice polyphony, innovative performance features and hands-on controls, the Nord Wave 2 offers outstanding sonic possibilities with advanced layering and tweaking on the fly.Read more"
+    },
+    {
+      "name": "Nord Wave 2",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NW2_logo_Xheight.svg",
+      "category": "The Nord Wave 2 is a powerful 4-part performance synthesizer combining Virtual Analog synthesis, Samples, FM and Wavetable with an intuitive layer-focused interface. With 48 voice polyphony, innovative performance features and hands-on controls, the Nord Wave 2 offers outstanding sonic possibilities with advanced layering and tweaking on the fly."
+    },
+    {
+      "name": "Nord Wave 2",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NW2_logo_Xheight.svg"
+    },
+    {
+      "name": "Nord Lead A1",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NLA1_logo_Xheight.svg",
+      "category": "Nord Lead A1The Nord Lead A1 is a 4-part multitimbral synth with a classic layout, extensive filter options and effects. With its powerful panel interface and pre-programmed modulation matrix, creating unique and exciting sounds is very inspirational and quick.Read more"
+    },
+    {
+      "name": "Nord Lead A1",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NLA1_logo_Xheight.svg",
+      "category": "Nord Lead A1The Nord Lead A1 is a 4-part multitimbral synth with a classic layout, extensive filter options and effects. With its powerful panel interface and pre-programmed modulation matrix, creating unique and exciting sounds is very inspirational and quick.Read more"
+    },
+    {
+      "name": "Nord Lead A1",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NLA1_logo_Xheight.svg",
+      "category": "The Nord Lead A1 is a 4-part multitimbral synth with a classic layout, extensive filter options and effects. With its powerful panel interface and pre-programmed modulation matrix, creating unique and exciting sounds is very inspirational and quick."
+    },
+    {
+      "name": "Nord Lead A1",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/NLA1_logo_Xheight.svg"
+    },
+    {
+      "name": "Nord Drum 3P",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/N3P_logo_Xheight.svg",
+      "category": "Nord Drum 3PThe super compact Nord Drum 3P combines stunning playability with unlimited sound design possibilities. New features include integrated multi-pad, Reverb and Delay effects, a simplified sound selection mode and new Sound Banks for quickly creating custom kits on the fly.Read more"
+    },
+    {
+      "name": "Nord Drum 3P",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/N3P_logo_Xheight.svg",
+      "category": "Nord Drum 3PThe super compact Nord Drum 3P combines stunning playability with unlimited sound design possibilities. New features include integrated multi-pad, Reverb and Delay effects, a simplified sound selection mode and new Sound Banks for quickly creating custom kits on the fly.Read more"
+    },
+    {
+      "name": "Nord Drum 3P",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/N3P_logo_Xheight.svg",
+      "category": "The super compact Nord Drum 3P combines stunning playability with unlimited sound design possibilities. New features include integrated multi-pad, Reverb and Delay effects, a simplified sound selection mode and new Sound Banks for quickly creating custom kits on the fly."
+    },
+    {
+      "name": "Nord Drum 3P",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/N3P_logo_Xheight.svg"
+    },
+    {
+      "name": "Accessories",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Accessories_logo_Xheight.svg",
+      "category": "AccessoriesEnhance your Nord instrument with essential accessories such as pedals, stands, cases, and the Nord Piano Monitor.Read more"
+    },
+    {
+      "name": "Accessories",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Accessories_logo_Xheight.svg",
+      "category": "AccessoriesEnhance your Nord instrument with essential accessories such as pedals, stands, cases, and the Nord Piano Monitor.Read more"
+    },
+    {
+      "name": "Accessories",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Accessories_logo_Xheight.svg",
+      "category": "Enhance your Nord instrument with essential accessories such as pedals, stands, cases, and the Nord Piano Monitor."
+    },
+    {
+      "name": "Accessories",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Accessories_logo_Xheight.svg"
+    },
+    {
+      "name": "Legacy products",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Legacy_products_logo_Xheight.svg",
+      "category": "Legacy productsTake a look at Nord models from the past. Such as the first Nord Lead from 1995 to previous generations of Stage, Electro, Organs, Wave and the legendary Nord Modular.Read more"
+    },
+    {
+      "name": "Legacy products",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Legacy_products_logo_Xheight.svg",
+      "category": "Legacy productsTake a look at Nord models from the past. Such as the first Nord Lead from 1995 to previous generations of Stage, Electro, Organs, Wave and the legendary Nord Modular.Read more"
+    },
+    {
+      "name": "Legacy products",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Legacy_products_logo_Xheight.svg",
+      "category": "Take a look at Nord models from the past. Such as the first Nord Lead from 1995 to previous generations of Stage, Electro, Organs, Wave and the legendary Nord Modular."
+    },
+    {
+      "name": "Legacy products",
+      "image_url": "https://assets.nordkeyboards.com/nord-assets-prod/media/documents/Legacy_products_logo_Xheight.svg"
     }
   ],
-  "timestamp": "2026-01-15T23:47:57.126740",
+  "timestamp": "2026-01-15T11:36:20.182270",
   "status": "success"
 }

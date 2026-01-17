@@ -201,13 +201,14 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                          >
                              All ({items.length})
                          </button>
+                         <div className="flex gap-2 pb-2 overflow-x-auto scrollbar-hide">
                          {categories.map(cat => {
                              const count = items.filter(item => (item as any).category === cat).length;
                              return (
                                  <button
                                      key={cat}
                                      onClick={() => setSelectedCategory(cat)}
-                                     className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
+                                     className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
                                          selectedCategory === cat 
                                              ? 'bg-accent-primary text-text-primary shadow-lg' 
                                              : 'bg-bg-card/60 text-text-muted hover:bg-bg-card border border-border-subtle'
@@ -217,6 +218,7 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                                  </button>
                              );
                          })}
+                         </div>
                      </div>
                  )}
              </div>
@@ -229,11 +231,30 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
              ) : (
                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
                      {filteredItems.map((item, idx: number) => {
-                         const imageUrl = item.images?.main || item.images?.thumbnail || (item as any).img;
+                         // Get image URL - prioritize image_url for Roland products
+                         let imageUrl = (item as any).image_url || '';
+                         
+                         // Fallback to other formats if image_url is not set
+                         if (!imageUrl && item.images) {
+                             if (typeof item.images === 'object' && !Array.isArray(item.images)) {
+                                 imageUrl = item.images.main || item.images.thumbnail || '';
+                             } else if (Array.isArray(item.images) && item.images.length > 0) {
+                                 const firstImg = item.images[0];
+                                 imageUrl = typeof firstImg === 'string' ? firstImg : firstImg?.url || '';
+                             }
+                         }
+                         if (!imageUrl) {
+                             imageUrl = (item as any).img || (item as any).image || '';
+                         }
+                         
+                         // Debug log for first item
+                         if (idx === 0) {
+                             console.log('First product:', item.name, 'imageUrl:', imageUrl);
+                         }
                          
                          return (
                          <motion.button
-                             key={item.id}
+                             key={item.id || idx}
                              initial={{ opacity: 0, scale: 0.95 }}
                              animate={{ opacity: 1, scale: 1 }}
                              transition={{ delay: Math.min(idx * 0.02, 0.5) }}
@@ -253,9 +274,11 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                                  </div>
                                  {imageUrl ? (
                                     <img 
-                                        src={`/api/images/optimize/${imageUrl}?preset=thumbnail`}
+                                        src={imageUrl}
                                         alt={item.name}
                                         className="max-w-full max-h-full object-contain drop-shadow-lg"
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer"
                                         onError={(e) => {
                                             e.currentTarget.style.display = 'none';
                                             const parent = e.currentTarget.parentElement;

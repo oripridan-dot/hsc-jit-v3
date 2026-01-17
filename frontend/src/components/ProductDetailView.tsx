@@ -43,8 +43,26 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
 
   // Get image list - use useMemo to prevent dependency issues
   const images = useMemo(() => {
-    return product.images && product.images.length > 0 
-      ? product.images 
+    // Handle array of image objects (Roland format)
+    if (product.images && Array.isArray(product.images)) {
+      return product.images.map((img: any) => 
+        typeof img === 'string' ? img : img?.url || img
+      ).filter(Boolean);
+    }
+    
+    // Handle images object with main/thumbnail/gallery
+    if (product.images && typeof product.images === 'object') {
+      const imgs = [];
+      if ((product.images as any).main) imgs.push((product.images as any).main);
+      if ((product.images as any).gallery && Array.isArray((product.images as any).gallery)) {
+        imgs.push(...(product.images as any).gallery);
+      }
+      if (imgs.length > 0) return imgs;
+    }
+    
+    // Fallback to single image
+    return product.images && (product.images as any).length > 0 
+      ? product.images as string[]
       : [product.image];
   }, [product.images, product.image]);
 

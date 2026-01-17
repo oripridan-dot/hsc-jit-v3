@@ -109,7 +109,7 @@ interface DualSourceIntelligenceProps {
 }
 
 export const DualSourceIntelligence: React.FC<DualSourceIntelligenceProps> = ({ isOpen, onClose }) => {
-  const [data, setData] = useState<DualSourceData | null>(null);
+  const [data] = useState<DualSourceData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -120,10 +120,8 @@ export const DualSourceIntelligence: React.FC<DualSourceIntelligenceProps> = ({ 
       try {
         setLoading(true);
         setError(null);
-        const response = await fetch(`/api/dual-source-intelligence?v=${Date.now()}`, { cache: 'no-store' });
-        if (!response.ok) throw new Error('Failed to fetch dual-source intelligence');
-        const result = await response.json();
-        setData(result);
+        // Static Mode: No dual-source API available
+        setError('Dual Source Intelligence not available in Static Mode');
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error');
         console.error('Failed to fetch dual-source intelligence:', err);

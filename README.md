@@ -1,59 +1,33 @@
-# HSC-JIT v3.6 - Static-First Architecture
+# HSC-JIT V3.7.0
 
-**Pure static catalog system with zero runtime infrastructure**
+**Product Hierarchy + JIT RAG**
 
-## 🎯 What is v3.6?
+> **System Status**: Active Development | **Last Synced**: 2026-01-17
 
-v3.6 is a complete architectural transformation from API-based (v3.5) to **static-first**:
+The "Fresh Start" architecture (V3.7) moves beyond simple static lists to a rich, relationship-aware product hierarchy with Just-In-Time RAG capabilities.
 
-- ❌ **Removed**: FastAPI, Redis, Celery, WebSockets, databases
-- ✅ **Added**: Offline build pipeline, static JSON, instant search
-- 🚀 **Result**: Zero infrastructure, <50ms search, instant deploy
+## 📚 Documentation
 
-## Quick Start
+The official documentation is located in the [`docs/`](docs/) directory.
 
-### Build Static Catalogs
+*   [**Start Here: Quick Start Guide**](docs/getting-started/quick-start.md)
+*   [Documentation Index](docs/README.md)
+*   [Architecture Overview](docs/architecture/product-hierarchy.md)
+
+## ⚡ Quick Setup
 
 ```bash
+# Backend Setup
 cd backend
-python build.py --brand=all
+python test_hierarchy.py
+# Run the orchestrator (The ONE entry point)
+python orchestrate_brand.py --brand roland --max-products 50
 ```
 
-**Output**: `frontend/public/data/*.json` (2,026 products across 38 brands)
+## ⚠️ Architectural Context
 
-### Run Frontend
+*   **Current Mode**: Product Hierarchy + JIT RAG
+*   **Core Orchestrator**: `backend/orchestrate_brand.py`
+*   **Data Policy**: Brand Official Site (Features) + Halilit (Price/SKU)
 
-```bash
-cd frontend
-pnpm install
-pnpm dev
-```
-
-**Result**: Instant <50ms search with Fuse.js, no backend needed
-
-## Key Features
-
-### 1. Brand Contracts System
-
-Each brand has a contract defining **12 main categories** with subcategories:
-
-- **Boss**: Effects Pedals, Loop Station, Multi-Effects, etc.
-- **Roland**: Pianos, Synthesizers, Drums & Percussion, etc.
-
-Products map: `"Blues Driver" → Effects Pedals / Distortion`
-
-### 2. Static JSON Output (2MB total, 2,026 products)
-
-### 3. Instant Search (<50ms with Fuse.js)
-
-## Current Status
-
-✅ **Production Ready - v3.6.0**  
-📊 38 brands, 2,026 products  
-⚡ <50ms search, $0 infrastructure  
-🚀 Deploy in 30 seconds
-
----
-
-**Documentation**: See [V3.6_STATIC_BUILD_SYSTEM.md](V3.6_STATIC_BUILD_SYSTEM.md)  
-**Last Updated**: January 16, 2026
+For legacy V3.6 docs, see [`archive/v3.6-docs/`](archive/v3.6-docs/).

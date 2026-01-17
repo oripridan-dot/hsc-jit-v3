@@ -194,7 +194,7 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
     openBrandModal: (brand: BrandIdentity) => set({ selectedBrand: brand }),
     closeBrandModal: () => set({ selectedBrand: null }),
     reset: () => set({ status: 'IDLE', predictions: [], lastPrediction: null, messages: [], relatedItems: [], attachedImage: null, imageEnhancements: null, scenarioMode: 'general' }),
-    
+
     // v3.6: Direct prediction setter for instant search
     setPredictions: (predictions: Prediction[]) => {
       set({ predictions, status: 'SNIFFING' });

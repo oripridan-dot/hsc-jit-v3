@@ -1,0 +1,149 @@
+{
+  "brand_identity": {
+    "id": "roland",
+    "name": "Roland Corporation",
+    "website": "https://www.roland.com",
+    "description": "World leader in electronic musical instruments",
+    "categories": []
+  },
+  "products": [
+    {
+      "id": "roland-td-17kvx",
+      "brand": "Roland",
+      "name": "TD-17KVX V-Drums Electronic Drum Kit",
+      "model_number": "TD-17KVX",
+      "description": "Premium electronic drum kit with mesh heads",
+      "short_description": "Premium electronic drum kit",
+      "brand_product_url": "https://www.roland.com/global/products/td-17kvx/",
+      "main_category": "Electronic Drums",
+      "images": [
+        {
+          "url": "https://static.roland.com/assets/images/products/td-17kvx_main.jpg",
+          "type": "main",
+          "alt_text": "TD-17KVX V-Drums Electronic Drum Kit"
+        }
+      ],
+      "accessories": [
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-dap-3x",
+          "target_product_name": "DAP-3X V-Drums Accessory Package",
+          "target_product_brand": "Roland",
+          "is_required": false,
+          "priority": 0
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-pdx-8",
+          "target_product_name": "PDX-8 Mesh V-Pad",
+          "target_product_brand": "Roland",
+          "is_required": false,
+          "priority": 1
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-pm-200",
+          "target_product_name": "PM-200 Personal Monitor",
+          "target_product_brand": "Roland",
+          "is_required": false,
+          "priority": 2
+        }
+      ],
+      "related_products": [],
+      "data_sources": ["brand_official"],
+      "last_scraped": "2026-01-16T21:45:00Z",
+      "last_updated": "2026-01-16T21:45:00Z"
+    },
+    {
+      "id": "roland-fp-30x",
+      "brand": "Roland",
+      "name": "FP-30X Digital Piano",
+      "model_number": "FP-30X",
+      "description": "Portable digital piano with SuperNATURAL sound",
+      "short_description": "Portable digital piano",
+      "brand_product_url": "https://www.roland.com/global/products/fp-30x/",
+      "main_category": "Digital Pianos",
+      "images": [
+        {
+          "url": "https://static.roland.com/assets/images/products/fp-30x_main.jpg",
+          "type": "main",
+          "alt_text": "FP-30X Digital Piano"
+        }
+      ],
+      "accessories": [
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-ksc-70",
+          "target_product_name": "KSC-70 Stand",
+          "target_product_brand": "Roland",
+          "is_required": false,
+          "priority": 0
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-dp-10",
+          "target_product_name": "DP-10 Damper Pedal",
+          "target_product_brand": "Roland",
+          "is_required": false,
+          "priority": 1
+        }
+      ],
+      "related_products": [],
+      "data_sources": ["brand_official"],
+      "last_scraped": "2026-01-16T21:45:00Z",
+      "last_updated": "2026-01-16T21:45:00Z"
+    },
+    {
+      "id": "roland-juno-x",
+      "brand": "Roland",
+      "name": "JUNO-X Synthesizer",
+      "model_number": "JUNO-X",
+      "description": "Modern synthesizer with legendary JUNO sound",
+      "short_description": "Modern JUNO synthesizer",
+      "brand_product_url": "https://www.roland.com/global/products/juno-x/",
+      "main_category": "Synthesizers",
+      "images": [
+        {
+          "url": "https://static.roland.com/assets/images/products/juno-x_main.jpg",
+          "type": "main",
+          "alt_text": "JUNO-X Synthesizer"
+        }
+      ],
+      "accessories": [
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-ks-18z",
+          "target_product_name": "KS-18Z Keyboard Stand",
+          "target_product_brand": "Roland",
+          "is_required": false,
+          "priority": 0
+        }
+      ],
+      "related_products": [
+        {
+          "relationship_type": "related",
+          "target_product_id": "roland-jupiter-x",
+          "target_product_name": "JUPITER-X Synthesizer",
+          "target_product_brand": "Roland",
+          "is_required": false,
+          "priority": 0
+        }
+      ],
+      "data_sources": ["brand_official"],
+      "last_scraped": "2026-01-16T21:45:00Z",
+      "last_updated": "2026-01-16T21:45:00Z"
+    }
+  ],
+  "total_products": 3,
+  "last_updated": "2026-01-16T21:45:00Z",
+  "catalog_version": "3.7.0-skeleton",
+  "coverage_stats": {
+    "categories": {
+      "Electronic Drums": 1,
+      "Digital Pianos": 1,
+      "Synthesizers": 1
+    },
+    "phase": "skeleton",
+    "content_status": "pending"
+  }
+}

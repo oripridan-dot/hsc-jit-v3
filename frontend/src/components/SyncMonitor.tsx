@@ -33,17 +33,10 @@ export const SyncMonitor: React.FC = () => {
   const [autoRefresh, setAutoRefresh] = useState(true);
 
   const fetchStatus = async () => {
-    try {
-      const response = await fetch('/api/sync-status');
-      if (!response.ok) throw new Error('Failed to fetch sync status');
-      const data = await response.json();
-      setStatus(data);
-      setError(null);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Unknown error');
-    } finally {
-      setLoading(false);
-    }
+    // Static Mode: No sync API available
+    setStatus(null);
+    setError('Sync Monitor not available in Static Mode');
+    setLoading(false);
   };
 
   useEffect(() => {

@@ -10,6 +10,8 @@ import { DualSourceIntelligence } from './components/DualSourceIntelligence';
 import { ZenFinder } from './components/ZenFinder';
 import { FolderView } from './components/FolderView';
 import { BackendUnavailable } from './components/BackendUnavailable';
+import { ProductDetailModal } from './components/ProductDetailModal';
+import { AIAssistant } from './components/AIAssistant';
 import { buildFileSystem, findPathById, type FileNode } from './utils/zenFileSystem';
 import { getBrandColors } from './utils/brandColors';
 import './index.css';
@@ -23,9 +25,14 @@ function App() {
   const [coverageStatsOpen, setCoverageStatsOpen] = useState(false);
   const [dualSourceOpen, setDualSourceOpen] = useState(false);
   const [fullCatalog, setFullCatalog] = useState<Prediction[]>([]);
+  const [fullProducts, setFullProducts] = useState<any[]>([]);
+  const [selectedProduct, setSelectedProduct] = useState<any>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [aiAssistantOpen, setAiAssistantOpen] = useState(false);
   const [backendAvailable, setBackendAvailable] = useState(true);
   const [connectionAttempted, setConnectionAttempted] = useState(false);
   const connectionAttemptedRef = useRef(false);
+  const [isCatalogReady, setIsCatalogReady] = useState(false);
 
   // v3.6: Load static catalog and initialize search on mount
   useEffect(() => {
@@ -33,11 +40,17 @@ function App() {
       try {
         console.log('🚀 v3.6: Initializing static catalog...');
         
+        // Force reset any stuck state
+        actions.reset();
+        
         // Initialize instant search (loads all products)
         await instantSearch.initialize();
         
         // Get all products for display
         const products = await catalogLoader.loadAllProducts();
+        
+        // Store full product data for AI Assistant and modal
+        setFullProducts(products);
         
         // Convert to Prediction format for compatibility
         const catalogProducts: Prediction[] = products.map(p => ({
@@ -45,15 +58,18 @@ function App() {
           brand: p.brand,
           category: p.category || 'Uncategorized',
           confidence: p.verification_confidence || 0,
-          source: p.verified ? 'halilit' : 'brand',
+          source: (p as any).verified || p.verified ? 'halilit' : 'brand', // Updated to handle both fields
           image_url: p.image_url,
           brand_product_url: p.brand_product_url || p.detail_url,
           verified: p.verified,
-          match_quality: p.match_quality
+          match_quality: p.match_quality,
+          // Add Brand Identity for Logo Display
+          brand_identity: p.brand_identity
         }));
         
         setFullCatalog(catalogProducts);
         setBackendAvailable(true);
+        setIsCatalogReady(true);
         console.log(`✅ Catalog loaded: ${products.length} products`);
       } catch (error) {
         console.error('❌ Failed to load catalog:', error);
@@ -62,12 +78,31 @@ function App() {
     };
     
     initCatalog();
-  }, []);
+  }, []); // Run ONCE on mount
 
   // Build a consistent tree: use full catalog for browsing, predictions only during active search
   // Default to predictions if fullCatalog hasn't loaded yet
   const displayProducts = inputText.length > 0 ? predictions : (fullCatalog.length > 0 ? fullCatalog : predictions);
   const rootNode = useMemo(() => buildFileSystem(displayProducts), [displayProducts]);
+
+  // Auto-navigate to Roland brand ONLY once when catalog loads
+  useEffect(() => {
+    if (isCatalogReady && displayProducts.length > 0 && !currentFolder) {
+      // Find Roland brand node
+      const brandsNode = rootNode.children?.find(n => n.id === 'brands');
+      const rolandNode = brandsNode?.children?.find(n => n.id === 'brand-Roland' || n.id === 'brand-roland');
+      
+      if (rolandNode) {
+        console.log('📍 Auto-navigating to Roland brand');
+        // Force update if we are already viewing something else or null
+        if (!currentFolder || currentFolder.id !== rolandNode.id) {
+            setCurrentFolder(rolandNode);
+        }
+      } else if (brandsNode) {
+         setCurrentFolder(brandsNode);
+      }
+    }
+  }, [isCatalogReady, displayProducts.length, currentFolder, rootNode]);
 
   // --- Brand Styling Logic ---
   const activeBrandColors = useMemo(() => {
@@ -108,14 +143,21 @@ function App() {
         setBackendAvailable(true);
       } else if (connectionState === 3) {
         // After first connection attempt fails, mark as unavailable
-        const timer = setTimeout(() => setBackendAvailable(false), 500);
-        return () => clearTimeout(timer);
+        // After first connection attempt fails, mark as unavailable
+        // BUT ONLY if we haven't successfully loaded the static catalog
+        if (fullCatalog.length === 0) {
+          const timer = setTimeout(() => setBackendAvailable(false), 500);
+          return () => clearTimeout(timer);
+        } else {
+          // We have static data, so we're good to go!
+          console.log("⚠️ Backend unavailable, running in Static Mode");
+        }
       }
     }
-  }, [connectionState]);
+  }, [connectionState, fullCatalog]);
 
-  // Show backend unavailable screen if connection failed
-  if (!backendAvailable && connectionAttempted) {
+  // Show backend unavailable screen ONLY if no static data loaded
+  if (!backendAvailable && connectionAttempted && fullCatalog.length === 0) {
     return <BackendUnavailable onRetry={() => {
       setBackendAvailable(true);
       setConnectionAttempted(false);
@@ -174,7 +216,23 @@ function App() {
       if (node.type === 'file' && node.meta) {
         // It's a file? Open details directly
         const p = node.meta as unknown as Prediction;
-        actions.lockAndQuery(p, "Details");
+        
+        // Find full product data
+        const normalizeName = (name: string | undefined) => 
+          name?.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase() || '';
+        
+        const fullProduct = fullProducts.find(
+          fp => normalizeName(fp.name) === normalizeName(p.name) && 
+                normalizeName(fp.brand) === normalizeName(p.brand)
+        );
+        
+        if (fullProduct) {
+          setSelectedProduct(fullProduct);
+          setModalOpen(true);
+        } else {
+          // Fallback to old behavior
+          actions.lockAndQuery(p, "Details");
+        }
       } else if (node.type === 'root') {
         // Return to welcome state
         setCurrentFolder(null);
@@ -384,6 +442,26 @@ function App() {
         />
         <ProductCoverageStats isOpen={coverageStatsOpen} onClose={() => setCoverageStatsOpen(false)} />
         <DualSourceIntelligence isOpen={dualSourceOpen} onClose={() => setDualSourceOpen(false)} />
+
+        {/* Product Detail Modal */}
+        {selectedProduct && (
+          <ProductDetailModal
+            product={selectedProduct}
+            isOpen={modalOpen}
+            onClose={() => {
+              setModalOpen(false);
+              setSelectedProduct(null);
+            }}
+          />
+        )}
+
+        {/* AI Assistant - Halileo Haliley */}
+        <AIAssistant
+          currentProduct={selectedProduct}
+          allProducts={fullProducts}
+          isOpen={aiAssistantOpen}
+          onToggle={() => setAiAssistantOpen(!aiAssistantOpen)}
+        />
 
     </div>
   );

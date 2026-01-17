@@ -1,0 +1,21 @@
+{
+    "version": "3.7.0",
+    "last_updated": "2026-01-17",
+    "architecture_mode": "Product Hierarchy + JIT RAG",
+    "status": "Active Development",
+    "core_components": {
+        "orchestrator": "backend/orchestrate_brand.py",
+        "hierarchy_engine": "backend/core/product_hierarchy.py",
+        "documentation_root": "docs/README.md"
+    },
+    "policies": {
+        "data_source": "Brand Official Site (Features) + Halilit (Price/SKU)",
+        "purity_rule": "One source of truth per function",
+        "root_lockdown": "Strictly enforced"
+    },
+    "focus_directives": [
+        "Migrate from static list to hierarchical object model",
+        "Implement JIT RAG for manual/spec retrieval",
+        "Maintain zero-drift file structure"
+    ]
+}

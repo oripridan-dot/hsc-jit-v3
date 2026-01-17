@@ -30,14 +30,14 @@ export const BrandExplorer: React.FC<BrandExplorerProps> = ({
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOption, setSortOption] = useState<'count' | 'alpha' | 'id'>('count');
 
-  // Fetch brands from /api/brands
+  // Fetch brands from static data
   useEffect(() => {
     if (!isOpen) return;
 
     const fetchBrands = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`/api/brands?v=${Date.now()}`, { cache: 'no-store' });
+        const response = await fetch('/data/index.json', { cache: 'no-store' });
         const data = await response.json();
         
         if (data.brands) {

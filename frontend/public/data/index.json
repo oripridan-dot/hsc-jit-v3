@@ -1,6 +1,6 @@
 {
-  "build_timestamp": "2026-01-16T09:28:33.985921Z",
-  "version": "3.6",
+  "build_timestamp": "2026-01-16T23:56:05.769Z",
+  "version": "3.6.1",
   "brands": [
     {
       "id": "adam-audio",
@@ -322,7 +322,7 @@
       "name": "Roland Corporation",
       "brand_color": "#ED1C24",
       "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
-      "product_count": 229,
+      "product_count": 10,
       "verified_count": 0,
       "data_file": "roland.json"
     },

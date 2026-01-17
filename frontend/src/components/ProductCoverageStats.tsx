@@ -35,16 +35,12 @@ export const ProductCoverageStats: React.FC<ProductCoverageStatsProps> = ({ isOp
     const fetchData = async () => {
       try {
         setLoading(true);
-        const [brandsRes, productsRes] = await Promise.all([
-          fetch(`/api/brands?v=${Date.now()}`, { cache: 'no-store' }),
-          fetch(`/api/products?v=${Date.now()}`, { cache: 'no-store' })
-        ]);
+        // Static Mode: Load from static data file
+        const indexRes = await fetch('/data/index.json', { cache: 'no-store' });
+        const indexData = await indexRes.json();
         
-        const brandsData = await brandsRes.json();
-        const productsData = await productsRes.json();
-        
-        if (brandsData.brands) setBrands(brandsData.brands);
-        if (productsData.products) setProducts(productsData.products);
+        if (indexData.brands) setBrands(indexData.brands);
+        if (indexData.stats) setProducts(Array(indexData.stats.totalProducts || 0).fill({}));
       } catch (error) {
         console.error('Failed to fetch coverage data:', error);
       } finally {

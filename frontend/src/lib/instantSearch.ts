@@ -18,7 +18,7 @@ class InstantSearch {
   private fuse: Fuse<Product> | null = null;
   private products: Product[] = [];
   private initialized: boolean = false;
-  
+
   /**
    * Initialize search engine (call once on app load)
    */
@@ -27,13 +27,13 @@ class InstantSearch {
       console.log('🔍 Search already initialized');
       return;
     }
-    
+
     console.log('🔍 Initializing instant search...');
     const startTime = performance.now();
-    
+
     // Load all products
     this.products = await catalogLoader.loadAllProducts();
-    
+
     // Configure Fuse.js for fuzzy search
     this.fuse = new Fuse(this.products, {
       keys: [
@@ -48,13 +48,13 @@ class InstantSearch {
       minMatchCharLength: 2,
       ignoreLocation: true,                      // Search anywhere in text
     });
-    
+
     const duration = Math.round(performance.now() - startTime);
     console.log(`✅ Search initialized with ${this.products.length} products in ${duration}ms`);
-    
+
     this.initialized = true;
   }
-  
+
   /**
    * Search products (instant, <50ms target)
    */
@@ -63,64 +63,64 @@ class InstantSearch {
       console.warn('⚠️ Search not initialized yet');
       return [];
     }
-    
+
     const startTime = performance.now();
-    
+
     // If no query, return filtered products
     if (!query || query.trim().length < 2) {
       let results = [...this.products];
       results = this.applyFilters(results, options);
       results = results.slice(0, options?.limit || 100);
-      
+
       const duration = Math.round(performance.now() - startTime);
       console.log(`🔍 Returned ${results.length} products (no search) in ${duration}ms`);
       return results;
     }
-    
+
     // Perform fuzzy search
-    const searchResults = this.fuse.search(query, { 
-      limit: options?.limit || 200 
+    const searchResults = this.fuse.search(query, {
+      limit: options?.limit || 200
     });
-    
+
     let results = searchResults.map(result => result.item);
-    
+
     // Apply filters
     results = this.applyFilters(results, options);
-    
+
     // Apply limit after filtering
     if (options?.limit) {
       results = results.slice(0, options.limit);
     }
-    
+
     const duration = Math.round(performance.now() - startTime);
     console.log(`🔍 Search "${query}" returned ${results.length} products in ${duration}ms`);
-    
+
     return results;
   }
-  
+
   /**
    * Apply filters to results
    */
   private applyFilters(results: Product[], options?: SearchOptions): Product[] {
     let filtered = results;
-    
+
     if (options?.brand) {
       filtered = filtered.filter(p => p._brandId === options.brand);
     }
-    
+
     if (options?.category) {
-      filtered = filtered.filter(p => 
+      filtered = filtered.filter(p =>
         p.category?.toLowerCase() === options.category?.toLowerCase()
       );
     }
-    
+
     if (options?.verifiedOnly) {
       filtered = filtered.filter(p => p.verified);
     }
-    
+
     return filtered;
   }
-  
+
   /**
    * Get products by brand (fast filter)
    */
@@ -128,17 +128,17 @@ class InstantSearch {
     const results = this.products.filter(p => p._brandId === brandId);
     return limit ? results.slice(0, limit) : results;
   }
-  
+
   /**
    * Get products by category (fast filter)
    */
   getByCategory(category: string, limit?: number): Product[] {
-    const results = this.products.filter(p => 
+    const results = this.products.filter(p =>
       p.category?.toLowerCase() === category.toLowerCase()
     );
     return limit ? results.slice(0, limit) : results;
   }
-  
+
   /**
    * Get all unique categories
    */
@@ -150,13 +150,13 @@ class InstantSearch {
     );
     return Array.from(categories).sort();
   }
-  
+
   /**
    * Get all unique brands
    */
   getBrands(): Array<{ id: string; name: string; count: number }> {
     const brandMap = new Map<string, { id: string; name: string; count: number }>();
-    
+
     this.products.forEach(p => {
       if (p._brandId) {
         const existing = brandMap.get(p._brandId);
@@ -171,10 +171,10 @@ class InstantSearch {
         }
       }
     });
-    
+
     return Array.from(brandMap.values()).sort((a, b) => a.name.localeCompare(b.name));
   }
-  
+
   /**
    * Get verified products only
    */
@@ -182,14 +182,14 @@ class InstantSearch {
     const results = this.products.filter(p => p.verified);
     return limit ? results.slice(0, limit) : results;
   }
-  
+
   /**
    * Get product count
    */
   getProductCount(): number {
     return this.products.length;
   }
-  
+
   /**
    * Check if initialized
    */

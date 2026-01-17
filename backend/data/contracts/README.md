@@ -3,6 +3,7 @@
 ## Overview
 
 The Brand Contracts system provides a **single source of truth** for each brand's:
+
 - **Category hierarchy** (12 main categories → subcategories)
 - **Visual assets** (logos, colors, typography)
 - **Display rules** (UI presentation guidelines)
@@ -21,12 +22,12 @@ The Brand Contracts system provides a **single source of truth** for each brand'
   "brand_id": "boss",
   "brand_name": "BOSS",
   "version": "1.0.0",
-  
+
   "assets": {
     "logo": { "primary_svg": "..." },
     "colors": { "primary": "#000000", "secondary": "#FFD700" }
   },
-  
+
   "categories": {
     "main_categories": [
       {
@@ -46,7 +47,7 @@ The Brand Contracts system provides a **single source of truth** for each brand'
       "Blues Driver": "effects-pedals"
     }
   },
-  
+
   "display_rules": {
     "product_card": { "show_brand_badge": true },
     "category_filter": { "collapse_subcategories": true }
@@ -161,7 +162,7 @@ assets = manager.get_brand_assets("boss")
 
 ## Integration with Build System
 
-Update `build.py` to apply contracts during build:
+Update `orchestrate_brand.py` to apply contracts during build:
 
 ```python
 from core.brand_contracts import BrandContractManager
@@ -186,19 +187,19 @@ interface Product {
   brand: string;
   // Original scraped category
   original_category: string;
-  
+
   // Contract-based hierarchy
-  main_category: string;        // "effects-pedals"
-  main_category_name: string;   // "Effects Pedals"
-  subcategory?: string;         // "distortion"
-  subcategory_name?: string;    // "Distortion"
+  main_category: string; // "effects-pedals"
+  main_category_name: string; // "Effects Pedals"
+  subcategory?: string; // "distortion"
+  subcategory_name?: string; // "Distortion"
 }
 
 // Render category filter with 12 main categories
-<CategoryFilter 
+<CategoryFilter
   mainCategories={catalog.category_tree.categories}
   collapsible={true}
-/>
+/>;
 ```
 
 ## Adding New Brand Contracts
@@ -226,7 +227,7 @@ if not is_valid:
 ✅ **Brand Authentic**: Categories from official brand websites  
 ✅ **Easy Filtering**: Hierarchical structure for UI  
 ✅ **Type Safe**: JSON schema validation  
-✅ **Maintainable**: Single source of truth per brand  
+✅ **Maintainable**: Single source of truth per brand
 
 ## Files
 
@@ -238,7 +239,7 @@ if not is_valid:
 ## Next Steps
 
 1. ✅ Create contracts for Boss and Roland
-2. ⏳ Integrate with build.py
+2. ⏳ Integrate with orchestrator
 3. ⏳ Update frontend types and UI
 4. ⏳ Create contracts for remaining 36 brands
 5. ⏳ Add contract validation to CI/CD
