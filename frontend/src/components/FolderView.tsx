@@ -116,42 +116,45 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                     </div>
                     
                     {/* Brand Details - Horizontal */}
-                    <div className="flex-1 min-w-0 flex items-center gap-6">
-                        <div>
-                            <h1 className="text-2xl font-bold text-text-primary tracking-tight">{node.brandIdentity.name}</h1>
-                            {node.brandIdentity.slogan && (
-                                <p className="text-sm text-accent-primary/80 font-medium italic">"{node.brandIdentity.slogan}"</p>
-                            )}
+                    <div className="flex-1 min-w-0">
+                        <div className="flex items-end gap-4 mb-3">
+                            <div>
+                                <h1 className="text-3xl font-bold text-text-primary tracking-tight">{node.brandIdentity.name}</h1>
+                                {node.brandIdentity.slogan && (
+                                    <p className="text-sm text-accent-primary/80 font-medium italic">"{node.brandIdentity.slogan}"</p>
+                                )}
+                            </div>
+                            {/* SKU Badge */}
+                            <div className="bg-gradient-to-r from-accent-primary/30 to-accent-secondary/20 backdrop-blur px-4 py-2 rounded-xl border border-accent-primary/40">
+                                <div className="text-xs text-white/60 uppercase tracking-widest font-semibold">Halilit SKU</div>
+                                <div className="text-lg font-bold text-accent-primary">{node.id.replace('brand-', '').toUpperCase()}</div>
+                            </div>
                         </div>
                         
-                        {/* Inline Stats */}
-                        <div className="flex items-center gap-4 text-sm">
-                            <div className="flex items-center gap-2 bg-accent-primary/10 px-3 py-1.5 rounded-lg">
-                                <span className="text-accent-secondary">📦</span>
-                                <span className="font-bold text-text-primary">{items.length}</span>
-                                <span className="text-text-muted">Products</span>
+                        {/* Product Count Badge */}
+                        <div className="flex items-center gap-3 mb-2">
+                            <div className="flex items-center gap-2 bg-accent-primary/20 px-4 py-2 rounded-xl border border-accent-primary/40 shadow-lg shadow-accent-primary/10">
+                                <span className="text-2xl">📦</span>
+                                <div>
+                                    <div className="text-xs text-white/60 uppercase tracking-widest font-semibold">Total Products</div>
+                                    <div className="text-2xl font-bold text-white">{items.length}</div>
+                                </div>
                             </div>
-                            
+                        </div>
+                        
+                        {/* Additional Info */}
+                        <div className="flex flex-wrap items-center gap-4 text-sm text-text-muted">
                             {node.brandIdentity.headquarters && (
                                 <div className="flex items-center gap-2">
                                     <span className="text-lg">{getCountryFlag(node.brandIdentity.headquarters)}</span>
-                                    <span className="text-text-muted text-xs">HQ:</span>
-                                    <span className="text-text-primary font-semibold">{node.brandIdentity.headquarters}</span>
-                                </div>
-                            )}
-                            
-                            {node.brandIdentity.production_locations && node.brandIdentity.production_locations.length > 0 && (
-                                <div className="flex items-center gap-2">
-                                    <span className="text-lg">{node.brandIdentity.production_locations.map(loc => getCountryFlag(loc)).join(' ')}</span>
-                                    <span className="text-text-muted text-xs">Production:</span>
-                                    <span className="text-text-primary font-semibold">{node.brandIdentity.production_locations.join(', ')}</span>
+                                    <span className="font-semibold text-text-primary">{node.brandIdentity.headquarters}</span>
                                 </div>
                             )}
                             
                             {node.brandIdentity.founded && (
                                 <div className="flex items-center gap-2">
-                                    <span className="text-accent-secondary">📅</span>
-                                    <span className="text-text-primary font-semibold">{node.brandIdentity.founded}</span>
+                                    <span>📅</span>
+                                    <span className="text-text-primary font-semibold">Est. {node.brandIdentity.founded}</span>
                                 </div>
                             )}
                         </div>
@@ -182,43 +185,43 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
         </div>
 
         {/* 3. Products Grid - Main Focus */}
-        <div className="flex-1 overflow-y-auto px-6 pb-6 scrollbar-thin scrollbar-thumb-accent-primary scrollbar-track-bg-surface">
-             <div className="sticky top-0 bg-bg-base/95 backdrop-blur z-10 pb-3">
-                 <h3 className="text-xs font-bold text-accent-primary uppercase tracking-widest mb-2 border-b border-accent-primary/30 pb-2">
-                     Products Catalog
-                 </h3>
+        <div className="flex-1 overflow-y-auto px-8 pb-12 scrollbar-thin scrollbar-thumb-accent-primary scrollbar-track-bg-surface">
+             <div className="sticky top-0 bg-gradient-to-b from-bg-base via-bg-base/95 to-transparent backdrop-blur-md z-10 pb-6 pt-2 -mx-8 px-8 mb-4">
+                 <h2 className="text-2xl font-bold text-text-primary mb-4 flex items-center gap-3">
+                     <span className="text-3xl">📦</span>
+                     <span>Product Catalog</span>
+                     <span className="text-lg text-accent-primary font-bold ml-2">({filteredItems.length})</span>
+                 </h2>
                  
-                 {/* Category Filter Pills */}
-                 {categories.length > 0 && (
-                     <div className="flex flex-wrap gap-2 mt-2">
+                 {/* Category Filter Pills - HIDDEN FOR BRAND VIEW */}
+                 {!isBrand && categories.length > 0 && (
+                     <div className="flex flex-wrap gap-3">
                          <button
                              onClick={() => setSelectedCategory(null)}
-                             className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
+                             className={`px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap ${
                                  !selectedCategory 
-                                     ? 'bg-accent-primary text-text-primary shadow-lg' 
-                                     : 'bg-bg-card/60 text-text-muted hover:bg-bg-card border border-border-subtle'
+                                     ? 'bg-accent-primary text-text-primary shadow-lg shadow-accent-primary/30' 
+                                     : 'bg-bg-card/80 text-text-muted hover:bg-bg-card/95 border border-border-subtle hover:border-accent-primary/50'
                              }`}
                          >
-                             All ({items.length})
+                             ✨ All ({items.length})
                          </button>
-                         <div className="flex gap-2 pb-2 overflow-x-auto scrollbar-hide">
                          {categories.map(cat => {
                              const count = items.filter(item => (item as any).category === cat).length;
                              return (
                                  <button
                                      key={cat}
                                      onClick={() => setSelectedCategory(cat)}
-                                     className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
+                                     className={`px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all ${
                                          selectedCategory === cat 
-                                             ? 'bg-accent-primary text-text-primary shadow-lg' 
-                                             : 'bg-bg-card/60 text-text-muted hover:bg-bg-card border border-border-subtle'
+                                             ? 'bg-accent-secondary/90 text-text-primary shadow-lg shadow-accent-secondary/30' 
+                                             : 'bg-bg-card/80 text-text-muted hover:bg-bg-card/95 border border-border-subtle hover:border-accent-primary/50'
                                      }`}
                                  >
-                                     {cat} ({count})
+                                     {cat} <span className="ml-1 text-xs opacity-75">({count})</span>
                                  </button>
                              );
                          })}
-                         </div>
                      </div>
                  )}
              </div>
@@ -229,85 +232,139 @@ export const FolderView: React.FC<FolderViewProps> = ({ node, onProductSelect, b
                      <span>No products found{selectedCategory ? ` in ${selectedCategory}` : ''}</span>
                  </div>
              ) : (
-                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
                      {filteredItems.map((item, idx: number) => {
-                         // Get image URL - prioritize image_url for Roland products
-                         let imageUrl = (item as any).image_url || '';
-                         
-                         // Fallback to other formats if image_url is not set
-                         if (!imageUrl && item.images) {
-                             if (typeof item.images === 'object' && !Array.isArray(item.images)) {
-                                 imageUrl = item.images.main || item.images.thumbnail || '';
-                             } else if (Array.isArray(item.images) && item.images.length > 0) {
-                                 const firstImg = item.images[0];
-                                 imageUrl = typeof firstImg === 'string' ? firstImg : firstImg?.url || '';
+                         // Robust image selection
+                         const selectImageUrl = (it: any): string => {
+                             const trim = (v?: string) => (typeof v === 'string' ? v.trim() : '');
+                             if (trim(it.image_url)) return trim(it.image_url);
+                             if (it.images) {
+                                 if (Array.isArray(it.images) && it.images.length > 0) {
+                                     const main = it.images.find((img: any) => img?.type === 'main');
+                                     if (main?.url) return trim(main.url);
+                                     const first = it.images[0];
+                                     if (typeof first === 'string') return trim(first);
+                                     if (first?.url) return trim(first.url);
+                                 } else if (typeof it.images === 'object') {
+                                     const main = (it.images as any).main || (it.images as any).thumbnail;
+                                     if (main) return trim(main);
+                                     const vals = Object.values(it.images as any);
+                                     const first = vals.length ? vals[0] : '';
+                                     return trim(first as string);
+                                 }
                              }
-                         }
-                         if (!imageUrl) {
-                             imageUrl = (item as any).img || (item as any).image || '';
+                             return trim(it.img || it.image || '');
+                         };
+
+                         const imageUrl = selectImageUrl(item as any);
+                         if (idx === 0) {
+                             console.debug('[FolderView] First product imageUrl:', imageUrl);
                          }
                          
-                         // Debug log for first item
-                         if (idx === 0) {
-                             console.log('First product:', item.name, 'imageUrl:', imageUrl);
-                         }
+                         // Get stats
+                         const imageCount = Array.isArray(item.images) ? item.images.length : (imageUrl ? 1 : 0);
+                         const hasSpecs = (item as any).specifications && Object.keys((item as any).specifications || {}).length > 0;
+                         const hasManuals = (item as any).manuals && (item as any).manuals.length > 0;
                          
                          return (
-                         <motion.button
-                             key={item.id || idx}
-                             initial={{ opacity: 0, scale: 0.95 }}
-                             animate={{ opacity: 1, scale: 1 }}
-                             transition={{ delay: Math.min(idx * 0.02, 0.5) }}
-                             onClick={() => onProductSelect(item)}
-                             className="group relative flex flex-col bg-bg-card/60 border border-border-subtle rounded-lg overflow-hidden hover:bg-bg-card/90 hover:border-accent-primary hover:scale-105 transition-all duration-200 text-left shadow-md hover:shadow-xl hover:shadow-accent-primary/20"
-                         >
-                             {/* Image Area */}
-                             <div className="aspect-square bg-white/95 relative p-4 flex items-center justify-center group-hover:bg-white transition-colors">
-                                 {/* Dual Source Badge Overlay */}
-                                 <div className="absolute top-1 left-1 z-10">
-                                     <DualSourceBadge 
-                                         classification={getProductClassification(item as unknown as Record<string, unknown>)} 
-                                         size="sm"
-                                         showIcon={false}
-                                         showTooltip={false}
-                                     />
+                        <motion.div
+                            key={item.id || idx}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: Math.min(idx * 0.05, 0.4) }}
+                            onClick={() => onProductSelect(item)}
+                            role="button"
+                            tabIndex={0}
+                            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onProductSelect(item); } }}
+                            className="group relative flex flex-col h-full bg-gradient-to-br from-bg-card/80 to-bg-surface/60 border border-border-subtle rounded-2xl overflow-hidden hover:border-accent-primary/60 transition-all duration-300 text-left shadow-lg hover:shadow-2xl hover:shadow-accent-primary/20 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent-primary/60"
+                        >
+                             {/* Status Badge */}
+                             <div className="absolute top-3 right-3 z-20 flex gap-2">
+                                 <div className="bg-accent-primary/90 backdrop-blur px-2.5 py-1 rounded-full">
+                                     <span className="text-xs font-bold text-text-primary">NEW</span>
                                  </div>
+                             </div>
+
+                             {/* Image Area - Larger */}
+                             <div className="relative w-full h-64 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur border-b border-border-subtle/50 flex items-center justify-center overflow-hidden group-hover:bg-white/5 transition-all">
+                                 {/* Gradient Background */}
+                                 <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/5 via-transparent to-accent-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                 
                                  {imageUrl ? (
                                     <img 
                                         src={imageUrl}
                                         alt={item.name}
-                                        className="max-w-full max-h-full object-contain drop-shadow-lg"
+                                        className="w-full h-full object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-300"
                                         loading="lazy"
-                                        referrerPolicy="no-referrer"
                                         onError={(e) => {
                                             e.currentTarget.style.display = 'none';
                                             const parent = e.currentTarget.parentElement;
                                             if (parent && !parent.querySelector('.fallback-icon')) {
                                                 const fallback = document.createElement('span');
-                                                fallback.className = 'text-4xl opacity-40 fallback-icon';
+                                                fallback.className = 'text-6xl opacity-30 fallback-icon';
                                                 fallback.textContent = '🎵';
                                                 parent.appendChild(fallback);
                                             }
                                         }}
                                     />
                                  ) : (
-                                    <span className="text-4xl opacity-40">🎵</span>
+                                    <span className="text-6xl opacity-30">🎵</span>
                                  )}
                              </div>
                              
-                             {/* Meta */}
-                             <div className="p-2 bg-bg-surface/50">
-                                 <h4 className="text-xs font-semibold text-text-primary truncate group-hover:text-accent-secondary transition-colors mb-1">
+                             {/* Content Area */}
+                             <div className="flex-1 flex flex-col p-5">
+                                 {/* Product Name */}
+                                 <h3 className="text-lg font-bold text-text-primary group-hover:text-accent-secondary transition-colors mb-1 line-clamp-2">
                                      {item.name}
-                                 </h4>
-                                 <div className="flex justify-between items-center gap-1">
-                                    <span className="text-[9px] text-text-muted uppercase truncate font-medium">{((item as any).category as string) || 'N/A'}</span>
-                                    {((item as any).price || 0) > 0 && (
-                                        <span className="text-[10px] font-bold text-status-success whitespace-nowrap">₪{((item as any).price || 0).toLocaleString()}</span>
-                                    )}
+                                 </h3>
+                                 
+                                 {/* Category & Type */}
+                                 <div className="flex items-center gap-2 mb-4">
+                                     <span className="inline-block px-2.5 py-1 bg-accent-primary/15 text-accent-primary text-xs font-semibold rounded-full">
+                                         {((item as any).category as string) || 'General'}
+                                     </span>
+                                 </div>
+                                 
+                                 {/* Stats Row */}
+                                 <div className="flex items-center gap-4 text-xs text-text-muted mb-4 pb-4 border-b border-border-subtle/50">
+                                     {imageCount > 0 && (
+                                         <div className="flex items-center gap-1.5 hover:text-accent-primary transition-colors">
+                                             <span className="text-sm">🖼️</span>
+                                             <span className="font-medium">{imageCount}</span>
+                                         </div>
+                                     )}
+                                     {hasSpecs && (
+                                         <div className="flex items-center gap-1.5 hover:text-accent-primary transition-colors">
+                                             <span className="text-sm">📋</span>
+                                             <span className="font-medium">Specs</span>
+                                         </div>
+                                     )}
+                                     {hasManuals && (
+                                         <div className="flex items-center gap-1.5 hover:text-accent-primary transition-colors">
+                                             <span className="text-sm">📖</span>
+                                             <span className="font-medium">{(item as any).manuals.length}</span>
+                                         </div>
+                                     )}
+                                 </div>
+                                 
+                                 {/* Price or CTA */}
+                                 <div className="mt-auto">
+                                     {((item as any).price || 0) > 0 ? (
+                                         <div className="text-2xl font-bold text-status-success mb-2">
+                                             ₪{((item as any).price || 0).toLocaleString()}
+                                         </div>
+                                     ) : null}
+                                     <button
+                                         onClick={(e) => { e.stopPropagation(); onProductSelect(item); }}
+                                         className="w-full bg-gradient-to-r from-accent-primary/90 to-accent-secondary/80 hover:from-accent-primary hover:to-accent-secondary text-text-primary font-bold py-2.5 px-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:shadow-accent-primary/30 flex items-center justify-center gap-2 group"
+                                     >
+                                         <span>View Details</span>
+                                         <span className="group-hover:translate-x-1 transition-transform">→</span>
+                                     </button>
                                  </div>
                              </div>
-                         </motion.button>
+                        </motion.div>
                          );
                      })}
                  </div>

@@ -23,6 +23,19 @@ export interface Product {
   short_description?: string | null;
   item_code?: string | null;
   images?: any;
+  // NEW: Rich media and documentation
+  videos?: Array<string | { url?: string; type?: 'youtube' | 'vimeo' | 'html5' | string; thumbnail?: string }>;
+  manuals?: Array<{ title?: string; url: string; pages?: number; language?: string }>;
+  knowledgebase?: Array<{ title?: string; url: string; category?: string }>;
+  resources?: Array<{ title?: string; url: string; icon?: string }>;
+  halilit_data?: {
+    sku?: string;
+    price?: number;
+    currency?: string;
+    availability?: string;
+    match_quality?: string;
+    source?: 'PRIMARY' | 'SECONDARY' | 'HALILIT_ONLY';
+  };
   // Internal fields for filtering
   _brandId?: string;
   _brandName?: string;
@@ -162,12 +175,39 @@ class CatalogLoader {
       brand_website: data.brand_identity?.website || undefined,
       description: data.brand_identity?.description || undefined,
       brand_identity: data.brand_identity,
-      products: data.products.map(p => ({
-        ...p,
-        category: p.category || (p as any).main_category || 'Uncategorized', // Normalize category
-        images: this.transformImages(p.images),
-        image_url: p.image_url || ((p.images as any)?.main) || '' // Ensure image_url is populated for filtering/display
-      }))
+      products: data.products.map(p => {
+        // Robust image selection from raw product
+        const selectImageUrl = (it: any): string => {
+          const trim = (v?: string) => (typeof v === 'string' ? v.trim() : '');
+          if (trim(it.image_url)) return trim(it.image_url);
+          if (it.images) {
+            if (Array.isArray(it.images) && it.images.length > 0) {
+              const main = it.images.find((img: any) => img?.type === 'main');
+              if (main?.url) return trim(main.url);
+              const first = it.images[0];
+              if (typeof first === 'string') return trim(first);
+              if (first?.url) return trim(first.url);
+            } else if (typeof it.images === 'object') {
+              const main = (it.images as any).main || (it.images as any).thumbnail;
+              if (main) return trim(main);
+              const vals = Object.values(it.images as any);
+              const first = vals.length ? vals[0] : '';
+              return trim(first as string);
+            }
+          }
+          return trim(it.img || it.image || '');
+        };
+
+        const normalizedImages = this.transformImages(p.images);
+        const primaryImage = selectImageUrl(p) || (typeof normalizedImages === 'object' && !Array.isArray(normalizedImages) ? (normalizedImages as any).main : '');
+
+        return {
+          ...p,
+          category: p.category || (p as any).main_category || 'Uncategorized', // Normalize category
+          images: normalizedImages,
+          image_url: primaryImage
+        };
+      })
     };
 
     // Sort products by name

@@ -24,6 +24,16 @@ export default {
       'accent-warning': '#ef4444',    // red-500
       'accent-muted': '#6b7280',      // gray-500
       
+      // Brand theming support
+      'brand-primary': 'var(--brand-primary, #06B6D4)',
+      'brand-secondary': 'var(--brand-secondary, #0891B2)',
+      'brand-accent': 'var(--brand-accent, #67E8F9)',
+      
+      // Roland theme
+      'roland-red': '#E31E24',
+      'roland-dark': '#000000',
+      'roland-gold': '#FFD700',
+      
       // Text colors
       'text-primary': '#fafafa',      // zinc-50
       'text-secondary': '#d4d4d8',    // zinc-300

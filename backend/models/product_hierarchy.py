@@ -157,6 +157,7 @@ class ProductCore(BaseModel):
     # Classification
     main_category: str = Field(..., description="From brand contract")
     subcategory: Optional[str] = None
+    sub_subcategory: Optional[str] = None
     tags: List[str] = Field(default_factory=list)
 
     # Core Information (ALL from brand official)

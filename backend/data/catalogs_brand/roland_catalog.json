@@ -1,0 +1,535 @@
+{
+  "brand_identity": {
+    "id": "roland",
+    "name": "Roland Corporation",
+    "logo_url": null,
+    "website": "https://www.roland.com",
+    "description": "World leader in electronic musical instruments",
+    "founded": null,
+    "headquarters": null,
+    "categories": [
+      "Electronic Drums",
+      "Digital Pianos",
+      "Synthesizers",
+      "Guitar Products",
+      "Wind Instruments"
+    ],
+    "brand_colors": {}
+  },
+  "products": [
+    {
+      "id": "roland-4cy-4wt-01",
+      "brand": "Roland",
+      "name": "4CY-4WT-01",
+      "model_number": "CY-4WT",
+      "sku": null,
+      "halilit_brand_code": null,
+      "main_category": "Musical Instruments",
+      "subcategory": null,
+      "sub_subcategory": null,
+      "tags": [],
+      "description": "In this video, you’ll learn everything you need to know about the DH-10 wireless hub and WT-10 wireless trigger adaptors, including compatibility, basic setup, module and instrument connectivity, battery life, and usage.\n\nIf you have questions about operating your Roland product, please check our Knowledge Base for answers to the most common questions.\nYou can also contact our Product Support through Roland Backstage.\nIn addition, we have a library of Owner’s Manuals and Support Documents that you can download and reference.",
+      "short_description": "4CY-4WT-01: DrumLink Cymbal Pack - Roland Cymbal Pack for DWe Acoustic-Electronic Wireless Convertible Drum Sets",
+      "images": [
+        {
+          "url": "https://static.roland.com/assets/images/products/main/4cy-4wt-01_set_main.jpg",
+          "type": "main",
+          "alt_text": "4CY-4WT-01",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/4cy-4wt-01_set_gal.jpg",
+          "type": "gallery",
+          "alt_text": "4CY-4WT-01",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/4cy-4wt-01_dwe_kit_gal.jpg",
+          "type": "gallery",
+          "alt_text": "4CY-4WT-01",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_roland_featured_products.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Featured Products",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_tr-1000.png",
+          "type": "gallery",
+          "alt_text": "TR-1000",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_bridge_cast.png",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_facebook.png",
+          "type": "gallery",
+          "alt_text": "Facebook",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_youtube.png",
+          "type": "gallery",
+          "alt_text": "YouTube Channel",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_social_media.png",
+          "type": "gallery",
+          "alt_text": "Worldwide Social Network",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_support.jpg",
+          "type": "gallery",
+          "alt_text": "Support by Product",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_quickstart.jpg",
+          "type": "gallery",
+          "alt_text": "Quick Start",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_melodics.jpg",
+          "type": "gallery",
+          "alt_text": "Melodics for V-Drums",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_roland_international.jpg",
+          "type": "gallery",
+          "alt_text": "Roland International",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_worldwide_social_network.jpg",
+          "type": "gallery",
+          "alt_text": "Worldwide Social Network",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_boss_title.png",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_boss.jpg",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_v-moda.png",
+          "type": "gallery",
+          "alt_text": "V-MODA",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://i.ytimg.com/vi/295jOhHlicw/maxresdefault.jpg",
+          "type": "gallery",
+          "alt_text": "4CY-4WT-01",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://i.ytimg.com/vi/295jOhHlicw/maxresdefault.jpg",
+          "type": "gallery",
+          "alt_text": "4CY-4WT-01",
+          "width": null,
+          "height": null
+        }
+      ],
+      "video_urls": [
+        "https://www.youtube.com/user/RolandChannel",
+        "https://www.youtube.com/c/RolandSupportChannel",
+        "https://www.youtube.com/watch?v=295jOhHlicw"
+      ],
+      "specifications": [
+        {
+          "category": "General",
+          "key": "VH-10: Hi-Hat",
+          "value": "12 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size",
+          "value": "2 (Bow, Edge)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Trigger",
+          "value": "TRIGGER OUTPUT jack, CONTROL OUTPUT jack",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Connectors",
+          "value": "Owner’s Manual, Leaflet \"USING THE UNIT SAFELY\", Motion sensor unit, Insulating plate, Cable tie",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Accessories",
+          "value": "314 mm\n\t12-3/8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size and Weight — VH-10: Hi-Hat",
+          "value": "314 mm\n\t12-3/8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Width",
+          "value": "103 mm\n\t4-1/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Depth",
+          "value": "1.2 kg\n\t2 lbs 11 oz\n\t(Excluding motion sensor unit)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Height",
+          "value": "16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Weight",
+          "value": "3 (Bow, Bell, Edge)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "CY-16R-T: Cymbal",
+          "value": "BELL OUTPUT jack, BOW/EDGE OUTPUT jack",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size",
+          "value": "Owner’s manual, Leaflet \"USING THE UNIT SAFELY\", Cymbal nut, Felt washer, Stopper, Cable tie",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Trigger",
+          "value": "407 mm\n\t16-1/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Connectors",
+          "value": "407 mm\n\t16-1/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Accessories",
+          "value": "56 mm\n\t2-1/4 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size and Weight — CY-16R-T: Cymbal",
+          "value": "1.3 kg / 2 lbs 14 oz",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Width",
+          "value": "Proprietary Protocol",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Depth",
+          "value": "2.4-2.485 GHz ISM Band",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Height",
+          "value": "10 m (32 feet) line-of-sight\n\t* May vary due to local conditions",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Weight",
+          "value": "Trigger input jacks\n\t(PAD1, PAD2)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "WT-10: Wireless Trigger Adapter",
+          "value": "Alkaline battery (AA, LR6) x 2",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Wireless Format",
+          "value": "Approx. 6 months\n\t* This can vary depending on the conditions of use.",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Wireless Carrier Frequency",
+          "value": "Clamp, Connection cables (0.4 m / 15 inches) x 2, Owner's Manual, Leaflet \"USING THE UNIT SAFELY\"",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Transmission Range",
+          "value": "70 mm\n\t2-13/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Connectors",
+          "value": "31 mm\n\t1-1/4 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Power Supply",
+          "value": "98 mm\n\t3-7/8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Battery Life",
+          "value": "170 g / 6 oz (including batteries)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Accessories",
+          "value": "84 mm\n\t3-5/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size and Weight — WT-10 (Body)",
+          "value": "73 mm\n\t2-7/8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Width",
+          "value": "98 mm\n\t3-7/8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Depth",
+          "value": "225 g / 8 oz (including batteries and clamp)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Height",
+          "value": "Φ4.5–32 mm\n\tΦ3/16–1-5/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        }
+      ],
+      "features": [],
+      "pricing": null,
+      "status": "in_stock",
+      "availability_notes": null,
+      "manual_urls": [
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/#dl-manuals",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/support/by_product/4cy-4wt-01/owners_manuals/2058918a-c4ad-4499-a199-f235d6f29d3f/",
+        "https://www.roland.com/global/support/by_product/4cy-4wt-01/owners_manuals/f37c5cb3-88fb-4c6e-aae4-ffb6846b83cc/",
+        "https://www.roland.com/global/support/by_product/4cy-4wt-01/owners_manuals/f36a4e30-28ff-4c6d-8339-8db47842a60d/",
+        "https://www.roland.com/global/support/by_product/4cy-4wt-01/owners_manuals/475a9130-0a53-46fe-be3b-fa38c6dda73a/",
+        "https://www.roland.com/global/support/by_product/4cy-4wt-01/owners_manuals/0012fbfe-9117-4653-bf70-f195d21b8bf8/",
+        "https://www.roland.com/global/support/by_product/4cy-4wt-01/owners_manuals/9abb5e64-1711-46c3-b32c-7b5c5a1ba59e/",
+        "https://www.roland.com/global/support/by_product/4cy-4wt-01/owners_manuals/e90b5dff-6325-4354-849f-6a079dc949b8/",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/sustainability/compliance_guideline/"
+      ],
+      "documentation_snippets": [],
+      "support_url": "https://www.roland.com/global/support/",
+      "ai_insights": [],
+      "ai_summary": null,
+      "accessories": [
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-4cy-4wt-01",
+          "target_product_name": "Features",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for 4CY-4WT-01",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-4cy-4wt-01",
+          "target_product_name": "Specs",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for 4CY-4WT-01",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-4cy-4wt-01",
+          "target_product_name": "Support",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for 4CY-4WT-01",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/4cy-4wt-01_set_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for 4CY-4WT-01",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/4cy-4wt-01_dwe_kit_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for 4CY-4WT-01",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/4cy-4wt-01_set_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for 4CY-4WT-01",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/4cy-4wt-01_dwe_kit_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for 4CY-4WT-01",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        }
+      ],
+      "related_products": [],
+      "brand_product_url": "https://www.roland.com/global/products/4cy-4wt-01/",
+      "distributor_url": null,
+      "data_sources": [
+        "brand_official"
+      ],
+      "confidence_score": 1.0,
+      "last_updated": "2026-01-17T14:31:37.082772",
+      "last_scraped": "2026-01-17T14:31:37.082767",
+      "search_keywords": [],
+      "search_text": ""
+    }
+  ],
+  "total_products": 1,
+  "last_updated": "2026-01-17T14:31:37.082840",
+  "catalog_version": "3.6.1",
+  "coverage_stats": {
+    "total_images": 19,
+    "total_videos": 3,
+    "total_specifications": 32,
+    "total_features": 0,
+    "total_manuals": 12,
+    "total_accessories": 7,
+    "avg_images_per_product": 19.0,
+    "avg_specs_per_product": 32.0
+  },
+  "rag_enabled": false,
+  "total_documentation_snippets": 0
+}

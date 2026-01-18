@@ -26,7 +26,8 @@ import asyncio
 import logging
 from typing import List, Dict, Optional, Set
 from datetime import datetime
-from playwright.async_api import async_playwright, Page
+from playwright.async_api import async_playwright, Page, TimeoutError as PlaywrightTimeoutError
+from  tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, AsyncRetrying
 from pathlib import Path
 import json
 import sys
@@ -35,6 +36,8 @@ import os
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
+from core.config import settings
+
 sys.path.insert(0, '/workspaces/hsc-jit-v3/backend/models')
 
 print('PYTHON PATH:', sys.path)  # Debug statement to print Python path
@@ -118,12 +121,16 @@ class RolandScraper:
         logger.info(f"   Goal: Extract ALL available data for JIT RAG system")
 
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
+            # Use --disable-dev-shm-usage to prevent crashes in containerized environments
+            browser = await p.chromium.launch(
+                headless=settings.SCRAPER_HEADLESS,
+                args=['--disable-dev-shm-usage', '--no-sandbox', '--disable-gpu']
+            )
             page = await browser.new_page()
 
             try:
                 # Step 1: Get all product URLs
-                product_urls = await self._get_product_urls(page)
+                product_urls = await self._get_product_urls(page, max_products)
                 logger.info(f"📋 Found {len(product_urls)} product URLs")
 
                 # Limit to max_products only if specified
@@ -144,7 +151,11 @@ class RolandScraper:
                     logger.info(
                         f"   [{i}/{len(product_urls)}] Scraping: {url}")
                     try:
-                        product = await self._scrape_product_page(page, url)
+                        # Wrap individual product scrape with timeout
+                        product = await asyncio.wait_for(
+                            self._scrape_product_page(page, url),
+                            timeout=45  # 45 seconds per product max
+                        )
                         if product:
                             products.append(product)
                             total_images += len(product.images)
@@ -153,6 +164,9 @@ class RolandScraper:
                             total_features += len(product.features)
                             total_manuals += len(product.manual_urls)
                             total_accessories += len(product.accessories)
+                    except asyncio.TimeoutError:
+                        logger.error(f"   Timeout scraping {url} (45s limit)")
+                        continue
                     except Exception as e:
                         logger.error(f"   Error scraping {url}: {e}")
                         continue
@@ -199,6 +213,26 @@ class RolandScraper:
             finally:
                 await browser.close()
 
+    async def _navigate(self, page: Page, url: str, timeout: int = None):
+        """Robust navigation with retries using centralized settings"""
+        if timeout is None:
+            timeout = settings.SCRAPER_TIMEOUT
+
+        async for attempt in AsyncRetrying(
+            stop=stop_after_attempt(settings.SCRAPER_RETRIES),
+            wait=wait_exponential(multiplier=1, min=settings.SCRAPER_RETRY_DELAY, max=10)
+        ):
+            with attempt:
+                try:
+                    # Changed to domcontentloaded to prevent hanging on analytics/tracking
+                    await page.goto(url, wait_until='domcontentloaded', timeout=timeout)
+                except PlaywrightTimeoutError:
+                    logger.warning(f"   Timeout on {url}, retrying...")
+                    raise
+                except Exception as e:
+                    logger.warning(f"   Error accessing {url}: {e}, retrying...")
+                    raise
+
     async def _discover_all_categories(self, page: Page) -> Set[str]:
         """Dynamically discover ALL category and subcategory URLs"""
         logger.info(
@@ -209,21 +243,31 @@ class RolandScraper:
         # Visit each known category to find more subcategories
         for cat_url in list(self.category_urls):
             try:
-                await page.goto(cat_url, wait_until='networkidle', timeout=15000)
+                # Add timeout wrapper for each category visit
+                await asyncio.wait_for(
+                    self._navigate(page, cat_url),
+                    timeout=15
+                )
                 await asyncio.sleep(2)
 
-                # Find all category links on this page
-                links = await page.locator('a[href*="/categories/"]').all()
-                for link in links:
-                    try:
-                        href = await link.get_attribute('href')
-                        if href and href.startswith('/global/categories/'):
-                            full_url = f"https://www.roland.com{href}"
-                            # Avoid obvious non-category pages
-                            if not any(skip in full_url.lower() for skip in ['/apps/', '/search']):
-                                discovered_categories.add(full_url)
-                    except:
-                        continue
+                # Find all category links on this page with timeout
+                try:
+                    links = await asyncio.wait_for(
+                        page.locator('a[href*="/categories/"]').all(),
+                        timeout=10
+                    )
+                    for link in links:
+                        try:
+                            href = await link.get_attribute('href')
+                            if href and href.startswith('/global/categories/'):
+                                full_url = f"https://www.roland.com{href}"
+                                # Avoid obvious non-category pages
+                                if not any(skip in full_url.lower() for skip in ['/apps/', '/search']):
+                                    discovered_categories.add(full_url)
+                        except:
+                            continue
+                except asyncio.TimeoutError:
+                    logger.warning(f"   Timeout finding links on {cat_url}")
             except Exception as e:
                 logger.warning(f"   Error discovering from {cat_url}: {e}")
                 continue
@@ -232,7 +276,7 @@ class RolandScraper:
             f"   Found {len(discovered_categories)} total category URLs")
         return discovered_categories
 
-    async def _get_product_urls(self, page: Page) -> List[str]:
+    async def _get_product_urls(self, page: Page, max_products: int = None) -> List[str]:
         """Get all product URLs by navigating through categories and subcategories"""
         logger.info(
             f"📄 Discovering products through category/subcategory navigation")
@@ -245,15 +289,28 @@ class RolandScraper:
 
         # Method 1: Get products from main page
         logger.info(f"   Checking main products page...")
-        await page.goto(self.products_url, wait_until='networkidle')
-        await asyncio.sleep(3)
+        try:
+            await asyncio.wait_for(
+                self._navigate(page, self.products_url),
+                timeout=20
+            )
+            await asyncio.sleep(2)
 
-        main_page_links = await page.locator('a[href*="/products/"]').all()
+            main_page_links = await asyncio.wait_for(
+                page.locator('a[href*="/products/"]').all(),
+                timeout=10
+            )
+        except asyncio.TimeoutError:
+            logger.warning("   Timeout on main products page, continuing...")
+            main_page_links = []
+        
         for link in main_page_links:
             try:
                 href = await link.get_attribute('href')
                 if href and 'roland.com' in href or href.startswith('/'):
-                    if href.startswith('/'):
+                    if href.startswith('//'):
+                        href = f"https:{href}"
+                    elif href.startswith('/'):
                         href = f"https://www.roland.com{href}"
                     if '/products/' in href and not href.endswith('/products/'):
                         all_urls.add(href)
@@ -271,6 +328,8 @@ class RolandScraper:
 
         # Visit each category page (NO LIMIT - get all products)
         for i, cat_url in enumerate(list(all_category_urls), 1):
+            if max_products and len(all_urls) >= max_products:
+                break
             try:
                 if cat_url in visited_pages:
                     continue
@@ -278,17 +337,30 @@ class RolandScraper:
 
                 logger.info(
                     f"   Category {i}/{len(all_category_urls)}: {cat_url[:80]}...")
-                await page.goto(cat_url, wait_until='networkidle', timeout=15000)
-                await asyncio.sleep(2)
+                
+                try:
+                    await asyncio.wait_for(
+                        self._navigate(page, cat_url),
+                        timeout=15
+                    )
+                    await asyncio.sleep(1)
 
-                # Get product links from category page
-                cat_links = await page.locator('a[href*="/products/"]').all()
+                    # Get product links from category page with timeout
+                    cat_links = await asyncio.wait_for(
+                        page.locator('a[href*="/products/"]').all(),
+                        timeout=10
+                    )
+                except asyncio.TimeoutError:
+                    logger.warning(f"   Timeout on category {cat_url}, skipping...")
+                    continue
 
                 for link in cat_links:
                     try:
                         href = await link.get_attribute('href')
                         if href:
-                            if href.startswith('/'):
+                            if href.startswith('//'):
+                                href = f"https:{href}"
+                            elif href.startswith('/'):
                                 href = f"https://www.roland.com{href}"
 
                             # Only Roland product pages
@@ -299,15 +371,25 @@ class RolandScraper:
                     except:
                         continue
 
-                # Look for subcategory links on this page
-                all_links = await page.locator('a').all()
+                # Look for subcategory links on this page with timeout
+                try:
+                    all_links = await asyncio.wait_for(
+                        page.locator('a').all(),
+                        timeout=10
+                    )
+                except asyncio.TimeoutError:
+                    logger.warning(f"   Timeout finding subcategory links on {cat_url}")
+                    all_links = []
+                
                 for link in all_links:
                     try:
                         href = await link.get_attribute('href')
                         text = await link.inner_text()
 
                         if href and text and len(text.strip()) > 2:
-                            if href.startswith('/'):
+                            if href.startswith('//'):
+                                href = f"https:{href}"
+                            elif href.startswith('/'):
                                 href = f"https://www.roland.com{href}"
 
                             # Detect subcategory links (categories or products subdirectories)
@@ -332,6 +414,8 @@ class RolandScraper:
 
             # Visit all subcategories to ensure complete coverage
             for i, sub_url in enumerate(list(subcategory_urls), 1):
+                if max_products and len(all_urls) >= max_products:
+                    break
                 try:
                     if sub_url in visited_pages or sub_url in all_urls:
                         continue
@@ -339,17 +423,32 @@ class RolandScraper:
 
                     logger.info(
                         f"   Subcategory {i}/{len(subcategory_urls)}: {sub_url[:80]}...")
-                    await page.goto(sub_url, wait_until='networkidle', timeout=15000)
-                    await asyncio.sleep(2)
+                    
+                    try:
+                        await asyncio.wait_for(
+                            self._navigate(page, sub_url),
+                            timeout=15
+                        )
+                        await asyncio.sleep(1)
 
-                    # Get product links from subcategory page
-                    sub_links = await page.locator('a[href*="/products/"]').all()
+                        # Get product links from subcategory page with timeout
+                        sub_links = await asyncio.wait_for(
+                            page.locator('a[href*="/products/"]').all(),
+                            timeout=10
+                        )
+                    except asyncio.TimeoutError:
+                        logger.warning(f"   Timeout on subcategory {sub_url}, skipping...")
+                        continue
+                    except Exception:
+                        continue
 
                     for link in sub_links:
                         try:
                             href = await link.get_attribute('href')
                             if href:
-                                if href.startswith('/'):
+                                if href.startswith('//'):
+                                    href = f"https:{href}"
+                                elif href.startswith('/'):
                                     href = f"https://www.roland.com{href}"
 
                                 # Only Roland product pages
@@ -399,8 +498,12 @@ class RolandScraper:
         """
 
         try:
-            await page.goto(url, wait_until='networkidle', timeout=30000)
-            await asyncio.sleep(3)
+            # Add timeout wrapper for page navigation
+            await asyncio.wait_for(
+                self._navigate(page, url),
+                timeout=20
+            )
+            await asyncio.sleep(1)
 
             # ============================================================
             # 1. EXTRACT PRODUCT NAME & MODEL
@@ -408,9 +511,15 @@ class RolandScraper:
             name = ""
             model_number = ""
 
-            if await page.locator('h1').count() > 0:
-                name = await page.locator('h1').first.inner_text()
-                name = name.strip()
+            try:
+                if await asyncio.wait_for(page.locator('h1').count(), timeout=5) > 0:
+                    name = await asyncio.wait_for(
+                        page.locator('h1').first.inner_text(),
+                        timeout=5
+                    )
+                    name = name.strip()
+            except asyncio.TimeoutError:
+                logger.warning(f"   Timeout extracting name from {url}")
 
             # Try to extract model number from name or page
             model_match = re.search(
@@ -449,14 +558,20 @@ class RolandScraper:
             ]
 
             for selector in desc_selectors:
-                elements = await page.locator(selector).all()
-                for elem in elements:
-                    try:
-                        text = await elem.inner_text()
-                        if text and len(text.strip()) > 20 and text not in description_parts:
-                            description_parts.append(text.strip())
-                    except:
-                        continue
+                try:
+                    elements = await asyncio.wait_for(
+                        page.locator(selector).all(),
+                        timeout=5
+                    )
+                    for elem in elements:
+                        try:
+                            text = await asyncio.wait_for(elem.inner_text(), timeout=2)
+                            if text and len(text.strip()) > 20 and text not in description_parts:
+                                description_parts.append(text.strip())
+                        except:
+                            continue
+                except asyncio.TimeoutError:
+                    continue
 
             description = "\n\n".join(description_parts) if description_parts else (
                 short_description or name)
@@ -480,40 +595,46 @@ class RolandScraper:
             ]
 
             for selector in img_selectors:
-                img_elements = await page.locator(selector).all()
-                for img_elem in img_elements:
-                    try:
-                        src = await img_elem.get_attribute('src')
-                        alt = await img_elem.get_attribute('alt') or name
+                try:
+                    img_elements = await asyncio.wait_for(
+                        page.locator(selector).all(),
+                        timeout=5
+                    )
+                    for img_elem in img_elements:
+                        try:
+                            src = await asyncio.wait_for(img_elem.get_attribute('src'), timeout=2)
+                            alt = await asyncio.wait_for(img_elem.get_attribute('alt'), timeout=2) or name
 
-                        if not src or src in seen_urls:
+                            if not src or src in seen_urls:
+                                continue
+
+                            # Skip icons, logos, tiny images
+                            if any(skip in src.lower() for skip in ['icon', 'logo', 'button', 'banner']):
+                                continue
+
+                            # Make absolute URL
+                            if src.startswith('//'):
+                                src = f"https:{src}"
+                            elif src.startswith('/'):
+                                src = f"https://www.roland.com{src}"
+
+                            # Determine image type
+                            img_type = "main"
+                            if 'gallery' in src.lower() or len(images) > 0:
+                                img_type = "gallery"
+                            if 'spec' in src.lower() or 'diagram' in src.lower():
+                                img_type = "technical"
+
+                            images.append(ProductImage(
+                                url=src,
+                                type=img_type,
+                                alt_text=alt
+                            ))
+                            seen_urls.add(src)
+                        except (asyncio.TimeoutError, Exception):
                             continue
-
-                        # Skip icons, logos, tiny images
-                        if any(skip in src.lower() for skip in ['icon', 'logo', 'button', 'banner']):
-                            continue
-
-                        # Make absolute URL
-                        if src.startswith('//'):
-                            src = f"https:{src}"
-                        elif src.startswith('/'):
-                            src = f"https://www.roland.com{src}"
-
-                        # Determine image type
-                        img_type = "main"
-                        if 'gallery' in src.lower() or len(images) > 0:
-                            img_type = "gallery"
-                        if 'spec' in src.lower() or 'diagram' in src.lower():
-                            img_type = "technical"
-
-                        images.append(ProductImage(
-                            url=src,
-                            type=img_type,
-                            alt_text=alt
-                        ))
-                        seen_urls.add(src)
-                    except:
-                        continue
+                except asyncio.TimeoutError:
+                    continue  # Skip this selector if timeout
 
             # ============================================================
             # 4. EXTRACT ALL VIDEOS
@@ -528,17 +649,29 @@ class RolandScraper:
             ]
 
             for selector in video_selectors:
-                elements = await page.locator(selector).all()
-                for elem in elements:
-                    try:
-                        video_url = await elem.get_attribute('src') or await elem.get_attribute('href')
-                        if video_url and video_url not in video_urls:
-                            if not video_url.startswith('http'):
-                                video_url = f"https:{video_url}" if video_url.startswith(
-                                    '//') else f"https://www.roland.com{video_url}"
-                            video_urls.append(video_url)
-                    except:
-                        continue
+                try:
+                    elements = await asyncio.wait_for(
+                        page.locator(selector).all(),
+                        timeout=5
+                    )
+                    for elem in elements:
+                        try:
+                            video_url = await asyncio.wait_for(
+                                elem.get_attribute('src'),
+                                timeout=2
+                            ) or await asyncio.wait_for(
+                                elem.get_attribute('href'),
+                                timeout=2
+                            )
+                            if video_url and video_url not in video_urls:
+                                if not video_url.startswith('http'):
+                                    video_url = f"https:{video_url}" if video_url.startswith(
+                                        '//') else f"https://www.roland.com{video_url}"
+                                video_urls.append(video_url)
+                        except (asyncio.TimeoutError, Exception):
+                            continue
+                except asyncio.TimeoutError:
+                    continue  # Skip this selector if timeout
 
             # ============================================================
             # 5. EXTRACT ALL SPECIFICATIONS (COMPLETE TABLES)
@@ -546,7 +679,14 @@ class RolandScraper:
             specifications = []
 
             # Look for specification tables
-            tables = await page.locator('table').all()
+            try:
+                tables = await asyncio.wait_for(
+                    page.locator('table').all(),
+                    timeout=5
+                )
+            except asyncio.TimeoutError:
+                tables = []
+            
             for table in tables:
                 try:
                     rows = await table.locator('tr').all()
@@ -674,87 +814,142 @@ class RolandScraper:
                         break
 
             # ============================================================
-            # 9. DETERMINE CATEGORY FROM URL/PAGE
+            # 9. DETERMINE HIERARCHY (BREADCRUMBS & CATEGORIES)
             # ============================================================
-            category = "Musical Instruments"
-            url_lower = url.lower()
-            name_lower = name.lower()
+            main_category = "Musical Instruments"
+            subcategory = None
+            sub_subcategory = None
+            
+            # Method A: Extract from Breadcrumbs (Most Accurate)
+            # Selector strategies for Roland's breadcrumbs
+            breadcrumb_selectors = [
+                 '.breadcrumb li',
+                 'ul.breadcrumbs li',
+                 'nav[aria-label="breadcrumb"] li',
+                 '.breadcrumb-item',
+                 '#breadcrumb li'
+            ]
+            
+            breadcrumbs = []
+            for selector in breadcrumb_selectors:
+                elements = await page.locator(selector).all()
+                if len(elements) > 1:
+                    for elem in elements:
+                        text = await elem.inner_text()
+                        if text:
+                            breadcrumbs.append(text.strip())
+                    if breadcrumbs: 
+                        break
+            
+            if len(breadcrumbs) >= 2:
+                # Structure: Home > Categories > Main > Sub > Product
+                # Or: Home > Main > Sub > Product
+                
+                # Filter out 'Home' or 'Products' or 'Categories'
+                clean_crumbs = [b for b in breadcrumbs if b.lower() not in ['home', 'products', 'categories', 'top']]
+                
+                # Remove the product name itself if it's the last crumb
+                if clean_crumbs and (clean_crumbs[-1].lower() in name.lower() or name.lower() in clean_crumbs[-1].lower()):
+                    clean_crumbs.pop()
+                
+                if len(clean_crumbs) >= 1:
+                     main_category = clean_crumbs[0]
+                if len(clean_crumbs) >= 2:
+                     subcategory = clean_crumbs[1]
+                if len(clean_crumbs) >= 3:
+                     sub_subcategory = clean_crumbs[2]
 
-            if 'drum' in url_lower or 'td-' in url_lower or 'drum' in name_lower:
-                category = "Electronic Drums"
-            elif 'piano' in url_lower or 'fp-' in url_lower or 'rd-' in url_lower or 'piano' in name_lower:
-                category = "Digital Pianos"
-            elif 'synth' in url_lower or 'juno' in url_lower or 'jupiter' in url_lower or 'synth' in name_lower:
-                category = "Synthesizers"
-            elif 'guitar' in url_lower or 'amp' in url_lower or 'guitar' in name_lower:
-                category = "Guitar Products"
-            elif 'aero' in url_lower or 'wind' in name_lower:
-                category = "Wind Instruments"
-            elif 'keyboard' in url_lower or 'keyboard' in name_lower:
-                category = "Keyboards"
+            # Method B: Fallback Keyword Matching (If breadcrumbs failed for main category)
+            if main_category == "Musical Instruments":
+                url_lower = url.lower()
+                name_lower = name.lower()
+
+                if 'drum' in url_lower or 'td-' in url_lower or 'drum' in name_lower:
+                    main_category = "Electronic Drums"
+                elif 'piano' in url_lower or 'fp-' in url_lower or 'rd-' in url_lower or 'piano' in name_lower:
+                    main_category = "Digital Pianos"
+                elif 'synth' in url_lower or 'juno' in url_lower or 'jupiter' in url_lower or 'synth' in name_lower:
+                    main_category = "Synthesizers"
+                elif 'guitar' in url_lower or 'amp' in url_lower or 'guitar' in name_lower:
+                    main_category = "Guitar Products"
+                elif 'aero' in url_lower or 'wind' in name_lower:
+                    main_category = "Wind Instruments"
+                elif 'keyboard' in url_lower or 'keyboard' in name_lower:
+                    main_category = "Keyboards"
+            
+            logger.info(f"     └─ Hierarchy: {main_category} > {subcategory} > {sub_subcategory}")
 
             # ============================================================
             # 10. EXTRACT ACCESSORIES (FROM ACCESSORIES TAB/PAGE)
             # ============================================================
             accessories = []
 
-            # Try to navigate to accessories page
+            # Try to navigate to accessories page with stricter timeout
             accessories_url = url.rstrip('/') + '/accessories/'
 
             try:
-                response = await page.goto(accessories_url, wait_until='networkidle', timeout=10000)
+                # Wrap entire accessories extraction in timeout
+                async def extract_accessories():
+                    response = await page.goto(accessories_url, wait_until='domcontentloaded', timeout=5000)
 
-                if response and response.status == 200:
-                    await asyncio.sleep(2)
+                    if response and response.status == 200:
+                        await asyncio.sleep(1)
 
-                    # Extract all product links from accessories page
-                    accessory_links = await page.locator('a[href*="/products/"]').all()
+                        # Extract all product links from accessories page
+                        accessory_links = await asyncio.wait_for(
+                            page.locator('a[href*="/products/"]').all(),
+                            timeout=5
+                        )
 
-                    for link in accessory_links:
-                        try:
-                            href = await link.get_attribute('href')
-                            acc_name = (await link.inner_text()).strip()
+                        for link in accessory_links:
+                            try:
+                                href = await asyncio.wait_for(link.get_attribute('href'), timeout=2)
+                                acc_name = await asyncio.wait_for(link.inner_text(), timeout=2)
+                                acc_name = acc_name.strip()
 
-                            if not href or not acc_name or len(acc_name) < 3:
-                                # Try to find name within link
-                                heading = link.locator(
-                                    'h1, h2, h3, h4, .title, [class*="name"]').first
-                                if await heading.count() > 0:
-                                    acc_name = (await heading.inner_text()).strip()
+                                if not href or not acc_name or len(acc_name) < 3:
+                                    # Try to find name within link
+                                    heading = link.locator('h1, h2, h3, h4, .title, [class*="name"]').first
+                                    if await asyncio.wait_for(heading.count(), timeout=2) > 0:
+                                        acc_name = await asyncio.wait_for(heading.inner_text(), timeout=2)
+                                        acc_name = acc_name.strip()
 
-                            if not href or not acc_name or len(acc_name) < 3:
+                                if not href or not acc_name or len(acc_name) < 3:
+                                    continue
+
+                                # Make absolute URL
+                                if href.startswith('/'):
+                                    href = f"https://www.roland.com{href}"
+
+                                # Skip if not a product page or same as current
+                                if '/products/' not in href or href.endswith('/products/') or href == url:
+                                    continue
+
+                                # Extract accessory ID
+                                acc_id = href.split('/products/')[-1].rstrip('/').split('/')[0]
+
+                                accessories.append(ProductRelationship(
+                                    relationship_type=RelationshipType.ACCESSORY,
+                                    target_product_id=f"roland-{acc_id}",
+                                    target_product_name=acc_name,
+                                    target_product_brand="Roland",
+                                    description=f"Recommended accessory for {name}",
+                                    is_required=False,
+                                    priority=0
+                                ))
+                            except (asyncio.TimeoutError, Exception):
                                 continue
 
-                            # Make absolute URL
-                            if href.startswith('/'):
-                                href = f"https://www.roland.com{href}"
+                        # Go back to main product page
+                        await asyncio.wait_for(self._navigate(page, url), timeout=10)
+                        await asyncio.sleep(0.5)
+                
+                # Run with timeout
+                await asyncio.wait_for(extract_accessories(), timeout=20)
 
-                            # Skip if not a product page or same as current
-                            if '/products/' not in href or href.endswith('/products/') or href == url:
-                                continue
-
-                            # Extract accessory ID
-                            acc_id = href.split(
-                                '/products/')[-1].rstrip('/').split('/')[0]
-
-                            accessories.append(ProductRelationship(
-                                relationship_type=RelationshipType.ACCESSORY,
-                                target_product_id=f"roland-{acc_id}",
-                                target_product_name=acc_name,
-                                target_product_brand="Roland",
-                                description=f"Recommended accessory for {name}",
-                                is_required=False,
-                                priority=0
-                            ))
-                        except:
-                            continue
-
-                # Go back to main product page
-                await page.goto(url, wait_until='networkidle', timeout=10000)
-                await asyncio.sleep(1)
-
-            except Exception as e:
-                # No accessories page - that's okay
+            except (asyncio.TimeoutError, Exception) as e:
+                # No accessories page or timeout - that's okay, skip it
+                logger.debug(f"   Skipping accessories for {url}: {type(e).__name__}")
                 pass
 
             # ============================================================
@@ -770,35 +965,41 @@ class RolandScraper:
             ]
 
             for selector in related_selectors:
-                elements = await page.locator(selector).all()
-                for elem in elements[:10]:  # Limit
-                    try:
-                        href = await elem.get_attribute('href')
-                        rel_name = (await elem.inner_text()).strip()
+                try:
+                    elements = await asyncio.wait_for(
+                        page.locator(selector).all(),
+                        timeout=3
+                    )
+                    for elem in elements[:10]:  # Limit
+                        try:
+                            href = await asyncio.wait_for(elem.get_attribute('href'), timeout=2)
+                            rel_name = await asyncio.wait_for(elem.inner_text(), timeout=2)
+                            rel_name = rel_name.strip()
 
-                        if not href or not rel_name or href == url:
+                            if not href or not rel_name or href == url:
+                                continue
+
+                            if href.startswith('/'):
+                                href = f"https://www.roland.com{href}"
+
+                            if '/products/' not in href:
+                                continue
+
+                            rel_id = href.split('/products/')[-1].rstrip('/').split('/')[0]
+
+                            related_products.append(ProductRelationship(
+                                relationship_type=RelationshipType.RELATED,
+                                target_product_id=f"roland-{rel_id}",
+                                target_product_name=rel_name,
+                                target_product_brand="Roland",
+                                description=f"Related to {name}",
+                                is_required=False,
+                                priority=1
+                            ))
+                        except (asyncio.TimeoutError, Exception):
                             continue
-
-                        if href.startswith('/'):
-                            href = f"https://www.roland.com{href}"
-
-                        if '/products/' not in href:
-                            continue
-
-                        rel_id = href.split(
-                            '/products/')[-1].rstrip('/').split('/')[0]
-
-                        related_products.append(ProductRelationship(
-                            relationship_type=RelationshipType.RELATED,
-                            target_product_id=f"roland-{rel_id}",
-                            target_product_name=rel_name,
-                            target_product_brand="Roland",
-                            description=f"Related to {name}",
-                            is_required=False,
-                            priority=1
-                        ))
-                    except:
-                        continue
+                except asyncio.TimeoutError:
+                    continue  # Skip this selector if timeout
 
             # ============================================================
             # 12. CREATE COMPREHENSIVE PRODUCT
@@ -811,7 +1012,9 @@ class RolandScraper:
                 description=description,
                 short_description=short_description if short_description else None,
                 brand_product_url=url,
-                main_category=category,
+                main_category=main_category,
+                subcategory=subcategory,
+                sub_subcategory=sub_subcategory,
                 images=images,
                 video_urls=video_urls,
                 specifications=specifications,

@@ -3,8 +3,8 @@
 import logging
 import time
 import psutil
-from typing import Optional
-from fastapi import APIRouter, status
+from typing import Optional, List, Dict
+from fastapi import APIRouter, status, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
@@ -31,6 +31,13 @@ class ReadinessStatus(BaseModel):
 
     ready: bool
     reason: Optional[str] = None
+
+
+class EndpointInfo(BaseModel):
+    """Endpoint information for full health report"""
+    path: str
+    name: str
+    methods: List[str]
 
 
 class HealthChecker:
@@ -148,7 +155,87 @@ async def readiness_check():
         )
 
 
-@router.get("/ping")
-async def ping():
-    """Simple ping endpoint"""
-    return {"pong": True}
+@router.get("/health/full")
+async def full_health_check(request: Request):
+    """
+    Full health report including:
+    - core service statuses (redis, catalog, llm)
+    - environment flags (api key presence)
+    - resource metrics (cpu, memory, uptime)
+    - registered endpoints list (path, methods, name)
+    """
+    # Base health metrics
+    base: HealthStatus = await _health_checker.get_health_status()
+
+    # App state services
+    app = request.app
+    llm_available = False
+    model_name = None
+    api_key_present = False
+    try:
+        llm = getattr(app.state, "llm", None)
+        if llm is not None:
+            llm_available = bool(getattr(llm, "client", None))
+            model_name = getattr(llm, "model_name", None)
+            api_key_present = bool(getattr(llm, "api_key", None))
+    except Exception:
+        llm_available = False
+
+    catalog_products = 0
+    brands_count = 0
+    try:
+        catalog = getattr(app.state, "catalog", None)
+        catalog_products = len(getattr(catalog, "products", []) or [])
+        # brand count already calculated in base, but compute explicitly here too
+        brands = set()
+        for p in getattr(catalog, "products", []) or []:
+            b = p.get("brand")
+            if b:
+                brands.add(b)
+        brands_count = len(brands)
+    except Exception:
+        pass
+
+    # Registered endpoints
+    endpoints: List[EndpointInfo] = []
+    try:
+        for route in request.app.router.routes:
+            path = getattr(route, "path", getattr(route, "url_path", ""))
+            name = getattr(route, "name", "")
+            methods = list(getattr(route, "methods", set())) or []
+            endpoints.append(EndpointInfo(path=path, name=name, methods=methods))
+    except Exception:
+        pass
+
+    # Core endpoints expected
+    expected_core = [
+        "/health", "/ready", "/metrics", "/ws",
+        "/api/products", "/api/brands", "/api/system-health"
+    ]
+    missing_core: List[str] = []
+    present_paths = {e.path for e in endpoints}
+    for p in expected_core:
+        if p not in present_paths:
+            missing_core.append(p)
+
+    return {
+        "status": base.status,
+        "resources": {
+            "redis_connected": base.redis_connected,
+            "memory_usage_percent": base.memory_usage_percent,
+            "cpu_usage_percent": base.cpu_usage_percent,
+            "uptime_seconds": base.uptime_seconds,
+        },
+        "catalog": {
+            "product_count": catalog_products,
+            "brand_count": brands_count,
+        },
+        "llm": {
+            "available": llm_available,
+            "api_key_present": api_key_present,
+            "model": model_name,
+        },
+        "endpoints": [e.model_dump() for e in endpoints],
+        "missing_core_endpoints": missing_core,
+        "timestamp": base.timestamp,
+    }
