@@ -9,6 +9,8 @@ interface Product {
   description?: string;
   short_description?: string;
   main_category?: string;
+  subcategory?: string;
+  sub_subcategory?: string;
   images?: {
     main?: string;
     thumbnail?: string;
@@ -94,6 +96,21 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         <div className="modal-header">
           <div>
             <h2>{displayName}</h2>
+            <div style={{ fontSize: '0.85rem', color: '#666', marginBottom: '8px', display: 'flex', gap: '6px', alignItems: 'center' }}>
+                 {product.main_category && <span style={{ background: '#f5f5f5', padding: '2px 6px', borderRadius: '4px', border: '1px solid #eee' }}>{product.main_category}</span>} 
+                 {product.subcategory && (
+                   <>
+                     <span>›</span>
+                     <span style={{ background: '#f5f5f5', padding: '2px 6px', borderRadius: '4px', border: '1px solid #eee' }}>{product.subcategory}</span>
+                   </>
+                 )}
+                 {product.sub_subcategory && (
+                   <>
+                     <span>›</span>
+                     <span style={{ background: '#f5f5f5', padding: '2px 6px', borderRadius: '4px', border: '1px solid #eee' }}>{product.sub_subcategory}</span>
+                   </>
+                 )}
+            </div>
             {product.model_number && (
               <p className="model-number">Model: {product.model_number}</p>
             )}

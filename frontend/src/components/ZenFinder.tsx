@@ -42,44 +42,59 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, depth = 0, activeId, onSelect
         <div className="flex items-center gap-3 overflow-hidden">
           {/* Always prefer image/logo over emoji icons - 3x larger for brands */}
           {node.type === 'brand' ? (
-            <div className="w-14 h-14 rounded-lg flex-shrink-0 bg-bg-surface/50 p-1.5 flex items-center justify-center border border-white/10 shadow-sm">
-              {hasImage ? (
-                <img 
-                  src={getOptimizedImageUrl(node.image || '', 'thumbnail')} 
-                  alt={node.name}
-                  className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
-                />
-              ) : (
-                <span className="text-2xl">🏢</span>
-              )}
+            <div className="flex items-center gap-3 flex-1 min-w-0">
+              <div className="w-12 h-12 rounded-lg flex-shrink-0 bg-bg-surface/50 p-1.5 flex items-center justify-center border border-white/10 shadow-sm">
+                {hasImage ? (
+                  <img 
+                    src={getOptimizedImageUrl(node.image || '', 'thumbnail')} 
+                    alt={node.name}
+                    className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                    crossOrigin="anonymous"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
+                  />
+                ) : (
+                  <span className="text-2xl">🏢</span>
+                )}
+              </div>
+              <div className="flex flex-col min-w-0 flex-1">
+                <span className={`text-sm ${isActive ? 'font-bold' : 'font-semibold'} whitespace-nowrap overflow-hidden text-ellipsis`}>
+                  {node.name}
+                </span>
+                {node.brandIdentity && (
+                  <span className="text-[10px] uppercase tracking-wider text-white/40 font-mono">
+                    SKU: {node.id.replace('brand-', '').toUpperCase()}
+                  </span>
+                )}
+              </div>
             </div>
           ) : (
-            <div className={`w-10 h-10 rounded flex-shrink-0 bg-bg-surface/30 p-1 flex items-center justify-center ${hasImage ? 'bg-white' : ''}`}>
-              {hasImage ? (
-                <img 
-                  src={getOptimizedImageUrl(node.image || '', 'thumbnail')} 
-                  alt={node.name}
-                  className="w-full h-full object-contain"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const fallback = target.nextElementSibling as HTMLElement;
-                    if (fallback) fallback.classList.remove('hidden');
-                  }}
-                />
-              ) : null}
-              <span className={`text-base transition-transform duration-300 ${hasImage ? 'hidden' : ''} ${isExpanded ? 'rotate-0' : ''}`}>
-                 {node.icon || (hasChildren ? (isExpanded ? '📂' : '📁') : '📄')}
+            <>
+              <div className={`w-10 h-10 rounded flex-shrink-0 bg-bg-surface/30 p-1 flex items-center justify-center ${hasImage ? 'bg-white' : ''}`}>
+                {hasImage ? (
+                  <img 
+                    src={getOptimizedImageUrl(node.image || '', 'thumbnail')} 
+                    alt={node.name}
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.classList.remove('hidden');
+                    }}
+                  />
+                ) : null}
+                <span className={`text-base transition-transform duration-300 ${hasImage ? 'hidden' : ''} ${isExpanded ? 'rotate-0' : ''}`}>
+                   {node.icon || (hasChildren ? (isExpanded ? '📂' : '📁') : '📄')}
+                </span>
+              </div>
+              <span className={`text-sm ${isActive ? 'font-bold' : 'font-medium'} whitespace-nowrap overflow-hidden text-ellipsis`}>
+                {node.name}
               </span>
-            </div>
+            </>
           )}
-          <span className={`text-sm ${isActive ? 'font-bold' : 'font-medium'} whitespace-nowrap overflow-hidden text-ellipsis`}>
-            {node.name}
-          </span>
         </div>
         
         {/* Insight Chip */}

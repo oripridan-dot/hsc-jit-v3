@@ -19,7 +19,9 @@ except ImportError:
 
 class GeminiService:
     def __init__(self):
-        self.api_key = os.getenv("GEMINI_API_KEY")
+        # Support both env var names for backward compatibility
+        # Preferred: GEMINI_API_KEY; Fallback: GOOGLE_API_KEY
+        self.api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
         self.model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
         self.client = None
 
@@ -28,7 +30,7 @@ class GeminiService:
         elif not HAS_GEMINI:
             logger.warning("google-genai package missing.")
         else:
-            logger.warning("GEMINI_API_KEY not set.")
+            logger.warning("GEMINI_API_KEY/GOOGLE_API_KEY not set.")
 
     def _decode_image(self, image_data: str) -> Optional[Tuple[bytes, str]]:
         """Decode a base64 string (data URL or raw) into bytes and mime type."""

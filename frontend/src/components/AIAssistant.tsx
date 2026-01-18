@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useNavigationStore } from '../store/navigationStore';
 import './AIAssistant.css';
 
 interface Message {
@@ -24,12 +25,15 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
   const [input, setInput] = useState('');
   const [isThinking, setIsThinking] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  
+  // Navigation context awareness
+  const { currentLevel, activePath, selectedProduct, ecosystem } = useNavigationStore();
 
   useEffect(() => {
     if (messages.length === 0 && allProducts.length > 0) {
       setMessages([{
         role: 'assistant',
-        content: `👋 Hi! I'm **Halileo Haliley**, your Halilit Support Center AI Assistant.\n\nI have access to **${allProducts.length} products** across all brands.\n\nI can help you with:\n• Product specifications and features\n• Pricing information\n• Brand history\n• Category exploration\n\nJust ask me anything!`,
+        content: `👋 Hi! I'm **Halileo Haliley**, your Halilit Support Center AI Assistant.\n\nI have access to **${allProducts.length} products** across **${ecosystem?.children?.length || 0} domains**.\n\nI can help you with:\n• Product specifications and features\n• Pricing information\n• Brand history\n• Category exploration\n• Product relationships and dependencies\n\nJust ask me anything!`,
         timestamp: new Date(),
       }]);
     } else if (messages.length === 0) {
@@ -40,7 +44,38 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
         timestamp: new Date(),
       }]);
     }
-  }, [allProducts.length]);
+  }, [allProducts.length, ecosystem]);
+  
+  // React to navigation changes
+  useEffect(() => {
+    if (currentLevel === 'product' && selectedProduct) {
+      const contextMessage: Message = {
+        role: 'assistant',
+        content: `🎯 I see you're viewing **${selectedProduct.name}**.\n\nThis is a **${selectedProduct.product_type || 'root'}** product from **${selectedProduct.brand}**.\n\n${
+          selectedProduct.accessories?.length > 0 
+            ? `💡 This product requires **${selectedProduct.accessories.length} accessories**.` 
+            : ''
+        }\n${
+          selectedProduct.related?.length > 0
+            ? `🔗 There are **${selectedProduct.related.length} related products** that work well with this.`
+            : ''
+        }\n\nWhat would you like to know about it?`,
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, contextMessage]);
+    } else if (currentLevel === 'domain' && activePath.length > 0) {
+      const domain = activePath[0];
+      const domainData = ecosystem?.children?.find(d => d.name === domain);
+      if (domainData) {
+        const contextMessage: Message = {
+          role: 'assistant',
+          content: `📂 You're exploring the **${domain}** domain.\n\nThis domain contains **${domainData.product_count || 0} products** across **${domainData.children?.length || 0} brands**.\n\nWhat would you like to explore?`,
+          timestamp: new Date()
+        };
+        setMessages(prev => [...prev, contextMessage]);
+      }
+    }
+  }, [currentLevel, selectedProduct, activePath]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });

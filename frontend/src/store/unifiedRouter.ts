@@ -89,7 +89,7 @@ class UnifiedStateManager {
       };
 
       this.wsConnection.onerror = (error) => {
-        console.error('[UnifiedRouter] WebSocket error:', error);
+        console.debug('[UnifiedRouter] WebSocket error (falling back to static mode):', error);
         useWebSocketStore.setState({ connectionState: 3 }); // CLOSED
       };
 
@@ -98,14 +98,12 @@ class UnifiedStateManager {
         this.reconnectAttempts++;
 
         if (this.reconnectAttempts <= this.maxReconnectAttempts) {
-          console.log(`[UnifiedRouter] WebSocket disconnected, reconnecting... (attempt ${this.reconnectAttempts}/${this.maxReconnectAttempts})`);
+          console.debug(`[UnifiedRouter] WebSocket disconnected, retrying... (attempt ${this.reconnectAttempts}/${this.maxReconnectAttempts})`);
           useWebSocketStore.setState({ connectionState: 0 }); // CONNECTING
           setTimeout(connect, 3000);
         } else {
-          console.error('[UnifiedRouter] ❌ Failed to connect after', this.maxReconnectAttempts, 'attempts');
-          console.error('📍 Backend not available. Please ensure the backend server is running.');
-          console.error('💡 For local development: Run `docker compose up` or start backend with `uvicorn app.main:app`');
-          console.error('💡 For production: Set VITE_API_URL environment variable to your backend URL');
+          console.log('[UnifiedRouter] ℹ️ Operating in Static Mode (backend optional for now)');
+          console.debug('ℹ️ To enable backend features: Start backend with `uvicorn` on port 8000');
         }
       };
     };

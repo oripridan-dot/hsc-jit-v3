@@ -4,7 +4,7 @@
  */
 
 export const BRAND_COLORS: Record<string, { primary: string; secondary: string }> = {
-  roland: { primary: '#1f2937', secondary: '#3b82f6' }, // Dark slate + blue
+  roland: { primary: '#FF5500', secondary: '#FF8833' }, // Roland Orange (actual brand color)
   moog: { primary: '#7c2d12', secondary: '#dc2626' }, // Deep orange + red
   nord: { primary: '#9A0000', secondary: '#E31B2D' }, // Classic Red
   mackie: { primary: '#1e293b', secondary: '#f97316' }, // Slate + orange

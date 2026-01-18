@@ -66,3 +66,19 @@ backups/
 
 # Image cache
 backend/app/static/assets/cache/
+
+# V3.7 Specific
+backend/data/catalogs/*.json
+!backend/data/catalogs/.gitkeep
+frontend/public/data/catalogs_brand/*.json
+backend/logs/*.log
+backend/backend.log
+*.pyc
+__pycache__/
+.pytest_cache/
+venv/
+node_modules/
+.vite/
+
+# Playwright browsers (too large for GitHub)
+.playwright-browsers/
