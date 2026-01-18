@@ -1,312 +1,292 @@
 /**
- * Workbench - Center Pane (Mission Control)
- * Shows: Galaxy view OR Product cockpit depending on nav level
+ * Workbench - Product Cockpit
+ * Displays detailed product information with right-side MediaBar
  */
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigationStore } from '../store/navigationStore';
-import { SignalFlowMap } from './SignalFlowMap';
-import { FiArrowLeft, FiExternalLink } from 'react-icons/fi';
+import { FiArrowLeft, FiExternalLink, FiInfo, FiBook, FiPackage } from 'react-icons/fi';
+import { MediaBar } from './MediaBar';
+import { MediaViewer } from './MediaViewer';
+import { InsightsTable } from './InsightsTable';
+import type { ProductImage } from '../types';
 
 export const Workbench: React.FC = () => {
-  const { currentLevel, selectedProduct, activePath, goBack, ecosystem } = useNavigationStore();
+  const { selectedProduct, goBack, setWhiteBgImage: saveWhiteBgImage } = useNavigationStore();
+  const [activeTab, setActiveTab] = useState<'overview' | 'specs' | 'docs'>('overview');
+  const [isMediaViewerOpen, setIsMediaViewerOpen] = useState(false);
+  const [selectedMediaItem, setSelectedMediaItem] = useState<{ url: string; type: 'image' | 'video' | 'audio' | 'pdf' } | null>(null);
+  const [whiteBgImage, setWhiteBgImage] = useState<string | null>(null);
 
-  // Galaxy View - show all domains as interactive cards
-  if (currentLevel === 'galaxy') {
-    return (
-      <div className="h-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
-            HALILIT UNIVERSE
-          </h1>
-          <p className="text-slate-400 text-sm font-mono">
-            Select a domain to begin exploration
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl">
-          {ecosystem?.children?.map((domain) => (
-            <button
-              key={domain.name}
-              onClick={() => {
-                useNavigationStore.getState().warpTo('domain', [domain.name]);
-                useNavigationStore.getState().toggleNode(domain.name);
-              }}
-              className="
-                group relative overflow-hidden
-                bg-gradient-to-br from-slate-800/50 to-slate-900/50
-                border border-slate-700/50 rounded-xl p-6
-                hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/20
-                transition-all duration-300
-              "
-            >
-              <div className="relative z-10">
-                <h3 className="text-lg font-bold text-slate-200 mb-2 group-hover:text-cyan-400 transition-colors">
-                  {domain.name}
-                </h3>
-                <div className="text-3xl font-bold text-cyan-400/80 mb-1">
-                  {domain.product_count || 0}
-                </div>
-                <p className="text-xs text-slate-500 font-mono">PRODUCTS</p>
-              </div>
-              
-              {/* Glow effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 to-blue-500/0 group-hover:from-cyan-500/10 group-hover:to-blue-500/10 transition-all duration-300" />
-            </button>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  // Product Cockpit - detailed view of selected product
-  if (currentLevel === 'product' && selectedProduct) {
-    return (
-      <div className="h-full flex flex-col bg-slate-950/50 overflow-y-auto">
-        {/* Back button + breadcrumb */}
-        <div className="sticky top-0 z-10 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 p-4">
-          <div className="flex items-center gap-4">
-            <button
-              onClick={goBack}
-              className="flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-400 transition-colors"
-            >
-              <FiArrowLeft />
-              <span className="font-mono">BACK</span>
-            </button>
-            
-            <div className="flex items-center gap-2 text-xs text-slate-500 font-mono">
-              {activePath.map((segment, idx) => (
-                <React.Fragment key={idx}>
-                  {idx > 0 && <span>/</span>}
-                  <span className="text-slate-400">{segment}</span>
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Product Details */}
-        <div className="p-6 space-y-6">
-          {/* Header */}
-          <div>
-            <h1 className="text-2xl font-bold text-slate-100 mb-2">
-              {selectedProduct.name}
-            </h1>
-            <div className="flex items-center gap-4 text-sm">
-              <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-full font-mono">
-                {selectedProduct.brand}
-              </span>
-              {selectedProduct.product_type && (
-                <span className="px-3 py-1 bg-slate-800 text-slate-400 rounded-full text-xs font-mono uppercase">
-                  {selectedProduct.product_type}
-                </span>
-              )}
-              {selectedProduct.price && (
-                <span className="text-emerald-400 font-bold text-lg">
-                  ₪{selectedProduct.price}
-                </span>
-              )}
-            </div>
-          </div>
-
-          {/* Hero Image */}
-          {selectedProduct.image_url && (
-            <div className="w-full h-64 bg-slate-900/50 rounded-lg overflow-hidden border border-slate-700/50">
-              <img
-                src={selectedProduct.image_url}
-                alt={selectedProduct.name}
-                className="w-full h-full object-contain"
-              />
-            </div>
-          )}
-
-          {/* Signal Flow Map */}
-          {((selectedProduct.accessories?.length ?? 0) > 0 || (selectedProduct.related?.length ?? 0) > 0) && (
-            <div>
-              <h2 className="text-xs font-mono font-bold text-slate-400 tracking-wider mb-3">
-                DEPENDENCIES & RELATIONSHIPS
-              </h2>
-              <SignalFlowMap product={selectedProduct} />
-            </div>
-          )}
-
-          {/* Accessories */}
-          {selectedProduct.accessories && selectedProduct.accessories.length > 0 && (
-            <div>
-              <h2 className="text-xs font-mono font-bold text-slate-400 tracking-wider mb-3">
-                REQUIRED ACCESSORIES
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {selectedProduct.accessories.map((acc: any, idx: number) => (
-                  <div
-                    key={idx}
-                    className="p-3 bg-slate-900/50 border border-slate-700/50 rounded-lg hover:border-cyan-500/30 transition-colors"
-                  >
-                    <div className="text-sm text-slate-300 font-semibold">
-                      {acc.name || acc.title}
-                    </div>
-                    {acc.price && (
-                      <div className="text-xs text-emerald-400 mt-1">₪{acc.price}</div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Related Products */}
-          {selectedProduct.related && selectedProduct.related.length > 0 && (
-            <div>
-              <h2 className="text-xs font-mono font-bold text-slate-400 tracking-wider mb-3">
-                RELATED PRODUCTS
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                {selectedProduct.related.map((rel: any, idx: number) => (
-                  <div
-                    key={idx}
-                    className="p-3 bg-emerald-900/10 border border-emerald-500/20 rounded-lg hover:border-emerald-500/40 transition-colors"
-                  >
-                    <div className="text-sm text-slate-300 font-semibold">
-                      {rel.name || rel.title}
-                    </div>
-                    {rel.category && (
-                      <div className="text-xs text-slate-500 mt-1">{rel.category}</div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* External Links */}
-          <div className="pt-4 border-t border-slate-800">
-            <button className="flex items-center gap-2 text-sm text-cyan-400 hover:text-cyan-300 transition-colors">
-              <FiExternalLink size={14} />
-              <span>View on Official Website</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Intermediate View (Domain/Brand/Family selected) - Show product grid
-  // Collect all products under current level
-  const getProductsAtLevel = () => {
-    if (!ecosystem) return [];
-    
-    const collectProducts = (node: any): any[] => {
-      if (node.type === 'product') {
-        return [node];
-      }
-      if (node.children) {
-        return node.children.flatMap(collectProducts);
-      }
-      return [];
-    };
-
-    // Find the current node in the tree
-    const findNode = (node: any, path: string[], idx: number = 0): any => {
-      if (idx >= path.length) return node;
-      const child = node.children?.find((c: any) => c.name === path[idx]);
-      if (!child) return null;
-      return findNode(child, path, idx + 1);
-    };
-
-    const currentNode = findNode(ecosystem, activePath);
-    return currentNode ? collectProducts(currentNode) : [];
+  // Helper to get main image URL
+  const getMainImage = () => {
+    if (!selectedProduct) return null;
+    if (selectedProduct.images && Array.isArray(selectedProduct.images) && selectedProduct.images.length > 0) {
+      const mainImg = selectedProduct.images.find((img: ProductImage) => img.type === 'main');
+      return mainImg?.url || selectedProduct.images[0]?.url;
+    }
+    return selectedProduct.image_url || selectedProduct.image;
   };
 
-  const productsAtLevel = getProductsAtLevel();
+  // Helper to get gallery images
+  const getGalleryImages = () => {
+    if (!selectedProduct?.images || !Array.isArray(selectedProduct.images)) return [];
+    return selectedProduct.images.filter((img: ProductImage) => img.type === 'gallery').map((img: ProductImage) => img.url);
+  };
 
-  return (
-    <div className="h-full flex flex-col bg-slate-950/50">
-      {/* Header */}
-      <div className="sticky top-0 z-10 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 p-4">
-        <div className="flex items-center gap-4 mb-4">
-          <button
-            onClick={goBack}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-400 transition-colors"
-          >
-            <FiArrowLeft />
-            <span className="font-mono">BACK</span>
-          </button>
-          
-          <div className="flex-1">
-            <h2 className="text-xl font-bold text-slate-200">
-              {activePath[activePath.length - 1] || 'Products'}
-            </h2>
-            <div className="flex items-center gap-2 text-xs text-slate-500 font-mono mt-1">
-              {activePath.map((segment, idx) => (
-                <React.Fragment key={idx}>
-                  {idx > 0 && <span>/</span>}
-                  <span className="text-slate-400">{segment}</span>
-                </React.Fragment>
-              ))}
+  // Product Cockpit - detailed view of selected product
+  if (selectedProduct) {
+    const mainImage = getMainImage();
+
+    return (
+      <div className="flex-1 flex flex-col h-full bg-[var(--bg-app)]">
+        {/* Header with Back Button */}
+        <div className="flex-shrink-0 bg-[var(--bg-panel)] border-b border-[var(--border-subtle)] px-2 py-1 sm:px-3 sm:py-1.5">
+          <div className="flex items-center justify-between mb-1">
+            <button
+              onClick={goBack}
+              className="flex items-center gap-1 text-xs sm:text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+            >
+              <FiArrowLeft size={16} />
+              <span className="font-mono hidden sm:inline">← Back</span>
+            </button>
+            <div className="flex items-center gap-1 sm:gap-2">
+              <span className="text-[10px] sm:text-xs font-mono uppercase text-indigo-400 bg-indigo-500/10 px-1.5 sm:px-2 py-0.5 rounded">
+                {selectedProduct.brand}
+              </span>
+              <span className="text-[10px] sm:text-xs font-mono uppercase text-amber-400 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 rounded">
+                {((selectedProduct as unknown as Record<string, string>)?.main_category) || selectedProduct.category || 'Product'}
+              </span>
             </div>
           </div>
-          
-          <div className="text-xs text-slate-500 font-mono">
-            {productsAtLevel.length} PRODUCTS
-          </div>
-        </div>
-      </div>
 
-      {/* Product Grid */}
-      {productsAtLevel.length > 0 ? (
-        <div className="flex-1 overflow-y-auto p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {productsAtLevel.map((product, idx) => (
+          <h1 className="text-base sm:text-lg font-bold text-[var(--text-primary)] mb-0.5 flex items-center gap-2">
+            {selectedProduct.name?.replace(/\n/g, ' ')}
+            {whiteBgImage && (
+              <img 
+                src={whiteBgImage} 
+                alt="Product thumbnail" 
+                className="h-6 sm:h-8 aspect-square object-contain bg-white/5 rounded border border-white/10 p-0.5 flex-shrink-0"
+              />
+            )}
+          </h1>
+          
+          {(selectedProduct.description || selectedProduct.short_description) && (
+            <p className="text-[9px] sm:text-xs text-[var(--text-secondary)] line-clamp-1">
+              {(selectedProduct.short_description || selectedProduct.description || '').substring(0, 80)}...
+            </p>
+          )}
+        </div>
+
+        {/* Main Content: Tabs + Content + MediaBar */}
+        <div className="flex-1 flex min-h-0 overflow-hidden gap-0 flex-col lg:flex-row">
+          {/* LEFT: Main content area */}
+          <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
+            {/* Tab Navigation */}
+            <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-panel)]/50 px-1 sm:px-2 flex gap-0.5">
               <button
-                key={idx}
-                onClick={() => useNavigationStore.getState().selectProduct(product)}
-                className="group relative overflow-hidden bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 rounded-lg p-4 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 text-left"
+                onClick={() => setActiveTab('overview')}
+                className={`px-1.5 sm:px-2 py-1 text-[9px] sm:text-[10px] font-medium border-b-2 transition-all whitespace-nowrap ${
+                  activeTab === 'overview'
+                    ? 'border-indigo-500 text-indigo-400'
+                    : 'border-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
               >
-                {/* Product Image */}
-                {product.image_url && (
-                  <div className="w-full h-40 bg-slate-900/50 rounded-md mb-3 overflow-hidden">
-                    <img
-                      src={product.image_url}
-                      alt={product.name}
-                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                )}
-                
-                {/* Product Info */}
-                <div className="relative z-10 space-y-2">
-                  <h3 className="font-bold text-sm text-slate-200 group-hover:text-cyan-400 transition-colors line-clamp-2">
-                    {product.name}
-                  </h3>
-                  
-                  {product.category && (
-                    <p className="text-xs text-slate-400">
-                      {product.category}
-                    </p>
+                <FiInfo className="inline mr-0.5" size={12} />
+                <span className="hidden sm:inline">Overview</span>
+              </button>
+              <button
+                onClick={() => setActiveTab('specs')}
+                className={`px-1.5 sm:px-2 py-1 text-[9px] sm:text-[10px] font-medium border-b-2 transition-all whitespace-nowrap ${
+                  activeTab === 'specs'
+                    ? 'border-indigo-500 text-indigo-400'
+                    : 'border-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                <FiBook className="inline mr-0.5" size={12} />
+                <span className="hidden sm:inline">Specs</span>
+              </button>
+              <button
+                onClick={() => setActiveTab('docs')}
+                className={`px-1.5 sm:px-2 py-1 text-[9px] sm:text-[10px] font-medium border-b-2 transition-all whitespace-nowrap ${
+                  activeTab === 'docs'
+                    ? 'border-indigo-500 text-indigo-400'
+                    : 'border-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                <FiPackage className="inline mr-0.5" size={12} />
+                <span className="hidden sm:inline">Docs</span>
+              </button>
+            </div>
+
+            {/* Tab Content */}
+            <div className="flex-1 overflow-y-auto p-1.5 sm:p-2 bg-[var(--bg-app)]">
+              {activeTab === 'overview' && (
+                <div className="max-w-4xl mx-auto space-y-2 sm:space-y-3">
+                  {/* Hero Image */}
+                  {mainImage && (
+                    <div className="w-full bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
+                      <img
+                        src={mainImage}
+                        alt={selectedProduct.name}
+                        className="w-full h-auto max-h-48 sm:max-h-72 object-contain rounded-lg"
+                      />
+                    </div>
                   )}
-                  
-                  {product.short_description && (
-                    <p className="text-xs text-slate-500 line-clamp-2">
-                      {product.short_description}
-                    </p>
+
+                  {/* Description */}
+                  {selectedProduct.description && (
+                    <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
+                      <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Description</h2>
+                      <div className="text-xs text-[var(--text-secondary)] whitespace-pre-line leading-relaxed">
+                        {selectedProduct.description}
+                      </div>
+                    </div>
                   )}
-                  
-                  <div className="pt-2 border-t border-slate-700/50 flex items-center justify-between">
-                    <span className="text-xs font-mono text-slate-500">VIEW</span>
-                    <span className="text-xs text-cyan-400 font-semibold group-hover:translate-x-1 transition-transform">
-                      →
-                    </span>
+
+                  {/* Quick Specs */}
+                  {selectedProduct.specs && Object.keys(selectedProduct.specs).length > 0 && (
+                    <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
+                      <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Key Specifications</h2>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
+                        {Object.entries(selectedProduct.specs).slice(0, 6).map(([key, value]) => (
+                          <div key={key} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-[var(--border-subtle)] pb-1.5">
+                            <span className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase">{key.replace(/_/g, ' ')}</span>
+                            <span className="text-[9px] sm:text-xs text-[var(--text-primary)] font-medium">{value}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {activeTab === 'specs' && (
+                <div className="max-w-4xl mx-auto space-y-2 sm:space-y-3">
+                  {/* Full Specifications */}
+                  {selectedProduct.specs && Object.keys(selectedProduct.specs).length > 0 ? (
+                    <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-3 sm:p-6">
+                      <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Technical Specifications</h2>
+                      <div className="space-y-1 sm:space-y-2">
+                        {Object.entries(selectedProduct.specs).map(([key, value]) => (
+                          <div key={key} className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-b border-[var(--border-subtle)] pb-1 sm:pb-2">
+                            <span className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase w-full sm:w-1/3">{key.replace(/_/g, ' ')}</span>
+                            <span className="text-[9px] sm:text-xs text-[var(--text-primary)] font-medium w-full sm:w-2/3 sm:text-right mt-0.5 sm:mt-0">{value}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3 text-center">
+                      <p className="text-[var(--text-tertiary)] text-[10px] sm:text-xs">No specifications available for this product</p>
+                    </div>
+                  )}
+
+                  {/* Additional Details */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2">
+                    {selectedProduct.sku && (
+                      <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
+                        <div className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase mb-0.5">SKU</div>
+                        <div className="text-xs text-[var(--text-primary)] font-mono">{selectedProduct.sku}</div>
+                      </div>
+                    )}
+                    {selectedProduct.warranty && (
+                      <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
+                        <div className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase mb-0.5">Warranty</div>
+                        <div className="text-xs text-[var(--text-primary)] font-mono">{selectedProduct.warranty}</div>
+                      </div>
+                    )}
                   </div>
                 </div>
-              </button>
-            ))}
+              )}
+
+              {activeTab === 'docs' && (
+                <div className="max-w-4xl mx-auto space-y-2 sm:space-y-3">
+                  {/* Manual Link */}
+                  {selectedProduct.manuals && selectedProduct.manuals.length > 0 && (
+                    <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
+                      <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Documentation</h2>
+                      <div className="space-y-1.5">
+                        {selectedProduct.manuals.map((manual, idx) => (
+                          <a
+                            key={idx}
+                            href={manual.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-[9px] sm:text-xs text-cyan-400 hover:text-cyan-300 transition-colors break-all"
+                          >
+                            <FiBook className="flex-shrink-0" />
+                            <span>{manual.title || 'Download User Manual'}</span>
+                            <FiExternalLink size={12} className="flex-shrink-0" />
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* External Link */}
+                  <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
+                    <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Official Product Page</h2>
+                    <button className="flex items-center gap-2 text-[9px] sm:text-xs text-cyan-400 hover:text-cyan-300 transition-colors">
+                      <FiExternalLink size={12} />
+                      <span>View on Manufacturer Website</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Insights Table at Bottom */}
+            <div className="flex-shrink-0">
+              <InsightsTable product={selectedProduct} />
+            </div>
           </div>
+
+          {/* RIGHT: MediaBar sidebar - Hidden on mobile, visible on lg screens */}
+          <aside className="hidden lg:flex flex-shrink-0 border-l border-[var(--border-subtle)] overflow-hidden flex-col">
+            <MediaBar
+              images={getGalleryImages()}
+              onMediaClick={(media) => {
+                setSelectedMediaItem(media);
+                setIsMediaViewerOpen(true);
+              }}
+              onWhiteBgImageFound={(imageUrl) => {
+                setWhiteBgImage(imageUrl);
+                if (selectedProduct?.id) {
+                  saveWhiteBgImage(selectedProduct.id, imageUrl);
+                }
+              }}
+            />
+          </aside>
         </div>
-      ) : (
-        <div className="flex-1 flex flex-col items-center justify-center text-slate-400">
-          <p className="text-sm">No products at this level</p>
-          <p className="text-xs text-slate-500 mt-2">Navigate deeper using the tree on the left</p>
-        </div>
-      )}
+
+        {/* MediaViewer Modal */}
+        <MediaViewer
+          isOpen={isMediaViewerOpen}
+          media={selectedMediaItem}
+          onClose={() => setIsMediaViewerOpen(false)}
+          allMedia={getGalleryImages().map(url => ({ url, type: 'image' as const }))}
+          currentIndex={selectedMediaItem ? getGalleryImages().indexOf(selectedMediaItem.url) : 0}
+          onNavigate={(index) => {
+            const imgs = getGalleryImages();
+            if (imgs[index]) {
+              setSelectedMediaItem({ url: imgs[index], type: 'image' });
+            }
+          }}
+        />
+      </div>
+    );
+  }
+
+  // No product selected - show empty state
+  return (
+    <div className="flex-1 flex items-center justify-center bg-[var(--bg-app)] p-8">
+      <div className="text-center max-w-md">
+        <div className="text-6xl mb-4">🎵</div>
+        <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-2">Welcome to Halilit</h2>
+        <p className="text-[var(--text-secondary)]">
+          Select a product from the navigator to view detailed information
+        </p>
+      </div>
     </div>
   );
 };

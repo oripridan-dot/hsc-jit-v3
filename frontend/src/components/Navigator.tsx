@@ -1,358 +1,529 @@
 /**
- * Navigator - Left Pane Tree Navigation
- * Hierarchical browsing: Domain -> Brand -> Family -> Product
+ * Navigator - Halilit Catalog Navigation Panel
+ * 
+ * The Unified Interface: Catalog Browser + Search
+ * 
+ * Architecture:
+ * - Fetches static /data/index.json (The Catalog)
+ * - Lazy-loads brand catalogs on demand
+ * - Uses pre-built search_graph for instant suggestions
+ * - Zero backend dependency at runtime
  */
+
 import React, { useState, useEffect } from 'react';
-import { useNavigationStore, type EcosystemNode, type NavLevel } from '../store/navigationStore';
-import { FiChevronRight, FiChevronDown, FiSearch, FiPackage, FiFolder, FiGrid } from 'react-icons/fi';
-import { catalogLoader, type Product } from '../lib/catalogLoader';
-import { useBrandTheme } from '../hooks/useBrandTheme';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Compass, Search, ChevronRight, Sparkles, BookOpen } from 'lucide-react';
+import { useNavigationStore } from '../store/navigationStore';
 
-// Extended product shape from catalog JSON
-interface CatalogProduct extends Product {
-  main_category?: string;
-  subcategory?: string;
-  images?: { main?: string; thumbnail?: string; gallery?: string[] } | string[];
+interface CatalogIndex {
+  metadata: {
+    version: string;
+    generated_at: string;
+    environment: string;
+  };
+  brands: Array<{
+    name: string;
+    slug: string;
+    count: number;
+    file: string;
+  }>;
+  search_graph: Array<{
+    id: string;
+    label: string;
+    brand: string;
+    category: string;
+    keywords: string[];
+  }>;
+  total_products: number;
 }
-
-interface TreeNodeProps {
-  node: EcosystemNode;
-  level: number;
-  path: string[];
-}
-
-const TreeNode: React.FC<TreeNodeProps> = ({ node, level, path }) => {
-  const { expandedNodes, toggleNode, warpTo, selectProduct, activePath } = useNavigationStore();
-  const isExpanded = expandedNodes.has(node.name);
-  const hasChildren = node.children && node.children.length > 0;
-  const isActive = activePath[level] === node.name;
-
-  const handleClick = () => {
-    const newPath = [...path, node.name];
-    
-    if (node.type === 'product') {
-      selectProduct(node);
-    } else {
-      if (hasChildren) {
-        toggleNode(node.name);
-      }
-      warpTo(node.type as NavLevel, newPath);
-    }
-  };
-
-  const getIcon = () => {
-    switch (node.type) {
-      case 'domain': return <FiGrid className="text-cyan-400" />;
-      case 'brand': return <FiFolder className="text-blue-400" />;
-      case 'family': return <FiPackage className="text-emerald-400" />;
-      case 'product': return <FiPackage className="text-slate-400" size={14} />;
-      default: return null;
-    }
-  };
-
-  const getTextColor = () => {
-    if (isActive) return 'text-cyan-300 font-bold';
-    switch (node.type) {
-      case 'domain': return 'text-white';
-      case 'brand': return 'text-white';
-      case 'family': return 'text-white font-semibold';
-      case 'product': return 'text-slate-100';
-      default: return 'text-white';
-    }
-  };
-
-  return (
-    <div className="select-none">
-      <div
-        onClick={handleClick}
-        className={`
-          flex items-center gap-2 py-2 px-2 rounded-md cursor-pointer
-          hover:bg-slate-700/40 transition-all duration-200
-          ${isActive ? 'bg-cyan-900/40 border-l-3 border-cyan-400 shadow-lg shadow-cyan-500/20' : ''}
-        `}
-        style={{ paddingLeft: `${level * 12 + 8}px` }}
-      >
-        {hasChildren && (
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleNode(node.name);
-            }}
-            className="hover:text-cyan-400 transition-colors"
-          >
-            {isExpanded ? <FiChevronDown size={14} /> : <FiChevronRight size={14} />}
-          </button>
-        )}
-        
-        {!hasChildren && <div className="w-[14px]" />}
-        
-        {getIcon()}
-        
-        <span className={`text-sm flex-1 ${getTextColor()}`}>
-          {node.name}
-        </span>
-        
-        {node.product_count !== undefined && node.product_count > 0 && (
-          <span className="text-[10px] text-slate-300 font-mono">
-            {node.product_count}
-          </span>
-        )}
-      </div>
-      
-      {hasChildren && isExpanded && (
-        <div>
-          {node.children!.map((child, idx) => (
-            <TreeNode
-              key={`${child.name}-${idx}`}
-              node={child}
-              level={level + 1}
-              path={[...path, node.name]}
-            />
-          ))}
-        </div>
-      )}
-    </div>
-  );
-};
 
 export const Navigator: React.FC = () => {
-  const { ecosystem, loadEcosystem, searchQuery, setSearch, reset } = useNavigationStore();
+  const [mode, setMode] = useState<'catalog' | 'copilot'>('catalog');
+  const [query, setQuery] = useState('');
+  const [isThinking, setIsThinking] = useState(false);
+  const [catalogIndex, setCatalogIndex] = useState<CatalogIndex | null>(null);
+  const [searchResults, setSearchResults] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [brandLogo, setBrandLogo] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [expandedBrand, setExpandedBrand] = useState<string | null>(null);
+  const [brandProducts, setBrandProducts] = useState<Record<string, any>>({});
+  const [loadingBrands, setLoadingBrands] = useState<Set<string>>(new Set());
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
+  const [brandIdentities, setBrandIdentities] = useState<Record<string, any>>({});
+  const { whiteBgImages } = useNavigationStore();;
 
-  // Apply brand theming globally (Roland by default for v3.7)
-  useBrandTheme('roland');
-
+  // Load the Halilit Catalog Index on mount
   useEffect(() => {
-    const loadData = async () => {
+    const loadCatalog = async () => {
       try {
-        const brandId = 'roland';
-
-        // Load catalog directly from static data (fast, no backend dependency)
-        const catalog = await catalogLoader.loadBrand(brandId);
-        setBrandLogo(catalog.logo_url || null);
-
-        // Build category/subcategory map from products
-        const categoryMap = new Map<string, Map<string, CatalogProduct[]>>();
-        const catalogProducts = catalog.products as CatalogProduct[];
-
-        catalogProducts.forEach((product) => {
-          const category = (product.category || product.main_category || 'Uncategorized').trim() || 'Uncategorized';
-          const subcategory = (product.subcategory || 'General').trim() || 'General';
-
-          if (!categoryMap.has(category)) {
-            categoryMap.set(category, new Map());
-          }
-
-          const subMap = categoryMap.get(category)!;
-          if (!subMap.has(subcategory)) {
-            subMap.set(subcategory, []);
-          }
-
-          subMap.get(subcategory)!.push(product);
-        });
-
-        const getPrimaryImage = (images?: CatalogProduct['images'], fallback?: string) => {
-          if (!images) return fallback;
-          if (Array.isArray(images)) {
-            const first = images[0];
-            return typeof first === 'string' ? first : fallback;
-          }
-          return images.main || images.thumbnail || images.gallery?.[0] || fallback;
-        };
-
-        const categories = Array.from(categoryMap.entries()).map(([catName, subMap]) => {
-          const subcategories = Array.from(subMap.entries()).map(([subName, products]) => ({
-            name: subName,
-            type: 'family' as const,
-            product_count: products.length,
-            children: products.map((p) => ({
-              name: p.name || 'Unknown Product',
-              type: 'product' as const,
-              id: p.id,
-              brand: p.brand,
-              category: p.category || p.main_category,
-              image_url: p.image_url || getPrimaryImage(p.images),
-              product_type: 'root' as const
-            }))
-          }));
-
-          const totalProducts = subcategories.reduce((sum, sub) => sum + (sub.product_count || 0), 0);
-
-          return {
-            name: catName,
-            type: 'family' as const,
-            product_count: totalProducts,
-            children: subcategories
-          };
-        });
-
-        const totalCount = categories.reduce((sum, cat) => sum + (cat.product_count || 0), 0);
-
-        const ecosystemData: EcosystemNode = {
-          name: 'Roland Mission Control',
-          type: 'domain',
-          product_count: totalCount,
-          children: [{
-            name: catalog.brand_name || 'Roland',
-            type: 'brand',
-            product_count: totalCount,
-            children: categories
-          }]
-        };
-
-        loadEcosystem(ecosystemData);
-
-        // Auto-navigate into Roland brand and auto-expand for visibility
-        setTimeout(() => {
-          const { toggleNode, warpTo } = useNavigationStore.getState();
-          const brandName = catalog.brand_name || 'Roland';
-          
-          // Navigate into the brand
-          warpTo('brand', ['Roland Mission Control', brandName]);
-          
-          // Expand brand and first 4 categories
-          toggleNode(brandName);
-          categories.slice(0, 4).forEach(cat => toggleNode(cat.name));
-        }, 50);
-      } catch (error) {
-        console.error('❌ Failed to load catalog hierarchy:', error);
-        alert(`Failed to load ecosystem: ${error instanceof Error ? error.message : 'Unknown error'}`);
+        setLoading(true);
+        setError(null);
+        const response = await fetch('/data/index.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        setCatalogIndex(data);
+        
+        // Auto-select first brand
+        if (data.brands && data.brands.length > 0) {
+          setExpandedBrand(data.brands[0].slug);
+        }
+        
+        console.log(`✅ Halilit Catalog loaded: ${data.brands.length} brands, ${data.total_products} products`);
+      } catch (err) {
+        const errorMsg = err instanceof Error ? err.message : 'Unknown error';
+        setError(`Failed to load catalog: ${errorMsg}`);
+        console.error('❌ Failed to load catalog:', err);
       } finally {
         setLoading(false);
       }
     };
-    loadData();
-  }, [loadEcosystem]);
+    loadCatalog();
+  }, []);
 
-  const filteredEcosystem = React.useMemo(() => {
-    if (!ecosystem || !searchQuery) return ecosystem;
+  // Load products for a specific brand
+  const loadBrandProducts = async (slug: string) => {
+    if (brandProducts[slug]) return; // Already loaded
     
-    const filterNode = (node: EcosystemNode): EcosystemNode | null => {
-      const nameMatch = node.name.toLowerCase().includes(searchQuery.toLowerCase());
+    try {
+      setLoadingBrands(prev => new Set([...prev, slug]));
+      const response = await fetch(`/data/${slug}.json`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
       
-      if (node.children) {
-        const filteredChildren = node.children
-          .map(filterNode)
-          .filter((n): n is EcosystemNode => n !== null);
-        
-        if (filteredChildren.length > 0 || nameMatch) {
-          return {
-            ...node,
-            children: filteredChildren.length > 0 ? filteredChildren : node.children
-          };
-        }
+      // Store entire brand data (includes products, hierarchy, brand_identity)
+      setBrandProducts(prev => ({
+        ...prev,
+        [slug]: data
+      }));
+      
+      // Store brand identity (logo, colors, etc.)
+      if (data.brand_identity) {
+        setBrandIdentities(prev => ({
+          ...prev,
+          [slug]: data.brand_identity
+        }));
+      }
+
+      // Pre-detect white background images for all products in this brand
+      if (data.products && Array.isArray(data.products)) {
+        data.products.forEach((product: any) => {
+          if (product.images && Array.isArray(product.images) && product.images.length > 0) {
+            // Use first gallery image or main image as white background image
+            // The actual white background detection happens in MediaBar when images load
+            const galleryImage = product.images.find((img: any) => img.type === 'gallery');
+            const mainImage = product.images.find((img: any) => img.type === 'main');
+            const imageToUse = galleryImage?.url || mainImage?.url;
+            
+            if (imageToUse) {
+              const { setWhiteBgImage: setWbg } = useNavigationStore.getState();
+              setWbg(product.id, imageToUse);
+            }
+          }
+        });
       }
       
-      return nameMatch ? node : null;
-    };
-    
-    return filterNode(ecosystem);
-  }, [ecosystem, searchQuery]);
+      console.log(`✅ Loaded ${slug}: ${data.products?.length || 0} products with hierarchy`);
+    } catch (err) {
+      const errorMsg = err instanceof Error ? err.message : 'Unknown error';
+      console.error(`❌ Failed to load brand ${slug}: ${errorMsg}`);
+      // Set empty object to prevent infinite retry
+      setBrandProducts(prev => ({
+        ...prev,
+        [slug]: {}
+      }));
+    } finally {
+      setLoadingBrands(prev => {
+        const next = new Set(prev);
+        next.delete(slug);
+        return next;
+      });
+    }
+  };
+
+  // Handle search
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!query.trim() || !catalogIndex) return;
+
+    setMode('copilot');
+    setIsThinking(true);
+    setSearchResults([]);
+
+    // Search the pre-built search_graph (instant, no backend)
+    const results = catalogIndex.search_graph
+      .filter(item =>
+        item.label.toLowerCase().includes(query.toLowerCase()) ||
+        item.keywords.some(k => k.toLowerCase().includes(query.toLowerCase()))
+      )
+      .slice(0, 15); // Increased from 10 to 15
+
+    console.log(`🔍 Search: "${query}" → ${results.length} results`);
+
+    // Simulate AI processing latency (for dramatic effect)
+    setTimeout(() => {
+      setSearchResults(results);
+      setIsThinking(false);
+    }, 600); // Reduced from 800ms
+  };
+
+  const handleBrandClick = (slug: string) => {
+    if (expandedBrand === slug) {
+      setExpandedBrand(null);
+    } else {
+      setExpandedBrand(slug);
+      loadBrandProducts(slug);
+    }
+  };
 
   if (loading) {
     return (
-      <div className="h-full flex items-center justify-center text-slate-400 bg-slate-950/80">
-        <div className="animate-pulse flex flex-col items-center gap-2">
-          <div className="w-8 h-8 border-2 border-cyan-500/30 border-t-cyan-500 rounded-full animate-spin"></div>
-          <div className="text-sm">Loading catalog...</div>
+      <aside className="w-80 h-screen flex flex-col bg-[var(--bg-panel)] border-r border-[var(--border-subtle)] p-4 items-center justify-center">
+        <div className="animate-pulse flex flex-col items-center gap-3">
+          <div className="w-8 h-8 border-2 border-indigo-500/30 border-t-indigo-500 rounded-full animate-spin" />
+          <p className="text-xs text-[var(--text-secondary)]">Loading Halilit Catalog...</p>
         </div>
-      </div>
+      </aside>
     );
   }
 
-  if (!ecosystem) {
+  if (error) {
     return (
-      <div className="h-full flex items-center justify-center text-red-400">
-        <div>Failed to load ecosystem</div>
-      </div>
+      <aside className="w-80 h-screen flex flex-col bg-[var(--bg-panel)] border-r border-[var(--border-subtle)] p-4">
+        <div className="flex-1 flex flex-col items-center justify-center space-y-4">
+          <div className="text-red-400 text-xl">⚠️</div>
+          <p className="text-sm text-red-300 text-center">{error}</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-4 py-2 bg-red-600/20 hover:bg-red-600/30 text-red-300 rounded-lg text-xs font-medium transition-colors"
+          >
+            Retry
+          </button>
+        </div>
+      </aside>
     );
   }
 
   return (
-    <div className="h-full flex flex-col" style={{ background: 'var(--bg-panel)', borderRight: '1px solid var(--border-subtle)' }}>
-      {/* Header */}
-      <div className="p-4 space-y-3" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-        <div className="flex items-center gap-3">
-          {brandLogo ? (
-            <img src={brandLogo} alt="Roland" className="h-8 w-auto" />
-          ) : (
-            <div className="w-24 h-10 flex items-center justify-center rounded-md" style={{
-              background: 'linear-gradient(135deg, var(--halileo-surface), transparent)',
-              color: 'var(--text-primary)'
-            }}>
-              <span className="text-lg font-bold">ROLAND</span>
-            </div>
-          )}
-          <div>
-            <div className="text-[10px] font-mono uppercase" style={{ color: 'var(--text-secondary)' }}>Navigator</div>
-            <div className="text-xs font-semibold" style={{ color: 'var(--text-primary)' }}>Mission Control</div>
+    <aside className="w-80 h-screen flex flex-col bg-[var(--bg-panel)] border-r border-[var(--border-subtle)] relative overflow-hidden transition-colors duration-500">
+      
+      {/* === HEADER: Halileo Logo & Status === */}
+      <div className="px-3 py-2 border-b border-[var(--border-subtle)] relative z-10 bg-[var(--bg-panel)]">
+        <div className="flex items-center gap-2 mb-2">
+          <div className={`
+            relative w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-500
+            ${mode === 'copilot' ? 'bg-indigo-600 shadow-[0_0_20px_rgba(99,102,241,0.5)]' : 'bg-[var(--bg-app)]'}
+          `}>
+            <Compass className={`w-5 h-5 ${mode === 'copilot' ? 'text-white' : 'text-[var(--text-secondary)]'}`} />
           </div>
-          <button
-            onClick={reset}
-            className="ml-auto text-[10px] font-mono font-bold px-2 py-1 rounded transition-colors"
-            style={{
-              color: 'var(--text-secondary)',
-              border: '1px solid var(--border-subtle)',
-              background: 'var(--bg-panel-hover)'
-            }}
+          <div>
+            <h1 className="font-bold text-[var(--text-primary)] text-base tracking-tight">Halileo</h1>
+            <div className="flex items-center gap-2">
+              <span className={`w-1.5 h-1.5 rounded-full ${isThinking ? 'bg-indigo-500 animate-ping' : 'bg-green-500'}`} />
+              <span className="text-[10px] text-[var(--text-tertiary)] uppercase tracking-wider font-semibold">
+                {isThinking ? 'Processing...' : 'System Online'}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* === SEARCH INPUT === */}
+        <form onSubmit={handleSearch} className="relative group">
+          <div className="relative bg-[var(--bg-app)] rounded-xl flex items-center border border-[var(--border-subtle)] overflow-hidden">
+            <Search className="w-4 h-4 text-[var(--text-tertiary)] ml-3" />
+            <input 
+              type="text" 
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Ask Halileo or search..."
+              className="w-full bg-transparent border-none text-xs px-2 py-1.5 text-[var(--text-primary)] focus:ring-0 placeholder:text-[var(--text-tertiary)]"
+            />
+          </div>
+        </form>
+      </div>
+
+      {/* === NAVIGATION BODY === */}
+      <div className="flex-1 overflow-y-auto scrollbar-hide p-1 space-y-0.5 relative">
+        <AnimatePresence mode="wait">
+          {mode === 'catalog' ? (
+            <motion.div 
+              key="catalog"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              className="space-y-1 px-1 py-2"
+            >
+              <div className="text-[10px] font-semibold text-[var(--text-tertiary)] uppercase tracking-wider mb-1.5">
+                📚 Brand Catalog
+              </div>
+
+              {catalogIndex?.brands && catalogIndex.brands.length > 0 ? (
+                catalogIndex.brands.map((brand) => {
+                  const isExpanded = expandedBrand === brand.slug;
+                  const products = brandProducts[brand.slug] || [];
+
+                  return (
+                    <div key={brand.slug} className="space-y-1">
+                      {/* Brand Button with Large Logo */}
+                      <button
+                        onClick={() => handleBrandClick(brand.slug)}
+                        className="w-full flex items-center justify-between group p-2.5 rounded-lg hover:bg-[var(--bg-panel-hover)] transition-all border border-transparent hover:border-[var(--border-subtle)]"
+                      >
+                        <div className="flex items-center gap-4 flex-1">
+                          {/* Brand Logo - LARGER */}
+                          <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
+                            {brandIdentities[brand.slug]?.logo_url ? (
+                              <img 
+                                src={brandIdentities[brand.slug].logo_url} 
+                                alt={brand.name}
+                                className="w-8 h-8 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+                                onError={(e) => {
+                                  // Fallback to icon if image fails
+                                  (e.currentTarget as any).style.display = 'none';
+                                  const sibling = (e.currentTarget as any).nextElementSibling;
+                                  if (sibling) sibling.style.display = 'block';
+                                }}
+                              />
+                            ) : null}
+                            {!brandIdentities[brand.slug]?.logo_url || !brandIdentities[brand.slug]?.logo_url ? (
+                              <BookOpen className="w-6 h-6 text-indigo-400" style={{ display: brandIdentities[brand.slug]?.logo_url ? 'none' : 'block' }} />
+                            ) : null}
+                          </div>
+                          
+                          <div className="text-left flex-1 min-w-0">
+                            <div className="text-xs font-semibold text-[var(--text-primary)]">
+                              {brand.name}
+                            </div>
+                            <div className="text-[9px] text-[var(--text-secondary)]">
+                              {brand.count} products
+                            </div>
+                          </div>
+                        </div>
+                        <ChevronRight className={`w-4 h-4 text-[var(--text-tertiary)] transition-transform flex-shrink-0 ${isExpanded ? 'rotate-90' : ''}`} />
+                      </button>
+
+                      {/* Product List (Expanded) */}
+                      {isExpanded && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          className="pl-4 space-y-0.5 border-l border-[var(--border-subtle)]"
+                        >
+                          {loadingBrands.has(brand.slug) ? (
+                            <div className="px-3 py-2 flex items-center gap-2">
+                              <div className="w-3 h-3 border-1 border-indigo-400/50 border-t-indigo-400 rounded-full animate-spin" />
+                              <span className="text-[10px] text-[var(--text-tertiary)]">Loading products...</span>
+                            </div>
+                          ) : products && products.hierarchy ? (
+                            // Display hierarchical categories (NEW: products is the full data object)
+                            <div className="space-y-1">
+                              {Object.entries(products.hierarchy).map(([mainCategory, subcategoryMap]: [string, any]) => {
+                                const categoryKey = `${brand.slug}-${mainCategory}`;
+                                const isCategoryExpanded = expandedCategories.has(categoryKey);
+                                const totalInCategory = Object.values(subcategoryMap).reduce((sum: number, prods: unknown) => sum + (Array.isArray(prods) ? prods.length : 0), 0);
+                                
+                                return (
+                                  <div key={mainCategory} className="space-y-0.5">
+                                    {/* Main Category Button */}
+                                    <button
+                                      onClick={() => {
+                                        const newSet = new Set(expandedCategories);
+                                        if (isCategoryExpanded) {
+                                          newSet.delete(categoryKey);
+                                        } else {
+                                          newSet.add(categoryKey);
+                                        }
+                                        setExpandedCategories(newSet);
+                                      }}
+                                      className="w-full flex items-center justify-between group px-2 py-0.5 rounded hover:bg-[var(--bg-app)]/50 transition-all text-left"
+                                    >
+                                      <div className="flex items-center gap-2 flex-1 min-w-0">
+                                        <ChevronRight className={`w-3 h-3 text-indigo-400 flex-shrink-0 transition-transform ${isCategoryExpanded ? 'rotate-90' : ''}`} />
+                                        <span className="text-[10px] font-medium text-[var(--text-primary)] truncate">
+                                          📦 {mainCategory}
+                                        </span>
+                                        <span className="text-[8px] text-[var(--text-tertiary)] flex-shrink-0">
+                                          ({totalInCategory})
+                                        </span>
+                                      </div>
+                                    </button>
+
+                                    {/* Subcategories & Products */}
+                                    {isCategoryExpanded && (
+                                      <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: 'auto' }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        className="pl-3 space-y-0.5 border-l border-[var(--border-subtle)]/50"
+                                      >
+                                        {Object.entries(subcategoryMap).map(([subcategory, products_list]: [string, unknown]) => (
+                                          <div key={subcategory} className="space-y-0.5">
+                                            {/* Subcategory Label */}
+<div className="px-2 py-0.5 text-[9px] font-semibold text-indigo-400/70 uppercase tracking-wide truncate">
+                                              {subcategory} ({Array.isArray(products_list) ? products_list.length : 0})
+                                            </div>
+                                            
+                                            {/* Products in Subcategory */}
+                                            <div className="space-y-0">
+                                              {(Array.isArray(products_list) ? products_list : []).map((product: any, idx: number) => (
+                                                <button
+                                                  key={`${product.id}-${idx}`}
+                                                  onClick={() => {
+                                                    useNavigationStore.getState().selectProduct({
+                                                      id: product.id,
+                                                      name: product.name,
+                                                      brand: brand.name,
+                                                      description: product.description,
+                                                      images: product.images || [],
+                                                      model_number: product.model_number,
+                                                      sku: product.sku,
+                                                      category: subcategory,
+                                                      main_category: mainCategory
+                                                    } as any);
+                                                  }}
+                                                  className="flex items-center gap-1.5 w-full h-14 text-left px-2 rounded text-[10px] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-indigo-500/20 active:bg-indigo-500/30 transition-colors cursor-pointer group"
+                                                  title={product.name}
+                                                >
+                                                  {whiteBgImages[product.id] && (
+                                                    <img 
+                                                      src={whiteBgImages[product.id]} 
+                                                      alt="Product thumbnail" 
+                                                      className="h-12 w-12 aspect-square object-contain bg-white/5 rounded border border-white/10 p-1 flex-shrink-0"
+                                                    />
+                                                  )}
+                                                  <span className="flex-1 truncate">{product.name}</span>
+                                                </button>
+                                              ))}
+                                            </div>
+                                          </div>
+                                        ))}
+                                      </motion.div>
+                                    )}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          ) : products && products.products && Array.isArray(products.products) && products.products.length > 0 ? (
+                            // Fallback: flat list if no hierarchy but products array exists
+                            <>
+                              {products.products.slice(0, 10).map((product: any, idx: number) => (
+                                <button
+                                  key={idx}
+                                  className="block w-full text-left px-3 py-2 rounded text-xs text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-app)] transition-colors truncate"
+                                  title={product.name}
+                                >
+                                  {product.name}
+                                </button>
+                              ))}
+                              {products.products.length > 10 && (
+                                <div className="text-[10px] text-[var(--text-tertiary)] px-3 py-1 italic">
+                                  +{products.products.length - 10} more...
+                                </div>
+                              )}
+                            </>
+                          ) : (
+                            <div className="px-3 py-2 text-[10px] text-[var(--text-tertiary)] italic">
+                              No products
+                            </div>
+                          )}
+                        </motion.div>
+                      )}
+                    </div>
+                  );
+                })
+              ) : (
+                <div className="text-center py-8">
+                  <p className="text-sm text-[var(--text-secondary)]">No brands available</p>
+                </div>
+              )}
+            </motion.div>
+          ) : (
+            /* === COPILOT MODE === */
+            <motion.div 
+              key="copilot"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 20 }}
+              className="p-3 space-y-4"
+            >
+              {isThinking ? (
+                <div className="flex flex-col items-center justify-center h-40 space-y-4">
+                  <Sparkles className="w-8 h-8 text-indigo-500 animate-pulse" />
+                  <p className="text-sm text-indigo-400">Analyzing catalog...</p>
+                </div>
+              ) : searchResults.length > 0 ? (
+                <div className="space-y-3">
+                  <div className="bg-indigo-50/10 dark:bg-indigo-900/20 p-4 rounded-xl border border-indigo-500/20">
+                    <h3 className="text-sm font-bold text-indigo-300 mb-3">
+                      ✨ Found {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
+                    </h3>
+                    <div className="space-y-3 max-h-80 overflow-y-auto">
+                      {searchResults.map((result, idx) => (
+                        <div key={idx} className="border-l-2 border-indigo-500/30 pl-3 py-1">
+                          <div className="font-semibold text-xs text-indigo-200">{result.label}</div>
+                          <div className="text-[10px] text-indigo-400/70 mt-1 space-y-0.5">
+                            <div>📦 {result.brand}</div>
+                            <div>🏷️ {result.category}</div>
+                            {result.keywords && result.keywords.length > 0 && (
+                              <div className="text-indigo-300/60">
+                                {result.keywords.slice(0, 2).join(', ')}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : query ? (
+                <div className="flex flex-col items-center justify-center h-40 space-y-3">
+                  <p className="text-sm text-[var(--text-secondary)]">No results found for "{query}"</p>
+                  <p className="text-[10px] text-[var(--text-tertiary)]">Try a different search term</p>
+                </div>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-40 space-y-3">
+                  <Compass className="w-8 h-8 text-indigo-500/30" />
+                  <p className="text-sm text-[var(--text-secondary)]">Enter a search to get started</p>
+                </div>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {/* === MODE TOGGLE FOOTER === */}
+      <div className="p-4 border-t border-[var(--border-subtle)] bg-[var(--bg-panel)]">
+        <div className="flex gap-2 bg-[var(--bg-app)] p-1 rounded-lg border border-[var(--border-subtle)]">
+          <button 
+            onClick={() => { setMode('catalog'); setSearchResults([]); }}
+            className={`flex-1 py-2 text-xs font-medium rounded-md transition-all ${mode === 'catalog' ? 'bg-white/10 text-[var(--text-primary)] shadow-sm' : 'text-[var(--text-tertiary)] hover:text-[var(--text-secondary)]'}`}
           >
-            ↺ RESET
+            📚 Catalog
+          </button>
+          <button 
+            onClick={() => setMode('copilot')}
+            className={`flex-1 py-2 text-xs font-medium rounded-md transition-all ${mode === 'copilot' ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/20' : 'text-[var(--text-tertiary)] hover:text-[var(--text-secondary)]'}`}
+          >
+            ✨ Copilot
           </button>
         </div>
-        
-        {/* Search */}
-        <div className="relative">
-          <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2" size={16} style={{ color: 'var(--text-tertiary)' }} />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search products..."
-            className="w-full pl-9 pr-3 py-2 rounded-md text-sm"
-            style={{
-              background: 'var(--bg-panel-hover)',
-              border: '1px solid var(--border-subtle)',
-              color: 'var(--text-primary)',
-              boxShadow: searchQuery ? '0 0 0 3px var(--halileo-surface)' : 'none'
-            }}
-          />
-        </div>
-      </div>
 
-      {/* Tree */}
-      <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-slate-900" style={{ background: 'var(--bg-panel)', color: 'var(--text-primary)' }}>
-        {filteredEcosystem ? (
-          <div className="p-2">
-            {filteredEcosystem.children?.map((domain, idx) => (
-              <TreeNode
-                key={`${domain.name}-${idx}`}
-                node={domain}
-                level={0}
-                path={[]}
-              />
-            ))}
+        {/* Stats */}
+        <div className="mt-3 text-[10px] text-[var(--text-tertiary)] space-y-1 border-t border-[var(--border-subtle)]/30 pt-3">
+          <div className="flex justify-between">
+            <span>Brands:</span>
+            <span className="font-semibold text-indigo-400">{catalogIndex?.brands.length || 0}</span>
           </div>
-        ) : (
-          <div className="p-4 text-center text-sm" style={{ color: 'var(--text-secondary)' }}>
-            No results found
+          <div className="flex justify-between">
+            <span>Products:</span>
+            <span className="font-semibold text-indigo-400">{catalogIndex?.total_products || 0}</span>
           </div>
-        )}
-      </div>
-
-      {/* Footer Stats */}
-      <div className="p-3" style={{ borderTop: '1px solid var(--border-subtle)', background: 'var(--bg-panel)' }}>
-        <div className="flex justify-between items-center text-[10px] font-mono" style={{ color: 'var(--text-secondary)' }}>
-          <div>
-            DOMAINS: <span style={{ color: 'var(--halileo-primary)' }}>{ecosystem.children?.length || 0}</span>
-          </div>
-          <div>
-            TOTAL: <span style={{ color: 'var(--halileo-primary)' }}>
-              {ecosystem.children?.reduce((sum, d) => sum + (d.product_count || 0), 0) || 0}
-            </span>
+          <div className="flex justify-between">
+            <span>Catalog:</span>
+            <span className="font-mono text-indigo-400">{catalogIndex?.metadata.version || 'N/A'}</span>
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
