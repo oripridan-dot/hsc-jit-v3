@@ -3,23 +3,25 @@
  * Manages the tri-pane console: Navigator -> Workbench -> Analyst
  */
 import { create } from 'zustand';
+import type { Product, NavLevel } from '../types';
+import type { ProductRelationship } from '../types';
 
-export type NavLevel = 'galaxy' | 'domain' | 'brand' | 'family' | 'product';
+export type { NavLevel } from '../types';
 
+/**
+ * Extended ecosystem node for tree navigation
+ */
 export interface EcosystemNode {
+    id: string;
     name: string;
-    type: 'galaxy' | 'domain' | 'brand' | 'family' | 'product';
+    type: NavLevel;
     children?: EcosystemNode[];
     product_count?: number;
     // Product fields (when type === 'product')
-    id?: string;
-    brand?: string;
-    category?: string;
-    image_url?: string;
-    price?: number;
+    product?: Product;
     product_type?: 'root' | 'accessory' | 'related' | 'variation';
-    accessories?: any[];
-    related?: any[];
+    accessories?: ProductRelationship[];
+    related?: ProductRelationship[];
     family?: string;
 }
 
@@ -27,20 +29,22 @@ interface NavState {
     // Current state
     currentLevel: NavLevel;
     activePath: string[]; // e.g., ["Drums", "Roland", "TD-17 Series"]
-    selectedProduct: EcosystemNode | null;
+    selectedProduct: Product | null;
     ecosystem: EcosystemNode | null;
 
     // UI state
     expandedNodes: Set<string>;
     searchQuery: string;
+    whiteBgImages: Record<string, string>; // productId -> imageUrl mapping
 
     // Actions
     warpTo: (level: NavLevel, path: string[]) => void;
-    selectProduct: (product: EcosystemNode) => void;
+    selectProduct: (product: Product) => void;
     goBack: () => void;
     loadEcosystem: (data: EcosystemNode) => void;
     toggleNode: (nodeId: string) => void;
     setSearch: (query: string) => void;
+    setWhiteBgImage: (productId: string, imageUrl: string) => void;
     reset: () => void;
 }
 
@@ -52,6 +56,7 @@ export const useNavigationStore = create<NavState>((set, get) => ({
     ecosystem: null,
     expandedNodes: new Set<string>(),
     searchQuery: '',
+    whiteBgImages: {},
 
     // Warp to a specific level in the hierarchy
     warpTo: (level, path) => {
@@ -120,6 +125,17 @@ export const useNavigationStore = create<NavState>((set, get) => ({
         set({ searchQuery: query });
     },
 
+    // Set white background image for a product
+    setWhiteBgImage: (productId, imageUrl) => {
+        const { whiteBgImages } = get();
+        set({
+            whiteBgImages: {
+                ...whiteBgImages,
+                [productId]: imageUrl
+            }
+        });
+    },
+
     // Reset to initial state
     reset: () => {
         set({
@@ -127,7 +143,8 @@ export const useNavigationStore = create<NavState>((set, get) => ({
             activePath: [],
             selectedProduct: null,
             searchQuery: '',
-            expandedNodes: new Set()
+            expandedNodes: new Set(),
+            whiteBgImages: {}
         });
     }
 }));
