@@ -1,52 +1,81 @@
 /**
- * Design System Tokens
- * Single source of truth for HSC JIT v3 visual design
+ * Design System Tokens - WCAG AA Compliant
+ * Professional Grade High-Fidelity Design System
+ * Halileo-Integrated Visual Language
  */
 
 :root {
-  /* ============================================================================
-     COLORS - Semantic Naming
-     ============================================================================ */
+  /* --- 1. CORE PALETTE (The "Ink" & "Paper") --- */
+  --color-base-white: #ffffff;
+  --color-base-black: #0f1115; /* Softer than pure black */
   
-  /* Primary Brand - "Live Signal" Amber (Hardware LCD/Tube warmth) */
-  --color-primary: rgb(245 158 11);              /* Amber-500 */
-  --color-primary-hover: rgb(217 119 6);         /* Amber-600 */
-  --color-primary-light: rgba(245 158 11 / 0.1); /* Amber-500 @ 10% */
-  --color-primary-dark: rgb(180 83 9);           /* Amber-700 */
+  /* Neutral Grays - Tuned for Contrast */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db; /* Borders */
+  --gray-700: #374151; /* Secondary Text */
+  --gray-800: #1f2937; /* Primary Text (Light Mode) */
+  --gray-900: #111827; /* Headings */
+
+  /* --- 2. HALILEO IDENTITY (The "Soul") --- */
+  /* A distinct Indigo-Violet gradient specifically for AI elements */
+  --halileo-primary: #6366f1;
+  --halileo-glow: rgba(99, 102, 241, 0.5);
+  --halileo-surface: rgba(99, 102, 241, 0.08);
+
+  /* --- 3. SEMANTIC SURFACES (The "Structure") --- */
   
-  /* Status Colors */
-  --color-success: rgb(34 197 94);               /* Green-500 */
-  --color-success-light: rgba(34 197 94 / 0.1);  /* Green-500 @ 10% */
-  --color-warning: rgb(234 179 8);               /* Yellow-500 */
-  --color-warning-light: rgba(234 179 8 / 0.1);  /* Yellow-500 @ 10% */
-  --color-error: rgb(239 68 68);                 /* Red-500 */
-  --color-error-light: rgba(239 68 68 / 0.1);    /* Red-500 @ 10% */
+  /* Light Mode Defaults */
+  --bg-app: var(--gray-50);
+  --bg-panel: var(--color-base-white);
+  --bg-panel-hover: var(--gray-50);
   
-  /* Background - Zinc (Neutral Metal/Rack chassis) */
-  --color-bg-base: rgb(9 9 11);                  /* Zinc-950 */
-  --color-bg-elevated: rgb(24 24 27);            /* Zinc-900 */
-  --color-bg-overlay: rgb(39 39 42);             /* Zinc-800 */
-  --color-bg-surface: rgb(63 63 70);             /* Zinc-700 */
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-700);
+  --text-tertiary: #6b7280; /* Use sparingly */
   
-  /* Hardware Textures */
-  --glass-border: 1px solid rgba(255 255 255 / 0.08);
-  --metal-border: 2px solid rgba(39 39 42 / 0.6);
+  --border-subtle: var(--gray-200);
+  --border-focus: var(--halileo-primary);
+
+  /* Glassmorphism that actually works */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  /* Legacy compatibility - map old tokens to new system */
+  --color-primary: var(--halileo-primary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-bg-base: var(--bg-app);
+  --color-bg-elevated: var(--bg-panel);
+  --color-border: var(--border-subtle);
+}
+
+/* --- DARK MODE (Professional Grade) --- */
+.dark,
+:root[data-theme="dark"] {
+  --bg-app: #0b0c0f; /* Deep, rich matte black */
+  --bg-panel: #15171e; /* Slightly lighter for cards */
+  --bg-panel-hover: #1c1f26;
+
+  --text-primary: #f3f4f6; /* Off-white for less eye strain */
+  --text-secondary: #9ca3af; /* High readability gray */
+  --text-tertiary: #6b7280;
+
+  --border-subtle: #2d313a;
   
-  /* Text - Zinc palette */
-  --color-text-primary: rgb(250 250 250);        /* Zinc-50 */
-  --color-text-secondary: rgb(161 161 170);      /* Zinc-400 */
-  --color-text-tertiary: rgb(82 82 91);          /* Zinc-600 */
-  --color-text-muted: rgb(63 63 70);             /* Zinc-700 */
-  
-  /* Borders & Dividers - Zinc palette */
-  --color-border: rgb(39 39 42);                 /* Zinc-800 */
-  --color-border-hover: rgb(63 63 70);           /* Zinc-700 */
-  --color-border-focus: var(--color-primary);
-  --color-divider: rgba(161 161 170 / 0.1);
-  
-  /* ============================================================================
-     SPACING - 4px Base Unit
-     ============================================================================ */
+  /* Dark Glass */
+  --glass-bg: rgba(21, 23, 30, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  /* Legacy compatibility */
+  --color-bg-base: var(--bg-app);
+  --color-bg-elevated: var(--bg-panel);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border-subtle);
+}
   
   --space-xs: 0.25rem;   /* 4px */
   --space-sm: 0.5rem;    /* 8px */

@@ -5,6 +5,15 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigationStore, type EcosystemNode, type NavLevel } from '../store/navigationStore';
 import { FiChevronRight, FiChevronDown, FiSearch, FiPackage, FiFolder, FiGrid } from 'react-icons/fi';
+import { catalogLoader, type Product } from '../lib/catalogLoader';
+import { useBrandTheme } from '../hooks/useBrandTheme';
+
+// Extended product shape from catalog JSON
+interface CatalogProduct extends Product {
+  main_category?: string;
+  subcategory?: string;
+  images?: { main?: string; thumbnail?: string; gallery?: string[] } | string[];
+}
 
 interface TreeNodeProps {
   node: EcosystemNode;
@@ -111,96 +120,103 @@ export const Navigator: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [brandLogo, setBrandLogo] = useState<string | null>(null);
 
+  // Apply brand theming globally (Roland by default for v3.7)
+  useBrandTheme('roland');
+
   useEffect(() => {
     const loadData = async () => {
       try {
-        // Fetch brand info first to get logo
-        const brandsResp = await fetch('/api/brands');
-        if (brandsResp.ok) {
-          const brandsData = await brandsResp.json();
-          const rolandBrand = brandsData.brands.find((b: any) => b.id === 'roland');
-          if (rolandBrand?.logo_url) {
-            setBrandLogo(rolandBrand.logo_url);
-          }
-        }
-        
-        // Use Vite proxy for API requests
-        const endpoint = '/api/brands/roland/hierarchy';
-        
-        console.log('🔗 Fetching from:', endpoint);
-        
-        const resp = await fetch(endpoint);
-        if (!resp.ok) throw new Error(`HTTP ${resp.status}: ${resp.statusText}`);
-        const data = await resp.json();
-        
-        console.log('📦 Received hierarchy data:', data);
-        
-        // Transform API data to ecosystem format
-        const categories = Object.entries(data.hierarchy || {}).map(([catName, catData]: [string, any]) => {
-          // Handle subcategories
-          const subcatEntries = Object.entries(catData.subcategories || {});
-          const subcategories = subcatEntries.map(([subName, subData]: [string, any]) => {
-            const subProducts = Array.isArray(subData.products) ? subData.products : [];
-            return {
-              name: subName,
-              type: 'family' as const,
-              product_count: subProducts.length,
-              children: subProducts.map((p: any) => ({
-                name: p.name || 'Unknown Product',
-                type: 'product' as const,
-                id: p.id,
-                brand: p.brand,
-                category: p.main_category,
-                image_url: p.images?.[0]?.url,
-                product_type: 'root' as const
-              }))
-            };
-          });
+        const brandId = 'roland';
 
-          // Handle direct products in category
-          const directProducts = Array.isArray(catData.products) ? catData.products : [];
-          const productNodes = directProducts.map((p: any) => ({
-            name: p.name || 'Unknown Product',
-            type: 'product' as const,
-            id: p.id,
-            brand: p.brand,
-            category: p.main_category,
-            image_url: p.images?.[0]?.url,
-            product_type: 'root' as const
+        // Load catalog directly from static data (fast, no backend dependency)
+        const catalog = await catalogLoader.loadBrand(brandId);
+        setBrandLogo(catalog.logo_url || null);
+
+        // Build category/subcategory map from products
+        const categoryMap = new Map<string, Map<string, CatalogProduct[]>>();
+        const catalogProducts = catalog.products as CatalogProduct[];
+
+        catalogProducts.forEach((product) => {
+          const category = (product.category || product.main_category || 'Uncategorized').trim() || 'Uncategorized';
+          const subcategory = (product.subcategory || 'General').trim() || 'General';
+
+          if (!categoryMap.has(category)) {
+            categoryMap.set(category, new Map());
+          }
+
+          const subMap = categoryMap.get(category)!;
+          if (!subMap.has(subcategory)) {
+            subMap.set(subcategory, []);
+          }
+
+          subMap.get(subcategory)!.push(product);
+        });
+
+        const getPrimaryImage = (images?: CatalogProduct['images'], fallback?: string) => {
+          if (!images) return fallback;
+          if (Array.isArray(images)) {
+            const first = images[0];
+            return typeof first === 'string' ? first : fallback;
+          }
+          return images.main || images.thumbnail || images.gallery?.[0] || fallback;
+        };
+
+        const categories = Array.from(categoryMap.entries()).map(([catName, subMap]) => {
+          const subcategories = Array.from(subMap.entries()).map(([subName, products]) => ({
+            name: subName,
+            type: 'family' as const,
+            product_count: products.length,
+            children: products.map((p) => ({
+              name: p.name || 'Unknown Product',
+              type: 'product' as const,
+              id: p.id,
+              brand: p.brand,
+              category: p.category || p.main_category,
+              image_url: p.image_url || getPrimaryImage(p.images),
+              product_type: 'root' as const
+            }))
           }));
+
+          const totalProducts = subcategories.reduce((sum, sub) => sum + (sub.product_count || 0), 0);
 
           return {
             name: catName,
             type: 'family' as const,
-            product_count: directProducts.length + subcategories.reduce((sum: number, sub: any) => sum + (sub.product_count || 0), 0),
-            children: [...subcategories, ...productNodes]
+            product_count: totalProducts,
+            children: subcategories
           };
         });
 
-        console.log('✅ Transformed categories:', categories.length);
+        const totalCount = categories.reduce((sum, cat) => sum + (cat.product_count || 0), 0);
 
         const ecosystemData: EcosystemNode = {
-          name: 'Musical Instruments',
+          name: 'Roland Mission Control',
           type: 'domain',
+          product_count: totalCount,
           children: [{
-            name: 'Roland',
+            name: catalog.brand_name || 'Roland',
             type: 'brand',
-            product_count: categories.reduce((sum, cat) => sum + (cat.product_count || 0), 0),
+            product_count: totalCount,
             children: categories
           }]
         };
-        
+
         loadEcosystem(ecosystemData);
-        
-        // Auto-expand Roland and first few categories
+
+        // Auto-navigate into Roland brand and auto-expand for visibility
         setTimeout(() => {
-          const { toggleNode } = useNavigationStore.getState();
-          toggleNode('Roland');
-          categories.slice(0, 3).forEach(cat => toggleNode(cat.name));
-        }, 100);
+          const { toggleNode, warpTo } = useNavigationStore.getState();
+          const brandName = catalog.brand_name || 'Roland';
+          
+          // Navigate into the brand
+          warpTo('brand', ['Roland Mission Control', brandName]);
+          
+          // Expand brand and first 4 categories
+          toggleNode(brandName);
+          categories.slice(0, 4).forEach(cat => toggleNode(cat.name));
+        }, 50);
       } catch (error) {
-        console.error('❌ Failed to load hierarchy:', error);
-        console.error('Error details:', error instanceof Error ? error.message : String(error));
+        console.error('❌ Failed to load catalog hierarchy:', error);
         alert(`Failed to load ecosystem: ${error instanceof Error ? error.message : 'Unknown error'}`);
       } finally {
         setLoading(false);
@@ -254,23 +270,32 @@ export const Navigator: React.FC = () => {
   }
 
   return (
-    <div className="h-full flex flex-col bg-slate-950/80 border-r border-slate-800/50">
+    <div className="h-full flex flex-col" style={{ background: 'var(--bg-panel)', borderRight: '1px solid var(--border-subtle)' }}>
       {/* Header */}
-      <div className="p-4 border-b border-slate-800/50 space-y-3">
+      <div className="p-4 space-y-3" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
         <div className="flex items-center gap-3">
           {brandLogo ? (
             <img src={brandLogo} alt="Roland" className="h-8 w-auto" />
           ) : (
-            <div className="w-24 h-10 flex items-center justify-center">
-              <span className="text-lg font-bold text-white">ROLAND</span>
+            <div className="w-24 h-10 flex items-center justify-center rounded-md" style={{
+              background: 'linear-gradient(135deg, var(--halileo-surface), transparent)',
+              color: 'var(--text-primary)'
+            }}>
+              <span className="text-lg font-bold">ROLAND</span>
             </div>
           )}
           <div>
-            <div className="text-[10px] text-slate-300 font-mono uppercase">Navigator</div>
+            <div className="text-[10px] font-mono uppercase" style={{ color: 'var(--text-secondary)' }}>Navigator</div>
+            <div className="text-xs font-semibold" style={{ color: 'var(--text-primary)' }}>Mission Control</div>
           </div>
           <button
             onClick={reset}
-            className="ml-auto text-[10px] text-slate-400 hover:text-cyan-400 transition-colors font-mono font-bold px-2 py-1 rounded hover:bg-slate-800/50"
+            className="ml-auto text-[10px] font-mono font-bold px-2 py-1 rounded transition-colors"
+            style={{
+              color: 'var(--text-secondary)',
+              border: '1px solid var(--border-subtle)',
+              background: 'var(--bg-panel-hover)'
+            }}
           >
             ↺ RESET
           </button>
@@ -278,25 +303,25 @@ export const Navigator: React.FC = () => {
         
         {/* Search */}
         <div className="relative">
-          <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={16} />
+          <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2" size={16} style={{ color: 'var(--text-tertiary)' }} />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search products..."
-            className="
-              w-full pl-9 pr-3 py-2 
-              bg-slate-900/50 border border-slate-700/50 rounded-md
-              text-sm text-slate-300 placeholder-slate-600
-              focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20
-              transition-colors
-            "
+            className="w-full pl-9 pr-3 py-2 rounded-md text-sm"
+            style={{
+              background: 'var(--bg-panel-hover)',
+              border: '1px solid var(--border-subtle)',
+              color: 'var(--text-primary)',
+              boxShadow: searchQuery ? '0 0 0 3px var(--halileo-surface)' : 'none'
+            }}
           />
         </div>
       </div>
 
       {/* Tree */}
-      <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-slate-900">
+      <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-slate-900" style={{ background: 'var(--bg-panel)', color: 'var(--text-primary)' }}>
         {filteredEcosystem ? (
           <div className="p-2">
             {filteredEcosystem.children?.map((domain, idx) => (
@@ -309,20 +334,20 @@ export const Navigator: React.FC = () => {
             ))}
           </div>
         ) : (
-          <div className="p-4 text-center text-slate-500 text-sm">
+          <div className="p-4 text-center text-sm" style={{ color: 'var(--text-secondary)' }}>
             No results found
           </div>
         )}
       </div>
 
       {/* Footer Stats */}
-      <div className="p-3 border-t border-slate-800 bg-slate-950/30">
-        <div className="flex justify-between items-center text-[10px] text-slate-500 font-mono">
+      <div className="p-3" style={{ borderTop: '1px solid var(--border-subtle)', background: 'var(--bg-panel)' }}>
+        <div className="flex justify-between items-center text-[10px] font-mono" style={{ color: 'var(--text-secondary)' }}>
           <div>
-            DOMAINS: <span className="text-cyan-400">{ecosystem.children?.length || 0}</span>
+            DOMAINS: <span style={{ color: 'var(--halileo-primary)' }}>{ecosystem.children?.length || 0}</span>
           </div>
           <div>
-            TOTAL: <span className="text-cyan-400">
+            TOTAL: <span style={{ color: 'var(--halileo-primary)' }}>
               {ecosystem.children?.reduce((sum, d) => sum + (d.product_count || 0), 0) || 0}
             </span>
           </div>

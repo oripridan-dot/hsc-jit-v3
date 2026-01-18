@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigationStore } from '../store/navigationStore';
+import type { Product } from '../lib';
 import './AIAssistant.css';
 
 interface Message {
@@ -9,8 +10,8 @@ interface Message {
 }
 
 interface AIAssistantProps {
-  currentProduct?: any;
-  allProducts: any[];
+  currentProduct?: Product | null;
+  allProducts: Product[];
   isOpen: boolean;
   onToggle: () => void;
 }
@@ -21,61 +22,71 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
   isOpen,
   onToggle,
 }) => {
-  const [messages, setMessages] = useState<Message[]>([]);
+  // Initialize messages with welcome message
+  const [messages, setMessages] = useState<Message[]>(() => [
+    {
+      role: 'assistant',
+      content: `👋 Hi! I'm **Halileo Haliley**, your Halilit Support Center AI Assistant.\n\nI'm ready to help you explore the product catalog!`,
+      timestamp: new Date(),
+    }
+  ]);
   const [input, setInput] = useState('');
   const [isThinking, setIsThinking] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const lastProductRef = useRef<string | null>(null);
   
   // Navigation context awareness
-  const { currentLevel, activePath, selectedProduct, ecosystem } = useNavigationStore();
+  const { currentLevel, selectedProduct, ecosystem } = useNavigationStore();
 
+  // Ref to track if welcome message has been updated
+  const welcomeUpdatedRef = useRef(false);
+  
+  // React to navigation changes - only add message if product changed
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (messages.length === 0 && allProducts.length > 0) {
+    if (currentLevel === 'product' && selectedProduct) {
+      const productId = selectedProduct.id || selectedProduct.name;
+      
+      // Only add context message if we switched to a different product
+      if (productId && productId !== lastProductRef.current) {
+        lastProductRef.current = productId;
+        
+        const accessoriesCount = selectedProduct.accessories?.length || 0;
+        const relatedCount = selectedProduct.related?.length || 0;
+        
+        const contextMessage: Message = {
+          role: 'assistant',
+          content: `🎯 I see you're viewing **${selectedProduct.name}**.\n\nThis is a product from **${selectedProduct.brand || 'Unknown'}**.\n\n${
+            accessoriesCount > 0 
+              ? `💡 This product requires **${accessoriesCount} accessories**.` 
+              : ''
+          }\n${
+            relatedCount > 0
+              ? `🔗 There are **${relatedCount} related products** that work well with this.`
+              : ''
+          }\n\nWhat would you like to know about it?`,
+          timestamp: new Date()
+        };
+        
+        setMessages(prev => [...prev, contextMessage]);
+      }
+    } else if (currentLevel !== 'product') {
+      lastProductRef.current = null;
+    }
+  }, [currentLevel, selectedProduct]);
+  
+  // Update welcome message when catalog loads - only once
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (allProducts.length > 0 && !welcomeUpdatedRef.current) {
+      welcomeUpdatedRef.current = true;
       setMessages([{
         role: 'assistant',
         content: `👋 Hi! I'm **Halileo Haliley**, your Halilit Support Center AI Assistant.\n\nI have access to **${allProducts.length} products** across **${ecosystem?.children?.length || 0} domains**.\n\nI can help you with:\n• Product specifications and features\n• Pricing information\n• Brand history\n• Category exploration\n• Product relationships and dependencies\n\nJust ask me anything!`,
         timestamp: new Date(),
       }]);
-    } else if (messages.length === 0) {
-       // Loading state or empty
-       setMessages([{
-        role: 'assistant',
-        content: `👋 Hi! I'm **Halileo Haliley**. I'm loading the product catalog...`,
-        timestamp: new Date(),
-      }]);
     }
-  }, [allProducts.length, ecosystem]);
-  
-  // React to navigation changes
-  useEffect(() => {
-    if (currentLevel === 'product' && selectedProduct) {
-      const contextMessage: Message = {
-        role: 'assistant',
-        content: `🎯 I see you're viewing **${selectedProduct.name}**.\n\nThis is a **${selectedProduct.product_type || 'root'}** product from **${selectedProduct.brand}**.\n\n${
-          selectedProduct.accessories?.length > 0 
-            ? `💡 This product requires **${selectedProduct.accessories.length} accessories**.` 
-            : ''
-        }\n${
-          selectedProduct.related?.length > 0
-            ? `🔗 There are **${selectedProduct.related.length} related products** that work well with this.`
-            : ''
-        }\n\nWhat would you like to know about it?`,
-        timestamp: new Date()
-      };
-      setMessages(prev => [...prev, contextMessage]);
-    } else if (currentLevel === 'domain' && activePath.length > 0) {
-      const domain = activePath[0];
-      const domainData = ecosystem?.children?.find(d => d.name === domain);
-      if (domainData) {
-        const contextMessage: Message = {
-          role: 'assistant',
-          content: `📂 You're exploring the **${domain}** domain.\n\nThis domain contains **${domainData.product_count || 0} products** across **${domainData.children?.length || 0} brands**.\n\nWhat would you like to explore?`,
-          timestamp: new Date()
-        };
-        setMessages(prev => [...prev, contextMessage]);
-      }
-    }
-  }, [currentLevel, selectedProduct, activePath]);
+  }, [allProducts.length, ecosystem?.children?.length]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -91,17 +102,15 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
     // Context-aware responses based on current product
     if (currentProduct) {
       if (lowerMsg.includes('price') || lowerMsg.includes('cost') || lowerMsg.includes('how much')) {
-        if (currentProduct.pricing) {
-          const { regular_price, eilat_price, sale_price } = currentProduct.pricing;
+        if (currentProduct.halilit_data?.price || currentProduct.halilit_price) {
+          const price = currentProduct.halilit_data?.price || currentProduct.halilit_price;
+          const currency = currentProduct.halilit_data?.currency || 'ILS';
           let response = `💰 **Pricing for ${currentProduct.name}:**\n\n`;
-          if (sale_price && sale_price < regular_price) {
-            response += `🔥 **Sale Price:** ₪${sale_price.toLocaleString()}\n`;
-            response += `~~Regular: ₪${regular_price.toLocaleString()}~~\n`;
-          } else if (regular_price) {
-            response += `**Regular Price:** ₪${regular_price.toLocaleString()}\n`;
+          if (price) {
+            response += `**Price:** ${currency} ${price.toLocaleString()}\n`;
           }
-          if (eilat_price) {
-            response += `**Eilat Price:** ₪${eilat_price.toLocaleString()} (Tax-Free Zone)\n`;
+          if (currentProduct.halilit_data?.availability) {
+            response += `**Availability:** ${currentProduct.halilit_data.availability}\n`;
           }
           return response;
         } else {
@@ -110,51 +119,26 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
       }
 
       if (lowerMsg.includes('spec') || lowerMsg.includes('feature') || lowerMsg.includes('detail')) {
-        const specs = currentProduct.specifications || [];
-        const features = currentProduct.features || [];
+        const description = currentProduct.description || currentProduct.short_description;
         let response = `📋 **${currentProduct.name} Details:**\n\n`;
         
-        if (features.length > 0) {
-          response += `**Key Features:**\n`;
-          features.slice(0, 5).forEach((f: string) => {
-            response += `✓ ${f}\n`;
-          });
-          if (features.length > 5) response += `\n_...and ${features.length - 5} more features_\n`;
+        if (description) {
+          response += `${description}\n\n`;
         }
         
-        if (specs.length > 0) {
-          response += `\n**Specifications:** ${specs.length} specs available in the product detail view.\n`;
+        if (currentProduct.category) {
+          response += `**Category:** ${currentProduct.category}\n`;
+        }
+        
+        if (currentProduct.item_code) {
+          response += `**Item Code:** ${currentProduct.item_code}\n`;
         }
         
         return response || 'I can see this product but don\'t have detailed specifications yet.';
       }
 
       if (lowerMsg.includes('accessor') || lowerMsg.includes('compatible') || lowerMsg.includes('goes with')) {
-        const accessories = currentProduct.accessories || [];
-        const related = currentProduct.related_products || [];
-        
-        if (accessories.length > 0 || related.length > 0) {
-          let response = `🔌 **Compatible Products for ${currentProduct.name}:**\n\n`;
-          
-          if (accessories.length > 0) {
-            response += `**Recommended Accessories:**\n`;
-            accessories.slice(0, 3).forEach((acc: any) => {
-              response += `• ${acc.target_product_name}\n`;
-            });
-            if (accessories.length > 3) response += `_...and ${accessories.length - 3} more accessories_\n`;
-          }
-          
-          if (related.length > 0) {
-            response += `\n**Related Products:**\n`;
-            related.slice(0, 3).forEach((rel: any) => {
-              response += `• ${rel.target_product_name}\n`;
-            });
-          }
-          
-          return response;
-        } else {
-          return `I don't have accessory information for ${currentProduct.name} yet.`;
-        }
+        return `I don't have accessory information for ${currentProduct.name} yet. Please check the product detail view for more information.`;
       }
     }
 
@@ -166,8 +150,8 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
     }
 
     if (lowerMsg.includes('how many') || lowerMsg.includes('count')) {
-      const categories = allProducts.reduce((acc: any, p: any) => {
-        const cat = p.main_category || p.category || 'Uncategorized';
+      const categories = allProducts.reduce<Record<string, number>>((acc, p) => {
+        const cat = p.category || 'Uncategorized';
         acc[cat] = (acc[cat] || 0) + 1;
         return acc;
       }, {});
@@ -189,13 +173,12 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
         if (searchTerm.length > 2) {
             const matches = allProducts.filter(p => 
                 p.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                p.model_number?.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 p.short_description?.toLowerCase().includes(searchTerm.toLowerCase())
             );
 
             if (matches.length === 1) {
                 const p = matches[0];
-                return `🔎 **Found it!**\n\n**${p.name}** (${p.file_path ? 'Saved File' : 'Catalog Item'})\n\n${p.short_description || p.description || 'No description available.'}\n\nAsk me specifically about its **price**, **features**, or **specs**!`;
+                return `🔎 **Found it!**\n\n**${p.name}** (Catalog Item)\n\n${p.short_description || p.description || 'No description available.'}\n\nAsk me specifically about its **price**, **features**, or **specs**!`;
             } else if (matches.length > 1) {
                  return `🔎 **Found ${matches.length} products matching "${searchTerm}":**\n\n` + 
                         matches.slice(0, 5).map(p => `• **${p.name}**`).join('\n') + 
@@ -294,7 +277,7 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
         {isThinking && (
           <div className="ai-message assistant">
              <div className="message-content bg-bg-surface border border-border-subtle p-3 rounded-2xl rounded-bl-none inline-flex items-center gap-1">
-              <span className="w-1.5 h-1.5 bg-text-muted rounded-full animate-bounce" style={{ params: '0ms' }}></span>
+              <span className="w-1.5 h-1.5 bg-text-muted rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
               <span className="w-1.5 h-1.5 bg-text-muted rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
               <span className="w-1.5 h-1.5 bg-text-muted rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
             </div>

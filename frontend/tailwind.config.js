@@ -24,10 +24,10 @@ export default {
       'accent-warning': '#ef4444',    // red-500
       'accent-muted': '#6b7280',      // gray-500
       
-      // Brand theming support
-      'brand-primary': 'var(--brand-primary, #06B6D4)',
-      'brand-secondary': 'var(--brand-secondary, #0891B2)',
-      'brand-accent': 'var(--brand-accent, #67E8F9)',
+      // Brand theming support (CSS variables set by useBrandTheme hook)
+      'brand-primary': 'var(--color-brand-primary, #06B6D4)',
+      'brand-secondary': 'var(--color-brand-secondary, #0891B2)',
+      'brand-accent': 'var(--color-brand-accent, #67E8F9)',
       
       // Roland theme
       'roland-red': '#E31E24',

@@ -7,13 +7,24 @@ import { ImageGallery } from './ImageGallery';
 import { DualSourceBadge } from './ui/DualSourceBadge';
 import { getProductClassification } from '../utils/productClassification';
 import { AIImageEnhancer } from '../services/AIImageEnhancer';
+import { useBrandTheme } from '../hooks/useBrandTheme';
+
+// Image types to handle multiple formats
+type ImageObject = {
+  url?: string;
+  main?: string;
+  thumbnail?: string;
+  gallery?: string[];
+};
+
+type ProductImages = string[] | ImageObject | undefined;
 
 interface ProductDetailProps {
   product: {
     id: string;
     name: string;
     image: string;
-    images?: string[];
+    images?: ProductImages;
     price: number;
     description: string;
     brand: string;
@@ -36,32 +47,67 @@ interface ProductDetailProps {
   onClose?: () => void;
 }
 
+// Professional Specification Grid Component
+const SpecsSection = ({ specs }: { specs: Record<string, string | number> }) => {
+  if (!specs || Object.keys(specs).length === 0) return null;
+
+  return (
+    <div className="mt-12">
+      <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
+        <span className="w-1 h-6 bg-brand-primary rounded-full"></span>
+        Technical Specifications
+      </h3>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0 border-t border-gray-100 dark:border-white/10">
+        {Object.entries(specs).map(([key, value], idx) => (
+          <div 
+            key={key} 
+            className={`flex flex-col sm:flex-row sm:justify-between py-3 px-4 border-b border-gray-100 dark:border-white/10 ${
+              idx % 2 === 0 ? 'bg-gray-50/50 dark:bg-white/5' : 'bg-transparent'
+            }`}
+          >
+            <span className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide min-w-[140px]">
+              {key.replace(/_/g, ' ')}
+            </span>
+            <span className="text-gray-900 dark:text-gray-100 font-medium text-right mt-1 sm:mt-0">
+              {value}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClose }) => {
+  // Apply dynamic brand theming
+  useBrandTheme(product.brand);
   const [descExpanded, setDescExpanded] = useState(false);
   const [enhancedImages, setEnhancedImages] = useState<Map<string, string>>(new Map());
   const [isEnhancing, setIsEnhancing] = useState(false);
 
   // Get image list - use useMemo to prevent dependency issues
   const images = useMemo(() => {
-    // Handle array of image objects (Roland format)
+    // Handle array of strings or image objects (Roland format)
     if (product.images && Array.isArray(product.images)) {
-      return product.images.map((img: any) => 
-        typeof img === 'string' ? img : img?.url || img
+      return product.images.map((img) => 
+        typeof img === 'string' ? img : (img as ImageObject)?.url || ''
       ).filter(Boolean);
     }
     
     // Handle images object with main/thumbnail/gallery
-    if (product.images && typeof product.images === 'object') {
-      const imgs = [];
-      if ((product.images as any).main) imgs.push((product.images as any).main);
-      if ((product.images as any).gallery && Array.isArray((product.images as any).gallery)) {
-        imgs.push(...(product.images as any).gallery);
+    if (product.images && typeof product.images === 'object' && !Array.isArray(product.images)) {
+      const imgObj = product.images as ImageObject;
+      const imgs: string[] = [];
+      if (imgObj.main) imgs.push(imgObj.main);
+      if (imgObj.gallery && Array.isArray(imgObj.gallery)) {
+        imgs.push(...imgObj.gallery);
       }
       if (imgs.length > 0) return imgs;
     }
     
     // Fallback to single image
-    return product.images && (product.images as any).length > 0 
+    return product.images && Array.isArray(product.images) && product.images.length > 0 
       ? product.images as string[]
       : [product.image];
   }, [product.images, product.image]);
@@ -258,25 +304,8 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
             </div>
           </section>
 
-          {/* Core Specs */}
-          <section>
-            <h2 className="text-sm font-bold text-text-primary uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-tertiary" />
-              Core Specifications
-            </h2>
-            <div className="grid grid-cols-2 gap-3">
-              {Object.entries(product.specs).slice(0, 4).map(([key, val]) => (
-                <div key={key} className="bg-bg-surface/50 p-3 rounded-lg border border-border-subtle hover:bg-bg-surface transition">
-                  <div className="text-text-muted text-xs font-semibold mb-1 uppercase">
-                    {key.replace(/_/g, ' ')}
-                  </div>
-                  <div className="text-text-primary font-medium text-sm truncate" title={String(val)}>
-                    {val}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
+          {/* Professional Technical Specifications */}
+          <SpecsSection specs={product.specs} />
 
           {/* Full Description */}
           <section>
@@ -301,13 +330,20 @@ export const ProductDetailView: React.FC<ProductDetailProps> = ({ product, onClo
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
-                  className="text-sm text-text-muted leading-relaxed space-y-3"
+                  className="prose prose-lg dark:prose-invert max-w-none text-text-muted leading-relaxed"
                 >
-                  <p>{product.full_description || product.description}</p>
-                  <p className="text-text-muted">
-                    This professional-grade equipment combines cutting-edge technology with 
-                    robust engineering. Designed for demanding studio and live environments.
-                  </p>
+                  {/* Rich text description with HTML support */}
+                  <div 
+                    dangerouslySetInnerHTML={{ 
+                      __html: product.full_description || product.description 
+                    }} 
+                  />
+                  {!product.full_description && (
+                    <p className="mt-3">
+                      This professional-grade equipment combines cutting-edge technology with 
+                      robust engineering. Designed for demanding studio and live environments.
+                    </p>
+                  )}
                 </motion.div>
               )}
             </AnimatePresence>
