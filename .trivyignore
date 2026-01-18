@@ -1,9 +1,0 @@
-# v3.6 Static Architecture - No runtime dependencies
-# These are dev/build tools only, not deployed
-
-# Development tools (not in production)
-CVE-*
-
-# Build-time only packages
-*.dev
-*.test
