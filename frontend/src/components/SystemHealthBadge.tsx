@@ -26,7 +26,7 @@ type Placement = 'floating' | 'topbar';
 
 export const SystemHealthBadge = ({ placement = 'floating' }: { placement?: Placement }) => {
   const [health, setHealth] = useState<FullHealthReport>({ status: 'checking' });
-  const { connectionState, predictions } = useWebSocketStore();
+  const { predictions } = useWebSocketStore();
   const [backendOnline, setBackendOnline] = useState(false);
 
   useEffect(() => {

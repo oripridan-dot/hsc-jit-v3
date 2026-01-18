@@ -120,7 +120,7 @@ export const Workbench: React.FC = () => {
           )}
 
           {/* Signal Flow Map */}
-          {(selectedProduct.accessories?.length > 0 || selectedProduct.related?.length > 0) && (
+          {((selectedProduct.accessories?.length ?? 0) > 0 || (selectedProduct.related?.length ?? 0) > 0) && (
             <div>
               <h2 className="text-xs font-mono font-bold text-slate-400 tracking-wider mb-3">
                 DEPENDENCIES & RELATIONSHIPS
@@ -189,34 +189,124 @@ export const Workbench: React.FC = () => {
     );
   }
 
-  // Intermediate View (Domain/Brand/Family selected)
-  return (
-    <div className="h-full flex flex-col items-center justify-center bg-slate-950/50 p-8">
-      <button
-        onClick={goBack}
-        className="absolute top-4 left-4 flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-400 transition-colors"
-      >
-        <FiArrowLeft />
-        <span className="font-mono">BACK</span>
-      </button>
+  // Intermediate View (Domain/Brand/Family selected) - Show product grid
+  // Collect all products under current level
+  const getProductsAtLevel = () => {
+    if (!ecosystem) return [];
+    
+    const collectProducts = (node: any): any[] => {
+      if (node.type === 'product') {
+        return [node];
+      }
+      if (node.children) {
+        return node.children.flatMap(collectProducts);
+      }
+      return [];
+    };
 
-      <div className="text-center">
-        <h2 className="text-3xl font-bold text-slate-200 mb-4">
-          {activePath[activePath.length - 1]}
-        </h2>
-        <p className="text-slate-400 font-mono text-sm mb-8">
-          Navigate deeper using the tree on the left
-        </p>
-        
-        <div className="flex items-center gap-2 justify-center text-xs text-slate-500 font-mono">
-          {activePath.map((segment, idx) => (
-            <React.Fragment key={idx}>
-              {idx > 0 && <span>/</span>}
-              <span className="text-slate-400">{segment}</span>
-            </React.Fragment>
-          ))}
+    // Find the current node in the tree
+    const findNode = (node: any, path: string[], idx: number = 0): any => {
+      if (idx >= path.length) return node;
+      const child = node.children?.find((c: any) => c.name === path[idx]);
+      if (!child) return null;
+      return findNode(child, path, idx + 1);
+    };
+
+    const currentNode = findNode(ecosystem, activePath);
+    return currentNode ? collectProducts(currentNode) : [];
+  };
+
+  const productsAtLevel = getProductsAtLevel();
+
+  return (
+    <div className="h-full flex flex-col bg-slate-950/50">
+      {/* Header */}
+      <div className="sticky top-0 z-10 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 p-4">
+        <div className="flex items-center gap-4 mb-4">
+          <button
+            onClick={goBack}
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-400 transition-colors"
+          >
+            <FiArrowLeft />
+            <span className="font-mono">BACK</span>
+          </button>
+          
+          <div className="flex-1">
+            <h2 className="text-xl font-bold text-slate-200">
+              {activePath[activePath.length - 1] || 'Products'}
+            </h2>
+            <div className="flex items-center gap-2 text-xs text-slate-500 font-mono mt-1">
+              {activePath.map((segment, idx) => (
+                <React.Fragment key={idx}>
+                  {idx > 0 && <span>/</span>}
+                  <span className="text-slate-400">{segment}</span>
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+          
+          <div className="text-xs text-slate-500 font-mono">
+            {productsAtLevel.length} PRODUCTS
+          </div>
         </div>
       </div>
+
+      {/* Product Grid */}
+      {productsAtLevel.length > 0 ? (
+        <div className="flex-1 overflow-y-auto p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {productsAtLevel.map((product, idx) => (
+              <button
+                key={idx}
+                onClick={() => useNavigationStore.getState().selectProduct(product)}
+                className="group relative overflow-hidden bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 rounded-lg p-4 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 text-left"
+              >
+                {/* Product Image */}
+                {product.image_url && (
+                  <div className="w-full h-40 bg-slate-900/50 rounded-md mb-3 overflow-hidden">
+                    <img
+                      src={product.image_url}
+                      alt={product.name}
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
+                
+                {/* Product Info */}
+                <div className="relative z-10 space-y-2">
+                  <h3 className="font-bold text-sm text-slate-200 group-hover:text-cyan-400 transition-colors line-clamp-2">
+                    {product.name}
+                  </h3>
+                  
+                  {product.category && (
+                    <p className="text-xs text-slate-400">
+                      {product.category}
+                    </p>
+                  )}
+                  
+                  {product.short_description && (
+                    <p className="text-xs text-slate-500 line-clamp-2">
+                      {product.short_description}
+                    </p>
+                  )}
+                  
+                  <div className="pt-2 border-t border-slate-700/50 flex items-center justify-between">
+                    <span className="text-xs font-mono text-slate-500">VIEW</span>
+                    <span className="text-xs text-cyan-400 font-semibold group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="flex-1 flex flex-col items-center justify-center text-slate-400">
+          <p className="text-sm">No products at this level</p>
+          <p className="text-xs text-slate-500 mt-2">Navigate deeper using the tree on the left</p>
+        </div>
+      )}
     </div>
   );
 };

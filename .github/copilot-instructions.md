@@ -1,53 +1,245 @@
 # HSC JIT v3.7 - Copilot System Instructions
 
-## 🎯 Core Philosophy: "The Psychic Engine"
+## 🎯 Core Philosophy: "Mission Control"
 
-We are building a production-grade Just-In-Time (JIT) Technical Support System with:
+We are building a production-grade **Product Hierarchy Navigation System** with:
 
-1. **Zero Latency** - Predict user intent while typing (sub-200ms)
-2. **JIT Document Retrieval** - No pre-indexing; download and index manuals on-demand
-3. **Event-Driven Architecture** - WebSocket streaming for real-time responses
-4. **Production-Ready Infrastructure** - Redis Pub/Sub, multi-layer caching, auto-scaling
+1. **Static Catalog** - Pre-built JSON from scraped brand data (fast, no backend dependency)
+2. **Instant Search** - Client-side fuzzy search with Fuse.js (<50ms)
+3. **Hierarchical Navigation** - Domain → Brand → Category → Subcategory → Product
+4. **Dynamic Theming** - Per-brand color schemes with WCAG AA compliance
+5. **Halileo AI Co-Pilot** - Voice-enabled, context-aware product navigation
 
 ---
 
-## 🏗️ Architectural Principles
+## 🏗️ v3.7 Architecture (Current State)
 
 ### 1. Data Source of Truth
 
-- **All product data** comes from `backend/data/catalogs/` (90+ brand JSON files)
-- **Never** hardcode URLs or product information
-- **Always** validate against catalog schema
+- **Primary:** `frontend/public/data/catalogs_brand/*.json` (static catalog files)
+- **Index:** `frontend/public/data/index.json` (master brand list)
+- **Backend (optional):** FastAPI at `localhost:8000` for future JIT RAG features
+- **Current brands:** Roland (29 products), expandable to 90+ brands
 
-### 2. State Management
+### 2. Component Architecture
 
-- **Ephemeral state** - Redis cache (L1: memory, L2: Redis)
-- **Session data** - Redis with TTL
-- **No persistent DB** - PostgreSQL only for optional analytics
-- **Stateless pods** - All state shareable across instances
+**Active Components (v3.7):**
 
-### 3. Service Architecture
+- `App.tsx` - Main layout orchestrator
+- `HalileoNavigator.tsx` - AI-powered navigation (right sidebar)
+- `Navigator.tsx` - Standard tree navigation (embedded in HalileoNavigator "Browse" mode)
+- `Workbench.tsx` - Center pane for product display
+- `HalileoContextRail.tsx` - Floating contextual insights
+- `AIAssistant.tsx` - Chat interface (optional analyst panel)
+- `ProductDetailView.tsx` - Product detail modal
+- `ImageGallery.tsx` - Cinema mode image viewer
 
-- **SnifferService** - Fuzzy matching for predictive search (TheFuzz)
-- **CatalogService** - Loads and indexes all product catalogs
-- **ContentFetcher** - Async downloads & caches PDF/HTML manuals
-- **EphemeralRAG** - JIT embeddings & semantic retrieval
-- **GeminiService** - Streaming LLM responses
+**Deprecated Components (DO NOT USE):**
 
-### 4. Frontend Principles
+- `UnifiedComponents.tsx` - Old v3.6 architecture
+- `TheStage.tsx` - Replaced by ProductDetailView
+- `BrandExplorer.tsx` - Replaced by Navigator hierarchy
+- `ZenFinder.tsx` - Replaced by HalileoNavigator
+- `ContextRail.tsx` - Replaced by HalileoContextRail
+- `FolderView.tsx` - Replaced by Navigator tree
+- `DualSourceIntelligence.tsx` - Feature deprecated
+- `ScenarioToggle.tsx` - Feature deprecated
+- `SyncMonitor.tsx` - Feature deprecated
 
-- **WebSocket-first** - Real-time bidirectional communication
-- **Event-driven UI** - React to backend events (`prediction`, `status`, `answer_chunk`)
-- **Virtual scrolling** - Handle 1000+ messages efficiently
-- **Glassmorphism design** - Modern, clean aesthetic
+### 3. State Management
+
+- **Navigation:** `useNavigationStore` (Zustand)
+  - Current level (galaxy/domain/brand/family/product)
+  - Active path breadcrumbs
+  - Selected product
+  - Tree expansion state
+- **WebSocket:** `useWebSocketStore` (Zustand) - reserved for future JIT RAG
+- **Theme:** CSS variables via `useBrandTheme` and `useHalileoTheme` hooks
+
+### 4. Design System
+
+**Semantic Tokens (WCAG AA):**
+
+```css
+--bg-app: #0b0c0f (dark) | #f9fafb (light) --bg-panel: #15171e (dark) | #ffffff
+  (light) --text-primary: #f3f4f6 (dark) | #111827 (light)
+  --text-secondary: #9ca3af (dark) | #374151 (light) --halileo-primary: #6366f1
+  (indigo) --border-subtle: #2d313a (dark) | #e5e7eb (light);
+```
+
+**Brand Colors (WCAG compliant):**
+
+- Roland: `#ef4444` (red)
+- Yamaha: `#a855f7` (purple)
+- Korg: `#fb923c` (orange)
+- Moog: `#22d3ee` (cyan)
+- Nord: `#f87171` (red-light)
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Backend
+### Frontend (React 18 + TypeScript)
 
-- **Framework:** FastAPI + Uvicorn (async WebSocket support)
+- **Build:** Vite 5
+- **Styling:** Tailwind CSS + CSS variables
+- **Animation:** Framer Motion
+- **Search:** Fuse.js (instant fuzzy search)
+- **State:** Zustand
+- **Icons:** React Icons (lucide-react)
+
+### Backend (Optional - Future JIT RAG)
+
+- **Framework:** FastAPI + Uvicorn
+- **Cache:** Redis (multi-layer)
+- **AI/ML:** Google Gemini API, SentenceTransformers
+- **Search:** TheFuzz (server-side fuzzy matching)
+
+---
+
+## 📋 Development Guidelines
+
+### Code Style
+
+```typescript
+// Always use explicit types
+interface Product {
+  id: string;
+  name: string;
+  brand: string;
+  category: string;
+  images?: ProductImages;
+}
+
+// Use semantic tokens for styling
+<div style={{
+  background: 'var(--bg-panel)',
+  color: 'var(--text-primary)',
+  borderColor: 'var(--border-subtle)'
+}}>
+```
+
+### File Organization
+
+```
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── HalileoNavigator.tsx (AI navigation)
+│   │   ├── Navigator.tsx (tree navigation)
+│   │   ├── Workbench.tsx (main display)
+│   │   ├── ProductDetailView.tsx (product modal)
+│   │   └── ui/ (reusable UI components)
+│   ├── hooks/
+│   │   ├── useBrandTheme.ts (dynamic brand colors)
+│   │   └── useHalileoTheme.ts (AI active state)
+│   ├── lib/
+│   │   ├── catalogLoader.ts (load static JSON)
+│   │   └── instantSearch.ts (Fuse.js wrapper)
+│   ├── store/
+│   │   ├── navigationStore.ts (hierarchy state)
+│   │   └── useWebSocketStore.ts (future)
+│   └── styles/
+│       ├── tokens.css (design system)
+│       └── brandThemes.ts (brand colors)
+└── public/
+    └── data/
+        ├── index.json (brand index)
+        └── catalogs_brand/*.json (product catalogs)
+```
+
+---
+
+## ✅ v3.7 Implementation Status
+
+**Completed:**
+
+- ✅ Static catalog loading (catalogLoader)
+- ✅ Hierarchical navigation (Navigator)
+- ✅ Instant search (Fuse.js)
+- ✅ Halileo AI navigator (voice + text)
+- ✅ Brand theming system (WCAG AA)
+- ✅ Product detail view
+- ✅ Cinema mode image gallery
+- ✅ Context insights rail
+- ✅ Analytics tracking
+
+**In Progress:**
+
+- 🔄 Backend API integration (optional)
+- 🔄 JIT RAG system
+- 🔄 Multi-brand support (currently Roland-only)
+
+**Deprecated (DO NOT DEVELOP):**
+
+- ❌ UnifiedComponents architecture
+- ❌ DualSource verification UI
+- ❌ ScenarioToggle
+- ❌ SyncMonitor
+
+---
+
+## 🚀 Quick Commands
+
+```bash
+# Frontend development
+cd frontend && pnpm dev
+
+# Backend (optional)
+cd backend && uvicorn app.main:app --reload
+
+# Scrape new brands
+cd backend && python orchestrate_brand.py --brand roland --max-products 50
+
+# Type check
+cd frontend && npx tsc --noEmit
+
+# Build production
+cd frontend && pnpm build
+```
+
+---
+
+## 🔧 Common Patterns
+
+### Loading Products
+
+```typescript
+// Use catalogLoader for static data
+const catalog = await catalogLoader.loadBrand("roland");
+
+// Use instantSearch for filtering
+const results = instantSearch.search("synthesizer", { limit: 10 });
+```
+
+### Applying Brand Theme
+
+```typescript
+// Component-level
+useBrandTheme("roland");
+
+// Global (in App.tsx)
+applyBrandTheme("roland");
+```
+
+### Navigation
+
+```typescript
+// Navigate to product
+const { selectProduct } = useNavigationStore();
+selectProduct(productNode);
+
+// Navigate to level
+const { warpTo } = useNavigationStore();
+warpTo("family", ["Roland", "Synthesizers"]);
+```
+
+---
+
+**Version:** 3.7.0 (Product Hierarchy)  
+**Last Updated:** January 2026  
+**Status:** Production-Ready (Roland brand)
+
 - **Cache:** Redis 6+ (Pub/Sub + multi-layer caching)
 - **AI/ML:** Google Gemini API (LLM), SentenceTransformers (embeddings)
 - **Search:** TheFuzz (fuzzy matching)
