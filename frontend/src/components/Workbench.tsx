@@ -86,8 +86,8 @@ export const Workbench: React.FC = () => {
     const handleMouseMove = (e: MouseEvent) => {
       // Calculate how far mouse moved from drag start
       const delta = e.clientX - dragStart.x;
-      // New width: original width + delta (right drag = positive delta = wider)
-      const newWidth = dragStart.width + delta;
+      // Invert: drag left (negative delta) = wider, drag right = narrower
+      const newWidth = dragStart.width - delta;
       
       // Constrain width between 250px and 800px
       if (newWidth >= 250 && newWidth <= 800) {
@@ -321,20 +321,16 @@ export const Workbench: React.FC = () => {
             className="flex-shrink-0 border-r border-[var(--border-subtle)] overflow-hidden flex flex-col relative bg-[var(--bg-panel)]/30 group"
             style={{ width: `${mediaBarWidth}px`, transition: isResizing ? 'none' : 'width 0.1s ease-out' }}
           >
-            {/* Resize Handle - Left Edge (facing content) - LARGE AND VISIBLE */}
+            {/* Resize Handle - Left Edge - Minimal & Clean */}
             <div
-              className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-r from-indigo-500/40 via-indigo-500/30 to-transparent hover:from-indigo-400/80 hover:via-indigo-400/60 cursor-col-resize transition-all z-40 group-hover:w-2.5"
+              className="absolute left-0 top-0 bottom-0 w-1 bg-indigo-500/25 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-40"
               onMouseDown={(e) => {
                 e.preventDefault();
                 setIsResizing(true);
                 setDragStart({ x: e.clientX, width: mediaBarWidth });
               }}
-              title="Drag left edge to resize MediaBar"
+              title="Drag to resize images"
             />
-            {/* Optional: Drag indicator text */}
-            <div className="absolute left-0.5 top-2 text-[8px] text-indigo-400/40 group-hover:text-indigo-400/80 transition-colors pointer-events-none select-none z-40">
-              ⋮ RESIZE
-            </div>
             <MediaBar
               images={getGalleryImages()}
               onMediaClick={(media) => {
