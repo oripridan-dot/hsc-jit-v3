@@ -78,7 +78,7 @@ export const Workbench: React.FC = () => {
     return [];
   };
 
-  // Handle resize dragging for MediaBar
+  // Handle resize dragging for MediaBar (resize from right edge, scale left)
   React.useEffect(() => {
     if (!isResizing) return;
 
@@ -86,7 +86,8 @@ export const Workbench: React.FC = () => {
       if (!mediaBarRef.current) return;
       const container = mediaBarRef.current;
       const rect = container.getBoundingClientRect();
-      const newWidth = rect.right - e.clientX;
+      // Calculate width from right edge - as mouse moves right, width increases
+      const newWidth = e.clientX - rect.left;
       
       // Constrain width between 250px and 800px
       if (newWidth >= 250 && newWidth <= 800) {
@@ -317,12 +318,12 @@ export const Workbench: React.FC = () => {
           {/* RIGHT: MediaBar sidebar with resizable drag */}
           <div 
             ref={mediaBarRef}
-            className="flex-shrink-0 border-l border-[var(--border-subtle)] overflow-hidden flex flex-col relative bg-[var(--bg-panel)]/30"
+            className="flex-shrink-0 border-r border-[var(--border-subtle)] overflow-hidden flex flex-col relative bg-[var(--bg-panel)]/30"
             style={{ width: `${mediaBarWidth}px` }}
           >
-            {/* Resize Handle - Left Edge */}
+            {/* Resize Handle - Right Edge */}
             <div
-              className="absolute left-0 top-0 bottom-0 w-1.5 bg-indigo-500/0 hover:bg-indigo-500/50 cursor-col-resize transition-colors z-30"
+              className="absolute right-0 top-0 bottom-0 w-1.5 bg-indigo-500/0 hover:bg-indigo-500/50 cursor-col-resize transition-colors z-30"
               onMouseDown={() => setIsResizing(true)}
               title="Drag to resize MediaBar"
             />

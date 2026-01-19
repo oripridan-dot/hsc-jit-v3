@@ -134,7 +134,7 @@ export const MediaBar: React.FC<MediaBarProps> = ({
     }
   };
 
-  // Handle resize dragging
+  // Handle resize dragging (resize from right edge, scale left)
   useEffect(() => {
     if (!isResizing) return;
 
@@ -142,7 +142,8 @@ export const MediaBar: React.FC<MediaBarProps> = ({
       if (!containerRef.current) return;
       const container = containerRef.current;
       const rect = container.getBoundingClientRect();
-      const newWidth = rect.right - e.clientX;
+      // Calculate width from right edge - as mouse moves right, width increases
+      const newWidth = e.clientX - rect.left;
       
       // Constrain width between 250px and 800px
       if (newWidth >= 250 && newWidth <= 800) {
@@ -176,9 +177,9 @@ export const MediaBar: React.FC<MediaBarProps> = ({
       className="flex flex-col h-full relative bg-[var(--bg-panel)]/30 overflow-hidden"
       style={{ width: `${barWidth}px`, minWidth: '250px' }}
     >
-      {/* Resize Handle - Left Edge */}
+      {/* Resize Handle - Right Edge */}
       <div
-        className="absolute left-0 top-0 bottom-0 w-1 bg-indigo-500/0 hover:bg-indigo-500/50 cursor-col-resize transition-colors z-30"
+        className="absolute right-0 top-0 bottom-0 w-1 bg-indigo-500/0 hover:bg-indigo-500/50 cursor-col-resize transition-colors z-30"
         onMouseDown={() => setIsResizing(true)}
         title="Drag to resize MediaBar"
       />
