@@ -1,17 +1,28 @@
 {
-  "build_timestamp": "2026-01-19T23:42:00.000Z",
-  "version": "3.7-Halilit",
-  "total_products": 29,
-  "total_verified": 29,
   "brands": [
     {
+      "id": "boss_test",
+      "name": "Boss Corporation",
+      "product_count": 0,
+      "website": "https://www.boss.info",
+      "logo_url": null
+    },
+    {
       "id": "roland",
-      "name": "Roland Catalog",
-      "brand_color": "#ef4444",
-      "logo_url": null,
+      "name": "Roland Corporation",
       "product_count": 29,
-      "verified_count": 29,
-      "data_file": "roland-catalog.json"
+      "website": "https://www.roland.com",
+      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg"
+    },
+    {
+      "id": "roland_test",
+      "name": "Roland Corporation",
+      "product_count": 5,
+      "website": "https://www.roland.com",
+      "logo_url": null
     }
-  ]
+  ],
+  "total_brands": 3,
+  "total_products": 34,
+  "last_updated": "2026-01-19T22:45:03.829894"
 }

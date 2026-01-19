@@ -1,6 +1,9 @@
 """
 HSC-JIT V3.7 FastAPI Backend
 Product Hierarchy + JIT RAG System
+
+API Versioning: v1
+Routes: /api/v1/{resource}
 """
 
 import json
@@ -8,370 +11,598 @@ import os
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from contextlib import asynccontextmanager
+from datetime import datetime
+import uuid
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 # Get backend root directory
 BACKEND_ROOT = Path(__file__).parent.parent
 DATA_DIR = BACKEND_ROOT / "data"
-CATALOGS_DIR = DATA_DIR / "catalogs"
+CATALOGS_DIR = DATA_DIR / "catalogs_brand"
 
 # Global cache for catalogs
 _catalog_cache: Dict[str, Any] = {}
 
 
-# Lifespan context manager
+# ============================================================================
+# DATA MODELS - Aligned with ProductCore schema
+# ============================================================================
+
+class APIResponse(BaseModel):
+    """Unified API response wrapper"""
+    status: str = Field(..., description="success|error")
+    data: Any = Field(None, description="Response data")
+    meta: Dict[str, Any] = Field(
+        default_factory=lambda: {
+            "version": "3.7.0",
+            "timestamp": datetime.utcnow().isoformat(),
+            "request_id": str(uuid.uuid4())
+        }
+    )
+    error: Optional[Dict[str, Any]] = None
+
+
+class ProductImage(BaseModel):
+    """Product image metadata"""
+    url: str
+    type: str = Field(default="gallery", description="main|gallery|technical")
+    alt_text: Optional[str] = None
+    width: Optional[int] = None
+    height: Optional[int] = None
+
+
+class BrandIdentity(BaseModel):
+    """Brand metadata"""
+    id: str = Field(..., description="Brand ID (lowercase, hyphenated)")
+    name: str = Field(..., description="Display name")
+    website: Optional[str] = None
+    description: Optional[str] = None
+    logo_url: Optional[str] = None
+    categories: List[str] = Field(default_factory=list)
+
+
+class ProductCore(BaseModel):
+    """Product core data - matches scraper output"""
+    id: str = Field(..., description="Product ID (brand-slug format)")
+    brand: str = Field(..., description="Brand name (e.g., 'Roland')")
+    name: str = Field(..., description="Product name")
+    model_number: Optional[str] = None
+    sku: Optional[str] = None
+    main_category: str = Field(..., description="Primary category")
+    categories: List[str] = Field(default_factory=list)
+    subcategory: Optional[str] = None
+    description: Optional[str] = None
+    short_description: Optional[str] = None
+    images: List[ProductImage] = Field(default_factory=list)
+    features: List[str] = Field(default_factory=list)
+    specifications: Dict[str, Any] = Field(default_factory=dict)
+    tags: List[str] = Field(default_factory=list)
+    price_nis: Optional[float] = None
+    halilit_brand_code: Optional[str] = None
+
+
+class ProductCatalog(BaseModel):
+    """Complete brand catalog"""
+    brand_identity: BrandIdentity
+    products: List[ProductCore]
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+
+
+class BrandListItem(BaseModel):
+    """Brand item for listing"""
+    id: str
+    name: str
+    product_count: int
+    website: Optional[str] = None
+    logo_url: Optional[str] = None
+
+
+class SearchResult(BaseModel):
+    """Product search result"""
+    products: List[ProductCore]
+    total: int
+    query: str
+    brand: Optional[str] = None
+
+
+# ============================================================================
+# LIFESPAN & APP INITIALIZATION
+# ============================================================================
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Startup and shutdown events"""
+    print("\n" + "="*70)
     print("🚀 HSC-JIT V3.7 Backend Starting...")
+    print("="*70)
     print(f"📁 Data directory: {DATA_DIR}")
     print(f"📦 Catalogs directory: {CATALOGS_DIR}")
     
     # Load all catalogs on startup
     await load_all_catalogs()
+    print(f"✅ Loaded {len(_catalog_cache)} brand catalog(s)")
+    print("="*70 + "\n")
     
     yield
     
     print("👋 HSC-JIT V3.7 Backend Shutting down...")
 
 
-# Create FastAPI app
+# Create FastAPI app with proper metadata
 app = FastAPI(
     title="HSC-JIT V3.7 API",
     description="Product Hierarchy + JIT RAG System",
     version="3.7.0",
+    docs_url="/api/docs",
+    openapi_url="/api/openapi.json",
     lifespan=lifespan
 )
 
-# CORS configuration
+# ============================================================================
+# MIDDLEWARE CONFIGURATION
+# ============================================================================
+
+# CORS Configuration - Development friendly
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins in development
-    allow_credentials=False,  # Set to False when using wildcard origins
-    allow_methods=["*"],
-    allow_headers=["*"],
-    expose_headers=["*"]
+    allow_origins=[
+        "http://localhost:5173",    # Frontend dev server
+        "http://localhost:5174",    # Alternative dev port
+        "http://localhost:3000",    # Alternative dev port
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:5174",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "X-Requested-With"],
+    expose_headers=["X-Total-Count", "X-Request-ID"],
+    max_age=3600  # 1 hour
 )
 
 
-# --- Data Models ---
-
-class BrandIdentity(BaseModel):
-    id: str
-    name: str
-    logo_url: Optional[str] = None
-    website: Optional[str] = None
-    description: Optional[str] = None
-    categories: List[str] = []
-
-
-class Product(BaseModel):
-    id: str
-    brand: str
-    name: str
-    model_number: Optional[str] = None
-    sku: Optional[str] = None
-    main_category: str
-    subcategory: Optional[str] = None
-    sub_subcategory: Optional[str] = None
-    description: Optional[str] = None
-    short_description: Optional[str] = None
-    images: List[Dict[str, Any]] = []
-    features: List[str] = []
-    specifications: Dict[str, Any] = {}
-    tags: List[str] = []
-    price: Optional[Dict[str, Any]] = None
+# Request ID middleware for tracing
+@app.middleware("http")
+async def add_request_id(request: Request, call_next):
+    """Add request ID to all responses"""
+    request_id = request.headers.get("X-Request-ID", str(uuid.uuid4()))
+    response = await call_next(request)
+    response.headers["X-Request-ID"] = request_id
+    return response
 
 
-class CatalogIndex(BaseModel):
-    brands: List[Dict[str, str]]
-    total_brands: int
-    last_updated: Optional[str] = None
-
-
-# --- Helper Functions ---
+# ============================================================================
+# HELPER FUNCTIONS
+# ============================================================================
 
 async def load_all_catalogs():
-    """Load all brand catalogs into memory"""
+    """Load all brand catalogs into memory from JSON files"""
     global _catalog_cache
     
     if not CATALOGS_DIR.exists():
         print(f"⚠️  Catalogs directory not found: {CATALOGS_DIR}")
         return
     
-    catalog_files = list(CATALOGS_DIR.glob("*_catalog.json"))
-    print(f"📚 Found {len(catalog_files)} catalog files")
-    
-    for catalog_file in catalog_files:
+    for catalog_file in CATALOGS_DIR.glob("*_catalog.json"):
         try:
-            brand_id = catalog_file.stem.replace("_catalog", "")
             with open(catalog_file, "r", encoding="utf-8") as f:
-                catalog_data = json.load(f)
-                _catalog_cache[brand_id] = catalog_data
-                
-            product_count = len(catalog_data.get("products", []))
-            print(f"  ✅ {brand_id}: {product_count} products")
+                data = json.load(f)
+            
+            brand_id = catalog_file.stem.replace("_catalog", "").lower()
+            _catalog_cache[brand_id] = data
+            print(f"  ✅ Loaded {brand_id} catalog ({len(data.get('products', []))} products)")
+        
         except Exception as e:
-            print(f"  ❌ Error loading {catalog_file.name}: {e}")
-    
-    print(f"🎉 Loaded {len(_catalog_cache)} catalogs successfully!")
+            print(f"  ❌ Failed to load {catalog_file.name}: {e}")
 
 
 def get_catalog(brand_id: str) -> Dict[str, Any]:
     """Get catalog data for a specific brand"""
-    if brand_id not in _catalog_cache:
-        raise HTTPException(status_code=404, detail=f"Brand '{brand_id}' not found")
-    return _catalog_cache[brand_id]
+    brand_key = brand_id.lower()
+    
+    if brand_key not in _catalog_cache:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Brand '{brand_id}' not found. Available brands: {list(_catalog_cache.keys())}"
+        )
+    
+    return _catalog_cache[brand_key]
 
 
-def build_product_hierarchy(products: List[Dict[str, Any]]) -> Dict[str, Any]:
+def build_product_hierarchy(products: List[Dict[str, Any]]) -> Dict[str, List[str]]:
     """Build hierarchical category structure from products"""
     hierarchy = {}
     
     for product in products:
         main_cat = product.get("main_category", "Uncategorized")
-        sub_cat = product.get("subcategory")
-        sub_sub_cat = product.get("sub_subcategory")
         
-        # Initialize main category
         if main_cat not in hierarchy:
-            hierarchy[main_cat] = {
-                "name": main_cat,
-                "products": [],
-                "subcategories": {}
-            }
+            hierarchy[main_cat] = []
         
-        # If no subcategory, add to main category
-        if not sub_cat:
-            hierarchy[main_cat]["products"].append(product)
-            continue
-        
-        # Initialize subcategory
-        if sub_cat not in hierarchy[main_cat]["subcategories"]:
-            hierarchy[main_cat]["subcategories"][sub_cat] = {
-                "name": sub_cat,
-                "products": [],
-                "sub_subcategories": {}
-            }
-        
-        # If no sub-subcategory, add to subcategory
-        if not sub_sub_cat:
-            hierarchy[main_cat]["subcategories"][sub_cat]["products"].append(product)
-            continue
-        
-        # Initialize sub-subcategory
-        if sub_sub_cat not in hierarchy[main_cat]["subcategories"][sub_cat]["sub_subcategories"]:
-            hierarchy[main_cat]["subcategories"][sub_cat]["sub_subcategories"][sub_sub_cat] = {
-                "name": sub_sub_cat,
-                "products": []
-            }
-        
-        # Add to sub-subcategory
-        hierarchy[main_cat]["subcategories"][sub_cat]["sub_subcategories"][sub_sub_cat]["products"].append(product)
+        subcat = product.get("subcategory")
+        if subcat and subcat not in hierarchy[main_cat]:
+            hierarchy[main_cat].append(subcat)
     
     return hierarchy
 
 
-# --- API Endpoints ---
+# ============================================================================
+# API ENDPOINTS - v1 routes
+# ============================================================================
+
+# --- Root & Health Endpoints ---
 
 @app.get("/")
 async def root():
     """API root endpoint"""
-    return {
-        "name": "HSC-JIT V3.7 API",
-        "version": "3.7.0",
-        "status": "active",
-        "endpoints": {
-            "brands": "/api/brands",
-            "catalog": "/api/catalog/{brand_id}",
-            "products": "/api/brands/{brand_id}/products",
-            "hierarchy": "/api/brands/{brand_id}/hierarchy",
-            "health": "/health"
+    return APIResponse(
+        status="success",
+        data={
+            "name": "HSC-JIT V3.7 API",
+            "version": "3.7.0",
+            "description": "Product Hierarchy + JIT RAG System",
+            "endpoints": {
+                "brands": "/api/v1/brands",
+                "catalog": "/api/v1/brands/{brand_id}",
+                "products": "/api/v1/brands/{brand_id}/products",
+                "hierarchy": "/api/v1/brands/{brand_id}/hierarchy",
+                "search": "/api/v1/search",
+                "health": "/health",
+                "docs": "/api/docs"
+            }
         }
-    }
+    )
 
 
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
-    return {
-        "status": "healthy",
-        "version": "3.7.0",
-        "catalogs_loaded": len(_catalog_cache),
-        "available_brands": list(_catalog_cache.keys())
-    }
-
-
-@app.get("/health/full")
-async def full_health_check():
-    """Detailed health check"""
-    total_products = sum(
-        len(catalog.get("products", [])) 
-        for catalog in _catalog_cache.values()
-    )
-    
-    return {
-        "status": "healthy",
-        "version": "3.7.0",
-        "system": {
+    return APIResponse(
+        status="success",
+        data={
+            "status": "healthy",
+            "version": "3.7.0",
             "catalogs_loaded": len(_catalog_cache),
-            "total_products": total_products,
-            "data_directory": str(DATA_DIR),
-            "catalogs_directory": str(CATALOGS_DIR)
-        },
-        "brands": [
-            {
-                "id": brand_id,
-                "name": catalog.get("brand_identity", {}).get("name", brand_id),
-                "products": len(catalog.get("products", []))
-            }
-            for brand_id, catalog in _catalog_cache.items()
-        ]
-    }
+            "available_brands": list(_catalog_cache.keys())
+        }
+    )
 
 
-@app.get("/api/brands")
-async def get_brands():
-    """Get list of all available brands"""
+# --- Brand Endpoints ---
+
+@app.get("/api/v1/brands")
+async def list_brands() -> APIResponse:
+    """
+    Get list of all available brands.
+    
+    Returns:
+        List of brands with metadata
+    """
     brands = []
     
     for brand_id, catalog in _catalog_cache.items():
         brand_info = catalog.get("brand_identity", {})
-        brands.append({
-            "id": brand_id,
-            "name": brand_info.get("name", brand_id),
-            "logo_url": brand_info.get("logo_url"),
-            "website": brand_info.get("website"),
-            "description": brand_info.get("description"),
-            "categories": brand_info.get("categories", []),
-            "product_count": len(catalog.get("products", []))
-        })
+        brands.append(BrandListItem(
+            id=brand_id,
+            name=brand_info.get("name", brand_id),
+            product_count=len(catalog.get("products", [])),
+            website=brand_info.get("website"),
+            logo_url=brand_info.get("logo_url")
+        ))
     
-    return {
-        "brands": brands,
-        "total": len(brands)
-    }
+    return APIResponse(
+        status="success",
+        data={
+            "brands": brands,
+            "total": len(brands)
+        }
+    )
 
 
-@app.get("/api/catalog/{brand_id}")
-async def get_brand_catalog(brand_id: str):
-    """Get complete catalog for a brand"""
-    catalog = get_catalog(brand_id)
-    return catalog
+@app.get("/api/v1/brands/{brand_id}")
+async def get_brand(brand_id: str) -> APIResponse:
+    """
+    Get complete brand catalog.
+    
+    Args:
+        brand_id: Brand identifier (e.g., 'roland', 'boss')
+    
+    Returns:
+        Complete ProductCatalog object
+    """
+    try:
+        catalog = get_catalog(brand_id)
+        return APIResponse(
+            status="success",
+            data=catalog
+        )
+    except HTTPException as e:
+        raise e
 
 
-@app.get("/api/brands/{brand_id}/products")
+@app.get("/api/v1/brands/{brand_id}/products")
 async def get_brand_products(
     brand_id: str,
-    category: Optional[str] = Query(None, description="Filter by main category"),
-    limit: Optional[int] = Query(None, description="Limit number of results")
-):
-    """Get products for a specific brand with optional filtering"""
-    catalog = get_catalog(brand_id)
-    products = catalog.get("products", [])
+    category: Optional[str] = Query(None, description="Filter by main_category"),
+    limit: Optional[int] = Query(None, description="Limit results"),
+    offset: int = Query(0, description="Pagination offset")
+) -> APIResponse:
+    """
+    Get products for a specific brand.
     
-    # Filter by category if specified
-    if category:
-        products = [
-            p for p in products 
-            if p.get("main_category", "").lower() == category.lower()
-        ]
+    Args:
+        brand_id: Brand identifier
+        category: Optional category filter
+        limit: Maximum results
+        offset: Pagination offset
     
-    # Apply limit if specified
-    if limit:
-        products = products[:limit]
-    
-    return {
-        "brand": brand_id,
-        "total": len(products),
-        "products": products
-    }
+    Returns:
+        List of ProductCore objects
+    """
+    try:
+        catalog = get_catalog(brand_id)
+        products = catalog.get("products", [])
+        
+        # Filter by category if provided
+        if category:
+            products = [
+                p for p in products
+                if p.get("main_category", "").lower() == category.lower()
+            ]
+        
+        # Apply pagination
+        total = len(products)
+        if limit:
+            products = products[offset:offset + limit]
+        elif offset:
+            products = products[offset:]
+        
+        return APIResponse(
+            status="success",
+            data={
+                "products": products,
+                "total": total,
+                "limit": limit,
+                "offset": offset,
+                "count": len(products)
+            }
+        )
+    except HTTPException as e:
+        raise e
 
 
-@app.get("/api/brands/{brand_id}/hierarchy")
-async def get_brand_hierarchy(brand_id: str):
-    """Get hierarchical category structure for a brand"""
-    catalog = get_catalog(brand_id)
-    products = catalog.get("products", [])
+@app.get("/api/v1/brands/{brand_id}/products/{product_id}")
+async def get_product(brand_id: str, product_id: str) -> APIResponse:
+    """
+    Get specific product by ID.
     
-    hierarchy = build_product_hierarchy(products)
+    Args:
+        brand_id: Brand identifier
+        product_id: Product identifier
     
-    return {
-        "brand": brand_id,
-        "brand_identity": catalog.get("brand_identity", {}),
-        "hierarchy": hierarchy,
-        "stats": {
-            "total_products": len(products),
-            "main_categories": len(hierarchy),
-            "subcategories": sum(
-                len(cat["subcategories"]) 
-                for cat in hierarchy.values()
-            )
-        }
-    }
+    Returns:
+        ProductCore object
+    """
+    try:
+        catalog = get_catalog(brand_id)
+        
+        for product in catalog.get("products", []):
+            if product.get("id") == product_id:
+                return APIResponse(
+                    status="success",
+                    data=product
+                )
+        
+        raise HTTPException(
+            status_code=404,
+            detail=f"Product '{product_id}' not found in brand '{brand_id}'"
+        )
+    except HTTPException as e:
+        raise e
 
 
-@app.get("/api/products/search")
+@app.get("/api/v1/brands/{brand_id}/hierarchy")
+async def get_brand_hierarchy(brand_id: str) -> APIResponse:
+    """
+    Get hierarchical category structure for a brand.
+    
+    Args:
+        brand_id: Brand identifier
+    
+    Returns:
+        Dictionary of main categories with subcategories
+    """
+    try:
+        catalog = get_catalog(brand_id)
+        products = catalog.get("products", [])
+        hierarchy = build_product_hierarchy(products)
+        
+        return APIResponse(
+            status="success",
+            data={
+                "hierarchy": hierarchy,
+                "total_categories": len(hierarchy)
+            }
+        )
+    except HTTPException as e:
+        raise e
+
+
+# --- Search Endpoint ---
+
+@app.get("/api/v1/search")
 async def search_products(
-    q: str = Query(..., description="Search query"),
+    q: str = Query(..., description="Search query", min_length=1),
     brand: Optional[str] = Query(None, description="Filter by brand"),
-    limit: int = Query(20, description="Maximum results")
-):
-    """Search products across all brands"""
+    category: Optional[str] = Query(None, description="Filter by category"),
+    limit: int = Query(20, description="Maximum results", ge=1, le=100)
+) -> APIResponse:
+    """
+    Search products across all brands.
+    
+    Uses simple string matching on product name and description.
+    For advanced search, use RAG endpoints.
+    
+    Args:
+        q: Search query
+        brand: Optional brand filter
+        category: Optional category filter
+        limit: Maximum results
+    
+    Returns:
+        SearchResult with matching products
+    """
     results = []
+    
+    # Search in all catalogs (or filtered brand)
+    search_catalogs = {}
+    if brand:
+        try:
+            search_catalogs[brand.lower()] = get_catalog(brand)
+        except HTTPException:
+            return APIResponse(
+                status="error",
+                data=None,
+                error={"code": "BRAND_NOT_FOUND", "message": f"Brand '{brand}' not found"}
+            )
+    else:
+        search_catalogs = _catalog_cache
+    
     query_lower = q.lower()
     
-    catalogs_to_search = {}
-    if brand:
-        if brand in _catalog_cache:
-            catalogs_to_search = {brand: _catalog_cache[brand]}
-    else:
-        catalogs_to_search = _catalog_cache
-    
-    for brand_id, catalog in catalogs_to_search.items():
+    for brand_id, catalog in search_catalogs.items():
         for product in catalog.get("products", []):
-            # Simple text search in name, description, and tags
-            searchable_text = " ".join([
-                product.get("name", ""),
-                product.get("description", ""),
-                product.get("short_description", ""),
-                " ".join(product.get("tags", []))
-            ]).lower()
+            # Check filters
+            if category and product.get("main_category", "").lower() != category.lower():
+                continue
             
-            if query_lower in searchable_text:
-                results.append({
-                    **product,
-                    "brand_id": brand_id
-                })
-                
+            # Check if matches
+            name_match = query_lower in product.get("name", "").lower()
+            desc_match = query_lower in product.get("description", "").lower()
+            tags_match = any(query_lower in tag.lower() for tag in product.get("tags", []))
+            
+            if name_match or desc_match or tags_match:
+                results.append(product)
+            
             if len(results) >= limit:
                 break
         
         if len(results) >= limit:
             break
     
-    return {
-        "query": q,
-        "total": len(results),
-        "results": results[:limit]
-    }
+    return APIResponse(
+        status="success",
+        data={
+            "products": results[:limit],
+            "total": len(results),
+            "query": q,
+            "brand": brand,
+            "category": category
+        }
+    )
 
 
-# Mount static files for data directory (for frontend to access JSON directly)
-if DATA_DIR.exists():
-    app.mount("/data", StaticFiles(directory=str(DATA_DIR)), name="data")
+# --- RAG Endpoints (Placeholders for future integration) ---
 
+@app.get("/api/v1/rag/status")
+async def rag_status() -> APIResponse:
+    """
+    Get RAG system status.
+    
+    Returns:
+        Status information for RAG components
+    """
+    return APIResponse(
+        status="success",
+        data={
+            "embeddings_enabled": False,
+            "llm_enabled": False,
+            "message": "RAG system not yet integrated"
+        }
+    )
+
+
+@app.post("/api/v1/rag/query")
+async def rag_query(query: str) -> APIResponse:
+    """
+    Query the RAG system (future endpoint).
+    
+    Args:
+        query: Natural language query
+    
+    Returns:
+        RAG response with products and insights
+    """
+    return APIResponse(
+        status="error",
+        data=None,
+        error={"code": "NOT_IMPLEMENTED", "message": "RAG queries not yet available"}
+    )
+
+
+# ============================================================================
+# STATIC FILES & SHUTDOWN
+# ============================================================================
+
+# Mount static files for data directory (optional, if needed for direct access)
+frontend_public_dir = BACKEND_ROOT.parent / "frontend" / "public"
+if frontend_public_dir.exists():
+    app.mount("/static", StaticFiles(directory=str(frontend_public_dir)), name="static")
+
+
+# ============================================================================
+# ERROR HANDLERS
+# ============================================================================
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    """Custom HTTP exception handler"""
+    return JSONResponse(
+        status_code=exc.status_code,
+        content=APIResponse(
+            status="error",
+            data=None,
+            error={
+                "code": "HTTP_ERROR",
+                "message": exc.detail,
+                "status_code": exc.status_code
+            }
+        ).model_dump()
+    )
+
+
+@app.exception_handler(Exception)
+async def general_exception_handler(request: Request, exc: Exception):
+    """Generic exception handler"""
+    return JSONResponse(
+        status_code=500,
+        content=APIResponse(
+            status="error",
+            data=None,
+            error={
+                "code": "INTERNAL_ERROR",
+                "message": str(exc)
+            }
+        ).model_dump()
+    )
+
+
+# ============================================================================
+# APPLICATION STARTUP
+# ============================================================================
 
 if __name__ == "__main__":
     import uvicorn
+    
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
         port=8000,
-        reload=True
+        reload=True,
+        reload_dirs=[str(BACKEND_ROOT)]
     )

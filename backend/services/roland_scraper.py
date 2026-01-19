@@ -611,6 +611,10 @@ class RolandScraper:
                             # Skip icons, logos, tiny images
                             if any(skip in src.lower() for skip in ['icon', 'logo', 'button', 'banner']):
                                 continue
+                            
+                            # Skip data URIs (1x1 spacers, etc.)
+                            if src.startswith('data:'):
+                                continue
 
                             # Make absolute URL
                             if src.startswith('//'):

@@ -22,6 +22,7 @@ A modern, high-performance product catalog and support system for Roland synthes
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 18+
 - pnpm (recommended) or npm
 
@@ -132,13 +133,15 @@ hsc-jit-v3/
   "build_timestamp": "2026-01-19T23:42:00.000Z",
   "version": "3.7-Halilit",
   "total_products": 29,
-  "brands": [{
-    "id": "roland",
-    "name": "Roland Catalog",
-    "brand_color": "#ef4444",
-    "product_count": 29,
-    "data_file": "roland-catalog.json"
-  }]
+  "brands": [
+    {
+      "id": "roland",
+      "name": "Roland Catalog",
+      "brand_color": "#ef4444",
+      "product_count": 29,
+      "data_file": "roland-catalog.json"
+    }
+  ]
 }
 ```
 
@@ -146,17 +149,17 @@ hsc-jit-v3/
 
 ## 🛠️ Tech Stack
 
-| Purpose | Technology | Version |
-|---------|-----------|---------|
-| Frontend | React | 19.2 |
-| Language | TypeScript | 5.9 |
-| Build Tool | Vite | 7.3.1 |
-| State Mgmt | Zustand | 5.0.9 |
-| Styling | Tailwind CSS | 3.4 |
-| Search | Fuse.js | 7.1 |
-| Animation | Framer Motion | 12.1 |
-| Validation | Zod | 3.24 |
-| Icons | Lucide React | Latest |
+| Purpose    | Technology    | Version |
+| ---------- | ------------- | ------- |
+| Frontend   | React         | 19.2    |
+| Language   | TypeScript    | 5.9     |
+| Build Tool | Vite          | 7.3.1   |
+| State Mgmt | Zustand       | 5.0.9   |
+| Styling    | Tailwind CSS  | 3.4     |
+| Search     | Fuse.js       | 7.1     |
+| Animation  | Framer Motion | 12.1    |
+| Validation | Zod           | 3.24    |
+| Icons      | Lucide React  | Latest  |
 
 ---
 
@@ -186,18 +189,11 @@ Framework supports unlimited brands. To add a brand:
 
 ```css
 /* Dark Theme (Default) */
---bg-app: #0b0c0f
---bg-panel: #15171e
---text-primary: #f3f4f6
---text-secondary: #9ca3af
---halileo-primary: #6366f1
---border-subtle: #2d313a
-
-/* Brand Colors (Dynamic) */
---brand-primary: var(--roland-primary)  /* Changes per brand */
-Roland: #ef4444 (red) ✅ Active
-Yamaha: #a855f7 (purple) 🔜 Ready
-Korg: #fb923c (orange) 🔜 Ready
+--bg-app: #0b0c0f --bg-panel: #15171e --text-primary: #f3f4f6
+  --text-secondary: #9ca3af --halileo-primary: #6366f1 --border-subtle: #2d313a
+  /* Brand Colors (Dynamic) */ --brand-primary: var(--roland-primary)
+  /* Changes per brand */ Roland: #ef4444 (red) ✅ Active Yamaha: #a855f7
+  (purple) 🔜 Ready Korg: #fb923c (orange) 🔜 Ready;
 ```
 
 ---
@@ -227,13 +223,13 @@ VITE_API_URL=http://localhost:8000
 
 ## 📈 Performance
 
-| Metric | Target | Actual |
-|--------|--------|--------|
-| Initial Load | <2s | ~1.5s |
-| Search Response | <50ms | ~20-40ms |
-| Category Switch | <100ms | ~50ms |
-| Memory Usage | <100MB | ~75MB |
-| Bundle Size | <500KB | ~380KB (gzipped) |
+| Metric          | Target | Actual           |
+| --------------- | ------ | ---------------- |
+| Initial Load    | <2s    | ~1.5s            |
+| Search Response | <50ms  | ~20-40ms         |
+| Category Switch | <100ms | ~50ms            |
+| Memory Usage    | <100MB | ~75MB            |
+| Bundle Size     | <500KB | ~380KB (gzipped) |
 
 ---
 
@@ -351,6 +347,7 @@ Proprietary - All rights reserved
 ## 🎯 Roadmap
 
 ### ✅ Completed (v3.7)
+
 - Static Roland catalog (29 products)
 - Hierarchical navigation
 - Instant client-side search
@@ -360,6 +357,7 @@ Proprietary - All rights reserved
 - Media gallery
 
 ### 🔜 Coming Soon
+
 - Multi-brand support (Yamaha, Korg, Moog, Nord)
 - Voice-enabled navigation
 - AI-powered product recommendations
