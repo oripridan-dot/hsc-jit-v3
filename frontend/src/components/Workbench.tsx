@@ -8,7 +8,7 @@ import { FiArrowLeft, FiExternalLink, FiInfo, FiBook, FiPackage } from 'react-ic
 import { MediaBar } from './MediaBar';
 import { MediaViewer } from './MediaViewer';
 import { InsightsTable } from './InsightsTable';
-import type { ProductImage } from '../types';
+import type { Product } from '../types';
 
 export const Workbench: React.FC = () => {
   const { selectedProduct, goBack, setWhiteBgImage: saveWhiteBgImage } = useNavigationStore();
@@ -16,13 +16,18 @@ export const Workbench: React.FC = () => {
   const [isMediaViewerOpen, setIsMediaViewerOpen] = useState(false);
   const [selectedMediaItem, setSelectedMediaItem] = useState<{ url: string; type: 'image' | 'video' | 'audio' | 'pdf' } | null>(null);
   const [whiteBgImage, setWhiteBgImage] = useState<string | null>(null);
+  const [mediaBarWidth, setMediaBarWidth] = useState(384); // Default w-96 = 384px
+  const [isResizing, setIsResizing] = useState(false);
+  const mediaBarRef = React.useRef<HTMLDivElement>(null);
 
   // Helper to get main image URL
   const getMainImage = () => {
     if (!selectedProduct) return null;
     if (selectedProduct.images && Array.isArray(selectedProduct.images) && selectedProduct.images.length > 0) {
-      const mainImg = selectedProduct.images.find((img: ProductImage) => img.type === 'main');
-      return mainImg?.url || selectedProduct.images[0]?.url;
+      const mainImg = selectedProduct.images.find((img: any) => img?.type === 'main');
+      if (mainImg && typeof mainImg === 'object') return (mainImg as any).url;
+      const firstImg = selectedProduct.images[0];
+      if (typeof firstImg === 'object') return (firstImg as any).url;
     }
     return selectedProduct.image_url || selectedProduct.image;
   };
@@ -30,8 +35,36 @@ export const Workbench: React.FC = () => {
   // Helper to get gallery images
   const getGalleryImages = () => {
     if (!selectedProduct?.images || !Array.isArray(selectedProduct.images)) return [];
-    return selectedProduct.images.filter((img: ProductImage) => img.type === 'gallery').map((img: ProductImage) => img.url);
+    return selectedProduct.images.filter((img: any) => img?.type === 'gallery').map((img: any) => img.url);
   };
+
+  // Handle resize dragging for MediaBar
+  React.useEffect(() => {
+    if (!isResizing) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!mediaBarRef.current) return;
+      const container = mediaBarRef.current;
+      const rect = container.getBoundingClientRect();
+      const newWidth = rect.right - e.clientX;
+      
+      // Constrain width between 250px and 800px
+      if (newWidth >= 250 && newWidth <= 800) {
+        setMediaBarWidth(newWidth);
+      }
+    };
+
+    const handleMouseUp = () => {
+      setIsResizing(false);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isResizing]);
 
   // Product Cockpit - detailed view of selected product
   if (selectedProduct) {
@@ -78,7 +111,7 @@ export const Workbench: React.FC = () => {
         </div>
 
         {/* Main Content: Tabs + Content + MediaBar */}
-        <div className="flex-1 flex min-h-0 overflow-hidden gap-0 flex-col lg:flex-row">
+        <div className="flex-1 flex min-h-0 overflow-hidden gap-0 flex-row">
           {/* LEFT: Main content area */}
           <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
             {/* Tab Navigation */}
@@ -241,8 +274,18 @@ export const Workbench: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT: MediaBar sidebar - Hidden on mobile, visible on lg screens */}
-          <aside className="hidden lg:flex flex-shrink-0 border-l border-[var(--border-subtle)] overflow-hidden flex-col">
+          {/* RIGHT: MediaBar sidebar with resizable drag */}
+          <div 
+            ref={mediaBarRef}
+            className="flex-shrink-0 border-l border-[var(--border-subtle)] overflow-hidden flex flex-col relative bg-[var(--bg-panel)]/30"
+            style={{ width: `${mediaBarWidth}px` }}
+          >
+            {/* Resize Handle - Left Edge */}
+            <div
+              className="absolute left-0 top-0 bottom-0 w-1.5 bg-indigo-500/0 hover:bg-indigo-500/50 cursor-col-resize transition-colors z-30"
+              onMouseDown={() => setIsResizing(true)}
+              title="Drag to resize MediaBar"
+            />
             <MediaBar
               images={getGalleryImages()}
               onMediaClick={(media) => {
@@ -256,7 +299,7 @@ export const Workbench: React.FC = () => {
                 }
               }}
             />
-          </aside>
+          </div>
         </div>
 
         {/* MediaViewer Modal */}

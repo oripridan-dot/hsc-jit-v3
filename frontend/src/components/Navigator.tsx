@@ -22,6 +22,7 @@ interface CatalogIndex {
     environment: string;
   };
   brands: Array<{
+    id: string;
     name: string;
     slug: string;
     count: number;
@@ -86,9 +87,19 @@ export const Navigator: React.FC = () => {
     
     try {
       setLoadingBrands(prev => new Set([...prev, slug]));
-      const response = await fetch(`/data/${slug}.json`);
+      
+      // Find the brand entry to get the file path
+      const brandEntry = catalogIndex?.brands.find(b => b.slug === slug || b.id === slug);
+      const filePath = brandEntry?.file || `catalogs_brand/${slug}_catalog.json`;
+      
+      const response = await fetch(`/data/${filePath}`);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
+      
+      // Build hierarchy if it doesn't exist
+      if (!data.hierarchy && data.products && Array.isArray(data.products)) {
+        data.hierarchy = buildHierarchyFromProducts(data.products);
+      }
       
       // Store entire brand data (includes products, hierarchy, brand_identity)
       setBrandProducts(prev => ({
@@ -138,6 +149,26 @@ export const Navigator: React.FC = () => {
         return next;
       });
     }
+  };
+
+  // Build hierarchy from flat products array
+  const buildHierarchyFromProducts = (products: any[]): Record<string, Record<string, any[]>> => {
+    const hierarchy: Record<string, Record<string, any[]>> = {};
+    
+    products.forEach((product: any) => {
+      const mainCat = product.main_category || product.category || 'Other';
+      const subCat = product.subcategory || product.category || 'General';
+      
+      if (!hierarchy[mainCat]) {
+        hierarchy[mainCat] = {};
+      }
+      if (!hierarchy[mainCat][subCat]) {
+        hierarchy[mainCat][subCat] = [];
+      }
+      hierarchy[mainCat][subCat].push(product);
+    });
+    
+    return hierarchy;
   };
 
   // Handle search
@@ -520,7 +551,7 @@ export const Navigator: React.FC = () => {
           </div>
           <div className="flex justify-between">
             <span>Catalog:</span>
-            <span className="font-mono text-indigo-400">{catalogIndex?.metadata.version || 'N/A'}</span>
+            <span className="font-mono text-indigo-400">{catalogIndex?.metadata?.version || 'N/A'}</span>
           </div>
         </div>
       </div>

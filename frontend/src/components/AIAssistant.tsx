@@ -51,8 +51,8 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({
       if (productId && productId !== lastProductRef.current) {
         lastProductRef.current = productId;
         
-        const accessoriesCount = selectedProduct.accessories?.length || 0;
-        const relatedCount = selectedProduct.related?.length || 0;
+        const accessoriesCount = (selectedProduct.accessories?.length || 0) as number;
+        const relatedCount = (selectedProduct.related?.length || 0) as number;
         
         const contextMessage: Message = {
           role: 'assistant',

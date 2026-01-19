@@ -53,12 +53,12 @@ class UnifiedStateManager {
           return `${proto}://${url.host}/ws`;
         }
 
-        // Development: Use Vite's proxy
+        // Development: Connect directly to localhost backend
         const isSecure = window.location.protocol === 'https:';
         const proto = isSecure ? 'wss' : 'ws';
-
-        // Use relative path - Vite proxy will forward to backend
-        return `${proto}://${window.location.host}/ws`;
+        
+        // Always use localhost:8000 for development
+        return `${proto}://localhost:8000/ws`;
       } catch (_) {
         // Fallback
         return 'ws://localhost:8000/ws';
@@ -91,6 +91,7 @@ class UnifiedStateManager {
       this.wsConnection.onerror = (error) => {
         console.debug('[UnifiedRouter] WebSocket error (falling back to static mode):', error);
         useWebSocketStore.setState({ connectionState: 3 }); // CLOSED
+        // Don't reconnect on error for now, just use static mode
       };
 
       this.wsConnection.onclose = () => {

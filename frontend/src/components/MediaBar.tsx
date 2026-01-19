@@ -180,8 +180,8 @@ export const MediaBar: React.FC<MediaBarProps> = ({
   return (
     <div 
       ref={containerRef}
-      className="flex flex-col h-full relative bg-[var(--bg-panel)]/30"
-      style={{ width: `${barWidth}px` }}
+      className="flex flex-col h-full relative bg-[var(--bg-panel)]/30 overflow-hidden"
+      style={{ width: `${barWidth}px`, minWidth: '250px' }}
     >
       {/* Resize Handle - Left Edge */}
       <div
@@ -227,7 +227,7 @@ export const MediaBar: React.FC<MediaBarProps> = ({
       </div>
 
       {/* Content Area */}
-      <div className="flex-1 min-h-0 overflow-y-auto p-2 scrollbar-thin scrollbar-thumb-indigo-500/40 scrollbar-track-slate-800/20 hover:scrollbar-thumb-indigo-500/60">
+      <div className="flex-1 min-h-0 w-full overflow-y-auto p-2 scrollbar-thin scrollbar-thumb-indigo-500/40 scrollbar-track-slate-800/20 hover:scrollbar-thumb-indigo-500/60">
         <AnimatePresence mode="wait">
           {currentItems.length > 0 ? (
             <motion.div
@@ -236,7 +236,7 @@ export const MediaBar: React.FC<MediaBarProps> = ({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className={activeTab === 'images' ? 'grid grid-cols-1 gap-2' : 'space-y-2'}
+              className={activeTab === 'images' ? 'grid grid-cols-1 gap-2 w-full' : 'space-y-2 w-full'}
             >
               {currentItems.map((media, idx) => {
                 const globalIndex = allMedia.findIndex(
@@ -260,7 +260,7 @@ export const MediaBar: React.FC<MediaBarProps> = ({
                   >
                     {activeTab === 'images' && (
                       <div 
-                        className="w-full bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 overflow-hidden hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20 min-h-24 flex items-center justify-center max-h-96"
+                        className="w-full bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 overflow-hidden hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20 min-h-32 flex items-center justify-center"
                         style={{
                           aspectRatio: imageDimensions[media.url] 
                             ? `${imageDimensions[media.url].width} / ${imageDimensions[media.url].height}`
@@ -270,7 +270,7 @@ export const MediaBar: React.FC<MediaBarProps> = ({
                         <img
                           src={media.url}
                           alt={media.title || `Image ${idx + 1}`}
-                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 bg-black/20 max-w-full max-h-full"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 bg-black/20"
                           onLoad={handleImageLoad}
                           onError={(e) => {
                             const img = e.currentTarget;

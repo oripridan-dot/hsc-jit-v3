@@ -5,6 +5,7 @@ import { Navigator } from './Navigator';
 import { useNavigationStore } from '../store/navigationStore';
 import { instantSearch } from '../lib';
 import { useHalileoTheme } from '../hooks/useHalileoTheme';
+import type { Product } from '../types';
 
 interface AISuggestion {
   id: string;
@@ -157,7 +158,7 @@ export const HalileoNavigator = () => {
       category: suggestion.category
     };
     
-    selectProduct(productNode);
+    selectProduct(productNode as unknown as Product);
     console.log('Halileo navigated to:', suggestion.name);
   };
 

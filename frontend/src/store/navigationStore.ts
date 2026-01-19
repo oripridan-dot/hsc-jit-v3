@@ -3,8 +3,7 @@
  * Manages the tri-pane console: Navigator -> Workbench -> Analyst
  */
 import { create } from 'zustand';
-import type { Product, NavLevel } from '../types';
-import type { ProductRelationship } from '../types';
+import type { Product, NavLevel, ProductRelationship } from '../types';
 
 export type { NavLevel } from '../types';
 
