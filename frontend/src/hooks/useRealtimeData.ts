@@ -42,20 +42,32 @@ export function useRealtimeData(options: UseRealtimeDataOptions = {}) {
 
     useEffect(() => {
         // Subscribe to catalog changes
-        unsubscribeRef.current = catalogLoader.onDataChange((type, id) => {
-            // Filter by watch types
-            if (!watchTypes.includes(type)) return;
+        try {
+            if (typeof catalogLoader?.onDataChange === 'function') {
+                unsubscribeRef.current = catalogLoader.onDataChange((type, id) => {
+                    // Filter by watch types
+                    if (!watchTypes.includes(type)) return;
 
-            console.log(`📡 Data updated: ${type}${id ? ` (${id})` : ''}`);
+                    console.log(`📡 Data updated: ${type}${id ? ` (${id})` : ''}`);
 
-            if (onDataChange) {
-                onDataChange(type, id);
+                    if (onDataChange) {
+                        onDataChange(type, id);
+                    }
+                });
+            } else {
+                console.warn('⚠️ catalogLoader.onDataChange not available');
             }
-        });
+        } catch (error) {
+            console.error('❌ Error subscribing to data changes:', error);
+        }
 
         return () => {
             // Cleanup subscription on unmount
-            unsubscribeRef.current?.();
+            try {
+                unsubscribeRef.current?.();
+            } catch (e) {
+                console.debug('Cleanup error:', e);
+            }
         };
     }, [onDataChange, watchTypes]);
 }

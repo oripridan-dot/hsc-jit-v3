@@ -17,14 +17,18 @@ function App() {
   const { actions } = useWebSocketStore();
   const [dataVersion, setDataVersion] = useState(0);
 
-  // Enable real-time data updates
-  useRealtimeData({
-    onDataChange: (type, id) => {
-      console.log(`🔄 Real-time update: ${type}${id ? ` (${id})` : ''}`);
-      // Trigger re-initialization
-      setDataVersion(v => v + 1);
-    }
-  });
+  // Enable real-time data updates (with safe error handling)
+  try {
+    useRealtimeData({
+      onDataChange: (type, id) => {
+        console.log(`🔄 Real-time update: ${type}${id ? ` (${id})` : ''}`);
+        // Trigger re-initialization
+        setDataVersion(v => v + 1);
+      }
+    });
+  } catch (error) {
+    console.warn('⚠️ Real-time data updates not available:', error);
+  }
 
   useEffect(() => {
     // Apply Roland brand theme
