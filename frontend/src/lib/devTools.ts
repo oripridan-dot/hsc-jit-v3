@@ -10,8 +10,8 @@
  * ```
  */
 
-import { catalogLoader } from './lib/catalogLoader';
-import { dataWatcher } from './lib/dataWatcher';
+import { catalogLoader } from './catalogLoader';
+import { dataWatcher } from './dataWatcher';
 
 interface HSCDevTools {
   /**
