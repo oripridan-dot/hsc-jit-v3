@@ -325,6 +325,14 @@ class HalilitCatalog:
                 # Ensure category_hierarchy
                 if 'category_hierarchy' not in product:
                     product['category_hierarchy'] = [product.get('category', 'Uncategorized')]
+                
+                # --- NEW: DOWNLOAD INNER LOGOS (series_logo) ---
+                if product.get('series_logo'):
+                    # Create a unique name: roland-fantom-06-series.png
+                    logo_name = f"{slug}-{product.get('id', idx)}-series"
+                    local_path = self._download_logo(product['series_logo'], logo_name)
+                    product['series_logo'] = local_path
+                    logger.info(f"      ⬇️  Downloaded inner logo for {product.get('name')}")
         
         # Second pass: Build hierarchical category tree
         refined['hierarchy'] = self._build_category_hierarchy(refined.get('products', []))
