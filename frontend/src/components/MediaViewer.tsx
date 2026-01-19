@@ -213,7 +213,8 @@ export const MediaViewer: React.FC<MediaViewerProps> = ({
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.9, opacity: 0 }}
           onClick={(e) => e.stopPropagation()}
-          className="relative w-full max-w-7xl h-[90vh] bg-black rounded-xl overflow-hidden shadow-2xl"
+          className="relative w-full max-w-7xl bg-black rounded-xl overflow-hidden shadow-2xl"
+          style={{ height: 'clamp(400px, 90vh, 95vh)' }}
         >
           {/* Header with Controls */}
           <div className="absolute top-0 left-0 right-0 z-10 bg-gradient-to-b from-black/80 to-transparent p-4 flex items-center justify-between">
@@ -285,8 +286,12 @@ export const MediaViewer: React.FC<MediaViewerProps> = ({
                 ref={imageRef}
                 src={media.url}
                 alt={media.title || 'Media'}
-                className="max-w-full max-h-full object-contain cursor-grab active:cursor-grabbing"
+                className="cursor-grab active:cursor-grabbing object-contain object-center"
                 style={{
+                  maxWidth: '100%',
+                  maxHeight: '100%',
+                  width: 'auto',
+                  height: 'auto',
                   scale: zoom,
                   x: pan.x,
                   y: pan.y,
@@ -295,6 +300,7 @@ export const MediaViewer: React.FC<MediaViewerProps> = ({
                 drag={zoom > 1}
                 dragConstraints={containerRef}
                 dragElastic={0.2}
+                decoding="async"
                 onDragStart={() => setIsDragging(true)}
                 onDrag={(_e, info) => {
                   setPan({ x: info.offset.x, y: info.offset.y });
@@ -316,7 +322,11 @@ export const MediaViewer: React.FC<MediaViewerProps> = ({
               <video
                 src={media.url}
                 controls
-                className="max-w-full max-h-full"
+                className="w-full h-full object-contain object-center"
+                style={{
+                  maxWidth: '100%',
+                  maxHeight: '100%'
+                }}
                 autoPlay
               />
             )}

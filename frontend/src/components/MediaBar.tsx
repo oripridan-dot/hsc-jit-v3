@@ -253,17 +253,22 @@ export const MediaBar: React.FC<MediaBarProps> = ({
                   >
                     {activeTab === 'images' && (
                       <div 
-                        className="w-full bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 overflow-hidden hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20 min-h-32 flex items-center justify-center"
+                        className="w-full bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 overflow-hidden hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20 flex items-center justify-center"
                         style={{
                           aspectRatio: imageDimensions[media.url] 
                             ? `${imageDimensions[media.url].width} / ${imageDimensions[media.url].height}`
-                            : '1 / 1'
+                            : '1 / 1',
+                          minHeight: 'clamp(160px, 35vmin, 450px)',
+                          maxHeight: '100%',
+                          width: '100%'
                         }}
                       >
                         <img
                           src={media.url}
                           alt={media.title || `Image ${idx + 1}`}
-                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 bg-black/20"
+                          className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300 bg-black/20"
+                          loading="lazy"
+                          decoding="async"
                           onLoad={handleImageLoad}
                           onError={(e) => {
                             const img = e.currentTarget;
@@ -279,10 +284,15 @@ export const MediaBar: React.FC<MediaBarProps> = ({
                     )}
 
                     {activeTab === 'videos' && (
-                      <div className="w-full aspect-video bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 overflow-hidden hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20 relative group/video">
+                      <div className="w-full bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 overflow-hidden hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20 relative group/video" style={{ aspectRatio: '16 / 9' }}>
                         <video
                           src={media.url}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                          style={{
+                            minHeight: 'clamp(140px, 32vmin, 320px)',
+                            maxHeight: '100%',
+                            aspectRatio: '16 / 9'
+                          }}
                           onError={(e) => {
                             const vid = e.currentTarget;
                             vid.style.display = 'none';

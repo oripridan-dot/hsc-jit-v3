@@ -15,13 +15,14 @@ This guide outlines the complete **Visual Branding System** for Mission Control,
 **File:** [frontend/src/hooks/useBrandTheme.ts](frontend/src/hooks/useBrandTheme.ts)
 
 Now supports **two input modes**:
+
 - **String mode** (legacy): `useBrandTheme('roland')` → looks up in `brandThemes`
 - **Object mode** (new): `useBrandTheme({ primary: '#ef4444', secondary: '#1f2937', ... })` → applies directly
 
 ```typescript
 // Both work now:
-useBrandTheme('roland');  // Lookup mode
-useBrandTheme(brandColors);  // Direct colors from JSON
+useBrandTheme("roland"); // Lookup mode
+useBrandTheme(brandColors); // Direct colors from JSON
 ```
 
 ### 2. **Dynamic Brand Theme Application** ✅
@@ -32,10 +33,11 @@ The Workbench now **automatically applies the brand theme** when a product is se
 
 ```typescript
 // Automatically applies theme when product changes
-useBrandTheme(selectedProduct?.brand || 'default');
+useBrandTheme(selectedProduct?.brand || "default");
 ```
 
 This means:
+
 - Select Roland product → UI turns **Red (#ef4444)**
 - Select Yamaha product → UI turns **Purple (#a855f7)**
 - Select Korg product → UI turns **Orange (#fb923c)**
@@ -56,6 +58,7 @@ Added new **brand color tokens** that dynamically reference CSS variables:
 ```
 
 Now you can use:
+
 - `bg-brand-primary` → Changes with brand
 - `text-brand-accent` → Changes with brand
 - `shadow-glow-brand` → Dynamic shadow glow
@@ -63,10 +66,12 @@ Now you can use:
 ### 4. **Updated Catalog Data** ✅
 
 **Files:**
+
 - [frontend/public/data/catalogs_brand/roland_catalog.json](frontend/public/data/catalogs_brand/roland_catalog.json)
 - [frontend/public/data/index.json](frontend/public/data/index.json)
 
 Both now include complete **brand_identity** with:
+
 - `logo_url`: Brand logo (ready for forging)
 - `brand_colors`: WCAG AA compliant color palette
 - `official_site`: Brand website
@@ -76,6 +81,7 @@ Both now include complete **brand_identity** with:
 **File:** [frontend/src/components/Navigator.tsx](frontend/src/components/Navigator.tsx#L293-L315)
 
 The Navigator already displays brand logos in the sidebar:
+
 - 10×10px square container per brand
 - Fallback to 📚 icon if logo fails to load
 - Responsive error handling
@@ -111,6 +117,7 @@ The Navigator already displays brand logos in the sidebar:
 ```
 
 **Key fields:**
+
 - ✅ `main_category` - High-level group (used for tree navigation)
 - ✅ `subcategory` - Specific type (crucial for hierarchy)
 - ✅ `features` - Array of strings (populates AI search graph)
@@ -123,6 +130,7 @@ cd backend && python3 forge_backbone.py
 ```
 
 This will:
+
 - Download the logo locally to `frontend/public/data/logos/`
 - Build the hierarchy from `main_category` + `subcategory`
 - Populate the search graph from `features`
@@ -147,23 +155,23 @@ BRAND_THEMES = {
 
 ```typescript
 export const brandThemes: Record<string, BrandTheme> = {
-    yamaha: {
-        id: 'yamaha',
-        name: 'Yamaha',
-        colors: {
-            primary: '#a855f7',
-            secondary: '#fbbf24',
-            accent: '#22d3ee',
-            background: '#18181b',
-            text: '#ffffff'
-        },
-        gradients: {
-            hero: 'linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)',
-            card: 'linear-gradient(135deg, rgba(168, 85, 247, 0.12) 0%, rgba(24, 24, 27, 0.95) 100%)'
-        }
+  yamaha: {
+    id: "yamaha",
+    name: "Yamaha",
+    colors: {
+      primary: "#a855f7",
+      secondary: "#fbbf24",
+      accent: "#22d3ee",
+      background: "#18181b",
+      text: "#ffffff",
     },
-    // ... other brands
-}
+    gradients: {
+      hero: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)",
+      card: "linear-gradient(135deg, rgba(168, 85, 247, 0.12) 0%, rgba(24, 24, 27, 0.95) 100%)",
+    },
+  },
+  // ... other brands
+};
 ```
 
 ### **For Users: Experiencing the "Chameleon"**
@@ -182,30 +190,35 @@ export const brandThemes: Record<string, BrandTheme> = {
 ## 🎯 Color Palette Reference
 
 ### Roland (RED)
+
 - **Primary**: #ef4444 (Red-500)
 - **Secondary**: #1f2937 (Gray-800)
 - **Accent**: #fbbf24 (Amber-400)
 - **Hero Gradient**: `linear-gradient(135deg, #ef4444 0%, #b91c1c 100%)`
 
 ### Yamaha (PURPLE)
+
 - **Primary**: #a855f7 (Purple-500)
 - **Secondary**: #fbbf24 (Amber-400)
 - **Accent**: #22d3ee (Cyan-400)
 - **Hero Gradient**: `linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)`
 
 ### Korg (ORANGE)
+
 - **Primary**: #fb923c (Orange-400)
 - **Secondary**: #1f2937 (Gray-800)
 - **Accent**: #34d399 (Emerald-400)
 - **Hero Gradient**: `linear-gradient(135deg, #fb923c 0%, #ea580c 100%)`
 
 ### Moog (CYAN)
+
 - **Primary**: #22d3ee (Cyan-400)
 - **Secondary**: #f87171 (Red-400)
 - **Accent**: #34d399 (Emerald-400)
 - **Hero Gradient**: `linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%)`
 
 ### Nord (RED-LIGHT)
+
 - **Primary**: #f87171 (Red-400)
 - **Secondary**: #1f2937 (Gray-800)
 - **Accent**: #fbbf24 (Amber-400)
@@ -222,34 +235,29 @@ export const brandThemes: Record<string, BrandTheme> = {
 When a brand theme is activated, these CSS variables are set on `document.documentElement`:
 
 ```css
---brand-primary: <primary-color>
---brand-secondary: <secondary-color>
---brand-accent: <accent-color>
---brand-background: <background-color>
---brand-text: <text-color>
---brand-gradient-hero: <hero-gradient>
---brand-gradient-card: <card-gradient>
-
-/* For backwards compatibility */
---color-brand-primary: <primary-color>
---color-brand-secondary: <secondary-color>
---color-brand-accent: <accent-color>
+--brand-primary: <primary-color> --brand-secondary: <secondary-color>
+  --brand-accent: <accent-color> --brand-background: <background-color>
+  --brand-text: <text-color> --brand-gradient-hero: <hero-gradient>
+  --brand-gradient-card: <card-gradient> /* For backwards compatibility */
+  --color-brand-primary: <primary-color>
+  --color-brand-secondary: <secondary-color>
+  --color-brand-accent: <accent-color>;
 ```
 
 ### Component Usage Example
 
 ```tsx
 // In any component:
-import { useBrandTheme } from '../hooks/useBrandTheme';
+import { useBrandTheme } from "../hooks/useBrandTheme";
 
 export const MyComponent = ({ brand }: { brand: string }) => {
-  useBrandTheme(brand);  // Apply theme when brand changes
+  useBrandTheme(brand); // Apply theme when brand changes
 
   return (
-    <div 
-      style={{ 
+    <div
+      style={{
         borderTop: `4px solid var(--brand-primary)`,
-        backgroundColor: 'var(--brand-background)'
+        backgroundColor: "var(--brand-background)",
       }}
     >
       {/* Dynamic colors applied! */}
@@ -267,7 +275,7 @@ export const MyComponent = ({ brand }: { brand: string }) => {
 </div>
 
 // Or with inline styles for more control:
-<div style={{ 
+<div style={{
   background: 'var(--brand-primary)',
   boxShadow: '0 0 20px var(--brand-accent)'
 }}>
@@ -290,6 +298,7 @@ def _download_logo(self, logo_url: str, brand_slug: str) -> str:
 ```
 
 To activate:
+
 1. Ensure your scraper outputs `brand_identity.logo_url` with valid URL
 2. Run `python3 forge_backbone.py`
 3. Logos will be saved to `frontend/public/data/logos/`
@@ -298,6 +307,7 @@ To activate:
 ### Phase 3: Multi-Brand Support (Framework Ready)
 
 All the UI is already prepared to support switching between brands instantly. Just need to:
+
 1. Scrape additional brands (Yamaha, Korg, Moog, Nord, etc.)
 2. Update `BRAND_THEMES` in `forge_backbone.py`
 3. Add theme entries to `brandThemes.ts`
@@ -323,16 +333,16 @@ All the UI is already prepared to support switching between brands instantly. Ju
 
 ## 🔗 Key Files Reference
 
-| File | Purpose | Status |
-|------|---------|--------|
-| [frontend/src/hooks/useBrandTheme.ts](frontend/src/hooks/useBrandTheme.ts) | Theme hook | ✅ Enhanced |
-| [frontend/src/components/Workbench.tsx](frontend/src/components/Workbench.tsx) | Product display | ✅ Updated |
-| [frontend/src/components/Navigator.tsx](frontend/src/components/Navigator.tsx) | Brand selector + logos | ✅ Active |
-| [frontend/src/styles/brandThemes.ts](frontend/src/styles/brandThemes.ts) | Color definitions | ✅ Complete |
-| [frontend/tailwind.config.js](frontend/tailwind.config.js) | Tailwind config | ✅ Enhanced |
-| [frontend/public/data/catalogs_brand/roland_catalog.json](frontend/public/data/catalogs_brand/roland_catalog.json) | Brand data | ✅ Updated |
-| [frontend/public/data/index.json](frontend/public/data/index.json) | Catalog index | ✅ Updated |
-| [backend/forge_backbone.py](backend/forge_backbone.py) | Data refiner | ✅ Logo-ready |
+| File                                                                                                               | Purpose                | Status        |
+| ------------------------------------------------------------------------------------------------------------------ | ---------------------- | ------------- |
+| [frontend/src/hooks/useBrandTheme.ts](frontend/src/hooks/useBrandTheme.ts)                                         | Theme hook             | ✅ Enhanced   |
+| [frontend/src/components/Workbench.tsx](frontend/src/components/Workbench.tsx)                                     | Product display        | ✅ Updated    |
+| [frontend/src/components/Navigator.tsx](frontend/src/components/Navigator.tsx)                                     | Brand selector + logos | ✅ Active     |
+| [frontend/src/styles/brandThemes.ts](frontend/src/styles/brandThemes.ts)                                           | Color definitions      | ✅ Complete   |
+| [frontend/tailwind.config.js](frontend/tailwind.config.js)                                                         | Tailwind config        | ✅ Enhanced   |
+| [frontend/public/data/catalogs_brand/roland_catalog.json](frontend/public/data/catalogs_brand/roland_catalog.json) | Brand data             | ✅ Updated    |
+| [frontend/public/data/index.json](frontend/public/data/index.json)                                                 | Catalog index          | ✅ Updated    |
+| [backend/forge_backbone.py](backend/forge_backbone.py)                                                             | Data refiner           | ✅ Logo-ready |
 
 ---
 
@@ -349,4 +359,3 @@ All the UI is already prepared to support switching between brands instantly. Ju
 **Version**: 3.7.0  
 **Last Updated**: January 2026  
 **Status**: Production-Ready (Single Brand), Roadmap Clear
-
