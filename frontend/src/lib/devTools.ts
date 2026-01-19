@@ -85,11 +85,15 @@ const devTools: HSCDevTools = {
 // Export for use in App
 export function initializeDevTools() {
   if (import.meta.env.DEV) {
-    // @ts-ignore - Intentionally adding to window for dev access
-    window.__hscdev = devTools;
-    
-    console.log('%c🔧 HSC Development Tools Initialized', 'color: cyan; font-weight: bold');
-    console.log('%cUse: window.__hscdev.status() for available commands', 'color: gray');
+    try {
+      // @ts-ignore - Intentionally adding to window for dev access
+      window.__hscdev = devTools;
+      
+      console.log('%c🔧 HSC Development Tools Initialized', 'color: cyan; font-weight: bold');
+      console.log('%cUse: window.__hscdev.status() for available commands', 'color: gray');
+    } catch (error) {
+      console.warn('⚠️ Failed to initialize dev tools:', error);
+    }
   }
 }
 

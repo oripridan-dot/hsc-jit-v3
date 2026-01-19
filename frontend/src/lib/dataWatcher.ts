@@ -54,40 +54,48 @@ class DataWatcher {
     private async checkForUpdates() {
         try {
             // Check index.json
-            const indexRes = await fetch(`/data/index.json?t=${Date.now()}`, {
-                method: 'HEAD',
-                cache: 'no-cache'
-            }).catch(() => null);
+            let indexText = '';
+            try {
+                const indexRes = await fetch(`/data/index.json?t=${Date.now()}`, {
+                    method: 'GET',
+                    headers: { 'Cache-Control': 'no-cache' }
+                });
+                if (!indexRes.ok) return;
+                indexText = await indexRes.text();
+            } catch {
+                return; // Silently fail on fetch errors
+            }
 
-            if (indexRes?.ok) {
-                const indexText = await indexRes.text();
-                const indexHash = this.hashString(indexText);
+            const indexHash = this.hashString(indexText);
 
-                if (indexHash !== this.lastIndex) {
-                    this.lastIndex = indexHash;
-                    console.log('🔄 Data changed: index.json');
-                    this.notifyListeners('index');
-                }
+            if (indexHash !== this.lastIndex) {
+                this.lastIndex = indexHash;
+                console.log('🔄 Data changed: index.json');
+                this.notifyListeners('index');
             }
 
             // Check each brand catalog
             const brands = ['boss', 'roland'];
             for (const brand of brands) {
-                const brandRes = await fetch(`/data/${brand}.json?t=${Date.now()}`, {
-                    method: 'HEAD',
-                    cache: 'no-cache'
-                }).catch(() => null);
+                let brandText = '';
+                try {
+                    const brandRes = await fetch(`/data/${brand}.json?t=${Date.now()}`, {
+                        method: 'GET',
+                        headers: { 'Cache-Control': 'no-cache' }
+                    });
+                    if (!brandRes.ok) continue;
+                    brandText = await brandRes.text();
+                } catch {
+                    continue;
+                }
 
-                if (brandRes?.ok) {
-                    const brandText = await brandRes.text();
-                    const brandHash = this.hashString(brandText);
-                    const lastHash = this.lastBrands.get(brand);
+                const brandHash = this.hashString(brandText);
+                const lastHash = this.lastBrands.get(brand);
 
-                    if (brandHash !== lastHash) {
-                        this.lastBrands.set(brand, brandHash);
-                        console.log(`🔄 Data changed: ${brand}.json`);
-                        this.notifyListeners('brand', brand);
-                    }
+                if (brandHash !== lastHash) {
+                    this.lastBrands.set(brand, brandHash);
+                    console.log(`🔄 Data changed: ${brand}.json`);
+                    this.notifyListeners('brand', brand);
                 }
             }
         } catch (error) {
