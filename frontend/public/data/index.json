@@ -1,31 +1,17 @@
 {
-  "metadata": {
-    "version": "3.7-Halilit",
-    "generated_at": "2026-01-19T19:41:29.416402",
-    "environment": "static_production",
-    "note": "Golden Record - Pre-calculated, Static, Fast",
-    "total_brands": 1
-  },
+  "build_timestamp": "2026-01-19T23:42:00.000Z",
+  "version": "3.7-Halilit",
+  "total_products": 29,
+  "total_verified": 29,
   "brands": [
     {
+      "id": "roland",
       "name": "Roland Catalog",
-      "slug": "roland-catalog",
-      "count": 1,
-      "file": "/data/roland-catalog.json",
-      "last_updated": "2026-01-19T19:41:29.418301"
+      "brand_color": "#ef4444",
+      "logo_url": null,
+      "product_count": 29,
+      "verified_count": 29,
+      "data_file": "roland-catalog.json"
     }
-  ],
-  "search_graph": [
-    {
-      "id": "roland-4cy-4wt-01",
-      "label": "4CY-4WT-01",
-      "brand": "roland-catalog",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "In this video, you’ll learn everything you need to know about the DH-10 wireless hub and WT-10 wirel"
-    }
-  ],
-  "total_products": 1
+  ]
 }

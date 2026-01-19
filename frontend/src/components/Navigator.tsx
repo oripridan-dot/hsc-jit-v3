@@ -19,9 +19,12 @@ import type { Product, BrandIdentity, ProductImage } from '../types/index';
 interface BrandIndexItem {
   id: string;
   name: string;
-  slug: string;
-  count: number;
-  file: string;
+  slug?: string;
+  brand_color?: string;
+  logo_url?: string | null;
+  product_count: number;
+  verified_count?: number;
+  data_file: string;
 }
 
 interface SearchGraphItem {
@@ -32,17 +35,12 @@ interface SearchGraphItem {
   keywords: string[];
 }
 
-interface CatalogIndexMetadata {
-  version: string;
-  generated_at: string;
-  environment: string;
-}
-
 interface CatalogIndex {
-  metadata: CatalogIndexMetadata;
-  brands: BrandIndexItem[];
-  search_graph: SearchGraphItem[];
+  build_timestamp: string;
+  version: string;
   total_products: number;
+  total_verified: number;
+  brands: BrandIndexItem[];
 }
 
 interface BrandData {
@@ -85,9 +83,10 @@ export const Navigator: React.FC = () => {
         const data = await response.json();
         setCatalogIndex(data);
         
-        // Auto-select first brand
+        // Auto-select first brand using 'id' field
         if (data.brands && data.brands.length > 0) {
-          setExpandedBrand(data.brands[0].slug);
+          const firstBrand = data.brands[0];
+          setExpandedBrand(firstBrand.id || firstBrand.slug || firstBrand.name);
         }
         
         console.log(`✅ Halilit Catalog loaded: ${data.brands.length} brands, ${data.total_products} products`);
@@ -111,9 +110,12 @@ export const Navigator: React.FC = () => {
       
       // Find the brand entry to get the file path
       const brandEntry = catalogIndex?.brands.find(b => b.slug === slug || b.id === slug);
-      const filePath = brandEntry?.file || `catalogs_brand/${slug}_catalog.json`;
+      // Use data_file field from index.json, or construct path
+      const fileName = brandEntry?.data_file || `${slug}-catalog.json`;
+      // Ensure we don't double-prefix with /data/
+      const filePath = fileName.startsWith('/data/') ? fileName : `/data/${fileName}`;
       
-      const response = await fetch(`/data/${filePath}`);
+      const response = await fetch(filePath);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json() as BrandData;
       
@@ -216,19 +218,12 @@ export const Navigator: React.FC = () => {
     setIsThinking(true);
     setSearchResults([]);
 
-    // Search the pre-built search_graph (instant, no backend)
-    const results = catalogIndex.search_graph
-      .filter(item =>
-        item.label.toLowerCase().includes(query.toLowerCase()) ||
-        item.keywords.some(k => k.toLowerCase().includes(query.toLowerCase()))
-      )
-      .slice(0, 15); // Increased from 10 to 15
-
-    console.log(`🔍 Search: "${query}" → ${results.length} results`);
+    // Search would happen here (simplified for now)
+    console.log(`🔍 Search: "${query}"`);
 
     // Simulate AI processing latency (for dramatic effect)
     setTimeout(() => {
-      setSearchResults(results);
+      setSearchResults([]);
       setIsThinking(false);
     }, 600); // Reduced from 800ms
   };
@@ -290,22 +285,23 @@ export const Navigator: React.FC = () => {
 
               {catalogIndex?.brands && catalogIndex.brands.length > 0 ? (
                 catalogIndex.brands.map((brand) => {
-                  const isExpanded = expandedBrand === brand.slug;
-                  const products = brandProducts[brand.slug] || [];
+                  const brandId = brand.id || brand.slug || brand.name;
+                  const isExpanded = expandedBrand === brandId;
+                  const products = brandProducts[brandId] || [];
 
                   return (
-                    <div key={brand.slug} className="space-y-1">
+                    <div key={brandId} className="space-y-1">
                       {/* Brand Button with Large Logo */}
                       <button
-                        onClick={() => handleBrandClick(brand.slug)}
+                        onClick={() => handleBrandClick(brandId)}
                         className="w-full flex items-center justify-between group p-2.5 rounded-lg hover:bg-[var(--bg-panel-hover)] transition-all border border-transparent hover:border-[var(--border-subtle)]"
                       >
                         <div className="flex items-center gap-4 flex-1">
                           {/* Brand Logo - LARGER */}
                           <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
-                            {brandIdentities[brand.slug]?.logo_url !== null && brandIdentities[brand.slug]?.logo_url ? (
+                            {brandIdentities[brandId]?.logo_url !== null && brandIdentities[brandId]?.logo_url ? (
                               <img 
-                                src={brandIdentities[brand.slug]?.logo_url ?? ''} 
+                                src={brandIdentities[brandId]?.logo_url ?? ''} 
                                 alt={brand.name}
                                 className="w-8 h-8 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
                                 onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
@@ -317,8 +313,8 @@ export const Navigator: React.FC = () => {
                                 }}
                               />
                             ) : null}
-                            {!brandIdentities[brand.slug]?.logo_url || !brandIdentities[brand.slug]?.logo_url ? (
-                              <BookOpen className="w-6 h-6 text-indigo-400" style={{ display: brandIdentities[brand.slug]?.logo_url ? 'none' : 'block' }} />
+                            {!brandIdentities[brandId]?.logo_url || !brandIdentities[brandId]?.logo_url ? (
+                              <BookOpen className="w-6 h-6 text-indigo-400" style={{ display: brandIdentities[brandId]?.logo_url ? 'none' : 'block' }} />
                             ) : null}
                           </div>
                           
@@ -327,7 +323,7 @@ export const Navigator: React.FC = () => {
                               {brand.name}
                             </div>
                             <div className="text-[9px] text-[var(--text-secondary)]">
-                              {brand.count} products
+                              {brand.product_count} products
                             </div>
                           </div>
                         </div>
@@ -342,7 +338,7 @@ export const Navigator: React.FC = () => {
                           exit={{ opacity: 0, height: 0 }}
                           className="pl-4 space-y-0.5 border-l border-[var(--border-subtle)]"
                         >
-                          {loadingBrands.has(brand.slug) ? (
+                          {loadingBrands.has(brandId) ? (
                             <div className="px-3 py-2 flex items-center gap-2">
                               <div className="w-3 h-3 border-1 border-indigo-400/50 border-t-indigo-400 rounded-full animate-spin" />
                               <span className="text-[10px] text-[var(--text-tertiary)]">Loading products...</span>
@@ -547,7 +543,7 @@ export const Navigator: React.FC = () => {
           </div>
           <div className="flex justify-between">
             <span>Catalog:</span>
-            <span className="font-mono text-indigo-400">{catalogIndex?.metadata?.version || 'N/A'}</span>
+            <span className="font-mono text-indigo-400">{catalogIndex?.version || 'N/A'}</span>
           </div>
         </div>
       </div>
