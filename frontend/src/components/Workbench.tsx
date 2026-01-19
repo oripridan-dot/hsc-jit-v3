@@ -323,7 +323,7 @@ export const Workbench: React.FC = () => {
           >
             {/* Resize Handle - Right Edge */}
             <div
-              className="absolute right-0 top-0 bottom-0 w-1.5 bg-indigo-500/0 hover:bg-indigo-500/50 cursor-col-resize transition-colors z-30"
+              className="absolute right-0 top-0 bottom-0 w-2 bg-indigo-500/20 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-30 group"
               onMouseDown={() => setIsResizing(true)}
               title="Drag to resize MediaBar"
             />
