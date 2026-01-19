@@ -13,6 +13,7 @@
 **Moved to:** `/docs/archive/cleanup_v37/`
 
 Removed from root:
+
 - Analysis reports (ANALYSIS_COMPLETE, DEEP_ANALYSIS_REPORT, etc.)
 - Validation summaries (SYSTEM_VALIDATION, FINAL_VERIFICATION, etc.)
 - Historical records (REBRANDING_MANIFEST, THE_DECISIVE_PIVOT, etc.)
@@ -20,6 +21,7 @@ Removed from root:
 - Implementation summaries (SESSION_COMPLETION_REPORT, etc.)
 
 **Kept in root:**
+
 - `README.md` — Main project documentation (rewritten)
 - `QUICK_START.md` — Developer commands
 - `project_context.md` — System architecture
@@ -27,6 +29,7 @@ Removed from root:
 ### 2. ✅ Removed Dead Frontend Code (App.tsx)
 
 **Removed:**
+
 - Unused import: `AIAssistant` component
 - Unused import: `useNavigationStore` (selectedProduct)
 - Unused import: `Product` type
@@ -40,6 +43,7 @@ Removed from root:
 ### 3. ✅ Removed Orphaned Backend Scripts
 
 **Deleted:**
+
 - `backend/roland_scraper_skeleton.py` — Duplicate/old scraper
 - `backend/janitor.py` — Purpose unclear, unused
 - `backend/cleanup_v3.7.sh` — Stale cleanup script
@@ -49,17 +53,20 @@ Removed from root:
 ### 4. ✅ Removed Orphaned Backend Folders
 
 **Deleted:**
+
 - `backend/backend/` — Nested duplicate (only contained empty data/)
 - `backend/frontend/` — Misplaced frontend folder (only had public/data/)
 
 ### 5. ✅ Cleaned Unused Dependencies
 
 **Frontend (package.json):**
+
 - Removed: `gsap@^3.12.2` (not used; Framer Motion already handles animations)
 - Kept: `reactflow@^11.11.4` (used by SignalFlowMap)
 - Kept: `@tensorflow/tfjs@^4.11.0` (used by AIImageEnhancer)
 
 **Backend (requirements-v3.7.txt):**
+
 - Removed: `redis==5.0.1` (not imported anywhere; no caching layer implemented)
 - Removed: `spacy==3.7.2` (not used; SentenceTransformers sufficient for embeddings)
 - Kept: `sentence-transformers` (used in jit_rag.py, core to RAG system)
@@ -68,6 +75,7 @@ Removed from root:
 ### 6. ✅ Updated Core Documentation
 
 **README.md:**
+
 - Rewritten to reflect actual v3.7 state (not aspirational)
 - Added implementation status table (Complete / Roadmap / Removed)
 - Clear distinction: v3.7 is production-ready as **static system**, not full RAG
@@ -75,6 +83,7 @@ Removed from root:
 - Removed references to unimplemented features
 
 **.github/copilot-instructions.md:**
+
 - Added ⚠️ CRITICAL section clarifying actual system state
 - Documented which features are ✅ complete vs ⏳ roadmap
 - Listed 🗑️ removed items
@@ -85,6 +94,7 @@ Removed from root:
 ### 7. ✅ Removed Type Safety Dead Ends
 
 **Checked:**
+
 - `types.ts.deprecated` — Already removed (not found)
 - Verified no orphaned type definitions
 - Note: 39+ `any` type usages still exist in catalogLoader.ts, Navigator.tsx, Workbench.tsx (marked for future cleanup)
@@ -94,6 +104,7 @@ Removed from root:
 ## 🎯 System Status After Cleanup
 
 ### ✅ What's Working (Production-Ready)
+
 ```
 Frontend:
 ✅ App.tsx (cleaned, no dead imports)
@@ -118,6 +129,7 @@ Dependencies:
 ```
 
 ### ⏳ What's Designed But Not Implemented
+
 ```
 Features in code/design but not connected:
 
@@ -134,6 +146,7 @@ Frontend:
 ```
 
 ### 🗑️ What Was Cleaned
+
 ```
 Orphaned:
 🗑️ 50+ analysis/validation markdown files
@@ -148,37 +161,41 @@ Orphaned:
 
 ## 📊 Metrics
 
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| Root-level docs | 53 files | 3 files | -50 files |
-| Dead code in App.tsx | ~25 lines | 0 lines | -25 lines |
-| Orphaned backend scripts | 5 files | 0 files | -5 files |
-| Unused dependencies | 3 entries | 0 entries | -3 entries |
-| Type safety violations | 39+ `any` types | 39+ `any` types | ⏳ Next sprint |
+| Metric                   | Before          | After           | Change         |
+| ------------------------ | --------------- | --------------- | -------------- |
+| Root-level docs          | 53 files        | 3 files         | -50 files      |
+| Dead code in App.tsx     | ~25 lines       | 0 lines         | -25 lines      |
+| Orphaned backend scripts | 5 files         | 0 files         | -5 files       |
+| Unused dependencies      | 3 entries       | 0 entries       | -3 entries     |
+| Type safety violations   | 39+ `any` types | 39+ `any` types | ⏳ Next sprint |
 
 ---
 
 ## 🎯 Next Steps (Roadmap)
 
 ### Phase 1: Type Safety & Stability (1 week)
+
 1. Replace 39+ `any` types with strict interfaces
 2. Add `@typescript-eslint/no-explicit-any` to ESLint rules
 3. Run full type check: `tsc --noEmit`
 4. Fix remaining TypeScript errors
 
 ### Phase 2: Multi-Brand Support (2-3 weeks)
+
 1. Test `orchestrate_brand.py` with Yamaha
 2. Add Yamaha, Korg, Moog, Nord to index.json
 3. Update brand theming for new brands
 4. Test brand switching in UI
 
 ### Phase 3: JIT RAG Integration (1-2 weeks)
+
 1. Add `/api/rag/query` endpoint in FastAPI
 2. Wire `jit_rag.py` to handle embeddings retrieval
 3. Connect frontend chat to RAG endpoint
 4. Test with Roland manuals
 
 ### Phase 4: Voice Processing (1-2 weeks)
+
 1. Add `/api/speech/transcribe` backend endpoint
 2. Wire SpeechRecognition → backend transcription
 3. Connect transcribed text to search/navigation
@@ -189,6 +206,7 @@ Orphaned:
 ## 🔍 Files Changed
 
 ### Deleted Files
+
 - `backend/roland_scraper_skeleton.py`
 - `backend/janitor.py`
 - `backend/cleanup_v3.7.sh`
@@ -199,6 +217,7 @@ Orphaned:
 - 50+ root markdown files → `docs/archive/cleanup_v37/`
 
 ### Modified Files
+
 - `frontend/src/App.tsx` (removed dead code)
 - `frontend/package.json` (removed gsap)
 - `backend/requirements-v3.7.txt` (removed redis, spacy)
@@ -206,6 +225,7 @@ Orphaned:
 - `.github/copilot-instructions.md` (updated with actual state)
 
 ### Created Files
+
 - `CLEANUP_SUMMARY.md` (this file)
 
 ---

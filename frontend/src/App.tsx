@@ -32,29 +32,33 @@ function App() {
     // Attempt WebSocket connection but don't block
     try {
       actions.connect();
-    } catch (e: any) {
-      console.debug('ℹ️ WebSocket unavailable, using static mode:', e);
+    } catch (error: unknown) {
+      const errorMsg = error instanceof Error ? error.message : String(error);
+      console.debug('ℹ️ WebSocket unavailable, using static mode:', errorMsg);
     }
   }, [actions]);
 
   return (
-    <div className="flex fixed inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-50 overflow-hidden font-sans selection:bg-cyan-500/30">
-      <div className="flex w-full h-full">
+    <div className="flex fixed inset-0 flex-col bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-50 overflow-hidden font-sans selection:bg-cyan-500/30">
+      {/* HEADER: Halilit Support Center */}
+      <div className="h-20 border-b border-slate-800/50 flex items-center justify-between px-8 bg-slate-950/90 backdrop-blur-md z-30 shadow-lg flex-shrink-0">
+        <div>
+          <h1 className="text-2xl font-bold text-cyan-300 tracking-wide">HALILIT SUPPORT CENTER</h1>
+          <p className="text-xs text-slate-500 font-mono mt-0.5">v3.7 Mission Control</p>
+        </div>
+        <SystemHealthBadge placement="topbar" />
+      </div>
+
+      {/* BODY CONTAINER: Left Nav + Center Workbench */}
+      <div className="flex flex-1 w-full h-full overflow-hidden">
         {/* LEFT COLUMN: Navigator */}
         <div className="w-96 h-full border-r border-slate-800/50 bg-slate-950/70 backdrop-blur-md flex flex-col shadow-xl shadow-black/30 overflow-hidden">
           <HalileoNavigator />
         </div>
 
-        {/* CENTER COLUMN: Workbench */}
+        {/* CENTER + RIGHT COLUMN: Workbench */}
         <div className="flex-1 h-full flex flex-col overflow-hidden">
-          <div className="h-14 border-b border-slate-800/50 flex items-center px-6 gap-4 bg-slate-950/80 backdrop-blur-md z-20 shadow-lg flex-shrink-0">
-            <div className="text-sm font-mono font-bold text-cyan-400 tracking-widest">🎹 ROLAND • MISSION CONTROL</div>
-            <div className="flex-1"></div>
-            <SystemHealthBadge placement="topbar" />
-          </div>
-          <div className="flex-1 overflow-hidden relative">
-            <Workbench />
-          </div>
+          <Workbench />
         </div>
       </div>
     </div>

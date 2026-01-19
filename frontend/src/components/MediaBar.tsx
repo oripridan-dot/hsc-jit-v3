@@ -77,13 +77,6 @@ export const MediaBar: React.FC<MediaBarProps> = ({
       icon: FiMusic,
       items: normalizedAudio,
       count: normalizedAudio.length
-    },
-    {
-      id: 'documents' as TabType,
-      label: 'Docs',
-      icon: FiFile,
-      items: normalizedDocuments,
-      count: normalizedDocuments.length
     }
   ];
 

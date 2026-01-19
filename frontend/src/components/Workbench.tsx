@@ -8,7 +8,7 @@ import { FiArrowLeft, FiExternalLink, FiInfo, FiBook, FiPackage } from 'react-ic
 import { MediaBar } from './MediaBar';
 import { MediaViewer } from './MediaViewer';
 import { InsightsTable } from './InsightsTable';
-import type { Product } from '../types';
+import type { Product, ProductImage, ProductImagesObject, Specification } from '../types';
 
 export const Workbench: React.FC = () => {
   const { selectedProduct, goBack, setWhiteBgImage: saveWhiteBgImage } = useNavigationStore();
@@ -20,22 +20,57 @@ export const Workbench: React.FC = () => {
   const [isResizing, setIsResizing] = useState(false);
   const mediaBarRef = React.useRef<HTMLDivElement>(null);
 
-  // Helper to get main image URL
-  const getMainImage = () => {
+  /**
+   * Extract main image URL from product
+   * Handles both array and object image formats
+   */
+  const getMainImage = (): string | null => {
     if (!selectedProduct) return null;
-    if (selectedProduct.images && Array.isArray(selectedProduct.images) && selectedProduct.images.length > 0) {
-      const mainImg = selectedProduct.images.find((img: any) => img?.type === 'main');
-      if (mainImg && typeof mainImg === 'object') return (mainImg as any).url;
+
+    // If images is an array (ProductImage[])
+    if (Array.isArray(selectedProduct.images) && selectedProduct.images.length > 0) {
+      const mainImg = selectedProduct.images.find(
+        (img): img is ProductImage => img?.type === 'main' && 'url' in img
+      );
+      if (mainImg) return mainImg.url;
+
       const firstImg = selectedProduct.images[0];
-      if (typeof firstImg === 'object') return (firstImg as any).url;
+      if (firstImg && typeof firstImg === 'object' && 'url' in firstImg) {
+        return (firstImg as ProductImage).url;
+      }
     }
-    return selectedProduct.image_url || selectedProduct.image;
+
+    // If images is an object (ProductImagesObject)
+    if (selectedProduct.images && typeof selectedProduct.images === 'object' && !Array.isArray(selectedProduct.images)) {
+      const imagesObj = selectedProduct.images as ProductImagesObject;
+      return imagesObj.main || imagesObj.thumbnail || null;
+    }
+
+    // Fallback to image_url or image field
+    return selectedProduct.image_url || selectedProduct.image || null;
   };
 
-  // Helper to get gallery images
-  const getGalleryImages = () => {
-    if (!selectedProduct?.images || !Array.isArray(selectedProduct.images)) return [];
-    return selectedProduct.images.filter((img: any) => img?.type === 'gallery').map((img: any) => img.url);
+  /**
+   * Extract gallery images from product
+   * Returns array of image URLs
+   */
+  const getGalleryImages = (): string[] => {
+    if (!selectedProduct?.images) return [];
+
+    // If images is an array
+    if (Array.isArray(selectedProduct.images)) {
+      return selectedProduct.images
+        .filter((img): img is ProductImage => img?.type === 'gallery' && 'url' in img)
+        .map(img => img.url);
+    }
+
+    // If images is an object with gallery array
+    if (typeof selectedProduct.images === 'object' && !Array.isArray(selectedProduct.images)) {
+      const imagesObj = selectedProduct.images as ProductImagesObject;
+      return Array.isArray(imagesObj.gallery) ? imagesObj.gallery : [];
+    }
+
+    return [];
   };
 
   // Handle resize dragging for MediaBar
@@ -115,7 +150,7 @@ export const Workbench: React.FC = () => {
           {/* LEFT: Main content area */}
           <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
             {/* Tab Navigation */}
-            <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-panel)]/50 px-1 sm:px-2 flex gap-0.5">
+            <div className="bg-[var(--bg-panel)]/50 px-1 sm:px-2 flex gap-0.5">
               <button
                 onClick={() => setActiveTab('overview')}
                 className={`px-1.5 sm:px-2 py-1 text-[9px] sm:text-[10px] font-medium border-b-2 transition-all whitespace-nowrap ${
@@ -177,14 +212,14 @@ export const Workbench: React.FC = () => {
                   )}
 
                   {/* Quick Specs */}
-                  {selectedProduct.specs && Object.keys(selectedProduct.specs).length > 0 && (
+                  {selectedProduct.specifications && selectedProduct.specifications.length > 0 && (
                     <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
                       <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Key Specifications</h2>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
-                        {Object.entries(selectedProduct.specs).slice(0, 6).map(([key, value]) => (
-                          <div key={key} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-[var(--border-subtle)] pb-1.5">
-                            <span className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase">{key.replace(/_/g, ' ')}</span>
-                            <span className="text-[9px] sm:text-xs text-[var(--text-primary)] font-medium">{value}</span>
+                        {selectedProduct.specifications.slice(0, 6).map((spec: Specification) => (
+                          <div key={spec.key} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-[var(--border-subtle)] pb-1.5">
+                            <span className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase">{spec.key}</span>
+                            <span className="text-[9px] sm:text-xs text-[var(--text-primary)] font-medium">{String(spec.value)}</span>
                           </div>
                         ))}
                       </div>
@@ -196,14 +231,14 @@ export const Workbench: React.FC = () => {
               {activeTab === 'specs' && (
                 <div className="max-w-4xl mx-auto space-y-2 sm:space-y-3">
                   {/* Full Specifications */}
-                  {selectedProduct.specs && Object.keys(selectedProduct.specs).length > 0 ? (
+                  {selectedProduct.specifications && selectedProduct.specifications.length > 0 ? (
                     <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-3 sm:p-6">
                       <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Technical Specifications</h2>
                       <div className="space-y-1 sm:space-y-2">
-                        {Object.entries(selectedProduct.specs).map(([key, value]) => (
-                          <div key={key} className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-b border-[var(--border-subtle)] pb-1 sm:pb-2">
-                            <span className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase w-full sm:w-1/3">{key.replace(/_/g, ' ')}</span>
-                            <span className="text-[9px] sm:text-xs text-[var(--text-primary)] font-medium w-full sm:w-2/3 sm:text-right mt-0.5 sm:mt-0">{value}</span>
+                        {selectedProduct.specifications.map((spec: Specification) => (
+                          <div key={spec.key} className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-b border-[var(--border-subtle)] pb-1 sm:pb-2">
+                            <span className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase w-full sm:w-1/3">{spec.key}</span>
+                            <span className="text-[9px] sm:text-xs text-[var(--text-primary)] font-medium w-full sm:w-2/3 sm:text-right mt-0.5 sm:mt-0">{String(spec.value)}</span>
                           </div>
                         ))}
                       </div>

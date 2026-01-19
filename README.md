@@ -15,6 +15,7 @@ A fast, hierarchical product navigation system with static catalog loading, inst
 ## 🚀 Quick Start
 
 ### Frontend (Required)
+
 ```bash
 cd frontend
 pnpm install
@@ -23,6 +24,7 @@ pnpm dev
 ```
 
 **Current Features:**
+
 - ✅ Static Roland catalog (29 products)
 - ✅ Hierarchical tree navigation
 - ✅ Client-side fuzzy search (<50ms)
@@ -32,6 +34,7 @@ pnpm dev
 - ✅ Context-aware insights panel
 
 ### Backend (Optional - Future Features)
+
 ```bash
 cd backend
 python -m venv venv
@@ -41,6 +44,7 @@ python -m uvicorn app.main:app --reload
 ```
 
 **Backend Status:**
+
 - ✅ FastAPI REST API (serve static catalog)
 - ✅ Brand scraper infrastructure
 - ✅ JIT RAG system (unintegrated, roadmap)
@@ -50,16 +54,18 @@ python -m uvicorn app.main:app --reload
 ## 🏗️ Architecture
 
 ### Components (v3.7)
-| Component | Purpose | Status |
-|-----------|---------|--------|
-| **HalileoNavigator** | AI co-pilot sidebar | ✅ Active |
-| **Navigator** | Tree navigation | ✅ Active |
-| **Workbench** | Product detail pane | ✅ Active |
-| **MediaBar** | Images/videos/audio sidebar | ✅ Active |
-| **ImageGallery** | Cinema mode viewer | ✅ Active |
-| **HalileoContextRail** | Insights floating panel | ✅ Active |
+
+| Component              | Purpose                     | Status    |
+| ---------------------- | --------------------------- | --------- |
+| **HalileoNavigator**   | AI co-pilot sidebar         | ✅ Active |
+| **Navigator**          | Tree navigation             | ✅ Active |
+| **Workbench**          | Product detail pane         | ✅ Active |
+| **MediaBar**           | Images/videos/audio sidebar | ✅ Active |
+| **ImageGallery**       | Cinema mode viewer          | ✅ Active |
+| **HalileoContextRail** | Insights floating panel     | ✅ Active |
 
 ### Data Model
+
 - **Source**: `frontend/public/data/catalogs_brand/` (static JSON)
 - **Index**: `frontend/public/data/index.json` (brand list)
 - **Current**: Roland (29 products) + framework for 90+ brands
@@ -68,6 +74,7 @@ python -m uvicorn app.main:app --reload
 ## 📋 Implementation Status
 
 ### ✅ Complete
+
 - Static catalog system
 - Instant search (<50ms)
 - Product hierarchy (3-4 levels)
@@ -76,12 +83,14 @@ python -m uvicorn app.main:app --reload
 - Context insights panel
 
 ### ⏳ Roadmap
+
 - **Multi-brand**: Add Yamaha, Korg, Moog, Nord, etc. (2-3 weeks effort)
 - **JIT RAG**: Wire embeddings retrieval + LLM insights (1-2 weeks)
 - **WebSocket**: Implement real-time predictions (deferred)
 - **Voice**: Complete speech-to-text integration (deferred)
 
 ### ❌ Removed / Archived
+
 - Unused dependencies (redis, spacy, gsap)
 - Dead code (AIAssistant import, unused state vars)
 - Orphaned documentation (50+ analysis files → `/docs/archive/cleanup_v37/`)
@@ -91,6 +100,7 @@ python -m uvicorn app.main:app --reload
 ## 🛠️ Development
 
 ### Type Safety
+
 ```bash
 cd frontend
 npx tsc --noEmit  # Check types
@@ -98,12 +108,14 @@ npm run lint      # ESLint
 ```
 
 ### Testing
+
 ```bash
 cd backend
 pytest tests/ -v
 ```
 
 ### Scripts
+
 ```bash
 # Scrape new brand data
 cd backend

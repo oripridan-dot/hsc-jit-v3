@@ -1,5 +1,6 @@
 import { create } from 'zustand';
-import { unifiedStateManager } from './unifiedRouter';
+// TODO: Import unifiedStateManager from './unifiedRouter' in Phase 2
+// Currently unifiedRouter is a Phase 2+ stub feature
 
 type AppStatus = 'IDLE' | 'SNIFFING' | 'LOCKED' | 'ANSWERING';
 type ScenarioMode = 'general' | 'studio' | 'live';
@@ -139,11 +140,13 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
         set({ status: 'IDLE' });
       };
 
-      unifiedStateManager.subscribe('predictions', handlePredictions);
-      unifiedStateManager.subscribe('progress', handleProgress);
-      unifiedStateManager.subscribe('stream', handleStream);
-      unifiedStateManager.subscribe('complete', handleComplete);
-      unifiedStateManager.subscribe('error', handleError);
+      // TODO: Phase 2 - Implement unifiedStateManager integration
+      // These subscriptions will be activated when unifiedRouter is implemented
+      // unifiedStateManager.subscribe('predictions', handlePredictions);
+      // unifiedStateManager.subscribe('progress', handleProgress);
+      // unifiedStateManager.subscribe('stream', handleStream);
+      // unifiedStateManager.subscribe('complete', handleComplete);
+      // unifiedStateManager.subscribe('error', handleError);
 
       // Store cleanup
       set({
@@ -152,8 +155,8 @@ export const useWebSocketStore = create<WebSocketStore>((set, get) => ({
     },
 
     sendTyping: (text: string) => {
-      // Send typing event for real-time predictions
-      unifiedStateManager.sendTyping(text);
+      // TODO: Phase 2 - Send typing event for real-time predictions
+      // unifiedStateManager.sendTyping(text);
       set({ status: 'SNIFFING' });
     },
 

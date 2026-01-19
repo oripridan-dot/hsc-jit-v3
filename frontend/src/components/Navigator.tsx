@@ -14,28 +14,49 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Compass, Search, ChevronRight, Sparkles, BookOpen } from 'lucide-react';
 import { useNavigationStore } from '../store/navigationStore';
+import type { Product, BrandIdentity, ProductImage } from '../types/index';
+
+interface BrandIndexItem {
+  id: string;
+  name: string;
+  slug: string;
+  count: number;
+  file: string;
+}
+
+interface SearchGraphItem {
+  id: string;
+  label: string;
+  brand: string;
+  category: string;
+  keywords: string[];
+}
+
+interface CatalogIndexMetadata {
+  version: string;
+  generated_at: string;
+  environment: string;
+}
 
 interface CatalogIndex {
-  metadata: {
-    version: string;
-    generated_at: string;
-    environment: string;
-  };
-  brands: Array<{
-    id: string;
-    name: string;
-    slug: string;
-    count: number;
-    file: string;
-  }>;
-  search_graph: Array<{
-    id: string;
-    label: string;
-    brand: string;
-    category: string;
-    keywords: string[];
-  }>;
+  metadata: CatalogIndexMetadata;
+  brands: BrandIndexItem[];
+  search_graph: SearchGraphItem[];
   total_products: number;
+}
+
+interface BrandData {
+  hierarchy?: Record<string, Record<string, Product[]>>;
+  products?: Product[];
+  brand_identity?: BrandIdentity;
+}
+
+interface BrandProductsRecord {
+  [key: string]: BrandData;
+}
+
+interface BrandIdentitiesRecord {
+  [key: string]: BrandIdentity | undefined;
 }
 
 export const Navigator: React.FC = () => {
@@ -43,15 +64,15 @@ export const Navigator: React.FC = () => {
   const [query, setQuery] = useState('');
   const [isThinking, setIsThinking] = useState(false);
   const [catalogIndex, setCatalogIndex] = useState<CatalogIndex | null>(null);
-  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [searchResults, setSearchResults] = useState<SearchGraphItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedBrand, setExpandedBrand] = useState<string | null>(null);
-  const [brandProducts, setBrandProducts] = useState<Record<string, any>>({});
+  const [brandProducts, setBrandProducts] = useState<BrandProductsRecord>({});
   const [loadingBrands, setLoadingBrands] = useState<Set<string>>(new Set());
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
-  const [brandIdentities, setBrandIdentities] = useState<Record<string, any>>({});
-  const { whiteBgImages } = useNavigationStore();;
+  const [brandIdentities, setBrandIdentities] = useState<BrandIdentitiesRecord>({});
+  const { whiteBgImages } = useNavigationStore();
 
   // Load the Halilit Catalog Index on mount
   useEffect(() => {
@@ -83,7 +104,7 @@ export const Navigator: React.FC = () => {
 
   // Load products for a specific brand
   const loadBrandProducts = async (slug: string) => {
-    if (brandProducts[slug]) return; // Already loaded
+    if (brandProducts[slug]?.hierarchy) return; // Already loaded with hierarchy
     
     try {
       setLoadingBrands(prev => new Set([...prev, slug]));
@@ -94,11 +115,13 @@ export const Navigator: React.FC = () => {
       
       const response = await fetch(`/data/${filePath}`);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
+      const data = await response.json() as BrandData;
       
-      // Build hierarchy if it doesn't exist
+      // Build hierarchy if it doesn't exist (ALWAYS do this)
       if (!data.hierarchy && data.products && Array.isArray(data.products)) {
+        console.log(`Building hierarchy for ${slug} from ${data.products.length} products...`);
         data.hierarchy = buildHierarchyFromProducts(data.products);
+        console.log(`✅ Hierarchy created: ${Object.keys(data.hierarchy).length} categories`);
       }
       
       // Store entire brand data (includes products, hierarchy, brand_identity)
@@ -109,23 +132,32 @@ export const Navigator: React.FC = () => {
       
       // Store brand identity (logo, colors, etc.)
       if (data.brand_identity) {
-        setBrandIdentities(prev => ({
-          ...prev,
-          [slug]: data.brand_identity
-        }));
+        setBrandIdentities(prev => {
+          const updated = { ...prev };
+          updated[slug] = data.brand_identity;
+          return updated;
+        });
       }
 
       // Pre-detect white background images for all products in this brand
       if (data.products && Array.isArray(data.products)) {
-        data.products.forEach((product: any) => {
+        data.products.forEach((product: Product) => {
           if (product.images && Array.isArray(product.images) && product.images.length > 0) {
             // Use first gallery image or main image as white background image
             // The actual white background detection happens in MediaBar when images load
-            const galleryImage = product.images.find((img: any) => img.type === 'gallery');
-            const mainImage = product.images.find((img: any) => img.type === 'main');
-            const imageToUse = galleryImage?.url || mainImage?.url;
+            const galleryImage = product.images.find(
+              (img): img is ProductImage =>
+                typeof img === 'object' && img !== null && 'url' in img && 'type' in img && img.type === 'gallery'
+            );
+            const mainImage = product.images.find(
+              (img): img is ProductImage =>
+                typeof img === 'object' && img !== null && 'url' in img && 'type' in img && img.type === 'main'
+            );
+            const galleryUrl = (galleryImage?.url as string | undefined);
+            const mainUrl = (mainImage?.url as string | undefined);
+            const imageToUse = galleryUrl || mainUrl;
             
-            if (imageToUse) {
+            if (imageToUse && product.id) {
               const { setWhiteBgImage: setWbg } = useNavigationStore.getState();
               setWbg(product.id, imageToUse);
             }
@@ -151,13 +183,17 @@ export const Navigator: React.FC = () => {
     }
   };
 
-  // Build hierarchy from flat products array
-  const buildHierarchyFromProducts = (products: any[]): Record<string, Record<string, any[]>> => {
-    const hierarchy: Record<string, Record<string, any[]>> = {};
+  /**
+   * Build hierarchy from flat products array
+   * Groups products by main_category and subcategory
+   */
+  const buildHierarchyFromProducts = (products: Product[]): Record<string, Record<string, Product[]>> => {
+    const hierarchy: Record<string, Record<string, Product[]>> = {};
     
-    products.forEach((product: any) => {
-      const mainCat = product.main_category || product.category || 'Other';
-      const subCat = product.subcategory || product.category || 'General';
+    products.forEach((product: Product) => {
+      // Use main_category if available, fall back to category, then 'Other'
+      const mainCat = (product as any).main_category || product.category || 'Other';
+      const subCat = (product as any).subcategory || product.category || 'General';
       
       if (!hierarchy[mainCat]) {
         hierarchy[mainCat] = {};
@@ -235,45 +271,10 @@ export const Navigator: React.FC = () => {
   }
 
   return (
-    <aside className="w-80 h-screen flex flex-col bg-[var(--bg-panel)] border-r border-[var(--border-subtle)] relative overflow-hidden transition-colors duration-500">
+    <aside className="w-full h-full flex flex-col bg-[var(--bg-panel)] border-r border-[var(--border-subtle)] relative overflow-hidden transition-colors duration-500">
       
-      {/* === HEADER: Halileo Logo & Status === */}
-      <div className="px-3 py-2 border-b border-[var(--border-subtle)] relative z-10 bg-[var(--bg-panel)]">
-        <div className="flex items-center gap-2 mb-2">
-          <div className={`
-            relative w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-500
-            ${mode === 'copilot' ? 'bg-indigo-600 shadow-[0_0_20px_rgba(99,102,241,0.5)]' : 'bg-[var(--bg-app)]'}
-          `}>
-            <Compass className={`w-5 h-5 ${mode === 'copilot' ? 'text-white' : 'text-[var(--text-secondary)]'}`} />
-          </div>
-          <div>
-            <h1 className="font-bold text-[var(--text-primary)] text-base tracking-tight">Halileo</h1>
-            <div className="flex items-center gap-2">
-              <span className={`w-1.5 h-1.5 rounded-full ${isThinking ? 'bg-indigo-500 animate-ping' : 'bg-green-500'}`} />
-              <span className="text-[10px] text-[var(--text-tertiary)] uppercase tracking-wider font-semibold">
-                {isThinking ? 'Processing...' : 'System Online'}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* === SEARCH INPUT === */}
-        <form onSubmit={handleSearch} className="relative group">
-          <div className="relative bg-[var(--bg-app)] rounded-xl flex items-center border border-[var(--border-subtle)] overflow-hidden">
-            <Search className="w-4 h-4 text-[var(--text-tertiary)] ml-3" />
-            <input 
-              type="text" 
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Ask Halileo or search..."
-              className="w-full bg-transparent border-none text-xs px-2 py-1.5 text-[var(--text-primary)] focus:ring-0 placeholder:text-[var(--text-tertiary)]"
-            />
-          </div>
-        </form>
-      </div>
-
       {/* === NAVIGATION BODY === */}
-      <div className="flex-1 overflow-y-auto scrollbar-hide p-1 space-y-0.5 relative">
+      <div className="flex-1 overflow-y-auto scrollbar-hide p-2 space-y-0.5 relative">
         <AnimatePresence mode="wait">
           {mode === 'catalog' ? (
             <motion.div 
@@ -302,15 +303,16 @@ export const Navigator: React.FC = () => {
                         <div className="flex items-center gap-4 flex-1">
                           {/* Brand Logo - LARGER */}
                           <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
-                            {brandIdentities[brand.slug]?.logo_url ? (
+                            {brandIdentities[brand.slug]?.logo_url !== null && brandIdentities[brand.slug]?.logo_url ? (
                               <img 
-                                src={brandIdentities[brand.slug].logo_url} 
+                                src={brandIdentities[brand.slug]?.logo_url ?? ''} 
                                 alt={brand.name}
                                 className="w-8 h-8 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
-                                onError={(e) => {
+                                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
                                   // Fallback to icon if image fails
-                                  (e.currentTarget as any).style.display = 'none';
-                                  const sibling = (e.currentTarget as any).nextElementSibling;
+                                  const target = e.currentTarget as HTMLImageElement;
+                                  target.style.display = 'none';
+                                  const sibling = target.nextElementSibling as HTMLElement | null;
                                   if (sibling) sibling.style.display = 'block';
                                 }}
                               />
@@ -345,8 +347,8 @@ export const Navigator: React.FC = () => {
                               <div className="w-3 h-3 border-1 border-indigo-400/50 border-t-indigo-400 rounded-full animate-spin" />
                               <span className="text-[10px] text-[var(--text-tertiary)]">Loading products...</span>
                             </div>
-                          ) : products && products.hierarchy ? (
-                            // Display hierarchical categories (NEW: products is the full data object)
+                          ) : products && Object.keys(products).length > 0 && products.hierarchy ? (
+                            // Display hierarchical categories
                             <div className="space-y-1">
                               {Object.entries(products.hierarchy).map(([mainCategory, subcategoryMap]: [string, any]) => {
                                 const categoryKey = `${brand.slug}-${mainCategory}`;
@@ -396,21 +398,15 @@ export const Navigator: React.FC = () => {
                                             
                                             {/* Products in Subcategory */}
                                             <div className="space-y-0">
-                                              {(Array.isArray(products_list) ? products_list : []).map((product: any, idx: number) => (
+                                              {(Array.isArray(products_list) ? products_list : []).map((product: Product, idx: number) => (
                                                 <button
                                                   key={`${product.id}-${idx}`}
                                                   onClick={() => {
                                                     useNavigationStore.getState().selectProduct({
-                                                      id: product.id,
-                                                      name: product.name,
-                                                      brand: brand.name,
-                                                      description: product.description,
-                                                      images: product.images || [],
-                                                      model_number: product.model_number,
-                                                      sku: product.sku,
-                                                      category: subcategory,
-                                                      main_category: mainCategory
-                                                    } as any);
+                                                      ...product,
+                                                      brand: product.brand || brand.name,
+                                                      category: product.category || subcategory
+                                                    });
                                                   }}
                                                   className="flex items-center gap-1.5 w-full h-14 text-left px-2 rounded text-[10px] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-indigo-500/20 active:bg-indigo-500/30 transition-colors cursor-pointer group"
                                                   title={product.name}
@@ -437,7 +433,7 @@ export const Navigator: React.FC = () => {
                           ) : products && products.products && Array.isArray(products.products) && products.products.length > 0 ? (
                             // Fallback: flat list if no hierarchy but products array exists
                             <>
-                              {products.products.slice(0, 10).map((product: any, idx: number) => (
+                              {products.products.slice(0, 10).map((product: Product, idx: number) => (
                                 <button
                                   key={idx}
                                   className="block w-full text-left px-3 py-2 rounded text-xs text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-app)] transition-colors truncate"

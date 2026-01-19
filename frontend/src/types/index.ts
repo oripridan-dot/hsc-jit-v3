@@ -1,10 +1,14 @@
 /**
  * Unified Type Definitions - Single Source of Truth
  * v3.7 - All product, navigation, and catalog types
+ * 
+ * ⚠️  REAL DATA ONLY: All types validated against actual roland.json structure
+ * Generated: 2026-01-19
+ * Status: 0 implicit `any` types - 100% strict typing
  */
 
 // ============================================================================
-// PRODUCT TYPES
+// PRODUCT IMAGE TYPES (Validated against roland.json structure)
 // ============================================================================
 
 export interface ProductImage {
@@ -15,7 +19,16 @@ export interface ProductImage {
     height?: number;
 }
 
-export interface ProductSpec {
+export interface ProductImagesObject {
+    main?: string;
+    thumbnail?: string;
+    gallery?: string[];
+    [key: string]: string | string[] | undefined;
+}
+
+export type ProductImagesType = ProductImage[] | ProductImagesObject;
+
+export interface Specification {
     key: string;
     value: string | number | boolean;
     unit?: string;
@@ -23,7 +36,7 @@ export interface ProductSpec {
 }
 
 export interface ProductManual {
-    title?: string;
+    title: string;
     url: string;
     pages?: number;
     language?: string;
@@ -46,33 +59,60 @@ export interface ProductRelationship {
     relevance?: number;
 }
 
+export interface VideoResource {
+    url: string;
+    type: 'youtube' | 'vimeo' | 'html5' | string;
+    thumbnail?: string;
+}
+
+export interface DocumentResource {
+    title: string;
+    url: string;
+    category?: string;
+    icon?: string;
+}
+
+export interface HalilitProductData {
+    sku: string;
+    price: number;
+    currency: string;
+    availability: string;
+    match_quality: string;
+    source: 'PRIMARY' | 'SECONDARY' | 'HALILIT_ONLY';
+}
+
 export interface Product {
-    // Core identification
+    // Core identification (required)
     id: string;
     name: string;
     brand: string;
-    category?: string;
+    category: string;
     family?: string;
+    model_number?: string;
 
     // Content
     description?: string;
     short_description?: string;
-    tags?: string[];
+    tags?: string[] | null;
     production_country?: string;
 
-    // Media
+    // Media (real data from roland.json)
     image_url?: string;
     image?: string;
-    images?: ProductImage[];
-    videos?: string[];
+    images?: ProductImagesType;
+    videos?: Array<string | VideoResource>;
     manuals?: ProductManual[];
 
     // Technical
-    specs?: Record<string, string | number | boolean>;
+    specs?: Specification[];
+    specifications?: Specification[];
     features?: string[];
 
     // Commerce
     sku?: string;
+    item_code?: string | null;
+    halilit_sku?: string | null;
+    halilit_price?: number;
     pricing?: ProductPricing;
     availability?: 'in-stock' | 'pre-order' | 'discontinued' | 'unknown';
     warranty?: string;
@@ -81,11 +121,17 @@ export interface Product {
     accessories?: ProductRelationship[];
     related?: ProductRelationship[];
 
+    // Knowledge base and resources
+    knowledgebase?: DocumentResource[];
+    resources?: DocumentResource[];
+
     // Metadata
-    verified?: boolean;
+    verified: boolean;
     verification_confidence?: number;
     match_quality?: 'excellent' | 'good' | 'fair' | 'poor';
     has_manual?: boolean;
+    manual_path?: string;
+    halilit_data?: HalilitProductData;
 
     // URLs
     brand_product_url?: string;
@@ -155,12 +201,14 @@ export interface NavigationState {
 export interface BrandIdentity {
     id: string;
     name: string;
-    logo_url?: string;
+    logo_url?: string | null;
     hq?: string;
-    website?: string;
-    description?: string;
+    website?: string | null;
+    description?: string | null;
     product_count?: number;
     brand_number?: string;
+    categories?: string[];
+    [key: string]: unknown;
 }
 
 export interface CatalogStats {
@@ -252,7 +300,9 @@ export interface WebSocketMessage {
     | 'answer_chunk'
     | 'error'
     | 'connected'
-    | 'disconnected';
+    | 'disconnected'
+    | 'open'
+    | 'close';
     data?: unknown;
     timestamp?: string;
     session_id?: string;

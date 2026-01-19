@@ -17,6 +17,7 @@ We are building a production-grade **Product Hierarchy Navigation System** with:
 **Status: PRODUCTION-READY (Static Mode, Single Brand)**
 
 ### ✅ COMPLETE & ACTIVE
+
 - Static Roland catalog (29 products)
 - Hierarchical navigation (3-4 levels)
 - Client-side fuzzy search
@@ -26,6 +27,7 @@ We are building a production-grade **Product Hierarchy Navigation System** with:
 - All active components below
 
 ### ⏳ ROADMAP (NOT IMPLEMENTED YET)
+
 - **Multi-brand Support**: Framework exists; only Roland scraped
 - **JIT RAG System**: `jit_rag.py` written but not wired to API
 - **WebSocket Streaming**: Stub in `useWebSocketStore`; no server endpoint
@@ -33,6 +35,7 @@ We are building a production-grade **Product Hierarchy Navigation System** with:
 - **Embeddings Retrieval**: SentenceTransformers installed; no API endpoint
 
 ### 🗑️ REMOVED (CLEANUP 2026-01-19)
+
 - **Dead Code**: Unused imports, state vars from App.tsx
 - **Orphaned Scripts**: `janitor.py`, skeleton scrapers, cleanup shells
 - **Unused Dependencies**: redis, spacy, gsap
@@ -83,12 +86,10 @@ We are building a production-grade **Product Hierarchy Navigation System** with:
 **Semantic Tokens (WCAG AA):**
 
 ```css
---bg-app: #0b0c0f (dark) | #f9fafb (light)
---bg-panel: #15171e (dark) | #ffffff (light)
---text-primary: #f3f4f6 (dark) | #111827 (light)
---text-secondary: #9ca3af (dark) | #374151 (light)
---halileo-primary: #6366f1 (indigo)
---border-subtle: #2d313a (dark) | #e5e7eb (light)
+--bg-app: #0b0c0f (dark) | #f9fafb (light) --bg-panel: #15171e (dark) | #ffffff
+  (light) --text-primary: #f3f4f6 (dark) | #111827 (light)
+  --text-secondary: #9ca3af (dark) | #374151 (light) --halileo-primary: #6366f1
+  (indigo) --border-subtle: #2d313a (dark) | #e5e7eb (light);
 ```
 
 **Brand Colors (WCAG compliant):**

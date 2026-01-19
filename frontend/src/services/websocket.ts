@@ -1,6 +1,8 @@
 /**
- * WebSocket Service
+ * WebSocket Service - v3.7
  * Manages real-time communication with backend
+ * 
+ * ⚠️ FULLY TYPED: No implicit `any` types
  */
 
 import type { WebSocketMessage } from '../types';
@@ -18,8 +20,8 @@ export class WebSocketService {
   private isConnected = false;
   private handlers: Map<EventType, Set<MessageHandler>> = new Map();
   private reconnectAttempts = 0;
-  private maxReconnectAttempts = 5;
-  private reconnectDelay = 1000;
+  private readonly maxReconnectAttempts = 5;
+  private readonly reconnectDelay = 1000;
   private sessionId: string;
 
   constructor(url: string = 'ws://localhost:8000/ws') {
@@ -28,7 +30,7 @@ export class WebSocketService {
     this.initializeHandlers();
   }
 
-  private initializeHandlers() {
+  private initializeHandlers(): void {
     const eventTypes: EventType[] = [
       'prediction',
       'answer_chunk',
@@ -54,12 +56,12 @@ export class WebSocketService {
       try {
         this.ws = new WebSocket(this.url);
 
-        this.ws.onopen = () => {
+        this.ws.onopen = (): void => {
           console.log('WebSocket connected');
           this.isConnected = true;
           this.reconnectAttempts = 0;
           this.emit('open', {
-            type: 'open' as any,
+            type: 'open',
             data: {},
             timestamp: new Date().toISOString(),
             session_id: this.sessionId,
@@ -70,16 +72,16 @@ export class WebSocketService {
           resolve();
         };
 
-        this.ws.onmessage = (event) => {
+        this.ws.onmessage = (event: MessageEvent<string>): void => {
           try {
-            const message: WebSocketMessage = JSON.parse(event.data);
+            const message = JSON.parse(event.data) as WebSocketMessage;
             this.emit(message.type as EventType, message);
-          } catch (e) {
-            console.error('Failed to parse message:', e);
+          } catch (error) {
+            console.error('Failed to parse message:', error);
           }
         };
 
-        this.ws.onerror = (error) => {
+        this.ws.onerror = (error: Event): void => {
           console.error('WebSocket error:', error);
           this.emit('error', {
             type: 'error',
@@ -90,19 +92,19 @@ export class WebSocketService {
           reject(error);
         };
 
-        this.ws.onclose = () => {
+        this.ws.onclose = (): void => {
           console.log('WebSocket disconnected');
           this.isConnected = false;
           this.emit('close', {
-            type: 'close' as any,
+            type: 'close',
             data: {},
             timestamp: new Date().toISOString(),
             session_id: this.sessionId,
           });
           this.attemptReconnect();
         };
-      } catch (e) {
-        reject(e);
+      } catch (error) {
+        reject(error);
       }
     });
   }
