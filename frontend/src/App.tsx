@@ -1,38 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useWebSocketStore } from './store/useWebSocketStore';
-import { useNavigationStore } from './store/navigationStore';
-import { catalogLoader, instantSearch, type Product } from './lib';
+import { catalogLoader, instantSearch } from './lib';
 import { HalileoNavigator } from './components/HalileoNavigator';
 import { Workbench } from './components/Workbench';
-import { AIAssistant } from './components/AIAssistant';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
 import { applyBrandTheme } from './styles/brandThemes';
 import './index.css';
 
 function App() {
   const { actions } = useWebSocketStore();
-  const { selectedProduct } = useNavigationStore();
-  const [fullProducts, setFullProducts] = useState<Product[]>([]);
-  const [isCatalogReady, setIsCatalogReady] = useState(true); // Start as ready immediately
 
   useEffect(() => {
     // Apply Roland brand theme
     applyBrandTheme('roland');
     document.body.setAttribute('data-brand', 'roland');
     
-    // Try to load catalog in background
+    // Initialize search system
     const initCatalog = async () => {
       try {
         console.log('🚀 v3.7: Initializing Mission Control...');
         await instantSearch.initialize();
-        // Load products for AI assistant if available
-        try {
-          const products = await catalogLoader.loadAllProducts();
-          setFullProducts(products);
-          console.log(`✅ Catalog loaded: ${products.length} products`);
-        } catch (e) {
-          console.warn('⚠️ Could not load full products list, using static mode', e);
-        }
+        console.log('✅ Catalog initialized');
       } catch (error) {
         console.error('❌ Initialization error:', error);
       }
@@ -68,18 +56,7 @@ function App() {
             <Workbench />
           </div>
         </div>
-
-
       </div>
-      {!isCatalogReady && (
-        <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="text-center space-y-4">
-            <div className="text-6xl animate-pulse">🌌</div>
-            <div className="text-xl font-bold text-cyan-400">Initializing Mission Control</div>
-            <div className="text-sm text-slate-500 font-mono">Loading product universe...</div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

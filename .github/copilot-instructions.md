@@ -4,76 +4,100 @@
 
 We are building a production-grade **Product Hierarchy Navigation System** with:
 
-1. **Static Catalog** - Pre-built JSON from scraped brand data (fast, no backend dependency)
-2. **Instant Search** - Client-side fuzzy search with Fuse.js (<50ms)
-3. **Hierarchical Navigation** - Domain → Brand → Category → Subcategory → Product
-4. **Dynamic Theming** - Per-brand color schemes with WCAG AA compliance
-5. **Halileo AI Co-Pilot** - Voice-enabled, context-aware product navigation
+1. **Static Catalog** ✅ - Pre-built JSON from scraped brand data (fast, no backend dependency)
+2. **Instant Search** ✅ - Client-side fuzzy search with Fuse.js (<50ms)
+3. **Hierarchical Navigation** ✅ - Domain → Brand → Category → Product
+4. **Dynamic Theming** ✅ - Per-brand color schemes with WCAG AA compliance
+5. **Halileo AI Co-Pilot** ⏳ - Text-enabled navigation; voice stub (TBD)
 
 ---
 
-## 🏗️ v3.7 Architecture (Current State)
+## ⚠️ CRITICAL: v3.7 System State (As of 2026-01-19)
+
+**Status: PRODUCTION-READY (Static Mode, Single Brand)**
+
+### ✅ COMPLETE & ACTIVE
+- Static Roland catalog (29 products)
+- Hierarchical navigation (3-4 levels)
+- Client-side fuzzy search
+- Product detail views with media
+- Brand theming system (WCAG AA)
+- Context insights panel
+- All active components below
+
+### ⏳ ROADMAP (NOT IMPLEMENTED YET)
+- **Multi-brand Support**: Framework exists; only Roland scraped
+- **JIT RAG System**: `jit_rag.py` written but not wired to API
+- **WebSocket Streaming**: Stub in `useWebSocketStore`; no server endpoint
+- **Voice Processing**: `SpeechRecognition` stub; no backend transcription
+- **Embeddings Retrieval**: SentenceTransformers installed; no API endpoint
+
+### 🗑️ REMOVED (CLEANUP 2026-01-19)
+- **Dead Code**: Unused imports, state vars from App.tsx
+- **Orphaned Scripts**: `janitor.py`, skeleton scrapers, cleanup shells
+- **Unused Dependencies**: redis, spacy, gsap
+- **Orphaned Folders**: `backend/backend`, `backend/frontend`
+- **Documentation Bloat**: 50+ analysis files → `/docs/archive/cleanup_v37/`
+
+---
+
+## 🏗️ v3.7 Architecture (CURRENT)
 
 ### 1. Data Source of Truth
 
-- **Primary:** `frontend/public/data/catalogs_brand/*.json` (static catalog files)
-- **Index:** `frontend/public/data/index.json` (master brand list)
-- **Backend (optional):** FastAPI at `localhost:8000` for future JIT RAG features
-- **Current brands:** Roland (29 products), expandable to 90+ brands
+- **Primary:** `frontend/public/data/catalogs_brand/roland.json` (static catalog)
+- **Index:** `frontend/public/data/index.json` (brand list, 1 entry)
+- **Backend (optional):** FastAPI at `localhost:8000` for future JIT RAG
+- **Current brands:** Roland (29 products)
+- **Future brands:** Yamaha, Korg, Moog, Nord, etc. (framework ready)
 
 ### 2. Component Architecture
 
 **Active Components (v3.7):**
 
-- `App.tsx` - Main layout orchestrator
-- `HalileoNavigator.tsx` - AI-powered navigation (right sidebar)
-- `Navigator.tsx` - Standard tree navigation (embedded in HalileoNavigator "Browse" mode)
-- `Workbench.tsx` - Center pane for product display
-- `HalileoContextRail.tsx` - Floating contextual insights
-- `AIAssistant.tsx` - Chat interface (optional analyst panel)
-- `ProductDetailView.tsx` - Product detail modal
-- `ImageGallery.tsx` - Cinema mode image viewer
+- `App.tsx` - Main layout (cleaned: removed dead imports/state)
+- `HalileoNavigator.tsx` - AI co-pilot sidebar (text mode active)
+- `Navigator.tsx` - Tree navigation with hierarchy
+- `Workbench.tsx` - Product detail pane
+- `MediaBar.tsx` - Images/videos/audio sidebar
+- `ImageGallery.tsx` - Cinema mode viewer
+- `HalileoContextRail.tsx` - Floating insights panel
+- `ProductDetailView.tsx` - Modal detail view
 
-**Deprecated Components (DO NOT USE):**
+**NOT RENDERED (But Exist):**
 
-- `UnifiedComponents.tsx` - Old v3.6 architecture
-- `TheStage.tsx` - Replaced by ProductDetailView
-- `BrandExplorer.tsx` - Replaced by Navigator hierarchy
-- `ZenFinder.tsx` - Replaced by HalileoNavigator
-- `ContextRail.tsx` - Replaced by HalileoContextRail
-- `FolderView.tsx` - Replaced by Navigator tree
-- `DualSourceIntelligence.tsx` - Feature deprecated
-- `ScenarioToggle.tsx` - Feature deprecated
-- `SyncMonitor.tsx` - Feature deprecated
+- `AIAssistant.tsx` - Chat interface (never imported)
+- `SignalFlowMap.tsx` - Signal flow diagram (never integrated)
 
 ### 3. State Management
 
 - **Navigation:** `useNavigationStore` (Zustand)
-  - Current level (galaxy/domain/brand/family/product)
-  - Active path breadcrumbs
-  - Selected product
-  - Tree expansion state
-- **WebSocket:** `useWebSocketStore` (Zustand) - reserved for future JIT RAG
-- **Theme:** CSS variables via `useBrandTheme` and `useHalileoTheme` hooks
+  - Current level, active path, selected product, tree state
+- **WebSocket:** `useWebSocketStore` (Zustand)
+  - Stub interfaces defined; actual WS logic not implemented
+  - Falls back to static mode gracefully
+- **Theme:** CSS variables + `useBrandTheme`/`useHalileoTheme` hooks
 
 ### 4. Design System
 
 **Semantic Tokens (WCAG AA):**
 
 ```css
---bg-app: #0b0c0f (dark) | #f9fafb (light) --bg-panel: #15171e (dark) | #ffffff
-  (light) --text-primary: #f3f4f6 (dark) | #111827 (light)
-  --text-secondary: #9ca3af (dark) | #374151 (light) --halileo-primary: #6366f1
-  (indigo) --border-subtle: #2d313a (dark) | #e5e7eb (light);
+--bg-app: #0b0c0f (dark) | #f9fafb (light)
+--bg-panel: #15171e (dark) | #ffffff (light)
+--text-primary: #f3f4f6 (dark) | #111827 (light)
+--text-secondary: #9ca3af (dark) | #374151 (light)
+--halileo-primary: #6366f1 (indigo)
+--border-subtle: #2d313a (dark) | #e5e7eb (light)
 ```
 
 **Brand Colors (WCAG compliant):**
 
-- Roland: `#ef4444` (red)
-- Yamaha: `#a855f7` (purple)
-- Korg: `#fb923c` (orange)
-- Moog: `#22d3ee` (cyan)
-- Nord: `#f87171` (red-light)
+- Roland: `#ef4444` (red) ✅ active
+- Yamaha: `#a855f7` (purple) — ready
+- Korg: `#fb923c` (orange) — ready
+- Moog: `#22d3ee` (cyan) — ready
+- Nord: `#f87171` (red-light) — ready
 
 ---
 
@@ -83,17 +107,18 @@ We are building a production-grade **Product Hierarchy Navigation System** with:
 
 - **Build:** Vite 5
 - **Styling:** Tailwind CSS + CSS variables
-- **Animation:** Framer Motion
-- **Search:** Fuse.js (instant fuzzy search)
+- **Animation:** Framer Motion (gsap removed)
+- **Search:** Fuse.js (instant, <50ms)
 - **State:** Zustand
-- **Icons:** React Icons (lucide-react)
+- **Icons:** Lucide-react
+- **Graphs:** Reactflow (SignalFlowMap)
 
-### Backend (Optional - Future JIT RAG)
+### Backend (Optional)
 
 - **Framework:** FastAPI + Uvicorn
-- **Cache:** Redis (multi-layer)
-- **AI/ML:** Google Gemini API, SentenceTransformers
-- **Search:** TheFuzz (server-side fuzzy matching)
+- **AI/ML:** SentenceTransformers (installed, not used)
+- **Scraper:** Playwright + BeautifulSoup
+- **Search:** Fuse.js (Python version for backend fallback)
 
 ---
 

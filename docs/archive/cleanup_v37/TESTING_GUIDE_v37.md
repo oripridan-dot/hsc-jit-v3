@@ -71,13 +71,13 @@ RIGHT:  MediaBar (ready)
 
 ### What These Test
 
-| Component | Integration | Status |
-|-----------|-------------|--------|
-| Navigator | Loads index.json, lazy-loads brand catalog | ✅ |
-| Workbench | Receives product data, renders correctly | ✅ |
-| MediaBar | Gets images array, displays with tabs | ✅ |
-| HalileoNavigator | Routes between manual and guide modes | ✅ |
-| App | Orchestrates all components with layout | ✅ |
+| Component        | Integration                                | Status |
+| ---------------- | ------------------------------------------ | ------ |
+| Navigator        | Loads index.json, lazy-loads brand catalog | ✅     |
+| Workbench        | Receives product data, renders correctly   | ✅     |
+| MediaBar         | Gets images array, displays with tabs      | ✅     |
+| HalileoNavigator | Routes between manual and guide modes      | ✅     |
+| App              | Orchestrates all components with layout    | ✅     |
 
 ### Test Coverage
 
@@ -107,12 +107,14 @@ RIGHT:  MediaBar (ready)
 ### How to Test Manually
 
 1. **Start the dev server**
+
    ```bash
    cd /workspaces/hsc-jit-v3/frontend
    npm run dev
    ```
 
 2. **Open browser**
+
    ```
    http://localhost:5173
    ```
@@ -146,33 +148,39 @@ RIGHT:  MediaBar (ready)
 ```javascript
 // Test 1: Check DOM structure
 const root = document.querySelector('[style*="flex"]');
-console.assert(root, '❌ Root flex container not found');
+console.assert(root, "❌ Root flex container not found");
 
 // Check for 3-column layout
-const columns = document.querySelectorAll('.flex');
+const columns = document.querySelectorAll(".flex");
 console.log(`Found ${columns.length} flex containers`);
 
 // Test 2: Check left column (Navigator)
 const leftCol = document.querySelector('div[class*="w-96"]');
-console.assert(leftCol, '❌ Left column (w-96) not found');
-console.log('✓ Left column found');
+console.assert(leftCol, "❌ Left column (w-96) not found");
+console.log("✓ Left column found");
 
 // Test 3: Check center column (Workbench)
 const centerCol = document.querySelector('div[class*="flex-1"]');
-console.assert(centerCol, '❌ Center column (flex-1) not found');
-console.log('✓ Center column found');
+console.assert(centerCol, "❌ Center column (flex-1) not found");
+console.log("✓ Center column found");
 
 // Test 4: Check header
 const header = document.querySelector('div[class*="h-14"]');
-console.assert(header, '❌ Header not found');
+console.assert(header, "❌ Header not found");
 const headerText = header?.textContent;
-console.assert(headerText?.includes('MISSION CONTROL'), '❌ Header text incorrect');
-console.log('✓ Header found with correct text');
+console.assert(
+  headerText?.includes("MISSION CONTROL"),
+  "❌ Header text incorrect",
+);
+console.log("✓ Header found with correct text");
 
 // Test 5: Check navigation
-const navElement = document.querySelector('[class*="Navigator"]') || 
-                   document.querySelector('div[style*="--text-primary"]');
-console.log(navElement ? '✓ Navigator visible' : '⚠ Navigator may not be visible');
+const navElement =
+  document.querySelector('[class*="Navigator"]') ||
+  document.querySelector('div[style*="--text-primary"]');
+console.log(
+  navElement ? "✓ Navigator visible" : "⚠ Navigator may not be visible",
+);
 ```
 
 ### Expected Results
@@ -197,7 +205,7 @@ VISUAL INSPECTION:
 □ All colors correct (dark theme with cyan accents)
 
 NAVIGATOR (LEFT):
-□ Shows "Roland (29)" 
+□ Shows "Roland (29)"
 □ Products list visible below
 □ Can expand product categories
 □ Search interface available
@@ -240,8 +248,8 @@ FUNCTIONALITY:
 
 ```javascript
 // Measure page load time
-window.addEventListener('load', function() {
-  const perfData = performance.getEntriesByType('navigation')[0];
+window.addEventListener("load", function () {
+  const perfData = performance.getEntriesByType("navigation")[0];
   console.log(`
     DNS Lookup: ${perfData.domainLookupEnd - perfData.domainLookupStart}ms
     TCP Connect: ${perfData.connectEnd - perfData.connectStart}ms
@@ -252,16 +260,17 @@ window.addEventListener('load', function() {
 });
 
 // Measure data loading
-console.time('index.json');
-fetch('/data/index.json').then(() => console.timeEnd('index.json'));
+console.time("index.json");
+fetch("/data/index.json").then(() => console.timeEnd("index.json"));
 
-console.time('roland_catalog.json');
-fetch('/data/catalogs_brand/roland_catalog.json').then(() => 
-  console.timeEnd('roland_catalog.json')
+console.time("roland_catalog.json");
+fetch("/data/catalogs_brand/roland_catalog.json").then(() =>
+  console.timeEnd("roland_catalog.json"),
 );
 ```
 
 **Expected Results**:
+
 ```
 index.json: <10ms
 roland_catalog.json: <20ms
@@ -305,6 +314,7 @@ npm run build
 ```
 
 **Expected Output**:
+
 ```
 vite v7.3.1 building client environment for production...
 ✓ 2120 modules transformed
@@ -358,13 +368,13 @@ dist/assets/index-*.js       426.20 kB │ gzip: 133.17 kB
 
 ### Test Browsers
 
-| Browser | Version | Status | Notes |
-|---------|---------|--------|-------|
-| Chrome | Latest | Should test | Primary browser |
-| Firefox | Latest | Should test | Alternative layout |
-| Safari | Latest | Should test | Mobile compat |
-| Edge | Latest | Should test | Windows compat |
-| Mobile Chrome | Latest | Should test | Responsive design |
+| Browser       | Version | Status      | Notes              |
+| ------------- | ------- | ----------- | ------------------ |
+| Chrome        | Latest  | Should test | Primary browser    |
+| Firefox       | Latest  | Should test | Alternative layout |
+| Safari        | Latest  | Should test | Mobile compat      |
+| Edge          | Latest  | Should test | Windows compat     |
+| Mobile Chrome | Latest  | Should test | Responsive design  |
 
 ### Test Checklist Per Browser
 
@@ -443,35 +453,41 @@ npm run dev
 
 ## Test Results Summary
 
-| Test Type | Status | Details |
-|-----------|--------|---------|
-| Unit Tests | ✅ 18/18 | Data structure validation |
-| Integration Tests | ✅ 5/5 | Component flow |
-| E2E Tests | ✅ 3/3 | Layout rendering |
-| Performance | ✅ | <500ms page load |
-| TypeScript | ✅ | 0 errors (strict) |
-| Build | ✅ | 4.85s, 133 KB gzipped |
-| Browser Compat | ✅ | All modern browsers |
-| Accessibility | ✅ | WCAG AA |
+| Test Type         | Status   | Details                   |
+| ----------------- | -------- | ------------------------- |
+| Unit Tests        | ✅ 18/18 | Data structure validation |
+| Integration Tests | ✅ 5/5   | Component flow            |
+| E2E Tests         | ✅ 3/3   | Layout rendering          |
+| Performance       | ✅       | <500ms page load          |
+| TypeScript        | ✅       | 0 errors (strict)         |
+| Build             | ✅       | 4.85s, 133 KB gzipped     |
+| Browser Compat    | ✅       | All modern browsers       |
+| Accessibility     | ✅       | WCAG AA                   |
 
 ---
 
 ## Troubleshooting
 
 ### Issue: "Cannot find module" error
+
 **Solution**: Run `npm install --force`
 
 ### Issue: Port 5173 already in use
+
 **Solution**: `kill $(lsof -t -i :5173)` or use different port
 
 ### Issue: Images not loading
+
 **Solution**: Check Network tab, verify /data/ requests succeed
 
 ### Issue: Component not rendering
+
 **Solution**: Open browser console (F12), check for errors
 
 ### Issue: Build fails
-**Solution**: 
+
+**Solution**:
+
 1. Clear node_modules: `rm -rf node_modules`
 2. Reinstall: `npm install --force`
 3. Rebuild: `npm run build`
