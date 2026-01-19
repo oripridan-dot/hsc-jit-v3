@@ -5,6 +5,7 @@ Complete documentation for Halilit Support Center v3.7 - Mission Control.
 ## Quick Start
 
 **First time?** Start here:
+
 1. [README.md](../README.md) - Project overview (5 min)
 2. [QUICK_START.md](../QUICK_START.md) - Get running in 2 minutes
 3. [Getting Started - Installation](./getting-started/installation.md)
@@ -14,16 +15,19 @@ Complete documentation for Halilit Support Center v3.7 - Mission Control.
 ## Core Documentation
 
 ### ARCHITECTURE.md - System Design
+
 **For**: Architects, Senior Developers  
 **Topics**: Component design, data flow, state management, design system, performance  
 **Time**: 20 minutes
 
 ### DEVELOPMENT.md - Developer Guide
+
 **For**: Frontend & Backend Developers  
 **Topics**: Setup, coding standards, common tasks, testing, debugging, git workflow  
 **Time**: 30 minutes
 
 ### OPERATIONS.md - Production Guide
+
 **For**: DevOps, SysAdmins, Site Reliability Engineers  
 **Topics**: Deployment, monitoring, scaling, security, backup, troubleshooting  
 **Time**: 25 minutes
@@ -46,19 +50,19 @@ Complete documentation for Halilit Support Center v3.7 - Mission Control.
 
 ## By Topic
 
-| Topic | Document | Time |
-|-------|----------|------|
-| Installation | getting-started/installation.md | 5 min |
-| First Run | getting-started/first-run.md | 5 min |
-| Keyboard Shortcuts | getting-started/keyboard-shortcuts.md | 2 min |
-| Components & Architecture | ARCHITECTURE.md | 20 min |
-| Development Workflow | DEVELOPMENT.md | 30 min |
-| Testing | DEVELOPMENT.md (testing section) | - |
-| Deployment | OPERATIONS.md | 25 min |
-| Troubleshooting | DEVELOPMENT.md + OPERATIONS.md | - |
-| Performance | ARCHITECTURE.md | - |
-| Security | ARCHITECTURE.md + OPERATIONS.md | - |
-| Scaling | OPERATIONS.md | - |
+| Topic                     | Document                              | Time   |
+| ------------------------- | ------------------------------------- | ------ |
+| Installation              | getting-started/installation.md       | 5 min  |
+| First Run                 | getting-started/first-run.md          | 5 min  |
+| Keyboard Shortcuts        | getting-started/keyboard-shortcuts.md | 2 min  |
+| Components & Architecture | ARCHITECTURE.md                       | 20 min |
+| Development Workflow      | DEVELOPMENT.md                        | 30 min |
+| Testing                   | DEVELOPMENT.md (testing section)      | -      |
+| Deployment                | OPERATIONS.md                         | 25 min |
+| Troubleshooting           | DEVELOPMENT.md + OPERATIONS.md        | -      |
+| Performance               | ARCHITECTURE.md                       | -      |
+| Security                  | ARCHITECTURE.md + OPERATIONS.md       | -      |
+| Scaling                   | OPERATIONS.md                         | -      |
 
 ---
 

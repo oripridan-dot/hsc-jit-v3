@@ -5,6 +5,7 @@ Comprehensive guide for deploying and operating Halilit Support Center v3.7 in p
 ## Deployment Checklist
 
 ### Pre-Deployment
+
 - [ ] All tests passing (`pnpm test`)
 - [ ] No TypeScript errors (`pnpm typecheck`)
 - [ ] Build succeeds (`pnpm build`)
@@ -16,6 +17,7 @@ Comprehensive guide for deploying and operating Halilit Support Center v3.7 in p
 - [ ] Staging environment tested
 
 ### Build for Production
+
 ```bash
 cd frontend
 pnpm install
@@ -25,6 +27,7 @@ pnpm build
 **Output**: `frontend/dist/` directory ready for deployment
 
 ### Deploy to Static Host
+
 ```bash
 # Upload dist/ to web server
 # Examples:
@@ -38,6 +41,7 @@ pnpm build
 ## Production Configuration
 
 ### Environment Variables
+
 ```bash
 # .env.production
 VITE_API_URL=https://api.example.com  # Optional backend
@@ -47,6 +51,7 @@ VITE_ANALYTICS_ID=your-tracking-id    # For analytics
 ### Web Server Configuration
 
 #### Nginx
+
 ```nginx
 server {
     listen 80;
@@ -78,6 +83,7 @@ server {
 ```
 
 #### Apache
+
 ```apache
 <VirtualHost *:80>
     ServerName yourdomain.com
@@ -116,6 +122,7 @@ server {
 ## Monitoring & Health Checks
 
 ### Health Check Endpoint
+
 ```typescript
 // Monitor: App loads and data accessible
 GET /
@@ -125,16 +132,18 @@ JSON data: Available
 ```
 
 ### Key Metrics to Monitor
-| Metric | Threshold | Action |
-|--------|-----------|--------|
-| Page Load (P95) | <2s | Alert if >3s |
-| Search Latency | <50ms | Alert if >100ms |
-| Error Rate | <0.1% | Alert if >1% |
-| CPU Usage | <50% | Alert if >80% |
-| Memory | <512MB | Alert if >1GB |
-| Disk Space | <80% full | Alert if >90% |
+
+| Metric          | Threshold | Action          |
+| --------------- | --------- | --------------- |
+| Page Load (P95) | <2s       | Alert if >3s    |
+| Search Latency  | <50ms     | Alert if >100ms |
+| Error Rate      | <0.1%     | Alert if >1%    |
+| CPU Usage       | <50%      | Alert if >80%   |
+| Memory          | <512MB    | Alert if >1GB   |
+| Disk Space      | <80% full | Alert if >90%   |
 
 ### Analytics Events
+
 - Page view (app loads)
 - Product viewed (product selected)
 - Search performed (query entered)
@@ -144,6 +153,7 @@ JSON data: Available
 ## Troubleshooting
 
 ### App Not Loading
+
 ```bash
 # 1. Check server is running
 curl http://localhost:5175
@@ -161,6 +171,7 @@ ls -la frontend/public/data/catalogs_brand/
 ```
 
 ### Search Not Working
+
 ```bash
 # 1. Check Fuse.js initialization
 console.log('Fuse:', window.Fuse);
@@ -174,6 +185,7 @@ grep -n "threshold" frontend/src/lib/instantSearch.ts
 ```
 
 ### Products Not Showing
+
 ```bash
 # 1. Check product data structure
 cat frontend/public/data/catalogs_brand/roland_catalog.json | jq '.products[0]'
@@ -187,6 +199,7 @@ console.log('Hierarchy:', hierarchy);
 ```
 
 ### Performance Issues
+
 ```bash
 # 1. Check bundle size
 ls -lh frontend/dist/assets/
@@ -207,11 +220,13 @@ ls -lh frontend/dist/assets/
 ## Scaling Strategies
 
 ### Current Setup
+
 - **Products**: 29 (Roland only)
 - **Users**: 1,000 concurrent (static site)
 - **Throughput**: Unlimited (static files)
 
 ### Scaling to 1,000+ Products
+
 ```bash
 # Strategy 1: Split JSON by category
 frontend/public/data/catalogs_brand/
@@ -227,6 +242,7 @@ frontend/public/data/catalogs_brand/
 ```
 
 ### Scaling to Multi-Brand
+
 ```bash
 # Current framework supports:
 frontend/public/data/catalogs_brand/
@@ -240,6 +256,7 @@ frontend/public/data/catalogs_brand/
 ```
 
 ### Scaling to Backend
+
 ```typescript
 // Implement FastAPI backend
 // Endpoints:
@@ -258,19 +275,24 @@ const loadBrand = async (brand) => {
 ## Security Hardening
 
 ### Content Security Policy
+
 ```html
 <!-- In index.html -->
-<meta http-equiv="Content-Security-Policy" content="
+<meta
+  http-equiv="Content-Security-Policy"
+  content="
   default-src 'self';
   script-src 'self' 'wasm-unsafe-eval';
   style-src 'self' 'unsafe-inline';
   img-src 'self' data: https:;
   media-src 'self' https:;
   connect-src 'self' https:;
-">
+"
+/>
 ```
 
 ### HTTPS Enforcement
+
 ```nginx
 # Redirect HTTP to HTTPS
 server {
@@ -282,7 +304,7 @@ server {
 server {
     listen 443 ssl http2;
     server_name yourdomain.com;
-    
+
     ssl_certificate /path/to/cert.pem;
     ssl_certificate_key /path/to/key.pem;
     ssl_protocols TLSv1.2 TLSv1.3;
@@ -290,6 +312,7 @@ server {
 ```
 
 ### Security Headers
+
 ```
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 X-Content-Type-Options: nosniff
@@ -302,12 +325,14 @@ Permissions-Policy: geolocation=(), microphone=(), camera=()
 ## Backup & Recovery
 
 ### What to Backup
+
 - `frontend/public/data/` - Product catalogs
 - `frontend/dist/` - Built application
 - Configuration files
 - Environment files (.env.production)
 
 ### Backup Strategy
+
 ```bash
 # Daily backup script
 #!/bin/bash
@@ -322,6 +347,7 @@ find "$BACKUP_DIR" -mtime +30 -delete
 ```
 
 ### Recovery Procedure
+
 ```bash
 # 1. Stop web server
 sudo systemctl stop nginx
@@ -342,6 +368,7 @@ curl http://localhost/
 ## Logging & Monitoring
 
 ### Application Logs
+
 ```bash
 # Monitor web server logs
 tail -f /var/log/nginx/access.log
@@ -353,15 +380,16 @@ tail -f /var/log/apache2/error.log
 ```
 
 ### Analytics
+
 ```typescript
 // Send events to analytics service
-fetch('/api/analytics', {
-  method: 'POST',
+fetch("/api/analytics", {
+  method: "POST",
   body: JSON.stringify({
-    event: 'product_viewed',
-    productId: 'roland-tr-808',
+    event: "product_viewed",
+    productId: "roland-tr-808",
     timestamp: new Date().toISOString(),
-  })
+  }),
 });
 ```
 
@@ -390,6 +418,7 @@ tail -f /var/log/nginx/access.log
 ## Version Management
 
 ### Versioning Scheme
+
 - Major.Minor.Patch (e.g., 3.7.0)
 - Update in:
   - `frontend/package.json` (version field)
@@ -397,6 +426,7 @@ tail -f /var/log/nginx/access.log
   - `README.md` (Version badge)
 
 ### Release Process
+
 ```bash
 # 1. Update version number
 npm version patch  # 3.7.0 → 3.7.1

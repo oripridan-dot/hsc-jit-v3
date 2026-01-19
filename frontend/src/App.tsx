@@ -4,6 +4,7 @@ import { catalogLoader, instantSearch } from './lib';
 import { HalileoNavigator } from './components/HalileoNavigator';
 import { Workbench } from './components/Workbench';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
+import ErrorBoundary from './components/ErrorBoundary';
 import { applyBrandTheme } from './styles/brandThemes';
 import './index.css';
 
@@ -52,14 +53,18 @@ function App() {
       {/* BODY CONTAINER: Left Nav + Center Workbench */}
       <div className="flex flex-1 w-full h-full overflow-hidden">
         {/* LEFT COLUMN: Navigator */}
-        <div className="w-96 h-full border-r border-slate-800/50 bg-slate-950/70 backdrop-blur-md flex flex-col shadow-xl shadow-black/30 overflow-hidden">
-          <HalileoNavigator />
-        </div>
+        <ErrorBoundary name="Navigator">
+          <div className="w-96 h-full border-r border-slate-800/50 bg-slate-950/70 backdrop-blur-md flex flex-col shadow-xl shadow-black/30 overflow-hidden">
+            <HalileoNavigator />
+          </div>
+        </ErrorBoundary>
 
         {/* CENTER + RIGHT COLUMN: Workbench */}
-        <div className="flex-1 h-full flex flex-col overflow-hidden">
-          <Workbench />
-        </div>
+        <ErrorBoundary name="Workbench">
+          <div className="flex-1 h-full flex flex-col overflow-hidden">
+            <Workbench />
+          </div>
+        </ErrorBoundary>
       </div>
     </div>
   );

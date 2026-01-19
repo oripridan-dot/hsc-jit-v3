@@ -5,6 +5,7 @@ Complete guide for developing and extending Halilit Support Center v3.7.
 ## Environment Setup
 
 ### Prerequisites
+
 ```bash
 Node.js >= 18.0.0
 pnpm >= 8.0.0  (or npm >= 9.0.0)
@@ -12,6 +13,7 @@ Git >= 2.30.0
 ```
 
 ### Installation
+
 ```bash
 # Clone repository
 git clone https://github.com/oripridan-dot/hsc-jit-v3.git
@@ -87,6 +89,7 @@ frontend/
 ## Code Style & Standards
 
 ### TypeScript
+
 ```typescript
 // Always use explicit types
 interface Product {
@@ -102,6 +105,7 @@ const product: Product = loadProduct(id);
 ```
 
 ### React Components
+
 ```typescript
 // Use functional components with hooks
 interface ComponentProps {
@@ -119,6 +123,7 @@ export const MyComponent: React.FC<ComponentProps> = ({
 ```
 
 ### Styling
+
 ```typescript
 // Use Tailwind CSS + CSS variables
 <div className="bg-[var(--bg-panel)] text-[var(--text-primary)]">
@@ -132,12 +137,14 @@ export const MyComponent: React.FC<ComponentProps> = ({
 ## Development Workflow
 
 ### 1. Starting Development
+
 ```bash
 cd frontend
 pnpm dev
 ```
 
 ### 2. Making Changes
+
 ```bash
 # Edit files in src/
 # Hot reload happens automatically
@@ -145,6 +152,7 @@ pnpm dev
 ```
 
 ### 3. Type Checking
+
 ```bash
 # Check for TypeScript errors
 pnpm typecheck
@@ -153,6 +161,7 @@ npx tsc --noEmit
 ```
 
 ### 4. Linting & Formatting
+
 ```bash
 # Run ESLint
 pnpm lint
@@ -162,6 +171,7 @@ pnpm format
 ```
 
 ### 5. Building
+
 ```bash
 # Build for production
 pnpm build
@@ -171,6 +181,7 @@ pnpm preview
 ```
 
 ### 6. Testing
+
 ```bash
 # Run all tests
 pnpm test
@@ -188,6 +199,7 @@ pnpm test --coverage
 ## Common Development Tasks
 
 ### Adding a New Component
+
 ```typescript
 // 1. Create file: src/components/MyComponent.tsx
 import React from 'react';
@@ -215,6 +227,7 @@ export function App() {
 ```
 
 ### Adding a New Route/View
+
 ```typescript
 // Update navigationStore with new "level"
 // Create corresponding component
@@ -222,6 +235,7 @@ export function App() {
 ```
 
 ### Updating Product Data
+
 ```typescript
 // 1. Edit: frontend/public/data/catalogs_brand/roland_catalog.json
 // 2. Restart dev server
@@ -229,6 +243,7 @@ export function App() {
 ```
 
 ### Styling a Component
+
 ```typescript
 // Option 1: Tailwind classes
 <div className="p-4 bg-slate-900 rounded-lg">
@@ -241,6 +256,7 @@ export function App() {
 ```
 
 ### Adding State
+
 ```typescript
 // 1. Update navigationStore in src/store/navigationStore.ts
 import { create } from 'zustand';
@@ -267,6 +283,7 @@ export const MyComponent = () => {
 ## Performance Optimization
 
 ### Bundle Size
+
 ```bash
 # Analyze bundle
 pnpm build
@@ -274,6 +291,7 @@ pnpm build
 ```
 
 ### Code Splitting
+
 ```typescript
 // Use React.lazy() for large components
 const HeavyComponent = React.lazy(() => import('./HeavyComponent'));
@@ -285,11 +303,13 @@ const HeavyComponent = React.lazy(() => import('./HeavyComponent'));
 ```
 
 ### Search Performance
+
 - Fuse.js is pre-configured for <50ms queries
 - For 1000+ products, consider pagination
 - Index only essential fields
 
 ### Image Optimization
+
 - Use WebP format (auto-fallback in MediaBar)
 - Lazy load images
 - Use `loading="lazy"` attribute
@@ -298,17 +318,19 @@ const HeavyComponent = React.lazy(() => import('./HeavyComponent'));
 ## Testing Guidelines
 
 ### Unit Tests
+
 ```typescript
 // Test pure functions and hooks
-describe('catalogLoader', () => {
-  it('should load brand catalog', async () => {
-    const data = await catalogLoader.loadBrand('roland');
+describe("catalogLoader", () => {
+  it("should load brand catalog", async () => {
+    const data = await catalogLoader.loadBrand("roland");
     expect(data.products).toHaveLength(29);
   });
 });
 ```
 
 ### Component Tests
+
 ```typescript
 // Test component rendering and interactions
 import { render, screen } from '@testing-library/react';
@@ -323,38 +345,43 @@ describe('Navigator', () => {
 ```
 
 ### E2E Tests
+
 ```typescript
 // Test complete user flows
-test('user can search and select product', async () => {
-  await page.goto('http://localhost:5175');
-  await page.fill('[placeholder="Search..."]', 'TR-808');
+test("user can search and select product", async () => {
+  await page.goto("http://localhost:5175");
+  await page.fill('[placeholder="Search..."]', "TR-808");
   await page.click('button:has-text("TR-808")');
-  expect(await page.textContent()).toContain('specifications');
+  expect(await page.textContent()).toContain("specifications");
 });
 ```
 
 ## Debugging
 
 ### Console Logging
+
 ```typescript
-console.log('Debug:', variable);
-console.error('Error:', error);
+console.log("Debug:", variable);
+console.error("Error:", error);
 console.table(dataArray);
 ```
 
 ### React DevTools
+
 1. Install React DevTools browser extension
 2. Open DevTools (F12)
 3. Navigate to "Components" tab
 4. Inspect component props and state
 
 ### Network Debugging
+
 1. Open DevTools → Network tab
 2. Monitor JSON fetch requests
 3. Check response payloads
 4. Verify Content-Type headers
 
 ### Performance Profiling
+
 1. Open DevTools → Performance tab
 2. Click record
 3. Interact with app
@@ -364,12 +391,14 @@ console.table(dataArray);
 ## Git Workflow
 
 ### Branches
+
 - `main` - Production-ready code
 - `v3.7-dev` - Development branch
 - Feature branches: `feature/description`
 - Bug fixes: `fix/issue-number`
 
 ### Commits
+
 ```bash
 # Type-based commit messages
 git commit -m "feat: Add voice search integration"
@@ -379,6 +408,7 @@ git commit -m "chore: Update dependencies"
 ```
 
 ### Pull Requests
+
 1. Create feature branch from v3.7-dev
 2. Make changes with meaningful commits
 3. Push and create PR
@@ -389,6 +419,7 @@ git commit -m "chore: Update dependencies"
 ## Troubleshooting
 
 ### Port Already in Use
+
 ```bash
 # Find process on 5175
 lsof -i :5175
@@ -401,6 +432,7 @@ VITE_PORT=5176 pnpm dev
 ```
 
 ### Module Not Found Error
+
 ```bash
 # Clear cache and reinstall
 rm -rf node_modules pnpm-lock.yaml
@@ -409,6 +441,7 @@ pnpm dev
 ```
 
 ### TypeScript Errors
+
 ```bash
 # Check all files
 npx tsc --noEmit
@@ -418,6 +451,7 @@ npx tsc --noEmit --pretty false | head -20
 ```
 
 ### Build Fails
+
 ```bash
 # Clean and rebuild
 pnpm clean  # if defined

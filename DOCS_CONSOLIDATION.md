@@ -5,15 +5,17 @@
 **Successfully consolidated from 88 documentation files to a lean, focused structure.**
 
 ### Before → After
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| Total files | 88 | ~20 | -77% |
-| Root level | 22 | 3 | -86% |
-| Core docs | Scattered | 5 focused | Consolidated |
+
+| Metric      | Before    | After     | Change       |
+| ----------- | --------- | --------- | ------------ |
+| Total files | 88        | ~20       | -77%         |
+| Root level  | 22        | 3         | -86%         |
+| Core docs   | Scattered | 5 focused | Consolidated |
 
 ## What Changed
 
 ### Keep (Essential)
+
 1. **README.md** (root) - Main project overview
 2. **docs/README.md** - Documentation hub
 3. **docs/getting-started/** - Quick start guides
@@ -21,11 +23,13 @@
 5. **docs/operations/** - Deployment & troubleshooting
 
 ### Archive (Historical/Redundant)
+
 1. Root-level markdown files (22 files) → archive
 2. Duplicate guides → consolidate
 3. Process logs → archive
 
 ### Target Structure
+
 ```
 /
 ├── README.md                    # Main entry point
@@ -49,6 +53,7 @@
 ## Files to Archive (88 → 20 target)
 
 ### Root-level consolidation
+
 - BEFORE_AFTER_COMPARISON.md
 - CLEANUP_SUMMARY.md
 - CONSOLIDATED_QUICK_REFERENCE.md
@@ -71,12 +76,14 @@
 - project_context.md
 
 ### Docs directory consolidation
+
 - Merge duplicate quick-start files
 - Archive all v3.5/v3.6 docs
 - Consolidate scraper docs into one guide
 - Merge policy documents
 
 ## Benefits
+
 - 📉 82% reduction in docs count (88 → 15)
 - 🎯 Clear information hierarchy
 - 🔍 Easier to find information
@@ -84,6 +91,7 @@
 - 📚 Better documentation culture
 
 ## Implementation
+
 1. Create consolidated master docs
 2. Move root .md files to archive/
 3. Update cross-references

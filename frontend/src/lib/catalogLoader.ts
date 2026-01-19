@@ -3,10 +3,12 @@
  * Loads pre-built JSON instead of API calls
  * 
  * ⚠️ FULLY TYPED: No implicit `any` types
+ * ✅ RUNTIME VALIDATED: All JSON parsed through Zod schemas
  * All types validated against actual roland.json data
  */
 
 import type { Product as ProductType, BrandIdentity, ProductImagesType, ProductImagesObject, Specification } from '../types/index';
+import { SchemaValidator } from './schemas';
 
 export type Product = ProductType;
 
@@ -76,6 +78,7 @@ class CatalogLoader {
 
   /**
    * Load master index (call once on app init)
+   * ✅ Runtime validation with Zod
    */
   async loadIndex(): Promise<MasterIndex> {
     if (this.index) return this.index;
@@ -86,11 +89,14 @@ class CatalogLoader {
       if (!response.ok) {
         throw new Error('Failed to load master index');
       }
-      this.index = await response.json() as MasterIndex;
-      console.log(`✅ Master Index loaded: ${this.index?.brands.length} brands`);
+      const rawData = await response.json();
+
+      // ✅ Validate with Zod
+      this.index = SchemaValidator.validateMasterIndex(rawData);
+      console.log(`✅ Master Index loaded and validated: ${this.index?.brands.length} brands`);
       return this.index!;
     } catch (error) {
-      console.error("Failed to load index.json", error);
+      console.error("❌ Failed to load index.json", error);
       throw error;
     }
   }
@@ -161,6 +167,7 @@ class CatalogLoader {
 
   /**
    * Load specific brand catalog (lazy loading)
+   * ✅ Runtime validation with Zod
    */
   async loadBrand(brandId: string): Promise<BrandCatalog> {
     // Check cache first
@@ -182,7 +189,18 @@ class CatalogLoader {
       throw new Error(`Failed to load brand: ${brandId}`);
     }
 
-    const data = await response.json() as BrandFile;
+    const rawData = await response.json();
+
+    // ✅ Validate with Zod
+    let data: BrandFile;
+    try {
+      // Zod validation ensures type safety - use any to cast the validated result
+      const validated = SchemaValidator.validateBrandFile(rawData);
+      data = validated as unknown as BrandFile;
+    } catch (validationError) {
+      console.error(`❌ Brand file validation failed for ${brandId}:`, validationError);
+      throw new Error(`Invalid brand data structure for ${brandId}: ${(validationError as Error).message}`);
+    }
 
     // Transform to BrandCatalog format with full validation
     const catalog: BrandCatalog = {
@@ -216,7 +234,7 @@ class CatalogLoader {
     catalog.products.sort((a, b) => a.name.localeCompare(b.name));
 
     this.brandCatalogs.set(brandId, catalog);
-    console.log(`✅ Loaded ${catalog.products.length} products for ${catalog.brand_name}`);
+    console.log(`✅ Loaded and validated ${catalog.products.length} products for ${catalog.brand_name}`);
 
     return catalog;
   }
