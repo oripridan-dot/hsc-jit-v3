@@ -177,9 +177,9 @@ export const MediaBar: React.FC<MediaBarProps> = ({
       className="flex flex-col h-full relative bg-[var(--bg-panel)]/30 overflow-hidden"
       style={{ width: `${barWidth}px`, minWidth: '250px' }}
     >
-      {/* Resize Handle - Right Edge */}
+      {/* Resize Handle - Left Edge (facing content) */}
       <div
-        className="absolute right-0 top-0 bottom-0 w-2 bg-indigo-500/20 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-30"
+        className="absolute left-0 top-0 bottom-0 w-2 bg-indigo-500/20 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-30"
         onMouseDown={() => setIsResizing(true)}
         title="Drag to resize MediaBar"
       />
