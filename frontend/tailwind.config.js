@@ -25,9 +25,18 @@ export default {
       'accent-muted': '#6b7280',      // gray-500
       
       // Brand theming support (CSS variables set by useBrandTheme hook)
-      'brand-primary': 'var(--color-brand-primary, #06B6D4)',
-      'brand-secondary': 'var(--color-brand-secondary, #0891B2)',
-      'brand-accent': 'var(--color-brand-accent, #67E8F9)',
+      // The "Chameleon" system: dynamically set by useBrandTheme()
+      brand: {
+        primary: 'var(--brand-primary, #06B6D4)',      // Main brand color
+        secondary: 'var(--brand-secondary, #0891B2)',  // Supporting color
+        accent: 'var(--brand-accent, #67E8F9)',        // Highlight/CTA
+        bg: 'var(--brand-background, #18181b)',        // Panel background
+      },
+      
+      // Backwards compatibility
+      'brand-primary': 'var(--brand-primary, #06B6D4)',
+      'brand-secondary': 'var(--brand-secondary, #0891B2)',
+      'brand-accent': 'var(--brand-accent, #67E8F9)',
       
       // Roland theme
       'roland-red': '#E31E24',
@@ -130,6 +139,7 @@ export default {
         'glow-blue': '0 0 20px -5px rgb(59, 130, 246)',
         'glow-green': '0 0 20px -5px rgb(16, 185, 129)',
         'glow-red': '0 0 20px -5px rgb(239, 68, 68)',
+        'glow-brand': '0 0 20px -5px var(--brand-primary, rgb(59, 130, 246))',
       },
     },
   },

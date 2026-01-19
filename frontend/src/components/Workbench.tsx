@@ -1,9 +1,11 @@
 /**
  * Workbench - Product Cockpit
  * Displays detailed product information with right-side MediaBar
+ * 🎨 Dynamic brand theming applied when product is selected
  */
 import React, { useState } from 'react';
 import { useNavigationStore } from '../store/navigationStore';
+import { useBrandTheme } from '../hooks/useBrandTheme';
 import { FiArrowLeft, FiExternalLink, FiInfo, FiBook, FiPackage } from 'react-icons/fi';
 import { MediaBar } from './MediaBar';
 import { MediaViewer } from './MediaViewer';
@@ -19,6 +21,9 @@ export const Workbench: React.FC = () => {
   const [mediaBarWidth, setMediaBarWidth] = useState(384); // Default w-96 = 384px
   const [isResizing, setIsResizing] = useState(false);
   const mediaBarRef = React.useRef<HTMLDivElement>(null);
+
+  // 🎨 Apply brand theme based on product's brand
+  useBrandTheme(selectedProduct?.brand || 'default');
 
   /**
    * Extract main image URL from product

@@ -16,10 +16,18 @@
       "count": 29,
       "file": "catalogs_brand/roland_catalog.json",
       "brand_color": "#ef4444",
-      "logo_url": null,
+      "logo_url": "https://static.roland.com/images/logo_roland.svg",
       "product_count": 29,
       "verified_count": 29,
-      "data_file": "catalogs_brand/roland_catalog.json"
+      "data_file": "catalogs_brand/roland_catalog.json",
+      "official_site": "https://www.roland.com",
+      "brand_colors": {
+        "primary": "#ef4444",
+        "secondary": "#1f2937",
+        "accent": "#fbbf24",
+        "background": "#18181b",
+        "text": "#ffffff"
+      }
     }
   ],
   "search_graph": []
