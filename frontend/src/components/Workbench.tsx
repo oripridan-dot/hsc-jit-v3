@@ -20,6 +20,7 @@ export const Workbench: React.FC = () => {
   const [whiteBgImage, setWhiteBgImage] = useState<string | null>(null);
   const [mediaBarWidth, setMediaBarWidth] = useState(384); // Default w-96 = 384px
   const [isResizing, setIsResizing] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, width: 0 });
   const mediaBarRef = React.useRef<HTMLDivElement>(null);
 
   // 🎨 Apply brand theme based on product's brand
@@ -78,16 +79,15 @@ export const Workbench: React.FC = () => {
     return [];
   };
 
-  // Handle resize dragging for MediaBar (resize from right edge, scale left)
+  // Handle resize dragging for MediaBar (resize from left edge, scale left)
   React.useEffect(() => {
     if (!isResizing) return;
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (!mediaBarRef.current) return;
-      const container = mediaBarRef.current;
-      const rect = container.getBoundingClientRect();
-      // Calculate width from right edge - as mouse moves right, width increases
-      const newWidth = e.clientX - rect.left;
+      // Calculate how far mouse moved from drag start
+      const delta = e.clientX - dragStart.x;
+      // New width: original width + delta (right drag = positive delta = wider)
+      const newWidth = dragStart.width + delta;
       
       // Constrain width between 250px and 800px
       if (newWidth >= 250 && newWidth <= 800) {
@@ -105,7 +105,7 @@ export const Workbench: React.FC = () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseup', handleMouseUp);
     };
-  }, [isResizing]);
+  }, [isResizing, dragStart]);
 
   // Product Cockpit - detailed view of selected product
   if (selectedProduct) {
@@ -324,7 +324,10 @@ export const Workbench: React.FC = () => {
             {/* Resize Handle - Left Edge (facing content) */}
             <div
               className="absolute left-0 top-0 bottom-0 w-2 bg-indigo-500/20 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-30"
-              onMouseDown={() => setIsResizing(true)}
+              onMouseDown={(e) => {
+                setIsResizing(true);
+                setDragStart({ x: e.clientX, width: mediaBarWidth });
+              }}
               title="Drag to resize MediaBar"
             />
             <MediaBar
