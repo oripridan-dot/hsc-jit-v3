@@ -33,9 +33,6 @@ export const MediaBar: React.FC<MediaBarProps> = ({
 }) => {
   const [activeTab, setActiveTab] = useState<TabType>('images');
   const [imageDimensions, setImageDimensions] = useState<Record<string, { width: number; height: number }>>({});
-  const [barWidth, setBarWidth] = useState(384); // Default w-96 = 384px
-  const [isResizing, setIsResizing] = useState(false);
-  const [dragStart, setDragStart] = useState({ x: 0, width: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Normalize media arrays
@@ -135,34 +132,6 @@ export const MediaBar: React.FC<MediaBarProps> = ({
     }
   };
 
-  // Handle resize dragging (resize from left edge, scale left)
-  useEffect(() => {
-    if (!isResizing) return;
-
-    const handleMouseMove = (e: MouseEvent) => {
-      // Calculate how far mouse moved from drag start
-      const delta = e.clientX - dragStart.x;
-      // New width: original width + delta (right drag = positive delta = wider)
-      const newWidth = dragStart.width + delta;
-      
-      // Constrain width between 250px and 800px
-      if (newWidth >= 250 && newWidth <= 800) {
-        setBarWidth(newWidth);
-      }
-    };
-
-    const handleMouseUp = () => {
-      setIsResizing(false);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseup', handleMouseUp);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', handleMouseUp);
-    };
-  }, [isResizing, dragStart]);
-
   // Combine all media for navigation purposes
   const allMedia = [
     ...normalizedImages.map(i => ({ ...i, type: 'image' as const })),
@@ -174,18 +143,8 @@ export const MediaBar: React.FC<MediaBarProps> = ({
   return (
     <div 
       ref={containerRef}
-      className="flex flex-col h-full relative bg-[var(--bg-panel)]/30 overflow-hidden"
-      style={{ width: `${barWidth}px`, minWidth: '250px' }}
+      className="flex flex-col h-full relative bg-[var(--bg-panel)]/30 overflow-hidden w-full"
     >
-      {/* Resize Handle - Left Edge (facing content) */}
-      <div
-        className="absolute left-0 top-0 bottom-0 w-2 bg-indigo-500/20 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-30"
-        onMouseDown={(e) => {
-          setIsResizing(true);
-          setDragStart({ x: e.clientX, width: barWidth });
-        }}
-        title="Drag to resize MediaBar"
-      />
       {/* Tab Navigation */}
       <div className="flex-shrink-0 border-b border-[var(--border-subtle)] bg-[var(--bg-panel)]/30">
         <div className="flex gap-0.5 p-1 flex-wrap justify-center">
