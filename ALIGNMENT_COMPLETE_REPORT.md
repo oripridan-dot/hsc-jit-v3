@@ -21,12 +21,14 @@ Your request to "perfectly align the scraper to its brand's structure and data, 
 **File**: `backend/services/roland_scraper.py`, `backend/services/boss_scraper.py`
 
 **What was done**:
+
 - Aligned scrapers to output `ProductCore` objects
 - Standardized field names: `id`, `brand`, `name`, `main_category`, `categories`, `description`, `images`
 - Fixed image URL filtering (removes data URIs)
 - Added proper error handling and validation
 
 **Key Features**:
+
 ```python
 # All scrapers produce consistent structure:
 ProductCore(
@@ -45,6 +47,7 @@ ProductCore(
 **File**: `backend/app/main.py` (Pydantic models)
 
 **Complete model hierarchy**:
+
 ```
 APIResponse
 ├── status (success/error)
@@ -75,16 +78,17 @@ BrandIdentity
 
 **Implemented standards**:
 
-| Convention | Format | Examples |
-|---|---|---|
-| **Routes** | `/api/v1/{resource}` | `/api/v1/brands`, `/api/v1/search` |
-| **IDs** | lowercase-hyphenated | `roland-aerophone`, `boss-gt-100` |
-| **Fields** | snake_case | `main_category`, `price_nis`, `model_number` |
-| **HTTP Methods** | Standard REST | GET, POST, OPTIONS |
-| **Response** | Wrapped format | `{status, data, meta, error}` |
-| **Error Codes** | HTTP + semantic | 200, 404, 500, "BRAND_NOT_FOUND" |
+| Convention       | Format               | Examples                                     |
+| ---------------- | -------------------- | -------------------------------------------- |
+| **Routes**       | `/api/v1/{resource}` | `/api/v1/brands`, `/api/v1/search`           |
+| **IDs**          | lowercase-hyphenated | `roland-aerophone`, `boss-gt-100`            |
+| **Fields**       | snake_case           | `main_category`, `price_nis`, `model_number` |
+| **HTTP Methods** | Standard REST        | GET, POST, OPTIONS                           |
+| **Response**     | Wrapped format       | `{status, data, meta, error}`                |
+| **Error Codes**  | HTTP + semantic      | 200, 404, 500, "BRAND_NOT_FOUND"             |
 
 **All routes implemented**:
+
 ```
 GET    /health                              # Health check
 GET    /api/v1/brands                       # List brands
@@ -102,6 +106,7 @@ POST   /api/v1/rag/query                    # RAG query (future)
 **File**: `backend/app/main.py`
 
 **Development** (current):
+
 ```python
 CORSMiddleware(
     allow_origins=[
@@ -116,6 +121,7 @@ CORSMiddleware(
 ```
 
 **Production** (template provided):
+
 ```python
 allow_origins=["https://yourdomain.com"]
 allow_credentials=True
@@ -126,6 +132,7 @@ allow_credentials=True
 **File**: `backend/app/main.py` (APIResponse model)
 
 **All responses follow this format**:
+
 ```json
 {
   "status": "success",
@@ -143,6 +150,7 @@ allow_credentials=True
 ```
 
 **Error responses**:
+
 ```json
 {
   "status": "error",
@@ -159,6 +167,7 @@ allow_credentials=True
 **File**: `backend/app/main.py`
 
 **Implemented handlers**:
+
 - HTTP exceptions (404, 500, etc.)
 - Validation errors (Pydantic)
 - Global exception handler
@@ -170,6 +179,7 @@ allow_credentials=True
 **Files**: Multiple (see below)
 
 **Complete flow**:
+
 ```
 1. Scraper (Roland/Boss)
    ↓ Outputs: ProductCatalog JSON
@@ -194,6 +204,7 @@ allow_credentials=True
 **File**: `backend/services/jit_rag_system.py`
 
 **Capabilities**:
+
 - ✅ Semantic search (SentenceTransformers embeddings)
 - ✅ Keyword fallback search
 - ✅ Product insights generation
@@ -201,6 +212,7 @@ allow_credentials=True
 - ✅ Embeddings caching (in-memory index)
 
 **API Endpoints**:
+
 ```
 GET  /api/v1/rag/status              # Check capabilities
 POST /api/v1/rag/query               # Semantic search (future)
@@ -252,6 +264,7 @@ backend/
 ```
 
 **Frontend data**:
+
 ```
 frontend/public/data/
 ├── index.json                     # Master catalog (NEW)
@@ -264,12 +277,14 @@ frontend/public/data/
 ## 🔧 Usage
 
 ### 1. **Run Full Pipeline**
+
 ```bash
 cd /workspaces/hsc-jit-v3/backend
 python orchestrate_pipeline.py
 ```
 
 **Output**:
+
 - ✅ Loads catalogs
 - ✅ Validates data
 - ✅ Cleans invalid products/images
@@ -278,16 +293,19 @@ python orchestrate_pipeline.py
 - ✅ Generates status report
 
 ### 2. **Start Backend Server**
+
 ```bash
 python -m uvicorn app.main:app --reload
 ```
 
 **Endpoints available**:
+
 - Health: http://localhost:8000/health
 - Docs: http://localhost:8000/api/docs
 - API: http://localhost:8000/api/v1/brands
 
 ### 3. **Test Endpoints**
+
 ```bash
 # List brands
 curl http://localhost:8000/api/v1/brands
@@ -300,6 +318,7 @@ curl "http://localhost:8000/api/v1/search?q=synthesizer"
 ```
 
 ### 4. **Start Frontend**
+
 ```bash
 cd frontend
 pnpm dev
@@ -325,6 +344,7 @@ pnpm dev
 ```
 
 **Run verification**:
+
 ```bash
 python /workspaces/hsc-jit-v3/verify_alignment.py
 ```
@@ -334,21 +354,25 @@ python /workspaces/hsc-jit-v3/verify_alignment.py
 ## 📊 Current Pipeline Status
 
 **Catalogs Loaded**: 3 brands
+
 - Roland: 29 products ✅
 - Roland Test: 5 products ✅
 - Boss Test: 0 products (test)
 
 **Validation**: ✅ All products valid
+
 - Errors: 0
 - Warnings: 29 (missing images - acceptable)
 - Invalid images removed: 17 (data URIs)
 
 **Publishing**: ✅ Complete
+
 - Master index: `frontend/public/data/index.json`
 - Brand catalogs: `frontend/public/data/*.json`
 - Total products indexed: 34
 
 **RAG System**: ✅ Active
+
 - Embeddings: Generated for all products
 - Semantic search: Tested and working
 - Keyword fallback: Available
@@ -359,6 +383,7 @@ python /workspaces/hsc-jit-v3/verify_alignment.py
 ## 🚀 What's Ready
 
 ### Backend
+
 - [x] FastAPI application (port 8000)
 - [x] All v1 endpoints implemented
 - [x] Data validators (ProductValidator, CatalogValidator)
@@ -370,12 +395,14 @@ python /workspaces/hsc-jit-v3/verify_alignment.py
 - [x] Static file serving
 
 ### Frontend
+
 - [x] Static JSON catalogs (for instant loading)
 - [x] Master index for navigation
 - [x] Per-brand catalogs for detail views
 - [x] All data optimized for Fuse.js search
 
 ### Documentation
+
 - [x] Naming convention docs
 - [x] API endpoint reference
 - [x] Pipeline flow diagrams
@@ -398,12 +425,14 @@ All created during this session:
 ## 🎓 Key Achievements
 
 ### Perfect Data Model Alignment
+
 - ✅ Unified ProductCore schema
 - ✅ Consistent field naming (snake_case)
 - ✅ Proper validation at every stage
 - ✅ Type-safe Pydantic models (v2)
 
 ### Consistent Naming Conventions
+
 - ✅ Route format: `/api/v1/{resource}`
 - ✅ ID format: lowercase-hyphenated
 - ✅ Field naming: snake_case
@@ -411,18 +440,21 @@ All created during this session:
 - ✅ Error codes: HTTP + semantic
 
 ### Proper CORS Configuration
+
 - ✅ Development origins configured
 - ✅ Methods restricted (GET, POST, OPTIONS)
 - ✅ Headers properly specified
 - ✅ Production template provided
 
 ### Complete Pipeline Integration
+
 - ✅ Scraper → Validator → Cleaner → Publisher → RAG
 - ✅ No data loss
 - ✅ Automated orchestration
 - ✅ Full audit trail
 
 ### Robust Error Handling
+
 - ✅ HTTP exception handlers
 - ✅ Validation error handling
 - ✅ Global exception handler
@@ -430,6 +462,7 @@ All created during this session:
 - ✅ User-friendly messages
 
 ### RAG System Ready
+
 - ✅ Semantic search implemented
 - ✅ Keyword fallback available
 - ✅ Product insights generation
@@ -443,6 +476,7 @@ All created during this session:
 ✅ **Complete, production-ready backend pipeline**
 
 All components are:
+
 - ✅ Perfectly aligned
 - ✅ Well-documented
 - ✅ Fully tested
@@ -454,6 +488,7 @@ All components are:
 ## 📞 Support
 
 ### Quick Commands
+
 ```bash
 # Full pipeline
 python backend/orchestrate_pipeline.py
@@ -472,6 +507,7 @@ python verify_alignment.py
 ```
 
 ### Next Steps
+
 1. Deploy backend (production CORS config)
 2. Setup monitoring/logging
 3. Configure database (optional)
@@ -486,6 +522,6 @@ python verify_alignment.py
 
 ---
 
-*Generated: 2026-01-19*  
-*Version: 3.7.0*  
-*Backend Pipeline Alignment - COMPLETE*
+_Generated: 2026-01-19_  
+_Version: 3.7.0_  
+_Backend Pipeline Alignment - COMPLETE_

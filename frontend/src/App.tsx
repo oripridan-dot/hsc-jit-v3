@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useWebSocketStore } from './store/useWebSocketStore';
 import { catalogLoader, instantSearch } from './lib';
 import { HalileoNavigator } from './components/HalileoNavigator';
@@ -6,10 +6,25 @@ import { Workbench } from './components/Workbench';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
 import ErrorBoundary from './components/ErrorBoundary';
 import { applyBrandTheme } from './styles/brandThemes';
+import { useRealtimeData } from './hooks/useRealtimeData';
+import { initializeDevTools } from './lib/devTools';
 import './index.css';
+
+// Initialize dev tools in development
+initializeDevTools();
 
 function App() {
   const { actions } = useWebSocketStore();
+  const [dataVersion, setDataVersion] = useState(0);
+
+  // Enable real-time data updates
+  useRealtimeData({
+    onDataChange: (type, id) => {
+      console.log(`🔄 Real-time update: ${type}${id ? ` (${id})` : ''}`);
+      // Trigger re-initialization
+      setDataVersion(v => v + 1);
+    }
+  });
 
   useEffect(() => {
     // Apply Roland brand theme
@@ -27,7 +42,7 @@ function App() {
       }
     };
     initCatalog();
-  }, []);
+  }, [dataVersion]); // Re-initialize when data changes
 
   useEffect(() => {
     // Attempt WebSocket connection but don't block

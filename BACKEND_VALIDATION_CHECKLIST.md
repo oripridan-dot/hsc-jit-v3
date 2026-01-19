@@ -26,6 +26,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Configuration Verification
 
 - [ ] **Brand Recipe Validation**
+
   ```bash
   # Verify brand_recipes.json has both Roland and Boss with correct structure
   python -c "
@@ -41,6 +42,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Brands Metadata Check**
+
   ```bash
   # Verify both brands in metadata
   python -c "
@@ -54,6 +56,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Output Directory Structure**
+
   ```bash
   # Ensure catalogs directory exists
   mkdir -p backend/data/catalogs
@@ -72,35 +75,37 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Selector Validation
 
 - [ ] **Roland Selector Test**
+
   ```bash
   # Manually verify Roland product page structure
   python -c "
   from backend.services.roland_scraper import RolandScraper
   import asyncio
-  
+
   async def test():
     scraper = RolandScraper()
     print(f'Base URL: {scraper.base_url}')
     print(f'Products URL: {scraper.products_url}')
     print(f'Categories to explore: {len(scraper.category_urls)}')
-  
+
   asyncio.run(test())
   "
   ```
 
 - [ ] **Boss Selector Test**
+
   ```bash
   # Verify Boss product page structure
   python -c "
   from backend.services.boss_scraper import BossScraper
   import asyncio
-  
+
   async def test():
     scraper = BossScraper()
     print(f'Base URL: {scraper.base_url}')
     print(f'Products URL: {scraper.products_url}')
     print(f'Categories to explore: {len(scraper.category_urls)}')
-  
+
   asyncio.run(test())
   "
   ```
@@ -112,6 +117,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Roland Scraping
 
 - [ ] **Dry Run (5 products)**
+
   ```bash
   cd backend
   python orchestrate_brand.py --brand roland --max-products 5
@@ -120,10 +126,11 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Check Output**
+
   ```bash
   # Verify catalog was created
   ls -lah backend/data/catalogs/roland_catalog.json
-  
+
   # Check product count
   python -c "
   import json
@@ -145,6 +152,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Boss Scraping
 
 - [ ] **Dry Run (5 products)**
+
   ```bash
   cd backend
   python orchestrate_brand.py --brand boss --max-products 5
@@ -153,22 +161,23 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Compare Structure**
+
   ```bash
   # Verify Boss and Roland have same structure
   python -c "
   import json
-  
+
   with open('backend/data/catalogs/roland_catalog.json') as f:
     roland = json.load(f)
   with open('backend/data/catalogs/boss_catalog.json') as f:
     boss = json.load(f)
-  
+
   # Check matching keys
   roland_keys = set(roland.keys())
   boss_keys = set(boss.keys())
   print(f'Matching top-level keys: {roland_keys == boss_keys}')
   print(f'Keys: {roland_keys}')
-  
+
   # Check product field consistency
   roland_prod_keys = set(roland['products'][0].keys())
   boss_prod_keys = set(boss['products'][0].keys())
@@ -191,12 +200,13 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Orchestration Check
 
 - [ ] **Catalog Generation**
+
   ```bash
   # Verify orchestrator creates proper ProductCatalog objects
   python -c "
   from backend.models.product_hierarchy import ProductCatalog
   import json
-  
+
   with open('backend/data/catalogs/roland_catalog.json') as f:
     data = json.load(f)
     # Validate schema
@@ -208,11 +218,12 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Frontend Sync**
+
   ```bash
   # Check if catalogs copied to frontend
   ls -lah frontend/public/data/catalogs_brand/
   # Should have roland*.json and boss*.json
-  
+
   # Verify index.json updated
   python -c "
   import json
@@ -239,6 +250,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Unit Tests
 
 - [ ] **Run Validator Tests**
+
   ```bash
   cd backend
   pytest tests/unit/test_validator.py -v
@@ -270,14 +282,15 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Data Validation
 
 - [ ] **Validate Roland Catalog**
+
   ```bash
   python -c "
   from backend.core.validator import validate_catalog_file
   from pathlib import Path
-  
+
   report = validate_catalog_file(Path('backend/data/catalogs/roland_catalog.json'))
   print(report.summary())
-  
+
   if not report.is_valid:
     print(f'❌ {report.error_count} errors found')
     for issue in report.issues:
@@ -286,36 +299,38 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Validate Boss Catalog**
+
   ```bash
   python -c "
   from backend.core.validator import validate_catalog_file
   from pathlib import Path
-  
+
   report = validate_catalog_file(Path('backend/data/catalogs/boss_catalog.json'))
   print(report.summary())
-  
+
   if not report.is_valid:
     print(f'❌ {report.error_count} errors found')
   "
   ```
 
 - [ ] **Check Image URL Validity**
+
   ```bash
   # Verify all image URLs are accessible
   python -c "
   import json
   import re
-  
+
   for brand in ['roland', 'boss']:
     with open(f'backend/data/catalogs/{brand}_catalog.json') as f:
       cat = json.load(f)
-      
+
     broken = []
     for prod in cat['products'][:5]:  # Test first 5
       img_url = prod.get('image_url', '')
       if not re.match(r'^https?://', img_url):
         broken.append(prod['id'])
-    
+
     print(f'{brand}: {len(broken)} broken image URLs')
     if broken:
       print(f'  Broken: {broken}')
@@ -323,18 +338,19 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Verify Category Consistency**
+
   ```bash
   python -c "
   import json
-  
+
   for brand in ['roland', 'boss']:
     with open(f'backend/data/catalogs/{brand}_catalog.json') as f:
       cat = json.load(f)
-    
+
     categories = set()
     for prod in cat['products']:
       categories.update(prod.get('categories', []))
-    
+
     print(f'{brand} categories: {sorted(categories)}')
     assert len(categories) > 0, f'{brand} has no categories'
   "
@@ -347,6 +363,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### FastAPI Server
 
 - [ ] **Start Backend Server**
+
   ```bash
   cd backend
   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
@@ -355,12 +372,14 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Health Check**
+
   ```bash
   curl http://localhost:8000/health
   # Should return: {"status": "ok"}
   ```
 
 - [ ] **List Brands API**
+
   ```bash
   curl http://localhost:8000/api/brands
   # Should list Roland and Boss
@@ -368,18 +387,21 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Get Roland Catalog**
+
   ```bash
   curl http://localhost:8000/api/catalog/roland | python -m json.tool | head -50
   # Should return full catalog with products
   ```
 
 - [ ] **Get Boss Catalog**
+
   ```bash
   curl http://localhost:8000/api/catalog/boss | python -m json.tool | head -50
   # Should return Boss catalog
   ```
 
 - [ ] **Product Search**
+
   ```bash
   # Search across all products
   curl "http://localhost:8000/api/products/search?q=drum"
@@ -395,6 +417,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Frontend Integration
 
 - [ ] **Start Frontend**
+
   ```bash
   cd frontend
   pnpm dev
@@ -403,6 +426,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Test Brand Selection**
+
   ```bash
   # Using browser DevTools or API:
   # 1. Select Roland → should load ~29 products
@@ -425,23 +449,24 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Structural Compatibility
 
 - [ ] **Product Field Parity**
+
   ```bash
   python -c "
   import json
-  
+
   with open('backend/data/catalogs/roland_catalog.json') as f:
     roland_fields = set(f.json.load(f)['products'][0].keys())
   with open('backend/data/catalogs/boss_catalog.json') as f:
     boss_fields = set(json.load(f)['products'][0].keys())
-  
+
   missing_in_boss = roland_fields - boss_fields
   missing_in_roland = boss_fields - roland_fields
-  
+
   if missing_in_boss:
     print(f'Fields in Roland but not Boss: {missing_in_boss}')
   if missing_in_roland:
     print(f'Fields in Boss but not Roland: {missing_in_roland}')
-  
+
   if not missing_in_boss and not missing_in_roland:
     print('✅ Perfect field parity')
   "
@@ -457,6 +482,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Brand-Specific Testing
 
 - [ ] **Roland-Specific Validation**
+
   ```bash
   python -c "
   from backend.core.validator import validate_catalog_file
@@ -483,6 +509,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### Scraping Performance
 
 - [ ] **Measure Scraping Duration**
+
   ```bash
   # Time the scraping process
   time python orchestrate_brand.py --brand roland --max-products 10
@@ -490,6 +517,7 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
   ```
 
 - [ ] **Scraping Metrics**
+
   ```bash
   # Check scraper logs for metrics
   # Should see in output:
@@ -509,11 +537,12 @@ Complete inspection, adjustment, and verification plan for HSC JIT v3.7 backend 
 ### API Performance
 
 - [ ] **Response Time Measurement**
+
   ```bash
   # Time API responses
   time curl http://localhost:8000/api/catalog/roland > /dev/null
   # Should be <1s for loaded catalogs
-  
+
   time curl "http://localhost:8000/api/products/search?q=test" > /dev/null
   # Should be <100ms for search
   ```
@@ -560,7 +589,7 @@ with sync_playwright() as p:
   browser = p.chromium.launch(headless=True)
   page = browser.new_page()
   page.goto('https://www.boss.info/us/products/me_80/')
-  
+
   # Find all img tags
   imgs = page.locator('img').all()
   for img in imgs[:5]:
@@ -713,6 +742,7 @@ echo "✔️  All checks complete"
 ---
 
 **Next Steps:**
+
 1. Run through complete checklist
 2. Address any failures
 3. Run full integration tests

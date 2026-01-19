@@ -5,10 +5,12 @@
  * ⚠️ FULLY TYPED: No implicit `any` types
  * ✅ RUNTIME VALIDATED: All JSON parsed through Zod schemas
  * All types validated against actual roland.json data
+ * 🔄 REAL-TIME: Auto-updates on data changes
  */
 
 import type { Product as ProductType, BrandIdentity, ProductImagesType, ProductImagesObject, Specification } from '../types/index';
 import { SchemaValidator } from './schemas';
+import { dataWatcher } from './dataWatcher';
 
 export type Product = ProductType;
 

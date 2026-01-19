@@ -3,6 +3,7 @@
 ## 🎯 Naming Conventions & Standards
 
 ### Route Naming
+
 - **Format**: `/api/{resource}/{id}/{action}`
 - **Case**: lowercase with hyphens
 - **Prefix**: All API routes start with `/api/v1/` for versioning
@@ -15,6 +16,7 @@
   - `/api/v1/rag/query` - RAG query endpoint
 
 ### Data Model Alignment
+
 - **ProductCore**: Main product data model (required fields: id, name, brand, main_category)
 - **ProductCatalog**: Collection of ProductCore objects for a brand
 - **BrandIdentity**: Brand metadata (id, name, website, description, categories, logo_url)
@@ -22,6 +24,7 @@
 - **ValidationReport**: Summary of validation for a catalog
 
 ### Scraper Data Model Alignment
+
 - **RolandScraper**: Produces ProductCore objects with:
   - `id`: slug format (e.g., "roland-aerophone_brisa")
   - `name`: product name with model info
@@ -29,7 +32,6 @@
   - `main_category`: inferred from page structure
   - `description`: from product page
   - `images`: list of ProductImage objects (url, type, alt_text)
-  
 - **BossScraper**: Must match Roland structure exactly
   - Same field names and types
   - Same image extraction logic
@@ -37,6 +39,7 @@
   - Same validation expectations
 
 ### API Response Format
+
 ```json
 {
   "status": "success|error",
@@ -50,6 +53,7 @@
 ```
 
 ### CORS Configuration
+
 - **Development**: Allow all (`*`)
 - **Production**: Specific origins only
 - **Methods**: GET, POST, OPTIONS
@@ -59,31 +63,37 @@
 ## 📋 Pipeline Stages
 
 ### Stage 1: Scraping ✅
+
 - RolandScraper: Working
 - BossScraper: Needs data model alignment
 - Output: ProductCatalog object
 
 ### Stage 2: Validation ✅
+
 - ProductValidator: Checks individual products
 - CatalogValidator: Checks complete catalog
 - Output: ValidationReport
 
 ### Stage 3: Filtering (MISSING)
+
 - Remove invalid products
 - Filter invalid images
 - Normalize data
 
 ### Stage 4: Publishing
+
 - Save to JSON files
 - Update frontend data directory
 - Cache in memory
 
 ### Stage 5: API Serving
+
 - FastAPI endpoints
 - Proper response wrapping
 - Error handling
 
 ### Stage 6: RAG Integration
+
 - Embeddings generation
 - Document indexing
 - Query answering
