@@ -10,6 +10,7 @@ import { FiArrowLeft, FiExternalLink, FiInfo, FiBook, FiPackage, FiFile } from '
 import { MediaBar } from './MediaBar';
 import { MediaViewer } from './MediaViewer';
 import { InsightsTable } from './InsightsTable';
+import { HalileoPulse } from './HalileoPulse';
 import type { Product, ProductImage, ProductImagesObject, Specification } from '../types';
 
 export const Workbench: React.FC = () => {
@@ -84,7 +85,9 @@ export const Workbench: React.FC = () => {
    */
   const getVideos = (): string[] => {
     if (!selectedProduct) return [];
-    return (selectedProduct as any).video_urls || [];
+    const videos = (selectedProduct as any).video_urls || (selectedProduct as any).youtube_videos || (selectedProduct as any).videos || [];
+    // Filter out null/undefined values
+    return Array.isArray(videos) ? videos.filter((v): v is string => typeof v === 'string' && Boolean(v)) : [];
   };
 
   /**
@@ -92,7 +95,9 @@ export const Workbench: React.FC = () => {
    */
   const getManuals = (): string[] => {
     if (!selectedProduct) return [];
-    return (selectedProduct as any).manual_urls || (selectedProduct as any).manuals || [];
+    const manuals = (selectedProduct as any).manual_urls || (selectedProduct as any).manuals || [];
+    // Filter out null/undefined values
+    return Array.isArray(manuals) ? manuals.filter((m): m is string => typeof m === 'string' && Boolean(m)) : [];
   };
 
   /**
@@ -179,6 +184,11 @@ export const Workbench: React.FC = () => {
               {(selectedProduct.short_description || selectedProduct.description || '').substring(0, 80)}...
             </p>
           )}
+        </div>
+
+        {/* 🧠 Halileo Intelligence Pulse - Visible below header */}
+        <div className="px-5 pb-2">
+          <HalileoPulse />
         </div>
 
         {/* Main Content: Tabs + Content + MediaBar */}

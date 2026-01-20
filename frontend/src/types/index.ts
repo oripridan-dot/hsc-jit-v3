@@ -133,6 +133,9 @@ export interface Product {
     manual_path?: string;
     halilit_data?: HalilitProductData;
 
+    // Halileo Intelligence (context tags for AI guidance)
+    halileo_context?: string[];
+
     // URLs
     brand_product_url?: string;
     detail_url?: string;

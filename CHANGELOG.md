@@ -5,6 +5,7 @@ All notable changes to HSC Mission Control will be documented in this file.
 ## [3.7.2] - 2026-01-20
 
 ### Added
+
 - **Multi-Brand Scraping System**
   - Boss scraper with comprehensive data extraction (28-57 images, 12-28 specs, 6-22 manuals per product)
   - Nord scraper with comprehensive data extraction (4-16 images, 15 specs, 3-4 manuals per product)
@@ -25,6 +26,7 @@ All notable changes to HSC Mission Control will be documented in this file.
   - Document cards with file type indicators and download links
 
 ### Changed
+
 - **Data Quality Improvements**
   - Enhanced Boss/Nord scrapers to match Roland's extraction quality
   - All products now have: images (100%), videos (100%), manuals (100%)
@@ -36,6 +38,7 @@ All notable changes to HSC Mission Control will be documented in this file.
   - Improved file name extraction from URLs for better document display
 
 ### Fixed
+
 - **CORS Errors**
   - Wrapped canvas `getImageData()` in try-catch to prevent console errors
   - Added proper error handling for cross-origin image analysis
@@ -46,6 +49,7 @@ All notable changes to HSC Mission Control will be documented in this file.
   - Fixed media type handling in MediaBar (videos/docs were showing as images)
 
 ### Technical Details
+
 - Enhanced scraper extraction patterns for images, videos, specifications, and manuals
 - Added Set type imports for duplicate URL prevention
 - Improved normalizeMedia function to accept media type parameter
@@ -56,12 +60,14 @@ All notable changes to HSC Mission Control will be documented in this file.
 ## [3.7.1] - 2026-01-19
 
 ### Added
+
 - Initial Roland catalog with 99 products
 - Hierarchical navigation system (7 categories)
 - Client-side fuzzy search with Fuse.js
 - Dynamic brand theming system (WCAG AA compliant)
 
 ### Changed
+
 - Migrated from backend-heavy architecture to static JSON catalog
 - Cleaned up unused dependencies and dead code
 - Archived legacy documentation
@@ -71,6 +77,7 @@ All notable changes to HSC Mission Control will be documented in this file.
 ## [3.7.0] - 2026-01-18
 
 ### Added
+
 - Product hierarchy navigation system
 - Static catalog loader
 - Instant search implementation
@@ -78,4 +85,4 @@ All notable changes to HSC Mission Control will be documented in this file.
 
 ---
 
-*Format based on [Keep a Changelog](https://keepachangelog.com/)*
+_Format based on [Keep a Changelog](https://keepachangelog.com/)_

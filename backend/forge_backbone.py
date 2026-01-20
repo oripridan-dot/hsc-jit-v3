@@ -226,6 +226,9 @@ class HalilitCatalog:
             logger.warning(f"      No JSON files found in {self.source_dir}")
             return
         
+        # Filter out "-brand.json" and "_brand.json" files to avoid duplicates (only process catalogs)
+        catalog_files = [f for f in catalog_files if not ('_brand.json' in f.name or '-brand.json' in f.name)]
+        
         for catalog_file in catalog_files:
             try:
                 self._process_brand(catalog_file)
@@ -242,7 +245,9 @@ class HalilitCatalog:
             
             # Extract Brand Info
             brand_name = raw_data.get('brand_name') or raw_data.get('name') or catalog_file.stem.replace('_', ' ').title()
-            safe_slug = brand_name.lower().replace(" ", "-").replace(".", "").replace("&", "and")
+            # Remove "Catalog" or "Brand" suffix from brand name for slug
+            brand_name_clean = brand_name.replace(' Catalog', '').replace(' Brand', '').strip()
+            safe_slug = brand_name_clean.lower().replace(" ", "-").replace(".", "").replace("&", "and")
             products = raw_data.get('products', [])
             product_count = len(products)
             
@@ -264,10 +269,14 @@ class HalilitCatalog:
             
             # --- UPDATE MASTER INDEX ---
             self.master_index["brands"].append({
+                "id": safe_slug,
                 "name": brand_name,
                 "slug": safe_slug,
                 "count": product_count,
-                "file": f"/data/{safe_slug}.json",
+                "file": f"{safe_slug}.json",
+                "data_file": f"{safe_slug}.json",
+                "product_count": product_count,
+                "verified_count": product_count,
                 "last_updated": datetime.now().isoformat()
             })
             
@@ -334,6 +343,42 @@ class HalilitCatalog:
                     local_path = self._download_logo(product['series_logo'], logo_name)
                     product['series_logo'] = local_path
                     logger.info(f"      ⬇️  Downloaded inner logo for {product.get('name')}")
+                
+                # --- HALILEO INTELLIGENCE LAYER ---
+                # Pre-calculate context tags for the Frontend "Brain"
+                context_tags = []
+                
+                # 1. Complexity Analysis
+                features = product.get('features', [])
+                if len(features) > 10:
+                    context_tags.append('complex_device')
+                
+                # 2. Category Intelligence
+                cat_lower = product.get('category', '').lower()
+                if 'synthesizer' in cat_lower or 'workstation' in cat_lower:
+                    context_tags.append('needs_manual')
+                    context_tags.append('sound_design_focused')
+                elif 'piano' in cat_lower:
+                    context_tags.append('action_focused')
+                elif 'drum' in cat_lower:
+                    context_tags.append('performance_focused')
+                
+                # 3. Media Intelligence
+                if product.get('videos') or product.get('youtube_videos'):
+                    context_tags.append('has_tutorials')
+                
+                if product.get('manuals') and len(product.get('manuals', [])) > 0:
+                    context_tags.append('has_manual')
+                
+                # 4. Product Tier (based on features & specs)
+                specs_count = len(product.get('specs', [])) + len(product.get('specifications', []))
+                if specs_count > 20:
+                    context_tags.append('pro_tier')
+                elif specs_count < 5:
+                    context_tags.append('entry_tier')
+                
+                # Store intelligence tags
+                product['halileo_context'] = context_tags
         
         # Second pass: Build hierarchical category tree
         refined['hierarchy'] = self._build_category_hierarchy(refined.get('products', []))

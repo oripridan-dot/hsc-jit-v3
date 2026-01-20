@@ -1,52 +1,1401 @@
 {
-  "build_timestamp": "2026-01-20T11:32:18.096131",
-  "version": "3.7-Halilit",
-  "total_products": 117,
-  "total_verified": 0,
+  "metadata": {
+    "version": "3.7-Halilit",
+    "generated_at": "2026-01-20T12:48:04.293599",
+    "environment": "static_production",
+    "note": "Golden Record - Pre-calculated, Static, Fast",
+    "total_brands": 4
+  },
   "brands": [
     {
       "id": "moog",
-      "name": "Moog Music",
-      "logo_url": null,
-      "website": "https://www.moogmusic.com",
+      "name": "Moog Catalog",
+      "slug": "moog",
+      "count": 0,
+      "file": "moog.json",
+      "data_file": "moog.json",
       "product_count": 0,
       "verified_count": 0,
-      "description": "Legendary manufacturer of analog synthesizers and electronic musical instruments",
-      "brand_color": null,
-      "data_file": "catalogs_brand/moog.json"
+      "last_updated": "2026-01-20T12:48:04.294702"
     },
     {
       "id": "boss",
-      "name": "Boss Corporation",
-      "logo_url": null,
-      "website": "https://www.boss.info",
+      "name": "Boss Catalog",
+      "slug": "boss",
+      "count": 9,
+      "file": "boss.json",
+      "data_file": "boss.json",
       "product_count": 9,
-      "verified_count": 0,
-      "description": "Leading manufacturer of guitar effects and audio equipment",
-      "brand_color": null,
-      "data_file": "catalogs_brand/boss.json"
+      "verified_count": 9,
+      "last_updated": "2026-01-20T12:48:04.306298"
     },
     {
       "id": "roland",
-      "name": "Roland Corporation",
-      "logo_url": null,
-      "website": "https://www.roland.com",
+      "name": "Roland Catalog",
+      "slug": "roland",
+      "count": 99,
+      "file": "roland.json",
+      "data_file": "roland.json",
       "product_count": 99,
-      "verified_count": 0,
-      "description": "World leader in electronic musical instruments",
-      "brand_color": null,
-      "data_file": "catalogs_brand/roland.json"
+      "verified_count": 99,
+      "last_updated": "2026-01-20T12:48:04.377828"
     },
     {
       "id": "nord",
-      "name": "Nord Keyboards",
-      "logo_url": null,
-      "website": "https://www.nordkeyboards.com",
+      "name": "Nord Catalog",
+      "slug": "nord",
+      "count": 9,
+      "file": "nord.json",
+      "data_file": "nord.json",
       "product_count": 9,
-      "verified_count": 0,
-      "description": "Premium manufacturer of stage keyboards, pianos, and synthesizers with iconic red design",
-      "brand_color": null,
-      "data_file": "catalogs_brand/nord.json"
+      "verified_count": 9,
+      "last_updated": "2026-01-20T12:48:04.383757"
     }
-  ]
+  ],
+  "search_graph": [
+    {
+      "id": "boss-gx-1b",
+      "label": "GX-1BBass Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Multi-Effects",
+      "subcategory": null,
+      "keywords": [
+        "Ultra-portable amp/effects processor for bass with premium BOSS sound and features",
+        "Authentic tube amplifier tone and touch response with AIRD technology",
+        "Straightforward operation with a color display and intuitive effect category buttons",
+        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
+        "Explore 16 amplifier types and over 130 BOSS effects"
+      ],
+      "description": "Your Ultimate Bass Companion\n\nThe GX-1B delivers professional-grade sound and features in an ultra-p"
+    },
+    {
+      "id": "boss-xs-100",
+      "label": "XS-100Poly Shifter",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Effects Pedals",
+      "subcategory": null,
+      "keywords": [
+        "Advanced pitch-shifting workstation with deep control options and an eight-octave range",
+        "Total pitch control for guitar and bass",
+        "Class-leading pitch shifting quality realized with new BOSS algorithms",
+        "Clear response and natural feel that retains the fundamental sound character",
+        "Smooth onboard pedal with integrated toe switch provides linear pitch control across +/- four octaves"
+      ],
+      "description": "Unrivaled Dynamic Pitch Expression\n\nThe XS-100 Poly Shifter redefines pedal-based pitch shifting wit"
+    },
+    {
+      "id": "boss-xs-1",
+      "label": "XS-1Poly Shifter",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Effects Pedals",
+      "subcategory": null,
+      "keywords": [
+        "Class-leading pitch shifting quality realized with new BOSS algorithms",
+        "Instantly change the pitch of a guitar, bass, or other instrument",
+        "Clear response and natural feel that retains the fundamental sound character",
+        "Change pitch across +/- seven semitones or +/- three octaves",
+        "Balance knob adjusts the mix between the effect and direct sound"
+      ],
+      "description": "Rapid Retuning, Flawless Sound\n\nThe XS-1 Poly Shifter delivers instant retuning in a convenient, com"
+    },
+    {
+      "id": "boss-eurus_gs-1",
+      "label": "EURUS GS-1Electronic Guitar",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Guitar Synthesizers",
+      "subcategory": null,
+      "keywords": [
+        "Cutting-edge BOSS electronic guitar, crafted in Japan for bold sound innovators",
+        "Seamlessly switch between synthesizer and regular guitar sounds",
+        "Six onboard memories for storing different synth sounds",
+        "Premium playability with 24-fret neck, compound radius rosewood fingerboard, and offset double-cutaway body design",
+        "Two custom-designed pickups and five-way selector switch"
+      ],
+      "description": "A Bold New Voice for Sound Innovators\n\nEvery guitarist is on a highly personal tone journey, continu"
+    },
+    {
+      "id": "boss-gt-1000",
+      "label": "GT-1000Guitar Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Multi-Effects",
+      "subcategory": null,
+      "keywords": [
+        "Flagship amp/effects processor with uncompromising sound quality and unmatched expressiveness",
+        "Industry-leading 32-bit AD/DA, 32-bit floating-point processing, and 96 kHz sampling rate throughout",
+        "Highly expressive amplifiers, meticulously crafted with AIRD",
+        "Massive selection of onboard BOSS effects, including MDP effects and the latest algorithms",
+        "Dedicated mode for bass guitar applications"
+      ],
+      "description": "Industry-Leading Tone with Breakthrough BOSS Technology\n\nDelivering unmatched sound quality and musi"
+    },
+    {
+      "id": "boss-nextone_special",
+      "label": "Nextone SpecialGuitar Amplifier",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "BOSS Amplifiers",
+      "subcategory": null,
+      "keywords": [
+        "Professional performance amplifier with 80 watts of power",
+        "Authentic tube amp sound and feel, realized with BOSS’s continually evolving Tube Logic approach",
+        "Enhanced reactive drive power amp circuitry and carefully selected components throughout",
+        "Custom Waza B12W 12-inch speaker delivers classic “blue bell” tone with rich lows, mellow mids, and clear highs",
+        "Four analog Class AB power amp circuits, selectable for each channel: 6V6, 6L6, EL84, and EL34"
+      ],
+      "description": "A Modern Boutique Experience for Serious Players\n\nFueled by BOSS’s acclaimed Tube Logic approach, th"
+    },
+    {
+      "id": "boss-gx-1",
+      "label": "GX-1Guitar Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Multi-Effects",
+      "subcategory": null,
+      "keywords": [
+        "Ultra-portable amp/effects processor for guitar with premium BOSS sound and features",
+        "Authentic tube amplifier tone and touch response with AIRD technology",
+        "Straightforward operation with a color display and intuitive effect category buttons",
+        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
+        "Explore 23 amplifier types and over 140 BOSS effects"
+      ],
+      "description": "Your Ultimate Guitar Companion\n\nThe GX-1 delivers professional-grade sound and features in an ultra-"
+    },
+    {
+      "id": "boss-gx-10",
+      "label": "GX-10Guitar Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Multi-Effects",
+      "subcategory": null,
+      "keywords": [
+        "Compact amp/effects processor for guitar and bass",
+        "The same sound engine and color touch display as the GX-100 in a portable, travel-ready design",
+        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
+        "Authentic tube amplifier tone and touch response with AIRD technology",
+        "32 amplifier types and 170 BOSS effects"
+      ],
+      "description": "Colorful Tones, Portable Design\n\nPlayers everywhere love the GX-100 for its streamlined design, free"
+    },
+    {
+      "id": "boss-px-1",
+      "label": "PX-1Plugout FX",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Effects Pedals",
+      "subcategory": null,
+      "keywords": [
+        "Timeless BOSS compact pedals in an innovative hardware platform",
+        "Instantly reconfigure the pedal to use one effect from an onboard library of up to 16 types",
+        "Comes with 16 effects: OD-1, SP-1, PH-1, SG-1, CS-1, TW-1, SD-1, DS-1, CE-2, BF-2, PN-2, OC-2, PS-2, VB-2, DD-2, and DF-2",
+        "Additional effects available over time with Model Pass purchases in the BOSS Effect Loader app",
+        "Authentic tone and response, realized with powerful DSP dedicated to one effect at a time"
+      ],
+      "description": "Timeless Effects, Infinite Inspiration\n\nThe PX-1 Plugout FX is an innovative hardware platform that "
+    },
+    {
+      "id": "roland-aerophone_brisa",
+      "label": "Aerophone Brisa\nDigital Wind Instrument",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Wind Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Advanced digital wind instrument with the styling and key layout of a traditional flute",
+        "Lightweight and elegant design with an onboard display and intuitive controls",
+        "Dual breath sensor system, moisture band, and adjustable head joint",
+        "Newly developed SuperNATURAL Winds sound engine powered by the latest Aerophone advancements",
+        "100 onboard sounds, including flute-family instruments, wind instruments such as saxophone, clarinet, and trumpet, plus synthesizers, world instruments, drums, and more"
+      ],
+      "description": "Meet Aerophone Brisa, an exciting evolution of the growing Roland Aerophone platform. This elegant i"
+    },
+    {
+      "id": "roland-bridge_cast",
+      "label": "BRIDGE CAST",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Professional audio streaming interface and mixer designed for online gamers",
+        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
+        "Create independent mixes for you and the online audience with dual audio busses",
+        "USB-C connectivity with Windows and Mac computers and mobile devices",
+        "Also works with the Sony PlayStation®5 console and Nintendo Switch*"
+      ],
+      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for premium li"
+    },
+    {
+      "id": "roland-bridge_cast_one",
+      "label": "BRIDGE CAST ONE",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Compact desktop streaming interface with core BRIDGE CAST audio features",
+        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
+        "Create independent mixes for you and the online audience with dual audio busses",
+        "USB-C connectivity with Windows and Mac computers, the Sony PlayStation®5 console,* and Nintendo Switch",
+        "High gain (+75 dB) XLR microphone preamp with phantom power for broadcast-grade mics"
+      ],
+      "description": "Level up your gaming and streaming sound with BRIDGE CAST ONE, a compact livestreaming audio mixer w"
+    },
+    {
+      "id": "roland-dj-707m",
+      "label": "DJ-707M\nDJ Controller",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "DJs don’t just play music—they’re also often the MC, livestream producer, sound tech, and remixer, a"
+    },
+    {
+      "id": "roland-ev-5",
+      "label": "EV-5",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-fp-e50",
+      "label": "FP-E50",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Digital Pianos",
+      "subcategory": null,
+      "keywords": [
+        "Versatile piano and entertainment instrument filled with advanced Roland technologies",
+        "Authentic grand piano sound and touch with Roland’s SuperNATURAL Piano sound engine and PHA-4 Standard 88-note hammer-action keyboard",
+        "Expandable ZEN-Core sound engine with 1018 onboard sounds, including synthesizers, orchestral and world instruments, guitar, bass, drums, and more",
+        "Interactive accompaniments with professional styles created by top composers and performers",
+        "Expand your creative range with Z-Style Packs, EXZ Wave Expansions, and SDZ Sound Packs on Roland Cloud"
+      ],
+      "description": "The FP-E50 brings you a premium digital piano experience—and so much more. This fun portable instrum"
+    },
+    {
+      "id": "roland-gokeys_3",
+      "label": "GO:KEYS 3\nMusic Creation Keyboard",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "61-note keyboard with expressive touch sensitivity",
+        "ZEN-Core engine with over 1000 Roland sounds that have influenced modern music for five decades",
+        "Auto-accompaniment with over 200 onboard music styles",
+        "Chord sequencer with user editing features and over 300 ready-to-play presets",
+        "Play anywhere with built-in stereo speakers"
+      ],
+      "description": "Do you have a passion for music? GO:KEYS 3 makes it easy to go from being a fan to an active music c"
+    },
+    {
+      "id": "roland-hp700_series",
+      "label": "HP700 SERIES\nHP704｜HP702",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Authentic acoustic tone from Roland’s SuperNATURAL Piano Modeling technology",
+        "Express yourself with the PHA-50 Keyboard and Progressive Damper Action pedals",
+        "Acoustic Projection System with four speakers that work together to recreate the deep, rich sound field of an acoustic piano",
+        "Headphones 3D Ambience for an immersive and realistic playing experience when practicing with headphones",
+        "Includes a large and versatile collection of non-piano sounds such as electric piano, strings, organ, and many others"
+      ],
+      "description": "Playing the piano is one of life’s most rewarding experiences, whether teaching yourself or watching"
+    },
+    {
+      "id": "roland-kpd-70",
+      "label": "KPD-70",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-kpd-90",
+      "label": "KPD-90",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-ksc-70",
+      "label": "KSC-70",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-ksc-72",
+      "label": "KSC-72",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-ksc-90",
+      "label": "KSC-90",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-kscfp10",
+      "label": "KSCFP10",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-ksfe50",
+      "label": "KSFE50",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "If you have questions about operating your Roland product, please check our Knowledge Base for answe"
+    },
+    {
+      "id": "roland-mc-101",
+      "label": "MC-101\nGROOVEBOX",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Produce and perform music anywhere, anytime—without clutter or complications. The MC-101 GROOVEBOX h"
+    },
+    {
+      "id": "roland-mc-707",
+      "label": "MC-707\nGROOVEBOX",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The MC-707 GROOVEBOX has everything you need to create a song or perform a live set without a comput"
+    },
+    {
+      "id": "roland-mt-90u",
+      "label": "MT-90U",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Multi-Format File Playback\n\nThe MT-90U loads and plays the most popular music-file formats: Standard MIDI File, MP3 and .WAV. You can even change the tempo and pitch of your files, both audio and MIDI. It’s great for sing-along sessions, or for music students who want to slow down fast, complicated licks.",
+        "USB Compliant\n\nEquipped with a USB port, the MT-90U makes the file-import process quick and easy. Simply load your favorite songs from a USB memory key or connect external devices such as a USB floppy-disk drive or USB-CD drive.",
+        "Wireless Control\n\nControl the MT-90U from across the room with the wireless remote controller, included. The backlit LCD is easy to see from a distance; it even displays song title, tempo and lyrics of compatible SMF data disks during karaoke sessions.",
+        "Travel Friendly\n\nPortable and fun to use, the MT-90U features icon-based buttons and a backlit LCD, making common operations such as playing songs, muting parts, or changing tempo and musical key easy. Its lightweight design and a built-in grip handle make transport a breeze."
+      ],
+      "description": "The MT-90U loads and plays the most popular music-file formats: Standard MIDI File, MP3 and .WAV. Yo"
+    },
+    {
+      "id": "roland-p-6",
+      "label": "AIRA COMPACT",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Pocket-size sampler powered by cutting-edge Roland technology",
+        "Built-in mic for quick sample capture",
+        "Chop function for slicing samples into segments for easy playback from the onboard keyboard",
+        "Step Sampling to quickly create individual split samples assigned to a single pad and playable on the keyboard",
+        "Resample internal audio to create new sounds and capture custom loops"
+      ],
+      "description": "The P-6 Creative Sampler packs renowned Roland sampling technology into a pocket-size gadget with so"
+    },
+    {
+      "id": "roland-rc_7x7-tr8",
+      "label": "7X7-TR8",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Introducing the 7X7-TR8 Drum Machine Expansion.\n\nTake a behind-the-scenes look at the creation of th"
+    },
+    {
+      "id": "roland-rc_dancing_in_the_deep",
+      "label": "Dancing in the Deep",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud TR-8S Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_dbmix_vol_01_vintage_drums",
+      "label": "DBMIX Vol. 01: Vintage Drums",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "This collection brings you two timeless vintage drum sets that were extremely popular among pro drum"
+    },
+    {
+      "id": "roland-rc_dbmix_vol_02_dw_collector_s_series_maple",
+      "label": "DBMIX Vol. 02: DW Collector’s Series Maple",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Collector’s Series Maple set is a Drum Workshop classic, trusted by pro drummers for decades."
+    },
+    {
+      "id": "roland-rc_deep_motion",
+      "label": "Deep Motion",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud TR-8S Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_drum_machine_collection",
+      "label": "Drum Machine Collection",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [
+        "Five genre-defining Roland rhythm instruments in one value-priced collection",
+        "Authentic recreations of the TR-808, TR-606, TR-909, TR-707, and TR-727",
+        "Detailed resizeable interfaces give the feel of working with the vintage hardware",
+        "Powered by Roland’s ACB circuit modeling technology, enhanced with new sound-shaping options",
+        "Extended parameters and onboard effects to shape and modernize your sound"
+      ],
+      "description": "Roland drum machines have inspired artists and defined genres for decades. With the Drum Machine Col"
+    },
+    {
+      "id": "roland-rc_dw_50th_anniversary_drummer_position",
+      "label": "DW 50th Anniversary: Drummer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW 50th Anniversary kit is an artisan-grade drum set with hybrid shells constructed from a uniqu"
+    },
+    {
+      "id": "roland-rc_dw_50th_anniversary_producer_position",
+      "label": "DW 50th Anniversary: Producer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW 50th Anniversary kit is an artisan-grade drum set with hybrid shells constructed from a uniqu"
+    },
+    {
+      "id": "roland-rc_dw_design_series_acrylic_drummer_position",
+      "label": "DW Design Series Acrylic: Drummer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Design Series Acrylic kit delivers the bright and fat attack, focused tone, and controlled su"
+    },
+    {
+      "id": "roland-rc_dw_design_series_acrylic_producer_position",
+      "label": "DW Design Series Acrylic: Producer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Design Series Acrylic kit delivers the bright and fat attack, focused tone, and controlled su"
+    },
+    {
+      "id": "roland-rc_dw_jazz_series_maple_gum_drummer_position",
+      "label": "DW Jazz Series Maple Gum: Drummer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Jazz Series Maple Gum kit features seven-ply hybrid gum shells that start with a three-ply co"
+    },
+    {
+      "id": "roland-rc_dw_jazz_series_maple_gum_producer_position",
+      "label": "DW Jazz Series Maple Gum: Producer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Jazz Series Maple Gum kit features seven-ply hybrid gum shells that start with a three-ply co"
+    },
+    {
+      "id": "roland-rc_dw_pure_cherry_drummer_position",
+      "label": "DW Collector’s Series Pure Cherry: Drummer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Collector’s Series Pure Cherry kit features a crisp attack with rich midrange and balanced de"
+    },
+    {
+      "id": "roland-rc_dw_pure_cherry_producer_position",
+      "label": "DW Collector’s Series Pure Cherry: Producer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Collector’s Series Pure Cherry kit features a crisp attack with rich midrange and balanced de"
+    },
+    {
+      "id": "roland-rc_dw_pure_maple_drummer_position",
+      "label": "DW Collector’s Series Pure Maple: Drummer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Collector’s Series Pure Maple is a custom drum set built with Drum Workshop’s patented 333 (9"
+    },
+    {
+      "id": "roland-rc_dw_pure_maple_producer_position",
+      "label": "DW Collector’s Series Pure Maple: Producer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Collector’s Series Pure Maple is a custom drum set built with Drum Workshop’s patented 333 (9"
+    },
+    {
+      "id": "roland-rc_dw_pure_purpleheart_drummer_position",
+      "label": "DW Collector’s Series Pure Purpleheart: Drummer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Collector’s Series Pure Purpleheart kit features drums made from the densest tonewood used by"
+    },
+    {
+      "id": "roland-rc_dw_pure_purpleheart_producer_position",
+      "label": "DW Collector’s Series Pure Purpleheart: Producer Position",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The DW Collector’s Series Pure Purpleheart kit features drums made from the densest tonewood used by"
+    },
+    {
+      "id": "roland-rc_efx_cymbal_collection_vol_01",
+      "label": "EFX Cymbal Collection Vol. 01",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "American EFX crash 18\"\nCanadian trash crash 18\"\nGerman vintage trash crash 18\"\nSwiss trash crash 14\""
+    },
+    {
+      "id": "roland-rc_electronic___percussion_vol_01",
+      "label": "Electronic & Percussion Vol. 01",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "TR-808\nTR-909\nTR-707\nCR-78\nTR-909 Inspire\nTexMex FX\nR&B Ballad\nMellow R&B\nThe Big One\nDetroit\nDancin"
+    },
+    {
+      "id": "roland-rc_flax_pack",
+      "label": "Flax Pack",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud TR-8S Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_fractured_horizons",
+      "label": "Fractured Horizons",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud TR-8S Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_futurepop",
+      "label": "Futurepop",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud MC/MV Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_galaxias",
+      "label": "GALAXIAS",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "GALAXIAS brings 50 years of legendary Roland synths and drum machines together into one powerful Sup"
+    },
+    {
+      "id": "roland-rc_german_cymbal_collection_vol_01",
+      "label": "German Cymbal Collection Vol. 01",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Hi-Hats—14\" vintage sand, 15\" dry medium-thin sand\nRide Cymbal—21\" dark heavy\nCrash Cymbals—17\" medi"
+    },
+    {
+      "id": "roland-rc_greatest_metal_tracks_vol_01",
+      "label": "Greatest Metal Tracks Vol. 01",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "One Eye Open\nModeled on the track “Enter Sandman” by Metallica, as played by Lars Ulrich on the band"
+    },
+    {
+      "id": "roland-rc_greatest_rock_tracks_vol_01",
+      "label": "Greatest Rock Tracks Vol. 01",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Entertain Us\nModeled on Dave Grohl’s drums from the Nirvana album Nevermind, produced by Butch Vig. "
+    },
+    {
+      "id": "roland-rc_jupiter-8",
+      "label": "JUPITER-8",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Synthesizers",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Released in 1981, the JUPITER-8 is one of the most revered and sought-after polysynths of all time. "
+    },
+    {
+      "id": "roland-rc_lo-fi_throwback",
+      "label": "Lo-Fi Throwback",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud MC/MV Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_modern_afrobeats",
+      "label": "Modern Afrobeats",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud MC/MV Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_reggaeton_rhythms",
+      "label": "Reggaeton Rhythms",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud MC/MV Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_roland_cloud_manager",
+      "label": "ROLAND CLOUD MANAGER\nManagement Software",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "All your Roland instruments and creative tools, always up to date",
+        "Set-it-and-forget-it management",
+        "Install Roland virtual instruments and effects with a single click",
+        "Download free and premium sound content for hardware and software instruments",
+        "Access editors and companion apps for Roland hardware"
+      ],
+      "description": "Roland Cloud Manager opens up a world of new capabilities for your Roland hardware or software instr"
+    },
+    {
+      "id": "roland-rc_shake_it_down",
+      "label": "Shake It Down",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud TR-8S Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_slingerland_vintage_1958",
+      "label": "Slingerland Vintage 1958",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "This 1958 Slingerland Radio King kit is particularly great for jazz, R&B, and singer-songwriter appl"
+    },
+    {
+      "id": "roland-rc_spd-sx_practice_pack_70s_rock_vol_1",
+      "label": "Practice Pack: ’70s Rock Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Practice along with songs inspired by the most influential music of all time with Practice Pack: ’70"
+    },
+    {
+      "id": "roland-rc_spd-sx_practice_pack_80s_rock_vol_1",
+      "label": "Practice Pack: ’80s Rock Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Sharpen your drumming skills and practice along with songs inspired by the most influential music of"
+    },
+    {
+      "id": "roland-rc_spd-sx_practice_pack_90s_rock_vol_1",
+      "label": "Practice Pack: ’90s Rock Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Practice along with songs inspired by legendary 1990s rock bands with Practice Pack: ’90s Rock Vol. "
+    },
+    {
+      "id": "roland-rc_spd-sx_practice_pack_city_soul",
+      "label": "Practice Pack: City Soul",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Refine your soul and R&B drumming techniques with Practice Pack: City Soul, a premium kit pack for t"
+    },
+    {
+      "id": "roland-rc_spd-sx_practice_pack_lo-fi_chilled_hip-hop",
+      "label": "Practice Pack: Lo-Fi Chilled Hip-Hop",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Chill in the pocket with SPD-SX and SPD-SX PRO Practice Pack: Lo-Fi Chilled Hip-Hop.\n\nPractice Packs"
+    },
+    {
+      "id": "roland-rc_spd-sx_practice_pack_melodic_ambience_vol_1",
+      "label": "Practice Pack: Melodic Ambience Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Upward Cascade\nA melancholic kit with downbeat loops that feature tremolo violins and ascending phra"
+    },
+    {
+      "id": "roland-rc_spd-sx_practice_pack_modern_hits_vol_1",
+      "label": "Practice Pack: Modern Hits Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Be Just Fine\nAudio tracks inspired by “Happy” by Pharrell Williams.\n\nIn the City\nAudio tracks inspir"
+    },
+    {
+      "id": "roland-rc_spd-sx_pro_app",
+      "label": "SPD-SX PRO APP",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "It’s never been easier to get samples in and out of your pad. Just connect the SPD-SX PRO to your co"
+    },
+    {
+      "id": "roland-rc_spd-sx_sample_pack_world_percussion_vol_1",
+      "label": "Sample Pack: World Percussion Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Guitar Products",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Timbales Kit\nA Latin kit with timbales and complementary percussion. Includes a mambo-style accompan"
+    },
+    {
+      "id": "roland-rc_swiss_cymbal_collection_vol_01",
+      "label": "Swiss Cymbal Collection Vol. 01",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Hi-Hat—14\" modern hi-hat\nRide Cymbals—20\" rock ride, 22\" modern ride\nCrash Cymbals—15\" medium thin, "
+    },
+    {
+      "id": "roland-rc_swiss_cymbal_collection_vol_02",
+      "label": "Swiss Cymbal Collection Vol. 02",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Hi-Hat—14\" heavy hi-hat\nRide Cymbals—18\" dark ride, 22\" power ride\nCrash Cymbals—16\" rock, 18\" rock,"
+    },
+    {
+      "id": "roland-rc_synthetic_connections",
+      "label": "Synthetic Connections",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Synthesizers",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Roland Cloud TR-8S Production Packs are premium collections of royalty-free content optimized for th"
+    },
+    {
+      "id": "roland-rc_system-1",
+      "label": "SYSTEM-1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "A true desert island synth, the SYSTEM-1 fuses classic and utterly modern synth tones. Spend a littl"
+    },
+    {
+      "id": "roland-rc_system-8",
+      "label": "SYSTEM-8",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The SYSTEM-8 draws on our deep history of synthesizer research and development, with circuit-accurat"
+    },
+    {
+      "id": "roland-rc_tb-303",
+      "label": "TB-303",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "64 patterns per bank",
+        "64 patches per bank",
+        "48 preset patches and 32 preset patterns included",
+        "Eight variations per pattern",
+        "New graphic edit window for step input, pattern edit, and pattern creation"
+      ],
+      "description": "303 DAY: DJ Pierre and the Roland TB-303\n\nSome instruments are so groundbreaking they create entire "
+    },
+    {
+      "id": "roland-rc_td-17_artist_kits_01_craig_blundell",
+      "label": "TD-17 Artist Kits 01: Craig Blundell",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "CB Slam\nThis powerful and punchy kit features EQ purposefully tuned to bring the drums right to the "
+    },
+    {
+      "id": "roland-rc_td-17_artist_kits_02_anika_nilles",
+      "label": "TD-17 Artist Kits 02: Anika Nilles",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "AN-Dark\nWith this kit, Anika’s recreates her favorite acoustic drum tuning in V-Drums form. Warm and"
+    },
+    {
+      "id": "roland-rc_td-17_artist_kits_03_damien_schmitt",
+      "label": "TD-17 Artist Kits 03: Damien Schmitt",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Schmitt Kit\nDamien processed this kit exactly how he processes his acoustic kit in the studio. The k"
+    },
+    {
+      "id": "roland-rc_td-17_artist_kits_04_oli_wiseman",
+      "label": "TD-17 Artist Kits 04: Oli Wiseman",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Trap Step\nThis mash-up kit combines a high-energy dubstep feel with a 140 BPM percussion loop that h"
+    },
+    {
+      "id": "roland-rc_td-17_artist_kits_05_kaz_rodriguez",
+      "label": "TD-17 Artist Kits 05: Kaz Rodriguez",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Kanobo Kit\nThe electronic music of Bonobo inspired this kit. As you play along with the loops, the h"
+    },
+    {
+      "id": "roland-rc_td-17_artist_kits_06_koen_herfst",
+      "label": "TD-17 Artist Kits 06: Koen Herfst",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Akoenstick\nThis kit recreates Koen’s favorite acoustic drums, custom-tuned in the module with his st"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_ambient_drums_vol_1",
+      "label": "TD-17 Kit Pack: Ambient Drums Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Transport your drumming to world-class spaces with Ambient Drums Vol. 1, a premium collection of kit"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_assorted_genres_vol_1",
+      "label": "TD-17 Kit Pack: Assorted Genres Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Power Birch\nLeveraging the rich and powerful characteristics of birch shells, this flexible kit fits"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_greatest_funk_r_b_tracks_vol_1",
+      "label": "TD-17 Kit Pack: Greatest Funk/R&B Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Play with the sounds behind the most influential groove-driven music from the ’70s, ’80s, and ’90s w"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_greatest_funk_r_b_tracks_vol_2",
+      "label": "TD-17 Kit Pack: Greatest Funk/R&B Tracks Vol. 2",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Dance 2 It\nThis kit emulates the drum sound of “Dance to the Music” by Sly and the Family Stone, a c"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_greatest_metal_tracks_vol_1",
+      "label": "TD-17 Kit Pack: Greatest Metal Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Drum with Greatest Metal Vol. 1, a hard-hitting collection of drum kits and custom layered samples f"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_greatest_metal_tracks_vol_2",
+      "label": "TD-17 Kit Pack: Greatest Metal Tracks Vol. 2",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Texas Metal\nModeled on “Cowboys from Hell” by Pantera, as played by Vinnie Paul on the band’s major "
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_greatest_rock_tracks_vol_1",
+      "label": "TD-17 Kit Pack: Greatest Rock Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Entertain Us\nModeled on Dave Grohl’s drums from the Nirvana album Nevermind, produced by Butch Vig. "
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_greatest_rock_tracks_vol_2",
+      "label": "TD-17 Kit Pack: Greatest Rock Tracks Vol. 2",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Take Me Home\nModeled on the drums from “Paradise City,” as played by Steven Adler on Appetite for De"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_greatest_rock_tracks_vol_3",
+      "label": "TD-17 Kit Pack: Greatest Rock Tracks Vol. 3",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "CrackinUp\nModeled on Tré Cool’s high-intensity drum sound from “Basket Case” on Dookie, Green Day’s "
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_instrumental_tracks_vol_1",
+      "label": "TD-17 Kit Pack: Instrumental Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Heavy Boots\nModeled on the drum sound from “Led Boots” on Jeff Beck’s Wired album from 1976. This tr"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_preset_kits",
+      "label": "TD-17 Kit Pack: Preset Kits",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "BigWoodShell\nAcoustic\nShallow Mini\nRock\nWarm Jazz\nKickIt&Dance\nBouncyGroove\nSpeed Metal\n80s Revival\n"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_timeless_pop_tracks_vol_1",
+      "label": "TD-17 Kit Pack: Timeless Pop Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Drum along with multiple generations of enduring tunes using Timeless Pop Tracks Vol. 1, a premium c"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_timeless_pop_tracks_vol_2",
+      "label": "TD-17 Kit Pack: Timeless Pop Tracks Vol. 2",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Sha-La-La-La\nModeled on the drum sound from “Yesterday Once More,” a 1973 worldwide hit from the Now"
+    },
+    {
+      "id": "roland-rc_td-17_kit_pack_upfront_drums_vol_1",
+      "label": "TD-17 Kit Pack: Upfront Drums Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Studio Funk\nThis kit features a poppy brass snare and maple toms processed with punchy lo-fi compres"
+    },
+    {
+      "id": "roland-rc_td-17_version_2_update",
+      "label": "TD-17 Version 2 Update",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "The free Roland Cloud Version 2 update for TD-17 drum kits adds an array of new features and enhance"
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_ambient_drums_vol_1",
+      "label": "TD-27 Kit Pack: Ambient Drums Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Transport your drumming to world-class spaces with Ambient Drums Vol. 1, a premium collection of kit"
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_assorted_genres_vol_1",
+      "label": "TD-27 Kit Pack: Assorted Genres Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Vintage 24”\nWith its open 24” kick drum and ’60s-era U.S. snare, this retro kit has the perfect vibe"
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_greatest_funk_r_b_tracks_vol_1",
+      "label": "TD-27 Kit Pack: Greatest Funk/R&B Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Play with the sounds behind the most influential groove-driven music from the ’70s, ’80s, and ’90s w"
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_greatest_funk_r_b_tracks_vol_2",
+      "label": "TD-27 Kit Pack: Greatest Funk/R&B Tracks Vol. 2",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Dance 2 It\nThis kit emulates the drum sound of “Dance to the Music” by Sly and the Family Stone, a c"
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_greatest_metal_tracks_vol_1",
+      "label": "TD-27 Kit Pack: Greatest Metal Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Jam along with Greatest Metal Vol. 1, a hard-hitting collection of drum kits and custom layered samp"
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_greatest_metal_tracks_vol_2",
+      "label": "TD-27 Kit Pack: Greatest Metal Tracks Vol. 2",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Texas Metal\nModeled on “Cowboys from Hell” by Pantera, as played by Vinnie Paul on the band’s major "
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_greatest_rock_tracks_vol_1",
+      "label": "TD-27 Kit Pack: Greatest Rock Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Entertain Us\nModeled on Dave Grohl’s drums from the Nirvana album Nevermind, produced by Butch Vig. "
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_greatest_rock_tracks_vol_2",
+      "label": "TD-27 Kit Pack: Greatest Rock Tracks Vol. 2",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Take Me Home\nModeled on the drums from “Paradise City,” as played by Steven Adler on Appetite for De"
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_greatest_rock_tracks_vol_3",
+      "label": "TD-27 Kit Pack: Greatest Rock Tracks Vol. 3",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "CrackinUp\nModeled on Tré Cool’s high-intensity drum sound from “Basket Case” on Dookie, Green Day’s "
+    },
+    {
+      "id": "roland-rc_td-27_kit_pack_instrumental_tracks_vol_1",
+      "label": "TD-27 Kit Pack: Instrumental Tracks Vol. 1",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Electronic Drums",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Heavy Boots\nModeled on the drum sound from “Led Boots” on Jeff Beck’s Wired album from 1976. This tr"
+    },
+    {
+      "id": "nord-nord-drum-3p",
+      "label": "Nord Drum 3P",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Drum",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-stage-4",
+      "label": "Nord Stage 4",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Stage",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-electro-6",
+      "label": "Nord Electro 6",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Electro",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-wave-2",
+      "label": "Nord Wave 2",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Wave",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-electro-7",
+      "label": "Nord Electro 7",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Electro",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-lead-a1",
+      "label": "Nord Lead A1",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Lead",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-organ-3",
+      "label": "Nord Organ 3",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Organ",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-piano-6",
+      "label": "Nord Piano 6",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Piano",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-grand-2",
+      "label": "Nord Grand",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Grand",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    }
+  ],
+  "total_products": 117
 }

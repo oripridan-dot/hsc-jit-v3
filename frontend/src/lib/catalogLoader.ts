@@ -91,7 +91,7 @@ class CatalogLoader {
         this.brandCatalogs.delete(id);
         console.log(`🔄 Brand "${id}" updated, will reload on next access`);
       }
-      
+
       // Notify any listeners
       this.changeCallbacks.forEach(cb => cb(type, id));
     });
@@ -215,6 +215,7 @@ class CatalogLoader {
     console.log(`📦 Loading brand: ${brandId} from ${brandEntry.data_file}`);
     const response = await fetch(`/data/${brandEntry.data_file}?v=${Date.now()}`);
     if (!response.ok) {
+      console.error(`❌ Failed to load brand ${brandId}: HTTP ${response.status}`);
       throw new Error(`Failed to load brand: ${brandId}`);
     }
 
