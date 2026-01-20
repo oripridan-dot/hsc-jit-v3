@@ -8,7 +8,7 @@ A modern, high-performance product catalog and support system for Roland and Bos
 
 ## 🌟 What's Inside
 
-- ✅ **226 Total Products** - 29 Roland + 197 Boss fully cataloged
+- ✅ **226 Total Products** - 29 Roland (verified) + 197 Boss (scraped)
 - ⚡ **Instant Search** - Sub-50ms fuzzy search with Fuse.js
 - 🎨 **Dynamic Theming** - Brand-aware color adaptation (WCAG AA)
 - 📊 **Hierarchical Navigation** - Automatic category tree generation
@@ -130,16 +130,23 @@ hsc-jit-v3/
 
 ```json
 {
-  "build_timestamp": "2026-01-19T23:42:00.000Z",
+  "build_timestamp": "2026-01-19T23:50:00.000Z",
   "version": "3.7-Halilit",
-  "total_products": 29,
+  "total_products": 226,
   "brands": [
     {
       "id": "roland",
-      "name": "Roland Catalog",
+      "name": "Roland Corporation",
       "brand_color": "#ef4444",
       "product_count": 29,
-      "data_file": "roland-catalog.json"
+      "verified_count": 29,
+      "data_file": "catalogs_brand/roland.json"
+    },
+    {
+      "id": "boss",
+      "name": "Boss (Roland)",
+      "product_count": 197,
+      "data_file": "catalogs_brand/boss.json"
     }
   ]
 }
@@ -165,13 +172,19 @@ hsc-jit-v3/
 
 ## 📊 Supported Products
 
-### Current: Roland (29 Products)
+### Current: Roland (29 Products - Verified) + Boss (197 Products - Scraped)
+
+#### Roland Corporation
 
 - **Keyboards** (5) - BC TC-RF, BC TC-SC, DH-10, E-X50, etc.
 - **Synthesizers** (8) - GO:KEYS 5, GO:LIVECAST, etc.
 - **Guitar Products** (7) - GK-5, GM-800, GO:MIXER PRO, etc.
 - **Wind Instruments** (3) - Aerophone Brisa, etc.
 - **Musical Instruments** (6) - Various Roland equipment
+
+#### Boss (Roland Division)
+
+- **Guitar Effects** (197) - Pedals, multi-effects, accessories
 
 ### Ready to Add
 

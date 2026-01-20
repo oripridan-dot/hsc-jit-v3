@@ -79,6 +79,21 @@ export const Workbench: React.FC = () => {
     return [];
   };
 
+  /**
+   * Check if product has any media
+   * Used to conditionally render MediaBar
+   */
+  const hasMedia = (): boolean => {
+    if (!selectedProduct) return false;
+    
+    const mainImg = getMainImage();
+    const galleryImgs = getGalleryImages();
+    const videos = (selectedProduct as any).video_urls || [];
+    const manuals = (selectedProduct as any).manuals || [];
+    
+    return !!(mainImg || galleryImgs.length > 0 || videos.length > 0 || manuals.length > 0);
+  };
+
   // Handle resize dragging for MediaBar (resize from left edge, scale left)
   React.useEffect(() => {
     if (!isResizing) return;
@@ -195,17 +210,74 @@ export const Workbench: React.FC = () => {
             {/* Tab Content */}
             <div className="flex-1 overflow-y-auto p-1.5 sm:p-2 bg-[var(--bg-app)]">
               {activeTab === 'overview' && (
-                <div className="max-w-4xl mx-auto space-y-2 sm:space-y-3">
-                  {/* Hero Image */}
-                  {mainImage && (
-                    <div className="w-full bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
-                      <img
-                        src={mainImage}
-                        alt={selectedProduct.name}
-                        className="w-full h-auto max-h-48 sm:max-h-72 object-contain rounded-lg"
-                      />
+                <div className="max-w-7xl mx-auto space-y-2 sm:space-y-3">
+                  {/* Hero Section: Main Image + Key Specs Card */}
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3">
+                    {/* Left: Main Product Image */}
+                    {mainImage && (
+                      <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl overflow-hidden">
+                        <div className="aspect-[4/3] flex items-center justify-center p-4 sm:p-6 bg-gradient-to-br from-[var(--bg-app)] to-[var(--bg-panel)]">
+                          <img
+                            src={mainImage}
+                            alt={selectedProduct.name}
+                            className="w-full h-full object-contain rounded-lg"
+                          />
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Right: Branded Key Specifications Card */}
+                    <div className="bg-gradient-to-br from-[var(--brand-color)]/5 via-[var(--bg-panel)] to-[var(--bg-panel)] border-2 border-[var(--brand-color)]/20 rounded-xl p-3 sm:p-4 shadow-lg">
+                      {/* Card Header */}
+                      <div className="mb-3 sm:mb-4 pb-2 sm:pb-3 border-b border-[var(--brand-color)]/20">
+                        <div className="flex items-center gap-2 mb-1">
+                          <div className="w-1 h-6 bg-[var(--brand-color)] rounded-full"></div>
+                          <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] uppercase tracking-wide">
+                            Key Specifications
+                          </h2>
+                        </div>
+                        <p className="text-[9px] sm:text-xs text-[var(--text-tertiary)] ml-3">
+                          {selectedProduct.brand} {((selectedProduct as unknown as Record<string, string>)?.main_category) || selectedProduct.category || ''}
+                        </p>
+                      </div>
+
+                      {/* Specifications Grid */}
+                      {selectedProduct.specifications && selectedProduct.specifications.length > 0 ? (
+                        <div className="space-y-2 sm:space-y-3">
+                          {selectedProduct.specifications.slice(0, 8).map((spec: Specification, idx: number) => (
+                            <div 
+                              key={spec.key} 
+                              className="group hover:bg-[var(--brand-color)]/5 rounded-lg p-2 transition-colors"
+                            >
+                              <div className="flex justify-between items-start gap-2">
+                                <span className="text-[9px] sm:text-xs font-medium text-[var(--brand-color)] uppercase tracking-wide flex-shrink-0">
+                                  {spec.key}
+                                </span>
+                                <span className="text-[10px] sm:text-sm text-[var(--text-primary)] font-semibold text-right">
+                                  {String(spec.value)}
+                                </span>
+                              </div>
+                              {idx < 7 && <div className="mt-2 h-px bg-gradient-to-r from-transparent via-[var(--border-subtle)] to-transparent"></div>}
+                            </div>
+                          ))}
+                          
+                          {selectedProduct.specifications.length > 8 && (
+                            <button 
+                              onClick={() => setActiveTab('specs')}
+                              className="w-full mt-2 py-2 text-[10px] sm:text-xs font-medium text-[var(--brand-color)] hover:text-[var(--brand-color)]/80 border border-[var(--brand-color)]/30 hover:border-[var(--brand-color)]/50 rounded-lg transition-all"
+                            >
+                              View All Specifications ({selectedProduct.specifications.length})
+                            </button>
+                          )}
+                        </div>
+                      ) : (
+                        <div className="text-center py-8">
+                          <FiInfo className="mx-auto mb-2 text-[var(--text-tertiary)]" size={24} />
+                          <p className="text-xs text-[var(--text-tertiary)]">No specifications available</p>
+                        </div>
+                      )}
                     </div>
-                  )}
+                  </div>
 
                   {/* Description */}
                   {selectedProduct.description && (
@@ -213,21 +285,6 @@ export const Workbench: React.FC = () => {
                       <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Description</h2>
                       <div className="text-xs text-[var(--text-secondary)] whitespace-pre-line leading-relaxed">
                         {selectedProduct.description}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Quick Specs */}
-                  {selectedProduct.specifications && selectedProduct.specifications.length > 0 && (
-                    <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-lg sm:rounded-xl p-2 sm:p-3">
-                      <h2 className="text-sm sm:text-base font-bold text-[var(--text-primary)] mb-2 sm:mb-3">Key Specifications</h2>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
-                        {selectedProduct.specifications.slice(0, 6).map((spec: Specification) => (
-                          <div key={spec.key} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-[var(--border-subtle)] pb-1.5">
-                            <span className="text-[9px] sm:text-xs text-[var(--text-tertiary)] uppercase">{spec.key}</span>
-                            <span className="text-[9px] sm:text-xs text-[var(--text-primary)] font-medium">{String(spec.value)}</span>
-                          </div>
-                        ))}
                       </div>
                     </div>
                   )}
@@ -315,36 +372,38 @@ export const Workbench: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT: MediaBar sidebar with resizable drag */}
-          <div 
-            ref={mediaBarRef}
-            className="flex-shrink-0 border-r border-[var(--border-subtle)] overflow-hidden flex flex-col relative bg-[var(--bg-panel)]/30 group"
-            style={{ width: `${mediaBarWidth}px`, transition: isResizing ? 'none' : 'width 0.1s ease-out' }}
-          >
-            {/* Resize Handle - Left Edge - Minimal & Clean */}
-            <div
-              className="absolute left-0 top-0 bottom-0 w-1 bg-indigo-500/25 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-40"
-              onMouseDown={(e) => {
-                e.preventDefault();
-                setIsResizing(true);
-                setDragStart({ x: e.clientX, width: mediaBarWidth });
-              }}
-              title="Drag to resize images"
-            />
-            <MediaBar
-              images={getGalleryImages()}
-              onMediaClick={(media) => {
-                setSelectedMediaItem(media);
-                setIsMediaViewerOpen(true);
-              }}
-              onWhiteBgImageFound={(imageUrl) => {
-                setWhiteBgImage(imageUrl);
-                if (selectedProduct?.id) {
-                  saveWhiteBgImage(selectedProduct.id, imageUrl);
-                }
-              }}
-            />
-          </div>
+          {/* RIGHT: MediaBar sidebar with resizable drag - only show if media exists */}
+          {hasMedia() && (
+            <div 
+              ref={mediaBarRef}
+              className="flex-shrink-0 border-r border-[var(--border-subtle)] overflow-hidden flex flex-col relative bg-[var(--bg-panel)]/30 group"
+              style={{ width: `${mediaBarWidth}px`, transition: isResizing ? 'none' : 'width 0.1s ease-out' }}
+            >
+              {/* Resize Handle - Left Edge - Minimal & Clean */}
+              <div
+                className="absolute left-0 top-0 bottom-0 w-1 bg-indigo-500/25 hover:bg-indigo-500/60 cursor-col-resize transition-colors z-40"
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  setIsResizing(true);
+                  setDragStart({ x: e.clientX, width: mediaBarWidth });
+                }}
+                title="Drag to resize images"
+              />
+              <MediaBar
+                images={getGalleryImages()}
+                onMediaClick={(media) => {
+                  setSelectedMediaItem(media);
+                  setIsMediaViewerOpen(true);
+                }}
+                onWhiteBgImageFound={(imageUrl) => {
+                  setWhiteBgImage(imageUrl);
+                  if (selectedProduct?.id) {
+                    saveWhiteBgImage(selectedProduct.id, imageUrl);
+                  }
+                }}
+              />
+            </div>
+          )}
         </div>
 
         {/* MediaViewer Modal */}

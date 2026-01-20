@@ -77,6 +77,33 @@ class CatalogLoader {
   private brandCatalogs: Map<string, BrandCatalog> = new Map();
   private allProducts: Product[] = [];
   private loading: boolean = false;
+  private changeCallbacks: Set<(type: 'index' | 'brand', id?: string) => void> = new Set();
+
+  constructor() {
+    // Watch for data changes and reload
+    dataWatcher.onChange((type, id) => {
+      if (type === 'index') {
+        // Clear cache so next load fetches fresh data
+        this.index = null;
+        console.log('🔄 Index updated, will reload on next access');
+      } else if (type === 'brand' && id) {
+        // Clear specific brand cache
+        this.brandCatalogs.delete(id);
+        console.log(`🔄 Brand "${id}" updated, will reload on next access`);
+      }
+      
+      // Notify any listeners
+      this.changeCallbacks.forEach(cb => cb(type, id));
+    });
+  }
+
+  /**
+   * Subscribe to catalog changes (for real-time UI updates)
+   */
+  onDataChange(callback: (type: 'index' | 'brand', id?: string) => void): () => void {
+    this.changeCallbacks.add(callback);
+    return () => this.changeCallbacks.delete(callback);
+  }
 
   /**
    * Load master index (call once on app init)

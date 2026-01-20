@@ -1,6 +1,6 @@
 /**
  * InsightsTable - Interactive table display of product insights
- * Replaces InsightsBubbles with a compact table at bottom of workbench
+ * Compact insights at bottom of workbench with business intelligence
  */
 import React, { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -49,7 +49,9 @@ export const InsightsTable: React.FC<InsightsTableProps> = ({
   const insights = useMemo<Insight[]>(() => {
     if (!product?.name) return [];
 
-    const allInsights: Insight[] = [
+    const allInsights: Insight[] = [];
+
+    allInsights.push(
       {
         id: `${product.id}-market-growth`,
         type: 'market',
@@ -113,7 +115,7 @@ export const InsightsTable: React.FC<InsightsTableProps> = ({
         color: 'text-purple-400',
         badge: 'TREND'
       }
-    ];
+    );
 
     // Filter dismissed
     const filtered = allInsights.filter(i => !dismissedIds.has(i.id));
@@ -149,133 +151,110 @@ export const InsightsTable: React.FC<InsightsTableProps> = ({
             {insights.length}
           </span>
         </div>
-        <div className="flex items-center gap-1.5">
-          <button
-            onClick={() => setSortBy(sortBy === 'default' ? 'type' : 'default')}
-            className="text-[8px] sm:text-[9px] text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors uppercase font-mono"
-            title="Sort insights"
-          >
-            {sortBy === 'default' ? '📊' : '🏷️'}
-          </button>
-        </div>
+
+        {/* Sort dropdown */}
+        <select
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
+          className="text-[8px] sm:text-[9px] bg-[var(--bg-app)] text-[var(--text-secondary)] border border-[var(--border-subtle)] rounded px-1.5 py-0.5 cursor-pointer hover:bg-[var(--bg-panel)] transition-colors"
+        >
+          <option value="default">Default</option>
+          <option value="type">By Type</option>
+          <option value="title">By Title</option>
+        </select>
       </div>
 
-      {/* Table */}
-      <div className="overflow-x-auto overflow-y-hidden max-h-32 scrollbar-thin">
-        <table className="w-full text-[8px] sm:text-[9px]">
-          <thead className="sticky top-0 bg-[var(--bg-app)]/50 border-b border-[var(--border-subtle)]">
-            <tr>
-              <th className="text-left px-2 py-1 font-semibold text-[var(--text-tertiary)] uppercase w-12">Type</th>
-              <th className="text-left px-2 py-1 font-semibold text-[var(--text-tertiary)] uppercase flex-1 min-w-24">Title</th>
-              <th className="text-left px-2 py-1 font-semibold text-[var(--text-tertiary)] uppercase hidden sm:table-cell flex-1 min-w-32">Details</th>
-              <th className="text-center px-1 py-1 font-semibold text-[var(--text-tertiary)] uppercase w-8">−</th>
-            </tr>
-          </thead>
-          <tbody>
-            <AnimatePresence mode="popLayout">
-              {insights.map((insight) => (
-                <motion.tr
-                  key={insight.id}
-                  layout
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  className="border-b border-[var(--border-subtle)]/30 hover:bg-[var(--bg-app)]/30 transition-colors cursor-pointer group"
-                  onClick={() => setExpandedId(expandedId === insight.id ? null : insight.id)}
-                >
-                  {/* Type Badge */}
-                  <td className="px-2 py-1.5 text-left">
-                    <div className={`flex items-center gap-1 ${typeColors[insight.type]} px-1.5 py-0.5 rounded border w-fit`}>
-                      <span className="text-[7px] sm:text-[8px]">{insight.badge}</span>
+      {/* Insights Cards - Horizontal Scroll on Mobile */}
+      <div className="flex overflow-x-auto gap-1.5 sm:gap-2 pb-1 snap-x snap-mandatory">
+        <AnimatePresence mode="popLayout">
+          {insights.map((insight) => {
+            return (
+              <motion.div
+                key={insight.id}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ 
+                  opacity: 1, 
+                  scale: 1
+                }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+                className={`
+                  relative flex-shrink-0 w-[280px] sm:w-auto sm:flex-1 sm:min-w-[180px] 
+                  snap-center rounded-lg border transition-all cursor-pointer
+                  ${typeColors[insight.type] || 'bg-gray-500/10 border-gray-500/30'}
+                  ${expandedId === insight.id ? 'shadow-lg scale-[1.02]' : 'shadow-sm hover:shadow-md'}
+                `}
+                onClick={() => setExpandedId(expandedId === insight.id ? null : insight.id)}
+              >
+              <div className={`p-2 sm:p-2.5 ${insight.type === 'update' ? 'relative' : ''}`}>
+                {/* System badge for system insights */}
+                {insight.type === 'update' && (
+                  <div className="absolute -top-1.5 -right-1.5 px-2 py-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-[7px] font-bold text-white shadow-lg animate-pulse">
+                    SYSTEM
+                  </div>
+                )}
+                
+                {/* Card Header */}
+                <div className="flex items-start justify-between gap-1.5 mb-1.5">
+                  <div className="flex items-center gap-1.5 min-w-0">
+                    <div className={insight.color}>
+                      {insight.icon}
                     </div>
-                  </td>
-
-                  {/* Title */}
-                  <td className="px-2 py-1.5 text-left">
-                    <div className="font-semibold text-[var(--text-primary)] truncate">
-                      {insight.title}
+                    <div className="min-w-0">
+                      <h4 className="text-[9px] sm:text-xs font-bold text-[var(--text-primary)] truncate">
+                        {insight.title}
+                      </h4>
+                      <span className={`text-[7px] sm:text-[8px] font-mono uppercase ${insight.color}`}>
+                        {insight.badge}
+                      </span>
                     </div>
-                  </td>
+                  </div>
 
-                  {/* Details (Desktop) */}
-                  <td className="px-2 py-1.5 text-left hidden sm:table-cell">
-                    <p className="text-[var(--text-secondary)] line-clamp-1">
-                      {insight.text}
-                    </p>
-                  </td>
-
-                  {/* Expand Toggle */}
-                  <td className="px-1 py-1.5 text-center">
-                    <motion.div
-                      animate={{ rotate: expandedId === insight.id ? 180 : 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <ChevronDown
-                        size={12}
-                        className="text-[var(--text-tertiary)] group-hover:text-[var(--text-primary)] transition-colors"
-                      />
-                    </motion.div>
-                  </td>
-                </motion.tr>
-              ))}
-            </AnimatePresence>
-          </tbody>
-        </table>
-      </div>
-
-      {/* Expanded Detail Row */}
-      <AnimatePresence>
-        {expandedId && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="border-t border-[var(--border-subtle)]/30 mt-1 pt-1.5 px-2"
-          >
-            {insights.find(i => i.id === expandedId) && (
-              <div className="space-y-1">
-                <p className="text-[8px] sm:text-[9px] text-[var(--text-secondary)] leading-relaxed">
-                  {insights.find(i => i.id === expandedId)?.text}
-                </p>
-                <div className="flex items-center justify-end gap-2 pt-1">
-                  <button
-                    onClick={() => setExpandedId(null)}
-                    className="text-[8px] text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors"
-                  >
-                    Collapse
-                  </button>
-                  <button
-                    onClick={() => handleDismiss(expandedId)}
-                    className="text-[8px] text-red-400 hover:text-red-300 transition-colors"
-                  >
-                    Dismiss
-                  </button>
+                  {/* Expand/Collapse icon */}
+                  <ChevronDown
+                    size={12}
+                    className={`flex-shrink-0 text-[var(--text-tertiary)] transition-transform ${
+                      expandedId === insight.id ? 'rotate-180' : ''
+                    }`}
+                  />
                 </div>
-              </div>
-            )}
-          </motion.div>
-        )}
-      </AnimatePresence>
 
-      {/* Scroll Indicator */}
-      <style>{`
-        .scrollbar-thin {
-          scrollbar-width: thin;
-        }
-        .scrollbar-thin::-webkit-scrollbar {
-          height: 4px;
-        }
-        .scrollbar-thin::-webkit-scrollbar-track {
-          background: transparent;
-        }
-        .scrollbar-thin::-webkit-scrollbar-thumb {
-          background: var(--border-subtle);
-          border-radius: 2px;
-        }
-        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-          background: var(--text-tertiary);
-        }
-      `}</style>
+                {/* Card Body */}
+                <div
+                  className={`text-[8px] sm:text-[9px] text-[var(--text-secondary)] leading-relaxed transition-all ${
+                    expandedId === insight.id ? 'line-clamp-none' : 'line-clamp-2'
+                  }`}
+                >
+                  {insight.text}
+                </div>
+
+                {/* Expanded actions */}
+                {expandedId === insight.id && (
+                  <div className="mt-2 pt-2 border-t border-[var(--border-subtle)] flex gap-1.5">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDismiss(insight.id);
+                      }}
+                      className="text-[7px] sm:text-[8px] px-2 py-1 bg-[var(--bg-app)] hover:bg-red-500/10 text-[var(--text-tertiary)] hover:text-red-400 rounded transition-colors"
+                    >
+                      Dismiss
+                    </button>
+                    <button
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-[7px] sm:text-[8px] px-2 py-1 bg-[var(--bg-app)] hover:bg-indigo-500/10 text-[var(--text-tertiary)] hover:text-indigo-400 rounded transition-colors"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+            );
+          })}
+        </AnimatePresence>
+      </div>
     </div>
   );
 };

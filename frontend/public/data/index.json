@@ -1,22 +1,30 @@
 {
-  "version": "3.7.1-catalogs",
+  "build_timestamp": "2026-01-20T00:58:58.130257",
+  "version": "3.7-Halilit",
+  "total_products": 28,
+  "total_verified": 0,
   "brands": [
     {
       "id": "boss",
-      "name": "Boss (Roland)",
-      "product_count": 197,
-      "website": "https://www.boss.info",
-      "logo_url": "https://www.boss.info/static/boss_logo.svg"
+      "name": "Boss",
+      "logo_url": null,
+      "website": null,
+      "product_count": 0,
+      "verified_count": 0,
+      "description": "",
+      "brand_color": null,
+      "data_file": "catalogs_brand/boss.json"
     },
     {
       "id": "roland",
       "name": "Roland Corporation",
-      "product_count": 29,
+      "logo_url": null,
       "website": "https://www.roland.com",
-      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg"
+      "product_count": 28,
+      "verified_count": 0,
+      "description": "World leader in electronic musical instruments",
+      "brand_color": null,
+      "data_file": "catalogs_brand/roland.json"
     }
-  ],
-  "total_brands": 2,
-  "total_products": 226,
-  "last_updated": "2026-01-19T23:00:00Z"
+  ]
 }

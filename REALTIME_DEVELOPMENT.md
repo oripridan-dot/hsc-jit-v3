@@ -18,8 +18,9 @@ pnpm dev
 ```
 
 The dev server now runs with:
+
 - ✅ File watching for public/data changes (1s polling)
-- ✅ Hot-reload middleware for /data/* files
+- ✅ Hot-reload middleware for /data/\* files
 - ✅ Real-time data synchronization
 - ✅ Automatic cache invalidation
 
@@ -29,19 +30,19 @@ The dev server now runs with:
 
 ```javascript
 // Check status
-window.__hscdev.status()
+window.__hscdev.status();
 
 // Force refresh all data
-window.__hscdev.refreshData()
+window.__hscdev.refreshData();
 
 // Force refresh specific brand
-window.__hscdev.refreshBrand('roland')
+window.__hscdev.refreshBrand("roland");
 
 // Clear caches
-window.__hscdev.clearCache()
+window.__hscdev.clearCache();
 
 // Check for updates
-window.__hscdev.checkUpdates()
+window.__hscdev.checkUpdates();
 ```
 
 ### 3. Update Catalog Files
@@ -78,25 +79,27 @@ UI updates in real-time ✨
 ### Components
 
 #### 1. **DataWatcher** (`frontend/src/lib/dataWatcher.ts`)
+
 - Polls `/data/*.json` files for changes
 - Uses simple content hashing for change detection
 - Runs only in development mode
 - Notifies subscribers on changes
 
 ```typescript
-import { dataWatcher } from './lib/dataWatcher';
+import { dataWatcher } from "./lib/dataWatcher";
 
 // Subscribe to changes
 const unsubscribe = dataWatcher.onChange((type, id) => {
-  if (type === 'index') {
-    console.log('Index changed!');
-  } else if (type === 'brand') {
+  if (type === "index") {
+    console.log("Index changed!");
+  } else if (type === "brand") {
     console.log(`Brand ${id} changed!`);
   }
 });
 ```
 
 #### 2. **catalogLoader Updates** (`frontend/src/lib/catalogLoader.ts`)
+
 - Now has `onDataChange()` method for subscriptions
 - Automatically clears cache when data changes
 - Loads fresh data on next access
@@ -111,31 +114,34 @@ catalogLoader.onDataChange((type, id) => {
 ```
 
 #### 3. **useRealtimeData Hook** (`frontend/src/hooks/useRealtimeData.ts`)
+
 - React hook for subscribing to data changes
 - Automatic cleanup on unmount
 - Specialized variants: `useRealtimeBrand()`, `useRealtimeIndex()`
 
 ```typescript
-import { useRealtimeData } from './hooks/useRealtimeData';
+import { useRealtimeData } from "./hooks/useRealtimeData";
 
 export function MyComponent() {
   useRealtimeData({
     onDataChange: (type, id) => {
-      if (type === 'index') {
+      if (type === "index") {
         // Reload index
       }
-    }
+    },
   });
 }
 ```
 
 #### 4. **Dev Tools** (`frontend/src/lib/devTools.ts`)
+
 - Browser console API for manual control
 - Only available in development mode
 - Exposed on `window.__hscdev`
 
 #### 5. **Vite Config Updates** (`frontend/vite.config.ts`)
-- Added middleware for /data/* serving
+
+- Added middleware for /data/\* serving
 - Configured file watching (1s polling)
 - Cache headers set to `no-cache` for JSON files
 - No-op proxy for API calls
@@ -223,13 +229,13 @@ export function RolandProducts() {
 // In browser console:
 
 // Immediate refresh
-window.__hscdev.refreshData()
+window.__hscdev.refreshData();
 
 // Refresh specific brand
-window.__hscdev.refreshBrand('boss')
+window.__hscdev.refreshBrand("boss");
 
 // View status
-window.__hscdev.status()
+window.__hscdev.status();
 ```
 
 ---
@@ -272,13 +278,15 @@ useRealtimeData({
 ### "Data not updating?"
 
 1. Check polling is enabled:
+
    ```javascript
-   window.__hscdev.status()
+   window.__hscdev.status();
    ```
 
 2. Force refresh:
+
    ```javascript
-   window.__hscdev.refreshData()
+   window.__hscdev.refreshData();
    ```
 
 3. Check file paths:
@@ -296,7 +304,9 @@ Check the Vite middleware is working:
 
 ```javascript
 // In browser console
-fetch('/data/index.json').then(r => r.json()).then(console.log)
+fetch("/data/index.json")
+  .then((r) => r.json())
+  .then(console.log);
 ```
 
 If it fails, restart the dev server:
@@ -321,16 +331,19 @@ private pollInterval: number = 2000; // Slower
 ## 📈 Performance
 
 ### Memory Usage
+
 - Minimal: Only maintains file hashes (~100 bytes per file)
 - Automatic cleanup on component unmount
 - No memory leaks
 
 ### Network Usage
+
 - Light: HEAD requests for file detection
 - Only fetches when file actually changed
 - Less than 1KB per second in polling
 
 ### CPU Usage
+
 - Negligible: Simple hash computation
 - No DOM updates unless data actually changed
 - Efficient change detection
@@ -368,16 +381,19 @@ echo '{"id":"test","name":"Test Product"}' >> frontend/public/data/boss.json
 ### Recommended Setup
 
 **Terminal 1: Frontend Dev Server**
+
 ```bash
 cd frontend && pnpm dev
 ```
 
 **Terminal 2: Backend Pipeline (Optional)**
+
 ```bash
 cd backend && python orchestrate_pipeline.py
 ```
 
 **Terminal 3: Edit Catalogs**
+
 ```bash
 # Make changes to public/data/*.json
 # Frontend auto-updates in real-time
@@ -400,7 +416,7 @@ If running `backend/orchestrate_pipeline.py`:
 ### DataWatcher
 
 ```typescript
-import { dataWatcher } from './lib/dataWatcher';
+import { dataWatcher } from "./lib/dataWatcher";
 
 // Subscribe to all changes
 dataWatcher.onChange((type, id) => {
@@ -409,8 +425,8 @@ dataWatcher.onChange((type, id) => {
 });
 
 // Manual refresh (dev only)
-dataWatcher.forceRefresh('index');
-dataWatcher.forceRefresh('brand', 'roland');
+dataWatcher.forceRefresh("index");
+dataWatcher.forceRefresh("brand", "roland");
 ```
 
 ### catalogLoader Extensions
@@ -431,9 +447,9 @@ catalogLoader.clearCache();
 import { useRealtimeData, useRealtimeBrand, useRealtimeIndex } from './hooks/useRealtimeData';
 
 // Generic
-useRealtimeData({ 
+useRealtimeData({
   onDataChange: (type, id) => { ... },
-  watchTypes: ['index', 'brand'] 
+  watchTypes: ['index', 'brand']
 });
 
 // Brand-specific
@@ -446,11 +462,11 @@ useRealtimeIndex(() => { ... });
 ### Dev Tools
 
 ```javascript
-window.__hscdev.refreshData()         // Force refresh all
-window.__hscdev.refreshBrand(id)      // Force refresh brand
-window.__hscdev.status()              // Show status
-window.__hscdev.clearCache()          // Clear cache
-window.__hscdev.checkUpdates()        // Manual update check
+window.__hscdev.refreshData(); // Force refresh all
+window.__hscdev.refreshBrand(id); // Force refresh brand
+window.__hscdev.status(); // Show status
+window.__hscdev.clearCache(); // Clear cache
+window.__hscdev.checkUpdates(); // Manual update check
 ```
 
 ---

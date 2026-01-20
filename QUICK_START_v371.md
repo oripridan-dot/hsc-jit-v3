@@ -5,7 +5,7 @@
 Your system is fully set up and production-ready:
 
 - ✅ Backend: Perfect alignment with 6-stage pipeline
-- ✅ Frontend: Real-time auto-updating with live catalog sync  
+- ✅ Frontend: Real-time auto-updating with live catalog sync
 - ✅ Data: Cleaned catalogs (226 products: 197 Boss + 29 Roland)
 - ✅ Vite Config: Fixed (removed problematic middleware)
 
@@ -21,6 +21,7 @@ pnpm dev
 ```
 
 You'll see:
+
 ```
 VITE ready in XXXms
 Local: http://localhost:5173
@@ -53,6 +54,7 @@ This publishes updated catalogs to `/frontend/public/data/`
 ### Watch UI Auto-Update
 
 Within **1 second**, the frontend will:
+
 1. Detect the change
 2. Clear cache
 3. Reload data
@@ -64,16 +66,16 @@ Within **1 second**, the frontend will:
 
 ```javascript
 // Check status
-window.__hscdev.status()
+window.__hscdev.status();
 
 // Force refresh all data
-window.__hscdev.refreshData()
+window.__hscdev.refreshData();
 
 // Force refresh specific brand
-window.__hscdev.refreshBrand('roland')
+window.__hscdev.refreshBrand("roland");
 
 // Clear all caches
-window.__hscdev.clearCache()
+window.__hscdev.clearCache();
 ```
 
 ---
@@ -125,7 +127,7 @@ window.__hscdev.clearCache()
 
 ```javascript
 // In browser console
-window.__hscdev.refreshData()
+window.__hscdev.refreshData();
 // UI should refresh with latest data
 ```
 
@@ -155,11 +157,11 @@ server: {
 
 ## 📊 Current Status
 
-| Component | Status | Details |
-|-----------|--------|---------|
-| Frontend | ✅ Ready | Real-time updates enabled |
-| Backend | ✅ Ready | 6-stage pipeline working |
-| Data | ✅ Clean | 226 products (2 brands) |
+| Component | Status    | Details                   |
+| --------- | --------- | ------------------------- |
+| Frontend  | ✅ Ready  | Real-time updates enabled |
+| Backend   | ✅ Ready  | 6-stage pipeline working  |
+| Data      | ✅ Clean  | 226 products (2 brands)   |
 | Dev Tools | ✅ Active | Browser console API ready |
 
 **Version**: v3.7.1-catalogs  
@@ -171,6 +173,7 @@ server: {
 ## 🚨 Troubleshooting
 
 ### Frontend won't start
+
 ```bash
 cd frontend
 pkill -f "pnpm" 2>/dev/null || true
@@ -178,21 +181,25 @@ pnpm dev
 ```
 
 ### Port already in use
+
 Vite auto-tries 5174, 5175, etc. Or kill the process:
+
 ```bash
 pkill -f "vite"
 pnpm dev
 ```
 
 ### Data not updating
+
 1. Check file exists: `ls /frontend/public/data/boss.json`
 2. Check Vite is serving it: `curl http://localhost:5173/data/boss.json`
 3. Force refresh: `window.__hscdev.refreshData()`
 
 ### Real-time not working
+
 ```javascript
 // Check if dev tools are loaded
-window.__hscdev.status()
+window.__hscdev.status();
 
 // If not found, check browser console for errors
 // Reload page: Ctrl+R (or Cmd+R on Mac)
