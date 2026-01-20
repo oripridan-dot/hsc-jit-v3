@@ -5,7 +5,7 @@ import { HalileoNavigator } from './components/HalileoNavigator';
 import { Workbench } from './components/Workbench';
 import { SystemHealthBadge } from './components/SystemHealthBadge';
 import ErrorBoundary from './components/ErrorBoundary';
-import { applyBrandTheme } from './styles/brandThemes';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import { useRealtimeData } from './hooks/useRealtimeData';
 import { initializeDevTools } from './lib/devTools';
 import './index.css';
@@ -13,8 +13,9 @@ import './index.css';
 // Initialize dev tools in development
 initializeDevTools();
 
-function App() {
+function AppContent() {
   const { actions } = useWebSocketStore();
+  const { applyTheme } = useTheme();
   const [dataVersion, setDataVersion] = useState(0);
 
   // Enable real-time data updates (with safe error handling)
@@ -31,9 +32,8 @@ function App() {
   }
 
   useEffect(() => {
-    // Apply Roland brand theme
-    applyBrandTheme('roland');
-    document.body.setAttribute('data-brand', 'roland');
+    // Apply Roland brand theme through ThemeContext
+    applyTheme('roland');
     
     // Initialize search system
     const initCatalog = async () => {
@@ -46,7 +46,7 @@ function App() {
       }
     };
     initCatalog();
-  }, [dataVersion]); // Re-initialize when data changes
+  }, [dataVersion, applyTheme]); // Re-initialize when data changes
 
   useEffect(() => {
     // Attempt WebSocket connection but don't block
@@ -86,6 +86,14 @@ function App() {
         </ErrorBoundary>
       </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }
 
