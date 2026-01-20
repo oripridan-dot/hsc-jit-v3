@@ -1,169 +1,104 @@
 {
   "version": "3.7-Halilit",
-  "build_timestamp": "2026-01-20T20:33:09.217810",
+  "build_timestamp": "2026-01-20T21:24:52.852343+00:00",
   "environment": "static_production",
-  "total_products": 48,
-  "total_verified": 48,
+  "total_products": 9,
+  "total_verified": 9,
   "brands": [
     {
-      "id": "nord-comprehensive",
-      "name": "Nord Comprehensive",
-      "slug": "nord-comprehensive",
+      "id": "boss",
+      "name": "Boss Catalog",
+      "slug": "boss",
       "count": 3,
       "brand_color": null,
-      "logo_url": "https://www.nordkeyboards.com/sites/default/files/files/nord-logo.svg",
-      "file": "nord-comprehensive.json",
-      "data_file": "nord-comprehensive.json",
-      "product_count": 3,
-      "verified_count": 3,
-      "last_updated": "2026-01-20T20:33:09.351002"
-    },
-    {
-      "id": "roland-comprehensive",
-      "name": "Roland Comprehensive",
-      "slug": "roland-comprehensive",
-      "count": 2,
-      "brand_color": "#ef4444",
-      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
-      "file": "roland-comprehensive.json",
-      "data_file": "roland-comprehensive.json",
-      "product_count": 2,
-      "verified_count": 2,
-      "last_updated": "2026-01-20T20:33:09.938201"
-    },
-    {
-      "id": "moog",
-      "name": "Moog",
-      "slug": "moog",
-      "count": 10,
-      "brand_color": "#22d3ee",
-      "logo_url": "https://www.moogmusic.com/sites/default/files/moog_logo.svg",
-      "file": "moog.json",
-      "data_file": "moog.json",
-      "product_count": 10,
-      "verified_count": 10,
-      "last_updated": "2026-01-20T20:33:10.209036"
-    },
-    {
-      "id": "moog-comprehensive",
-      "name": "Moog Comprehensive",
-      "slug": "moog-comprehensive",
-      "count": 0,
-      "brand_color": "#22d3ee",
-      "logo_url": "https://www.moogmusic.com/sites/default/files/moog_logo.svg",
-      "file": "moog-comprehensive.json",
-      "data_file": "moog-comprehensive.json",
-      "product_count": 0,
-      "verified_count": 0,
-      "last_updated": "2026-01-20T20:33:10.451699"
-    },
-    {
-      "id": "boss",
-      "name": "Boss",
-      "slug": "boss",
-      "count": 10,
-      "brand_color": null,
-      "logo_url": "https://www.boss.info/static/boss_logo.svg",
+      "logo_url": "/assets/logos/boss_logo.png",
       "file": "boss.json",
       "data_file": "boss.json",
-      "product_count": 10,
-      "verified_count": 10,
-      "last_updated": "2026-01-20T20:33:12.295618"
+      "product_count": 3,
+      "verified_count": 3,
+      "last_updated": "2026-01-20T21:24:52.856365+00:00"
     },
     {
       "id": "roland",
-      "name": "Roland",
+      "name": "Roland Catalog",
       "slug": "roland",
-      "count": 10,
+      "count": 3,
       "brand_color": "#ef4444",
-      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
+      "logo_url": "/assets/logos/roland_logo.png",
       "file": "roland.json",
       "data_file": "roland.json",
-      "product_count": 10,
-      "verified_count": 10,
-      "last_updated": "2026-01-20T20:33:12.900972"
-    },
-    {
-      "id": "boss-comprehensive",
-      "name": "Boss Comprehensive",
-      "slug": "boss-comprehensive",
-      "count": 3,
-      "brand_color": null,
-      "logo_url": "https://www.boss.info/static/boss_logo.svg",
-      "file": "boss-comprehensive.json",
-      "data_file": "boss-comprehensive.json",
       "product_count": 3,
       "verified_count": 3,
-      "last_updated": "2026-01-20T20:33:13.721465"
+      "last_updated": "2026-01-20T21:24:52.865016+00:00"
     },
     {
       "id": "nord",
-      "name": "Nord",
+      "name": "Nord Catalog",
       "slug": "nord",
-      "count": 10,
+      "count": 3,
       "brand_color": null,
-      "logo_url": "https://www.nordkeyboards.com/sites/default/files/files/nord-logo.svg",
+      "logo_url": "/assets/logos/nord_logo.png",
       "file": "nord.json",
       "data_file": "nord.json",
-      "product_count": 10,
-      "verified_count": 10,
-      "last_updated": "2026-01-20T20:33:13.745265"
+      "product_count": 3,
+      "verified_count": 3,
+      "last_updated": "2026-01-20T21:24:52.867134+00:00"
     }
   ],
   "search_graph": [
     {
-      "id": "nord-nord-electro-7",
-      "label": "Nord Electro 7",
-      "brand": "nord-comprehensive",
-      "brand_name": "Nord Comprehensive",
-      "category": "Electro",
+      "id": "boss-eurus_gs-1",
+      "label": "EURUS GS-1Electronic Guitar",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Guitar Synthesizers",
       "subcategory": null,
       "keywords": [
-        "Accessories",
-        "Distributors",
-        "Nord Electro 7",
-        "Nord Stage 4",
-        "Nord Piano 6"
+        "Cutting-edge BOSS electronic guitar, crafted in Japan for bold sound innovators",
+        "Seamlessly switch between synthesizer and regular guitar sounds",
+        "Six onboard memories for storing different synth sounds",
+        "Premium playability with 24-fret neck, compound radius rosewood fingerboard, and offset double-cutaway body design",
+        "Two custom-designed pickups and five-way selector switch"
       ],
-      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+      "description": "A Bold New Voice for Sound Innovators\n\nEvery guitarist is on a highly personal tone journey, continu"
     },
     {
-      "id": "nord-nord-wave-2",
-      "label": "Nord Wave 2",
-      "brand": "nord-comprehensive",
-      "brand_name": "Nord Comprehensive",
-      "category": "Wave",
+      "id": "boss-xs-1",
+      "label": "XS-1Poly Shifter",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Effects Pedals",
       "subcategory": null,
       "keywords": [
-        "Accessories",
-        "Distributors",
-        "Nord Electro 7",
-        "Nord Stage 4",
-        "Nord Piano 6"
+        "Class-leading pitch shifting quality realized with new BOSS algorithms",
+        "Instantly change the pitch of a guitar, bass, or other instrument",
+        "Clear response and natural feel that retains the fundamental sound character",
+        "Change pitch across +/- seven semitones or +/- three octaves",
+        "Balance knob adjusts the mix between the effect and direct sound"
       ],
-      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+      "description": "Rapid Retuning, Flawless Sound\n\nThe XS-1 Poly Shifter delivers instant retuning in a convenient, com"
     },
     {
-      "id": "nord-nord-organ-3",
-      "label": "Nord Organ 3",
-      "brand": "nord-comprehensive",
-      "brand_name": "Nord Comprehensive",
-      "category": "Organ",
+      "id": "boss-gx-10",
+      "label": "GX-10Guitar Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Multi-Effects",
       "subcategory": null,
       "keywords": [
-        "Accessories",
-        "Distributors",
-        "Nord Electro 7",
-        "Nord Stage 4",
-        "Nord Piano 6"
+        "Compact amp/effects processor for guitar and bass",
+        "The same sound engine and color touch display as the GX-100 in a portable, travel-ready design",
+        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
+        "Authentic tube amplifier tone and touch response with AIRD technology",
+        "32 amplifier types and 170 BOSS effects"
       ],
-      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+      "description": "Colorful Tones, Portable Design\n\nPlayers everywhere love the GX-100 for its streamlined design, free"
     },
     {
       "id": "roland-aerophone_ae-10",
       "label": "Aerophone AE-10\nDigital Wind Instrument",
-      "brand": "roland-comprehensive",
-      "brand_name": "Roland Comprehensive",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
       "category": "Wind Instruments",
       "subcategory": null,
       "keywords": [
@@ -178,8 +113,8 @@
     {
       "id": "roland-aerophone_brisa",
       "label": "Aerophone Brisa\nDigital Wind Instrument",
-      "brand": "roland-comprehensive",
-      "brand_name": "Roland Comprehensive",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
       "category": "Wind Instruments",
       "subcategory": null,
       "keywords": [
@@ -192,653 +127,69 @@
       "description": "Meet Aerophone Brisa, an exciting evolution of the growing Roland Aerophone platform. This elegant i"
     },
     {
-      "id": "moog-minimoog",
-      "label": "Moog Minimoog Model D",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Analog Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Iconic three-oscillator analog synthesizer."
-    },
-    {
-      "id": "moog-moogerfoogers",
-      "label": "Moog Moogerfooger Pedal Set",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Controllers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Set of analog filter and effect pedals for guitar/bass."
-    },
-    {
-      "id": "moog-mother-32",
-      "label": "Moog Mother-32 Semi-Modular",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Modular Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Compact semi-modular synthesizer with sequencer."
-    },
-    {
-      "id": "moog-sub-phatty",
-      "label": "Moog Sub Phatty",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Analog Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Two-oscillator analog synthesizer with fat, warm bass."
-    },
-    {
-      "id": "moog-voyager-xl",
-      "label": "Moog Minimoog Voyager XL",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Analog Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Extended keyboard version of the Voyager synthesizer."
-    },
-    {
-      "id": "moog-subsequent-37",
-      "label": "Moog Subsequent 37",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Analog Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Two-oscillator analog synthesizer with analog sequencer."
-    },
-    {
-      "id": "moog-dfam",
-      "label": "Moog DFAM Percussion Synthesizer",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Modular Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Percussion-focused semi-modular synthesizer."
-    },
-    {
-      "id": "moog-micromoog",
-      "label": "Moog Micromoog",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Analog Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Compact analog synthesizer with preset capability."
-    },
-    {
-      "id": "moog-cp-251",
-      "label": "Moog CP-251 Control Processor",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Controllers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Desktop control interface for modular systems."
-    },
-    {
-      "id": "moog-expander",
-      "label": "Moog Keyboard Expander",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Controllers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Add keyboard control to Moog synthesizers."
-    },
-    {
-      "id": "boss-gt-1000core",
-      "label": "GT-1000CORE Multi-Effects",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Comprehensive multi-effects processor with amp/cab modeling."
-    },
-    {
-      "id": "boss-me-80",
-      "label": "ME-80 Guitar Multi-Effects",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Professional guitar multi-effects with integrated amp and cab modeling."
-    },
-    {
-      "id": "boss-dd-500",
-      "label": "DD-500 Digital Delay",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Professional digital delay with 6 algorithms and extensive editing."
-    },
-    {
-      "id": "boss-rc-500",
-      "label": "RC-500 Loop Station",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Loopers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Powerful looping station for live and studio performance."
-    },
-    {
-      "id": "boss-me-50",
-      "label": "ME-50 Guitar Multi-Effects",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Compact multi-effects with expression pedal and amp modeling."
-    },
-    {
-      "id": "boss-ad-8",
-      "label": "AD-8 Acoustic Processor",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Acoustic guitar processor with natural and creative effects."
-    },
-    {
-      "id": "boss-ev-1",
-      "label": "EV-1 Expression Pedal",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Compact expression pedal for effects control."
-    },
-    {
-      "id": "boss-tu-3",
-      "label": "TU-3 Chromatic Tuner",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Professional chromatic tuner with easy-to-read display."
-    },
-    {
-      "id": "boss-rv-500",
-      "label": "RV-500 Reverb",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Professional reverb unit with 48 algorithms."
-    },
-    {
-      "id": "boss-ms-3",
-      "label": "MS-3 Multi-Switch Controller",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Guitar Effects",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Advanced multi-switch controller for seamless pedalboard control."
-    },
-    {
-      "id": "roland-juno-106",
-      "label": "Juno-106 Classic Synthesizer",
+      "id": "roland-bridge_cast",
+      "label": "BRIDGE CAST",
       "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Classic analog synthesizer with 6-voice polyphony, touch sensor, and warm analog sound."
-    },
-    {
-      "id": "roland-tr-808",
-      "label": "TR-808 Rhythm Composer",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Electronic Drums",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Legendary drum machine with iconic sounds used in countless hit records."
-    },
-    {
-      "id": "roland-fp-90x",
-      "label": "FP-90X Stage Piano",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Digital Pianos",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Professional stage piano with 88 weighted keys and premium sound engine."
-    },
-    {
-      "id": "roland-fantom-07",
-      "label": "FANTOM-07 Workstation",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Compact 7-inch workstation synthesizer with powerful sound design capabilities."
-    },
-    {
-      "id": "roland-go:keys",
-      "label": "GO:KEYS Music Workstation",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Portable music production station with AI songwriting assistance."
-    },
-    {
-      "id": "roland-td-27",
-      "label": "TD-27 Electronic Drum Kit",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Electronic Drums",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Professional electronic drum kit with premium sounds and realistic feel."
-    },
-    {
-      "id": "roland-cube-80gx",
-      "label": "CUBE-80GX Guitar Amp",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Guitar Products",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Compact modeling guitar amplifier with 99 amp models."
-    },
-    {
-      "id": "roland-ae-20",
-      "label": "AE-20 Aerophone Lead",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Wind Instruments",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Electronic wind instrument with natural playing feel and expressive control."
-    },
-    {
-      "id": "roland-jupiter-x",
-      "label": "JUPITER-X Synthesizer",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Premium synthesizer with powerful engine and legendary JUPITER sound."
-    },
-    {
-      "id": "roland-spd-sx",
-      "label": "SPD-SX Pro Sampling Pad",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Electronic Drums",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Professional sampling pad controller for live performance and studio work."
-    },
-    {
-      "id": "boss-gx-10",
-      "label": "GX-10Guitar Effects Processor",
-      "brand": "boss-comprehensive",
-      "brand_name": "Boss Comprehensive",
-      "category": "Multi-Effects",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
       "subcategory": null,
       "keywords": [
-        "Compact amp/effects processor for guitar and bass",
-        "The same sound engine and color touch display as the GX-100 in a portable, travel-ready design",
-        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
-        "Authentic tube amplifier tone and touch response with AIRD technology",
-        "32 amplifier types and 170 BOSS effects"
+        "Professional audio streaming interface and mixer designed for online gamers",
+        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
+        "Create independent mixes for you and the online audience with dual audio busses",
+        "USB-C connectivity with Windows and Mac computers and mobile devices",
+        "Also works with the Sony PlayStation®5 console and Nintendo Switch*"
       ],
-      "description": "Colorful Tones, Portable Design\n\nPlayers everywhere love the GX-100 for its streamlined design, free"
+      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for premium li"
     },
     {
-      "id": "boss-gt-1000",
-      "label": "GT-1000Guitar Effects Processor",
-      "brand": "boss-comprehensive",
-      "brand_name": "Boss Comprehensive",
-      "category": "Multi-Effects",
+      "id": "nord-nord-drum-3p",
+      "label": "Nord Drum 3P",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Drum",
       "subcategory": null,
       "keywords": [
-        "Flagship amp/effects processor with uncompromising sound quality and unmatched expressiveness",
-        "Industry-leading 32-bit AD/DA, 32-bit floating-point processing, and 96 kHz sampling rate throughout",
-        "Highly expressive amplifiers, meticulously crafted with AIRD",
-        "Massive selection of onboard BOSS effects, including MDP effects and the latest algorithms",
-        "Dedicated mode for bass guitar applications"
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
       ],
-      "description": "Industry-Leading Tone with Breakthrough BOSS Technology\n\nDelivering unmatched sound quality and musi"
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
     },
     {
-      "id": "boss-px-1",
-      "label": "PX-1Plugout FX",
-      "brand": "boss-comprehensive",
-      "brand_name": "Boss Comprehensive",
-      "category": "Effects Pedals",
+      "id": "nord-nord-electro-7",
+      "label": "Nord Electro 7",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Electro",
       "subcategory": null,
       "keywords": [
-        "Timeless BOSS compact pedals in an innovative hardware platform",
-        "Instantly reconfigure the pedal to use one effect from an onboard library of up to 16 types",
-        "Comes with 16 effects: OD-1, SP-1, PH-1, SG-1, CS-1, TW-1, SD-1, DS-1, CE-2, BF-2, PN-2, OC-2, PS-2, VB-2, DD-2, and DF-2",
-        "Additional effects available over time with Model Pass purchases in the BOSS Effect Loader app",
-        "Authentic tone and response, realized with powerful DSP dedicated to one effect at a time"
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
       ],
-      "description": "Timeless Effects, Infinite Inspiration\n\nThe PX-1 Plugout FX is an innovative hardware platform that "
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
     },
     {
-      "id": "nord-lead-a1",
-      "label": "Nord Lead A1 Synthesizer",
+      "id": "nord-nord-lead-a1",
+      "label": "Nord Lead A1",
       "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
+      "brand_name": "Nord Catalog",
+      "category": "Lead",
+      "subcategory": null,
       "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
       ],
-      "description": "Compact analog synthesizer with sound engine from Nord Lead."
-    },
-    {
-      "id": "nord-stage-4-88",
-      "label": "Nord Stage 4 88",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Stage Keyboards",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Premium 88-key stage keyboard with three sound engines."
-    },
-    {
-      "id": "nord-grand-3",
-      "label": "Nord Clavia Grand 3",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Digital Pianos",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Stage digital piano with acoustic piano character."
-    },
-    {
-      "id": "nord-lead-a",
-      "label": "Nord Lead A Synthesizer",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Portable analog synthesizer with analog signal path."
-    },
-    {
-      "id": "nord-g2",
-      "label": "Nord Modular G2",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Fully modular analog synthesizer with graphical interface."
-    },
-    {
-      "id": "nord-rack-2",
-      "label": "Nord Rack 2",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Rackmount synthesizer engine from Nord Lead."
-    },
-    {
-      "id": "nord-arpeggiator-3",
-      "label": "Nord Arpeggiator 3",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Dedicated arpeggiator with advanced sequencing."
-    },
-    {
-      "id": "nord-dock",
-      "label": "Nord Keyboard Dock",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Stage Keyboards",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Connect Nord synths with additional keyboards and controllers."
-    },
-    {
-      "id": "nord-pedal",
-      "label": "Nord Pedal Controller",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Stage Keyboards",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Pedal controller for hands-free parameter control."
-    },
-    {
-      "id": "nord-reverb-3",
-      "label": "Nord Reverb 3",
-      "brand": "nord",
-      "brand_name": "Nord",
-      "category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "keywords": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "description": "Dedicated reverb module with Swedish analog warmth."
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
     }
   ],
-  "total_brands": 8
+  "total_brands": 3
 }
