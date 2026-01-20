@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import { HeaderSystemPanel } from './HeaderSystemPanel';
 
 /**
  * BrandedHeader - Dynamic header with brand logo and theme colors
@@ -53,14 +52,6 @@ export const BrandedHeader: React.FC = () => {
             v3.7 Mission Control • {currentBrandId}
           </p>
         </div>
-      </div>
-
-      {/* RIGHT SECTION: System Panel */}
-      <div
-        className="opacity-90"
-        style={{ color: theme.colors.text }}
-      >
-        <HeaderSystemPanel />
       </div>
     </div>
   );

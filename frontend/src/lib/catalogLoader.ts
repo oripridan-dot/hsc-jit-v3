@@ -251,7 +251,7 @@ class CatalogLoader {
         return {
           ...p,
           // Ensure required fields
-          category: p.category || 'Uncategorized',
+          category: p.category || (p as any).main_category || 'Uncategorized',
           verified: p.verified ?? true,
           // Normalize images
           images: normalizedImages,

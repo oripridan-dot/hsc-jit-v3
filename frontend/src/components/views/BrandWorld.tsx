@@ -47,8 +47,9 @@ export const BrandWorld: React.FC<BrandWorldProps> = ({ brandId }) => {
     }, 0);
 
     const totalVideos = products.reduce((sum, p) => {
-      const videos = Array.isArray(p.video_urls || p.youtube_videos || p.videos)
-        ? (p.video_urls || p.youtube_videos || p.videos).filter((v: any) => v).length
+      const videoList = p.video_urls || p.youtube_videos || p.videos;
+      const videos = Array.isArray(videoList)
+        ? videoList.filter((v: any) => v).length
         : 0;
       return sum + videos;
     }, 0);

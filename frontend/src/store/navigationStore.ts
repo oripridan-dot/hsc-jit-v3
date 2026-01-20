@@ -2,11 +2,13 @@
  * Navigation Store - Mission Control State Management
  * Manages the tri-pane console: Navigator -> Workbench -> Analyst
  * ✅ PERSISTENT: User navigation state survives page refresh
+ * 
+ * STATE MACHINE: Galaxy → Brand → Category (Family) → Product
  */
 import { create } from 'zustand';
 import type { StateCreator } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { Product, NavLevel, ProductRelationship } from '../types';
+import type { Product, NavLevel, ProductRelationship, BrandIdentity } from '../types';
 
 export type { NavLevel } from '../types';
 
@@ -30,8 +32,10 @@ export interface EcosystemNode {
 interface NavState {
     // Current state
     currentLevel: NavLevel;
-    activePath: string[]; // e.g., ["Drums", "Roland", "TD-17 Series"]
+    activePath: string[]; // e.g., ["roland", "Keyboards", "TR-08"]
     selectedProduct: Product | null;
+    currentBrand: BrandIdentity | null;
+    currentCategory: string | null;
     ecosystem: EcosystemNode | null;
 
     // UI state
@@ -41,6 +45,8 @@ interface NavState {
 
     // Actions
     warpTo: (level: NavLevel, path: string[]) => void;
+    selectBrand: (brandId: string) => void;
+    selectCategory: (brandId: string, category: string) => void;
     selectProduct: (product: Product) => void;
     goBack: () => void;
     loadEcosystem: (data: EcosystemNode) => void;
@@ -57,6 +63,8 @@ export const useNavigationStore = create<NavState>(
             currentLevel: 'galaxy',
             activePath: [],
             selectedProduct: null,
+            currentBrand: null,
+            currentCategory: null,
             ecosystem: null,
             expandedNodes: new Set<string>(),
             searchQuery: '',
@@ -72,12 +80,38 @@ export const useNavigationStore = create<NavState>(
                 });
             },
 
+            // Select a brand (Brand Level view)
+            selectBrand: (brandId) => {
+                console.log('🏢 Brand Selected:', brandId);
+                set({
+                    currentLevel: 'brand',
+                    selectedProduct: null,
+                    currentCategory: null,
+                    activePath: [brandId],
+                    currentBrand: { id: brandId, name: brandId }
+                });
+            },
+
+            // Select a category within a brand (Category/Family Level view)
+            selectCategory: (brandId, category) => {
+                console.log('📂 Category Selected:', category);
+                set({
+                    currentLevel: 'family',
+                    selectedProduct: null,
+                    currentCategory: category,
+                    activePath: [brandId, category],
+                    currentBrand: { id: brandId, name: brandId }
+                });
+            },
+
             // Select a specific product (deepest level)
             selectProduct: (product) => {
                 console.log('🎯 Product selected:', product.name);
                 set({
                     currentLevel: 'product',
-                    selectedProduct: product
+                    selectedProduct: product,
+                    currentBrand: { id: product.brand, name: product.brand },
+                    activePath: [product.brand, product.category, product.name]
                 });
             },
 
@@ -146,6 +180,8 @@ export const useNavigationStore = create<NavState>(
                     currentLevel: 'galaxy',
                     activePath: [],
                     selectedProduct: null,
+                    currentBrand: null,
+                    currentCategory: null,
                     searchQuery: '',
                     expandedNodes: new Set(),
                     whiteBgImages: {}

@@ -88,7 +88,7 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({ brandId, category })
                   
                   {/* Product Image */}
                   <img 
-                    src={whiteBgImages[product.id] || product.image_url || product.image || ''} 
+                    src={product.image_url || product.image || ''} 
                     alt={product.name}
                     className="w-full h-full object-contain transition-transform group-hover:scale-105 relative z-10"
                     loading="lazy"
