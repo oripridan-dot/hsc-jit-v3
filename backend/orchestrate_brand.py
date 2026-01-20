@@ -14,6 +14,9 @@ from core.config import settings
 from core.progress_tracker import ProgressTracker
 from services.hierarchy_scraper import HierarchyScraper
 from services.roland_scraper import RolandScraper
+from services.boss_scraper import BossScraper
+from services.nord_scraper import NordScraper
+from services.moog_scraper import MoogScraper
 from models.product_hierarchy import ProductCatalog
 
 
@@ -142,12 +145,20 @@ async def main():
     progress = tracker.start(args.brand, args.max_products or 100)
     
     try:
-        if args.brand.lower() == 'roland':
+        brand_lower = args.brand.lower()
+        
+        if brand_lower == 'roland':
+            # Phase 1: Exploring
+            tracker.update_phase(progress, "exploring", "🔍 Discovering product pages...")
+            
             scraper = RolandScraper()
             # Patch scraper to report progress
             original_scrape = scraper.scrape_all_products
             
             async def scrape_with_progress(*pargs, **kwargs):
+                # Phase 2: Harvesting
+                tracker.update_phase(progress, "harvesting", "📦 Extracting product data...")
+                
                 catalog = await original_scrape(*pargs, **kwargs)
                 # Update progress after scraping
                 for idx, product in enumerate(catalog.products, 1):
@@ -155,11 +166,85 @@ async def main():
                 return catalog
             
             catalog = await scrape_with_progress(max_products=args.max_products)
+            
+            # Phase 3: Processing
+            tracker.update_phase(progress, "processing", "⚙️ Processing catalog data...")
+            
+        elif brand_lower == 'boss':
+            # Phase 1: Exploring
+            tracker.update_phase(progress, "exploring", "🔍 Discovering Boss products...")
+            
+            scraper = BossScraper()
+            original_scrape = scraper.scrape_all_products
+            
+            async def scrape_with_progress(*pargs, **kwargs):
+                # Phase 2: Harvesting
+                tracker.update_phase(progress, "harvesting", "📦 Extracting Boss product data...")
+                
+                catalog = await original_scrape(*pargs, **kwargs)
+                # Update progress after scraping
+                for idx, product in enumerate(catalog.products, 1):
+                    tracker.update_product(progress, product.name, idx, start_time)
+                return catalog
+            
+            catalog = await scrape_with_progress(max_products=args.max_products)
+            
+            # Phase 3: Processing
+            tracker.update_phase(progress, "processing", "⚙️ Processing Boss catalog...")
+            
+        elif brand_lower == 'nord':
+            # Phase 1: Exploring
+            tracker.update_phase(progress, "exploring", "🔍 Discovering Nord products...")
+            
+            scraper = NordScraper()
+            original_scrape = scraper.scrape_all_products
+            
+            async def scrape_with_progress(*pargs, **kwargs):
+                # Phase 2: Harvesting
+                tracker.update_phase(progress, "harvesting", "📦 Extracting Nord product data...")
+                
+                catalog = await original_scrape(*pargs, **kwargs)
+                # Update progress after scraping
+                for idx, product in enumerate(catalog.products, 1):
+                    tracker.update_product(progress, product.name, idx, start_time)
+                return catalog
+            
+            catalog = await scrape_with_progress(max_products=args.max_products)
+            
+            # Phase 3: Processing
+            tracker.update_phase(progress, "processing", "⚙️ Processing Nord catalog...")
+            
+        elif brand_lower == 'moog':
+            # Phase 1: Exploring
+            tracker.update_phase(progress, "exploring", "🔍 Discovering Moog products...")
+            
+            scraper = MoogScraper()
+            original_scrape = scraper.scrape_all_products
+            
+            async def scrape_with_progress(*pargs, **kwargs):
+                # Phase 2: Harvesting
+                tracker.update_phase(progress, "harvesting", "📦 Extracting Moog product data...")
+                
+                catalog = await original_scrape(*pargs, **kwargs)
+                # Update progress after scraping
+                for idx, product in enumerate(catalog.products, 1):
+                    tracker.update_product(progress, product.name, idx, start_time)
+                return catalog
+            
+            catalog = await scrape_with_progress(max_products=args.max_products)
+            
+            # Phase 3: Processing
+            tracker.update_phase(progress, "processing", "⚙️ Processing Moog catalog...")
+            
         else:
             # Fallback to generic scraper
             print(f"ℹ️ Using generic scraper for {args.brand}")
+            tracker.update_phase(progress, "exploring", "🔍 Discovering products...")
+            
             scraper = HierarchyScraper()
             catalog = await scraper.scrape_brand_with_hierarchy(args.brand, {}, max_products=args.max_products or 10)
+            
+            tracker.update_phase(progress, "processing", "⚙️ Processing catalog data...")
         
         # Save and Sync
         saved_path = save_catalog(catalog, args.brand)

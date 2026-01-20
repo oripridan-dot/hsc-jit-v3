@@ -8,11 +8,13 @@ import { useEffect, useState } from 'react';
 export interface ScrapeProgress {
     brand: string;
     status: 'idle' | 'running' | 'complete' | 'error';
+    phase?: 'initializing' | 'exploring' | 'harvesting' | 'processing' | 'complete';
     current_product: number;
     total_products: number;
     current_file: string;
     elapsed_seconds: number;
     estimated_seconds_remaining: number | null;
+    files_scraped?: string[];
     errors: string[];
 }
 

@@ -16,6 +16,7 @@ class ScrapeProgress:
     """Scraping progress data structure"""
     brand: str
     status: str  # "idle" | "running" | "complete" | "error"
+    phase: str  # "initializing" | "exploring" | "harvesting" | "processing" | "complete"
     current_product: int
     total_products: int
     current_file: str
@@ -50,9 +51,10 @@ class ProgressTracker:
         progress = ScrapeProgress(
             brand=brand,
             status="running",
+            phase="initializing",
             current_product=0,
             total_products=total_products,
-            current_file="Initializing...",
+            current_file="Starting scraper...",
             files_scraped=[],
             start_time=datetime.utcnow().isoformat() + "Z",
             elapsed_seconds=0.0,
@@ -84,6 +86,14 @@ class ProgressTracker:
         
         self.update(progress)
     
+    def update_phase(self, progress: ScrapeProgress, phase: str, message: str = None):
+        """Update the current phase"""
+        progress.phase = phase
+        if message:
+            progress.current_file = message
+        progress.last_update = datetime.utcnow().isoformat() + "Z"
+        self.update(progress)
+    
     def add_error(self, progress: ScrapeProgress, error: str):
         """Add error to progress"""
         progress.errors.append(error)
@@ -93,6 +103,7 @@ class ProgressTracker:
         """Mark scraping as complete"""
         elapsed = (datetime.utcnow() - start_time).total_seconds()
         progress.status = "complete"
+        progress.phase = "complete"
         progress.elapsed_seconds = elapsed
         progress.estimated_seconds_remaining = 0
         progress.last_update = datetime.utcnow().isoformat() + "Z"

@@ -3,7 +3,7 @@ import { useWebSocketStore } from './store/useWebSocketStore';
 import { catalogLoader, instantSearch } from './lib';
 import { HalileoNavigator } from './components/HalileoNavigator';
 import { Workbench } from './components/Workbench';
-import { SystemHealthBadge } from './components/SystemHealthBadge';
+import { HeaderSystemPanel } from './components/HeaderSystemPanel';
 import ErrorBoundary from './components/ErrorBoundary';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import { useRealtimeData } from './hooks/useRealtimeData';
@@ -61,12 +61,12 @@ function AppContent() {
   return (
     <div className="flex fixed inset-0 flex-col bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-50 overflow-hidden font-sans selection:bg-cyan-500/30">
       {/* HEADER: Halilit Support Center */}
-      <div className="h-20 border-b border-slate-800/50 flex items-center justify-between px-8 bg-slate-950/90 backdrop-blur-md z-30 shadow-lg flex-shrink-0">
+      <div className="h-20 border-b border-slate-800/50 flex items-center justify-between px-8 bg-slate-950/90 backdrop-blur-md z-30 shadow-lg flex-shrink-0 relative">
         <div>
           <h1 className="text-2xl font-bold text-cyan-300 tracking-wide">HALILIT SUPPORT CENTER</h1>
           <p className="text-xs text-slate-500 font-mono mt-0.5">v3.7 Mission Control</p>
         </div>
-        <SystemHealthBadge placement="topbar" />
+        <HeaderSystemPanel />
       </div>
 
       {/* BODY CONTAINER: Left Nav + Center Workbench */}

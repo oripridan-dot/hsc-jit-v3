@@ -1,0 +1,34 @@
+{
+  "brand_identity": {
+    "id": "moog",
+    "name": "Moog Music",
+    "logo_url": null,
+    "website": "https://www.moogmusic.com",
+    "description": "Legendary manufacturer of analog synthesizers and electronic musical instruments",
+    "founded": null,
+    "headquarters": null,
+    "categories": [
+      "Synthesizers",
+      "Modules",
+      "Effects",
+      "Accessories"
+    ],
+    "brand_colors": {}
+  },
+  "products": [],
+  "total_products": 0,
+  "last_updated": "2026-01-20T10:25:27.172650",
+  "catalog_version": "3.7.0",
+  "coverage_stats": {
+    "total_images": 0,
+    "total_videos": 0,
+    "total_specifications": 0,
+    "total_features": 0,
+    "total_manuals": 0,
+    "total_accessories": 0,
+    "avg_images_per_product": 0,
+    "avg_specs_per_product": 0
+  },
+  "rag_enabled": false,
+  "total_documentation_snippets": 0
+}

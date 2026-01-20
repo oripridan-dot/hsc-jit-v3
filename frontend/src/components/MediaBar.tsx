@@ -35,24 +35,24 @@ export const MediaBar: React.FC<MediaBarProps> = ({
   const [imageDimensions, setImageDimensions] = useState<Record<string, { width: number; height: number }>>({});
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Normalize media arrays
-  const normalizeMedia = (items: (string | { url: string; title?: string })[]): MediaItem[] => {
+  // Normalize media arrays with correct types
+  const normalizeMedia = (items: (string | { url: string; title?: string })[], mediaType: 'image' | 'video' | 'audio' | 'pdf'): MediaItem[] => {
     return items.map((item) => {
       if (typeof item === 'string') {
-        return { type: 'image' as const, url: item };
+        return { type: mediaType, url: item };
       }
-      return { ...item, type: 'image' as const };
+      return { ...item, type: mediaType };
     });
   };
 
   const normalizedImages = useMemo(() => {
-    const normalized = normalizeMedia(images);
+    const normalized = normalizeMedia(images, 'image');
     // Keep scraped order - don't sort
     return normalized;
   }, [images]);
-  const normalizedVideos = useMemo(() => normalizeMedia(videos), [videos]);
-  const normalizedAudio = useMemo(() => normalizeMedia(audio), [audio]);
-  const normalizedDocuments = useMemo(() => normalizeMedia(documents), [documents]);
+  const normalizedVideos = useMemo(() => normalizeMedia(videos, 'video'), [videos]);
+  const normalizedAudio = useMemo(() => normalizeMedia(audio, 'audio'), [audio]);
+  const normalizedDocuments = useMemo(() => normalizeMedia(documents, 'pdf'), [documents]);
 
   const tabs = [
     {
@@ -83,27 +83,33 @@ export const MediaBar: React.FC<MediaBarProps> = ({
 
   // Detect if image has white background
   const isWhiteBackground = (canvas: HTMLCanvasElement): boolean => {
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return false;
-    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    const data = imageData.data;
-    
-    // Sample ~10% of pixels
-    const sampleSize = Math.ceil(data.length / 40);
-    let whitePixels = 0;
-    
-    for (let i = 0; i < data.length; i += sampleSize) {
-      const r = data[i];
-      const g = data[i + 1];
-      const b = data[i + 2];
-      // Check if pixel is white (R>240, G>240, B>240)
-      if (r > 240 && g > 240 && b > 240) {
-        whitePixels++;
+    try {
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return false;
+      // This getImageData call will throw SecurityError for cross-origin images
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const data = imageData.data;
+      
+      // Sample ~10% of pixels
+      const sampleSize = Math.ceil(data.length / 40);
+      let whitePixels = 0;
+      
+      for (let i = 0; i < data.length; i += sampleSize) {
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        // Check if pixel is white (R>240, G>240, B>240)
+        if (r > 240 && g > 240 && b > 240) {
+          whitePixels++;
+        }
       }
+      
+      const whitePercentage = (whitePixels / (data.length / 4 / sampleSize)) * 100;
+      return whitePercentage > 75; // More than 75% white
+    } catch (error) {
+      // CORS/Security error - can't analyze cross-origin images, assume not white
+      return false;
     }
-    
-    const whitePercentage = (whitePixels / (data.length / 4 / sampleSize)) * 100;
-    return whitePercentage > 75; // More than 75% white
   };
 
   // Handle image load to track dimensions and detect white bg
@@ -117,17 +123,26 @@ export const MediaBar: React.FC<MediaBarProps> = ({
       }
     }));
 
-    // Check for white background
+    // Check for white background (with CORS error handling)
     if (onWhiteBgImageFound) {
-      const canvas = document.createElement('canvas');
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        ctx.drawImage(img, 0, 0);
-        if (isWhiteBackground(canvas)) {
-          onWhiteBgImageFound(img.src);
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        const ctx = canvas.getContext('2d');
+        if (ctx) {
+          ctx.drawImage(img, 0, 0);
+          try {
+            // This is where CORS errors occur - wrap getImageData
+            if (isWhiteBackground(canvas)) {
+              onWhiteBgImageFound(img.src);
+            }
+          } catch (corsError) {
+            // Silently skip - external images without CORS headers
+          }
         }
+      } catch (error) {
+        // Silently ignore other canvas errors
       }
     }
   };
@@ -286,24 +301,6 @@ export const MediaBar: React.FC<MediaBarProps> = ({
                             </p>
                             <p className="text-[8px] text-[var(--text-secondary)]">
                               Click to play
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {activeTab === 'documents' && (
-                      <div className="w-full bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 p-2 hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20">
-                        <div className="flex items-center gap-2">
-                          <div className="flex-shrink-0 w-8 h-8 rounded bg-gradient-to-br from-amber-500/30 to-amber-500/10 flex items-center justify-center">
-                            <FiFile className="text-amber-400" size={14} />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <p className="text-[10px] font-medium text-[var(--text-primary)] truncate">
-                              {media.title || `Document ${idx + 1}`}
-                            </p>
-                            <p className="text-[8px] text-[var(--text-secondary)]">
-                              PDF • Tap to view
                             </p>
                           </div>
                         </div>

@@ -167,6 +167,9 @@ class RolandScraper:
                     except asyncio.TimeoutError:
                         logger.error(f"   Timeout scraping {url} (45s limit)")
                         continue
+                    except asyncio.CancelledError:
+                        logger.warning(f"   Scraping cancelled for {url}")
+                        continue
                     except Exception as e:
                         logger.error(f"   Error scraping {url}: {e}")
                         continue
@@ -499,11 +502,18 @@ class RolandScraper:
 
         try:
             # Add timeout wrapper for page navigation
-            await asyncio.wait_for(
-                self._navigate(page, url),
-                timeout=20
-            )
-            await asyncio.sleep(1)
+            try:
+                await asyncio.wait_for(
+                    self._navigate(page, url),
+                    timeout=20
+                )
+                await asyncio.sleep(1)
+            except Exception as nav_error:
+                error_msg = str(nav_error)
+                if "Execution context was destroyed" in error_msg or "navigation" in error_msg.lower():
+                    logger.warning(f"   Navigation interrupted for {url}, skipping")
+                    return None
+                raise  # Re-raise other errors
 
             # ============================================================
             # 1. EXTRACT PRODUCT NAME & MODEL
@@ -970,6 +980,10 @@ class RolandScraper:
 
             for selector in related_selectors:
                 try:
+                    # Check if page is still valid before querying
+                    if page.is_closed():
+                        break
+                        
                     elements = await asyncio.wait_for(
                         page.locator(selector).all(),
                         timeout=3
@@ -1000,10 +1014,17 @@ class RolandScraper:
                                 is_required=False,
                                 priority=1
                             ))
-                        except (asyncio.TimeoutError, Exception):
+                        except Exception:
+                            # Skip problematic element
                             continue
-                except asyncio.TimeoutError:
-                    continue  # Skip this selector if timeout
+                except Exception as e:
+                    # Catch Execution context destroyed and other navigation errors
+                    error_msg = str(e)
+                    if "Execution context was destroyed" in error_msg:
+                        logger.debug(f"   Execution context destroyed while extracting related products, continuing")
+                        break  # Stop trying more selectors
+                    # Otherwise continue to next selector
+                    continue
 
             # ============================================================
             # 12. CREATE COMPREHENSIVE PRODUCT

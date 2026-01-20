@@ -1,10 +1,24 @@
 {
-  "brand": "boss",
-  "status": "running",
-  "current_product": 12,
-  "total_products": 30,
-  "current_file": "boss-gt-1.html",
-  "elapsed_seconds": 72,
-  "estimated_seconds_remaining": 108,
+  "brand": "nord",
+  "status": "complete",
+  "phase": "complete",
+  "current_product": 9,
+  "total_products": 50,
+  "current_file": "\u2699\ufe0f Processing Nord catalog...",
+  "files_scraped": [
+    "Nord Drum 3P",
+    "Nord Stage 4",
+    "Nord Electro 6",
+    "Nord Wave 2",
+    "Nord Electro 7",
+    "Nord Lead A1",
+    "Nord Organ 3",
+    "Nord Piano 6",
+    "Nord Grand"
+  ],
+  "start_time": "2026-01-20T11:31:38.324562Z",
+  "elapsed_seconds": 39.771995,
+  "estimated_seconds_remaining": 0,
+  "last_update": "2026-01-20T11:32:18.096559Z",
   "errors": []
 }

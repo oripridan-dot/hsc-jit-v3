@@ -1,11 +1,11 @@
 """
-Boss-Specific Scraper - COMPREHENSIVE DATA EXTRACTION
-=====================================================
+Nord-Specific Scraper - COMPREHENSIVE DATA EXTRACTION
+======================================================
 
-Boss uses the same CMS architecture as Roland (parent company: Roland Corporation).
-This scraper mirrors RolandScraper approach with Boss-specific URLs and configurations.
+Nord Keyboards (Clavia DMI AB) - Premium keyboard and synthesizer manufacturer.
+Website: https://www.nordkeyboards.com
 
-GOAL: Extract ALL available data from Boss website for JIT RAG system
+GOAL: Extract ALL available data from Nord website for JIT RAG system
 ----------------------------------------------------------------------
 ✓ Product metadata (name, model, SKU, categories)
 ✓ Full descriptions (marketing copy, long-form content)
@@ -13,9 +13,8 @@ GOAL: Extract ALL available data from Boss website for JIT RAG system
 ✓ Complete specifications (all spec tables, technical details)
 ✓ Features and benefits (bullet points, marketing content)
 ✓ Manuals and documentation (PDFs, quick start guides, reference docs)
-✓ Knowledge base articles (support articles, FAQs, tutorials)
-✓ Related accessories (recommended, required, compatible)
-✓ Support resources (downloads, software, drivers, firmware)
+✓ Sound libraries and patches (Nord's famous sound banks)
+✓ Support resources (downloads, software, OS updates)
 """
 
 from models.product_hierarchy import (
@@ -44,56 +43,33 @@ sys.path.insert(0, '/workspaces/hsc-jit-v3/backend/models')
 logger = logging.getLogger(__name__)
 
 
-class BossScraper:
-    """Specialized scraper for Boss website - mirrors Roland CMS structure"""
+class NordScraper:
+    """Specialized scraper for Nord Keyboards website"""
 
     def __init__(self):
-        self.base_url = "https://www.boss.info"
-        self.products_url = f"{self.base_url}/us/products/"
+        self.base_url = "https://www.nordkeyboards.com"
+        self.products_url = f"{self.base_url}/products"
         
-        # Boss main categories (similar to Roland hierarchy)
+        # Nord main categories (based on brand_recipes.json)
         self.category_urls = [
             # Main products page
-            "https://www.boss.info/us/products/",
-            # Guitar Effects (main Boss category)
-            "https://www.boss.info/us/products/multi-effects_processors/",
-            "https://www.boss.info/us/products/stompbox_effects/",
-            "https://www.boss.info/us/products/distortion_overdrive/",
-            "https://www.boss.info/us/products/modulation/",
-            "https://www.boss.info/us/products/delay_reverb/",
-            # Drums/Percussion
-            "https://www.boss.info/us/products/drum_machines/",
-            "https://www.boss.info/us/products/drum_pads/",
-            # Keyboards/Synthesizers
-            "https://www.boss.info/us/products/synthesizers/",
-            "https://www.boss.info/us/products/keyboards/",
-            # Amplifiers
-            "https://www.boss.info/us/products/amplifiers/",
-            # Loopers/Recorders
-            "https://www.boss.info/us/products/loopers_recorders/",
-            # Tuners/Metronomes
-            "https://www.boss.info/us/products/tuners_metronomes/",
-            # Accessories
-            "https://www.boss.info/us/products/accessories/",
-            "https://www.boss.info/us/products/cables_connectors/",
-            "https://www.boss.info/us/products/stands_holders/",
+            "https://www.nordkeyboards.com/products",
+            # Specific product families
+            "https://www.nordkeyboards.com/products/nord-stage",
+            "https://www.nordkeyboards.com/products/nord-piano",
+            "https://www.nordkeyboards.com/products/nord-grand",
+            "https://www.nordkeyboards.com/products/nord-electro",
+            "https://www.nordkeyboards.com/products/nord-lead",
+            "https://www.nordkeyboards.com/products/nord-wave",
+            "https://www.nordkeyboards.com/products/nord-drum",
         ]
+        
+        # Meta keywords from brand_recipes.json
+        self.meta_keywords = ["Piano", "Organ", "Synth", "Drum", "Stage", "Grand", "Electro", "Lead", "Wave"]
 
     async def scrape_all_products(self, max_products: int = None) -> ProductCatalog:
         """
-        Scrape ALL Boss products with COMPREHENSIVE data extraction
-
-        For each product, we extract:
-        ✓ Full metadata (name, model, SKU, categories)
-        ✓ Complete descriptions (all text content, marketing copy)
-        ✓ ALL images (main, gallery, technical diagrams)
-        ✓ ALL videos (YouTube, Vimeo, product demos)
-        ✓ Complete specifications (all spec tables)
-        ✓ All features (bullet lists, feature descriptions)
-        ✓ Manuals and documentation (PDFs, guides, quick starts)
-        ✓ Support resources (support page links, FAQs)
-        ✓ Related accessories (recommended, compatible)
-        ✓ Related products (similar, complementary)
+        Scrape ALL Nord products with COMPREHENSIVE data extraction
 
         Args:
             max_products: Maximum products to scrape (None = scrape ALL products)
@@ -102,9 +78,9 @@ class BossScraper:
             ProductCatalog with comprehensive product data ready for JIT RAG
         """
         logger.info(
-            f"🎸 Starting COMPREHENSIVE Boss scrape (max: {'ALL' if max_products is None else max_products})")
+            f"🎹 Starting COMPREHENSIVE Nord scrape (max: {'ALL' if max_products is None else max_products})")
         logger.info(f"   Goal: Extract ALL available data for JIT RAG system")
-        logger.info(f"   Note: Boss uses same CMS as Roland (parent company)")
+        logger.info(f"   Note: Nord is known for exceptional product pages with rich specs")
 
         async with async_playwright() as p:
             browser = await p.chromium.launch(
@@ -167,12 +143,11 @@ class BossScraper:
 
                 # Create comprehensive catalog
                 brand = BrandIdentity(
-                    id="boss",
-                    name="Boss Corporation",
-                    website="https://www.boss.info",
-                    description="Leading manufacturer of guitar effects and audio equipment",
-                    categories=["Guitar Effects", "Synthesizers", "Drum Machines", 
-                                "Amplifiers", "Loopers", "Accessories"]
+                    id="nord",
+                    name="Nord Keyboards",
+                    website="https://www.nordkeyboards.com",
+                    description="Premium manufacturer of stage keyboards, pianos, and synthesizers with iconic red design",
+                    categories=["Stage Keyboards", "Pianos", "Synthesizers", "Organs", "Drum Machines"]
                 )
 
                 catalog = ProductCatalog(
@@ -209,7 +184,6 @@ class BossScraper:
         ):
             with attempt:
                 try:
-                    # Changed to domcontentloaded to prevent hanging on analytics/tracking
                     await page.goto(url, wait_until='domcontentloaded', timeout=timeout)
                 except PlaywrightTimeoutError:
                     logger.warning(f"   Timeout on {url}, retrying...")
@@ -220,7 +194,7 @@ class BossScraper:
 
     async def _get_product_urls(self, page: Page, max_products: int = None) -> List[str]:
         """Get all product URLs by navigating through categories"""
-        logger.info(f"📄 Discovering Boss products through category navigation")
+        logger.info(f"📄 Discovering Nord products through category navigation")
 
         all_urls = set()
 
@@ -234,14 +208,17 @@ class BossScraper:
                 )
                 await asyncio.sleep(2)  # Wait for dynamic content
 
-                # Find all links on the page
+                # Find all product links on category page
                 try:
-                    # Try multiple selectors to find product links
+                    # Try multiple selectors for Nord website
                     selectors = [
-                        'a[href*="/products/"]',  # Any product link
-                        'a.product-link',  # Product-specific links
-                        'a[class*="product"]',  # Links with product in class
-                        'div.product a',  # Links in product divs
+                        'a[href*="/products/"]',
+                        'a[href*="/nord-"]',
+                        'a.product-link',
+                        'a[class*="product"]',
+                        'div.product a',
+                        '.product-grid a',
+                        '.product-list a'
                     ]
                     
                     for selector in selectors:
@@ -250,7 +227,6 @@ class BossScraper:
                                 page.locator(selector).all(),
                                 timeout=5
                             )
-                            logger.info(f"   Found {len(links)} links with selector: {selector}")
                             
                             for link in links:
                                 try:
@@ -262,26 +238,26 @@ class BossScraper:
                                     if href.startswith('http'):
                                         full_url = href
                                     elif href.startswith('/'):
-                                        full_url = f"https://www.boss.info{href}"
+                                        full_url = f"{self.base_url}{href}"
                                     else:
-                                        full_url = f"https://www.boss.info/us/{href}"
+                                        full_url = f"{self.base_url}/{href}"
                                     
-                                    # Only add actual Boss product pages (exclude category/filter pages)
-                                    # Must be boss.info domain with proper product URL structure
-                                    is_valid_boss_url = (
-                                        'boss.info' in full_url and
+                                    # Only add actual Nord product pages
+                                    # Must have one of the meta keywords in URL
+                                    has_keyword = any(keyword.lower() in full_url.lower() for keyword in self.meta_keywords)
+                                    is_valid_nord_url = (
+                                        'nordkeyboards.com' in full_url and
                                         '/products/' in full_url and
-                                        full_url.endswith('/') and  # Must end with /
-                                        not full_url.endswith('/products/') and  # Not just /products/
-                                        not any(skip in full_url.lower() for skip in ['?', 'search', 'compare', 'category', 'filter', 'onetrust'])
+                                        has_keyword and
+                                        not any(skip in full_url.lower() for skip in 
+                                               ['?', 'search', 'compare', 'category', 'filter', 
+                                                'cart', 'checkout', 'accessories'])
                                     )
-                                    if full_url not in all_urls and is_valid_boss_url:
+                                    if full_url not in all_urls and is_valid_nord_url:
                                         all_urls.add(full_url)
-                                        logger.info(f"   Added product URL: {full_url}")
                                 except:
                                     continue
                         except asyncio.TimeoutError:
-                            logger.warning(f"   Timeout with selector: {selector}")
                             continue
                             
                 except asyncio.TimeoutError:
@@ -311,7 +287,7 @@ class BossScraper:
             except:
                 name = "Unknown"
 
-            product_id = url.split('/products/')[-1].rstrip('/')
+            product_id = url.split('/products/')[-1].rstrip('/').replace('/', '-')
             logger.info(f"   Extracting: {name} ({product_id})")
 
             # ============================================================
@@ -334,6 +310,7 @@ class BossScraper:
                 '.product-description',
                 '.description',
                 '[class*="description"]',
+                '[class*="intro"]',
                 '[class*="overview"]',
                 'article p',
                 'main p',
@@ -364,7 +341,8 @@ class BossScraper:
             # Try multiple image selectors
             img_selectors = [
                 'img[src*="product"]',
-                'img[src*="boss"]',
+                'img[src*="nord"]',
+                'img[alt*="Nord"]',
                 '.product-image img',
                 '.gallery img',
                 '.image-gallery img',
@@ -397,7 +375,7 @@ class BossScraper:
                             if src.startswith('//'):
                                 src = f"https:{src}"
                             elif src.startswith('/'):
-                                src = f"https://www.boss.info{src}"
+                                src = f"{self.base_url}{src}"
                             elif not src.startswith('http'):
                                 continue
 
@@ -441,7 +419,7 @@ class BossScraper:
                                        await asyncio.wait_for(elem.get_attribute('href'), timeout=2)
                             if video_url and video_url not in video_urls:
                                 if not video_url.startswith('http'):
-                                    video_url = f"https:{video_url}" if video_url.startswith('//') else f"https://www.boss.info{video_url}"
+                                    video_url = f"https:{video_url}" if video_url.startswith('//') else f"{self.base_url}{video_url}"
                                 video_urls.append(video_url)
                         except (asyncio.TimeoutError, Exception):
                             continue
@@ -477,8 +455,10 @@ class BossScraper:
                                     spec_category = "Weight"
                                 elif any(word in key_lower for word in ['power', 'voltage', 'current']):
                                     spec_category = "Power"
-                                elif any(word in key_lower for word in ['audio', 'frequency', 'output', 'input', 'sound']):
+                                elif any(word in key_lower for word in ['audio', 'frequency', 'output', 'input', 'sound', 'polyphony']):
                                     spec_category = "Audio"
+                                elif any(word in key_lower for word in ['keyboard', 'keys', 'velocity']):
+                                    spec_category = "Keyboard"
 
                                 specifications.append(ProductSpecification(
                                     category=spec_category,
@@ -544,7 +524,8 @@ class BossScraper:
                 'a[href*="manual"]',
                 'a[href*="download"]',
                 'a[href*="guide"]',
-                'a[href*="documentation"]'
+                'a[href*="documentation"]',
+                'a[href*="user-guide"]'
             ]
 
             for selector in download_selectors:
@@ -555,9 +536,9 @@ class BossScraper:
                             href = await elem.get_attribute('href')
                             if href and href not in manual_urls:
                                 if href.startswith('/'):
-                                    href = f"https://www.boss.info{href}"
+                                    href = f"{self.base_url}{href}"
                                 elif not href.startswith('http'):
-                                    href = f"https://www.boss.info/{href}"
+                                    href = f"{self.base_url}/{href}"
                                 manual_urls.append(href)
                         except:
                             continue
@@ -567,12 +548,19 @@ class BossScraper:
             # ============================================================
             # 8. DETERMINE HIERARCHY (BREADCRUMBS & CATEGORIES)
             # ============================================================
-            main_category = "Guitar Effects"
-            categories = ["Boss Products"]
+            main_category = "Keyboards"
+            categories = ["Nord Keyboards"]
+            
+            # Determine category from URL and keywords
+            for keyword in self.meta_keywords:
+                if keyword.lower() in url.lower() or keyword.lower() in name.lower():
+                    main_category = keyword
+                    categories = [f"Nord {keyword}"]
+                    break
             
             try:
                 breadcrumbs = await asyncio.wait_for(
-                    page.locator('[class*="breadcrumb"] a, .breadcrumb li, nav[aria-label="breadcrumb"] li').all(),
+                    page.locator('[class*="breadcrumb"] a, nav[aria-label="breadcrumb"] li, .breadcrumb li').all(),
                     timeout=5
                 )
                 if len(breadcrumbs) > 1:
@@ -581,17 +569,13 @@ class BossScraper:
                         main_category = cat_text.strip()
                         categories = [cat_text.strip()]
             except:
-                # Try to extract from URL
-                if '/products/' in url:
-                    cat_from_url = url.split('/products/')[1].split('/')[0]
-                    main_category = cat_from_url.replace('-', ' ').title()
-                    categories = [main_category]
+                pass
 
             # Create product object
             product = ProductCore(
-                id=f"boss-{product_id}",
+                id=f"nord-{product_id}",
                 name=name,
-                brand="Boss",
+                brand="Nord",
                 description=description,
                 main_category=main_category,
                 images=images,
@@ -616,7 +600,7 @@ class BossScraper:
             return None
 
 
-async def scrape_boss_products(max_products: int = None) -> ProductCatalog:
-    """Convenience function to scrape Boss products"""
-    scraper = BossScraper()
+async def scrape_nord_products(max_products: int = None) -> ProductCatalog:
+    """Convenience function to scrape Nord products"""
+    scraper = NordScraper()
     return await scraper.scrape_all_products(max_products)

@@ -1,17 +1,28 @@
 {
-  "build_timestamp": "2026-01-20T00:58:58.130257",
+  "build_timestamp": "2026-01-20T11:32:18.096131",
   "version": "3.7-Halilit",
-  "total_products": 28,
+  "total_products": 117,
   "total_verified": 0,
   "brands": [
     {
-      "id": "boss",
-      "name": "Boss",
+      "id": "moog",
+      "name": "Moog Music",
       "logo_url": null,
-      "website": null,
+      "website": "https://www.moogmusic.com",
       "product_count": 0,
       "verified_count": 0,
-      "description": "",
+      "description": "Legendary manufacturer of analog synthesizers and electronic musical instruments",
+      "brand_color": null,
+      "data_file": "catalogs_brand/moog.json"
+    },
+    {
+      "id": "boss",
+      "name": "Boss Corporation",
+      "logo_url": null,
+      "website": "https://www.boss.info",
+      "product_count": 9,
+      "verified_count": 0,
+      "description": "Leading manufacturer of guitar effects and audio equipment",
       "brand_color": null,
       "data_file": "catalogs_brand/boss.json"
     },
@@ -20,11 +31,22 @@
       "name": "Roland Corporation",
       "logo_url": null,
       "website": "https://www.roland.com",
-      "product_count": 28,
+      "product_count": 99,
       "verified_count": 0,
       "description": "World leader in electronic musical instruments",
       "brand_color": null,
       "data_file": "catalogs_brand/roland.json"
+    },
+    {
+      "id": "nord",
+      "name": "Nord Keyboards",
+      "logo_url": null,
+      "website": "https://www.nordkeyboards.com",
+      "product_count": 9,
+      "verified_count": 0,
+      "description": "Premium manufacturer of stage keyboards, pianos, and synthesizers with iconic red design",
+      "brand_color": null,
+      "data_file": "catalogs_brand/nord.json"
     }
   ]
 }
