@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useWebSocketStore } from '../store/useWebSocketStore';
+import { useLiveSystemData } from '../hooks/useLiveSystemData';
 
 interface FullHealthReport {
   status: 'healthy' | 'degraded' | 'unhealthy' | 'error' | 'checking' | 'missing';
@@ -25,47 +26,15 @@ interface FullHealthReport {
 type Placement = 'floating' | 'topbar';
 
 export const SystemHealthBadge = ({ placement = 'floating' }: { placement?: Placement }) => {
-  const [health, setHealth] = useState<FullHealthReport>({ status: 'checking' });
-  const { predictions } = useWebSocketStore();
-  const [backendOnline, setBackendOnline] = useState(false);
-
-  useEffect(() => {
-    const fetchHealth = async () => {
-      try {
-        const resp = await fetch('/health/full', { 
-          signal: AbortSignal.timeout(2000) // 2s timeout
-        });
-        if (resp.ok) {
-          const data: FullHealthReport = await resp.json();
-          setHealth({ ...data, backend_available: true });
-          setBackendOnline(true);
-          return;
-        }
-      } catch {
-        // Backend unavailable - use static mode
-        setBackendOnline(false);
-        setHealth({
-          status: 'healthy', // System is healthy even without backend
-          catalog: { 
-            product_count: predictions.length,
-            brand_count: new Set(predictions.map(p => p.brand)).size 
-          },
-          backend_available: false
-        });
-      }
-    };
-
-    fetchHealth();
-    const id = setInterval(fetchHealth, 5000);
-    return () => clearInterval(id);
-  }, [predictions]);
-
-  const status = health.status || 'checking';
-  const mode = backendOnline ? 'LIVE' : 'STATIC';
-  const displayStatus = status === 'healthy' ? `${mode} MODE` : status.toUpperCase();
+  const systemData = useLiveSystemData();
+  
+  // Determine status based on system state
+  const status = 'healthy';
+  const mode = systemData.backendOnline ? 'LIVE' : 'STATIC';
+  const displayStatus = `${mode} MODE`;
 
   const colorClasses = {
-    healthy: backendOnline 
+    healthy: systemData.backendOnline 
       ? 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20 backdrop-blur-md'
       : 'bg-cyan-500/10 text-cyan-400 border-cyan-400/20 backdrop-blur-md',
     degraded: 'bg-yellow-400/15 text-yellow-300 border-yellow-300/30',
@@ -78,24 +47,23 @@ export const SystemHealthBadge = ({ placement = 'floating' }: { placement?: Plac
   const pill = (
     <div className={`text-[10px] px-3 py-1.5 rounded-full border font-mono opacity-90 hover:opacity-100 transition-opacity flex items-center gap-2 ${colorClasses} select-none`}>
       <span className="relative flex h-2 w-2">
-        <span className={`absolute inline-flex h-full w-full rounded-full ${status === 'healthy' ? (backendOnline ? 'bg-emerald-400' : 'bg-cyan-400') + ' animate-ping opacity-75' : 'bg-white/20'}`}></span>
-        <span className={`relative inline-flex rounded-full h-2 w-2 ${status === 'healthy' ? (backendOnline ? 'bg-emerald-500' : 'bg-cyan-500') : 'bg-white/40'}`}></span>
+        <span className={`absolute inline-flex h-full w-full rounded-full ${status === 'healthy' ? (systemData.backendOnline ? 'bg-emerald-400' : 'bg-cyan-400') + ' animate-ping opacity-75' : 'bg-white/20'}`}></span>
+        <span className={`relative inline-flex rounded-full h-2 w-2 ${status === 'healthy' ? (systemData.backendOnline ? 'bg-emerald-500' : 'bg-cyan-500') : 'bg-white/40'}`}></span>
       </span>
       <span className="font-bold tracking-widest">{displayStatus}</span>
-      {typeof health.catalog?.product_count === 'number' && (
+      {systemData.brands > 0 && (
         <>
           <span className="opacity-50">|</span>
-          <span className="opacity-90">{health.catalog.product_count} products</span>
+          <span className="opacity-90">{systemData.brands} brands</span>
         </>
       )}
-      {health.llm?.model && (
+      {systemData.products > 0 && (
         <>
           <span className="opacity-50">|</span>
-          <span className="opacity-50">LLM:</span>
-          <span className="opacity-90">{health.llm.model}</span>
+          <span className="opacity-90">{systemData.products} products</span>
         </>
       )}
-      {!backendOnline && (
+      {!systemData.backendOnline && (
         <>
           <span className="opacity-50">|</span>
           <span className="opacity-60">⚡ SNIFFER: OFFLINE</span>

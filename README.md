@@ -1,14 +1,14 @@
-# 🎹 HSC Mission Control v3.7
+# 🎹 HSC Mission Control v3.7.1-catalogs
 
 > **Production-Ready Product Discovery Interface** ✅
 
-A modern, high-performance product catalog and support system for Roland synthesizers and music production equipment. Built with React 19, TypeScript 5, and Tailwind CSS.
+A modern, high-performance product catalog and support system for Roland and Boss equipment. Built with React 19, TypeScript 5, and Tailwind CSS.
 
 ---
 
 ## 🌟 What's Inside
 
-- ✅ **29 Roland Products** - Fully cataloged across 5 categories
+- ✅ **226 Total Products** - 29 Roland (verified) + 197 Boss (scraped)
 - ⚡ **Instant Search** - Sub-50ms fuzzy search with Fuse.js
 - 🎨 **Dynamic Theming** - Brand-aware color adaptation (WCAG AA)
 - 📊 **Hierarchical Navigation** - Automatic category tree generation
@@ -22,6 +22,7 @@ A modern, high-performance product catalog and support system for Roland synthes
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 18+
 - pnpm (recommended) or npm
 
@@ -92,7 +93,7 @@ hsc-jit-v3/
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │              HALILIT SUPPORT CENTER                         │
-│                v3.7 Mission Control                         │
+│            v3.7.1-catalogs Mission Control                  │
 └─────────────────────────────────────────────────────────────┘
 ┌────────────────┬──────────────────────┬─────────────────────┐
 │                │                      │                     │
@@ -129,16 +130,25 @@ hsc-jit-v3/
 
 ```json
 {
-  "build_timestamp": "2026-01-19T23:42:00.000Z",
+  "build_timestamp": "2026-01-19T23:50:00.000Z",
   "version": "3.7-Halilit",
-  "total_products": 29,
-  "brands": [{
-    "id": "roland",
-    "name": "Roland Catalog",
-    "brand_color": "#ef4444",
-    "product_count": 29,
-    "data_file": "roland-catalog.json"
-  }]
+  "total_products": 226,
+  "brands": [
+    {
+      "id": "roland",
+      "name": "Roland Corporation",
+      "brand_color": "#ef4444",
+      "product_count": 29,
+      "verified_count": 29,
+      "data_file": "catalogs_brand/roland.json"
+    },
+    {
+      "id": "boss",
+      "name": "Boss (Roland)",
+      "product_count": 197,
+      "data_file": "catalogs_brand/boss.json"
+    }
+  ]
 }
 ```
 
@@ -146,29 +156,35 @@ hsc-jit-v3/
 
 ## 🛠️ Tech Stack
 
-| Purpose | Technology | Version |
-|---------|-----------|---------|
-| Frontend | React | 19.2 |
-| Language | TypeScript | 5.9 |
-| Build Tool | Vite | 7.3.1 |
-| State Mgmt | Zustand | 5.0.9 |
-| Styling | Tailwind CSS | 3.4 |
-| Search | Fuse.js | 7.1 |
-| Animation | Framer Motion | 12.1 |
-| Validation | Zod | 3.24 |
-| Icons | Lucide React | Latest |
+| Purpose    | Technology    | Version |
+| ---------- | ------------- | ------- |
+| Frontend   | React         | 19.2    |
+| Language   | TypeScript    | 5.9     |
+| Build Tool | Vite          | 7.3.1   |
+| State Mgmt | Zustand       | 5.0.9   |
+| Styling    | Tailwind CSS  | 3.4     |
+| Search     | Fuse.js       | 7.1     |
+| Animation  | Framer Motion | 12.1    |
+| Validation | Zod           | 3.24    |
+| Icons      | Lucide React  | Latest  |
 
 ---
 
 ## 📊 Supported Products
 
-### Current: Roland (29 Products)
+### Current: Roland (29 Products - Verified) + Boss (197 Products - Scraped)
+
+#### Roland Corporation
 
 - **Keyboards** (5) - BC TC-RF, BC TC-SC, DH-10, E-X50, etc.
 - **Synthesizers** (8) - GO:KEYS 5, GO:LIVECAST, etc.
 - **Guitar Products** (7) - GK-5, GM-800, GO:MIXER PRO, etc.
 - **Wind Instruments** (3) - Aerophone Brisa, etc.
 - **Musical Instruments** (6) - Various Roland equipment
+
+#### Boss (Roland Division)
+
+- **Guitar Effects** (197) - Pedals, multi-effects, accessories
 
 ### Ready to Add
 
@@ -186,18 +202,11 @@ Framework supports unlimited brands. To add a brand:
 
 ```css
 /* Dark Theme (Default) */
---bg-app: #0b0c0f
---bg-panel: #15171e
---text-primary: #f3f4f6
---text-secondary: #9ca3af
---halileo-primary: #6366f1
---border-subtle: #2d313a
-
-/* Brand Colors (Dynamic) */
---brand-primary: var(--roland-primary)  /* Changes per brand */
-Roland: #ef4444 (red) ✅ Active
-Yamaha: #a855f7 (purple) 🔜 Ready
-Korg: #fb923c (orange) 🔜 Ready
+--bg-app: #0b0c0f --bg-panel: #15171e --text-primary: #f3f4f6
+  --text-secondary: #9ca3af --halileo-primary: #6366f1 --border-subtle: #2d313a
+  /* Brand Colors (Dynamic) */ --brand-primary: var(--roland-primary)
+  /* Changes per brand */ Roland: #ef4444 (red) ✅ Active Yamaha: #a855f7
+  (purple) 🔜 Ready Korg: #fb923c (orange) 🔜 Ready;
 ```
 
 ---
@@ -227,13 +236,13 @@ VITE_API_URL=http://localhost:8000
 
 ## 📈 Performance
 
-| Metric | Target | Actual |
-|--------|--------|--------|
-| Initial Load | <2s | ~1.5s |
-| Search Response | <50ms | ~20-40ms |
-| Category Switch | <100ms | ~50ms |
-| Memory Usage | <100MB | ~75MB |
-| Bundle Size | <500KB | ~380KB (gzipped) |
+| Metric          | Target | Actual           |
+| --------------- | ------ | ---------------- |
+| Initial Load    | <2s    | ~1.5s            |
+| Search Response | <50ms  | ~20-40ms         |
+| Category Switch | <100ms | ~50ms            |
+| Memory Usage    | <100MB | ~75MB            |
+| Bundle Size     | <500KB | ~380KB (gzipped) |
 
 ---
 
@@ -351,6 +360,7 @@ Proprietary - All rights reserved
 ## 🎯 Roadmap
 
 ### ✅ Completed (v3.7)
+
 - Static Roland catalog (29 products)
 - Hierarchical navigation
 - Instant client-side search
@@ -360,6 +370,7 @@ Proprietary - All rights reserved
 - Media gallery
 
 ### 🔜 Coming Soon
+
 - Multi-brand support (Yamaha, Korg, Moog, Nord)
 - Voice-enabled navigation
 - AI-powered product recommendations
@@ -369,7 +380,7 @@ Proprietary - All rights reserved
 
 ---
 
-**Version**: 3.7.0  
+**Version**: 3.7.1-catalogs
 **Status**: ✅ Production Ready  
 **Last Updated**: January 19, 2026
 

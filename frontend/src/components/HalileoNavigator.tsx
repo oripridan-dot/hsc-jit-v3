@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Compass, ChevronRight, Mic, MicOff } from 'lucide-react';
+import { Sparkles, Compass, ChevronRight, Mic, MicOff, Loader, CheckCircle2, AlertCircle } from 'lucide-react';
 import { Navigator } from './Navigator';
+import { SystemPanel } from './SystemPanel';
 import { useNavigationStore } from '../store/navigationStore';
 import { instantSearch } from '../lib';
 import { useHalileoTheme } from '../hooks/useHalileoTheme';
+import { useLiveSystemData } from '../hooks/useLiveSystemData';
 import type { Product } from '../types';
 
 interface AISuggestion {
@@ -16,13 +18,17 @@ interface AISuggestion {
 }
 
 export const HalileoNavigator = () => {
-  const [mode, setMode] = useState<'manual' | 'guide'>('manual');
+  const [mode, setMode] = useState<'manual' | 'guide' | 'system'>('manual');
   const [query, setQuery] = useState('');
   const [aiSuggestions, setAiSuggestions] = useState<AISuggestion[]>([]);
   const [isThinking, setIsThinking] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef<unknown | null>(null);
   const { selectProduct } = useNavigationStore();
+  
+  // Use single source of truth for system data (catalog, scraping progress, health)
+  const systemData = useLiveSystemData();
+  const scrapeProgress = systemData.scrapeProgress;
   
   // Apply Halileo theme when in guide mode or thinking
   useHalileoTheme(mode === 'guide' || isThinking);
@@ -54,6 +60,12 @@ export const HalileoNavigator = () => {
       `Trending product`
     ];
     return reasons[rank] || reasons[0];
+  };
+
+  const formatTime = (seconds: number): string => {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
   const performSearch = (searchQuery: string) => {
@@ -185,9 +197,9 @@ export const HalileoNavigator = () => {
         />
       )}
 
-      {/* Navigator Header */}
-      <div className="p-4 relative z-10">
-        <div className="flex items-center gap-3 mb-4">
+      {/* Navigator Header - Minimal Branding Only */}
+      <div className="p-4 pb-3 relative z-10 border-b" style={{ borderColor: 'var(--border-subtle)' }}>
+        <div className="flex items-center gap-3">
           <motion.div 
             className="p-2.5 rounded-xl relative"
             style={{
@@ -224,77 +236,15 @@ export const HalileoNavigator = () => {
             )}
             <Compass className="w-5 h-5" style={{ color: mode === 'guide' ? '#fff' : 'var(--text-primary)' }} />
           </motion.div>
-          <div>
+          <div className="flex-1">
             <h2 className="font-bold text-lg tracking-tight" style={{ color: 'var(--text-primary)' }}>
               Halileo
             </h2>
             <p className="text-xs" style={{ color: 'var(--text-secondary)' }}>
-              {mode === 'guide' ? 'AI Co-Pilot Active' : 'Navigator'}
+              AI Navigator
             </p>
           </div>
         </div>
-
-        {/* Intelligent Search Input */}
-        <form onSubmit={handleSearch} className="relative group">
-          <input 
-            type="text" 
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search or ask Halileo..."
-            className="w-full rounded-xl px-4 py-3 pl-10 pr-12 text-sm focus:outline-none transition-all"
-            style={{
-              background: 'var(--bg-app)',
-              border: `1px solid ${query ? 'var(--halileo-primary)' : 'var(--border-subtle)'}`,
-              color: 'var(--text-primary)',
-              boxShadow: query ? '0 0 0 3px var(--halileo-surface)' : 'none'
-            }}
-          />
-          <Sparkles 
-            className="absolute left-3 top-3.5 w-4 h-4 transition-colors"
-            style={{ color: query ? 'var(--halileo-primary)' : 'var(--text-tertiary)' }}
-          />
-          
-          {/* Voice Input Button */}
-          <button
-            type="button"
-            onClick={toggleVoiceInput}
-            className="absolute right-2 top-2 p-1.5 rounded-lg transition-all"
-            style={{
-              background: isListening ? 'rgba(239, 68, 68, 0.15)' : 'var(--bg-panel-hover)',
-              color: isListening ? '#ef4444' : 'var(--text-secondary)'
-            }}
-            title="Voice search"
-          >
-            {isListening ? <Mic className="w-4 h-4 animate-pulse" /> : <MicOff className="w-4 h-4" />}
-          </button>
-        </form>
-      </div>
-
-      {/* Mode Switcher */}
-      <div className="flex px-4 gap-2 mb-2">
-        <button 
-          onClick={() => setMode('manual')}
-          className="flex-1 text-xs font-semibold uppercase tracking-wider py-2.5 rounded-lg transition-all"
-          style={{
-            background: mode === 'manual' ? 'var(--bg-panel-hover)' : 'transparent',
-            color: mode === 'manual' ? 'var(--text-primary)' : 'var(--text-secondary)',
-            border: mode === 'manual' ? '1px solid var(--border-subtle)' : '1px solid transparent'
-          }}
-        >
-          Browse
-        </button>
-        <button 
-          onClick={() => setMode('guide')}
-          className="flex-1 text-xs font-semibold uppercase tracking-wider py-2.5 rounded-lg transition-all"
-          style={{
-            background: mode === 'guide' ? 'var(--halileo-primary)' : 'transparent',
-            color: mode === 'guide' ? '#fff' : 'var(--text-secondary)',
-            border: mode === 'guide' ? '1px solid var(--halileo-primary)' : '1px solid transparent',
-            boxShadow: mode === 'guide' ? '0 0 10px var(--halileo-glow)' : 'none'
-          }}
-        >
-          AI Guide
-        </button>
       </div>
 
       {/* Content Area */}
@@ -310,6 +260,18 @@ export const HalileoNavigator = () => {
             >
               {/* Embed the existing Navigator */}
               <Navigator />
+            </motion.div>
+          ) : mode === 'system' ? (
+            <motion.div 
+              key="system"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+            >
+              <div className="mb-3">
+                <h3 className="text-xs font-bold uppercase text-[var(--text-secondary)] mb-2 px-2">System Activity</h3>
+                <SystemPanel />
+              </div>
             </motion.div>
           ) : (
             <motion.div 
@@ -345,7 +307,7 @@ export const HalileoNavigator = () => {
                     </div>
                   ) : (
                     aiSuggestions.map((suggestion) => (
-                      <motion.div
+                      <motion.div 
                         key={suggestion.id}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -388,15 +350,148 @@ export const HalileoNavigator = () => {
         </AnimatePresence>
       </div>
 
-      {/* Footer Status */}
-      <div className="p-3" style={{ borderTop: '1px solid var(--border-subtle)', background: 'var(--bg-app)' }}>
-        <div className="flex items-center justify-between text-xs">
+      {/* Bottom Bar: Search Input + Scraping Tracker + Controls + Status */}
+      <div className="flex flex-col gap-2 p-3" style={{ borderTop: '1px solid var(--border-subtle)', background: 'var(--bg-app)' }}>
+        {/* Intelligent Search Input */}
+        <form onSubmit={handleSearch} className="relative group">
+          <input 
+            type="text" 
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={mode === 'guide' ? "Ask Halileo..." : "Search products..."}
+            className="w-full rounded-lg px-3 py-2 pl-9 pr-10 text-xs focus:outline-none transition-all"
+            style={{
+              background: 'var(--bg-panel)',
+              border: `1px solid ${query ? 'var(--halileo-primary)' : 'var(--border-subtle)'}`,
+              color: 'var(--text-primary)',
+              boxShadow: query ? '0 0 0 2px var(--halileo-surface)' : 'none'
+            }}
+          />
+          <Sparkles 
+            className="absolute left-2.5 top-2.5 w-3.5 h-3.5 transition-colors flex-shrink-0"
+            style={{ color: query ? 'var(--halileo-primary)' : 'var(--text-tertiary)' }}
+          />
+          
+          {/* Voice Input Button */}
+          <button
+            type="button"
+            onClick={toggleVoiceInput}
+            className="absolute right-1.5 top-1.5 p-1 rounded transition-all flex-shrink-0"
+            style={{
+              background: isListening ? 'rgba(239, 68, 68, 0.15)' : 'transparent',
+              color: isListening ? '#ef4444' : 'var(--text-secondary)'
+            }}
+            title="Voice search"
+          >
+            {isListening ? <Mic className="w-3.5 h-3.5 animate-pulse" /> : <MicOff className="w-3.5 h-3.5" />}
+          </button>
+        </form>
+
+        {/* Scraping Progress (if active) */}
+        {scrapeProgress && scrapeProgress.status !== 'idle' && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="rounded-lg p-2 text-xs"
+            style={{
+              background: scrapeProgress.status === 'running' 
+                ? 'rgba(6, 182, 212, 0.1)' 
+                : scrapeProgress.status === 'complete'
+                ? 'rgba(34, 197, 94, 0.1)'
+                : 'rgba(239, 68, 68, 0.1)',
+              border: `1px solid ${
+                scrapeProgress.status === 'running'
+                  ? 'rgba(6, 182, 212, 0.3)'
+                  : scrapeProgress.status === 'complete'
+                  ? 'rgba(34, 197, 94, 0.3)'
+                  : 'rgba(239, 68, 68, 0.3)'
+              }`
+            }}
+          >
+            <div className="flex items-center justify-between mb-1">
+              <div className="flex items-center gap-1.5">
+                {scrapeProgress.status === 'running' ? (
+                  <Loader size={12} className="animate-spin text-cyan-400" />
+                ) : scrapeProgress.status === 'complete' ? (
+                  <CheckCircle2 size={12} className="text-emerald-400" />
+                ) : (
+                  <AlertCircle size={12} className="text-red-400" />
+                )}
+                <span className="font-bold text-[10px]" style={{ 
+                  color: scrapeProgress.status === 'running' 
+                    ? '#06b6d4'
+                    : scrapeProgress.status === 'complete'
+                    ? '#22c55e'
+                    : '#ef4444'
+                }}>
+                  {scrapeProgress.status === 'running' 
+                    ? `Scraping ${scrapeProgress.brand}...`
+                    : scrapeProgress.status === 'complete'
+                    ? `${scrapeProgress.brand} Complete`
+                    : 'Scraping Failed'
+                  }
+                </span>
+              </div>
+              {scrapeProgress.status === 'running' && (
+                <span className="text-[9px] font-mono text-cyan-400">
+                  {Math.round((scrapeProgress.current_product / scrapeProgress.total_products) * 100)}%
+                </span>
+              )}
+            </div>
+            {scrapeProgress.status === 'running' && (
+              <>
+                <div className="h-1 bg-[var(--bg-panel)] rounded-full overflow-hidden mb-1">
+                  <div 
+                    className="h-full bg-gradient-to-r from-cyan-500 to-indigo-500 transition-all duration-500"
+                    style={{ width: `${Math.round((scrapeProgress.current_product / scrapeProgress.total_products) * 100)}%` }}
+                  />
+                </div>
+                <div className="flex justify-between text-[8px] text-[var(--text-secondary)]">
+                  <span>{scrapeProgress.current_product}/{scrapeProgress.total_products}</span>
+                  <span>{formatTime(scrapeProgress.elapsed_seconds)}</span>
+                </div>
+              </>
+            )}
+          </motion.div>
+        )}
+
+        {/* Control Buttons */}
+        <div className="flex gap-1.5">
+          <button
+            onClick={() => setMode('manual')}
+            className={`flex-1 px-3 py-2 rounded-lg text-[11px] font-semibold transition-all flex items-center justify-center gap-1 ${
+              mode === 'manual' 
+                ? 'bg-[var(--halileo-primary)] text-white shadow-lg' 
+                : 'bg-[var(--bg-panel-hover)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+            }`}
+            title="Browse product catalog"
+          >
+            📚 Catalog
+          </button>
+          <button
+            onClick={() => setMode('guide')}
+            className={`flex-1 px-3 py-2 rounded-lg text-[11px] font-semibold transition-all flex items-center justify-center gap-1 ${
+              mode === 'guide' 
+                ? 'bg-[var(--halileo-primary)] text-white shadow-lg' 
+                : 'bg-[var(--bg-panel-hover)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+            }`}
+            title="AI-assisted navigation"
+          >
+            ✨ Copilot
+          </button>
+        </div>
+
+        {/* Status Line */}
+        <div className="flex items-center justify-between text-xs px-1">
           <span className="font-medium" style={{ color: 'var(--text-secondary)' }}>
-            {mode === 'manual' ? '📂 Browse' : '🧠 AI Active'}
+            {mode === 'manual' ? '📂 Browse' : mode === 'system' ? '⚙️ System' : '🧠 AI Active'}
           </span>
           <div className="flex items-center gap-1.5">
-            <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-            <span className="font-medium text-green-600">Ready</span>
+            <div className={`w-1.5 h-1.5 rounded-full ${scrapeProgress?.status === 'running' ? 'animate-pulse' : 'animate-pulse'}`} style={{ background: scrapeProgress?.status === 'error' ? '#ef4444' : '#22c55e' }} />
+            <span className="font-medium" style={{ color: scrapeProgress?.status === 'error' ? '#ef4444' : '#22c55e' }}>
+              {scrapeProgress?.status === 'running' ? 'Scraping' : scrapeProgress?.status === 'error' ? 'Error' : 'Ready'}
+            </span>
           </div>
         </div>
       </div>

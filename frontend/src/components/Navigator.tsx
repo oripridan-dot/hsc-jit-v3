@@ -530,22 +530,6 @@ export const Navigator: React.FC = () => {
             ✨ Copilot
           </button>
         </div>
-
-        {/* Stats */}
-        <div className="mt-3 text-[10px] text-[var(--text-tertiary)] space-y-1 border-t border-[var(--border-subtle)]/30 pt-3">
-          <div className="flex justify-between">
-            <span>Brands:</span>
-            <span className="font-semibold text-indigo-400">{catalogIndex?.brands.length || 0}</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Products:</span>
-            <span className="font-semibold text-indigo-400">{catalogIndex?.total_products || 0}</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Catalog:</span>
-            <span className="font-mono text-indigo-400">{catalogIndex?.version || 'N/A'}</span>
-          </div>
-        </div>
       </div>
     </aside>
   );

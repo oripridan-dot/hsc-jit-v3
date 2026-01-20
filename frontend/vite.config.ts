@@ -7,6 +7,10 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
+    watch: {
+      usePolling: true,
+      interval: 500
+    },
     proxy: {
       '/ws': {
         target: 'ws://localhost:8000',
@@ -17,7 +21,6 @@ export default defineConfig({
         target: 'http://localhost:8000',
         changeOrigin: true
       },
-      // Proxy static assets to backend
       '/static': {
         target: 'http://localhost:8000',
         changeOrigin: true
