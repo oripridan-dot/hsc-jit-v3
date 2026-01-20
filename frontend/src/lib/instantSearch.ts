@@ -34,13 +34,15 @@ class InstantSearch {
     // Load all products
     this.products = await catalogLoader.loadAllProducts();
 
-    // Configure Fuse.js for fuzzy search
+    // Configure Fuse.js for fuzzy search with weighted priorities
     this.fuse = new Fuse(this.products, {
       keys: [
-        { name: 'name', weight: 2.0 },           // Product name most important
-        { name: 'brand', weight: 1.5 },          // Brand second
+        { name: 'sku', weight: 2.0 },            // ⚡ Priority 1: SKU matches (exact product codes)
+        { name: 'name', weight: 1.8 },           // ⚡ Priority 2: Product name
+        { name: 'brand', weight: 1.5 },          // ⚡ Priority 3: Brand
         { name: '_brandName', weight: 1.5 },     // Brand name searchable
-        { name: 'category', weight: 1.0 },       // Category third
+        { name: 'category', weight: 1.0 },       // ⚡ Priority 4: Category
+        { name: 'description', weight: 0.5 },    // Lowest priority: Description
       ],
       threshold: 0.3,                            // 70% match required
       includeScore: true,

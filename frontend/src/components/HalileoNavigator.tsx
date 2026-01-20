@@ -61,7 +61,7 @@ export const HalileoNavigator = () => {
 
   return (
     <div 
-      className="flex flex-col h-full border-r relative overflow-hidden"
+      className="flex flex-col h-full border-r relative overflow-hidden bg-brand-surface-base/80 backdrop-blur-md shadow-xl"
       style={{
         background: 'var(--bg-panel)',
         borderColor: 'var(--border-subtle)',
