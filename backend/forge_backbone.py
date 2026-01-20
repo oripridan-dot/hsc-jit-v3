@@ -20,7 +20,7 @@ Result:
 import json
 import os
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Any
 import logging
 import urllib.request
@@ -111,7 +111,7 @@ class HalilitCatalog:
         # Flat structure matching Frontend Interface (MasterIndex)
         self.master_index = {
             "version": CATALOG_VERSION,
-            "build_timestamp": datetime.now().isoformat(),
+            "build_timestamp": datetime.now(timezone.utc).isoformat(),
             "environment": "static_production",
             "total_products": 0,
             "total_verified": 0,
@@ -127,12 +127,32 @@ class HalilitCatalog:
     
     def _download_logo(self, logo_url: str, brand_slug: str) -> str:
         """
-        Download brand logo and save locally, return local path or data URI.
-        Falls back to data URI if download fails.
-        
-        Returns:
-            str: Local file path (/data/logos/...) or data URI (data:image/...)
+        Manage brand logos. 
+        PRIORITY 1: Use local override file in /assets/logos/ (Manual VIP treatment)
+        PRIORITY 2: Download from URL (Fallback)
         """
+        # PRIORITY 1: Check Manual Local Overrides
+        # In Docker workspace, we map paths relative to frontend/public
+        # Path relative to PUBLIC_DATA_PATH (which is frontend/public/data)
+        
+        # We look in frontend/public/assets/logos
+        assets_logo_dir = self.output_dir.parent / "assets" / "logos"
+        known_logo_files = [
+            f"{brand_slug}_logo.svg",
+            f"{brand_slug}.svg",
+            f"{brand_slug}_logo.png",
+            f"{brand_slug}_logo.jpg",
+            f"{brand_slug}_logo.jpeg",
+            f"{brand_slug}_logo.webp"
+        ]
+        
+        for filename in known_logo_files:
+            local_file = assets_logo_dir / filename
+            if local_file.exists():
+                logger.info(f"       ⭐ Using local VIP logo for {brand_slug}: {filename}")
+                return f"/assets/logos/{filename}"
+                
+        # PRIORITY 2: Download (Legacy fallback - largely unused now)
         if not logo_url or not logo_url.startswith('http'):
             return logo_url
         
@@ -282,7 +302,7 @@ class HalilitCatalog:
                 "data_file": f"{safe_slug}.json",
                 "product_count": product_count,
                 "verified_count": product_count,
-                "last_updated": datetime.now().isoformat()
+                "last_updated": datetime.now(timezone.utc).isoformat()
             })
             
             # --- UPDATE STATS ---
@@ -310,7 +330,7 @@ class HalilitCatalog:
         refined = raw_data.copy()
         refined['brand_name'] = brand_name
         refined['brand_slug'] = slug
-        refined['refined_at'] = datetime.now().isoformat()
+        refined['refined_at'] = datetime.now(timezone.utc).isoformat()
         
         # Enrich brand_identity with theme colors and download logo
         if 'brand_identity' not in refined:
