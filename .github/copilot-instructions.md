@@ -12,35 +12,39 @@ We are building a production-grade **Product Hierarchy Navigation System** with:
 
 ---
 
-## ⚠️ CRITICAL: v3.7 System State (As of 2026-01-19)
+## ⚠️ CRITICAL: v3.7.2 System State (As of 2026-01-20)
 
-**Status: PRODUCTION-READY (Static Mode, Single Brand)**
+**Status: PRODUCTION-READY (Multi-Brand, Comprehensive Data)**
 
 ### ✅ COMPLETE & ACTIVE
 
-- Static Roland catalog (29 products)
-- Hierarchical navigation (3-4 levels)
+- **Multi-brand catalogs**: Roland (99), Boss (9), Nord (9), Moog (0)
+- **Comprehensive scraping**: 28-107 images, 3-6 videos, 6-41 manuals per product
+- **Real-time progress tracking**: Phase indicators (initializing/exploring/harvesting/processing/complete)
+- **Enhanced UI components**: HeaderSystemPanel with live updates, Docs tab for manuals
+- Hierarchical navigation (7 categories, 117 products)
 - Client-side fuzzy search
-- Product detail views with media
+- Product detail views with rich media
 - Brand theming system (WCAG AA)
 - Context insights panel
-- All active components below
+- CORS-safe image analysis
 
 ### ⏳ ROADMAP (NOT IMPLEMENTED YET)
 
-- **Multi-brand Support**: Framework exists; only Roland scraped
+- **Moog Products**: Scraper exists but finding 0 products (needs debugging)
+- **Additional Brands**: Yamaha, Korg, Native Instruments (framework ready)
 - **JIT RAG System**: `jit_rag.py` written but not wired to API
 - **WebSocket Streaming**: Stub in `useWebSocketStore`; no server endpoint
 - **Voice Processing**: `SpeechRecognition` stub; no backend transcription
 - **Embeddings Retrieval**: SentenceTransformers installed; no API endpoint
 
-### 🗑️ REMOVED (CLEANUP 2026-01-19)
+### 🔧 RECENT IMPROVEMENTS (2026-01-20)
 
-- **Dead Code**: Unused imports, state vars from App.tsx
-- **Orphaned Scripts**: `janitor.py`, skeleton scrapers, cleanup shells
-- **Unused Dependencies**: redis, spacy, gsap
-- **Orphaned Folders**: `backend/backend`, `backend/frontend`
-- **Documentation Bloat**: 50+ analysis files → `/docs/archive/cleanup_v37/`
+- **Enhanced scrapers**: Boss/Nord now extract comprehensive data matching Roland quality
+- **Progress tracking**: Live phase-based updates visible in HeaderSystemPanel
+- **UI refinements**: Moved docs from MediaBar to dedicated Workbench tab
+- **CORS fixes**: Wrapped canvas getImageData in try-catch for cross-origin images
+- **Data quality**: 100% of products have images/videos/manuals
 
 ---
 
@@ -48,29 +52,37 @@ We are building a production-grade **Product Hierarchy Navigation System** with:
 
 ### 1. Data Source of Truth
 
-- **Primary:** `frontend/public/data/catalogs_brand/roland.json` (static catalog)
-- **Index:** `frontend/public/data/index.json` (brand list, 1 entry)
+- **Primary Catalogs:**
+  - `frontend/public/data/catalogs_brand/roland.json` (99 products) ✅
+  - `frontend/public/data/catalogs_brand/boss.json` (9 products) ✅
+  - `frontend/public/data/catalogs_brand/nord.json` (9 products) ✅
+  - `frontend/public/data/catalogs_brand/moog.json` (0 products) ⚠️
+- **Index:** `frontend/public/data/index.json` (4 brands, 117 total products)
+- **Progress:** `frontend/public/data/scrape_progress.json` (real-time updates)
 - **Backend (optional):** FastAPI at `localhost:8000` for future JIT RAG
-- **Current brands:** Roland (29 products)
-- **Future brands:** Yamaha, Korg, Moog, Nord, etc. (framework ready)
+- **Active brands:** Roland, Boss, Nord (Moog awaiting fixes)
+- **Future brands:** Yamaha, Korg, Native Instruments (framework ready)
 
 ### 2. Component Architecture
 
-**Active Components (v3.7):**
+**Active Components (v3.7.2):**
 
-- `App.tsx` - Main layout (cleaned: removed dead imports/state)
+- `App.tsx` - Main layout with brand theming
 - `HalileoNavigator.tsx` - AI co-pilot sidebar (text mode active)
-- `Navigator.tsx` - Tree navigation with hierarchy
-- `Workbench.tsx` - Product detail pane
-- `MediaBar.tsx` - Images/videos/audio sidebar
+- `Navigator.tsx` - Tree navigation with 7-category hierarchy
+- `Workbench.tsx` - Product detail with Overview/Specs/Docs tabs
+- `MediaBar.tsx` - Images/videos sidebar (docs moved to Workbench)
+- `HeaderSystemPanel.tsx` - Live scraping progress with phase tracking ✨ NEW
 - `ImageGallery.tsx` - Cinema mode viewer
 - `HalileoContextRail.tsx` - Floating insights panel
 - `ProductDetailView.tsx` - Modal detail view
+- `InsightsTable.tsx` - Product metadata display
 
 **NOT RENDERED (But Exist):**
 
 - `AIAssistant.tsx` - Chat interface (never imported)
 - `SignalFlowMap.tsx` - Signal flow diagram (never integrated)
+- `SystemStatusBar.tsx` - Alternative status display (HeaderSystemPanel used instead)
 
 ### 3. State Management
 

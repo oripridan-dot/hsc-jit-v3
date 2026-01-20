@@ -1,11 +1,37 @@
-# 🎨 Brandable Design System - Quick Reference Card
+# 🎨 HSC Mission Control v3.7.2 - Quick Reference Card
+
+## 🚀 System Overview
+
+**Current Status:** Production-Ready Multi-Brand System
+
+- **Total Products:** 117 (Roland: 99, Boss: 9, Nord: 9, Moog: 0)
+- **Data Quality:** 100% have images/videos/manuals, 32% have specs
+- **Brands Active:** Roland, Boss, Nord
+- **Categories:** 7 hierarchical categories
+- **Search:** Instant fuzzy search (<50ms)
+
+---
 
 ## 📖 For Developers
 
-### Import the Hook
+### Quick Start Commands
+
+```bash
+# Frontend
+cd frontend && pnpm dev          # Start dev server (port 5173)
+pnpm build                       # Production build
+
+# Backend (optional)
+cd backend && uvicorn app.main:app --reload  # Start API (port 8000)
+
+# Scraping
+cd backend && python orchestrate_brand.py --brand roland --max-products 100
+```
+
+### Import the Theme Hook
 
 ```tsx
-import { useTheme } from "@/contexts/ThemeContext";
+import { useBrandTheme } from "@/hooks/useBrandTheme";
 ```
 
 ### Get Theme & Switch Brands
@@ -13,20 +39,21 @@ import { useTheme } from "@/contexts/ThemeContext";
 ```tsx
 const { theme, currentBrandId, applyTheme } = useTheme();
 
-// Switch to Yamaha
-applyTheme("yamaha");
+// Switch to Boss
+applyTheme("boss");
 
 // Access colors
-console.log(theme?.colors.primary); // e.g., '#a855f7'
+console.log(theme?.colors.primary); // e.g., '#ef4444'
 ```
 
 ### Available Brands
 
-- `roland` - Red (#ef4444)
-- `yamaha` - Purple (#a855f7)
-- `korg` - Orange (#fb923c)
-- `moog` - Cyan (#22d3ee)
-- `nord` - Red-light (#f87171)
+- `roland` - Red (#ef4444) - 99 products ✅
+- `boss` - Red (#ef4444) - 9 products ✅
+- `nord` - Red-light (#f87171) - 9 products ✅
+- `moog` - Cyan (#22d3ee) - 0 products ⚠️
+- `yamaha` - Purple (#a855f7) - Framework ready
+- `korg` - Orange (#fb923c) - Framework ready
 
 ---
 
