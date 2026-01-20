@@ -4,6 +4,10 @@
 
 A modern, high-performance product catalog and support system for Roland, Boss, and Nord equipment. Built with React 19, TypeScript 5, and Tailwind CSS with comprehensive data extraction.
 
+## 📖 **→ [GO TO SYSTEM GUIDE](SYSTEM.md)**
+
+**Everything you need is in [SYSTEM.md](SYSTEM.md)** - quick start, architecture, development, deployment, troubleshooting.
+
 ---
 
 ## 🌟 What's Inside
@@ -15,7 +19,6 @@ A modern, high-performance product catalog and support system for Roland, Boss, 
 - 📊 **Hierarchical Navigation** - 7 categories with automatic tree generation
 - 🖼️ **Rich Media** - Avg 22 images, 8 manuals, videos per product
 - 📄 **Documentation Tab** - Direct access to PDFs and manuals
-- 🔄 **Real-time Progress** - Live scraping updates with phase tracking
 - 🚀 **Zero Backend** - Pure static JSON (no server required)
 - ♿ **Accessible** - WCAG AA compliant design system
 - 📱 **Responsive** - Desktop, tablet, mobile optimized

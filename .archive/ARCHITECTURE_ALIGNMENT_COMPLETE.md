@@ -24,6 +24,7 @@ The repository had a critical **"Identity Crisis"** — documentation claimed "Z
 **Removed:** `docs/archive/` folder (166 files)
 
 **What was there:**
+
 - `v3.5-docs/` — Old architecture docs (contradicted v3.7)
 - `v3.6-docs/` — Intermediate version specs (deprecated)
 - `old_docs/` — Legacy implementation notes
@@ -31,6 +32,7 @@ The repository had a critical **"Identity Crisis"** — documentation claimed "Z
 - `root_archive/` — Docker configs from old era
 
 **Why it mattered:**
+
 ```
 Copilot was reading:
   - v3.5-docs/ARCHITECTURE.md (says "RAG system required")
@@ -40,6 +42,7 @@ Copilot was reading:
 ```
 
 **Impact:**
+
 - Eliminated 52,991 lines of confusing documentation
 - Copilot now reads consistent messages
 - Repository is ~50MB lighter
@@ -51,51 +54,53 @@ Copilot was reading:
 #### **File: `frontend/src/App.tsx`**
 
 **Before:**
+
 ```typescript
-import { useWebSocketStore } from './store/useWebSocketStore';
-import { useRealtimeData } from './hooks/useRealtimeData';
+import { useWebSocketStore } from "./store/useWebSocketStore";
+import { useRealtimeData } from "./hooks/useRealtimeData";
 
 function AppContent() {
   const { actions } = useWebSocketStore();
-  
+
   // Enable real-time data updates (with safe error handling)
   try {
     useRealtimeData({
       onDataChange: (type, id) => {
-        setDataVersion(v => v + 1);
-      }
+        setDataVersion((v) => v + 1);
+      },
     });
   } catch (error) {
-    console.warn('⚠️ Real-time data updates not available:', error);
+    console.warn("⚠️ Real-time data updates not available:", error);
   }
-  
+
   useEffect(() => {
     // Attempt WebSocket connection but don't block
     try {
-      actions.connect();  // ← Attempted localhost:8000 connection
+      actions.connect(); // ← Attempted localhost:8000 connection
     } catch (error: unknown) {
-      console.debug('ℹ️ WebSocket unavailable, using static mode:', errorMsg);
+      console.debug("ℹ️ WebSocket unavailable, using static mode:", errorMsg);
     }
   }, [actions]);
 }
 ```
 
 **After:**
+
 ```typescript
-import { catalogLoader, instantSearch } from './lib';
+import { catalogLoader, instantSearch } from "./lib";
 
 function AppContent() {
   const [dataVersion, setDataVersion] = useState(0);
-  
+
   useEffect(() => {
     // Initialize search system from static JSON catalogs
     const initCatalog = async () => {
       try {
-        console.log('🚀 v3.7: Initializing Mission Control...');
+        console.log("🚀 v3.7: Initializing Mission Control...");
         await instantSearch.initialize();
-        console.log('✅ Catalog initialized from static data');
+        console.log("✅ Catalog initialized from static data");
       } catch (error) {
-        console.error('❌ Initialization error:', error);
+        console.error("❌ Initialization error:", error);
       }
     };
     initCatalog();
@@ -104,6 +109,7 @@ function AppContent() {
 ```
 
 **Changes:**
+
 - ❌ Removed `useWebSocketStore` import
 - ❌ Removed `useRealtimeData` hook
 - ❌ Removed WebSocket connection attempts
@@ -111,6 +117,7 @@ function AppContent() {
 - ✅ Explicit "from static data" message
 
 **Impact:**
+
 - No more wasteful failed WebSocket handshakes on load
 - Frontend is 100% static — no dynamic backend dependency
 - Clearer intent for future developers
@@ -120,6 +127,7 @@ function AppContent() {
 #### **File: `backend/app/main.py`**
 
 **Before:**
+
 ```python
 """
 HSC-JIT V3.7 FastAPI Backend
@@ -131,6 +139,7 @@ Routes: /api/v1/{resource}
 ```
 
 **After:**
+
 ```python
 """
 ⚠️ DEV TOOL ONLY - HSC-JIT V3.7 FastAPI Backend
@@ -157,12 +166,14 @@ Routes: /api/v1/{resource}
 ```
 
 **Changes:**
+
 - ✅ Added explicit "⚠️ DEV TOOL ONLY" notice
 - ✅ Clarified NOT deployed to production
 - ✅ Listed legitimate use cases
 - ✅ Added safety check instruction
 
 **Impact:**
+
 - Developers immediately know this is not for production
 - Clear contract: "don't call from frontend code"
 - Prevents accidental deployment
@@ -172,6 +183,7 @@ Routes: /api/v1/{resource}
 #### **File: `backend/orchestrate_pipeline.py`**
 
 **Before:**
+
 ```python
 #!/usr/bin/env python3
 """
@@ -192,6 +204,7 @@ Usage:
 ```
 
 **After:**
+
 ```python
 #!/usr/bin/env python3
 """
@@ -214,18 +227,20 @@ Pipeline Flow (LOCAL VALIDATION ONLY):
 Usage:
     python orchestrate_pipeline.py  # Full validation pipeline
     python orchestrate_pipeline.py --validate-only  # Just validate
-    
+
 ⚠️ NOTE: Do not use this to generate production data. Use forge_backbone.py instead.
 """
 ```
 
 **Changes:**
+
 - ✅ Marked as DEPRECATED
 - ✅ Points to correct script (`forge_backbone.py`)
 - ✅ Clarified this is "local validation only"
 - ✅ Added safety note
 
 **Impact:**
+
 - Developers won't accidentally use wrong script
 - `forge_backbone.py` becomes the canonical generator
 - Clear hierarchy: production → dev tools
@@ -239,19 +254,26 @@ Usage:
 **Complete rewrite** from mixed architecture to "Static First" principles.
 
 **New Structure:**
+
 ```markdown
 # HSC-JIT v3.7 - Copilot System Instructions
 
 ## 🎯 Core Architecture: "Static First"
+
 This is a PRODUCTION STATIC REACT APPLICATION.
 
 ## ⚠️ CRITICAL: Architecture Rules (READ FIRST)
+
 ### 1. Static Data Only
+
 ### 2. Frontend is Pure React
+
 ### 3. The Backend is Dev-Only
+
 ### 4. Data Generation Pipeline
 
 ## 📋 Forbidden Patterns
+
 1. WebSocket connections in frontend
 2. useEffect loops fetching from localhost
 3. Python backend logic in TypeScript
@@ -259,13 +281,16 @@ This is a PRODUCTION STATIC REACT APPLICATION.
 5. Server-side rendering
 
 ## ✅ How to Build Features
+
 [Examples with CORRECT patterns only]
 
 ## 🚫 What NOT to Do
+
 [Clear table of anti-patterns with corrections]
 ```
 
 **Key Improvements:**
+
 - ✅ **Explicit forbidden patterns** (no more guessing)
 - ✅ **"Static First" title** (sets expectation immediately)
 - ✅ **Clear terminology:**
@@ -283,21 +308,21 @@ This is a PRODUCTION STATIC REACT APPLICATION.
 
 ### Before (Confusing)
 
-| Aspect | Doc Says | Code Does |
-|--------|----------|-----------|
-| Data Source | "Static JSON only" | Attempts WebSocket to localhost |
-| Backend | "Not used in production" | FastAPI server running |
-| Frontend | "Pure React, no server calls" | Has `useWebSocketStore` hook |
-| Generator | `forge_backbone.py` recommended | `orchestrate_pipeline.py` also exists |
+| Aspect      | Doc Says                        | Code Does                             |
+| ----------- | ------------------------------- | ------------------------------------- |
+| Data Source | "Static JSON only"              | Attempts WebSocket to localhost       |
+| Backend     | "Not used in production"        | FastAPI server running                |
+| Frontend    | "Pure React, no server calls"   | Has `useWebSocketStore` hook          |
+| Generator   | `forge_backbone.py` recommended | `orchestrate_pipeline.py` also exists |
 
 ### After (Clear)
 
-| Aspect | Doc Says | Code Does |
-|--------|----------|-----------|
-| Data Source | "Static JSON from public/data/" | Loads from `catalogLoader.loadBrand()` ✅ |
-| Backend | "⚠️ DEV TOOL ONLY - NOT IN PRODUCTION" | Marked clearly in `main.py` ✅ |
-| Frontend | "Pure React, static mode only" | No WebSocket attempts ✅ |
-| Generator | "Use `forge_backbone.py` for production" | `orchestrate_pipeline.py` marked DEPRECATED ✅ |
+| Aspect      | Doc Says                                 | Code Does                                      |
+| ----------- | ---------------------------------------- | ---------------------------------------------- |
+| Data Source | "Static JSON from public/data/"          | Loads from `catalogLoader.loadBrand()` ✅      |
+| Backend     | "⚠️ DEV TOOL ONLY - NOT IN PRODUCTION"   | Marked clearly in `main.py` ✅                 |
+| Frontend    | "Pure React, static mode only"           | No WebSocket attempts ✅                       |
+| Generator   | "Use `forge_backbone.py` for production" | `orchestrate_pipeline.py` marked DEPRECATED ✅ |
 
 ---
 
@@ -306,6 +331,7 @@ This is a PRODUCTION STATIC REACT APPLICATION.
 ### Before Audit
 
 Copilot would see:
+
 - ✅ `README.md`: "Zero backend"
 - ✅ `copilot-instructions.md`: "Static only"
 - ❌ `App.tsx`: WebSocket imports
@@ -317,6 +343,7 @@ Copilot would see:
 ### After Audit
 
 Copilot now sees:
+
 - ✅ `README.md`: "Zero backend"
 - ✅ `copilot-instructions.md`: "Static First" (rewritten)
 - ✅ `App.tsx`: Pure static loading
