@@ -1,9 +1,37 @@
 """
-HSC-JIT V3.7 FastAPI Backend
-Product Hierarchy + JIT RAG System
+⚠️ DEV TOOL ONLY - HSC-JIT V3.7 "Data Factory" Quality Control Server
 
-API Versioning: v1
-Routes: /api/v1/{resource}
+This server is a LOCAL DEVELOPMENT HELPER for data validation during the offline data pipeline.
+It is NOT deployed to production. It exists ONLY during development.
+
+Architecture: "Data Factory" Model
+─────────────────────────────────
+1. Backend (The Factory): Offline Python pipeline that scrapes, cleans, enriches data
+2. Frontend (The Showroom): Pure React SPA that consumes pre-built static JSON files
+3. This Server (Quality Control): Validates data during the factory pipeline
+
+Production Flow:
+  Scrape → Clean → Enrich → Generate Embeddings → Export Static JSON → Deploy Frontend
+
+This server provides:
+  - Data validation endpoints (for developers during scraping)
+  - Optional real-time progress tracking during the factory pipeline
+  - API documentation for understanding the data structure
+  
+Production Reality:
+  - NO backend API calls from frontend code
+  - ALL data comes from: frontend/public/data/*.json
+  - Data generation happens OFFLINE via: backend/forge_backbone.py
+  - This server is NOT started in production
+
+If you see this server being called from frontend code, REMOVE those calls.
+The frontend must work with static JSON files only.
+
+API Routes:
+  GET /health              - Health check (dev verification)
+  GET /api/v1/brands       - List available brands (dev reference)
+  GET /api/v1/brands/{id}  - Get brand catalog (dev reference)
+  GET /api/v1/search       - Search products (dev reference)
 """
 
 import json
@@ -135,8 +163,8 @@ async def lifespan(app: FastAPI):
 
 # Create FastAPI app with proper metadata
 app = FastAPI(
-    title="HSC-JIT V3.7 API",
-    description="Product Hierarchy + JIT RAG System",
+    title="HSC-JIT V3.7 Data Factory Quality Control",
+    description="⚠️ DEV TOOL ONLY: Data validation server for offline pipeline",
     version="3.7.0",
     docs_url="/api/docs",
     openapi_url="/api/openapi.json",
@@ -239,20 +267,21 @@ def build_product_hierarchy(products: List[Dict[str, Any]]) -> Dict[str, List[st
 
 @app.get("/")
 async def root():
-    """API root endpoint"""
+    """API root endpoint - Data Factory Quality Control"""
     return APIResponse(
         status="success",
         data={
-            "name": "HSC-JIT V3.7 API",
+            "name": "HSC-JIT V3.7 Data Factory Quality Control",
             "version": "3.7.0",
-            "description": "Product Hierarchy + JIT RAG System",
+            "mode": "⚠️ DEV TOOL ONLY - Not for production",
+            "description": "This server validates data during the offline pipeline. All frontend data comes from public/data/*.json",
             "endpoints": {
+                "health": "/health",
                 "brands": "/api/v1/brands",
                 "catalog": "/api/v1/brands/{brand_id}",
                 "products": "/api/v1/brands/{brand_id}/products",
                 "hierarchy": "/api/v1/brands/{brand_id}/hierarchy",
                 "search": "/api/v1/search",
-                "health": "/health",
                 "docs": "/api/docs"
             }
         }
@@ -504,44 +533,6 @@ async def search_products(
             "brand": brand,
             "category": category
         }
-    )
-
-
-# --- RAG Endpoints (Placeholders for future integration) ---
-
-@app.get("/api/v1/rag/status")
-async def rag_status() -> APIResponse:
-    """
-    Get RAG system status.
-    
-    Returns:
-        Status information for RAG components
-    """
-    return APIResponse(
-        status="success",
-        data={
-            "embeddings_enabled": False,
-            "llm_enabled": False,
-            "message": "RAG system not yet integrated"
-        }
-    )
-
-
-@app.post("/api/v1/rag/query")
-async def rag_query(query: str) -> APIResponse:
-    """
-    Query the RAG system (future endpoint).
-    
-    Args:
-        query: Natural language query
-    
-    Returns:
-        RAG response with products and insights
-    """
-    return APIResponse(
-        status="error",
-        data=None,
-        error={"code": "NOT_IMPLEMENTED", "message": "RAG queries not yet available"}
     )
 
 
