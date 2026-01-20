@@ -263,29 +263,43 @@ export const MediaBar: React.FC<MediaBarProps> = ({
 
                     {activeTab === 'videos' && (
                       <div className="w-full bg-[var(--bg-panel)] rounded border border-[var(--border-subtle)]/50 overflow-hidden hover:border-indigo-500 transition-all cursor-pointer shadow-sm hover:shadow-md group-hover:shadow-indigo-500/20 relative group/video" style={{ aspectRatio: '16 / 9' }}>
-                        <video
-                          src={media.url}
-                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                          style={{
-                            minHeight: 'clamp(140px, 32vmin, 320px)',
-                            maxHeight: '100%',
-                            aspectRatio: '16 / 9'
-                          }}
-                          onError={(e) => {
-                            const vid = e.currentTarget;
-                            vid.style.display = 'none';
-                            const parent = vid.parentElement;
-                            if (parent) {
-                              parent.innerHTML =
-                                '<div class="w-full h-full flex items-center justify-center text-[10px] text-slate-500">Video unavailable</div>';
-                            }
-                          }}
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover/video:bg-black/30 transition-colors">
-                          <div className="text-white/0 group-hover/video:text-white/70 transition-colors text-2xl">
-                            ▶
+                        {media.url.includes('youtube') || media.url.includes('youtu.be') ? (
+                          <div className="w-full h-full relative" style={{ minHeight: 'clamp(140px, 32vmin, 320px)', maxHeight: '100%', aspectRatio: '16 / 9' }}>
+                            <iframe
+                              src={media.url}
+                              title={`Video ${idx + 1}`}
+                              className="w-full h-full border-0 rounded object-cover object-center"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
                           </div>
-                        </div>
+                        ) : (
+                          <>
+                            <video
+                              src={media.url}
+                              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                              style={{
+                                minHeight: 'clamp(140px, 32vmin, 320px)',
+                                maxHeight: '100%',
+                                aspectRatio: '16 / 9'
+                              }}
+                              onError={(e) => {
+                                const vid = e.currentTarget;
+                                vid.style.display = 'none';
+                                const parent = vid.parentElement;
+                                if (parent) {
+                                  parent.innerHTML =
+                                    '<div class="w-full h-full flex items-center justify-center text-[10px] text-slate-500">Video unavailable</div>';
+                                }
+                              }}
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover/video:bg-black/30 transition-colors">
+                              <div className="text-white/0 group-hover/video:text-white/70 transition-colors text-2xl">
+                                ▶
+                              </div>
+                            </div>
+                          </>
+                        )}
                       </div>
                     )}
 

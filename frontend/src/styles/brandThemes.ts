@@ -7,6 +7,8 @@
 export interface BrandTheme {
     id: string;
     name: string;
+    logoUrl?: string;        // Brand logo SVG/image URL
+    logoAlt?: string;        // Alt text for logo
     colors: {
         primary: string;     // Main brand color (WCAG compliant)
         secondary: string;   // Supporting color
@@ -24,6 +26,8 @@ export const brandThemes: Record<string, BrandTheme> = {
     roland: {
         id: 'roland',
         name: 'Roland',
+        logoUrl: '/assets/logos/roland.svg',
+        logoAlt: 'Roland Corporation',
         colors: {
             primary: '#ef4444',   // Brighter red (was #E31E24) - better contrast
             secondary: '#1f2937', // Gray-800
@@ -39,6 +43,8 @@ export const brandThemes: Record<string, BrandTheme> = {
     yamaha: {
         id: 'yamaha',
         name: 'Yamaha',
+        logoUrl: '/assets/logos/yamaha.svg',
+        logoAlt: 'Yamaha Corporation',
         colors: {
             primary: '#a855f7',   // Purple-500 (brighter than #4B0082) - better contrast
             secondary: '#fbbf24', // Amber
@@ -54,6 +60,8 @@ export const brandThemes: Record<string, BrandTheme> = {
     korg: {
         id: 'korg',
         name: 'Korg',
+        logoUrl: '/assets/logos/korg.svg',
+        logoAlt: 'Korg',
         colors: {
             primary: '#fb923c',   // Orange-400 (was #FF6B00) - better contrast
             secondary: '#1f2937',
@@ -69,6 +77,8 @@ export const brandThemes: Record<string, BrandTheme> = {
     moog: {
         id: 'moog',
         name: 'Moog',
+        logoUrl: '/assets/logos/moog.svg',
+        logoAlt: 'Moog Music',
         colors: {
             primary: '#22d3ee',   // Cyan - classic Moog blue
             secondary: '#1f2937',
@@ -84,6 +94,8 @@ export const brandThemes: Record<string, BrandTheme> = {
     nord: {
         id: 'nord',
         name: 'Nord',
+        logoUrl: '/assets/logos/nord.svg',
+        logoAlt: 'Nord Keyboards',
         colors: {
             primary: '#f87171',   // Red-400 - Nord's iconic red
             secondary: '#1f2937',

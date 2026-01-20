@@ -101,7 +101,9 @@ export interface Product {
     image?: string;
     images?: ProductImagesType;
     videos?: Array<string | VideoResource>;
+    video_urls?: string[];
     manuals?: ProductManual[];
+    manual_urls?: string[];
 
     // Technical
     specs?: Specification[];

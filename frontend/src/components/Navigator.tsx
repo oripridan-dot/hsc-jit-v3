@@ -14,6 +14,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Compass, Search, ChevronRight, Sparkles, BookOpen } from 'lucide-react';
 import { useNavigationStore } from '../store/navigationStore';
+import { useBrandData } from '../hooks/useBrandData';
 import type { Product, BrandIdentity, ProductImage } from '../types/index';
 
 interface BrandIndexItem {
@@ -56,6 +57,38 @@ interface BrandProductsRecord {
 interface BrandIdentitiesRecord {
   [key: string]: BrandIdentity | undefined;
 }
+
+/**
+ * BrandLogoDisplay - Shows brand logo with fallback to icon
+ * Uses useBrandData hook to fetch real brand logos
+ */
+const BrandLogoDisplay: React.FC<{ brandName: string }> = ({ brandName }) => {
+  const brandData = useBrandData(brandName);
+
+  return (
+    <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
+      {brandData?.logoUrl ? (
+        <img 
+          src={brandData.logoUrl}
+          alt={brandData.name}
+          className="w-8 h-8 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.display = 'none';
+            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+            if (fallback) fallback.style.display = 'block';
+          }}
+        />
+      ) : null}
+      {!brandData?.logoUrl ? (
+        <div className="w-6 h-6 rounded flex items-center justify-center bg-gradient-to-br from-indigo-400 to-indigo-600">
+          <span className="text-xs font-bold text-white">
+            {brandName.substring(0, 2).toUpperCase()}
+          </span>
+        </div>
+      ) : null}
+    </div>
+  );
+};
 
 export const Navigator: React.FC = () => {
   const [mode, setMode] = useState<'catalog' | 'copilot'>('catalog');
@@ -297,26 +330,8 @@ export const Navigator: React.FC = () => {
                         className="w-full flex items-center justify-between group p-2.5 rounded-lg hover:bg-[var(--bg-panel-hover)] transition-all border border-transparent hover:border-[var(--border-subtle)]"
                       >
                         <div className="flex items-center gap-4 flex-1">
-                          {/* Brand Logo - LARGER */}
-                          <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
-                            {brandIdentities[brandId]?.logo_url !== null && brandIdentities[brandId]?.logo_url ? (
-                              <img 
-                                src={brandIdentities[brandId]?.logo_url ?? ''} 
-                                alt={brand.name}
-                                className="w-8 h-8 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
-                                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-                                  // Fallback to icon if image fails
-                                  const target = e.currentTarget as HTMLImageElement;
-                                  target.style.display = 'none';
-                                  const sibling = target.nextElementSibling as HTMLElement | null;
-                                  if (sibling) sibling.style.display = 'block';
-                                }}
-                              />
-                            ) : null}
-                            {!brandIdentities[brandId]?.logo_url || !brandIdentities[brandId]?.logo_url ? (
-                              <BookOpen className="w-6 h-6 text-indigo-400" style={{ display: brandIdentities[brandId]?.logo_url ? 'none' : 'block' }} />
-                            ) : null}
-                          </div>
+                          {/* Brand Logo - from useBrandData hook */}
+                          <BrandLogoDisplay brandName={brand.name} />
                           
                           <div className="text-left flex-1 min-w-0">
                             <div className="text-xs font-semibold text-[var(--text-primary)]">

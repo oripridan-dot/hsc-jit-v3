@@ -1,20 +1,22 @@
 /**
  * Workbench - Product Cockpit
  * Displays detailed product information with right-side MediaBar
- * 🎨 Dynamic brand theming applied when product is selected
+ * 🎨 Dynamic brand theming applied inside workbench
  */
 import React, { useState } from 'react';
 import { useNavigationStore } from '../store/navigationStore';
-import { useBrandTheme } from '../hooks/useBrandTheme';
+import { useBrandData } from '../hooks/useBrandData';
 import { FiArrowLeft, FiExternalLink, FiInfo, FiBook, FiPackage, FiFile } from 'react-icons/fi';
 import { MediaBar } from './MediaBar';
 import { MediaViewer } from './MediaViewer';
 import { InsightsTable } from './InsightsTable';
 import { HalileoPulse } from './HalileoPulse';
+import { WorkbenchBrandHeader } from './WorkbenchBrandHeader';
 import type { Product, ProductImage, ProductImagesObject, Specification } from '../types';
 
 export const Workbench: React.FC = () => {
   const { selectedProduct, goBack, setWhiteBgImage: saveWhiteBgImage } = useNavigationStore();
+  const brandData = useBrandData(selectedProduct?.brand);
   const [activeTab, setActiveTab] = useState<'overview' | 'specs' | 'docs'>('overview');
   const [isMediaViewerOpen, setIsMediaViewerOpen] = useState(false);
   const [selectedMediaItem, setSelectedMediaItem] = useState<{ url: string; type: 'image' | 'video' | 'audio' | 'pdf' } | null>(null);
@@ -23,9 +25,6 @@ export const Workbench: React.FC = () => {
   const [isResizing, setIsResizing] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, width: 0 });
   const mediaBarRef = React.useRef<HTMLDivElement>(null);
-
-  // 🎨 Apply brand theme based on product's brand
-  useBrandTheme(selectedProduct?.brand || 'default');
 
   /**
    * Extract main image URL from product
@@ -148,6 +147,14 @@ export const Workbench: React.FC = () => {
 
     return (
       <div className="flex-1 flex flex-col h-full bg-[var(--bg-app)]">
+        {/* Brand Header - Shows brand colors and logo */}
+        {brandData && (
+          <WorkbenchBrandHeader
+            brandName={selectedProduct.brand}
+            productName={selectedProduct.name}
+          />
+        )}
+
         {/* Header with Back Button */}
         <div className="flex-shrink-0 bg-[var(--bg-panel)] border-b border-[var(--border-subtle)] px-5 py-3.5 sm:py-4">
           <div className="flex items-center justify-between mb-2.5">
@@ -252,11 +259,25 @@ export const Workbench: React.FC = () => {
                     )}
 
                     {/* Right: Branded Key Specifications Card */}
-                    <div className="bg-gradient-to-br from-[var(--brand-color)]/5 via-[var(--bg-panel)] to-[var(--bg-panel)] border-2 border-[var(--brand-color)]/20 rounded-xl p-3 sm:p-4 shadow-lg">
+                    <div 
+                      className="rounded-xl p-3 sm:p-4 shadow-lg border-2"
+                      style={{
+                        background: brandData 
+                          ? `linear-gradient(135deg, ${brandData.brandColor}15, ${brandData.secondaryColor}15)`
+                          : 'linear-gradient(135deg, var(--brand-color)/5, transparent)',
+                        borderColor: brandData ? `${brandData.brandColor}40` : 'var(--brand-color)/20'
+                      }}
+                    >
                       {/* Card Header */}
-                      <div className="mb-3 sm:mb-4 pb-2 sm:pb-3 border-b border-[var(--brand-color)]/20">
+                      <div 
+                        className="mb-3 sm:mb-4 pb-2 sm:pb-3 border-b"
+                        style={{ borderColor: brandData ? `${brandData.brandColor}40` : 'var(--brand-color)/20' }}
+                      >
                         <div className="flex items-center gap-2 mb-1">
-                          <div className="w-1 h-6 bg-[var(--brand-color)] rounded-full"></div>
+                          <div 
+                            className="w-1 h-6 rounded-full"
+                            style={{ backgroundColor: brandData?.brandColor || 'var(--brand-color)' }}
+                          ></div>
                           <h2 className="text-base sm:text-lg font-bold text-[var(--text-primary)] uppercase tracking-wide">
                             Key Specifications
                           </h2>
@@ -272,10 +293,16 @@ export const Workbench: React.FC = () => {
                           {selectedProduct.specifications.slice(0, 8).map((spec: Specification, idx: number) => (
                             <div 
                               key={spec.key} 
-                              className="group hover:bg-[var(--brand-color)]/5 rounded-lg p-2 transition-colors"
+                              className="group rounded-lg p-2 transition-colors"
+                              style={{ 
+                                backgroundColor: brandData ? `${brandData.brandColor}10` : 'var(--brand-color)/5'
+                              }}
                             >
                               <div className="flex justify-between items-start gap-2">
-                                <span className="text-[11px] sm:text-sm font-medium text-[var(--brand-color)] uppercase tracking-wide flex-shrink-0">
+                                <span 
+                                  className="text-[11px] sm:text-sm font-medium uppercase tracking-wide flex-shrink-0"
+                                  style={{ color: brandData?.brandColor || 'var(--brand-color)' }}
+                                >
                                   {spec.key}
                                 </span>
                                 <span className="text-[12px] sm:text-base text-[var(--text-primary)] font-semibold text-right">

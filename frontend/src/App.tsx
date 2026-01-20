@@ -3,9 +3,7 @@ import { useWebSocketStore } from './store/useWebSocketStore';
 import { catalogLoader, instantSearch } from './lib';
 import { HalileoNavigator } from './components/HalileoNavigator';
 import { Workbench } from './components/Workbench';
-import { HeaderSystemPanel } from './components/HeaderSystemPanel';
 import ErrorBoundary from './components/ErrorBoundary';
-import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import { useRealtimeData } from './hooks/useRealtimeData';
 import { initializeDevTools } from './lib/devTools';
 import './index.css';
@@ -15,7 +13,6 @@ initializeDevTools();
 
 function AppContent() {
   const { actions } = useWebSocketStore();
-  const { applyTheme } = useTheme();
   const [dataVersion, setDataVersion] = useState(0);
 
   // Enable real-time data updates (with safe error handling)
@@ -32,9 +29,6 @@ function AppContent() {
   }
 
   useEffect(() => {
-    // Apply Roland brand theme through ThemeContext
-    applyTheme('roland');
-    
     // Initialize search system
     const initCatalog = async () => {
       try {
@@ -46,7 +40,7 @@ function AppContent() {
       }
     };
     initCatalog();
-  }, [dataVersion, applyTheme]); // Re-initialize when data changes
+  }, [dataVersion]); // Re-initialize when data changes
 
   useEffect(() => {
     // Attempt WebSocket connection but don't block
@@ -66,7 +60,6 @@ function AppContent() {
           <h1 className="text-2xl font-bold text-cyan-300 tracking-wide">HALILIT SUPPORT CENTER</h1>
           <p className="text-xs text-slate-500 font-mono mt-0.5">v3.7 Mission Control</p>
         </div>
-        <HeaderSystemPanel />
       </div>
 
       {/* BODY CONTAINER: Left Nav + Center Workbench */}
@@ -90,11 +83,7 @@ function AppContent() {
 }
 
 function App() {
-  return (
-    <ThemeProvider>
-      <AppContent />
-    </ThemeProvider>
-  );
+  return <AppContent />;
 }
 
 export default App;
