@@ -2,655 +2,3110 @@
   "brand_identity": {
     "id": "roland",
     "name": "Roland Corporation",
-    "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
+    "logo_url": null,
     "website": "https://www.roland.com",
-    "description": "Leading manufacturer of electronic musical instruments and music production equipment.",
+    "description": "World leader in electronic musical instruments",
     "founded": null,
     "headquarters": null,
     "categories": [
-      "Synthesizers",
       "Electronic Drums",
       "Digital Pianos",
+      "Synthesizers",
       "Guitar Products",
       "Wind Instruments"
     ],
-    "brand_colors": {
-      "primary": "#ED1C24",
-      "secondary": "#FFA500",
-      "text": "#FFFFFF"
-    }
+    "brand_colors": {}
   },
   "products": [
     {
-      "id": "roland-juno-106",
-      "brand": "Roland Corporation",
-      "name": "Juno-106 Classic Synthesizer",
-      "model_number": "JUNO-106",
-      "sku": "ROLAND-JUNO-106",
-      "main_category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "description": "Classic analog synthesizer with 6-voice polyphony, touch sensor, and warm analog sound.",
-      "short_description": "Juno-106 Classic Synthesizer - Synthesizers",
-      "images": [
-        {
-          "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-juno-106-1",
-          "alt_text": "Juno-106 Classic Synthesizer"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-juno-106-2",
-          "alt_text": "Juno-106 Classic Synthesizer - Front view"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-juno-106-3",
-          "alt_text": "Juno-106 Classic Synthesizer - Detail view"
-        }
-      ],
-      "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
-      ],
-      "specifications": [
-        {
-          "key": "Voices",
-          "value": "6"
-        },
-        {
-          "key": "Oscillators",
-          "value": "2 per voice"
-        },
-        {
-          "key": "Filters",
-          "value": "State-variable"
-        },
-        {
-          "key": "Memory",
-          "value": "128 patches"
-        }
-      ],
-      "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "manual_urls": [
-        "https://example.com/manual/juno-106.pdf",
-        "https://example.com/quickstart/juno-106.pdf"
-      ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637007"
-    },
-    {
-      "id": "roland-tr-808",
-      "brand": "Roland Corporation",
-      "name": "TR-808 Rhythm Composer",
-      "model_number": "TR-808",
-      "sku": "ROLAND-TR-808",
-      "main_category": "Electronic Drums",
-      "subcategory": "Premium Models",
-      "description": "Legendary drum machine with iconic sounds used in countless hit records.",
-      "short_description": "TR-808 Rhythm Composer - Electronic Drums",
-      "images": [
-        {
-          "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-tr-808-1",
-          "alt_text": "TR-808 Rhythm Composer"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-tr-808-2",
-          "alt_text": "TR-808 Rhythm Composer - Front view"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-tr-808-3",
-          "alt_text": "TR-808 Rhythm Composer - Detail view"
-        }
-      ],
-      "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
-      ],
-      "specifications": [
-        {
-          "key": "Drum Sounds",
-          "value": "16"
-        },
-        {
-          "key": "Sequencer",
-          "value": "16 steps"
-        },
-        {
-          "key": "Tempo",
-          "value": "40-300 BPM"
-        },
-        {
-          "key": "Outputs",
-          "value": "Audio + MIDI"
-        }
-      ],
-      "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "manual_urls": [
-        "https://example.com/manual/tr-808.pdf",
-        "https://example.com/quickstart/tr-808.pdf"
-      ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637016"
-    },
-    {
-      "id": "roland-fp-90x",
-      "brand": "Roland Corporation",
-      "name": "FP-90X Stage Piano",
-      "model_number": "FP-90X",
-      "sku": "ROLAND-FP-90X",
-      "main_category": "Digital Pianos",
-      "subcategory": "Premium Models",
-      "description": "Professional stage piano with 88 weighted keys and premium sound engine.",
-      "short_description": "FP-90X Stage Piano - Digital Pianos",
-      "images": [
-        {
-          "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-fp-90x-1",
-          "alt_text": "FP-90X Stage Piano"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-fp-90x-2",
-          "alt_text": "FP-90X Stage Piano - Front view"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-fp-90x-3",
-          "alt_text": "FP-90X Stage Piano - Detail view"
-        }
-      ],
-      "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
-      ],
-      "specifications": [
-        {
-          "key": "Keys",
-          "value": "88 weighted"
-        },
-        {
-          "key": "Sounds",
-          "value": "38 tones"
-        },
-        {
-          "key": "Recording",
-          "value": "1MB internal"
-        },
-        {
-          "key": "Weight",
-          "value": "24kg"
-        }
-      ],
-      "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "manual_urls": [
-        "https://example.com/manual/fp-90x.pdf",
-        "https://example.com/quickstart/fp-90x.pdf"
-      ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637030"
-    },
-    {
-      "id": "roland-fantom-07",
-      "brand": "Roland Corporation",
-      "name": "FANTOM-07 Workstation",
-      "model_number": "FANTOM-07",
-      "sku": "ROLAND-FANTOM-07",
-      "main_category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "description": "Compact 7-inch workstation synthesizer with powerful sound design capabilities.",
-      "short_description": "FANTOM-07 Workstation - Synthesizers",
-      "images": [
-        {
-          "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-fantom-07-1",
-          "alt_text": "FANTOM-07 Workstation"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-fantom-07-2",
-          "alt_text": "FANTOM-07 Workstation - Front view"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-fantom-07-3",
-          "alt_text": "FANTOM-07 Workstation - Detail view"
-        }
-      ],
-      "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
-      ],
-      "specifications": [
-        {
-          "key": "Display",
-          "value": "7-inch LCD"
-        },
-        {
-          "key": "Keys",
-          "value": "61"
-        },
-        {
-          "key": "Sounds",
-          "value": "3000+"
-        },
-        {
-          "key": "Effects",
-          "value": "8-band EQ"
-        }
-      ],
-      "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "manual_urls": [
-        "https://example.com/manual/fantom-07.pdf",
-        "https://example.com/quickstart/fantom-07.pdf"
-      ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637039"
-    },
-    {
-      "id": "roland-go:keys",
-      "brand": "Roland Corporation",
-      "name": "GO:KEYS Music Workstation",
-      "model_number": "GO:KEYS",
-      "sku": "ROLAND-GO:KEYS",
-      "main_category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "description": "Portable music production station with AI songwriting assistance.",
-      "short_description": "GO:KEYS Music Workstation - Synthesizers",
-      "images": [
-        {
-          "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-go:keys-1",
-          "alt_text": "GO:KEYS Music Workstation"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-go:keys-2",
-          "alt_text": "GO:KEYS Music Workstation - Front view"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-go:keys-3",
-          "alt_text": "GO:KEYS Music Workstation - Detail view"
-        }
-      ],
-      "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
-      ],
-      "specifications": [
-        {
-          "key": "Keys",
-          "value": "61 weighted"
-        },
-        {
-          "key": "Loops",
-          "value": "850+"
-        },
-        {
-          "key": "AI Songs",
-          "value": "1000+"
-        },
-        {
-          "key": "Connectivity",
-          "value": "Bluetooth"
-        }
-      ],
-      "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "manual_urls": [
-        "https://example.com/manual/go:keys.pdf",
-        "https://example.com/quickstart/go:keys.pdf"
-      ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637051"
-    },
-    {
-      "id": "roland-td-27",
-      "brand": "Roland Corporation",
-      "name": "TD-27 Electronic Drum Kit",
-      "model_number": "TD-27",
-      "sku": "ROLAND-TD-27",
-      "main_category": "Electronic Drums",
-      "subcategory": "Premium Models",
-      "description": "Professional electronic drum kit with premium sounds and realistic feel.",
-      "short_description": "TD-27 Electronic Drum Kit - Electronic Drums",
-      "images": [
-        {
-          "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-td-27-1",
-          "alt_text": "TD-27 Electronic Drum Kit"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-td-27-2",
-          "alt_text": "TD-27 Electronic Drum Kit - Front view"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-td-27-3",
-          "alt_text": "TD-27 Electronic Drum Kit - Detail view"
-        }
-      ],
-      "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
-      ],
-      "specifications": [
-        {
-          "key": "Pads",
-          "value": "12"
-        },
-        {
-          "key": "Sounds",
-          "value": "1000+"
-        },
-        {
-          "key": "Recording",
-          "value": "USB audio interface"
-        },
-        {
-          "key": "Pad Size",
-          "value": "10-14 inch"
-        }
-      ],
-      "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "manual_urls": [
-        "https://example.com/manual/td-27.pdf",
-        "https://example.com/quickstart/td-27.pdf"
-      ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637063"
-    },
-    {
-      "id": "roland-cube-80gx",
-      "brand": "Roland Corporation",
-      "name": "CUBE-80GX Guitar Amp",
-      "model_number": "CUBE-80GX",
-      "sku": "ROLAND-CUBE-80GX",
-      "main_category": "Guitar Products",
-      "subcategory": "Premium Models",
-      "description": "Compact modeling guitar amplifier with 99 amp models.",
-      "short_description": "CUBE-80GX Guitar Amp - Guitar Products",
-      "images": [
-        {
-          "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-cube-80gx-1",
-          "alt_text": "CUBE-80GX Guitar Amp"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-cube-80gx-2",
-          "alt_text": "CUBE-80GX Guitar Amp - Front view"
-        },
-        {
-          "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-cube-80gx-3",
-          "alt_text": "CUBE-80GX Guitar Amp - Detail view"
-        }
-      ],
-      "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
-      ],
-      "specifications": [
-        {
-          "key": "Power",
-          "value": "80W"
-        },
-        {
-          "key": "Amp Models",
-          "value": "99"
-        },
-        {
-          "key": "Effects",
-          "value": "8 simultaneous"
-        },
-        {
-          "key": "Speakers",
-          "value": "12-inch"
-        }
-      ],
-      "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
-      ],
-      "manual_urls": [
-        "https://example.com/manual/cube-80gx.pdf",
-        "https://example.com/quickstart/cube-80gx.pdf"
-      ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637073"
-    },
-    {
-      "id": "roland-ae-20",
-      "brand": "Roland Corporation",
-      "name": "AE-20 Aerophone Lead",
-      "model_number": "AE-20",
-      "sku": "ROLAND-AE-20",
+      "id": "roland-aerophone_ae-10",
+      "brand": "Roland",
+      "name": "Aerophone AE-10\nDigital Wind Instrument",
+      "model_number": "AE-10",
+      "sku": null,
+      "halilit_brand_code": null,
       "main_category": "Wind Instruments",
-      "subcategory": "Premium Models",
-      "description": "Electronic wind instrument with natural playing feel and expressive control.",
-      "short_description": "AE-20 Aerophone Lead - Wind Instruments",
+      "subcategory": null,
+      "sub_subcategory": null,
+      "tags": [],
+      "description": "Aerophone AE-10 is a digital wind instrument that lets you play sax, clarinet, flute, violin, synth sounds and many more. Since it supports traditional sax fingering, the AE-10 is instantly familiar to acoustic sax players, especially with a mouthpiece-mounted breath sensor that responds like an acoustic horn. The AE-10 also features 128* high-quality sound models including soprano and baritone sax, clarinet, trumpet, string instruments, and an array of expressive synth sounds. And the integrated speaker and battery operation means that you can play these sounds anywhere. With built-in speakers, headphones for late-night practice, battery power capability, and DAW connectivity, the Roland Aerophone AE-10 is the versatile, play-anywhere choice that supports you in every musical scenario.\n\n*Version 3.0 software includes 128 tones, with 66 new tones to expand your repertoire\n\nNothing beats the sound of your favorite acoustic sax, but sometimes its tone might not be quite right for the job at hand. Whatever scenario you’re playing in, the Aerophone AE-10 has the onboard digital sax sounds you need. Choose from alto, tenor, soprano, and baritone sax types, all of which respond just like their acoustic counterparts. Playing dynamics, articulation, and even the organic overtone changes caused by your breathing are all reproduced thanks to Roland’s advanced SuperNATURAL modeling technology. A dedicated “Sax Section” layers four types of sax for playing together in unison, and you can pull off a seamless performance with the Full Range feature, which automatically switches between sax types by key range.\n\nThe Aerophone AE-10 also features sounds from other wind instruments including trumpet, trombone, clarinet, flute, oboe, bassoon, and more. Powered by Roland’s SuperNATURAL technology, which faithfully matches the behavior of the originals, these sounds help to expand your musical range. Ethnic instruments like shakuhachi and erhu are on hand too, offering authentic pitch and tonal fluctuations that echo their acoustic counterparts. Aerophone AE-10 even includes stringed instruments such as violin, cello, and contrabass, each one capable of unique musical expressions since you control them by breath and fingering instead of bowing. Once you’ve tried the individual sounds, you can create one-man ensembles by layering multiple wind instrument sounds with the Brass Section setting. The AE-10 is also packed with a selection of the latest synth sounds that are specially tailored for wind instrument performance with fully optimized breath control.\n\nYou’ve worked hard to nail your sax technique, but most digital horns make you master a new fingering system, which can be a major setback. With the Roland Aerophone AE-10, it’s a smooth transition, thanks to a layout that’s similar to your favorite acoustic sax—right down to the left-hand octave key. Plus, the AE-10 has a sensitive mouthpiece-mounted breath sensor that also functions as a bite sensor, allowing expressive techniques like vibrato and pitch. Even beginners will be able to enjoy playing the various onboard sounds straight away.\n\nWherever and whenever you play, the portable and lightweight Roland Aerophone AE-10 is ready. Six AA batteries provide mobile power, and onboard monitor speakers deliver comfortable sound for intimate performing situations. You also have the ability to directly connect to a PA or amp for broader coverage, eliminating the need to use a mic. When you need to cover large instruments like tuba and bassoon, the battery-powered Roland CUBE Street EX is a great companion, giving you big sound in a portable package. Playing sessions are even more fun when you connect to your smartphone via the Aerophone AE-10’s stereo mini jack and jam along with favorite songs. And thanks to the headphones option, you can play around the clock without disturbing family members and neighbors.\n\nPlaying sessions are even more fun when you connect a smartphone or music player to jam along with favorite songs. Your device connects to the stereo mini-jack input on the Aerophone AE-10, and plays through the onboard monitor speakers or connected headphones.\n\nWhile the Roland Aerophone AE-10 is a powerful standalone instrument, it also lets you get creative with external gear. You can connect to your computer via USB to play soft synths and external MIDI sound modules through your DAW, with breath control providing a world of unique expression not possible with keyboard synthesizers.\n\nThe Aerophone Editor is a free iOS app for the Aerophone AE-10 that lets you adjust tones, set various playing parameters, and organize tone lists. You’re able to deeply customize sounds and functions with parameters only available in the app, and easily create tone lists for different performance and practice situations. Via a convenient interface, you have access to four tone layers, various controller assignments, effects settings, and more. The Aerophone Editor is a must-have tool to perfectly tailor your Aerophone AE-10 for your own personal playing style.\n\nLearn More...\n\nThe new Roland Aerophone AE-10 is a trailblazing digital wind instrument that fuses a traditional saxophone fingering system with a library of onboard acoustic and synth sounds, plus a breath sensor that reacts just like your favorite acoustic horn. US-based DJ and multi-instrumentalist Masego explores the expressive capabilities of the AE-10’s alto sax sound.\n\nThere’s nothing worse than a studio session grinding to a halt because you need an instrument that you haven’t brought along. That won’t happen with the Aerophone AE-10, as it features 40 acoustic and synth sounds, all powered by Roland’s SuperNATURAL technology for natural and accurate response.  US-based DJ and multi-instrumentalist Masego explores some of the AE-10’s onboard sounds while accompanied by an original backing track.\n\nRegardless of the sound you use, the Aerophone AE-10 provides an paralleled level of expression suitable for any genre of music.  UK-based saxophone player Alistair Parnell, accompanied by the Equinox Saxophone Ensemble, layers onboard synth lead sounds with external synth sounds in an extract from Nigel Wood's “Partial Eclipse” for solo wind synth and wind ensemble (www.saxtetpublications.com).\n\nWherever and whenever you play, the portable and lightweight Aerophone AE-10 is ready. Onboard monitor speakers deliver comfortable sound for intimate performing situations and six AA batteries provide convenient on-the-go power. The AE-10’s mobility is spotlighted in this open-air performance by the Japan-based trio sax triplets.\n\nWhile the Roland Aerophone AE-10 is a powerful standalone instrument, it also lets you get creative with external gear. You can connect to a computer via USB to play soft synths and external MIDI sound modules through your DAW, with breath control providing a world of unique expression not possible with keyboard synthesizers. In this performance, Spanish sax player Llibert Fortuny mixes the AE-10's onboard sounds with soft synths and backing loops from Ableton Live.\n\nOP-AE10MP\n              Replacement Mouthpiece\n\nRH-300\n              Stereo Headphones\n\nThe performance features 11 musicians, including 9 acoustic saxophone players and 2 Aerophone players. Alistair Parnell performs with the Aerophone AE-10, while Dan Gribbin performs with Aerophone GO.\n\nThe new synth sounds of firmware update version 2.00 are brought to life in this composition written and performed by UK saxophonist and established wind synth player, Alistair Parnell.\n\nRandal Fisher, Steve Brickman, and Hailey Niswanger reflect on their wind instrument journeys, creative processes, and the breath itself.Read more…\n\nThe Roland Aerophone is a convenient, low-maintenance way to spend more time on your music. Learn to care for this digital wind instrument.Read more…\n\nMeet the engineering talents behind the Aerophone and learn about the digital wind instrument's journey from concept to fruition.Read more…\n\nThe Aerophone is easy to use, fun to play, and provides many learning opportunities. Learn why it's popular with new and seasoned players.Read more…\n\nThere are many paths to becoming a skilled wind player. Let’s explore how the Aerophone can help you achieve greatness anywhere, anytime.Read more…\n\nIf you play the saxophone, you already know how to play the Aerophone. Learn why it’s regarded as one of the easiest beginner instruments.Read more…\n\nReading music can seem complex, but it is a skill that opens up new doors. Discover how the Aerophone can help you gain this musical ability.Read more…\n\nStarting to play a new instrument can be a bit dry. The Roland Aerophone makes the process fun and encourages new players to stick with it.Read more…\n\nWith the Aerophone, you can practice without worrying about volume, tuning, or other distractions. Learn why it's ideal for new wind players.Read more…\n\nThese Quick Start Videos contain step-by-step instructions that will quickly introduce you to its major features.Read more…\n\nCustomize Your Aerophone AE-10 for Maximum Expression\n\nReplacement Mouthpiece for the Aerophone AE-10\n\nPremium Closed-Back Studio Headphones for Pro Level Monitoring.\n\nPremium Open-Air Headphones with a Wide Range of Applications.\n\nClear, Accurate and Comfortable for Studio-Quality Monitoring.\n\nEnjoy All the Dynamics of Your Digital Piano, Day or Night.\n\nHeadphones for Everyday Music Making and Audio Playback.\n\nHigh-quality 2GB USB memory key that’s compatible with the high-speed USB (USB 2.0) specification.\n\nIf you have questions about operating your Roland product, please check our Knowledge Base for answers to the most common questions.\nYou can also contact our Product Support through Roland Backstage.\nIn addition, we have a library of Owner’s Manuals and Support Documents that you can download and reference.",
+      "short_description": "Aerophone AE-10: Digital Wind Instrument - A collection of inspiring wind instruments with sax fingering and expressive breath control",
       "images": [
         {
+          "url": "https://static.roland.com/products/aerophone_ae-10/images/aerophone_ae-10_hero.jpg",
           "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-ae-20-1",
-          "alt_text": "AE-20 Aerophone Lead"
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
         },
         {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner2/n01_0000.png",
           "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-ae-20-2",
-          "alt_text": "AE-20 Aerophone Lead - Front view"
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
         },
         {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner2/n01_0126.png",
           "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-ae-20-3",
-          "alt_text": "AE-20 Aerophone Lead - Detail view"
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/promo_new_color_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/four_sax_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/design_side.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/design_mouthpiece.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/interface_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/performance_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner/n06_0000.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner/bk_r360_bgw_01_0000.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner/bk_r360_bgw_01_0229.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/headphone_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/breath_controller_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/experience_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/experience/images/experience_connect.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/experience/images/experience_fun.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/experience/images/experience_music_making.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/specifications/images/spec_size.jpg",
+          "type": "technical",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/specifications/images/spec_size_black.jpg",
+          "type": "technical",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/specifications/images/spec_detail.jpg",
+          "type": "technical",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/main/op-ae10mp_main.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/main/rh_300_angle_main.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_dr_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_rear_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_output_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_usb_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_control_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner3/ae_bk_rotate_0000.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner3/ae_bk_rotate_0222.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner3/ae_bk_rotate_0220.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/modal_new_color_performance.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/modal_new_color_gallery_angle.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/modal_new_color_gallery_front.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_design_front.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_right.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_left_real.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_rear_left_real.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_rear_right_real.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_rear_right.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_angle.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_top.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_angle_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_lead.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_console.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_console_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_connector.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_tail_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_front.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_front_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_back_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_spec_size_black.jpg",
+          "type": "technical",
+          "alt_text": "Roland Featured Products",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_tr-1000.png",
+          "type": "gallery",
+          "alt_text": "TR-1000",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_bridge_cast.png",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_facebook.png",
+          "type": "gallery",
+          "alt_text": "Facebook",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_youtube.png",
+          "type": "gallery",
+          "alt_text": "YouTube Channel",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_social_media.png",
+          "type": "gallery",
+          "alt_text": "Worldwide Social Network",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_support.jpg",
+          "type": "gallery",
+          "alt_text": "Support by Product",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_quickstart.jpg",
+          "type": "gallery",
+          "alt_text": "Quick Start",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner2/n01_0066.png",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/sound_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/design_reverse.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner/n06_0169.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/aerohone_editor_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/experience/images/experience_style.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/experience/images/experience_interior.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_main_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_mouth_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_the_power_of_breath_coming_up_for_air_tn.jpg",
+          "type": "gallery",
+          "alt_text": "The Power of Breath: Coming Up for Air with Today’s Wind Players",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_caring_for_your_digital_wind_instrument_tn.jpg",
+          "type": "gallery",
+          "alt_text": "The Power of Breath: Coming Up for Air with Today’s Wind Players",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_roland_engineering_behind_the_aerophone_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Engineering: Behind the Aerophone",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_aerophone_helps_tone_and_articulation_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Helps Wind Players Improve Tone and Articulation",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_using_standard_saxophone_fingering_aerophone_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Play Anywhere, Anytime with the Roland Aerophone",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_play_anywhere_anytime_with_aerophone_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Play Anywhere, Anytime with the Roland Aerophone",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_scale_your_saxophone_skills_aerophone_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Scale Your Saxophone Skills with Aerophone",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/AE-10_thumbnail.png",
+          "type": "gallery",
+          "alt_text": "Scale Your Saxophone Skills with Aerophone",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner3/ae_bk_rotate_0154.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_left.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_rear_left.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_lead_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_back.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_worldwide_social_network.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_roland_international.jpg",
+          "type": "gallery",
+          "alt_text": "Roland International",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_boss_title.png",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_v-moda.png",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner3/ae_bk_rotate_0080.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/modal_new_color_gallery_side.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/mf_fingering_right_real.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_top_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_connector_black.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_tail.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/gallery_spec_size.jpg",
+          "type": "technical",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner/n06_0040.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner/bk_r360_bgw_01_0043.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_ae-10/features/images/productspinner/bk_r360_bgw_01_0040.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone AE-10\nDigital Wind Instrument",
+          "width": null,
+          "height": null
         }
       ],
       "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
+        "https://static.roland.com/products/aerophone_ae-10/features/media/modal_new_color_hero.mp4",
+        "https://www.youtube.com/user/RolandChannel",
+        "https://www.youtube.com/c/RolandSupportChannel",
+        "https://www.youtube.com/watch?v=djUseuUisvM",
+        "https://www.youtube.com/watch?v=Q_zRJn-9E2M",
+        "https://www.youtube.com/watch?v=AHlG_PwwvGY",
+        "https://www.youtube.com/watch?v=bYFKa1X-NX8",
+        "https://www.youtube.com/watch?v=opqTIWZ3WkU",
+        "https://www.youtube.com/watch?v=j2OPsVJlpe4",
+        "https://www.youtube.com/watch?v=0fk9JySyrjU",
+        "https://www.youtube.com/watch?v=K7tpRw3NRh0",
+        "https://www.youtube.com/watch?v=OsD7vIa_Ovw",
+        "https://www.youtube.com/watch?v=CcWwrRQld8c",
+        "https://www.youtube.com/watch?v=ZyxLgZVkwTw",
+        "https://www.youtube.com/watch?v=Z8EnvHM9zXg",
+        "https://www.youtube.com/watch?v=If518Tw8_Tk",
+        "https://www.youtube.com/watch?v=BUVaLA0cstE",
+        "https://www.youtube.com/playlist?list=PLjE3lpIJr8X0gBQr9ADrghTRZNDeeAiVH"
       ],
       "specifications": [
         {
-          "key": "Fingering",
-          "value": "Saxophone/Clarinet"
+          "category": "General",
+          "key": "Specifications",
+          "value": "Saxophone compatible",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Sounds",
-          "value": "200+"
+          "category": "General",
+          "key": "Key Layout",
+          "value": "SuperNATURAL acoustic, PCM synthesizer",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Battery",
-          "value": "8 hours"
+          "category": "General",
+          "key": "Sound Generator",
+          "value": "Tones: 128 (*Version 3.00)",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Weight",
-          "value": "650g"
+          "category": "General",
+          "key": "Preset Memory",
+          "value": "Tones: 100",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "User Memory",
+          "value": "Multi-effects\n\tChorus\n\tReverb",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Effects",
+          "value": "Breath sensor\n\tBite sensor\n\tPerformance keys\n\tOctave keys\n\tThumb controller\n\tTone button",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Controllers",
+          "value": "Custom LCD",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Display",
+          "value": "INPUT jack: stereo miniature phone type\n\tPHONES/OUTPUT jack: stereo 1/4-inch phone type\n\tUSB COMPUTER port (supports USB MIDI)\n\tDC IN jack",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Connectors",
+          "value": "2.8 cm x 2\n\t1.5 W x 2",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Internal Speakers",
+          "value": "AC adaptor (DC 5.7 V)\n\tRechargeable Ni-MH battery (AA, HR6) (sold separately) x 6",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Power Supply",
+          "value": "418 mA",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Current Draw",
+          "value": "Rechargeable nickel metal hydride batteries: approximately 7 hours(When using batteries having a capacity of 1,900 mAh.)\n\t\n\t* Carbon-zinc or alkaline batteries cannot be used",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Battery life for continuous use (differs depending on the conditions of use)",
+          "value": "Owner's manual\n\tLeaflet \"USING THE UNIT SAFELY\"\n\tAC adaptor\n\tMouthpiece cap\n\tNeck strap\n\tBand\n\tDedicated hand carry bag",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Accessories",
+          "value": "Replacement Mouthpiece",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Options (sold separately)",
+          "value": "128 mm\n\t5-1/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size and Weight",
+          "value": "93 mm\n\t3-11/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Width",
+          "value": "574 mm\n\t22-5/8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Depth",
+          "value": "855 g\n\t1 lb. 15 oz.\n\t(including batteries)",
+          "unit": null,
+          "source": "brand_official"
         }
       ],
       "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
+        "Digital wind instrument with flexible onboard sounds",
+        "Fingering compatible with an acoustic saxophone",
+        "Mouthpiece features sensitive breath sensor with reed structure for friendly playing feel and control over techniques like vibrato and pitch",
+        "Roland’s proprietary SuperNATURAL sound technology reproduces the subtle tonal nuances produced with dynamics and articulation",
+        "Realistic and expressive saxophone sounds include soprano, alto, tenor, and baritone, all instantly transposable to any key with no fingering stress",
+        "Wide variety of additional acoustic sounds include wind instruments (clarinet, flute, and trumpet) and string instruments (violin)",
+        "Roland’s latest synth sounds on board, optimized for breath control",
+        "Easy operation with display for selecting sounds and settings",
+        "Onboard monitor speakers and headphones output for playing anytime, anywhere",
+        "Battery operation (6 x AA) for up to seven hours of continuous play",
+        "Easy connection to a computer DAW via USB",
+        "Input for connecting a smartphone or music player for playing along with backing music",
+        "With version 3.0 software, 128 tones are available including 66 new tones"
       ],
+      "pricing": null,
+      "status": "in_stock",
+      "availability_notes": null,
       "manual_urls": [
-        "https://example.com/manual/ae-20.pdf",
-        "https://example.com/quickstart/ae-20.pdf"
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/#dl-manuals",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/4f78c043-e2b7-4cca-ab99-be71a0edded3/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/453d82b7-ba04-413d-826a-164b44f907b2/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/cb98f5d4-c177-4d82-8568-9986ffb68803/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/d7b18721-ff22-4561-8f74-3cde82b7c9fa/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/7bb257af-b7dc-48b3-a899-b0951c7bf2f9/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/1e51e9de-dfd7-419c-b4d4-a8e6242d44d8/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/97fa93fe-3a06-480f-bd5e-d531cf00d0c9/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/2fb560ff-508b-4b3f-8dd7-1d9889bb3f2b/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/9cd27fdb-0195-471d-a3f3-d1e68b2758a9/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/5fc6904c-42b5-4f27-ac97-8b23b2e7a540/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/c9303165-2f45-48d5-822b-59f4f6caab0e/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/7c484923-7cc0-4ad2-aebd-4454b4ad7cf5/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/ae88006e-302a-4c6d-a085-5f02a277103f/",
+        "https://www.roland.com/global/support/by_product/aerophone_ae-10/owners_manuals/8903401b-7507-40a0-864f-a799ea0751c0/",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/products/aerophone_ae-10/downloads/",
+        "https://www.roland.com/global/sustainability/compliance_guideline/"
       ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637088"
+      "documentation_snippets": [],
+      "support_url": "https://www.roland.com/global/support/",
+      "ai_insights": [],
+      "ai_summary": null,
+      "accessories": [
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Features",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Experience",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Specs",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Media",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Guide/Articles",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Accessories",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Downloads",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Support",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Iconic Experience",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_editor",
+          "target_product_name": "Learn More...",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_ae-10",
+          "target_product_name": "Continue your journey",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-op-ae10mp",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/main/op-ae10mp_main.jpg\" alt=\"\" />\n          \n          \n            OP-AE10MP\n              Replacement Mouthpiece",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-rh-300",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/main/rh_300_angle_main.jpg\" alt=\"\" />\n          \n          \n            RH-300\n              Stereo Headphones",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_main_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_dr_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_rear_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_output_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_usb_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_control_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_mouth_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_editor",
+          "target_product_name": "Aerophone Editor\niOS/Android App\n\nCustomize Your Aerophone AE-10 for Maximum Expression\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-op-ae10mph",
+          "target_product_name": "OP-AE10MPH\nReplacement Mouthpiece for the Aerophone AE-10\n\nReplacement Mouthpiece for the Aerophone AE-10\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-op-ae10mp",
+          "target_product_name": "OP-AE10MP\nReplacement Mouthpiece for the Aerophone AE-10\n\nReplacement Mouthpiece for the Aerophone AE-10\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-rh-300",
+          "target_product_name": "RH-300\nMonitor Headphones\n\nPremium Closed-Back Studio Headphones for Pro Level Monitoring.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-rh-a30",
+          "target_product_name": "RH-A30\nOpen-Air Headphones\n\nPremium Open-Air Headphones with a Wide Range of Applications.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-rh-200s",
+          "target_product_name": "RH-200S\nMonitor Headphones\n\nClear, Accurate and Comfortable for Studio-Quality Monitoring.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-rh-200",
+          "target_product_name": "RH-200\nMonitor Headphones\n\nClear, Accurate and Comfortable for Studio-Quality Monitoring.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-rh-a7",
+          "target_product_name": "RH-A7\nOpen-Air Headphones\n\nEnjoy All the Dynamics of Your Digital Piano, Day or Night.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-rh-5",
+          "target_product_name": "RH-5\nHeadphones\n\nHeadphones for Everyday Music Making and Audio Playback.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-m-uf2g",
+          "target_product_name": "M-UF2G\n2 GB USB Flash Memory\n\nHigh-quality 2GB USB memory key that’s compatible with the high-speed USB (USB 2.0) specification.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone AE-10\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        }
+      ],
+      "related_products": [],
+      "brand_product_url": "https://www.roland.com/global/products/aerophone_ae-10/",
+      "distributor_url": null,
+      "data_sources": [
+        "brand_official"
+      ],
+      "confidence_score": 1.0,
+      "last_updated": "2026-01-20T20:55:38.799602",
+      "last_scraped": "2026-01-20T20:55:38.799599",
+      "search_keywords": [],
+      "search_text": ""
     },
     {
-      "id": "roland-jupiter-x",
-      "brand": "Roland Corporation",
-      "name": "JUPITER-X Synthesizer",
-      "model_number": "JUPITER-X",
-      "sku": "ROLAND-JUPITER-X",
-      "main_category": "Synthesizers",
-      "subcategory": "Premium Models",
-      "description": "Premium synthesizer with powerful engine and legendary JUPITER sound.",
-      "short_description": "JUPITER-X Synthesizer - Synthesizers",
+      "id": "roland-aerophone_brisa",
+      "brand": "Roland",
+      "name": "Aerophone Brisa\nDigital Wind Instrument",
+      "model_number": null,
+      "sku": null,
+      "halilit_brand_code": null,
+      "main_category": "Wind Instruments",
+      "subcategory": null,
+      "sub_subcategory": null,
+      "tags": [],
+      "description": "Meet Aerophone Brisa, an exciting evolution of the growing Roland Aerophone platform. This elegant instrument combines the design and key layout of a traditional flute with the modern benefits of the Aerophone series, including a diverse selection of onboard sounds and deep customization options. Aerophone Brisa also features a newly developed sound engine tailored for different wind instrument styles, with a special focus on the unique articulations and techniques used by flute players.\n\nDiscover the Roland Aerophone Brisa, a revolutionary digital wind instrument designed with flute players in mind. In this in-depth video, flutist Elena Pinderhughes guides you through everything you need to know about Brisa, from expressive sound demos to intuitive design features that adapt to your unique playing style.\n\nIn this exclusive performance, visionary saxophonist Shabaka Hutchings brings Brisa to life, blending his spiritual jazz roots with futuristic textures and tones. His dynamic improvisation showcases the expressive depth and versatility of Brisa, proving that tradition and innovation can coexist in perfect harmony.\n\nWatch acclaimed flutist and composer Elena Pinderhughes bring the Aerophone Brisa to life in this expressive sound demo performance. From acoustic emulations to bold synth textures, Elena showcases Brisa’s wide sonic palette with artistry and flair.\n\nCreating with Aerophone Brisa is a comfortable and friendly experience for flutists, players of other wind instruments, and beginners alike. The stylish, lightweight design offers a straight structure, responsive flute-style keys, and intuitive controls, making playing effortless and enjoyable.\n\nAerophone Brisa features SuperNATURAL Winds, a new Aerophone sound engine that leverages our latest advancements in natural wind expression. Delivering rich, inspiring tones, it faithfully translates every breath nuance into vibrant sound, mirroring the immediate response and dynamic control of acoustic instruments.\n\nWith 100 onboard tones, Aerophone Brisa is ready to fuel limitless creative journeys. Explore a library of flute family instruments, from concert flutes and piccolos to bass and jazz flutes. Expand your range with winds such as saxophone, clarinet, and trumpet, and go further with orchestral strings and world sounds like pan flute and shakuhachi. You can even perform contemporary music styles with modern synthesizers and drum sounds.\n\nEquipped with our newly developed dual breath sensor system, Aerophone Brisa provides natural wind control that will be familiar to all types of players. In contrast with a traditional flute, sound is produced by blowing directly into the mouthpiece, simplifying the playing experience. By adjusting the head joint, it’s easy to dial in the most comfortable playing angle. You can also execute flute octave switching techniques by directing your breath between the two mouthpiece holes as you play.\n\nAerophone Brisa offers multiple fingering options to meet the needs of a wide range of players. Flute and trumpet modes are available, along with a Brisa mode that’s ideal for saxophone and recorder players and anyone new to wind instruments. There are also special fingering modes for playing the instrument with only the right or left hand.\n\nAerophone Brisa’s versatile digital engine allows you to add harmonies and drones to your playing, enriching solo and ensemble sessions with tonalities that typically require multiple musicians. There’s also a transposition function that lets you play any musical piece with your most comfortable fingering.\n\nThere are numerous ways to control Aerophone Brisa sounds in real time, unlocking all-new performance approaches. Use the thumb and S1/S2 buttons to enhance tones with harmonies and unique expressive colors. And with the instrument’s integrated motion sensor, you can apply vibrato, pitch bend, and other effects with simple body movements.\n\nAerophone Brisa flows everywhere your creative life takes you. With the onboard speaker, headphone jack, and rechargeable battery, you can play anytime and anywhere. The USB-C port provides audio/MIDI communication with music production apps, and the headphone output can also be used to connect with a sound system for live performances. In addition, Bluetooth MIDI is available to send wireless MIDI data to Bluetooth-enabled devices and expand your control options with the BOSS FS-1-WL and EV-1-WL.\n\nThis powerful companion app extends the Aerophone Brisa experience with your smartphone or tablet. Adjust internal parameters from your device’s touchscreen, save and recall favorite sounds, and use the fingering display to study layouts and view notes as you play them. You also get integrated access to many additional sounds on Roland Cloud to expand your creative range.\n\nAerophone Brisa Plus\n\nIn this in-depth video, flutist Elena Pinderhughes guides you through everything you need to know about Brisa, from expressive sound demos to intuitive design features that adapt to your unique playing style.\n\nThe Aerophone Brisa Engineering team discusses the power and potential of the latest addition to the family of instruments.Read more…\n\nLearn how the Aerophone series offers wind players a versatile and expressive way to explore new sounds and performance styles while staying true to familiar techniques.Read more…\n\nCompanion app for Aerophone Brisa.\n\nIf you have questions about operating your Roland product, please check our Knowledge Base for answers to the most common questions.\nYou can also contact our Product Support through Roland Backstage.\nIn addition, we have a library of Owner’s Manuals and Support Documents that you can download and reference.",
+      "short_description": "Aerophone Brisa: Digital Wind Instrument - Play like you always have. Sound like you never could.",
       "images": [
         {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/aerophone_brisa_poster.jpg",
           "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-jupiter-x-1",
-          "alt_text": "JUPITER-X Synthesizer"
+          "alt_text": "Aerophone Brisa",
+          "width": null,
+          "height": null
         },
         {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/n01_0000.png",
           "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-jupiter-x-2",
-          "alt_text": "JUPITER-X Synthesizer - Front view"
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
         },
         {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/photo_gallery_ae_brisa_vid_1.jpg",
           "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-jupiter-x-3",
-          "alt_text": "JUPITER-X Synthesizer - Detail view"
+          "alt_text": "Roland Aerophone Brisa | Everything You Need to Know Featuring Elena Pinderhughes",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/photo_gallery_ae_brisa_vid_2.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa Performance ft. Shabaka Hutchings",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/photo_gallery_ae_brisa_vid_3.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa Sound Demos",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_expressive_elegance.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Expressive elegance",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_next-generation_sound_2.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa - Next-generation sound",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_design-1.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa - Design Details",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_design-2.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa - Design Details",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_design-3.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa - Design Details",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_flute_and_beyond.gif",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Flute and beyond",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_comfortable_playability.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Comfortable playability",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_choose_your_fingering.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Choose your fingering",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_instant_harmony_and_transposition_2.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Instant harmony and transposition",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_overview_vid.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Performance Video",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_dynamic_performance_control.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Dynamic performance control",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_free-flowing_music_creation.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa - Free-flowing music creation",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/ae_brisa_plus_app_2.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa Plus App",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/footer_hero.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa Experience Banner",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/experience_aerophone_brisa_1.jpg",
+          "type": "gallery",
+          "alt_text": "Everything You Need to Know Featuring Elena Pinderhughes",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/experience_aerophone_brisa_2.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa Performance ft. Shabaka Hutchings",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/experience_aerophone_brisa_3.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa Sound Demos",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/spec_size.jpg",
+          "type": "technical",
+          "alt_text": "Aerophone Brisa Spec Dimensions",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/spec_detail.jpg",
+          "type": "technical",
+          "alt_text": "Aerophone Brisa Image Gallery",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_angle_1_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_angle_2_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_top_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_bottom_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_zoom_1_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_zoom_2_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_zoom_3_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_ae-30_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_iphone_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_case_open_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/aerophone_brisa_case_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_angle_1_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_angle_2_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_top_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa Top View",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_bottom_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa Bottom View",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_zoom_1_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_zoom_2_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_zoom_3_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_ae-30_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa with Aerophone Pro",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_iphone_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa connected to Brisa Plus app",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_case_open_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa pictured in the included premium carrying case",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/aerophone_brisa/images/gallery/aerophone_brisa_case_gal.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Aerophone Brisa premium carrying case (included)",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_roland_featured_products.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Featured Products",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_tr-1000.png",
+          "type": "gallery",
+          "alt_text": "TR-1000",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_bridge_cast.png",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_facebook.png",
+          "type": "gallery",
+          "alt_text": "Facebook",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_youtube.png",
+          "type": "gallery",
+          "alt_text": "YouTube Channel",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_social_media.png",
+          "type": "gallery",
+          "alt_text": "Worldwide Social Network",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_support.jpg",
+          "type": "gallery",
+          "alt_text": "Support by Product",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_quickstart.jpg",
+          "type": "gallery",
+          "alt_text": "Quick Start",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_roland_engineering_inside_aerophone_brisa_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Engineering: Inside Aerophone Brisa",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_the_evolution_aerophone_series_tn.jpg",
+          "type": "gallery",
+          "alt_text": "The Evolution of Expression: Innovation in the Aerophone Series",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_roland_international.jpg",
+          "type": "gallery",
+          "alt_text": "Roland International",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_worldwide_social_network.jpg",
+          "type": "gallery",
+          "alt_text": "Worldwide Social Network",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_boss_title.png",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_boss.jpg",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_v-moda.png",
+          "type": "gallery",
+          "alt_text": "V-MODA",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://i.ytimg.com/vi/h90qWPospLQ/maxresdefault.jpg",
+          "type": "gallery",
+          "alt_text": "Aerophone Brisa\nDigital Wind Instrument",
+          "width": null,
+          "height": null
         }
       ],
       "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
+        "https://static.roland.com/products/aerophone_brisa/media/ae_brisa_hero.mp4",
+        "https://www.youtube.com/user/RolandChannel",
+        "https://www.youtube.com/c/RolandSupportChannel",
+        "https://www.youtube.com/watch?v=h90qWPospLQ",
+        "https://www.youtube.com/watch?v=R61NU_4O0SA",
+        "https://www.youtube.com/watch?v=IxVYDvCiqBc"
       ],
       "specifications": [
         {
-          "key": "Keys",
-          "value": "73"
+          "category": "General",
+          "key": "Specifications",
+          "value": "Flute compatible",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Voices",
-          "value": "12"
+          "category": "General",
+          "key": "Key Layout",
+          "value": "100 Tones",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Oscillators",
-          "value": "3 per voice"
+          "category": "General",
+          "key": "Preset Tones",
+          "value": "48 Tones",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Sequencer",
-          "value": "16 tracks"
+          "category": "General",
+          "key": "User Tones",
+          "value": "12 Tones x 5 banks available",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Favorite Tones",
+          "value": "17 Types",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Effects",
+          "value": "Dual breath sensor\n\tThumb button\n\t[S1]/[S2] buttons\n\tMotion sensor",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Controllers",
+          "value": "Ver 5.0\n\tProfile Support: GATT (MIDI over Bluetooth Low Energy)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Bluetooth",
+          "value": "Graphic OLED 128 x 32 dots",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Display",
+          "value": "PHONES jack: stereo miniature phone type\n\tUSB 5V port: USB Type-C(R) (DC 5V, AUDIO/MIDI supported)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Connectors",
+          "value": "1",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Speaker",
+          "value": "Lithium-ion battery\n\tObtained via USB port (USB bus power)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Power Supply",
+          "value": "0.6 A",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Current Draw",
+          "value": "approximately 8 hours",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Battery life for continuous use (differs depending on the conditions of use)",
+          "value": "Quick Start\n\tTone List\n\tLeaflet \"USING THE UNIT SAFELY\"\n\tMoisture band x 3\n\tCleaning cloth\n\tBlower\n\tUSB Type-C(R) (straight) to Type-C(R) (angled) cable\n\tRight angle adaptor (stereo miniature phone type)\n\tDedicated hand carry bag",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Accessories",
+          "value": "752 mm\n\t29-5/8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size and Weight",
+          "value": "51 mm\n\t2-1/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Width",
+          "value": "52 mm\n\t2-1/16 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Depth",
+          "value": "415 g 15 oz",
+          "unit": null,
+          "source": "brand_official"
         }
       ],
       "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
+        "Advanced digital wind instrument with the styling and key layout of a traditional flute",
+        "Lightweight and elegant design with an onboard display and intuitive controls",
+        "Dual breath sensor system, moisture band, and adjustable head joint",
+        "Newly developed SuperNATURAL Winds sound engine powered by the latest Aerophone advancements",
+        "100 onboard sounds, including flute-family instruments, wind instruments such as saxophone, clarinet, and trumpet, plus synthesizers, world instruments, drums, and more",
+        "Selectable fingering modes, including flute, trumpet, and the default Brisa mode, which is based on recorder and sax-style fingerings",
+        "Intelligent harmony function creates automatic harmonies based on a specific key or scale",
+        "Integrated motion sensor lets you use physical movement to control vibrato, pitch bend, tone levels, and more",
+        "Assign harmony and other parameters to the thumb and S1/S2 buttons for real-time performance expression",
+        "Enhance the sound with reverb and other onboard effects",
+        "Wireless playing freedom with a rechargeable lithium-ion battery and Bluetooth® MIDI connectivity",
+        "Onboard speaker positioned near the ear for easy sound monitoring",
+        "Stereo audio output (TRS mini jack) for connecting to an external sound system or headphones",
+        "USB-C audio/MIDI connectivity for working with music software on computers and mobile devices",
+        "Aerophone Brisa Plus app for wireless parameter control, saving favorite tones, and expanding sound options via Roland Cloud",
+        "Premium carrying case included"
       ],
+      "pricing": null,
+      "status": "in_stock",
+      "availability_notes": null,
       "manual_urls": [
-        "https://example.com/manual/jupiter-x.pdf",
-        "https://example.com/quickstart/jupiter-x.pdf"
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/#dl-manuals",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/1ab683ca-34e8-4b11-97fa-c02d4493f8f9/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/aa83c846-d594-4680-aa22-afd72a37d9ba/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/40033648-45e0-4342-b5e1-5b123e0481d4/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/9467eca9-0c91-40b0-92fc-6d7d847a7e3c/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/1186407b-c6d3-44eb-8596-fd70c88363e1/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/16ec7e78-cba1-4f46-9f35-58717dc3e7e2/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/8a98904a-a437-4c24-ba67-74f9fa19325d/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/4df158aa-4451-4d67-8178-5b6050664a01/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/12834623-d0bb-4a53-a776-173f0265033b/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/2fcc6c6f-aa07-435d-8467-89f6856e5cb1/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/38132741-9e55-4a65-be34-57f656c1fef4/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/621ebf69-b237-44ae-8897-34d7a8643b80/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/9e5cb221-ce8d-4a13-a758-b4e08947b69c/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/c19aa546-a4d4-4488-b51c-0b6b7ea29819/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/a8cfca1c-d76f-474a-b5ec-64700dcb8847/",
+        "https://www.roland.com/global/support/by_product/aerophone_brisa/owners_manuals/828e68c2-ba04-41b4-bf99-6a37fbaac5d8/",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/sustainability/compliance_guideline/"
       ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637096"
+      "documentation_snippets": [],
+      "support_url": "https://www.roland.com/global/support/",
+      "ai_insights": [],
+      "ai_summary": null,
+      "accessories": [
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Features",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Experience",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Specs",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Media",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Guide/Articles",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Accessories",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Support",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa_plus",
+          "target_product_name": "Aerophone Brisa Plus",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa",
+          "target_product_name": "Continue your journey",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_angle_1_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_angle_2_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_top_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_bottom_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_zoom_1_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_zoom_2_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_zoom_3_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_ae-30_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_iphone_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_case_open_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/aerophone_brisa_case_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-aerophone_brisa_plus",
+          "target_product_name": "Aerophone Brisa Plus\niOS/Android App\n\nCompanion app for Aerophone Brisa.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for Aerophone Brisa\nDigital Wind Instrument",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        }
+      ],
+      "related_products": [],
+      "brand_product_url": "https://www.roland.com/global/products/aerophone_brisa/",
+      "distributor_url": null,
+      "data_sources": [
+        "brand_official"
+      ],
+      "confidence_score": 1.0,
+      "last_updated": "2026-01-20T20:55:44.409046",
+      "last_scraped": "2026-01-20T20:55:44.409044",
+      "search_keywords": [],
+      "search_text": ""
     },
     {
-      "id": "roland-spd-sx",
-      "brand": "Roland Corporation",
-      "name": "SPD-SX Pro Sampling Pad",
-      "model_number": "SPD-SX",
-      "sku": "ROLAND-SPD-SX",
-      "main_category": "Electronic Drums",
-      "subcategory": "Premium Models",
-      "description": "Professional sampling pad controller for live performance and studio work.",
-      "short_description": "SPD-SX Pro Sampling Pad - Electronic Drums",
+      "id": "roland-bridge_cast",
+      "brand": "Roland",
+      "name": "BRIDGE CAST",
+      "model_number": null,
+      "sku": null,
+      "halilit_brand_code": null,
+      "main_category": "Musical Instruments",
+      "subcategory": null,
+      "sub_subcategory": null,
+      "tags": [],
+      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for premium livestream audio. This customizable desktop hub is packed with secret weapons to take out the competition, including dual sound mixes, vocal transformer effects, music playback, sound effects, and support for a broadcast-grade mic and headphones. In the heat of the battle, BRIDGE CAST ensures that your audio is always as epic as your gameplay.\n\nThe companion BRIDGE CAST app takes your experience even further, allowing you to customize BRIDGE CAST audio features and enhance streams with royalty-free background music tracks and sound effects via BGM CAST and Roland Cloud.\n\nLearn how BRIDGE CAST's powerful audio tools will elevate your gaming streams with professional sound quality and easy real-time mixing control.\n\nBRIDGE CAST gives you what you need to deliver outstanding sound in every session, coupled with killer sonic tools to help you stand out from the crowd. Roland has been a leading innovator in electronic music and audio/video gear for over 50 years. With BRIDGE CAST on your desktop, you’ll be driving your sound with the brand trusted by generations of top creators worldwide.\n\nConnect BRIDGE CAST to your gaming computer via USB-C.\n\nPlug in a professional microphone to the XLR input.\n\nHook up your headphones.\n\nCustomize the audio and panel functions with the companion app.\n\nSet up personal and stream mixes with the hands-on controls.\n\nBRIDGE CAST lets you chat and interact using a broadcast-grade dynamic or condenser microphone, the foundation of any professional audio setup. The high-performance XLR mic preamp delivers clear, dynamic sound in the box, with no need for messy external add-ons. You get superior audio monitoring too, with a powerful headphone amplifier and high-sensitivity output for pro-quality phones. The versatile headphones connector also supports a headset mic for a quick, single-cable connection.\n\nWith the dual audio mixer in BRIDGE CAST, you can independently balance the mic level, team chats, gameplay sounds, and background music for you and your viewers. Give yourself a winning advantage with a personal mix that prioritizes what you need to hear while gaming. Then create a separate stream mix that’s perfectly balanced for maximum online engagement.\n\nAlong with a headphones output, BRIDGE CAST has a line output for external gaming speakers. Level knobs for each output let you easily control volumes and smoothly transition between phones and speakers during gameplay. There’s also a dedicated streaming level control to dial in the sound for your online audience.\n\nMorph your voice and become your character with fun processing derived from Roland’s famous VT voice transformer products. Adjust the pitch and formant to change your age or gender. Or go even further and take on the persona of a beast or alien.\n\nBRIDGE CAST also includes EQ, compression, and other pro vocal processing to level up your streams. A low-cut filter softens pesky “P” and “T” plosives, while the de-esser cleans up harsh “S” tones. There’s a noise suppressor to throttle background distractions, plus reverb to launch your voice into another dimension. And with the muscular hardware DSP handling the audio load, all your computer power is dedicated to gaming and streaming.\n\nImmerse yourself in 5.1 or 7.1 virtual surround sound for headphones and stereo speaker systems, powered by advanced Roland technology. Audio is converted from a PC to virtual surround sound via a USB connection, delivering a powerful and engaging sound experience.\n\nSlay your competition by highlighting important game sounds with Game EQ presets. Pinpoint audio frequencies and boost their levels to make it easier to hear critical elements, like enemy footsteps in first-person shooter games. You can even fine-tune while visually monitoring the analyzed waveform in real time. Once you find the ideal settings for different game titles, save them in onboard profiles and call them up with quick button presses while playing.\n\nBuilding your brand is an essential part of creating an online following. Choose your core BRIDGE CAST look with bold Black and Ice White finish options. And take it to another level by customizing the detachable faceplate using our downloadable skin template, which allows you to personalize the panel with your team or gamertag design. It’s also possible to customize the LED colors of the four control knobs for additional flair.\n\nThe ergonomic BRIDGE CAST panel lets you easily control your mix while staying focused on the game. Everything you need is at your fingers, including grab-and-go level knobs and assignable buttons for muting sounds and accessing various functions. The rock-solid design won’t move around on your desktop, and the discrete rear-panel connections keep clutter in check.\n\nThe powerful BRIDGE CAST app works in tandem with the hardware, giving you full access to an array of in-depth features. Dial in mic and audio parameters, configure Game EQ presets, and more. You can also re-assign hardware controls for your needs and save/recall custom BRIDGE CAST configurations for different games and streaming audiences.\n\nUsing the BRIDGE CAST app, effortlessly tailor your sound with intuitive microphone settings for speed and precision. The version 5.00 update allows you to adjust EQ with quick-access controls and use the studio-grade compressor to achieve a clean, professional vocal sound with a single fader. There's also an expander that minimizes unwanted background noise without unnatural artifacts.\n\nWith BGM CAST, adding background music and sonic color to streams has never been easier. Available through the BRIDGE CAST app and Roland Cloud, BGM CAST puts a growing selection of royalty-free background music and sound effects at your fingertips. Choose music by mood and genre or create playlists of your favorites for stress-free music management. You can also assign sound effects to the four hardware buttons for instant triggering.\n\nA free Roland Account provides 36 background music tracks and 16 sound effects to use at no charge. Signing up for Roland Cloud Core membership through the BRIDGE CAST app unlocks thousands of additional music tracks and hundreds of sound effects, with new selections added each month. Membership also includes powerful tools for modern music creators, including the ZENOLOGY synthesizer, Zenbeats production software, Sound Packs, and more.\n\nGet the BRIDGE CAST App\n\nIf you need a unified audio and video solution, be sure to check out BRIDGE CAST X. This sister model includes all the audio features from BRIDGE CAST, plus video streaming features like multiple USB-C and HDMI ports, assignable control pads, and more. For a simplified setup and essential controls, discover BRIDGE CAST ONE.\n\nCompany names and product names appearing on this page are registered trademarks or trademarks of their respective owners.\n\nLevel up your gaming setup with BRIDGE CAST, the simple all-in-one solution serving crystal-clear audio and killer effects.\n\nLivestreaming is by far the fastest way for you to connect with your audience. With the right equipment and a plan you’ll be on your way.Read more…\n\nExplore various livestreaming applications and see how the practice is revolutionizing how people engage in the Pro A/V space.Read more…\n\nFor an auditory advantage over the competition, a pro gaming audio mixer is essential. Learn how BRIDGE CAST can improve your livestreams.Read more…\n\nFollow these simple steps and transform your BRIDGE CAST into the perfect representation of your gaming brand.Read more…\n\nBRIDGE CAST is a unique product for Roland, and so is its story. Meet the team that created the dedicated audio mixer for gamers.Read more…\n\nPremium sound monitoring for music creation and studio mixing.\n\nIf you have questions about operating your Roland product, please check our Knowledge Base for answers to the most common questions.\nYou can also contact our Product Support through Roland Backstage.\nIn addition, we have a library of Owner’s Manuals and Support Documents that you can download and reference.",
+      "short_description": "BRIDGE CAST: Dual Bus Gaming Mixer - Pro Sound for Pro Gamers",
       "images": [
         {
+          "url": "https://static.roland.com/products/bridge_cast/images/bridge_cast_hero.jpg",
           "type": "main",
-          "url": "https://picsum.photos/800/600?random=roland-spd-sx-1",
-          "alt_text": "SPD-SX Pro Sampling Pad"
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
         },
         {
+          "url": "https://static.roland.com/products/bridge_cast/images/bridge_cast_overview_hero_w.jpg",
           "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-spd-sx-2",
-          "alt_text": "SPD-SX Pro Sampling Pad - Front view"
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
         },
         {
+          "url": "https://static.roland.com/products/bridge_cast/images/photo_gallery_bridge_cast_vid_1.jpg",
           "type": "gallery",
-          "url": "https://picsum.photos/800/600?random=roland-spd-sx-3",
-          "alt_text": "SPD-SX Pro Sampling Pad - Detail view"
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/section-1-hero.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/steps-item-1.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/steps-item-2.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/steps-item-3.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/steps-item-4.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/steps-item-5.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/amp-up-about.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/section-2-hero.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/bridge_cast_desk_wh.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/direct-sound-control-about.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/vocal-shapeshifter-about.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/virtual-surround-sound-about.gif",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/audio-cheat-code-hero.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/brand-yourself-right-1.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/productspinner2/00001.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/brand-yourself-right-3.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/section-7-hero.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/section-7-hero-mob.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/deep_mic_settings.gif",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/section-8-hero_bgm.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/photo_gallery_bgm_cast_vid.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/bridge_cast_black_lineup.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST Black",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/bridge_cast_white_lineup.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST Ice White",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_01_top_angle_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_01_top_angle_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_02_top_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_02_top_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_03_angle_right_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_03_angle_right_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_05_angle_left_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_04_angle_left_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_06_back_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_05_back_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_04_side_angle_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/products/gallery/bridge_cast_07_angle_hand_gal.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_roland_featured_products.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Featured Products",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_tr-1000.png",
+          "type": "gallery",
+          "alt_text": "TR-1000",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_bridge_cast.png",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_facebook.png",
+          "type": "gallery",
+          "alt_text": "Facebook",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_youtube.png",
+          "type": "gallery",
+          "alt_text": "YouTube Channel",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/png/menu_social_media.png",
+          "type": "gallery",
+          "alt_text": "Worldwide Social Network",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_support.jpg",
+          "type": "gallery",
+          "alt_text": "Support by Product",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/menu_quickstart.jpg",
+          "type": "gallery",
+          "alt_text": "Quick Start",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/products/bridge_cast/images/bridge-cast-app.gif",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_getting_started_sharing_content_livestreaming_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Getting Started Sharing Content with Livestreaming",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_exploring_range_livestreaming_scenarios_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Exploring the Range of Livestreaming Scenarios",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_five_ways_level_up_livestreams_with_gaming_audio_mixer_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Five Ways to Level Up Livestreams with a Gaming Audio Mixer",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_personalize_your_bridge_cast_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Personalize Your BRIDGE CAST: A Step-by-Step Guide",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/images/articles/thumbnails/avp_roland_engineering_designing_bridge_cast_tn.jpg",
+          "type": "gallery",
+          "alt_text": "Roland Engineering: Designing BRIDGE CAST",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_roland_international.jpg",
+          "type": "gallery",
+          "alt_text": "Roland International",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/assets/promos/jpg/promo_worldwide_social_network.jpg",
+          "type": "gallery",
+          "alt_text": "Worldwide Social Network",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_boss_title.png",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_boss.jpg",
+          "type": "gallery",
+          "alt_text": "BOSS",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://static.roland.com/global/images/promo_v-moda.png",
+          "type": "gallery",
+          "alt_text": "V-MODA",
+          "width": null,
+          "height": null
+        },
+        {
+          "url": "https://i.ytimg.com/vi/Mzj9B3rWNA4/maxresdefault.jpg",
+          "type": "gallery",
+          "alt_text": "BRIDGE CAST",
+          "width": null,
+          "height": null
         }
       ],
       "video_urls": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "https://www.youtube.com/embed/jNQXAC9IVRw"
+        "https://static.roland.com/products/bridge_cast/media/bridge_cast_hero.mp4",
+        "https://www.youtube.com/user/RolandChannel",
+        "https://www.youtube.com/c/RolandSupportChannel",
+        "https://www.youtube.com/watch?v=Mzj9B3rWNA4",
+        "https://www.youtube.com/watch?v=yndDqP6n_tI"
       ],
       "specifications": [
         {
-          "key": "Pads",
-          "value": "16 backlit"
+          "category": "General",
+          "key": "Specifications",
+          "value": "MIC\n\tAUX\n\tCHAT (*1)\n\tGAME (*1)\n\tMUSIC (*1)\n\tSYSTEM (*1)\n\tUSB (*2)\n\t\n\t(*1) When the USB port connection setting is \"PC\"\n\t(*2) When the USB port connection setting is \"CONSOLE/MOBILE\"",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Memory",
-          "value": "10GB samples"
+          "category": "General",
+          "key": "Input Channel",
+          "value": "LINE OUT\n\tPHONES\n\tMIC (*3)\n\tSTREAM (*3)\n\tPERSONAL (*3)\n\tUSB(*4)\n\t\n\t(*3) When the USB port connection setting is \"PC\"\n\t(*4) When the USB port connection setting is \"CONSOLE/MOBILE\"",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Modes",
-          "value": "4"
+          "category": "General",
+          "key": "Output Channel",
+          "value": "MIC jack: XLR type (Phantom power DC 48 V, 6 mA Max)\n\tPHONES/HEADSET jack: Stereo miniature phone type (CTIA, PLUG-IN power)\n\tAUX jack: Stereo miniature phone type (TRRS)\n\tLINE OUT jack: Stereo miniature phone type (TRS)\n\tUSB port: USB Type-C (R)\n\tUSB DC 5V port: USB Type-C",
+          "unit": null,
+          "source": "brand_official"
         },
         {
-          "key": "Connectivity",
-          "value": "USB + MIDI"
+          "category": "General",
+          "key": "Connectors",
+          "value": "2 (STREAM MIX, PERSONAL MIX)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Audio Mixing Bus",
+          "value": "Windows: 44.1 kHz, 48 kHz, 96 kHz\n\tmacOS/iOS/Other: 48 kHz",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Sampling Frequency",
+          "value": "AD/DA: 24 bits\n\tInternal Processing: 32-bit Floating point",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Signal Processing",
+          "value": "MIC: Voice Changer, Noise Suppressor, Compressor, Equalizer, De-esser, Reverb, Low Cut\n\tCHAT: De-esser, Compressor\n\tGAME: Equalizer\n\tSTREAM: Delay",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Effects",
+          "value": "Number of tracks: 2\n\tData Formats: WAV (Linear PCM, 48 kHz, 16 bits, stereo/mono)\n\tMaximum Time: 5 seconds/track",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Audio File Player",
+          "value": "MIC: -85.5--10.5 dBu (Maximum: +1.5 dBu)\n\tHEADSET MIC: -58.5--20.5 dBu (Maximum: -8.5 dBu)\n\tAUX: -10 dBu (Maximum: +2 dBu)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Input Level",
+          "value": "MIC: 3.4 k ohms\n\tHEADSET MIC: 1.3 k ohms\n\tAUX: 10 k ohms",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Input Impedance",
+          "value": "LINE OUT: -4 dBu (Maximum: +8 dBu)\n\tPHONES/HEADSET: -1 dBu (Maximum: +11 dBu)\n\tPHONES/HEADSET: 78 mW + 78 mW (32 ohms)\n\tPHONES/HEADSET: 35 mW + 35 mW (250 ohms)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Output Level",
+          "value": "LINE OUT: 1 k ohm\n\tPHONES/HEADSET: 10 ohms",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Output Impedance",
+          "value": "USB bus power\n\tUSB AC adaptor (commercially available)\n\t* Use an USB AC adaptor that can supply 5 V, 1.0 A or more.",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Power",
+          "value": "5 V DC, 900 mA",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Current Draw",
+          "value": "Microsoft Windows 10, Windows 11\n\tApple macOS 11 or later\n\tApple iOS 15 or later\n\t\n\t* Although Roland has tested numerous configurations, and has determined that on average, a computer system similar to that described above will permit normal operation of the BRIDGE CAST, Roland cannot guarantee that a given computer can be used satisfactorily with the BRIDGE CAST based solely on the fact that it meets the above requirements. This is because there are too many other variables that may influence the processing environment, including differences in motherboard design and the particular combination of other devices involved.",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Operating System",
+          "value": "Leaflet \"Read Me First\"\n\tUSB 2.0 Type-C to Type-C Cable (2 m, 6.5 feet)\n\tUSB 2.0 Type-C to Type-A Cable (2 m, 6.5 feet)",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Accessories",
+          "value": "222 mm\n\t8.7 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Size and Weight",
+          "value": "110 mm\n\t4.3 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Width",
+          "value": "70 mm\n\t2.8 inches",
+          "unit": null,
+          "source": "brand_official"
+        },
+        {
+          "category": "General",
+          "key": "Depth",
+          "value": "450 g\n\t1 lb",
+          "unit": null,
+          "source": "brand_official"
         }
       ],
       "features": [
-        "Professional quality",
-        "Complete documentation",
-        "Full warranty",
-        "Technical support"
+        "Professional audio streaming interface and mixer designed for online gamers",
+        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
+        "Create independent mixes for you and the online audience with dual audio busses",
+        "USB-C connectivity with Windows and Mac computers and mobile devices",
+        "Also works with the Sony PlayStation®5 console and Nintendo Switch*",
+        "High-quality XLR microphone preamp with phantom power for broadcast-grade mics",
+        "Headphones jack with a professional high-sensitivity output and support for a headset or inline mic",
+        "5.1 or 7.1 USB virtual surround sound audio and 10-band EQ**",
+        "Hands-on knobs and buttons for quick sound control",
+        "Solid, streamlined design with customizable faceplate and adjustable knob LED colors",
+        "Available in Black or Ice White finish",
+        "Voice Changer effects derived from the Roland VT series",
+        "High-quality vocal processing: EQ, compressor, noise suppressor, de-esser, and reverb",
+        "Enhance your gaming performance with five customizable Game EQ presets",
+        "Delay function to synchronize audio with video when needed",
+        "Aux input for playing audio from a smartphone or external device",
+        "Customize settings and save hardware configurations with the BRIDGE CAST app",
+        "Add royalty-free background music and sound effects to your streams with BGM CAST, available through the BRIDGE CAST app and Roland Cloud\n                 \n                 *Some audio formats are not supported with PlayStation®5. Visit the Knowledge Base to learn more.\n\t\t\t\t \n\t\t\t\t **PlayStation 5 and Nintendo Switch do not support USB Virtual Surround."
       ],
+      "pricing": null,
+      "status": "in_stock",
+      "availability_notes": null,
       "manual_urls": [
-        "https://example.com/manual/spd-sx.pdf",
-        "https://example.com/quickstart/spd-sx.pdf"
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/#dl-manuals",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/6861efc5-05c4-41a5-9edc-eef254f9e2d4/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/36f09b0a-aec4-41b5-8f67-fcd14ef135ae/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/a4a57aac-652f-49a7-a245-10dbda730df9/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/fb96160e-69dc-4c51-a3f2-cefcd0828777/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/33111c65-d92d-48f1-9175-52e7c881f980/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/135c1976-da4e-4e1b-96d3-99928d52ba28/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/1e643656-e26b-4800-904a-507c575f4fec/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/29b2b6a8-2009-4a85-ad7c-e6901cfa8e85/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/c0c2b841-c357-4f3b-8b18-84e528f37093/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/42ba98d7-97f9-4447-a3d5-362e2e87f920/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/220d3a85-ca03-46b4-977a-783f85cdb18b/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/1d2aa1b3-0d41-403f-9f53-6800277bd421/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/95ac3b11-1d74-442f-bc56-c8e5451bc1a6/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/c1fca843-9185-412f-ba62-202428002675/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/c82933f6-0ff9-4194-b65f-099fa96eb274/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/ebc6e424-840a-4b72-8056-d89c5d30be10/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/41d209f3-b6d3-4dc9-9ab8-69f3ea0af1a3/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/0877c269-3b86-4c08-bd43-c08d4beb9112/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/00f7d466-83c4-47c1-a481-e0cfe7c6c63c/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/9b2a96b9-91b5-4f72-8832-630f171580d4/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/fc1f8710-87a0-4ef0-893b-3d3a535ec64e/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/afb83ad3-47f8-4b71-a53a-6f55b1b096b4/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/d3ea6efe-35b4-4b32-90a0-fe7b8415786b/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/1349371e-4e04-47d4-8265-6d90d3ab6abc/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/0de34d1c-0fa9-4a55-9532-727ad012fc84/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/b295f2f1-f095-438e-bf4a-12522d4fbc34/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/7e4c4112-d224-48e2-a977-4d3a14ef2d26/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/d5677254-cab7-41b0-ba9e-729c91fdeeb4/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/28156c9e-5f20-42ed-9261-8fa96f642d51/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/5bfb24c5-0a92-4c38-9577-1615772dde95/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/85b11cd7-9381-43ca-8df0-431b96cd1f3c/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/28712581-06ce-48ea-8055-1ae980a345b3/",
+        "https://www.roland.com/global/support/by_product/bridge_cast/owners_manuals/2d04aadd-342e-4579-bdd3-d49a0487e702/",
+        "https://www.roland.com/global/support/owners_manuals/",
+        "https://www.roland.com/global/products/bridge_cast/downloads/",
+        "https://www.roland.com/global/products/bridge_cast/downloads/",
+        "https://articles.roland.com/personalize-your-bridge-cast-a-step-by-step-guide/",
+        "https://www.roland.com/global/sustainability/compliance_guideline/"
       ],
-      "status": "verified",
-      "last_updated": "2026-01-20T15:15:38.637103"
+      "documentation_snippets": [],
+      "support_url": "https://www.roland.com/global/support/",
+      "ai_insights": [],
+      "ai_summary": null,
+      "accessories": [
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Features",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Specs",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Media",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Guide/Articles",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Accessories",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Downloads",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Support",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast",
+          "target_product_name": "Get the BRIDGE CAST App",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast_x",
+          "target_product_name": "BRIDGE CAST X",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-bridge_cast_one",
+          "target_product_name": "BRIDGE CAST ONE",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_01_top_angle_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_01_top_angle_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_02_top_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_02_top_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_03_angle_right_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_03_angle_right_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_05_angle_left_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_04_angle_left_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_06_back_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_wh_05_back_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_04_side_angle_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-gallery",
+          "target_product_name": "<img src=\"https://static.roland.com/assets/images/products/gallery/bridge_cast_07_angle_hand_gal.jpg\" alt=\"\" />",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        },
+        {
+          "relationship_type": "accessory",
+          "target_product_id": "roland-vmh-s100",
+          "target_product_name": "VMH-S100\nHeadphones\n\nPremium sound monitoring for music creation and studio mixing.\n\nVIEW PRODUCT",
+          "target_product_brand": "Roland",
+          "description": "Recommended accessory for BRIDGE CAST",
+          "compatibility_notes": null,
+          "is_required": false,
+          "priority": 0,
+          "combined_price": null,
+          "savings": null
+        }
+      ],
+      "related_products": [],
+      "brand_product_url": "https://www.roland.com/global/products/bridge_cast/",
+      "distributor_url": null,
+      "data_sources": [
+        "brand_official"
+      ],
+      "confidence_score": 1.0,
+      "last_updated": "2026-01-20T20:55:52.086062",
+      "last_scraped": "2026-01-20T20:55:52.086061",
+      "search_keywords": [],
+      "search_text": ""
     }
   ],
-  "total_products": 10,
-  "last_updated": "2026-01-20T15:15:38.637111",
-  "catalog_version": "3.7.0",
+  "total_products": 3,
+  "last_updated": "2026-01-20T20:55:52.086154",
+  "catalog_version": "3.6.1",
   "coverage_stats": {
-    "images_per_product": 3,
-    "videos_per_product": 2,
-    "manuals_per_product": 2,
-    "specs_per_product": 4
+    "total_images": 215,
+    "total_videos": 29,
+    "total_specifications": 56,
+    "total_features": 47,
+    "total_manuals": 82,
+    "total_accessories": 74,
+    "avg_images_per_product": 71.67,
+    "avg_specs_per_product": 18.67
   },
-  "rag_enabled": true,
-  "total_documentation_snippets": 20
+  "rag_enabled": false,
+  "total_documentation_snippets": 0
 }

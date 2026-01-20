@@ -20,7 +20,7 @@ Result:
 import json
 import os
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Any
 import logging
 import urllib.request
@@ -108,16 +108,15 @@ class HalilitCatalog:
     def __init__(self):
         self.source_dir = SOURCE_DIR
         self.output_dir = PUBLIC_DATA_PATH
+        # Flat structure matching Frontend Interface (MasterIndex)
         self.master_index = {
-            "metadata": {
-                "version": CATALOG_VERSION,
-                "generated_at": datetime.now().isoformat(),
-                "environment": "static_production",
-                "note": "Golden Record - Pre-calculated, Static, Fast"
-            },
+            "version": CATALOG_VERSION,
+            "build_timestamp": datetime.now(timezone.utc).isoformat(),
+            "environment": "static_production",
+            "total_products": 0,
+            "total_verified": 0,
             "brands": [],
-            "search_graph": [],  # Lightweight search index for Halilit Catalog
-            "total_products": 0
+            "search_graph": []
         }
         self.stats = {
             "brands_processed": 0,
@@ -128,12 +127,32 @@ class HalilitCatalog:
     
     def _download_logo(self, logo_url: str, brand_slug: str) -> str:
         """
-        Download brand logo and save locally, return local path or data URI.
-        Falls back to data URI if download fails.
-        
-        Returns:
-            str: Local file path (/data/logos/...) or data URI (data:image/...)
+        Manage brand logos. 
+        PRIORITY 1: Use local override file in /assets/logos/ (Manual VIP treatment)
+        PRIORITY 2: Download from URL (Fallback)
         """
+        # PRIORITY 1: Check Manual Local Overrides
+        # In Docker workspace, we map paths relative to frontend/public
+        # Path relative to PUBLIC_DATA_PATH (which is frontend/public/data)
+        
+        # We look in frontend/public/assets/logos
+        assets_logo_dir = self.output_dir.parent / "assets" / "logos"
+        known_logo_files = [
+            f"{brand_slug}_logo.svg",
+            f"{brand_slug}.svg",
+            f"{brand_slug}_logo.png",
+            f"{brand_slug}_logo.jpg",
+            f"{brand_slug}_logo.jpeg",
+            f"{brand_slug}_logo.webp"
+        ]
+        
+        for filename in known_logo_files:
+            local_file = assets_logo_dir / filename
+            if local_file.exists():
+                logger.info(f"       ⭐ Using local VIP logo for {brand_slug}: {filename}")
+                return f"/assets/logos/{filename}"
+                
+        # PRIORITY 2: Download (Legacy fallback - largely unused now)
         if not logo_url or not logo_url.startswith('http'):
             return logo_url
         
@@ -268,16 +287,22 @@ class HalilitCatalog:
                 json.dump(refined_data, out, indent=2, ensure_ascii=False)
             
             # --- UPDATE MASTER INDEX ---
+            brand_identity = refined_data.get('brand_identity', {})
+            brand_colors = brand_identity.get('brand_colors', {})
+            
             self.master_index["brands"].append({
                 "id": safe_slug,
                 "name": brand_name,
                 "slug": safe_slug,
                 "count": product_count,
+                # Frontend expects:
+                "brand_color": brand_colors.get('primary'),
+                "logo_url": brand_identity.get('logo_url'),
                 "file": f"{safe_slug}.json",
                 "data_file": f"{safe_slug}.json",
                 "product_count": product_count,
                 "verified_count": product_count,
-                "last_updated": datetime.now().isoformat()
+                "last_updated": datetime.now(timezone.utc).isoformat()
             })
             
             # --- UPDATE STATS ---
@@ -305,15 +330,30 @@ class HalilitCatalog:
         refined = raw_data.copy()
         refined['brand_name'] = brand_name
         refined['brand_slug'] = slug
-        refined['refined_at'] = datetime.now().isoformat()
+        refined['refined_at'] = datetime.now(timezone.utc).isoformat()
         
         # Enrich brand_identity with theme colors and download logo
         if 'brand_identity' not in refined:
             refined['brand_identity'] = {}
         
         # Always set brand_colors from BRAND_THEMES
-        refined['brand_identity']['brand_colors'] = BRAND_THEMES.get(slug, {})
+        # Try exact match first, then base brand name (e.g., 'roland-comprehensive' -> 'roland')
+        base_slug = slug.replace('-comprehensive', '').replace('-catalog', '')
+        refined['brand_identity']['brand_colors'] = BRAND_THEMES.get(slug) or BRAND_THEMES.get(base_slug, {})
         
+        # Inherit logo from base brand if missing
+        if not refined['brand_identity'].get('logo_url'):
+             # Standard fallback logos
+             known_logos = {
+                 'roland': 'https://static.roland.com/assets/images/logo_roland.svg',
+                 'boss': 'https://www.boss.info/static/boss_logo.svg',
+                 'nord': 'https://www.nordkeyboards.com/sites/default/files/files/nord-logo.svg',
+                 'moog': 'https://www.moogmusic.com/sites/default/files/moog_logo.svg',
+                 'yamaha': 'https://jp.yamaha.com/sp/common/images/yamaha_logo.png'
+             }
+             if base_slug in known_logos:
+                 refined['brand_identity']['logo_url'] = known_logos[base_slug]
+
         # Download logo and update path
         if refined['brand_identity'].get('logo_url'):
             local_logo_path = self._download_logo(refined['brand_identity']['logo_url'], slug)
@@ -326,6 +366,10 @@ class HalilitCatalog:
                 if not product.get('id'):
                     product['id'] = f"{slug}-product-{idx}"
                 
+                # Ensure 'category' field exists (Frontend uses 'category', Backend uses 'main_category')
+                if 'category' not in product:
+                    product['category'] = product.get('main_category', 'Uncategorized')
+
                 # Ensure images are lists
                 if 'images' in product and isinstance(product['images'], dict):
                     product['images'] = [product['images']]
@@ -452,8 +496,9 @@ class HalilitCatalog:
         logger.info("   [3/4] Finalizing catalog structure...")
         
         # Update metadata
-        self.master_index["metadata"]["total_brands"] = len(self.master_index["brands"])
+        self.master_index["total_brands"] = len(self.master_index["brands"])
         self.master_index["total_products"] = self.stats["products_total"]
+        self.master_index["total_verified"] = self.stats["products_total"] # Assuming all generated items are verified
         
         # Write index.json (The Master Catalog File)
         index_file = self.output_dir / "index.json"

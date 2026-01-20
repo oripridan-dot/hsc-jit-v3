@@ -87,6 +87,9 @@ export interface Product {
     name: string;
     brand: string;
     category: string;
+    main_category?: string;
+    subcategory?: string;
+    sub_subcategory?: string;
     family?: string;
     model_number?: string;
 
@@ -102,6 +105,7 @@ export interface Product {
     images?: ProductImagesType;
     videos?: Array<string | VideoResource>;
     video_urls?: string[];
+    youtube_videos?: string[];
     manuals?: ProductManual[];
     manual_urls?: string[];
 

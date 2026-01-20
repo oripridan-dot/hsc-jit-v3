@@ -1,48 +1,195 @@
 {
-  "build_timestamp": "2026-01-20T15:15:38.636975",
-  "version": "3.7.0",
-  "total_products": 40,
-  "total_verified": 40,
+  "version": "3.7-Halilit",
+  "build_timestamp": "2026-01-20T21:24:52.852343+00:00",
+  "environment": "static_production",
+  "total_products": 9,
+  "total_verified": 9,
   "brands": [
     {
-      "id": "roland",
-      "name": "Roland Corporation",
-      "slug": "roland",
-      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/roland.json",
-      "brand_color": "#ED1C24"
+      "id": "boss",
+      "name": "Boss Catalog",
+      "slug": "boss",
+      "count": 3,
+      "brand_color": null,
+      "logo_url": "/assets/logos/boss_logo.png",
+      "file": "boss.json",
+      "data_file": "boss.json",
+      "product_count": 3,
+      "verified_count": 3,
+      "last_updated": "2026-01-20T21:24:52.856365+00:00"
     },
     {
-      "id": "boss",
-      "name": "Boss (Roland)",
-      "slug": "boss",
-      "logo_url": "https://www.boss.info/static/boss_logo.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/boss.json",
-      "brand_color": "#000000"
+      "id": "roland",
+      "name": "Roland Catalog",
+      "slug": "roland",
+      "count": 3,
+      "brand_color": "#ef4444",
+      "logo_url": "/assets/logos/roland_logo.png",
+      "file": "roland.json",
+      "data_file": "roland.json",
+      "product_count": 3,
+      "verified_count": 3,
+      "last_updated": "2026-01-20T21:24:52.865016+00:00"
     },
     {
       "id": "nord",
-      "name": "Nord Keyboards",
+      "name": "Nord Catalog",
       "slug": "nord",
-      "logo_url": "https://www.nordkeyboards.com/sites/default/files/files/nord-logo.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/nord.json",
-      "brand_color": "#1F4E78"
+      "count": 3,
+      "brand_color": null,
+      "logo_url": "/assets/logos/nord_logo.png",
+      "file": "nord.json",
+      "data_file": "nord.json",
+      "product_count": 3,
+      "verified_count": 3,
+      "last_updated": "2026-01-20T21:24:52.867134+00:00"
+    }
+  ],
+  "search_graph": [
+    {
+      "id": "boss-eurus_gs-1",
+      "label": "EURUS GS-1Electronic Guitar",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Guitar Synthesizers",
+      "subcategory": null,
+      "keywords": [
+        "Cutting-edge BOSS electronic guitar, crafted in Japan for bold sound innovators",
+        "Seamlessly switch between synthesizer and regular guitar sounds",
+        "Six onboard memories for storing different synth sounds",
+        "Premium playability with 24-fret neck, compound radius rosewood fingerboard, and offset double-cutaway body design",
+        "Two custom-designed pickups and five-way selector switch"
+      ],
+      "description": "A Bold New Voice for Sound Innovators\n\nEvery guitarist is on a highly personal tone journey, continu"
     },
     {
-      "id": "moog",
-      "name": "Moog Music",
-      "slug": "moog",
-      "logo_url": "https://www.moogmusic.com/sites/default/files/moog_logo.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/moog.json",
-      "brand_color": "#FFB81C"
+      "id": "boss-xs-1",
+      "label": "XS-1Poly Shifter",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Effects Pedals",
+      "subcategory": null,
+      "keywords": [
+        "Class-leading pitch shifting quality realized with new BOSS algorithms",
+        "Instantly change the pitch of a guitar, bass, or other instrument",
+        "Clear response and natural feel that retains the fundamental sound character",
+        "Change pitch across +/- seven semitones or +/- three octaves",
+        "Balance knob adjusts the mix between the effect and direct sound"
+      ],
+      "description": "Rapid Retuning, Flawless Sound\n\nThe XS-1 Poly Shifter delivers instant retuning in a convenient, com"
+    },
+    {
+      "id": "boss-gx-10",
+      "label": "GX-10Guitar Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Multi-Effects",
+      "subcategory": null,
+      "keywords": [
+        "Compact amp/effects processor for guitar and bass",
+        "The same sound engine and color touch display as the GX-100 in a portable, travel-ready design",
+        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
+        "Authentic tube amplifier tone and touch response with AIRD technology",
+        "32 amplifier types and 170 BOSS effects"
+      ],
+      "description": "Colorful Tones, Portable Design\n\nPlayers everywhere love the GX-100 for its streamlined design, free"
+    },
+    {
+      "id": "roland-aerophone_ae-10",
+      "label": "Aerophone AE-10\nDigital Wind Instrument",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Wind Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Digital wind instrument with flexible onboard sounds",
+        "Fingering compatible with an acoustic saxophone",
+        "Mouthpiece features sensitive breath sensor with reed structure for friendly playing feel and control over techniques like vibrato and pitch",
+        "Roland’s proprietary SuperNATURAL sound technology reproduces the subtle tonal nuances produced with dynamics and articulation",
+        "Realistic and expressive saxophone sounds include soprano, alto, tenor, and baritone, all instantly transposable to any key with no fingering stress"
+      ],
+      "description": "Aerophone AE-10 is a digital wind instrument that lets you play sax, clarinet, flute, violin, synth "
+    },
+    {
+      "id": "roland-aerophone_brisa",
+      "label": "Aerophone Brisa\nDigital Wind Instrument",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Wind Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Advanced digital wind instrument with the styling and key layout of a traditional flute",
+        "Lightweight and elegant design with an onboard display and intuitive controls",
+        "Dual breath sensor system, moisture band, and adjustable head joint",
+        "Newly developed SuperNATURAL Winds sound engine powered by the latest Aerophone advancements",
+        "100 onboard sounds, including flute-family instruments, wind instruments such as saxophone, clarinet, and trumpet, plus synthesizers, world instruments, drums, and more"
+      ],
+      "description": "Meet Aerophone Brisa, an exciting evolution of the growing Roland Aerophone platform. This elegant i"
+    },
+    {
+      "id": "roland-bridge_cast",
+      "label": "BRIDGE CAST",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Professional audio streaming interface and mixer designed for online gamers",
+        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
+        "Create independent mixes for you and the online audience with dual audio busses",
+        "USB-C connectivity with Windows and Mac computers and mobile devices",
+        "Also works with the Sony PlayStation®5 console and Nintendo Switch*"
+      ],
+      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for premium li"
+    },
+    {
+      "id": "nord-nord-drum-3p",
+      "label": "Nord Drum 3P",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Drum",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-electro-7",
+      "label": "Nord Electro 7",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Electro",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-lead-a1",
+      "label": "Nord Lead A1",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Lead",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
     }
-  ]
+  ],
+  "total_brands": 3
 }

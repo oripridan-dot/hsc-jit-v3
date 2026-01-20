@@ -130,7 +130,7 @@ export const MasterIndexSchema = z.object({
     total_products: z.number().nonnegative(),
     total_verified: z.number().nonnegative(),
     brands: z.array(BrandIndexEntrySchema),
-});
+}).passthrough();
 
 // ============================================================================
 // RUNTIME VALIDATORS (Safe parsing with error handling)

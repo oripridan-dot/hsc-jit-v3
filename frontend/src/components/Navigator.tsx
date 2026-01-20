@@ -12,7 +12,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Compass, Search, ChevronRight, Sparkles, BookOpen } from 'lucide-react';
+import { Compass, Search, ChevronRight, Sparkles, BookOpen, LayoutGrid, Speaker, Piano, Mic2, Music, Zap, Box } from 'lucide-react';
 import { useNavigationStore } from '../store/navigationStore';
 import { useBrandData } from '../hooks/useBrandData';
 import type { Product, BrandIdentity, ProductImage } from '../types/index';
@@ -90,6 +90,20 @@ const BrandLogoDisplay: React.FC<{ brandName: string }> = ({ brandName }) => {
   );
 };
 
+/**
+ * getCategoryIcon - Maps category names to appropriate icons
+ */
+const getCategoryIcon = (category: string) => {
+  const lower = category.toLowerCase();
+  if (lower.includes('key') || lower.includes('piano')) return <Piano size={14} className="text-indigo-400" />;
+  if (lower.includes('drum') || lower.includes('perc')) return <Music size={14} className="text-purple-400" />;
+  if (lower.includes('speaker') || lower.includes('audio')) return <Speaker size={14} className="text-blue-400" />;
+  if (lower.includes('mic')) return <Mic2 size={14} className="text-red-400" />;
+  if (lower.includes('cable') || lower.includes('stand')) return <Box size={14} className="text-yellow-400" />;
+  if (lower.includes('electro')) return <Zap size={14} className="text-amber-400" />;
+  return <LayoutGrid size={14} className="text-indigo-400" />;
+};
+
 export const Navigator: React.FC = () => {
   const [mode, setMode] = useState<'catalog' | 'copilot'>('catalog');
   const [query, setQuery] = useState('');
@@ -103,7 +117,7 @@ export const Navigator: React.FC = () => {
   const [loadingBrands, setLoadingBrands] = useState<Set<string>>(new Set());
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [brandIdentities, setBrandIdentities] = useState<BrandIdentitiesRecord>({});
-  const { whiteBgImages } = useNavigationStore();
+  const { whiteBgImages, selectBrand, selectCategory, selectProduct } = useNavigationStore();
 
   // Load the Halilit Catalog Index on mount
   useEffect(() => {
@@ -262,12 +276,15 @@ export const Navigator: React.FC = () => {
   };
 
   const handleBrandClick = (slug: string) => {
+    // 1. Toggle expansion in UI
     if (expandedBrand === slug) {
       setExpandedBrand(null);
     } else {
       setExpandedBrand(slug);
       loadBrandProducts(slug);
     }
+    // 2. Tell store to select this brand (View switch)
+    selectBrand(slug);
   };
 
   if (loading) {
@@ -334,10 +351,13 @@ export const Navigator: React.FC = () => {
                           <BrandLogoDisplay brandName={brand.name} />
                           
                           <div className="text-left flex-1 min-w-0">
-                            <div className="text-xs font-semibold text-[var(--text-primary)]">
-                              {brand.name}
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs font-semibold text-[var(--text-primary)]">{brand.name}</span>
+                              <span className="text-[9px] font-mono bg-[var(--bg-app)] text-[var(--text-tertiary)] px-1.5 rounded border border-[var(--border-subtle)]">
+                                #{(brand as any).brand_number || "00"}
+                              </span>
                             </div>
-                            <div className="text-[9px] text-[var(--text-secondary)]">
+                            <div className="text-[9px] text-[var(--text-secondary)] mt-0.5">
                               {brand.product_count} products
                             </div>
                           </div>
@@ -370,7 +390,9 @@ export const Navigator: React.FC = () => {
                                   <div key={mainCategory} className="space-y-0.5">
                                     {/* Main Category Button */}
                                     <button
-                                      onClick={() => {
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        // 1. Toggle expansion in UI
                                         const newSet = new Set(expandedCategories);
                                         if (isCategoryExpanded) {
                                           newSet.delete(categoryKey);
@@ -378,13 +400,18 @@ export const Navigator: React.FC = () => {
                                           newSet.add(categoryKey);
                                         }
                                         setExpandedCategories(newSet);
+                                        // 2. Tell store to select this category (View switch)
+                                        selectCategory(brandId, mainCategory);
                                       }}
                                       className="w-full flex items-center justify-between group px-2 py-0.5 rounded hover:bg-[var(--bg-app)]/50 transition-all text-left"
                                     >
                                       <div className="flex items-center gap-2 flex-1 min-w-0">
                                         <ChevronRight className={`w-3 h-3 text-indigo-400 flex-shrink-0 transition-transform ${isCategoryExpanded ? 'rotate-90' : ''}`} />
+                                        <div className="text-[var(--text-tertiary)] group-hover:text-indigo-400">
+                                          {getCategoryIcon(mainCategory)}
+                                        </div>
                                         <span className="text-[10px] font-medium text-[var(--text-primary)] truncate">
-                                          📦 {mainCategory}
+                                          {mainCategory}
                                         </span>
                                         <span className="text-[8px] text-[var(--text-tertiary)] flex-shrink-0">
                                           ({totalInCategory})
