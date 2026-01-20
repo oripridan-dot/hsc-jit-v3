@@ -14,14 +14,20 @@ GOAL: Extract ALL available data from Boss website for JIT RAG system
 ✓ Features and benefits (bullet points, marketing content)
 ✓ Manuals and documentation (PDFs, quick start guides, reference docs)
 ✓ Knowledge base articles (support articles, FAQs, tutorials)
+✓ Support articles and documentation snippets
 ✓ Related accessories (recommended, required, compatible)
 ✓ Support resources (downloads, software, drivers, firmware)
+✓ White background product images for thumbnails
+✓ Brand logo downloads
 """
 
 from models.product_hierarchy import (
     ProductCore, ProductCatalog, BrandIdentity,
     ProductImage, ProductSpecification, SourceType, ProductRelationship, RelationshipType,
     ProductStatus
+)
+from services.scraper_enhancements import (
+    SupportArticleExtractor, ProductImageEnhancer, BrandLogoDownloader
 )
 import asyncio
 import logging
@@ -114,89 +120,106 @@ class BossScraper:
             page = await browser.new_page()
 
             try:
-                # Step 1: Get all product URLs
-                product_urls = await self._get_product_urls(page, max_products)
-                logger.info(f"📋 Found {len(product_urls)} product URLs")
+                # ============================================================
+                # STEP 0: Download brand logo
+                # ============================================================
+                logger.info("🎨 Downloading Boss brand logo...")
+                try:
+                    await self._navigate(page, self.base_url)
+                    logo_path = await BrandLogoDownloader.scrape_brand_logo(page, "Boss")
+                    if logo_path:
+                        logger.info(f"   ✓ Logo saved: {logo_path}")
+                except Exception as e:
+                    logger.debug(f"   Could not download logo: {e}")
 
-                # Limit to max_products only if specified
-                if max_products is not None:
-                    product_urls = product_urls[:max_products]
-                    logger.info(f"   Limited to {len(product_urls)} products")
+                try:
+                    # Step 1: Get all product URLs
+                    product_urls = await self._get_product_urls(page, max_products)
+                    logger.info(f"📋 Found {len(product_urls)} product URLs")
 
-                # Step 2: Scrape each product with FULL data extraction
-                products = []
-                total_images = 0
-                total_videos = 0
-                total_specs = 0
-                total_features = 0
-                total_manuals = 0
-                total_accessories = 0
+                    # Limit to max_products only if specified
+                    if max_products is not None:
+                        product_urls = product_urls[:max_products]
+                        logger.info(f"   Limited to {len(product_urls)} products")
 
-                for i, url in enumerate(product_urls, 1):
-                    logger.info(
-                        f"   [{i}/{len(product_urls)}] Scraping: {url}")
-                    try:
-                        # Wrap individual product scrape with timeout
-                        product = await asyncio.wait_for(
-                            self._scrape_product_page(page, url),
-                            timeout=45  # 45 seconds per product max
-                        )
-                        if product:
-                            products.append(product)
-                            total_images += len(product.images)
-                            total_videos += len(product.video_urls)
-                            total_specs += len(product.specifications)
-                            total_features += len(product.features)
-                            total_manuals += len(product.manual_urls)
-                            total_accessories += len(product.accessories)
-                    except asyncio.TimeoutError:
-                        logger.error(f"   Timeout scraping {url} (45s limit)")
-                        continue
-                    except Exception as e:
-                        logger.error(f"   Error scraping {url}: {e}")
-                        continue
+                    # Step 2: Scrape each product with FULL data extraction
+                    products = []
+                    total_images = 0
+                    total_videos = 0
+                    total_specs = 0
+                    total_features = 0
+                    total_manuals = 0
+                    total_accessories = 0
 
-                logger.info(f"\n✅ COMPREHENSIVE SCRAPING COMPLETE!")
-                logger.info(f"   Products: {len(products)}")
-                logger.info(f"   Total Images: {total_images}")
-                logger.info(f"   Total Videos: {total_videos}")
-                logger.info(f"   Total Specs: {total_specs}")
-                logger.info(f"   Total Features: {total_features}")
-                logger.info(f"   Total Manuals: {total_manuals}")
-                logger.info(f"   Total Accessories: {total_accessories}")
+                    for i, url in enumerate(product_urls, 1):
+                        logger.info(
+                            f"   [{i}/{len(product_urls)}] Scraping: {url}")
+                        try:
+                            # Wrap individual product scrape with timeout
+                            product = await asyncio.wait_for(
+                                self._scrape_product_page(page, url),
+                                timeout=45  # 45 seconds per product max
+                            )
+                            if product:
+                                products.append(product)
+                                total_images += len(product.images)
+                                total_videos += len(product.video_urls)
+                                total_specs += len(product.specifications)
+                                total_features += len(product.features)
+                                total_manuals += len(product.manual_urls)
+                                total_accessories += len(product.accessories)
+                        except asyncio.TimeoutError:
+                            logger.error(f"   Timeout scraping {url} (45s limit)")
+                            continue
+                        except Exception as e:
+                            logger.error(f"   Error scraping {url}: {e}")
+                            continue
 
-                # Create comprehensive catalog
-                brand = BrandIdentity(
-                    id="boss",
-                    name="Boss Corporation",
-                    website="https://www.boss.info",
-                    description="Leading manufacturer of guitar effects and audio equipment",
-                    categories=["Guitar Effects", "Synthesizers", "Drum Machines", 
-                                "Amplifiers", "Loopers", "Accessories"]
-                )
+                    logger.info(f"\n✅ COMPREHENSIVE SCRAPING COMPLETE!")
+                    logger.info(f"   Products: {len(products)}")
+                    logger.info(f"   Total Images: {total_images}")
+                    logger.info(f"   Total Videos: {total_videos}")
+                    logger.info(f"   Total Specs: {total_specs}")
+                    logger.info(f"   Total Features: {total_features}")
+                    logger.info(f"   Total Manuals: {total_manuals}")
+                    logger.info(f"   Total Accessories: {total_accessories}")
 
-                catalog = ProductCatalog(
-                    brand_identity=brand,
-                    products=products,
-                    total_products=len(products),
-                    last_updated=datetime.utcnow(),
-                    catalog_version="3.7.0",
-                    coverage_stats={
-                        "total_images": total_images,
-                        "total_videos": total_videos,
-                        "total_specifications": total_specs,
-                        "total_features": total_features,
-                        "total_manuals": total_manuals,
-                        "total_accessories": total_accessories,
-                        "avg_images_per_product": round(total_images / len(products), 2) if products else 0,
+                    # Create comprehensive catalog
+                    brand = BrandIdentity(
+                        id="boss",
+                        name="Boss Corporation",
+                        website="https://www.boss.info",
+                        description="Leading manufacturer of guitar effects and audio equipment",
+                        categories=["Guitar Effects", "Synthesizers", "Drum Machines", 
+                                    "Amplifiers", "Loopers", "Accessories"]
+                    )
+
+                    catalog = ProductCatalog(
+                        brand_identity=brand,
+                        products=products,
+                        total_products=len(products),
+                        last_updated=datetime.utcnow(),
+                        catalog_version="3.7.0",
+                        coverage_stats={
+                            "total_images": total_images,
+                            "total_videos": total_videos,
+                            "total_specifications": total_specs,
+                            "total_features": total_features,
+                            "total_manuals": total_manuals,
+                            "total_accessories": total_accessories,
+                            "avg_images_per_product": round(total_images / len(products), 2) if products else 0,
                         "avg_specs_per_product": round(total_specs / len(products), 2) if products else 0
                     }
                 )
 
-            finally:
-                await browser.close()
+                    return catalog
+                
+                finally:
+                    await browser.close()
             
-            return catalog
+            except Exception as e:
+                logger.error(f"Fatal error during scraping: {e}")
+                raise
 
     async def _navigate(self, page: Page, url: str, timeout: int = None):
         """Robust navigation with retries using centralized settings"""
@@ -418,6 +441,20 @@ class BossScraper:
                             continue
                 except asyncio.TimeoutError:
                     continue
+            
+            # ============================================================
+            # 3b. IDENTIFY WHITE BACKGROUND PRODUCT IMAGE FOR THUMBNAIL
+            # ============================================================
+            # Convert to dicts for processing
+            images_dicts = [{'url': img.url, 'type': img.type, 'alt_text': img.alt_text} 
+                           for img in images]
+            
+            # Tag with background info and find best white bg image
+            images_dicts = ProductImageEnhancer.tag_images_with_background_info(images_dicts)
+            thumbnail_image = await ProductImageEnhancer.identify_white_background_image(page, images_dicts)
+            
+            if thumbnail_image:
+                logger.debug(f"   Selected thumbnail: {thumbnail_image['type']} background")
 
             # ============================================================
             # 4. EXTRACT ALL VIDEOS
@@ -563,6 +600,27 @@ class BossScraper:
                             continue
                 except:
                     continue
+
+            # ============================================================
+            # 7b. EXTRACT SUPPORT ARTICLES & KNOWLEDGE BASE CONTENT
+            # ============================================================
+            support_articles = []
+            documentation_snippets = []
+            
+            try:
+                support_data = await SupportArticleExtractor.extract_boss_support_articles(
+                    page, url, name
+                )
+                
+                # Flatten all support resources
+                for key, items in support_data.items():
+                    if isinstance(items, list) and items:
+                        support_articles.extend(items)
+                
+                logger.debug(f"   Found {len(support_articles)} support resources for {name}")
+                
+            except Exception as e:
+                logger.debug(f"   Error extracting support articles: {e}")
 
             # ============================================================
             # 8. DETERMINE HIERARCHY (BREADCRUMBS & CATEGORIES)

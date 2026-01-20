@@ -14,10 +14,11 @@ class DataWatcher {
     private pollInterval: number = 1000; // Check every 1 second in dev
 
     constructor() {
+        // DISABLED: Auto-polling causes deadlock with Vite dev server
         // Auto-start watching in development
-        if (import.meta.env.DEV) {
-            this.startWatching();
-        }
+        // if (import.meta.env.DEV) {
+        //     this.startWatching();
+        // }
     }
 
     /**

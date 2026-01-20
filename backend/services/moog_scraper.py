@@ -13,7 +13,10 @@ GOAL: Extract ALL available data from Moog website for JIT RAG system
 ✓ Complete specifications (all spec tables, technical details)
 ✓ Features and benefits (bullet points, marketing content)
 ✓ Manuals and documentation (PDFs, quick start guides, reference docs)
+✓ Support articles and knowledge base (patches, updates)
 ✓ Support resources (downloads, software, patches)
+✓ White background product images for thumbnails
+✓ Brand logo downloads
 ✓ Related accessories (recommended, required, compatible)
 """
 
@@ -21,6 +24,9 @@ from models.product_hierarchy import (
     ProductCore, ProductCatalog, BrandIdentity,
     ProductImage, ProductSpecification, SourceType, ProductRelationship, RelationshipType,
     ProductStatus
+)
+from services.scraper_enhancements import (
+    SupportArticleExtractor, ProductImageEnhancer, BrandLogoDownloader
 )
 import asyncio
 import logging

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { catalogLoader, instantSearch } from './lib';
+import { instantSearch } from './lib';
 import { HalileoNavigator } from './components/HalileoNavigator';
 import { Workbench } from './components/Workbench';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -11,19 +11,24 @@ initializeDevTools();
 
 function AppContent() {
   const [dataVersion, setDataVersion] = useState(0);
+  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
-    // Initialize search system from static JSON catalogs
-    const initCatalog = async () => {
-      try {
-        console.log('🚀 v3.7: Initializing Mission Control...');
-        await instantSearch.initialize();
-        console.log('✅ Catalog initialized from static data');
-      } catch (error) {
-        console.error('❌ Initialization error:', error);
-      }
-    };
-    initCatalog();
+    // Initialize search system from static JSON catalogs (non-blocking)
+    console.log('🚀 v3.7: Initializing Mission Control...');
+    
+    // Don't block - initialize in background
+    setTimeout(() => {
+      instantSearch.initialize()
+        .then(() => {
+          console.log('✅ Catalog initialized from static data');
+          setIsInitialized(true);
+        })
+        .catch(error => {
+          console.error('❌ Initialization error:', error);
+          setIsInitialized(true); // Allow UI to work even if init fails
+        });
+    }, 100); // Defer to next tick
   }, [dataVersion]); // Re-initialize when data changes
 
   return (

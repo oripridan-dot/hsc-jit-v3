@@ -1,47 +1,47 @@
 {
-  "build_timestamp": "2026-01-20T15:15:38.636975",
-  "version": "3.7.0",
-  "total_products": 40,
-  "total_verified": 40,
+  "build_timestamp": "2026-01-20T19:15:24.838976",
+  "version": "3.7.2",
+  "total_products": 8,
+  "total_verified": 8,
   "brands": [
     {
       "id": "roland",
       "name": "Roland Corporation",
       "slug": "roland",
-      "logo_url": "https://static.roland.com/assets/images/logo_roland.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/roland.json",
+      "logo_url": "/data/logos/roland_logo.jpg",
+      "product_count": 2,
+      "verified_count": 2,
+      "data_file": "roland.json",
       "brand_color": "#ED1C24"
     },
     {
       "id": "boss",
-      "name": "Boss (Roland)",
+      "name": "Boss Corporation",
       "slug": "boss",
-      "logo_url": "https://www.boss.info/static/boss_logo.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/boss.json",
+      "logo_url": "/data/logos/boss_logo.jpg",
+      "product_count": 3,
+      "verified_count": 3,
+      "data_file": "boss.json",
       "brand_color": "#000000"
     },
     {
       "id": "nord",
       "name": "Nord Keyboards",
       "slug": "nord",
-      "logo_url": "https://www.nordkeyboards.com/sites/default/files/files/nord-logo.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/nord.json",
+      "logo_url": "/data/logos/nord_logo.jpg",
+      "product_count": 3,
+      "verified_count": 3,
+      "data_file": "nord.json",
       "brand_color": "#1F4E78"
     },
     {
       "id": "moog",
       "name": "Moog Music",
       "slug": "moog",
-      "logo_url": "https://www.moogmusic.com/sites/default/files/moog_logo.svg",
-      "product_count": 10,
-      "verified_count": 10,
-      "data_file": "catalogs_brand/moog.json",
+      "logo_url": "/data/logos/moog_logo.jpg",
+      "product_count": 0,
+      "verified_count": 0,
+      "data_file": "moog.json",
       "brand_color": "#FFB81C"
     }
   ]

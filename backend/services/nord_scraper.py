@@ -13,14 +13,20 @@ GOAL: Extract ALL available data from Nord website for JIT RAG system
 ✓ Complete specifications (all spec tables, technical details)
 ✓ Features and benefits (bullet points, marketing content)
 ✓ Manuals and documentation (PDFs, quick start guides, reference docs)
+✓ Support articles and knowledge base (OS updates, patches)
 ✓ Sound libraries and patches (Nord's famous sound banks)
 ✓ Support resources (downloads, software, OS updates)
+✓ White background product images for thumbnails
+✓ Brand logo downloads
 """
 
 from models.product_hierarchy import (
     ProductCore, ProductCatalog, BrandIdentity,
     ProductImage, ProductSpecification, SourceType, ProductRelationship, RelationshipType,
     ProductStatus
+)
+from services.scraper_enhancements import (
+    SupportArticleExtractor, ProductImageEnhancer, BrandLogoDownloader
 )
 import asyncio
 import logging
