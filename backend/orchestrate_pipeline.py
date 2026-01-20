@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
 """
-HSC-JIT v3.7 - Complete Pipeline Orchestrator
+⚠️ DEPRECATED - DEV VALIDATION TOOL ONLY
 
-Pipeline Flow:
+This script is a legacy data validation orchestrator.
+For production, use: forge_backbone.py
+
+The main.py FastAPI server is DEVELOPMENT ONLY and should NOT be deployed.
+All production data comes from pre-built JSON in frontend/public/data/*.json
+
+Pipeline Flow (LOCAL VALIDATION ONLY):
 1. Load product catalogs
 2. Validate data quality
 3. Clean and filter products
 4. Publish to frontend
 5. Initialize RAG system
-6. Start API server
+6. Start API server (NOT FOR PRODUCTION)
 
 Usage:
-    python orchestrate_pipeline.py  # Full pipeline
+    python orchestrate_pipeline.py  # Full validation pipeline
     python orchestrate_pipeline.py --validate-only  # Just validate
+    
+⚠️ NOTE: Do not use this to generate production data. Use forge_backbone.py instead.
 """
 
 import json

@@ -1,6 +1,21 @@
 """
-HSC-JIT V3.7 FastAPI Backend
-Product Hierarchy + JIT RAG System
+⚠️ DEV TOOL ONLY - HSC-JIT V3.7 FastAPI Backend
+
+This server is a LOCAL DEVELOPMENT HELPER for data validation.
+It is NOT deployed to production.
+
+Production Architecture:
+- Data Source: frontend/public/data/*.json (static, pre-built)
+- Frontend: Pure React (no runtime backend dependency)
+- Build Process: forge_backbone.py generates all static data
+
+This server exists ONLY to:
+1. Validate catalog data during development
+2. Provide optional real-time progress tracking during scraping
+3. Aid in debugging the data pipeline
+
+If you see API calls to localhost:8000 in production code, remove them.
+All data must come from public/data/*.json.
 
 API Versioning: v1
 Routes: /api/v1/{resource}

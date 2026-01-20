@@ -1,439 +1,347 @@
-# HSC JIT v3.7 - Copilot System Instructions
+# HSC-JIT v3.7 - Copilot System Instructions
 
-## 🎯 Core Philosophy: "Mission Control"
+## 🎯 Core Architecture: "Static First"
 
-We are building a production-grade **Product Hierarchy Navigation System** with:
+**This is a PRODUCTION STATIC REACT APPLICATION.**
 
-1. **Static Catalog** ✅ - Pre-built JSON from scraped brand data (fast, no backend dependency)
-2. **Instant Search** ✅ - Client-side fuzzy search with Fuse.js (<50ms)
-3. **Hierarchical Navigation** ✅ - Domain → Brand → Category → Product
-4. **Dynamic Theming** ✅ - Per-brand color schemes with WCAG AA compliance
-5. **Halileo AI Co-Pilot** ⏳ - Text-enabled navigation; voice stub (TBD)
+All data comes from pre-built JSON files in `frontend/public/data/`. There is NO runtime backend dependency.
+
+The FastAPI server in `backend/app/main.py` exists ONLY for local development validation. It is NOT deployed to production.
 
 ---
 
-## ⚠️ CRITICAL: v3.7.2 System State (As of 2026-01-20)
+## ⚠️ CRITICAL: Architecture Rules (READ FIRST)
 
-**Status: PRODUCTION-READY (Multi-Brand, Comprehensive Data)**
+### 1. **Static Data Only**
 
-### ✅ COMPLETE & ACTIVE
+- ✅ **DO**: Load data from `frontend/public/data/*.json`
+- ✅ **DO**: Use `catalogLoader.loadBrand()` to fetch catalogs
+- ❌ **DO NOT**: Make API calls to `localhost:8000` in production code
+- ❌ **DO NOT**: Suggest adding `fetch()` calls to backend endpoints
+- ❌ **DO NOT**: Suggest connecting to WebSocket for real data
 
-- **Multi-brand catalogs**: Roland (99), Boss (9), Nord (9), Moog (0)
-- **Comprehensive scraping**: 28-107 images, 3-6 videos, 6-41 manuals per product
-- **Real-time progress tracking**: Phase indicators (initializing/exploring/harvesting/processing/complete)
-- **Enhanced UI components**: HeaderSystemPanel with live updates, Docs tab for manuals
-- Hierarchical navigation (7 categories, 117 products)
-- Client-side fuzzy search
-- Product detail views with rich media
-- Brand theming system (WCAG AA)
-- Context insights panel
-- CORS-safe image analysis
+### 2. **Frontend is Pure React**
 
-### ⏳ ROADMAP (NOT IMPLEMENTED YET)
+- ✅ **DO**: Use React hooks (useState, useEffect, useMemo)
+- ✅ **DO**: Use Zustand for global state (`useNavigationStore`)
+- ✅ **DO**: Use Tailwind CSS for styling
+- ✅ **DO**: Use Fuse.js for client-side search
+- ❌ **DO NOT**: Suggest server-side rendering (SSR)
+- ❌ **DO NOT**: Suggest Node.js backend routes
+- ❌ **DO NOT**: Add Python imports to TypeScript files
 
-- **Moog Products**: Scraper exists but finding 0 products (needs debugging)
-- **Additional Brands**: Yamaha, Korg, Native Instruments (framework ready)
-- **JIT RAG System**: `jit_rag.py` written but not wired to API
-- **WebSocket Streaming**: Stub in `useWebSocketStore`; no server endpoint
-- **Voice Processing**: `SpeechRecognition` stub; no backend transcription
-- **Embeddings Retrieval**: SentenceTransformers installed; no API endpoint
+### 3. **The Backend is Dev-Only**
 
-### 🔧 RECENT IMPROVEMENTS (2026-01-20)
-
-- **Enhanced scrapers**: Boss/Nord now extract comprehensive data matching Roland quality
-- **Progress tracking**: Live phase-based updates visible in HeaderSystemPanel
-- **UI refinements**: Moved docs from MediaBar to dedicated Workbench tab
-- **CORS fixes**: Wrapped canvas getImageData in try-catch for cross-origin images
-- **Data quality**: 100% of products have images/videos/manuals
-
----
-
-## 🏗️ v3.7 Architecture (CURRENT)
-
-### 1. Data Source of Truth
-
-- **Primary Catalogs:**
-  - `frontend/public/data/catalogs_brand/roland.json` (99 products) ✅
-  - `frontend/public/data/catalogs_brand/boss.json` (9 products) ✅
-  - `frontend/public/data/catalogs_brand/nord.json` (9 products) ✅
-  - `frontend/public/data/catalogs_brand/moog.json` (0 products) ⚠️
-- **Index:** `frontend/public/data/index.json` (4 brands, 117 total products)
-- **Progress:** `frontend/public/data/scrape_progress.json` (real-time updates)
-- **Backend (optional):** FastAPI at `localhost:8000` for future JIT RAG
-- **Active brands:** Roland, Boss, Nord (Moog awaiting fixes)
-- **Future brands:** Yamaha, Korg, Native Instruments (framework ready)
-
-### 2. Component Architecture
-
-**Active Components (v3.7.2):**
-
-- `App.tsx` - Main layout with brand theming
-- `HalileoNavigator.tsx` - AI co-pilot sidebar (text mode active)
-- `Navigator.tsx` - Tree navigation with 7-category hierarchy
-- `Workbench.tsx` - Product detail with Overview/Specs/Docs tabs
-- `MediaBar.tsx` - Images/videos sidebar (docs moved to Workbench)
-- `HeaderSystemPanel.tsx` - Live scraping progress with phase tracking ✨ NEW
-- `ImageGallery.tsx` - Cinema mode viewer
-- `HalileoContextRail.tsx` - Floating insights panel
-- `ProductDetailView.tsx` - Modal detail view
-- `InsightsTable.tsx` - Product metadata display
-
-**NOT RENDERED (But Exist):**
-
-- `AIAssistant.tsx` - Chat interface (never imported)
-- `SignalFlowMap.tsx` - Signal flow diagram (never integrated)
-- `SystemStatusBar.tsx` - Alternative status display (HeaderSystemPanel used instead)
-
-### 3. State Management
-
-- **Navigation:** `useNavigationStore` (Zustand)
-  - Current level, active path, selected product, tree state
-- **WebSocket:** `useWebSocketStore` (Zustand)
-  - Stub interfaces defined; actual WS logic not implemented
-  - Falls back to static mode gracefully
-- **Theme:** CSS variables + `useBrandTheme`/`useHalileoTheme` hooks
-
-### 4. Design System
-
-**Semantic Tokens (WCAG AA):**
-
-```css
---bg-app: #0b0c0f (dark) | #f9fafb (light) --bg-panel: #15171e (dark) | #ffffff
-  (light) --text-primary: #f3f4f6 (dark) | #111827 (light)
-  --text-secondary: #9ca3af (dark) | #374151 (light) --halileo-primary: #6366f1
-  (indigo) --border-subtle: #2d313a (dark) | #e5e7eb (light);
+```
+backend/app/main.py
+├─ Status: DEVELOPMENT TOOL ONLY
+├─ Deployment: NOT DEPLOYED TO PRODUCTION
+├─ Purpose: Local data validation during scraping
+└─ When to use: Never reference in frontend code
 ```
 
-**Brand Colors (WCAG compliant):**
+If you see API calls to `localhost:8000` in the codebase, **remove them**.
 
-- Roland: `#ef4444` (red) ✅ active
-- Yamaha: `#a855f7` (purple) — ready
-- Korg: `#fb923c` (orange) — ready
-- Moog: `#22d3ee` (cyan) — ready
-- Nord: `#f87171` (red-light) — ready
+### 4. **Data Generation Pipeline**
 
----
+- **Generator Script**: `backend/forge_backbone.py`
+  - Runs offline to build static catalogs
+  - Output: `frontend/public/data/*.json`
+  - Result: Pre-built, verified JSON files
+  - **NOT**: A runtime server
 
-## 🛠️ Tech Stack
-
-### Frontend (React 18 + TypeScript)
-
-- **Build:** Vite 5
-- **Styling:** Tailwind CSS + CSS variables
-- **Animation:** Framer Motion (gsap removed)
-- **Search:** Fuse.js (instant, <50ms)
-- **State:** Zustand
-- **Icons:** Lucide-react
-- **Graphs:** Reactflow (SignalFlowMap)
-
-### Backend (Optional)
-
-- **Framework:** FastAPI + Uvicorn
-- **AI/ML:** SentenceTransformers (installed, not used)
-- **Scraper:** Playwright + BeautifulSoup
-- **Search:** Fuse.js (Python version for backend fallback)
+- **Deprecated Scripts** (do not reference):
+  - `backend/orchestrate_pipeline.py` — Legacy validation (use forge_backbone.py instead)
 
 ---
 
-## 📋 Development Guidelines
+## 📋 Forbidden Patterns
 
-### Code Style
+**NEVER suggest these:**
+
+1. **WebSocket connections in frontend**
+   ```typescript
+   // ❌ WRONG - No WebSocket in production
+   const ws = new WebSocket('ws://localhost:8000/ws');
+   ```
+
+2. **useEffect loops fetching from localhost**
+   ```typescript
+   // ❌ WRONG
+   useEffect(() => {
+     fetch('http://localhost:8000/api/v1/products').then(...)
+   }, []);
+   ```
+
+3. **Python backend logic in TypeScript**
+   ```typescript
+   // ❌ WRONG - Don't suggest embedding Python in TypeScript
+   import { someBackendFunction } from '../backend/services/rag';
+   ```
+
+4. **Database calls**
+   ```typescript
+   // ❌ WRONG - No database in production
+   const db = new Database('products.db');
+   ```
+
+5. **Server-side rendering**
+   ```typescript
+   // ❌ WRONG - This is a static SPA
+   export async function getServerSideProps() { ... }
+   ```
+
+---
+
+## ✅ How to Build Features
+
+### Example: Add a new search filter
 
 ```typescript
-// Always use explicit types
-interface Product {
-  id: string;
-  name: string;
-  brand: string;
-  category: string;
-  images?: ProductImages;
-}
+// ✅ CORRECT: Use Zustand + Fuse.js
+import { useNavigationStore } from './store/navigationStore';
+import { instantSearch } from './lib/instantSearch';
 
-// Use semantic tokens for styling
-<div style={{
-  background: 'var(--bg-panel)',
-  color: 'var(--text-primary)',
-  borderColor: 'var(--border-subtle)'
-}}>
+function SearchComponent() {
+  const { products } = useNavigationStore();
+  const [query, setQuery] = useState('');
+  
+  const results = instantSearch.search(query, { 
+    keys: ['name', 'category'],
+    limit: 10 
+  });
+  
+  return <div>{/* render results */}</div>;
+}
 ```
 
-### File Organization
+### Example: Load product catalog
+
+```typescript
+// ✅ CORRECT: Use catalogLoader for static JSON
+import { catalogLoader } from './lib/catalogLoader';
+
+async function loadBrandProducts(brandName: string) {
+  const catalog = await catalogLoader.loadBrand(brandName);
+  return catalog.products;
+}
+```
+
+### Example: Apply brand theming
+
+```typescript
+// ✅ CORRECT: Use CSS variables + hooks
+import { useBrandTheme } from './hooks/useBrandTheme';
+
+function BrandedPanel({ brand }: Props) {
+  const theme = useBrandTheme(brand);
+  
+  return (
+    <div style={{
+      background: 'var(--bg-panel)',
+      borderColor: 'var(--border-subtle)',
+      color: 'var(--text-primary)'
+    }}>
+      {/* Content */}
+    </div>
+  );
+}
+```
+
+---
+
+## 📂 File Structure (v3.7)
 
 ```
 frontend/
+├── public/data/              ← ⭐ SOURCE OF TRUTH
+│   ├── index.json
+│   ├── catalogs_brand/
+│   │   ├── roland.json (99 products)
+│   │   ├── boss.json (9 products)
+│   │   ├── nord.json (9 products)
+│   │   └── moog.json (0 products)
+│   └── scrape_progress.json
+│
 ├── src/
 │   ├── components/
-│   │   ├── HalileoNavigator.tsx (AI navigation)
-│   │   ├── Navigator.tsx (tree navigation)
-│   │   ├── Workbench.tsx (main display)
-│   │   ├── ProductDetailView.tsx (product modal)
-│   │   └── ui/ (reusable UI components)
+│   │   ├── App.tsx              ← Main app (NO WebSocket)
+│   │   ├── HalileoNavigator.tsx (AI sidebar)
+│   │   ├── Navigator.tsx        (tree nav)
+│   │   ├── Workbench.tsx        (product detail)
+│   │   └── ui/                  (reusable UI)
+│   │
 │   ├── hooks/
-│   │   ├── useBrandTheme.ts (dynamic brand colors)
-│   │   └── useHalileoTheme.ts (AI active state)
+│   │   ├── useBrandTheme.ts
+│   │   └── useHalileoTheme.ts
+│   │
 │   ├── lib/
-│   │   ├── catalogLoader.ts (load static JSON)
-│   │   └── instantSearch.ts (Fuse.js wrapper)
+│   │   ├── catalogLoader.ts     ← Load static JSON
+│   │   ├── instantSearch.ts     ← Fuse.js wrapper
+│   │   └── devTools.ts
+│   │
 │   ├── store/
-│   │   ├── navigationStore.ts (hierarchy state)
-│   │   └── useWebSocketStore.ts (future)
-│   └── styles/
-│       ├── tokens.css (design system)
-│       └── brandThemes.ts (brand colors)
-└── public/
-    └── data/
-        ├── index.json (brand index)
-        └── catalogs_brand/*.json (product catalogs)
-```
+│   │   └── navigationStore.ts   ← Zustand state
+│   │
+│   └── index.css
 
----
-
-## ✅ v3.7 Implementation Status
-
-**Completed:**
-
-- ✅ Static catalog loading (catalogLoader)
-- ✅ Hierarchical navigation (Navigator)
-- ✅ Instant search (Fuse.js)
-- ✅ Halileo AI navigator (voice + text)
-- ✅ Brand theming system (WCAG AA)
-- ✅ Product detail view
-- ✅ Cinema mode image gallery
-- ✅ Context insights rail
-- ✅ Analytics tracking
-
-**In Progress:**
-
-- 🔄 Backend API integration (optional)
-- 🔄 JIT RAG system
-- 🔄 Multi-brand support (currently Roland-only)
-
-**Deprecated (DO NOT DEVELOP):**
-
-- ❌ UnifiedComponents architecture
-- ❌ DualSource verification UI
-- ❌ ScenarioToggle
-- ❌ SyncMonitor
-
----
-
-## 🚀 Quick Commands
-
-```bash
-# Frontend development
-cd frontend && pnpm dev
-
-# Backend (optional)
-cd backend && uvicorn app.main:app --reload
-
-# Scrape new brands
-cd backend && python orchestrate_brand.py --brand roland --max-products 50
-
-# Type check
-cd frontend && npx tsc --noEmit
-
-# Build production
-cd frontend && pnpm build
+backend/
+├── forge_backbone.py            ← ⭐ DATA GENERATOR (runs offline)
+├── orchestrate_pipeline.py      ← DEPRECATED (validation only)
+├── app/
+│   └── main.py                  ← ⚠️ DEV TOOL ONLY (not deployed)
+└── data/
+    └── catalogs_brand/          ← Where scrapers output raw data
 ```
 
 ---
 
 ## 🔧 Common Patterns
 
-### Loading Products
+### Pattern 1: Load and Display Products
 
 ```typescript
-// Use catalogLoader for static data
-const catalog = await catalogLoader.loadBrand("roland");
+// Use catalogLoader for static JSON
+const [products, setProducts] = useState<Product[]>([]);
 
+useEffect(() => {
+  (async () => {
+    const catalog = await catalogLoader.loadBrand("roland");
+    setProducts(catalog.products || []);
+  })();
+}, []);
+
+return (
+  <div>
+    {products.map(p => <ProductCard key={p.id} product={p} />)}
+  </div>
+);
+```
+
+### Pattern 2: Search Client-Side
+
+```typescript
 // Use instantSearch for filtering
-const results = instantSearch.search("synthesizer", { limit: 10 });
+const [query, setQuery] = useState('');
+
+const results = useMemo(() => {
+  if (!query) return products;
+  return instantSearch.search(query, {
+    keys: ['name', 'category', 'description'],
+    limit: 20
+  });
+}, [query, products]);
 ```
 
-### Applying Brand Theme
+### Pattern 3: Global Navigation State
 
 ```typescript
-// Component-level
-useBrandTheme("roland");
+// Use Zustand for navigation
+const { selectProduct, currentPath } = useNavigationStore();
 
-// Global (in App.tsx)
-applyBrandTheme("roland");
-```
-
-### Navigation
-
-```typescript
-// Navigate to product
-const { selectProduct } = useNavigationStore();
-selectProduct(productNode);
-
-// Navigate to level
-const { warpTo } = useNavigationStore();
-warpTo("family", ["Roland", "Synthesizers"]);
-```
-
----
-
-**Version:** 3.7.0 (Product Hierarchy)  
-**Last Updated:** January 2026  
-**Status:** Production-Ready (Roland brand)
-
-- **Cache:** Redis 6+ (Pub/Sub + multi-layer caching)
-- **AI/ML:** Google Gemini API (LLM), SentenceTransformers (embeddings)
-- **Search:** TheFuzz (fuzzy matching)
-- **HTTP:** HTTPX (async client for PDF/HTML fetching)
-- **Parsing:** PyMuPDF (PDF), BeautifulSoup4 (HTML)
-
-### Frontend
-
-- **Framework:** React 18 + TypeScript
-- **Build:** Vite 5 (fast dev server, HMR)
-- **Styling:** Tailwind CSS (utility-first)
-- **State:** Zustand (lightweight store)
-- **WebSocket:** Native WebSocket API
-
-### Infrastructure
-
-- **Container:** Docker + Docker Compose
-- **Orchestration:** Kubernetes (production)
-- **Monitoring:** Prometheus + Grafana
-- **Logging:** Structured JSON logs
-- **CI/CD:** GitHub Actions
-
----
-
-## 📋 Development Guidelines
-
-### Code Style
-
-```python
-# Backend - Always use type hints
-async def predict_product(
-    self,
-    query: str,
-    limit: int = 5
-) -> List[Dict[str, Any]]:
-    """
-    Predict products from partial query.
-
-    Args:
-        query: User input text
-        limit: Maximum results to return
-
-    Returns:
-        List of product dictionaries with scores
-    """
-    pass
-```
-
-```typescript
-// Frontend - Explicit types
-interface PredictionEvent {
-  type: "prediction";
-  products: Product[];
-  confidence: number;
-}
-
-const handlePrediction = (event: PredictionEvent): void => {
-  // Handle prediction
+const handleProductClick = (product: Product) => {
+  selectProduct(product);
+  // UI updates automatically
 };
 ```
 
-### File Organization
+---
 
-```
-backend/
-├── app/
-│   ├── core/              # Infrastructure (cache, health, metrics, logging)
-│   ├── services/          # Business logic (sniffer, rag, llm, fetcher)
-│   └── main.py            # FastAPI app + WebSocket endpoint
+## ✅ Implementation Checklist
 
-frontend/
-├── src/
-│   ├── components/        # React components
-│   ├── store/             # State management (WebSocket)
-│   └── App.tsx            # Main app
+When adding a feature:
 
-docs/
-├── architecture/          # System design
-├── deployment/            # Production guides
-├── operations/            # Runbook, troubleshooting
-└── testing/               # Test reports
-```
-
-### WebSocket Message Format
-
-```json
-{
-  "type": "prediction|query|status|answer_chunk|error",
-  "data": {
-    // Type-specific payload
-  },
-  "timestamp": "2026-01-11T12:00:00Z",
-  "session_id": "uuid-v4"
-}
-```
-
-### Error Handling
-
-- **Always** catch exceptions at service boundaries
-- **Always** log errors with context
-- **Never** expose internal errors to frontend
-- **Always** send user-friendly error messages
+- [ ] Data comes from `public/data/*.json` (not API)
+- [ ] No fetch/axios calls to `localhost:8000`
+- [ ] Uses Zustand for state (not Redux/Context)
+- [ ] Uses Tailwind + CSS variables (not new CSS files)
+- [ ] TypeScript types are explicit (no `any`)
+- [ ] Component is pure React (no backend dependencies)
 
 ---
 
-## 🚀 Performance Targets
+## 🚫 What NOT to Do
 
-| Metric                   | Target  | Current   |
-| ------------------------ | ------- | --------- |
-| Prediction latency (P95) | <200ms  | ~50-100ms |
-| LLM answer (P95)         | <5s     | ~2-4s     |
-| Cache hit rate           | >60%    | ~70-85%   |
-| Memory per pod           | <1GB    | ~600MB    |
-| CPU per pod              | <1 core | ~0.5 core |
-
----
-
-## ✅ Before Committing
-
-1. **Tests** - Run `pytest tests/ -v` (all must pass)
-2. **Type checks** - No type errors in Python/TypeScript
-3. **Linting** - Code follows style guidelines
-4. **Documentation** - Update relevant docs in `docs/`
-5. **No secrets** - No API keys or credentials in code
+| ❌ Do NOT... | ✅ Instead... |
+|--------------|--------------|
+| Suggest WebSocket connections | Use static JSON + re-fetch when needed |
+| Add `fetch('http://localhost:8000/...')` | Load from `public/data/*.json` |
+| Create new CSS files | Use Tailwind + CSS variables |
+| Mix Python/TypeScript logic | Keep Python in `backend/`, TypeScript in `frontend/` |
+| Reference `docs/archive/` | Use current documentation only |
+| Suggest running `backend/app/main.py` in production | It's dev-only; use `forge_backbone.py` to generate data |
 
 ---
 
-## 📚 Key Documentation
+## 📚 Key Concepts
 
-- **Architecture:** `docs/architecture/ARCHITECTURE.md`
-- **Development:** `docs/development/IMPLEMENTATION_SUMMARY.md`
-- **Operations:** `docs/operations/RUNBOOK.md`
-- **Testing:** `docs/testing/TESTING_GUIDE.md`
+### "Halilit Catalog"
+The static data generation system. Scrapes → Raw Data → Refiner → Golden Record (JSON) → Frontend.
+Run `forge_backbone.py` to generate static catalogs.
+
+### "Mission Control"
+The React frontend interface. Pure client-side, no backend dependency.
+Load data with `catalogLoader`, search with Fuse.js, navigate with Zustand.
+
+### "Dev Mode"
+Optional: Run `backend/app/main.py` locally for data validation during development.
+Do NOT deploy to production. Do NOT call from frontend in production code.
 
 ---
 
-## 🔧 Common Commands
+## 🚀 Commands
 
 ```bash
-# Start local development
-./start.sh
+# Frontend development
+cd frontend && pnpm dev
 
-# Run tests
-pytest tests/ -v
+# Generate new catalog data (run offline)
+cd backend && python3 forge_backbone.py
 
-# Check health
-curl http://localhost:8000/health
+# Type check frontend
+cd frontend && npx tsc --noEmit
 
-# View metrics
-curl http://localhost:8000/metrics
+# Build for production
+cd frontend && pnpm build
 
-# Clean cache
-redis-cli FLUSHDB
+# (Optional) Dev validation server
+cd backend && uvicorn app.main:app --reload
 ```
 
 ---
 
-**Version:** 3.7 (JIT RAG & Hierarchy)  
-**Last Updated:** January 2026
+## 📊 Status
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| Static JSON catalogs | ✅ Active | Roland (99), Boss (9), Nord (9) |
+| Client-side search | ✅ Active | Fuse.js, <50ms |
+| Hierarchical navigation | ✅ Active | 7 categories, 117 products |
+| Brand theming | ✅ Active | WCAG AA compliant |
+| FastAPI server | ⚠️ Dev-only | Not deployed; validation tool |
+| WebSocket | ⚠️ Deprecated | Removed from production code |
+
+---
+
+## ❓ FAQ
+
+**Q: Why does `backend/app/main.py` exist if it's not used?**
+A: It's a local development validation tool. It helps verify data during the scraping process but is never called from production frontend code.
+
+**Q: Can I make API calls to `localhost:8000` in the frontend?**
+A: No. All production data comes from `public/data/*.json`. The backend is dev-only.
+
+**Q: Should I run the FastAPI server when deploying?**
+A: No. Just deploy the `frontend/` folder. Data is pre-built in `public/data/`.
+
+**Q: What if I need real-time data updates?**
+A: Currently not supported. Regenerate `public/data/` using `forge_backbone.py` and redeploy.
+
+**Q: Can I add WebSocket for live updates?**
+A: Not in production. The app is static. If you need live updates, redesign the architecture and document it clearly.
+
+---
+
+**Version:** 3.7.0 (Static First)  
+**Last Updated:** January 2026  
+**Status:** Production-Ready
