@@ -15,9 +15,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Compass, Search, ChevronRight, Sparkles, BookOpen, LayoutGrid, Speaker, Piano, Mic2, Music, Zap, Box } from 'lucide-react';
 import { useNavigationStore } from '../store/navigationStore';
 import { useBrandData } from '../hooks/useBrandData';
-import { safeFetch } from '../lib/apiClient';
+import { safeFetch } from '../lib/safeFetch';
 import { MasterIndexSchema, BrandFileSchema } from '../lib/schemas';
 import type { Product, BrandIdentity, ProductImage } from '../types/index';
+
+export interface NavigatorProps {
+  mode: 'catalog' | 'copilot';
+  setMode: (mode: 'catalog' | 'copilot') => void;
+  searchResults: Product[];
+  isSearching: boolean;
+  insight: string | null;
+  query: string;
+}
 
 interface BrandIndexItem {
   id: string;
@@ -106,12 +115,15 @@ const getCategoryIcon = (category: string) => {
   return <LayoutGrid size={14} className="text-indigo-400" />;
 };
 
-export const Navigator: React.FC = () => {
-  const [mode, setMode] = useState<'catalog' | 'copilot'>('catalog');
-  const [query, setQuery] = useState('');
-  const [isThinking, setIsThinking] = useState(false);
+export const Navigator: React.FC<NavigatorProps> = ({
+  mode,
+  setMode,
+  searchResults,
+  isSearching,
+  insight,
+  query
+}) => {
   const [catalogIndex, setCatalogIndex] = useState<CatalogIndex | null>(null);
-  const [searchResults, setSearchResults] = useState<SearchGraphItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedBrand, setExpandedBrand] = useState<string | null>(null);
@@ -120,7 +132,7 @@ export const Navigator: React.FC = () => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [brandIdentities, setBrandIdentities] = useState<BrandIdentitiesRecord>({});
   const { whiteBgImages, selectBrand, selectCategory, selectProduct } = useNavigationStore();
-
+  
   // Load the Halilit Catalog Index on mount
   useEffect(() => {
     const loadCatalog = async () => {
@@ -129,6 +141,12 @@ export const Navigator: React.FC = () => {
         setError(null);
         // Use safeFetch with Zod schema for runtime validation
         const data = await safeFetch('/data/index.json', MasterIndexSchema);
+        
+        if (!data) {
+           setError("Catalog Integrity Check Failed. Switching to Safe Mode.");
+           return;
+        }
+
         // @ts-ignore - Schema and Interface slightly differ in strict mode but structure is compatible
         setCatalogIndex(data);
         
@@ -165,6 +183,11 @@ export const Navigator: React.FC = () => {
       const filePath = fileName.startsWith('/data/') ? fileName : `/data/${fileName}`;
       
       const rawData = await safeFetch(filePath, BrandFileSchema);
+      
+      if (!rawData) {
+        throw new Error(`Failed to validate data for ${slug}`);
+      }
+
       const data = rawData as unknown as BrandData;
       
       // Build hierarchy if it doesn't exist (ALWAYS do this)
@@ -255,25 +278,6 @@ export const Navigator: React.FC = () => {
     });
     
     return hierarchy;
-  };
-
-  // Handle search
-  const handleSearch = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!query.trim() || !catalogIndex) return;
-
-    setMode('copilot');
-    setIsThinking(true);
-    setSearchResults([]);
-
-    // Search would happen here (simplified for now)
-    console.log(`🔍 Search: "${query}"`);
-
-    // Simulate AI processing latency (for dramatic effect)
-    setTimeout(() => {
-      setSearchResults([]);
-      setIsThinking(false);
-    }, 600); // Reduced from 800ms
   };
 
   const handleBrandClick = (slug: string) => {
@@ -512,31 +516,37 @@ export const Navigator: React.FC = () => {
               exit={{ opacity: 0, x: 20 }}
               className="p-3 space-y-4"
             >
-              {isThinking ? (
+              {isSearching ? (
                 <div className="flex flex-col items-center justify-center h-40 space-y-4">
                   <Sparkles className="w-8 h-8 text-indigo-500 animate-pulse" />
-                  <p className="text-sm text-indigo-400">Analyzing catalog...</p>
+                  <p className="text-sm text-indigo-400">Consulting Neural Core...</p>
                 </div>
               ) : searchResults.length > 0 ? (
                 <div className="space-y-3">
+                  {/* AI Insight Header */}
+                  {insight && (
+                    <div className="bg-indigo-900/40 p-3 rounded-lg border border-indigo-500/30 text-xs text-indigo-200 italic mb-2">
+                       " {insight} "
+                    </div>
+                  )}
+
                   <div className="bg-indigo-50/10 dark:bg-indigo-900/20 p-4 rounded-xl border border-indigo-500/20">
                     <h3 className="text-sm font-bold text-indigo-300 mb-3">
-                      ✨ Found {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
+                      ✨ Identified {searchResults.length} Matches
                     </h3>
                     <div className="space-y-3 max-h-80 overflow-y-auto">
-                      {searchResults.map((result, idx) => (
-                        <div key={idx} className="border-l-2 border-indigo-500/30 pl-3 py-1">
-                          <div className="font-semibold text-xs text-indigo-200">{result.label}</div>
+                      {searchResults.map((product, idx) => (
+                        <button 
+                           key={idx}
+                           onClick={() => selectProduct(product)}
+                           className="w-full text-left border-l-2 border-indigo-500/30 pl-3 py-1 hover:bg-white/5 hover:border-indigo-400 transition-colors"
+                        >
+                          <div className="font-semibold text-xs text-indigo-200">{product.name}</div>
                           <div className="text-[10px] text-indigo-400/70 mt-1 space-y-0.5">
-                            <div>📦 {result.brand}</div>
-                            <div>🏷️ {result.category}</div>
-                            {result.keywords && result.keywords.length > 0 && (
-                              <div className="text-indigo-300/60">
-                                {result.keywords.slice(0, 2).join(', ')}
-                              </div>
-                            )}
+                            <div>📦 {product.brand || 'Unknown Brand'}</div>
+                            <div>🏷️ {product.category || 'Uncategorized'}</div>
                           </div>
-                        </div>
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -549,7 +559,7 @@ export const Navigator: React.FC = () => {
               ) : (
                 <div className="flex flex-col items-center justify-center h-40 space-y-3">
                   <Compass className="w-8 h-8 text-indigo-500/30" />
-                  <p className="text-sm text-[var(--text-secondary)]">Enter a search to get started</p>
+                  <p className="text-sm text-[var(--text-secondary)]">Enter a search below to get started</p>
                 </div>
               )}
             </motion.div>
@@ -561,7 +571,7 @@ export const Navigator: React.FC = () => {
       <div className="p-4 border-t border-[var(--border-subtle)] bg-[var(--bg-panel)]">
         <div className="flex gap-2 bg-[var(--bg-app)] p-1 rounded-lg border border-[var(--border-subtle)]">
           <button 
-            onClick={() => { setMode('catalog'); setSearchResults([]); }}
+            onClick={() => { setMode('catalog'); }}
             className={`flex-1 py-2 text-xs font-medium rounded-md transition-all ${mode === 'catalog' ? 'bg-white/10 text-[var(--text-primary)] shadow-sm' : 'text-[var(--text-tertiary)] hover:text-[var(--text-secondary)]'}`}
           >
             📚 Catalog

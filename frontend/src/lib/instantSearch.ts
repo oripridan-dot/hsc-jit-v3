@@ -41,6 +41,10 @@ class InstantSearch {
         { name: 'brand', weight: 1.5 },          // Brand second
         { name: '_brandName', weight: 1.5 },     // Brand name searchable
         { name: 'category', weight: 1.0 },       // Category third
+        { name: 'connectivity.connector_a', weight: 1.2 }, // Connectivity
+        { name: 'connectivity.connector_b', weight: 1.2 }, // Connectivity
+        { name: 'connectivity.type', weight: 1.0 },        // Cable/Adapter
+        { name: 'tier.level', weight: 0.8 },               // 'Entry'/'Pro' search
       ],
       threshold: 0.3,                            // 70% match required
       includeScore: true,
