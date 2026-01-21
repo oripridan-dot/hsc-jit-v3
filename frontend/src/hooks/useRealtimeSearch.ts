@@ -43,10 +43,10 @@ export const useRealtimeSearch = () => {
             // Instead of hallucinating, we summarize the actual results
             if (results.length > 0) {
                 const brands = Array.from(new Set(results.map(p => p.brand))).join(', ');
-                const topTier = results.find(p => p.tier)?.tier?.level; // Assuming Product structure
+                const categories = Array.from(new Set(results.map(p => p.category)));
 
                 let insightText = `Found ${results.length} matches in ${brands}.`;
-                if (topTier) insightText += ` Featuring ${topTier}-tier options.`;
+                if (categories.length > 0) insightText += ` Categories: ${categories.slice(0, 3).join(', ')}.`;
                 setSearchInsight(insightText);
             } else {
                 setSearchInsight(`No exact matches for "${query}". Try standard terms like "XLR" or "Piano".`);

@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 SOURCE_DIR = Path("./data/catalogs_brand")  # Where scraper outputs live
 PUBLIC_DATA_PATH = Path("../frontend/public/data")  # The "Live" destination
 LOGOS_DIR = PUBLIC_DATA_PATH / "logos"  # Logo destination
-CATALOG_VERSION = "3.7.3-DNA"
+CATALOG_VERSION = "3.7.4"
 
 # Brand color themes (WCAG AA compliant)
 BRAND_THEMES = {
@@ -267,7 +267,7 @@ class HalilitCatalog:
             refined_data = self._refine_brand_data(raw_data, brand_name, safe_slug)
             
             # --- BUILD SEARCH GRAPH ---
-            # Lightweight index for Halileo AI
+            # Build search index for instant search
             self._index_for_search(refined_data, safe_slug)
             
             # --- WRITE BRAND FILE ---
@@ -418,41 +418,7 @@ class HalilitCatalog:
                     product['series_logo'] = local_path
                     logger.info(f"      ⬇️  Downloaded inner logo for {product.get('name')}")
                 
-                # --- HALILEO INTELLIGENCE LAYER ---
-                # Pre-calculate context tags for the Frontend "Brain"
-                context_tags = []
-                
-                # 1. Complexity Analysis
-                features = product.get('features', [])
-                if len(features) > 10:
-                    context_tags.append('complex_device')
-                
-                # 2. Category Intelligence
-                cat_lower = product.get('category', '').lower()
-                if 'synthesizer' in cat_lower or 'workstation' in cat_lower:
-                    context_tags.append('needs_manual')
-                    context_tags.append('sound_design_focused')
-                elif 'piano' in cat_lower:
-                    context_tags.append('action_focused')
-                elif 'drum' in cat_lower:
-                    context_tags.append('performance_focused')
-                
-                # 3. Media Intelligence
-                if product.get('videos') or product.get('youtube_videos'):
-                    context_tags.append('has_tutorials')
-                
-                if product.get('manuals') and len(product.get('manuals', [])) > 0:
-                    context_tags.append('has_manual')
-                
-                # 4. Product Tier (based on features & specs)
-                specs_count = len(product.get('specs', [])) + len(product.get('specifications', []))
-                if specs_count > 20:
-                    context_tags.append('pro_tier')
-                elif specs_count < 5:
-                    context_tags.append('entry_tier')
-                
-                # Store intelligence tags
-                product['halileo_context'] = context_tags
+                # Data quality ensured - no unused AI layers
         
         # Second pass: Build hierarchical category tree
         refined['hierarchy'] = self._build_category_hierarchy(refined.get('products', []))

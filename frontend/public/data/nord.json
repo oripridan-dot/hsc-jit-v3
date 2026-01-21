@@ -189,7 +189,7 @@
       "data_sources": [
         "brand_official"
       ],
-      "confidence_score": 1.0,
+      "confidence_score": 1,
       "last_updated": "2026-01-20T20:57:09.502600",
       "last_scraped": "2026-01-20T20:57:09.502601",
       "search_keywords": [],
@@ -371,7 +371,7 @@
       "data_sources": [
         "brand_official"
       ],
-      "confidence_score": 1.0,
+      "confidence_score": 1,
       "last_updated": "2026-01-20T20:57:11.440475",
       "last_scraped": "2026-01-20T20:57:11.440476",
       "search_keywords": [],
@@ -552,7 +552,7 @@
       "data_sources": [
         "brand_official"
       ],
-      "confidence_score": 1.0,
+      "confidence_score": 1,
       "last_updated": "2026-01-20T20:57:13.206582",
       "last_scraped": "2026-01-20T20:57:13.206583",
       "search_keywords": [],
@@ -593,7 +593,8 @@
       ],
       "halileo_context": [
         "action_focused"
-      ]
+      ],
+      "brand": "Nord"
     }
   ],
   "total_products": 3,
@@ -607,7 +608,7 @@
     "total_manuals": 12,
     "total_accessories": 0,
     "avg_images_per_product": 6.67,
-    "avg_specs_per_product": 15.0
+    "avg_specs_per_product": 15
   },
   "rag_enabled": false,
   "total_documentation_snippets": 0,

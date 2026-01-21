@@ -3,12 +3,28 @@ import { motion, AnimatePresence } from 'framer-motion';
 import type { Product } from '../../types'; //
 import { useNavigationStore } from '../../store/navigationStore';
 import { brandThemes } from '../../styles/brandThemes'; //
+import { Piano, Mic2, Speaker, Headphones, Music, Disc3, Cable, Radio, Zap, Box } from 'lucide-react';
 
 interface TierBarProps {
   products: Product[];
   title?: string;
   showBrandBadges?: boolean;
 }
+
+// Map categories to cognitive icons for instant visual recognition
+const getCategoryIcon = (category: string | undefined) => {
+  const c = (category || '').toLowerCase();
+  if (c.includes('piano') || c.includes('key') || c.includes('synth')) return <Piano size={10} />;
+  if (c.includes('drum') || c.includes('percussion')) return <Music size={10} />;
+  if (c.includes('mic') || c.includes('vocal')) return <Mic2 size={10} />;
+  if (c.includes('speaker') || c.includes('monitor') || c.includes('pa')) return <Speaker size={10} />;
+  if (c.includes('headphone') || c.includes('ear')) return <Headphones size={10} />;
+  if (c.includes('dj') || c.includes('turntable')) return <Disc3 size={10} />;
+  if (c.includes('mixer') || c.includes('console')) return <Radio size={10} />;
+  if (c.includes('cable') || c.includes('connect')) return <Cable size={10} />;
+  if (c.includes('guitar') || c.includes('amp') || c.includes('pedal')) return <Zap size={10} />;
+  return <Box size={10} />;
+};
 
 export const TierBar: React.FC<TierBarProps> = ({ 
   products,
@@ -101,10 +117,18 @@ export const TierBar: React.FC<TierBarProps> = ({
                       className="w-full h-full object-contain" 
                    />
 
+                   {/* Category Identity (Top Left) - Cognitive Icon */}
+                   <div 
+                      className="absolute -top-2 -left-2 w-5 h-5 rounded-full bg-[var(--bg-app)] border border-[var(--border-subtle)] flex items-center justify-center text-[var(--text-secondary)] shadow-sm z-20 flex-shrink-0"
+                      title={product.category}
+                   >
+                      {getCategoryIcon(product.category)}
+                   </div>
+
                    {/* Brand Badge (Top Right) */}
                    {showBrandBadges && (
                       <div 
-                          className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[8px] font-bold uppercase tracking-wider text-black"
+                          className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[8px] font-bold uppercase tracking-wider text-white shadow-sm z-20"
                           style={{ backgroundColor: brandColor }}
                       >
                           {product.brand}
@@ -126,7 +150,7 @@ export const TierBar: React.FC<TierBarProps> = ({
                 {/* Axis Label - Processed Thumbnail on Axis */}
                 <div className="absolute -bottom-10 flex flex-col items-center">
                    <div className="w-6 h-6 rounded-full bg-[var(--bg-panel)] border border-[var(--border-subtle)] flex items-center justify-center overflow-hidden mb-1 shadow-sm">
-                      <img src={product.images?.thumbnail || product.image_url} className="w-4 h-4 object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all" />
+                      <img src={product.image_url} className="w-4 h-4 object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all" />
                    </div>
                 </div>
 

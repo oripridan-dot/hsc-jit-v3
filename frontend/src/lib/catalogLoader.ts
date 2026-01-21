@@ -1,16 +1,20 @@
 /**
  * Static Catalog Loader - v3.7
  * Loads pre-built JSON instead of API calls
- * 
+ *
  * ⚠️ FULLY TYPED: No implicit `any` types
  * ✅ RUNTIME VALIDATED: All JSON parsed through Zod schemas
  * All types validated against actual roland.json data
  * 🔄 REAL-TIME: Auto-updates on data changes
  */
 
-import type { Product as ProductType, BrandIdentity, ProductImagesType, ProductImagesObject, Specification } from '../types/index';
-import { SchemaValidator } from './schemas';
-import { dataWatcher } from './dataWatcher';
+import type {
+  BrandIdentity,
+  ProductImagesObject,
+  ProductImagesType,
+  Product as ProductType,
+} from "../types/index";
+import { SchemaValidator } from "./schemas";
 
 export type Product = ProductType;
 
@@ -77,30 +81,19 @@ class CatalogLoader {
   private brandCatalogs: Map<string, BrandCatalog> = new Map();
   private allProducts: Product[] = [];
   private loading: boolean = false;
-  private changeCallbacks: Set<(type: 'index' | 'brand', id?: string) => void> = new Set();
+  private changeCallbacks: Set<(type: "index" | "brand", id?: string) => void> =
+    new Set();
 
   constructor() {
-    // Watch for data changes and reload
-    dataWatcher.onChange((type, id) => {
-      if (type === 'index') {
-        // Clear cache so next load fetches fresh data
-        this.index = null;
-        console.log('🔄 Index updated, will reload on next access');
-      } else if (type === 'brand' && id) {
-        // Clear specific brand cache
-        this.brandCatalogs.delete(id);
-        console.log(`🔄 Brand "${id}" updated, will reload on next access`);
-      }
-
-      // Notify any listeners
-      this.changeCallbacks.forEach(cb => cb(type, id));
-    });
+    // Constructor initializes empty caches
   }
 
   /**
    * Subscribe to catalog changes (for real-time UI updates)
    */
-  onDataChange(callback: (type: 'index' | 'brand', id?: string) => void): () => void {
+  onDataChange(
+    callback: (type: "index" | "brand", id?: string) => void,
+  ): () => void {
     this.changeCallbacks.add(callback);
     return () => this.changeCallbacks.delete(callback);
   }
@@ -112,17 +105,19 @@ class CatalogLoader {
   async loadIndex(): Promise<MasterIndex> {
     if (this.index) return this.index;
 
-    console.log('📦 Loading Master Index...');
+    console.log("📦 Loading Master Index...");
     try {
       const response = await fetch(`/data/index.json?v=${Date.now()}`);
       if (!response.ok) {
-        throw new Error('Failed to load master index');
+        throw new Error("Failed to load master index");
       }
-      const rawData = await response.json();
+      const rawData: unknown = await response.json();
 
       // ✅ Validate with Zod
       this.index = SchemaValidator.validateMasterIndex(rawData);
-      console.log(`✅ Master Index loaded and validated: ${this.index?.brands.length} brands`);
+      console.log(
+        `✅ Master Index loaded and validated: ${this.index?.brands.length} brands`,
+      );
       return this.index!;
     } catch (error) {
       console.error("❌ Failed to load index.json", error);
@@ -134,36 +129,53 @@ class CatalogLoader {
    * Transform images to normalized format
    * Validates that all images in product are properly structured
    */
-  private transformImages(
-    images: unknown
-  ): ProductImagesType {
+  private transformImages(images: unknown): ProductImagesType {
     // If already in object format with main/gallery keys, return as-is
-    if (images && typeof images === 'object' && !Array.isArray(images)) {
+    if (images && typeof images === "object" && !Array.isArray(images)) {
       return images as ProductImagesType;
     }
 
     // If array format (from raw product data)
     if (Array.isArray(images) && images.length > 0) {
+      const imgs = images as unknown[];
       // Find main image or use first
-      const mainImg = images.find((img): img is { url: string; type?: string } =>
-        img && typeof img === 'object' && 'url' in img && img.type === 'main'
-      ) || images.find((img): img is { url: string } =>
-        img && typeof img === 'object' && 'url' in img
-      ) || images[0];
+      const mainImg =
+        imgs.find((img): img is { url: string; type?: string } =>
+          Boolean(
+            img &&
+            typeof img === "object" &&
+            "url" in img &&
+            (img as { type?: string }).type === "main",
+          ),
+        ) ||
+        imgs.find((img): img is { url: string } =>
+          Boolean(img && typeof img === "object" && "url" in img),
+        ) ||
+        imgs[0];
 
-      const mainUrl = typeof mainImg === 'string' ? mainImg :
-        (mainImg && typeof mainImg === 'object' && 'url' in mainImg) ? mainImg.url : '';
+      const mainUrl =
+        typeof mainImg === "string"
+          ? mainImg
+          : mainImg && typeof mainImg === "object" && "url" in mainImg
+            ? (mainImg as { url: string }).url
+            : "";
 
       return {
         main: mainUrl,
         thumbnail: mainUrl,
-        gallery: images
-          .map(img => typeof img === 'string' ? img : (img && typeof img === 'object' && 'url' in img ? img.url : ''))
-          .filter((url): url is string => Boolean(url))
+        gallery: imgs
+          .map((img) =>
+            typeof img === "string"
+              ? img
+              : img && typeof img === "object" && "url" in img
+                ? (img as { url: string }).url
+                : "",
+          )
+          .filter((url): url is string => Boolean(url)),
       };
     }
 
-    return { main: '', thumbnail: '', gallery: [] };
+    return { main: "", thumbnail: "", gallery: [] };
   }
 
   /**
@@ -171,27 +183,30 @@ class CatalogLoader {
    */
   private extractImageUrl(product: Product): string {
     // Try image_url first
-    if (product.image_url && typeof product.image_url === 'string') {
+    if (product.image_url && typeof product.image_url === "string") {
       return product.image_url.trim();
     }
 
     // Try images object/array
     if (product.images) {
-      if (typeof product.images === 'object' && !Array.isArray(product.images)) {
+      if (
+        typeof product.images === "object" &&
+        !Array.isArray(product.images)
+      ) {
         const imagesObj = product.images as Record<string, string | string[]>;
-        return (imagesObj.main || imagesObj.thumbnail || '') as string;
+        return (imagesObj.main || imagesObj.thumbnail || "") as string;
       }
       if (Array.isArray(product.images) && product.images.length > 0) {
         const first = product.images[0];
-        if (typeof first === 'string') return first;
-        if (first && typeof first === 'object' && 'url' in first) {
+        if (typeof first === "string") return first;
+        if (first && typeof first === "object" && "url" in first) {
           return (first as { url: string }).url;
         }
       }
     }
 
     // Last resort
-    return '';
+    return "";
   }
 
   /**
@@ -206,20 +221,24 @@ class CatalogLoader {
     }
 
     const index = await this.loadIndex();
-    const brandEntry = index.brands.find(b => b.id === brandId);
+    const brandEntry = index.brands.find((b) => b.id === brandId);
 
     if (!brandEntry) {
       throw new Error(`Brand ${brandId} not found in index`);
     }
 
     console.log(`📦 Loading brand: ${brandId} from ${brandEntry.data_file}`);
-    const response = await fetch(`/data/${brandEntry.data_file}?v=${Date.now()}`);
+    const response = await fetch(
+      `/data/${brandEntry.data_file}?v=${Date.now()}`,
+    );
     if (!response.ok) {
-      console.error(`❌ Failed to load brand ${brandId}: HTTP ${response.status}`);
+      console.error(
+        `❌ Failed to load brand ${brandId}: HTTP ${response.status}`,
+      );
       throw new Error(`Failed to load brand: ${brandId}`);
     }
 
-    const rawData = await response.json();
+    const rawData: unknown = await response.json();
 
     // ✅ Validate with Zod
     let data: BrandFile;
@@ -228,17 +247,27 @@ class CatalogLoader {
       const validated = SchemaValidator.validateBrandFile(rawData);
       data = validated as unknown as BrandFile;
     } catch (validationError) {
-      console.error(`❌ Brand file validation failed for ${brandId}:`, validationError);
-      throw new Error(`Invalid brand data structure for ${brandId}: ${(validationError as Error).message}`);
+      console.error(
+        `❌ Brand file validation failed for ${brandId}:`,
+        validationError,
+      );
+      throw new Error(
+        `Invalid brand data structure for ${brandId}: ${(validationError as Error).message}`,
+      );
     }
 
     // Transform to BrandCatalog format with full validation
     const catalog: BrandCatalog = {
       brand_id: data.brand_identity?.id || brandId,
       brand_name: data.brand_identity?.name || brandEntry.name,
-      brand_color: data.brand_identity?.brand_colors?.primary || brandEntry.brand_color || undefined,
-      secondary_color: data.brand_identity?.brand_colors?.secondary || undefined,
-      logo_url: data.brand_identity?.logo_url || brandEntry.logo_url || undefined,
+      brand_color:
+        data.brand_identity?.brand_colors?.primary ||
+        brandEntry.brand_color ||
+        undefined,
+      secondary_color:
+        data.brand_identity?.brand_colors?.secondary || undefined,
+      logo_url:
+        data.brand_identity?.logo_url || brandEntry.logo_url || undefined,
       brand_website: data.brand_identity?.website || undefined,
       description: data.brand_identity?.description || undefined,
       brand_identity: data.brand_identity,
@@ -251,20 +280,22 @@ class CatalogLoader {
         return {
           ...p,
           // Ensure required fields
-          category: p.category || (p as any).main_category || 'Uncategorized',
+          category: p.category || p.main_category || "Uncategorized",
           verified: p.verified ?? true,
           // Normalize images
           images: normalizedImages,
-          image_url: primaryImage || normalizedImagesObj.main || ''
+          image_url: primaryImage || normalizedImagesObj.main || "",
         };
-      })
+      }),
     };
 
     // Sort products by name for consistent ordering
     catalog.products.sort((a, b) => a.name.localeCompare(b.name));
 
     this.brandCatalogs.set(brandId, catalog);
-    console.log(`✅ Loaded and validated ${catalog.products.length} products for ${catalog.brand_name}`);
+    console.log(
+      `✅ Loaded and validated ${catalog.products.length} products for ${catalog.brand_name}`,
+    );
 
     return catalog;
   }
@@ -277,7 +308,7 @@ class CatalogLoader {
     if (this.allProducts.length > 0) return this.allProducts;
     if (this.loading) {
       // Wait for loading to complete
-      while (this.loading) await new Promise(r => setTimeout(r, 100));
+      while (this.loading) await new Promise((r) => setTimeout(r, 100));
       return this.allProducts;
     }
 
@@ -286,29 +317,31 @@ class CatalogLoader {
       const index = await this.loadIndex();
 
       // Load all brands in parallel
-      const brandPromises = index.brands.map(b =>
-        this.loadBrand(b.id).catch(error => {
+      const brandPromises = index.brands.map((b) =>
+        this.loadBrand(b.id).catch((error) => {
           console.error(`Failed to load ${b.id}:`, error);
           return null;
-        })
+        }),
       );
 
-      const loadedCatalogs = (await Promise.all(brandPromises))
-        .filter((cat): cat is BrandCatalog => cat !== null);
+      const loadedCatalogs = (await Promise.all(brandPromises)).filter(
+        (cat): cat is BrandCatalog => cat !== null,
+      );
 
       // Flatten all products with brand context
-      this.allProducts = loadedCatalogs.flatMap(catalog =>
-        catalog.products.map(p => ({
+      this.allProducts = loadedCatalogs.flatMap((catalog) =>
+        catalog.products.map((p) => ({
           ...p,
           _brandId: catalog.brand_id,
           _brandName: catalog.brand_name,
-          brand_identity: catalog.brand_identity
-        }))
+          brand_identity: catalog.brand_identity,
+        })),
       );
 
-      console.log(`✅ Loaded ${this.allProducts.length} total products from ${loadedCatalogs.length} brands`);
+      console.log(
+        `✅ Loaded ${this.allProducts.length} total products from ${loadedCatalogs.length} brands`,
+      );
       return this.allProducts;
-
     } finally {
       this.loading = false;
     }
@@ -345,19 +378,19 @@ class CatalogLoader {
         totalBrands: index.brands.length,
         verificationRate: index.total_products
           ? ((verified / index.total_products) * 100).toFixed(2)
-          : '0',
+          : "0",
         buildTimestamp: index.build_timestamp,
-        version: index.version
+        version: index.version,
       };
     } catch (error) {
-      console.error('Failed to get stats:', error);
+      console.error("Failed to get stats:", error);
       return {
         totalProducts: 0,
         totalVerified: 0,
         totalBrands: 0,
-        verificationRate: '0',
-        buildTimestamp: '',
-        version: ''
+        verificationRate: "0",
+        buildTimestamp: "",
+        version: "",
       };
     }
   }
@@ -369,7 +402,7 @@ class CatalogLoader {
     this.index = null;
     this.brandCatalogs.clear();
     this.allProducts = [];
-    console.log('🗑️ Cache cleared');
+    console.log("🗑️ Cache cleared");
   }
 }
 

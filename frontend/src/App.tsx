@@ -1,43 +1,43 @@
-import { useEffect, useState } from 'react';
-import { instantSearch } from './lib';
-import { HalileoNavigator } from './components/HalileoNavigator';
-import { Workbench } from './components/Workbench';
-import ErrorBoundary from './components/ErrorBoundary';
-import { initializeDevTools } from './lib/devTools';
-import './index.css';
+import { useEffect } from "react";
+import ErrorBoundary from "./components/ErrorBoundary";
+import { Navigator } from "./components/Navigator";
+import { Workbench } from "./components/Workbench";
+import "./index.css";
+import { instantSearch } from "./lib";
+import { initializeDevTools } from "./lib/devTools";
 
 // Initialize dev tools in development
 initializeDevTools();
 
 function AppContent() {
-  const [dataVersion, setDataVersion] = useState(0);
-  const [isInitialized, setIsInitialized] = useState(false);
-
   useEffect(() => {
     // Initialize search system from static JSON catalogs (non-blocking)
-    console.log('🚀 v3.7: Initializing Mission Control...');
-    
+    console.log("🚀 v3.7: Initializing Mission Control...");
+
     // Don't block - initialize in background
     setTimeout(() => {
-      instantSearch.initialize()
+      instantSearch
+        .initialize()
         .then(() => {
-          console.log('✅ Catalog initialized from static data');
-          setIsInitialized(true);
+          console.log("✅ Catalog initialized from static data");
         })
-        .catch(error => {
-          console.error('❌ Initialization error:', error);
-          setIsInitialized(true); // Allow UI to work even if init fails
+        .catch((error) => {
+          console.error("❌ Initialization error:", error);
         });
     }, 100); // Defer to next tick
-  }, [dataVersion]); // Re-initialize when data changes
+  }, []); // Run once on mount
 
   return (
     <div className="flex fixed inset-0 flex-col bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-50 overflow-hidden font-sans selection:bg-cyan-500/30">
       {/* HEADER: Halilit Support Center */}
       <div className="h-20 border-b border-slate-800/50 flex items-center justify-between px-8 bg-slate-950/90 backdrop-blur-md z-30 shadow-lg flex-shrink-0 relative">
         <div>
-          <h1 className="text-2xl font-bold text-cyan-300 tracking-wide">HALILIT SUPPORT CENTER</h1>
-          <p className="text-xs text-slate-500 font-mono mt-0.5">v3.7 Mission Control</p>
+          <h1 className="text-2xl font-bold text-cyan-300 tracking-wide">
+            HALILIT SUPPORT CENTER
+          </h1>
+          <p className="text-xs text-slate-500 font-mono mt-0.5">
+            v3.7.4 Categories-First
+          </p>
         </div>
       </div>
 
@@ -46,7 +46,14 @@ function AppContent() {
         {/* LEFT COLUMN: Navigator */}
         <ErrorBoundary name="Navigator">
           <div className="w-96 h-full border-r border-slate-800/50 bg-slate-950/70 backdrop-blur-md flex flex-col shadow-xl shadow-black/30 overflow-hidden">
-            <HalileoNavigator />
+            <Navigator
+              mode="catalog"
+              setMode={() => {}}
+              searchResults={[]}
+              isSearching={false}
+              insight={null}
+              query=""
+            />
           </div>
         </ErrorBoundary>
 

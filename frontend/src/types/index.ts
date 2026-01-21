@@ -82,30 +82,6 @@ export interface HalilitProductData {
     source: 'PRIMARY' | 'SECONDARY' | 'HALILIT_ONLY';
 }
 
-// The "Golden Record" for any cable or device with I/O
-export interface ConnectivityDNA {
-    // Core Connection Info
-    type: 'cable' | 'adapter' | 'interface' | 'controller';
-
-    // The Physical Connectors (Normalized)
-    connector_a: 'XLR-Male' | 'XLR-Female' | 'TRS-1/4' | 'TS-1/4' | 'RCA' | 'DB25' | 'USB-C';
-    connector_b: 'XLR-Male' | 'XLR-Female' | 'TRS-1/4' | 'TS-1/4' | 'RCA' | 'DB25' | 'USB-C';
-
-    // The "Hidden" Tech Specs (Crucial for "School vs Studio")
-    signal_type: 'Balanced' | 'Unbalanced' | 'AES/EBU' | 'Dante' | 'MIDI';
-    pinout_standard?: 'Tascam' | 'Yamaha' | 'Standard'; // For DB25/AES
-
-    // Physical Traits
-    length_meters?: number;
-    gender_conversion?: boolean; // True if M-F or F-M
-}
-
-export interface ProductTier {
-    level: 'Entry' | 'Pro' | 'Elite';
-    grade_factors: string[]; // e.g. ["Gold Plated", "Oxygen Free Copper"]
-    target_audience: 'Student' | 'Studio' | 'Broadcast';
-}
-
 export interface Product {
     // Core identification (required)
     id: string;
@@ -138,8 +114,6 @@ export interface Product {
     specs?: Specification[];
     specifications?: Specification[];
     features?: string[];
-    connectivity?: ConnectivityDNA;
-    tier?: ProductTier;
 
     // Commerce
     sku?: string;
@@ -165,9 +139,6 @@ export interface Product {
     has_manual?: boolean;
     manual_path?: string;
     halilit_data?: HalilitProductData;
-
-    // Halileo Intelligence (context tags for AI guidance)
-    halileo_context?: string[];
 
     // URLs
     brand_product_url?: string;
@@ -325,25 +296,8 @@ export interface SearchState {
 }
 
 // ============================================================================
-// API / WEBSOCKET TYPES
+// UTILITY TYPES
 // ============================================================================
-
-export interface WebSocketMessage {
-    type:
-    | 'prediction'
-    | 'query'
-    | 'status'
-    | 'answer_chunk'
-    | 'error'
-    | 'connected'
-    | 'disconnected'
-    | 'open'
-    | 'close';
-    data?: unknown;
-    timestamp?: string;
-    session_id?: string;
-    error?: string;
-}
 
 export interface ApiResponse<T> {
     success: boolean;

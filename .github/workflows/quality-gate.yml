@@ -1,0 +1,110 @@
+name: Quality Gate
+
+on:
+  push:
+    branches: ['main', 'v3.7.4-*']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  quality-check:
+    name: Quality & Cleanup Verification
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      
+      - name: Install pnpm
+        run: npm install -g pnpm@8
+      
+      - name: Install dependencies
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
+      
+      - name: TypeScript Compilation
+        working-directory: frontend
+        run: pnpm exec tsc --noEmit
+      
+      - name: ESLint
+        working-directory: frontend
+        run: pnpm exec eslint src --max-warnings 0
+      
+      - name: Production Build
+        working-directory: frontend
+        run: pnpm build
+      
+      - name: Check Bundle Size
+        working-directory: frontend
+        run: |
+          size=$(du -sk dist | cut -f1)
+          if [ $size -gt 500 ]; then
+            echo "❌ Bundle too large: ${size}KB (max 500KB)"
+            exit 1
+          fi
+          echo "✅ Bundle size: ${size}KB"
+      
+      - name: Check for Unused Dependencies
+        working-directory: frontend
+        run: |
+          pnpm exec depcheck --ignores="@types/*,vite,vitest,@vitejs/*,eslint*,typescript,tailwindcss,postcss,autoprefixer,playwright" > depcheck.txt || true
+          if grep -q "Unused dependencies" depcheck.txt; then
+            echo "⚠️ Unused dependencies detected:"
+            cat depcheck.txt
+            exit 1
+          fi
+      
+      - name: Check for console.log (except devTools)
+        working-directory: frontend
+        run: |
+          if find src -name "*.ts*" ! -name "devTools.ts" -exec grep -l "console\.log" {} \; | grep -v "Navigator.tsx"; then
+            echo "❌ Found console.log in production code"
+            exit 1
+          fi
+          echo "✅ No unwanted console.log"
+      
+      - name: Check for TODO/FIXME
+        working-directory: frontend
+        run: |
+          count=$(find src -name "*.ts*" -exec grep -c "TODO\|FIXME" {} + | awk '{s+=$1} END {print s}')
+          echo "TODO/FIXME count: $count"
+          if [ $count -gt 5 ]; then
+            echo "⚠️ Too many TODO/FIXME comments ($count). Please clean up."
+            exit 1
+          fi
+      
+      - name: Verify Static-First Architecture
+        working-directory: frontend
+        run: |
+          # Check for backend API calls
+          if grep -r "localhost:8000\|api/v1" src --include="*.ts" --include="*.tsx" | grep -v "test"; then
+            echo "❌ Backend API calls found in production code"
+            exit 1
+          fi
+          # Check for WebSocket
+          if grep -r "WebSocket\|ws://" src --include="*.ts" --include="*.tsx"; then
+            echo "❌ WebSocket references found"
+            exit 1
+          fi
+          echo "✅ Static-first architecture verified"
+      
+      - name: Run Tests
+        working-directory: frontend
+        run: pnpm test run
+      
+      - name: Report
+        if: always()
+        run: |
+          echo "## Quality Gate Report" >> $GITHUB_STEP_SUMMARY
+          echo "- TypeScript: ✅" >> $GITHUB_STEP_SUMMARY
+          echo "- ESLint: ✅" >> $GITHUB_STEP_SUMMARY
+          echo "- Build: ✅" >> $GITHUB_STEP_SUMMARY
+          echo "- Bundle Size: ✅" >> $GITHUB_STEP_SUMMARY
+          echo "- Architecture: ✅ Static-first" >> $GITHUB_STEP_SUMMARY

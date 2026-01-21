@@ -50,8 +50,12 @@ If you see API calls to `localhost:8000` in the codebase, **remove them**.
   - Result: Pre-built, verified JSON files
   - **NOT**: A runtime server
 
-- **Deprecated Scripts** (do not reference):
-  - `backend/orchestrate_pipeline.py` — Legacy validation (use forge_backbone.py instead)
+- **Brand Scrapers**:
+  - `backend/services/roland_scraper.py`
+  - `backend/services/boss_scraper.py`
+  - `backend/services/nord_scraper.py`
+  - `backend/services/moog_scraper.py`
+  - Called by `forge_backbone.py` during data generation
 
 ---
 
@@ -154,48 +158,54 @@ function BrandedPanel({ brand }: Props) {
 
 ---
 
-## 📂 File Structure (v3.7)
+## 📂 File Structure (v3.7.4 - Cleaned)
 
 ```
 frontend/
-├── public/data/              ← ⭐ SOURCE OF TRUTH
-│   ├── index.json
-│   ├── catalogs_brand/
-│   │   ├── roland.json (99 products)
-│   │   ├── boss.json (9 products)
-│   │   ├── nord.json (9 products)
-│   │   └── moog.json (0 products)
-│   └── scrape_progress.json
+├── public/data/              ← ⭐ SOURCE OF TRUTH (Production Static Data)
+│   ├── index.json            ← Master catalog spine
+│   ├── roland.json           ← Brand catalogs (static)
+│   ├── boss.json
+│   ├── nord.json
+│   ├── scrape_progress.json
+│   └── logos/                ← Brand logo assets
 │
 ├── src/
 │   ├── components/
 │   │   ├── App.tsx              ← Main app (NO WebSocket)
-│   │   ├── HalileoNavigator.tsx (AI sidebar)
-│   │   ├── Navigator.tsx        (tree nav)
-│   │   ├── Workbench.tsx        (product detail)
-│   │   └── ui/                  (reusable UI)
+│   │   ├── Navigator.tsx        ← Tree navigation
+│   │   ├── Workbench.tsx        ← Product detail view
+│   │   └── ui/                  ← Reusable UI components
 │   │
 │   ├── hooks/
-│   │   ├── useBrandTheme.ts
-│   │   └── useHalileoTheme.ts
+│   │   ├── useBrandCatalog.ts   ← Load brand data
+│   │   ├── useBrandTheme.ts     ← Brand theming
+│   │   └── useRealtimeSearch.ts ← Client-side search
 │   │
 │   ├── lib/
-│   │   ├── catalogLoader.ts     ← Load static JSON
-│   │   ├── instantSearch.ts     ← Fuse.js wrapper
-│   │   └── devTools.ts
+│   │   ├── catalogLoader.ts     ← ⭐ Load static JSON
+│   │   ├── instantSearch.ts     ← ⭐ Fuse.js search engine
+│   │   └── devTools.ts          ← Dev utilities
 │   │
 │   ├── store/
-│   │   └── navigationStore.ts   ← Zustand state
+│   │   └── navigationStore.ts   ← Zustand global state
 │   │
 │   └── index.css
+│
+├── tests/                    ← Test suites (e2e, unit, integration)
+├── package.json
+└── vite.config.ts
 
 backend/
-├── forge_backbone.py            ← ⭐ DATA GENERATOR (runs offline)
-├── orchestrate_pipeline.py      ← DEPRECATED (validation only)
-├── app/
-│   └── main.py                  ← ⚠️ DEV TOOL ONLY (not deployed)
+├── forge_backbone.py         ← ⭐ SINGLE SOURCE: Data generator (runs offline)
+├── services/
+│   ├── roland_scraper.py     ← Brand-specific scrapers
+│   ├── boss_scraper.py
+│   ├── nord_scraper.py
+│   ├── moog_scraper.py
+│   └── visual_factory.py     ← Image processing
 └── data/
-    └── catalogs_brand/          ← Where scrapers output raw data
+    └── catalogs_brand/       ← Scraper output (intermediate, not for production)
 ```
 
 ---
@@ -299,34 +309,30 @@ Do NOT deploy to production. Do NOT call from frontend in production code.
 ## 🚀 Commands
 
 ```bash
-# Frontend development
-cd frontend && pnpm dev
+# Frontend development (from /workspaces/hsc-jit-v3/frontend)
+pnpm dev
 
-# Generate new catalog data (run offline)
-cd backend && python3 forge_backbone.py
+# Generate new catalog data (from /workspaces/hsc-jit-v3/backend)
+python3 forge_backbone.py
 
 # Type check frontend
 cd frontend && npx tsc --noEmit
 
 # Build for production
 cd frontend && pnpm build
-
-# (Optional) Dev validation server
-cd backend && uvicorn app.main:app --reload
 ```
 
 ---
 
 ## 📊 Status
 
-| Feature                 | Status        | Notes                           |
-| ----------------------- | ------------- | ------------------------------- |
-| Static JSON catalogs    | ✅ Active     | Roland (99), Boss (9), Nord (9) |
-| Client-side search      | ✅ Active     | Fuse.js, <50ms                  |
-| Hierarchical navigation | ✅ Active     | 7 categories, 117 products      |
-| Brand theming           | ✅ Active     | WCAG AA compliant               |
-| FastAPI server          | ⚠️ Dev-only   | Not deployed; validation tool   |
-| WebSocket               | ⚠️ Deprecated | Removed from production code    |
+| Feature                 | Status    | Notes                           |
+| ----------------------- | --------- | ------------------------------- |
+| Static JSON catalogs    | ✅ Active | Roland (33), Boss (3), Nord (4) |
+| Client-side search      | ✅ Active | Fuse.js, <50ms                  |
+| Hierarchical navigation | ✅ Active | 7 categories, 40 products       |
+| Brand theming           | ✅ Active | WCAG AA compliant               |
+| Data generator          | ✅ Active | `forge_backbone.py`             |
 
 ---
 
