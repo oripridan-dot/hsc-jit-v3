@@ -27,6 +27,7 @@ import urllib.request
 import urllib.error
 from io import BytesIO
 import base64
+from services.visual_factory import VisualFactory
 
 # --- SETUP LOGGING ---
 logging.basicConfig(
@@ -44,57 +45,43 @@ CATALOG_VERSION = "3.7.3-DNA"
 # Brand color themes (WCAG AA compliant)
 BRAND_THEMES = {
     "roland": {
-        "primary": "#ef4444",
-        "secondary": "#1f2937",
-        "accent": "#fbbf24",
+        "primary": "#f89a1c",  # Roland Orange
+        "secondary": "#18181b",
+        "accent": "#ffffff",
         "background": "#18181b",
         "text": "#ffffff"
     },
-    "roland-catalog": {
-        "primary": "#ef4444",
-        "secondary": "#1f2937",
-        "accent": "#fbbf24",
-        "background": "#18181b",
+    "boss": {
+        "primary": "#0055a4",  # Boss Blue
+        "secondary": "#0f172a",
+        "accent": "#bfdbfe",
+        "background": "#020617",
         "text": "#ffffff"
+    },
+    "nord": {
+        "primary": "#e31e24",  # Nord Red
+        "secondary": "#450a0a",
+        "accent": "#fbbf24",
+        "background": "#450a0a",
+        "text": "#ffffff"
+    },
+    "moog": {
+        "primary": "#000000",
+        "secondary": "#5c4033", # Wood
+        "accent": "#22c55e",
+        "background": "#1c1917",
+        "text": "#e5e7eb"
     },
     "yamaha": {
-        "primary": "#a855f7",
-        "secondary": "#fbbf24",
-        "accent": "#22d3ee",
-        "background": "#18181b",
-        "text": "#ffffff"
-    },
-    "yamaha-catalog": {
-        "primary": "#a855f7",
+        "primary": "#4b0082",
         "secondary": "#fbbf24",
         "accent": "#22d3ee",
         "background": "#18181b",
         "text": "#ffffff"
     },
     "korg": {
-        "primary": "#fb923c",
+        "primary": "#0055aa",
         "secondary": "#1f2937",
-        "accent": "#34d399",
-        "background": "#18181b",
-        "text": "#ffffff"
-    },
-    "korg-catalog": {
-        "primary": "#fb923c",
-        "secondary": "#1f2937",
-        "accent": "#34d399",
-        "background": "#18181b",
-        "text": "#ffffff"
-    },
-    "moog": {
-        "primary": "#22d3ee",
-        "secondary": "#f87171",
-        "accent": "#34d399",
-        "background": "#18181b",
-        "text": "#ffffff"
-    },
-    "moog-catalog": {
-        "primary": "#22d3ee",
-        "secondary": "#f87171",
         "accent": "#34d399",
         "background": "#18181b",
         "text": "#ffffff"
@@ -108,6 +95,9 @@ class HalilitCatalog:
     def __init__(self):
         self.source_dir = SOURCE_DIR
         self.output_dir = PUBLIC_DATA_PATH
+        # Initialize Visual Factory
+        self.visual_factory = VisualFactory()
+        
         # Flat structure matching Frontend Interface (MasterIndex)
         self.master_index = {
             "version": CATALOG_VERSION,
@@ -380,6 +370,46 @@ class HalilitCatalog:
                 if 'category_hierarchy' not in product:
                     product['category_hierarchy'] = [product.get('category', 'Uncategorized')]
                 
+                # --- NEW: VISUAL FACTORY INTEGRATION ---
+                # Process Main Image into Thumbnail + Inspection Asset
+                main_img_url = product.get('image_url') or product.get('image')
+                if not main_img_url and product.get('images') and len(product['images']) > 0:
+                    first_img = product['images'][0]
+                    main_img_url = first_img.get('url') if isinstance(first_img, dict) else first_img
+
+                if main_img_url and not main_img_url.startswith('http://localhost'): # Skip if already local (unlikely in forge)
+                    # Prepare Output Path
+                    # frontend/public/data/product_images/<brand>/<product_id>
+                    img_output_dir = self.output_dir / "product_images" / slug
+                    img_output_dir.mkdir(parents=True, exist_ok=True)
+                    
+                    img_base_path = str(img_output_dir / f"{product['id']}")
+                    
+                    # Run Visual Factory (This is heavy, maybe we cache check?)
+                    # For now, we run it to ensure "Visual Intelligence" is active
+                    logger.info(f"      🎨 Processing visuals for {product.get('name')}...")
+                    visual_assets = self.visual_factory.process_product_asset(main_img_url, img_base_path)
+                    
+                    if visual_assets:
+                        # Update product with new optimized local assets
+                        # Convert absolute path to relative URL for frontend
+                        # frontend/public/data/... -> /data/...
+                        thumb_rel = f"/data/product_images/{slug}/{product['id']}_thumb.webp"
+                        inspect_rel = f"/data/product_images/{slug}/{product['id']}_inspect.webp"
+                        
+                        product['images'] = {
+                            "main": thumb_rel,          # Used by TierBar and default view
+                            "thumbnail": thumb_rel,     # Explicit thumbnail
+                            "high_res": inspect_rel,    # Used by InspectionLens through 'main' or separate field
+                            "original": main_img_url    # Keep reference
+                        }
+                        
+                        # Set primary image for legacy compatibility
+                        product['image'] = thumb_rel
+                        product['image_url'] = thumb_rel
+                        
+                        self.stats['images_verified'] += 1
+
                 # --- NEW: DOWNLOAD INNER LOGOS (series_logo) ---
                 if product.get('series_logo'):
                     # Create a unique name: roland-fantom-06-series.png

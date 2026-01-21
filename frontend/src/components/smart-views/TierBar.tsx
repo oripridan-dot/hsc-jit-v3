@@ -1,14 +1,20 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Product } from '../../types'; //
+import type { Product } from '../../types'; //
 import { useNavigationStore } from '../../store/navigationStore';
 import { brandThemes } from '../../styles/brandThemes'; //
 
 interface TierBarProps {
   products: Product[];
+  title?: string;
+  showBrandBadges?: boolean;
 }
 
-export const TierBar: React.FC<TierBarProps> = ({ products }) => {
+export const TierBar: React.FC<TierBarProps> = ({ 
+  products,
+  title = "Market Landscape",
+  showBrandBadges = true
+}) => {
   const { selectProduct } = useNavigationStore();
 
   // 1. Unified Calculation: Works for 1 brand or 10 brands simultaneously
@@ -34,22 +40,25 @@ export const TierBar: React.FC<TierBarProps> = ({ products }) => {
   const [range, setRange] = useState<[number, number]>([0, 100]);
 
   return (
-    <div className="w-full h-full flex flex-col p-8 bg-[#0a0a0a] text-white relative overflow-hidden">
+    <div className="w-full h-full flex flex-col p-8 bg-[var(--bg-app)] text-[var(--text-primary)] relative overflow-hidden transition-colors duration-500">
       
       {/* HEADER: Contextual Title */}
       <div className="z-10 mb-12 flex justify-between items-end">
         <div>
-          <h2 className="text-3xl font-black tracking-tighter uppercase">Market Landscape</h2>
-          <div className="flex items-center gap-2 text-white/50 text-sm mt-1">
+          <div className="text-[10px] font-mono text-[var(--brand-primary)] uppercase tracking-widest mb-2">
+            Analytics View
+          </div>
+          <h2 className="text-3xl font-black tracking-tighter uppercase text-[var(--text-primary)]">{title}</h2>
+          <div className="flex items-center gap-2 text-[var(--text-tertiary)] text-sm mt-1">
              <span>Scope: ₪{Math.round(minPrice)} - ₪{Math.round(maxPrice)}</span>
-             <span className="w-1 h-1 bg-white/30 rounded-full"/>
+             <span className="w-1 h-1 bg-[var(--text-tertiary)] rounded-full"/>
              <span>{sortedProducts.length} Results</span>
           </div>
         </div>
       </div>
 
       {/* THE TIER STAGE */}
-      <div className="flex-1 relative border-b border-white/10 mb-8">
+      <div className="flex-1 relative border-b border-[var(--border-subtle)] mb-8">
         <AnimatePresence>
           {sortedProducts.map((product) => {
             const price = product.pricing?.regular_price || 0;
@@ -79,9 +88,9 @@ export const TierBar: React.FC<TierBarProps> = ({ products }) => {
               >
                 {/* PRODUCT CARD */}
                 <div 
-                  className="relative w-24 h-24 bg-[#1a1a1a] rounded-xl shadow-2xl p-2 transition-all duration-300 group-hover:-translate-y-4 group-hover:scale-110"
+                  className="relative w-24 h-24 bg-[var(--bg-panel)] rounded-xl shadow-2xl p-2 transition-all duration-300 group-hover:-translate-y-4 group-hover:scale-110"
                   style={{ 
-                    border: `1px solid ${isVisible ? brandColor : '#333'}`,
+                    border: `1px solid ${isVisible ? brandColor : 'var(--border-subtle)'}`,
                     boxShadow: isVisible ? `0 10px 30px -10px ${brandColor}40` : 'none'
                   }}
                 >
@@ -93,24 +102,34 @@ export const TierBar: React.FC<TierBarProps> = ({ products }) => {
                    />
 
                    {/* Brand Badge (Top Right) */}
-                   <div 
-                      className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[8px] font-bold uppercase tracking-wider text-black"
-                      style={{ backgroundColor: brandColor }}
-                   >
-                      {product.brand}
-                   </div>
+                   {showBrandBadges && (
+                      <div 
+                          className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[8px] font-bold uppercase tracking-wider text-black"
+                          style={{ backgroundColor: brandColor }}
+                      >
+                          {product.brand}
+                      </div>
+                   )}
                 </div>
 
                 {/* INFO & PRICE LINE */}
                 <div className="flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span className="text-[10px] text-white/50 max-w-[100px] truncate">{product.name}</span>
+                    <span className="text-[10px] text-[var(--text-secondary)] max-w-[100px] truncate">{product.name}</span>
                     <span className="text-xs font-mono font-bold" style={{ color: brandColor }}>
                         ₪{price.toLocaleString()}
                     </span>
                 </div>
 
                 {/* Connector Line to Axis */}
-                <div className="absolute bottom-0 w-px h-8 bg-white/10 group-hover:bg-white/50 transition-colors" />
+                <div className="absolute bottom-0 w-px h-8 bg-[var(--border-subtle)] group-hover:bg-[var(--text-primary)] transition-colors" />
+
+                {/* Axis Label - Processed Thumbnail on Axis */}
+                <div className="absolute -bottom-10 flex flex-col items-center">
+                   <div className="w-6 h-6 rounded-full bg-[var(--bg-panel)] border border-[var(--border-subtle)] flex items-center justify-center overflow-hidden mb-1 shadow-sm">
+                      <img src={product.images?.thumbnail || product.image_url} className="w-4 h-4 object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all" />
+                   </div>
+                </div>
+
               </motion.button>
             );
           })}
@@ -120,10 +139,10 @@ export const TierBar: React.FC<TierBarProps> = ({ products }) => {
       {/* INTERACTIVE SCOPE BAR */}
       <div className="h-16 relative px-4 select-none">
         {/* Track */}
-        <div className="absolute top-1/2 left-0 right-0 h-2 bg-white/5 rounded-full overflow-hidden">
+        <div className="absolute top-1/2 left-0 right-0 h-2 bg-[var(--border-subtle)] rounded-full overflow-hidden">
            {/* Active Range Fill */}
            <div 
-             className="absolute h-full bg-indigo-500"
+             className="absolute h-full bg-[var(--brand-primary)]"
              style={{ left: `${range[0]}%`, right: `${100 - range[1]}%` }}
            />
         </div>

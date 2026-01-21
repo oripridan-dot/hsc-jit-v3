@@ -8,6 +8,8 @@
 import { useState, useEffect } from "react";
 import { catalogLoader } from "../lib/catalogLoader";
 
+import type { Product } from "../types";
+
 export interface BrandData {
     id: string;
     name: string;
@@ -17,6 +19,7 @@ export interface BrandData {
     logoUrl: string;
     website?: string;
     description?: string;
+    hierarchy?: Record<string, Product[]>;
 }
 
 const DEFAULT_BRAND_COLOR = "#333333";
@@ -40,13 +43,13 @@ export const useBrandData = (brandName?: string): BrandData | null => {
         let isMounted = true;
 
         const loadData = async () => {
-             try {
+            try {
                 // 1. Load Master Index (Lightweight)
                 const index = await catalogLoader.loadIndex();
-                
+
                 // Find loose match
-                const brandEntry = index.brands.find(b => 
-                    b.id.toLowerCase() === normalizedId || 
+                const brandEntry = index.brands.find(b =>
+                    b.id.toLowerCase() === normalizedId ||
                     b.name.toLowerCase() === normalizedId ||
                     (b as any).slug?.toLowerCase() === normalizedId
                 );
@@ -57,13 +60,13 @@ export const useBrandData = (brandName?: string): BrandData | null => {
                         id: brandEntry.id,
                         name: brandEntry.name,
                         brandColor: brandEntry.brand_color || DEFAULT_BRAND_COLOR,
-                        secondaryColor: brandEntry.brand_color ? `${brandEntry.brand_color}80` : "#666666", 
+                        secondaryColor: brandEntry.brand_color ? `${brandEntry.brand_color}80` : "#666666",
                         textColor: DEFAULT_TEXT_COLOR,
                         logoUrl: brandEntry.logo_url || "",
                         website: "",
                         description: `Catalog with ${brandEntry.product_count} products`
                     };
-                    
+
                     setBrandData(initialData);
 
                     // 2. Try to get rich details if catalog is ALREADY loaded or available
@@ -71,37 +74,47 @@ export const useBrandData = (brandName?: string): BrandData | null => {
                     try {
                         // Note: loadBrand caches results, so this isn"t expensive if already loaded
                         const fullCatalog = await catalogLoader.loadBrand(brandEntry.id);
-                        
+
                         // Only update if we have better data AND still mounted
                         if (fullCatalog && fullCatalog.brand_identity && isMounted) {
-                           const identity = fullCatalog.brand_identity;
-                           
-                           setBrandData(prev => {
-                               if (!prev) return initialData; // Should not happen
-                               
-                               // Parse new colors if available
-                               const newPrimary = identity.brand_colors?.primary;
-                               const newSecondary = identity.brand_colors?.secondary;
-                               
-                               return {
+                            const identity = fullCatalog.brand_identity;
+                            const products = fullCatalog.products || [];
+
+                            // Build hierarchy
+                            const hierarchy: Record<string, Product[]> = {};
+                            products.forEach(p => {
+                                const cat = p.category || 'Uncategorized';
+                                if (!hierarchy[cat]) hierarchy[cat] = [];
+                                hierarchy[cat].push(p);
+                            });
+
+                            setBrandData(prev => {
+                                if (!prev) return initialData; // Should not happen
+
+                                // Parse new colors if available
+                                const newPrimary = identity.brand_colors?.primary;
+                                const newSecondary = identity.brand_colors?.secondary;
+
+                                return {
                                     ...prev,
                                     name: identity.name || prev.name,
                                     brandColor: newPrimary || prev.brandColor,
                                     secondaryColor: newSecondary || prev.secondaryColor,
                                     logoUrl: identity.logo_url || prev.logoUrl,
                                     website: identity.website || prev.website,
-                                    description: identity.description || prev.description
-                               };
-                           });
+                                    description: identity.description || prev.description,
+                                    hierarchy
+                                };
+                            });
                         }
                     } catch (e) {
-                         // Fallback is fine, we have index data
-                         // console.debug("Could not load full catalog for brand detail", e);
+                        // Fallback is fine, we have index data
+                        // console.debug("Could not load full catalog for brand detail", e);
                     }
                 }
-             } catch (err) {
-                 console.warn(`Could not load brand data for ${brandName}`, err);
-             }
+            } catch (err) {
+                console.warn(`Could not load brand data for ${brandName}`, err);
+            }
         };
 
         loadData();

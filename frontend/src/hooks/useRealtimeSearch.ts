@@ -11,6 +11,7 @@ export const useRealtimeSearch = () => {
         setIsSearching,
         searchInsight,
         setSearchInsight,
+        searchQuery,
         setSearch: setStoreSearchQuery
     } = useNavigationStore();
 
@@ -71,6 +72,7 @@ export const useRealtimeSearch = () => {
         results: searchResults,
         insight: searchInsight,
         isSearching,
+        query: searchQuery,
         error: null,
         clearResults
     };

@@ -1,19 +1,571 @@
 {
-  "build_timestamp": "2026-01-21T15:41:37.708076",
-  "version": "3.7-Halilit",
-  "total_products": 30,
-  "total_verified": 0,
+  "version": "3.7.3-DNA",
+  "build_timestamp": "2026-01-21T19:47:18.707924+00:00",
+  "environment": "static_production",
+  "total_products": 40,
+  "total_verified": 40,
   "brands": [
     {
+      "id": "boss",
+      "name": "Boss Catalog",
+      "slug": "boss",
+      "count": 3,
+      "brand_color": "#0055a4",
+      "logo_url": "/assets/logos/boss_logo.png",
+      "file": "boss.json",
+      "data_file": "boss.json",
+      "product_count": 3,
+      "verified_count": 3,
+      "last_updated": "2026-01-21T19:47:22.939455+00:00"
+    },
+    {
       "id": "roland",
-      "name": "Roland Corporation",
-      "logo_url": null,
-      "website": "https://www.roland.com",
-      "product_count": 30,
-      "verified_count": 0,
-      "description": "World leader in electronic musical instruments",
-      "brand_color": null,
-      "data_file": "catalogs_brand/roland.json"
+      "name": "Roland Catalog",
+      "slug": "roland",
+      "count": 33,
+      "brand_color": "#f89a1c",
+      "logo_url": "/assets/logos/roland_logo.png",
+      "file": "roland.json",
+      "data_file": "roland.json",
+      "product_count": 33,
+      "verified_count": 33,
+      "last_updated": "2026-01-21T19:48:11.798288+00:00"
+    },
+    {
+      "id": "nord",
+      "name": "Nord Catalog",
+      "slug": "nord",
+      "count": 4,
+      "brand_color": "#e31e24",
+      "logo_url": "/assets/logos/nord_logo.png",
+      "file": "nord.json",
+      "data_file": "nord.json",
+      "product_count": 4,
+      "verified_count": 4,
+      "last_updated": "2026-01-21T19:48:16.497962+00:00"
     }
-  ]
+  ],
+  "search_graph": [
+    {
+      "id": "boss-eurus_gs-1",
+      "label": "EURUS GS-1Electronic Guitar",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Guitar Synthesizers",
+      "subcategory": null,
+      "keywords": [
+        "Cutting-edge BOSS electronic guitar, crafted in Japan for bold sound innovators",
+        "Seamlessly switch between synthesizer and regular guitar sounds",
+        "Six onboard memories for storing different synth sounds",
+        "Premium playability with 24-fret neck, compound radius rosewood fingerboard, and offset double-cutaway body design",
+        "Two custom-designed pickups and five-way selector switch"
+      ],
+      "description": "A Bold New Voice for Sound Innovators\n\nEvery guitarist is on a highly personal tone journey, continu"
+    },
+    {
+      "id": "boss-xs-1",
+      "label": "XS-1Poly Shifter",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Effects Pedals",
+      "subcategory": null,
+      "keywords": [
+        "Class-leading pitch shifting quality realized with new BOSS algorithms",
+        "Instantly change the pitch of a guitar, bass, or other instrument",
+        "Clear response and natural feel that retains the fundamental sound character",
+        "Change pitch across +/- seven semitones or +/- three octaves",
+        "Balance knob adjusts the mix between the effect and direct sound"
+      ],
+      "description": "Rapid Retuning, Flawless Sound\n\nThe XS-1 Poly Shifter delivers instant retuning in a convenient, com"
+    },
+    {
+      "id": "boss-gx-10",
+      "label": "GX-10Guitar Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss Catalog",
+      "category": "Multi-Effects",
+      "subcategory": null,
+      "keywords": [
+        "Compact amp/effects processor for guitar and bass",
+        "The same sound engine and color touch display as the GX-100 in a portable, travel-ready design",
+        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
+        "Authentic tube amplifier tone and touch response with AIRD technology",
+        "32 amplifier types and 170 BOSS effects"
+      ],
+      "description": "Colorful Tones, Portable Design\n\nPlayers everywhere love the GX-100 for its streamlined design, free"
+    },
+    {
+      "id": "roland-a-88mk2",
+      "label": "A-88MKII\nMIDI Keyboard Controller",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "Unmatched playability with Roland's own PHA-4 keyboard",
+        "Built to last with wood and premium materials for years of dependable performance",
+        "Eight RGB-lit assignable knobs, eight RGB-lit pads, and three pedal inputs",
+        "Three customizable zones, onboard arpeggiator, and chord memory",
+        "Thin design with shallow depth fits today's studio environments"
+      ],
+      "description": "The latest in our long line of professional MIDI controllers, the Roland A-88MKII is supremely playa"
+    },
+    {
+      "id": "roland-bridge_cast",
+      "label": "BRIDGE CAST",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Professional audio streaming interface and mixer designed for online gamers",
+        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
+        "Create independent mixes for you and the online audience with dual audio busses",
+        "USB-C connectivity with Windows and Mac computers and mobile devices",
+        "Also works with the Sony PlayStation®5 console and Nintendo Switch*"
+      ],
+      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for premium li"
+    },
+    {
+      "id": "roland-cb-404",
+      "label": "CB-404\nCarrying Case",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Custom carrying case for the Roland SP-404 sampler series",
+        "Compatible models: SP-404MKII, SP-404A, SP-404SX, and SP-404",
+        "Light-yet-protective design with semi-rigid EVA shell",
+        "Detachable internal fabric pouch for storing small accessories",
+        "Moveable partition for storage of an AC adaptor and other items"
+      ],
+      "description": "The CB-404 is the official carrying case for the Roland SP-404MKII and previous models in the iconic"
+    },
+    {
+      "id": "roland-cb-b88s",
+      "label": "CB-B88S\nKeyboard Bag",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "Fits 88-note Roland keyboards such as the RD-88 EX, RD-08, FP-30X, FP-10, and GO:PIANO88 (GO-88PX)",
+        "Durable polyester exterior",
+        "Thick foam padding and soft fleece lining",
+        "Comfortable and durable carrying handle",
+        "Detachable shoulder strap"
+      ],
+      "description": "The CB-B88S bag is an ideal carrying solution for slim 88-note keyboards such as the RD-88 EX, FP-30"
+    },
+    {
+      "id": "roland-cb-v61",
+      "label": "CB-V61\nKeyboard Bag",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "Fits many 61-note Roland keyboards: GO:KEYS 3, GO:KEYS 5, FANTOM-06, JUNO-D6, E-X10, XPS-60, and more",
+        "Durable polyester exterior",
+        "Three removable internal cushions and a securing strap to accommodate different keyboard models",
+        "Hideaway backpack straps",
+        "Versatile front pocket for accessories and the optional music rest for GO:KEYS models (MRGKS3/5)"
+      ],
+      "description": "The CB-V61 bag is a versatile carrying solution for portable 61-note keyboards like GO:KEYS 3, GO:KE"
+    },
+    {
+      "id": "roland-e-x10",
+      "label": "E-X10\nArranger Keyboard",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "A stylish and affordable portable instrument with acclaimed Roland sound, features, and build quality",
+        "Expressive 61-note keyboard with traditionally shaped keys for a piano-like playing experience",
+        "Onboard stereo speaker system with big, powerful sound",
+        "Rich, expressive acoustic pianos derived from Roland home and stage pianos",
+        "Over 600 additional tones, including electric pianos, organs, synthesizers, orchestral instruments, percussion, world sounds, and more"
+      ],
+      "description": "Launch your musical journey with the E-X10, an inspiring starter keyboard with quality features deri"
+    },
+    {
+      "id": "roland-e-x50",
+      "label": "E-X50",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Versatile, easy-to-use entertainment keyboard with professional Roland sounds and features",
+        "Attractive design and free-flowing user interface",
+        "Onboard stereo speaker system with independent woofers and tweeters and bass-reflex port for big, powerful sound",
+        "Rich, expressive acoustic pianos derived from Roland home and stage pianos",
+        "Nearly 700 additional tones, including electric pianos, organs, orchestral instruments, percussion, world sounds, and more"
+      ],
+      "description": "Powerful entertainment keyboard with professional Roland sounds, auto-accompaniment features, full-r"
+    },
+    {
+      "id": "roland-fantom_series",
+      "label": "FANTOM EX",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Roland’s premier synthesizer series, updated and enhanced with the latest technologies",
+        "Powerful and intuitive user interface designed for free-flowing creativity",
+        "Compose and perform with Roland’s most advanced sound engines: ACB, ZEN-Core, V-Piano, SuperNATURAL, Virtual ToneWheel, and more",
+        "Over 7000 onboard sounds from the historic Roland library",
+        "JUPITER-8, SH-101, JX-3P, and JUNO-106 ACB Expansions"
+      ],
+      "description": "Introducing FANTOM EX, the most potent creative keyboard on the planet. The latest chapter in the FA"
+    },
+    {
+      "id": "roland-gokeys_3",
+      "label": "GO:KEYS 3\nMusic Creation Keyboard",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "61-note keyboard with expressive touch sensitivity",
+        "ZEN-Core engine with over 1000 Roland sounds that have influenced modern music for five decades",
+        "Auto-accompaniment with over 200 onboard music styles",
+        "Chord sequencer with user editing features and over 300 ready-to-play presets",
+        "Play anywhere with built-in stereo speakers"
+      ],
+      "description": "Do you have a passion for music? GO:KEYS 3 makes it easy to go from being a fan to an active music c"
+    },
+    {
+      "id": "roland-gokeys_5",
+      "label": "GO:KEYS 5\nMusic Creation Keyboard",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "61-note keyboard with expressive touch sensitivity",
+        "ZEN-Core engine with over 1000 Roland sounds that have influenced modern music for five decades",
+        "Auto-accompaniment with over 200 onboard music styles",
+        "Chord sequencer with user editing features and over 300 ready-to-play presets",
+        "Big, powerful sound with stereo speakers and passive radiator"
+      ],
+      "description": "Do you have a passion for music? GO:KEYS 5 makes it easy to go from being a fan to an active music c"
+    },
+    {
+      "id": "roland-gopiano_go-61p-a",
+      "label": "GO:PIANO with Alexa Built-in\nDigital Piano",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Digital Pianos",
+      "subcategory": null,
+      "keywords": [
+        "Portable instrument that fuses Roland’s quality piano sound with Amazon’s Alexa voice technology",
+        "Control nearly all of the instrument’s functionality using only voice commands",
+        "Can also be used as an Alexa-enabled device to listen to music, check the weather, set alarms, and more",
+        "Also includes Bluetooth for connecting with apps on mobile devices",
+        "Enhance learning with Roland’s free Piano Partner 2 app for iOS and Android"
+      ],
+      "description": "NOTICE: Beginning November 1, 2024, some Alexa functions are no longer supported with this product.\n"
+    },
+    {
+      "id": "roland-gopiano_go-88p",
+      "label": "GO:PIANO88",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Digital Pianos",
+      "subcategory": null,
+      "keywords": [
+        "Enjoy Traditional Piano Feel with 88 Standard-Size Keys\n\nGO:PIANO88 has 88 full-size keys for authentic playing feel and expressive touch inspired by the keyboards on acoustic grand pianos. Having the full range of notes lets you play more demanding music, and helps develop the correct techniques for both left and right hands. It also ensures a smooth transition should you play a weighted hammer-action keyboard. And even if you invest in a premium piano, your GO:PIANO88 is the ideal portable instrument for slinging in a gigbag and playing at rehearsals, sessions and shows.",
+        "Connect Wirelessly To Your Smartphone, Access Online Content and Learn Faster\n\nGO:PIANO88 pairs with your smartphone to make learning piano fun. Use Bluetooth to connect wirelessly to your smartphone or tablet, then access songs from your music library or try some free online lessons. You can play along as the music streams through the high-quality onboard speakers or your headphones. Or if you’d prefer some more intensive piano training, try some of the many excellent apps or tutorial videos, before you start working with a personal piano teacher.",
+        "Enjoy Authentic Piano Performance with a Compact, Space-Saving Footprint\n\nNot every home has space for a full-size acoustic piano. But the compact design of GO:PIANO88 lets you play in any setting, with all the benefits of 88 full-size keys. Just sit down, switch on and enjoy GO:PIANO88’s full dynamic range, free from setup hassles or tangled wiring. Plus, to ensure you can practice without disturbing others, GO:PIANO88 lets you plug in headphones to play in peace.",
+        "Make Music on the Move with Battery Power and a Wireless Smartphone Connection\n\nAn acoustic piano ties you to one location, while portable electronic keyboards limit the type of music you can play as they have fewer keys. With GO:PIANO88 and a smartphone, you’re ready to make music whenever inspiration strikes. With its compact 7.5kg design and battery-powered operation, GO:PIANO88 lets you perform through its speakers or practice with headphones. Plus, with wireless connectivity to your smartphone, you can work on your skills any time, any place – especially as the 88-note full-size keyboard means your technique won’t be compromised.",
+        "Get Inspired with Roland’s Responsive Piano Sounds\n\nAs you appreciate GO:PIANO88‘s 88-note full-size keyboard, you’ll also be inspired by the choice of onboard sounds derived from Roland’s acclaimed premium pianos. Touch the keys and you’ll hear notes full of character, changing seamlessly in response to your touch, just like on a fine acoustic piano. And alongside the expressive keyboard, GO:PIANO88 lets the dynamics of your playing shine through, encouraging you to improve faster as your skills grow. GO:PIANO88 also includes electric pianos, organs, and other sounds so you can explore different musical styles."
+      ],
+      "description": "FULL-SIZE 88-NOTE PIANO. PLAY-ANYWHERE PORTABILITY. SMARTPHONE-POWERED TUITION\n\nWhen you’re learning"
+    },
+    {
+      "id": "roland-ks-11z",
+      "label": "KS-11Z\nKeyboard Stand",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Keyboards",
+      "subcategory": null,
+      "keywords": [
+        "Sturdy design with heavy-duty steel construction",
+        "Seamless width adjustment with quick-release lever",
+        "Easy height adjustment with spring-loaded lever",
+        "Adjustable rubber feet for stability on uneven flooring",
+        "Padded support arms fold down for transport and storage"
+      ],
+      "description": "The feature-rich KS-11Z provides a rugged, attractive, and stable platform for 88-note stage pianos "
+    },
+    {
+      "id": "roland-rcc-3-2814",
+      "label": "RCC-3-2814",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Dual cable—1/4-inch connectors, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-2814), 10 ft."
+    },
+    {
+      "id": "roland-rcc-3-2r28",
+      "label": "RCC-3-2R28",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Dual cable—1/4-inch to RCA, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-2R28), 10 ft./3 m"
+    },
+    {
+      "id": "roland-rcc-3-2r2r",
+      "label": "RCC-3-2R2R",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Dual cable—RCA connectors, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-2R2R), 10 ft./3 m "
+    },
+    {
+      "id": "roland-rcc-3-trtr",
+      "label": "RCC-3-TRTR",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Stereo cable—1/4-inch TRS, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-TRTR), 10 ft./3 m "
+    },
+    {
+      "id": "roland-rcc-3-trxf",
+      "label": "RCC-3-TRXF",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Balanced interconnect cable—1/4-inch TRS male to XLR female, 3 ft./1 m length. Also available in 5 f"
+    },
+    {
+      "id": "roland-rcc-3-trxm",
+      "label": "RCC-3-TRXM",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Balanced interconnect cable—1/4-inch TRS male to XLR male, 3 ft./1 m length. Also available in 5 ft."
+    },
+    {
+      "id": "roland-rcc-5-3528",
+      "label": "RCC-5-3528",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Insert/splitter cable—1/8-inch TRS to two 1/4-inch, 5 ft./1.5 m length. Also available in 10 ft./3 m"
+    },
+    {
+      "id": "roland-rcc-5-352r",
+      "label": "RCC-5-352R",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Insert/splitter cable—1/8-inch TRS to two RCA connectors, 5 ft./1.5 m length. Also available in 10 f"
+    },
+    {
+      "id": "roland-rcc-5-3535",
+      "label": "RCC-5-3535",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Stereo cable—1/8-inch TRS, 5 ft./1.5 m length. Also available in 10 ft./3 m (RCC-10-3535) length.\n\nR"
+    },
+    {
+      "id": "roland-rcc-5-rcxf",
+      "label": "RCC-5-RCXF",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Interconnect cable—XLR female to RCA, 5 ft./1.5 m length. Also available in 10 ft./3 m (RCC-10-RCXF)"
+    },
+    {
+      "id": "roland-rcc-5-rcxm",
+      "label": "RCC-5-RCXM",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Interconnect cable—XLR male to RCA, 5 ft./1.5 m length. Also available in 10 ft./3 m (RCC-10-RCXM) l"
+    },
+    {
+      "id": "roland-rcc-5-tr28",
+      "label": "RCC-5-TR28",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Insert/splitter cable—1/4-inch TRS to two 1/4-inch, 5 ft./1.5 m length. Also available in 10 ft./3 m"
+    },
+    {
+      "id": "roland-rcc-5-tr2r",
+      "label": "RCC-5-TR2R",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Insert/splitter cable—1/4-inch TRS to two RCA connectors, 5 ft./1.5 m length. Also available in 10 f"
+    },
+    {
+      "id": "roland-rcc-yc-xf2xm",
+      "label": "RCC-YC-XF2XM",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Splitter/Y cable—XLR female to two XLR male, 6 in./15 cm length.\n\nRoland’s Black Series interconnect"
+    },
+    {
+      "id": "roland-rh-5",
+      "label": "RH-5\nMonitor Headphones",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [
+        "Equipped with high-performance 40mm drivers for dynamic sound",
+        "Exceptional value and high-quality performance",
+        "Provides a natural, balanced response for a range of instruments",
+        "Secure and comfortable lightweight design",
+        "Conversion plug (included) accommodates standard and mini headphone connectors"
+      ],
+      "description": "As a modern musician, a set of quality headphones will help you in so many scenarios. From solo prac"
+    },
+    {
+      "id": "roland-ric-g3",
+      "label": "RIC-G3",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "Straight 1/4-inch connectors, 3 ft./1 m length. Also available in 5 ft./1.5 m (RIC-G5), 10 ft./3 m ("
+    },
+    {
+      "id": "roland-rmidi-b3",
+      "label": "RMIDI-B3",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Musical Instruments",
+      "subcategory": null,
+      "keywords": [],
+      "description": "MIDI cable, 3 ft./1 m length. Also available in 5 ft./1.5 m (RMIDI-B5), 10 ft./3 m (RMIDI-B10), 15 f"
+    },
+    {
+      "id": "roland-fp-90x",
+      "label": "Roland FP-90X Digital Piano",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Uncategorized",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "Portability meets premium performance in the flagship FP-90X."
+    },
+    {
+      "id": "roland-rd-2000",
+      "label": "Roland RD-2000 Stage Piano",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Uncategorized",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "Equipped with two independent sound engines, premium action, and advanced controller features, the R"
+    },
+    {
+      "id": "roland-fantom-06",
+      "label": "FANTOM-06",
+      "brand": "roland",
+      "brand_name": "Roland Catalog",
+      "category": "Uncategorized",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "FANTOM-06 distills the sonic power and fluid workflow of the flagship FANTOM series into streamlined"
+    },
+    {
+      "id": "nord-nord-drum-3p",
+      "label": "Nord Drum 3P",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Drum",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-electro-7",
+      "label": "Nord Electro 7",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Electro",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-nord-lead-a1",
+      "label": "Nord Lead A1",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Lead",
+      "subcategory": null,
+      "keywords": [
+        "Accessories",
+        "Distributors",
+        "Nord Electro 7",
+        "Nord Stage 4",
+        "Nord Piano 6"
+      ],
+      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+    },
+    {
+      "id": "nord-grand",
+      "label": "Nord Grand",
+      "brand": "nord",
+      "brand_name": "Nord Catalog",
+      "category": "Uncategorized",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "The Nord Grand features a premium weighted keybed with advanced triple sensors that capture the move"
+    }
+  ],
+  "total_brands": 3
 }
