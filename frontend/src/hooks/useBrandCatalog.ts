@@ -40,7 +40,7 @@ export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
                 // SWR: 2. Fetch fresh data (Revalidate)
                 const data = await catalogLoader.loadBrand(brandId);
                 setCatalog(data);
-                
+
                 // Persist fresh data
                 try {
                     localStorage.setItem(storageKey, JSON.stringify(data));

@@ -20,6 +20,7 @@ A modern, high-performance product catalog and support system for Roland, Boss, 
 - 🖼️ **Rich Media** - Avg 22 images, 8 manuals, videos per product
 - 📄 **Documentation Tab** - Direct access to PDFs and manuals
 - 🚀 **Zero Backend** - Pure static JSON (no server required)
+- 🔒 **Single Source of Truth** - All definitions (data + style) from static JSON
 - ♿ **Accessible** - WCAG AA compliant design system
 - 📱 **Responsive** - Desktop, tablet, mobile optimized
 

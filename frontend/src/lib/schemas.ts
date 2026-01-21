@@ -17,8 +17,9 @@ import { z } from 'zod';
 
 export const ProductImageSchema = z.object({
     url: z.string().min(1, 'Image URL/Path required'), // Relaxed from .url() to support relative paths
-    type: z.enum(['main', 'thumbnail', 'gallery', 'detail']).optional().nullable(),
+    type: z.enum(['main', 'thumbnail', 'gallery', 'detail', 'technical']).optional().nullable(),
     alt: z.string().optional().nullable(),
+    alt_text: z.string().optional().nullable(), // Added to support backend mismatch
     width: z.number().positive().optional().nullable(),
     height: z.number().positive().optional().nullable(),
 });
@@ -117,12 +118,13 @@ export const BrandFileSchema = z.object({
 export const BrandIndexEntrySchema = z.object({
     id: z.string().min(1, 'Brand ID required'),
     name: z.string().min(1, 'Brand name required'),
+    slug: z.string().optional(), // Added for compatibility
     brand_color: z.string().regex(/^#[0-9a-f]{6}$/i, 'Invalid hex color').optional().nullable(),
     logo_url: z.string().optional().nullable(), // Relaxed from .url()
     product_count: z.number().nonnegative(),
     verified_count: z.number().nonnegative(),
     data_file: z.string().min(1, 'Data file path required'),
-});
+}).passthrough(); // Allow other fields like 'last_updated' to pass through
 
 export const MasterIndexSchema = z.object({
     build_timestamp: z.string(), // Relaxed from .datetime() to accept variations

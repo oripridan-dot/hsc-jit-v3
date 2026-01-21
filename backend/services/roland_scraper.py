@@ -23,11 +23,13 @@ Philosophy: If it's there to take, we take it as-is.
 
 from models.product_hierarchy import (
     ProductCore, ProductCatalog, BrandIdentity,
-    ProductImage, ProductSpecification, SourceType, ProductRelationship, RelationshipType
+    ProductImage, ProductSpecification, SourceType, ProductRelationship, RelationshipType,
+    ConnectivityDNA, ProductTier
 )
 from services.scraper_enhancements import (
     SupportArticleExtractor, ProductImageEnhancer, BrandLogoDownloader
 )
+from services.parsers.cable_parser import normalize_connector, calculate_tier, extract_connectivity
 import asyncio
 import logging
 from typing import List, Dict, Optional, Set
@@ -58,47 +60,55 @@ class RolandScraper:
         self.base_url = "https://www.roland.com/global"
         self.products_url = f"{self.base_url}/products/"
         # Comprehensive category URLs including all known subcategories
+        # TEMPORARY: Restricting to Accessories/Cables for Connectivity Parser validation
         self.category_urls = [
-            # Main categories page
-            "https://www.roland.com/global/categories/",
-            # Pianos and subcategories
-            "https://www.roland.com/global/categories/pianos/",
-            "https://www.roland.com/global/categories/pianos/grand_pianos/",
-            "https://www.roland.com/global/categories/pianos/portable_pianos/",
-            "https://www.roland.com/global/categories/pianos/stage_pianos/",
-            "https://www.roland.com/global/categories/pianos/upright_pianos/",
-            "https://www.roland.com/global/categories/pianos/accessories/",
-            # Synthesizers and subcategories
-            "https://www.roland.com/global/categories/synthesizers/",
-            "https://www.roland.com/global/categories/synthesizers/analog_modeling/",
-            "https://www.roland.com/global/categories/synthesizers/performance_workstation/",
-            "https://www.roland.com/global/categories/synthesizers/sound_expansion_patches/",
-            "https://www.roland.com/global/categories/synthesizers/accessories/",
-            # Keyboards
-            "https://www.roland.com/global/categories/keyboards/",
-            # Guitar/Bass
-            "https://www.roland.com/global/categories/guitar_bass/",
-            # Drums/Percussion
-            "https://www.roland.com/global/categories/drums_percussion/",
-            # Wind Instruments
-            "https://www.roland.com/global/categories/wind_instruments/",
-            # Production
-            "https://www.roland.com/global/categories/production/",
-            # Amplifiers
-            "https://www.roland.com/global/categories/amplifiers/",
-            "https://www.roland.com/global/categories/amplifiers/keyboard_amplifiers/",
-            # AIRA
-            "https://www.roland.com/global/categories/aira/",
-            # Roland Cloud
-            "https://www.roland.com/global/categories/roland_cloud/",
-            # Featured Products
-            "https://www.roland.com/global/categories/featured_products/",
-            # Accessories
             "https://www.roland.com/global/categories/accessories/",
-            "https://www.roland.com/global/categories/accessories/headphones/",
-            # Organs
-            "https://www.roland.com/global/categories/organs/",
+            "https://www.roland.com/global/categories/accessories/cables/",
+            "https://www.roland.com/global/categories/accessories/instrument_cables/",
+            "https://www.roland.com/global/categories/accessories/microphone_cables/",
+            "https://www.roland.com/global/categories/accessories/interconnect_cables/",
+            "https://www.roland.com/global/categories/accessories/digital_cables/",
+            "https://www.roland.com/global/categories/accessories/midi_cables/",
         ]
+        # self.category_urls = [
+        #     # Main categories page
+        #     "https://www.roland.com/global/categories/",
+        #     # Pianos and subcategories
+        #     "https://www.roland.com/global/categories/pianos/",
+        #     "https://www.roland.com/global/categories/pianos/grand_pianos/",
+        #     "https://www.roland.com/global/categories/pianos/portable_pianos/",
+        #     "https://www.roland.com/global/categories/pianos/stage_pianos/",
+        #     "https://www.roland.com/global/categories/pianos/upright_pianos/",
+        #     "https://www.roland.com/global/categories/pianos/accessories/",
+        #     # Synthesizers and subcategories
+        #     "https://www.roland.com/global/categories/synthesizers/",
+        #     "https://www.roland.com/global/categories/synthesizers/analog_modeling/",
+        #     "https://www.roland.com/global/categories/synthesizers/performance_workstation/",
+        #     "https://www.roland.com/global/categories/synthesizers/sound_expansion_patches/",
+        #     "https://www.roland.com/global/categories/synthesizers/accessories/",
+        #     # Keyboards
+        #     "https://www.roland.com/global/categories/keyboards/",
+        #     # Guitar/Bass
+        #     "https://www.roland.com/global/categories/guitar_bass/",
+        #     # Drums/Percussion
+        #     "https://www.roland.com/global/categories/drums_percussion/",
+        #     # Wind Instruments
+        #     "https://www.roland.com/global/categories/wind_instruments/",
+        #     # Production
+        #     "https://www.roland.com/global/categories/production/",
+        #     # Amplifiers
+        #     "https://www.roland.com/global/categories/amplifiers/",
+        #     "https://www.roland.com/global/categories/amplifiers/keyboard_amplifiers/",
+        #     # AIRA
+        #     "https://www.roland.com/global/categories/aira/",
+        #     # Roland Cloud
+        #     "https://www.roland.com/global/categories/roland_cloud/",
+        #     # Featured Products
+        #     "https://www.roland.com/global/categories/featured_products/",
+        #     # Accessories
+        #     "https://www.roland.com/global/categories/accessories/",
+        #     "https://www.roland.com/global/categories/accessories/headphones/",
+        # ]
 
     async def scrape_all_products(self, max_products: int = None) -> ProductCatalog:
         """
@@ -250,8 +260,8 @@ class RolandScraper:
         ):
             with attempt:
                 try:
-                    # Changed to domcontentloaded to prevent hanging on analytics/tracking
-                    await page.goto(url, wait_until='domcontentloaded', timeout=timeout)
+                    # Upgrade to networkidle to ensure content (like accessories specs) loads
+                    await page.goto(url, wait_until='networkidle', timeout=timeout)
                 except PlaywrightTimeoutError:
                     logger.warning(f"   Timeout on {url}, retrying...")
                     raise
@@ -264,43 +274,46 @@ class RolandScraper:
         logger.info(
             "🔍 Dynamically discovering all categories and subcategories...")
 
+        # TEMPORARY: Return hardcoded list only for testing parser
+        return set(self.category_urls)
+
         discovered_categories = set(self.category_urls)
 
         # Visit each known category to find more subcategories
-        for cat_url in list(self.category_urls):
-            try:
-                # Add timeout wrapper for each category visit
-                await asyncio.wait_for(
-                    self._navigate(page, cat_url),
-                    timeout=15
-                )
-                await asyncio.sleep(2)
+    #     for cat_url in list(self.category_urls):
+    #         try:
+    #             # Add timeout wrapper for each category visit
+    #             await asyncio.wait_for(
+    #                 self._navigate(page, cat_url),
+    #                 timeout=15
+    #             )
+    #             await asyncio.sleep(2)
 
-                # Find all category links on this page with timeout
-                try:
-                    links = await asyncio.wait_for(
-                        page.locator('a[href*="/categories/"]').all(),
-                        timeout=10
-                    )
-                    for link in links:
-                        try:
-                            href = await link.get_attribute('href')
-                            if href and href.startswith('/global/categories/'):
-                                full_url = f"https://www.roland.com{href}"
-                                # Avoid obvious non-category pages
-                                if not any(skip in full_url.lower() for skip in ['/apps/', '/search']):
-                                    discovered_categories.add(full_url)
-                        except:
-                            continue
-                except asyncio.TimeoutError:
-                    logger.warning(f"   Timeout finding links on {cat_url}")
-            except Exception as e:
-                logger.warning(f"   Error discovering from {cat_url}: {e}")
-                continue
+    #             # Find all category links on this page with timeout
+    #             try:
+    #                 links = await asyncio.wait_for(
+    #                     page.locator('a[href*="/categories/"]').all(),
+    #                     timeout=10
+    #                 )
+    #                 for link in links:
+    #                     try:
+    #                         href = await link.get_attribute('href')
+    #                         if href and href.startswith('/global/categories/'):
+    #                             full_url = f"https://www.roland.com{href}"
+    #                             # Avoid obvious non-category pages
+    #                             if not any(skip in full_url.lower() for skip in ['/apps/', '/search']):
+    #                                 discovered_categories.add(full_url)
+    #                     except:
+    #                         continue
+    #             except asyncio.TimeoutError:
+    #                 logger.warning(f"   Timeout finding links on {cat_url}")
+    #         except Exception as e:
+    #             logger.warning(f"   Error discovering from {cat_url}: {e}")
+    #             continue
 
-        logger.info(
-            f"   Found {len(discovered_categories)} total category URLs")
-        return discovered_categories
+    #     logger.info(
+    #         f"   Found {len(discovered_categories)} total category URLs")
+    #     return discovered_categories
 
     async def _get_product_urls(self, page: Page, max_products: int = None) -> List[str]:
         """Get all product URLs by navigating through categories and subcategories"""
@@ -314,36 +327,36 @@ class RolandScraper:
         all_urls = set()
 
         # Method 1: Get products from main page
-        logger.info(f"   Checking main products page...")
-        try:
-            await asyncio.wait_for(
-                self._navigate(page, self.products_url),
-                timeout=20
-            )
-            await asyncio.sleep(2)
+        # logger.info(f"   Checking main products page...")
+        # try:
+        #     await asyncio.wait_for(
+        #         self._navigate(page, self.products_url),
+        #         timeout=20
+        #     )
+        #     await asyncio.sleep(2)
 
-            main_page_links = await asyncio.wait_for(
-                page.locator('a[href*="/products/"]').all(),
-                timeout=10
-            )
-        except asyncio.TimeoutError:
-            logger.warning("   Timeout on main products page, continuing...")
-            main_page_links = []
+        #     main_page_links = await asyncio.wait_for(
+        #         page.locator('a[href*="/products/"]').all(),
+        #         timeout=10
+        #     )
+        # except asyncio.TimeoutError:
+        #     logger.warning("   Timeout on main products page, continuing...")
+        #     main_page_links = []
         
-        for link in main_page_links:
-            try:
-                href = await link.get_attribute('href')
-                if href and 'roland.com' in href or href.startswith('/'):
-                    if href.startswith('//'):
-                        href = f"https:{href}"
-                    elif href.startswith('/'):
-                        href = f"https://www.roland.com{href}"
-                    if '/products/' in href and not href.endswith('/products/'):
-                        all_urls.add(href)
-            except:
-                continue
+        # for link in main_page_links:
+        #     try:
+        #         href = await link.get_attribute('href')
+        #         if href and 'roland.com' in href or href.startswith('/'):
+        #             if href.startswith('//'):
+        #                 href = f"https:{href}"
+        #             elif href.startswith('/'):
+        #                 href = f"https://www.roland.com{href}"
+        #             if '/products/' in href and not href.endswith('/products/'):
+        #                 all_urls.add(href)
+        #     except:
+        #         continue
 
-        logger.info(f"   Found {len(all_urls)} products from main page")
+        # logger.info(f"   Found {len(all_urls)} products from main page")
 
         # Method 2: Navigate through all discovered category pages
         logger.info(f"   Exploring all category pages...")
@@ -582,12 +595,20 @@ class RolandScraper:
             # Collect ALL description paragraphs
             description_parts = []
             desc_selectors = [
+                '.intro',
                 '.product-description',
                 '.description',
                 '[class*="description"]',
                 'article p',
                 'main p',
-                '.content p'
+                '.content p',
+                '.text-container p',
+                'div[itemprop="description"]',
+                '.cmp-text p',
+                '.cmp-text h3',  # Catch headers
+                '.cmp-text h4',
+                '.features h3',
+                '.specs h3'
             ]
 
             for selector in desc_selectors:
@@ -599,12 +620,23 @@ class RolandScraper:
                     for elem in elements:
                         try:
                             text = await asyncio.wait_for(elem.inner_text(), timeout=2)
-                            if text and len(text.strip()) > 20 and text not in description_parts:
+                            if text and len(text.strip()) > 10 and text not in description_parts:
+                                # EXCLUDE placeholder text if it leaks in
+                                if "Roland accessories deliver trusted performance" in text:
+                                    continue
+                                if "If you have questions about" in text: # Support footer
+                                    continue
                                 description_parts.append(text.strip())
                         except:
                             continue
                 except asyncio.TimeoutError:
                     continue
+            
+            # If no description found, use short_description as fallback
+            if not description_parts and short_description:
+                 description = short_description
+            else:
+                 description = "\n\n".join(description_parts)
 
             description = "\n\n".join(description_parts) if description_parts else (
                 short_description or name)
@@ -806,10 +838,13 @@ class RolandScraper:
 
             # Look for bullet points, feature lists
             feature_selectors = [
-                'ul li',
-                '.features li',
+                '.features ul li',
                 '.feature-list li',
-                '[class*="feature"] li'
+                '[class*="feature"] li',
+                '.product-features li',
+                '.ul-default li',
+                'div.features li',
+                'div.cmp-text ul li'
             ]
 
             for selector in feature_selectors:
@@ -1096,10 +1131,24 @@ class RolandScraper:
             # ============================================================
             # 12. CREATE COMPREHENSIVE PRODUCT
             # ============================================================
+            
+            # Schema-First: Calculate Tier
+            features_text = "\n".join(features) if features else ""
+            full_analysis_text = f"{description}\n{features_text}"
+            
+            tier_data = calculate_tier(0, full_analysis_text)
+            
+            # Schema-First: Extract Connectivity
+            connectivity_data = extract_connectivity(name, full_analysis_text)
+            if connectivity_data:
+                logger.info(f"   🧬 DNA Extracted for {name}: {connectivity_data['connector_a']} → {connectivity_data['connector_b']}")
+            
             product = ProductCore(
                 id=product_id,
                 brand="Roland",
                 name=name,
+                tier=ProductTier(**tier_data) if tier_data else None,
+                connectivity=ConnectivityDNA(**connectivity_data) if connectivity_data else None,
                 model_number=model_number if model_number else None,
                 description=description,
                 short_description=short_description if short_description else None,

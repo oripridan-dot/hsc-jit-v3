@@ -10,7 +10,7 @@ New architecture with complete product relationships:
 Supports JIT RAG with official documentation snippets and AI insights.
 """
 
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Literal
 from pydantic import BaseModel, Field
 from datetime import datetime
 from enum import Enum
@@ -134,6 +134,26 @@ class ProductRelationship(BaseModel):
     savings: Optional[float] = None
 
 
+class ConnectivityDNA(BaseModel):
+    """
+    The "Golden Record" for any cable or device with I/O
+    """
+    type: Literal['cable', 'adapter', 'interface', 'controller', 'headphones']
+    connector_a: str = Field(description="Connector A type (e.g. XLR-Male, TRS-1/4)")
+    connector_b: str = Field(description="Connector B type (e.g. XLR-Female, TS-1/4)")
+    signal_type: str = Field(description="Signal type (e.g. Balanced, Unbalanced, MIDI)")
+    pinout_standard: Optional[str] = None
+    length_meters: Optional[float] = None
+    gender_conversion: Optional[bool] = None
+
+
+class ProductTier(BaseModel):
+    """Product tiering info"""
+    level: Literal['Entry', 'Pro', 'Elite']
+    grade_factors: List[str]
+    target_audience: Literal['Student', 'Studio', 'Broadcast']
+
+
 class ProductCore(BaseModel):
     """
     Core product information - the primary product entity
@@ -175,6 +195,10 @@ class ProductCore(BaseModel):
     specifications: List[ProductSpecification] = Field(default_factory=list)
     features: List[str] = Field(
         default_factory=list, description="From brand official site")
+
+    # Connectivity & Tiering
+    connectivity: Optional[ConnectivityDNA] = None
+    tier: Optional[ProductTier] = None
 
     # Pricing & Availability (From Halilit ONLY)
     pricing: Optional[PriceInfo] = Field(

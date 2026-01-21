@@ -157,6 +157,27 @@ export const ProductCockpit: React.FC = () => {
               </h1>
               <p className="text-sm text-red-100 mt-2">
                 SKU: {selectedProduct.halilit_sku || 'N/A'} • {selectedProduct.category || 'Product'}
+                
+                {/* Tier Badge */}
+                {selectedProduct.tier && (
+                  <span className={`
+                    ml-2 inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium border
+                    ${selectedProduct.tier.level === 'Elite' 
+                      ? 'bg-amber-100 text-amber-800 border-amber-200' 
+                      : selectedProduct.tier.level === 'Pro' 
+                        ? 'bg-blue-100 text-blue-800 border-blue-200'
+                        : 'bg-gray-100 text-gray-800 border-gray-200'}
+                  `}>
+                    {selectedProduct.tier.level}
+                  </span>
+                )}
+                
+                {/* Connectivity Badge */}
+                {selectedProduct.connectivity && (
+                  <span className="ml-2 inline-flex items-center text-xs font-mono bg-black/20 px-1.5 py-0.5 rounded border border-white/20">
+                    {selectedProduct.connectivity.connector_a} → {selectedProduct.connectivity.connector_b}
+                  </span>
+                )}
               </p>
             </div>
             <button 
@@ -239,6 +260,28 @@ export const ProductCockpit: React.FC = () => {
                         borderColor: brandData ? `${brandData.brandColor}40` : 'var(--brand-color)/20'
                       }}
                     >
+                      {/* CONNECTIVITY DNA CARD */}
+                      {selectedProduct.connectivity && (
+                        <div className="mb-4 bg-black/20 p-3 rounded-lg border border-white/10">
+                          <h4 className="text-xs uppercase tracking-wider opacity-70 mb-2">Connectivity DNA</h4>
+                          <div className="flex justify-between items-center text-sm font-mono">
+                            <span className="text-[var(--text-primary)]">{selectedProduct.connectivity.connector_a}</span>
+                            <span className="text-[var(--text-secondary)]">↔</span>
+                            <span className="text-[var(--text-primary)]">{selectedProduct.connectivity.connector_b}</span>
+                          </div>
+                           <div className="mt-2 text-xs flex gap-2">
+                             <span className="px-1.5 py-0.5 rounded bg-white/10 text-[var(--text-secondary)]">
+                               {selectedProduct.connectivity.signal_type}
+                             </span>
+                             {selectedProduct.connectivity.type !== 'cable' && (
+                               <span className="px-1.5 py-0.5 rounded bg-white/10 text-[var(--text-secondary)] capitalize">
+                                 {selectedProduct.connectivity.type}
+                               </span>
+                             )}
+                           </div>
+                        </div>
+                      )}
+
                       {/* Card Header */}
                       <div 
                         className="mb-3 sm:mb-4 pb-2 sm:pb-3 border-b"

@@ -13,8 +13,9 @@
 
 export interface ProductImage {
     url: string;
-    type?: 'main' | 'thumbnail' | 'gallery' | 'detail';
+    type?: 'main' | 'thumbnail' | 'gallery' | 'detail' | 'technical';
     alt?: string;
+    alt_text?: string; // Support backend field
     width?: number;
     height?: number;
 }
@@ -81,6 +82,30 @@ export interface HalilitProductData {
     source: 'PRIMARY' | 'SECONDARY' | 'HALILIT_ONLY';
 }
 
+// The "Golden Record" for any cable or device with I/O
+export interface ConnectivityDNA {
+    // Core Connection Info
+    type: 'cable' | 'adapter' | 'interface' | 'controller';
+
+    // The Physical Connectors (Normalized)
+    connector_a: 'XLR-Male' | 'XLR-Female' | 'TRS-1/4' | 'TS-1/4' | 'RCA' | 'DB25' | 'USB-C';
+    connector_b: 'XLR-Male' | 'XLR-Female' | 'TRS-1/4' | 'TS-1/4' | 'RCA' | 'DB25' | 'USB-C';
+
+    // The "Hidden" Tech Specs (Crucial for "School vs Studio")
+    signal_type: 'Balanced' | 'Unbalanced' | 'AES/EBU' | 'Dante' | 'MIDI';
+    pinout_standard?: 'Tascam' | 'Yamaha' | 'Standard'; // For DB25/AES
+
+    // Physical Traits
+    length_meters?: number;
+    gender_conversion?: boolean; // True if M-F or F-M
+}
+
+export interface ProductTier {
+    level: 'Entry' | 'Pro' | 'Elite';
+    grade_factors: string[]; // e.g. ["Gold Plated", "Oxygen Free Copper"]
+    target_audience: 'Student' | 'Studio' | 'Broadcast';
+}
+
 export interface Product {
     // Core identification (required)
     id: string;
@@ -113,6 +138,8 @@ export interface Product {
     specs?: Specification[];
     specifications?: Specification[];
     features?: string[];
+    connectivity?: ConnectivityDNA;
+    tier?: ProductTier;
 
     // Commerce
     sku?: string;

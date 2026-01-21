@@ -1,0 +1,36 @@
+import { z } from 'zod';
+import { ProductSchema, MasterIndexSchema, BrandFileSchema } from './schemas';
+
+/**
+ * Safe Fetch Wrapper
+ * 
+ * Wraps fetch calls with Zod schema validation to ensure data integrity.
+ * If validation fails, it safely returns null instead of crashing the app.
+ */
+export async function safeFetch<T>(
+    url: string,
+    schema: z.ZodSchema<T>
+): Promise<T | null> {
+    try {
+        const res = await fetch(url);
+        if (!res.ok) {
+            console.error(`⚠️ Network Error for ${url}: ${res.status} ${res.statusText}`);
+            return null;
+        }
+        const json = await res.json();
+
+        // 🛡️ The Guard: Validates data against your strict schemas
+        const result = schema.safeParse(json);
+
+        if (!result.success) {
+            console.error(`🚨 Data Corruption in ${url}:`, result.error);
+            // "Smarter Problem Handling": Return null instead of crashing the app
+            return null;
+        }
+
+        return result.data;
+    } catch (e) {
+        console.error(`⚠️ Fetch Exception for ${url}`, e);
+        return null;
+    }
+}

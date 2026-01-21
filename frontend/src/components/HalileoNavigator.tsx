@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Sparkles, Compass, Mic, MicOff } from 'lucide-react';
 import { Navigator } from './Navigator';
+import { useRealtimeSearch } from '../hooks/useRealtimeSearch';
 import type { Product } from '../types';
 
 interface AISuggestion {
@@ -13,8 +14,12 @@ interface AISuggestion {
 
 export const HalileoNavigator = () => {
   const [query, setQuery] = useState('');
+  const [mode, setMode] = useState<'catalog' | 'copilot'>('catalog');
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef<unknown | null>(null);
+  
+  // 🔌 Connect search logic here
+  const { search, results, insight, isSearching } = useRealtimeSearch();
 
   // Define functions before useEffect
   const trackAnalytics = (event: string, data?: Record<string, string | number>) => {
@@ -52,11 +57,15 @@ export const HalileoNavigator = () => {
     }
   };
 
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!query.trim()) return;
     trackAnalytics('search', { query });
-    setQuery('');
+    
+    // Switch to Copilot mode and execute search
+    setMode('copilot');
+    await search(query);
+    // Do NOT clear query, so user sees what they searched for
   };
 
   return (
@@ -93,7 +102,14 @@ export const HalileoNavigator = () => {
 
       {/* Content Area */}
       <div className="flex-1 overflow-y-auto scrollbar-hide">
-        <Navigator />
+        <Navigator 
+          mode={mode}
+          setMode={setMode}
+          searchResults={results}
+          isSearching={isSearching}
+          insight={insight}
+          query={query}
+        />
       </div>
 
       {/* Bottom Bar: Search Input + Scraping Tracker */}

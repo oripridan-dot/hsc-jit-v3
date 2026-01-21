@@ -178,17 +178,10 @@ app = FastAPI(
 # CORS Configuration - Development friendly
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",    # Frontend dev server
-        "http://localhost:5174",    # Alternative dev port
-        "http://localhost:3000",    # Alternative dev port
-        "http://127.0.0.1:5173",
-        "http://127.0.0.1:5174",
-        "http://127.0.0.1:3000",
-    ],
+    allow_origins=["*"], # 🔓 ALLOW ALL ORIGINS for Codespaces/Dev Environment
     allow_credentials=True,
     allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization", "X-Requested-With"],
+    allow_headers=["*"], # Allow all headers
     expose_headers=["X-Total-Count", "X-Request-ID"],
     max_age=3600  # 1 hour
 )
