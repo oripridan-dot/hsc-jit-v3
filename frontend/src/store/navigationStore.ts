@@ -31,11 +31,13 @@ export interface EcosystemNode {
 
 interface NavState {
     // Current state
+    viewMode: 'brand' | 'category'; // New Toggle
     currentLevel: NavLevel;
     activePath: string[]; // e.g., ["roland", "Keyboards", "TR-08"]
     selectedProduct: Product | null;
     currentBrand: BrandIdentity | null;
     currentCategory: string | null;
+    currentUniversalCategory: string | null;
     ecosystem: EcosystemNode | null;
 
     // UI state
@@ -47,8 +49,10 @@ interface NavState {
     searchInsight: string | null;
 
     // Actions
+    toggleViewMode: () => void;
     warpTo: (level: NavLevel, path: string[]) => void;
     selectBrand: (brandId: string) => void;
+    selectUniversalCategory: (category: string) => void;
     selectCategory: (brandId: string, category: string) => void;
     selectProduct: (product: Product) => void;
     goBack: () => void;
@@ -66,11 +70,13 @@ export const useNavigationStore = create<NavState>(
     persist(
         ((set, get) => ({
             // Initial state
+            viewMode: 'brand',
             currentLevel: 'galaxy',
             activePath: [],
             selectedProduct: null,
             currentBrand: null,
             currentCategory: null,
+            currentUniversalCategory: null,
             ecosystem: null,
             expandedNodes: new Set<string>(),
             searchQuery: '',
@@ -78,6 +84,13 @@ export const useNavigationStore = create<NavState>(
             isSearching: false,
             searchInsight: null,
             whiteBgImages: {},
+
+            toggleViewMode: () => set((state) => ({
+                viewMode: state.viewMode === 'brand' ? 'category' : 'brand',
+                // Reset selection when switching worlds to prevent confusion
+                selectedProduct: null,
+                currentLevel: 'galaxy'
+            })),
 
             // Warp to a specific level in the hierarchy
             warpTo: (level, path) => {
@@ -98,6 +111,17 @@ export const useNavigationStore = create<NavState>(
                     currentCategory: null,
                     activePath: [brandId],
                     currentBrand: { id: brandId, name: brandId }
+                });
+            },
+
+            selectUniversalCategory: (category) => {
+                console.log('🌌 Universal Category Selected:', category);
+                set({
+                    currentLevel: 'universal',
+                    selectedProduct: null,
+                    currentUniversalCategory: category,
+                    activePath: [category],
+                    currentBrand: null
                 });
             },
 

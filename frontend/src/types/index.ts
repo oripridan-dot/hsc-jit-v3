@@ -188,7 +188,7 @@ export interface Product {
 // NAVIGATION TYPES
 // ============================================================================
 
-export type NavLevel = 'galaxy' | 'domain' | 'brand' | 'family' | 'product';
+export type NavLevel = 'galaxy' | 'domain' | 'brand' | 'family' | 'product' | 'universal';
 
 export interface NavigationNode {
     // Core properties

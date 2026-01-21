@@ -3,20 +3,33 @@
  * Routes between different view components based on current level
  * 🎨 Dynamic brand theming applied globally
  */
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { useNavigationStore } from '../store/navigationStore';
 import { useBrandTheme } from '../hooks/useBrandTheme';
 import { ProductCockpit } from './views/ProductCockpit';
 import { BrandWorld } from './views/BrandWorld';
 import { CategoryGrid } from './views/CategoryGrid';
 import { GalaxyDashboard } from './views/GalaxyDashboard';
+import { UniversalCategoryView } from './views/UniversalCategoryView';
 import { TierBar } from './smart-views/TierBar';
 import { useRealtimeSearch } from '../hooks/useRealtimeSearch';
 import { useBrandData } from '../hooks/useBrandData';
+import { catalogLoader } from '../lib/catalogLoader';
+import { getUniversalCategory } from '../lib/universalCategoryMap';
+import type { Product } from '../types';
 
 export const Workbench: React.FC = () => {
-  const { currentLevel, activePath, selectedProduct, currentCategory } = useNavigationStore();
+  const { currentLevel, activePath, selectedProduct, currentCategory, currentUniversalCategory } = useNavigationStore();
   const { results: searchResults, isSearching, query: searchQuery } = useRealtimeSearch();
+  const [universalProducts, setUniversalProducts] = useState<Product[]>([]);
+
+  // Load ALL products if we are in Universal Mode
+  useEffect(() => {
+    if (currentLevel === 'universal') {
+        catalogLoader.loadAllProducts().then(setUniversalProducts);
+    }
+  }, [currentLevel]);
+
   
   // Determine current brand ID for theming
   const currentBrandId = activePath[0] || null;
@@ -56,6 +69,13 @@ export const Workbench: React.FC = () => {
 
   // The "Router" logic - switch views based on state machine level
   const renderView = () => {
+    // Priority 0: Universal Category View (New Architecture)
+    if (currentLevel === 'universal' && currentUniversalCategory) {
+        // Filter in real-time based on static map
+        const filtered = universalProducts.filter(p => getUniversalCategory(p) === currentUniversalCategory);
+        return <UniversalCategoryView categoryTitle={currentUniversalCategory} products={filtered} />;
+    }
+
     // Priority 1: Product Detail
     if (currentLevel === 'product' && selectedProduct) {
         return <ProductCockpit />;

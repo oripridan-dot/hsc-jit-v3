@@ -19,6 +19,20 @@ import { safeFetch } from '../lib/safeFetch';
 import { MasterIndexSchema, BrandFileSchema } from '../lib/schemas';
 import type { Product, BrandIdentity, ProductImage } from '../types/index';
 
+const UNIVERSAL_CATEGORIES = [
+    "Keys & Pianos",
+    "Drums & Percussion",
+    "Guitars & Amps",
+    "Studio & Recording",
+    "Live Sound & PA",
+    "DJ & Production",
+    "Microphones",
+    "Headphones",
+    "Cables & Connectivity",
+    "Accessories"
+];
+
+
 export interface NavigatorProps {
   mode: 'catalog' | 'copilot';
   setMode: (mode: 'catalog' | 'copilot') => void;
@@ -131,7 +145,7 @@ export const Navigator: React.FC<NavigatorProps> = ({
   const [loadingBrands, setLoadingBrands] = useState<Set<string>>(new Set());
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [brandIdentities, setBrandIdentities] = useState<BrandIdentitiesRecord>({});
-  const { whiteBgImages, selectBrand, selectCategory, selectProduct } = useNavigationStore();
+  const { whiteBgImages, selectBrand, selectCategory, selectProduct, viewMode, toggleViewMode, selectUniversalCategory, currentUniversalCategory } = useNavigationStore();
   
   // Load the Halilit Catalog Index on mount
   useEffect(() => {
@@ -323,12 +337,35 @@ export const Navigator: React.FC<NavigatorProps> = ({
   return (
     <aside className="w-full h-full flex flex-col bg-[var(--bg-panel)] border-r border-[var(--border-subtle)] relative overflow-hidden transition-colors duration-500">
       
+      {/* View Toggle */}
+      <div className="px-4 mb-4 mt-4">
+        <div className="bg-[var(--bg-panel)] p-1 rounded-lg flex border border-[var(--border-subtle)]">
+          <button 
+            onClick={() => viewMode !== 'brand' && toggleViewMode()}
+            className={`flex-1 py-1.5 text-xs font-bold rounded-md transition-all ${
+              viewMode === 'brand' ? 'bg-[var(--brand-primary)] text-white shadow' : 'text-[var(--text-secondary)]'
+            }`}
+          >
+            BRANDS
+          </button>
+          <button 
+            onClick={() => viewMode !== 'category' && toggleViewMode()}
+            className={`flex-1 py-1.5 text-xs font-bold rounded-md transition-all ${
+              viewMode === 'category' ? 'bg-indigo-500 text-white shadow' : 'text-[var(--text-secondary)]'
+            }`}
+          >
+            CATEGORIES
+          </button>
+        </div>
+      </div>
+
       {/* === NAVIGATION BODY === */}
       <div className="flex-1 overflow-y-auto scrollbar-hide p-2 space-y-0.5 relative">
         <AnimatePresence mode="wait">
           {mode === 'catalog' ? (
+             viewMode === 'brand' ? (
             <motion.div 
-              key="catalog"
+              key="catalog-brand"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
@@ -507,6 +544,35 @@ export const Navigator: React.FC<NavigatorProps> = ({
                 </div>
               )}
             </motion.div>
+            ) : (
+            <motion.div 
+                    key="catalog-category"
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 20 }}
+                    className="space-y-1 px-1 py-2"
+                  >
+                  <div className="text-[10px] font-semibold text-[var(--text-tertiary)] uppercase tracking-wider mb-1.5">
+                    🎹 Instrument Categories
+                  </div>
+                  {UNIVERSAL_CATEGORIES.map((cat) => (
+                    <button
+                        key={cat}
+                        onClick={() => selectUniversalCategory(cat)}
+                        className={`w-full flex items-center justify-between group p-3 rounded-lg transition-all border ${
+                            currentUniversalCategory === cat 
+                                ? 'bg-indigo-500/10 border-indigo-500/50' 
+                                : 'hover:bg-[var(--bg-panel-hover)] border-transparent hover:border-[var(--border-subtle)]'
+                        }`}
+                    >
+                        <span className={`text-sm font-bold ${currentUniversalCategory === cat ? 'text-indigo-400' : 'text-[var(--text-primary)]'}`}>
+                            {cat}
+                        </span>
+                        <ChevronRight className={`w-4 h-4 text-[var(--text-tertiary)] ${currentUniversalCategory === cat ? 'text-indigo-400' : ''}`} />
+                    </button>
+                  ))}
+            </motion.div>
+            )
           ) : (
             /* === COPILOT MODE === */
             <motion.div 

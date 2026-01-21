@@ -314,3 +314,44 @@ class RAGResponse(BaseModel):
     confidence: float
     related_products: List[str] = Field(default_factory=list)
     suggested_accessories: List[str] = Field(default_factory=list)
+
+
+class UniversalCategory(str, Enum):
+    KEYS = "Keys & Pianos"              # Pianos, Synths, MIDI (Nord, Roland, Moog)
+    DRUMS = "Drums & Percussion"        # V-Drums, Acoustic, Cymbals (Roland, Pearl, Paiste)
+    GUITARS = "Guitars & Amps"          # Pedals, Amps, Acoustics (Boss, Godin, Roland)
+    STUDIO = "Studio & Recording"       # Monitors, Interfaces (Adam, UA, SSL)
+    LIVE = "Live Sound & PA"            # Mixers, Speakers (RCF, Allen & Heath)
+    DJ = "DJ & Production"              # Controllers, MPCs (Akai, Denon, Numark)
+    MICS = "Microphones"                # Studio & Live Mics (Lewitt, Rode)
+    HEADPHONES = "Headphones"           # (V-Moda, Roland)
+    CABLES = "Cables & Connectivity"    # (Klotz, Roland)
+    ACCESSORIES = "Accessories"         # Cases, Stands (Mono, On-Stage)
+
+
+# The "Brain" needs a map to sort incoming data automatically
+CATEGORY_MAP = {
+    "synthesizers": UniversalCategory.KEYS,
+    "digital pianos": UniversalCategory.KEYS,
+    "pianos": UniversalCategory.KEYS,
+    "keyboards": UniversalCategory.KEYS,
+    "v-drums": UniversalCategory.DRUMS,
+    "drums": UniversalCategory.DRUMS,
+    "percussion": UniversalCategory.DRUMS,
+    "cymbals": UniversalCategory.DRUMS,
+    "guitar effects": UniversalCategory.GUITARS,
+    "effects": UniversalCategory.GUITARS,
+    "amplifiers": UniversalCategory.GUITARS,
+    "guitars": UniversalCategory.GUITARS,
+    "studio monitors": UniversalCategory.STUDIO,
+    "audio interfaces": UniversalCategory.STUDIO,
+    "subwoofers": UniversalCategory.STUDIO,
+    "mixers": UniversalCategory.LIVE,
+    "speakers": UniversalCategory.LIVE,
+    "pa systems": UniversalCategory.LIVE,
+    "dj controllers": UniversalCategory.DJ,
+    "microphones": UniversalCategory.MICS,
+    "headphones": UniversalCategory.HEADPHONES,
+    "cables": UniversalCategory.CABLES,
+    "accessories": UniversalCategory.ACCESSORIES,
+}

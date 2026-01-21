@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - heading "HALILIT SUPPORT CENTER" [level=1] [ref=e4]
+    - paragraph [ref=e5]: v3.7 Mission Control
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - img [ref=e12]
+        - generic [ref=e15]:
+          - heading "Halileo" [level=2] [ref=e16]
+          - paragraph [ref=e17]: Product Navigator
+      - complementary [ref=e19]:
+        - generic [ref=e22]:
+          - paragraph [ref=e23]: No results found for "Roland FP-90X vs Nord Grand"
+          - paragraph [ref=e24]: Try a different search term
+        - generic [ref=e26]:
+          - button "📚 Catalog" [ref=e27] [cursor=pointer]
+          - button "✨ Copilot" [ref=e28] [cursor=pointer]
+      - generic [ref=e30]:
+        - textbox "Search products..." [active] [ref=e31]: Roland FP-90X vs Nord Grand
+        - img [ref=e32]
+        - button "Voice search" [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+    - generic [ref=e47]:
+      - img [ref=e49]
+      - heading "Halilit Mission Control" [level=1] [ref=e52]
+      - paragraph [ref=e53]: A unified catalog explorer for professional musical instruments
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: "117"
+          - generic [ref=e57]: Products
+        - generic [ref=e58]:
+          - generic [ref=e59]: "4"
+          - generic [ref=e60]: Brands
+        - generic [ref=e61]:
+          - generic [ref=e62]: "7"
+          - generic [ref=e63]: Categories
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - img [ref=e66]
+          - heading "Getting Started" [level=2] [ref=e69]
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - generic [ref=e72]: "1."
+            - generic [ref=e73]:
+              - text: Click on a
+              - strong [ref=e74]: Brand
+              - text: in the left sidebar to explore their catalog
+          - listitem [ref=e75]:
+            - generic [ref=e76]: "2."
+            - generic [ref=e77]:
+              - text: Select a
+              - strong [ref=e78]: Category
+              - text: to see products in that family
+          - listitem [ref=e79]:
+            - generic [ref=e80]: "3."
+            - generic [ref=e81]:
+              - text: Click a
+              - strong [ref=e82]: Product
+              - text: to view detailed specs and media
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]: 🎵 Product Details
+          - generic [ref=e86]: Full specs, images, videos, and documentation
+        - generic [ref=e87]:
+          - generic [ref=e88]: 📊 Structured Data
+          - generic [ref=e89]: Clean hierarchies with accurate categorization
+        - generic [ref=e90]:
+          - generic [ref=e91]: 🚀 Fast Navigation
+          - generic [ref=e92]: Instant switching between views and zoom levels
+        - generic [ref=e93]:
+          - generic [ref=e94]: 🎨 Brand Identity
+          - generic [ref=e95]: UI colors adapt to your selected brand
+```
