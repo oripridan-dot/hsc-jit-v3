@@ -110,7 +110,7 @@ def sync_to_frontend(brand_id: str, catalog_path: Path):
             
     index_data = {
         "build_timestamp": datetime.utcnow().isoformat(),
-        "version": "3.7-Halilit",
+        "version": "3.7.3-DNA",
         "total_products": sum(b['product_count'] for b in brands_index),
         "total_verified": sum(b.get('verified_count', 0) for b in brands_index),
         "brands": brands_index

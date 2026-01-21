@@ -342,6 +342,6 @@ A: Not in production. The app is static. If you need live updates, redesign the 
 
 ---
 
-**Version:** 3.7.0 (Static First)  
+**Version:** 3.7.3-DNA (Connectivity Intelligence)  
 **Last Updated:** January 2026  
 **Status:** Production-Ready

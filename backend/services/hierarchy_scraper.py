@@ -1,5 +1,5 @@
 """
-Hierarchy-Aware Product Scraper - v3.7.0
+Hierarchy-Aware Product Scraper - v3.7.3-DNA
 ======================================
 
 Scrapes products with complete relationship mapping:

@@ -157,7 +157,7 @@ class MoogScraper:
                     products=products,
                     total_products=len(products),
                     last_updated=datetime.utcnow(),
-                    catalog_version="3.7.0",
+                    catalog_version="3.7.3-DNA",
                     coverage_stats={
                         "total_images": total_images,
                         "total_videos": total_videos,
