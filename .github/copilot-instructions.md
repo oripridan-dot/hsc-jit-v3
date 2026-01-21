@@ -60,12 +60,14 @@ If you see API calls to `localhost:8000` in the codebase, **remove them**.
 **NEVER suggest these:**
 
 1. **WebSocket connections in frontend**
+
    ```typescript
    // ❌ WRONG - No WebSocket in production
-   const ws = new WebSocket('ws://localhost:8000/ws');
+   const ws = new WebSocket("ws://localhost:8000/ws");
    ```
 
 2. **useEffect loops fetching from localhost**
+
    ```typescript
    // ❌ WRONG
    useEffect(() => {
@@ -74,15 +76,17 @@ If you see API calls to `localhost:8000` in the codebase, **remove them**.
    ```
 
 3. **Python backend logic in TypeScript**
+
    ```typescript
    // ❌ WRONG - Don't suggest embedding Python in TypeScript
-   import { someBackendFunction } from '../backend/services/rag';
+   import { someBackendFunction } from "../backend/services/rag";
    ```
 
 4. **Database calls**
+
    ```typescript
    // ❌ WRONG - No database in production
-   const db = new Database('products.db');
+   const db = new Database("products.db");
    ```
 
 5. **Server-side rendering**
@@ -105,12 +109,12 @@ import { instantSearch } from './lib/instantSearch';
 function SearchComponent() {
   const { products } = useNavigationStore();
   const [query, setQuery] = useState('');
-  
-  const results = instantSearch.search(query, { 
+
+  const results = instantSearch.search(query, {
     keys: ['name', 'category'],
-    limit: 10 
+    limit: 10
   });
-  
+
   return <div>{/* render results */}</div>;
 }
 ```
@@ -119,7 +123,7 @@ function SearchComponent() {
 
 ```typescript
 // ✅ CORRECT: Use catalogLoader for static JSON
-import { catalogLoader } from './lib/catalogLoader';
+import { catalogLoader } from "./lib/catalogLoader";
 
 async function loadBrandProducts(brandName: string) {
   const catalog = await catalogLoader.loadBrand(brandName);
@@ -135,7 +139,7 @@ import { useBrandTheme } from './hooks/useBrandTheme';
 
 function BrandedPanel({ brand }: Props) {
   const theme = useBrandTheme(brand);
-  
+
   return (
     <div style={{
       background: 'var(--bg-panel)',
@@ -222,13 +226,13 @@ return (
 
 ```typescript
 // Use instantSearch for filtering
-const [query, setQuery] = useState('');
+const [query, setQuery] = useState("");
 
 const results = useMemo(() => {
   if (!query) return products;
   return instantSearch.search(query, {
-    keys: ['name', 'category', 'description'],
-    limit: 20
+    keys: ["name", "category", "description"],
+    limit: 20,
   });
 }, [query, products]);
 ```
@@ -262,13 +266,13 @@ When adding a feature:
 
 ## 🚫 What NOT to Do
 
-| ❌ Do NOT... | ✅ Instead... |
-|--------------|--------------|
-| Suggest WebSocket connections | Use static JSON + re-fetch when needed |
-| Add `fetch('http://localhost:8000/...')` | Load from `public/data/*.json` |
-| Create new CSS files | Use Tailwind + CSS variables |
-| Mix Python/TypeScript logic | Keep Python in `backend/`, TypeScript in `frontend/` |
-| Reference `docs/archive/` | Use current documentation only |
+| ❌ Do NOT...                                        | ✅ Instead...                                           |
+| --------------------------------------------------- | ------------------------------------------------------- |
+| Suggest WebSocket connections                       | Use static JSON + re-fetch when needed                  |
+| Add `fetch('http://localhost:8000/...')`            | Load from `public/data/*.json`                          |
+| Create new CSS files                                | Use Tailwind + CSS variables                            |
+| Mix Python/TypeScript logic                         | Keep Python in `backend/`, TypeScript in `frontend/`    |
+| Reference `docs/archive/`                           | Use current documentation only                          |
 | Suggest running `backend/app/main.py` in production | It's dev-only; use `forge_backbone.py` to generate data |
 
 ---
@@ -276,14 +280,17 @@ When adding a feature:
 ## 📚 Key Concepts
 
 ### "Halilit Catalog"
+
 The static data generation system. Scrapes → Raw Data → Refiner → Golden Record (JSON) → Frontend.
 Run `forge_backbone.py` to generate static catalogs.
 
 ### "Mission Control"
+
 The React frontend interface. Pure client-side, no backend dependency.
 Load data with `catalogLoader`, search with Fuse.js, navigate with Zustand.
 
 ### "Dev Mode"
+
 Optional: Run `backend/app/main.py` locally for data validation during development.
 Do NOT deploy to production. Do NOT call from frontend in production code.
 
@@ -312,14 +319,14 @@ cd backend && uvicorn app.main:app --reload
 
 ## 📊 Status
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| Static JSON catalogs | ✅ Active | Roland (99), Boss (9), Nord (9) |
-| Client-side search | ✅ Active | Fuse.js, <50ms |
-| Hierarchical navigation | ✅ Active | 7 categories, 117 products |
-| Brand theming | ✅ Active | WCAG AA compliant |
-| FastAPI server | ⚠️ Dev-only | Not deployed; validation tool |
-| WebSocket | ⚠️ Deprecated | Removed from production code |
+| Feature                 | Status        | Notes                           |
+| ----------------------- | ------------- | ------------------------------- |
+| Static JSON catalogs    | ✅ Active     | Roland (99), Boss (9), Nord (9) |
+| Client-side search      | ✅ Active     | Fuse.js, <50ms                  |
+| Hierarchical navigation | ✅ Active     | 7 categories, 117 products      |
+| Brand theming           | ✅ Active     | WCAG AA compliant               |
+| FastAPI server          | ⚠️ Dev-only   | Not deployed; validation tool   |
+| WebSocket               | ⚠️ Deprecated | Removed from production code    |
 
 ---
 

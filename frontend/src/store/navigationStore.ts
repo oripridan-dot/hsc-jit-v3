@@ -42,6 +42,9 @@ interface NavState {
     expandedNodes: Set<string>;
     searchQuery: string;
     whiteBgImages: Record<string, string>; // productId -> imageUrl mapping
+    searchResults: Product[];
+    isSearching: boolean;
+    searchInsight: string | null;
 
     // Actions
     warpTo: (level: NavLevel, path: string[]) => void;
@@ -52,6 +55,9 @@ interface NavState {
     loadEcosystem: (data: EcosystemNode) => void;
     toggleNode: (nodeId: string) => void;
     setSearch: (query: string) => void;
+    setSearchResults: (results: Product[]) => void;
+    setIsSearching: (isSearching: boolean) => void;
+    setSearchInsight: (insight: string | null) => void;
     setWhiteBgImage: (productId: string, imageUrl: string) => void;
     reset: () => void;
 }
@@ -68,6 +74,9 @@ export const useNavigationStore = create<NavState>(
             ecosystem: null,
             expandedNodes: new Set<string>(),
             searchQuery: '',
+            searchResults: [],
+            isSearching: false,
+            searchInsight: null,
             whiteBgImages: {},
 
             // Warp to a specific level in the hierarchy
@@ -163,6 +172,10 @@ export const useNavigationStore = create<NavState>(
                 set({ searchQuery: query });
             },
 
+            setSearchResults: (results) => set({ searchResults: results }),
+            setIsSearching: (isSearching) => set({ isSearching }),
+            setSearchInsight: (insight) => set({ searchInsight: insight }),
+
             // Set white background image for a product
             setWhiteBgImage: (productId, imageUrl) => {
                 const { whiteBgImages } = get();
@@ -183,6 +196,9 @@ export const useNavigationStore = create<NavState>(
                     currentBrand: null,
                     currentCategory: null,
                     searchQuery: '',
+                    searchResults: [],
+                    isSearching: false,
+                    searchInsight: null,
                     expandedNodes: new Set(),
                     whiteBgImages: {}
                 });

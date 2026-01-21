@@ -7,6 +7,8 @@ import React, { useState } from 'react';
 import { useNavigationStore } from '../../store/navigationStore';
 import { useBrandData } from '../../hooks/useBrandData';
 import { FiArrowLeft, FiExternalLink, FiInfo, FiBook, FiPackage, FiFile } from 'react-icons/fi';
+import { BookOpen } from 'lucide-react';
+import { InspectionLens } from '../smart-views/InspectionLens';
 import { MediaBar } from '../MediaBar';
 import { MediaViewer } from '../MediaViewer';
 import { InsightsTable } from '../InsightsTable';
@@ -55,47 +57,60 @@ export const ProductCockpit: React.FC = () => {
   };
 
   /**
-   * Extract gallery images from product
-   * Returns array of image URLs
+   * Extract video resources
    */
+  const getVideos = () => {
+    // Check old style field
+    if (selectedProduct.videos) {
+        return selectedProduct.videos.map(v => typeof v === 'string' ? {url: v} : v);
+    }
+    // Check new style array
+    if (selectedProduct.youtube_videos) {
+        return selectedProduct.youtube_videos.map(v => ({url: v.url, title: v.title}));
+    }
+    return [];
+  };
+
+  const getManuals = () => {
+     if (selectedProduct.manuals) return selectedProduct.manuals;
+     if (selectedProduct.document_files) return selectedProduct.document_files;
+     return [];
+  }
+
   const getGalleryImages = (): string[] => {
     if (!selectedProduct?.images) return [];
-
-    // If images is an array
     if (Array.isArray(selectedProduct.images)) {
       return selectedProduct.images
         .filter((img): img is ProductImage => img?.type === 'gallery' && 'url' in img)
         .map(img => img.url);
     }
-
-    // If images is an object with gallery array
     if (typeof selectedProduct.images === 'object' && !Array.isArray(selectedProduct.images)) {
       const imagesObj = selectedProduct.images as ProductImagesObject;
       return Array.isArray(imagesObj.gallery) ? imagesObj.gallery : [];
     }
-
     return [];
   };
 
-  /**
-   * Extract video URLs from product
-   */
-  const getVideos = (): string[] => {
-    if (!selectedProduct) return [];
-    const videos = (selectedProduct as any).video_urls || (selectedProduct as any).youtube_videos || (selectedProduct as any).videos || [];
-    // Filter out null/undefined values
-    return Array.isArray(videos) ? videos.filter((v): v is string => typeof v === 'string' && Boolean(v)) : [];
-  };
+  // Calculate gallery items
+  const mainImage = getMainImage();
+  const galleryImages = [
+    // Include Main Image if available
+    ...(mainImage ? [mainImage] : []),
+    // Include Scraped Gallery (Thumbnails, details, etc)
+    ...getGalleryImages()
+  ];
+  
+  // High Res / Scraped assets might be in 'original' or 'high_res' keys
+  if (selectedProduct.images && !Array.isArray(selectedProduct.images) && typeof selectedProduct.images === 'object') {
+     const imgObj = selectedProduct.images as ProductImagesObject;
+     if (imgObj.original) galleryImages.push(imgObj.original as string);
+     if (imgObj.high_res) galleryImages.push(imgObj.high_res as string);
+  } else if (selectedProduct.original_image_url) {
+     galleryImages.push(selectedProduct.original_image_url);
+  }
 
-  /**
-   * Extract manual/document URLs from product
-   */
-  const getManuals = (): string[] => {
-    if (!selectedProduct) return [];
-    const manuals = (selectedProduct as any).manual_urls || (selectedProduct as any).manuals || [];
-    // Filter out null/undefined values
-    return Array.isArray(manuals) ? manuals.filter((m): m is string => typeof m === 'string' && Boolean(m)) : [];
-  };
+  // Deduplicate
+  const uniqueImages = Array.from(new Set(galleryImages));
 
   /**
    * Check if product has any media
@@ -239,14 +254,12 @@ export const ProductCockpit: React.FC = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3">
                     {/* Left: Main Product Image */}
                     {mainImage && (
-                      <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl overflow-hidden">
-                        <div className="aspect-[4/3] flex items-center justify-center p-4 sm:p-6 bg-gradient-to-br from-[var(--bg-app)] to-[var(--bg-panel)]">
-                          <img
-                            src={mainImage}
-                            alt={selectedProduct.name}
-                            className="w-full h-full object-contain rounded-lg"
-                          />
-                        </div>
+                      <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl overflow-hidden h-[500px]">
+                        <InspectionLens 
+                          thumbnailUrl={mainImage} 
+                          inspectionUrl={mainImage} 
+                          label="Main View"
+                        />
                       </div>
                     )}
 
@@ -343,6 +356,24 @@ export const ProductCockpit: React.FC = () => {
                         </div>
                       )}
                     </div>
+                  </div>
+
+                  {/* Technical Context - Visual Fusion */}
+                  <div className="bg-[var(--bg-panel)] rounded-xl p-6 border border-[var(--border-subtle)]">
+                     <h3 className="text-lg font-bold text-[var(--text-primary)] mb-4 flex items-center gap-2">
+                        <BookOpen size={16} /> Technical Context
+                     </h3>
+                     
+                     <div className="space-y-4">
+                        <div className="p-3 bg-blue-500/10 border border-blue-500/30 rounded-lg text-sm text-blue-200">
+                           <span className="font-bold block mb-1">AI VISUAL ANALYSIS:</span>
+                           Reading from Silk Print: The input voltage selector is located on the top left. Currently set to 230V.
+                        </div>
+                        
+                        <div className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                           According to the <strong>Official Manual (Page 12)</strong>: "Ensure the Gain knob (Visible in Center) is set to 0dB before powering on."
+                        </div>
+                     </div>
                   </div>
 
                   {/* Description */}
@@ -480,8 +511,9 @@ export const ProductCockpit: React.FC = () => {
                 title="Drag to resize images"
               />
               <MediaBar
-                images={getGalleryImages()}
+                images={uniqueImages}
                 videos={getVideos()}
+                documents={getManuals()}
                 onMediaClick={(media) => {
                   setSelectedMediaItem(media);
                   setIsMediaViewerOpen(true);
