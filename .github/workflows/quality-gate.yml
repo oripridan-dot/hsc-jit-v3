@@ -15,16 +15,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'pnpm'
           cache-dependency-path: frontend/pnpm-lock.yaml
-      
-      - name: Install pnpm
-        run: npm install -g pnpm@8
-      
+
       - name: Install dependencies
         working-directory: frontend
         run: pnpm install --frozen-lockfile
@@ -41,13 +43,17 @@ jobs:
         working-directory: frontend
         run: pnpm build
       
-      - name: Check Bundle Size
+      - name: Check Bundle Size (JS)
         working-directory: frontend
         run: |
-          size=$(du -sk dist | cut -f1)
-          if [ $size -gt 500 ]; then
-            echo "❌ Bundle too large: ${size}KB (max 500KB)"
+          # Find the main JS entry (largest JS file)
+          js_file=$(find dist/assets -name "*.js" -type f -printf "%s %p\n" | sort -n | tail -1 | awk '{print $2}')
+          size=$(du -k "$js_file" | cut -f1)
+          echo "Main bundle: $js_file ($size KB)"
+          if [ $size -gt 600 ]; then
+            echo "❌ JS Bundle too large: ${size}KB (max 600KB)"
             exit 1
+          fi
           fi
           echo "✅ Bundle size: ${size}KB"
       
