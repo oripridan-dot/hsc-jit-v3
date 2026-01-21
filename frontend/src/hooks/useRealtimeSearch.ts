@@ -1,26 +1,29 @@
-import { useState, useCallback } from 'react';
-import type { Product } from '../types';
+import { useCallback } from 'react';
 import { instantSearch } from '../lib/instantSearch';
-
-interface SearchResult {
-    products: Product[];
-    insight: string | null;
-}
+import { useNavigationStore } from '../store/navigationStore';
 
 export const useRealtimeSearch = () => {
-    const [results, setResults] = useState<Product[]>([]);
-    const [insight, setInsight] = useState<string | null>(null);
-    const [isSearching, setIsSearching] = useState(false);
-    const [error, setError] = useState<string | null>(null);
+    // Read from global store
+    const {
+        searchResults,
+        setSearchResults,
+        isSearching,
+        setIsSearching,
+        searchInsight,
+        setSearchInsight,
+        setSearch: setStoreSearchQuery
+    } = useNavigationStore();
 
     const search = useCallback(async (query: string) => {
+        setStoreSearchQuery(query);
+
         if (!query.trim()) {
-            setResults([]);
+            setSearchResults([]);
+            setSearchInsight(null);
             return;
         }
 
         setIsSearching(true);
-        setError(null);
 
         try {
             // Emulate network latency for "thinking" feel (optional, but nice)
@@ -28,48 +31,47 @@ export const useRealtimeSearch = () => {
 
             // 1. Perform Client-Side Search
             // We search against "connectivity", "tier", "brand" etc.
-            const searchResults = instantSearch.search(query, {
+            const results = instantSearch.search(query, {
                 limit: 20,
                 // We can expand this to include filters if needed
             });
 
-            setResults(searchResults);
+            setSearchResults(results);
 
             // 2. Generate "Static First" Insight
             // Instead of hallucinating, we summarize the actual results
-            if (searchResults.length > 0) {
-                const brands = Array.from(new Set(searchResults.map(p => p.brand))).join(', ');
-                const topCategory = searchResults[0].category;
-                const topTier = searchResults.find(p => p.tier)?.tier?.level;
+            if (results.length > 0) {
+                const brands = Array.from(new Set(results.map(p => p.brand))).join(', ');
+                const topTier = results.find(p => p.tier)?.tier?.level; // Assuming Product structure
 
-                let insightText = `Found ${searchResults.length} matches in ${brands}.`;
+                let insightText = `Found ${results.length} matches in ${brands}.`;
                 if (topTier) insightText += ` Featuring ${topTier}-tier options.`;
-                setInsight(insightText);
+                setSearchInsight(insightText);
             } else {
-                setInsight(`No exact matches for "${query}". Try standard terms like "XLR" or "Piano".`);
+                setSearchInsight(`No exact matches for "${query}". Try standard terms like "XLR" or "Piano".`);
             }
 
         } catch (err) {
             console.error("Search Logic Error:", err);
-            setResults([]);
-            setError("Could not perform search.");
+            setSearchResults([]);
+            // Since we don't have error in store, we just clear results
         } finally {
             setIsSearching(false);
         }
-    }, []);
+    }, [setSearchResults, setIsSearching, setSearchInsight, setStoreSearchQuery]);
 
     const clearResults = useCallback(() => {
-        setResults([]);
-        setInsight(null);
-        setError(null);
-    }, []);
+        setSearchResults([]);
+        setSearchInsight(null);
+        setStoreSearchQuery('');
+    }, [setSearchResults, setSearchInsight, setStoreSearchQuery]);
 
     return {
         search,
-        results,
-        insight,
+        results: searchResults,
+        insight: searchInsight,
         isSearching,
-        error,
+        error: null,
         clearResults
     };
 };

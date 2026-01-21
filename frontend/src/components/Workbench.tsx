@@ -10,9 +10,12 @@ import { ProductCockpit } from './views/ProductCockpit';
 import { BrandWorld } from './views/BrandWorld';
 import { CategoryGrid } from './views/CategoryGrid';
 import { GalaxyDashboard } from './views/GalaxyDashboard';
+import { TierBar } from './smart-views/TierBar';
+import { useRealtimeSearch } from '../hooks/useRealtimeSearch';
 
 export const Workbench: React.FC = () => {
   const { currentLevel, activePath } = useNavigationStore();
+  const { results: searchResults, isSearching } = useRealtimeSearch();
   
   // Determine current brand ID for theming
   const currentBrandId = activePath[0] || null;
@@ -23,6 +26,11 @@ export const Workbench: React.FC = () => {
 
   // The "Router" logic - switch views based on state machine level
   const renderView = () => {
+    // Priority 1: If Searching, show the Comparison Tier Bar
+    if (searchResults.length > 0 || isSearching) {
+       return <TierBar products={searchResults} />;
+    }
+
     switch (currentLevel) {
       case 'product':
         return <ProductCockpit />;
