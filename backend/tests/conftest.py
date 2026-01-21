@@ -153,7 +153,7 @@ def sample_roland_catalog_dict() -> Dict[str, Any]:
         "metadata": {
             "scrape_date": "2026-01-19",
             "total_products": 2,
-            "version": "3.7.0"
+            "version": "3.7.3-DNA"
         }
     }
 
@@ -190,7 +190,7 @@ def sample_boss_catalog_dict() -> Dict[str, Any]:
         "metadata": {
             "scrape_date": "2026-01-19",
             "total_products": 1,
-            "version": "3.7.0"
+            "version": "3.7.3-DNA"
         }
     }
 

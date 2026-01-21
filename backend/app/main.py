@@ -165,7 +165,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="HSC-JIT V3.7 Data Factory Quality Control",
     description="⚠️ DEV TOOL ONLY: Data validation server for offline pipeline",
-    version="3.7.0",
+    version="3.7.3-DNA",
     docs_url="/api/docs",
     openapi_url="/api/openapi.json",
     lifespan=lifespan
@@ -264,8 +264,8 @@ async def root():
     return APIResponse(
         status="success",
         data={
-            "name": "HSC-JIT V3.7 Data Factory Quality Control",
-            "version": "3.7.0",
+            "name": "HSC-JIT V3.7.3-DNA Data Factory Quality Control",
+            "version": "3.7.3-DNA",
             "mode": "⚠️ DEV TOOL ONLY - Not for production",
             "description": "This server validates data during the offline pipeline. All frontend data comes from public/data/*.json",
             "endpoints": {
@@ -288,7 +288,7 @@ async def health_check():
         status="success",
         data={
             "status": "healthy",
-            "version": "3.7.0",
+            "version": "3.7.3-DNA",
             "catalogs_loaded": len(_catalog_cache),
             "available_brands": list(_catalog_cache.keys())
         }

@@ -58,7 +58,7 @@ export const WorkbenchBrandHeader: React.FC<WorkbenchBrandHeaderProps> = ({
                   SYSTEM STATUS: {isFresh ? 'ONLINE / SYNCHRONIZED' : 'CACHED / STALE'}
                 </span>
                 <span className="text-white/30 ml-auto pl-2">
-                  VERIFIED: {brandName.toUpperCase()} v3.7.0
+                  VERIFIED: {brandName.toUpperCase()} v3.7.3-DNA
                 </span>
               </div>
              );

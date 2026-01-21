@@ -1,4 +1,6 @@
-# 🎹 HSC Mission Control v3.7.2-multi-brand
+# 🎹 HSC Mission Control v3.7.3-DNA
+
+**Universal Product DNA Edition** - Automated Connectivity & Tier Extraction
 
 > **Production-Ready Multi-Brand Product Discovery Interface** ✅
 
@@ -12,15 +14,17 @@ A modern, high-performance product catalog and support system for Roland, Boss, 
 
 ## 🌟 What's Inside
 
-- ✅ **117 Total Products** - Roland (99) + Boss (9) + Nord (9) + Moog (0)
-- 📊 **Comprehensive Data** - 100% have images/videos/manuals, 32% have specs
-- ⚡ **Instant Search** - Sub-50ms fuzzy search with Fuse.js
+- ✅ **30 Roland Products** - With 14 DNA-extracted (47% connectivity data)
+- 🧬 **Universal DNA Extraction** - Automated connectivity & tier classification
+- 🔌 **Connectivity Intelligence** - XLR, TRS, TS, MIDI-DIN, USB-C, RCA, DB25
+- 🎯 **Tier Classification** - Entry/Pro/Elite based on materials & technology
+- ⚡ **Instant Search** - Sub-50ms fuzzy search with connectivity fields
 - 🎨 **Dynamic Theming** - Per-brand color schemes (WCAG AA)
-- 📊 **Hierarchical Navigation** - 7 categories with automatic tree generation
-- 🖼️ **Rich Media** - Avg 22 images, 8 manuals, videos per product
+- 📊 **Hierarchical Navigation** - Automatic category tree generation
+- 🖼️ **Rich Media** - Images, videos, manuals per product
 - 📄 **Documentation Tab** - Direct access to PDFs and manuals
 - 🚀 **Zero Backend** - Pure static JSON (no server required)
-- 🔒 **Single Source of Truth** - All definitions (data + style) from static JSON
+- 🔒 **Single Source of Truth** - All definitions from static JSON
 - ♿ **Accessible** - WCAG AA compliant design system
 - 📱 **Responsive** - Desktop, tablet, mobile optimized
 
@@ -70,24 +74,33 @@ hsc-jit-v3/
 │   │   │   ├── Navigator.tsx    # Product tree navigation
 │   │   │   ├── HalileoNavigator.tsx  # AI co-pilot
 │   │   │   ├── Workbench.tsx    # Product details
-│   │   │   └── MediaBar.tsx     # Media gallery
+│   │   │   └── views/
+│   │   │       └── ProductCockpit.tsx  # DNA visualization
 │   │   ├── lib/                 # Core utilities
 │   │   │   ├── catalogLoader.ts # Data loading
-│   │   │   ├── instantSearch.ts # Fuzzy search
-│   │   │   └── schemas.ts       # Runtime validation
+│   │   │   ├── instantSearch.ts # Fuzzy search (DNA-aware)
+│   │   │   ├── safeFetch.ts     # Schema validation
+│   │   │   └── schemas.ts       # Runtime validation (Zod)
+│   │   ├── hooks/               # React hooks
+│   │   │   ├── useRealtimeSearch.ts  # Search integration
+│   │   │   └── useBrandData.ts  # Brand theming
 │   │   ├── store/               # State management (Zustand)
 │   │   ├── styles/              # Design system & themes
 │   │   └── types/               # TypeScript definitions
 │   └── public/data/             # Static JSON catalogs
-│       ├── index.json           # Brand index (29 products)
-│       └── roland-catalog.json  # Roland product data
+│       ├── index.json           # Brand index (30 products)
+│       └── catalogs_brand/
+│           └── roland.json      # Roland with DNA (14 extracted)
 │
-├── backend/                     # Optional utilities
-│   └── forge_backbone.py        # Data generation tools
+├── backend/                     # Data generation tools
+│   ├── services/
+│   │   ├── parsers/
+│   │   │   └── cable_parser.py  # 🧬 DNA extraction engine
+│   │   └── roland_scraper.py    # Enhanced scraper
+│   └── forge_backbone.py        # Data generator
 │
+├── test-connectivity-dna.html   # DNA validation page
 ├── SYSTEM_GUIDE.md              # Complete system documentation
-├── QUICK_START.md               # Getting started guide
-├── start-mission-control.sh     # Startup script
 └── .github/copilot-instructions.md  # AI dev guidelines
 ```
 
@@ -138,7 +151,7 @@ hsc-jit-v3/
 ```json
 {
   "build_timestamp": "2026-01-19T23:50:00.000Z",
-  "version": "3.7-Halilit",
+  "version": "3.7.3-DNA",
   "total_products": 226,
   "brands": [
     {
@@ -387,7 +400,7 @@ Proprietary - All rights reserved
 
 ---
 
-**Version**: 3.7.1-catalogs
+**Version**: 3.7.3-DNA
 **Status**: ✅ Production Ready  
 **Last Updated**: January 19, 2026
 
