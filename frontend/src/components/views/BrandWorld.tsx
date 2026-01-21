@@ -6,6 +6,7 @@ import React, { useMemo } from 'react';
 import { useBrandData } from '../../hooks/useBrandData';
 import { useBrandCatalog } from '../../hooks/useBrandCatalog';
 import { ShieldCheck, Box, ExternalLink, Activity, Music } from 'lucide-react';
+import { WorkbenchBrandHeader } from '../WorkbenchBrandHeader';
 
 interface BrandWorldProps {
   brandId: string;
@@ -96,22 +97,38 @@ export const BrandWorld: React.FC<BrandWorldProps> = ({ brandId }) => {
             }}
           />
           
-          <div className="relative z-10 p-8 flex items-end justify-between h-full">
-            <div>
-              <h1 className="text-5xl font-black text-white tracking-tight mb-2 uppercase">
-                {brandData.name}
-              </h1>
-              <p className="text-[var(--text-secondary)] max-w-xl text-lg">
-                {brandData.description || "Professional Musical Instruments & Equipment"}
-              </p>
-            </div>
+          <div className="relative z-10 p-8 h-full flex flex-row items-center gap-12">
+            {/* Logo Left */}
             {brandData.logoUrl && (
-              <img 
-                src={brandData.logoUrl}
-                alt={brandData.name} 
-                className="h-24 object-contain opacity-50 hover:opacity-100 transition-opacity duration-500" 
-              />
+              <div className="h-48 flex-shrink-0 drop-shadow-lg">
+                <img 
+                  src={brandData.logoUrl}
+                  alt={brandData.name} 
+                  className="h-full w-auto object-contain transition-opacity duration-500" 
+                />
+              </div>
             )}
+
+            {/* Content Right */}
+            <div className="flex flex-col flex-1 justify-center">
+              <WorkbenchBrandHeader 
+                brandName={brandData.name} 
+                lastUpdated={(catalog as any)?.build_timestamp || undefined}
+                sourceUrl={brandData.website}
+              />
+              
+              <div className="mt-4 border-l-4 border-[var(--brand-primary)] pl-4">
+                <p className="text-[var(--text-secondary)] text-xl font-light leading-relaxed">
+                  {brandData.description || "Professional Musical Instruments & Equipment"}
+                </p>
+                {brandData.website && (
+                  <a href={brandData.website} target="_blank" rel="noopener noreferrer" 
+                     className="inline-flex items-center gap-2 mt-2 text-sm text-[var(--brand-primary)] hover:underline opacity-80 hover:opacity-100">
+                    Visit Official Website <ExternalLink size={12} />
+                  </a>
+                )}
+              </div>
+            </div>
           </div>
         </div>
 
