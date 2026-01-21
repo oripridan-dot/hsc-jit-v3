@@ -109,7 +109,7 @@ export const BrandFileSchema = z.object({
     brand_identity: BrandIdentitySchema,
     products: z.array(ProductSchema),
     stats: BrandStatsSchema.optional(),
-});
+}).passthrough(); // Allow extra fields like catalog_version, last_updated, etc.
 
 // ============================================================================
 // INDEX/CATALOG SCHEMAS

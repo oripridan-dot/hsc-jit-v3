@@ -2,8 +2,8 @@
  * useBrandCatalog - Load and cache brand product catalog
  * Fetches pre-built JSON catalog for a specific brand
  */
-import { useState, useEffect } from 'react';
-import { catalogLoader, type BrandCatalog } from '../lib/catalogLoader';
+import { useEffect, useState } from "react";
+import { catalogLoader, type BrandCatalog } from "../lib/catalogLoader";
 
 /**
  * Hook to load brand catalog by brand ID
@@ -11,59 +11,61 @@ import { catalogLoader, type BrandCatalog } from '../lib/catalogLoader';
  * @returns BrandCatalog with products, or null if loading/error
  */
 export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
-    const [catalog, setCatalog] = useState<BrandCatalog | null>(null);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState<string | null>(null);
+  const [catalog, setCatalog] = useState<BrandCatalog | null>(null);
 
-    useEffect(() => {
-        if (!brandId) {
-            setCatalog(null);
-            setError(null);
-            return;
+  useEffect(() => {
+    let isMounted = true;
+
+    const loadCatalog = async () => {
+      if (!brandId) {
+        if (isMounted) setCatalog(null);
+        return;
+      }
+
+      // SWR: 1. Try local storage immediately (Stale)
+      const storageKey = `brand_catalog_${brandId}`;
+      const cached = localStorage.getItem(storageKey);
+
+      if (isMounted && cached) {
+        try {
+          setCatalog(JSON.parse(cached));
+        } catch (e) {
+          console.warn(`Invalid cache for ${brandId}`, e);
         }
+      }
 
-        const loadCatalog = async () => {
-            // SWR: 1. Try local storage immediately (Stale)
-            const storageKey = `brand_catalog_${brandId}`;
-            const cached = localStorage.getItem(storageKey);
-            if (cached) {
-                try {
-                    setCatalog(JSON.parse(cached));
-                } catch (e) {
-                    console.warn(`Invalid cache for ${brandId}`, e);
-                }
-            }
+      try {
+        // SWR: 2. Fetch fresh data (Revalidate)
+        const data = await catalogLoader.loadBrand(brandId);
 
-            setLoading(true);
-            setError(null);
-            try {
-                // SWR: 2. Fetch fresh data (Revalidate)
-                const data = await catalogLoader.loadBrand(brandId);
-                setCatalog(data);
+        if (isMounted) {
+          setCatalog(data);
+          // Persist fresh data
+          try {
+            localStorage.setItem(storageKey, JSON.stringify(data));
+          } catch (e) {
+            console.warn("Failed to cache catalog", e);
+          }
+        }
+      } catch (err) {
+        console.error(`Error loading catalog for ${brandId}:`, err);
+        // Only reset if we don't have cached data and error is critical?
+        // Actually if fetch fails, we keep cached data usually.
+        // But if no cache, ensure null.
+        if (isMounted && !cached) {
+          setCatalog(null);
+        }
+      }
+    };
 
-                // Persist fresh data
-                try {
-                    localStorage.setItem(storageKey, JSON.stringify(data));
-                } catch (e) {
-                    console.warn('Failed to cache catalog', e);
-                }
-            } catch (err) {
-                const message = err instanceof Error ? err.message : 'Failed to load catalog';
-                console.error(`Error loading catalog for ${brandId}:`, err);
-                // Only show error if we didn't serve from cache
-                if (!cached) {
-                    setError(message);
-                    setCatalog(null);
-                }
-            } finally {
-                setLoading(false);
-            }
-        };
+    loadCatalog();
 
-        loadCatalog();
-    }, [brandId]);
+    return () => {
+      isMounted = false;
+    };
+  }, [brandId]);
 
-    return catalog;
+  return catalog;
 };
 
 /**
@@ -71,41 +73,44 @@ export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
  * @returns Map of brand ID to catalog
  */
 export const useAllBrandCatalogs = () => {
-    const [catalogs, setCatalogs] = useState<Map<string, BrandCatalog>>(new Map());
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
+  const [catalogs, setCatalogs] = useState<Map<string, BrandCatalog>>(
+    new Map(),
+  );
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        const loadAllCatalogs = async () => {
-            setLoading(true);
-            setError(null);
-            try {
-                const index = await catalogLoader.loadIndex();
-                const brandMap = new Map<string, BrandCatalog>();
+  useEffect(() => {
+    const loadAllCatalogs = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        const index = await catalogLoader.loadIndex();
+        const brandMap = new Map<string, BrandCatalog>();
 
-                for (const brandEntry of index.brands) {
-                    try {
-                        const catalog = await catalogLoader.loadBrand(brandEntry.id);
-                        if (catalog) {
-                            brandMap.set(brandEntry.id, catalog);
-                        }
-                    } catch (err) {
-                        console.warn(`Failed to load catalog for ${brandEntry.id}:`, err);
-                    }
-                }
-
-                setCatalogs(brandMap);
-            } catch (err) {
-                const message = err instanceof Error ? err.message : 'Failed to load catalogs';
-                setError(message);
-                console.error('Error loading all catalogs:', err);
-            } finally {
-                setLoading(false);
+        for (const brandEntry of index.brands) {
+          try {
+            const catalog = await catalogLoader.loadBrand(brandEntry.id);
+            if (catalog) {
+              brandMap.set(brandEntry.id, catalog);
             }
-        };
+          } catch (err) {
+            console.warn(`Failed to load catalog for ${brandEntry.id}:`, err);
+          }
+        }
 
-        loadAllCatalogs();
-    }, []);
+        setCatalogs(brandMap);
+      } catch (err) {
+        const message =
+          err instanceof Error ? err.message : "Failed to load catalogs";
+        setError(message);
+        console.error("Error loading all catalogs:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    return { catalogs, loading, error };
+    loadAllCatalogs();
+  }, []);
+
+  return { catalogs, loading, error };
 };

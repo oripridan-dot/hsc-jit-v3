@@ -1,7 +1,6 @@
 /**
  * Design System Tokens - WCAG AA Compliant
  * Professional Grade High-Fidelity Design System
- * Halileo-Integrated Visual Language
  */
 
 :root {
@@ -18,11 +17,11 @@
   --gray-800: #1f2937; /* Primary Text (Light Mode) */
   --gray-900: #111827; /* Headings */
 
-  /* --- 2. HALILEO IDENTITY (The "Soul") --- */
-  /* A distinct Indigo-Violet gradient specifically for AI elements */
-  --halileo-primary: #6366f1;
-  --halileo-glow: rgba(99, 102, 241, 0.5);
-  --halileo-surface: rgba(99, 102, 241, 0.08);
+  /* --- 2. PRIMARY ACCENT (The "Soul") --- */
+  /* Indigo-Violet for interactive elements */
+  --accent-primary: #6366f1;
+  --accent-glow: rgba(99, 102, 241, 0.5);
+  --accent-surface: rgba(99, 102, 241, 0.08);
 
   /* --- 3. SEMANTIC SURFACES (The "Structure") --- */
   
@@ -36,7 +35,7 @@
   --text-tertiary: #6b7280; /* Use sparingly */
   
   --border-subtle: var(--gray-200);
-  --border-focus: var(--halileo-primary);
+  --border-focus: var(--accent-primary);
 
   /* Glassmorphism that actually works */
   --glass-bg: rgba(255, 255, 255, 0.85);
@@ -44,7 +43,7 @@
   --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   /* Legacy compatibility - map old tokens to new system */
-  --color-primary: var(--halileo-primary);
+  --color-primary: var(--accent-primary);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-bg-base: var(--bg-app);
