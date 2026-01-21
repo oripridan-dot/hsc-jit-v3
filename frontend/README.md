@@ -1,6 +1,12 @@
-# HSC JIT v3.4 - Frontend
+# HSC JIT v3.7 - Frontend (Mission Control)
 
 Modern React + TypeScript frontend with **Studio-Grade Hardware Aesthetic** design system.
+
+## 🏗️ Architecture: Static First
+
+- **Data Source**: Loaded exclusively from `/public/data/*.json`.
+- **Theme Logic**: Brand colors/logos derived dynamically from data (NO hardcoded themes).
+- **State Management**: Zustand for navigation, Fuse.js for search.
 
 ## 🎨 Design System
 

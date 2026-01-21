@@ -23,16 +23,38 @@ export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
         }
 
         const loadCatalog = async () => {
+            // SWR: 1. Try local storage immediately (Stale)
+            const storageKey = `brand_catalog_${brandId}`;
+            const cached = localStorage.getItem(storageKey);
+            if (cached) {
+                try {
+                    setCatalog(JSON.parse(cached));
+                } catch (e) {
+                    console.warn(`Invalid cache for ${brandId}`, e);
+                }
+            }
+
             setLoading(true);
             setError(null);
             try {
+                // SWR: 2. Fetch fresh data (Revalidate)
                 const data = await catalogLoader.loadBrand(brandId);
                 setCatalog(data);
+                
+                // Persist fresh data
+                try {
+                    localStorage.setItem(storageKey, JSON.stringify(data));
+                } catch (e) {
+                    console.warn('Failed to cache catalog', e);
+                }
             } catch (err) {
                 const message = err instanceof Error ? err.message : 'Failed to load catalog';
-                setError(message);
                 console.error(`Error loading catalog for ${brandId}:`, err);
-                setCatalog(null);
+                // Only show error if we didn't serve from cache
+                if (!cached) {
+                    setError(message);
+                    setCatalog(null);
+                }
             } finally {
                 setLoading(false);
             }

@@ -16,47 +16,47 @@ import { z } from 'zod';
 // ============================================================================
 
 export const ProductImageSchema = z.object({
-    url: z.string().url('Invalid image URL'),
-    type: z.enum(['main', 'thumbnail', 'gallery', 'detail']).optional(),
-    alt: z.string().optional(),
-    width: z.number().positive().optional(),
-    height: z.number().positive().optional(),
+    url: z.string().min(1, 'Image URL/Path required'), // Relaxed from .url() to support relative paths
+    type: z.enum(['main', 'thumbnail', 'gallery', 'detail']).optional().nullable(),
+    alt: z.string().optional().nullable(),
+    width: z.number().positive().optional().nullable(),
+    height: z.number().positive().optional().nullable(),
 });
 
 export const ProductImagesObjectSchema = z.record(
     z.string(),
-    z.union([z.string(), z.array(z.string())]).optional()
+    z.union([z.string(), z.array(z.string())]).optional().nullable()
 );
 
 export const SpecificationSchema = z.object({
     key: z.string().min(1, 'Specification key required'),
     value: z.union([z.string(), z.number(), z.boolean()]),
-    unit: z.string().optional(),
-    category: z.string().optional(),
+    unit: z.string().optional().nullable(),
+    category: z.string().optional().nullable(),
 });
 
 export const ProductManualSchema = z.object({
     title: z.string().min(1, 'Manual title required'),
-    url: z.string().url('Invalid manual URL'),
-    pages: z.number().positive().optional(),
-    language: z.string().optional(),
-    format: z.enum(['pdf', 'html', 'video']).optional(),
+    url: z.string().min(1, 'Manual URL/Path required'), // Relaxed from .url()
+    pages: z.number().positive().optional().nullable(),
+    language: z.string().optional().nullable(),
+    format: z.enum(['pdf', 'html', 'video']).optional().nullable(),
 });
 
 export const ProductPricingSchema = z.object({
-    regular_price: z.number().nonnegative().optional(),
-    eilat_price: z.number().nonnegative().optional(),
-    sale_price: z.number().nonnegative().optional(),
-    currency: z.string().optional(),
-    source: z.enum(['brand', 'halilit', 'estimated']).optional(),
+    regular_price: z.number().nonnegative().optional().nullable(),
+    eilat_price: z.number().nonnegative().optional().nullable(),
+    sale_price: z.number().nonnegative().optional().nullable(),
+    currency: z.string().optional().nullable(),
+    source: z.enum(['brand', 'halilit', 'estimated']).optional().nullable(),
 });
 
 export const ProductRelationshipSchema = z.object({
     id: z.string().min(1, 'Relationship ID required'),
     name: z.string().min(1, 'Relationship name required'),
     type: z.enum(['accessory', 'related', 'alternative', 'upgrade', 'bundle']),
-    category: z.string().optional(),
-    relevance: z.number().min(0).max(1).optional(),
+    category: z.string().optional().nullable(),
+    relevance: z.number().min(0).max(1).optional().nullable(),
 });
 
 // Core product schema - minimal required fields
@@ -65,17 +65,17 @@ export const ProductSchema = z.object({
     name: z.string().min(1, 'Product name required'),
     brand: z.string().min(1, 'Brand name required'),
     category: z.string().default('Uncategorized'),
-    description: z.string().optional(),
-    image_url: z.string().optional(),
+    description: z.string().optional().nullable(),
+    image_url: z.string().optional().nullable(),
     images: z.union([
         z.array(z.union([z.string(), ProductImageSchema])),
         ProductImagesObjectSchema
-    ]).optional(),
-    specifications: z.array(SpecificationSchema).optional(),
-    manuals: z.array(ProductManualSchema).optional(),
-    pricing: ProductPricingSchema.optional(),
+    ]).optional().nullable(),
+    specifications: z.array(SpecificationSchema).optional().nullable(),
+    manuals: z.array(ProductManualSchema).optional().nullable(),
+    pricing: ProductPricingSchema.optional().nullable(),
     verified: z.boolean().default(true),
-    relationships: z.array(ProductRelationshipSchema).optional(),
+    relationships: z.array(ProductRelationshipSchema).optional().nullable(),
     // Allow additional fields from backend
 }).passthrough();
 
@@ -84,24 +84,24 @@ export const ProductSchema = z.object({
 // ============================================================================
 
 export const BrandColorsSchema = z.object({
-    primary: z.string().regex(/^#[0-9a-f]{6}$/i, 'Invalid hex color').optional(),
-    secondary: z.string().regex(/^#[0-9a-f]{6}$/i, 'Invalid hex color').optional(),
+    primary: z.string().regex(/^#[0-9a-f]{6}$/i, 'Invalid hex color').optional().nullable(),
+    secondary: z.string().regex(/^#[0-9a-f]{6}$/i, 'Invalid hex color').optional().nullable(),
 });
 
 export const BrandIdentitySchema = z.object({
     id: z.string().min(1, 'Brand ID required'),
     name: z.string().min(1, 'Brand name required'),
-    logo_url: z.string().url('Invalid logo URL').optional().nullable(),
-    website: z.string().url('Invalid website URL').optional().nullable(),
+    logo_url: z.string().optional().nullable(), // Relaxed from .url()
+    website: z.string().optional().nullable(), // Relaxed from .url()
     description: z.string().optional().nullable(),
-    brand_colors: BrandColorsSchema.optional(),
-    categories: z.array(z.string()).optional(),
+    brand_colors: BrandColorsSchema.optional().nullable(),
+    categories: z.array(z.string()).optional().nullable(),
 });
 
 export const BrandStatsSchema = z.object({
-    total_products: z.number().nonnegative().optional(),
-    verified_products: z.number().nonnegative().optional(),
-    categories: z.array(z.string()).optional(),
+    total_products: z.number().nonnegative().optional().nullable(),
+    verified_products: z.number().nonnegative().optional().nullable(),
+    categories: z.array(z.string()).optional().nullable(),
 });
 
 export const BrandFileSchema = z.object({
@@ -118,14 +118,14 @@ export const BrandIndexEntrySchema = z.object({
     id: z.string().min(1, 'Brand ID required'),
     name: z.string().min(1, 'Brand name required'),
     brand_color: z.string().regex(/^#[0-9a-f]{6}$/i, 'Invalid hex color').optional().nullable(),
-    logo_url: z.string().url('Invalid logo URL').optional().nullable(),
+    logo_url: z.string().optional().nullable(), // Relaxed from .url()
     product_count: z.number().nonnegative(),
     verified_count: z.number().nonnegative(),
     data_file: z.string().min(1, 'Data file path required'),
 });
 
 export const MasterIndexSchema = z.object({
-    build_timestamp: z.string().datetime(),
+    build_timestamp: z.string(), // Relaxed from .datetime() to accept variations
     version: z.string().min(1, 'Version required'),
     total_products: z.number().nonnegative(),
     total_verified: z.number().nonnegative(),

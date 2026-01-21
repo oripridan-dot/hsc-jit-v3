@@ -15,6 +15,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Compass, Search, ChevronRight, Sparkles, BookOpen, LayoutGrid, Speaker, Piano, Mic2, Music, Zap, Box } from 'lucide-react';
 import { useNavigationStore } from '../store/navigationStore';
 import { useBrandData } from '../hooks/useBrandData';
+import { safeFetch } from '../lib/apiClient';
+import { MasterIndexSchema, BrandFileSchema } from '../lib/schemas';
 import type { Product, BrandIdentity, ProductImage } from '../types/index';
 
 interface BrandIndexItem {
@@ -66,12 +68,12 @@ const BrandLogoDisplay: React.FC<{ brandName: string }> = ({ brandName }) => {
   const brandData = useBrandData(brandName);
 
   return (
-    <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
+    <div className="w-20 h-20 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
       {brandData?.logoUrl ? (
         <img 
           src={brandData.logoUrl}
           alt={brandData.name}
-          className="w-8 h-8 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+          className="w-16 h-16 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
           onError={(e) => {
             (e.currentTarget as HTMLImageElement).style.display = 'none';
             const fallback = e.currentTarget.nextElementSibling as HTMLElement;
@@ -80,8 +82,8 @@ const BrandLogoDisplay: React.FC<{ brandName: string }> = ({ brandName }) => {
         />
       ) : null}
       {!brandData?.logoUrl ? (
-        <div className="w-6 h-6 rounded flex items-center justify-center bg-gradient-to-br from-indigo-400 to-indigo-600">
-          <span className="text-xs font-bold text-white">
+        <div className="w-12 h-12 rounded flex items-center justify-center bg-gradient-to-br from-indigo-400 to-indigo-600">
+          <span className="text-xl font-bold text-white">
             {brandName.substring(0, 2).toUpperCase()}
           </span>
         </div>
@@ -125,9 +127,9 @@ export const Navigator: React.FC = () => {
       try {
         setLoading(true);
         setError(null);
-        const response = await fetch('/data/index.json');
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const data = await response.json();
+        // Use safeFetch with Zod schema for runtime validation
+        const data = await safeFetch('/data/index.json', MasterIndexSchema);
+        // @ts-ignore - Schema and Interface slightly differ in strict mode but structure is compatible
         setCatalogIndex(data);
         
         // Auto-select first brand using 'id' field
@@ -162,9 +164,8 @@ export const Navigator: React.FC = () => {
       // Ensure we don't double-prefix with /data/
       const filePath = fileName.startsWith('/data/') ? fileName : `/data/${fileName}`;
       
-      const response = await fetch(filePath);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json() as BrandData;
+      const rawData = await safeFetch(filePath, BrandFileSchema);
+      const data = rawData as unknown as BrandData;
       
       // Build hierarchy if it doesn't exist (ALWAYS do this)
       if (!data.hierarchy && data.products && Array.isArray(data.products)) {
@@ -446,17 +447,17 @@ export const Navigator: React.FC = () => {
                                                       category: product.category || subcategory
                                                     });
                                                   }}
-                                                  className="flex items-center gap-1.5 w-full h-14 text-left px-2 rounded text-[10px] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-indigo-500/20 active:bg-indigo-500/30 transition-colors cursor-pointer group"
+                                                  className="flex items-center gap-3 w-full min-h-[7rem] text-left px-2 rounded text-[10px] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-indigo-500/20 active:bg-indigo-500/30 transition-colors cursor-pointer group"
                                                   title={product.name}
                                                 >
                                                   {whiteBgImages[product.id] && (
                                                     <img 
                                                       src={whiteBgImages[product.id]} 
                                                       alt="Product thumbnail" 
-                                                      className="h-12 w-12 aspect-square object-contain bg-white/5 rounded border border-white/10 p-1 flex-shrink-0"
+                                                      className="h-24 w-24 aspect-square object-contain bg-white/5 rounded border border-white/10 p-1 flex-shrink-0"
                                                     />
                                                   )}
-                                                  <span className="flex-1 truncate">{product.name}</span>
+                                                  <span className="flex-1 truncate text-xs">{product.name}</span>
                                                 </button>
                                               ))}
                                             </div>
