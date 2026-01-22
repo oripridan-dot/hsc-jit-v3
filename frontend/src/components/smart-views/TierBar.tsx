@@ -5,6 +5,8 @@ import { useNavigationStore } from "../../store/navigationStore";
 import type { Product, ProductImagesObject } from "../../types";
 import { BrandIcon } from "../BrandIcon";
 
+import { brandThemes } from "../../styles/brandThemes";
+
 interface TierBarProps {
   label: string;
   products: Product[];
@@ -284,11 +286,26 @@ export const TierBar: React.FC<TierBarProps> = ({
 
           {/* Product Nodes - Elevated Above Track */}
           <div
-            className="absolute left-0 right-0 -top-12 h-24"
+            className="absolute left-0 right-0 -top-4 h-24"
             style={{ willChange: "contents" }}
           >
             {filteredNodes.map((product) => {
               const clampedPos = Math.max(3, Math.min(97, product.pos));
+              // Helper to safely get brand colors
+              const getBrandColor = (brandName: string) => {
+                const normalizedKey = brandName.toLowerCase().replace(/\s+/g, '-');
+                // Direct lookup or fallback to default
+                if (brandThemes[normalizedKey]) return brandThemes[normalizedKey].colors.primary;
+                // Try finding by partial match if exact key fails
+                const key = Object.keys(brandThemes).find((k) =>
+                  normalizedKey.includes(k)
+                );
+                return key
+                  ? brandThemes[key].colors.primary
+                  : brandThemes.default.colors.primary;
+              };
+              const brandColor = getBrandColor(product.brand);
+              
               return (
                 <div
                   key={product.id}
@@ -301,45 +318,54 @@ export const TierBar: React.FC<TierBarProps> = ({
                   <motion.div
                     className="relative cursor-pointer group"
                     style={{ x: "-50%" }}
-                    whileHover={{ scale: 1.3, zIndex: 30 }}
+                    whileHover={{ scale: 1.15, zIndex: 30 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    {/* Warm Spotlight on Track Below Logo */}
+                    {/* Subtle Glow on Track Below Logo */}
                     <div
                       className={cn(
                         "absolute left-1/2 -translate-x-1/2 transition-all duration-500",
                         "pointer-events-none",
                         activeItem === product.id
-                          ? "bottom-0 w-20 h-32 opacity-100"
-                          : "bottom-4 w-12 h-24 opacity-0 group-hover:opacity-60",
+                          ? "bottom-0 w-20 h-28 opacity-80"
+                          : "bottom-4 w-12 h-24 opacity-0 group-hover:opacity-40",
                       )}
                       style={{
-                        background:
-                          "radial-gradient(ellipse at center, rgba(255,200,100,0.4) 0%, rgba(255,160,60,0.2) 40%, transparent 70%)",
+                        background: `radial-gradient(ellipse at center, ${brandColor}66 0%, ${brandColor}33 40%, transparent 70%)`,
                         filter: "blur(12px)",
                       }}
                     />
 
-                    {/* Elevated Logo - Larger & Prominent */}
+                    {/* Elevated Logo - Clean & Professional */}
                     <div className="relative">
                       <BrandIcon
                         brand={product.brand}
                         className={cn(
-                          "w-12 h-12 transition-all duration-300",
+                          "w-10 h-10 transition-all duration-300",
                           activeItem === product.id
-                            ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110"
-                            : "opacity-80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)]",
+                            ? "drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] brightness-110 saturate-100 scale-110"
+                            : "opacity-90 saturate-100 brightness-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-105 group-hover:drop-shadow-[0_4px_8px_rgba(0,0,0,0.4)]",
                         )}
                       />
 
-                      {/* Track Illumination Spot */}
+                      {/* Track Illumination Spot (Subtle) */}
                       <div
                         className={cn(
                           "absolute left-1/2 -translate-x-1/2 rounded-full transition-all duration-500",
                           activeItem === product.id
-                            ? "bottom-[-40px] w-16 h-2 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent shadow-[0_0_20px_rgba(255,200,100,0.6)]"
-                            : "bottom-[-40px] w-8 h-1 bg-gradient-to-r from-transparent via-amber-500/0 to-transparent group-hover:via-amber-400/40 group-hover:w-12 group-hover:shadow-[0_0_12px_rgba(255,200,100,0.4)]",
+                            ? "bottom-[-40px] w-12 h-1 shadow-[0_0_12px_rgba(255,255,255,0.3)]"
+                            : "bottom-[-40px] w-4 h-0.5 group-hover:w-8",
                         )}
+                        style={{
+                          backgroundColor:
+                            activeItem === product.id
+                              ? `${brandColor}99`
+                              : "transparent",
+                          boxShadow:
+                            activeItem === product.id
+                              ? `0 0 12px ${brandColor}`
+                              : "none",
+                        }}
                       />
                     </div>
                   </motion.div>
@@ -357,54 +383,42 @@ export const TierBar: React.FC<TierBarProps> = ({
                         animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
                         exit={{ opacity: 0, scale: 0.9, x: "-50%" }}
                         transition={{ duration: 0.2 }}
-                        className="absolute bottom-full mb-6 left-1/2 w-96 z-50 pointer-events-none"
+                        className="absolute bottom-full mb-4 left-1/2 w-64 z-50 pointer-events-none"
                       >
-                        <div className="bg-gradient-to-br from-zinc-900/98 to-black/98 backdrop-blur-xl border border-amber-500/30 rounded-xl shadow-2xl shadow-amber-500/20 overflow-hidden">
-                          <div className="flex h-40">
-                            <div className="w-40 bg-gradient-to-br from-zinc-800/50 to-zinc-900/80 p-4 flex items-center justify-center border-r border-amber-500/20">
+                        <div 
+                          className="bg-zinc-900/95 backdrop-blur-md border rounded-lg shadow-xl overflow-hidden relative z-50"
+                          style={{ borderColor: `${brandColor}40` }}
+                        >
+                          <div className="flex h-24">
+                            <div className="w-24 bg-white/5 p-2 flex items-center justify-center border-r border-zinc-800">
                               <img
                                 src={product.displayImage}
-                                className="max-h-full max-w-full object-contain drop-shadow-[0_4px_12px_rgba(255,200,100,0.3)]"
+                                className="max-h-full max-w-full object-contain"
                                 alt={product.name}
                               />
                             </div>
-                            <div className="flex-1 p-4 flex flex-col justify-center">
-                              <div className="text-[11px] text-amber-400/80 uppercase tracking-widest font-mono mb-1">
+                            <div className="flex-1 p-3 flex flex-col justify-center min-w-0">
+                              <div className="text-[9px] uppercase tracking-wider font-semibold mb-0.5 truncate" style={{ color: `${brandColor}cc` }}>
                                 {product.brand}
                               </div>
-                              <div className="font-bold text-white text-lg leading-tight line-clamp-2 mb-2">
+                              <div className="font-medium text-white text-xs leading-snug line-clamp-2 mb-1">
                                 {product.name}
                               </div>
-                              <div className="font-mono text-amber-400 font-black text-xl">
+                              <div className="font-mono font-bold text-sm" style={{ color: brandColor }}>
                                 ₪{product.priceDisplay.toLocaleString()}
                               </div>
                             </div>
                           </div>
-                          <div className="grid grid-cols-2 gap-px bg-amber-500/10 text-[11px] font-mono text-zinc-400">
-                            <div className="bg-zinc-900/90 px-3 py-2 flex justify-between items-center">
-                              <span className="text-zinc-500">SKU</span>
-                              <span className="text-white font-bold">
-                                {product.sku || "N/A"}
-                              </span>
-                            </div>
-                            <div className="bg-zinc-900/90 px-3 py-2 flex justify-between items-center">
-                              <span className="text-zinc-500">STOCK</span>
-                              <span
-                                className={cn(
-                                  "font-bold",
-                                  product.availability === "in-stock"
-                                    ? "text-green-400"
-                                    : "text-red-400",
-                                )}
-                              >
-                                {product.availability === "in-stock"
-                                  ? "IN STOCK"
-                                  : "LOW"}
-                              </span>
-                            </div>
-                          </div>
+                          {/* Connecting Line - Positioned Relative to Tooltip Container */}
+                          <div 
+                             className="absolute top-full w-px h-3 bg-zinc-700 mx-auto" 
+                             style={{ 
+                               backgroundColor: `${brandColor}80`,
+                               left: "50%",
+                               transform: "translateX(-0.5px)" // Center the 1px line
+                             }} 
+                          />
                         </div>
-                        <div className="w-[2px] h-4 bg-gradient-to-b from-amber-500/60 to-transparent mx-auto" />
                       </motion.div>
                     )}
                   </AnimatePresence>
