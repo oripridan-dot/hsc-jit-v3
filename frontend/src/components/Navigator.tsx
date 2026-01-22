@@ -63,30 +63,30 @@ export const Navigator = () => {
   }, []);
 
   return (
-    <aside className="w-[80px] lg:w-[240px] bg-[#0f0f0f] border-r border-white/5 flex flex-col h-full z-20">
-      {/* 1. HEADER & SEARCH */}
-      <div className="p-4 border-b border-white/5">
-        <div className="flex items-center gap-3 mb-6 lg:mb-4 justify-center lg:justify-start">
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center shrink-0">
-            <span className="font-black text-white">H</span>
+    <aside className="w-20 lg:w-60 bg-gradient-to-b from-[#111] to-[#0f0f0f] border-r border-white/5 flex flex-col h-full z-20">
+      {/* 1. HEADER */}
+      <div className="px-3 py-5 border-b border-white/5">
+        <div className="flex items-center gap-2 justify-center lg:justify-start mb-4">
+          <div className="w-7 h-7 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg flex items-center justify-center shrink-0 shadow-lg shadow-indigo-500/20">
+            <span className="font-black text-white text-sm">H</span>
           </div>
-          <span className="font-bold text-white hidden lg:block tracking-tight">
-            Halilit SC
+          <span className="font-bold text-white hidden lg:block text-sm tracking-tight">
+            Halilit
           </span>
         </div>
 
-        {/* Visual Mode Toggle */}
-        <div className="bg-black/50 p-1 rounded-lg flex border border-white/10">
+        {/* Visual Mode Toggle - Refined */}
+        <div className="bg-black/40 p-0.5 rounded-md flex border border-white/10 gap-0.5">
           <button
             onClick={() => viewMode !== "category" && toggleViewMode()}
-            className={`flex-1 py-1.5 rounded text-[10px] font-bold transition-all ${viewMode === "category" ? "bg-indigo-600 text-white shadow" : "text-white/40 hover:text-white"}`}
+            className={`flex-1 py-1 rounded text-[9px] font-bold transition-all ${viewMode === "category" ? "bg-indigo-600/80 text-white shadow-sm shadow-indigo-500/30" : "text-white/40 hover:text-white/60"}`}
             title="Category mode"
           >
             CAT
           </button>
           <button
             onClick={() => viewMode !== "brand" && toggleViewMode()}
-            className={`flex-1 py-1.5 rounded text-[10px] font-bold transition-all ${viewMode === "brand" ? "bg-amber-600 text-white shadow" : "text-white/40 hover:text-white"}`}
+            className={`flex-1 py-1 rounded text-[9px] font-bold transition-all ${viewMode === "brand" ? "bg-amber-600/80 text-white shadow-sm shadow-amber-500/30" : "text-white/40 hover:text-white/60"}`}
             title="Brand mode"
           >
             BRD
@@ -95,7 +95,7 @@ export const Navigator = () => {
       </div>
 
       {/* 2. THE VISUAL LIST */}
-      <div className="flex-1 overflow-y-auto custom-scrollbar p-2 space-y-1">
+      <div className="flex-1 overflow-y-auto custom-scrollbar p-2.5 space-y-0.5">
         {loading ? (
           <div className="flex items-center justify-center h-full">
             <div className="w-6 h-6 border-2 border-indigo-500/30 border-t-indigo-500 rounded-full animate-spin" />
@@ -109,18 +109,18 @@ export const Navigator = () => {
                 <button
                   key={cat.id}
                   onClick={() => selectUniversalCategory(cat.id)}
-                  className={`w-full flex items-center gap-3 p-2 rounded-lg group transition-all ${isActive ? "bg-white/10 text-white" : "hover:bg-white/5 text-white/50"}`}
+                  className={`w-full flex items-center gap-2.5 p-2.5 rounded-lg group transition-all ${isActive ? "bg-white/10 text-white" : "hover:bg-white/5 text-white/50"}`}
                   title={cat.label}
                 >
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 ${isActive ? "scale-110 shadow-lg" : "grayscale group-hover:grayscale-0"}`}
+                    className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 ${isActive ? "scale-110 shadow-md shadow-current" : "grayscale group-hover:grayscale-0"}`}
                     style={{ backgroundColor: cat.color, color: "black" }}
                   >
                     {cat.label[0]}
                   </div>
-                  <div className="hidden lg:block text-left">
+                  <div className="hidden lg:block text-left min-w-0">
                     <div
-                      className={`text-xs font-bold ${isActive ? "text-white" : "text-white/70"}`}
+                      className={`text-sm font-semibold ${isActive ? "text-white" : "text-white/70"}`}
                     >
                       {cat.label}
                     </div>
@@ -139,11 +139,11 @@ export const Navigator = () => {
                   <button
                     key={brand.id}
                     onClick={() => selectBrand(brand.id)}
-                    className={`w-full flex items-center gap-3 p-2 rounded-lg group transition-all ${isActive ? "bg-white/10 ring-1 ring-white/20" : "hover:bg-white/5"}`}
+                    className={`w-full flex items-center gap-2.5 p-2.5 rounded-lg group transition-all ${isActive ? "bg-white/10 ring-1 ring-white/20" : "hover:bg-white/5"}`}
                     title={brand.name}
                   >
                     {/* The Logo Container */}
-                    <div className="w-8 h-8 bg-white rounded-md p-1 flex items-center justify-center shrink-0 overflow-hidden">
+                    <div className="w-7 h-7 bg-white rounded-md p-1 flex items-center justify-center shrink-0 overflow-hidden">
                       <BrandIcon
                         brand={brand.name}
                         className="w-full h-full object-contain"
@@ -153,12 +153,12 @@ export const Navigator = () => {
                     {/* Brand Name (Desktop Only) */}
                     <div className="hidden lg:block text-left min-w-0">
                       <div
-                        className={`text-xs font-bold truncate ${isActive ? "text-white" : "text-white/70 group-hover:text-white"}`}
+                        className={`text-sm font-semibold truncate ${isActive ? "text-white" : "text-white/70 group-hover:text-white"}`}
                       >
                         {brand.name}
                       </div>
-                      <div className="text-[9px] text-white/30 truncate">
-                        {brand.product_count} Products
+                      <div className="text-[10px] text-white/30 truncate">
+                        {brand.product_count} Items
                       </div>
                     </div>
                   </button>
@@ -169,11 +169,11 @@ export const Navigator = () => {
       </div>
 
       {/* 3. GLOBAL SEARCH TRIGGER */}
-      <div className="p-4 border-t border-white/5">
-        <button className="w-full flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 p-2 rounded-lg text-left text-white/40 hover:text-white transition-colors">
-          <Search size={14} />
-          <span className="text-xs hidden lg:inline">Quick Jump...</span>
-          <kbd className="hidden lg:inline ml-auto bg-black px-1.5 rounded text-[9px] font-mono border border-white/10">
+      <div className="px-3 py-4 border-t border-white/5 bg-gradient-to-t from-[#0f0f0f] to-transparent">
+        <button className="w-full flex items-center gap-1.5 bg-white/5 hover:bg-white/8 border border-white/10 hover:border-white/15 p-2 rounded-lg text-left text-white/40 hover:text-white/60 transition-all">
+          <Search size={13} className="shrink-0" />
+          <span className="text-[11px] hidden lg:inline">Jump...</span>
+          <kbd className="hidden lg:inline ml-auto bg-black/40 px-1.5 rounded text-[8px] font-mono border border-white/10 text-white/30">
             ⌘K
           </kbd>
         </button>

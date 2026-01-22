@@ -40,7 +40,7 @@ const BRAND_COLORS: Record<string, string> = {
 
 export const BrandIcon: React.FC<BrandIconProps> = ({
   brand,
-  className = "w-8 h-8",
+  className = "w-7 h-7",
   fallbackBg,
 }) => {
   const [imageError, setImageError] = useState(false);
@@ -51,7 +51,7 @@ export const BrandIcon: React.FC<BrandIconProps> = ({
     // Fallback: colored box with brand initial
     return (
       <div
-        className={`${className} flex items-center justify-center font-bold text-white text-xs rounded`}
+        className={`${className} flex items-center justify-center font-bold text-white text-xs rounded-md`}
         style={{ backgroundColor: brandColor }}
         title={brand}
       >

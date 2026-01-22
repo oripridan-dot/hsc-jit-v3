@@ -5,7 +5,7 @@
  * Grabs random flagship items from catalog to create immersive atmosphere
  */
 import { motion } from "framer-motion";
-import { PlayCircle, Sparkles } from "lucide-react";
+import { PlayCircle } from "lucide-react";
 import React, { useMemo } from "react";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { useNavigationStore } from "../../store/navigationStore";
@@ -14,103 +14,104 @@ export const GalaxyDashboard: React.FC = () => {
   const { selectUniversalCategory, selectBrand } = useNavigationStore();
 
   // Mock "Flagship" Data (In real app, fetch from RAG "high_tier" tag)
-  // These create the "Atmosphere" of the app
   const heroProduct = useMemo(
     () => ({
       name: "ROLAND FANTOM-8 EX",
       image:
-        "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1200&q=80",
-      tagline: "The World's Most Powerful Synthesizer",
+        "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1600&q=85",
+      tagline: "Professional Workstation Synthesizer",
       brand: "Roland",
     }),
     [],
   );
 
   return (
-    <div className="h-full w-full bg-[#050505] overflow-y-auto text-white relative">
-      {/* 1. HERO SECTION (Cinema Experience) */}
-      <div className="relative h-[60vh] w-full overflow-hidden flex items-end pb-16 px-12 group cursor-pointer">
-        {/* Immersive Background Image */}
+    <div className="h-full w-full bg-[#0a0a0a] overflow-y-auto text-white relative">
+      {/* 1. HERO SECTION - Refined Cinema Experience */}
+      <div className="relative w-full overflow-hidden flex items-end pb-20 px-16">
         <div className="absolute inset-0 z-0">
           <img
             src={heroProduct.image}
-            className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700"
+            className="w-full h-full object-cover opacity-50 hover:opacity-65 transition-opacity duration-1000"
             style={{
               maskImage:
-                "linear-gradient(to bottom, black 50%, transparent 100%)",
+                "linear-gradient(to bottom, black 40%, transparent 85%)",
             }}
             alt="Hero"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent" />
         </div>
 
-        {/* Hero Text */}
-        <div className="relative z-10 max-w-4xl">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="bg-amber-500 text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
-              Flagship Spotlight
+        {/* Hero Content - Refined Proportions */}
+        <div className="relative z-10 max-w-5xl py-20">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-black text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">
+              Flagship
             </span>
-            <span className="text-amber-500/80 text-xs font-mono uppercase tracking-widest">
+            <span className="text-amber-300 text-xs font-mono uppercase tracking-widest opacity-80">
               {heroProduct.brand}
             </span>
           </div>
-          <h1 className="text-7xl font-black uppercase tracking-tighter mb-4 leading-[0.9]">
+          <h1 className="text-6xl lg:text-7xl font-black uppercase tracking-tighter mb-6 leading-[0.95]">
             {heroProduct.name}
           </h1>
-          <p className="text-2xl text-white/60 font-light mb-8 max-w-xl">
+          <p className="text-xl lg:text-2xl text-white/50 font-light mb-12 max-w-2xl leading-relaxed">
             {heroProduct.tagline}
           </p>
 
           <button
             onClick={() => selectBrand("roland")}
-            className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white px-8 py-3.5 rounded-lg font-semibold transition-all shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40"
           >
-            <PlayCircle size={20} /> Experience Now
+            <PlayCircle size={18} />
+            Explore Collection
           </button>
         </div>
       </div>
 
-      {/* 2. VISUAL ENTRY POINTS (The Universal 10) */}
-      <div className="px-12 py-8">
-        <div className="flex items-center gap-2 mb-8 text-white/40">
-          <Sparkles size={16} />
-          <span className="text-xs font-bold uppercase tracking-widest">
-            Explore Categories
+      {/* 2. VISUAL ENTRY POINTS - Refined Grid */}
+      <div className="px-16 py-20">
+        <div className="flex items-center gap-3 mb-12">
+          <div className="w-1 h-6 bg-gradient-to-b from-indigo-500 to-transparent" />
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50">
+            Discover By Category
           </span>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {UNIVERSAL_CATEGORIES.slice(0, 8).map((cat, i) => (
             <motion.button
               key={cat.id}
               onClick={() => selectUniversalCategory(cat.id)}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.05 }}
-              className="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#111] border border-white/5 hover:border-white/20 transition-all hover:scale-[1.02]"
+              transition={{ delay: i * 0.06 }}
+              className="group relative aspect-square rounded-xl overflow-hidden bg-[#111] border border-white/5 hover:border-white/15 transition-all duration-300 hover:shadow-xl"
+              style={{
+                boxShadow: `inset 0 1px 0 rgba(255,255,255,0.05), 0 0 40px ${cat.color}00`,
+              }}
             >
-              {/* Abstract Visual Gradient based on Category Color */}
+              {/* Background Gradient */}
               <div
-                className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity"
+                className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity"
                 style={{
-                  background: `linear-gradient(to top right, ${cat.color}, transparent)`,
+                  background: `radial-gradient(circle at top right, ${cat.color}, transparent)`,
                 }}
               />
 
               {/* Content */}
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <div className="mb-auto opacity-50 group-hover:opacity-100 transition-opacity">
-                  {/* Icon would go here if we had Lucide map, or large text char */}
-                  <span className="text-4xl font-black text-white/20">
+                <div className="mb-auto opacity-40 group-hover:opacity-60 transition-opacity">
+                  <span className="text-5xl font-black text-white/20">
                     {cat.label[0]}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold uppercase leading-tight mb-1">
+                <h3 className="text-lg font-bold uppercase leading-tight mb-2 group-hover:text-white/95 transition-colors">
                   {cat.label}
                 </h3>
-                <div className="h-0.5 w-8 bg-white/20 group-hover:w-full group-hover:bg-white transition-all duration-500" />
-                <p className="text-[10px] text-white/50 mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                <div className="h-0.5 w-6 bg-white/20 group-hover:w-12 group-hover:bg-white/40 transition-all duration-500" />
+                <p className="text-[10px] text-white/40 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {cat.description}
                 </p>
               </div>
