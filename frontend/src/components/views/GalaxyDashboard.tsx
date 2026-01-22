@@ -7,13 +7,13 @@
  * - Smooth scrolling support
  * - Professional category cards
  * - Touch-optimized for mobile
- * 
+ *
  * ⭐ DYNAMIC IMAGE HARVESTING:
  * Instead of hardcoded paths, we pull real images from loaded catalogs.
  * This ensures the dashboard always displays valid product images that exist.
  */
 import { motion } from "framer-motion";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { catalogLoader } from "../../lib/catalogLoader";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { cn } from "../../lib/utils";
@@ -26,7 +26,9 @@ const DEFAULT_FALLBACK = ["/assets/react.svg"];
 export const GalaxyDashboard: React.FC = () => {
   const { selectUniversalCategory, selectSubcategory } = useNavigationStore();
   const [gridColumns, setGridColumns] = useState(3);
-  const [catalogImages, setCatalogImages] = useState<Record<string, string[]>>({});
+  const [catalogImages, setCatalogImages] = useState<Record<string, string[]>>(
+    {},
+  );
 
   // ============================================================
   // 1. DYNAMIC IMAGE HARVESTER
@@ -35,37 +37,46 @@ export const GalaxyDashboard: React.FC = () => {
   useEffect(() => {
     const loadCatalogImages = async () => {
       const imageLookup: Record<string, string[]> = {};
-      
+
       // Main brands to load (matches your available catalogs)
-      const brands = ["roland", "nord", "moog", "boss", "akai-professional", 
-                      "universal-audio", "warm-audio", "mackie", "teenage-engineering"];
-      
+      const brands = [
+        "roland",
+        "nord",
+        "moog",
+        "boss",
+        "akai-professional",
+        "universal-audio",
+        "warm-audio",
+        "mackie",
+        "teenage-engineering",
+      ];
+
       try {
         // Load all brand catalogs in parallel
-        const catalogPromises = brands.map(brand => 
-          catalogLoader.loadBrand(brand).catch(() => null)
+        const catalogPromises = brands.map((brand) =>
+          catalogLoader.loadBrand(brand).catch(() => null),
         );
-        
+
         const catalogs = await Promise.all(catalogPromises);
-        
+
         // Extract images from each catalog
         catalogs.forEach((catalog, idx) => {
           if (!catalog?.products) return;
-          
+
           const brand = brands[idx];
           const images = catalog.products
-            .map(p => p.images?.thumbnail || p.image_url)
+            .map((p) => p.images?.thumbnail || p.image_url)
             .filter((url): url is string => Boolean(url) && url.length > 0)
             .slice(0, 4); // Limit to 4 images per category
-          
+
           if (images.length > 0) {
             imageLookup[brand] = images;
           }
         });
-        
+
         // Build category-to-images mapping based on loaded data
         const categoryImages: Record<string, string[]> = {};
-        
+
         // Map categories to available brand images
         const categoryBrandMap: Record<string, string[]> = {
           "Keys & Pianos": ["roland", "nord", "moog"],
@@ -73,9 +84,13 @@ export const GalaxyDashboard: React.FC = () => {
           "Guitars & Amps": ["boss", "roland"],
           "Studio & Recording": ["universal-audio", "warm-audio", "moog"],
           "Live Sound": ["mackie", "roland", "universal-audio"],
-          "DJ & Production": ["teenage-engineering", "roland", "akai-professional"],
+          "DJ & Production": [
+            "teenage-engineering",
+            "roland",
+            "akai-professional",
+          ],
         };
-        
+
         // Populate category images from available brand data
         for (const [category, brands] of Object.entries(categoryBrandMap)) {
           const images: string[] = [];
@@ -88,13 +103,13 @@ export const GalaxyDashboard: React.FC = () => {
             categoryImages[category] = images.slice(0, 4);
           }
         }
-        
+
         setCatalogImages(categoryImages);
       } catch (err) {
         console.warn("Failed to load catalog images:", err);
       }
     };
-    
+
     loadCatalogImages();
   }, []);
 
@@ -175,8 +190,9 @@ export const GalaxyDashboard: React.FC = () => {
           >
             {visibleCategories.map((cat, index) => {
               // Use dynamic images from loaded catalogs, fallback to placeholder
-              const categoryImages = catalogImages[cat.label] || DEFAULT_FALLBACK;
-              
+              const categoryImages =
+                catalogImages[cat.label] || DEFAULT_FALLBACK;
+
               return (
                 <motion.div
                   key={cat.id}

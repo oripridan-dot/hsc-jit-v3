@@ -5,21 +5,27 @@ Run this whenever you regenerate images with forge_backbone.py
 """
 
 # ============================================================================
+
 # SINGLE COMMAND TO SYNC EVERYTHING
+
 # ============================================================================
 
 # 1. Navigate to backend
+
 # cd /workspaces/hsc-jit-v3/backend
 
 # 2. Run alignment (syncs JSON catalogs with actual images)
+
 # python3 align_images.py
 
 # 3. Done! All product URLs now point to real files on disk
+
 # ✅ Regenerate and commit: git add -A && git commit -m "Update catalogs and images"
 
-
 # ============================================================================
+
 # WHAT THE SCRIPT DOES
+
 # ============================================================================
 
 """
@@ -34,38 +40,43 @@ align_images.py performs these steps:
 Result: Every product in the catalog has a valid image_url
 """
 
-
 # ============================================================================
+
 # WHEN TO RUN
+
 # ============================================================================
 
 """
 After any of these:
+
 - You run forge_backbone.py to regenerate catalogs
 - You add new images to product_images/
 - You rename/reorganize image files
 - You add new brand catalogs
 - You want to sync after a big image refresh
-"""
-
+  """
 
 # ============================================================================
+
 # WHAT IT FIXES
+
 # ============================================================================
 
 """
 Before: Product says "use roland-fantom-06_thumb.webp" but file doesn't exist
-After:  Product says "use roland-prod-1_thumb.webp" (we verified it exists)
+After: Product says "use roland-prod-1_thumb.webp" (we verified it exists)
 
 GalaxyDashboard then loads these URLs from the JSON and displays real images!
 """
 
-
 # ============================================================================
+
 # COMPLETE WORKFLOW (After Image Regeneration)
+
 # ============================================================================
 
 WORKFLOW = """
+
 1. Regenerate images:
    cd /workspaces/hsc-jit-v3/backend
    python3 forge_backbone.py
@@ -74,7 +85,7 @@ WORKFLOW = """
    python3 reprocess_thumbnails.py
 
 3. Align catalogs:
-   python3 align_images.py  ← RUN THIS
+   python3 align_images.py ← RUN THIS
 
 4. Verify frontend:
    cd ../frontend
@@ -89,6 +100,6 @@ WORKFLOW = """
    git add -A
    git commit -m "Refresh catalogs and align images"
    git push origin main
-"""
+   """
 
 print(WORKFLOW)
