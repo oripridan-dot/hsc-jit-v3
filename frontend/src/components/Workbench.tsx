@@ -39,7 +39,9 @@ export const Workbench: React.FC = () => {
         }
       });
     }
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+    };
   }, [currentLevel]);
 
   // Load brand products when brand is selected
@@ -54,7 +56,9 @@ export const Workbench: React.FC = () => {
         }
       });
     }
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+    };
   }, [currentLevel, activePath]); // Removed activePath[0] to satisfy deps
 
   // Derived state for category products (Memoized instead of Effect)
@@ -64,9 +68,7 @@ export const Workbench: React.FC = () => {
       brandProducts.length > 0 &&
       activePath[1]
     ) {
-      return brandProducts.filter(
-        (p) => p.category === activePath[1],
-      );
+      return brandProducts.filter((p) => p.category === activePath[1]);
     }
     return [];
   }, [currentLevel, brandProducts, activePath]);

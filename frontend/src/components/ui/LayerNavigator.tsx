@@ -8,9 +8,8 @@ import { ChevronDown, ChevronRight, Maximize2, Minimize2 } from "lucide-react";
 import React, { useMemo, useState } from "react";
 import { useNavigationStore } from "../../store/navigationStore";
 import { brandThemes } from "../../styles/brandThemes";
-import type { Product } from "../../types";
-import { CandyCard } from "./CandyCard";
 import type { Product, ProductImage } from "../../types";
+import { CandyCard } from "./CandyCard";
 
 interface LayerNavigatorProps {
   products: Product[];
@@ -31,19 +30,22 @@ interface TierGroup {
 
 // Helper to safely extract main image from union type
 const getMainImage = (product: Product): string | undefined => {
-    if (product.image) return product.image;
-    if (product.images) {
-        if (Array.isArray(product.images)) {
-             const main = product.images.find(img => typeof img === 'object' && img.type === 'main') as ProductImage | undefined;
-             if (main) return main.url;
-             return typeof product.images[0] === 'string' ? product.images[0] : (product.images[0] as ProductImage)?.url;
-        } else if (typeof product.images === 'object') {
-            return product.images.main;
-        }
+  if (product.image) return product.image;
+  if (product.images) {
+    if (Array.isArray(product.images)) {
+      const main = product.images.find(
+        (img) => typeof img === "object" && img.type === "main",
+      ) as ProductImage | undefined;
+      if (main) return main.url;
+      return typeof product.images[0] === "string"
+        ? product.images[0]
+        : (product.images[0] as ProductImage)?.url;
+    } else if (typeof product.images === "object") {
+      return product.images.main;
     }
-    return product.image_url;
+  }
+  return product.image_url;
 };
-
 
 /**
  * Extracts and groups products for the next layer
