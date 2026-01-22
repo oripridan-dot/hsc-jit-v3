@@ -409,13 +409,12 @@ export const TierBar: React.FC<TierBarProps> = ({
                               </div>
                             </div>
                           </div>
-                          {/* Connecting Line - Positioned Relative to Tooltip Container */}
+                          {/* Connecting Line */}
                           <div 
-                             className="absolute top-full w-px h-3 bg-zinc-700 mx-auto" 
+                             className="w-px h-3" 
                              style={{ 
                                backgroundColor: `${brandColor}80`,
-                               left: "50%",
-                               transform: "translateX(-0.5px)" // Center the 1px line
+                               margin: "0 auto"
                              }} 
                           />
                         </div>
