@@ -5,8 +5,7 @@
 
 import { describe, it, expect, beforeEach } from 'vitest';
 import { useNavigationStore } from '../../src/store/navigationStore';
-import { mockProduct, mockProducts } from '../fixtures/mockData';
-import type { Product } from '../../src/types';
+import { mockProduct } from '../fixtures/mockData';
 
 describe('navigationStore - State Management', () => {
     beforeEach(() => {

@@ -24,6 +24,7 @@ describe('Performance Tests', () => {
             const query = 'drums';
             const startTime = performance.now();
 
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const results = allProducts.filter(p =>
                 p.name.toLowerCase().includes(query.toLowerCase())
             );

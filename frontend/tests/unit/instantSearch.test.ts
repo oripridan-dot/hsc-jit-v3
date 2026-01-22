@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest';
-import { mockProducts, mockProductsByCategory } from '../fixtures/mockData';
+import { mockProductsByCategory } from '../fixtures/mockData';
 import type { Product } from '../../src/types';
 
 describe('instantSearch - Fuse.js Fuzzy Search', () => {
