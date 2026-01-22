@@ -17,15 +17,15 @@ HSC Mission Control is a **static-first, production-ready product catalog system
 
 Every capability has exactly **one** way to execute:
 
-| Capability       | ONE WAY                                |
-| ---------------- | -------------------------------------- |
-| Generate Data    | `python3 backend/forge_backbone.py`    |
+| Capability       | ONE WAY                                   |
+| ---------------- | ----------------------------------------- |
+| Generate Data    | `python3 backend/forge_backbone.py`       |
 | Process Images   | `python3 backend/reprocess_thumbnails.py` |
-| Load Catalog     | `catalogLoader.loadBrand(brandId)`     |
-| Search Products  | `instantSearch.search(query, options)` |
-| Manage State     | Zustand `navigationStore`              |
-| Style Components | Tailwind CSS + CSS Variables           |
-| Design Tokens    | `index.css` + `DESIGN_SYSTEM.md`       |
+| Load Catalog     | `catalogLoader.loadBrand(brandId)`        |
+| Search Products  | `instantSearch.search(query, options)`    |
+| Manage State     | Zustand `navigationStore`                 |
+| Style Components | Tailwind CSS + CSS Variables              |
+| Design Tokens    | `index.css` + `DESIGN_SYSTEM.md`          |
 
 ### 2. Static First
 

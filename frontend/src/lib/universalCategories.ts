@@ -113,7 +113,8 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "pads",
         label: "Drum Pads",
-        image: "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
+        image:
+          "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
         brands: ["akai-professional"],
       },
     ],
@@ -173,7 +174,8 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "interfaces",
         label: "Audio Interfaces",
-        image: "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
+        image:
+          "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
         brands: ["universal-audio", "focusrite"],
       },
       {
@@ -203,7 +205,8 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "software",
         label: "Software",
-        image: "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
+        image:
+          "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
         brands: ["universal-audio"],
       },
     ],
@@ -263,7 +266,8 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "controllers",
         label: "DJ Controllers",
-        image: "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
+        image:
+          "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
         brands: ["akai-professional"],
       },
       {
@@ -275,7 +279,8 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "samplers",
         label: "Samplers",
-        image: "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
+        image:
+          "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
         brands: ["akai-professional"],
       },
       {
@@ -287,13 +292,15 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "production",
         label: "Production",
-        image: "/data/product_images/teenage-engineering/teenage-engineering-prod-1_thumb.webp",
+        image:
+          "/data/product_images/teenage-engineering/teenage-engineering-prod-1_thumb.webp",
         brands: ["teenage-engineering"],
       },
       {
         id: "accessories",
         label: "Accessories",
-        image: "/data/product_images/teenage-engineering/teenage-engineering-prod-3_thumb.webp",
+        image:
+          "/data/product_images/teenage-engineering/teenage-engineering-prod-3_thumb.webp",
         brands: ["teenage-engineering"],
       },
     ],

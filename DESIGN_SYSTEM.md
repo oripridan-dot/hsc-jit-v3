@@ -1,4 +1,5 @@
 # HSC-JIT v3.7 Design System
+
 ## "Mission Control" UI Architecture
 
 **Last Updated:** January 22, 2026  
@@ -35,24 +36,24 @@
 ### Base Studio Palette
 
 ```css
---studio-bg: #0e0e10;         /* Deepest matte black/grey - Main background */
---studio-panel: #18181b;      /* Module/panel background */
---studio-metal: #27272a;      /* Border/separator color */
+--studio-bg: #0e0e10; /* Deepest matte black/grey - Main background */
+--studio-panel: #18181b; /* Module/panel background */
+--studio-metal: #27272a; /* Border/separator color */
 ```
 
 ### Signal Colors (LED Indicators)
 
 ```css
---led-active: #00ff94;        /* Active/success state - Bright green */
---led-standby: #3f3f46;       /* Inactive/disabled state - Dim grey */
---led-record: #ff3333;        /* Alert/attention state - Red */
+--led-active: #00ff94; /* Active/success state - Bright green */
+--led-standby: #3f3f46; /* Inactive/disabled state - Dim grey */
+--led-record: #ff3333; /* Alert/attention state - Red */
 ```
 
 ### Glass Effects
 
 ```css
---glass-gloss: rgba(255, 255, 255, 0.08);   /* Subtle surface shine */
---glass-border: rgba(255, 255, 255, 0.15);  /* Glass edge highlight */
+--glass-gloss: rgba(255, 255, 255, 0.08); /* Subtle surface shine */
+--glass-border: rgba(255, 255, 255, 0.15); /* Glass edge highlight */
 ```
 
 ### Category Colors (Cognitive Anchors)
@@ -60,14 +61,14 @@
 Each category has a distinctive color for instant recognition:
 
 ```css
---cat-keys: #f59e0b;          /* Amber - Keys & Pianos */
---cat-drums: #ef4444;         /* Red - Drums & Percussion */
---cat-guitars: #3b82f6;       /* Blue - Guitars & Amps */
---cat-studio: #10b981;        /* Emerald - Studio & Recording */
---cat-live: #8b5cf6;          /* Violet - Live Sound */
---cat-dj: #ec4899;            /* Pink - DJ & Production */
---cat-headphones: #6366f1;    /* Indigo - Headphones */
---cat-accessories: #64748b;   /* Slate - Accessories */
+--cat-keys: #f59e0b; /* Amber - Keys & Pianos */
+--cat-drums: #ef4444; /* Red - Drums & Percussion */
+--cat-guitars: #3b82f6; /* Blue - Guitars & Amps */
+--cat-studio: #10b981; /* Emerald - Studio & Recording */
+--cat-live: #8b5cf6; /* Violet - Live Sound */
+--cat-dj: #ec4899; /* Pink - DJ & Production */
+--cat-headphones: #6366f1; /* Indigo - Headphones */
+--cat-accessories: #64748b; /* Slate - Accessories */
 ```
 
 ---
@@ -78,35 +79,36 @@ Each category has a distinctive color for instant recognition:
 
 ```css
 --space-0: 0;
---space-1: 4px;     /* 0.25rem - Micro spacing */
---space-2: 8px;     /* 0.5rem - Tight grouping */
---space-3: 12px;    /* 0.75rem - Standard gap */
---space-4: 16px;    /* 1rem - Default padding */
---space-6: 24px;    /* 1.5rem - Section spacing */
---space-8: 32px;    /* 2rem - Large gaps */
---space-12: 48px;   /* 3rem - Major sections */
+--space-1: 4px; /* 0.25rem - Micro spacing */
+--space-2: 8px; /* 0.5rem - Tight grouping */
+--space-3: 12px; /* 0.75rem - Standard gap */
+--space-4: 16px; /* 1rem - Default padding */
+--space-6: 24px; /* 1.5rem - Section spacing */
+--space-8: 32px; /* 2rem - Large gaps */
+--space-12: 48px; /* 3rem - Major sections */
 ```
 
 ### Component-Specific Spacing
 
 #### CandyCard (Subcategory Thumbnails)
+
 ```css
 /* Thumbnail container */
-padding: 16px;           /* 1rem - Breathing room */
+padding: 16px; /* 1rem - Breathing room */
 
 /* Thumbnail image */
-width: 64px;             /* 4rem - Optimized for clarity */
+width: 64px; /* 4rem - Optimized for clarity */
 height: 64px;
-margin-bottom: 4px;      /* 0.25rem - MINIMAL gap to label */
+margin-bottom: 4px; /* 0.25rem - MINIMAL gap to label */
 
 /* Label */
-font-size: 9px;          /* Micro typography */
-line-height: 1.2;        /* Tight leading */
-margin-top: 0;           /* NO gap - directly under thumbnail */
+font-size: 9px; /* Micro typography */
+line-height: 1.2; /* Tight leading */
+margin-top: 0; /* NO gap - directly under thumbnail */
 
 /* Brand badges */
-margin-top: 2px;         /* 0.125rem - Subtle separation */
-gap: 2px;                /* Tight badge grouping */
+margin-top: 2px; /* 0.125rem - Subtle separation */
+gap: 2px; /* Tight badge grouping */
 ```
 
 ---
@@ -118,6 +120,7 @@ gap: 2px;                /* Tight badge grouping */
 All product images processed through `/backend/services/visual_factory.py`:
 
 #### Thumbnail Images (400x400px)
+
 - **Format:** WebP, 92% quality
 - **Processing:**
   - AI background removal (rembg)
@@ -129,6 +132,7 @@ All product images processed through `/backend/services/visual_factory.py`:
 - **Usage:** Category grids, navigation, previews
 
 #### Inspection Images (2400px max)
+
 - **Format:** WebP, 95% quality
 - **Processing:**
   - High-resolution preservation
@@ -141,14 +145,14 @@ All product images processed through `/backend/services/visual_factory.py`:
 
 ```typescript
 // Thumbnails
-"/data/product_images/{brand}/{brand}-{product-slug}_thumb.webp"
+"/data/product_images/{brand}/{brand}-{product-slug}_thumb.webp";
 
 // Inspection
-"/data/product_images/{brand}/{brand}-{product-slug}_inspect.webp"
+"/data/product_images/{brand}/{brand}-{product-slug}_inspect.webp";
 
 // Examples:
-"/data/product_images/roland/roland-fantom-06_thumb.webp"
-"/data/product_images/nord/nord-nord-lead-a1_inspect.webp"
+"/data/product_images/roland/roland-fantom-06_thumb.webp";
+"/data/product_images/nord/nord-nord-lead-a1_inspect.webp";
 ```
 
 ---
@@ -158,38 +162,43 @@ All product images processed through `/backend/services/visual_factory.py`:
 ### Font Stack
 
 ```css
-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+font-family:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  sans-serif;
 ```
 
 ### Type Scale
 
 ```css
 /* Display/Headings */
---text-3xl: 30px;        /* Major section headers */
---text-2xl: 24px;        /* Panel titles */
---text-xl: 20px;         /* Card headers */
---text-lg: 18px;         /* Subheadings */
+--text-3xl: 30px; /* Major section headers */
+--text-2xl: 24px; /* Panel titles */
+--text-xl: 20px; /* Card headers */
+--text-lg: 18px; /* Subheadings */
 
 /* Body */
---text-base: 16px;       /* Default body text */
---text-sm: 14px;         /* Secondary text */
---text-xs: 12px;         /* Labels, captions */
+--text-base: 16px; /* Default body text */
+--text-sm: 14px; /* Secondary text */
+--text-xs: 12px; /* Labels, captions */
 
 /* Micro */
---text-2xs: 10px;        /* Timestamps, metadata */
---text-3xs: 9px;         /* Subcategory labels (CandyCard) */
---text-4xs: 8px;         /* Micro badges */
+--text-2xs: 10px; /* Timestamps, metadata */
+--text-3xs: 9px; /* Subcategory labels (CandyCard) */
+--text-4xs: 8px; /* Micro badges */
 ```
 
 ### Font Weights
 
 ```css
---font-light: 300;       /* Rarely used */
---font-normal: 400;      /* Body text */
---font-medium: 500;      /* Buttons, emphasis */
---font-semibold: 600;    /* Subheadings */
---font-bold: 700;        /* Headers */
---font-black: 900;       /* Display text, all-caps */
+--font-light: 300; /* Rarely used */
+--font-normal: 400; /* Body text */
+--font-medium: 500; /* Buttons, emphasis */
+--font-semibold: 600; /* Subheadings */
+--font-bold: 700; /* Headers */
+--font-black: 900; /* Display text, all-caps */
 ```
 
 ### Typography Rules
@@ -215,14 +224,15 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     <Title /> {/* Category name */}
     <SubcategoryGrid>
       <Thumbnail /> {/* 64x64px, 4px gap to label */}
-      <Label />    {/* 9px, tight line-height */}
-      <Badges />   {/* 2px top margin */}
+      <Label /> {/* 9px, tight line-height */}
+      <Badges /> {/* 2px top margin */}
     </SubcategoryGrid>
   </Content>
 </CandyCard>
 ```
 
 **Spacing Rules:**
+
 - Card padding: 16px
 - Thumbnail size: 64×64px
 - Thumbnail → Label gap: **4px** (reduced from 8px)
@@ -230,6 +240,7 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 - Grid gap: 8px
 
 **Visual Effects:**
+
 - Border: `border-white/20` → hover `border-white/50`
 - Active ring: `ring-2 ring-amber-400`
 - Thumbnail hover: `scale-105` transform
@@ -264,9 +275,9 @@ cursor: not-allowed;
 
 ```css
 /* Duration Standards */
---transition-fast: 150ms;    /* Micro-interactions */
---transition-base: 200ms;    /* Default */
---transition-slow: 300ms;    /* Emphasis */
+--transition-fast: 150ms; /* Micro-interactions */
+--transition-base: 200ms; /* Default */
+--transition-slow: 300ms; /* Emphasis */
 
 /* Easing */
 --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -281,11 +292,11 @@ cursor: not-allowed;
 
 ```css
 /* Mobile First */
---screen-sm: 640px;     /* Small tablets */
---screen-md: 768px;     /* Tablets */
---screen-lg: 1024px;    /* Laptops */
---screen-xl: 1280px;    /* Desktops */
---screen-2xl: 1536px;   /* Large displays */
+--screen-sm: 640px; /* Small tablets */
+--screen-md: 768px; /* Tablets */
+--screen-lg: 1024px; /* Laptops */
+--screen-xl: 1280px; /* Desktops */
+--screen-2xl: 1536px; /* Large displays */
 ```
 
 ### Component Adaptations
@@ -304,6 +315,7 @@ grid-template-columns: repeat(3, 1fr); /* Maintain 3 columns */
 ```
 
 **Thumbnail Sizing:**
+
 - Mobile: 48×48px (reduced for space)
 - Tablet+: 64×64px (optimal clarity)
 
@@ -354,7 +366,7 @@ Interactive Elements:
   /* ✅ CORRECT */
   padding: var(--space-4);
   color: var(--led-active);
-  
+
   /* ❌ WRONG */
   padding: 16px;
   color: #00ff94;
@@ -434,17 +446,20 @@ frontend/src/
 ## 🔄 Version History
 
 ### v3.7.4 (Current)
+
 - ✅ Reduced thumbnail-to-label gap from 8px → 4px
 - ✅ Optimized CandyCard spacing for density
 - ✅ Updated all subcategory thumbnails to use processed WebP images
 - ✅ Standardized 64×64px thumbnail size across categories
 
 ### v3.7.3
+
 - ✅ Introduced "Clear as Sun" high-contrast design
 - ✅ Implemented Visual Factory image processing
 - ✅ Added category color coding system
 
 ### v3.7.0
+
 - ✅ "Studio Dark" color palette
 - ✅ Universal category system
 - ✅ Glass/metal material effects
@@ -454,11 +469,13 @@ frontend/src/
 ## 🎯 Future Enhancements
 
 ### Short Term
+
 - [ ] Add dark/light mode toggle (maintain "Studio" aesthetic)
 - [ ] Implement category color theming in product details
 - [ ] Add micro-animations to brand badges
 
 ### Long Term
+
 - [ ] Custom font for display text (hardware-style)
 - [ ] Advanced image zoom with pan
 - [ ] 3D product viewer integration
