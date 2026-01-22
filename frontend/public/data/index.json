@@ -1,641 +1,1141 @@
 {
   "version": "3.7.4",
-  "build_timestamp": "2026-01-22T12:24:24.700308+00:00",
+  "build_timestamp": "2026-01-22T14:36:08.528971+00:00",
   "environment": "static_production",
-  "total_products": 50,
-  "total_verified": 50,
+  "total_products": 100,
+  "total_verified": 100,
   "brands": [
     {
       "id": "universal-audio",
       "name": "Universal Audio",
       "slug": "universal-audio",
-      "count": 5,
+      "count": 10,
       "brand_color": "#1f2937",
       "logo_url": "/assets/logos/universal-audio_logo.svg",
       "file": "universal-audio.json",
       "data_file": "universal-audio.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:24:35.553881+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.531058+00:00"
     },
     {
       "id": "moog",
       "name": "Moog",
       "slug": "moog",
-      "count": 5,
+      "count": 10,
       "brand_color": "#000000",
       "logo_url": "/assets/logos/moog_logo.png",
       "file": "moog.json",
       "data_file": "moog.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:24:42.841734+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.532474+00:00"
     },
     {
       "id": "boss",
       "name": "Boss",
       "slug": "boss",
-      "count": 5,
+      "count": 10,
       "brand_color": "#0055a4",
       "logo_url": "/assets/logos/boss_logo.png",
       "file": "boss.json",
       "data_file": "boss.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:24:50.330583+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.533919+00:00"
     },
     {
       "id": "roland",
       "name": "Roland",
       "slug": "roland",
-      "count": 5,
+      "count": 10,
       "brand_color": "#f89a1c",
       "logo_url": "/assets/logos/roland_logo.png",
       "file": "roland.json",
       "data_file": "roland.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:24:57.786276+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.535239+00:00"
     },
     {
       "id": "nord",
       "name": "Nord",
       "slug": "nord",
-      "count": 5,
+      "count": 10,
       "brand_color": "#e31e24",
       "logo_url": "/assets/logos/nord_logo.png",
       "file": "nord.json",
       "data_file": "nord.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:25:05.205646+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.536873+00:00"
     },
     {
       "id": "akai-professional",
       "name": "Akai Professional",
       "slug": "akai-professional",
-      "count": 5,
+      "count": 10,
       "brand_color": "#ff0000",
       "logo_url": "/assets/logos/akai-professional_logo.svg",
       "file": "akai-professional.json",
       "data_file": "akai-professional.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:25:12.426514+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.538449+00:00"
     },
     {
       "id": "teenage-engineering",
       "name": "Teenage Engineering",
       "slug": "teenage-engineering",
-      "count": 5,
+      "count": 10,
       "brand_color": "#e5e5e5",
       "logo_url": "/assets/logos/teenage-engineering_logo.svg",
       "file": "teenage-engineering.json",
       "data_file": "teenage-engineering.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:25:19.639731+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.539865+00:00"
     },
     {
       "id": "warm-audio",
       "name": "Warm Audio",
       "slug": "warm-audio",
-      "count": 5,
+      "count": 10,
       "brand_color": "#ea580c",
       "logo_url": "/assets/logos/warm-audio_logo.svg",
       "file": "warm-audio.json",
       "data_file": "warm-audio.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:25:26.829602+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.541403+00:00"
     },
     {
       "id": "adam-audio",
       "name": "Adam Audio",
       "slug": "adam-audio",
-      "count": 5,
+      "count": 10,
       "brand_color": "#000000",
       "logo_url": "/assets/logos/adam-audio_logo.svg",
       "file": "adam-audio.json",
       "data_file": "adam-audio.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:25:33.870998+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.542990+00:00"
     },
     {
       "id": "mackie",
       "name": "Mackie",
       "slug": "mackie",
-      "count": 5,
+      "count": 10,
       "brand_color": "#00a651",
       "logo_url": "/assets/logos/mackie_logo.svg",
       "file": "mackie.json",
       "data_file": "mackie.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-22T12:25:41.081093+00:00"
+      "product_count": 10,
+      "verified_count": 10,
+      "last_updated": "2026-01-22T14:36:08.544412+00:00"
     }
   ],
   "search_graph": [
     {
-      "id": "universal-audio-prod-1",
-      "label": "Apollo Twin X",
+      "id": "universal audio-volt-1",
+      "label": "Volt 1",
       "brand": "universal-audio",
       "brand_name": "Universal Audio",
       "category": "Studio",
       "subcategory": "Interface",
       "keywords": [],
-      "description": "The Apollo Twin X is a premium Interface from Universal Audio. It features state-of-the-art technolo"
+      "description": "The Volt 1 represents the entry tier of Universal Audio's Interface lineup. Designed for studio prof"
     },
     {
-      "id": "universal-audio-prod-2",
-      "label": "Apollo x4",
-      "brand": "universal-audio",
-      "brand_name": "Universal Audio",
-      "category": "Studio",
-      "subcategory": "Interface",
-      "keywords": [],
-      "description": "The Apollo x4 is a premium Interface from Universal Audio. It features state-of-the-art technology a"
-    },
-    {
-      "id": "universal-audio-prod-3",
+      "id": "universal audio-volt-276",
       "label": "Volt 276",
       "brand": "universal-audio",
       "brand_name": "Universal Audio",
       "category": "Studio",
       "subcategory": "Interface",
       "keywords": [],
-      "description": "The Volt 276 is a premium Interface from Universal Audio. It features state-of-the-art technology an"
+      "description": "The Volt 276 represents the entry tier of Universal Audio's Interface lineup. Designed for studio pr"
     },
     {
-      "id": "universal-audio-prod-4",
-      "label": "UAFX Dream '65",
+      "id": "universal audio-apollo-solo",
+      "label": "Apollo Solo",
       "brand": "universal-audio",
       "brand_name": "Universal Audio",
-      "category": "Guitar",
-      "subcategory": "Pedal",
+      "category": "Studio",
+      "subcategory": "Interface",
       "keywords": [],
-      "description": "The UAFX Dream '65 is a premium Pedal from Universal Audio. It features state-of-the-art technology "
+      "description": "The Apollo Solo represents the standard tier of Universal Audio's Interface lineup. Designed for stu"
     },
     {
-      "id": "universal-audio-prod-5",
+      "id": "universal audio-apollo-twin-x-duo",
+      "label": "Apollo Twin X Duo",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The Apollo Twin X Duo represents the standard tier of Universal Audio's Interface lineup. Designed f"
+    },
+    {
+      "id": "universal audio-apollo-twin-x-quad",
+      "label": "Apollo Twin X Quad",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The Apollo Twin X Quad represents the standard tier of Universal Audio's Interface lineup. Designed "
+    },
+    {
+      "id": "universal audio-apollo-x4",
+      "label": "Apollo x4",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The Apollo x4 represents the flagship tier of Universal Audio's Interface lineup. Designed for studi"
+    },
+    {
+      "id": "universal audio-apollo-x8p",
+      "label": "Apollo x8p",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The Apollo x8p represents the flagship tier of Universal Audio's Interface lineup. Designed for stud"
+    },
+    {
+      "id": "universal audio-sphere-dlx",
       "label": "Sphere DLX",
       "brand": "universal-audio",
       "brand_name": "Universal Audio",
       "category": "Studio",
       "subcategory": "Microphone",
       "keywords": [],
-      "description": "The Sphere DLX is a premium Microphone from Universal Audio. It features state-of-the-art technology"
+      "description": "The Sphere DLX represents the flagship tier of Universal Audio's Microphone lineup. Designed for stu"
     },
     {
-      "id": "moog-prod-1",
+      "id": "universal audio-sd-1",
+      "label": "SD-1",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Microphone",
+      "keywords": [],
+      "description": "The SD-1 represents the entry tier of Universal Audio's Microphone lineup. Designed for studio profe"
+    },
+    {
+      "id": "universal audio-uafx-dream-65",
+      "label": "UAFX Dream 65",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Guitar",
+      "subcategory": "Pedal",
+      "keywords": [],
+      "description": "The UAFX Dream 65 represents the standard tier of Universal Audio's Pedal lineup. Designed for guita"
+    },
+    {
+      "id": "moog-mavis",
+      "label": "Mavis",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Mavis represents the entry tier of Moog's Synthesizer lineup. Designed for keys professionals."
+    },
+    {
+      "id": "moog-mother-32",
+      "label": "Mother-32",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Semi-Modular",
+      "keywords": [],
+      "description": "The Mother-32 represents the standard tier of Moog's Semi-Modular lineup. Designed for keys professi"
+    },
+    {
+      "id": "moog-dfam",
+      "label": "DFAM",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Drums",
+      "subcategory": "Percussion",
+      "keywords": [],
+      "description": "The DFAM represents the standard tier of Moog's Percussion lineup. Designed for drums professionals."
+    },
+    {
+      "id": "moog-subharmonicon",
+      "label": "Subharmonicon",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Semi-Modular",
+      "keywords": [],
+      "description": "The Subharmonicon represents the standard tier of Moog's Semi-Modular lineup. Designed for keys prof"
+    },
+    {
+      "id": "moog-grandmother",
+      "label": "Grandmother",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Grandmother represents the standard tier of Moog's Synthesizer lineup. Designed for keys profess"
+    },
+    {
+      "id": "moog-matriarch",
+      "label": "Matriarch",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Matriarch represents the flagship tier of Moog's Synthesizer lineup. Designed for keys professio"
+    },
+    {
+      "id": "moog-minimoog-model-d",
       "label": "Minimoog Model D",
       "brand": "moog",
       "brand_name": "Moog",
       "category": "Keys",
       "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The Minimoog Model D is a premium Synthesizer from Moog. It features state-of-the-art technology and"
+      "description": "The Minimoog Model D represents the flagship tier of Moog's Synthesizer lineup. Designed for keys pr"
     },
     {
-      "id": "moog-prod-2",
+      "id": "moog-subsequent-37",
       "label": "Subsequent 37",
       "brand": "moog",
       "brand_name": "Moog",
       "category": "Keys",
       "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The Subsequent 37 is a premium Synthesizer from Moog. It features state-of-the-art technology and su"
+      "description": "The Subsequent 37 represents the standard tier of Moog's Synthesizer lineup. Designed for keys profe"
     },
     {
-      "id": "moog-prod-3",
-      "label": "Matriarch",
+      "id": "moog-subsequent-25",
+      "label": "Subsequent 25",
       "brand": "moog",
       "brand_name": "Moog",
       "category": "Keys",
-      "subcategory": "Semi-Modular",
+      "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The Matriarch is a premium Semi-Modular from Moog. It features state-of-the-art technology and super"
+      "description": "The Subsequent 25 represents the entry tier of Moog's Synthesizer lineup. Designed for keys professi"
     },
     {
-      "id": "moog-prod-4",
-      "label": "Grandmother",
+      "id": "moog-moog-one-16",
+      "label": "Moog One 16",
       "brand": "moog",
       "brand_name": "Moog",
       "category": "Keys",
-      "subcategory": "Semi-Modular",
+      "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The Grandmother is a premium Semi-Modular from Moog. It features state-of-the-art technology and sup"
+      "description": "The Moog One 16 represents the flagship tier of Moog's Synthesizer lineup. Designed for keys profess"
     },
     {
-      "id": "moog-prod-5",
-      "label": "Moog One",
-      "brand": "moog",
-      "brand_name": "Moog",
-      "category": "Keys",
-      "subcategory": "Polyphonic",
-      "keywords": [],
-      "description": "The Moog One is a premium Polyphonic from Moog. It features state-of-the-art technology and superior"
-    },
-    {
-      "id": "boss-prod-1",
-      "label": "Katana-50",
+      "id": "boss-katana-50-gen3",
+      "label": "Katana-50 Gen3",
       "brand": "boss",
       "brand_name": "Boss",
       "category": "Guitar",
-      "subcategory": "Amplifiers",
+      "subcategory": "Amplifier",
       "keywords": [],
-      "description": "The Katana-50 is a premium Amplifiers from Boss. It features state-of-the-art technology and superio"
+      "description": "The Katana-50 Gen3 represents the entry tier of Boss's Amplifier lineup. Designed for guitar profess"
     },
     {
-      "id": "boss-prod-2",
+      "id": "boss-katana-100-gen3",
+      "label": "Katana-100 Gen3",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Amplifier",
+      "keywords": [],
+      "description": "The Katana-100 Gen3 represents the standard tier of Boss's Amplifier lineup. Designed for guitar pro"
+    },
+    {
+      "id": "boss-nextone-special",
+      "label": "Nextone Special",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Amplifier",
+      "keywords": [],
+      "description": "The Nextone Special represents the flagship tier of Boss's Amplifier lineup. Designed for guitar pro"
+    },
+    {
+      "id": "boss-gt-1",
+      "label": "GT-1",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "keywords": [],
+      "description": "The GT-1 represents the entry tier of Boss's Multi-Effects lineup. Designed for guitar professionals"
+    },
+    {
+      "id": "boss-gt-1000core",
+      "label": "GT-1000CORE",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "keywords": [],
+      "description": "The GT-1000CORE represents the standard tier of Boss's Multi-Effects lineup. Designed for guitar pro"
+    },
+    {
+      "id": "boss-gt-1000",
       "label": "GT-1000",
       "brand": "boss",
       "brand_name": "Boss",
       "category": "Guitar",
       "subcategory": "Multi-Effects",
       "keywords": [],
-      "description": "The GT-1000 is a premium Multi-Effects from Boss. It features state-of-the-art technology and superi"
+      "description": "The GT-1000 represents the flagship tier of Boss's Multi-Effects lineup. Designed for guitar profess"
     },
     {
-      "id": "boss-prod-3",
+      "id": "boss-rc-5",
+      "label": "RC-5",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Looper",
+      "keywords": [],
+      "description": "The RC-5 represents the entry tier of Boss's Looper lineup. Designed for guitar professionals."
+    },
+    {
+      "id": "boss-rc-505mkii",
       "label": "RC-505mkII",
       "brand": "boss",
       "brand_name": "Boss",
-      "category": "Effects",
-      "subcategory": "Loopers",
+      "category": "Guitar",
+      "subcategory": "Looper",
       "keywords": [],
-      "description": "The RC-505mkII is a premium Loopers from Boss. It features state-of-the-art technology and superior "
+      "description": "The RC-505mkII represents the flagship tier of Boss's Looper lineup. Designed for guitar professiona"
     },
     {
-      "id": "boss-prod-4",
-      "label": "DS-1W",
+      "id": "boss-dm-101",
+      "label": "DM-101",
       "brand": "boss",
       "brand_name": "Boss",
-      "category": "Effects",
-      "subcategory": "Distortion",
-      "keywords": [],
-      "description": "The DS-1W is a premium Distortion from Boss. It features state-of-the-art technology and superior bu"
-    },
-    {
-      "id": "boss-prod-5",
-      "label": "DD-8",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "Effects",
+      "category": "Guitar",
       "subcategory": "Delay",
       "keywords": [],
-      "description": "The DD-8 is a premium Delay from Boss. It features state-of-the-art technology and superior build qu"
+      "description": "The DM-101 represents the flagship tier of Boss's Delay lineup. Designed for guitar professionals."
     },
     {
-      "id": "roland-prod-1",
+      "id": "boss-gx-100",
+      "label": "GX-100",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "keywords": [],
+      "description": "The GX-100 represents the standard tier of Boss's Multi-Effects lineup. Designed for guitar professi"
+    },
+    {
+      "id": "roland-fantom-06",
       "label": "Fantom-06",
       "brand": "roland",
       "brand_name": "Roland",
       "category": "Keys",
       "subcategory": "Workstation",
       "keywords": [],
-      "description": "The Fantom-06 is a premium Workstation from Roland. It features state-of-the-art technology and supe"
+      "description": "The Fantom-06 represents the entry tier of Roland's Workstation lineup. Designed for keys profession"
     },
     {
-      "id": "roland-prod-2",
+      "id": "roland-fantom-07",
+      "label": "Fantom-07",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "Keys",
+      "subcategory": "Workstation",
+      "keywords": [],
+      "description": "The Fantom-07 represents the standard tier of Roland's Workstation lineup. Designed for keys profess"
+    },
+    {
+      "id": "roland-fantom-08",
+      "label": "Fantom-08",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "Keys",
+      "subcategory": "Workstation",
+      "keywords": [],
+      "description": "The Fantom-08 represents the flagship tier of Roland's Workstation lineup. Designed for keys profess"
+    },
+    {
+      "id": "roland-rd-88",
+      "label": "RD-88",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The RD-88 represents the entry tier of Roland's Stage Piano lineup. Designed for keys professionals."
+    },
+    {
+      "id": "roland-rd-2000",
+      "label": "RD-2000",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The RD-2000 represents the flagship tier of Roland's Stage Piano lineup. Designed for keys professio"
+    },
+    {
+      "id": "roland-jupiter-xm",
+      "label": "Jupiter-Xm",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Jupiter-Xm represents the standard tier of Roland's Synthesizer lineup. Designed for keys profes"
+    },
+    {
+      "id": "roland-jupiter-x",
       "label": "Jupiter-X",
       "brand": "roland",
       "brand_name": "Roland",
       "category": "Keys",
       "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The Jupiter-X is a premium Synthesizer from Roland. It features state-of-the-art technology and supe"
+      "description": "The Jupiter-X represents the flagship tier of Roland's Synthesizer lineup. Designed for keys profess"
     },
     {
-      "id": "roland-prod-3",
+      "id": "roland-tr-8s",
       "label": "TR-8S",
       "brand": "roland",
       "brand_name": "Roland",
-      "category": "Production",
+      "category": "Drums",
       "subcategory": "Drum Machine",
       "keywords": [],
-      "description": "The TR-8S is a premium Drum Machine from Roland. It features state-of-the-art technology and superio"
+      "description": "The TR-8S represents the standard tier of Roland's Drum Machine lineup. Designed for drums professio"
     },
     {
-      "id": "roland-prod-4",
+      "id": "roland-td-07kv",
+      "label": "TD-07KV",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "Drums",
+      "subcategory": "V-Drums",
+      "keywords": [],
+      "description": "The TD-07KV represents the entry tier of Roland's V-Drums lineup. Designed for drums professionals."
+    },
+    {
+      "id": "roland-td-50kv2",
       "label": "TD-50KV2",
       "brand": "roland",
       "brand_name": "Roland",
       "category": "Drums",
       "subcategory": "V-Drums",
       "keywords": [],
-      "description": "The TD-50KV2 is a premium V-Drums from Roland. It features state-of-the-art technology and superior "
+      "description": "The TD-50KV2 represents the flagship tier of Roland's V-Drums lineup. Designed for drums professiona"
     },
     {
-      "id": "roland-prod-5",
-      "label": "SP-404MKII",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "Production",
-      "subcategory": "Sampler",
-      "keywords": [],
-      "description": "The SP-404MKII is a premium Sampler from Roland. It features state-of-the-art technology and superio"
-    },
-    {
-      "id": "nord-prod-1",
-      "label": "Nord Stage 4",
+      "id": "nord-nord-electro-6d-61",
+      "label": "Nord Electro 6D 61",
       "brand": "nord",
       "brand_name": "Nord",
       "category": "Keys",
       "subcategory": "Stage Piano",
       "keywords": [],
-      "description": "The Nord Stage 4 is a premium Stage Piano from Nord. It features state-of-the-art technology and sup"
+      "description": "The Nord Electro 6D 61 represents the entry tier of Nord's Stage Piano lineup. Designed for keys pro"
     },
     {
-      "id": "nord-prod-2",
-      "label": "Nord Piano 5",
+      "id": "nord-nord-electro-6d-73",
+      "label": "Nord Electro 6D 73",
       "brand": "nord",
       "brand_name": "Nord",
       "category": "Keys",
       "subcategory": "Stage Piano",
       "keywords": [],
-      "description": "The Nord Piano 5 is a premium Stage Piano from Nord. It features state-of-the-art technology and sup"
+      "description": "The Nord Electro 6D 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys "
     },
     {
-      "id": "nord-prod-3",
-      "label": "Nord Electro 6",
+      "id": "nord-nord-piano-5-73",
+      "label": "Nord Piano 5 73",
       "brand": "nord",
       "brand_name": "Nord",
       "category": "Keys",
-      "subcategory": "Stage Keyboard",
+      "subcategory": "Stage Piano",
       "keywords": [],
-      "description": "The Nord Electro 6 is a premium Stage Keyboard from Nord. It features state-of-the-art technology an"
+      "description": "The Nord Piano 5 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys pro"
     },
     {
-      "id": "nord-prod-4",
+      "id": "nord-nord-piano-5-88",
+      "label": "Nord Piano 5 88",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The Nord Piano 5 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys pro"
+    },
+    {
+      "id": "nord-nord-stage-4-compact",
+      "label": "Nord Stage 4 Compact",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The Nord Stage 4 Compact represents the standard tier of Nord's Stage Piano lineup. Designed for key"
+    },
+    {
+      "id": "nord-nord-stage-4-88",
+      "label": "Nord Stage 4 88",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The Nord Stage 4 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys pro"
+    },
+    {
+      "id": "nord-nord-wave-2",
       "label": "Nord Wave 2",
       "brand": "nord",
       "brand_name": "Nord",
       "category": "Keys",
       "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The Nord Wave 2 is a premium Synthesizer from Nord. It features state-of-the-art technology and supe"
+      "description": "The Nord Wave 2 represents the standard tier of Nord's Synthesizer lineup. Designed for keys profess"
     },
     {
-      "id": "nord-prod-5",
+      "id": "nord-nord-lead-a1",
       "label": "Nord Lead A1",
       "brand": "nord",
       "brand_name": "Nord",
       "category": "Keys",
       "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The Nord Lead A1 is a premium Synthesizer from Nord. It features state-of-the-art technology and sup"
+      "description": "The Nord Lead A1 represents the entry tier of Nord's Synthesizer lineup. Designed for keys professio"
     },
     {
-      "id": "akai-professional-prod-1",
+      "id": "nord-nord-drum-3p",
+      "label": "Nord Drum 3P",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "Drums",
+      "subcategory": "Percussion",
+      "keywords": [],
+      "description": "The Nord Drum 3P represents the standard tier of Nord's Percussion lineup. Designed for drums profes"
+    },
+    {
+      "id": "nord-nord-grand",
+      "label": "Nord Grand",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The Nord Grand represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professi"
+    },
+    {
+      "id": "akai professional-mpk-mini-mk3",
+      "label": "MPK Mini Mk3",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Keys",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The MPK Mini Mk3 represents the entry tier of Akai Professional's Controller lineup. Designed for ke"
+    },
+    {
+      "id": "akai professional-mpk249",
+      "label": "MPK249",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Keys",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The MPK249 represents the standard tier of Akai Professional's Controller lineup. Designed for keys "
+    },
+    {
+      "id": "akai professional-mpk261",
+      "label": "MPK261",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Keys",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The MPK261 represents the standard tier of Akai Professional's Controller lineup. Designed for keys "
+    },
+    {
+      "id": "akai professional-apc-mini-mk2",
+      "label": "APC Mini Mk2",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "DJ",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The APC Mini Mk2 represents the entry tier of Akai Professional's Controller lineup. Designed for dj"
+    },
+    {
+      "id": "akai professional-apc40-mk2",
+      "label": "APC40 Mk2",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "DJ",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The APC40 Mk2 represents the flagship tier of Akai Professional's Controller lineup. Designed for dj"
+    },
+    {
+      "id": "akai professional-mpc-one+",
       "label": "MPC One+",
       "brand": "akai-professional",
       "brand_name": "Akai Professional",
-      "category": "Production",
-      "subcategory": "MPC",
+      "category": "DJ",
+      "subcategory": "Production",
       "keywords": [],
-      "description": "The MPC One+ is a premium MPC from Akai Professional. It features state-of-the-art technology and su"
+      "description": "The MPC One+ represents the standard tier of Akai Professional's Production lineup. Designed for dj "
     },
     {
-      "id": "akai-professional-prod-2",
+      "id": "akai professional-mpc-live-ii",
       "label": "MPC Live II",
       "brand": "akai-professional",
       "brand_name": "Akai Professional",
-      "category": "Production",
-      "subcategory": "MPC",
+      "category": "DJ",
+      "subcategory": "Production",
       "keywords": [],
-      "description": "The MPC Live II is a premium MPC from Akai Professional. It features state-of-the-art technology and"
+      "description": "The MPC Live II represents the standard tier of Akai Professional's Production lineup. Designed for "
     },
     {
-      "id": "akai-professional-prod-3",
-      "label": "MPK Mini MK3",
+      "id": "akai professional-mpc-x-se",
+      "label": "MPC X SE",
       "brand": "akai-professional",
       "brand_name": "Akai Professional",
-      "category": "Keys",
-      "subcategory": "Controller",
+      "category": "DJ",
+      "subcategory": "Production",
       "keywords": [],
-      "description": "The MPK Mini MK3 is a premium Controller from Akai Professional. It features state-of-the-art techno"
+      "description": "The MPC X SE represents the flagship tier of Akai Professional's Production lineup. Designed for dj "
     },
     {
-      "id": "akai-professional-prod-4",
-      "label": "APC64",
-      "brand": "akai-professional",
-      "brand_name": "Akai Professional",
-      "category": "Production",
-      "subcategory": "Controller",
-      "keywords": [],
-      "description": "The APC64 is a premium Controller from Akai Professional. It features state-of-the-art technology an"
-    },
-    {
-      "id": "akai-professional-prod-5",
+      "id": "akai professional-force",
       "label": "Force",
       "brand": "akai-professional",
       "brand_name": "Akai Professional",
-      "category": "Production",
-      "subcategory": "Standalone",
+      "category": "DJ",
+      "subcategory": "Production",
       "keywords": [],
-      "description": "The Force is a premium Standalone from Akai Professional. It features state-of-the-art technology an"
+      "description": "The Force represents the standard tier of Akai Professional's Production lineup. Designed for dj pro"
     },
     {
-      "id": "teenage-engineering-prod-1",
-      "label": "OP-1 Field",
+      "id": "akai professional-fire",
+      "label": "Fire",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "DJ",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The Fire represents the entry tier of Akai Professional's Controller lineup. Designed for dj profess"
+    },
+    {
+      "id": "teenage engineering-po-33-ko",
+      "label": "PO-33 KO",
       "brand": "teenage-engineering",
       "brand_name": "Teenage Engineering",
       "category": "Keys",
-      "subcategory": "Synthesizer",
+      "subcategory": "Pocket Operator",
       "keywords": [],
-      "description": "The OP-1 Field is a premium Synthesizer from Teenage Engineering. It features state-of-the-art techn"
+      "description": "The PO-33 KO represents the entry tier of Teenage Engineering's Pocket Operator lineup. Designed for"
     },
     {
-      "id": "teenage-engineering-prod-2",
+      "id": "teenage engineering-po-32-tonic",
+      "label": "PO-32 Tonic",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Keys",
+      "subcategory": "Pocket Operator",
+      "keywords": [],
+      "description": "The PO-32 Tonic represents the entry tier of Teenage Engineering's Pocket Operator lineup. Designed "
+    },
+    {
+      "id": "teenage engineering-op-z",
       "label": "OP-Z",
       "brand": "teenage-engineering",
       "brand_name": "Teenage Engineering",
       "category": "Keys",
       "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "The OP-Z is a premium Synthesizer from Teenage Engineering. It features state-of-the-art technology "
+      "description": "The OP-Z represents the standard tier of Teenage Engineering's Synthesizer lineup. Designed for keys"
     },
     {
-      "id": "teenage-engineering-prod-3",
+      "id": "teenage engineering-op-1-field",
+      "label": "OP-1 Field",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The OP-1 Field represents the flagship tier of Teenage Engineering's Synthesizer lineup. Designed fo"
+    },
+    {
+      "id": "teenage engineering-tx-6",
       "label": "TX-6",
       "brand": "teenage-engineering",
       "brand_name": "Teenage Engineering",
       "category": "Studio",
       "subcategory": "Mixer",
       "keywords": [],
-      "description": "The TX-6 is a premium Mixer from Teenage Engineering. It features state-of-the-art technology and su"
+      "description": "The TX-6 represents the flagship tier of Teenage Engineering's Mixer lineup. Designed for studio pro"
     },
     {
-      "id": "teenage-engineering-prod-4",
-      "label": "EP-133 K.O. II",
+      "id": "teenage engineering-cm-15",
+      "label": "CM-15",
       "brand": "teenage-engineering",
       "brand_name": "Teenage Engineering",
-      "category": "Production",
-      "subcategory": "Sampler",
+      "category": "Studio",
+      "subcategory": "Microphone",
       "keywords": [],
-      "description": "The EP-133 K.O. II is a premium Sampler from Teenage Engineering. It features state-of-the-art techn"
+      "description": "The CM-15 represents the flagship tier of Teenage Engineering's Microphone lineup. Designed for stud"
     },
     {
-      "id": "teenage-engineering-prod-5",
+      "id": "teenage engineering-tp-7",
+      "label": "TP-7",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Studio",
+      "subcategory": "Recorder",
+      "keywords": [],
+      "description": "The TP-7 represents the flagship tier of Teenage Engineering's Recorder lineup. Designed for studio "
+    },
+    {
+      "id": "teenage engineering-ep-133-ko-ii",
+      "label": "EP-133 KO II",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "DJ",
+      "subcategory": "Sampler",
+      "keywords": [],
+      "description": "The EP-133 KO II represents the standard tier of Teenage Engineering's Sampler lineup. Designed for "
+    },
+    {
+      "id": "teenage engineering-ob-4",
       "label": "OB-4",
       "brand": "teenage-engineering",
       "brand_name": "Teenage Engineering",
-      "category": "Audio",
+      "category": "PA",
       "subcategory": "Speaker",
       "keywords": [],
-      "description": "The OB-4 is a premium Speaker from Teenage Engineering. It features state-of-the-art technology and "
+      "description": "The OB-4 represents the standard tier of Teenage Engineering's Speaker lineup. Designed for pa profe"
     },
     {
-      "id": "warm-audio-prod-1",
+      "id": "teenage engineering-od-11",
+      "label": "OD-11",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "PA",
+      "subcategory": "Speaker",
+      "keywords": [],
+      "description": "The OD-11 represents the flagship tier of Teenage Engineering's Speaker lineup. Designed for pa prof"
+    },
+    {
+      "id": "warm audio-wa-87-r2",
       "label": "WA-87 R2",
       "brand": "warm-audio",
       "brand_name": "Warm Audio",
       "category": "Studio",
       "subcategory": "Microphone",
       "keywords": [],
-      "description": "The WA-87 R2 is a premium Microphone from Warm Audio. It features state-of-the-art technology and su"
+      "description": "The WA-87 R2 represents the standard tier of Warm Audio's Microphone lineup. Designed for studio pro"
     },
     {
-      "id": "warm-audio-prod-2",
-      "label": "WA-2A",
-      "brand": "warm-audio",
-      "brand_name": "Warm Audio",
-      "category": "Studio",
-      "subcategory": "Compressor",
-      "keywords": [],
-      "description": "The WA-2A is a premium Compressor from Warm Audio. It features state-of-the-art technology and super"
-    },
-    {
-      "id": "warm-audio-prod-3",
-      "label": "WA76",
-      "brand": "warm-audio",
-      "brand_name": "Warm Audio",
-      "category": "Studio",
-      "subcategory": "Compressor",
-      "keywords": [],
-      "description": "The WA76 is a premium Compressor from Warm Audio. It features state-of-the-art technology and superi"
-    },
-    {
-      "id": "warm-audio-prod-4",
+      "id": "warm audio-wa-47",
       "label": "WA-47",
       "brand": "warm-audio",
       "brand_name": "Warm Audio",
       "category": "Studio",
       "subcategory": "Microphone",
       "keywords": [],
-      "description": "The WA-47 is a premium Microphone from Warm Audio. It features state-of-the-art technology and super"
+      "description": "The WA-47 represents the flagship tier of Warm Audio's Microphone lineup. Designed for studio profes"
     },
     {
-      "id": "warm-audio-prod-5",
+      "id": "warm audio-wa-14",
+      "label": "WA-14",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Microphone",
+      "keywords": [],
+      "description": "The WA-14 represents the standard tier of Warm Audio's Microphone lineup. Designed for studio profes"
+    },
+    {
+      "id": "warm audio-wa-251",
+      "label": "WA-251",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Microphone",
+      "keywords": [],
+      "description": "The WA-251 represents the flagship tier of Warm Audio's Microphone lineup. Designed for studio profe"
+    },
+    {
+      "id": "warm audio-wa-19",
+      "label": "WA-19",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Microphone",
+      "keywords": [],
+      "description": "The WA-19 represents the entry tier of Warm Audio's Microphone lineup. Designed for studio professio"
+    },
+    {
+      "id": "warm audio-wa-2a",
+      "label": "WA-2A",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Outboard",
+      "keywords": [],
+      "description": "The WA-2A represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professi"
+    },
+    {
+      "id": "warm audio-wa-76",
+      "label": "WA-76",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Outboard",
+      "keywords": [],
+      "description": "The WA-76 represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professi"
+    },
+    {
+      "id": "warm audio-wa-73-eq",
+      "label": "WA-73-EQ",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Preamp",
+      "keywords": [],
+      "description": "The WA-73-EQ represents the standard tier of Warm Audio's Preamp lineup. Designed for studio profess"
+    },
+    {
+      "id": "warm audio-bus-comp",
       "label": "Bus-Comp",
       "brand": "warm-audio",
       "brand_name": "Warm Audio",
       "category": "Studio",
-      "subcategory": "Compressor",
+      "subcategory": "Outboard",
       "keywords": [],
-      "description": "The Bus-Comp is a premium Compressor from Warm Audio. It features state-of-the-art technology and su"
+      "description": "The Bus-Comp represents the standard tier of Warm Audio's Outboard lineup. Designed for studio profe"
     },
     {
-      "id": "adam-audio-prod-1",
-      "label": "A7V",
+      "id": "warm audio-centavo",
+      "label": "Centavo",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Guitar",
+      "subcategory": "Pedal",
+      "keywords": [],
+      "description": "The Centavo represents the entry tier of Warm Audio's Pedal lineup. Designed for guitar professional"
+    },
+    {
+      "id": "adam audio-t5v",
+      "label": "T5V",
       "brand": "adam-audio",
       "brand_name": "Adam Audio",
       "category": "Studio",
       "subcategory": "Monitors",
       "keywords": [],
-      "description": "The A7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
+      "description": "The T5V represents the entry tier of Adam Audio's Monitors lineup. Designed for studio professionals"
     },
     {
-      "id": "adam-audio-prod-2",
-      "label": "A4V",
-      "brand": "adam-audio",
-      "brand_name": "Adam Audio",
-      "category": "Studio",
-      "subcategory": "Monitors",
-      "keywords": [],
-      "description": "The A4V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
-    },
-    {
-      "id": "adam-audio-prod-3",
-      "label": "S2V",
-      "brand": "adam-audio",
-      "brand_name": "Adam Audio",
-      "category": "Studio",
-      "subcategory": "Monitors",
-      "keywords": [],
-      "description": "The S2V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
-    },
-    {
-      "id": "adam-audio-prod-4",
+      "id": "adam audio-t7v",
       "label": "T7V",
       "brand": "adam-audio",
       "brand_name": "Adam Audio",
       "category": "Studio",
       "subcategory": "Monitors",
       "keywords": [],
-      "description": "The T7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
+      "description": "The T7V represents the entry tier of Adam Audio's Monitors lineup. Designed for studio professionals"
     },
     {
-      "id": "adam-audio-prod-5",
-      "label": "Sub10 MK2",
+      "id": "adam audio-t8v",
+      "label": "T8V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The T8V represents the standard tier of Adam Audio's Monitors lineup. Designed for studio profession"
+    },
+    {
+      "id": "adam audio-a4v",
+      "label": "A4V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The A4V represents the standard tier of Adam Audio's Monitors lineup. Designed for studio profession"
+    },
+    {
+      "id": "adam audio-a7v",
+      "label": "A7V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The A7V represents the standard tier of Adam Audio's Monitors lineup. Designed for studio profession"
+    },
+    {
+      "id": "adam audio-a77h",
+      "label": "A77H",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The A77H represents the flagship tier of Adam Audio's Monitors lineup. Designed for studio professio"
+    },
+    {
+      "id": "adam audio-s2v",
+      "label": "S2V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The S2V represents the flagship tier of Adam Audio's Monitors lineup. Designed for studio profession"
+    },
+    {
+      "id": "adam audio-s3h",
+      "label": "S3H",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The S3H represents the flagship tier of Adam Audio's Monitors lineup. Designed for studio profession"
+    },
+    {
+      "id": "adam audio-sub8",
+      "label": "Sub8",
       "brand": "adam-audio",
       "brand_name": "Adam Audio",
       "category": "Studio",
       "subcategory": "Subwoofer",
       "keywords": [],
-      "description": "The Sub10 MK2 is a premium Subwoofer from Adam Audio. It features state-of-the-art technology and su"
+      "description": "The Sub8 represents the standard tier of Adam Audio's Subwoofer lineup. Designed for studio professi"
     },
     {
-      "id": "mackie-prod-1",
-      "label": "ProFX10v3",
-      "brand": "mackie",
-      "brand_name": "Mackie",
+      "id": "adam audio-sub12",
+      "label": "Sub12",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
       "category": "Studio",
-      "subcategory": "Mixer",
+      "subcategory": "Subwoofer",
       "keywords": [],
-      "description": "The ProFX10v3 is a premium Mixer from Mackie. It features state-of-the-art technology and superior b"
+      "description": "The Sub12 represents the flagship tier of Adam Audio's Subwoofer lineup. Designed for studio profess"
     },
     {
-      "id": "mackie-prod-2",
-      "label": "Thump215",
-      "brand": "mackie",
-      "brand_name": "Mackie",
-      "category": "Audio",
-      "subcategory": "Speaker",
-      "keywords": [],
-      "description": "The Thump215 is a premium Speaker from Mackie. It features state-of-the-art technology and superior "
-    },
-    {
-      "id": "mackie-prod-3",
+      "id": "mackie-cr3-x",
       "label": "CR3-X",
       "brand": "mackie",
       "brand_name": "Mackie",
       "category": "Studio",
       "subcategory": "Monitors",
       "keywords": [],
-      "description": "The CR3-X is a premium Monitors from Mackie. It features state-of-the-art technology and superior bu"
+      "description": "The CR3-X represents the entry tier of Mackie's Monitors lineup. Designed for studio professionals."
     },
     {
-      "id": "mackie-prod-4",
-      "label": "Big Knob Passive",
+      "id": "mackie-cr5-x",
+      "label": "CR5-X",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The CR5-X represents the entry tier of Mackie's Monitors lineup. Designed for studio professionals."
+    },
+    {
+      "id": "mackie-mr524",
+      "label": "MR524",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The MR524 represents the standard tier of Mackie's Monitors lineup. Designed for studio professional"
+    },
+    {
+      "id": "mackie-hr824mk2",
+      "label": "HR824mk2",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The HR824mk2 represents the flagship tier of Mackie's Monitors lineup. Designed for studio professio"
+    },
+    {
+      "id": "mackie-big-knob-studio",
+      "label": "Big Knob Studio",
       "brand": "mackie",
       "brand_name": "Mackie",
       "category": "Studio",
       "subcategory": "Controller",
       "keywords": [],
-      "description": "The Big Knob Passive is a premium Controller from Mackie. It features state-of-the-art technology an"
+      "description": "The Big Knob Studio represents the standard tier of Mackie's Controller lineup. Designed for studio "
     },
     {
-      "id": "mackie-prod-5",
-      "label": "MainStream",
+      "id": "mackie-profx6v3",
+      "label": "ProFX6v3",
       "brand": "mackie",
       "brand_name": "Mackie",
-      "category": "Studio",
-      "subcategory": "Interface",
+      "category": "PA",
+      "subcategory": "Mixer",
       "keywords": [],
-      "description": "The MainStream is a premium Interface from Mackie. It features state-of-the-art technology and super"
+      "description": "The ProFX6v3 represents the entry tier of Mackie's Mixer lineup. Designed for pa professionals."
+    },
+    {
+      "id": "mackie-profx12v3",
+      "label": "ProFX12v3",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "PA",
+      "subcategory": "Mixer",
+      "keywords": [],
+      "description": "The ProFX12v3 represents the standard tier of Mackie's Mixer lineup. Designed for pa professionals."
+    },
+    {
+      "id": "mackie-dl16s",
+      "label": "DL16S",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "PA",
+      "subcategory": "Digital Mixer",
+      "keywords": [],
+      "description": "The DL16S represents the standard tier of Mackie's Digital Mixer lineup. Designed for pa professiona"
+    },
+    {
+      "id": "mackie-dl32s",
+      "label": "DL32S",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "PA",
+      "subcategory": "Digital Mixer",
+      "keywords": [],
+      "description": "The DL32S represents the flagship tier of Mackie's Digital Mixer lineup. Designed for pa professiona"
+    },
+    {
+      "id": "mackie-thump215",
+      "label": "Thump215",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "PA",
+      "subcategory": "Speaker",
+      "keywords": [],
+      "description": "The Thump215 represents the standard tier of Mackie's Speaker lineup. Designed for pa professionals."
     }
   ],
   "total_brands": 10

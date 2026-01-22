@@ -3,153 +3,317 @@
   "brand_identity": {
     "id": "roland",
     "name": "Roland",
-    "description": "World leader in electronic musical instruments",
-    "website": "https://www.roland.com",
-    "categories": [
-      "Keys",
-      "Drums",
-      "Production"
-    ]
+    "website": "https://www.roland.com"
   },
   "products": [
     {
-      "id": "roland-prod-1",
+      "id": "roland-fantom-06",
       "name": "Fantom-06",
       "brand": "Roland",
       "main_category": "Keys",
       "subcategory": "Workstation",
-      "description": "The Fantom-06 is a premium Workstation from Roland. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The Fantom-06 represents the entry tier of Roland's Workstation lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/roland/roland-fantom-06_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/roland/roland-fantom-06_thumb.webp",
+        "/data/product_images/roland/roland-fantom-06_main.webp"
       ],
       "pricing": {
-        "regular_price": 1000,
-        "currency": "USD"
+        "regular_price": 5900,
+        "currency": "ILS"
       },
+      "halilit_price": 5900,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Entry"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-RO-6739",
       "verified": true
     },
     {
-      "id": "roland-prod-2",
+      "id": "roland-fantom-07",
+      "name": "Fantom-07",
+      "brand": "Roland",
+      "main_category": "Keys",
+      "subcategory": "Workstation",
+      "description": "The Fantom-07 represents the standard tier of Roland's Workstation lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/roland/roland-fantom-07_thumb.webp",
+      "images": [
+        "/data/product_images/roland/roland-fantom-07_thumb.webp",
+        "/data/product_images/roland/roland-fantom-07_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 7400,
+        "currency": "ILS"
+      },
+      "halilit_price": 7400,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-RO-8444",
+      "verified": true
+    },
+    {
+      "id": "roland-fantom-08",
+      "name": "Fantom-08",
+      "brand": "Roland",
+      "main_category": "Keys",
+      "subcategory": "Workstation",
+      "description": "The Fantom-08 represents the flagship tier of Roland's Workstation lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/roland/roland-fantom-08_thumb.webp",
+      "images": [
+        "/data/product_images/roland/roland-fantom-08_thumb.webp",
+        "/data/product_images/roland/roland-fantom-08_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 9900,
+        "currency": "ILS"
+      },
+      "halilit_price": 9900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-RO-4157",
+      "verified": true
+    },
+    {
+      "id": "roland-rd-88",
+      "name": "RD-88",
+      "brand": "Roland",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The RD-88 represents the entry tier of Roland's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/roland/roland-rd-88_thumb.webp",
+      "images": [
+        "/data/product_images/roland/roland-rd-88_thumb.webp",
+        "/data/product_images/roland/roland-rd-88_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS"
+      },
+      "halilit_price": 4500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-RO-5763",
+      "verified": true
+    },
+    {
+      "id": "roland-rd-2000",
+      "name": "RD-2000",
+      "brand": "Roland",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The RD-2000 represents the flagship tier of Roland's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/roland/roland-rd-2000_thumb.webp",
+      "images": [
+        "/data/product_images/roland/roland-rd-2000_thumb.webp",
+        "/data/product_images/roland/roland-rd-2000_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 8900,
+        "currency": "ILS"
+      },
+      "halilit_price": 8900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-RO-8835",
+      "verified": true
+    },
+    {
+      "id": "roland-jupiter-xm",
+      "name": "Jupiter-Xm",
+      "brand": "Roland",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Jupiter-Xm represents the standard tier of Roland's Synthesizer lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
+      "images": [
+        "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
+        "/data/product_images/roland/roland-jupiter-xm_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 5400,
+        "currency": "ILS"
+      },
+      "halilit_price": 5400,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-RO-8556",
+      "verified": true
+    },
+    {
+      "id": "roland-jupiter-x",
       "name": "Jupiter-X",
       "brand": "Roland",
       "main_category": "Keys",
       "subcategory": "Synthesizer",
-      "description": "The Jupiter-X is a premium Synthesizer from Roland. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The Jupiter-X represents the flagship tier of Roland's Synthesizer lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/roland/roland-jupiter-x_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/roland/roland-jupiter-x_thumb.webp",
+        "/data/product_images/roland/roland-jupiter-x_main.webp"
       ],
       "pricing": {
-        "regular_price": 1100,
-        "currency": "USD"
+        "regular_price": 9200,
+        "currency": "ILS"
       },
+      "halilit_price": 9200,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Flagship"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "low-stock",
+      "sku": "HL-RO-9775",
       "verified": true
     },
     {
-      "id": "roland-prod-3",
+      "id": "roland-tr-8s",
       "name": "TR-8S",
       "brand": "Roland",
-      "main_category": "Production",
+      "main_category": "Drums",
       "subcategory": "Drum Machine",
-      "description": "The TR-8S is a premium Drum Machine from Roland. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The TR-8S represents the standard tier of Roland's Drum Machine lineup. Designed for drums professionals.",
+      "image_url": "/data/product_images/roland/roland-tr-8s_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/roland/roland-tr-8s_thumb.webp",
+        "/data/product_images/roland/roland-tr-8s_main.webp"
       ],
       "pricing": {
-        "regular_price": 1200,
-        "currency": "USD"
+        "regular_price": 3200,
+        "currency": "ILS"
       },
+      "halilit_price": 3200,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-RO-6091",
       "verified": true
     },
     {
-      "id": "roland-prod-4",
+      "id": "roland-td-07kv",
+      "name": "TD-07KV",
+      "brand": "Roland",
+      "main_category": "Drums",
+      "subcategory": "V-Drums",
+      "description": "The TD-07KV represents the entry tier of Roland's V-Drums lineup. Designed for drums professionals.",
+      "image_url": "/data/product_images/roland/roland-td-07kv_thumb.webp",
+      "images": [
+        "/data/product_images/roland/roland-td-07kv_thumb.webp",
+        "/data/product_images/roland/roland-td-07kv_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 4200,
+        "currency": "ILS"
+      },
+      "halilit_price": 4200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-RO-3996",
+      "verified": true
+    },
+    {
+      "id": "roland-td-50kv2",
       "name": "TD-50KV2",
       "brand": "Roland",
       "main_category": "Drums",
       "subcategory": "V-Drums",
-      "description": "The TD-50KV2 is a premium V-Drums from Roland. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The TD-50KV2 represents the flagship tier of Roland's V-Drums lineup. Designed for drums professionals.",
+      "image_url": "/data/product_images/roland/roland-td-50kv2_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/roland/roland-td-50kv2_thumb.webp",
+        "/data/product_images/roland/roland-td-50kv2_main.webp"
       ],
       "pricing": {
-        "regular_price": 1300,
-        "currency": "USD"
+        "regular_price": 28000,
+        "currency": "ILS"
       },
+      "halilit_price": 28000,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Flagship"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
-      "verified": true
-    },
-    {
-      "id": "roland-prod-5",
-      "name": "SP-404MKII",
-      "brand": "Roland",
-      "main_category": "Production",
-      "subcategory": "Sampler",
-      "description": "The SP-404MKII is a premium Sampler from Roland. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
-      "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
-      ],
-      "pricing": {
-        "regular_price": 1400,
-        "currency": "USD"
-      },
-      "specifications": [
-        {
-          "key": "Weight",
-          "value": "10kg"
-        },
-        {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
-        }
-      ],
+      "availability": "in-stock",
+      "sku": "HL-RO-2009",
       "verified": true
     }
   ]

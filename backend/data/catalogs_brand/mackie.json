@@ -3,152 +3,317 @@
   "brand_identity": {
     "id": "mackie",
     "name": "Mackie",
-    "description": "Mixers, loudspeakers and studio monitors",
-    "website": "https://www.mackie.com",
-    "categories": [
-      "Studio",
-      "Audio"
-    ]
+    "website": "https://www.mackie.com"
   },
   "products": [
     {
-      "id": "mackie-prod-1",
-      "name": "ProFX10v3",
-      "brand": "Mackie",
-      "main_category": "Studio",
-      "subcategory": "Mixer",
-      "description": "The ProFX10v3 is a premium Mixer from Mackie. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
-      "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
-      ],
-      "pricing": {
-        "regular_price": 1000,
-        "currency": "USD"
-      },
-      "specifications": [
-        {
-          "key": "Weight",
-          "value": "10kg"
-        },
-        {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "mackie-prod-2",
-      "name": "Thump215",
-      "brand": "Mackie",
-      "main_category": "Audio",
-      "subcategory": "Speaker",
-      "description": "The Thump215 is a premium Speaker from Mackie. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
-      "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
-      ],
-      "pricing": {
-        "regular_price": 1100,
-        "currency": "USD"
-      },
-      "specifications": [
-        {
-          "key": "Weight",
-          "value": "10kg"
-        },
-        {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "mackie-prod-3",
+      "id": "mackie-cr3-x",
       "name": "CR3-X",
       "brand": "Mackie",
       "main_category": "Studio",
       "subcategory": "Monitors",
-      "description": "The CR3-X is a premium Monitors from Mackie. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The CR3-X represents the entry tier of Mackie's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/mackie/mackie-cr3-x_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/mackie/mackie-cr3-x_thumb.webp",
+        "/data/product_images/mackie/mackie-cr3-x_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 500,
+        "currency": "ILS"
+      },
+      "halilit_price": 500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MA-9605",
+      "verified": true
+    },
+    {
+      "id": "mackie-cr5-x",
+      "name": "CR5-X",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The CR5-X represents the entry tier of Mackie's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/mackie/mackie-cr5-x_thumb.webp",
+      "images": [
+        "/data/product_images/mackie/mackie-cr5-x_thumb.webp",
+        "/data/product_images/mackie/mackie-cr5-x_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 800,
+        "currency": "ILS"
+      },
+      "halilit_price": 800,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MA-2376",
+      "verified": true
+    },
+    {
+      "id": "mackie-mr524",
+      "name": "MR524",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The MR524 represents the standard tier of Mackie's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/mackie/mackie-mr524_thumb.webp",
+      "images": [
+        "/data/product_images/mackie/mackie-mr524_thumb.webp",
+        "/data/product_images/mackie/mackie-mr524_main.webp"
       ],
       "pricing": {
         "regular_price": 1200,
-        "currency": "USD"
+        "currency": "ILS"
       },
+      "halilit_price": 1200,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-MA-3449",
       "verified": true
     },
     {
-      "id": "mackie-prod-4",
-      "name": "Big Knob Passive",
+      "id": "mackie-hr824mk2",
+      "name": "HR824mk2",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The HR824mk2 represents the flagship tier of Mackie's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/mackie/mackie-hr824mk2_thumb.webp",
+      "images": [
+        "/data/product_images/mackie/mackie-hr824mk2_thumb.webp",
+        "/data/product_images/mackie/mackie-hr824mk2_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS"
+      },
+      "halilit_price": 3500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MA-9322",
+      "verified": true
+    },
+    {
+      "id": "mackie-big-knob-studio",
+      "name": "Big Knob Studio",
       "brand": "Mackie",
       "main_category": "Studio",
       "subcategory": "Controller",
-      "description": "The Big Knob Passive is a premium Controller from Mackie. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The Big Knob Studio represents the standard tier of Mackie's Controller lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/mackie/mackie-big-knob-studio_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/mackie/mackie-big-knob-studio_thumb.webp",
+        "/data/product_images/mackie/mackie-big-knob-studio_main.webp"
       ],
       "pricing": {
-        "regular_price": 1300,
-        "currency": "USD"
+        "regular_price": 1100,
+        "currency": "ILS"
       },
+      "halilit_price": 1100,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "low-stock",
+      "sku": "HL-MA-5935",
       "verified": true
     },
     {
-      "id": "mackie-prod-5",
-      "name": "MainStream",
+      "id": "mackie-profx6v3",
+      "name": "ProFX6v3",
       "brand": "Mackie",
-      "main_category": "Studio",
-      "subcategory": "Interface",
-      "description": "The MainStream is a premium Interface from Mackie. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "main_category": "PA",
+      "subcategory": "Mixer",
+      "description": "The ProFX6v3 represents the entry tier of Mackie's Mixer lineup. Designed for pa professionals.",
+      "image_url": "/data/product_images/mackie/mackie-profx6v3_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/mackie/mackie-profx6v3_thumb.webp",
+        "/data/product_images/mackie/mackie-profx6v3_main.webp"
       ],
       "pricing": {
-        "regular_price": 1400,
-        "currency": "USD"
+        "regular_price": 800,
+        "currency": "ILS"
       },
+      "halilit_price": 800,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Entry"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-MA-4082",
+      "verified": true
+    },
+    {
+      "id": "mackie-profx12v3",
+      "name": "ProFX12v3",
+      "brand": "Mackie",
+      "main_category": "PA",
+      "subcategory": "Mixer",
+      "description": "The ProFX12v3 represents the standard tier of Mackie's Mixer lineup. Designed for pa professionals.",
+      "image_url": "/data/product_images/mackie/mackie-profx12v3_thumb.webp",
+      "images": [
+        "/data/product_images/mackie/mackie-profx12v3_thumb.webp",
+        "/data/product_images/mackie/mackie-profx12v3_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 1600,
+        "currency": "ILS"
+      },
+      "halilit_price": 1600,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MA-8552",
+      "verified": true
+    },
+    {
+      "id": "mackie-dl16s",
+      "name": "DL16S",
+      "brand": "Mackie",
+      "main_category": "PA",
+      "subcategory": "Digital Mixer",
+      "description": "The DL16S represents the standard tier of Mackie's Digital Mixer lineup. Designed for pa professionals.",
+      "image_url": "/data/product_images/mackie/mackie-dl16s_thumb.webp",
+      "images": [
+        "/data/product_images/mackie/mackie-dl16s_thumb.webp",
+        "/data/product_images/mackie/mackie-dl16s_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS"
+      },
+      "halilit_price": 3500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MA-2509",
+      "verified": true
+    },
+    {
+      "id": "mackie-dl32s",
+      "name": "DL32S",
+      "brand": "Mackie",
+      "main_category": "PA",
+      "subcategory": "Digital Mixer",
+      "description": "The DL32S represents the flagship tier of Mackie's Digital Mixer lineup. Designed for pa professionals.",
+      "image_url": "/data/product_images/mackie/mackie-dl32s_thumb.webp",
+      "images": [
+        "/data/product_images/mackie/mackie-dl32s_thumb.webp",
+        "/data/product_images/mackie/mackie-dl32s_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 6500,
+        "currency": "ILS"
+      },
+      "halilit_price": 6500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MA-3086",
+      "verified": true
+    },
+    {
+      "id": "mackie-thump215",
+      "name": "Thump215",
+      "brand": "Mackie",
+      "main_category": "PA",
+      "subcategory": "Speaker",
+      "description": "The Thump215 represents the standard tier of Mackie's Speaker lineup. Designed for pa professionals.",
+      "image_url": "/data/product_images/mackie/mackie-thump215_thumb.webp",
+      "images": [
+        "/data/product_images/mackie/mackie-thump215_thumb.webp",
+        "/data/product_images/mackie/mackie-thump215_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS"
+      },
+      "halilit_price": 2200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MA-1511",
       "verified": true
     }
   ]

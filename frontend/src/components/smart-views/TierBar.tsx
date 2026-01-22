@@ -1,297 +1,517 @@
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  Box,
-  Cable,
-  Disc3,
-  Headphones,
-  Mic2,
-  Music,
-  Piano,
-  Radio,
-  Speaker,
-  Zap,
-} from "lucide-react";
 import React, { useMemo, useState } from "react";
+import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
-import { brandThemes } from "../../styles/brandThemes"; //
-import type { Product } from "../../types"; //
+import type { Product, ProductImagesObject } from "../../types";
+import { BrandIcon } from "../BrandIcon";
 
 interface TierBarProps {
+  label: string;
   products: Product[];
-  title?: string;
-  showBrandBadges?: boolean;
+  className?: string;
 }
 
-// Map categories to cognitive icons for instant visual recognition
-const getCategoryIcon = (category: string | undefined) => {
-  const c = (category || "").toLowerCase();
-  if (c.includes("piano") || c.includes("key") || c.includes("synth"))
-    return <Piano size={10} />;
-  if (c.includes("drum") || c.includes("percussion"))
-    return <Music size={10} />;
-  if (c.includes("mic") || c.includes("vocal")) return <Mic2 size={10} />;
-  if (c.includes("speaker") || c.includes("monitor") || c.includes("pa"))
-    return <Speaker size={10} />;
-  if (c.includes("headphone") || c.includes("ear"))
-    return <Headphones size={10} />;
-  if (c.includes("dj") || c.includes("turntable")) return <Disc3 size={10} />;
-  if (c.includes("mixer") || c.includes("console")) return <Radio size={10} />;
-  if (c.includes("cable") || c.includes("connect")) return <Cable size={10} />;
-  if (c.includes("guitar") || c.includes("amp") || c.includes("pedal"))
-    return <Zap size={10} />;
-  return <Box size={10} />;
-};
-
-/**
- * Get brand logo URL - tries multiple official sources
- * Only uses official published logos
- */
-const getBrandLogoUrl = (brandName: string): string | null => {
-  const brandSlug = brandName.toLowerCase().replace(/\s+/g, "-");
-
-  // Try official published logo paths
-  const logoPaths = [
-    `/assets/logos/${brandSlug}_logo.svg`,
-    `/assets/logos/${brandSlug}_logo.png`,
-    `/assets/logos/${brandSlug}.svg`,
-    `/assets/logos/${brandSlug}.png`,
-  ];
-
-  // Return the first path (browser will handle fallback)
-  return logoPaths[0] || null;
-};
-
 export const TierBar: React.FC<TierBarProps> = ({
+  label,
   products,
-  title = "Market Landscape",
-  showBrandBadges = true,
+  className,
 }) => {
+  const [activeItem, setActiveItem] = useState<string | null>(null);
   const { selectProduct } = useNavigationStore();
 
-  // 1. Unified Calculation: Works for 1 brand or 10 brands simultaneously
-  const { minPrice, maxPrice, sortedProducts } = useMemo(() => {
-    // Filter out "Call for Price" items (0 price)
-    const valid = products.filter((p) => (p.pricing?.regular_price || 0) > 0);
+  // Price range filtering state - Start with full range
+  const [minHandle, setMinHandle] = useState(0); // 0-100%
+  const [maxHandle, setMaxHandle] = useState(100); // 0-100%
+  const [isDragging, setIsDragging] = useState<"min" | "max" | null>(null);
 
-    if (valid.length === 0)
-      return { minPrice: 0, maxPrice: 100, sortedProducts: [] };
+  // Keyboard navigation
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const step = e.shiftKey ? 5 : 1; // Larger steps with Shift key
 
-    const prices = valid.map((p) => p.pricing!.regular_price!);
-    const min = Math.min(...prices);
-    const max = Math.max(...prices);
-
-    // Add 10% buffer to edges so items aren't glued to the wall
-    return {
-      minPrice: min * 0.9,
-      maxPrice: max * 1.1,
-      sortedProducts: valid.sort(
-        (a, b) => a.pricing!.regular_price! - b.pricing!.regular_price!,
-      ),
+      if (e.key === "Escape") {
+        // Reset filters
+        setMinHandle(0);
+        setMaxHandle(100);
+      } else if (e.key === "ArrowLeft" && e.ctrlKey) {
+        // Move min handle left
+        e.preventDefault();
+        setMinHandle((prev) => Math.max(0, prev - step));
+      } else if (e.key === "ArrowRight" && e.ctrlKey) {
+        // Move min handle right
+        e.preventDefault();
+        setMinHandle((prev) => Math.min(maxHandle - 5, prev + step));
+      } else if (e.key === "ArrowLeft" && e.altKey) {
+        // Move max handle left
+        e.preventDefault();
+        setMaxHandle((prev) => Math.max(minHandle + 5, prev - step));
+      } else if (e.key === "ArrowRight" && e.altKey) {
+        // Move max handle right
+        e.preventDefault();
+        setMaxHandle((prev) => Math.min(100, prev + step));
+      }
     };
-  }, [products]);
 
-  // 2. The Scope Slider (Percentage based)
-  const [range, setRange] = useState<[number, number]>([0, 100]);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [minHandle, maxHandle]);
+
+  // Sort and Normalize
+  const { allNodes, filteredNodes, priceRange } = useMemo(() => {
+    // Filter products with valid price and sort
+    const valid = products
+      .filter((p) => {
+        const price =
+          typeof p.halilit_price === "number"
+            ? p.halilit_price
+            : p.pricing?.regular_price || 0;
+        return price > 0;
+      })
+      .sort((a, b) => {
+        const priceA =
+          typeof a.halilit_price === "number"
+            ? a.halilit_price
+            : a.pricing?.regular_price || 0;
+        const priceB =
+          typeof b.halilit_price === "number"
+            ? b.halilit_price
+            : b.pricing?.regular_price || 0;
+        return priceA - priceB;
+      });
+
+    if (!valid.length)
+      return {
+        allNodes: [],
+        filteredNodes: [],
+        priceRange: { min: 0, max: 0 },
+      };
+
+    // Determine FULL range
+    const first = valid[0];
+    const last = valid[valid.length - 1];
+
+    const min =
+      typeof first.halilit_price === "number"
+        ? first.halilit_price
+        : first.pricing?.regular_price || 0;
+    const max =
+      typeof last.halilit_price === "number"
+        ? last.halilit_price
+        : last.pricing?.regular_price || 0;
+    const range = max - min || 1;
+
+    const allMapped = valid.map((p) => {
+      const price =
+        typeof p.halilit_price === "number"
+          ? p.halilit_price
+          : p.pricing?.regular_price || 0;
+
+      // Resolve image
+      let img = p.image_url || p.image;
+      if (p.images) {
+        if (Array.isArray(p.images)) {
+          if (p.images.length > 0) img = p.images[0].url;
+        } else {
+          img =
+            (p.images as ProductImagesObject).thumbnail ||
+            (p.images as ProductImagesObject).main ||
+            img;
+        }
+      }
+
+      return {
+        ...p,
+        priceDisplay: price,
+        displayImage: img,
+        pos: 0,
+      };
+    });
+
+    // Filter by handle positions
+    const minPrice = min + (range * minHandle) / 100;
+    const maxPrice = min + (range * maxHandle) / 100;
+    const filtered = allMapped.filter(
+      (node) => node.priceDisplay >= minPrice && node.priceDisplay <= maxPrice,
+    );
+
+    // RECALCULATE positions based on FILTERED range (zoom effect)
+    if (filtered.length > 0) {
+      const filteredMin = filtered[0].priceDisplay;
+      const filteredMax = filtered[filtered.length - 1].priceDisplay;
+      const filteredRange = filteredMax - filteredMin || 1;
+
+      filtered.forEach((node) => {
+        node.pos = ((node.priceDisplay - filteredMin) / filteredRange) * 100;
+      });
+    }
+
+    return {
+      allNodes: allMapped,
+      filteredNodes: filtered,
+      priceRange: { min, max },
+    };
+  }, [products, minHandle, maxHandle]);
+
+  // Handle dragging for price range controls
+  const rafRef = React.useRef<number | null>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging) return;
+
+    // Cancel any pending animation frame
+    if (rafRef.current !== null) {
+      cancelAnimationFrame(rafRef.current);
+    }
+
+    // Use requestAnimationFrame for smooth updates
+    rafRef.current = requestAnimationFrame(() => {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
+
+      if (isDragging === "min") {
+        setMinHandle(Math.min(percentage, maxHandle - 5));
+      } else if (isDragging === "max") {
+        setMaxHandle(Math.max(percentage, minHandle + 5));
+      }
+    });
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(null);
+    if (rafRef.current !== null) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+  };
+
+  // Cleanup on unmount
+  React.useEffect(() => {
+    return () => {
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, []);
+
+  if (allNodes.length === 0) return null;
+
+  // Calculate current filtered price range
+  const currentMinPrice =
+    priceRange.min + ((priceRange.max - priceRange.min) * minHandle) / 100;
+  const currentMaxPrice =
+    priceRange.min + ((priceRange.max - priceRange.min) * maxHandle) / 100;
 
   return (
-    <div className="w-full h-full flex flex-col p-8 bg-[var(--bg-app)] text-[var(--text-primary)] relative overflow-hidden transition-colors duration-500">
-      {/* HEADER: Contextual Title */}
-      <div className="z-10 mb-12 flex justify-between items-end">
-        <div>
-          <div className="text-[10px] font-mono text-[var(--brand-primary)] uppercase tracking-widest mb-2">
-            Analytics View
+    <div
+      className={cn("w-full py-16 relative isolate select-none", className)}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseUp}
+      style={{
+        WebkitUserSelect: "none",
+        userSelect: "none",
+        cursor: isDragging ? "ew-resize" : "default",
+      }}
+    >
+      {/* Clean - No Background Clutter */}
+
+      {/* Reset Button & Keyboard Hint */}
+      {(minHandle > 0 || maxHandle < 100) && (
+        <div className="absolute top-4 right-4 flex items-center gap-2 z-50">
+          <div className="text-[10px] text-zinc-500 font-mono hidden md:block">
+            <kbd className="px-1 py-0.5 bg-zinc-800 rounded border border-zinc-700">
+              Esc
+            </kbd>{" "}
+            to reset
           </div>
-          <h2 className="text-3xl font-black tracking-tighter uppercase text-[var(--text-primary)]">
-            {title}
-          </h2>
-          <div className="flex items-center gap-2 text-[var(--text-tertiary)] text-sm mt-1">
-            <span>
-              Scope: ₪{Math.round(minPrice)} - ₪{Math.round(maxPrice)}
-            </span>
-            <span className="w-1 h-1 bg-[var(--text-tertiary)] rounded-full" />
-            <span>{sortedProducts.length} Results</span>
-          </div>
+          <button
+            onClick={() => {
+              setMinHandle(0);
+              setMaxHandle(100);
+            }}
+            className="px-3 py-1.5 text-xs font-mono font-bold text-white/70 bg-zinc-900/80 hover:bg-zinc-800 border border-zinc-700 rounded transition-all hover:text-white hover:border-zinc-600"
+            aria-label="Reset price filters"
+          >
+            Reset
+          </button>
         </div>
-      </div>
+      )}
 
-      {/* THE TIER STAGE */}
-      <div className="flex-1 relative border-b border-[var(--border-subtle)] mb-8">
-        <AnimatePresence>
-          {sortedProducts.map((product) => {
-            const price = product.pricing?.regular_price || 0;
-            const positionPercent =
-              ((price - minPrice) / (maxPrice - minPrice)) * 100;
+      {/* Track with Handles */}
+      <div
+        className="relative h-32 w-full px-12 pt-16"
+        role="region"
+        aria-label={`${label} price filter`}
+        style={{ willChange: "contents" }}
+      >
+        {/* ARIA Live Region for Price Updates */}
+        <div
+          className="sr-only"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          Filtering {filteredNodes.length} of {allNodes.length} products between
+          ₪{Math.round(currentMinPrice).toLocaleString()} and ₪
+          {Math.round(currentMaxPrice).toLocaleString()}
+        </div>
+        <div className="relative h-full" style={{ willChange: "transform" }}>
+          {/* Main Track */}
+          <div className="absolute left-0 right-0 top-16 h-1.5 bg-gradient-to-r from-zinc-800/50 via-zinc-700/80 to-zinc-800/50 rounded-full overflow-visible shadow-lg">
+            {/* Selected Range Highlight */}
+            <div
+              className="absolute top-0 h-full bg-gradient-to-r from-cyan-500/70 to-purple-500/70 transition-all duration-300 motion-reduce:transition-none"
+              style={{
+                left: `${minHandle}%`,
+                width: `${maxHandle - minHandle}%`,
+                willChange: "left, width",
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/40 to-purple-400/40 blur-md" />
+            </div>
 
-            // Is it within the user's "Scope"?
-            const isVisible =
-              positionPercent >= range[0] && positionPercent <= range[1];
+            {/* Dimmed Areas */}
+            <div
+              className="absolute top-0 left-0 h-full bg-black/40 transition-all duration-300"
+              style={{ width: `${minHandle}%`, willChange: "width" }}
+            />
+            <div
+              className="absolute top-0 right-0 h-full bg-black/40 transition-all duration-300"
+              style={{ width: `${100 - maxHandle}%`, willChange: "width" }}
+            />
+          </div>
 
-            // 🎨 Cross-Brand Styling Logic
-            const brandKey = product.brand.toLowerCase();
-            const brandColor =
-              brandThemes[brandKey]?.colors?.primary || "#ffffff";
-
-            return (
-              <motion.button
-                layout
-                key={product.id}
-                onClick={() => selectProduct(product)}
-                initial={{ opacity: 0, scale: 0, y: 50 }}
-                animate={{
-                  opacity: isVisible ? 1 : 0.1,
-                  scale: isVisible ? 1 : 0.6,
-                  filter: isVisible ? "grayscale(0%)" : "grayscale(100%)",
-                  left: `${positionPercent}%`,
-                }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                className="absolute bottom-0 transform -translate-x-1/2 group flex flex-col items-center gap-3 pb-8 z-10 hover:z-50"
-              >
-                {/* PRODUCT CARD */}
+          {/* Product Nodes - Elevated Above Track */}
+          <div
+            className="absolute left-0 right-0 -top-12 h-24"
+            style={{ willChange: "contents" }}
+          >
+            {filteredNodes.map((product) => {
+              const clampedPos = Math.max(3, Math.min(97, product.pos));
+              return (
                 <div
-                  className="relative w-24 h-24 bg-[var(--bg-panel)] rounded-xl shadow-2xl p-2 transition-all duration-300 group-hover:-translate-y-4 group-hover:scale-110 flex items-center justify-center overflow-hidden"
-                  style={{
-                    border: `1px solid ${isVisible ? brandColor : "var(--border-subtle)"}`,
-                    boxShadow: isVisible
-                      ? `0 10px 30px -10px ${brandColor}40`
-                      : "none",
-                  }}
+                  key={product.id}
+                  className="absolute top-1/2 -translate-y-1/2 z-20 transition-all duration-300"
+                  style={{ left: `${clampedPos}%`, willChange: "left" }}
+                  onMouseEnter={() => setActiveItem(product.id)}
+                  onMouseLeave={() => setActiveItem(null)}
+                  onClick={() => selectProduct(product)}
                 >
-                  {/* Product Image Container */}
-                  <div className="absolute inset-0 p-2 flex items-center justify-center">
-                    <img
-                      src={product.image_url}
-                      alt={product.name}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-
-                  {/* Official Brand Logo Overlay (Bottom Right) */}
-                  {showBrandBadges && (
+                  <motion.div
+                    className="relative cursor-pointer group"
+                    style={{ x: "-50%" }}
+                    whileHover={{ scale: 1.3, zIndex: 30 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {/* Warm Spotlight on Track Below Logo */}
                     <div
-                      className="absolute bottom-0 right-0 w-10 h-10 rounded-tl-lg bg-white/10 backdrop-blur-sm border-l border-t border-[var(--border-subtle)] flex items-center justify-center z-20 overflow-hidden shadow-lg"
-                      title={`${product.brand} Logo`}
-                    >
-                      <img
-                        src={getBrandLogoUrl(product.brand) || ""}
-                        alt={`${product.brand} logo`}
-                        className="w-7 h-7 object-contain opacity-80 hover:opacity-100 transition-opacity"
-                        onError={(e) => {
-                          // Fallback: show brand initials if logo fails
-                          const el = e.currentTarget;
-                          el.style.display = "none";
-                          const fallback = document.createElement("span");
-                          fallback.className =
-                            "text-[6px] font-bold text-white/60";
-                          fallback.textContent = product.brand
-                            .substring(0, 2)
-                            .toUpperCase();
-                          el.parentElement?.appendChild(fallback);
-                        }}
+                      className={cn(
+                        "absolute left-1/2 -translate-x-1/2 transition-all duration-500",
+                        "pointer-events-none",
+                        activeItem === product.id
+                          ? "bottom-0 w-20 h-32 opacity-100"
+                          : "bottom-4 w-12 h-24 opacity-0 group-hover:opacity-60",
+                      )}
+                      style={{
+                        background:
+                          "radial-gradient(ellipse at center, rgba(255,200,100,0.4) 0%, rgba(255,160,60,0.2) 40%, transparent 70%)",
+                        filter: "blur(12px)",
+                      }}
+                    />
+
+                    {/* Elevated Logo - Larger & Prominent */}
+                    <div className="relative">
+                      <BrandIcon
+                        brand={product.brand}
+                        className={cn(
+                          "w-12 h-12 transition-all duration-300",
+                          activeItem === product.id
+                            ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110"
+                            : "opacity-80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)]",
+                        )}
+                      />
+
+                      {/* Track Illumination Spot */}
+                      <div
+                        className={cn(
+                          "absolute left-1/2 -translate-x-1/2 rounded-full transition-all duration-500",
+                          activeItem === product.id
+                            ? "bottom-[-40px] w-16 h-2 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent shadow-[0_0_20px_rgba(255,200,100,0.6)]"
+                            : "bottom-[-40px] w-8 h-1 bg-gradient-to-r from-transparent via-amber-500/0 to-transparent group-hover:via-amber-400/40 group-hover:w-12 group-hover:shadow-[0_0_12px_rgba(255,200,100,0.4)]",
+                        )}
                       />
                     </div>
-                  )}
+                  </motion.div>
 
-                  {/* Category Identity (Top Left) - Cognitive Icon */}
-                  <div
-                    className="absolute top-0 left-0 w-5 h-5 rounded-br-lg bg-[var(--bg-app)] border border-[var(--border-subtle)] flex items-center justify-center text-[var(--text-secondary)] shadow-sm z-20 flex-shrink-0"
-                    title={product.category}
-                  >
-                    {getCategoryIcon(product.category)}
-                  </div>
-
-                  {/* Brand Name Accent Bar (Top Right) */}
-                  {showBrandBadges && (
-                    <div
-                      className="absolute top-0 right-0 px-1.5 py-0.5 rounded-bl text-[7px] font-bold uppercase tracking-wider text-white shadow-sm z-20 whitespace-nowrap truncate max-w-[80%]"
-                      style={{ backgroundColor: brandColor }}
-                    >
-                      {product.brand}
-                    </div>
-                  )}
+                  {/* Hover Info - Larger Thumbnail */}
+                  <AnimatePresence>
+                    {activeItem === product.id && (
+                      <motion.div
+                        initial={{
+                          opacity: 0,
+                          y: 20,
+                          scale: 0.9,
+                          x: "-50%",
+                        }}
+                        animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
+                        exit={{ opacity: 0, scale: 0.9, x: "-50%" }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute bottom-full mb-6 left-1/2 w-96 z-50 pointer-events-none"
+                      >
+                        <div className="bg-gradient-to-br from-zinc-900/98 to-black/98 backdrop-blur-xl border border-amber-500/30 rounded-xl shadow-2xl shadow-amber-500/20 overflow-hidden">
+                          <div className="flex h-40">
+                            <div className="w-40 bg-gradient-to-br from-zinc-800/50 to-zinc-900/80 p-4 flex items-center justify-center border-r border-amber-500/20">
+                              <img
+                                src={product.displayImage}
+                                className="max-h-full max-w-full object-contain drop-shadow-[0_4px_12px_rgba(255,200,100,0.3)]"
+                                alt={product.name}
+                              />
+                            </div>
+                            <div className="flex-1 p-4 flex flex-col justify-center">
+                              <div className="text-[11px] text-amber-400/80 uppercase tracking-widest font-mono mb-1">
+                                {product.brand}
+                              </div>
+                              <div className="font-bold text-white text-lg leading-tight line-clamp-2 mb-2">
+                                {product.name}
+                              </div>
+                              <div className="font-mono text-amber-400 font-black text-xl">
+                                ₪{product.priceDisplay.toLocaleString()}
+                              </div>
+                            </div>
+                          </div>
+                          <div className="grid grid-cols-2 gap-px bg-amber-500/10 text-[11px] font-mono text-zinc-400">
+                            <div className="bg-zinc-900/90 px-3 py-2 flex justify-between items-center">
+                              <span className="text-zinc-500">SKU</span>
+                              <span className="text-white font-bold">
+                                {product.sku || "N/A"}
+                              </span>
+                            </div>
+                            <div className="bg-zinc-900/90 px-3 py-2 flex justify-between items-center">
+                              <span className="text-zinc-500">STOCK</span>
+                              <span
+                                className={cn(
+                                  "font-bold",
+                                  product.availability === "in-stock"
+                                    ? "text-green-400"
+                                    : "text-red-400",
+                                )}
+                              >
+                                {product.availability === "in-stock"
+                                  ? "IN STOCK"
+                                  : "LOW"}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="w-[2px] h-4 bg-gradient-to-b from-amber-500/60 to-transparent mx-auto" />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
+              );
+            })}
+          </div>
 
-                {/* INFO & PRICE LINE */}
-                <div className="flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-[10px] text-[var(--text-secondary)] max-w-[100px] truncate">
-                    {product.name}
-                  </span>
-                  <span
-                    className="text-xs font-mono font-bold"
-                    style={{ color: brandColor }}
-                  >
-                    ₪{price.toLocaleString()}
-                  </span>
-                </div>
+          {/* Min Handle - Minimal */}
+          <motion.div
+            className="absolute bottom-0 cursor-ew-resize z-40 group"
+            style={{ left: `${minHandle}%`, willChange: "left" }}
+            onMouseDown={() => setIsDragging("min")}
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.95 }}
+            role="slider"
+            aria-label="Minimum price filter"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={minHandle}
+            tabIndex={0}
+          >
+            <div
+              className="relative flex items-end"
+              style={{ transform: "translateX(-50%)" }}
+            >
+              {/* Connection Line */}
+              <div
+                className={cn(
+                  "absolute bottom-0 left-1/2 -translate-x-1/2 w-[2px] h-8 transition-all motion-reduce:transition-none",
+                  isDragging === "min"
+                    ? "bg-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.9)]"
+                    : "bg-cyan-500/70 group-hover:bg-cyan-400",
+                )}
+              />
+              {/* Handle */}
+              <div
+                className={cn(
+                  "relative mt-auto w-4 h-8 rounded-full transition-all motion-reduce:transition-none focus-within:ring-2 focus-within:ring-cyan-400 focus-within:ring-offset-2 focus-within:ring-offset-black",
+                  isDragging === "min"
+                    ? "bg-cyan-400 shadow-[0_0_16px_rgba(6,182,212,0.9)]"
+                    : "bg-cyan-500/90 group-hover:bg-cyan-400 group-hover:shadow-[0_0_12px_rgba(6,182,212,0.6)]",
+                )}
+              />
+              {/* Price Label */}
+              <div
+                className={cn(
+                  "absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] font-mono font-bold transition-all motion-reduce:transition-none",
+                  isDragging === "min"
+                    ? "text-cyan-200 scale-110"
+                    : "text-cyan-400/80 group-hover:text-cyan-300 group-hover:scale-105",
+                )}
+              >
+                ₪{Math.round(currentMinPrice).toLocaleString()}
+              </div>
+            </div>
+          </motion.div>
 
-                {/* Connector Line to Axis */}
-                <div className="absolute bottom-0 w-px h-8 bg-[var(--border-subtle)] group-hover:bg-[var(--text-primary)] transition-colors" />
-
-                {/* Axis Label - Processed Thumbnail on Axis */}
-                <div className="absolute -bottom-10 flex flex-col items-center">
-                  <div className="w-6 h-6 rounded-full bg-[var(--bg-panel)] border border-[var(--border-subtle)] flex items-center justify-center overflow-hidden mb-1 shadow-sm">
-                    <img
-                      src={product.image_url}
-                      className="w-4 h-4 object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all"
-                    />
-                  </div>
-                </div>
-              </motion.button>
-            );
-          })}
-        </AnimatePresence>
-      </div>
-
-      {/* INTERACTIVE SCOPE BAR */}
-      <div className="h-16 relative px-4 select-none">
-        {/* Track */}
-        <div className="absolute top-1/2 left-0 right-0 h-2 bg-[var(--border-subtle)] rounded-full overflow-hidden">
-          {/* Active Range Fill */}
-          <div
-            className="absolute h-full bg-[var(--brand-primary)]"
-            style={{ left: `${range[0]}%`, right: `${100 - range[1]}%` }}
-          />
-        </div>
-
-        {/* Hidden Inputs for Logic */}
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={range[0]}
-          onChange={(e) => {
-            const val = Number(e.target.value);
-            if (val < range[1] - 5) setRange([val, range[1]]);
-          }}
-          className="absolute top-1/2 left-0 w-full opacity-0 cursor-ew-resize z-20 h-8"
-        />
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={range[1]}
-          onChange={(e) => {
-            const val = Number(e.target.value);
-            if (val > range[0] + 5) setRange([range[0], val]);
-          }}
-          className="absolute top-1/2 left-0 w-full opacity-0 cursor-ew-resize z-20 h-8"
-        />
-
-        {/* Visual Handles */}
-        <div
-          className="absolute top-1/2 -mt-3 w-6 h-6 bg-indigo-500 rounded-full border-4 border-[#0a0a0a] shadow-lg pointer-events-none transition-all"
-          style={{ left: `${range[0]}%` }}
-        />
-        <div
-          className="absolute top-1/2 -mt-3 w-6 h-6 bg-indigo-500 rounded-full border-4 border-[#0a0a0a] shadow-lg pointer-events-none transition-all"
-          style={{ left: `${range[1]}%` }}
-        />
-
-        {/* Legend */}
-        <div className="absolute -bottom-2 w-full flex justify-between text-[10px] font-mono text-white/30 uppercase">
-          <span>Entry Level</span>
-          <span>Mid Range</span>
-          <span>Professional</span>
-          <span>Flagship</span>
+          {/* Max Handle - Minimal */}
+          <motion.div
+            className="absolute bottom-0 cursor-ew-resize z-40 group"
+            style={{ right: `${100 - maxHandle}%`, willChange: "right" }}
+            onMouseDown={() => setIsDragging("max")}
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.95 }}
+            role="slider"
+            aria-label="Maximum price filter"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={maxHandle}
+            tabIndex={0}
+          >
+            <div
+              className="relative flex items-end"
+              style={{ transform: "translateX(50%)" }}
+            >
+              {/* Connection Line */}
+              <div
+                className={cn(
+                  "absolute bottom-0 left-1/2 -translate-x-1/2 w-[2px] h-8 transition-all motion-reduce:transition-none",
+                  isDragging === "max"
+                    ? "bg-purple-400 shadow-[0_0_10px_rgba(168,85,247,0.9)]"
+                    : "bg-purple-500/70 group-hover:bg-purple-400",
+                )}
+              />
+              {/* Handle */}
+              <div
+                className={cn(
+                  "relative mt-auto w-4 h-8 rounded-full transition-all motion-reduce:transition-none focus-within:ring-2 focus-within:ring-purple-400 focus-within:ring-offset-2 focus-within:ring-offset-black",
+                  isDragging === "max"
+                    ? "bg-purple-400 shadow-[0_0_16px_rgba(168,85,247,0.9)]"
+                    : "bg-purple-500/90 group-hover:bg-purple-400 group-hover:shadow-[0_0_12px_rgba(168,85,247,0.6)]",
+                )}
+              />
+              {/* Price Label */}
+              <div
+                className={cn(
+                  "absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] font-mono font-bold transition-all motion-reduce:transition-none",
+                  isDragging === "max"
+                    ? "text-purple-200 scale-110"
+                    : "text-purple-400/80 group-hover:text-purple-300 group-hover:scale-105",
+                )}
+              >
+                ₪{Math.round(currentMaxPrice).toLocaleString()}
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

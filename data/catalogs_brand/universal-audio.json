@@ -1,0 +1,320 @@
+{
+  "brand_name": "Universal Audio",
+  "brand_identity": {
+    "id": "universal-audio",
+    "name": "Universal Audio",
+    "website": "https://www.universal-audio.com"
+  },
+  "products": [
+    {
+      "id": "universal audio-volt-1",
+      "name": "Volt 1",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Volt 1 represents the entry tier of Universal Audio's Interface lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-volt-1_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-volt-1_thumb.webp",
+        "/data/product_images/universal audio/universal audio-volt-1_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 600,
+        "currency": "ILS"
+      },
+      "halilit_price": 600,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-UN-2887",
+      "verified": true
+    },
+    {
+      "id": "universal audio-volt-276",
+      "name": "Volt 276",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Volt 276 represents the entry tier of Universal Audio's Interface lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-volt-276_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-volt-276_thumb.webp",
+        "/data/product_images/universal audio/universal audio-volt-276_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "ILS"
+      },
+      "halilit_price": 1200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-UN-7520",
+      "verified": true
+    },
+    {
+      "id": "universal audio-apollo-solo",
+      "name": "Apollo Solo",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Apollo Solo represents the standard tier of Universal Audio's Interface lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-apollo-solo_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-apollo-solo_thumb.webp",
+        "/data/product_images/universal audio/universal audio-apollo-solo_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS"
+      },
+      "halilit_price": 2200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-UN-3421",
+      "verified": true
+    },
+    {
+      "id": "universal audio-apollo-twin-x-duo",
+      "name": "Apollo Twin X Duo",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Apollo Twin X Duo represents the standard tier of Universal Audio's Interface lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-apollo-twin-x-duo_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-apollo-twin-x-duo_thumb.webp",
+        "/data/product_images/universal audio/universal audio-apollo-twin-x-duo_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS"
+      },
+      "halilit_price": 4500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-UN-9136",
+      "verified": true
+    },
+    {
+      "id": "universal audio-apollo-twin-x-quad",
+      "name": "Apollo Twin X Quad",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Apollo Twin X Quad represents the standard tier of Universal Audio's Interface lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-apollo-twin-x-quad_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-apollo-twin-x-quad_thumb.webp",
+        "/data/product_images/universal audio/universal audio-apollo-twin-x-quad_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 6500,
+        "currency": "ILS"
+      },
+      "halilit_price": 6500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-UN-9287",
+      "verified": true
+    },
+    {
+      "id": "universal audio-apollo-x4",
+      "name": "Apollo x4",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Apollo x4 represents the flagship tier of Universal Audio's Interface lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-apollo-x4_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-apollo-x4_thumb.webp",
+        "/data/product_images/universal audio/universal audio-apollo-x4_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 8900,
+        "currency": "ILS"
+      },
+      "halilit_price": 8900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-UN-7231",
+      "verified": true
+    },
+    {
+      "id": "universal audio-apollo-x8p",
+      "name": "Apollo x8p",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Apollo x8p represents the flagship tier of Universal Audio's Interface lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-apollo-x8p_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-apollo-x8p_thumb.webp",
+        "/data/product_images/universal audio/universal audio-apollo-x8p_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 14500,
+        "currency": "ILS"
+      },
+      "halilit_price": 14500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-UN-4233",
+      "verified": true
+    },
+    {
+      "id": "universal audio-sphere-dlx",
+      "name": "Sphere DLX",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The Sphere DLX represents the flagship tier of Universal Audio's Microphone lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-sphere-dlx_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-sphere-dlx_thumb.webp",
+        "/data/product_images/universal audio/universal audio-sphere-dlx_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 6500,
+        "currency": "ILS"
+      },
+      "halilit_price": 6500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-UN-9068",
+      "verified": true
+    },
+    {
+      "id": "universal audio-sd-1",
+      "name": "SD-1",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The SD-1 represents the entry tier of Universal Audio's Microphone lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-sd-1_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-sd-1_thumb.webp",
+        "/data/product_images/universal audio/universal audio-sd-1_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS"
+      },
+      "halilit_price": 1400,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-UN-4580",
+      "verified": true
+    },
+    {
+      "id": "universal audio-uafx-dream-65",
+      "name": "UAFX Dream 65",
+      "brand": "Universal Audio",
+      "main_category": "Guitar",
+      "subcategory": "Pedal",
+      "description": "The UAFX Dream 65 represents the standard tier of Universal Audio's Pedal lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/universal audio/universal audio-uafx-dream-65_thumb.webp",
+      "images": [
+        "/data/product_images/universal audio/universal audio-uafx-dream-65_thumb.webp",
+        "/data/product_images/universal audio/universal audio-uafx-dream-65_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 1800,
+        "currency": "ILS"
+      },
+      "halilit_price": 1800,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-UN-8104",
+      "verified": true
+    }
+  ]
+}

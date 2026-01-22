@@ -1,12 +1,13 @@
-# 🏗️ HSC Mission Control v3.7.5 - Architecture Documentation
+# 🏗️ HSC Mission Control v3.7.6 - Architecture Documentation
 
 ## 📋 Overview
 
 HSC Mission Control is a **static-first, production-ready product catalog system** built with React, TypeScript, and Tailwind CSS. It follows the **ONE SOURCE OF TRUTH** principle: all data comes from pre-built JSON files with zero backend dependencies.
 
-**Version**: 3.7.5  
+**Version**: 3.7.6 - Design System Complete  
 **Status**: Production Ready  
-**Architecture**: Static SPA (Single Page Application)
+**Architecture**: Static SPA (Single Page Application)  
+**Design System**: Comprehensive tokens & processed imagery
 
 ---
 
@@ -16,17 +17,20 @@ HSC Mission Control is a **static-first, production-ready product catalog system
 
 Every capability has exactly **one** way to execute:
 
-| Capability       | ONE WAY                                |
-| ---------------- | -------------------------------------- |
-| Generate Data    | `python3 backend/forge_backbone.py`    |
-| Load Catalog     | `catalogLoader.loadBrand(brandId)`     |
-| Search Products  | `instantSearch.search(query, options)` |
-| Manage State     | Zustand `navigationStore`              |
-| Style Components | Tailwind CSS + CSS Variables           |
+| Capability       | ONE WAY                                   |
+| ---------------- | ----------------------------------------- |
+| Generate Data    | `python3 backend/forge_backbone.py`       |
+| Process Images   | `python3 backend/reprocess_thumbnails.py` |
+| Load Catalog     | `catalogLoader.loadBrand(brandId)`        |
+| Search Products  | `instantSearch.search(query, options)`    |
+| Manage State     | Zustand `navigationStore`                 |
+| Style Components | Tailwind CSS + CSS Variables              |
+| Design Tokens    | `index.css` + `DESIGN_SYSTEM.md`          |
 
 ### 2. Static First
 
 - ✅ All data pre-built at generation time
+- ✅ All images processed via Visual Factory
 - ✅ No API calls at runtime
 - ✅ No database connections
 - ✅ No backend server dependency
@@ -38,6 +42,13 @@ Every capability has exactly **one** way to execute:
 - ✅ Zod runtime validation
 - ✅ No `any` types
 - ✅ Compile-time error checking
+
+### 4. Design System Integrity
+
+- ✅ Comprehensive design tokens (spacing, typography, colors)
+- ✅ All product images processed to consistent format
+- ✅ WCAG AA accessibility compliance
+- ✅ Complete documentation in `DESIGN_SYSTEM.md`
 
 ---
 

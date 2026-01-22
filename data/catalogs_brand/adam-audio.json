@@ -1,0 +1,320 @@
+{
+  "brand_name": "Adam Audio",
+  "brand_identity": {
+    "id": "adam-audio",
+    "name": "Adam Audio",
+    "website": "https://www.adam-audio.com"
+  },
+  "products": [
+    {
+      "id": "adam audio-t5v",
+      "name": "T5V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The T5V represents the entry tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-t5v_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-t5v_thumb.webp",
+        "/data/product_images/adam audio/adam audio-t5v_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 900,
+        "currency": "ILS"
+      },
+      "halilit_price": 900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-9005",
+      "verified": true
+    },
+    {
+      "id": "adam audio-t7v",
+      "name": "T7V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The T7V represents the entry tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-t7v_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-t7v_thumb.webp",
+        "/data/product_images/adam audio/adam audio-t7v_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "ILS"
+      },
+      "halilit_price": 1100,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-AD-6845",
+      "verified": true
+    },
+    {
+      "id": "adam audio-t8v",
+      "name": "T8V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The T8V represents the standard tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-t8v_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-t8v_thumb.webp",
+        "/data/product_images/adam audio/adam audio-t8v_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS"
+      },
+      "halilit_price": 1400,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-7364",
+      "verified": true
+    },
+    {
+      "id": "adam audio-a4v",
+      "name": "A4V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The A4V represents the standard tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-a4v_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-a4v_thumb.webp",
+        "/data/product_images/adam audio/adam audio-a4v_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 2500,
+        "currency": "ILS"
+      },
+      "halilit_price": 2500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-3418",
+      "verified": true
+    },
+    {
+      "id": "adam audio-a7v",
+      "name": "A7V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The A7V represents the standard tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-a7v_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-a7v_thumb.webp",
+        "/data/product_images/adam audio/adam audio-a7v_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 3900,
+        "currency": "ILS"
+      },
+      "halilit_price": 3900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-1422",
+      "verified": true
+    },
+    {
+      "id": "adam audio-a77h",
+      "name": "A77H",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The A77H represents the flagship tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-a77h_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-a77h_thumb.webp",
+        "/data/product_images/adam audio/adam audio-a77h_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 6500,
+        "currency": "ILS"
+      },
+      "halilit_price": 6500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-2717",
+      "verified": true
+    },
+    {
+      "id": "adam audio-s2v",
+      "name": "S2V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The S2V represents the flagship tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-s2v_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-s2v_thumb.webp",
+        "/data/product_images/adam audio/adam audio-s2v_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS"
+      },
+      "halilit_price": 7500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-6303",
+      "verified": true
+    },
+    {
+      "id": "adam audio-s3h",
+      "name": "S3H",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The S3H represents the flagship tier of Adam Audio's Monitors lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-s3h_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-s3h_thumb.webp",
+        "/data/product_images/adam audio/adam audio-s3h_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 12000,
+        "currency": "ILS"
+      },
+      "halilit_price": 12000,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-8993",
+      "verified": true
+    },
+    {
+      "id": "adam audio-sub8",
+      "name": "Sub8",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Subwoofer",
+      "description": "The Sub8 represents the standard tier of Adam Audio's Subwoofer lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-sub8_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-sub8_thumb.webp",
+        "/data/product_images/adam audio/adam audio-sub8_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 2500,
+        "currency": "ILS"
+      },
+      "halilit_price": 2500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AD-6389",
+      "verified": true
+    },
+    {
+      "id": "adam audio-sub12",
+      "name": "Sub12",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Subwoofer",
+      "description": "The Sub12 represents the flagship tier of Adam Audio's Subwoofer lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/adam audio/adam audio-sub12_thumb.webp",
+      "images": [
+        "/data/product_images/adam audio/adam audio-sub12_thumb.webp",
+        "/data/product_images/adam audio/adam audio-sub12_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS"
+      },
+      "halilit_price": 4500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-AD-8132",
+      "verified": true
+    }
+  ]
+}

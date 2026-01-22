@@ -3,152 +3,317 @@
   "brand_identity": {
     "id": "nord",
     "name": "Nord",
-    "description": "Handmade in Sweden",
-    "website": "https://www.nord.com",
-    "categories": [
-      "Keys",
-      "Pianos"
-    ]
+    "website": "https://www.nord.com"
   },
   "products": [
     {
-      "id": "nord-prod-1",
-      "name": "Nord Stage 4",
+      "id": "nord-nord-electro-6d-61",
+      "name": "Nord Electro 6D 61",
       "brand": "Nord",
       "main_category": "Keys",
       "subcategory": "Stage Piano",
-      "description": "The Nord Stage 4 is a premium Stage Piano from Nord. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The Nord Electro 6D 61 represents the entry tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp",
+        "/data/product_images/nord/nord-nord-electro-6d-61_main.webp"
       ],
       "pricing": {
-        "regular_price": 1000,
-        "currency": "USD"
+        "regular_price": 8500,
+        "currency": "ILS"
       },
+      "halilit_price": 8500,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Entry"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-NO-4264",
       "verified": true
     },
     {
-      "id": "nord-prod-2",
-      "name": "Nord Piano 5",
+      "id": "nord-nord-electro-6d-73",
+      "name": "Nord Electro 6D 73",
       "brand": "Nord",
       "main_category": "Keys",
       "subcategory": "Stage Piano",
-      "description": "The Nord Piano 5 is a premium Stage Piano from Nord. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The Nord Electro 6D 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp",
+        "/data/product_images/nord/nord-nord-electro-6d-73_main.webp"
       ],
       "pricing": {
-        "regular_price": 1100,
-        "currency": "USD"
+        "regular_price": 9800,
+        "currency": "ILS"
       },
+      "halilit_price": 9800,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-NO-2348",
       "verified": true
     },
     {
-      "id": "nord-prod-3",
-      "name": "Nord Electro 6",
+      "id": "nord-nord-piano-5-73",
+      "name": "Nord Piano 5 73",
       "brand": "Nord",
       "main_category": "Keys",
-      "subcategory": "Stage Keyboard",
-      "description": "The Nord Electro 6 is a premium Stage Keyboard from Nord. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "subcategory": "Stage Piano",
+      "description": "The Nord Piano 5 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
+        "/data/product_images/nord/nord-nord-piano-5-73_main.webp"
       ],
       "pricing": {
-        "regular_price": 1200,
-        "currency": "USD"
+        "regular_price": 11500,
+        "currency": "ILS"
       },
+      "halilit_price": 11500,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-NO-9539",
       "verified": true
     },
     {
-      "id": "nord-prod-4",
+      "id": "nord-nord-piano-5-88",
+      "name": "Nord Piano 5 88",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The Nord Piano 5 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
+      "images": [
+        "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
+        "/data/product_images/nord/nord-nord-piano-5-88_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 12900,
+        "currency": "ILS"
+      },
+      "halilit_price": 12900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-NO-9907",
+      "verified": true
+    },
+    {
+      "id": "nord-nord-stage-4-compact",
+      "name": "Nord Stage 4 Compact",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The Nord Stage 4 Compact represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
+      "images": [
+        "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
+        "/data/product_images/nord/nord-nord-stage-4-compact_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 15500,
+        "currency": "ILS"
+      },
+      "halilit_price": 15500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-NO-6802",
+      "verified": true
+    },
+    {
+      "id": "nord-nord-stage-4-88",
+      "name": "Nord Stage 4 88",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The Nord Stage 4 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp",
+      "images": [
+        "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp",
+        "/data/product_images/nord/nord-nord-stage-4-88_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 17900,
+        "currency": "ILS"
+      },
+      "halilit_price": 17900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NO-9058",
+      "verified": true
+    },
+    {
+      "id": "nord-nord-wave-2",
       "name": "Nord Wave 2",
       "brand": "Nord",
       "main_category": "Keys",
       "subcategory": "Synthesizer",
-      "description": "The Nord Wave 2 is a premium Synthesizer from Nord. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The Nord Wave 2 represents the standard tier of Nord's Synthesizer lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
+        "/data/product_images/nord/nord-nord-wave-2_main.webp"
       ],
       "pricing": {
-        "regular_price": 1300,
-        "currency": "USD"
+        "regular_price": 9900,
+        "currency": "ILS"
       },
+      "halilit_price": 9900,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-NO-2450",
       "verified": true
     },
     {
-      "id": "nord-prod-5",
+      "id": "nord-nord-lead-a1",
       "name": "Nord Lead A1",
       "brand": "Nord",
       "main_category": "Keys",
       "subcategory": "Synthesizer",
-      "description": "The Nord Lead A1 is a premium Synthesizer from Nord. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The Nord Lead A1 represents the entry tier of Nord's Synthesizer lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
+        "/data/product_images/nord/nord-nord-lead-a1_main.webp"
       ],
       "pricing": {
-        "regular_price": 1400,
-        "currency": "USD"
+        "regular_price": 6500,
+        "currency": "ILS"
       },
+      "halilit_price": 6500,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Entry"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-NO-7450",
+      "verified": true
+    },
+    {
+      "id": "nord-nord-drum-3p",
+      "name": "Nord Drum 3P",
+      "brand": "Nord",
+      "main_category": "Drums",
+      "subcategory": "Percussion",
+      "description": "The Nord Drum 3P represents the standard tier of Nord's Percussion lineup. Designed for drums professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
+      "images": [
+        "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
+        "/data/product_images/nord/nord-nord-drum-3p_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS"
+      },
+      "halilit_price": 3200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NO-9473",
+      "verified": true
+    },
+    {
+      "id": "nord-nord-grand",
+      "name": "Nord Grand",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The Nord Grand represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+      "image_url": "/data/product_images/nord/nord-nord-grand_thumb.webp",
+      "images": [
+        "/data/product_images/nord/nord-nord-grand_thumb.webp",
+        "/data/product_images/nord/nord-nord-grand_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 14500,
+        "currency": "ILS"
+      },
+      "halilit_price": 14500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NO-9710",
       "verified": true
     }
   ]

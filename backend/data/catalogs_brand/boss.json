@@ -3,152 +3,317 @@
   "brand_identity": {
     "id": "boss",
     "name": "Boss",
-    "description": "Guitar effects and amplifiers",
-    "website": "https://www.boss.com",
-    "categories": [
-      "Guitar",
-      "Effects"
-    ]
+    "website": "https://www.boss.com"
   },
   "products": [
     {
-      "id": "boss-prod-1",
-      "name": "Katana-50",
+      "id": "boss-katana-50-gen3",
+      "name": "Katana-50 Gen3",
       "brand": "Boss",
       "main_category": "Guitar",
-      "subcategory": "Amplifiers",
-      "description": "The Katana-50 is a premium Amplifiers from Boss. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "subcategory": "Amplifier",
+      "description": "The Katana-50 Gen3 represents the entry tier of Boss's Amplifier lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/boss/boss-katana-50-gen3_thumb.webp",
+        "/data/product_images/boss/boss-katana-50-gen3_main.webp"
       ],
       "pricing": {
-        "regular_price": 1000,
-        "currency": "USD"
+        "regular_price": 1200,
+        "currency": "ILS"
       },
+      "halilit_price": 1200,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Entry"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-BO-5432",
       "verified": true
     },
     {
-      "id": "boss-prod-2",
+      "id": "boss-katana-100-gen3",
+      "name": "Katana-100 Gen3",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Amplifier",
+      "description": "The Katana-100 Gen3 represents the standard tier of Boss's Amplifier lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp",
+      "images": [
+        "/data/product_images/boss/boss-katana-100-gen3_thumb.webp",
+        "/data/product_images/boss/boss-katana-100-gen3_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 1800,
+        "currency": "ILS"
+      },
+      "halilit_price": 1800,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BO-8719",
+      "verified": true
+    },
+    {
+      "id": "boss-nextone-special",
+      "name": "Nextone Special",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Amplifier",
+      "description": "The Nextone Special represents the flagship tier of Boss's Amplifier lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-nextone-special_thumb.webp",
+      "images": [
+        "/data/product_images/boss/boss-nextone-special_thumb.webp",
+        "/data/product_images/boss/boss-nextone-special_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS"
+      },
+      "halilit_price": 3500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BO-3920",
+      "verified": true
+    },
+    {
+      "id": "boss-gt-1",
+      "name": "GT-1",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "description": "The GT-1 represents the entry tier of Boss's Multi-Effects lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-gt-1_thumb.webp",
+      "images": [
+        "/data/product_images/boss/boss-gt-1_thumb.webp",
+        "/data/product_images/boss/boss-gt-1_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 900,
+        "currency": "ILS"
+      },
+      "halilit_price": 900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BO-1617",
+      "verified": true
+    },
+    {
+      "id": "boss-gt-1000core",
+      "name": "GT-1000CORE",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "description": "The GT-1000CORE represents the standard tier of Boss's Multi-Effects lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-gt-1000core_thumb.webp",
+      "images": [
+        "/data/product_images/boss/boss-gt-1000core_thumb.webp",
+        "/data/product_images/boss/boss-gt-1000core_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 2400,
+        "currency": "ILS"
+      },
+      "halilit_price": 2400,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BO-9520",
+      "verified": true
+    },
+    {
+      "id": "boss-gt-1000",
       "name": "GT-1000",
       "brand": "Boss",
       "main_category": "Guitar",
       "subcategory": "Multi-Effects",
-      "description": "The GT-1000 is a premium Multi-Effects from Boss. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The GT-1000 represents the flagship tier of Boss's Multi-Effects lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-gt-1000_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/boss/boss-gt-1000_thumb.webp",
+        "/data/product_images/boss/boss-gt-1000_main.webp"
       ],
       "pricing": {
-        "regular_price": 1100,
-        "currency": "USD"
+        "regular_price": 4500,
+        "currency": "ILS"
       },
+      "halilit_price": 4500,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Flagship"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-BO-6626",
       "verified": true
     },
     {
-      "id": "boss-prod-3",
+      "id": "boss-rc-5",
+      "name": "RC-5",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Looper",
+      "description": "The RC-5 represents the entry tier of Boss's Looper lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-rc-5_thumb.webp",
+      "images": [
+        "/data/product_images/boss/boss-rc-5_thumb.webp",
+        "/data/product_images/boss/boss-rc-5_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 850,
+        "currency": "ILS"
+      },
+      "halilit_price": 850,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BO-4560",
+      "verified": true
+    },
+    {
+      "id": "boss-rc-505mkii",
       "name": "RC-505mkII",
       "brand": "Boss",
-      "main_category": "Effects",
-      "subcategory": "Loopers",
-      "description": "The RC-505mkII is a premium Loopers from Boss. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "main_category": "Guitar",
+      "subcategory": "Looper",
+      "description": "The RC-505mkII represents the flagship tier of Boss's Looper lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-rc-505mkii_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/boss/boss-rc-505mkii_thumb.webp",
+        "/data/product_images/boss/boss-rc-505mkii_main.webp"
       ],
       "pricing": {
-        "regular_price": 1200,
-        "currency": "USD"
+        "regular_price": 2600,
+        "currency": "ILS"
       },
+      "halilit_price": 2600,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Flagship"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "low-stock",
+      "sku": "HL-BO-1425",
       "verified": true
     },
     {
-      "id": "boss-prod-4",
-      "name": "DS-1W",
+      "id": "boss-dm-101",
+      "name": "DM-101",
       "brand": "Boss",
-      "main_category": "Effects",
-      "subcategory": "Distortion",
-      "description": "The DS-1W is a premium Distortion from Boss. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
-      "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
-      ],
-      "pricing": {
-        "regular_price": 1300,
-        "currency": "USD"
-      },
-      "specifications": [
-        {
-          "key": "Weight",
-          "value": "10kg"
-        },
-        {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "boss-prod-5",
-      "name": "DD-8",
-      "brand": "Boss",
-      "main_category": "Effects",
+      "main_category": "Guitar",
       "subcategory": "Delay",
-      "description": "The DD-8 is a premium Delay from Boss. It features state-of-the-art technology and superior build quality.",
-      "image_url": "https://placehold.co/600x400/png",
+      "description": "The DM-101 represents the flagship tier of Boss's Delay lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-dm-101_thumb.webp",
       "images": [
-        "https://placehold.co/600x400/png",
-        "https://placehold.co/150x150/png"
+        "/data/product_images/boss/boss-dm-101_thumb.webp",
+        "/data/product_images/boss/boss-dm-101_main.webp"
       ],
       "pricing": {
-        "regular_price": 1400,
-        "currency": "USD"
+        "regular_price": 1800,
+        "currency": "ILS"
       },
+      "halilit_price": 1800,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Flagship"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "low-stock",
+      "sku": "HL-BO-2566",
+      "verified": true
+    },
+    {
+      "id": "boss-gx-100",
+      "name": "GX-100",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "description": "The GX-100 represents the standard tier of Boss's Multi-Effects lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/boss/boss-gx-100_thumb.webp",
+      "images": [
+        "/data/product_images/boss/boss-gx-100_thumb.webp",
+        "/data/product_images/boss/boss-gx-100_main.webp"
+      ],
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS"
+      },
+      "halilit_price": 2200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BO-6681",
       "verified": true
     }
   ]

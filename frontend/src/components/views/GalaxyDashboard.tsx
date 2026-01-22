@@ -2,13 +2,16 @@
  * GalaxyDashboard / Halilit Master Desk
  *
  * "The Atmosphere" meets "Digital Showroom"
- * Viewport-locked layout with:
- * - Meter Bridge header (Master controls feel)
- * - Channel Strip Grid (Category/Department selection)
- * - Transport Bar footer (Global navigation)
+ * Fully responsive layout with:
+ * - Adaptive grid (1-6 columns based on viewport)
+ * - Smooth scrolling support
+ * - Professional category cards
+ * - Touch-optimized for mobile
  */
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
+import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
 import { CandyCard } from "../ui/CandyCard";
 
@@ -57,6 +60,28 @@ const CATEGORY_IMAGES: Record<string, string[]> = {
 
 export const GalaxyDashboard: React.FC = () => {
   const { selectUniversalCategory, selectSubcategory } = useNavigationStore();
+  const [gridColumns, setGridColumns] = useState(3);
+
+  // Calculate responsive grid columns
+  useEffect(() => {
+    const calculateColumns = () => {
+      const width = window.innerWidth;
+      if (width < 640) return 1; // Mobile
+      if (width < 1024) return 2; // Tablet
+      if (width < 1280) return 2; // Small desktop
+      if (width < 1536) return 3; // Desktop
+      return 3; // Large screens
+    };
+
+    setGridColumns(calculateColumns());
+
+    const handleResize = () => {
+      setGridColumns(calculateColumns());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Derive visible categories from UNIVERSAL_CATEGORIES
   const visibleCategories = UNIVERSAL_CATEGORIES.slice(0, 6); // Limit to 6 for grid fit
@@ -70,62 +95,93 @@ export const GalaxyDashboard: React.FC = () => {
   };
 
   return (
-    <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden no-scrollbar">
-      {/* 1. The "Meter Bridge" (Header) - Master Control aesthetics */}
-      <header className="flex-shrink-0 h-20 px-8 flex items-center justify-between border-b border-white/10 bg-[#18181b]">
+    <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden">
+      {/* Compact Header */}
+      <header className="flex-shrink-0 h-14 px-6 flex items-center justify-between border-b border-white/10 bg-[#0a0a0a]">
         <div className="flex items-center gap-4">
-          {/* "Recording" LED - animated pulse */}
-          <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(239,68,68,1)]" />
-          <h1 className="text-2xl font-black tracking-[0.2em] text-zinc-400 uppercase">
-            HALILIT <span className="text-white">MASTER</span>
-          </h1>
+          <div className="flex flex-col leading-none select-none">
+            <span
+              className="text-3xl font-black text-white"
+              style={{
+                fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                fontWeight: 900,
+                letterSpacing: "-0.05em",
+                textTransform: "lowercase",
+                fontStyle: "italic",
+              }}
+            >
+              halilit
+            </span>
+            <span className="text-[0.5rem] font-semibold text-zinc-600 tracking-[0.2em] uppercase">
+              Support Center
+            </span>
+          </div>
         </div>
-        {/* Status indicators (DAW style) */}
-        <div className="font-mono text-xs text-zinc-500 flex gap-6">
-          <span>SR: 48kHz</span>
-          <span>CLK: INT</span>
-          <span className="text-[var(--led-active)]">● ONLINE</span>
+        <div className="flex items-center gap-4 text-xs text-zinc-600 font-mono">
+          <span className="text-green-500">● ONLINE</span>
+          <span>v3.7.5</span>
         </div>
       </header>
 
-      {/* 2. The "Channel Strip" Grid (Main Content) - Non-scrolling viewport */}
-      <main className="flex-1 p-6 grid grid-cols-2 lg:grid-cols-3 gap-6 overflow-hidden">
-        {visibleCategories.map((cat) => {
-          return (
-            <div
-              key={cat.id}
-              className="relative transition-all hover:z-10 group"
-            >
-              <CandyCard
-                title={cat.label}
-                subtitle={`${cat.description || "ARM TRACK"}`}
-                images={
-                  CATEGORY_IMAGES[cat.label] || CATEGORY_IMAGES["Default"]
-                }
-                subcategories={cat.subcategories}
-                onClick={() => handleCategoryClick(cat.id)}
-                onSubcategoryClick={(sub) =>
-                  handleSubcategoryClick(cat.id, sub)
-                }
-              />
-            </div>
-          );
-        })}
-      </main>
+      {/* Compact Grid - All Categories Visible */}
+      <main className="flex-1 overflow-y-auto scrollbar-custom p-6">
+        <div className="max-w-[1600px] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className={cn(
+              "grid gap-4",
+              gridColumns === 1 && "grid-cols-1",
+              gridColumns === 2 && "grid-cols-2",
+              gridColumns === 3 && "grid-cols-3",
+            )}
+          >
+            {visibleCategories.map((cat, index) => {
+              return (
+                <motion.div
+                  key={cat.id}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.2, delay: index * 0.05 }}
+                  className="relative"
+                >
+                  <CandyCard
+                    title={cat.label}
+                    subtitle={`${cat.description || "ARM TRACK"}`}
+                    images={
+                      CATEGORY_IMAGES[cat.label] || CATEGORY_IMAGES["Default"]
+                    }
+                    subcategories={cat.subcategories}
+                    onClick={() => handleCategoryClick(cat.id)}
+                    onSubcategoryClick={(sub) =>
+                      handleSubcategoryClick(cat.id, sub)
+                    }
+                  />
+                </motion.div>
+              );
+            })}
+          </motion.div>
 
-      {/* 3. The "Transport Bar" (Footer) - Global navigation */}
-      <footer className="flex-shrink-0 h-16 bg-[#121214] border-t border-white/10 flex items-center justify-center gap-2 px-8">
-        <button className="h-10 px-8 rounded bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-mono uppercase tracking-widest transition-colors hover:shadow-[0_0_12px_rgba(0,255,148,0.2)]">
-          Global Search
-        </button>
-        <button className="h-10 px-8 rounded bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-mono uppercase tracking-widest transition-colors hover:shadow-[0_0_12px_rgba(0,255,148,0.2)]">
-          All Brands
-        </button>
-        <div className="flex-1" />
-        <span className="text-xs text-zinc-600 font-mono">
-          v3.7.5 • Showroom Ready
-        </span>
-      </footer>
+          {/* Compact Footer */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.6 }}
+            className="mt-8 text-center"
+          >
+            <div className="inline-flex items-center gap-3 px-4 py-2 bg-zinc-900/50 rounded-lg border border-zinc-800 text-xs">
+              <button className="font-mono text-zinc-500 hover:text-cyan-400 transition-colors">
+                SEARCH
+              </button>
+              <div className="w-px h-3 bg-zinc-700" />
+              <button className="font-mono text-zinc-500 hover:text-cyan-400 transition-colors">
+                BRANDS
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      </main>
     </div>
   );
 };
