@@ -1,4 +1,4 @@
-# HSC Mission Control v3.7.4 - Frontend
+# HSC Mission Control v3.7.5 - Frontend
 
 Modern React + TypeScript frontend with clean, production-ready architecture.
 
@@ -261,9 +261,9 @@ Check browser console for initialization errors:
 
 ---
 
-**Version**: 3.7.4  
+**Version**: 3.7.5  
 **Status**: Production Ready  
-**Last Updated**: January 21, 2026
+**Last Updated**: January 22, 2026
 // Alternatively, use this for stricter rules
 tseslint.configs.strictTypeChecked,
 // Optionally, add this for stylistic rules

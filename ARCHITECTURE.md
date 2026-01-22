@@ -1,10 +1,10 @@
-# 🏗️ HSC Mission Control v3.7.4 - Architecture Documentation
+# 🏗️ HSC Mission Control v3.7.5 - Architecture Documentation
 
 ## 📋 Overview
 
 HSC Mission Control is a **static-first, production-ready product catalog system** built with React, TypeScript, and Tailwind CSS. It follows the **ONE SOURCE OF TRUTH** principle: all data comes from pre-built JSON files with zero backend dependencies.
 
-**Version**: 3.7.4  
+**Version**: 3.7.5  
 **Status**: Production Ready  
 **Architecture**: Static SPA (Single Page Application)
 
@@ -109,7 +109,7 @@ hsc-jit-v3/
 │
 ├── README.md                       # Main documentation
 ├── ARCHITECTURE.md                 # This file
-└── CLEANUP_COMPLETE.md             # v3.7.4 cleanup summary
+└── MAINTENANCE.md                  # Development & deployment guide
 ```
 
 ---
@@ -517,6 +517,7 @@ pnpm build
 
 | Version | Date       | Changes                               |
 | ------- | ---------- | ------------------------------------- |
+| 3.7.5   | 2026-01-22 | Visual-First "See Then Read" Design   |
 | 3.7.4   | 2026-01-21 | Complete cleanup, ONE SOURCE OF TRUTH |
 | 3.7.3   | 2026-01-19 | DNA extraction, connectivity data     |
 | 3.7.2   | 2026-01-15 | Brand theming improvements            |
@@ -527,7 +528,7 @@ pnpm build
 ## 📚 Related Documentation
 
 - [README.md](README.md) - Main documentation
-- [CLEANUP_COMPLETE.md](CLEANUP_COMPLETE.md) - v3.7.4 cleanup summary
+- [MAINTENANCE.md](MAINTENANCE.md) - Development & deployment
 - [frontend/README.md](frontend/README.md) - Frontend-specific docs
 - [.github/copilot-instructions.md](.github/copilot-instructions.md) - Development guidelines
 

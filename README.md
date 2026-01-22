@@ -6,15 +6,11 @@
 
 A modern, high-performance product catalog system for professional musical instruments. Built with React 19, TypeScript 5, and Tailwind CSS featuring a revolutionary visual-first interface that prioritizes discovery over reading.
 
-## 📖 **→ [GO TO SYSTEM GUIDE](SYSTEM.md)**
-
-**Everything you need is in [SYSTEM.md](SYSTEM.md)** - quick start, architecture, development, deployment, troubleshooting.
-
 ---
 
 ## ✨ v3.7.5: Visual Discovery Paradigm
 
-The entire UI has been transformed to prioritize **visual discovery** over text-based navigation:
+**"See Then Read"** - A complete visual-first interface redesign prioritizing immediate product discovery over text-based browsing.
 
 ### 🎬 Visual Home - GalaxyDashboard
 
@@ -173,7 +169,7 @@ hsc-jit-v3/
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│              HALILIT SUPPORT CENTER v3.7.4                  │
+│              HALILIT SUPPORT CENTER v3.7.5                  │
 └─────────────────────────────────────────────────────────────┘
 ┌────────────────┬────────────────────────────────────────────┐
 │                │                                            │
@@ -207,7 +203,7 @@ hsc-jit-v3/
 
 ---
 
-## 🧭 Navigation Features (v3.7.4)
+## 🧭 Navigation Features (v3.7.5)
 
 ### Breadcrumbs Navigation
 
@@ -431,7 +427,7 @@ VITE_PORT=5174 pnpm dev
 
 ## 📚 Documentation
 
-- **[CLEANUP_COMPLETE.md](CLEANUP_COMPLETE.md)** - v3.7.4 cleanup summary
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - System architecture & design
 - **[.github/copilot-instructions.md](.github/copilot-instructions.md)** - Development guidelines
 - **[frontend/README.md](frontend/README.md)** - Frontend-specific docs
 

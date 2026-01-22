@@ -1,6 +1,6 @@
 # 🔧 Maintenance Guide - Keep HSC-JIT Clean 100% of the Time
 
-**Automated quality control for v3.7.4 Categories-First**
+**Automated quality control for v3.7.5 "See Then Read"**
 
 ---
 
@@ -72,7 +72,7 @@ chmod +x .husky/pre-commit
 
 **Runs on**:
 
-- Every push to `main` or `v3.7.4-*` branches
+- Every push to `main` or `v3.7.5-*` branches
 - Every pull request
 
 **What it checks**:
@@ -441,6 +441,6 @@ Instead:
 
 ---
 
-**Version**: 3.7.4 Categories-First  
-**Last Updated**: January 21, 2026  
+**Version**: 3.7.5 "See Then Read"  
+**Last Updated**: January 22, 2026  
 **Maintained by**: Ori Pridan ([@oripridan-dot](https://github.com/oripridan-dot))
