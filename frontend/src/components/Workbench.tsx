@@ -3,7 +3,7 @@
  * Routes between different view components based on current level
  * Now includes Breadcrumbs and LayerNavigator for hierarchical navigation
  */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { catalogLoader } from "../lib/catalogLoader";
 import {
   getCategoryById,
