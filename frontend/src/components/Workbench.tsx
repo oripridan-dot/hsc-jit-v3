@@ -16,8 +16,13 @@ import { GalaxyDashboard } from "./views/GalaxyDashboard";
 import { UniversalCategoryView } from "./views/UniversalCategoryView";
 
 export const Workbench: React.FC = () => {
-  const { currentLevel, currentUniversalCategory, activePath, currentBrand } =
-    useNavigationStore();
+  const {
+    currentLevel,
+    currentUniversalCategory,
+    currentSubcategory,
+    activePath,
+    currentBrand,
+  } = useNavigationStore();
   const [universalProducts, setUniversalProducts] = useState<Product[]>([]);
   const [brandProducts, setBrandProducts] = useState<Product[]>([]);
   const [categoryProducts, setCategoryProducts] = useState<Product[]>([]);
@@ -63,11 +68,28 @@ export const Workbench: React.FC = () => {
   const renderView = () => {
     // Priority 0: Universal Category View (New Architecture)
     if (currentLevel === "universal" && currentUniversalCategory) {
-      const filtered = universalProducts.filter(
+      let filtered = universalProducts.filter(
         (p) => mapProductToUniversal(p) === currentUniversalCategory,
       );
       const categoryDef = getCategoryById(currentUniversalCategory);
-      const categoryLabel = categoryDef?.label || currentUniversalCategory;
+      let categoryLabel = categoryDef?.label || currentUniversalCategory;
+
+      // Handle Subcategory "Drill Down" (Tierbar logic)
+      if (currentSubcategory) {
+        filtered = filtered.filter((p) => {
+          // Simple fuzzy match for now to catch relevant items
+          const blob = (
+            p.category +
+            " " +
+            p.name +
+            " " +
+            (p.description || "")
+          ).toLowerCase();
+          return blob.includes(currentSubcategory.toLowerCase());
+        });
+        categoryLabel = `${categoryLabel} / ${currentSubcategory}`;
+      }
+
       return (
         <UniversalCategoryView
           categoryTitle={categoryLabel}

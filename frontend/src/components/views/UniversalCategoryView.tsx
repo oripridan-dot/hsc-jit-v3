@@ -1,72 +1,85 @@
+/**
+ * UniversalCategoryView / The "Shelf"
+ *
+ * Grid-based product display (non-scrolling) that fills the viewport
+ * Features:
+ * - Compact header bar with back button
+ * - Dense product grid with CandyCard components
+ * - "View More" card for pagination (if needed)
+ * - No scrolling - viewport-locked display
+ */
 import React, { useMemo } from "react";
+import { useNavigationStore } from "../../store/navigationStore";
 import type { Product } from "../../types";
-import { TierBar } from "../smart-views/TierBar";
-// Updated import path since ContextBadge was created in ui/ which is a sibling of views/
-// Wait, components/ui and components/views are siblings.
-// So relative path from views/UniversalCategoryView.tsx to ui/ContextBadge.tsx should be ../ui/ContextBadge
-import { motion } from "framer-motion";
+import { BrandIcon } from "../BrandIcon";
+import { CandyCard } from "../ui/CandyCard";
 
 export const UniversalCategoryView: React.FC<{
   categoryTitle: string;
   products: Product[];
 }> = ({ categoryTitle, products }) => {
-  // 1. Group products by their functional sub-type
-  // e.g. Input: "Keys" -> Output: { "Stage Pianos": [...], "Synthesizers": [...] }
-  const lanes = useMemo(() => {
-    const groups: Record<string, Product[]> = {};
-    products.forEach((p) => {
-      // Fallback to 'General' if subcategory is missing
-      const sub = p.subcategory || "General";
-      if (!groups[sub]) groups[sub] = [];
-      groups[sub].push(p);
-    });
-    return groups;
+  const { selectUniversalCategory } = useNavigationStore();
+
+  // Flatten products for the grid (limit to ~15 items for viewport fit)
+  const allProducts = useMemo(() => {
+    return products.slice(0, 15);
   }, [products]);
 
+  const overflowCount = Math.max(0, products.length - 15);
+
   return (
-    <div className="h-full overflow-y-auto bg-[var(--bg-app)] p-8 pb-32">
-      {/* HERO */}
-      <header className="mb-16 border-b border-[var(--border-subtle)] pb-8">
-        <h1 className="text-6xl font-black text-[var(--text-primary)] uppercase tracking-tighter mb-2">
-          {categoryTitle}
-        </h1>
-        <div className="flex gap-4 text-[var(--text-secondary)] font-mono text-xs">
-          <span>{products.length} INSTRUMENTS</span>
-          <span>•</span>
-          <span>{Object.keys(lanes).length} CATEGORIES</span>
-          <span>•</span>
-          <span>{new Set(products.map((p) => p.brand)).size} BRANDS</span>
-        </div>
-      </header>
-
-      {/* RENDER SWIMLANES */}
-      <div className="space-y-24">
-        {Object.entries(lanes).map(([subCat, items], index) => (
-          <motion.section
-            key={subCat}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+    <div className="h-full w-full flex flex-col bg-[#0e0e10] overflow-hidden no-scrollbar">
+      {/* Header - Compact, spacious */}
+      <div className="flex-shrink-0 px-6 py-4 flex items-center justify-between bg-zinc-900/50 backdrop-blur-md border-b border-white/5">
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => selectUniversalCategory("")}
+            className="p-2 rounded-full hover:bg-white/10 transition-colors font-mono text-sm uppercase tracking-widest text-zinc-400 hover:text-white"
           >
-            {/* Lane Header */}
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-1.5 h-8 bg-indigo-500 rounded-full" />
-              <h2 className="text-3xl font-bold text-[var(--text-primary)]">
-                {subCat}
-              </h2>
-            </div>
+            ← BACK
+          </button>
+          <h2 className="text-3xl font-bold uppercase tracking-wider text-white">
+            {categoryTitle}
+          </h2>
+        </div>
+        <div className="text-sm text-zinc-500 uppercase font-mono flex gap-4">
+          <span>● {allProducts.length} LOADED</span>
+          {overflowCount > 0 && <span>+{overflowCount} MORE</span>}
+        </div>
+      </div>
 
-            {/* The "Tier Bar" component acts as the visualizer here */}
-            {/* We enable 'showBrandBadges' so the TierBar uses our new ContextBadge logic */}
-            <div className="h-[350px] bg-[var(--bg-panel)]/30 rounded-2xl border border-[var(--border-subtle)] p-4 relative">
-              <TierBar
-                products={items}
-                showBrandBadges={true} // Triggers the multi-brand visual mode
-                title="" // Hide title since we have the section header
-              />
+      {/* The Product Grid - Fills remaining space, prevents scrolling */}
+      <div className="flex-1 p-6 overflow-hidden">
+        <div className="h-full w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          {allProducts.map((product) => (
+            <CandyCard
+              key={product.id}
+              title={product.name}
+              subtitle={product.brand}
+              image={product.image_url}
+              logo={
+                <BrandIcon
+                  brand={product.brand}
+                  className="w-full h-full text-white"
+                />
+              }
+              onClick={() =>
+                console.log("Open Inspection Lens for", product.id)
+              }
+            />
+          ))}
+
+          {/* If there are more products than fit, show a 'View More' card */}
+          {overflowCount > 0 && (
+            <div className="flex items-center justify-center h-full w-full rounded-lg border border-dashed border-zinc-700 hover:border-zinc-500 cursor-pointer transition-colors hover:bg-zinc-800/30">
+              <span className="text-zinc-400 font-mono text-sm text-center">
+                +{overflowCount}
+                <br />
+                <span className="text-xs text-zinc-600">more</span>
+              </span>
             </div>
-          </motion.section>
-        ))}
+          )}
+        </div>
       </div>
     </div>
   );

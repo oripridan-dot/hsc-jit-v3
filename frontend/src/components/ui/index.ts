@@ -9,3 +9,5 @@ export type { BreadcrumbItem } from "./Breadcrumbs";
 export { LayerNavigator } from "./LayerNavigator";
 
 export { ContextBadge } from "./ContextBadge";
+
+export { CandyCard } from "./CandyCard";

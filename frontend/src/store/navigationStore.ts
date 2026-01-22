@@ -43,6 +43,7 @@ interface NavState {
   currentBrand: BrandIdentity | null;
   currentCategory: string | null;
   currentUniversalCategory: string | null;
+  currentSubcategory: string | null; // New state for tierbar navigation
   ecosystem: EcosystemNode | null;
   navigationHistory: string[][]; // Track breadcrumb history for better UX
 
@@ -59,6 +60,7 @@ interface NavState {
   warpTo: (level: NavLevel, path: string[]) => void;
   selectBrand: (brandId: string) => void;
   selectUniversalCategory: (category: string) => void;
+  selectSubcategory: (category: string, subcategory: string) => void;
   selectCategory: (brandId: string, category: string) => void;
   selectProduct: (product: Product) => void;
   selectLayer: (layerName: string) => void; // New: Navigate to hierarchical layer
@@ -85,6 +87,7 @@ export const useNavigationStore = create<NavState>(
       currentBrand: null,
       currentCategory: null,
       currentUniversalCategory: null,
+      currentSubcategory: null,
       ecosystem: null,
       navigationHistory: [],
       expandedNodes: new Set<string>(),
@@ -130,7 +133,20 @@ export const useNavigationStore = create<NavState>(
           currentLevel: "universal",
           selectedProduct: null,
           currentUniversalCategory: category,
+          currentSubcategory: null,
           activePath: [category],
+          currentBrand: null,
+        });
+      },
+
+      selectSubcategory: (category, subcategory) => {
+        console.log("🌌 Subcategory Selected:", category, subcategory);
+        set({
+          currentLevel: "universal",
+          selectedProduct: null,
+          currentUniversalCategory: category,
+          currentSubcategory: subcategory,
+          activePath: [category, subcategory],
           currentBrand: null,
         });
       },

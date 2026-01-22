@@ -62,17 +62,29 @@ export const Navigator = () => {
     loadCatalog();
   }, []);
 
+  useEffect(() => {
+    // Sync active brand to highlight in sidebar
+    if (activePath[0] && viewMode === "brand") {
+      // Additional sync logic if needed
+    }
+  }, [activePath, viewMode]);
+
   return (
-    <aside className="w-20 lg:w-60 bg-gradient-to-b from-[#111] to-[#0f0f0f] border-r border-white/5 flex flex-col h-full z-20">
+    <aside className="w-20 lg:w-60 bg-gradient-to-b from-[#111] to-[#0f0f0f] border-r border-white/5 flex flex-col h-full z-20 transition-all duration-300">
       {/* 1. HEADER */}
-      <div className="px-3 py-5 border-b border-white/5">
-        <div className="flex items-center gap-2 justify-center lg:justify-start mb-4">
-          <div className="w-7 h-7 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg flex items-center justify-center shrink-0 shadow-lg shadow-indigo-500/20">
-            <span className="font-black text-white text-sm">H</span>
-          </div>
-          <span className="font-bold text-white hidden lg:block text-sm tracking-tight">
-            Halilit
-          </span>
+      <div className="px-5 py-6 border-b border-white/5 bg-[#0a0a0a]">
+        <div className="flex items-center gap-3 justify-center lg:justify-start mb-6">
+          {/* Authentic Halilit Logo SVG */}
+          <svg
+            viewBox="0 0 140 40"
+            className="h-8 w-auto fill-current text-red-600"
+          >
+            <path
+              d="M12.5,0 L12.5,35 L2.5,35 L2.5,0 L12.5,0 Z M27.5,0 L27.5,35 L17.5,35 L17.5,0 L27.5,0 Z M42.5,0 L42.5,25 L52.5,25 L52.5,35 L32.5,35 L32.5,0 L42.5,0 Z M57.5,0 L57.5,35 L47.5,35 L47.5,0 L57.5,0 Z M72.5,0 L72.5,25 L82.5,25 L82.5,35 L62.5,35 L62.5,0 L72.5,0 Z M87.5,0 L87.5,35 L77.5,35 L77.5,0 L87.5,0 Z M105.0,5 L105.0,35 L95.0,35 L95.0,5 L85.0,5 L85.0,0 L115.0,0 L115.0,5 L105.0,5 Z"
+              fill="#E31E24"
+            />{" "}
+            {/* Simplified textual representation for "HALILIT" branding */}
+          </svg>
         </div>
 
         {/* Visual Mode Toggle - Refined */}

@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Brand Theme CSS Variables */
+/* ===== STUDIO DARK PALETTE ===== */
 :root {
+  /* The "Studio" Dark Palette */
+  --studio-bg: #0e0e10;         /* Deepest matte black/grey */
+  --studio-panel: #18181b;      /* Slightly lighter for "modules" */
+  --studio-metal: #27272a;      /* Brushed metal borders */
+  
+  /* "Signal" Colors (Like LEDs on a mixer) */
+  --led-active: #00ff94;        /* Signal Green */
+  --led-standby: #3f3f46;       /* Dim/Off LED */
+  --led-record: #ff3333;        /* Attention/Active Red */
+  
+  /* The "Real World" Glass effect */
+  --glass-gloss: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  
+  /* Legacy brand variables (for compatibility) */
   --brand-primary: #06B6D4;
   --brand-secondary: #0891B2;
   --brand-accent: #67E8F9;
@@ -20,6 +35,20 @@
   --brand-accent: #FFD700;
   --brand-gradient-hero: linear-gradient(135deg, #E31E24 0%, #8B0000 100%);
   --brand-gradient-card: linear-gradient(135deg, rgba(227, 30, 36, 0.15) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+/* Global HTML/Body Reset for Viewport Lock */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--studio-bg);
+  color: #f4f4f5;
+  font-family: 'Inter', sans-serif;
+  /* Subtle texture to mimic hardware casing */
+  background-image: radial-gradient(circle at center, #18181b 0%, #09090b 100%);
 }
 
 /* Custom animations */
@@ -146,5 +175,14 @@
   /* Perspective for 3D effects */
   .perspective-1000 {
     perspective: 1000px;
+  }
+
+  /* No scrollbar utility (lock viewport) */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

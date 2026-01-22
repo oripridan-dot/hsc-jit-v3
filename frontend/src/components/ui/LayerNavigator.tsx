@@ -1,15 +1,15 @@
 /**
- * LayerNavigator - Hierarchical Multi-Level Button Navigation
- * When a category is selected, displays the next navigation layer as simple buttons
- * Allows drilling down through the taxonomy recursively
+ * LayerNavigator - Hierarchical Multi-Level Tier Navigation
+ * "Netflix-Style" Tier Bars with Scope Control
  */
 
 import { AnimatePresence, motion } from "framer-motion";
-import { Layers } from "lucide-react";
-import React, { useMemo } from "react";
+import { ChevronDown, ChevronRight, Maximize2, Minimize2 } from "lucide-react";
+import React, { useMemo, useState } from "react";
 import { useNavigationStore } from "../../store/navigationStore";
 import { brandThemes } from "../../styles/brandThemes";
 import type { Product } from "../../types";
+import { CandyCard } from "./CandyCard";
 
 interface LayerNavigatorProps {
   products: Product[];
@@ -17,51 +17,179 @@ interface LayerNavigatorProps {
   onLayerChange?: (layer: string) => void;
   /**
    * If provided, these products are from multiple brands.
-   * Show family/category buttons instead.
+   * Show family/category tiers.
    */
   isMultiBrand?: boolean;
 }
 
+interface TierGroup {
+  name: string;
+  count: number;
+  products: Product[];
+}
+
 /**
- * Extracts the next layer of organization from products
- * E.g., if currentLevel is "category", returns all subcategories
+ * Extracts and groups products for the next layer
  */
-const getNextLayer = (
+const getNextLayerGroups = (
   products: Product[],
   currentLevel: "brand" | "category" | "subcategory",
-): Array<{ name: string; count: number; color?: string }> => {
-  const grouped: Record<string, Set<string>> = {};
+): TierGroup[] => {
+  const grouped: Record<string, Product[]> = {};
 
   products.forEach((p) => {
     let groupKey = "";
 
     switch (currentLevel) {
       case "brand":
-        // Next layer: category (family)
         groupKey = p.category || "Uncategorized";
         break;
       case "category":
-        // Next layer: subcategory
         groupKey = p.subcategory || "General";
         break;
       case "subcategory":
-        // Next layer: individual products
+        // Terminal level - group by name to deduplicate or just show product
         groupKey = p.name;
         break;
     }
 
     if (!grouped[groupKey]) {
-      grouped[groupKey] = new Set();
+      grouped[groupKey] = [];
     }
-    grouped[groupKey].add(p.id);
+    grouped[groupKey].push(p);
   });
 
   return Object.entries(grouped)
-    .map(([name, products]) => ({
+    .map(([name, items]) => ({
       name,
-      count: products.size,
+      count: items.length,
+      products: items,
     }))
-    .sort((a, b) => b.count - a.count); // Sort by product count descending
+    .sort((a, b) => b.count - a.count);
+};
+
+const TierBar = ({
+  group,
+  brandColor,
+  onSelect,
+}: {
+  group: TierGroup;
+  brandColor: string;
+  onSelect: (name: string) => void;
+}) => {
+  const [expanded, setExpanded] = useState(false);
+  const [thumbnailSize, setThumbnailSize] = useState<"sm" | "md" | "lg">("md");
+
+  // Most familiar products (first 10 for the strip if not expanded)
+  const displayProducts = expanded
+    ? group.products
+    : group.products.slice(0, 15);
+
+  return (
+    <motion.div
+      layout
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="w-full bg-[var(--bg-panel)]/40 rounded-xl border border-[var(--border-subtle)] overflow-hidden flex flex-col mb-4 group/tier"
+    >
+      {/* Tier Header & Controls */}
+      <div className="flex items-center gap-4 px-4 py-3 bg-black/20 border-b border-[var(--border-subtle)]/50">
+        <button
+          onClick={() => onSelect(group.name)}
+          className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+        >
+          <div
+            className="w-1 h-6 rounded-full"
+            style={{ backgroundColor: brandColor }}
+          />
+          <h3 className="text-lg font-bold text-[var(--text-primary)] uppercase tracking-tight">
+            {group.name}
+          </h3>
+          <span className="text-xs font-mono text-[var(--text-tertiary)] px-2 py-0.5 rounded bg-white/5">
+            {group.count}
+          </span>
+        </button>
+
+        <div className="ml-auto flex items-center gap-2 opacity-0 group-hover/tier:opacity-100 transition-opacity">
+          {/* Scope Handles */}
+          <button
+            onClick={() => setThumbnailSize((s) => (s === "sm" ? "md" : "sm"))}
+            className={`p-1.5 rounded hover:bg-white/10 ${thumbnailSize === "sm" ? "text-white" : "text-white/40"}`}
+            title="Small Scope"
+          >
+            <Minimize2 size={14} />
+          </button>
+          <button
+            onClick={() => setThumbnailSize((s) => (s === "lg" ? "md" : "lg"))}
+            className={`p-1.5 rounded hover:bg-white/10 ${thumbnailSize === "lg" ? "text-white" : "text-white/40"}`}
+            title="Large Scope"
+          >
+            <Maximize2 size={14} />
+          </button>
+          <div className="w-px h-4 bg-white/10 mx-1" />
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className={`p-1.5 rounded hover:bg-white/10 text-white/60 hover:text-white transition-colors`}
+          >
+            {expanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Product Strip / Grid */}
+      <div
+        className={`
+                relative p-4 overflow-x-auto custom-scrollbar transition-all duration-300
+                ${expanded ? "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 overflow-visible" : "flex gap-4"}
+            `}
+      >
+        {displayProducts.map((product) => (
+          <div
+            key={product.id}
+            className={`
+                            shrink-0 transition-all duration-300
+                            ${thumbnailSize === "sm" ? "w-32" : thumbnailSize === "md" ? "w-48" : "w-64"}
+                        `}
+          >
+            <CandyCard
+              title={product.name}
+              subtitle={product.model_number || product.description}
+              image={
+                product.image ||
+                (product.images && product.images[0]) ||
+                product.image_url
+              }
+              onClick={() => {
+                useNavigationStore.getState().selectProduct(product);
+              }}
+            />
+          </div>
+        ))}
+
+        {!expanded && group.count > 15 && (
+          <button
+            onClick={() => setExpanded(true)}
+            className="shrink-0 w-32 flex flex-col items-center justify-center border border-dashed border-white/10 rounded-xl hover:bg-white/5 transition-colors group/more"
+          >
+            <span className="text-2xl font-light text-white/20 group-hover/more:text-white/50 mb-2">
+              + {group.count - 15}
+            </span>
+            <span className="text-xs text-white/40 uppercase tracking-widest">
+              View All
+            </span>
+          </button>
+        )}
+      </div>
+
+      {/* Resizer Handle (Visual Only for now, toggles expand) */}
+      <div
+        className="h-1.5 w-full bg-black/40 hover:bg-[var(--brand-primary)]/50 cursor-ns-resize flex items-center justify-center transition-colors opacity-0 group-hover/tier:opacity-100"
+        onClick={() => setExpanded(!expanded)}
+      >
+        <div className="w-12 h-0.5 bg-white/20 rounded-full" />
+      </div>
+    </motion.div>
+  );
 };
 
 export const LayerNavigator: React.FC<LayerNavigatorProps> = ({
@@ -72,109 +200,41 @@ export const LayerNavigator: React.FC<LayerNavigatorProps> = ({
 }) => {
   const { activePath, currentBrand, selectCategory } = useNavigationStore();
 
-  // Generate button layers for next navigation level
   const layers = useMemo(() => {
-    if (isMultiBrand) {
-      // For multi-brand views, show category/family groupings
-      return getNextLayer(products, "brand");
-    }
-
-    return getNextLayer(products, currentLevel);
+    return getNextLayerGroups(products, isMultiBrand ? "brand" : currentLevel);
   }, [products, currentLevel, isMultiBrand]);
 
-  if (layers.length === 0) {
-    return null; // No layers to navigate
-  }
+  if (layers.length === 0) return null;
 
   const brandColor: string =
     (currentBrand?.color as string) ||
     brandThemes[activePath[0]?.toLowerCase()]?.colors?.primary ||
     "#0ea5e9";
 
-  const handleLayerClick = (layerName: string) => {
-    if (onLayerChange) {
-      onLayerChange(layerName);
-    }
-
-    // Update store based on level
+  const handleLayerSelect = (layerName: string) => {
+    if (onLayerChange) onLayerChange(layerName);
     if (currentBrand && !isMultiBrand) {
       selectCategory(currentBrand.id, layerName);
     }
   };
 
-  const levelLabel = isMultiBrand
-    ? "Categories"
-    : currentLevel === "brand"
-      ? "Categories"
-      : "Subcategories";
-
   return (
-    <div className="w-full bg-[var(--bg-panel)]/30 rounded-xl border border-[var(--border-subtle)]/50 p-6 backdrop-blur-sm">
-      {/* Header */}
-      <div className="flex items-center gap-2 mb-4">
-        <Layers
-          size={16}
-          style={{ color: brandColor } as React.CSSProperties}
-        />
-        <h3 className="text-sm font-semibold text-[var(--text-primary)] uppercase tracking-wide">
-          {levelLabel}
-        </h3>
-        <span className="text-xs text-[var(--text-tertiary)] ml-auto">
-          {layers.length} items
+    <div className="w-full space-y-6 pb-20">
+      <AnimatePresence mode="popLayout">
+        {layers.map((layer) => (
+          <TierBar
+            key={layer.name}
+            group={layer}
+            brandColor={brandColor}
+            onSelect={handleLayerSelect}
+          />
+        ))}
+      </AnimatePresence>
+
+      <div className="flex justify-center py-8 opacity-50">
+        <span className="text-xs uppercase tracking-[0.2em] text-[var(--text-tertiary)]">
+          End of Stream
         </span>
-      </div>
-
-      {/* Button Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
-        <AnimatePresence>
-          {layers.map((layer, index) => (
-            <motion.button
-              key={layer.name}
-              initial={{ opacity: 0, y: 10, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -10, scale: 0.9 }}
-              transition={{ delay: index * 0.03 }}
-              onClick={() => handleLayerClick(layer.name)}
-              className="relative p-3 rounded-lg border border-[var(--border-subtle)] hover:border-[var(--text-primary)] bg-[var(--bg-app)]/20 hover:bg-[var(--bg-panel)] transition-all group text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-center overflow-hidden"
-              style={{
-                borderColor: `${brandColor}40`,
-              }}
-              onMouseEnter={(e) => {
-                const elem = e.currentTarget as HTMLElement;
-                elem.style.borderColor = brandColor;
-                elem.style.backgroundColor = `${brandColor}15`;
-              }}
-              onMouseLeave={(e) => {
-                const elem = e.currentTarget as HTMLElement;
-                elem.style.borderColor = `${brandColor}40`;
-                elem.style.backgroundColor = "transparent";
-              }}
-            >
-              {/* Background glow on hover */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity"
-                style={{
-                  background: `radial-gradient(circle, ${brandColor}15, transparent)`,
-                }}
-              />
-
-              {/* Content */}
-              <div className="relative z-10 flex flex-col items-center gap-1">
-                <span className="text-xs text-[var(--text-tertiary)] group-hover:text-[var(--brand-primary)]">
-                  {layer.count}
-                </span>
-                <span className="line-clamp-2 text-[var(--text-primary)]">
-                  {layer.name}
-                </span>
-              </div>
-            </motion.button>
-          ))}
-        </AnimatePresence>
-      </div>
-
-      {/* Footer Info */}
-      <div className="mt-4 pt-4 border-t border-[var(--border-subtle)]/30 text-xs text-[var(--text-tertiary)]">
-        <p>Click any {levelLabel.toLowerCase()} to explore further</p>
       </div>
     </div>
   );
