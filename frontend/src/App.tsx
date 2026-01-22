@@ -28,15 +28,15 @@ function AppContent() {
   }, []); // Run once on mount
 
   return (
-    <div className="flex fixed inset-0 flex-col bg-[#0a0a0a] text-white overflow-hidden font-sans">
+    <div className="flex h-screen w-screen flex-col bg-[#0a0a0a] text-white font-sans overflow-hidden">
       {/* MAIN APPLICATION FRAME */}
-      <div className="flex-1 flex overflow-hidden min-h-0 relative">
+      <div className="flex-1 flex min-h-0 relative">
         {/* LEFT COLUMN: Refined Navigation Sidebar */}
         <ErrorBoundary name="Navigator">
           <Navigator />
         </ErrorBoundary>
 
-        {/* CENTER + RIGHT COLUMN: Main Workbench */}
+        {/* CENTER + RIGHT COLUMN: Main Workbench - Now supports scrolling */}
         <ErrorBoundary name="Workbench">
           <main className="flex-1 relative z-10 flex flex-col overflow-hidden">
             <Workbench />

@@ -29,6 +29,7 @@ from models.product_hierarchy import (
 from services.scraper_enhancements import (
     SupportArticleExtractor, ProductImageEnhancer, BrandLogoDownloader
 )
+from services.catalog_manager import MasterCatalogManager
 from services.parsers.cable_parser import normalize_connector, calculate_tier, extract_connectivity
 import asyncio
 import logging
@@ -212,35 +213,13 @@ class RolandScraper:
                     logger.info(f"   Total Manuals: {total_manuals}")
                     logger.info(f"   Total Accessories: {total_accessories}")
 
-                    # Create comprehensive catalog
-                    brand = BrandIdentity(
-                        id="roland",
-                        name="Roland Corporation",
-                        website="https://www.roland.com",
-                        description="World leader in electronic musical instruments",
-                        categories=["Electronic Drums", "Digital Pianos",
-                                    "Synthesizers", "Guitar Products", "Wind Instruments"]
-                    )
-
-                    catalog = ProductCatalog(
-                        brand_identity=brand,
-                        products=products,
-                        total_products=len(products),
-                        last_updated=datetime.utcnow(),
-                        catalog_version="3.6.1",
-                        coverage_stats={
-                            "total_images": total_images,
-                            "total_videos": total_videos,
-                            "total_specifications": total_specs,
-                            "total_features": total_features,
-                            "total_manuals": total_manuals,
-                            "total_accessories": total_accessories,
-                            "avg_images_per_product": round(total_images / len(products), 2) if products else 0,
-                            "avg_specs_per_product": round(total_specs / len(products), 2) if products else 0
-                        }
-                    )
-
-                    return catalog
+                    # Initialize Manager
+                    manager = MasterCatalogManager("roland")
+                    
+                    # This single line handles the Loading, Merging, and Saving safely
+                    manager.merge_and_save(products)
+                    
+                    return manager.load_master() # Return the full updated catalog
                 
                 finally:
                     await browser.close()

@@ -3,11 +3,7 @@
   "brand_identity": {
     "id": "warm-audio",
     "name": "Warm Audio",
-    "description": "Classic analog recording gear reproductions",
     "website": "https://www.warm-audio.com",
-    "categories": [
-      "Studio"
-    ],
     "brand_colors": {
       "primary": "#ea580c",
       "secondary": "#431407",
@@ -19,252 +15,518 @@
   },
   "products": [
     {
-      "id": "warm-audio-prod-1",
+      "id": "warm audio-wa-87-r2",
       "name": "WA-87 R2",
       "brand": "Warm Audio",
       "main_category": "Studio",
       "subcategory": "Microphone",
-      "description": "The WA-87 R2 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
-      "image_url": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
+      "description": "The WA-87 R2 represents the standard tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-87-r2_thumb.webp",
       "images": {
-        "main": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
-        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
-        "high_res": "/data/product_images/warm-audio/warm-audio-prod-1_inspect.webp",
-        "original": "https://placehold.co/600x400/png"
+        "main": "/data/product_images/warm audio/warm audio-wa-87-r2_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-87-r2_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-87-r2_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-87-r2_thumb.webp"
       },
       "pricing": {
-        "regular_price": 1000,
-        "currency": "USD"
+        "regular_price": 2800,
+        "currency": "ILS"
       },
+      "halilit_price": 2800,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-WA-8074",
       "verified": true,
       "category": "Studio",
       "category_hierarchy": [
         "Studio"
-      ],
-      "image": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp"
+      ]
     },
     {
-      "id": "warm-audio-prod-2",
-      "name": "WA-2A",
-      "brand": "Warm Audio",
-      "main_category": "Studio",
-      "subcategory": "Compressor",
-      "description": "The WA-2A is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
-      "image_url": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
-      "images": {
-        "main": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
-        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
-        "high_res": "/data/product_images/warm-audio/warm-audio-prod-2_inspect.webp",
-        "original": "https://placehold.co/600x400/png"
-      },
-      "pricing": {
-        "regular_price": 1100,
-        "currency": "USD"
-      },
-      "specifications": [
-        {
-          "key": "Weight",
-          "value": "10kg"
-        },
-        {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
-        }
-      ],
-      "verified": true,
-      "category": "Studio",
-      "category_hierarchy": [
-        "Studio"
-      ],
-      "image": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp"
-    },
-    {
-      "id": "warm-audio-prod-3",
-      "name": "WA76",
-      "brand": "Warm Audio",
-      "main_category": "Studio",
-      "subcategory": "Compressor",
-      "description": "The WA76 is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
-      "image_url": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
-      "images": {
-        "main": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
-        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
-        "high_res": "/data/product_images/warm-audio/warm-audio-prod-3_inspect.webp",
-        "original": "https://placehold.co/600x400/png"
-      },
-      "pricing": {
-        "regular_price": 1200,
-        "currency": "USD"
-      },
-      "specifications": [
-        {
-          "key": "Weight",
-          "value": "10kg"
-        },
-        {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
-        }
-      ],
-      "verified": true,
-      "category": "Studio",
-      "category_hierarchy": [
-        "Studio"
-      ],
-      "image": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp"
-    },
-    {
-      "id": "warm-audio-prod-4",
+      "id": "warm audio-wa-47",
       "name": "WA-47",
       "brand": "Warm Audio",
       "main_category": "Studio",
       "subcategory": "Microphone",
-      "description": "The WA-47 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
-      "image_url": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
+      "description": "The WA-47 represents the flagship tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-47_thumb.webp",
       "images": {
-        "main": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
-        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
-        "high_res": "/data/product_images/warm-audio/warm-audio-prod-4_inspect.webp",
-        "original": "https://placehold.co/600x400/png"
+        "main": "/data/product_images/warm audio/warm audio-wa-47_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-47_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-47_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-47_thumb.webp"
       },
       "pricing": {
-        "regular_price": 1300,
-        "currency": "USD"
+        "regular_price": 4200,
+        "currency": "ILS"
       },
+      "halilit_price": 4200,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Flagship"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-WA-7206",
       "verified": true,
       "category": "Studio",
       "category_hierarchy": [
         "Studio"
-      ],
-      "image": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp"
+      ]
     },
     {
-      "id": "warm-audio-prod-5",
+      "id": "warm audio-wa-14",
+      "name": "WA-14",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The WA-14 represents the standard tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-14_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm audio/warm audio-wa-14_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-14_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-14_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-14_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS"
+      },
+      "halilit_price": 2200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WA-3594",
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ]
+    },
+    {
+      "id": "warm audio-wa-251",
+      "name": "WA-251",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The WA-251 represents the flagship tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-251_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm audio/warm audio-wa-251_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-251_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-251_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-251_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS"
+      },
+      "halilit_price": 3500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WA-7538",
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ]
+    },
+    {
+      "id": "warm audio-wa-19",
+      "name": "WA-19",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The WA-19 represents the entry tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-19_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm audio/warm audio-wa-19_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-19_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-19_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-19_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 900,
+        "currency": "ILS"
+      },
+      "halilit_price": 900,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WA-3295",
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ]
+    },
+    {
+      "id": "warm audio-wa-2a",
+      "name": "WA-2A",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Outboard",
+      "description": "The WA-2A represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-2a_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm audio/warm audio-wa-2a_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-2a_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-2a_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-2a_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS"
+      },
+      "halilit_price": 4500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WA-7556",
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ]
+    },
+    {
+      "id": "warm audio-wa-76",
+      "name": "WA-76",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Outboard",
+      "description": "The WA-76 represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-76_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm audio/warm audio-wa-76_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-76_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-76_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-76_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS"
+      },
+      "halilit_price": 3200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-WA-1385",
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ]
+    },
+    {
+      "id": "warm audio-wa-73-eq",
+      "name": "WA-73-EQ",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Preamp",
+      "description": "The WA-73-EQ represents the standard tier of Warm Audio's Preamp lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-wa-73-eq_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm audio/warm audio-wa-73-eq_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-wa-73-eq_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-wa-73-eq_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-wa-73-eq_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS"
+      },
+      "halilit_price": 3500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WA-7329",
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ]
+    },
+    {
+      "id": "warm audio-bus-comp",
       "name": "Bus-Comp",
       "brand": "Warm Audio",
       "main_category": "Studio",
-      "subcategory": "Compressor",
-      "description": "The Bus-Comp is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
-      "image_url": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
+      "subcategory": "Outboard",
+      "description": "The Bus-Comp represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-bus-comp_thumb.webp",
       "images": {
-        "main": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
-        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
-        "high_res": "/data/product_images/warm-audio/warm-audio-prod-5_inspect.webp",
-        "original": "https://placehold.co/600x400/png"
+        "main": "/data/product_images/warm audio/warm audio-bus-comp_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-bus-comp_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-bus-comp_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-bus-comp_thumb.webp"
       },
       "pricing": {
-        "regular_price": 1400,
-        "currency": "USD"
+        "regular_price": 3900,
+        "currency": "ILS"
       },
+      "halilit_price": 3900,
       "specifications": [
         {
-          "key": "Weight",
-          "value": "10kg"
+          "key": "Tier",
+          "value": "Standard"
         },
         {
-          "key": "Dimensions",
-          "value": "100x40x10 cm"
+          "key": "Warranty",
+          "value": "2 Years"
         }
       ],
+      "availability": "in-stock",
+      "sku": "HL-WA-6432",
       "verified": true,
       "category": "Studio",
       "category_hierarchy": [
         "Studio"
+      ]
+    },
+    {
+      "id": "warm audio-centavo",
+      "name": "Centavo",
+      "brand": "Warm Audio",
+      "main_category": "Guitar",
+      "subcategory": "Pedal",
+      "description": "The Centavo represents the entry tier of Warm Audio's Pedal lineup. Designed for guitar professionals.",
+      "image_url": "/data/product_images/warm audio/warm audio-centavo_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm audio/warm audio-centavo_thumb.webp",
+        "thumbnail": "/data/product_images/warm audio/warm audio-centavo_thumb.webp",
+        "high_res": "/data/product_images/warm audio/warm audio-centavo_main.webp",
+        "original": "/data/product_images/warm audio/warm audio-centavo_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 800,
+        "currency": "ILS"
+      },
+      "halilit_price": 800,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
       ],
-      "image": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp"
+      "availability": "in-stock",
+      "sku": "HL-WA-7908",
+      "verified": true,
+      "category": "Guitar",
+      "category_hierarchy": [
+        "Guitar"
+      ]
     }
   ],
   "brand_slug": "warm-audio",
-  "refined_at": "2026-01-22T12:25:19.639955+00:00",
+  "refined_at": "2026-01-22T14:36:08.540039+00:00",
   "hierarchy": {
     "Studio": {
       "Microphone": [
         {
-          "id": "warm-audio-prod-1",
+          "id": "warm audio-wa-87-r2",
           "name": "WA-87 R2",
-          "description": "The WA-87 R2 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "description": "The WA-87 R2 represents the standard tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
           "images": {
-            "main": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
-            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
-            "high_res": "/data/product_images/warm-audio/warm-audio-prod-1_inspect.webp",
-            "original": "https://placehold.co/600x400/png"
+            "main": "/data/product_images/warm audio/warm audio-wa-87-r2_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-87-r2_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-87-r2_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-87-r2_thumb.webp"
           },
           "model_number": null,
-          "sku": null
+          "sku": "HL-WA-8074"
         },
         {
-          "id": "warm-audio-prod-4",
+          "id": "warm audio-wa-47",
           "name": "WA-47",
-          "description": "The WA-47 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "description": "The WA-47 represents the flagship tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
           "images": {
-            "main": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
-            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
-            "high_res": "/data/product_images/warm-audio/warm-audio-prod-4_inspect.webp",
-            "original": "https://placehold.co/600x400/png"
+            "main": "/data/product_images/warm audio/warm audio-wa-47_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-47_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-47_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-47_thumb.webp"
           },
           "model_number": null,
-          "sku": null
+          "sku": "HL-WA-7206"
+        },
+        {
+          "id": "warm audio-wa-14",
+          "name": "WA-14",
+          "description": "The WA-14 represents the standard tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+          "images": {
+            "main": "/data/product_images/warm audio/warm audio-wa-14_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-14_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-14_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-14_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WA-3594"
+        },
+        {
+          "id": "warm audio-wa-251",
+          "name": "WA-251",
+          "description": "The WA-251 represents the flagship tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+          "images": {
+            "main": "/data/product_images/warm audio/warm audio-wa-251_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-251_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-251_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-251_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WA-7538"
+        },
+        {
+          "id": "warm audio-wa-19",
+          "name": "WA-19",
+          "description": "The WA-19 represents the entry tier of Warm Audio's Microphone lineup. Designed for studio professionals.",
+          "images": {
+            "main": "/data/product_images/warm audio/warm audio-wa-19_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-19_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-19_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-19_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WA-3295"
         }
       ],
-      "Compressor": [
+      "Outboard": [
         {
-          "id": "warm-audio-prod-2",
+          "id": "warm audio-wa-2a",
           "name": "WA-2A",
-          "description": "The WA-2A is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "description": "The WA-2A represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professionals.",
           "images": {
-            "main": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
-            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
-            "high_res": "/data/product_images/warm-audio/warm-audio-prod-2_inspect.webp",
-            "original": "https://placehold.co/600x400/png"
+            "main": "/data/product_images/warm audio/warm audio-wa-2a_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-2a_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-2a_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-2a_thumb.webp"
           },
           "model_number": null,
-          "sku": null
+          "sku": "HL-WA-7556"
         },
         {
-          "id": "warm-audio-prod-3",
-          "name": "WA76",
-          "description": "The WA76 is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "id": "warm audio-wa-76",
+          "name": "WA-76",
+          "description": "The WA-76 represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professionals.",
           "images": {
-            "main": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
-            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
-            "high_res": "/data/product_images/warm-audio/warm-audio-prod-3_inspect.webp",
-            "original": "https://placehold.co/600x400/png"
+            "main": "/data/product_images/warm audio/warm audio-wa-76_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-76_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-76_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-76_thumb.webp"
           },
           "model_number": null,
-          "sku": null
+          "sku": "HL-WA-1385"
         },
         {
-          "id": "warm-audio-prod-5",
+          "id": "warm audio-bus-comp",
           "name": "Bus-Comp",
-          "description": "The Bus-Comp is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "description": "The Bus-Comp represents the standard tier of Warm Audio's Outboard lineup. Designed for studio professionals.",
           "images": {
-            "main": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
-            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
-            "high_res": "/data/product_images/warm-audio/warm-audio-prod-5_inspect.webp",
-            "original": "https://placehold.co/600x400/png"
+            "main": "/data/product_images/warm audio/warm audio-bus-comp_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-bus-comp_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-bus-comp_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-bus-comp_thumb.webp"
           },
           "model_number": null,
-          "sku": null
+          "sku": "HL-WA-6432"
+        }
+      ],
+      "Preamp": [
+        {
+          "id": "warm audio-wa-73-eq",
+          "name": "WA-73-EQ",
+          "description": "The WA-73-EQ represents the standard tier of Warm Audio's Preamp lineup. Designed for studio professionals.",
+          "images": {
+            "main": "/data/product_images/warm audio/warm audio-wa-73-eq_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-wa-73-eq_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-wa-73-eq_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-wa-73-eq_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WA-7329"
+        }
+      ]
+    },
+    "Guitar": {
+      "Pedal": [
+        {
+          "id": "warm audio-centavo",
+          "name": "Centavo",
+          "description": "The Centavo represents the entry tier of Warm Audio's Pedal lineup. Designed for guitar professionals.",
+          "images": {
+            "main": "/data/product_images/warm audio/warm audio-centavo_thumb.webp",
+            "thumbnail": "/data/product_images/warm audio/warm audio-centavo_thumb.webp",
+            "high_res": "/data/product_images/warm audio/warm audio-centavo_main.webp",
+            "original": "/data/product_images/warm audio/warm audio-centavo_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WA-7908"
         }
       ]
     }

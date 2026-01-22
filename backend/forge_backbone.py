@@ -413,7 +413,17 @@ class HalilitCatalog:
                     first_img = product['images'][0]
                     main_img_url = first_img.get('url') if isinstance(first_img, dict) else first_img
 
-                if main_img_url and not main_img_url.startswith('http://localhost'): # Skip if already local (unlikely in forge)
+                # Handle pre-seeded local paths (Mock Data)
+                if main_img_url and main_img_url.startswith('/data/'):
+                     product['images'] = {
+                        "main": main_img_url,
+                        "thumbnail": main_img_url,
+                        "high_res": main_img_url.replace('_thumb', '_main'),
+                        "original": main_img_url
+                    }
+                     logger.info(f"      ⏩ Skipping visuals for local seed path: {main_img_url}")
+
+                elif main_img_url and not main_img_url.startswith('http://localhost'): # Skip if already local (unlikely in forge)
                     # Prepare Output Path
                     # frontend/public/data/product_images/<brand>/<product_id>
                     img_output_dir = self.output_dir / "product_images" / slug
@@ -424,27 +434,30 @@ class HalilitCatalog:
                     # Run Visual Factory (This is heavy, maybe we cache check?)
                     # For now, we run it to ensure "Visual Intelligence" is active
                     logger.info(f"      🎨 Processing visuals for {product.get('name')}...")
-                    visual_assets = self.visual_factory.process_product_asset(main_img_url, img_base_path)
+                    try:
+                        visual_assets = self.visual_factory.process_product_asset(main_img_url, img_base_path)
                     
-                    if visual_assets:
-                        # Update product with new optimized local assets
-                        # Convert absolute path to relative URL for frontend
-                        # frontend/public/data/... -> /data/...
-                        thumb_rel = f"/data/product_images/{slug}/{product['id']}_thumb.webp"
-                        inspect_rel = f"/data/product_images/{slug}/{product['id']}_inspect.webp"
-                        
-                        product['images'] = {
-                            "main": thumb_rel,          # Used by TierBar and default view
-                            "thumbnail": thumb_rel,     # Explicit thumbnail
-                            "high_res": inspect_rel,    # Used by InspectionLens through 'main' or separate field
-                            "original": main_img_url    # Keep reference
-                        }
-                        
-                        # Set primary image for legacy compatibility
-                        product['image'] = thumb_rel
-                        product['image_url'] = thumb_rel
-                        
-                        self.stats['images_verified'] += 1
+                        if visual_assets:
+                            # Update product with new optimized local assets
+                            # Convert absolute path to relative URL for frontend
+                            # frontend/public/data/... -> /data/...
+                            thumb_rel = f"/data/product_images/{slug}/{product['id']}_thumb.webp"
+                            inspect_rel = f"/data/product_images/{slug}/{product['id']}_inspect.webp"
+                            
+                            product['images'] = {
+                                "main": thumb_rel,          # Used by TierBar and default view
+                                "thumbnail": thumb_rel,     # Explicit thumbnail
+                                "high_res": inspect_rel,    # Used by InspectionLens through 'main' or separate field
+                                "original": main_img_url    # Keep reference
+                            }
+                            
+                            # Set primary image for legacy compatibility
+                            product['image'] = thumb_rel
+                            product['image_url'] = thumb_rel
+                            
+                            self.stats['images_verified'] += 1
+                    except Exception as e:
+                         logger.warning(f"      ⚠️ Visual Factory failed for {product.get('name')}: {e}")
 
                 # --- NEW: DOWNLOAD INNER LOGOS (series_logo) ---
                 if product.get('series_logo'):

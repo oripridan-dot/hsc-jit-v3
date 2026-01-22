@@ -1,194 +1,235 @@
-
 import json
 import os
 from pathlib import Path
+import random
 
 DATA_DIR = Path("./data/catalogs_brand")
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-BRANDS = [
+def generate_product(brand, name, category, subcategory, price, tier="Standard"):
+    slug = name.lower().replace(" ", "-").replace(".", "")
+    return {
+      "id": f"{brand.lower()}-{slug}",
+      "name": name,
+      "brand": brand,
+      "main_category": category,
+      "subcategory": subcategory,
+      "description": f"The {name} represents the {tier.lower()} tier of {brand}'s {subcategory} lineup. Designed for {category.lower()} professionals.",
+      "image_url": f"/data/product_images/{brand.lower()}/{brand.lower()}-{slug}_thumb.webp",
+      "images": [
+        f"/data/product_images/{brand.lower()}/{brand.lower()}-{slug}_thumb.webp",
+        f"/data/product_images/{brand.lower()}/{brand.lower()}-{slug}_main.webp"
+      ],
+      "pricing": {
+        "regular_price": price,
+        "currency": "ILS"
+      },
+      "halilit_price": price,
+      "specifications": [
+        { "key": "Tier", "value": tier },
+        { "key": "Warranty", "value": "2 Years" }
+      ],
+      "availability": random.choice(["in-stock", "in-stock", "in-stock", "low-stock"]),
+      "sku": f"HL-{brand[:2].upper()}-{random.randint(1000,9999)}",
+      "verified": True
+    }
+
+BRANDS_DATA = [
     {
         "name": "Roland",
         "slug": "roland",
-        "description": "World leader in electronic musical instruments",
-        "categories": ["Keys", "Drums", "Production"],
         "products": [
-             {"name": "Fantom-06", "category": "Keys", "subcategory": "Workstation"},
-             {"name": "Jupiter-X", "category": "Keys", "subcategory": "Synthesizer"},
-             {"name": "TR-8S", "category": "Production", "subcategory": "Drum Machine"},
-             {"name": "TD-50KV2", "category": "Drums", "subcategory": "V-Drums"},
-             {"name": "SP-404MKII", "category": "Production", "subcategory": "Sampler"}
+            ("Fantom-06", "Keys", "Workstation", 5900, "Entry"),
+            ("Fantom-07", "Keys", "Workstation", 7400, "Standard"),
+            ("Fantom-08", "Keys", "Workstation", 9900, "Flagship"),
+            ("RD-88", "Keys", "Stage Piano", 4500, "Entry"),
+            ("RD-2000", "Keys", "Stage Piano", 8900, "Flagship"),
+            ("Jupiter-Xm", "Keys", "Synthesizer", 5400, "Standard"),
+            ("Jupiter-X", "Keys", "Synthesizer", 9200, "Flagship"),
+            ("TR-8S", "Drums", "Drum Machine", 3200, "Standard"),
+            ("TD-07KV", "Drums", "V-Drums", 4200, "Entry"),
+            ("TD-50KV2", "Drums", "V-Drums", 28000, "Flagship")
         ]
     },
     {
         "name": "Boss",
         "slug": "boss",
-        "description": "Guitar effects and amplifiers",
-        "categories": ["Guitar", "Effects"],
         "products": [
-             {"name": "Katana-50", "category": "Guitar", "subcategory": "Amplifiers"},
-             {"name": "GT-1000", "category": "Guitar", "subcategory": "Multi-Effects"},
-             {"name": "RC-505mkII", "category": "Effects", "subcategory": "Loopers"},
-             {"name": "DS-1W", "category": "Effects", "subcategory": "Distortion"},
-             {"name": "DD-8", "category": "Effects", "subcategory": "Delay"}
+            ("Katana-50 Gen3", "Guitar", "Amplifier", 1200, "Entry"),
+            ("Katana-100 Gen3", "Guitar", "Amplifier", 1800, "Standard"),
+            ("Nextone Special", "Guitar", "Amplifier", 3500, "Flagship"),
+            ("GT-1", "Guitar", "Multi-Effects", 900, "Entry"),
+            ("GT-1000CORE", "Guitar", "Multi-Effects", 2400, "Standard"),
+            ("GT-1000", "Guitar", "Multi-Effects", 4500, "Flagship"),
+            ("RC-5", "Guitar", "Looper", 850, "Entry"),
+            ("RC-505mkII", "Guitar", "Looper", 2600, "Flagship"),
+            ("DM-101", "Guitar", "Delay", 1800, "Flagship"),
+            ("GX-100", "Guitar", "Multi-Effects", 2200, "Standard")
         ]
     },
     {
         "name": "Nord",
         "slug": "nord",
-        "description": "Handmade in Sweden",
-        "categories": ["Keys", "Pianos"],
         "products": [
-             {"name": "Nord Stage 4", "category": "Keys", "subcategory": "Stage Piano"},
-             {"name": "Nord Piano 5", "category": "Keys", "subcategory": "Stage Piano"},
-             {"name": "Nord Electro 6", "category": "Keys", "subcategory": "Stage Keyboard"},
-             {"name": "Nord Wave 2", "category": "Keys", "subcategory": "Synthesizer"},
-             {"name": "Nord Lead A1", "category": "Keys", "subcategory": "Synthesizer"}
+            ("Nord Electro 6D 61", "Keys", "Stage Piano", 8500, "Entry"),
+            ("Nord Electro 6D 73", "Keys", "Stage Piano", 9800, "Standard"),
+            ("Nord Piano 5 73", "Keys", "Stage Piano", 11500, "Standard"),
+            ("Nord Piano 5 88", "Keys", "Stage Piano", 12900, "Flagship"),
+            ("Nord Stage 4 Compact", "Keys", "Stage Piano", 15500, "Standard"),
+            ("Nord Stage 4 88", "Keys", "Stage Piano", 17900, "Flagship"),
+            ("Nord Wave 2", "Keys", "Synthesizer", 9900, "Standard"),
+            ("Nord Lead A1", "Keys", "Synthesizer", 6500, "Entry"),
+            ("Nord Drum 3P", "Drums", "Percussion", 3200, "Standard"),
+            ("Nord Grand", "Keys", "Stage Piano", 14500, "Flagship")
         ]
     },
     {
         "name": "Moog",
         "slug": "moog",
-        "description": "Analog synthesizers",
-        "categories": ["Keys", "Synths"],
         "products": [
-             {"name": "Minimoog Model D", "category": "Keys", "subcategory": "Synthesizer"},
-             {"name": "Subsequent 37", "category": "Keys", "subcategory": "Synthesizer"},
-             {"name": "Matriarch", "category": "Keys", "subcategory": "Semi-Modular"},
-             {"name": "Grandmother", "category": "Keys", "subcategory": "Semi-Modular"},
-             {"name": "Moog One", "category": "Keys", "subcategory": "Polyphonic"}
-        ]
-    },
-    {
-        "name": "Adam Audio",
-        "slug": "adam-audio",
-        "description": "Professional studio monitors",
-        "categories": ["Studio", "Audio"],
-        "products": [
-             {"name": "A7V", "category": "Studio", "subcategory": "Monitors"},
-             {"name": "A4V", "category": "Studio", "subcategory": "Monitors"},
-             {"name": "S2V", "category": "Studio", "subcategory": "Monitors"},
-             {"name": "T7V", "category": "Studio", "subcategory": "Monitors"},
-             {"name": "Sub10 MK2", "category": "Studio", "subcategory": "Subwoofer"}
-        ]
-    },
-    {
-        "name": "Teenage Engineering",
-        "slug": "teenage-engineering",
-        "description": "Portable synthesizers and design audio",
-        "categories": ["Keys", "Studio"],
-        "products": [
-             {"name": "OP-1 Field", "category": "Keys", "subcategory": "Synthesizer"},
-             {"name": "OP-Z", "category": "Keys", "subcategory": "Synthesizer"},
-             {"name": "TX-6", "category": "Studio", "subcategory": "Mixer"},
-             {"name": "EP-133 K.O. II", "category": "Production", "subcategory": "Sampler"},
-             {"name": "OB-4", "category": "Audio", "subcategory": "Speaker"}
-        ]
-    },
-    {
-        "name": "Universal Audio",
-        "slug": "universal-audio",
-        "description": "High-fidelity audio interfaces and plugins",
-        "categories": ["Studio", "Audio"],
-        "products": [
-             {"name": "Apollo Twin X", "category": "Studio", "subcategory": "Interface"},
-             {"name": "Apollo x4", "category": "Studio", "subcategory": "Interface"},
-             {"name": "Volt 276", "category": "Studio", "subcategory": "Interface"},
-             {"name": "UAFX Dream '65", "category": "Guitar", "subcategory": "Pedal"},
-             {"name": "Sphere DLX", "category": "Studio", "subcategory": "Microphone"}
-        ]
-    },
-    {
-        "name": "Akai Professional",
-        "slug": "akai-professional",
-        "description": "Music production centers and keyboards",
-        "categories": ["Production", "Keys"],
-        "products": [
-             {"name": "MPC One+", "category": "Production", "subcategory": "MPC"},
-             {"name": "MPC Live II", "category": "Production", "subcategory": "MPC"},
-             {"name": "MPK Mini MK3", "category": "Keys", "subcategory": "Controller"},
-             {"name": "APC64", "category": "Production", "subcategory": "Controller"},
-             {"name": "Force", "category": "Production", "subcategory": "Standalone"}
-        ]
-    },
-    {
-        "name": "Warm Audio",
-        "slug": "warm-audio",
-        "description": "Classic analog recording gear reproductions",
-        "categories": ["Studio"],
-        "products": [
-             {"name": "WA-87 R2", "category": "Studio", "subcategory": "Microphone"},
-             {"name": "WA-2A", "category": "Studio", "subcategory": "Compressor"},
-             {"name": "WA76", "category": "Studio", "subcategory": "Compressor"},
-             {"name": "WA-47", "category": "Studio", "subcategory": "Microphone"},
-             {"name": "Bus-Comp", "category": "Studio", "subcategory": "Compressor"}
+            ("Mavis", "Keys", "Synthesizer", 1200, "Entry"),
+            ("Mother-32", "Keys", "Semi-Modular", 2900, "Standard"),
+            ("DFAM", "Drums", "Percussion", 2900, "Standard"),
+            ("Subharmonicon", "Keys", "Semi-Modular", 2900, "Standard"),
+            ("Grandmother", "Keys", "Synthesizer", 4200, "Standard"),
+            ("Matriarch", "Keys", "Synthesizer", 8500, "Flagship"),
+            ("Minimoog Model D", "Keys", "Synthesizer", 22000, "Flagship"),
+            ("Subsequent 37", "Keys", "Synthesizer", 6900, "Standard"),
+            ("Subsequent 25", "Keys", "Synthesizer", 4500, "Entry"),
+            ("Moog One 16", "Keys", "Synthesizer", 45000, "Flagship")
         ]
     },
     {
         "name": "Mackie",
         "slug": "mackie",
-        "description": "Mixers, loudspeakers and studio monitors",
-        "categories": ["Studio", "Audio"],
         "products": [
-             {"name": "ProFX10v3", "category": "Studio", "subcategory": "Mixer"},
-             {"name": "Thump215", "category": "Audio", "subcategory": "Speaker"},
-             {"name": "CR3-X", "category": "Studio", "subcategory": "Monitors"},
-             {"name": "Big Knob Passive", "category": "Studio", "subcategory": "Controller"},
-             {"name": "MainStream", "category": "Studio", "subcategory": "Interface"}
+            ("CR3-X", "Studio", "Monitors", 500, "Entry"),
+            ("CR5-X", "Studio", "Monitors", 800, "Entry"),
+            ("MR524", "Studio", "Monitors", 1200, "Standard"),
+            ("HR824mk2", "Studio", "Monitors", 3500, "Flagship"),
+            ("Big Knob Studio", "Studio", "Controller", 1100, "Standard"),
+            ("ProFX6v3", "PA", "Mixer", 800, "Entry"),
+            ("ProFX12v3", "PA", "Mixer", 1600, "Standard"),
+            ("DL16S", "PA", "Digital Mixer", 3500, "Standard"),
+            ("DL32S", "PA", "Digital Mixer", 6500, "Flagship"),
+            ("Thump215", "PA", "Speaker", 2200, "Standard")
+        ]
+    },
+    {
+        "name": "Adam Audio",
+        "slug": "adam-audio",
+        "products": [
+            ("T5V", "Studio", "Monitors", 900, "Entry"),
+            ("T7V", "Studio", "Monitors", 1100, "Entry"),
+            ("T8V", "Studio", "Monitors", 1400, "Standard"),
+            ("A4V", "Studio", "Monitors", 2500, "Standard"),
+            ("A7V", "Studio", "Monitors", 3900, "Standard"),
+            ("A77H", "Studio", "Monitors", 6500, "Flagship"),
+            ("S2V", "Studio", "Monitors", 7500, "Flagship"),
+            ("S3H", "Studio", "Monitors", 12000, "Flagship"),
+            ("Sub8", "Studio", "Subwoofer", 2500, "Standard"),
+            ("Sub12", "Studio", "Subwoofer", 4500, "Flagship")
+        ]
+    },
+    {
+        "name": "Akai Professional",
+        "slug": "akai-professional",
+        "products": [
+            ("MPK Mini Mk3", "Keys", "Controller", 450, "Entry"),
+            ("MPK249", "Keys", "Controller", 1800, "Standard"),
+            ("MPK261", "Keys", "Controller", 2200, "Standard"),
+            ("APC Mini Mk2", "DJ", "Controller", 500, "Entry"),
+            ("APC40 Mk2", "DJ", "Controller", 1800, "Flagship"),
+            ("MPC One+", "DJ", "Production", 3500, "Standard"),
+            ("MPC Live II", "DJ", "Production", 5500, "Standard"),
+            ("MPC X SE", "DJ", "Production", 9900, "Flagship"),
+            ("Force", "DJ", "Production", 4900, "Standard"),
+            ("Fire", "DJ", "Controller", 800, "Entry")
+        ]
+    },
+    {
+        "name": "Teenage Engineering",
+        "slug": "teenage-engineering",
+        "products": [
+            ("PO-33 KO", "Keys", "Pocket Operator", 450, "Entry"),
+            ("PO-32 Tonic", "Keys", "Pocket Operator", 450, "Entry"),
+            ("OP-Z", "Keys", "Synthesizer", 2400, "Standard"),
+            ("OP-1 Field", "Keys", "Synthesizer", 8900, "Flagship"),
+            ("TX-6", "Studio", "Mixer", 5500, "Flagship"),
+            ("CM-15", "Studio", "Microphone", 5500, "Flagship"),
+            ("TP-7", "Studio", "Recorder", 6500, "Flagship"),
+            ("EP-133 KO II", "DJ", "Sampler", 1400, "Standard"),
+            ("OB-4", "PA", "Speaker", 2800, "Standard"),
+            ("OD-11", "PA", "Speaker", 3500, "Flagship")
+        ]
+    },
+    {
+        "name": "Universal Audio",
+        "slug": "universal-audio",
+        "products": [
+            ("Volt 1", "Studio", "Interface", 600, "Entry"),
+            ("Volt 276", "Studio", "Interface", 1200, "Entry"),
+            ("Apollo Solo", "Studio", "Interface", 2200, "Standard"),
+            ("Apollo Twin X Duo", "Studio", "Interface", 4500, "Standard"),
+            ("Apollo Twin X Quad", "Studio", "Interface", 6500, "Standard"),
+            ("Apollo x4", "Studio", "Interface", 8900, "Flagship"),
+            ("Apollo x8p", "Studio", "Interface", 14500, "Flagship"),
+            ("Sphere DLX", "Studio", "Microphone", 6500, "Flagship"),
+            ("SD-1", "Studio", "Microphone", 1400, "Entry"),
+            ("UAFX Dream 65", "Guitar", "Pedal", 1800, "Standard")
+        ]
+    },
+    {
+        "name": "Warm Audio",
+        "slug": "warm-audio",
+        "products": [
+            ("WA-87 R2", "Studio", "Microphone", 2800, "Standard"),
+            ("WA-47", "Studio", "Microphone", 4200, "Flagship"),
+            ("WA-14", "Studio", "Microphone", 2200, "Standard"),
+            ("WA-251", "Studio", "Microphone", 3500, "Flagship"),
+            ("WA-19", "Studio", "Microphone", 900, "Entry"),
+            ("WA-2A", "Studio", "Outboard", 4500, "Standard"),
+            ("WA-76", "Studio", "Outboard", 3200, "Standard"),
+            ("WA-73-EQ", "Studio", "Preamp", 3500, "Standard"),
+            ("Bus-Comp", "Studio", "Outboard", 3900, "Standard"),
+            ("Centavo", "Guitar", "Pedal", 800, "Entry")
         ]
     }
 ]
 
-def generate_seed():
-    if not DATA_DIR.exists():
-        DATA_DIR.mkdir(parents=True)
-        print(f"Created {DATA_DIR}")
-
-    for brand in BRANDS:
-        slug = brand["slug"]
+def seed():
+    print("🌱 Seeding 10 Brands x 10 Products...")
+    
+    for brand_data in BRANDS_DATA:
+        name = brand_data["name"]
+        slug = brand_data["slug"]
         
-        # Build strict JSON structure that satisfies frontend/src/lib/schemas.ts
-        brand_data = {
-            "brand_name": brand["name"],
+        products = []
+        for p_data in brand_data["products"]:
+            products.append(generate_product(
+                name, 
+                p_data[0], # Name 
+                p_data[1], # Category
+                p_data[2], # Subcategory
+                p_data[3], # Price
+                p_data[4]  # Tier
+            ))
+            
+        dataset = {
+            "brand_name": name,
             "brand_identity": {
                 "id": slug,
-                "name": brand["name"],
-                "description": brand["description"],
-                "website": f"https://www.{slug}.com",
-                "categories": brand["categories"]
-                # brand_colors will be injected by forge_backbone.py based on slug lookup
+                "name": name,
+                "website": f"https://www.{slug}.com"
             },
-            "products": []
+            "products": products
         }
         
-        for i, prod in enumerate(brand["products"]):
-            prod_id = f"{slug}-prod-{i+1}"
-            brand_data["products"].append({
-                "id": prod_id,
-                "name": prod["name"],
-                "brand": brand["name"],
-                "main_category": prod["category"],
-                "subcategory": prod["subcategory"],
-                "description": f"The {prod['name']} is a premium {prod['subcategory']} from {brand['name']}. It features state-of-the-art technology and superior build quality.",
-                "image_url": "https://placehold.co/600x400/png", # Placeholder
-                "images": [
-                     "https://placehold.co/600x400/png",
-                     "https://placehold.co/150x150/png"
-                ],
-                "pricing": {
-                    "regular_price": 1000 + (i * 100),
-                    "currency": "USD"
-                },
-                "specifications": [
-                    {"key": "Weight", "value": "10kg"},
-                    {"key": "Dimensions", "value": "100x40x10 cm"}
-                ],
-                "verified": True
-            })
+        path = DATA_DIR / f"{slug}.json"
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(dataset, f, indent=2)
             
-        filename = DATA_DIR / f"{slug}.json"
-        with open(filename, "w") as f:
-            json.dump(brand_data, f, indent=2)
-        print(f"Generated {filename} with {len(brand_data['products'])} products")
+        print(f"   ✓ {name}: {len(products)} items -> {path}")
 
 if __name__ == "__main__":
-    generate_seed()
+    seed()

@@ -1,85 +1,242 @@
-/**
- * UniversalCategoryView / The "Shelf"
- *
- * Grid-based product display (non-scrolling) that fills the viewport
- * Features:
- * - Compact header bar with back button
- * - Dense product grid with CandyCard components
- * - "View More" card for pagination (if needed)
- * - No scrolling - viewport-locked display
- */
-import React, { useMemo } from "react";
+import { motion } from "framer-motion";
+import React, { useMemo, useState } from "react";
+import { useCategoryCatalog } from "../../hooks/useCategoryCatalog";
+import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
 import type { Product } from "../../types";
-import { BrandIcon } from "../BrandIcon";
-import { CandyCard } from "../ui/CandyCard";
+import { TierBar } from "../smart-views/TierBar";
+import { ProductGrid } from "../ui/ProductGrid";
 
-export const UniversalCategoryView: React.FC<{
-  categoryTitle: string;
-  products: Product[];
-}> = ({ categoryTitle, products }) => {
-  const { selectUniversalCategory } = useNavigationStore();
+// View modes for different display preferences
+type ViewMode = "shelves" | "grid" | "compact";
 
-  // Flatten products for the grid (limit to ~15 items for viewport fit)
-  const allProducts = useMemo(() => {
-    return products.slice(0, 15);
-  }, [products]);
+export const UniversalCategoryView: React.FC = () => {
+  const { currentUniversalCategory } = useNavigationStore();
+  const [viewMode, setViewMode] = useState<ViewMode>("shelves");
+  const [sortBy, setSortBy] = useState<"name" | "price" | "brand">("name");
 
-  const overflowCount = Math.max(0, products.length - 15);
+  // Category to load - comes from navigation store
+  const activeCategory = currentUniversalCategory || "All";
+
+  // SINGLE SOURCE OF TRUTH: Fetch ALL products that match this category across ALL brands
+  const { products, loading } = useCategoryCatalog(activeCategory);
+
+  // Debug logging
+  console.log(
+    `📦 [UniversalCategoryView] Active category: "${activeCategory}", Products count: ${products.length}, Loading: ${loading}`,
+  );
+
+  // Sort products
+  const sortedProducts = useMemo(() => {
+    const sorted = [...products];
+    switch (sortBy) {
+      case "name":
+        return sorted.sort((a, b) => a.name.localeCompare(b.name));
+      case "price":
+        return sorted.sort((a, b) => {
+          const priceA =
+            typeof a.halilit_price === "number"
+              ? a.halilit_price
+              : a.pricing?.regular_price || 0;
+          const priceB =
+            typeof b.halilit_price === "number"
+              ? b.halilit_price
+              : b.pricing?.regular_price || 0;
+          return priceA - priceB;
+        });
+      case "brand":
+        return sorted.sort((a, b) =>
+          (a.brand || "").localeCompare(b.brand || ""),
+        );
+      default:
+        return sorted;
+    }
+  }, [products, sortBy]);
+
+  // Group by Subcategory to create the "Shelf" structure
+  const shelves = useMemo(() => {
+    console.log(
+      `🗂️ [UniversalCategoryView] Building shelves from ${products.length} products`,
+    );
+    if (!products.length) {
+      console.warn(`⚠️ [UniversalCategoryView] No products to display!`);
+      return {};
+    }
+    const groups: Record<string, Product[]> = {};
+
+    sortedProducts.forEach((p) => {
+      // Use subcategory or fall back to 'General'
+      // Clean up messy data (trim whitespace, handle nulls)
+      const key = (p.subcategory || p.family || "Misc").trim();
+
+      // Filter out empty keys resulting from just whitespace
+      if (!key) return;
+
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(p);
+    });
+
+    return groups;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sortedProducts]);
+
+  const shelfNames = Object.keys(shelves).sort();
+
+  if (loading)
+    return (
+      <div className="h-full w-full flex items-center justify-center bg-[#09090b] text-[#00f0ff] font-mono animate-pulse">
+        ACCESSING GLOBAL INVENTORY...
+      </div>
+    );
 
   return (
-    <div className="h-full w-full flex flex-col bg-[#0e0e10] overflow-hidden no-scrollbar">
-      {/* Header - Compact, spacious */}
-      <div className="flex-shrink-0 px-6 py-4 flex items-center justify-between bg-zinc-900/50 backdrop-blur-md border-b border-white/5">
-        <div className="flex items-center gap-4">
-          <button
-            onClick={() => selectUniversalCategory("")}
-            className="p-2 rounded-full hover:bg-white/10 transition-colors font-mono text-sm uppercase tracking-widest text-zinc-400 hover:text-white"
-          >
-            ← BACK
-          </button>
-          <h2 className="text-3xl font-bold uppercase tracking-wider text-white">
-            {categoryTitle}
-          </h2>
-        </div>
-        <div className="text-sm text-zinc-500 uppercase font-mono flex gap-4">
-          <span>● {allProducts.length} LOADED</span>
-          {overflowCount > 0 && <span>+{overflowCount} MORE</span>}
+    <div className="h-full w-full bg-[#09090b] flex flex-col">
+      {/* Enhanced Header with Controls */}
+      <div className="flex-shrink-0 px-4 md:px-8 py-6 border-b border-white/5 bg-[#0e0e10]">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+          <div>
+            <div className="text-zinc-500 text-xs font-mono uppercase tracking-widest mb-1">
+              Department
+            </div>
+            <h1 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter">
+              {activeCategory}
+            </h1>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+            {/* Product Count */}
+            <div className="text-right hidden sm:block">
+              <div className="text-xl md:text-2xl font-mono text-white">
+                {products.length}
+              </div>
+              <div className="text-zinc-600 text-[10px] uppercase">
+                Active Units
+              </div>
+            </div>
+
+            {/* Sort Controls */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs text-zinc-500 font-mono">Sort:</span>
+              <select
+                value={sortBy}
+                onChange={(e) =>
+                  setSortBy(e.target.value as "name" | "price" | "brand")
+                }
+                className="bg-zinc-900 border border-zinc-700 rounded px-3 py-1.5 text-xs font-mono text-white focus:outline-none focus:border-cyan-500"
+              >
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <option value="brand">Brand</option>
+              </select>
+            </div>
+
+            {/* View Mode Toggles */}
+            <div className="flex items-center gap-1 bg-zinc-900 rounded p-1 border border-zinc-800">
+              <button
+                onClick={() => setViewMode("shelves")}
+                className={cn(
+                  "px-3 py-1.5 text-xs font-mono rounded transition-all",
+                  viewMode === "shelves"
+                    ? "bg-cyan-500 text-black font-bold"
+                    : "text-zinc-500 hover:text-white",
+                )}
+                title="Shelves View"
+              >
+                📚 Shelves
+              </button>
+              <button
+                onClick={() => setViewMode("grid")}
+                className={cn(
+                  "px-3 py-1.5 text-xs font-mono rounded transition-all",
+                  viewMode === "grid"
+                    ? "bg-cyan-500 text-black font-bold"
+                    : "text-zinc-500 hover:text-white",
+                )}
+                title="Grid View"
+              >
+                ▦ Grid
+              </button>
+              <button
+                onClick={() => setViewMode("compact")}
+                className={cn(
+                  "px-3 py-1.5 text-xs font-mono rounded transition-all",
+                  viewMode === "compact"
+                    ? "bg-cyan-500 text-black font-bold"
+                    : "text-zinc-500 hover:text-white",
+                )}
+                title="Compact View"
+              >
+                ▤ Compact
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* The Product Grid - Fills remaining space, prevents scrolling */}
-      <div className="flex-1 p-6 overflow-hidden">
-        <div className="h-full w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {allProducts.map((product) => (
-            <CandyCard
-              key={product.id}
-              title={product.name}
-              subtitle={product.brand}
-              image={product.image_url}
-              logo={
-                <BrandIcon
-                  brand={product.brand}
-                  className="w-full h-full text-white"
+      {/* Content Area - Now with Scrolling */}
+      <div className="flex-1 overflow-y-auto scrollbar-custom px-4 md:px-8 py-6">
+        {viewMode === "shelves" && shelfNames.length > 0 && (
+          <div className="space-y-6">
+            {shelfNames.map((shelfName, i) => (
+              <motion.div
+                key={shelfName}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: i * 0.05 }}
+              >
+                <TierBar
+                  label={shelfName}
+                  products={shelves[shelfName]}
+                  className="mb-12"
                 />
-              }
-              onClick={() =>
-                console.log("Open Inspection Lens for", product.id)
-              }
-            />
-          ))}
+              </motion.div>
+            ))}
+          </div>
+        )}
 
-          {/* If there are more products than fit, show a 'View More' card */}
-          {overflowCount > 0 && (
-            <div className="flex items-center justify-center h-full w-full rounded-lg border border-dashed border-zinc-700 hover:border-zinc-500 cursor-pointer transition-colors hover:bg-zinc-800/30">
-              <span className="text-zinc-400 font-mono text-sm text-center">
-                +{overflowCount}
-                <br />
-                <span className="text-xs text-zinc-600">more</span>
-              </span>
+        {viewMode === "grid" && (
+          <ProductGrid
+            products={sortedProducts}
+            minThumbnailSize={150}
+            showBrandIcon={true}
+            showPrice={true}
+            compactMode={false}
+          />
+        )}
+
+        {viewMode === "compact" && (
+          <ProductGrid
+            products={sortedProducts}
+            minThumbnailSize={120}
+            showBrandIcon={true}
+            showPrice={true}
+            compactMode={true}
+          />
+        )}
+
+        {products.length === 0 && (
+          <div className="h-full flex items-center justify-center opacity-30">
+            <div className="text-center">
+              <div className="text-6xl mb-4">📂</div>
+              <div className="font-mono text-lg">NO DATA IN CATEGORY</div>
+              <div className="text-sm text-zinc-600 mt-2">
+                Try selecting a different category
+              </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
+
+        {/* Scroll to top button */}
+        <motion.button
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ amount: "all" }}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-8 right-8 w-12 h-12 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full shadow-xl flex items-center justify-center font-bold text-xl transition-colors z-50"
+          title="Scroll to top"
+        >
+          ↑
+        </motion.button>
       </div>
     </div>
   );

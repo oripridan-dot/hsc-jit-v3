@@ -2,8 +2,8 @@ import React from "react";
 import type { SubcategoryDef } from "../../lib/universalCategories";
 
 interface CandyCardProps {
-  image?: string;
-  images?: string[]; // Multiple images support
+  image?: string; // Legacy support (unused)
+  images?: string[]; // Legacy support (unused)
   title: string;
   subtitle?: string;
   subcategories?: SubcategoryDef[]; // Subcategories list support
@@ -25,8 +25,6 @@ interface CandyCardProps {
  * - Clear framing
  */
 export const CandyCard: React.FC<CandyCardProps> = ({
-  image,
-  images,
   title,
   subtitle,
   subcategories,
@@ -36,9 +34,6 @@ export const CandyCard: React.FC<CandyCardProps> = ({
   className,
   isActive,
 }) => {
-  const displayImages =
-    images && images.length > 0 ? images : image ? [image] : [];
-
   const baseClasses = [
     "relative",
     "group",
@@ -61,132 +56,78 @@ export const CandyCard: React.FC<CandyCardProps> = ({
     .filter(Boolean)
     .join(" ");
 
-  // Grid layout helper
-  const renderImageGrid = () => {
-    if (displayImages.length === 0) {
-      return (
-        <div className="h-full w-full bg-gradient-to-br from-zinc-800 to-zinc-900" />
-      );
-    }
-
-    if (displayImages.length === 1) {
-      return (
-        <img
-          src={displayImages[0]}
-          alt={title}
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-        />
-      );
-    }
-
-    if (displayImages.length === 2) {
-      return (
-        <div className="h-full w-full grid grid-cols-2 gap-0.5">
-          {displayImages.map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt={`${title} ${i}`}
-              className="h-full w-full object-cover"
-            />
-          ))}
-        </div>
-      );
-    }
-
-    if (displayImages.length === 3) {
-      return (
-        <div className="h-full w-full grid grid-cols-2 grid-rows-2 gap-0.5">
-          <img
-            src={displayImages[0]}
-            alt=""
-            className="h-full w-full object-cover row-span-2"
-          />
-          <img
-            src={displayImages[1]}
-            alt=""
-            className="h-full w-full object-cover"
-          />
-          <img
-            src={displayImages[2]}
-            alt=""
-            className="h-full w-full object-cover"
-          />
-        </div>
-      );
-    }
-
-    // 4 or more
-    return (
-      <div className="h-full w-full grid grid-cols-2 grid-rows-2 gap-0.5">
-        {displayImages.slice(0, 4).map((img, i) => (
-          <img
-            key={i}
-            src={img}
-            alt={`${title} ${i}`}
-            className="h-full w-full object-cover"
-          />
-        ))}
-      </div>
-    );
-  };
+  // No background images - clean design
 
   return (
     <div onClick={onClick} className={baseClasses}>
-      {/* 1. The Image Layer - Clear, bright, fitted */}
-      <div className="absolute inset-0 z-0 bg-zinc-800">
-        <div className="h-full w-full opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-          {renderImageGrid()}
-        </div>
-        {/* Subtle gradient to ensure text readability without hiding images */}
-        <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/70 to-transparent" />
-      </div>
+      {/* Clean background with subtle warm glow - NO IMAGES */}
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-purple-500/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,200,100,0.03),transparent_70%)]" />
 
-      {/* 2. Content Layer - "Clear as Sun" Typography */}
-      <div className="absolute inset-x-0 bottom-0 z-10 p-5 flex flex-col justify-end h-full">
-        <div className="mt-auto pointer-events-none">
-          {/* Main Title Area */}
-          <div className="flex items-center gap-3 mb-2">
-            {logo && (
-              <div className="w-8 h-8 flex items-center justify-center text-amber-400">
-                {logo}
-              </div>
-            )}
-            <div>
-              <h3 className="text-2xl font-black text-white uppercase tracking-wider drop-shadow-md">
-                {title}
-              </h3>
-              {subtitle && !subcategories && (
-                <p className="text-sm text-zinc-300 font-medium">{subtitle}</p>
-              )}
+      {/* Content Layer - Compact */}
+      <div className="relative z-10 p-4 flex flex-col h-full">
+        {/* Title Area - Compact */}
+        <div className="flex items-center gap-2 mb-3">
+          {logo && (
+            <div className="w-6 h-6 flex items-center justify-center text-amber-400">
+              {logo}
             </div>
+          )}
+          <div>
+            <h3 className="text-base font-black text-white uppercase tracking-wide">
+              {title}
+            </h3>
+            {subtitle && !subcategories && (
+              <p className="text-xs text-zinc-500 font-medium mt-0.5">
+                {subtitle}
+              </p>
+            )}
           </div>
         </div>
 
-        {/* Subcategories List - Explicit and Clear with Thumbnails */}
+        {/* Subcategories Grid - 3 Column Compact Layout */}
         {subcategories && subcategories.length > 0 && (
-          <div className="border-t border-white/20 pt-3 mt-2 pointer-events-auto">
-            <ul className="grid grid-cols-2 gap-x-2 gap-y-2">
+          <div className="flex-1 border-t border-white/10 pt-3 pointer-events-auto">
+            <ul className="grid grid-cols-3 gap-2">
               {subcategories.slice(0, 6).map((sub, i) => (
                 <li key={i}>
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
-                      onSubcategoryClick?.(sub.label); // Pass label for search/nav
+                      onSubcategoryClick?.(sub.label);
                     }}
-                    className="group/item flex items-center gap-2 w-full p-1 rounded hover:bg-white/10 transition-colors"
+                    className="w-full flex flex-col items-center gap-0.5 group/sub"
                   >
-                    {/* Contextual Thumbnail instead of dot */}
-                    <div className="w-8 h-8 rounded overflow-hidden shrink-0 border border-white/10 group-hover/item:border-amber-400/50 transition-colors bg-black">
+                    {/* Compact Thumbnail - Optimized 64x64 */}
+                    <div className="w-16 h-16 rounded overflow-hidden bg-zinc-800/50 group-hover/sub:scale-105 transition-transform duration-200 border border-white/5">
                       <img
                         src={sub.image}
-                        alt=""
-                        className="w-full h-full object-cover"
+                        alt={sub.label}
+                        className="w-full h-full object-cover opacity-90 group-hover/sub:opacity-100 transition-opacity"
                       />
                     </div>
-                    <span className="text-xs text-zinc-300 font-medium truncate group-hover/item:text-amber-400 transition-colors text-left">
+
+                    {/* Label - MINIMAL 4px gap from thumbnail */}
+                    <span className="text-[9px] font-semibold text-zinc-400 group-hover/sub:text-cyan-400 transition-colors text-center line-clamp-2 leading-tight mt-1">
                       {sub.label}
                     </span>
+
+                    {/* Brand Micro-Logos - Tight spacing */}
+                    {sub.brands && sub.brands.length > 0 && (
+                      <div className="flex gap-0.5 mt-0.5">
+                        {sub.brands.slice(0, 4).map((brand) => (
+                          <div
+                            key={brand}
+                            className="w-3 h-3 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center opacity-60 group-hover/sub:opacity-100 group-hover/sub:border-cyan-400/30 transition-all"
+                            title={brand}
+                          >
+                            <span className="text-[6px] font-black text-white">
+                              {brand.substring(0, 2).toUpperCase()}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </button>
                 </li>
               ))}

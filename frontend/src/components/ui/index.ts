@@ -11,3 +11,5 @@ export { LayerNavigator } from "./LayerNavigator";
 export { ContextBadge } from "./ContextBadge";
 
 export { CandyCard } from "./CandyCard";
+
+export { ProductGrid } from "./ProductGrid";
