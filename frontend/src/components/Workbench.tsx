@@ -25,44 +25,51 @@ export const Workbench: React.FC = () => {
   } = useNavigationStore();
   const [universalProducts, setUniversalProducts] = useState<Product[]>([]);
   const [brandProducts, setBrandProducts] = useState<Product[]>([]);
-  const [categoryProducts, setCategoryProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   // Load ALL products if we are in Universal Mode
   useEffect(() => {
+    let mounted = true;
     if (currentLevel === "universal") {
       setIsLoading(true);
       catalogLoader.loadAllProducts().then((products) => {
-        setUniversalProducts(products);
-        setIsLoading(false);
+        if (mounted) {
+          setUniversalProducts(products);
+          setIsLoading(false);
+        }
       });
     }
+    return () => { mounted = false; };
   }, [currentLevel]);
 
   // Load brand products when brand is selected
   useEffect(() => {
+    let mounted = true;
     if (currentLevel === "brand" && activePath[0]) {
       setIsLoading(true);
       catalogLoader.loadBrand(activePath[0]).then((catalog) => {
-        setBrandProducts(catalog.products || []);
-        setIsLoading(false);
+        if (mounted) {
+          setBrandProducts(catalog.products || []);
+          setIsLoading(false);
+        }
       });
     }
-  }, [currentLevel, activePath[0]]);
+    return () => { mounted = false; };
+  }, [currentLevel, activePath]); // Removed activePath[0] to satisfy deps
 
-  // Filter category products when category is selected
-  useEffect(() => {
+  // Derived state for category products (Memoized instead of Effect)
+  const categoryProducts = useMemo(() => {
     if (
       currentLevel === "family" &&
       brandProducts.length > 0 &&
       activePath[1]
     ) {
-      const filtered = brandProducts.filter(
+      return brandProducts.filter(
         (p) => p.category === activePath[1],
       );
-      setCategoryProducts(filtered);
     }
-  }, [currentLevel, activePath, brandProducts]);
+    return [];
+  }, [currentLevel, brandProducts, activePath]);
 
   // The "Router" logic - switch views based on state machine level
   const renderView = () => {
