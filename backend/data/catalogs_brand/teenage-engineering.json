@@ -1,0 +1,155 @@
+{
+  "brand_name": "Teenage Engineering",
+  "brand_identity": {
+    "id": "teenage-engineering",
+    "name": "Teenage Engineering",
+    "description": "Portable synthesizers and design audio",
+    "website": "https://www.teenage-engineering.com",
+    "categories": [
+      "Keys",
+      "Studio"
+    ]
+  },
+  "products": [
+    {
+      "id": "teenage-engineering-prod-1",
+      "name": "OP-1 Field",
+      "brand": "Teenage Engineering",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The OP-1 Field is a premium Synthesizer from Teenage Engineering. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "teenage-engineering-prod-2",
+      "name": "OP-Z",
+      "brand": "Teenage Engineering",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The OP-Z is a premium Synthesizer from Teenage Engineering. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "teenage-engineering-prod-3",
+      "name": "TX-6",
+      "brand": "Teenage Engineering",
+      "main_category": "Studio",
+      "subcategory": "Mixer",
+      "description": "The TX-6 is a premium Mixer from Teenage Engineering. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "teenage-engineering-prod-4",
+      "name": "EP-133 K.O. II",
+      "brand": "Teenage Engineering",
+      "main_category": "Production",
+      "subcategory": "Sampler",
+      "description": "The EP-133 K.O. II is a premium Sampler from Teenage Engineering. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "teenage-engineering-prod-5",
+      "name": "OB-4",
+      "brand": "Teenage Engineering",
+      "main_category": "Audio",
+      "subcategory": "Speaker",
+      "description": "The OB-4 is a premium Speaker from Teenage Engineering. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    }
+  ]
+}

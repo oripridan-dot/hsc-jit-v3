@@ -332,6 +332,8 @@ class CatalogLoader {
       this.allProducts = loadedCatalogs.flatMap((catalog) =>
         catalog.products.map((p) => ({
           ...p,
+          // Ensure brand is always populated (from JSON or catalog name)
+          brand: p.brand || catalog.brand_name,
           _brandId: catalog.brand_id,
           _brandName: catalog.brand_name,
           brand_identity: catalog.brand_identity,

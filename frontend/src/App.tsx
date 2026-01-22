@@ -36,7 +36,7 @@ function AppContent() {
             HALILIT SUPPORT CENTER
           </h1>
           <p className="text-xs text-slate-500 font-mono mt-0.5">
-            v3.7.4 Categories-First
+            v3.7.4 - Enhanced Navigation & TierBar
           </p>
         </div>
       </div>

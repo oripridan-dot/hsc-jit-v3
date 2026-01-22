@@ -1,0 +1,155 @@
+{
+  "brand_name": "Moog",
+  "brand_identity": {
+    "id": "moog",
+    "name": "Moog",
+    "description": "Analog synthesizers",
+    "website": "https://www.moog.com",
+    "categories": [
+      "Keys",
+      "Synths"
+    ]
+  },
+  "products": [
+    {
+      "id": "moog-prod-1",
+      "name": "Minimoog Model D",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Minimoog Model D is a premium Synthesizer from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "moog-prod-2",
+      "name": "Subsequent 37",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Subsequent 37 is a premium Synthesizer from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "moog-prod-3",
+      "name": "Matriarch",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Semi-Modular",
+      "description": "The Matriarch is a premium Semi-Modular from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "moog-prod-4",
+      "name": "Grandmother",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Semi-Modular",
+      "description": "The Grandmother is a premium Semi-Modular from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "moog-prod-5",
+      "name": "Moog One",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Polyphonic",
+      "description": "The Moog One is a premium Polyphonic from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    }
+  ]
+}

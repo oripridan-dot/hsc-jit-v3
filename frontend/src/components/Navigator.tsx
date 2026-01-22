@@ -25,10 +25,10 @@ import {
 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { safeFetch } from "../lib/safeFetch";
-import { MasterIndexSchema, BrandFileSchema } from "../lib/schemas";
+import { BrandFileSchema, MasterIndexSchema } from "../lib/schemas";
 import { UNIVERSAL_CATEGORIES } from "../lib/universalCategories";
 import { useNavigationStore } from "../store/navigationStore";
-import type { Product, ProductImage, BrandIdentity } from "../types/index";
+import type { BrandIdentity, Product, ProductImage } from "../types/index";
 
 export interface NavigatorProps {
   mode: "catalog" | "copilot";
@@ -74,17 +74,41 @@ interface BrandProductsRecord {
 // Removed unused BrandIdentitiesRecord
 
 /**
- * BrandLogoDisplay - Shows brand logo with fallback to icon
- * Uses useBrandData hook to fetch real brand logos
+ * BrandLogoDisplay - Shows brand logo with equal sizing and fallback to icon
+ * All logos are normalized to fit in a uniform square container
  */
-const BrandLogoDisplay: React.FC<{ brandName: string }> = ({ brandName }) => {
+const BrandLogoDisplay: React.FC<{
+  brandName: string;
+  logoUrl?: string | null;
+}> = ({ brandName, logoUrl }) => {
+  const [imgError, setImgError] = useState(false);
+
+  // Normalize brand name to slug format for logo lookup
+  const brandSlug = brandName.toLowerCase().replace(/\s+/g, "-");
+
+  // Try multiple logo sources in order: provided URL, standard logo path, initials fallback
+  const logoSources = [
+    logoUrl,
+    `/assets/logos/${brandSlug}_logo.svg`,
+    `/assets/logos/${brandSlug}_logo.png`,
+  ];
+
   return (
-    <div className="w-20 h-20 flex items-center justify-center rounded-lg bg-[var(--bg-app)] flex-shrink-0 border border-[var(--border-subtle)]/50">
-      <div className="w-12 h-12 rounded flex items-center justify-center bg-gradient-to-br from-indigo-400 to-indigo-600">
-        <span className="text-xl font-bold text-white">
-          {brandName.substring(0, 2).toUpperCase()}
-        </span>
-      </div>
+    <div className="w-12 h-12 flex-shrink-0 rounded-lg border border-[var(--border-subtle)]/50 overflow-hidden bg-white/5 backdrop-blur-sm shadow-sm">
+      {!imgError ? (
+        <img
+          src={logoUrl || `/assets/logos/${brandSlug}_logo.svg`}
+          alt={brandName}
+          className="w-full h-full object-contain p-1.5 bg-white/5"
+          onError={() => setImgError(true)}
+        />
+      ) : (
+        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-400/20 to-indigo-600/20 border border-indigo-500/30">
+          <span className="text-xs font-bold text-indigo-300 tracking-wider">
+            {brandName.substring(0, 2).toUpperCase()}
+          </span>
+        </div>
+      )}
     </div>
   );
 };
@@ -403,9 +427,12 @@ export const Navigator: React.FC<NavigatorProps> = ({
                           onClick={() => handleBrandClick(brandId)}
                           className="w-full flex items-center justify-between group p-2.5 rounded-lg hover:bg-[var(--bg-panel-hover)] transition-all border border-transparent hover:border-[var(--border-subtle)]"
                         >
-                          <div className="flex items-center gap-4 flex-1">
+                          <div className="flex items-center gap-3 flex-1">
                             {/* Brand Logo */}
-                            <BrandLogoDisplay brandName={brand.name} />
+                            <BrandLogoDisplay
+                              brandName={brand.name}
+                              logoUrl={brand.logo_url}
+                            />
 
                             <div className="text-left flex-1 min-w-0">
                               <div className="flex items-center gap-2">

@@ -72,18 +72,46 @@ BRAND_THEMES = {
         "background": "#1c1917",
         "text": "#e5e7eb"
     },
-    "yamaha": {
-        "primary": "#4b0082",
-        "secondary": "#fbbf24",
-        "accent": "#22d3ee",
-        "background": "#18181b",
+    "adam-audio": {
+        "primary": "#000000",
+        "secondary": "#1c1917",
+        "accent": "#fee2e2", # Pale Red
+        "background": "#000000",
         "text": "#ffffff"
     },
-    "korg": {
-        "primary": "#0055aa",
-        "secondary": "#1f2937",
-        "accent": "#34d399",
-        "background": "#18181b",
+    "teenage-engineering": {
+        "primary": "#e5e5e5",
+        "secondary": "#ff4d00", # TE Orange
+        "accent": "#000000",
+        "background": "#f0f0f0",
+        "text": "#000000"
+    },
+    "universal-audio": {
+        "primary": "#1f2937",
+        "secondary": "#111827",
+        "accent": "#3b82f6",
+        "background": "#000000",
+        "text": "#f3f4f6"
+    },
+    "akai-professional": {
+        "primary": "#ff0000", # Akai Red
+        "secondary": "#000000",
+        "accent": "#ffffff",
+        "background": "#1a1a1a",
+        "text": "#ffffff"
+    },
+    "warm-audio": {
+        "primary": "#ea580c", # Warm Orange
+        "secondary": "#431407",
+        "accent": "#fb923c",
+        "background": "#2a150d",
+        "text": "#ffedd5"
+    },
+    "mackie": {
+        "primary": "#00a651", # Mackie Green
+        "secondary": "#000000",
+        "accent": "#86efac",
+        "background": "#101010",
         "text": "#ffffff"
     }
 }
@@ -325,6 +353,12 @@ class HalilitCatalog:
         # Enrich brand_identity with theme colors and download logo
         if 'brand_identity' not in refined:
             refined['brand_identity'] = {}
+
+        # Critical: Ensure ID and Name exist for Schema Validation
+        if 'id' not in refined['brand_identity']:
+            refined['brand_identity']['id'] = slug
+        if 'name' not in refined['brand_identity']:
+            refined['brand_identity']['name'] = brand_name
         
         # Always set brand_colors from BRAND_THEMES
         # Try exact match first, then base brand name (e.g., 'roland-comprehensive' -> 'roland')
@@ -345,9 +379,11 @@ class HalilitCatalog:
                  refined['brand_identity']['logo_url'] = known_logos[base_slug]
 
         # Download logo and update path
-        if refined['brand_identity'].get('logo_url'):
-            local_logo_path = self._download_logo(refined['brand_identity']['logo_url'], slug)
-            refined['brand_identity']['logo_url'] = local_logo_path
+        # Always attempt resolution to catch local overrides (assets/logos/*.svg)
+        current_logo_url = refined['brand_identity'].get('logo_url')
+        resolved_logo = self._download_logo(current_logo_url, slug)
+        if resolved_logo:
+            refined['brand_identity']['logo_url'] = resolved_logo
         
         # First pass: Ensure product quality
         if 'products' in refined:

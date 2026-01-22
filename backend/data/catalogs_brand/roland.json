@@ -1,0 +1,156 @@
+{
+  "brand_name": "Roland",
+  "brand_identity": {
+    "id": "roland",
+    "name": "Roland",
+    "description": "World leader in electronic musical instruments",
+    "website": "https://www.roland.com",
+    "categories": [
+      "Keys",
+      "Drums",
+      "Production"
+    ]
+  },
+  "products": [
+    {
+      "id": "roland-prod-1",
+      "name": "Fantom-06",
+      "brand": "Roland",
+      "main_category": "Keys",
+      "subcategory": "Workstation",
+      "description": "The Fantom-06 is a premium Workstation from Roland. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "roland-prod-2",
+      "name": "Jupiter-X",
+      "brand": "Roland",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Jupiter-X is a premium Synthesizer from Roland. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "roland-prod-3",
+      "name": "TR-8S",
+      "brand": "Roland",
+      "main_category": "Production",
+      "subcategory": "Drum Machine",
+      "description": "The TR-8S is a premium Drum Machine from Roland. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "roland-prod-4",
+      "name": "TD-50KV2",
+      "brand": "Roland",
+      "main_category": "Drums",
+      "subcategory": "V-Drums",
+      "description": "The TD-50KV2 is a premium V-Drums from Roland. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "roland-prod-5",
+      "name": "SP-404MKII",
+      "brand": "Roland",
+      "main_category": "Production",
+      "subcategory": "Sampler",
+      "description": "The SP-404MKII is a premium Sampler from Roland. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    }
+  ]
+}

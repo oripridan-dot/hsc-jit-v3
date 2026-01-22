@@ -1,0 +1,281 @@
+{
+  "brand_name": "Mackie",
+  "brand_identity": {
+    "id": "mackie",
+    "name": "Mackie",
+    "description": "Mixers, loudspeakers and studio monitors",
+    "website": "https://www.mackie.com",
+    "categories": [
+      "Studio",
+      "Audio"
+    ],
+    "brand_colors": {
+      "primary": "#00a651",
+      "secondary": "#000000",
+      "accent": "#86efac",
+      "background": "#101010",
+      "text": "#ffffff"
+    },
+    "logo_url": "/assets/logos/mackie_logo.svg"
+  },
+  "products": [
+    {
+      "id": "mackie-prod-1",
+      "name": "ProFX10v3",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Mixer",
+      "description": "The ProFX10v3 is a premium Mixer from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/mackie/mackie-prod-1_thumb.webp",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-prod-1_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-prod-1_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-prod-1_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/mackie/mackie-prod-1_thumb.webp"
+    },
+    {
+      "id": "mackie-prod-2",
+      "name": "Thump215",
+      "brand": "Mackie",
+      "main_category": "Audio",
+      "subcategory": "Speaker",
+      "description": "The Thump215 is a premium Speaker from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/mackie/mackie-prod-2_thumb.webp",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-prod-2_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-prod-2_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-prod-2_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Audio",
+      "category_hierarchy": [
+        "Audio"
+      ],
+      "image": "/data/product_images/mackie/mackie-prod-2_thumb.webp"
+    },
+    {
+      "id": "mackie-prod-3",
+      "name": "CR3-X",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The CR3-X is a premium Monitors from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/mackie/mackie-prod-3_thumb.webp",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-prod-3_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-prod-3_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-prod-3_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/mackie/mackie-prod-3_thumb.webp"
+    },
+    {
+      "id": "mackie-prod-4",
+      "name": "Big Knob Passive",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Controller",
+      "description": "The Big Knob Passive is a premium Controller from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/mackie/mackie-prod-4_thumb.webp",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-prod-4_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-prod-4_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-prod-4_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/mackie/mackie-prod-4_thumb.webp"
+    },
+    {
+      "id": "mackie-prod-5",
+      "name": "MainStream",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The MainStream is a premium Interface from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/mackie/mackie-prod-5_thumb.webp",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-prod-5_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-prod-5_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-prod-5_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/mackie/mackie-prod-5_thumb.webp"
+    }
+  ],
+  "brand_slug": "mackie",
+  "refined_at": "2026-01-21T23:57:02.476869+00:00",
+  "hierarchy": {
+    "Studio": {
+      "Mixer": [
+        {
+          "id": "mackie-prod-1",
+          "name": "ProFX10v3",
+          "description": "The ProFX10v3 is a premium Mixer from Mackie. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/mackie/mackie-prod-1_thumb.webp",
+            "thumbnail": "/data/product_images/mackie/mackie-prod-1_thumb.webp",
+            "high_res": "/data/product_images/mackie/mackie-prod-1_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Monitors": [
+        {
+          "id": "mackie-prod-3",
+          "name": "CR3-X",
+          "description": "The CR3-X is a premium Monitors from Mackie. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/mackie/mackie-prod-3_thumb.webp",
+            "thumbnail": "/data/product_images/mackie/mackie-prod-3_thumb.webp",
+            "high_res": "/data/product_images/mackie/mackie-prod-3_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Controller": [
+        {
+          "id": "mackie-prod-4",
+          "name": "Big Knob Passive",
+          "description": "The Big Knob Passive is a premium Controller from Mackie. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/mackie/mackie-prod-4_thumb.webp",
+            "thumbnail": "/data/product_images/mackie/mackie-prod-4_thumb.webp",
+            "high_res": "/data/product_images/mackie/mackie-prod-4_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Interface": [
+        {
+          "id": "mackie-prod-5",
+          "name": "MainStream",
+          "description": "The MainStream is a premium Interface from Mackie. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/mackie/mackie-prod-5_thumb.webp",
+            "thumbnail": "/data/product_images/mackie/mackie-prod-5_thumb.webp",
+            "high_res": "/data/product_images/mackie/mackie-prod-5_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    },
+    "Audio": {
+      "Speaker": [
+        {
+          "id": "mackie-prod-2",
+          "name": "Thump215",
+          "description": "The Thump215 is a premium Speaker from Mackie. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/mackie/mackie-prod-2_thumb.webp",
+            "thumbnail": "/data/product_images/mackie/mackie-prod-2_thumb.webp",
+            "high_res": "/data/product_images/mackie/mackie-prod-2_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

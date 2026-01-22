@@ -1,10 +1,10 @@
 # 🎹 HSC Mission Control v3.7.4
 
-**Categories-First Edition** - Clean Architecture, ONE SOURCE OF TRUTH
+**Enhanced Navigation & TierBar** - Clean Architecture, ONE SOURCE OF TRUTH
 
-> **Production-Ready Static Multi-Brand Product Catalog** ✅
+> **Production-Ready Static Multi-Brand Product Catalog with Advanced Navigation** ✅
 
-A modern, high-performance product catalog and support system for Roland, Boss, and Nord equipment. Built with React 19, TypeScript 5, and Tailwind CSS with comprehensive data extraction.
+A modern, high-performance product catalog system for professional musical instruments. Built with React 19, TypeScript 5, and Tailwind CSS with comprehensive hierarchical navigation and brand-aware theming.
 
 ## 📖 **→ [GO TO SYSTEM GUIDE](SYSTEM.md)**
 
@@ -14,18 +14,19 @@ A modern, high-performance product catalog and support system for Roland, Boss, 
 
 ## 🌟 What's Inside
 
-- ✅ **40 Products** - Roland (33), Boss (3), Nord (4)
-- 🎨 **Brand Theming** - Dynamic per-brand color schemes (WCAG AA)
-- 📊 **7 Categories** - Drums, Keyboards, Synthesizers, Samplers, Pianos, Sound Modules, Effects
+- ✅ **10+ Brands** - Roland, Boss, Nord, Moog, Universal Audio, Adam Audio, Mackie, Akai, Warm Audio, Teenage Engineering
+- 🎨 **Smart Brand Theming** - Dynamic per-brand color schemes with official logos (WCAG AA)
+- 📊 **7 Universal Categories** - Keys, Drums, Guitars, Studio, Live Sound, DJ/Production, Headphones, Accessories
 - ⚡ **Instant Search** - <50ms fuzzy search with Fuse.js
-- 🗂️ **Hierarchical Navigation** - Automatic category tree from static data
-- 🖼️ **Rich Media** - Product images and logos
-- 📄 **Manuals** - Direct PDF access per product
+- 🗂️ **Hierarchical Navigation** - Breadcrumbs + Layer buttons for intuitive drilling
+- 🏷️ **Official Logos** - Brand identity via published logos in product thumbnails
+- 📊 **TierBar Analytics** - Price-position visualization with scope filtering
+- 📄 **Complete Specs** - Categories, subcategories, pricing, images
 - 🚀 **Zero Backend** - Pure static JSON (no server dependency)
 - 🔒 **ONE SOURCE OF TRUTH** - Single data generation pipeline
-- ♿ **Accessible** - WCAG AA compliant
+- ♿ **Accessible** - WCAG AA compliant, semantic HTML
 - 📱 **Responsive** - Desktop, tablet, mobile optimized
-- 🧪 **Type Safe** - TypeScript 5 with strict mode
+- 🧪 **Type Safe** - TypeScript 5 with strict mode, zero `any`
 
 ---
 
@@ -176,6 +177,52 @@ hsc-jit-v3/
    ↓
 7. User interacts → Zustand state updates → UI reflects changes
 ```
+
+---
+
+## 🧭 Navigation Features (v3.7.4)
+
+### Breadcrumbs Navigation
+
+Shows complete user journey through catalog. Click any breadcrumb to jump back:
+
+```
+🏠 Catalog > Roland > Keyboards > TR-08
+```
+
+### Layer Navigator
+
+Hierarchical drilling with intuitive button groups. When you select a brand/category, the next level displays as clickable buttons with product counts:
+
+```
+Brand View
+├─ Keyboards (12)
+├─ Synthesizers (8)
+├─ Drums (7)
+├─ Sound Modules (4)
+└─ Effects (2)
+```
+
+### TierBar Analytics
+
+Visual price-position graph with:
+
+- Interactive scope slider (min/max price range)
+- Brand-colored product cards
+- Official logo watermarks
+- Category icons for quick recognition
+- Hover details (name, price)
+
+### Navigation Path Memory
+
+State persists across page reloads via Zustand + localStorage:
+
+- Last visited brand
+- Last selected category
+- Navigation history
+- Expanded nodes
+
+---
 
 ### Single Source of Truth
 

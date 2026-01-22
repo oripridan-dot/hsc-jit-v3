@@ -1,9 +1,20 @@
-import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import type { Product } from '../../types'; //
-import { useNavigationStore } from '../../store/navigationStore';
-import { brandThemes } from '../../styles/brandThemes'; //
-import { Piano, Mic2, Speaker, Headphones, Music, Disc3, Cable, Radio, Zap, Box } from 'lucide-react';
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  Box,
+  Cable,
+  Disc3,
+  Headphones,
+  Mic2,
+  Music,
+  Piano,
+  Radio,
+  Speaker,
+  Zap,
+} from "lucide-react";
+import React, { useMemo, useState } from "react";
+import { useNavigationStore } from "../../store/navigationStore";
+import { brandThemes } from "../../styles/brandThemes"; //
+import type { Product } from "../../types"; //
 
 interface TierBarProps {
   products: Product[];
@@ -13,42 +24,69 @@ interface TierBarProps {
 
 // Map categories to cognitive icons for instant visual recognition
 const getCategoryIcon = (category: string | undefined) => {
-  const c = (category || '').toLowerCase();
-  if (c.includes('piano') || c.includes('key') || c.includes('synth')) return <Piano size={10} />;
-  if (c.includes('drum') || c.includes('percussion')) return <Music size={10} />;
-  if (c.includes('mic') || c.includes('vocal')) return <Mic2 size={10} />;
-  if (c.includes('speaker') || c.includes('monitor') || c.includes('pa')) return <Speaker size={10} />;
-  if (c.includes('headphone') || c.includes('ear')) return <Headphones size={10} />;
-  if (c.includes('dj') || c.includes('turntable')) return <Disc3 size={10} />;
-  if (c.includes('mixer') || c.includes('console')) return <Radio size={10} />;
-  if (c.includes('cable') || c.includes('connect')) return <Cable size={10} />;
-  if (c.includes('guitar') || c.includes('amp') || c.includes('pedal')) return <Zap size={10} />;
+  const c = (category || "").toLowerCase();
+  if (c.includes("piano") || c.includes("key") || c.includes("synth"))
+    return <Piano size={10} />;
+  if (c.includes("drum") || c.includes("percussion"))
+    return <Music size={10} />;
+  if (c.includes("mic") || c.includes("vocal")) return <Mic2 size={10} />;
+  if (c.includes("speaker") || c.includes("monitor") || c.includes("pa"))
+    return <Speaker size={10} />;
+  if (c.includes("headphone") || c.includes("ear"))
+    return <Headphones size={10} />;
+  if (c.includes("dj") || c.includes("turntable")) return <Disc3 size={10} />;
+  if (c.includes("mixer") || c.includes("console")) return <Radio size={10} />;
+  if (c.includes("cable") || c.includes("connect")) return <Cable size={10} />;
+  if (c.includes("guitar") || c.includes("amp") || c.includes("pedal"))
+    return <Zap size={10} />;
   return <Box size={10} />;
 };
 
-export const TierBar: React.FC<TierBarProps> = ({ 
+/**
+ * Get brand logo URL - tries multiple official sources
+ * Only uses official published logos
+ */
+const getBrandLogoUrl = (brandName: string): string | null => {
+  const brandSlug = brandName.toLowerCase().replace(/\s+/g, "-");
+
+  // Try official published logo paths
+  const logoPaths = [
+    `/assets/logos/${brandSlug}_logo.svg`,
+    `/assets/logos/${brandSlug}_logo.png`,
+    `/assets/logos/${brandSlug}.svg`,
+    `/assets/logos/${brandSlug}.png`,
+  ];
+
+  // Return the first path (browser will handle fallback)
+  return logoPaths[0] || null;
+};
+
+export const TierBar: React.FC<TierBarProps> = ({
   products,
   title = "Market Landscape",
-  showBrandBadges = true
+  showBrandBadges = true,
 }) => {
   const { selectProduct } = useNavigationStore();
 
   // 1. Unified Calculation: Works for 1 brand or 10 brands simultaneously
   const { minPrice, maxPrice, sortedProducts } = useMemo(() => {
     // Filter out "Call for Price" items (0 price)
-    const valid = products.filter(p => (p.pricing?.regular_price || 0) > 0);
-    
-    if (valid.length === 0) return { minPrice: 0, maxPrice: 100, sortedProducts: [] };
+    const valid = products.filter((p) => (p.pricing?.regular_price || 0) > 0);
 
-    const prices = valid.map(p => p.pricing!.regular_price!);
+    if (valid.length === 0)
+      return { minPrice: 0, maxPrice: 100, sortedProducts: [] };
+
+    const prices = valid.map((p) => p.pricing!.regular_price!);
     const min = Math.min(...prices);
     const max = Math.max(...prices);
-    
+
     // Add 10% buffer to edges so items aren't glued to the wall
     return {
-      minPrice: min * 0.9, 
+      minPrice: min * 0.9,
       maxPrice: max * 1.1,
-      sortedProducts: valid.sort((a, b) => a.pricing!.regular_price! - b.pricing!.regular_price!)
+      sortedProducts: valid.sort(
+        (a, b) => a.pricing!.regular_price! - b.pricing!.regular_price!,
+      ),
     };
   }, [products]);
 
@@ -57,18 +95,21 @@ export const TierBar: React.FC<TierBarProps> = ({
 
   return (
     <div className="w-full h-full flex flex-col p-8 bg-[var(--bg-app)] text-[var(--text-primary)] relative overflow-hidden transition-colors duration-500">
-      
       {/* HEADER: Contextual Title */}
       <div className="z-10 mb-12 flex justify-between items-end">
         <div>
           <div className="text-[10px] font-mono text-[var(--brand-primary)] uppercase tracking-widest mb-2">
             Analytics View
           </div>
-          <h2 className="text-3xl font-black tracking-tighter uppercase text-[var(--text-primary)]">{title}</h2>
+          <h2 className="text-3xl font-black tracking-tighter uppercase text-[var(--text-primary)]">
+            {title}
+          </h2>
           <div className="flex items-center gap-2 text-[var(--text-tertiary)] text-sm mt-1">
-             <span>Scope: ₪{Math.round(minPrice)} - ₪{Math.round(maxPrice)}</span>
-             <span className="w-1 h-1 bg-[var(--text-tertiary)] rounded-full"/>
-             <span>{sortedProducts.length} Results</span>
+            <span>
+              Scope: ₪{Math.round(minPrice)} - ₪{Math.round(maxPrice)}
+            </span>
+            <span className="w-1 h-1 bg-[var(--text-tertiary)] rounded-full" />
+            <span>{sortedProducts.length} Results</span>
           </div>
         </div>
       </div>
@@ -78,14 +119,17 @@ export const TierBar: React.FC<TierBarProps> = ({
         <AnimatePresence>
           {sortedProducts.map((product) => {
             const price = product.pricing?.regular_price || 0;
-            const positionPercent = ((price - minPrice) / (maxPrice - minPrice)) * 100;
-            
+            const positionPercent =
+              ((price - minPrice) / (maxPrice - minPrice)) * 100;
+
             // Is it within the user's "Scope"?
-            const isVisible = positionPercent >= range[0] && positionPercent <= range[1];
-            
+            const isVisible =
+              positionPercent >= range[0] && positionPercent <= range[1];
+
             // 🎨 Cross-Brand Styling Logic
             const brandKey = product.brand.toLowerCase();
-            const brandColor = brandThemes[brandKey]?.colors?.primary || '#ffffff';
+            const brandColor =
+              brandThemes[brandKey]?.colors?.primary || "#ffffff";
 
             return (
               <motion.button
@@ -93,55 +137,90 @@ export const TierBar: React.FC<TierBarProps> = ({
                 key={product.id}
                 onClick={() => selectProduct(product)}
                 initial={{ opacity: 0, scale: 0, y: 50 }}
-                animate={{ 
-                  opacity: isVisible ? 1 : 0.1, 
+                animate={{
+                  opacity: isVisible ? 1 : 0.1,
                   scale: isVisible ? 1 : 0.6,
-                  filter: isVisible ? 'grayscale(0%)' : 'grayscale(100%)',
-                  left: `${positionPercent}%` 
+                  filter: isVisible ? "grayscale(0%)" : "grayscale(100%)",
+                  left: `${positionPercent}%`,
                 }}
-                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 className="absolute bottom-0 transform -translate-x-1/2 group flex flex-col items-center gap-3 pb-8 z-10 hover:z-50"
               >
                 {/* PRODUCT CARD */}
-                <div 
-                  className="relative w-24 h-24 bg-[var(--bg-panel)] rounded-xl shadow-2xl p-2 transition-all duration-300 group-hover:-translate-y-4 group-hover:scale-110"
-                  style={{ 
-                    border: `1px solid ${isVisible ? brandColor : 'var(--border-subtle)'}`,
-                    boxShadow: isVisible ? `0 10px 30px -10px ${brandColor}40` : 'none'
+                <div
+                  className="relative w-24 h-24 bg-[var(--bg-panel)] rounded-xl shadow-2xl p-2 transition-all duration-300 group-hover:-translate-y-4 group-hover:scale-110 flex items-center justify-center overflow-hidden"
+                  style={{
+                    border: `1px solid ${isVisible ? brandColor : "var(--border-subtle)"}`,
+                    boxShadow: isVisible
+                      ? `0 10px 30px -10px ${brandColor}40`
+                      : "none",
                   }}
                 >
-                   {/* Contextual Thumbnail */}
-                   <img 
-                      src={product.image_url} 
+                  {/* Product Image Container */}
+                  <div className="absolute inset-0 p-2 flex items-center justify-center">
+                    <img
+                      src={product.image_url}
                       alt={product.name}
-                      className="w-full h-full object-contain" 
-                   />
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
 
-                   {/* Category Identity (Top Left) - Cognitive Icon */}
-                   <div 
-                      className="absolute -top-2 -left-2 w-5 h-5 rounded-full bg-[var(--bg-app)] border border-[var(--border-subtle)] flex items-center justify-center text-[var(--text-secondary)] shadow-sm z-20 flex-shrink-0"
-                      title={product.category}
-                   >
-                      {getCategoryIcon(product.category)}
-                   </div>
+                  {/* Official Brand Logo Overlay (Bottom Right) */}
+                  {showBrandBadges && (
+                    <div
+                      className="absolute bottom-0 right-0 w-10 h-10 rounded-tl-lg bg-white/10 backdrop-blur-sm border-l border-t border-[var(--border-subtle)] flex items-center justify-center z-20 overflow-hidden shadow-lg"
+                      title={`${product.brand} Logo`}
+                    >
+                      <img
+                        src={getBrandLogoUrl(product.brand) || ""}
+                        alt={`${product.brand} logo`}
+                        className="w-7 h-7 object-contain opacity-80 hover:opacity-100 transition-opacity"
+                        onError={(e) => {
+                          // Fallback: show brand initials if logo fails
+                          const el = e.currentTarget;
+                          el.style.display = "none";
+                          const fallback = document.createElement("span");
+                          fallback.className =
+                            "text-[6px] font-bold text-white/60";
+                          fallback.textContent = product.brand
+                            .substring(0, 2)
+                            .toUpperCase();
+                          el.parentElement?.appendChild(fallback);
+                        }}
+                      />
+                    </div>
+                  )}
 
-                   {/* Brand Badge (Top Right) */}
-                   {showBrandBadges && (
-                      <div 
-                          className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[8px] font-bold uppercase tracking-wider text-white shadow-sm z-20"
-                          style={{ backgroundColor: brandColor }}
-                      >
-                          {product.brand}
-                      </div>
-                   )}
+                  {/* Category Identity (Top Left) - Cognitive Icon */}
+                  <div
+                    className="absolute top-0 left-0 w-5 h-5 rounded-br-lg bg-[var(--bg-app)] border border-[var(--border-subtle)] flex items-center justify-center text-[var(--text-secondary)] shadow-sm z-20 flex-shrink-0"
+                    title={product.category}
+                  >
+                    {getCategoryIcon(product.category)}
+                  </div>
+
+                  {/* Brand Name Accent Bar (Top Right) */}
+                  {showBrandBadges && (
+                    <div
+                      className="absolute top-0 right-0 px-1.5 py-0.5 rounded-bl text-[7px] font-bold uppercase tracking-wider text-white shadow-sm z-20 whitespace-nowrap truncate max-w-[80%]"
+                      style={{ backgroundColor: brandColor }}
+                    >
+                      {product.brand}
+                    </div>
+                  )}
                 </div>
 
                 {/* INFO & PRICE LINE */}
                 <div className="flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span className="text-[10px] text-[var(--text-secondary)] max-w-[100px] truncate">{product.name}</span>
-                    <span className="text-xs font-mono font-bold" style={{ color: brandColor }}>
-                        ₪{price.toLocaleString()}
-                    </span>
+                  <span className="text-[10px] text-[var(--text-secondary)] max-w-[100px] truncate">
+                    {product.name}
+                  </span>
+                  <span
+                    className="text-xs font-mono font-bold"
+                    style={{ color: brandColor }}
+                  >
+                    ₪{price.toLocaleString()}
+                  </span>
                 </div>
 
                 {/* Connector Line to Axis */}
@@ -149,11 +228,13 @@ export const TierBar: React.FC<TierBarProps> = ({
 
                 {/* Axis Label - Processed Thumbnail on Axis */}
                 <div className="absolute -bottom-10 flex flex-col items-center">
-                   <div className="w-6 h-6 rounded-full bg-[var(--bg-panel)] border border-[var(--border-subtle)] flex items-center justify-center overflow-hidden mb-1 shadow-sm">
-                      <img src={product.image_url} className="w-4 h-4 object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all" />
-                   </div>
+                  <div className="w-6 h-6 rounded-full bg-[var(--bg-panel)] border border-[var(--border-subtle)] flex items-center justify-center overflow-hidden mb-1 shadow-sm">
+                    <img
+                      src={product.image_url}
+                      className="w-4 h-4 object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all"
+                    />
+                  </div>
                 </div>
-
               </motion.button>
             );
           })}
@@ -164,47 +245,53 @@ export const TierBar: React.FC<TierBarProps> = ({
       <div className="h-16 relative px-4 select-none">
         {/* Track */}
         <div className="absolute top-1/2 left-0 right-0 h-2 bg-[var(--border-subtle)] rounded-full overflow-hidden">
-           {/* Active Range Fill */}
-           <div 
-             className="absolute h-full bg-[var(--brand-primary)]"
-             style={{ left: `${range[0]}%`, right: `${100 - range[1]}%` }}
-           />
+          {/* Active Range Fill */}
+          <div
+            className="absolute h-full bg-[var(--brand-primary)]"
+            style={{ left: `${range[0]}%`, right: `${100 - range[1]}%` }}
+          />
         </div>
 
         {/* Hidden Inputs for Logic */}
-        <input 
-          type="range" min="0" max="100" value={range[0]}
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={range[0]}
           onChange={(e) => {
-             const val = Number(e.target.value);
-             if (val < range[1] - 5) setRange([val, range[1]]);
+            const val = Number(e.target.value);
+            if (val < range[1] - 5) setRange([val, range[1]]);
           }}
           className="absolute top-1/2 left-0 w-full opacity-0 cursor-ew-resize z-20 h-8"
         />
-        <input 
-          type="range" min="0" max="100" value={range[1]}
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={range[1]}
           onChange={(e) => {
-             const val = Number(e.target.value);
-             if (val > range[0] + 5) setRange([range[0], val]);
+            const val = Number(e.target.value);
+            if (val > range[0] + 5) setRange([range[0], val]);
           }}
           className="absolute top-1/2 left-0 w-full opacity-0 cursor-ew-resize z-20 h-8"
         />
 
         {/* Visual Handles */}
-        <div 
+        <div
           className="absolute top-1/2 -mt-3 w-6 h-6 bg-indigo-500 rounded-full border-4 border-[#0a0a0a] shadow-lg pointer-events-none transition-all"
           style={{ left: `${range[0]}%` }}
         />
-        <div 
+        <div
           className="absolute top-1/2 -mt-3 w-6 h-6 bg-indigo-500 rounded-full border-4 border-[#0a0a0a] shadow-lg pointer-events-none transition-all"
           style={{ left: `${range[1]}%` }}
         />
-        
+
         {/* Legend */}
         <div className="absolute -bottom-2 w-full flex justify-between text-[10px] font-mono text-white/30 uppercase">
-           <span>Entry Level</span>
-           <span>Mid Range</span>
-           <span>Professional</span>
-           <span>Flagship</span>
+          <span>Entry Level</span>
+          <span>Mid Range</span>
+          <span>Professional</span>
+          <span>Flagship</span>
         </div>
       </div>
     </div>

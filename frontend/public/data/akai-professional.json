@@ -1,0 +1,279 @@
+{
+  "brand_name": "Akai Professional",
+  "brand_identity": {
+    "id": "akai-professional",
+    "name": "Akai Professional",
+    "description": "Music production centers and keyboards",
+    "website": "https://www.akai-professional.com",
+    "categories": [
+      "Production",
+      "Keys"
+    ],
+    "brand_colors": {
+      "primary": "#ff0000",
+      "secondary": "#000000",
+      "accent": "#ffffff",
+      "background": "#1a1a1a",
+      "text": "#ffffff"
+    },
+    "logo_url": "/assets/logos/akai-professional_logo.svg"
+  },
+  "products": [
+    {
+      "id": "akai-professional-prod-1",
+      "name": "MPC One+",
+      "brand": "Akai Professional",
+      "main_category": "Production",
+      "subcategory": "MPC",
+      "description": "The MPC One+ is a premium MPC from Akai Professional. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
+      "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
+        "high_res": "/data/product_images/akai-professional/akai-professional-prod-1_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Production",
+      "category_hierarchy": [
+        "Production"
+      ],
+      "image": "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp"
+    },
+    {
+      "id": "akai-professional-prod-2",
+      "name": "MPC Live II",
+      "brand": "Akai Professional",
+      "main_category": "Production",
+      "subcategory": "MPC",
+      "description": "The MPC Live II is a premium MPC from Akai Professional. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
+      "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
+        "high_res": "/data/product_images/akai-professional/akai-professional-prod-2_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Production",
+      "category_hierarchy": [
+        "Production"
+      ],
+      "image": "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp"
+    },
+    {
+      "id": "akai-professional-prod-3",
+      "name": "MPK Mini MK3",
+      "brand": "Akai Professional",
+      "main_category": "Keys",
+      "subcategory": "Controller",
+      "description": "The MPK Mini MK3 is a premium Controller from Akai Professional. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
+      "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
+        "high_res": "/data/product_images/akai-professional/akai-professional-prod-3_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Keys",
+      "category_hierarchy": [
+        "Keys"
+      ],
+      "image": "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp"
+    },
+    {
+      "id": "akai-professional-prod-4",
+      "name": "APC64",
+      "brand": "Akai Professional",
+      "main_category": "Production",
+      "subcategory": "Controller",
+      "description": "The APC64 is a premium Controller from Akai Professional. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/akai-professional/akai-professional-prod-4_thumb.webp",
+      "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-prod-4_thumb.webp",
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-4_thumb.webp",
+        "high_res": "/data/product_images/akai-professional/akai-professional-prod-4_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Production",
+      "category_hierarchy": [
+        "Production"
+      ],
+      "image": "/data/product_images/akai-professional/akai-professional-prod-4_thumb.webp"
+    },
+    {
+      "id": "akai-professional-prod-5",
+      "name": "Force",
+      "brand": "Akai Professional",
+      "main_category": "Production",
+      "subcategory": "Standalone",
+      "description": "The Force is a premium Standalone from Akai Professional. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/akai-professional/akai-professional-prod-5_thumb.webp",
+      "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-prod-5_thumb.webp",
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-5_thumb.webp",
+        "high_res": "/data/product_images/akai-professional/akai-professional-prod-5_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Production",
+      "category_hierarchy": [
+        "Production"
+      ],
+      "image": "/data/product_images/akai-professional/akai-professional-prod-5_thumb.webp"
+    }
+  ],
+  "brand_slug": "akai-professional",
+  "refined_at": "2026-01-21T23:56:35.039526+00:00",
+  "hierarchy": {
+    "Production": {
+      "MPC": [
+        {
+          "id": "akai-professional-prod-1",
+          "name": "MPC One+",
+          "description": "The MPC One+ is a premium MPC from Akai Professional. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-prod-1_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "akai-professional-prod-2",
+          "name": "MPC Live II",
+          "description": "The MPC Live II is a premium MPC from Akai Professional. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-prod-2_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Controller": [
+        {
+          "id": "akai-professional-prod-4",
+          "name": "APC64",
+          "description": "The APC64 is a premium Controller from Akai Professional. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-prod-4_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-4_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-prod-4_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Standalone": [
+        {
+          "id": "akai-professional-prod-5",
+          "name": "Force",
+          "description": "The Force is a premium Standalone from Akai Professional. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-prod-5_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-5_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-prod-5_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    },
+    "Keys": {
+      "Controller": [
+        {
+          "id": "akai-professional-prod-3",
+          "name": "MPK Mini MK3",
+          "description": "The MPK Mini MK3 is a premium Controller from Akai Professional. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-prod-3_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "brand_name": "Moog",
+  "brand_identity": {
+    "id": "moog",
+    "name": "Moog",
+    "description": "Analog synthesizers",
+    "website": "https://www.moog.com",
+    "categories": [
+      "Keys",
+      "Synths"
+    ],
+    "brand_colors": {
+      "primary": "#000000",
+      "secondary": "#5c4033",
+      "accent": "#22c55e",
+      "background": "#1c1917",
+      "text": "#e5e7eb"
+    },
+    "logo_url": "/assets/logos/moog_logo.png"
+  },
+  "products": [
+    {
+      "id": "moog-prod-1",
+      "name": "Minimoog Model D",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Minimoog Model D is a premium Synthesizer from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/moog/moog-prod-1_thumb.webp",
+      "images": {
+        "main": "/data/product_images/moog/moog-prod-1_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-prod-1_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-prod-1_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Keys",
+      "category_hierarchy": [
+        "Keys"
+      ],
+      "image": "/data/product_images/moog/moog-prod-1_thumb.webp"
+    },
+    {
+      "id": "moog-prod-2",
+      "name": "Subsequent 37",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Subsequent 37 is a premium Synthesizer from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/moog/moog-prod-2_thumb.webp",
+      "images": {
+        "main": "/data/product_images/moog/moog-prod-2_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-prod-2_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-prod-2_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Keys",
+      "category_hierarchy": [
+        "Keys"
+      ],
+      "image": "/data/product_images/moog/moog-prod-2_thumb.webp"
+    },
+    {
+      "id": "moog-prod-3",
+      "name": "Matriarch",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Semi-Modular",
+      "description": "The Matriarch is a premium Semi-Modular from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/moog/moog-prod-3_thumb.webp",
+      "images": {
+        "main": "/data/product_images/moog/moog-prod-3_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-prod-3_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-prod-3_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Keys",
+      "category_hierarchy": [
+        "Keys"
+      ],
+      "image": "/data/product_images/moog/moog-prod-3_thumb.webp"
+    },
+    {
+      "id": "moog-prod-4",
+      "name": "Grandmother",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Semi-Modular",
+      "description": "The Grandmother is a premium Semi-Modular from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/moog/moog-prod-4_thumb.webp",
+      "images": {
+        "main": "/data/product_images/moog/moog-prod-4_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-prod-4_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-prod-4_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Keys",
+      "category_hierarchy": [
+        "Keys"
+      ],
+      "image": "/data/product_images/moog/moog-prod-4_thumb.webp"
+    },
+    {
+      "id": "moog-prod-5",
+      "name": "Moog One",
+      "brand": "Moog",
+      "main_category": "Keys",
+      "subcategory": "Polyphonic",
+      "description": "The Moog One is a premium Polyphonic from Moog. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/moog/moog-prod-5_thumb.webp",
+      "images": {
+        "main": "/data/product_images/moog/moog-prod-5_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-prod-5_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-prod-5_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Keys",
+      "category_hierarchy": [
+        "Keys"
+      ],
+      "image": "/data/product_images/moog/moog-prod-5_thumb.webp"
+    }
+  ],
+  "brand_slug": "moog",
+  "refined_at": "2026-01-21T23:56:07.181589+00:00",
+  "hierarchy": {
+    "Keys": {
+      "Synthesizer": [
+        {
+          "id": "moog-prod-1",
+          "name": "Minimoog Model D",
+          "description": "The Minimoog Model D is a premium Synthesizer from Moog. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/moog/moog-prod-1_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-prod-1_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-prod-1_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "moog-prod-2",
+          "name": "Subsequent 37",
+          "description": "The Subsequent 37 is a premium Synthesizer from Moog. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/moog/moog-prod-2_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-prod-2_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-prod-2_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Semi-Modular": [
+        {
+          "id": "moog-prod-3",
+          "name": "Matriarch",
+          "description": "The Matriarch is a premium Semi-Modular from Moog. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/moog/moog-prod-3_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-prod-3_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-prod-3_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "moog-prod-4",
+          "name": "Grandmother",
+          "description": "The Grandmother is a premium Semi-Modular from Moog. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/moog/moog-prod-4_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-prod-4_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-prod-4_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Polyphonic": [
+        {
+          "id": "moog-prod-5",
+          "name": "Moog One",
+          "description": "The Moog One is a premium Polyphonic from Moog. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/moog/moog-prod-5_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-prod-5_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-prod-5_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

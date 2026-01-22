@@ -3,9 +3,26 @@
  * Shows global statistics and serves as the default view
  */
 import { Compass, Sparkles } from "lucide-react";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { catalogLoader } from "../../lib/catalogLoader";
 
 export const GalaxyDashboard: React.FC = () => {
+  const [stats, setStats] = useState({
+    products: 0,
+    brands: 0,
+    categories: 7,
+  });
+
+  useEffect(() => {
+    catalogLoader.loadIndex().then((index) => {
+      setStats({
+        products: index.total_products,
+        brands: index.brands.length,
+        categories: 7,
+      });
+    });
+  }, []);
+
   return (
     <div className="flex-1 flex flex-col h-full bg-[var(--bg-app)] overflow-y-auto relative">
       {/* Background Ambient Glow */}
@@ -31,19 +48,25 @@ export const GalaxyDashboard: React.FC = () => {
           {/* Stats Grid */}
           <div className="grid grid-cols-3 gap-4 mt-12">
             <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl p-4 hover:border-indigo-500/50 transition-all">
-              <div className="text-2xl font-bold text-indigo-400 mb-1">117</div>
+              <div className="text-2xl font-bold text-indigo-400 mb-1">
+                {stats.products || "--"}
+              </div>
               <div className="text-xs text-[var(--text-tertiary)] uppercase tracking-wide">
                 Products
               </div>
             </div>
             <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl p-4 hover:border-purple-500/50 transition-all">
-              <div className="text-2xl font-bold text-purple-400 mb-1">4</div>
+              <div className="text-2xl font-bold text-purple-400 mb-1">
+                {stats.brands || "--"}
+              </div>
               <div className="text-xs text-[var(--text-tertiary)] uppercase tracking-wide">
                 Brands
               </div>
             </div>
             <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl p-4 hover:border-pink-500/50 transition-all">
-              <div className="text-2xl font-bold text-pink-400 mb-1">7</div>
+              <div className="text-2xl font-bold text-pink-400 mb-1">
+                {stats.categories}
+              </div>
               <div className="text-xs text-[var(--text-tertiary)] uppercase tracking-wide">
                 Categories
               </div>

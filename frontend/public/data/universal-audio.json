@@ -1,0 +1,277 @@
+{
+  "brand_name": "Universal Audio",
+  "brand_identity": {
+    "id": "universal-audio",
+    "name": "Universal Audio",
+    "description": "High-fidelity audio interfaces and plugins",
+    "website": "https://www.universal-audio.com",
+    "categories": [
+      "Studio",
+      "Audio"
+    ],
+    "brand_colors": {
+      "primary": "#1f2937",
+      "secondary": "#111827",
+      "accent": "#3b82f6",
+      "background": "#000000",
+      "text": "#f3f4f6"
+    },
+    "logo_url": "/assets/logos/universal-audio_logo.svg"
+  },
+  "products": [
+    {
+      "id": "universal-audio-prod-1",
+      "name": "Apollo Twin X",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Apollo Twin X is a premium Interface from Universal Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
+      "images": {
+        "main": "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
+        "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
+        "high_res": "/data/product_images/universal-audio/universal-audio-prod-1_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp"
+    },
+    {
+      "id": "universal-audio-prod-2",
+      "name": "Apollo x4",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Apollo x4 is a premium Interface from Universal Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/universal-audio/universal-audio-prod-2_thumb.webp",
+      "images": {
+        "main": "/data/product_images/universal-audio/universal-audio-prod-2_thumb.webp",
+        "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-2_thumb.webp",
+        "high_res": "/data/product_images/universal-audio/universal-audio-prod-2_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/universal-audio/universal-audio-prod-2_thumb.webp"
+    },
+    {
+      "id": "universal-audio-prod-3",
+      "name": "Volt 276",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The Volt 276 is a premium Interface from Universal Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/universal-audio/universal-audio-prod-3_thumb.webp",
+      "images": {
+        "main": "/data/product_images/universal-audio/universal-audio-prod-3_thumb.webp",
+        "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-3_thumb.webp",
+        "high_res": "/data/product_images/universal-audio/universal-audio-prod-3_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/universal-audio/universal-audio-prod-3_thumb.webp"
+    },
+    {
+      "id": "universal-audio-prod-4",
+      "name": "UAFX Dream '65",
+      "brand": "Universal Audio",
+      "main_category": "Guitar",
+      "subcategory": "Pedal",
+      "description": "The UAFX Dream '65 is a premium Pedal from Universal Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/universal-audio/universal-audio-prod-4_thumb.webp",
+      "images": {
+        "main": "/data/product_images/universal-audio/universal-audio-prod-4_thumb.webp",
+        "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-4_thumb.webp",
+        "high_res": "/data/product_images/universal-audio/universal-audio-prod-4_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Guitar",
+      "category_hierarchy": [
+        "Guitar"
+      ],
+      "image": "/data/product_images/universal-audio/universal-audio-prod-4_thumb.webp"
+    },
+    {
+      "id": "universal-audio-prod-5",
+      "name": "Sphere DLX",
+      "brand": "Universal Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The Sphere DLX is a premium Microphone from Universal Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
+      "images": {
+        "main": "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
+        "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
+        "high_res": "/data/product_images/universal-audio/universal-audio-prod-5_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp"
+    }
+  ],
+  "brand_slug": "universal-audio",
+  "refined_at": "2026-01-21T23:55:59.828680+00:00",
+  "hierarchy": {
+    "Studio": {
+      "Interface": [
+        {
+          "id": "universal-audio-prod-1",
+          "name": "Apollo Twin X",
+          "description": "The Apollo Twin X is a premium Interface from Universal Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
+            "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
+            "high_res": "/data/product_images/universal-audio/universal-audio-prod-1_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "universal-audio-prod-2",
+          "name": "Apollo x4",
+          "description": "The Apollo x4 is a premium Interface from Universal Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/universal-audio/universal-audio-prod-2_thumb.webp",
+            "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-2_thumb.webp",
+            "high_res": "/data/product_images/universal-audio/universal-audio-prod-2_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "universal-audio-prod-3",
+          "name": "Volt 276",
+          "description": "The Volt 276 is a premium Interface from Universal Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/universal-audio/universal-audio-prod-3_thumb.webp",
+            "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-3_thumb.webp",
+            "high_res": "/data/product_images/universal-audio/universal-audio-prod-3_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Microphone": [
+        {
+          "id": "universal-audio-prod-5",
+          "name": "Sphere DLX",
+          "description": "The Sphere DLX is a premium Microphone from Universal Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
+            "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
+            "high_res": "/data/product_images/universal-audio/universal-audio-prod-5_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    },
+    "Guitar": {
+      "Pedal": [
+        {
+          "id": "universal-audio-prod-4",
+          "name": "UAFX Dream '65",
+          "description": "The UAFX Dream '65 is a premium Pedal from Universal Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/universal-audio/universal-audio-prod-4_thumb.webp",
+            "thumbnail": "/data/product_images/universal-audio/universal-audio-prod-4_thumb.webp",
+            "high_res": "/data/product_images/universal-audio/universal-audio-prod-4_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

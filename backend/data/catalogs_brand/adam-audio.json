@@ -1,0 +1,155 @@
+{
+  "brand_name": "Adam Audio",
+  "brand_identity": {
+    "id": "adam-audio",
+    "name": "Adam Audio",
+    "description": "Professional studio monitors",
+    "website": "https://www.adam-audio.com",
+    "categories": [
+      "Studio",
+      "Audio"
+    ]
+  },
+  "products": [
+    {
+      "id": "adam-audio-prod-1",
+      "name": "A7V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The A7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "adam-audio-prod-2",
+      "name": "A4V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The A4V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "adam-audio-prod-3",
+      "name": "S2V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The S2V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "adam-audio-prod-4",
+      "name": "T7V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The T7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "adam-audio-prod-5",
+      "name": "Sub10 MK2",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Subwoofer",
+      "description": "The Sub10 MK2 is a premium Subwoofer from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    }
+  ]
+}

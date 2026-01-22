@@ -1,0 +1,273 @@
+{
+  "brand_name": "Adam Audio",
+  "brand_identity": {
+    "id": "adam-audio",
+    "name": "Adam Audio",
+    "description": "Professional studio monitors",
+    "website": "https://www.adam-audio.com",
+    "categories": [
+      "Studio",
+      "Audio"
+    ],
+    "brand_colors": {
+      "primary": "#000000",
+      "secondary": "#1c1917",
+      "accent": "#fee2e2",
+      "background": "#000000",
+      "text": "#ffffff"
+    },
+    "logo_url": "/assets/logos/adam-audio_logo.svg"
+  },
+  "products": [
+    {
+      "id": "adam-audio-prod-1",
+      "name": "A7V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The A7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-prod-1_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp"
+    },
+    {
+      "id": "adam-audio-prod-2",
+      "name": "A4V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The A4V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/adam-audio/adam-audio-prod-2_thumb.webp",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-prod-2_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-2_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-prod-2_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/adam-audio/adam-audio-prod-2_thumb.webp"
+    },
+    {
+      "id": "adam-audio-prod-3",
+      "name": "S2V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The S2V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/adam-audio/adam-audio-prod-3_thumb.webp",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-prod-3_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-3_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-prod-3_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/adam-audio/adam-audio-prod-3_thumb.webp"
+    },
+    {
+      "id": "adam-audio-prod-4",
+      "name": "T7V",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The T7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/adam-audio/adam-audio-prod-4_thumb.webp",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-prod-4_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-4_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-prod-4_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/adam-audio/adam-audio-prod-4_thumb.webp"
+    },
+    {
+      "id": "adam-audio-prod-5",
+      "name": "Sub10 MK2",
+      "brand": "Adam Audio",
+      "main_category": "Studio",
+      "subcategory": "Subwoofer",
+      "description": "The Sub10 MK2 is a premium Subwoofer from Adam Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/adam-audio/adam-audio-prod-5_thumb.webp",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-prod-5_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-5_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-prod-5_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/adam-audio/adam-audio-prod-5_thumb.webp"
+    }
+  ],
+  "brand_slug": "adam-audio",
+  "refined_at": "2026-01-21T23:56:55.681181+00:00",
+  "hierarchy": {
+    "Studio": {
+      "Monitors": [
+        {
+          "id": "adam-audio-prod-1",
+          "name": "A7V",
+          "description": "The A7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp",
+            "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp",
+            "high_res": "/data/product_images/adam-audio/adam-audio-prod-1_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "adam-audio-prod-2",
+          "name": "A4V",
+          "description": "The A4V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/adam-audio/adam-audio-prod-2_thumb.webp",
+            "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-2_thumb.webp",
+            "high_res": "/data/product_images/adam-audio/adam-audio-prod-2_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "adam-audio-prod-3",
+          "name": "S2V",
+          "description": "The S2V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/adam-audio/adam-audio-prod-3_thumb.webp",
+            "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-3_thumb.webp",
+            "high_res": "/data/product_images/adam-audio/adam-audio-prod-3_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "adam-audio-prod-4",
+          "name": "T7V",
+          "description": "The T7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/adam-audio/adam-audio-prod-4_thumb.webp",
+            "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-4_thumb.webp",
+            "high_res": "/data/product_images/adam-audio/adam-audio-prod-4_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Subwoofer": [
+        {
+          "id": "adam-audio-prod-5",
+          "name": "Sub10 MK2",
+          "description": "The Sub10 MK2 is a premium Subwoofer from Adam Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/adam-audio/adam-audio-prod-5_thumb.webp",
+            "thumbnail": "/data/product_images/adam-audio/adam-audio-prod-5_thumb.webp",
+            "high_res": "/data/product_images/adam-audio/adam-audio-prod-5_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

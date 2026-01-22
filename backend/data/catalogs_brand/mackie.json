@@ -1,0 +1,155 @@
+{
+  "brand_name": "Mackie",
+  "brand_identity": {
+    "id": "mackie",
+    "name": "Mackie",
+    "description": "Mixers, loudspeakers and studio monitors",
+    "website": "https://www.mackie.com",
+    "categories": [
+      "Studio",
+      "Audio"
+    ]
+  },
+  "products": [
+    {
+      "id": "mackie-prod-1",
+      "name": "ProFX10v3",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Mixer",
+      "description": "The ProFX10v3 is a premium Mixer from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "mackie-prod-2",
+      "name": "Thump215",
+      "brand": "Mackie",
+      "main_category": "Audio",
+      "subcategory": "Speaker",
+      "description": "The Thump215 is a premium Speaker from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "mackie-prod-3",
+      "name": "CR3-X",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Monitors",
+      "description": "The CR3-X is a premium Monitors from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "mackie-prod-4",
+      "name": "Big Knob Passive",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Controller",
+      "description": "The Big Knob Passive is a premium Controller from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "mackie-prod-5",
+      "name": "MainStream",
+      "brand": "Mackie",
+      "main_category": "Studio",
+      "subcategory": "Interface",
+      "description": "The MainStream is a premium Interface from Mackie. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    }
+  ]
+}

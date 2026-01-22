@@ -1,0 +1,272 @@
+{
+  "brand_name": "Warm Audio",
+  "brand_identity": {
+    "id": "warm-audio",
+    "name": "Warm Audio",
+    "description": "Classic analog recording gear reproductions",
+    "website": "https://www.warm-audio.com",
+    "categories": [
+      "Studio"
+    ],
+    "brand_colors": {
+      "primary": "#ea580c",
+      "secondary": "#431407",
+      "accent": "#fb923c",
+      "background": "#2a150d",
+      "text": "#ffedd5"
+    },
+    "logo_url": "/assets/logos/warm-audio_logo.svg"
+  },
+  "products": [
+    {
+      "id": "warm-audio-prod-1",
+      "name": "WA-87 R2",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The WA-87 R2 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-prod-1_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp"
+    },
+    {
+      "id": "warm-audio-prod-2",
+      "name": "WA-2A",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Compressor",
+      "description": "The WA-2A is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-prod-2_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp"
+    },
+    {
+      "id": "warm-audio-prod-3",
+      "name": "WA76",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Compressor",
+      "description": "The WA76 is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-prod-3_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp"
+    },
+    {
+      "id": "warm-audio-prod-4",
+      "name": "WA-47",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Microphone",
+      "description": "The WA-47 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-prod-4_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp"
+    },
+    {
+      "id": "warm-audio-prod-5",
+      "name": "Bus-Comp",
+      "brand": "Warm Audio",
+      "main_category": "Studio",
+      "subcategory": "Compressor",
+      "description": "The Bus-Comp is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+      "image_url": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-prod-5_inspect.webp",
+        "original": "https://placehold.co/600x400/png"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true,
+      "category": "Studio",
+      "category_hierarchy": [
+        "Studio"
+      ],
+      "image": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp"
+    }
+  ],
+  "brand_slug": "warm-audio",
+  "refined_at": "2026-01-21T23:56:48.803071+00:00",
+  "hierarchy": {
+    "Studio": {
+      "Microphone": [
+        {
+          "id": "warm-audio-prod-1",
+          "name": "WA-87 R2",
+          "description": "The WA-87 R2 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-prod-1_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "warm-audio-prod-4",
+          "name": "WA-47",
+          "description": "The WA-47 is a premium Microphone from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-4_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-prod-4_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ],
+      "Compressor": [
+        {
+          "id": "warm-audio-prod-2",
+          "name": "WA-2A",
+          "description": "The WA-2A is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-prod-2_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "warm-audio-prod-3",
+          "name": "WA76",
+          "description": "The WA76 is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-3_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-prod-3_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "warm-audio-prod-5",
+          "name": "Bus-Comp",
+          "description": "The Bus-Comp is a premium Compressor from Warm Audio. It features state-of-the-art technology and superior build quality.",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-prod-5_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-prod-5_inspect.webp",
+            "original": "https://placehold.co/600x400/png"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

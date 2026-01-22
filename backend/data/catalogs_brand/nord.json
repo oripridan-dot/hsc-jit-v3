@@ -1,0 +1,155 @@
+{
+  "brand_name": "Nord",
+  "brand_identity": {
+    "id": "nord",
+    "name": "Nord",
+    "description": "Handmade in Sweden",
+    "website": "https://www.nord.com",
+    "categories": [
+      "Keys",
+      "Pianos"
+    ]
+  },
+  "products": [
+    {
+      "id": "nord-prod-1",
+      "name": "Nord Stage 4",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The Nord Stage 4 is a premium Stage Piano from Nord. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "nord-prod-2",
+      "name": "Nord Piano 5",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Stage Piano",
+      "description": "The Nord Piano 5 is a premium Stage Piano from Nord. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "nord-prod-3",
+      "name": "Nord Electro 6",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Stage Keyboard",
+      "description": "The Nord Electro 6 is a premium Stage Keyboard from Nord. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "nord-prod-4",
+      "name": "Nord Wave 2",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Nord Wave 2 is a premium Synthesizer from Nord. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "nord-prod-5",
+      "name": "Nord Lead A1",
+      "brand": "Nord",
+      "main_category": "Keys",
+      "subcategory": "Synthesizer",
+      "description": "The Nord Lead A1 is a premium Synthesizer from Nord. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    }
+  ]
+}

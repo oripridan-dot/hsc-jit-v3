@@ -1,9 +1,9 @@
 /**
- * v3.6 Static Catalog Library
- * Exports for easy importing
+ * v3.7.4 Static Catalog Library
+ * Exports for easy importing - Zero backend dependency
  */
 
-export { catalogLoader } from './catalogLoader';
-export { instantSearch } from './instantSearch';
-export type { Product, BrandCatalog, MasterIndex } from './catalogLoader';
-export type { SearchOptions } from './instantSearch';
+export { catalogLoader } from "./catalogLoader";
+export type { BrandCatalog, MasterIndex, Product } from "./catalogLoader";
+export { instantSearch } from "./instantSearch";
+export type { SearchOptions } from "./instantSearch";

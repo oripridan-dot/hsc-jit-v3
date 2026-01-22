@@ -44,6 +44,7 @@ interface NavState {
   currentCategory: string | null;
   currentUniversalCategory: string | null;
   ecosystem: EcosystemNode | null;
+  navigationHistory: string[][]; // Track breadcrumb history for better UX
 
   // UI state
   expandedNodes: Set<string>;
@@ -60,7 +61,9 @@ interface NavState {
   selectUniversalCategory: (category: string) => void;
   selectCategory: (brandId: string, category: string) => void;
   selectProduct: (product: Product) => void;
+  selectLayer: (layerName: string) => void; // New: Navigate to hierarchical layer
   goBack: () => void;
+  goHome: () => void; // New: Quick return to galaxy view
   loadEcosystem: (data: EcosystemNode) => void;
   toggleNode: (nodeId: string) => void;
   setSearch: (query: string) => void;
@@ -83,6 +86,7 @@ export const useNavigationStore = create<NavState>(
       currentCategory: null,
       currentUniversalCategory: null,
       ecosystem: null,
+      navigationHistory: [],
       expandedNodes: new Set<string>(),
       searchQuery: "",
       searchResults: [],
@@ -174,6 +178,51 @@ export const useNavigationStore = create<NavState>(
         set({
           currentLevel: newLevel,
           activePath: newPath,
+          selectedProduct: null,
+        });
+      },
+
+      // Quick return to home (galaxy view)
+      goHome: () => {
+        console.log("🏠 Returning to home");
+        set({
+          currentLevel: "galaxy",
+          activePath: [],
+          selectedProduct: null,
+          currentBrand: null,
+          currentCategory: null,
+          currentUniversalCategory: null,
+        });
+      },
+
+      // Navigate to a hierarchical layer (used by LayerNavigator)
+      selectLayer: (layerName: string) => {
+        const { currentLevel, activePath, currentBrand } = get();
+
+        if (!currentBrand && currentLevel !== "brand") {
+          console.warn("Cannot select layer without context");
+          return;
+        }
+
+        // Build new path based on current context
+        let newPath = activePath;
+        let newLevel: NavLevel = currentLevel;
+
+        if (currentLevel === "brand" || currentLevel === "domain") {
+          // Moving from brand -> family
+          newPath = [activePath[0] || "", layerName];
+          newLevel = "family";
+        } else if (currentLevel === "family") {
+          // Moving from family -> product/subcategory
+          newPath = [...activePath, layerName];
+          newLevel = "product";
+        }
+
+        console.log(`📍 Selecting layer: ${layerName}`, { newPath, newLevel });
+        set({
+          currentLevel: newLevel,
+          activePath: newPath,
+          currentCategory: layerName,
           selectedProduct: null,
         });
       },

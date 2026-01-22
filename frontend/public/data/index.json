@@ -1,571 +1,642 @@
 {
-  "version": "3.7.3-DNA",
-  "build_timestamp": "2026-01-21T19:47:18.707924+00:00",
+  "version": "3.7.4",
+  "build_timestamp": "2026-01-21T23:55:59.828037+00:00",
   "environment": "static_production",
-  "total_products": 40,
-  "total_verified": 40,
+  "total_products": 50,
+  "total_verified": 50,
   "brands": [
     {
+      "id": "universal-audio",
+      "name": "Universal Audio",
+      "slug": "universal-audio",
+      "count": 5,
+      "brand_color": "#1f2937",
+      "logo_url": "/assets/logos/universal-audio_logo.svg",
+      "file": "universal-audio.json",
+      "data_file": "universal-audio.json",
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:07.181371+00:00"
+    },
+    {
+      "id": "moog",
+      "name": "Moog",
+      "slug": "moog",
+      "count": 5,
+      "brand_color": "#000000",
+      "logo_url": "/assets/logos/moog_logo.png",
+      "file": "moog.json",
+      "data_file": "moog.json",
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:14.260418+00:00"
+    },
+    {
       "id": "boss",
-      "name": "Boss Catalog",
+      "name": "Boss",
       "slug": "boss",
-      "count": 3,
+      "count": 5,
       "brand_color": "#0055a4",
       "logo_url": "/assets/logos/boss_logo.png",
       "file": "boss.json",
       "data_file": "boss.json",
-      "product_count": 3,
-      "verified_count": 3,
-      "last_updated": "2026-01-21T19:47:22.939455+00:00"
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:21.160920+00:00"
     },
     {
       "id": "roland",
-      "name": "Roland Catalog",
+      "name": "Roland",
       "slug": "roland",
-      "count": 33,
+      "count": 5,
       "brand_color": "#f89a1c",
       "logo_url": "/assets/logos/roland_logo.png",
       "file": "roland.json",
       "data_file": "roland.json",
-      "product_count": 33,
-      "verified_count": 33,
-      "last_updated": "2026-01-21T19:48:11.798288+00:00"
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:28.109308+00:00"
     },
     {
       "id": "nord",
-      "name": "Nord Catalog",
+      "name": "Nord",
       "slug": "nord",
-      "count": 4,
+      "count": 5,
       "brand_color": "#e31e24",
       "logo_url": "/assets/logos/nord_logo.png",
       "file": "nord.json",
       "data_file": "nord.json",
-      "product_count": 4,
-      "verified_count": 4,
-      "last_updated": "2026-01-21T19:48:16.497962+00:00"
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:35.039289+00:00"
+    },
+    {
+      "id": "akai-professional",
+      "name": "Akai Professional",
+      "slug": "akai-professional",
+      "count": 5,
+      "brand_color": "#ff0000",
+      "logo_url": "/assets/logos/akai-professional_logo.svg",
+      "file": "akai-professional.json",
+      "data_file": "akai-professional.json",
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:41.995361+00:00"
+    },
+    {
+      "id": "teenage-engineering",
+      "name": "Teenage Engineering",
+      "slug": "teenage-engineering",
+      "count": 5,
+      "brand_color": "#e5e5e5",
+      "logo_url": "/assets/logos/teenage-engineering_logo.svg",
+      "file": "teenage-engineering.json",
+      "data_file": "teenage-engineering.json",
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:48.802830+00:00"
+    },
+    {
+      "id": "warm-audio",
+      "name": "Warm Audio",
+      "slug": "warm-audio",
+      "count": 5,
+      "brand_color": "#ea580c",
+      "logo_url": "/assets/logos/warm-audio_logo.svg",
+      "file": "warm-audio.json",
+      "data_file": "warm-audio.json",
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:56:55.680964+00:00"
+    },
+    {
+      "id": "adam-audio",
+      "name": "Adam Audio",
+      "slug": "adam-audio",
+      "count": 5,
+      "brand_color": "#000000",
+      "logo_url": "/assets/logos/adam-audio_logo.svg",
+      "file": "adam-audio.json",
+      "data_file": "adam-audio.json",
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:57:02.476651+00:00"
+    },
+    {
+      "id": "mackie",
+      "name": "Mackie",
+      "slug": "mackie",
+      "count": 5,
+      "brand_color": "#00a651",
+      "logo_url": "/assets/logos/mackie_logo.svg",
+      "file": "mackie.json",
+      "data_file": "mackie.json",
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-21T23:57:09.189802+00:00"
     }
   ],
   "search_graph": [
     {
-      "id": "boss-eurus_gs-1",
-      "label": "EURUS GS-1Electronic Guitar",
+      "id": "universal-audio-prod-1",
+      "label": "Apollo Twin X",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The Apollo Twin X is a premium Interface from Universal Audio. It features state-of-the-art technolo"
+    },
+    {
+      "id": "universal-audio-prod-2",
+      "label": "Apollo x4",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The Apollo x4 is a premium Interface from Universal Audio. It features state-of-the-art technology a"
+    },
+    {
+      "id": "universal-audio-prod-3",
+      "label": "Volt 276",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The Volt 276 is a premium Interface from Universal Audio. It features state-of-the-art technology an"
+    },
+    {
+      "id": "universal-audio-prod-4",
+      "label": "UAFX Dream '65",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Guitar",
+      "subcategory": "Pedal",
+      "keywords": [],
+      "description": "The UAFX Dream '65 is a premium Pedal from Universal Audio. It features state-of-the-art technology "
+    },
+    {
+      "id": "universal-audio-prod-5",
+      "label": "Sphere DLX",
+      "brand": "universal-audio",
+      "brand_name": "Universal Audio",
+      "category": "Studio",
+      "subcategory": "Microphone",
+      "keywords": [],
+      "description": "The Sphere DLX is a premium Microphone from Universal Audio. It features state-of-the-art technology"
+    },
+    {
+      "id": "moog-prod-1",
+      "label": "Minimoog Model D",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Minimoog Model D is a premium Synthesizer from Moog. It features state-of-the-art technology and"
+    },
+    {
+      "id": "moog-prod-2",
+      "label": "Subsequent 37",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Subsequent 37 is a premium Synthesizer from Moog. It features state-of-the-art technology and su"
+    },
+    {
+      "id": "moog-prod-3",
+      "label": "Matriarch",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Semi-Modular",
+      "keywords": [],
+      "description": "The Matriarch is a premium Semi-Modular from Moog. It features state-of-the-art technology and super"
+    },
+    {
+      "id": "moog-prod-4",
+      "label": "Grandmother",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Semi-Modular",
+      "keywords": [],
+      "description": "The Grandmother is a premium Semi-Modular from Moog. It features state-of-the-art technology and sup"
+    },
+    {
+      "id": "moog-prod-5",
+      "label": "Moog One",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "Keys",
+      "subcategory": "Polyphonic",
+      "keywords": [],
+      "description": "The Moog One is a premium Polyphonic from Moog. It features state-of-the-art technology and superior"
+    },
+    {
+      "id": "boss-prod-1",
+      "label": "Katana-50",
       "brand": "boss",
-      "brand_name": "Boss Catalog",
-      "category": "Guitar Synthesizers",
-      "subcategory": null,
-      "keywords": [
-        "Cutting-edge BOSS electronic guitar, crafted in Japan for bold sound innovators",
-        "Seamlessly switch between synthesizer and regular guitar sounds",
-        "Six onboard memories for storing different synth sounds",
-        "Premium playability with 24-fret neck, compound radius rosewood fingerboard, and offset double-cutaway body design",
-        "Two custom-designed pickups and five-way selector switch"
-      ],
-      "description": "A Bold New Voice for Sound Innovators\n\nEvery guitarist is on a highly personal tone journey, continu"
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Amplifiers",
+      "keywords": [],
+      "description": "The Katana-50 is a premium Amplifiers from Boss. It features state-of-the-art technology and superio"
     },
     {
-      "id": "boss-xs-1",
-      "label": "XS-1Poly Shifter",
+      "id": "boss-prod-2",
+      "label": "GT-1000",
       "brand": "boss",
-      "brand_name": "Boss Catalog",
-      "category": "Effects Pedals",
-      "subcategory": null,
-      "keywords": [
-        "Class-leading pitch shifting quality realized with new BOSS algorithms",
-        "Instantly change the pitch of a guitar, bass, or other instrument",
-        "Clear response and natural feel that retains the fundamental sound character",
-        "Change pitch across +/- seven semitones or +/- three octaves",
-        "Balance knob adjusts the mix between the effect and direct sound"
-      ],
-      "description": "Rapid Retuning, Flawless Sound\n\nThe XS-1 Poly Shifter delivers instant retuning in a convenient, com"
+      "brand_name": "Boss",
+      "category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "keywords": [],
+      "description": "The GT-1000 is a premium Multi-Effects from Boss. It features state-of-the-art technology and superi"
     },
     {
-      "id": "boss-gx-10",
-      "label": "GX-10Guitar Effects Processor",
+      "id": "boss-prod-3",
+      "label": "RC-505mkII",
       "brand": "boss",
-      "brand_name": "Boss Catalog",
-      "category": "Multi-Effects",
-      "subcategory": null,
-      "keywords": [
-        "Compact amp/effects processor for guitar and bass",
-        "The same sound engine and color touch display as the GX-100 in a portable, travel-ready design",
-        "Exceptional audio quality with 24-bit AD and 32-bit DA conversion, 32-bit floating-point processing, and 48 kHz sampling rate",
-        "Authentic tube amplifier tone and touch response with AIRD technology",
-        "32 amplifier types and 170 BOSS effects"
-      ],
-      "description": "Colorful Tones, Portable Design\n\nPlayers everywhere love the GX-100 for its streamlined design, free"
-    },
-    {
-      "id": "roland-a-88mk2",
-      "label": "A-88MKII\nMIDI Keyboard Controller",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Keyboards",
-      "subcategory": null,
-      "keywords": [
-        "Unmatched playability with Roland's own PHA-4 keyboard",
-        "Built to last with wood and premium materials for years of dependable performance",
-        "Eight RGB-lit assignable knobs, eight RGB-lit pads, and three pedal inputs",
-        "Three customizable zones, onboard arpeggiator, and chord memory",
-        "Thin design with shallow depth fits today's studio environments"
-      ],
-      "description": "The latest in our long line of professional MIDI controllers, the Roland A-88MKII is supremely playa"
-    },
-    {
-      "id": "roland-bridge_cast",
-      "label": "BRIDGE CAST",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [
-        "Professional audio streaming interface and mixer designed for online gamers",
-        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
-        "Create independent mixes for you and the online audience with dual audio busses",
-        "USB-C connectivity with Windows and Mac computers and mobile devices",
-        "Also works with the Sony PlayStation®5 console and Nintendo Switch*"
-      ],
-      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for premium li"
-    },
-    {
-      "id": "roland-cb-404",
-      "label": "CB-404\nCarrying Case",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [
-        "Custom carrying case for the Roland SP-404 sampler series",
-        "Compatible models: SP-404MKII, SP-404A, SP-404SX, and SP-404",
-        "Light-yet-protective design with semi-rigid EVA shell",
-        "Detachable internal fabric pouch for storing small accessories",
-        "Moveable partition for storage of an AC adaptor and other items"
-      ],
-      "description": "The CB-404 is the official carrying case for the Roland SP-404MKII and previous models in the iconic"
-    },
-    {
-      "id": "roland-cb-b88s",
-      "label": "CB-B88S\nKeyboard Bag",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Keyboards",
-      "subcategory": null,
-      "keywords": [
-        "Fits 88-note Roland keyboards such as the RD-88 EX, RD-08, FP-30X, FP-10, and GO:PIANO88 (GO-88PX)",
-        "Durable polyester exterior",
-        "Thick foam padding and soft fleece lining",
-        "Comfortable and durable carrying handle",
-        "Detachable shoulder strap"
-      ],
-      "description": "The CB-B88S bag is an ideal carrying solution for slim 88-note keyboards such as the RD-88 EX, FP-30"
-    },
-    {
-      "id": "roland-cb-v61",
-      "label": "CB-V61\nKeyboard Bag",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Keyboards",
-      "subcategory": null,
-      "keywords": [
-        "Fits many 61-note Roland keyboards: GO:KEYS 3, GO:KEYS 5, FANTOM-06, JUNO-D6, E-X10, XPS-60, and more",
-        "Durable polyester exterior",
-        "Three removable internal cushions and a securing strap to accommodate different keyboard models",
-        "Hideaway backpack straps",
-        "Versatile front pocket for accessories and the optional music rest for GO:KEYS models (MRGKS3/5)"
-      ],
-      "description": "The CB-V61 bag is a versatile carrying solution for portable 61-note keyboards like GO:KEYS 3, GO:KE"
-    },
-    {
-      "id": "roland-e-x10",
-      "label": "E-X10\nArranger Keyboard",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Keyboards",
-      "subcategory": null,
-      "keywords": [
-        "A stylish and affordable portable instrument with acclaimed Roland sound, features, and build quality",
-        "Expressive 61-note keyboard with traditionally shaped keys for a piano-like playing experience",
-        "Onboard stereo speaker system with big, powerful sound",
-        "Rich, expressive acoustic pianos derived from Roland home and stage pianos",
-        "Over 600 additional tones, including electric pianos, organs, synthesizers, orchestral instruments, percussion, world sounds, and more"
-      ],
-      "description": "Launch your musical journey with the E-X10, an inspiring starter keyboard with quality features deri"
-    },
-    {
-      "id": "roland-e-x50",
-      "label": "E-X50",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [
-        "Versatile, easy-to-use entertainment keyboard with professional Roland sounds and features",
-        "Attractive design and free-flowing user interface",
-        "Onboard stereo speaker system with independent woofers and tweeters and bass-reflex port for big, powerful sound",
-        "Rich, expressive acoustic pianos derived from Roland home and stage pianos",
-        "Nearly 700 additional tones, including electric pianos, organs, orchestral instruments, percussion, world sounds, and more"
-      ],
-      "description": "Powerful entertainment keyboard with professional Roland sounds, auto-accompaniment features, full-r"
-    },
-    {
-      "id": "roland-fantom_series",
-      "label": "FANTOM EX",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [
-        "Roland’s premier synthesizer series, updated and enhanced with the latest technologies",
-        "Powerful and intuitive user interface designed for free-flowing creativity",
-        "Compose and perform with Roland’s most advanced sound engines: ACB, ZEN-Core, V-Piano, SuperNATURAL, Virtual ToneWheel, and more",
-        "Over 7000 onboard sounds from the historic Roland library",
-        "JUPITER-8, SH-101, JX-3P, and JUNO-106 ACB Expansions"
-      ],
-      "description": "Introducing FANTOM EX, the most potent creative keyboard on the planet. The latest chapter in the FA"
-    },
-    {
-      "id": "roland-gokeys_3",
-      "label": "GO:KEYS 3\nMusic Creation Keyboard",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Keyboards",
-      "subcategory": null,
-      "keywords": [
-        "61-note keyboard with expressive touch sensitivity",
-        "ZEN-Core engine with over 1000 Roland sounds that have influenced modern music for five decades",
-        "Auto-accompaniment with over 200 onboard music styles",
-        "Chord sequencer with user editing features and over 300 ready-to-play presets",
-        "Play anywhere with built-in stereo speakers"
-      ],
-      "description": "Do you have a passion for music? GO:KEYS 3 makes it easy to go from being a fan to an active music c"
-    },
-    {
-      "id": "roland-gokeys_5",
-      "label": "GO:KEYS 5\nMusic Creation Keyboard",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Keyboards",
-      "subcategory": null,
-      "keywords": [
-        "61-note keyboard with expressive touch sensitivity",
-        "ZEN-Core engine with over 1000 Roland sounds that have influenced modern music for five decades",
-        "Auto-accompaniment with over 200 onboard music styles",
-        "Chord sequencer with user editing features and over 300 ready-to-play presets",
-        "Big, powerful sound with stereo speakers and passive radiator"
-      ],
-      "description": "Do you have a passion for music? GO:KEYS 5 makes it easy to go from being a fan to an active music c"
-    },
-    {
-      "id": "roland-gopiano_go-61p-a",
-      "label": "GO:PIANO with Alexa Built-in\nDigital Piano",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Digital Pianos",
-      "subcategory": null,
-      "keywords": [
-        "Portable instrument that fuses Roland’s quality piano sound with Amazon’s Alexa voice technology",
-        "Control nearly all of the instrument’s functionality using only voice commands",
-        "Can also be used as an Alexa-enabled device to listen to music, check the weather, set alarms, and more",
-        "Also includes Bluetooth for connecting with apps on mobile devices",
-        "Enhance learning with Roland’s free Piano Partner 2 app for iOS and Android"
-      ],
-      "description": "NOTICE: Beginning November 1, 2024, some Alexa functions are no longer supported with this product.\n"
-    },
-    {
-      "id": "roland-gopiano_go-88p",
-      "label": "GO:PIANO88",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Digital Pianos",
-      "subcategory": null,
-      "keywords": [
-        "Enjoy Traditional Piano Feel with 88 Standard-Size Keys\n\nGO:PIANO88 has 88 full-size keys for authentic playing feel and expressive touch inspired by the keyboards on acoustic grand pianos. Having the full range of notes lets you play more demanding music, and helps develop the correct techniques for both left and right hands. It also ensures a smooth transition should you play a weighted hammer-action keyboard. And even if you invest in a premium piano, your GO:PIANO88 is the ideal portable instrument for slinging in a gigbag and playing at rehearsals, sessions and shows.",
-        "Connect Wirelessly To Your Smartphone, Access Online Content and Learn Faster\n\nGO:PIANO88 pairs with your smartphone to make learning piano fun. Use Bluetooth to connect wirelessly to your smartphone or tablet, then access songs from your music library or try some free online lessons. You can play along as the music streams through the high-quality onboard speakers or your headphones. Or if you’d prefer some more intensive piano training, try some of the many excellent apps or tutorial videos, before you start working with a personal piano teacher.",
-        "Enjoy Authentic Piano Performance with a Compact, Space-Saving Footprint\n\nNot every home has space for a full-size acoustic piano. But the compact design of GO:PIANO88 lets you play in any setting, with all the benefits of 88 full-size keys. Just sit down, switch on and enjoy GO:PIANO88’s full dynamic range, free from setup hassles or tangled wiring. Plus, to ensure you can practice without disturbing others, GO:PIANO88 lets you plug in headphones to play in peace.",
-        "Make Music on the Move with Battery Power and a Wireless Smartphone Connection\n\nAn acoustic piano ties you to one location, while portable electronic keyboards limit the type of music you can play as they have fewer keys. With GO:PIANO88 and a smartphone, you’re ready to make music whenever inspiration strikes. With its compact 7.5kg design and battery-powered operation, GO:PIANO88 lets you perform through its speakers or practice with headphones. Plus, with wireless connectivity to your smartphone, you can work on your skills any time, any place – especially as the 88-note full-size keyboard means your technique won’t be compromised.",
-        "Get Inspired with Roland’s Responsive Piano Sounds\n\nAs you appreciate GO:PIANO88‘s 88-note full-size keyboard, you’ll also be inspired by the choice of onboard sounds derived from Roland’s acclaimed premium pianos. Touch the keys and you’ll hear notes full of character, changing seamlessly in response to your touch, just like on a fine acoustic piano. And alongside the expressive keyboard, GO:PIANO88 lets the dynamics of your playing shine through, encouraging you to improve faster as your skills grow. GO:PIANO88 also includes electric pianos, organs, and other sounds so you can explore different musical styles."
-      ],
-      "description": "FULL-SIZE 88-NOTE PIANO. PLAY-ANYWHERE PORTABILITY. SMARTPHONE-POWERED TUITION\n\nWhen you’re learning"
-    },
-    {
-      "id": "roland-ks-11z",
-      "label": "KS-11Z\nKeyboard Stand",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Keyboards",
-      "subcategory": null,
-      "keywords": [
-        "Sturdy design with heavy-duty steel construction",
-        "Seamless width adjustment with quick-release lever",
-        "Easy height adjustment with spring-loaded lever",
-        "Adjustable rubber feet for stability on uneven flooring",
-        "Padded support arms fold down for transport and storage"
-      ],
-      "description": "The feature-rich KS-11Z provides a rugged, attractive, and stable platform for 88-note stage pianos "
-    },
-    {
-      "id": "roland-rcc-3-2814",
-      "label": "RCC-3-2814",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "brand_name": "Boss",
+      "category": "Effects",
+      "subcategory": "Loopers",
       "keywords": [],
-      "description": "Dual cable—1/4-inch connectors, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-2814), 10 ft."
+      "description": "The RC-505mkII is a premium Loopers from Boss. It features state-of-the-art technology and superior "
     },
     {
-      "id": "roland-rcc-3-2r28",
-      "label": "RCC-3-2R28",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "id": "boss-prod-4",
+      "label": "DS-1W",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Effects",
+      "subcategory": "Distortion",
       "keywords": [],
-      "description": "Dual cable—1/4-inch to RCA, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-2R28), 10 ft./3 m"
+      "description": "The DS-1W is a premium Distortion from Boss. It features state-of-the-art technology and superior bu"
     },
     {
-      "id": "roland-rcc-3-2r2r",
-      "label": "RCC-3-2R2R",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "id": "boss-prod-5",
+      "label": "DD-8",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "Effects",
+      "subcategory": "Delay",
       "keywords": [],
-      "description": "Dual cable—RCA connectors, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-2R2R), 10 ft./3 m "
+      "description": "The DD-8 is a premium Delay from Boss. It features state-of-the-art technology and superior build qu"
     },
     {
-      "id": "roland-rcc-3-trtr",
-      "label": "RCC-3-TRTR",
+      "id": "roland-prod-1",
+      "label": "Fantom-06",
       "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "brand_name": "Roland",
+      "category": "Keys",
+      "subcategory": "Workstation",
       "keywords": [],
-      "description": "Stereo cable—1/4-inch TRS, 3 ft./1 m length. Also available in 5 ft./1.5 m (RCC-5-TRTR), 10 ft./3 m "
+      "description": "The Fantom-06 is a premium Workstation from Roland. It features state-of-the-art technology and supe"
     },
     {
-      "id": "roland-rcc-3-trxf",
-      "label": "RCC-3-TRXF",
+      "id": "roland-prod-2",
+      "label": "Jupiter-X",
       "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "brand_name": "Roland",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
       "keywords": [],
-      "description": "Balanced interconnect cable—1/4-inch TRS male to XLR female, 3 ft./1 m length. Also available in 5 f"
+      "description": "The Jupiter-X is a premium Synthesizer from Roland. It features state-of-the-art technology and supe"
     },
     {
-      "id": "roland-rcc-3-trxm",
-      "label": "RCC-3-TRXM",
+      "id": "roland-prod-3",
+      "label": "TR-8S",
       "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "brand_name": "Roland",
+      "category": "Production",
+      "subcategory": "Drum Machine",
       "keywords": [],
-      "description": "Balanced interconnect cable—1/4-inch TRS male to XLR male, 3 ft./1 m length. Also available in 5 ft."
+      "description": "The TR-8S is a premium Drum Machine from Roland. It features state-of-the-art technology and superio"
     },
     {
-      "id": "roland-rcc-5-3528",
-      "label": "RCC-5-3528",
+      "id": "roland-prod-4",
+      "label": "TD-50KV2",
       "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "brand_name": "Roland",
+      "category": "Drums",
+      "subcategory": "V-Drums",
       "keywords": [],
-      "description": "Insert/splitter cable—1/8-inch TRS to two 1/4-inch, 5 ft./1.5 m length. Also available in 10 ft./3 m"
+      "description": "The TD-50KV2 is a premium V-Drums from Roland. It features state-of-the-art technology and superior "
     },
     {
-      "id": "roland-rcc-5-352r",
-      "label": "RCC-5-352R",
+      "id": "roland-prod-5",
+      "label": "SP-404MKII",
       "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
+      "brand_name": "Roland",
+      "category": "Production",
+      "subcategory": "Sampler",
       "keywords": [],
-      "description": "Insert/splitter cable—1/8-inch TRS to two RCA connectors, 5 ft./1.5 m length. Also available in 10 f"
+      "description": "The SP-404MKII is a premium Sampler from Roland. It features state-of-the-art technology and superio"
     },
     {
-      "id": "roland-rcc-5-3535",
-      "label": "RCC-5-3535",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "Stereo cable—1/8-inch TRS, 5 ft./1.5 m length. Also available in 10 ft./3 m (RCC-10-3535) length.\n\nR"
-    },
-    {
-      "id": "roland-rcc-5-rcxf",
-      "label": "RCC-5-RCXF",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "Interconnect cable—XLR female to RCA, 5 ft./1.5 m length. Also available in 10 ft./3 m (RCC-10-RCXF)"
-    },
-    {
-      "id": "roland-rcc-5-rcxm",
-      "label": "RCC-5-RCXM",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "Interconnect cable—XLR male to RCA, 5 ft./1.5 m length. Also available in 10 ft./3 m (RCC-10-RCXM) l"
-    },
-    {
-      "id": "roland-rcc-5-tr28",
-      "label": "RCC-5-TR28",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "Insert/splitter cable—1/4-inch TRS to two 1/4-inch, 5 ft./1.5 m length. Also available in 10 ft./3 m"
-    },
-    {
-      "id": "roland-rcc-5-tr2r",
-      "label": "RCC-5-TR2R",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "Insert/splitter cable—1/4-inch TRS to two RCA connectors, 5 ft./1.5 m length. Also available in 10 f"
-    },
-    {
-      "id": "roland-rcc-yc-xf2xm",
-      "label": "RCC-YC-XF2XM",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "Splitter/Y cable—XLR female to two XLR male, 6 in./15 cm length.\n\nRoland’s Black Series interconnect"
-    },
-    {
-      "id": "roland-rh-5",
-      "label": "RH-5\nMonitor Headphones",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [
-        "Equipped with high-performance 40mm drivers for dynamic sound",
-        "Exceptional value and high-quality performance",
-        "Provides a natural, balanced response for a range of instruments",
-        "Secure and comfortable lightweight design",
-        "Conversion plug (included) accommodates standard and mini headphone connectors"
-      ],
-      "description": "As a modern musician, a set of quality headphones will help you in so many scenarios. From solo prac"
-    },
-    {
-      "id": "roland-ric-g3",
-      "label": "RIC-G3",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "Straight 1/4-inch connectors, 3 ft./1 m length. Also available in 5 ft./1.5 m (RIC-G5), 10 ft./3 m ("
-    },
-    {
-      "id": "roland-rmidi-b3",
-      "label": "RMIDI-B3",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Musical Instruments",
-      "subcategory": null,
-      "keywords": [],
-      "description": "MIDI cable, 3 ft./1 m length. Also available in 5 ft./1.5 m (RMIDI-B5), 10 ft./3 m (RMIDI-B10), 15 f"
-    },
-    {
-      "id": "roland-fp-90x",
-      "label": "Roland FP-90X Digital Piano",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Uncategorized",
-      "subcategory": "General",
-      "keywords": [],
-      "description": "Portability meets premium performance in the flagship FP-90X."
-    },
-    {
-      "id": "roland-rd-2000",
-      "label": "Roland RD-2000 Stage Piano",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Uncategorized",
-      "subcategory": "General",
-      "keywords": [],
-      "description": "Equipped with two independent sound engines, premium action, and advanced controller features, the R"
-    },
-    {
-      "id": "roland-fantom-06",
-      "label": "FANTOM-06",
-      "brand": "roland",
-      "brand_name": "Roland Catalog",
-      "category": "Uncategorized",
-      "subcategory": "General",
-      "keywords": [],
-      "description": "FANTOM-06 distills the sonic power and fluid workflow of the flagship FANTOM series into streamlined"
-    },
-    {
-      "id": "nord-nord-drum-3p",
-      "label": "Nord Drum 3P",
+      "id": "nord-prod-1",
+      "label": "Nord Stage 4",
       "brand": "nord",
-      "brand_name": "Nord Catalog",
-      "category": "Drum",
-      "subcategory": null,
-      "keywords": [
-        "Accessories",
-        "Distributors",
-        "Nord Electro 7",
-        "Nord Stage 4",
-        "Nord Piano 6"
-      ],
-      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The Nord Stage 4 is a premium Stage Piano from Nord. It features state-of-the-art technology and sup"
     },
     {
-      "id": "nord-nord-electro-7",
-      "label": "Nord Electro 7",
+      "id": "nord-prod-2",
+      "label": "Nord Piano 5",
       "brand": "nord",
-      "brand_name": "Nord Catalog",
-      "category": "Electro",
-      "subcategory": null,
-      "keywords": [
-        "Accessories",
-        "Distributors",
-        "Nord Electro 7",
-        "Nord Stage 4",
-        "Nord Piano 6"
-      ],
-      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Stage Piano",
+      "keywords": [],
+      "description": "The Nord Piano 5 is a premium Stage Piano from Nord. It features state-of-the-art technology and sup"
     },
     {
-      "id": "nord-nord-lead-a1",
+      "id": "nord-prod-3",
+      "label": "Nord Electro 6",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Stage Keyboard",
+      "keywords": [],
+      "description": "The Nord Electro 6 is a premium Stage Keyboard from Nord. It features state-of-the-art technology an"
+    },
+    {
+      "id": "nord-prod-4",
+      "label": "Nord Wave 2",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Nord Wave 2 is a premium Synthesizer from Nord. It features state-of-the-art technology and supe"
+    },
+    {
+      "id": "nord-prod-5",
       "label": "Nord Lead A1",
       "brand": "nord",
-      "brand_name": "Nord Catalog",
-      "category": "Lead",
-      "subcategory": null,
-      "keywords": [
-        "Accessories",
-        "Distributors",
-        "Nord Electro 7",
-        "Nord Stage 4",
-        "Nord Piano 6"
-      ],
-      "description": "Strictly necessary cookies allow core website functionality such as user login and account managemen"
+      "brand_name": "Nord",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The Nord Lead A1 is a premium Synthesizer from Nord. It features state-of-the-art technology and sup"
     },
     {
-      "id": "nord-grand",
-      "label": "Nord Grand",
-      "brand": "nord",
-      "brand_name": "Nord Catalog",
-      "category": "Uncategorized",
-      "subcategory": "General",
+      "id": "akai-professional-prod-1",
+      "label": "MPC One+",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Production",
+      "subcategory": "MPC",
       "keywords": [],
-      "description": "The Nord Grand features a premium weighted keybed with advanced triple sensors that capture the move"
+      "description": "The MPC One+ is a premium MPC from Akai Professional. It features state-of-the-art technology and su"
+    },
+    {
+      "id": "akai-professional-prod-2",
+      "label": "MPC Live II",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Production",
+      "subcategory": "MPC",
+      "keywords": [],
+      "description": "The MPC Live II is a premium MPC from Akai Professional. It features state-of-the-art technology and"
+    },
+    {
+      "id": "akai-professional-prod-3",
+      "label": "MPK Mini MK3",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Keys",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The MPK Mini MK3 is a premium Controller from Akai Professional. It features state-of-the-art techno"
+    },
+    {
+      "id": "akai-professional-prod-4",
+      "label": "APC64",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Production",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The APC64 is a premium Controller from Akai Professional. It features state-of-the-art technology an"
+    },
+    {
+      "id": "akai-professional-prod-5",
+      "label": "Force",
+      "brand": "akai-professional",
+      "brand_name": "Akai Professional",
+      "category": "Production",
+      "subcategory": "Standalone",
+      "keywords": [],
+      "description": "The Force is a premium Standalone from Akai Professional. It features state-of-the-art technology an"
+    },
+    {
+      "id": "teenage-engineering-prod-1",
+      "label": "OP-1 Field",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The OP-1 Field is a premium Synthesizer from Teenage Engineering. It features state-of-the-art techn"
+    },
+    {
+      "id": "teenage-engineering-prod-2",
+      "label": "OP-Z",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Keys",
+      "subcategory": "Synthesizer",
+      "keywords": [],
+      "description": "The OP-Z is a premium Synthesizer from Teenage Engineering. It features state-of-the-art technology "
+    },
+    {
+      "id": "teenage-engineering-prod-3",
+      "label": "TX-6",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Studio",
+      "subcategory": "Mixer",
+      "keywords": [],
+      "description": "The TX-6 is a premium Mixer from Teenage Engineering. It features state-of-the-art technology and su"
+    },
+    {
+      "id": "teenage-engineering-prod-4",
+      "label": "EP-133 K.O. II",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Production",
+      "subcategory": "Sampler",
+      "keywords": [],
+      "description": "The EP-133 K.O. II is a premium Sampler from Teenage Engineering. It features state-of-the-art techn"
+    },
+    {
+      "id": "teenage-engineering-prod-5",
+      "label": "OB-4",
+      "brand": "teenage-engineering",
+      "brand_name": "Teenage Engineering",
+      "category": "Audio",
+      "subcategory": "Speaker",
+      "keywords": [],
+      "description": "The OB-4 is a premium Speaker from Teenage Engineering. It features state-of-the-art technology and "
+    },
+    {
+      "id": "warm-audio-prod-1",
+      "label": "WA-87 R2",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Microphone",
+      "keywords": [],
+      "description": "The WA-87 R2 is a premium Microphone from Warm Audio. It features state-of-the-art technology and su"
+    },
+    {
+      "id": "warm-audio-prod-2",
+      "label": "WA-2A",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Compressor",
+      "keywords": [],
+      "description": "The WA-2A is a premium Compressor from Warm Audio. It features state-of-the-art technology and super"
+    },
+    {
+      "id": "warm-audio-prod-3",
+      "label": "WA76",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Compressor",
+      "keywords": [],
+      "description": "The WA76 is a premium Compressor from Warm Audio. It features state-of-the-art technology and superi"
+    },
+    {
+      "id": "warm-audio-prod-4",
+      "label": "WA-47",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Microphone",
+      "keywords": [],
+      "description": "The WA-47 is a premium Microphone from Warm Audio. It features state-of-the-art technology and super"
+    },
+    {
+      "id": "warm-audio-prod-5",
+      "label": "Bus-Comp",
+      "brand": "warm-audio",
+      "brand_name": "Warm Audio",
+      "category": "Studio",
+      "subcategory": "Compressor",
+      "keywords": [],
+      "description": "The Bus-Comp is a premium Compressor from Warm Audio. It features state-of-the-art technology and su"
+    },
+    {
+      "id": "adam-audio-prod-1",
+      "label": "A7V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The A7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
+    },
+    {
+      "id": "adam-audio-prod-2",
+      "label": "A4V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The A4V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
+    },
+    {
+      "id": "adam-audio-prod-3",
+      "label": "S2V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The S2V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
+    },
+    {
+      "id": "adam-audio-prod-4",
+      "label": "T7V",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The T7V is a premium Monitors from Adam Audio. It features state-of-the-art technology and superior "
+    },
+    {
+      "id": "adam-audio-prod-5",
+      "label": "Sub10 MK2",
+      "brand": "adam-audio",
+      "brand_name": "Adam Audio",
+      "category": "Studio",
+      "subcategory": "Subwoofer",
+      "keywords": [],
+      "description": "The Sub10 MK2 is a premium Subwoofer from Adam Audio. It features state-of-the-art technology and su"
+    },
+    {
+      "id": "mackie-prod-1",
+      "label": "ProFX10v3",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Studio",
+      "subcategory": "Mixer",
+      "keywords": [],
+      "description": "The ProFX10v3 is a premium Mixer from Mackie. It features state-of-the-art technology and superior b"
+    },
+    {
+      "id": "mackie-prod-2",
+      "label": "Thump215",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Audio",
+      "subcategory": "Speaker",
+      "keywords": [],
+      "description": "The Thump215 is a premium Speaker from Mackie. It features state-of-the-art technology and superior "
+    },
+    {
+      "id": "mackie-prod-3",
+      "label": "CR3-X",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Studio",
+      "subcategory": "Monitors",
+      "keywords": [],
+      "description": "The CR3-X is a premium Monitors from Mackie. It features state-of-the-art technology and superior bu"
+    },
+    {
+      "id": "mackie-prod-4",
+      "label": "Big Knob Passive",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Studio",
+      "subcategory": "Controller",
+      "keywords": [],
+      "description": "The Big Knob Passive is a premium Controller from Mackie. It features state-of-the-art technology an"
+    },
+    {
+      "id": "mackie-prod-5",
+      "label": "MainStream",
+      "brand": "mackie",
+      "brand_name": "Mackie",
+      "category": "Studio",
+      "subcategory": "Interface",
+      "keywords": [],
+      "description": "The MainStream is a premium Interface from Mackie. It features state-of-the-art technology and super"
     }
   ],
-  "total_brands": 3
+  "total_brands": 10
 }

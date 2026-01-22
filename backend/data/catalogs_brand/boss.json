@@ -1,0 +1,155 @@
+{
+  "brand_name": "Boss",
+  "brand_identity": {
+    "id": "boss",
+    "name": "Boss",
+    "description": "Guitar effects and amplifiers",
+    "website": "https://www.boss.com",
+    "categories": [
+      "Guitar",
+      "Effects"
+    ]
+  },
+  "products": [
+    {
+      "id": "boss-prod-1",
+      "name": "Katana-50",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Amplifiers",
+      "description": "The Katana-50 is a premium Amplifiers from Boss. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1000,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "boss-prod-2",
+      "name": "GT-1000",
+      "brand": "Boss",
+      "main_category": "Guitar",
+      "subcategory": "Multi-Effects",
+      "description": "The GT-1000 is a premium Multi-Effects from Boss. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "boss-prod-3",
+      "name": "RC-505mkII",
+      "brand": "Boss",
+      "main_category": "Effects",
+      "subcategory": "Loopers",
+      "description": "The RC-505mkII is a premium Loopers from Boss. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "boss-prod-4",
+      "name": "DS-1W",
+      "brand": "Boss",
+      "main_category": "Effects",
+      "subcategory": "Distortion",
+      "description": "The DS-1W is a premium Distortion from Boss. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1300,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "boss-prod-5",
+      "name": "DD-8",
+      "brand": "Boss",
+      "main_category": "Effects",
+      "subcategory": "Delay",
+      "description": "The DD-8 is a premium Delay from Boss. It features state-of-the-art technology and superior build quality.",
+      "image_url": "https://placehold.co/600x400/png",
+      "images": [
+        "https://placehold.co/600x400/png",
+        "https://placehold.co/150x150/png"
+      ],
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "USD"
+      },
+      "specifications": [
+        {
+          "key": "Weight",
+          "value": "10kg"
+        },
+        {
+          "key": "Dimensions",
+          "value": "100x40x10 cm"
+        }
+      ],
+      "verified": true
+    }
+  ]
+}
