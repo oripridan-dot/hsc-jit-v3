@@ -1,14 +1,41 @@
-# 🎹 HSC Mission Control v3.7.4
+# 🎹 HSC Mission Control v3.7.5
 
-**Enhanced Navigation & TierBar** - Clean Architecture, ONE SOURCE OF TRUTH
+**Visual Discovery Paradigm** - "See Then Read" Interface Design
 
-> **Production-Ready Static Multi-Brand Product Catalog with Advanced Navigation** ✅
+> **Production-Ready Static Multi-Brand Product Catalog with Visual-First Navigation** ✅
 
-A modern, high-performance product catalog system for professional musical instruments. Built with React 19, TypeScript 5, and Tailwind CSS with comprehensive hierarchical navigation and brand-aware theming.
+A modern, high-performance product catalog system for professional musical instruments. Built with React 19, TypeScript 5, and Tailwind CSS featuring a revolutionary visual-first interface that prioritizes discovery over reading.
 
 ## 📖 **→ [GO TO SYSTEM GUIDE](SYSTEM.md)**
 
 **Everything you need is in [SYSTEM.md](SYSTEM.md)** - quick start, architecture, development, deployment, troubleshooting.
+
+---
+
+## ✨ v3.7.5: Visual Discovery Paradigm
+
+The entire UI has been transformed to prioritize **visual discovery** over text-based navigation:
+
+### 🎬 Visual Home - GalaxyDashboard
+
+- **Immersive Hero Section** with flagship product showcase
+- **Color-coded Category Grid** (8 tiles) with hover reveals
+- **Smooth Animations** powered by Framer Motion
+- **Deep Linking** - click any tile to explore instantly
+
+### 📦 Visual Sidebar - Navigator "Rack"
+
+- **Brand Logo Mode** - Official logos in white boxes for instant recognition
+- **Category Color Mode** - Colored circles with category initials
+- **Responsive Toggle** - 80px mobile (icons), 240px desktop (logos + names)
+- **Zero Text Clutter** - Visual elements are primary, text is secondary
+
+### 🎵 Persistent Media Deck - MediaBar
+
+- **DAW-Inspired Controls** at bottom of screen (always visible)
+- **Transport Controls** - Play/Pause, Skip Forward/Back
+- **Volume Slider** - Intuitive percentage-based volume control
+- **Professional Paradigm** - Reinforces this is a _tool_, not just a website
 
 ---
 

@@ -1,146 +1,121 @@
 /**
- * GalaxyDashboard - Empty State / Home View
- * Shows global statistics and serves as the default view
+ * GalaxyDashboard - Visual Showroom / Home View
+ * "See Then Read" paradigm: Hero images + Visual Entry Points
+ *
+ * Grabs random flagship items from catalog to create immersive atmosphere
  */
-import { Compass, Sparkles } from "lucide-react";
-import React, { useEffect, useState } from "react";
-import { catalogLoader } from "../../lib/catalogLoader";
+import { motion } from "framer-motion";
+import { PlayCircle, Sparkles } from "lucide-react";
+import React, { useMemo } from "react";
+import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
+import { useNavigationStore } from "../../store/navigationStore";
 
 export const GalaxyDashboard: React.FC = () => {
-  const [stats, setStats] = useState({
-    products: 0,
-    brands: 0,
-    categories: 7,
-  });
+  const { selectUniversalCategory, selectBrand } = useNavigationStore();
 
-  useEffect(() => {
-    catalogLoader.loadIndex().then((index) => {
-      setStats({
-        products: index.total_products,
-        brands: index.brands.length,
-        categories: 7,
-      });
-    });
-  }, []);
+  // Mock "Flagship" Data (In real app, fetch from RAG "high_tier" tag)
+  // These create the "Atmosphere" of the app
+  const heroProduct = useMemo(
+    () => ({
+      name: "ROLAND FANTOM-8 EX",
+      image:
+        "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1200&q=80",
+      tagline: "The World's Most Powerful Synthesizer",
+      brand: "Roland",
+    }),
+    [],
+  );
 
   return (
-    <div className="flex-1 flex flex-col h-full bg-[var(--bg-app)] overflow-y-auto relative">
-      {/* Background Ambient Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-purple-500/5 pointer-events-none" />
+    <div className="h-full w-full bg-[#050505] overflow-y-auto text-white relative">
+      {/* 1. HERO SECTION (Cinema Experience) */}
+      <div className="relative h-[60vh] w-full overflow-hidden flex items-end pb-16 px-12 group cursor-pointer">
+        {/* Immersive Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={heroProduct.image}
+            className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700"
+            style={{
+              maskImage:
+                "linear-gradient(to bottom, black 50%, transparent 100%)",
+            }}
+            alt="Hero"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/50 to-transparent" />
+        </div>
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8">
-        <div className="max-w-2xl text-center space-y-6">
-          {/* Hero Icon */}
-          <div className="inline-block p-4 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 mb-6">
-            <Compass size={64} className="text-indigo-400" />
+        {/* Hero Text */}
+        <div className="relative z-10 max-w-4xl">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="bg-amber-500 text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+              Flagship Spotlight
+            </span>
+            <span className="text-amber-500/80 text-xs font-mono uppercase tracking-widest">
+              {heroProduct.brand}
+            </span>
           </div>
-
-          {/* Heading */}
-          <h1 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 mb-2">
-            Halilit Mission Control
+          <h1 className="text-7xl font-black uppercase tracking-tighter mb-4 leading-[0.9]">
+            {heroProduct.name}
           </h1>
-
-          <p className="text-xl text-[var(--text-secondary)] leading-relaxed">
-            A unified catalog explorer for professional musical instruments
+          <p className="text-2xl text-white/60 font-light mb-8 max-w-xl">
+            {heroProduct.tagline}
           </p>
 
-          {/* Stats Grid */}
-          <div className="grid grid-cols-3 gap-4 mt-12">
-            <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl p-4 hover:border-indigo-500/50 transition-all">
-              <div className="text-2xl font-bold text-indigo-400 mb-1">
-                {stats.products || "--"}
-              </div>
-              <div className="text-xs text-[var(--text-tertiary)] uppercase tracking-wide">
-                Products
-              </div>
-            </div>
-            <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl p-4 hover:border-purple-500/50 transition-all">
-              <div className="text-2xl font-bold text-purple-400 mb-1">
-                {stats.brands || "--"}
-              </div>
-              <div className="text-xs text-[var(--text-tertiary)] uppercase tracking-wide">
-                Brands
-              </div>
-            </div>
-            <div className="bg-[var(--bg-panel)] border border-[var(--border-subtle)] rounded-xl p-4 hover:border-pink-500/50 transition-all">
-              <div className="text-2xl font-bold text-pink-400 mb-1">
-                {stats.categories}
-              </div>
-              <div className="text-xs text-[var(--text-tertiary)] uppercase tracking-wide">
-                Categories
-              </div>
-            </div>
-          </div>
+          <button
+            onClick={() => selectBrand("roland")}
+            className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform"
+          >
+            <PlayCircle size={20} /> Experience Now
+          </button>
+        </div>
+      </div>
 
-          {/* Getting Started */}
-          <div className="mt-12 pt-8 border-t border-[var(--border-subtle)]">
-            <div className="flex items-center gap-2 justify-center mb-6">
-              <Sparkles size={18} className="text-amber-400" />
-              <h2 className="text-lg font-semibold text-[var(--text-primary)]">
-                Getting Started
-              </h2>
-            </div>
-            <ul className="space-y-3 text-left inline-block">
-              <li className="flex items-start gap-3 text-[var(--text-secondary)]">
-                <span className="text-indigo-400 font-bold">1.</span>
-                <span>
-                  Click on a <strong>Brand</strong> in the left sidebar to
-                  explore their catalog
-                </span>
-              </li>
-              <li className="flex items-start gap-3 text-[var(--text-secondary)]">
-                <span className="text-purple-400 font-bold">2.</span>
-                <span>
-                  Select a <strong>Category</strong> to see products in that
-                  family
-                </span>
-              </li>
-              <li className="flex items-start gap-3 text-[var(--text-secondary)]">
-                <span className="text-pink-400 font-bold">3.</span>
-                <span>
-                  Click a <strong>Product</strong> to view detailed specs and
-                  media
-                </span>
-              </li>
-            </ul>
-          </div>
+      {/* 2. VISUAL ENTRY POINTS (The Universal 10) */}
+      <div className="px-12 py-8">
+        <div className="flex items-center gap-2 mb-8 text-white/40">
+          <Sparkles size={16} />
+          <span className="text-xs font-bold uppercase tracking-widest">
+            Explore Categories
+          </span>
+        </div>
 
-          {/* Feature Highlights */}
-          <div className="mt-12 grid grid-cols-2 gap-4 text-left">
-            <div className="bg-gradient-to-br from-indigo-500/10 to-transparent border border-indigo-500/20 rounded-lg p-3">
-              <div className="text-sm font-semibold text-indigo-300 mb-1">
-                🎵 Product Details
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          {UNIVERSAL_CATEGORIES.slice(0, 8).map((cat, i) => (
+            <motion.button
+              key={cat.id}
+              onClick={() => selectUniversalCategory(cat.id)}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.05 }}
+              className="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#111] border border-white/5 hover:border-white/20 transition-all hover:scale-[1.02]"
+            >
+              {/* Abstract Visual Gradient based on Category Color */}
+              <div
+                className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity"
+                style={{
+                  background: `linear-gradient(to top right, ${cat.color}, transparent)`,
+                }}
+              />
+
+              {/* Content */}
+              <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                <div className="mb-auto opacity-50 group-hover:opacity-100 transition-opacity">
+                  {/* Icon would go here if we had Lucide map, or large text char */}
+                  <span className="text-4xl font-black text-white/20">
+                    {cat.label[0]}
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold uppercase leading-tight mb-1">
+                  {cat.label}
+                </h3>
+                <div className="h-0.5 w-8 bg-white/20 group-hover:w-full group-hover:bg-white transition-all duration-500" />
+                <p className="text-[10px] text-white/50 mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                  {cat.description}
+                </p>
               </div>
-              <div className="text-xs text-[var(--text-tertiary)]">
-                Full specs, images, videos, and documentation
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-purple-500/10 to-transparent border border-purple-500/20 rounded-lg p-3">
-              <div className="text-sm font-semibold text-purple-300 mb-1">
-                📊 Structured Data
-              </div>
-              <div className="text-xs text-[var(--text-tertiary)]">
-                Clean hierarchies with accurate categorization
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-pink-500/10 to-transparent border border-pink-500/20 rounded-lg p-3">
-              <div className="text-sm font-semibold text-pink-300 mb-1">
-                🚀 Fast Navigation
-              </div>
-              <div className="text-xs text-[var(--text-tertiary)]">
-                Instant switching between views and zoom levels
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-amber-500/10 to-transparent border border-amber-500/20 rounded-lg p-3">
-              <div className="text-sm font-semibold text-amber-300 mb-1">
-                🎨 Brand Identity
-              </div>
-              <div className="text-xs text-[var(--text-tertiary)]">
-                UI colors adapt to your selected brand
-              </div>
-            </div>
-          </div>
+            </motion.button>
+          ))}
         </div>
       </div>
     </div>
