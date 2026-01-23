@@ -27,8 +27,7 @@ import type { Product } from "../../types";
 const DEFAULT_FALLBACK = "/assets/react.svg";
 
 export const GalaxyDashboard: React.FC = () => {
-  const { selectUniversalCategory } =
-    useNavigationStore();
+  const { selectUniversalCategory } = useNavigationStore();
   const [gridColumns, setGridColumns] = useState(3);
   const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -155,33 +154,6 @@ export const GalaxyDashboard: React.FC = () => {
 
   return (
     <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden">
-      {/* Compact Header */}
-      <header className="flex-shrink-0 h-14 px-6 flex items-center justify-between border-b border-white/10 bg-[#0a0a0a]">
-        <div className="flex items-center gap-4">
-          <div className="flex flex-col leading-none select-none">
-            <span
-              className="text-3xl font-black text-white"
-              style={{
-                fontFamily: "'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 900,
-                letterSpacing: "-0.05em",
-                textTransform: "lowercase",
-                fontStyle: "italic",
-              }}
-            >
-              halilit
-            </span>
-            <span className="text-[0.5rem] font-semibold text-zinc-600 tracking-[0.2em] uppercase">
-              Support Center
-            </span>
-          </div>
-        </div>
-        <div className="flex items-center gap-4 text-xs text-zinc-600 font-mono">
-          <span className="text-green-500">● ONLINE</span>
-          <span>v3.7.6 DYNAMIC</span>
-        </div>
-      </header>
-
       {/* Compact Grid - All Categories Visible */}
       <main className="flex-1 overflow-hidden p-4">
         <div className="h-full w-full max-w-[2000px] mx-auto flex flex-col">
@@ -203,7 +175,9 @@ export const GalaxyDashboard: React.FC = () => {
               }}
             >
               {enhancedCategories.map((cat, index) => {
-                const thumbnail = thumbnailMap.get(cat.id) as CategoryThumbnail | undefined;
+                const thumbnail = thumbnailMap.get(cat.id) as
+                  | CategoryThumbnail
+                  | undefined;
                 return (
                   <motion.div
                     key={cat.id}
