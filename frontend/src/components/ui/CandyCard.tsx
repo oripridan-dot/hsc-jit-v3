@@ -1,6 +1,20 @@
 import React from "react";
 import type { SubcategoryDef } from "../../lib/universalCategories";
 
+// Official brand logo paths - ONLY real logos, no generated text
+const BRAND_LOGO_MAP: Record<string, string> = {
+  roland: "/assets/logos/roland_logo.png",
+  boss: "/assets/logos/boss_logo.png",
+  nord: "/assets/logos/nord_logo.png",
+  moog: "/assets/logos/moog_logo.png",
+  "akai-professional": "/assets/logos/akai-professional_logo.svg",
+  "adam-audio": "/assets/logos/adam-audio_logo.svg",
+  mackie: "/assets/logos/mackie_logo.svg",
+  "teenage-engineering": "/assets/logos/teenage-engineering_logo.svg",
+  "universal-audio": "/assets/logos/universal-audio_logo.svg",
+  "warm-audio": "/assets/logos/warm-audio_logo.svg",
+};
+
 interface CandyCardProps {
   image?: string; // Legacy support (unused)
   images?: string[]; // Legacy support (unused)
@@ -10,6 +24,7 @@ interface CandyCardProps {
   logo?: React.ReactNode;
   onClick?: () => void;
   onSubcategoryClick?: (subcategory: string) => void;
+  onBrandClick?: (brandId: string) => void; // Active brand filter
   className?: string;
   isActive?: boolean;
 }
@@ -31,6 +46,7 @@ export const CandyCard: React.FC<CandyCardProps> = ({
   logo,
   onClick,
   onSubcategoryClick,
+  onBrandClick,
   className,
   isActive,
 }) => {
@@ -85,10 +101,10 @@ export const CandyCard: React.FC<CandyCardProps> = ({
           </div>
         </div>
 
-        {/* Subcategories Grid - 3 Column Compact Layout */}
+        {/* Subcategories Grid - Responsive Layout, Maximum Screen Use */}
         {subcategories && subcategories.length > 0 && (
-          <div className="flex-1 border-t border-white/10 pt-3 pointer-events-auto">
-            <ul className="grid grid-cols-3 gap-2">
+          <div className="flex-1 border-t border-white/10 pt-2 pointer-events-auto">
+            <ul className="grid grid-cols-3 gap-x-2 gap-y-1">
               {subcategories.slice(0, 6).map((sub, i) => (
                 <li key={i}>
                   <button
@@ -96,36 +112,46 @@ export const CandyCard: React.FC<CandyCardProps> = ({
                       e.stopPropagation();
                       onSubcategoryClick?.(sub.label);
                     }}
-                    className="w-full flex flex-col items-center gap-0.5 group/sub"
+                    className="w-full flex flex-col items-center group/sub"
                   >
-                    {/* Compact Thumbnail - Optimized 64x64 */}
-                    <div className="w-16 h-16 rounded overflow-hidden bg-zinc-800/50 group-hover/sub:scale-105 transition-transform duration-200 border border-white/5">
+                    {/* Large Responsive Thumbnail - Fills available space */}
+                    <div className="w-full aspect-square flex items-center justify-center group-hover/sub:scale-105 transition-transform duration-200">
                       <img
                         src={sub.image}
                         alt={sub.label}
-                        className="w-full h-full object-cover opacity-90 group-hover/sub:opacity-100 transition-opacity"
+                        className="w-full h-full object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
                       />
                     </div>
 
-                    {/* Label - MINIMAL 4px gap from thumbnail */}
-                    <span className="text-[9px] font-semibold text-zinc-400 group-hover/sub:text-cyan-400 transition-colors text-center line-clamp-2 leading-tight mt-1">
+                    {/* Label - Tight proximity to thumbnail */}
+                    <span className="text-[10px] font-semibold text-zinc-400 group-hover/sub:text-cyan-400 transition-colors text-center line-clamp-1 leading-tight">
                       {sub.label}
                     </span>
 
-                    {/* Brand Micro-Logos - Tight spacing */}
+                    {/* Official Brand Logos - Compact row */}
                     {sub.brands && sub.brands.length > 0 && (
-                      <div className="flex gap-0.5 mt-0.5">
-                        {sub.brands.slice(0, 4).map((brand) => (
-                          <div
-                            key={brand}
-                            className="w-3 h-3 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center opacity-60 group-hover/sub:opacity-100 group-hover/sub:border-cyan-400/30 transition-all"
-                            title={brand}
-                          >
-                            <span className="text-[6px] font-black text-white">
-                              {brand.substring(0, 2).toUpperCase()}
-                            </span>
-                          </div>
-                        ))}
+                      <div className="flex gap-0.5">
+                        {sub.brands.slice(0, 4).map((brand) => {
+                          const logoUrl = BRAND_LOGO_MAP[brand.toLowerCase()];
+                          if (!logoUrl) return null;
+                          return (
+                            <button
+                              key={brand}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                onBrandClick?.(brand);
+                              }}
+                              className="w-5 h-3 hover:scale-125 active:scale-95 transition-all duration-150 cursor-pointer"
+                              title={`Filter by ${brand}`}
+                            >
+                              <img
+                                src={logoUrl}
+                                alt={brand}
+                                className="w-full h-full object-contain brightness-90 hover:brightness-110"
+                              />
+                            </button>
+                          );
+                        })}
                       </div>
                     )}
                   </button>

@@ -1,0 +1,55 @@
+{
+  "brand": "boss",
+  "brand_name": "Boss",
+  "top_products": [
+    {
+      "id": "boss-katana-100-mkii",
+      "name": "KATANA-100 MkII",
+      "brand": "boss",
+      "category_ui": "guitars",
+      "category_original": "amplifiers",
+      "subcategory": "amplifiers",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.boss.info/global/global/products/katana-100_mk2/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:51:38.269834+00:00"
+    },
+    {
+      "id": "boss-gt-1000",
+      "name": "GT-1000",
+      "brand": "boss",
+      "category_ui": "guitars",
+      "category_original": "multi_effects",
+      "subcategory": "multi_effects",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.boss.info/global/global/products/gt-1000/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:51:40.420106+00:00"
+    },
+    {
+      "id": "boss-rc-505mkii",
+      "name": "RC-505mkII",
+      "brand": "boss",
+      "category_ui": "dj",
+      "category_original": "loop_station",
+      "subcategory": "loop_station",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.boss.info/global/global/products/rc-505mkii/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:51:42.124428+00:00"
+    }
+  ],
+  "categories_covered": [
+    "guitars",
+    "dj"
+  ]
+}

@@ -24,7 +24,8 @@ import { CandyCard } from "../ui/CandyCard";
 const DEFAULT_FALLBACK = ["/assets/react.svg"];
 
 export const GalaxyDashboard: React.FC = () => {
-  const { selectUniversalCategory, selectSubcategory } = useNavigationStore();
+  const { selectUniversalCategory, selectSubcategory, selectBrand } =
+    useNavigationStore();
   const [gridColumns, setGridColumns] = useState(3);
   const [catalogImages, setCatalogImages] = useState<Record<string, string[]>>(
     {},
@@ -145,6 +146,10 @@ export const GalaxyDashboard: React.FC = () => {
     selectSubcategory(categoryId, subcategory);
   };
 
+  const handleBrandClick = (brandId: string) => {
+    selectBrand(brandId);
+  };
+
   return (
     <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden">
       {/* Compact Header */}
@@ -210,6 +215,7 @@ export const GalaxyDashboard: React.FC = () => {
                     onSubcategoryClick={(sub) =>
                       handleSubcategoryClick(cat.id, sub)
                     }
+                    onBrandClick={handleBrandClick}
                   />
                 </motion.div>
               );

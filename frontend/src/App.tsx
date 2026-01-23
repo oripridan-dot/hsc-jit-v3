@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
-import { Navigator } from "./components/Navigator";
 import { Workbench } from "./components/Workbench";
 import "./index.css";
 import { instantSearch } from "./lib";
@@ -29,14 +28,8 @@ function AppContent() {
 
   return (
     <div className="flex h-screen w-screen flex-col bg-[#0a0a0a] text-white font-sans overflow-hidden">
-      {/* MAIN APPLICATION FRAME */}
+      {/* MAIN APPLICATION FRAME - Galaxy Dashboard is the navigator */}
       <div className="flex-1 flex min-h-0 relative">
-        {/* LEFT COLUMN: Refined Navigation Sidebar */}
-        <ErrorBoundary name="Navigator">
-          <Navigator />
-        </ErrorBoundary>
-
-        {/* CENTER + RIGHT COLUMN: Main Workbench - Now supports scrolling */}
         <ErrorBoundary name="Workbench">
           <main className="flex-1 relative z-10 flex flex-col overflow-hidden">
             <Workbench />
