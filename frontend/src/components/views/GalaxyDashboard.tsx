@@ -17,6 +17,7 @@ import { catalogLoader } from "../../lib/catalogLoader";
 import {
   buildDynamicThumbnailMap,
   getThumbnailForCategory,
+  type CategoryThumbnail,
 } from "../../lib/dynamicThumbnails";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { useNavigationStore } from "../../store/navigationStore";
@@ -26,7 +27,7 @@ import type { Product } from "../../types";
 const DEFAULT_FALLBACK = "/assets/react.svg";
 
 export const GalaxyDashboard: React.FC = () => {
-  const { selectUniversalCategory, selectSubcategory, selectBrand } =
+  const { selectUniversalCategory } =
     useNavigationStore();
   const [gridColumns, setGridColumns] = useState(3);
   const [allProducts, setAllProducts] = useState<Product[]>([]);
@@ -152,14 +153,6 @@ export const GalaxyDashboard: React.FC = () => {
     selectUniversalCategory(categoryId);
   };
 
-  const handleSubcategoryClick = (categoryId: string, subcategory: string) => {
-    selectSubcategory(categoryId, subcategory);
-  };
-
-  const handleBrandClick = (brandId: string) => {
-    selectBrand(brandId);
-  };
-
   return (
     <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden">
       {/* Compact Header */}
@@ -210,6 +203,7 @@ export const GalaxyDashboard: React.FC = () => {
               }}
             >
               {enhancedCategories.map((cat, index) => {
+                const thumbnail = thumbnailMap.get(cat.id) as CategoryThumbnail | undefined;
                 return (
                   <motion.div
                     key={cat.id}
@@ -220,23 +214,33 @@ export const GalaxyDashboard: React.FC = () => {
                     onClick={() => handleCategoryClick(cat.id)}
                   >
                     {/* Category Card */}
-                    <div className="relative w-full aspect-square rounded-xl border border-white/10 overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300">
+                    <div className="relative w-full h-full rounded-xl border border-white/10 overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300">
+                      {/* Thumbnail Background */}
+                      {thumbnail?.imageUrl && (
+                        <div
+                          className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity duration-300"
+                          style={{
+                            backgroundImage: `url('${thumbnail.imageUrl}')`,
+                          }}
+                        />
+                      )}
+
                       {/* Overlay Gradient */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-                      
+
                       {/* Content */}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                        <h3 className="text-2xl font-bold text-white mb-2 uppercase tracking-tight">
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 z-10">
+                        <h3 className="text-3xl font-black text-white mb-2 uppercase tracking-tight drop-shadow-lg">
                           {cat.label}
                         </h3>
-                        <p className="text-sm text-zinc-300 mb-4">
+                        <p className="text-sm text-zinc-200 mb-4 drop-shadow">
                           {cat.description}
                         </p>
-                        <div className="text-xs text-zinc-400">
+                        <div className="text-xs text-zinc-300">
                           {cat.subcategories?.length || 0} subcategories
                         </div>
                       </div>
-                      
+
                       {/* Hover Indicator */}
                       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
