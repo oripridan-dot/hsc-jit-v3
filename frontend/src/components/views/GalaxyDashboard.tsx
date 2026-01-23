@@ -8,37 +8,41 @@
  * - Professional category cards
  * - Touch-optimized for mobile
  *
- * ⭐ DYNAMIC IMAGE HARVESTING:
- * Instead of hardcoded paths, we pull real images from loaded catalogs.
- * This ensures the dashboard always displays valid product images that exist.
+ * ⭐ DYNAMIC THUMBNAIL SYSTEM:
+ * Category thumbnails are automatically selected from the MOST EXPENSIVE
+ * product in each category. This ensures:
+ * 1. Always showcasing premium products
+ * 2. Fully dynamic - updates when product data changes
+ * 3. No manual curation needed
+ * 4. Can be leveraged for marketing/featured products later
  */
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { catalogLoader } from "../../lib/catalogLoader";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
 import { CandyCard } from "../ui/CandyCard";
+import { buildDynamicThumbnailMap, getThumbnailForCategory } from "../../lib/dynamicThumbnails";
+import type { Product } from "../../types";
 
 // Placeholder for when no images are available
-const DEFAULT_FALLBACK = ["/assets/react.svg"];
+const DEFAULT_FALLBACK = "/assets/react.svg";
 
 export const GalaxyDashboard: React.FC = () => {
   const { selectUniversalCategory, selectSubcategory, selectBrand } =
     useNavigationStore();
   const [gridColumns, setGridColumns] = useState(3);
-  const [catalogImages, setCatalogImages] = useState<Record<string, string[]>>(
-    {},
-  );
+  const [allProducts, setAllProducts] = useState<Product[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   // ============================================================
-  // 1. DYNAMIC IMAGE HARVESTER
-  // Load all brand catalogs and extract valid images
+  // 1. LOAD ALL PRODUCTS FROM ALL BRANDS
   // ============================================================
   useEffect(() => {
-    const loadCatalogImages = async () => {
-      const imageLookup: Record<string, string[]> = {};
-
+    const loadAllProducts = async () => {
+      setIsLoading(true);
+      
       // Main brands to load (matches your available catalogs)
       const brands = [
         "roland",
@@ -50,6 +54,7 @@ export const GalaxyDashboard: React.FC = () => {
         "warm-audio",
         "mackie",
         "teenage-engineering",
+        "adam-audio",
       ];
 
       try {
@@ -60,59 +65,33 @@ export const GalaxyDashboard: React.FC = () => {
 
         const catalogs = await Promise.all(catalogPromises);
 
-        // Extract images from each catalog
-        catalogs.forEach((catalog, idx) => {
-          if (!catalog?.products) return;
-
-          const brand = brands[idx];
-          const images = catalog.products
-            .map((p) => p.images?.thumbnail || p.image_url)
-            .filter((url): url is string => Boolean(url) && url.length > 0)
-            .slice(0, 4); // Limit to 4 images per category
-
-          if (images.length > 0) {
-            imageLookup[brand] = images;
+        // Combine all products
+        const allProds: Product[] = [];
+        catalogs.forEach((catalog) => {
+          if (catalog?.products) {
+            allProds.push(...catalog.products);
           }
         });
 
-        // Build category-to-images mapping based on loaded data
-        const categoryImages: Record<string, string[]> = {};
-
-        // Map categories to available brand images
-        const categoryBrandMap: Record<string, string[]> = {
-          "Keys & Pianos": ["roland", "nord", "moog"],
-          "Drums & Percussion": ["roland", "boss", "akai-professional"],
-          "Guitars & Amps": ["boss", "roland"],
-          "Studio & Recording": ["universal-audio", "warm-audio", "moog"],
-          "Live Sound": ["mackie", "roland", "universal-audio"],
-          "DJ & Production": [
-            "teenage-engineering",
-            "roland",
-            "akai-professional",
-          ],
-        };
-
-        // Populate category images from available brand data
-        for (const [category, brands] of Object.entries(categoryBrandMap)) {
-          const images: string[] = [];
-          for (const brand of brands) {
-            if (imageLookup[brand]) {
-              images.push(...imageLookup[brand]);
-            }
-          }
-          if (images.length > 0) {
-            categoryImages[category] = images.slice(0, 4);
-          }
-        }
-
-        setCatalogImages(categoryImages);
+        setAllProducts(allProds);
+        console.log(`✅ Loaded ${allProds.length} products for dynamic thumbnails`);
       } catch (err) {
-        console.warn("Failed to load catalog images:", err);
+        console.warn("Failed to load products:", err);
+      } finally {
+        setIsLoading(false);
       }
     };
 
-    loadCatalogImages();
+    loadAllProducts();
   }, []);
+
+  // ============================================================
+  // 2. BUILD DYNAMIC THUMBNAIL MAP (MOST EXPENSIVE PRODUCTS)
+  // ============================================================
+  const thumbnailMap = useMemo(() => {
+    if (allProducts.length === 0) return new Map();
+    return buildDynamicThumbnailMap(allProducts);
+  }, [allProducts]);
 
   // Calculate responsive grid columns
   useEffect(() => {
@@ -137,6 +116,35 @@ export const GalaxyDashboard: React.FC = () => {
 
   // Derive visible categories from UNIVERSAL_CATEGORIES
   const visibleCategories = UNIVERSAL_CATEGORIES.slice(0, 6); // Limit to 6 for grid fit
+
+  // ============================================================
+  // 3. ENHANCE CATEGORIES WITH DYNAMIC SUBCATEGORY THUMBNAILS
+  // ============================================================
+  const enhancedCategories = useMemo(() => {
+    return visibleCategories.map((cat) => {
+      // Get dynamic thumbnail for main category
+      const mainThumbnail = getThumbnailForCategory(thumbnailMap, cat.id);
+
+      // Enhance subcategories with dynamic thumbnails
+      const enhancedSubcategories = cat.subcategories?.map((sub) => {
+        const subThumbnail = getThumbnailForCategory(
+          thumbnailMap,
+          cat.id,
+          sub.label
+        );
+        return {
+          ...sub,
+          image: subThumbnail || sub.image || DEFAULT_FALLBACK,
+        };
+      });
+
+      return {
+        ...cat,
+        mainThumbnail: mainThumbnail || DEFAULT_FALLBACK,
+        subcategories: enhancedSubcategories,
+      };
+    });
+  }, [visibleCategories, thumbnailMap]);
 
   const handleCategoryClick = (categoryId: string) => {
     selectUniversalCategory(categoryId);
@@ -175,52 +183,55 @@ export const GalaxyDashboard: React.FC = () => {
         </div>
         <div className="flex items-center gap-4 text-xs text-zinc-600 font-mono">
           <span className="text-green-500">● ONLINE</span>
-          <span>v3.7.5</span>
+          <span>v3.7.6 DYNAMIC</span>
         </div>
       </header>
 
       {/* Compact Grid - All Categories Visible */}
       <main className="flex-1 overflow-y-auto scrollbar-custom p-6">
         <div className="max-w-[1600px] mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className={cn(
-              "grid gap-4",
-              gridColumns === 1 && "grid-cols-1",
-              gridColumns === 2 && "grid-cols-2",
-              gridColumns === 3 && "grid-cols-3",
-            )}
-          >
-            {visibleCategories.map((cat, index) => {
-              // Use dynamic images from loaded catalogs, fallback to placeholder
-              const categoryImages =
-                catalogImages[cat.label] || DEFAULT_FALLBACK;
-
-              return (
-                <motion.div
-                  key={cat.id}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.2, delay: index * 0.05 }}
-                  className="relative"
-                >
-                  <CandyCard
-                    title={cat.label}
-                    subtitle={`${cat.description || "ARM TRACK"}`}
-                    images={categoryImages}
-                    subcategories={cat.subcategories}
-                    onClick={() => handleCategoryClick(cat.id)}
-                    onSubcategoryClick={(sub) =>
-                      handleSubcategoryClick(cat.id, sub)
-                    }
-                    onBrandClick={handleBrandClick}
-                  />
-                </motion.div>
-              );
-            })}
-          </motion.div>
+          {isLoading ? (
+            <div className="flex items-center justify-center h-64">
+              <div className="text-zinc-500 font-mono text-sm">
+                Loading dynamic thumbnails...
+              </div>
+            </div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className={cn(
+                "grid gap-4",
+                gridColumns === 1 && "grid-cols-1",
+                gridColumns === 2 && "grid-cols-2",
+                gridColumns === 3 && "grid-cols-3",
+              )}
+            >
+              {enhancedCategories.map((cat, index) => {
+                return (
+                  <motion.div
+                    key={cat.id}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.2, delay: index * 0.05 }}
+                    className="relative"
+                  >
+                    <CandyCard
+                      title={cat.label}
+                      subtitle={`${cat.description || "Dynamic Thumbnails"}`}
+                      subcategories={cat.subcategories}
+                      onClick={() => handleCategoryClick(cat.id)}
+                      onSubcategoryClick={(sub) =>
+                        handleSubcategoryClick(cat.id, sub)
+                      }
+                      onBrandClick={handleBrandClick}
+                    />
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+          )}
 
           {/* Compact Footer */}
           <motion.div
@@ -237,6 +248,10 @@ export const GalaxyDashboard: React.FC = () => {
               <button className="font-mono text-zinc-500 hover:text-cyan-400 transition-colors">
                 BRANDS
               </button>
+              <div className="w-px h-3 bg-zinc-700" />
+              <span className="font-mono text-zinc-700">
+                {allProducts.length} products
+              </span>
             </div>
           </motion.div>
         </div>

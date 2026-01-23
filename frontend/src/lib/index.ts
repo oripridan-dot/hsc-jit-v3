@@ -1,5 +1,5 @@
 /**
- * v3.7.4 Static Catalog Library
+ * v3.7.6 Static Catalog Library
  * Exports for easy importing - Zero backend dependency
  */
 
@@ -23,3 +23,13 @@ export type {
   BrandTaxonomy,
   TaxonomyCategory,
 } from "./taxonomyLoader";
+
+// Dynamic Thumbnails (Most Expensive Product Selection)
+export {
+  buildDynamicThumbnailMap,
+  getThumbnailForCategory,
+  getMostExpensiveProductImage,
+  getTopProductsByCategory,
+} from "./dynamicThumbnails";
+export type { CategoryThumbnail } from "./dynamicThumbnails";
+
