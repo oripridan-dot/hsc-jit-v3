@@ -475,30 +475,36 @@ class HalilitCatalog:
                     # Run Visual Factory (This is heavy, maybe we cache check?)
                     # For now, we run it to ensure "Visual Intelligence" is active
                     logger.info(f"      🎨 Processing visuals for {product.get('name')}...")
-                    try:
-                        visual_assets = self.visual_factory.process_product_asset(main_img_url, img_base_path)
+                    # BYPASS VISUAL FACTORY - RAW HARVEST MODE
+                    # try:
+                    #     visual_assets = self.visual_factory.process_product_asset(main_img_url, img_base_path)
                     
-                        if visual_assets:
-                            # Update product with new optimized local assets
-                            # Convert absolute path to relative URL for frontend
-                            # frontend/public/data/... -> /data/...
-                            thumb_rel = f"/data/product_images/{slug}/{product['id']}_thumb.webp"
-                            inspect_rel = f"/data/product_images/{slug}/{product['id']}_inspect.webp"
+                    #     if visual_assets:
+                    #         # Update product with new optimized local assets
+                    #         # Convert absolute path to relative URL for frontend
+                    #         # frontend/public/data/... -> /data/...
+                    #         thumb_rel = f"/data/product_images/{slug}/{product['id']}_thumb.webp"
+                    #         inspect_rel = f"/data/product_images/{slug}/{product['id']}_inspect.webp"
                             
-                            product['images'] = {
-                                "main": thumb_rel,          # Used by TierBar and default view
-                                "thumbnail": thumb_rel,     # Explicit thumbnail
-                                "high_res": inspect_rel,    # Used by InspectionLens through 'main' or separate field
-                                "original": main_img_url    # Keep reference
-                            }
+                    #         product['images'] = {
+                    #             "main": thumb_rel,          # Used by TierBar and default view
+                    #             "thumbnail": thumb_rel,     # Explicit thumbnail
+                    #             "high_res": inspect_rel,    # Used by InspectionLens through 'main' or separate field
+                    #             "original": main_img_url    # Keep reference
+                    #         }
                             
-                            # Set primary image for legacy compatibility
-                            product['image'] = thumb_rel
-                            product['image_url'] = thumb_rel
+                    #         # Set primary image for legacy compatibility
+                    #         product['image'] = thumb_rel
+                    #         product['image_url'] = thumb_rel
                             
-                            self.stats['images_verified'] += 1
-                    except Exception as e:
-                         logger.warning(f"      ⚠️ Visual Factory failed for {product.get('name')}: {e}")
+                    #         self.stats['images_verified'] += 1
+                    # except Exception as e:
+                    #      logger.warning(f"      ⚠️ Visual Factory failed for {product.get('name')}: {e}")
+                    
+                    # Fallback to remote URL if no local processing
+                    if main_img_url:
+                        product['image'] = main_img_url
+                        product['image_url'] = main_img_url
 
                 # --- NEW: DOWNLOAD INNER LOGOS (series_logo) ---
                 if product.get('series_logo'):

@@ -20,13 +20,14 @@ interface CandyCardProps {
   images?: string[]; // Legacy support (unused)
   title: string;
   subtitle?: string;
-  subcategories?: SubcategoryDef[]; // Subcategories list support
+  subcategories?: (SubcategoryDef & { hasContent?: boolean })[]; // Subcategories list support
   logo?: React.ReactNode;
   onClick?: () => void;
   onSubcategoryClick?: (subcategory: string) => void;
   onBrandClick?: (brandId: string) => void; // Active brand filter
   className?: string;
   isActive?: boolean;
+  hasContent?: boolean;
 }
 
 /**
@@ -49,6 +50,7 @@ export const CandyCard: React.FC<CandyCardProps> = ({
   onBrandClick,
   className,
   isActive,
+  hasContent = true, // Default to true if not provided
 }) => {
   const baseClasses = [
     "relative",
@@ -56,7 +58,6 @@ export const CandyCard: React.FC<CandyCardProps> = ({
     "h-full",
     "w-full",
     "overflow-hidden",
-    "cursor-pointer",
     "rounded-xl", // Softer corners
     "bg-zinc-900", // Dark base
     "border",
@@ -67,6 +68,9 @@ export const CandyCard: React.FC<CandyCardProps> = ({
     "shadow-xl",
     "shadow-black/60",
     isActive ? "ring-2 ring-amber-400" : "", // Sun-like active ring
+    !hasContent
+      ? "opacity-50 grayscale cursor-not-allowed border-dashed border-white/10"
+      : "cursor-pointer",
     className || "",
   ]
     .filter(Boolean)
@@ -75,10 +79,21 @@ export const CandyCard: React.FC<CandyCardProps> = ({
   // No background images - clean design
 
   return (
-    <div onClick={onClick} className={baseClasses}>
+    <div onClick={hasContent ? onClick : undefined} className={baseClasses}>
       {/* Clean background with subtle warm glow - NO IMAGES */}
       <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-purple-500/5" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,200,100,0.03),transparent_70%)]" />
+
+      {/* "Not Active Yet" Overlay for empty categories */}
+      {!hasContent && (
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-[1px]">
+          <div className="px-3 py-1 bg-black/80 border border-white/10 rounded-full">
+            <span className="text-[10px] font-mono font-bold text-zinc-500 uppercase tracking-wider">
+              No Data
+            </span>
+          </div>
+        </div>
+      )}
 
       {/* Content Layer - Compact */}
       <div className="relative z-10 p-4 flex flex-col h-full">
@@ -105,58 +120,72 @@ export const CandyCard: React.FC<CandyCardProps> = ({
         {subcategories && subcategories.length > 0 && (
           <div className="flex-1 border-t border-white/10 pt-2 pointer-events-auto">
             <ul className="grid grid-cols-3 gap-x-2 gap-y-1">
-              {subcategories.slice(0, 6).map((sub, i) => (
-                <li key={i}>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onSubcategoryClick?.(sub.label);
-                    }}
-                    className="w-full flex flex-col items-center group/sub"
+              {subcategories.slice(0, 6).map((sub, i) => {
+                const isSubActive = sub.hasContent !== false;
+
+                return (
+                  <li
+                    key={i}
+                    className={
+                      !isSubActive
+                        ? "opacity-30 grayscale pointer-events-none"
+                        : ""
+                    }
                   >
-                    {/* Large Responsive Thumbnail - Fills available space */}
-                    <div className="w-full aspect-square flex items-center justify-center group-hover/sub:scale-105 transition-transform duration-200">
-                      <img
-                        src={sub.image}
-                        alt={sub.label}
-                        className="w-full h-full object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
-                      />
-                    </div>
-
-                    {/* Label - Tight proximity to thumbnail */}
-                    <span className="text-[10px] font-semibold text-zinc-400 group-hover/sub:text-cyan-400 transition-colors text-center line-clamp-1 leading-tight">
-                      {sub.label}
-                    </span>
-
-                    {/* Official Brand Logos - Compact row */}
-                    {sub.brands && sub.brands.length > 0 && (
-                      <div className="flex gap-0.5">
-                        {sub.brands.slice(0, 4).map((brand) => {
-                          const logoUrl = BRAND_LOGO_MAP[brand.toLowerCase()];
-                          if (!logoUrl) return null;
-                          return (
-                            <button
-                              key={brand}
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                onBrandClick?.(brand);
-                              }}
-                              className="w-5 h-3 hover:scale-125 active:scale-95 transition-all duration-150 cursor-pointer"
-                              title={`Filter by ${brand}`}
-                            >
-                              <img
-                                src={logoUrl}
-                                alt={brand}
-                                className="w-full h-full object-contain brightness-90 hover:brightness-110"
-                              />
-                            </button>
-                          );
-                        })}
+                    <div
+                      onClick={(e) => {
+                        if (!isSubActive) return;
+                        e.stopPropagation();
+                        onSubcategoryClick?.(sub.label);
+                      }}
+                      className={`w-full flex flex-col items-center group/sub ${isSubActive ? "cursor-pointer hover:bg-white/5 rounded-lg" : ""}`}
+                      role="button"
+                      tabIndex={isSubActive ? 0 : -1}
+                    >
+                      {/* Large Responsive Thumbnail - Fills available space */}
+                      <div className="w-full aspect-square flex items-center justify-center group-hover/sub:scale-105 transition-transform duration-200">
+                        <img
+                          src={sub.image}
+                          alt={sub.label}
+                          className="w-full h-full object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
+                        />
                       </div>
-                    )}
-                  </button>
-                </li>
-              ))}
+
+                      {/* Label - Tight proximity to thumbnail */}
+                      <span className="text-[10px] font-semibold text-zinc-400 group-hover/sub:text-cyan-400 transition-colors text-center line-clamp-1 leading-tight">
+                        {sub.label}
+                      </span>
+
+                      {/* Official Brand Logos - Compact row */}
+                      {sub.brands && sub.brands.length > 0 && (
+                        <div className="flex gap-0.5">
+                          {sub.brands.slice(0, 4).map((brand) => {
+                            const logoUrl = BRAND_LOGO_MAP[brand.toLowerCase()];
+                            if (!logoUrl) return null;
+                            return (
+                              <button
+                                key={brand}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  onBrandClick?.(brand);
+                                }}
+                                className="w-5 h-3 hover:scale-125 active:scale-95 transition-all duration-150 cursor-pointer"
+                                title={`Filter by ${brand}`}
+                              >
+                                <img
+                                  src={logoUrl}
+                                  alt={brand}
+                                  className="w-full h-full object-contain brightness-90 hover:brightness-110"
+                                />
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}

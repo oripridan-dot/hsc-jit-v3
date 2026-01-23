@@ -10,7 +10,7 @@
       {
         "id": "effects_pedals",
         "label": "Effects Pedals",
-        "icon": "\ud83c\udfb8",
+        "icon": "🎸",
         "description": "Stompboxes, Compact Pedals",
         "children": [
           "stompboxes",
@@ -21,21 +21,21 @@
       {
         "id": "multi_effects",
         "label": "Multi-Effects",
-        "icon": "\ud83c\udf9b\ufe0f",
+        "icon": "🎛️",
         "description": "Floor Units, Desktop",
         "children": []
       },
       {
         "id": "guitar_synthesizers",
         "label": "Guitar Synthesizers",
-        "icon": "\ud83c\udfb9",
+        "icon": "🎹",
         "description": "GK, SY Series",
         "children": []
       },
       {
         "id": "amplifiers",
         "label": "Amplifiers",
-        "icon": "\ud83d\udd0a",
+        "icon": "🔊",
         "description": "Katana, Cube, Acoustic",
         "children": [
           "katana",
@@ -46,63 +46,63 @@
       {
         "id": "acoustic",
         "label": "Acoustic",
-        "icon": "\ud83e\ude95",
+        "icon": "🪕",
         "description": "Acoustic Amps, Preamps",
         "children": []
       },
       {
         "id": "loop_station",
         "label": "Loop Station",
-        "icon": "\ud83d\udd01",
+        "icon": "🔁",
         "description": "RC Series, Loop Stations",
         "children": []
       },
       {
         "id": "vocal_effects",
         "label": "Vocal Effects",
-        "icon": "\ud83c\udfa4",
+        "icon": "🎤",
         "description": "VE Series, Vocal Processors",
         "children": []
       },
       {
         "id": "mixers_audio_solutions",
         "label": "Mixers & Audio Solutions",
-        "icon": "\ud83c\udf9a\ufe0f",
+        "icon": "🎚️",
         "description": "Personal Mixers, Audio Interfaces",
         "children": []
       },
       {
         "id": "tuners_metronomes",
         "label": "Tuners & Metronomes",
-        "icon": "\ud83c\udfb5",
+        "icon": "🎵",
         "description": "TU Series, DB Series",
         "children": []
       },
       {
         "id": "wireless",
         "label": "Wireless",
-        "icon": "\ud83d\udce1",
+        "icon": "📡",
         "description": "WL Series",
         "children": []
       },
       {
         "id": "accessories",
         "label": "Accessories",
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "description": "Footswitches, Power Supplies, Cables",
         "children": []
       },
       {
         "id": "apps",
         "label": "Apps",
-        "icon": "\ud83d\udcf1",
+        "icon": "📱",
         "description": "BOSS Tone Studio, BOSS Tuner",
         "children": []
       },
       {
         "id": "featured_products",
         "label": "Featured Products",
-        "icon": "\u2b50",
+        "icon": "⭐",
         "description": "New & Featured",
         "children": []
       }
@@ -130,12 +130,12 @@
       "main_category": "Effects Pedals",
       "description": "Classic distortion pedal",
       "short_description": "DS-1 - Entry tier Distortion",
-      "image_url": "/data/product_images/boss/boss-ds-1_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-ds-1_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-ds-1_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-ds-1_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-ds-1_thumb.svg",
-        "original": "/data/product_images/boss/boss-ds-1_thumb.svg"
+        "main": "/data/product_images/boss/boss-ds-1_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-ds-1_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-ds-1_main.webp",
+        "original": "/data/product_images/boss/boss-ds-1_thumb.webp"
       },
       "pricing": {
         "regular_price": 350,
@@ -182,12 +182,12 @@
       "main_category": "Effects Pedals",
       "description": "Warm overdrive pedal",
       "short_description": "OD-3 - Standard tier Overdrive",
-      "image_url": "/data/product_images/boss/boss-od-3_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-od-3_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-od-3_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-od-3_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-od-3_thumb.svg",
-        "original": "/data/product_images/boss/boss-od-3_thumb.svg"
+        "main": "/data/product_images/boss/boss-od-3_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-od-3_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-od-3_main.webp",
+        "original": "/data/product_images/boss/boss-od-3_thumb.webp"
       },
       "pricing": {
         "regular_price": 450,
@@ -234,12 +234,12 @@
       "main_category": "Effects Pedals",
       "description": "Digital delay with multiple modes",
       "short_description": "DD-8 - Standard tier Delay",
-      "image_url": "/data/product_images/boss/boss-dd-8_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-dd-8_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-dd-8_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-dd-8_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-dd-8_thumb.svg",
-        "original": "/data/product_images/boss/boss-dd-8_thumb.svg"
+        "main": "/data/product_images/boss/boss-dd-8_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-dd-8_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-dd-8_main.webp",
+        "original": "/data/product_images/boss/boss-dd-8_thumb.webp"
       },
       "pricing": {
         "regular_price": 900,
@@ -286,12 +286,12 @@
       "main_category": "Effects Pedals",
       "description": "Versatile reverb pedal",
       "short_description": "RV-6 - Standard tier Reverb",
-      "image_url": "/data/product_images/boss/boss-rv-6_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-rv-6_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-rv-6_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-rv-6_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-rv-6_thumb.svg",
-        "original": "/data/product_images/boss/boss-rv-6_thumb.svg"
+        "main": "/data/product_images/boss/boss-rv-6_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-rv-6_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-rv-6_main.webp",
+        "original": "/data/product_images/boss/boss-rv-6_thumb.webp"
       },
       "pricing": {
         "regular_price": 700,
@@ -338,12 +338,12 @@
       "main_category": "Loop Station",
       "description": "Compact loop station",
       "short_description": "RC-5 - Standard tier Looper",
-      "image_url": "/data/product_images/boss/boss-rc-5_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-rc-5_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-rc-5_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-rc-5_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-rc-5_thumb.svg",
-        "original": "/data/product_images/boss/boss-rc-5_thumb.svg"
+        "main": "/data/product_images/boss/boss-rc-5_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-rc-5_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-rc-5_main.webp",
+        "original": "/data/product_images/boss/boss-rc-5_thumb.webp"
       },
       "pricing": {
         "regular_price": 1100,
@@ -390,12 +390,12 @@
       "main_category": "Loop Station",
       "description": "Tabletop loop station",
       "short_description": "RC-505mkII - Flagship tier Looper",
-      "image_url": "/data/product_images/boss/boss-rc-505mkii_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-rc-505mkii_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-rc-505mkii_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-rc-505mkii_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-rc-505mkii_thumb.svg",
-        "original": "/data/product_images/boss/boss-rc-505mkii_thumb.svg"
+        "main": "/data/product_images/boss/boss-rc-505mkii_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-rc-505mkii_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-rc-505mkii_main.webp",
+        "original": "/data/product_images/boss/boss-rc-505mkii_thumb.webp"
       },
       "pricing": {
         "regular_price": 3200,
@@ -442,12 +442,12 @@
       "main_category": "Multi-Effects",
       "description": "Flagship guitar processor",
       "short_description": "GT-1000 - Flagship tier Multi-FX",
-      "image_url": "/data/product_images/boss/boss-gt-1000_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-gt-1000_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-gt-1000_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-gt-1000_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-gt-1000_thumb.svg",
-        "original": "/data/product_images/boss/boss-gt-1000_thumb.svg"
+        "main": "/data/product_images/boss/boss-gt-1000_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-gt-1000_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-gt-1000_main.webp",
+        "original": "/data/product_images/boss/boss-gt-1000_thumb.webp"
       },
       "pricing": {
         "regular_price": 5500,
@@ -494,12 +494,12 @@
       "main_category": "Multi-Effects",
       "description": "Compact flagship processor",
       "short_description": "GT-1000CORE - Standard tier Multi-FX",
-      "image_url": "/data/product_images/boss/boss-gt-1000core_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-gt-1000core_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-gt-1000core_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-gt-1000core_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-gt-1000core_thumb.svg",
-        "original": "/data/product_images/boss/boss-gt-1000core_thumb.svg"
+        "main": "/data/product_images/boss/boss-gt-1000core_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-gt-1000core_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-gt-1000core_main.webp",
+        "original": "/data/product_images/boss/boss-gt-1000core_thumb.webp"
       },
       "pricing": {
         "regular_price": 3200,
@@ -546,12 +546,12 @@
       "main_category": "Multi-Effects",
       "description": "Guitar effects processor with touchscreen",
       "short_description": "GX-100 - Standard tier Multi-FX",
-      "image_url": "/data/product_images/boss/boss-gx-100_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-gx-100_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-gx-100_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-gx-100_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-gx-100_thumb.svg",
-        "original": "/data/product_images/boss/boss-gx-100_thumb.svg"
+        "main": "/data/product_images/boss/boss-gx-100_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-gx-100_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-gx-100_main.webp",
+        "original": "/data/product_images/boss/boss-gx-100_thumb.webp"
       },
       "pricing": {
         "regular_price": 2800,
@@ -598,12 +598,12 @@
       "main_category": "Multi-Effects",
       "description": "Easy-to-use multi-effects",
       "short_description": "ME-90 - Entry tier Multi-FX",
-      "image_url": "/data/product_images/boss/boss-me-90_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-me-90_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-me-90_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-me-90_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-me-90_thumb.svg",
-        "original": "/data/product_images/boss/boss-me-90_thumb.svg"
+        "main": "/data/product_images/boss/boss-me-90_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-me-90_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-me-90_main.webp",
+        "original": "/data/product_images/boss/boss-me-90_thumb.webp"
       },
       "pricing": {
         "regular_price": 2200,
@@ -650,12 +650,12 @@
       "main_category": "Amplifiers",
       "description": "50W combo amplifier",
       "short_description": "Katana-50 Gen3 - Entry tier Combo Amp",
-      "image_url": "/data/product_images/boss/boss-katana-50-gen3_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-katana-50-gen3_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-katana-50-gen3_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-katana-50-gen3_thumb.svg",
-        "original": "/data/product_images/boss/boss-katana-50-gen3_thumb.svg"
+        "main": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-katana-50-gen3_main.webp",
+        "original": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp"
       },
       "pricing": {
         "regular_price": 1400,
@@ -702,12 +702,12 @@
       "main_category": "Amplifiers",
       "description": "100W combo amplifier",
       "short_description": "Katana-100 Gen3 - Standard tier Combo Amp",
-      "image_url": "/data/product_images/boss/boss-katana-100-gen3_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-katana-100-gen3_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-katana-100-gen3_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-katana-100-gen3_thumb.svg",
-        "original": "/data/product_images/boss/boss-katana-100-gen3_thumb.svg"
+        "main": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-katana-100-gen3_main.webp",
+        "original": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp"
       },
       "pricing": {
         "regular_price": 1900,
@@ -754,12 +754,12 @@
       "main_category": "Amplifiers",
       "description": "Premium Waza amp",
       "short_description": "Katana-Artist MkII - Flagship tier Combo Amp",
-      "image_url": "/data/product_images/boss/boss-katana-artist-mkii_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-katana-artist-mkii_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-katana-artist-mkii_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-katana-artist-mkii_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-katana-artist-mkii_thumb.svg",
-        "original": "/data/product_images/boss/boss-katana-artist-mkii_thumb.svg"
+        "main": "/data/product_images/boss/boss-katana-artist-mkii_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-katana-artist-mkii_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-katana-artist-mkii_main.webp",
+        "original": "/data/product_images/boss/boss-katana-artist-mkii_thumb.webp"
       },
       "pricing": {
         "regular_price": 4200,
@@ -806,12 +806,12 @@
       "main_category": "Vocal Effects",
       "description": "Vocal performer processor",
       "short_description": "VE-20 - Standard tier Vocal Processor",
-      "image_url": "/data/product_images/boss/boss-ve-20_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-ve-20_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-ve-20_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-ve-20_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-ve-20_thumb.svg",
-        "original": "/data/product_images/boss/boss-ve-20_thumb.svg"
+        "main": "/data/product_images/boss/boss-ve-20_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-ve-20_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-ve-20_main.webp",
+        "original": "/data/product_images/boss/boss-ve-20_thumb.webp"
       },
       "pricing": {
         "regular_price": 1400,
@@ -858,12 +858,12 @@
       "main_category": "Vocal Effects",
       "description": "Professional vocal effects",
       "short_description": "VE-500 - Flagship tier Vocal Processor",
-      "image_url": "/data/product_images/boss/boss-ve-500_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-ve-500_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-ve-500_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-ve-500_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-ve-500_thumb.svg",
-        "original": "/data/product_images/boss/boss-ve-500_thumb.svg"
+        "main": "/data/product_images/boss/boss-ve-500_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-ve-500_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-ve-500_main.webp",
+        "original": "/data/product_images/boss/boss-ve-500_thumb.webp"
       },
       "pricing": {
         "regular_price": 2200,
@@ -910,12 +910,12 @@
       "main_category": "Accessories",
       "description": "AC adapter",
       "short_description": "PSA-230S - Standard tier Power Supply",
-      "image_url": "/data/product_images/boss/boss-psa-230s_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-psa-230s_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-psa-230s_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-psa-230s_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-psa-230s_thumb.svg",
-        "original": "/data/product_images/boss/boss-psa-230s_thumb.svg"
+        "main": "/data/product_images/boss/boss-psa-230s_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-psa-230s_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-psa-230s_main.webp",
+        "original": "/data/product_images/boss/boss-psa-230s_thumb.webp"
       },
       "pricing": {
         "regular_price": 150,
@@ -962,12 +962,12 @@
       "main_category": "Accessories",
       "description": "Foot switch",
       "short_description": "FS-5U - Standard tier Footswitch",
-      "image_url": "/data/product_images/boss/boss-fs-5u_thumb.svg",
+      "image_url": "/data/product_images/boss/boss-fs-5u_thumb.webp",
       "images": {
-        "main": "/data/product_images/boss/boss-fs-5u_thumb.svg",
-        "thumbnail": "/data/product_images/boss/boss-fs-5u_thumb.svg",
-        "high_res": "/data/product_images/boss/boss-fs-5u_thumb.svg",
-        "original": "/data/product_images/boss/boss-fs-5u_thumb.svg"
+        "main": "/data/product_images/boss/boss-fs-5u_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-fs-5u_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-fs-5u_main.webp",
+        "original": "/data/product_images/boss/boss-fs-5u_thumb.webp"
       },
       "pricing": {
         "regular_price": 200,
@@ -1009,7 +1009,7 @@
   "generated_at": "2026-01-23T02:41:37.846119",
   "product_count": 17,
   "brand_slug": "boss",
-  "refined_at": "2026-01-23T02:42:11.928414+00:00",
+  "refined_at": "2026-01-23T06:03:13.479848+00:00",
   "hierarchy": {
     "Effects Pedals": {
       "Distortion": [

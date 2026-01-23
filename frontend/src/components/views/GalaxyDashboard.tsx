@@ -45,24 +45,19 @@ export const GalaxyDashboard: React.FC = () => {
     const loadAllProducts = async () => {
       setIsLoading(true);
 
-      // Main brands to load (matches your available catalogs)
-      const brands = [
-        "roland",
-        "nord",
-        "moog",
-        "boss",
-        "akai-professional",
-        "universal-audio",
-        "warm-audio",
-        "mackie",
-        "teenage-engineering",
-        "adam-audio",
-      ];
-
       try {
-        // Load all brand catalogs in parallel
-        const catalogPromises = brands.map((brand) =>
-          catalogLoader.loadBrand(brand).catch(() => null),
+        // 1. Load the Master Index first to see available brands
+        const index = await catalogLoader.loadIndex();
+        const availableBrands = index.brands.map((b) => b.id);
+
+        console.log("📦 Available brands in index:", availableBrands);
+
+        // 2. Load only available brand catalogs
+        const catalogPromises = availableBrands.map((brand) =>
+          catalogLoader.loadBrand(brand).catch((err) => {
+            console.warn(`Failed to load brand ${brand}:`, err);
+            return null;
+          }),
         );
 
         const catalogs = await Promise.all(catalogPromises);
@@ -125,12 +120,16 @@ export const GalaxyDashboard: React.FC = () => {
   // 3. ENHANCE CATEGORIES WITH DYNAMIC SUBCATEGORY THUMBNAILS
   // ============================================================
   const enhancedCategories = useMemo(() => {
-    console.log('🔍 Building enhanced categories with', thumbnailMap.size, 'thumbnails');
-    
+    console.log(
+      "🔍 Building enhanced categories with",
+      thumbnailMap.size,
+      "thumbnails",
+    );
+
     return visibleCategories.map((cat) => {
       // Get dynamic thumbnail for main category
       const mainThumbnail = getThumbnailForCategory(thumbnailMap, cat.id);
-      console.log(`Category ${cat.id}: main=${mainThumbnail || 'none'}`);
+      const hasContent = !!mainThumbnail;
 
       // Enhance subcategories with dynamic thumbnails
       const enhancedSubcategories = cat.subcategories?.map((sub) => {
@@ -139,10 +138,10 @@ export const GalaxyDashboard: React.FC = () => {
           cat.id,
           sub.label,
         );
-        console.log(`  Subcategory ${sub.label}: ${subThumbnail || 'none'}`);
         return {
           ...sub,
           image: subThumbnail || sub.image || DEFAULT_FALLBACK,
+          hasContent: !!subThumbnail,
         };
       });
 
@@ -150,6 +149,7 @@ export const GalaxyDashboard: React.FC = () => {
         ...cat,
         mainThumbnail: mainThumbnail || DEFAULT_FALLBACK,
         subcategories: enhancedSubcategories,
+        hasContent,
       };
     });
   }, [visibleCategories, thumbnailMap]);
@@ -212,7 +212,7 @@ export const GalaxyDashboard: React.FC = () => {
               className="flex-1 grid gap-3 auto-rows-fr"
               style={{
                 gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))`,
-                gridTemplateRows: 'repeat(2, minmax(0, 1fr))',
+                gridTemplateRows: "repeat(2, minmax(0, 1fr))",
               }}
             >
               {enhancedCategories.map((cat, index) => {
@@ -228,6 +228,7 @@ export const GalaxyDashboard: React.FC = () => {
                       title={cat.label}
                       subtitle={`${cat.description || "Dynamic Thumbnails"}`}
                       subcategories={cat.subcategories}
+                      hasContent={cat.hasContent}
                       onClick={() => handleCategoryClick(cat.id)}
                       onSubcategoryClick={(sub) =>
                         handleSubcategoryClick(cat.id, sub)

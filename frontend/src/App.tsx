@@ -28,6 +28,25 @@ function AppContent() {
 
   return (
     <div className="flex h-screen w-screen flex-col bg-[#0a0a0a] text-white font-sans overflow-hidden">
+      {/* Global Header */}
+      <header className="flex-shrink-0 h-12 bg-black border-b border-white/5 flex items-center justify-between px-6 z-50">
+        <div className="flex items-baseline gap-3">
+          <div className="text-2xl font-black italic tracking-tighter text-white">
+            halilit
+          </div>
+          <div className="text-[10px] font-bold tracking-[0.2em] text-zinc-500 uppercase">
+            Support Center
+          </div>
+        </div>
+        <div className="flex items-center gap-4 text-[10px] font-mono text-zinc-600">
+          <div className="flex items-center gap-2">
+            <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            ONLINE
+          </div>
+          <div>v3.7.6 DYNAMIC</div>
+        </div>
+      </header>
+
       {/* MAIN APPLICATION FRAME - Galaxy Dashboard is the navigator */}
       <div className="flex-1 flex min-h-0 relative">
         <ErrorBoundary name="Workbench">

@@ -10,7 +10,7 @@
       {
         "id": "synthesizers",
         "label": "Synthesizers",
-        "icon": "\ud83c\udf9b\ufe0f",
+        "icon": "🎛️",
         "description": "Analog Synthesizers",
         "children": [
           "semi_modular",
@@ -22,28 +22,28 @@
       {
         "id": "effects",
         "label": "Effects",
-        "icon": "\ud83c\udfb8",
+        "icon": "🎸",
         "description": "Moogerfooger, Minifooger",
         "children": []
       },
       {
         "id": "keyboards",
         "label": "Keyboards",
-        "icon": "\u2328\ufe0f",
+        "icon": "⌨️",
         "description": "Controllers",
         "children": []
       },
       {
         "id": "accessories",
         "label": "Accessories",
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "description": "Cables, Cases, Patch Cables",
         "children": []
       },
       {
         "id": "apps",
         "label": "Apps",
-        "icon": "\ud83d\udcf1",
+        "icon": "📱",
         "description": "Animoog, Model D",
         "children": []
       }
@@ -71,12 +71,12 @@
       "main_category": "Synthesizers",
       "description": "Legendary monophonic synthesizer",
       "short_description": "Minimoog Model D - Flagship tier Monophonic",
-      "image_url": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
-        "original": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg"
+        "main": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-minimoog-model-d_main.webp",
+        "original": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp"
       },
       "pricing": {
         "regular_price": 25000,
@@ -123,12 +123,12 @@
       "main_category": "Synthesizers",
       "description": "16-voice polyphonic synthesizer",
       "short_description": "Moog One 16-Voice - Flagship tier Polyphonic",
-      "image_url": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
-        "original": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg"
+        "main": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-moog-one-16-voice_main.webp",
+        "original": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp"
       },
       "pricing": {
         "regular_price": 55000,
@@ -175,12 +175,12 @@
       "main_category": "Synthesizers",
       "description": "8-voice polyphonic synthesizer",
       "short_description": "Moog One 8-Voice - Flagship tier Polyphonic",
-      "image_url": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
-        "original": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg"
+        "main": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-moog-one-8-voice_main.webp",
+        "original": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp"
       },
       "pricing": {
         "regular_price": 42000,
@@ -227,12 +227,12 @@
       "main_category": "Synthesizers",
       "description": "4-note paraphonic semi-modular",
       "short_description": "Matriarch - Flagship tier Semi-Modular",
-      "image_url": "/data/product_images/moog/moog-matriarch_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-matriarch_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-matriarch_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-matriarch_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-matriarch_thumb.svg",
-        "original": "/data/product_images/moog/moog-matriarch_thumb.svg"
+        "main": "/data/product_images/moog/moog-matriarch_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-matriarch_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-matriarch_main.webp",
+        "original": "/data/product_images/moog/moog-matriarch_thumb.webp"
       },
       "pricing": {
         "regular_price": 11000,
@@ -279,12 +279,12 @@
       "main_category": "Synthesizers",
       "description": "Semi-modular analog synthesizer",
       "short_description": "Grandmother - Standard tier Semi-Modular",
-      "image_url": "/data/product_images/moog/moog-grandmother_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-grandmother_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-grandmother_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-grandmother_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-grandmother_thumb.svg",
-        "original": "/data/product_images/moog/moog-grandmother_thumb.svg"
+        "main": "/data/product_images/moog/moog-grandmother_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-grandmother_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-grandmother_main.webp",
+        "original": "/data/product_images/moog/moog-grandmother_thumb.webp"
       },
       "pricing": {
         "regular_price": 5500,
@@ -331,12 +331,12 @@
       "main_category": "Synthesizers",
       "description": "Analog synthesizer",
       "short_description": "Subsequent 37 - Standard tier Monophonic",
-      "image_url": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-subsequent-37_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
-        "original": "/data/product_images/moog/moog-subsequent-37_thumb.svg"
+        "main": "/data/product_images/moog/moog-subsequent-37_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-subsequent-37_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-subsequent-37_main.webp",
+        "original": "/data/product_images/moog/moog-subsequent-37_thumb.webp"
       },
       "pricing": {
         "regular_price": 8500,
@@ -383,12 +383,12 @@
       "main_category": "Synthesizers",
       "description": "Compact analog synthesizer",
       "short_description": "Subsequent 25 - Entry tier Monophonic",
-      "image_url": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-subsequent-25_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
-        "original": "/data/product_images/moog/moog-subsequent-25_thumb.svg"
+        "main": "/data/product_images/moog/moog-subsequent-25_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-subsequent-25_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-subsequent-25_main.webp",
+        "original": "/data/product_images/moog/moog-subsequent-25_thumb.webp"
       },
       "pricing": {
         "regular_price": 5500,
@@ -435,12 +435,12 @@
       "main_category": "Synthesizers",
       "description": "Tabletop semi-modular synth",
       "short_description": "Mother-32 - Standard tier Semi-Modular",
-      "image_url": "/data/product_images/moog/moog-mother-32_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-mother-32_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-mother-32_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-mother-32_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-mother-32_thumb.svg",
-        "original": "/data/product_images/moog/moog-mother-32_thumb.svg"
+        "main": "/data/product_images/moog/moog-mother-32_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-mother-32_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-mother-32_main.webp",
+        "original": "/data/product_images/moog/moog-mother-32_thumb.webp"
       },
       "pricing": {
         "regular_price": 3500,
@@ -487,12 +487,12 @@
       "main_category": "Synthesizers",
       "description": "Drummer From Another Mother",
       "short_description": "DFAM - Standard tier Percussion",
-      "image_url": "/data/product_images/moog/moog-dfam_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-dfam_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-dfam_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-dfam_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-dfam_thumb.svg",
-        "original": "/data/product_images/moog/moog-dfam_thumb.svg"
+        "main": "/data/product_images/moog/moog-dfam_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-dfam_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-dfam_main.webp",
+        "original": "/data/product_images/moog/moog-dfam_thumb.webp"
       },
       "pricing": {
         "regular_price": 3500,
@@ -539,12 +539,12 @@
       "main_category": "Synthesizers",
       "description": "Polyrhythmic synthesizer",
       "short_description": "Subharmonicon - Standard tier Semi-Modular",
-      "image_url": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-subharmonicon_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
-        "original": "/data/product_images/moog/moog-subharmonicon_thumb.svg"
+        "main": "/data/product_images/moog/moog-subharmonicon_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-subharmonicon_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-subharmonicon_main.webp",
+        "original": "/data/product_images/moog/moog-subharmonicon_thumb.webp"
       },
       "pricing": {
         "regular_price": 3500,
@@ -591,12 +591,12 @@
       "main_category": "Synthesizers",
       "description": "Analog synthesizer build kit",
       "short_description": "Mavis - Entry tier Build Kit",
-      "image_url": "/data/product_images/moog/moog-mavis_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-mavis_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-mavis_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-mavis_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-mavis_thumb.svg",
-        "original": "/data/product_images/moog/moog-mavis_thumb.svg"
+        "main": "/data/product_images/moog/moog-mavis_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-mavis_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-mavis_main.webp",
+        "original": "/data/product_images/moog/moog-mavis_thumb.webp"
       },
       "pricing": {
         "regular_price": 1800,
@@ -643,12 +643,12 @@
       "main_category": "Effects",
       "description": "Analog delay pedal",
       "short_description": "Moogerfooger MF-104M - Flagship tier Analog Delay",
-      "image_url": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
-        "original": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg"
+        "main": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-moogerfooger-mf-104m_main.webp",
+        "original": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp"
       },
       "pricing": {
         "regular_price": 3500,
@@ -695,12 +695,12 @@
       "main_category": "Accessories",
       "description": "Protective case",
       "short_description": "Minitaur Case - Standard tier Case",
-      "image_url": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
+      "image_url": "/data/product_images/moog/moog-minitaur-case_thumb.webp",
       "images": {
-        "main": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
-        "thumbnail": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
-        "high_res": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
-        "original": "/data/product_images/moog/moog-minitaur-case_thumb.svg"
+        "main": "/data/product_images/moog/moog-minitaur-case_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-minitaur-case_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-minitaur-case_main.webp",
+        "original": "/data/product_images/moog/moog-minitaur-case_thumb.webp"
       },
       "pricing": {
         "regular_price": 600,
@@ -742,7 +742,7 @@
   "generated_at": "2026-01-23T02:41:37.848138",
   "product_count": 13,
   "brand_slug": "moog",
-  "refined_at": "2026-01-23T02:42:11.925471+00:00",
+  "refined_at": "2026-01-23T06:03:13.476745+00:00",
   "hierarchy": {
     "Synthesizers": {
       "Monophonic": [

@@ -6,7 +6,19 @@
     "logo_url": "/assets/logos/akai-professional_logo.svg",
     "website": "https://www.akaipro.com",
     "description": "Official Akai Professional products distributed by Halilit",
-    "categories": []
+    "categories": [],
+    "brand_colors": {
+      "primary": "#ff0000",
+      "secondary": "#000000",
+      "accent": "#ffffff",
+      "background": "#1a1a1a",
+      "text": "#ffffff"
+    },
+    "taxonomy_stats": {
+      "validated": 0,
+      "normalized": 12,
+      "uncategorized": 0
+    }
   },
   "products": [
     {
@@ -20,8 +32,10 @@
       "short_description": "MPC X SE - Flagship tier Production Center",
       "image_url": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-mpc-x-se_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-mpc-x-se_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp"
       },
       "pricing": {
         "regular_price": 12500,
@@ -53,6 +67,11 @@
         "flagship",
         "mpc",
         "production-center"
+      ],
+      "_taxonomy_warning": "Category 'MPC' not in official taxonomy",
+      "category_hierarchy": [
+        "MPC",
+        "Production Center"
       ]
     },
     {
@@ -66,8 +85,10 @@
       "short_description": "MPC Live II - Standard tier Production Center",
       "image_url": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp"
       },
       "pricing": {
         "regular_price": 7500,
@@ -99,6 +120,11 @@
         "standard",
         "mpc",
         "production-center"
+      ],
+      "_taxonomy_warning": "Category 'MPC' not in official taxonomy",
+      "category_hierarchy": [
+        "MPC",
+        "Production Center"
       ]
     },
     {
@@ -112,8 +138,10 @@
       "short_description": "MPC One+ - Standard tier Production Center",
       "image_url": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-mpc-one+_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-mpc-one+_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp"
       },
       "pricing": {
         "regular_price": 4500,
@@ -145,6 +173,11 @@
         "standard",
         "mpc",
         "production-center"
+      ],
+      "_taxonomy_warning": "Category 'MPC' not in official taxonomy",
+      "category_hierarchy": [
+        "MPC",
+        "Production Center"
       ]
     },
     {
@@ -158,8 +191,10 @@
       "short_description": "MPC Key 61 - Flagship tier Production Keyboard",
       "image_url": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-mpc-key-61_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-mpc-key-61_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp"
       },
       "pricing": {
         "regular_price": 8500,
@@ -191,6 +226,11 @@
         "flagship",
         "mpc",
         "production-keyboard"
+      ],
+      "_taxonomy_warning": "Category 'MPC' not in official taxonomy",
+      "category_hierarchy": [
+        "MPC",
+        "Production Keyboard"
       ]
     },
     {
@@ -204,8 +244,10 @@
       "short_description": "APC64 - Flagship tier Ableton Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-apc64_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-apc64_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp"
       },
       "pricing": {
         "regular_price": 3200,
@@ -237,6 +279,11 @@
         "flagship",
         "controllers",
         "ableton-controller"
+      ],
+      "_taxonomy_warning": "Category 'Controllers' not in official taxonomy",
+      "category_hierarchy": [
+        "Controllers",
+        "Ableton Controller"
       ]
     },
     {
@@ -250,8 +297,10 @@
       "short_description": "APC40 Mk2 - Standard tier Ableton Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-apc40-mk2_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-apc40-mk2_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp"
       },
       "pricing": {
         "regular_price": 2200,
@@ -283,6 +332,11 @@
         "standard",
         "controllers",
         "ableton-controller"
+      ],
+      "_taxonomy_warning": "Category 'Controllers' not in official taxonomy",
+      "category_hierarchy": [
+        "Controllers",
+        "Ableton Controller"
       ]
     },
     {
@@ -296,8 +350,10 @@
       "short_description": "APC Mini Mk2 - Entry tier Ableton Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp"
       },
       "pricing": {
         "regular_price": 550,
@@ -329,6 +385,11 @@
         "entry",
         "controllers",
         "ableton-controller"
+      ],
+      "_taxonomy_warning": "Category 'Controllers' not in official taxonomy",
+      "category_hierarchy": [
+        "Controllers",
+        "Ableton Controller"
       ]
     },
     {
@@ -342,8 +403,10 @@
       "short_description": "Fire - Entry tier FL Studio Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-fire_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-fire_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp"
       },
       "pricing": {
         "regular_price": 1100,
@@ -375,6 +438,11 @@
         "entry",
         "controllers",
         "fl-studio-controller"
+      ],
+      "_taxonomy_warning": "Category 'Controllers' not in official taxonomy",
+      "category_hierarchy": [
+        "Controllers",
+        "FL Studio Controller"
       ]
     },
     {
@@ -388,8 +456,10 @@
       "short_description": "MPK Mini Mk3 - Entry tier MIDI Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp"
       },
       "pricing": {
         "regular_price": 550,
@@ -421,6 +491,11 @@
         "entry",
         "keyboards",
         "midi-controller"
+      ],
+      "_taxonomy_warning": "Category 'Keyboards' not in official taxonomy",
+      "category_hierarchy": [
+        "Keyboards",
+        "MIDI Controller"
       ]
     },
     {
@@ -434,8 +509,10 @@
       "short_description": "MPK249 - Standard tier MIDI Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-mpk249_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-mpk249_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp"
       },
       "pricing": {
         "regular_price": 2200,
@@ -467,6 +544,11 @@
         "standard",
         "keyboards",
         "midi-controller"
+      ],
+      "_taxonomy_warning": "Category 'Keyboards' not in official taxonomy",
+      "category_hierarchy": [
+        "Keyboards",
+        "MIDI Controller"
       ]
     },
     {
@@ -480,8 +562,10 @@
       "short_description": "MPK261 - Standard tier MIDI Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-mpk261_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-mpk261_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp"
       },
       "pricing": {
         "regular_price": 2800,
@@ -513,6 +597,11 @@
         "standard",
         "keyboards",
         "midi-controller"
+      ],
+      "_taxonomy_warning": "Category 'Keyboards' not in official taxonomy",
+      "category_hierarchy": [
+        "Keyboards",
+        "MIDI Controller"
       ]
     },
     {
@@ -526,8 +615,10 @@
       "short_description": "Advance 61 - Flagship tier MIDI Controller",
       "image_url": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp",
       "images": {
+        "main": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp",
         "thumbnail": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp",
-        "main": "/data/product_images/akai-professional/akai-professional-advance-61_main.webp"
+        "high_res": "/data/product_images/akai-professional/akai-professional-advance-61_main.webp",
+        "original": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp"
       },
       "pricing": {
         "regular_price": 3500,
@@ -559,9 +650,190 @@
         "flagship",
         "keyboards",
         "midi-controller"
+      ],
+      "_taxonomy_warning": "Category 'Keyboards' not in official taxonomy",
+      "category_hierarchy": [
+        "Keyboards",
+        "MIDI Controller"
       ]
     }
   ],
   "generated_at": "2026-01-23T02:41:37.851942",
-  "product_count": 12
+  "product_count": 12,
+  "brand_slug": "akai-professional",
+  "refined_at": "2026-01-23T06:03:13.497076+00:00",
+  "hierarchy": {
+    "MPC": {
+      "Production Center": [
+        {
+          "id": "akai-professional-mpc-x-se",
+          "name": "MPC X SE",
+          "description": "MPC X SE - Flagship tier Production Center",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-mpc-x-se_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-8562"
+        },
+        {
+          "id": "akai-professional-mpc-live-ii",
+          "name": "MPC Live II",
+          "description": "MPC Live II - Standard tier Production Center",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-9408"
+        },
+        {
+          "id": "akai-professional-mpc-one+",
+          "name": "MPC One+",
+          "description": "MPC One+ - Standard tier Production Center",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-mpc-one+_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-1717"
+        }
+      ],
+      "Production Keyboard": [
+        {
+          "id": "akai-professional-mpc-key-61",
+          "name": "MPC Key 61",
+          "description": "MPC Key 61 - Flagship tier Production Keyboard",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-mpc-key-61_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-7430"
+        }
+      ]
+    },
+    "Controllers": {
+      "Ableton Controller": [
+        {
+          "id": "akai-professional-apc64",
+          "name": "APC64",
+          "description": "APC64 - Flagship tier Ableton Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-apc64_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-5617"
+        },
+        {
+          "id": "akai-professional-apc40-mk2",
+          "name": "APC40 Mk2",
+          "description": "APC40 Mk2 - Standard tier Ableton Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-apc40-mk2_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-5319"
+        },
+        {
+          "id": "akai-professional-apc-mini-mk2",
+          "name": "APC Mini Mk2",
+          "description": "APC Mini Mk2 - Entry tier Ableton Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-4668"
+        }
+      ],
+      "FL Studio Controller": [
+        {
+          "id": "akai-professional-fire",
+          "name": "Fire",
+          "description": "Fire - Entry tier FL Studio Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-fire_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-4645"
+        }
+      ]
+    },
+    "Keyboards": {
+      "MIDI Controller": [
+        {
+          "id": "akai-professional-mpk-mini-mk3",
+          "name": "MPK Mini Mk3",
+          "description": "MPK Mini Mk3 - Entry tier MIDI Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-5754"
+        },
+        {
+          "id": "akai-professional-mpk249",
+          "name": "MPK249",
+          "description": "MPK249 - Standard tier MIDI Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-mpk249_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-9790"
+        },
+        {
+          "id": "akai-professional-mpk261",
+          "name": "MPK261",
+          "description": "MPK261 - Standard tier MIDI Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-mpk261_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-3498"
+        },
+        {
+          "id": "akai-professional-advance-61",
+          "name": "Advance 61",
+          "description": "Advance 61 - Flagship tier MIDI Controller",
+          "images": {
+            "main": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp",
+            "thumbnail": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp",
+            "high_res": "/data/product_images/akai-professional/akai-professional-advance-61_main.webp",
+            "original": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-AKA-2739"
+        }
+      ]
+    }
+  }
 }

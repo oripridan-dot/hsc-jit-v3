@@ -2,15 +2,12 @@
  * Dynamic Thumbnail Selection
  *
  * Automatically selects category thumbnails based on the most expensive
- * product in each category. This ensures:
- * 1. Always showcasing premium products
- * 2. Fully dynamic - updates when product data changes
- * 3. No manual curation needed
- * 4. Can be leveraged for marketing/featured products later
+ * product in each category that matches specific keywords.
  */
 
-import type { Product } from "../types";
+import type { Product, ProductImagesObject } from "../types";
 import { consolidateCategory } from "./categoryConsolidator";
+import { UNIVERSAL_CATEGORIES } from "./universalCategories";
 
 export interface CategoryThumbnail {
   categoryId: string;
@@ -21,109 +18,199 @@ export interface CategoryThumbnail {
   brand: string;
 }
 
-/**
- * Get the most expensive product's image for a category
- */
-export function getMostExpensiveProductImage(
-  products: Product[],
-  universalCategoryId?: string,
-  subcategory?: string,
-): CategoryThumbnail | null {
-  if (!products || products.length === 0) return null;
+// Map of "UI Label" -> Keywords to search for
+const SUBCATEGORY_MATCHERS: Record<string, string[]> = {
+  // --- Keys & Pianos ---
+  Synthesizers: [
+    "Synthesizer",
+    "Synth",
+    "System-8",
+    "Jupiter",
+    "Juno",
+    "Fantom",
+    "Moog",
+    "Matriarch",
+    "Subsequent",
+    "Nord Lead",
+    "Nord Wave",
+    "Op-1",
+    "Op-z",
+    "GAIA",
+  ],
+  "Stage Pianos": [
+    "Stage Piano",
+    "RD-2000",
+    "RD-88",
+    "Nord Stage",
+    "Nord Piano",
+    "Grand",
+    "Piano",
+    "CP88",
+  ],
+  "MIDI Controllers": [
+    "Controller",
+    "MIDI",
+    "A-88",
+    "KeyLab",
+    "MPK",
+    "Launchkey",
+    "Keystep",
+    "Beatstep",
+  ],
+  Arrangers: ["Arranger", "Pa5X", "Pa4X", "BK-", "E-A7", "Genos"],
+  Organs: ["Organ", "C2D", "Electro", "Combo", "VK-"],
+  Workstations: [
+    "Workstation",
+    "Fantom",
+    "Nautilus",
+    "Montage",
+    "MODX",
+    "FA-0",
+    "FA-08",
+  ],
 
-  // Filter by category and subcategory if specified
-  let filtered = products;
+  // --- Drums & Percussion ---
+  "Electronic Drum Kits": ["V-Drums", "TD-", "VAD", "Electronic Drum", "DTX"],
+  "Acoustic Drums": [
+    "Acoustic Drum",
+    "Shell Pack",
+    "Snare",
+    "Kick",
+    "Tom",
+    "Starclassic",
+  ],
+  Cymbals: ["Cymbal", "Crash", "Ride", "Hi-Hat", "Byzance"],
+  Percussion: ["Percussion", "Cajon", "Conga", "Bongo", "SPD", "Handsonic"],
+  "Drum Machines": [
+    "Drum Machine",
+    "TR-8",
+    "TR-9",
+    "TR-6S",
+    "MPC",
+    "Maschine",
+    "DrumBrute",
+  ],
+  "Drum Pads": ["Drum Pad", "SPD-SX", "Octapad", "Sample Pad", "MultiPad"],
 
-  if (universalCategoryId) {
-    filtered = products.filter((p) => {
-      const consolidated = consolidateCategory(p.brand, p.category);
-      return consolidated === universalCategoryId;
-    });
-  }
+  // --- Guitars & Amps ---
+  "Electric Guitars": [
+    "Electric Guitar",
+    "Stratocaster",
+    "Telecaster",
+    "Les Paul",
+    "Ibanez",
+    "Fender",
+  ],
+  "Bass Guitars": ["Bass Guitar", "Precision Bass", "Jazz Bass", "Ibanez Bass"],
+  Amplifiers: [
+    "Amplifier",
+    "Amp",
+    "Katana",
+    "Blues Cube",
+    "JC-120",
+    "Nextone",
+    "Marshall",
+  ],
+  "Effects Pedals": [
+    "Pedal",
+    "Stompbox",
+    "Overdrive",
+    "Distortion",
+    "Delay",
+    "Reverb",
+    "Chorus",
+    "Boss",
+  ],
+  "Multi-Effects": [
+    "Multi-Effects",
+    "GT-1000",
+    "GX-100",
+    "ME-90",
+    "Helix",
+    "Kemper",
+    "Headrush",
+  ],
+  Accessories: ["Accessory", "Case", "Cable", "Stand", "Tuner"],
 
-  if (subcategory) {
-    filtered = filtered.filter((p) => {
-      // Check both subcategory and category fields
-      return (
-        p.subcategory?.toLowerCase() === subcategory.toLowerCase() ||
-        p.category?.toLowerCase() === subcategory.toLowerCase()
-      );
-    });
-  }
+  // --- Studio & Recording ---
+  "Audio Interfaces": [
+    "Interface",
+    "Apollo",
+    "Volt",
+    "Rubix",
+    "Studio-Capture",
+    "Mbox",
+    "Scarlett",
+  ],
+  "Studio Monitors": [
+    "Monitor",
+    "Speaker",
+    "A7V",
+    "A4V",
+    "HR",
+    "MR",
+    "CR",
+    "HS8",
+  ],
+  Microphones: [
+    "Microphone",
+    "Mic",
+    "Condenser",
+    "Dynamic",
+    "Ribbon",
+    "WA-",
+    "SM7B",
+  ],
+  "Outboard Gear": [
+    "Compressor",
+    "EQ",
+    "Preamp",
+    "Channel Strip",
+    "WA-2A",
+    "WA-76",
+    "1176",
+  ],
+  Preamps: ["Preamp", "Microphone Preamp", "WA-12", "WA-412", "1073"],
+  Software: ["Software", "Plugin", "DAW"],
 
-  if (filtered.length === 0) return null;
+  // --- Live Sound ---
+  "PA Speakers": [
+    "PA Speaker",
+    "Loudspeaker",
+    "Thump",
+    "SRM",
+    "Eon",
+    "Mackie",
+    "K12",
+  ],
+  Mixers: ["Mixer", "Console", "Onyx", "ProFX", "M32", "X32", "Wing"],
+  "Powered Mixers": ["Powered Mixer", "PPM"],
+  "Wireless Systems": ["Wireless", "Mic System", "IEM", "EW-D"],
+  "In-Ear Monitoring": ["In-Ear", "IEM", "MP-", "SE215"],
+  "Stage Boxes": ["Stage Box", "Digital Snake", "S16", "DL16"],
 
-  // Find the most expensive product (or first one with image if no prices)
-  let mostExpensive = filtered[0];
-  let hasAnyPrices = false;
-  
-  for (const product of filtered) {
-    const price =
-      product.halilit_price ||
-      product.pricing?.regular_price ||
-      product.pricing?.sale_price ||
-      0;
-    
-    if (price > 0) hasAnyPrices = true;
-    
-    const maxPrice =
-      mostExpensive.halilit_price ||
-      mostExpensive.pricing?.regular_price ||
-      mostExpensive.pricing?.sale_price ||
-      0;
-
-    if (price > maxPrice) {
-      mostExpensive = product;
-    }
-  }
-  
-  // If no prices found, use first product with a valid image
-  if (!hasAnyPrices) {
-    const productWithImage = filtered.find((p) => {
-      return p.image_url || p.image || p.images;
-    });
-    if (productWithImage) {
-      mostExpensive = productWithImage;
-    }
-  }
-
-  // Extract image URL (handle both object and array formats)
-  let imageUrl = "";
-
-  if (
-    typeof mostExpensive.images === "object" &&
-    mostExpensive.images !== null
-  ) {
-    if (Array.isArray(mostExpensive.images)) {
-      // Array format: ProductImage[]
-      const thumbnailImage = mostExpensive.images.find(
-        (img) => img.type === "thumbnail" || img.type === "main",
-      );
-      imageUrl = thumbnailImage?.url || mostExpensive.images[0]?.url || "";
-    } else {
-      // Object format: ProductImagesObject
-      imageUrl =
-        mostExpensive.images.thumbnail || mostExpensive.images.main || "";
-    }
-  }
-
-  // Fallback to other fields
-  if (!imageUrl) {
-    imageUrl = mostExpensive.image_url || mostExpensive.image || "";
-  }
-
-  if (!imageUrl) return null;
-
-  return {
-    categoryId: universalCategoryId || "",
-    subcategory,
-    imageUrl,
-    productName: mostExpensive.name,
-    price:
-      mostExpensive.halilit_price || mostExpensive.pricing?.regular_price || 0,
-    brand: mostExpensive.brand,
-  };
-}
+  // --- DJ & Production ---
+  "DJ Controllers": [
+    "DJ Controller",
+    "DJ-808",
+    "DJ-505",
+    "Traktor",
+    "Serato",
+    "DDJ",
+  ],
+  Grooveboxes: [
+    "Groovebox",
+    "MC-707",
+    "MC-101",
+    "Circuit",
+    "OP-1",
+    "EP-133",
+    "Play",
+  ],
+  Samplers: ["Sampler", "SP-404", "MPC", "Digitakt", "Octatrack"],
+  "DJ Headphones": ["DJ Headphone", "V-Moda", "Crossfade", "Aira", "HD-25"],
+  Production: ["Production", "OP-1", "Field", "Pocket Operator"],
+};
 
 /**
  * Build a complete thumbnail map for all categories and subcategories
@@ -133,59 +220,141 @@ export function buildDynamicThumbnailMap(
 ): Map<string, CategoryThumbnail> {
   const thumbnailMap = new Map<string, CategoryThumbnail>();
 
-  // Universal categories to process
-  const universalCategories = [
-    "keys",
-    "drums",
-    "guitars",
-    "studio",
-    "live",
-    "dj",
-    "software",
-    "accessories",
-  ];
+  // 1. Group products by consolidated category for faster access
+  const productsByCategory = new Map<string, Product[]>();
 
-  // Build top-level category thumbnails
-  universalCategories.forEach((categoryId) => {
-    const thumbnail = getMostExpensiveProductImage(products, categoryId);
-    if (thumbnail) {
-      thumbnailMap.set(categoryId, thumbnail);
+  for (const p of products) {
+    if (!p.brand) continue;
+    const catId = consolidateCategory(p.brand, p.category);
+    if (!productsByCategory.has(catId)) {
+      productsByCategory.set(catId, []);
     }
-  });
+    productsByCategory.get(catId)?.push(p);
+  }
 
-  // Build subcategory thumbnails
-  // Extract unique subcategories from products
-  const subcategoriesByCategory = new Map<string, Set<string>>();
+  // 2. Iterate Universal Categories (Top-Down)
+  for (const catDetails of UNIVERSAL_CATEGORIES) {
+    const catId = catDetails.id;
+    const catProducts = productsByCategory.get(catId) || [];
 
-  products.forEach((product) => {
-    const universalCat = consolidateCategory(product.brand, product.category);
-    if (!universalCat) return;
-
-    const subcategory = product.subcategory || product.category;
-    if (!subcategory) return;
-
-    if (!subcategoriesByCategory.has(universalCat)) {
-      subcategoriesByCategory.set(universalCat, new Set());
+    // A. Find Hero for the main Category (Any premium product in category)
+    const mainHero = findPremiumProduct(catProducts);
+    if (mainHero) {
+      thumbnailMap.set(catId, mainHero);
     }
-    subcategoriesByCategory.get(universalCat)!.add(subcategory);
-  });
 
-  // Generate thumbnails for each subcategory
-  subcategoriesByCategory.forEach((subcategories, categoryId) => {
-    subcategories.forEach((subcategory) => {
-      const thumbnail = getMostExpensiveProductImage(
-        products,
-        categoryId,
-        subcategory,
-      );
-      if (thumbnail) {
-        const key = `${categoryId}:${subcategory}`;
-        thumbnailMap.set(key, thumbnail);
+    // B. Find Hero for each Subcategory
+    for (const sub of catDetails.subcategories) {
+      const matchers = SUBCATEGORY_MATCHERS[sub.label];
+
+      // Filter products that match THIS subcategory using keywords
+      const subProducts = catProducts.filter((p) => {
+        // Strict keyword matching if defined
+        if (matchers) {
+          const combinedText =
+            `${p.name} ${p.subcategory || ""} ${p.category || ""}`.toLowerCase();
+          return matchers.some((keyword) =>
+            combinedText.includes(keyword.toLowerCase()),
+          );
+        }
+        // Fallback: simple inclusion if no matchers defined
+        return (
+          p.subcategory?.includes(sub.label) || p.category?.includes(sub.label)
+        );
+      });
+
+      const subHero = findPremiumProduct(subProducts);
+
+      // Store with composite key: "categoryId:Sublabel"
+      if (subHero) {
+        thumbnailMap.set(`${catId}:${sub.label}`, {
+          ...subHero,
+          subcategory: sub.label,
+        });
       }
-    });
-  });
+    }
+  }
 
   return thumbnailMap;
+}
+
+/**
+ * Helper to find the most expensive product with an image
+ */
+function findPremiumProduct(products: Product[]): CategoryThumbnail | null {
+  if (!products || products.length === 0) return null;
+
+  let bestProduct: Product | null = null;
+  let maxPrice = -1;
+
+  for (const p of products) {
+    if (!hasImage(p)) continue;
+
+    const price = getPrice(p);
+
+    // Logic: Higher price is better.
+    if (price > maxPrice) {
+      maxPrice = price;
+      bestProduct = p;
+    } else if (maxPrice === -1) {
+      // Initialize with first valid product even if price is 0
+      maxPrice = price;
+      bestProduct = p;
+    }
+  }
+
+  // Last resort: just pick matching one
+  if (!bestProduct) {
+    bestProduct = products.find(hasImage) || null;
+  }
+
+  if (!bestProduct) return null;
+
+  return productToThumbnail(bestProduct);
+}
+
+function getPrice(p: Product): number {
+  return (
+    p.halilit_price || p.pricing?.regular_price || p.pricing?.sale_price || 0
+  );
+}
+
+function hasImage(p: Product): boolean {
+  if (typeof p.images === "string") return !!p.images;
+  if (Array.isArray(p.images) && p.images.length > 0) return true;
+  if (p.image_url) return true;
+  // Handle object format { 'main': ... }
+  if (p.images && typeof p.images === "object" && !Array.isArray(p.images)) {
+    const imgs = p.images as ProductImagesObject;
+    return !!(imgs.main || imgs.thumbnail);
+  }
+  return false;
+}
+
+function productToThumbnail(p: Product): CategoryThumbnail {
+  let imageUrl = "";
+
+  if (Array.isArray(p.images) && p.images.length > 0) {
+    const bestImg = p.images.find(
+      (i) => i.type === "thumbnail" || i.type === "main",
+    );
+    imageUrl = bestImg ? bestImg.url : p.images[0].url;
+  } else if (typeof p.images === "string") {
+    imageUrl = p.images;
+  } else if (p.image_url) {
+    imageUrl = p.image_url;
+  } else if (p.images && typeof p.images === "object") {
+    const imgs = p.images as ProductImagesObject;
+    imageUrl = imgs.thumbnail || imgs.main || "";
+  }
+
+  return {
+    categoryId: consolidateCategory(p.brand, p.category),
+    imageUrl,
+    productName: p.name,
+    price: getPrice(p),
+    brand: p.brand,
+  };
 }
 
 /**
@@ -200,32 +369,22 @@ export function getThumbnailForCategory(
   return thumbnailMap.get(key)?.imageUrl || null;
 }
 
-/**
- * Get all products sorted by price (for debugging/admin)
- */
+// Deprecated functions kept for compatibility
+export function getMostExpensiveProductImage(
+  _products: Product[],
+  _universalCategoryId?: string,
+  _subcategory?: string,
+): CategoryThumbnail | null {
+  return null;
+}
+
 export function getTopProductsByCategory(
   products: Product[],
   categoryId: string,
   limit = 10,
 ): Product[] {
-  const filtered = products.filter((p) => {
-    const consolidated = consolidateCategory(p.brand, p.category);
-    return consolidated === categoryId;
-  });
-
-  return filtered
-    .sort((a, b) => {
-      const priceA =
-        a.halilit_price ||
-        a.pricing?.regular_price ||
-        a.pricing?.sale_price ||
-        0;
-      const priceB =
-        b.halilit_price ||
-        b.pricing?.regular_price ||
-        b.pricing?.sale_price ||
-        0;
-      return priceB - priceA; // Descending
-    })
+  return products
+    .filter((p) => consolidateCategory(p.brand, p.category) === categoryId)
+    .sort((a, b) => getPrice(b) - getPrice(a))
     .slice(0, limit);
 }
