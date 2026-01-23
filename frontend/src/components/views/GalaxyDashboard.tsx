@@ -17,14 +17,16 @@
  * 4. Can be leveraged for marketing/featured products later
  */
 import { motion } from "framer-motion";
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { catalogLoader } from "../../lib/catalogLoader";
+import {
+  buildDynamicThumbnailMap,
+  getThumbnailForCategory,
+} from "../../lib/dynamicThumbnails";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
-import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
-import { CandyCard } from "../ui/CandyCard";
-import { buildDynamicThumbnailMap, getThumbnailForCategory } from "../../lib/dynamicThumbnails";
 import type { Product } from "../../types";
+import { CandyCard } from "../ui/CandyCard";
 
 // Placeholder for when no images are available
 const DEFAULT_FALLBACK = "/assets/react.svg";
@@ -42,7 +44,7 @@ export const GalaxyDashboard: React.FC = () => {
   useEffect(() => {
     const loadAllProducts = async () => {
       setIsLoading(true);
-      
+
       // Main brands to load (matches your available catalogs)
       const brands = [
         "roland",
@@ -74,7 +76,9 @@ export const GalaxyDashboard: React.FC = () => {
         });
 
         setAllProducts(allProds);
-        console.log(`✅ Loaded ${allProds.length} products for dynamic thumbnails`);
+        console.log(
+          `✅ Loaded ${allProds.length} products for dynamic thumbnails`,
+        );
       } catch (err) {
         console.warn("Failed to load products:", err);
       } finally {
@@ -121,17 +125,21 @@ export const GalaxyDashboard: React.FC = () => {
   // 3. ENHANCE CATEGORIES WITH DYNAMIC SUBCATEGORY THUMBNAILS
   // ============================================================
   const enhancedCategories = useMemo(() => {
+    console.log('🔍 Building enhanced categories with', thumbnailMap.size, 'thumbnails');
+    
     return visibleCategories.map((cat) => {
       // Get dynamic thumbnail for main category
       const mainThumbnail = getThumbnailForCategory(thumbnailMap, cat.id);
+      console.log(`Category ${cat.id}: main=${mainThumbnail || 'none'}`);
 
       // Enhance subcategories with dynamic thumbnails
       const enhancedSubcategories = cat.subcategories?.map((sub) => {
         const subThumbnail = getThumbnailForCategory(
           thumbnailMap,
           cat.id,
-          sub.label
+          sub.label,
         );
+        console.log(`  Subcategory ${sub.label}: ${subThumbnail || 'none'}`);
         return {
           ...sub,
           image: subThumbnail || sub.image || DEFAULT_FALLBACK,
@@ -188,8 +196,8 @@ export const GalaxyDashboard: React.FC = () => {
       </header>
 
       {/* Compact Grid - All Categories Visible */}
-      <main className="flex-1 overflow-y-auto scrollbar-custom p-6">
-        <div className="max-w-[1600px] mx-auto">
+      <main className="flex-1 overflow-hidden p-4">
+        <div className="h-full w-full max-w-[2000px] mx-auto flex flex-col">
           {isLoading ? (
             <div className="flex items-center justify-center h-64">
               <div className="text-zinc-500 font-mono text-sm">
@@ -201,12 +209,11 @@ export const GalaxyDashboard: React.FC = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className={cn(
-                "grid gap-4",
-                gridColumns === 1 && "grid-cols-1",
-                gridColumns === 2 && "grid-cols-2",
-                gridColumns === 3 && "grid-cols-3",
-              )}
+              className="flex-1 grid gap-3 auto-rows-fr"
+              style={{
+                gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))`,
+                gridTemplateRows: 'repeat(2, minmax(0, 1fr))',
+              }}
             >
               {enhancedCategories.map((cat, index) => {
                 return (
@@ -238,7 +245,7 @@ export const GalaxyDashboard: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.6 }}
-            className="mt-8 text-center"
+            className="mt-3 text-center flex-shrink-0"
           >
             <div className="inline-flex items-center gap-3 px-4 py-2 bg-zinc-900/50 rounded-lg border border-zinc-800 text-xs">
               <button className="font-mono text-zinc-500 hover:text-cyan-400 transition-colors">

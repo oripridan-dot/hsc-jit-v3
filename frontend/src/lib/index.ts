@@ -10,26 +10,25 @@ export type { SearchOptions } from "./instantSearch";
 
 // Taxonomy Registry
 export {
-  loadTaxonomyRegistry,
-  getBrandTaxonomySync,
-  getBrandRootCategories,
-  getBrandCategories,
-  getCategoryLabels,
-  validateCategory,
   getAvailableBrands,
+  getBrandCategories,
+  getBrandRootCategories,
+  getBrandTaxonomySync,
+  getCategoryLabels,
+  loadTaxonomyRegistry,
+  validateCategory,
 } from "./taxonomyLoader";
 export type {
-  TaxonomyRegistry,
   BrandTaxonomy,
   TaxonomyCategory,
+  TaxonomyRegistry,
 } from "./taxonomyLoader";
 
 // Dynamic Thumbnails (Most Expensive Product Selection)
 export {
   buildDynamicThumbnailMap,
-  getThumbnailForCategory,
   getMostExpensiveProductImage,
+  getThumbnailForCategory,
   getTopProductsByCategory,
 } from "./dynamicThumbnails";
 export type { CategoryThumbnail } from "./dynamicThumbnails";
-

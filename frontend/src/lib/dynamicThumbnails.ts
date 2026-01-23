@@ -1,6 +1,6 @@
 /**
  * Dynamic Thumbnail Selection
- * 
+ *
  * Automatically selects category thumbnails based on the most expensive
  * product in each category. This ensures:
  * 1. Always showcasing premium products
@@ -27,7 +27,7 @@ export interface CategoryThumbnail {
 export function getMostExpensiveProductImage(
   products: Product[],
   universalCategoryId?: string,
-  subcategory?: string
+  subcategory?: string,
 ): CategoryThumbnail | null {
   if (!products || products.length === 0) return null;
 
@@ -53,39 +53,60 @@ export function getMostExpensiveProductImage(
 
   if (filtered.length === 0) return null;
 
-  // Find the most expensive product
-  const mostExpensive = filtered.reduce((max, product) => {
+  // Find the most expensive product (or first one with image if no prices)
+  let mostExpensive = filtered[0];
+  let hasAnyPrices = false;
+  
+  for (const product of filtered) {
     const price =
       product.halilit_price ||
       product.pricing?.regular_price ||
       product.pricing?.sale_price ||
       0;
-
+    
+    if (price > 0) hasAnyPrices = true;
+    
     const maxPrice =
-      max.halilit_price ||
-      max.pricing?.regular_price ||
-      max.pricing?.sale_price ||
+      mostExpensive.halilit_price ||
+      mostExpensive.pricing?.regular_price ||
+      mostExpensive.pricing?.sale_price ||
       0;
 
-    return price > maxPrice ? product : max;
-  });
+    if (price > maxPrice) {
+      mostExpensive = product;
+    }
+  }
+  
+  // If no prices found, use first product with a valid image
+  if (!hasAnyPrices) {
+    const productWithImage = filtered.find((p) => {
+      return p.image_url || p.image || p.images;
+    });
+    if (productWithImage) {
+      mostExpensive = productWithImage;
+    }
+  }
 
   // Extract image URL (handle both object and array formats)
   let imageUrl = "";
-  
-  if (typeof mostExpensive.images === "object" && mostExpensive.images !== null) {
+
+  if (
+    typeof mostExpensive.images === "object" &&
+    mostExpensive.images !== null
+  ) {
     if (Array.isArray(mostExpensive.images)) {
       // Array format: ProductImage[]
       const thumbnailImage = mostExpensive.images.find(
-        (img) => img.type === "thumbnail" || img.type === "main"
+        (img) => img.type === "thumbnail" || img.type === "main",
       );
       imageUrl = thumbnailImage?.url || mostExpensive.images[0]?.url || "";
     } else {
       // Object format: ProductImagesObject
-      imageUrl = mostExpensive.images.thumbnail || mostExpensive.images.main || "";
+      imageUrl =
+        mostExpensive.images.thumbnail || mostExpensive.images.main || "";
     }
   }
-  
+
   // Fallback to other fields
   if (!imageUrl) {
     imageUrl = mostExpensive.image_url || mostExpensive.image || "";
@@ -99,9 +120,7 @@ export function getMostExpensiveProductImage(
     imageUrl,
     productName: mostExpensive.name,
     price:
-      mostExpensive.halilit_price ||
-      mostExpensive.pricing?.regular_price ||
-      0,
+      mostExpensive.halilit_price || mostExpensive.pricing?.regular_price || 0,
     brand: mostExpensive.brand,
   };
 }
@@ -110,7 +129,7 @@ export function getMostExpensiveProductImage(
  * Build a complete thumbnail map for all categories and subcategories
  */
 export function buildDynamicThumbnailMap(
-  products: Product[]
+  products: Product[],
 ): Map<string, CategoryThumbnail> {
   const thumbnailMap = new Map<string, CategoryThumbnail>();
 
@@ -157,7 +176,7 @@ export function buildDynamicThumbnailMap(
       const thumbnail = getMostExpensiveProductImage(
         products,
         categoryId,
-        subcategory
+        subcategory,
       );
       if (thumbnail) {
         const key = `${categoryId}:${subcategory}`;
@@ -175,7 +194,7 @@ export function buildDynamicThumbnailMap(
 export function getThumbnailForCategory(
   thumbnailMap: Map<string, CategoryThumbnail>,
   categoryId: string,
-  subcategory?: string
+  subcategory?: string,
 ): string | null {
   const key = subcategory ? `${categoryId}:${subcategory}` : categoryId;
   return thumbnailMap.get(key)?.imageUrl || null;
@@ -187,7 +206,7 @@ export function getThumbnailForCategory(
 export function getTopProductsByCategory(
   products: Product[],
   categoryId: string,
-  limit = 10
+  limit = 10,
 ): Product[] {
   const filtered = products.filter((p) => {
     const consolidated = consolidateCategory(p.brand, p.category);
@@ -197,9 +216,15 @@ export function getTopProductsByCategory(
   return filtered
     .sort((a, b) => {
       const priceA =
-        a.halilit_price || a.pricing?.regular_price || a.pricing?.sale_price || 0;
+        a.halilit_price ||
+        a.pricing?.regular_price ||
+        a.pricing?.sale_price ||
+        0;
       const priceB =
-        b.halilit_price || b.pricing?.regular_price || b.pricing?.sale_price || 0;
+        b.halilit_price ||
+        b.pricing?.regular_price ||
+        b.pricing?.sale_price ||
+        0;
       return priceB - priceA; // Descending
     })
     .slice(0, limit);

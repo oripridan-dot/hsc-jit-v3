@@ -1,11 +1,31 @@
 /**
  * Unified Type Definitions - Single Source of Truth
- * v3.7 - All product, navigation, and catalog types
+ * v3.7.6 - All product, navigation, and catalog types
  * 
  * ⚠️  REAL DATA ONLY: All types validated against actual roland.json structure
- * Generated: 2026-01-19
+ * Generated: 2026-01-23
  * Status: 0 implicit `any` types - 100% strict typing
+ * 
+ * New in v3.7.6:
+ * - Product classification system (MI, PA, Accessories, Cases, Cables)
  */
+
+// Export product classification types
+export type {
+  ProductClass,
+  ProductClassification,
+} from './productClassification';
+
+export {
+  BRAND_CLASSIFICATIONS,
+  CATEGORY_CLASSIFICATION_OVERRIDES,
+  getProductClass,
+  getSecondaryClasses,
+  classifyProduct,
+  filterByClass,
+  getClassLabel,
+  getClassIcon,
+} from './productClassification';
 
 // ============================================================================
 // PRODUCT IMAGE TYPES (Validated against roland.json structure)
@@ -93,6 +113,10 @@ export interface Product {
     sub_subcategory?: string;
     family?: string;
     model_number?: string;
+
+    // Classification (v3.7.6+)
+    product_class?: 'MI' | 'PA' | 'ACCESSORIES' | 'CASES' | 'CABLES';
+    secondary_classes?: ('MI' | 'PA' | 'ACCESSORIES' | 'CASES' | 'CABLES')[];
 
     // Content
     description?: string;
