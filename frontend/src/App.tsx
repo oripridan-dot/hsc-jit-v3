@@ -41,21 +41,21 @@ function AppContent() {
   return (
     <div className="flex h-screen w-screen flex-col bg-[#0a0a0a] text-white font-sans overflow-hidden">
       {/* Global Header */}
-      <header className="flex-shrink-0 h-12 bg-black border-b border-white/5 flex items-center justify-between px-6 z-50">
-        <div className="flex items-baseline gap-3">
-          <div className="text-2xl font-black italic tracking-tighter text-white">
-            halilit
+      <header className="flex-shrink-0 h-14 bg-gradient-to-r from-black via-black to-[#0a0a0a] border-b border-white/10 flex items-center justify-between px-6 z-50 shadow-lg">
+        <div className="flex items-baseline gap-4">
+          <div className="text-3xl font-black italic tracking-tight text-white" style={{ fontFamily: "'Helvetica Neue', Arial, sans-serif", fontStyle: "italic" }}>
+            Halilit
           </div>
-          <div className="text-[10px] font-bold tracking-[0.2em] text-zinc-500 uppercase">
+          <div className="text-[11px] font-bold tracking-[0.15em] text-zinc-400 uppercase">
             Support Center
           </div>
         </div>
-        <div className="flex items-center gap-4 text-[10px] font-mono text-zinc-600">
-          <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            ONLINE
+        <div className="flex items-center gap-6 text-[11px] font-mono text-zinc-400">
+          <div className="flex items-center gap-2.5">
+            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="font-semibold">ONLINE</span>
           </div>
-          <div>v3.8.0 CATEGORY-MODUL</div>
+          <div className="text-zinc-600">v3.8.0 CATEGORY-MODUL</div>
         </div>
       </header>
 
