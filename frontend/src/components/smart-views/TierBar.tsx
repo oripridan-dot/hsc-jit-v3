@@ -204,7 +204,7 @@ export const TierBar: React.FC<TierBarProps> = ({
 
   return (
     <div
-      className={cn("w-full py-16 relative isolate select-none", className)}
+      className={cn("w-full py-12 relative isolate select-none", className)}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
@@ -214,11 +214,25 @@ export const TierBar: React.FC<TierBarProps> = ({
         cursor: isDragging ? "ew-resize" : "default",
       }}
     >
-      {/* Clean - No Background Clutter */}
+      {/* Subcategory Header */}
+      <div className="flex items-center justify-between mb-4 px-4">
+        <div className="flex items-center gap-3">
+          <h3 className="text-lg font-bold text-white tracking-tight">
+            {label}
+          </h3>
+          <span className="text-xs font-mono text-zinc-500 bg-zinc-800/50 px-2 py-0.5 rounded">
+            {filteredNodes.length} products
+          </span>
+        </div>
+        <div className="text-xs font-mono text-zinc-600">
+          ₪{Math.round(priceRange.min).toLocaleString()} - ₪
+          {Math.round(priceRange.max).toLocaleString()}
+        </div>
+      </div>
 
       {/* Reset Button & Keyboard Hint */}
       {(minHandle > 0 || maxHandle < 100) && (
-        <div className="absolute top-4 right-4 flex items-center gap-2 z-50">
+        <div className="absolute top-12 right-4 flex items-center gap-2 z-50">
           <div className="text-[10px] text-zinc-500 font-mono hidden md:block">
             <kbd className="px-1 py-0.5 bg-zinc-800 rounded border border-zinc-700">
               Esc
@@ -320,17 +334,30 @@ export const TierBar: React.FC<TierBarProps> = ({
                       }}
                     />
 
-                    {/* Elevated Logo - Larger & Prominent */}
+                    {/* Product Thumbnail - Prominent Display */}
                     <div className="relative">
-                      <BrandIcon
-                        brand={product.brand}
-                        className={cn(
-                          "w-12 h-12 transition-all duration-300",
-                          activeItem === product.id
-                            ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110"
-                            : "opacity-80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)]",
-                        )}
-                      />
+                      {product.displayImage ? (
+                        <img
+                          src={product.displayImage}
+                          alt={product.name}
+                          className={cn(
+                            "w-14 h-14 rounded-lg object-contain bg-zinc-800/50 border border-zinc-700/50 transition-all duration-300",
+                            activeItem === product.id
+                              ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110 border-amber-500/50"
+                              : "opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)] group-hover:border-amber-500/30",
+                          )}
+                        />
+                      ) : (
+                        <BrandIcon
+                          brand={product.brand}
+                          className={cn(
+                            "w-12 h-12 transition-all duration-300",
+                            activeItem === product.id
+                              ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110"
+                              : "opacity-80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)]",
+                          )}
+                        />
+                      )}
 
                       {/* Track Illumination Spot */}
                       <div

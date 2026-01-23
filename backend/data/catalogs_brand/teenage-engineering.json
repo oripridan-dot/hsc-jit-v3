@@ -3,154 +3,43 @@
   "brand_identity": {
     "id": "teenage-engineering",
     "name": "Teenage Engineering",
-    "website": "https://www.teenage-engineering.com"
+    "logo_url": "/assets/logos/teenage-engineering_logo.svg",
+    "website": "https://teenage.engineering",
+    "description": "Official Teenage Engineering products distributed by Halilit",
+    "categories": []
   },
   "products": [
     {
-      "id": "teenage engineering-po-33-ko",
-      "name": "PO-33 KO",
-      "brand": "Teenage Engineering",
-      "main_category": "Keys",
-      "subcategory": "Pocket Operator",
-      "description": "The PO-33 KO represents the entry tier of Teenage Engineering's Pocket Operator lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-po-33-ko_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-po-33-ko_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-po-33-ko_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 450,
-        "currency": "ILS"
-      },
-      "halilit_price": 450,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Entry"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-TE-3409",
-      "verified": true
-    },
-    {
-      "id": "teenage engineering-po-32-tonic",
-      "name": "PO-32 Tonic",
-      "brand": "Teenage Engineering",
-      "main_category": "Keys",
-      "subcategory": "Pocket Operator",
-      "description": "The PO-32 Tonic represents the entry tier of Teenage Engineering's Pocket Operator lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-po-32-tonic_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-po-32-tonic_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-po-32-tonic_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 450,
-        "currency": "ILS"
-      },
-      "halilit_price": 450,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Entry"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-TE-8399",
-      "verified": true
-    },
-    {
-      "id": "teenage engineering-op-z",
-      "name": "OP-Z",
-      "brand": "Teenage Engineering",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The OP-Z represents the standard tier of Teenage Engineering's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-op-z_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-op-z_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-op-z_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 2400,
-        "currency": "ILS"
-      },
-      "halilit_price": 2400,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-TE-3617",
-      "verified": true
-    },
-    {
-      "id": "teenage engineering-op-1-field",
+      "id": "teenage-engineering-op-1-field",
       "name": "OP-1 Field",
-      "brand": "Teenage Engineering",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The OP-1 Field represents the flagship tier of Teenage Engineering's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-op-1-field_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-op-1-field_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-op-1-field_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 8900,
-        "currency": "ILS"
+      "brand": "teenage-engineering",
+      "category": "Synthesizers",
+      "subcategory": "Portable Synth",
+      "main_category": "Synthesizers",
+      "description": "Portable synthesizer and sampler",
+      "short_description": "OP-1 Field - Flagship tier Portable Synth",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-op-1-field_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-op-1-field_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-op-1-field_main.webp"
       },
-      "halilit_price": 8900,
+      "pricing": {
+        "regular_price": 11500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-TE-5579",
-      "verified": true
-    },
-    {
-      "id": "teenage engineering-tx-6",
-      "name": "TX-6",
-      "brand": "Teenage Engineering",
-      "main_category": "Studio",
-      "subcategory": "Mixer",
-      "description": "The TX-6 represents the flagship tier of Teenage Engineering's Mixer lineup. Designed for studio professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-tx-6_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-tx-6_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-tx-6_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 5500,
-        "currency": "ILS"
-      },
-      "halilit_price": 5500,
-      "specifications": [
+          "key": "Category",
+          "value": "Synthesizers"
+        },
         {
-          "key": "Tier",
-          "value": "Flagship"
+          "key": "Type",
+          "value": "Portable Synth"
         },
         {
           "key": "Warranty",
@@ -158,30 +47,45 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-TE-4763",
-      "verified": true
+      "sku": "HL-TEE-3363",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "portable-synth"
+      ]
     },
     {
-      "id": "teenage engineering-cm-15",
-      "name": "CM-15",
-      "brand": "Teenage Engineering",
-      "main_category": "Studio",
-      "subcategory": "Microphone",
-      "description": "The CM-15 represents the flagship tier of Teenage Engineering's Microphone lineup. Designed for studio professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-cm-15_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-cm-15_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-cm-15_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 5500,
-        "currency": "ILS"
+      "id": "teenage-engineering-op-z",
+      "name": "OP-Z",
+      "brand": "teenage-engineering",
+      "category": "Synthesizers",
+      "subcategory": "Portable Synth",
+      "main_category": "Synthesizers",
+      "description": "16-track sequencer synthesizer",
+      "short_description": "OP-Z - Standard tier Portable Synth",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-op-z_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-op-z_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-op-z_main.webp"
       },
-      "halilit_price": 5500,
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
-          "value": "Flagship"
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Portable Synth"
         },
         {
           "key": "Warranty",
@@ -189,61 +93,45 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-TE-5854",
-      "verified": true
+      "sku": "HL-TEE-2783",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "portable-synth"
+      ]
     },
     {
-      "id": "teenage engineering-tp-7",
-      "name": "TP-7",
-      "brand": "Teenage Engineering",
-      "main_category": "Studio",
-      "subcategory": "Recorder",
-      "description": "The TP-7 represents the flagship tier of Teenage Engineering's Recorder lineup. Designed for studio professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-tp-7_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-tp-7_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-tp-7_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 6500,
-        "currency": "ILS"
-      },
-      "halilit_price": 6500,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Flagship"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-TE-5292",
-      "verified": true
-    },
-    {
-      "id": "teenage engineering-ep-133-ko-ii",
-      "name": "EP-133 KO II",
-      "brand": "Teenage Engineering",
-      "main_category": "DJ",
+      "id": "teenage-engineering-po-33-ko!",
+      "name": "PO-33 K.O!",
+      "brand": "teenage-engineering",
+      "category": "Pocket Operators",
       "subcategory": "Sampler",
-      "description": "The EP-133 KO II represents the standard tier of Teenage Engineering's Sampler lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-ep-133-ko-ii_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-ep-133-ko-ii_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-ep-133-ko-ii_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 1400,
-        "currency": "ILS"
+      "main_category": "Pocket Operators",
+      "description": "Micro sampler",
+      "short_description": "PO-33 K.O! - Entry tier Sampler",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-po-33-ko!_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-po-33-ko!_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-po-33-ko!_main.webp"
       },
-      "halilit_price": 1400,
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
-          "value": "Standard"
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Pocket Operators"
+        },
+        {
+          "key": "Type",
+          "value": "Sampler"
         },
         {
           "key": "Warranty",
@@ -251,30 +139,137 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-TE-7941",
-      "verified": true
+      "sku": "HL-TEE-6007",
+      "verified": true,
+      "tags": [
+        "entry",
+        "pocket operators",
+        "sampler"
+      ]
     },
     {
-      "id": "teenage engineering-ob-4",
-      "name": "OB-4",
-      "brand": "Teenage Engineering",
-      "main_category": "PA",
-      "subcategory": "Speaker",
-      "description": "The OB-4 represents the standard tier of Teenage Engineering's Speaker lineup. Designed for pa professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-ob-4_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-ob-4_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-ob-4_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 2800,
-        "currency": "ILS"
+      "id": "teenage-engineering-po-32-tonic",
+      "name": "PO-32 Tonic",
+      "brand": "teenage-engineering",
+      "category": "Pocket Operators",
+      "subcategory": "Drum Synth",
+      "main_category": "Pocket Operators",
+      "description": "Micro drum synth",
+      "short_description": "PO-32 Tonic - Entry tier Drum Synth",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-po-32-tonic_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-po-32-tonic_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-po-32-tonic_main.webp"
       },
-      "halilit_price": 2800,
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
-          "value": "Standard"
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Pocket Operators"
+        },
+        {
+          "key": "Type",
+          "value": "Drum Synth"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-8551",
+      "verified": true,
+      "tags": [
+        "entry",
+        "pocket operators",
+        "drum-synth"
+      ]
+    },
+    {
+      "id": "teenage-engineering-po-35-speak",
+      "name": "PO-35 Speak",
+      "brand": "teenage-engineering",
+      "category": "Pocket Operators",
+      "subcategory": "Vocal Synth",
+      "main_category": "Pocket Operators",
+      "description": "Micro vocal synth",
+      "short_description": "PO-35 Speak - Entry tier Vocal Synth",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-po-35-speak_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-po-35-speak_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-po-35-speak_main.webp"
+      },
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Pocket Operators"
+        },
+        {
+          "key": "Type",
+          "value": "Vocal Synth"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-6972",
+      "verified": true,
+      "tags": [
+        "entry",
+        "pocket operators",
+        "vocal-synth"
+      ]
+    },
+    {
+      "id": "teenage-engineering-po-128-mega-man",
+      "name": "PO-128 Mega Man",
+      "brand": "teenage-engineering",
+      "category": "Pocket Operators",
+      "subcategory": "Chiptune",
+      "main_category": "Pocket Operators",
+      "description": "Chiptune synth",
+      "short_description": "PO-128 Mega Man - Entry tier Chiptune",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-po-128-mega-man_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-po-128-mega-man_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-po-128-mega-man_main.webp"
+      },
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Pocket Operators"
+        },
+        {
+          "key": "Type",
+          "value": "Chiptune"
         },
         {
           "key": "Warranty",
@@ -282,30 +277,275 @@
         }
       ],
       "availability": "low-stock",
-      "sku": "HL-TE-3067",
-      "verified": true
+      "sku": "HL-TEE-1825",
+      "verified": true,
+      "tags": [
+        "entry",
+        "pocket operators",
+        "chiptune"
+      ]
     },
     {
-      "id": "teenage engineering-od-11",
-      "name": "OD-11",
-      "brand": "Teenage Engineering",
-      "main_category": "PA",
-      "subcategory": "Speaker",
-      "description": "The OD-11 represents the flagship tier of Teenage Engineering's Speaker lineup. Designed for pa professionals.",
-      "image_url": "/data/product_images/teenage engineering/teenage engineering-od-11_thumb.webp",
-      "images": [
-        "/data/product_images/teenage engineering/teenage engineering-od-11_thumb.webp",
-        "/data/product_images/teenage engineering/teenage engineering-od-11_main.webp"
+      "id": "teenage-engineering-ep-133-ko-ii",
+      "name": "EP-133 K.O. II",
+      "brand": "teenage-engineering",
+      "category": "Audio",
+      "subcategory": "Sampler",
+      "main_category": "Audio",
+      "description": "Premium sampler workstation",
+      "short_description": "EP-133 K.O. II - Standard tier Sampler",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-ep-133-ko-ii_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-ep-133-ko-ii_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-ep-133-ko-ii_main.webp"
+      },
+      "pricing": {
+        "regular_price": 1800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Audio"
+        },
+        {
+          "key": "Type",
+          "value": "Sampler"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
       ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-5779",
+      "verified": true,
+      "tags": [
+        "standard",
+        "audio",
+        "sampler"
+      ]
+    },
+    {
+      "id": "teenage-engineering-tx-6",
+      "name": "TX-6",
+      "brand": "teenage-engineering",
+      "category": "Audio",
+      "subcategory": "Mixer",
+      "main_category": "Audio",
+      "description": "Ultra-portable pro mixer",
+      "short_description": "TX-6 - Flagship tier Mixer",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-tx-6_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-tx-6_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-tx-6_main.webp"
+      },
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Audio"
+        },
+        {
+          "key": "Type",
+          "value": "Mixer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-TEE-3774",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "audio",
+        "mixer"
+      ]
+    },
+    {
+      "id": "teenage-engineering-tp-7",
+      "name": "TP-7",
+      "brand": "teenage-engineering",
+      "category": "Audio",
+      "subcategory": "Recorder",
+      "main_category": "Audio",
+      "description": "Field recorder",
+      "short_description": "TP-7 - Flagship tier Recorder",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-tp-7_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-tp-7_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-tp-7_main.webp"
+      },
+      "pricing": {
+        "regular_price": 8500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Audio"
+        },
+        {
+          "key": "Type",
+          "value": "Recorder"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-5936",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "audio",
+        "recorder"
+      ]
+    },
+    {
+      "id": "teenage-engineering-cm-15",
+      "name": "CM-15",
+      "brand": "teenage-engineering",
+      "category": "Audio",
+      "subcategory": "Microphone",
+      "main_category": "Audio",
+      "description": "Broadcast microphone",
+      "short_description": "CM-15 - Flagship tier Microphone",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-cm-15_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-cm-15_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-cm-15_main.webp"
+      },
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Audio"
+        },
+        {
+          "key": "Type",
+          "value": "Microphone"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-6283",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "audio",
+        "microphone"
+      ]
+    },
+    {
+      "id": "teenage-engineering-ob-4",
+      "name": "OB-4",
+      "brand": "teenage-engineering",
+      "category": "Audio",
+      "subcategory": "Speaker",
+      "main_category": "Audio",
+      "description": "Magic radio speaker",
+      "short_description": "OB-4 - Standard tier Speaker",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-ob-4_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-ob-4_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-ob-4_main.webp"
+      },
       "pricing": {
         "regular_price": 3500,
-        "currency": "ILS"
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 3500,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Audio"
+        },
+        {
+          "key": "Type",
+          "value": "Speaker"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-5817",
+      "verified": true,
+      "tags": [
+        "standard",
+        "audio",
+        "speaker"
+      ]
+    },
+    {
+      "id": "teenage-engineering-od-11",
+      "name": "OD-11",
+      "brand": "teenage-engineering",
+      "category": "Audio",
+      "subcategory": "Speaker",
+      "main_category": "Audio",
+      "description": "Cloud speaker",
+      "short_description": "OD-11 - Flagship tier Speaker",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-od-11_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-od-11_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-od-11_main.webp"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Audio"
+        },
+        {
+          "key": "Type",
+          "value": "Speaker"
         },
         {
           "key": "Warranty",
@@ -313,8 +553,107 @@
         }
       ],
       "availability": "low-stock",
-      "sku": "HL-TE-7161",
-      "verified": true
+      "sku": "HL-TEE-4979",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "audio",
+        "speaker"
+      ]
+    },
+    {
+      "id": "teenage-engineering-field-bag",
+      "name": "Field Bag",
+      "brand": "teenage-engineering",
+      "category": "Accessories",
+      "subcategory": "Case",
+      "main_category": "Accessories",
+      "description": "OP-1 Field bag",
+      "short_description": "Field Bag - Standard tier Case",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-field-bag_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-field-bag_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-field-bag_main.webp"
+      },
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Case"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-4842",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "case"
+      ]
+    },
+    {
+      "id": "teenage-engineering-modular-cables",
+      "name": "Modular Cables",
+      "brand": "teenage-engineering",
+      "category": "Accessories",
+      "subcategory": "Cables",
+      "main_category": "Accessories",
+      "description": "Modular patch cables",
+      "short_description": "Modular Cables - Entry tier Cables",
+      "image_url": "/data/product_images/teenage-engineering/teenage-engineering-modular-cables_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/teenage-engineering/teenage-engineering-modular-cables_thumb.webp",
+        "main": "/data/product_images/teenage-engineering/teenage-engineering-modular-cables_main.webp"
+      },
+      "pricing": {
+        "regular_price": 150,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Cables"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-TEE-4789",
+      "verified": true,
+      "tags": [
+        "entry",
+        "accessories",
+        "cables"
+      ]
     }
-  ]
+  ],
+  "generated_at": "2026-01-23T02:41:37.855328",
+  "product_count": 14
 }

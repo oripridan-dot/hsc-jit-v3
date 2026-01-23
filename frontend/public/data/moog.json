@@ -3,7 +3,51 @@
   "brand_identity": {
     "id": "moog",
     "name": "Moog",
-    "website": "https://www.moog.com",
+    "logo_url": "/assets/logos/moog_logo.png",
+    "website": "https://www.moogmusic.com",
+    "description": "Official Moog products distributed by Halilit",
+    "categories": [
+      {
+        "id": "synthesizers",
+        "label": "Synthesizers",
+        "icon": "\ud83c\udf9b\ufe0f",
+        "description": "Analog Synthesizers",
+        "children": [
+          "semi_modular",
+          "polyphonic",
+          "monophonic",
+          "modular"
+        ]
+      },
+      {
+        "id": "effects",
+        "label": "Effects",
+        "icon": "\ud83c\udfb8",
+        "description": "Moogerfooger, Minifooger",
+        "children": []
+      },
+      {
+        "id": "keyboards",
+        "label": "Keyboards",
+        "icon": "\u2328\ufe0f",
+        "description": "Controllers",
+        "children": []
+      },
+      {
+        "id": "accessories",
+        "label": "Accessories",
+        "icon": "\ud83d\udd27",
+        "description": "Cables, Cases, Patch Cables",
+        "children": []
+      },
+      {
+        "id": "apps",
+        "label": "Apps",
+        "icon": "\ud83d\udcf1",
+        "description": "Animoog, Model D",
+        "children": []
+      }
+    ],
     "brand_colors": {
       "primary": "#000000",
       "secondary": "#5c4033",
@@ -11,106 +55,46 @@
       "background": "#1c1917",
       "text": "#e5e7eb"
     },
-    "logo_url": "/assets/logos/moog_logo.png"
+    "taxonomy_stats": {
+      "validated": 13,
+      "normalized": 0,
+      "uncategorized": 0
+    }
   },
   "products": [
     {
-      "id": "moog-mavis",
-      "name": "Mavis",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Mavis represents the entry tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-1_thumb.webp",
+      "id": "moog-minimoog-model-d",
+      "name": "Minimoog Model D",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Monophonic",
+      "main_category": "Synthesizers",
+      "description": "Legendary monophonic synthesizer",
+      "short_description": "Minimoog Model D - Flagship tier Monophonic",
+      "image_url": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
       "images": {
-        "main": "/data/product_images/moog/moog-prod-1_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-1_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-1_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-1_thumb.webp"
+        "main": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg",
+        "original": "/data/product_images/moog/moog-minimoog-model-d_thumb.svg"
       },
       "pricing": {
-        "regular_price": 1200,
-        "currency": "ILS"
+        "regular_price": 25000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 1200,
       "specifications": [
         {
           "key": "Tier",
-          "value": "Entry"
+          "value": "Flagship"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-MO-1862",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "moog-mother-32",
-      "name": "Mother-32",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Semi-Modular",
-      "description": "The Mother-32 represents the standard tier of Moog's Semi-Modular lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-2_thumb.webp",
-      "images": {
-        "main": "/data/product_images/moog/moog-prod-2_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-2_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-2_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-2_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 2900,
-        "currency": "ILS"
-      },
-      "halilit_price": 2900,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
+          "key": "Category",
+          "value": "Synthesizers"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-MO-3364",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "moog-dfam",
-      "name": "DFAM",
-      "brand": "Moog",
-      "main_category": "Drums",
-      "subcategory": "Percussion",
-      "description": "The DFAM represents the standard tier of Moog's Percussion lineup. Designed for drums professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-3_thumb.webp",
-      "images": {
-        "main": "/data/product_images/moog/moog-prod-3_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-3_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-3_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-3_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 2900,
-        "currency": "ILS"
-      },
-      "halilit_price": 2900,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
+          "key": "Type",
+          "value": "Monophonic"
         },
         {
           "key": "Warranty",
@@ -118,36 +102,51 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-MO-4996",
+      "sku": "HL-MOO-8048",
       "verified": true,
-      "category": "Drums",
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "monophonic"
+      ],
       "category_hierarchy": [
-        "Drums"
+        "Synthesizers",
+        "Monophonic"
       ]
     },
     {
-      "id": "moog-subharmonicon",
-      "name": "Subharmonicon",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Semi-Modular",
-      "description": "The Subharmonicon represents the standard tier of Moog's Semi-Modular lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-4_thumb.webp",
+      "id": "moog-moog-one-16-voice",
+      "name": "Moog One 16-Voice",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Polyphonic",
+      "main_category": "Synthesizers",
+      "description": "16-voice polyphonic synthesizer",
+      "short_description": "Moog One 16-Voice - Flagship tier Polyphonic",
+      "image_url": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
       "images": {
-        "main": "/data/product_images/moog/moog-prod-4_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-4_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-4_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-4_thumb.webp"
+        "main": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg",
+        "original": "/data/product_images/moog/moog-moog-one-16-voice_thumb.svg"
       },
       "pricing": {
-        "regular_price": 2900,
-        "currency": "ILS"
+        "regular_price": 55000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 2900,
       "specifications": [
         {
           "key": "Tier",
-          "value": "Standard"
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Polyphonic"
         },
         {
           "key": "Warranty",
@@ -155,110 +154,103 @@
         }
       ],
       "availability": "low-stock",
-      "sku": "HL-MO-9412",
+      "sku": "HL-MOO-3941",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "polyphonic"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Synthesizers",
+        "Polyphonic"
       ]
     },
     {
-      "id": "moog-grandmother",
-      "name": "Grandmother",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Grandmother represents the standard tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-5_thumb.webp",
+      "id": "moog-moog-one-8-voice",
+      "name": "Moog One 8-Voice",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Polyphonic",
+      "main_category": "Synthesizers",
+      "description": "8-voice polyphonic synthesizer",
+      "short_description": "Moog One 8-Voice - Flagship tier Polyphonic",
+      "image_url": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
       "images": {
-        "main": "/data/product_images/moog/moog-prod-5_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-5_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-5_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-5_thumb.webp"
+        "main": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg",
+        "original": "/data/product_images/moog/moog-moog-one-8-voice_thumb.svg"
       },
       "pricing": {
-        "regular_price": 4200,
-        "currency": "ILS"
+        "regular_price": 42000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 4200,
       "specifications": [
         {
           "key": "Tier",
-          "value": "Standard"
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Polyphonic"
         },
         {
           "key": "Warranty",
           "value": "2 Years"
         }
       ],
-      "availability": "in-stock",
-      "sku": "HL-MO-2784",
+      "availability": "low-stock",
+      "sku": "HL-MOO-7735",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "polyphonic"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Synthesizers",
+        "Polyphonic"
       ]
     },
     {
       "id": "moog-matriarch",
       "name": "Matriarch",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Matriarch represents the flagship tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-1_thumb.webp",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "4-note paraphonic semi-modular",
+      "short_description": "Matriarch - Flagship tier Semi-Modular",
+      "image_url": "/data/product_images/moog/moog-matriarch_thumb.svg",
       "images": {
-        "main": "/data/product_images/moog/moog-prod-1_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-1_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-1_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-1_thumb.webp"
+        "main": "/data/product_images/moog/moog-matriarch_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-matriarch_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-matriarch_thumb.svg",
+        "original": "/data/product_images/moog/moog-matriarch_thumb.svg"
       },
       "pricing": {
-        "regular_price": 8500,
-        "currency": "ILS"
+        "regular_price": 11000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 8500,
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-MO-1849",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "moog-minimoog-model-d",
-      "name": "Minimoog Model D",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Minimoog Model D represents the flagship tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-2_thumb.webp",
-      "images": {
-        "main": "/data/product_images/moog/moog-prod-2_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-2_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-2_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-2_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 22000,
-        "currency": "ILS"
-      },
-      "halilit_price": 22000,
-      "specifications": [
+          "key": "Category",
+          "value": "Synthesizers"
+        },
         {
-          "key": "Tier",
-          "value": "Flagship"
+          "key": "Type",
+          "value": "Semi-Modular"
         },
         {
           "key": "Warranty",
@@ -266,173 +258,498 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-MO-4092",
+      "sku": "HL-MOO-9841",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "semi-modular"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Synthesizers",
+        "Semi-Modular"
       ]
     },
     {
-      "id": "moog-subsequent-37",
-      "name": "Subsequent 37",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Subsequent 37 represents the standard tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-3_thumb.webp",
+      "id": "moog-grandmother",
+      "name": "Grandmother",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "Semi-modular analog synthesizer",
+      "short_description": "Grandmother - Standard tier Semi-Modular",
+      "image_url": "/data/product_images/moog/moog-grandmother_thumb.svg",
       "images": {
-        "main": "/data/product_images/moog/moog-prod-3_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-3_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-3_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-3_thumb.webp"
+        "main": "/data/product_images/moog/moog-grandmother_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-grandmother_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-grandmother_thumb.svg",
+        "original": "/data/product_images/moog/moog-grandmother_thumb.svg"
       },
       "pricing": {
-        "regular_price": 6900,
-        "currency": "ILS"
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 6900,
       "specifications": [
         {
           "key": "Tier",
           "value": "Standard"
         },
         {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Semi-Modular"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-4257",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "semi-modular"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Semi-Modular"
+      ]
+    },
+    {
+      "id": "moog-subsequent-37",
+      "name": "Subsequent 37",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Monophonic",
+      "main_category": "Synthesizers",
+      "description": "Analog synthesizer",
+      "short_description": "Subsequent 37 - Standard tier Monophonic",
+      "image_url": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
+      "images": {
+        "main": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-subsequent-37_thumb.svg",
+        "original": "/data/product_images/moog/moog-subsequent-37_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 8500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Monophonic"
+        },
+        {
           "key": "Warranty",
           "value": "2 Years"
         }
       ],
       "availability": "low-stock",
-      "sku": "HL-MO-5671",
+      "sku": "HL-MOO-1003",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "standard",
+        "synthesizers",
+        "monophonic"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Synthesizers",
+        "Monophonic"
       ]
     },
     {
       "id": "moog-subsequent-25",
       "name": "Subsequent 25",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Subsequent 25 represents the entry tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-4_thumb.webp",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Monophonic",
+      "main_category": "Synthesizers",
+      "description": "Compact analog synthesizer",
+      "short_description": "Subsequent 25 - Entry tier Monophonic",
+      "image_url": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
       "images": {
-        "main": "/data/product_images/moog/moog-prod-4_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-4_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-4_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-4_thumb.webp"
+        "main": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-subsequent-25_thumb.svg",
+        "original": "/data/product_images/moog/moog-subsequent-25_thumb.svg"
       },
       "pricing": {
-        "regular_price": 4500,
-        "currency": "ILS"
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 4500,
       "specifications": [
         {
           "key": "Tier",
           "value": "Entry"
         },
         {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Monophonic"
+        },
+        {
           "key": "Warranty",
           "value": "2 Years"
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-MO-6539",
+      "sku": "HL-MOO-8824",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "entry",
+        "synthesizers",
+        "monophonic"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Synthesizers",
+        "Monophonic"
       ]
     },
     {
-      "id": "moog-moog-one-16",
-      "name": "Moog One 16",
-      "brand": "Moog",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Moog One 16 represents the flagship tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/moog/moog-prod-5_thumb.webp",
+      "id": "moog-mother-32",
+      "name": "Mother-32",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "Tabletop semi-modular synth",
+      "short_description": "Mother-32 - Standard tier Semi-Modular",
+      "image_url": "/data/product_images/moog/moog-mother-32_thumb.svg",
       "images": {
-        "main": "/data/product_images/moog/moog-prod-5_inspect.webp",
-        "thumbnail": "/data/product_images/moog/moog-prod-5_thumb.webp",
-        "high_res": "/data/product_images/moog/moog-prod-5_thumb.webp",
-        "original": "/data/product_images/moog/moog-prod-5_thumb.webp"
+        "main": "/data/product_images/moog/moog-mother-32_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-mother-32_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-mother-32_thumb.svg",
+        "original": "/data/product_images/moog/moog-mother-32_thumb.svg"
       },
       "pricing": {
-        "regular_price": 45000,
-        "currency": "ILS"
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 45000,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Semi-Modular"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-2602",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "semi-modular"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Semi-Modular"
+      ]
+    },
+    {
+      "id": "moog-dfam",
+      "name": "DFAM",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Percussion",
+      "main_category": "Synthesizers",
+      "description": "Drummer From Another Mother",
+      "short_description": "DFAM - Standard tier Percussion",
+      "image_url": "/data/product_images/moog/moog-dfam_thumb.svg",
+      "images": {
+        "main": "/data/product_images/moog/moog-dfam_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-dfam_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-dfam_thumb.svg",
+        "original": "/data/product_images/moog/moog-dfam_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Percussion"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-5351",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "percussion"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Percussion"
+      ]
+    },
+    {
+      "id": "moog-subharmonicon",
+      "name": "Subharmonicon",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "Polyrhythmic synthesizer",
+      "short_description": "Subharmonicon - Standard tier Semi-Modular",
+      "image_url": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
+      "images": {
+        "main": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-subharmonicon_thumb.svg",
+        "original": "/data/product_images/moog/moog-subharmonicon_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Semi-Modular"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-2379",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "semi-modular"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Semi-Modular"
+      ]
+    },
+    {
+      "id": "moog-mavis",
+      "name": "Mavis",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Build Kit",
+      "main_category": "Synthesizers",
+      "description": "Analog synthesizer build kit",
+      "short_description": "Mavis - Entry tier Build Kit",
+      "image_url": "/data/product_images/moog/moog-mavis_thumb.svg",
+      "images": {
+        "main": "/data/product_images/moog/moog-mavis_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-mavis_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-mavis_thumb.svg",
+        "original": "/data/product_images/moog/moog-mavis_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 1800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Build Kit"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-2883",
+      "verified": true,
+      "tags": [
+        "entry",
+        "synthesizers",
+        "build-kit"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Build Kit"
+      ]
+    },
+    {
+      "id": "moog-moogerfooger-mf-104m",
+      "name": "Moogerfooger MF-104M",
+      "brand": "moog",
+      "category": "Effects",
+      "subcategory": "Analog Delay",
+      "main_category": "Effects",
+      "description": "Analog delay pedal",
+      "short_description": "Moogerfooger MF-104M - Flagship tier Analog Delay",
+      "image_url": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
+      "images": {
+        "main": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg",
+        "original": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
         },
         {
+          "key": "Category",
+          "value": "Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Analog Delay"
+        },
+        {
           "key": "Warranty",
           "value": "2 Years"
         }
       ],
-      "availability": "in-stock",
-      "sku": "HL-MO-5369",
+      "availability": "low-stock",
+      "sku": "HL-MOO-6008",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "flagship",
+        "effects",
+        "analog-delay"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Effects",
+        "Analog Delay"
+      ]
+    },
+    {
+      "id": "moog-minitaur-case",
+      "name": "Minitaur Case",
+      "brand": "moog",
+      "category": "Accessories",
+      "subcategory": "Case",
+      "main_category": "Accessories",
+      "description": "Protective case",
+      "short_description": "Minitaur Case - Standard tier Case",
+      "image_url": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
+      "images": {
+        "main": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
+        "thumbnail": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
+        "high_res": "/data/product_images/moog/moog-minitaur-case_thumb.svg",
+        "original": "/data/product_images/moog/moog-minitaur-case_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 600,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Case"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MOO-6456",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "case"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Case"
       ]
     }
   ],
+  "generated_at": "2026-01-23T02:41:37.848138",
+  "product_count": 13,
   "brand_slug": "moog",
-  "refined_at": "2026-01-22T14:36:08.531262+00:00",
+  "refined_at": "2026-01-23T02:42:11.925471+00:00",
   "hierarchy": {
-    "Keys": {
-      "Synthesizer": [
-        {
-          "id": "moog-mavis",
-          "name": "Mavis",
-          "description": "The Mavis represents the entry tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/moog/moog-mavis_thumb.webp",
-            "thumbnail": "/data/product_images/moog/moog-mavis_thumb.webp",
-            "high_res": "/data/product_images/moog/moog-mavis_main.webp",
-            "original": "/data/product_images/moog/moog-mavis_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-MO-1862"
-        },
-        {
-          "id": "moog-grandmother",
-          "name": "Grandmother",
-          "description": "The Grandmother represents the standard tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/moog/moog-grandmother_thumb.webp",
-            "thumbnail": "/data/product_images/moog/moog-grandmother_thumb.webp",
-            "high_res": "/data/product_images/moog/moog-grandmother_main.webp",
-            "original": "/data/product_images/moog/moog-grandmother_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-MO-2784"
-        },
-        {
-          "id": "moog-matriarch",
-          "name": "Matriarch",
-          "description": "The Matriarch represents the flagship tier of Moog's Synthesizer lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/moog/moog-matriarch_thumb.webp",
-            "thumbnail": "/data/product_images/moog/moog-matriarch_thumb.webp",
-            "high_res": "/data/product_images/moog/moog-matriarch_main.webp",
-            "original": "/data/product_images/moog/moog-matriarch_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-MO-1849"
-        },
+    "Synthesizers": {
+      "Monophonic": [
         {
           "id": "moog-minimoog-model-d",
           "name": "Minimoog Model D",
-          "description": "The Minimoog Model D represents the flagship tier of Moog's Synthesizer lineup. Designed for keys professionals.",
+          "description": "Minimoog Model D - Flagship tier Monophonic",
           "images": {
             "main": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp",
             "thumbnail": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp",
@@ -440,12 +757,12 @@
             "original": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-MO-4092"
+          "sku": "HL-MOO-8048"
         },
         {
           "id": "moog-subsequent-37",
           "name": "Subsequent 37",
-          "description": "The Subsequent 37 represents the standard tier of Moog's Synthesizer lineup. Designed for keys professionals.",
+          "description": "Subsequent 37 - Standard tier Monophonic",
           "images": {
             "main": "/data/product_images/moog/moog-subsequent-37_thumb.webp",
             "thumbnail": "/data/product_images/moog/moog-subsequent-37_thumb.webp",
@@ -453,12 +770,12 @@
             "original": "/data/product_images/moog/moog-subsequent-37_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-MO-5671"
+          "sku": "HL-MOO-1003"
         },
         {
           "id": "moog-subsequent-25",
           "name": "Subsequent 25",
-          "description": "The Subsequent 25 represents the entry tier of Moog's Synthesizer lineup. Designed for keys professionals.",
+          "description": "Subsequent 25 - Entry tier Monophonic",
           "images": {
             "main": "/data/product_images/moog/moog-subsequent-25_thumb.webp",
             "thumbnail": "/data/product_images/moog/moog-subsequent-25_thumb.webp",
@@ -466,27 +783,68 @@
             "original": "/data/product_images/moog/moog-subsequent-25_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-MO-6539"
-        },
+          "sku": "HL-MOO-8824"
+        }
+      ],
+      "Polyphonic": [
         {
-          "id": "moog-moog-one-16",
-          "name": "Moog One 16",
-          "description": "The Moog One 16 represents the flagship tier of Moog's Synthesizer lineup. Designed for keys professionals.",
+          "id": "moog-moog-one-16-voice",
+          "name": "Moog One 16-Voice",
+          "description": "Moog One 16-Voice - Flagship tier Polyphonic",
           "images": {
-            "main": "/data/product_images/moog/moog-moog-one-16_thumb.webp",
-            "thumbnail": "/data/product_images/moog/moog-moog-one-16_thumb.webp",
-            "high_res": "/data/product_images/moog/moog-moog-one-16_main.webp",
-            "original": "/data/product_images/moog/moog-moog-one-16_thumb.webp"
+            "main": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-moog-one-16-voice_main.webp",
+            "original": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-MO-5369"
+          "sku": "HL-MOO-3941"
+        },
+        {
+          "id": "moog-moog-one-8-voice",
+          "name": "Moog One 8-Voice",
+          "description": "Moog One 8-Voice - Flagship tier Polyphonic",
+          "images": {
+            "main": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-moog-one-8-voice_main.webp",
+            "original": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-MOO-7735"
         }
       ],
       "Semi-Modular": [
         {
+          "id": "moog-matriarch",
+          "name": "Matriarch",
+          "description": "Matriarch - Flagship tier Semi-Modular",
+          "images": {
+            "main": "/data/product_images/moog/moog-matriarch_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-matriarch_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-matriarch_main.webp",
+            "original": "/data/product_images/moog/moog-matriarch_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-MOO-9841"
+        },
+        {
+          "id": "moog-grandmother",
+          "name": "Grandmother",
+          "description": "Grandmother - Standard tier Semi-Modular",
+          "images": {
+            "main": "/data/product_images/moog/moog-grandmother_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-grandmother_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-grandmother_main.webp",
+            "original": "/data/product_images/moog/moog-grandmother_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-MOO-4257"
+        },
+        {
           "id": "moog-mother-32",
           "name": "Mother-32",
-          "description": "The Mother-32 represents the standard tier of Moog's Semi-Modular lineup. Designed for keys professionals.",
+          "description": "Mother-32 - Standard tier Semi-Modular",
           "images": {
             "main": "/data/product_images/moog/moog-mother-32_thumb.webp",
             "thumbnail": "/data/product_images/moog/moog-mother-32_thumb.webp",
@@ -494,12 +852,12 @@
             "original": "/data/product_images/moog/moog-mother-32_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-MO-3364"
+          "sku": "HL-MOO-2602"
         },
         {
           "id": "moog-subharmonicon",
           "name": "Subharmonicon",
-          "description": "The Subharmonicon represents the standard tier of Moog's Semi-Modular lineup. Designed for keys professionals.",
+          "description": "Subharmonicon - Standard tier Semi-Modular",
           "images": {
             "main": "/data/product_images/moog/moog-subharmonicon_thumb.webp",
             "thumbnail": "/data/product_images/moog/moog-subharmonicon_thumb.webp",
@@ -507,16 +865,14 @@
             "original": "/data/product_images/moog/moog-subharmonicon_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-MO-9412"
+          "sku": "HL-MOO-2379"
         }
-      ]
-    },
-    "Drums": {
+      ],
       "Percussion": [
         {
           "id": "moog-dfam",
           "name": "DFAM",
-          "description": "The DFAM represents the standard tier of Moog's Percussion lineup. Designed for drums professionals.",
+          "description": "DFAM - Standard tier Percussion",
           "images": {
             "main": "/data/product_images/moog/moog-dfam_thumb.webp",
             "thumbnail": "/data/product_images/moog/moog-dfam_thumb.webp",
@@ -524,7 +880,56 @@
             "original": "/data/product_images/moog/moog-dfam_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-MO-4996"
+          "sku": "HL-MOO-5351"
+        }
+      ],
+      "Build Kit": [
+        {
+          "id": "moog-mavis",
+          "name": "Mavis",
+          "description": "Mavis - Entry tier Build Kit",
+          "images": {
+            "main": "/data/product_images/moog/moog-mavis_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-mavis_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-mavis_main.webp",
+            "original": "/data/product_images/moog/moog-mavis_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-MOO-2883"
+        }
+      ]
+    },
+    "Effects": {
+      "Analog Delay": [
+        {
+          "id": "moog-moogerfooger-mf-104m",
+          "name": "Moogerfooger MF-104M",
+          "description": "Moogerfooger MF-104M - Flagship tier Analog Delay",
+          "images": {
+            "main": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-moogerfooger-mf-104m_main.webp",
+            "original": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-MOO-6008"
+        }
+      ]
+    },
+    "Accessories": {
+      "Case": [
+        {
+          "id": "moog-minitaur-case",
+          "name": "Minitaur Case",
+          "description": "Minitaur Case - Standard tier Case",
+          "images": {
+            "main": "/data/product_images/moog/moog-minitaur-case_thumb.webp",
+            "thumbnail": "/data/product_images/moog/moog-minitaur-case_thumb.webp",
+            "high_res": "/data/product_images/moog/moog-minitaur-case_main.webp",
+            "original": "/data/product_images/moog/moog-minitaur-case_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-MOO-6456"
         }
       ]
     }

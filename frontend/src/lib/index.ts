@@ -7,3 +7,19 @@ export { catalogLoader } from "./catalogLoader";
 export type { BrandCatalog, MasterIndex, Product } from "./catalogLoader";
 export { instantSearch } from "./instantSearch";
 export type { SearchOptions } from "./instantSearch";
+
+// Taxonomy Registry
+export {
+  loadTaxonomyRegistry,
+  getBrandTaxonomySync,
+  getBrandRootCategories,
+  getBrandCategories,
+  getCategoryLabels,
+  validateCategory,
+  getAvailableBrands,
+} from "./taxonomyLoader";
+export type {
+  TaxonomyRegistry,
+  BrandTaxonomy,
+  TaxonomyCategory,
+} from "./taxonomyLoader";

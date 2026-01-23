@@ -28,6 +28,7 @@ import urllib.error
 from io import BytesIO
 import base64
 from services.visual_factory import VisualFactory
+from models.taxonomy_registry import TaxonomyRegistry, get_registry
 
 # --- SETUP LOGGING ---
 logging.basicConfig(
@@ -125,6 +126,8 @@ class HalilitCatalog:
         self.output_dir = PUBLIC_DATA_PATH
         # Initialize Visual Factory
         self.visual_factory = VisualFactory()
+        # Initialize Taxonomy Registry for category validation
+        self.taxonomy_registry = get_registry()
         
         # Flat structure matching Frontend Interface (MasterIndex)
         self.master_index = {
@@ -217,13 +220,16 @@ class HalilitCatalog:
             # 1. Prepare Workspace
             self._prepare_workspace()
             
-            # 2. Process Each Brand
+            # 2. Export Taxonomy Registry (before processing brands)
+            self._export_taxonomy()
+            
+            # 3. Process Each Brand
             self._forge_brands()
             
-            # 3. Finalize Catalog
+            # 4. Finalize Catalog
             self._finalize_catalog()
             
-            # 4. Report
+            # 5. Report
             self._report()
             
             logger.info("✅ [CATALOG] Complete. System ready at frontend/public/data/index.json")
@@ -232,6 +238,13 @@ class HalilitCatalog:
         except Exception as e:
             logger.error(f"❌ [CATALOG] Critical failure: {e}")
             return False
+    
+    def _export_taxonomy(self):
+        """Export taxonomy registry to frontend for category navigation."""
+        logger.info("   [1.5/5] Exporting Taxonomy Registry...")
+        taxonomy_path = self.output_dir / "taxonomy.json"
+        self.taxonomy_registry.export_to_frontend(taxonomy_path)
+        logger.info(f"      ✓ Taxonomy exported: {len(self.taxonomy_registry.get_all_brands())} brands")
     
     def _prepare_workspace(self):
         """Ensure output directory exists and is clean."""
@@ -385,16 +398,42 @@ class HalilitCatalog:
         if resolved_logo:
             refined['brand_identity']['logo_url'] = resolved_logo
         
-        # First pass: Ensure product quality
+        # First pass: Ensure product quality and TAXONOMY VALIDATION
+        taxonomy_stats = {"validated": 0, "normalized": 0, "uncategorized": 0}
+        
         if 'products' in refined:
             for idx, product in enumerate(refined['products']):
                 # Ensure ID
                 if not product.get('id'):
                     product['id'] = f"{slug}-product-{idx}"
                 
-                # Ensure 'category' field exists (Frontend uses 'category', Backend uses 'main_category')
-                if 'category' not in product:
-                    product['category'] = product.get('main_category', 'Uncategorized')
+                # --- TAXONOMY VALIDATION CHECKPOINT ---
+                raw_category = product.get('main_category') or product.get('category')
+                raw_subcategory = product.get('subcategory')
+                
+                # Normalize main category using taxonomy registry
+                normalized_category = self.taxonomy_registry.normalize_category(slug, raw_category)
+                
+                if normalized_category:
+                    product['main_category'] = normalized_category
+                    product['category'] = normalized_category
+                    taxonomy_stats["validated"] += 1
+                elif raw_category:
+                    # Category exists but not in taxonomy - keep but mark
+                    product['main_category'] = raw_category
+                    product['category'] = raw_category
+                    product['_taxonomy_warning'] = f"Category '{raw_category}' not in official taxonomy"
+                    taxonomy_stats["normalized"] += 1
+                else:
+                    product['main_category'] = 'Uncategorized'
+                    product['category'] = 'Uncategorized'
+                    taxonomy_stats["uncategorized"] += 1
+                
+                # Normalize subcategory if present
+                if raw_subcategory:
+                    normalized_sub = self.taxonomy_registry.normalize_category(slug, raw_subcategory)
+                    if normalized_sub:
+                        product['subcategory'] = normalized_sub
 
                 # Ensure images are lists
                 if 'images' in product and isinstance(product['images'], dict):
@@ -405,6 +444,8 @@ class HalilitCatalog:
                 # Ensure category_hierarchy
                 if 'category_hierarchy' not in product:
                     product['category_hierarchy'] = [product.get('category', 'Uncategorized')]
+                    if product.get('subcategory'):
+                        product['category_hierarchy'].append(product['subcategory'])
                 
                 # --- NEW: VISUAL FACTORY INTEGRATION ---
                 # Process Main Image into Thumbnail + Inspection Asset
@@ -468,6 +509,26 @@ class HalilitCatalog:
                     logger.info(f"      ⬇️  Downloaded inner logo for {product.get('name')}")
                 
                 # Data quality ensured - no unused AI layers
+        
+        # Log taxonomy validation stats
+        logger.info(f"      📊 Taxonomy: {taxonomy_stats['validated']} validated, {taxonomy_stats['normalized']} normalized, {taxonomy_stats['uncategorized']} uncategorized")
+        
+        # Add taxonomy stats to brand_identity for frontend reference
+        refined['brand_identity']['taxonomy_stats'] = taxonomy_stats
+        
+        # Add available categories from taxonomy registry for this brand
+        brand_taxonomy = self.taxonomy_registry.get_brand(slug)
+        if brand_taxonomy:
+            refined['brand_identity']['categories'] = [
+                {
+                    "id": cat.id,
+                    "label": cat.label,
+                    "icon": cat.icon,
+                    "description": cat.description,
+                    "children": cat.children,
+                }
+                for cat in brand_taxonomy.get_root_categories()
+            ]
         
         # Second pass: Build hierarchical category tree
         refined['hierarchy'] = self._build_category_hierarchy(refined.get('products', []))

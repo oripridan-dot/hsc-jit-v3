@@ -1,10 +1,8 @@
 /**
- * Universal Categories - The "Musician Mindset" Taxonomy
+ * Universal Categories - Real Product Thumbnails
  *
- * Defines the 10 "Halilit Categories" that organize instruments by function
- * instead of brand. Reduces cognitive load by grouping similar instruments together.
- *
- * Architecture: Translator between complex backend data and simple frontend buttons
+ * All subcategory images are REAL product thumbnails processed through VisualFactory.
+ * Images are WebP format, 400x400, with transparent backgrounds.
  */
 
 import type { Product } from "../types";
@@ -13,20 +11,20 @@ export interface SubcategoryDef {
   id: string;
   label: string;
   image: string;
-  brands?: string[]; // Brand identifiers for micro-logos
+  brands?: string[];
 }
 
 export interface UniversalCategoryDef {
   id: string;
   label: string;
-  iconName: string; // Maps to Lucide icon names dynamically
+  iconName: string;
   description: string;
   subcategories: SubcategoryDef[];
-  color: string; // Cognitive color anchor for each category
+  color: string;
 }
 
 /**
- * The "Universal 10" - Core instrument categories organized by musician perspective
+ * The "Universal 8" - Real product thumbnails from VisualFactory
  */
 export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
   {
@@ -38,41 +36,41 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "synths",
         label: "Synthesizers",
-        image: "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
+        image: "/data/category_thumbnails/keys-synths_thumb.webp",
         brands: ["nord", "moog", "roland"],
       },
       {
         id: "stage-pianos",
         label: "Stage Pianos",
-        image: "/data/product_images/nord/nord-nord-electro-7_thumb.webp",
+        image: "/data/category_thumbnails/keys-stage-pianos_thumb.webp",
         brands: ["nord", "roland"],
       },
       {
         id: "controllers",
         label: "MIDI Controllers",
-        image: "/data/product_images/roland/roland-a-88mk2_thumb.webp",
+        image: "/data/category_thumbnails/keys-controllers_thumb.webp",
         brands: ["roland", "akai-professional"],
       },
       {
         id: "arrangers",
         label: "Arrangers",
-        image: "/data/product_images/roland/roland-e-x50_thumb.webp",
+        image: "/data/category_thumbnails/keys-arrangers_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "organs",
         label: "Organs",
-        image: "/data/product_images/nord/nord-prod-2_thumb.webp",
+        image: "/data/category_thumbnails/keys-organs_thumb.webp",
         brands: ["nord"],
       },
       {
         id: "workstations",
         label: "Workstations",
-        image: "/data/product_images/roland/roland-fantom_series_thumb.webp",
+        image: "/data/category_thumbnails/keys-workstations_thumb.webp",
         brands: ["roland"],
       },
     ],
-    color: "#f59e0b", // Amber
+    color: "#f59e0b",
   },
   {
     id: "drums",
@@ -83,42 +81,41 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "electronic-drums",
         label: "Electronic Drum Kits",
-        image: "/data/product_images/roland/roland-prod-1_thumb.webp",
+        image: "/data/category_thumbnails/drums-electronic-drums_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "acoustic-drums",
         label: "Acoustic Drums",
-        image: "/data/product_images/roland/roland-prod-2_thumb.webp",
+        image: "/data/category_thumbnails/drums-acoustic-drums_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "cymbals",
         label: "Cymbals",
-        image: "/data/product_images/roland/roland-prod-3_thumb.webp",
+        image: "/data/category_thumbnails/drums-cymbals_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "percussion",
         label: "Percussion",
-        image: "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
+        image: "/data/category_thumbnails/drums-percussion_thumb.webp",
         brands: ["roland", "nord"],
       },
       {
         id: "drum-machines",
         label: "Drum Machines",
-        image: "/data/product_images/roland/roland-prod-5_thumb.webp",
+        image: "/data/category_thumbnails/drums-drum-machines_thumb.webp",
         brands: ["roland", "akai-professional"],
       },
       {
         id: "pads",
         label: "Drum Pads",
-        image:
-          "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
+        image: "/data/category_thumbnails/drums-pads_thumb.webp",
         brands: ["akai-professional"],
       },
     ],
-    color: "#ef4444", // Red
+    color: "#ef4444",
   },
   {
     id: "guitars",
@@ -129,41 +126,41 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "electric-guitars",
         label: "Electric Guitars",
-        image: "/data/product_images/boss/boss-eurus_gs-1_thumb.webp",
+        image: "/data/category_thumbnails/guitars-electric-guitars_thumb.webp",
         brands: ["boss"],
       },
       {
         id: "bass-guitars",
         label: "Bass Guitars",
-        image: "/data/product_images/boss/boss-prod-3_thumb.webp",
+        image: "/data/category_thumbnails/guitars-bass-guitars_thumb.webp",
         brands: ["boss"],
       },
       {
         id: "amplifiers",
         label: "Amplifiers",
-        image: "/data/product_images/boss/boss-prod-1_thumb.webp",
+        image: "/data/category_thumbnails/guitars-amplifiers_thumb.webp",
         brands: ["boss"],
       },
       {
         id: "effects",
         label: "Effects Pedals",
-        image: "/data/product_images/boss/boss-gx-10_thumb.webp",
+        image: "/data/category_thumbnails/guitars-effects-pedals_thumb.webp",
         brands: ["boss"],
       },
       {
         id: "multi-effects",
         label: "Multi-Effects",
-        image: "/data/product_images/boss/boss-xs-1_thumb.webp",
+        image: "/data/category_thumbnails/guitars-multi-effects_thumb.webp",
         brands: ["boss"],
       },
       {
         id: "accessories",
         label: "Accessories",
-        image: "/data/product_images/boss/boss-prod-5_thumb.webp",
+        image: "/data/category_thumbnails/guitars-accessories_thumb.webp",
         brands: ["boss"],
       },
     ],
-    color: "#3b82f6", // Blue
+    color: "#a855f7",
   },
   {
     id: "studio",
@@ -174,43 +171,41 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "interfaces",
         label: "Audio Interfaces",
-        image:
-          "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
-        brands: ["universal-audio", "focusrite"],
+        image: "/data/category_thumbnails/studio-audio-interfaces_thumb.webp",
+        brands: ["universal-audio"],
       },
       {
         id: "monitors",
         label: "Studio Monitors",
-        image: "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp",
+        image: "/data/category_thumbnails/studio-studio-monitors_thumb.webp",
         brands: ["adam-audio", "mackie"],
       },
       {
         id: "microphones",
         label: "Microphones",
-        image: "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
+        image: "/data/category_thumbnails/studio-microphones_thumb.webp",
         brands: ["warm-audio"],
       },
       {
         id: "outboard",
         label: "Outboard Gear",
-        image: "/data/product_images/focusrite/focusrite-prod-3_thumb.webp",
-        brands: ["focusrite", "warm-audio"],
+        image: "/data/category_thumbnails/studio-outboard-gear_thumb.webp",
+        brands: ["warm-audio"],
       },
       {
         id: "preamps",
         label: "Preamps",
-        image: "/data/product_images/warm-audio/warm-audio-prod-2_thumb.webp",
-        brands: ["warm-audio", "focusrite"],
+        image: "/data/category_thumbnails/studio-preamps_thumb.webp",
+        brands: ["warm-audio"],
       },
       {
         id: "software",
         label: "Software",
-        image:
-          "/data/product_images/universal-audio/universal-audio-prod-5_thumb.webp",
+        image: "/data/category_thumbnails/studio-software_thumb.webp",
         brands: ["universal-audio"],
       },
     ],
-    color: "#10b981", // Emerald
+    color: "#06b6d4",
   },
   {
     id: "live",
@@ -221,41 +216,41 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "pa-speakers",
         label: "PA Speakers",
-        image: "/data/product_images/mackie/mackie-prod-1_thumb.webp",
+        image: "/data/category_thumbnails/live-pa-speakers_thumb.webp",
         brands: ["mackie"],
       },
       {
         id: "mixers",
         label: "Mixers",
-        image: "/data/product_images/mackie/mackie-prod-2_thumb.webp",
+        image: "/data/category_thumbnails/live-mixers_thumb.webp",
         brands: ["mackie"],
       },
       {
         id: "powered-mixers",
         label: "Powered Mixers",
-        image: "/data/product_images/mackie/mackie-prod-3_thumb.webp",
+        image: "/data/category_thumbnails/live-mixers_thumb.webp",
         brands: ["mackie"],
       },
       {
         id: "wireless",
         label: "Wireless Systems",
-        image: "/data/product_images/roland/roland-prod-4_thumb.webp",
+        image: "/data/category_thumbnails/live-wireless-systems_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "iem",
         label: "In-Ear Monitoring",
-        image: "/data/product_images/mackie/mackie-prod-5_thumb.webp",
+        image: "/data/category_thumbnails/live-in-ear-monitoring_thumb.webp",
         brands: ["mackie"],
       },
       {
         id: "stage-boxes",
         label: "Stage Boxes",
-        image: "/data/product_images/roland/roland-bridge_cast_thumb.webp",
+        image: "/data/category_thumbnails/live-stage-boxes_thumb.webp",
         brands: ["roland"],
       },
     ],
-    color: "#8b5cf6", // Violet
+    color: "#22c55e",
   },
   {
     id: "dj",
@@ -266,78 +261,68 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "controllers",
         label: "DJ Controllers",
-        image:
-          "/data/product_images/akai-professional/akai-professional-prod-1_thumb.webp",
+        image: "/data/category_thumbnails/dj-samplers_thumb.webp",
         brands: ["akai-professional"],
       },
       {
         id: "grooveboxes",
         label: "Grooveboxes",
-        image: "/data/product_images/roland/roland-cb-404_thumb.webp",
+        image: "/data/category_thumbnails/dj-grooveboxes_thumb.webp",
         brands: ["roland", "teenage-engineering"],
       },
       {
         id: "samplers",
         label: "Samplers",
-        image:
-          "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
+        image: "/data/category_thumbnails/dj-samplers_thumb.webp",
         brands: ["akai-professional"],
       },
       {
         id: "headphones",
         label: "DJ Headphones",
-        image: "/data/product_images/roland/roland-rh-5_thumb.webp",
+        image: "/data/category_thumbnails/dj-dj-headphones_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "production",
         label: "Production",
-        image:
-          "/data/product_images/teenage-engineering/teenage-engineering-prod-1_thumb.webp",
+        image: "/data/category_thumbnails/dj-production_thumb.webp",
         brands: ["teenage-engineering"],
       },
       {
         id: "accessories",
         label: "Accessories",
-        image:
-          "/data/product_images/teenage-engineering/teenage-engineering-prod-3_thumb.webp",
+        image: "/data/category_thumbnails/dj-accessories_thumb.webp",
         brands: ["teenage-engineering"],
       },
     ],
-    color: "#ec4899", // Pink
+    color: "#ec4899",
   },
   {
-    id: "headphones",
-    label: "Headphones",
-    iconName: "Headphones",
-    description: "Studio, DJ, Consumer",
+    id: "software",
+    label: "Software & Cloud",
+    iconName: "Cloud",
+    description: "Plugins, Cloud Services",
     subcategories: [
       {
-        id: "studio-headphones",
-        label: "Studio Headphones",
-        image: "/data/product_images/roland/roland-rh-5_thumb.webp",
-        brands: ["roland"],
+        id: "plugins",
+        label: "Plugins",
+        image: "/data/category_thumbnails/software-plugins_thumb.webp",
+        brands: ["universal-audio", "roland"],
       },
       {
-        id: "dj-headphones",
-        label: "DJ Headphones",
-        image: "/data/product_images/roland/roland-rh-5_thumb.webp",
-        brands: ["roland"],
+        id: "daw",
+        label: "DAW Software",
+        image: "/data/category_thumbnails/software-daw_thumb.webp",
+        brands: ["universal-audio"],
       },
       {
-        id: "hifi-headphones",
-        label: "Hi-Fi Headphones",
-        image: "/data/product_images/roland/roland-rh-5_thumb.webp",
+        id: "sound-libraries",
+        label: "Sound Libraries",
+        image: "/data/category_thumbnails/software-sound-libraries_thumb.webp",
         brands: ["roland"],
-      },
-      {
-        id: "iem",
-        label: "In-Ear Monitors",
-        image: "/data/product_images/mackie/mackie-prod-5_thumb.webp",
-        brands: ["mackie"],
       },
     ],
-    color: "#6366f1", // Indigo
+    color: "#3b82f6",
   },
   {
     id: "accessories",
@@ -348,125 +333,117 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
       {
         id: "cables",
         label: "Cables",
-        image: "/data/product_images/roland/roland-rcc-5-3528_thumb.webp",
-        brands: ["roland"],
-      },
-      {
-        id: "midi-cables",
-        label: "MIDI Cables",
-        image: "/data/product_images/roland/roland-rmidi-b3_thumb.webp",
+        image: "/data/category_thumbnails/accessories-cables_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "stands",
         label: "Stands",
-        image: "/data/product_images/roland/roland-ks-11z_thumb.webp",
+        image: "/data/category_thumbnails/accessories-stands_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "cases",
         label: "Cases & Bags",
-        image: "/data/product_images/roland/roland-cb-b88s_thumb.webp",
+        image: "/data/category_thumbnails/accessories-cases_thumb.webp",
         brands: ["roland"],
       },
       {
         id: "pedals",
-        label: "Pedals & Switches",
-        image: "/data/product_images/roland/roland-cb-v61_thumb.webp",
-        brands: ["roland"],
+        label: "Pedals & Footswitches",
+        image: "/data/category_thumbnails/accessories-pedals_thumb.webp",
+        brands: ["roland", "boss"],
       },
       {
-        id: "adapters",
-        label: "Adapters",
-        image: "/data/product_images/roland/roland-ric-g3_thumb.webp",
-        brands: ["roland"],
+        id: "power",
+        label: "Power Supplies",
+        image: "/data/category_thumbnails/accessories-power_thumb.webp",
+        brands: ["boss"],
       },
     ],
-    color: "#64748b", // Slate
+    color: "#6b7280",
   },
 ];
 
-/**
- * The "Brain" - Maps product categories to universal categories
- * Uses fuzzy matching on product metadata to intelligently sort items
- */
-export function mapProductToUniversal(product: Product): string {
-  // Build search string from all product metadata
-  const searchStr = (
-    (product.category || "") +
-    " " +
-    (product.subcategory || "") +
-    " " +
-    (product.name || "") +
-    " " +
-    ((product.specifications || []).map((s) => s.key).join(" ") || "")
-  ).toLowerCase();
-
-  // Multi-level matching: Most specific to least specific
-  if (
-    searchStr.includes("piano") ||
-    searchStr.includes("synth") ||
-    searchStr.includes("keyboard") ||
-    searchStr.includes("keys")
-  ) {
-    return "keys";
-  }
-  if (
-    searchStr.includes("drum") ||
-    searchStr.includes("percussion") ||
-    searchStr.includes("cymbal") ||
-    searchStr.includes("v-drum")
-  ) {
-    return "drums";
-  }
-  if (
-    searchStr.includes("guitar") ||
-    searchStr.includes("bass") ||
-    searchStr.includes("amp") ||
-    searchStr.includes("pedal") ||
-    searchStr.includes("effect")
-  ) {
-    return "guitars";
-  }
-  if (
-    searchStr.includes("monitor") ||
-    searchStr.includes("interface") ||
-    searchStr.includes("mic") ||
-    searchStr.includes("recording")
-  ) {
-    return "studio";
-  }
-  if (
-    searchStr.includes("speaker") ||
-    searchStr.includes("mixer") ||
-    searchStr.includes("pa") ||
-    searchStr.includes("subwoofer") ||
-    searchStr.includes("live")
-  ) {
-    return "live";
-  }
-  if (searchStr.includes("dj") || searchStr.includes("turntable")) {
-    return "dj";
-  }
-  if (searchStr.includes("headphone") || searchStr.includes("ear")) {
-    return "headphones";
-  }
-
-  // Default fallback
-  return "accessories";
-}
-
-/**
- * Get the category definition by ID
- */
 export function getCategoryById(id: string): UniversalCategoryDef | undefined {
   return UNIVERSAL_CATEGORIES.find((cat) => cat.id === id);
 }
 
-/**
- * Get the color associated with a category ID
- */
-export function getCategoryColor(categoryId: string): string {
-  const cat = getCategoryById(categoryId);
-  return cat?.color || "#64748b"; // Default to slate
+export function getSubcategories(categoryId: string): SubcategoryDef[] {
+  const category = getCategoryById(categoryId);
+  return category?.subcategories || [];
+}
+
+export function matchProductToCategory(product: Product): string {
+  const productCategory = (
+    product.main_category ||
+    product.category ||
+    ""
+  ).toLowerCase();
+
+  for (const cat of UNIVERSAL_CATEGORIES) {
+    if (cat.label.toLowerCase().includes(productCategory)) {
+      return cat.id;
+    }
+    if (productCategory.includes(cat.id)) {
+      return cat.id;
+    }
+  }
+
+  const keywordMap: Record<string, string> = {
+    piano: "keys",
+    keyboard: "keys",
+    synth: "keys",
+    organ: "keys",
+    controller: "keys",
+    workstation: "keys",
+    drum: "drums",
+    percussion: "drums",
+    cymbal: "drums",
+    guitar: "guitars",
+    bass: "guitars",
+    amp: "guitars",
+    pedal: "guitars",
+    effect: "guitars",
+    monitor: "studio",
+    interface: "studio",
+    microphone: "studio",
+    mic: "studio",
+    preamp: "studio",
+    speaker: "live",
+    mixer: "live",
+    wireless: "live",
+    pa: "live",
+    dj: "dj",
+    sampler: "dj",
+    groovebox: "dj",
+    turntable: "dj",
+    headphone: "dj",
+    software: "software",
+    plugin: "software",
+    cloud: "software",
+    cable: "accessories",
+    stand: "accessories",
+    case: "accessories",
+    bag: "accessories",
+  };
+
+  for (const [keyword, categoryId] of Object.entries(keywordMap)) {
+    if (productCategory.includes(keyword)) {
+      return categoryId;
+    }
+  }
+
+  return "accessories";
+}
+
+export function filterByCategory(
+  products: Product[],
+  categoryId: string,
+): Product[] {
+  if (!categoryId || categoryId === "all") {
+    return products;
+  }
+
+  return products.filter((p) => matchProductToCategory(p) === categoryId);
 }

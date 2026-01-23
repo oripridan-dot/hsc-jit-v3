@@ -1,5 +1,19 @@
 import { useEffect, useState } from "react";
+import { consolidateCategory } from "../lib/categoryConsolidator";
 import type { Product } from "../types";
+
+/**
+ * useCategoryCatalog - Category Consolidation-Aware Product Loading
+ *
+ * This hook loads products and filters them using the CONSOLIDATED category system.
+ * Brand categories are translated to universal UI categories for filtering.
+ *
+ * Flow:
+ * 1. User selects consolidated category (e.g., "keys")
+ * 2. Hook loads all brand catalogs
+ * 3. For each product, consolidate its brand category to UI category
+ * 4. Filter products where consolidated category matches selection
+ */
 
 // The list of brands your system tracks (corresponds to your JSON filenames)
 const TRACKED_BRANDS = [
@@ -15,7 +29,10 @@ const TRACKED_BRANDS = [
   "warm-audio",
 ];
 
-export const useCategoryCatalog = (category: string | null) => {
+export const useCategoryCatalog = (
+  category: string | null,
+  brandId?: string | null,
+) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -24,8 +41,11 @@ export const useCategoryCatalog = (category: string | null) => {
       setLoading(true);
       let aggregated: Product[] = [];
 
+      // If a specific brand is provided, only fetch that brand
+      const brandsToFetch = brandId ? [brandId] : TRACKED_BRANDS;
+
       // Parallel fetch of all Master Files
-      const promises = TRACKED_BRANDS.map((brand) =>
+      const promises = brandsToFetch.map((brand) =>
         fetch(`/data/${brand}.json`) // Files are in public/data/
           .then((res) => {
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
@@ -44,75 +64,54 @@ export const useCategoryCatalog = (category: string | null) => {
       aggregated = results.flat();
 
       console.log(
-        `📦 [useCategoryCatalog] Loaded ${aggregated.length} total products for category: "${category}"`,
+        `📦 [useCategoryCatalog] Loaded ${aggregated.length} total products`,
+        brandId ? `for brand: "${brandId}"` : "",
+        category ? `category: "${category}"` : "",
       );
 
-      // Filter by the requested Category Context
-      // This logic allows for broad matching (e.g., "Keys" matches "Synthesizers", "Pianos")
+      // Filter by CONSOLIDATED category - translate brand categories to UI categories
       const filtered = aggregated.filter((p) => {
+        // If no category filter or "All", include everything
         if (!category || category === "All") return true;
 
-        const catLower = category.toLowerCase();
+        // Get the product's brand and category
+        const productBrand = (p.brand || "").toLowerCase();
+        const productCategory = p.main_category || p.category || "";
 
-        // Primary: Check main_category field (this is what our seed data uses)
-        const mainCat = (p.main_category || p.category || "").toLowerCase();
-        const subCat = (p.subcategory || p.family || "").toLowerCase();
-        const searchSpace = `${mainCat} ${subCat}`.toLowerCase();
+        // Consolidate the product's category to get its UI category ID
+        const consolidatedId = consolidateCategory(
+          productBrand,
+          productCategory,
+        );
 
-        // Direct match first (most reliable)
-        if (mainCat.includes(catLower)) return true;
+        // Match against the requested consolidated category
+        // The category param should be a consolidated ID like "keys", "drums", etc.
+        const requestedCategory = category.toLowerCase();
 
-        // Handle composite category names like "Keys & Pianos"
-        if (
-          catLower.includes("keys") &&
-          (mainCat.includes("keys") ||
-            searchSpace.includes("piano") ||
-            searchSpace.includes("synth") ||
-            searchSpace.includes("keyboard"))
-        )
+        if (consolidatedId === requestedCategory) {
           return true;
-        if (
-          catLower.includes("drums") &&
-          (mainCat.includes("drums") ||
-            searchSpace.includes("drum") ||
-            searchSpace.includes("percussion"))
-        )
-          return true;
-        if (
-          catLower.includes("studio") &&
-          (mainCat.includes("studio") ||
-            searchSpace.includes("interface") ||
-            searchSpace.includes("monitor") ||
-            searchSpace.includes("microphone"))
-        )
-          return true;
-        if (
-          catLower.includes("guitar") &&
-          (mainCat.includes("guitar") ||
-            searchSpace.includes("guitar") ||
-            searchSpace.includes("amp"))
-        )
-          return true;
-        if (
-          catLower.includes("dj") &&
-          (mainCat.includes("dj") ||
-            searchSpace.includes("dj") ||
-            searchSpace.includes("production"))
-        )
-          return true;
-        if (
-          catLower.includes("pa") &&
-          (mainCat.includes("pa") ||
-            searchSpace.includes("speaker") ||
-            searchSpace.includes("live"))
-        )
-          return true;
+        }
 
-        return searchSpace.includes(catLower);
+        // Also check if the category param matches the consolidated category label
+        // This handles cases where labels like "Keys & Pianos" are passed
+        const labelMappings: Record<string, string> = {
+          "keys & pianos": "keys",
+          "drums & percussion": "drums",
+          "guitars & amps": "guitars",
+          "studio & recording": "studio",
+          "live sound": "live",
+          "dj & production": "dj",
+          "software & cloud": "software",
+          accessories: "accessories",
+        };
+
+        const normalizedCategory =
+          labelMappings[requestedCategory] || requestedCategory;
+        return consolidatedId === normalizedCategory;
       });
 
       console.log(
-        `🔍 [useCategoryCatalog] Filtered to ${filtered.length} products for category: "${category}"`,
+        `🔍 [useCategoryCatalog] Filtered to ${filtered.length} products for consolidated category: "${category}"`,
       );
       if (filtered.length > 0) {
         console.log(`📝 Sample product:`, filtered[0]);
@@ -123,7 +122,7 @@ export const useCategoryCatalog = (category: string | null) => {
     };
 
     fetchAll();
-  }, [category]);
+  }, [category, brandId]);
 
   return { products, loading };
 };
