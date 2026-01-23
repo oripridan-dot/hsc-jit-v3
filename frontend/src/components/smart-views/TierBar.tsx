@@ -206,7 +206,7 @@ export const TierBar: React.FC<TierBarProps> = ({
 
   return (
     <div
-      className={cn("w-full py-16 relative isolate select-none", className)}
+      className={cn("w-full py-12 relative isolate select-none", className)}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
@@ -216,11 +216,25 @@ export const TierBar: React.FC<TierBarProps> = ({
         cursor: isDragging ? "ew-resize" : "default",
       }}
     >
-      {/* Clean - No Background Clutter */}
+      {/* Subcategory Header */}
+      <div className="flex items-center justify-between mb-4 px-4">
+        <div className="flex items-center gap-3">
+          <h3 className="text-lg font-bold text-white tracking-tight">
+            {label}
+          </h3>
+          <span className="text-xs font-mono text-zinc-500 bg-zinc-800/50 px-2 py-0.5 rounded">
+            {filteredNodes.length} products
+          </span>
+        </div>
+        <div className="text-xs font-mono text-zinc-600">
+          ₪{Math.round(priceRange.min).toLocaleString()} - ₪
+          {Math.round(priceRange.max).toLocaleString()}
+        </div>
+      </div>
 
       {/* Reset Button & Keyboard Hint */}
       {(minHandle > 0 || maxHandle < 100) && (
-        <div className="absolute top-4 right-4 flex items-center gap-2 z-50">
+        <div className="absolute top-12 right-4 flex items-center gap-2 z-50">
           <div className="text-[10px] text-zinc-500 font-mono hidden md:block">
             <kbd className="px-1 py-0.5 bg-zinc-800 rounded border border-zinc-700">
               Esc
@@ -293,19 +307,22 @@ export const TierBar: React.FC<TierBarProps> = ({
               const clampedPos = Math.max(3, Math.min(97, product.pos));
               // Helper to safely get brand colors
               const getBrandColor = (brandName: string) => {
-                const normalizedKey = brandName.toLowerCase().replace(/\s+/g, '-');
+                const normalizedKey = brandName
+                  .toLowerCase()
+                  .replace(/\s+/g, "-");
                 // Direct lookup or fallback to default
-                if (brandThemes[normalizedKey]) return brandThemes[normalizedKey].colors.primary;
+                if (brandThemes[normalizedKey])
+                  return brandThemes[normalizedKey].colors.primary;
                 // Try finding by partial match if exact key fails
                 const key = Object.keys(brandThemes).find((k) =>
-                  normalizedKey.includes(k)
+                  normalizedKey.includes(k),
                 );
                 return key
                   ? brandThemes[key].colors.primary
                   : brandThemes.default.colors.primary;
               };
               const brandColor = getBrandColor(product.brand);
-              
+
               return (
                 <div
                   key={product.id}
@@ -336,17 +353,30 @@ export const TierBar: React.FC<TierBarProps> = ({
                       }}
                     />
 
-                    {/* Elevated Logo - Clean & Professional */}
+                    {/* Product Thumbnail - Prominent Display */}
                     <div className="relative">
-                      <BrandIcon
-                        brand={product.brand}
-                        className={cn(
-                          "w-10 h-10 transition-all duration-300",
-                          activeItem === product.id
-                            ? "drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] brightness-110 saturate-100 scale-110"
-                            : "opacity-90 saturate-100 brightness-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-105 group-hover:drop-shadow-[0_4px_8px_rgba(0,0,0,0.4)]",
-                        )}
-                      />
+                      {product.displayImage ? (
+                        <img
+                          src={product.displayImage}
+                          alt={product.name}
+                          className={cn(
+                            "w-14 h-14 rounded-lg object-contain bg-zinc-800/50 border border-zinc-700/50 transition-all duration-300",
+                            activeItem === product.id
+                              ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110 border-amber-500/50"
+                              : "opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)] group-hover:border-amber-500/30",
+                          )}
+                        />
+                      ) : (
+                        <BrandIcon
+                          brand={product.brand}
+                          className={cn(
+                            "w-12 h-12 transition-all duration-300",
+                            activeItem === product.id
+                              ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110"
+                              : "opacity-80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)]",
+                          )}
+                        />
+                      )}
 
                       {/* Track Illumination Spot (Subtle) */}
                       <div
@@ -385,7 +415,7 @@ export const TierBar: React.FC<TierBarProps> = ({
                         transition={{ duration: 0.2 }}
                         className="absolute bottom-full mb-4 left-1/2 w-64 z-50 pointer-events-none"
                       >
-                        <div 
+                        <div
                           className="bg-zinc-900/95 backdrop-blur-md border rounded-lg shadow-xl overflow-hidden relative z-50"
                           style={{ borderColor: `${brandColor}40` }}
                         >
@@ -398,24 +428,30 @@ export const TierBar: React.FC<TierBarProps> = ({
                               />
                             </div>
                             <div className="flex-1 p-3 flex flex-col justify-center min-w-0">
-                              <div className="text-[9px] uppercase tracking-wider font-semibold mb-0.5 truncate" style={{ color: `${brandColor}cc` }}>
+                              <div
+                                className="text-[9px] uppercase tracking-wider font-semibold mb-0.5 truncate"
+                                style={{ color: `${brandColor}cc` }}
+                              >
                                 {product.brand}
                               </div>
                               <div className="font-medium text-white text-xs leading-snug line-clamp-2 mb-1">
                                 {product.name}
                               </div>
-                              <div className="font-mono font-bold text-sm" style={{ color: brandColor }}>
+                              <div
+                                className="font-mono font-bold text-sm"
+                                style={{ color: brandColor }}
+                              >
                                 ₪{product.priceDisplay.toLocaleString()}
                               </div>
                             </div>
                           </div>
                           {/* Connecting Line */}
-                          <div 
-                             className="w-px h-3" 
-                             style={{ 
-                               backgroundColor: `${brandColor}80`,
-                               margin: "0 auto"
-                             }} 
+                          <div
+                            className="w-px h-3"
+                            style={{
+                              backgroundColor: `${brandColor}80`,
+                              margin: "0 auto",
+                            }}
                           />
                         </div>
                       </motion.div>

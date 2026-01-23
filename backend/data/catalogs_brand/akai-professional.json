@@ -3,278 +3,43 @@
   "brand_identity": {
     "id": "akai-professional",
     "name": "Akai Professional",
-    "website": "https://www.akai-professional.com"
+    "logo_url": "/assets/logos/akai-professional_logo.svg",
+    "website": "https://www.akaipro.com",
+    "description": "Official Akai Professional products distributed by Halilit",
+    "categories": []
   },
   "products": [
     {
-      "id": "akai professional-mpk-mini-mk3",
-      "name": "MPK Mini Mk3",
-      "brand": "Akai Professional",
-      "main_category": "Keys",
-      "subcategory": "Controller",
-      "description": "The MPK Mini Mk3 represents the entry tier of Akai Professional's Controller lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-mpk-mini-mk3_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-mpk-mini-mk3_thumb.webp",
-        "/data/product_images/akai professional/akai professional-mpk-mini-mk3_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 450,
-        "currency": "ILS"
-      },
-      "halilit_price": 450,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Entry"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-1108",
-      "verified": true
-    },
-    {
-      "id": "akai professional-mpk249",
-      "name": "MPK249",
-      "brand": "Akai Professional",
-      "main_category": "Keys",
-      "subcategory": "Controller",
-      "description": "The MPK249 represents the standard tier of Akai Professional's Controller lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-mpk249_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-mpk249_thumb.webp",
-        "/data/product_images/akai professional/akai professional-mpk249_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 1800,
-        "currency": "ILS"
-      },
-      "halilit_price": 1800,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-6690",
-      "verified": true
-    },
-    {
-      "id": "akai professional-mpk261",
-      "name": "MPK261",
-      "brand": "Akai Professional",
-      "main_category": "Keys",
-      "subcategory": "Controller",
-      "description": "The MPK261 represents the standard tier of Akai Professional's Controller lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-mpk261_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-mpk261_thumb.webp",
-        "/data/product_images/akai professional/akai professional-mpk261_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 2200,
-        "currency": "ILS"
-      },
-      "halilit_price": 2200,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-4565",
-      "verified": true
-    },
-    {
-      "id": "akai professional-apc-mini-mk2",
-      "name": "APC Mini Mk2",
-      "brand": "Akai Professional",
-      "main_category": "DJ",
-      "subcategory": "Controller",
-      "description": "The APC Mini Mk2 represents the entry tier of Akai Professional's Controller lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-apc-mini-mk2_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-apc-mini-mk2_thumb.webp",
-        "/data/product_images/akai professional/akai professional-apc-mini-mk2_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 500,
-        "currency": "ILS"
-      },
-      "halilit_price": 500,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Entry"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-4874",
-      "verified": true
-    },
-    {
-      "id": "akai professional-apc40-mk2",
-      "name": "APC40 Mk2",
-      "brand": "Akai Professional",
-      "main_category": "DJ",
-      "subcategory": "Controller",
-      "description": "The APC40 Mk2 represents the flagship tier of Akai Professional's Controller lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-apc40-mk2_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-apc40-mk2_thumb.webp",
-        "/data/product_images/akai professional/akai professional-apc40-mk2_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 1800,
-        "currency": "ILS"
-      },
-      "halilit_price": 1800,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Flagship"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-4391",
-      "verified": true
-    },
-    {
-      "id": "akai professional-mpc-one+",
-      "name": "MPC One+",
-      "brand": "Akai Professional",
-      "main_category": "DJ",
-      "subcategory": "Production",
-      "description": "The MPC One+ represents the standard tier of Akai Professional's Production lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-mpc-one+_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-mpc-one+_thumb.webp",
-        "/data/product_images/akai professional/akai professional-mpc-one+_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 3500,
-        "currency": "ILS"
-      },
-      "halilit_price": 3500,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-2561",
-      "verified": true
-    },
-    {
-      "id": "akai professional-mpc-live-ii",
-      "name": "MPC Live II",
-      "brand": "Akai Professional",
-      "main_category": "DJ",
-      "subcategory": "Production",
-      "description": "The MPC Live II represents the standard tier of Akai Professional's Production lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-mpc-live-ii_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-mpc-live-ii_thumb.webp",
-        "/data/product_images/akai professional/akai professional-mpc-live-ii_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 5500,
-        "currency": "ILS"
-      },
-      "halilit_price": 5500,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-9555",
-      "verified": true
-    },
-    {
-      "id": "akai professional-mpc-x-se",
+      "id": "akai-professional-mpc-x-se",
       "name": "MPC X SE",
-      "brand": "Akai Professional",
-      "main_category": "DJ",
-      "subcategory": "Production",
-      "description": "The MPC X SE represents the flagship tier of Akai Professional's Production lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-mpc-x-se_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-mpc-x-se_thumb.webp",
-        "/data/product_images/akai professional/akai professional-mpc-x-se_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 9900,
-        "currency": "ILS"
+      "brand": "akai-professional",
+      "category": "MPC",
+      "subcategory": "Production Center",
+      "main_category": "MPC",
+      "description": "Flagship standalone MPC",
+      "short_description": "MPC X SE - Flagship tier Production Center",
+      "image_url": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-x-se_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-x-se_main.webp"
       },
-      "halilit_price": 9900,
+      "pricing": {
+        "regular_price": 12500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-AK-2552",
-      "verified": true
-    },
-    {
-      "id": "akai professional-force",
-      "name": "Force",
-      "brand": "Akai Professional",
-      "main_category": "DJ",
-      "subcategory": "Production",
-      "description": "The Force represents the standard tier of Akai Professional's Production lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-force_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-force_thumb.webp",
-        "/data/product_images/akai professional/akai professional-force_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 4900,
-        "currency": "ILS"
-      },
-      "halilit_price": 4900,
-      "specifications": [
+          "key": "Category",
+          "value": "MPC"
+        },
         {
-          "key": "Tier",
-          "value": "Standard"
+          "key": "Type",
+          "value": "Production Center"
         },
         {
           "key": "Warranty",
@@ -282,30 +47,45 @@
         }
       ],
       "availability": "low-stock",
-      "sku": "HL-AK-9047",
-      "verified": true
+      "sku": "HL-AKA-8562",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "mpc",
+        "production-center"
+      ]
     },
     {
-      "id": "akai professional-fire",
-      "name": "Fire",
-      "brand": "Akai Professional",
-      "main_category": "DJ",
-      "subcategory": "Controller",
-      "description": "The Fire represents the entry tier of Akai Professional's Controller lineup. Designed for dj professionals.",
-      "image_url": "/data/product_images/akai professional/akai professional-fire_thumb.webp",
-      "images": [
-        "/data/product_images/akai professional/akai professional-fire_thumb.webp",
-        "/data/product_images/akai professional/akai professional-fire_main.webp"
-      ],
-      "pricing": {
-        "regular_price": 800,
-        "currency": "ILS"
+      "id": "akai-professional-mpc-live-ii",
+      "name": "MPC Live II",
+      "brand": "akai-professional",
+      "category": "MPC",
+      "subcategory": "Production Center",
+      "main_category": "MPC",
+      "description": "Portable standalone MPC",
+      "short_description": "MPC Live II - Standard tier Production Center",
+      "image_url": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-live-ii_main.webp"
       },
-      "halilit_price": 800,
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
-          "value": "Entry"
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "MPC"
+        },
+        {
+          "key": "Type",
+          "value": "Production Center"
         },
         {
           "key": "Warranty",
@@ -313,8 +93,475 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-AK-6099",
-      "verified": true
+      "sku": "HL-AKA-9408",
+      "verified": true,
+      "tags": [
+        "standard",
+        "mpc",
+        "production-center"
+      ]
+    },
+    {
+      "id": "akai-professional-mpc-one+",
+      "name": "MPC One+",
+      "brand": "akai-professional",
+      "category": "MPC",
+      "subcategory": "Production Center",
+      "main_category": "MPC",
+      "description": "Compact standalone MPC",
+      "short_description": "MPC One+ - Standard tier Production Center",
+      "image_url": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-one+_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-one+_main.webp"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "MPC"
+        },
+        {
+          "key": "Type",
+          "value": "Production Center"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AKA-1717",
+      "verified": true,
+      "tags": [
+        "standard",
+        "mpc",
+        "production-center"
+      ]
+    },
+    {
+      "id": "akai-professional-mpc-key-61",
+      "name": "MPC Key 61",
+      "brand": "akai-professional",
+      "category": "MPC",
+      "subcategory": "Production Keyboard",
+      "main_category": "MPC",
+      "description": "61-key production center",
+      "short_description": "MPC Key 61 - Flagship tier Production Keyboard",
+      "image_url": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-mpc-key-61_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-mpc-key-61_main.webp"
+      },
+      "pricing": {
+        "regular_price": 8500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "MPC"
+        },
+        {
+          "key": "Type",
+          "value": "Production Keyboard"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-AKA-7430",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "mpc",
+        "production-keyboard"
+      ]
+    },
+    {
+      "id": "akai-professional-apc64",
+      "name": "APC64",
+      "brand": "akai-professional",
+      "category": "Controllers",
+      "subcategory": "Ableton Controller",
+      "main_category": "Controllers",
+      "description": "64-pad Ableton controller",
+      "short_description": "APC64 - Flagship tier Ableton Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-apc64_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-apc64_main.webp"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Controllers"
+        },
+        {
+          "key": "Type",
+          "value": "Ableton Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AKA-5617",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "controllers",
+        "ableton-controller"
+      ]
+    },
+    {
+      "id": "akai-professional-apc40-mk2",
+      "name": "APC40 Mk2",
+      "brand": "akai-professional",
+      "category": "Controllers",
+      "subcategory": "Ableton Controller",
+      "main_category": "Controllers",
+      "description": "Professional Ableton controller",
+      "short_description": "APC40 Mk2 - Standard tier Ableton Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-apc40-mk2_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-apc40-mk2_main.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Controllers"
+        },
+        {
+          "key": "Type",
+          "value": "Ableton Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AKA-5319",
+      "verified": true,
+      "tags": [
+        "standard",
+        "controllers",
+        "ableton-controller"
+      ]
+    },
+    {
+      "id": "akai-professional-apc-mini-mk2",
+      "name": "APC Mini Mk2",
+      "brand": "akai-professional",
+      "category": "Controllers",
+      "subcategory": "Ableton Controller",
+      "main_category": "Controllers",
+      "description": "Compact Ableton controller",
+      "short_description": "APC Mini Mk2 - Entry tier Ableton Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-apc-mini-mk2_main.webp"
+      },
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Controllers"
+        },
+        {
+          "key": "Type",
+          "value": "Ableton Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-AKA-4668",
+      "verified": true,
+      "tags": [
+        "entry",
+        "controllers",
+        "ableton-controller"
+      ]
+    },
+    {
+      "id": "akai-professional-fire",
+      "name": "Fire",
+      "brand": "akai-professional",
+      "category": "Controllers",
+      "subcategory": "FL Studio Controller",
+      "main_category": "Controllers",
+      "description": "FL Studio controller",
+      "short_description": "Fire - Entry tier FL Studio Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-fire_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-fire_main.webp"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Controllers"
+        },
+        {
+          "key": "Type",
+          "value": "FL Studio Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AKA-4645",
+      "verified": true,
+      "tags": [
+        "entry",
+        "controllers",
+        "fl-studio-controller"
+      ]
+    },
+    {
+      "id": "akai-professional-mpk-mini-mk3",
+      "name": "MPK Mini Mk3",
+      "brand": "akai-professional",
+      "category": "Keyboards",
+      "subcategory": "MIDI Controller",
+      "main_category": "Keyboards",
+      "description": "25-key compact controller",
+      "short_description": "MPK Mini Mk3 - Entry tier MIDI Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-mpk-mini-mk3_main.webp"
+      },
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Keyboards"
+        },
+        {
+          "key": "Type",
+          "value": "MIDI Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AKA-5754",
+      "verified": true,
+      "tags": [
+        "entry",
+        "keyboards",
+        "midi-controller"
+      ]
+    },
+    {
+      "id": "akai-professional-mpk249",
+      "name": "MPK249",
+      "brand": "akai-professional",
+      "category": "Keyboards",
+      "subcategory": "MIDI Controller",
+      "main_category": "Keyboards",
+      "description": "49-key performance controller",
+      "short_description": "MPK249 - Standard tier MIDI Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk249_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-mpk249_main.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Keyboards"
+        },
+        {
+          "key": "Type",
+          "value": "MIDI Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AKA-9790",
+      "verified": true,
+      "tags": [
+        "standard",
+        "keyboards",
+        "midi-controller"
+      ]
+    },
+    {
+      "id": "akai-professional-mpk261",
+      "name": "MPK261",
+      "brand": "akai-professional",
+      "category": "Keyboards",
+      "subcategory": "MIDI Controller",
+      "main_category": "Keyboards",
+      "description": "61-key performance controller",
+      "short_description": "MPK261 - Standard tier MIDI Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-mpk261_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-mpk261_main.webp"
+      },
+      "pricing": {
+        "regular_price": 2800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Keyboards"
+        },
+        {
+          "key": "Type",
+          "value": "MIDI Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-AKA-3498",
+      "verified": true,
+      "tags": [
+        "standard",
+        "keyboards",
+        "midi-controller"
+      ]
+    },
+    {
+      "id": "akai-professional-advance-61",
+      "name": "Advance 61",
+      "brand": "akai-professional",
+      "category": "Keyboards",
+      "subcategory": "MIDI Controller",
+      "main_category": "Keyboards",
+      "description": "Virtual instrument controller",
+      "short_description": "Advance 61 - Flagship tier MIDI Controller",
+      "image_url": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp",
+      "images": {
+        "thumbnail": "/data/product_images/akai-professional/akai-professional-advance-61_thumb.webp",
+        "main": "/data/product_images/akai-professional/akai-professional-advance-61_main.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Keyboards"
+        },
+        {
+          "key": "Type",
+          "value": "MIDI Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-AKA-2739",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "keyboards",
+        "midi-controller"
+      ]
     }
-  ]
+  ],
+  "generated_at": "2026-01-23T02:41:37.851942",
+  "product_count": 12
 }

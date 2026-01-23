@@ -7,60 +7,111 @@
  * - Smooth scrolling support
  * - Professional category cards
  * - Touch-optimized for mobile
+ *
+ * ⭐ DYNAMIC IMAGE HARVESTING:
+ * Instead of hardcoded paths, we pull real images from loaded catalogs.
+ * This ensures the dashboard always displays valid product images that exist.
  */
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import { catalogLoader } from "../../lib/catalogLoader";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
 import { CandyCard } from "../ui/CandyCard";
 
-// ------------------------------------------------------------------
-// CONFIGURATION: Map your categories to "Candy Shop" images here
-// ------------------------------------------------------------------
-const CATEGORY_IMAGES: Record<string, string[]> = {
-  "Keys & Pianos": [
-    "/data/product_images/nord/nord-nord-electro-7_thumb.webp",
-    "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
-    "/data/product_images/roland/roland-fantom_series_thumb.webp",
-    "/data/product_images/roland/roland-gokeys_5_thumb.webp",
-  ],
-  "Drums & Percussion": [
-    "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
-    "/data/product_images/roland/roland-prod-1_thumb.webp",
-    "/data/product_images/akai-professional/akai-professional-prod-2_thumb.webp",
-    "/data/product_images/akai-professional/akai-professional-prod-3_thumb.webp",
-  ],
-  "Guitars & Amps": [
-    "/data/product_images/boss/boss-eurus_gs-1_thumb.webp",
-    "/data/product_images/boss/boss-gx-10_thumb.webp",
-    "/data/product_images/boss/boss-prod-1_thumb.webp",
-    "/data/product_images/boss/boss-prod-2_thumb.webp",
-  ],
-  "Studio & Recording": [
-    "/data/product_images/universal-audio/universal-audio-prod-1_thumb.webp",
-    "/data/product_images/adam-audio/adam-audio-prod-1_thumb.webp",
-    "/data/product_images/focusrite/focusrite-prod-1_thumb.webp",
-    "/data/product_images/warm-audio/warm-audio-prod-1_thumb.webp",
-  ],
-  "Live Sound": [
-    "/data/product_images/mackie/mackie-prod-1_thumb.webp",
-    "/data/product_images/roland/roland-bridge_cast_thumb.webp",
-    "/data/product_images/roland/roland-prod-3_thumb.webp",
-    "/data/product_images/mackie/mackie-prod-2_thumb.webp",
-  ],
-  "DJ & Production": [
-    "/data/product_images/teenage-engineering/teenage-engineering-prod-1_thumb.webp",
-    "/data/product_images/roland/roland-cb-404_thumb.webp",
-    "/data/product_images/roland/roland-rh-5_thumb.webp",
-    "/data/product_images/teenage-engineering/teenage-engineering-prod-4_thumb.webp",
-  ],
-  Default: ["/assets/react.svg"],
-};
+// Placeholder for when no images are available
+const DEFAULT_FALLBACK = ["/assets/react.svg"];
 
 export const GalaxyDashboard: React.FC = () => {
   const { selectUniversalCategory, selectSubcategory } = useNavigationStore();
   const [gridColumns, setGridColumns] = useState(3);
+  const [catalogImages, setCatalogImages] = useState<Record<string, string[]>>(
+    {},
+  );
+
+  // ============================================================
+  // 1. DYNAMIC IMAGE HARVESTER
+  // Load all brand catalogs and extract valid images
+  // ============================================================
+  useEffect(() => {
+    const loadCatalogImages = async () => {
+      const imageLookup: Record<string, string[]> = {};
+
+      // Main brands to load (matches your available catalogs)
+      const brands = [
+        "roland",
+        "nord",
+        "moog",
+        "boss",
+        "akai-professional",
+        "universal-audio",
+        "warm-audio",
+        "mackie",
+        "teenage-engineering",
+      ];
+
+      try {
+        // Load all brand catalogs in parallel
+        const catalogPromises = brands.map((brand) =>
+          catalogLoader.loadBrand(brand).catch(() => null),
+        );
+
+        const catalogs = await Promise.all(catalogPromises);
+
+        // Extract images from each catalog
+        catalogs.forEach((catalog, idx) => {
+          if (!catalog?.products) return;
+
+          const brand = brands[idx];
+          const images = catalog.products
+            .map((p) => p.images?.thumbnail || p.image_url)
+            .filter((url): url is string => Boolean(url) && url.length > 0)
+            .slice(0, 4); // Limit to 4 images per category
+
+          if (images.length > 0) {
+            imageLookup[brand] = images;
+          }
+        });
+
+        // Build category-to-images mapping based on loaded data
+        const categoryImages: Record<string, string[]> = {};
+
+        // Map categories to available brand images
+        const categoryBrandMap: Record<string, string[]> = {
+          "Keys & Pianos": ["roland", "nord", "moog"],
+          "Drums & Percussion": ["roland", "boss", "akai-professional"],
+          "Guitars & Amps": ["boss", "roland"],
+          "Studio & Recording": ["universal-audio", "warm-audio", "moog"],
+          "Live Sound": ["mackie", "roland", "universal-audio"],
+          "DJ & Production": [
+            "teenage-engineering",
+            "roland",
+            "akai-professional",
+          ],
+        };
+
+        // Populate category images from available brand data
+        for (const [category, brands] of Object.entries(categoryBrandMap)) {
+          const images: string[] = [];
+          for (const brand of brands) {
+            if (imageLookup[brand]) {
+              images.push(...imageLookup[brand]);
+            }
+          }
+          if (images.length > 0) {
+            categoryImages[category] = images.slice(0, 4);
+          }
+        }
+
+        setCatalogImages(categoryImages);
+      } catch (err) {
+        console.warn("Failed to load catalog images:", err);
+      }
+    };
+
+    loadCatalogImages();
+  }, []);
 
   // Calculate responsive grid columns
   useEffect(() => {
@@ -138,6 +189,10 @@ export const GalaxyDashboard: React.FC = () => {
             )}
           >
             {visibleCategories.map((cat, index) => {
+              // Use dynamic images from loaded catalogs, fallback to placeholder
+              const categoryImages =
+                catalogImages[cat.label] || DEFAULT_FALLBACK;
+
               return (
                 <motion.div
                   key={cat.id}
@@ -149,9 +204,7 @@ export const GalaxyDashboard: React.FC = () => {
                   <CandyCard
                     title={cat.label}
                     subtitle={`${cat.description || "ARM TRACK"}`}
-                    images={
-                      CATEGORY_IMAGES[cat.label] || CATEGORY_IMAGES["Default"]
-                    }
+                    images={categoryImages}
                     subcategories={cat.subcategories}
                     onClick={() => handleCategoryClick(cat.id)}
                     onSubcategoryClick={(sub) =>

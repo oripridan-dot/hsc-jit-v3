@@ -1,16 +1,273 @@
-# 🎹 HSC Mission Control v3.7.6
+# HSC-JIT v3.7.6 - Mission Control
 
-**Design System Complete** - Professional-Grade Visual Catalog
+**Production-Ready Static Product Catalog** | React 19 + TypeScript 5 + Tailwind CSS
 
-> **Production-Ready Static Multi-Brand Product Catalog with Complete Design System** ✅
-
-A modern, high-performance product catalog system for professional musical instruments. Built with React 19, TypeScript 5, and Tailwind CSS featuring a comprehensive design system and 100% processed product imagery.
+A zero-backend, static-first product catalog for musical instruments. All data pre-built into JSON files. No server, no database, no runtime API calls.
 
 ---
 
-## ✨ v3.7.6: Design System Complete (January 2026)
+## 🚀 Quick Start
 
-**Complete Professional Design System** - Comprehensive visual language with fully processed product imagery and systematic design tokens.
+### Development
+
+```bash
+cd frontend
+pnpm install
+pnpm dev
+# Opens http://localhost:5173
+```
+
+### Production Build
+
+```bash
+cd frontend
+pnpm build
+# Output: frontend/dist/
+```
+
+---
+
+## 📁 Structure
+
+```
+hsc-jit-v3/
+├── frontend/                           # React app (production code)
+│   ├── public/data/                    # ⭐ SOURCE OF TRUTH (static JSON)
+│   │   ├── index.json                  # Master catalog
+│   │   ├── roland.json, boss.json, etc # Brand catalogs
+│   │   ├── logos/                      # Brand logos
+│   │   └── product_images/             # Product images (processed)
+│   │
+│   ├── src/
+│   │   ├── App.tsx                     # Main app
+│   │   ├── components/
+│   │   │   ├── Navigator.tsx           # Sidebar navigation
+│   │   │   ├── Workbench.tsx           # Product details
+│   │   │   ├── ErrorBoundary.tsx
+│   │   │   ├── smart-views/            # Feature components
+│   │   │   └── ui/                     # Reusable UI components
+│   │   ├── hooks/                      # Data loading hooks
+│   │   ├── lib/                        # Core utilities
+│   │   │   ├── catalogLoader.ts        # Load static JSON ⭐
+│   │   │   ├── instantSearch.ts        # Search with Fuse.js ⭐
+│   │   │   └── ...
+│   │   ├── store/                      # Zustand global state
+│   │   ├── types/                      # TypeScript definitions
+│   │   └── styles/                     # Global styles
+│   │
+│   └── [config files]
+│
+├── backend/                            # Data generation (offline)
+│   ├── forge_backbone.py               # ⭐ Data generator
+│   ├── services/                       # Brand scrapers
+│   └── data/
+│
+└── README.md
+```
+
+---
+
+## 🔄 How It Works
+
+### Data Pipeline
+
+```
+1. GENERATION (Offline)
+   Brand Websites → Scrapers → Raw JSON → forge_backbone.py → ✅ frontend/public/data/*.json
+
+2. RUNTIME (Frontend)
+   Static JSON → catalogLoader → Zustand store → React components → Rendered UI
+```
+
+**No server calls.** All data is pre-built.
+
+### To Regenerate Data
+
+```bash
+cd backend
+python3 forge_backbone.py
+```
+
+This creates/updates JSON files in `frontend/public/data/`.
+
+---
+
+## 💡 Core Patterns
+
+### Load Catalog Data
+
+```typescript
+import { catalogLoader } from "./lib/catalogLoader";
+
+const catalog = await catalogLoader.loadBrand("roland");
+console.log(catalog.products); // 33 Roland products
+```
+
+### Search Products
+
+```typescript
+import { instantSearch } from "./lib/instantSearch";
+
+const results = instantSearch.search("nord lead", {
+  keys: ["name", "category"],
+  limit: 10,
+});
+```
+
+### Global State
+
+```typescript
+import { useNavigationStore } from "./store/navigationStore";
+
+const { activeCategory, selectedProduct, selectProduct } = useNavigationStore();
+```
+
+---
+
+## 🎯 Architecture Principles
+
+### ONE SOURCE OF TRUTH
+
+| Need          | Solution                    | File                        |
+| ------------- | --------------------------- | --------------------------- |
+| Load data     | `catalogLoader.loadBrand()` | `lib/catalogLoader.ts`      |
+| Search        | `instantSearch.search()`    | `lib/instantSearch.ts`      |
+| State         | Zustand `navigationStore`   | `store/navigationStore.ts`  |
+| Generate data | `python3 forge_backbone.py` | `backend/forge_backbone.py` |
+| Styling       | Tailwind + CSS variables    | `styles/`                   |
+
+### STATIC FIRST
+
+- ✅ All data pre-built
+- ✅ All images processed
+- ✅ Zero API calls at runtime
+- ✅ Zero database
+- ✅ Deploy anywhere (CDN, S3, Netlify, Vercel)
+
+### TYPE SAFE
+
+- ✅ TypeScript 5 strict mode
+- ✅ Zod runtime validation
+- ✅ No `any` types
+
+---
+
+## 📊 What's Inside
+
+- **10+ Brands**: Roland, Boss, Nord, Moog, Universal Audio, Adam Audio, Mackie, Akai, Warm Audio, Teenage Engineering
+- **100+ Products**: Full specs, images, hierarchies
+- **Search**: <50ms fuzzy search (Fuse.js)
+- **Categories**: 8 universal categories with color coding
+- **Images**: All processed via Visual Factory (WebP, background-removed)
+- **Build Size**: 434 KB (optimized)
+
+---
+
+## 🛠️ Commands
+
+```bash
+# Development
+cd frontend && pnpm dev
+
+# Type checking
+cd frontend && npm run quality:types
+
+# Linting
+cd frontend && npm run lint
+
+# Testing
+cd frontend && npm run test
+
+# Build
+cd frontend && pnpm build
+
+# Data generation
+cd backend && python3 forge_backbone.py
+```
+
+---
+
+## 🐛 Troubleshooting
+
+### Dev server won't start
+
+```bash
+cd frontend
+rm -rf node_modules/.vite
+pnpm dev
+```
+
+### Type errors
+
+```bash
+cd frontend
+npx tsc --noEmit
+```
+
+### Stale data
+
+```bash
+# In browser console
+window.__hscdev.clearCache()
+window.location.reload()
+```
+
+---
+
+## 📦 Dependencies
+
+- React 19
+- TypeScript 5
+- Vite 7
+- Tailwind CSS
+- Zustand
+- Fuse.js
+- Zod
+- Framer Motion
+- Playwright
+
+---
+
+## 🚀 Deployment
+
+1. **Build**: `cd frontend && pnpm build`
+2. **Deploy** `frontend/dist/` to any static host (Netlify, Vercel, S3, CDN)
+3. **No backend needed** - data is pre-built
+
+---
+
+## ❓ FAQ
+
+**Q: Why no backend?**  
+A: Data is static and pre-built. No runtime server needed.
+
+**Q: How do I update products?**  
+A: Run `forge_backbone.py` to regenerate JSON, then redeploy frontend.
+
+**Q: Where are images from?**  
+A: Visual Factory processes them; stored in `public/data/product_images/`.
+
+**Q: Can I add a new brand?**  
+A: Create a scraper in `backend/services/`, add to `forge_backbone.py`, regenerate.
+
+**Q: What if dev server crashes?**  
+A: Kill it (Ctrl+C), clean cache, restart: `rm -rf node_modules/.vite && pnpm dev`
+
+---
+
+## 🔗 Key Files
+
+- **App Entry**: [src/App.tsx](frontend/src/App.tsx)
+- **Data Loader**: [src/lib/catalogLoader.ts](frontend/src/lib/catalogLoader.ts)
+- **Search**: [src/lib/instantSearch.ts](frontend/src/lib/instantSearch.ts)
+- **State**: [src/store/navigationStore.ts](frontend/src/store/navigationStore.ts)
+- **Data Generator**: [backend/forge_backbone.py](backend/forge_backbone.py)
+
+---
+
+**Status**: 🟢 Production Ready  
+**Last Updated**: January 23, 2026  
+**Version**: 3.7.6
 
 ### 🎨 Design System Highlights
 

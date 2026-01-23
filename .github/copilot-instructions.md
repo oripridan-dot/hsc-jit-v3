@@ -101,6 +101,49 @@ If you see API calls to `localhost:8000` in the codebase, **remove them**.
 
 ---
 
+## 🏷️ Category Consolidation ("Steady UI")
+
+**The UI ALWAYS shows the same 8 categories in the same order.**
+
+Brand-specific taxonomies (Roland's "Pianos", Nord's "Stage", etc.) are translated into universal UI categories.
+
+### The 8 Universal Categories (FIXED ORDER)
+
+| # | ID | Label | Icon |
+|---|---|---|---|
+| 1 | `keys` | Keys & Pianos | 🎹 |
+| 2 | `drums` | Drums & Percussion | 🥁 |
+| 3 | `guitars` | Guitars & Amps | 🎸 |
+| 4 | `studio` | Studio & Recording | 🎙️ |
+| 5 | `live` | Live Sound | 🔊 |
+| 6 | `dj` | DJ & Production | 🎧 |
+| 7 | `software` | Software & Cloud | 💻 |
+| 8 | `accessories` | Accessories | 🔧 |
+
+### How to Use Category Consolidation
+
+```typescript
+// ✅ CORRECT: Use consolidateCategory for UI display
+import { consolidateCategory, getConsolidatedCategory } from './lib/categoryConsolidator';
+
+// Roland says "Pianos", UI shows "Keys & Pianos"
+const uiCategoryId = consolidateCategory("roland", "Pianos");
+// Returns: "keys"
+
+const category = getConsolidatedCategory(uiCategoryId);
+// Returns: { id: "keys", label: "Keys & Pianos", icon: "🎹", color: "#f59e0b" }
+```
+
+### Key Files
+
+| File | Purpose |
+|---|---|
+| `frontend/src/lib/categoryConsolidator.ts` | TypeScript consolidation logic |
+| `backend/models/category_consolidator.py` | Python equivalent for backend |
+| `docs/CATEGORY_CONSOLIDATION_ARCHITECTURE.md` | Full documentation |
+
+---
+
 ## ✅ How to Build Features
 
 ### Example: Add a new search filter
@@ -184,6 +227,7 @@ frontend/
 │   │
 │   ├── lib/
 │   │   ├── catalogLoader.ts     ← ⭐ Load static JSON
+│   │   ├── categoryConsolidator.ts ← ⭐ Brand→UI category translation
 │   │   ├── instantSearch.ts     ← ⭐ Fuse.js search engine
 │   │   └── devTools.ts          ← Dev utilities
 │   │

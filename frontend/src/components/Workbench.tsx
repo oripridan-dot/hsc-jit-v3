@@ -6,6 +6,7 @@
 import React, { useEffect, useState } from "react";
 import { catalogLoader } from "../lib/catalogLoader";
 import { useNavigationStore } from "../store/navigationStore";
+import { useCategoryProducts } from "../hooks/useTaxonomy";
 import type { Product } from "../types";
 import { Breadcrumbs, LayerNavigator } from "./ui";
 import { GalaxyDashboard } from "./views/GalaxyDashboard";
@@ -18,10 +19,13 @@ export const Workbench: React.FC = () => {
     selectedProduct,
     activePath,
     currentBrand,
+    currentCategory,
   } = useNavigationStore();
   const [brandProducts, setBrandProducts] = useState<Product[]>([]);
-  const [categoryProducts, setCategoryProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Use taxonomy-aware category filtering
+  const categoryProducts = useCategoryProducts(brandProducts, currentCategory ?? undefined);
 
   // Load brand products when brand is selected
   useEffect(() => {
@@ -34,20 +38,6 @@ export const Workbench: React.FC = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentLevel, activePath[0]]);
-
-  // Filter category products when category is selected
-  useEffect(() => {
-    if (
-      currentLevel === "family" &&
-      brandProducts.length > 0 &&
-      activePath[1]
-    ) {
-      const filtered = brandProducts.filter(
-        (p) => p.category === activePath[1],
-      );
-      setCategoryProducts(filtered);
-    }
-  }, [currentLevel, activePath, brandProducts]);
 
   // The "Router" logic - switch views based on state machine level
   const renderView = () => {
@@ -135,7 +125,10 @@ export const Workbench: React.FC = () => {
     }
 
     // Priority 1: Category/Family View with LayerNavigator
-    if (currentLevel === "family" && categoryProducts.length > 0) {
+    if (currentLevel === "family" && currentCategory) {
+      // Use category-filtered products from taxonomy
+      const displayProducts = categoryProducts.length > 0 ? categoryProducts : brandProducts;
+      
       return (
         <div className="flex-1 h-full flex flex-col overflow-hidden">
           {/* Breadcrumbs */}
@@ -144,10 +137,13 @@ export const Workbench: React.FC = () => {
           {/* Layer Navigator for drilling deeper */}
           <div className="flex-1 overflow-y-auto p-8 pb-32">
             <h1 className="text-4xl font-black text-[var(--text-primary)] uppercase tracking-tighter mb-8">
-              {activePath[1] || "Category"}
+              {currentCategory || activePath[1] || "Category"}
+              <span className="text-lg font-normal text-[var(--text-secondary)] ml-4">
+                ({displayProducts.length} products)
+              </span>
             </h1>
             <LayerNavigator
-              products={categoryProducts}
+              products={displayProducts}
               currentLevel="category"
               isMultiBrand={false}
             />

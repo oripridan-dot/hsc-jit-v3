@@ -26,6 +26,9 @@ from models.product_hierarchy import (
     ProductImage, ProductSpecification, SourceType, ProductRelationship, RelationshipType,
     ConnectivityDNA, ProductTier
 )
+from models.brand_taxonomy import (
+    ROLAND_TAXONOMY, normalize_category, validate_category, get_brand_taxonomy
+)
 from services.scraper_enhancements import (
     SupportArticleExtractor, ProductImageEnhancer, BrandLogoDownloader
 )
@@ -60,56 +63,53 @@ class RolandScraper:
     def __init__(self):
         self.base_url = "https://www.roland.com/global"
         self.products_url = f"{self.base_url}/products/"
-        # Comprehensive category URLs including all known subcategories
-        # TEMPORARY: Restricting to Accessories/Cables for Connectivity Parser validation
+        # FULL ROLAND TAXONOMY - All official categories from roland.com
+        # Each URL maps directly to an official taxonomy category
         self.category_urls = [
+            # Main categories page
+            "https://www.roland.com/global/categories/",
+            # Pianos and subcategories
+            "https://www.roland.com/global/categories/pianos/",
+            "https://www.roland.com/global/categories/pianos/grand_pianos/",
+            "https://www.roland.com/global/categories/pianos/portable_pianos/",
+            "https://www.roland.com/global/categories/pianos/stage_pianos/",
+            "https://www.roland.com/global/categories/pianos/upright_pianos/",
+            "https://www.roland.com/global/categories/pianos/accessories/",
+            # Synthesizers and subcategories
+            "https://www.roland.com/global/categories/synthesizers/",
+            "https://www.roland.com/global/categories/synthesizers/analog_modeling/",
+            "https://www.roland.com/global/categories/synthesizers/performance_workstation/",
+            "https://www.roland.com/global/categories/synthesizers/sound_expansion_patches/",
+            "https://www.roland.com/global/categories/synthesizers/accessories/",
+            # Keyboards
+            "https://www.roland.com/global/categories/keyboards/",
+            # Organs
+            "https://www.roland.com/global/categories/organs/",
+            # Guitar/Bass
+            "https://www.roland.com/global/categories/guitar_bass/",
+            # Drums/Percussion
+            "https://www.roland.com/global/categories/drums_percussion/",
+            # Wind Instruments
+            "https://www.roland.com/global/categories/wind_instruments/",
+            # Production
+            "https://www.roland.com/global/categories/production/",
+            # Amplifiers
+            "https://www.roland.com/global/categories/amplifiers/",
+            "https://www.roland.com/global/categories/amplifiers/keyboard_amplifiers/",
+            "https://www.roland.com/global/categories/amplifiers/guitar_amplifiers/",
+            "https://www.roland.com/global/categories/amplifiers/bass_amplifiers/",
+            # AIRA
+            "https://www.roland.com/global/categories/aira/",
+            # Roland Cloud
+            "https://www.roland.com/global/categories/roland_cloud/",
+            # Accessories (with subcategories)
             "https://www.roland.com/global/categories/accessories/",
+            "https://www.roland.com/global/categories/accessories/headphones/",
             "https://www.roland.com/global/categories/accessories/cables/",
-            "https://www.roland.com/global/categories/accessories/instrument_cables/",
-            "https://www.roland.com/global/categories/accessories/microphone_cables/",
-            "https://www.roland.com/global/categories/accessories/interconnect_cables/",
-            "https://www.roland.com/global/categories/accessories/digital_cables/",
-            "https://www.roland.com/global/categories/accessories/midi_cables/",
+            "https://www.roland.com/global/categories/accessories/stands/",
+            "https://www.roland.com/global/categories/accessories/cases_bags/",
+            "https://www.roland.com/global/categories/accessories/pedals/",
         ]
-        # self.category_urls = [
-        #     # Main categories page
-        #     "https://www.roland.com/global/categories/",
-        #     # Pianos and subcategories
-        #     "https://www.roland.com/global/categories/pianos/",
-        #     "https://www.roland.com/global/categories/pianos/grand_pianos/",
-        #     "https://www.roland.com/global/categories/pianos/portable_pianos/",
-        #     "https://www.roland.com/global/categories/pianos/stage_pianos/",
-        #     "https://www.roland.com/global/categories/pianos/upright_pianos/",
-        #     "https://www.roland.com/global/categories/pianos/accessories/",
-        #     # Synthesizers and subcategories
-        #     "https://www.roland.com/global/categories/synthesizers/",
-        #     "https://www.roland.com/global/categories/synthesizers/analog_modeling/",
-        #     "https://www.roland.com/global/categories/synthesizers/performance_workstation/",
-        #     "https://www.roland.com/global/categories/synthesizers/sound_expansion_patches/",
-        #     "https://www.roland.com/global/categories/synthesizers/accessories/",
-        #     # Keyboards
-        #     "https://www.roland.com/global/categories/keyboards/",
-        #     # Guitar/Bass
-        #     "https://www.roland.com/global/categories/guitar_bass/",
-        #     # Drums/Percussion
-        #     "https://www.roland.com/global/categories/drums_percussion/",
-        #     # Wind Instruments
-        #     "https://www.roland.com/global/categories/wind_instruments/",
-        #     # Production
-        #     "https://www.roland.com/global/categories/production/",
-        #     # Amplifiers
-        #     "https://www.roland.com/global/categories/amplifiers/",
-        #     "https://www.roland.com/global/categories/amplifiers/keyboard_amplifiers/",
-        #     # AIRA
-        #     "https://www.roland.com/global/categories/aira/",
-        #     # Roland Cloud
-        #     "https://www.roland.com/global/categories/roland_cloud/",
-        #     # Featured Products
-        #     "https://www.roland.com/global/categories/featured_products/",
-        #     # Accessories
-        #     "https://www.roland.com/global/categories/accessories/",
-        #     "https://www.roland.com/global/categories/accessories/headphones/",
-        # ]
 
     async def scrape_all_products(self, max_products: int = None) -> ProductCatalog:
         """
@@ -910,69 +910,114 @@ class RolandScraper:
 
             # ============================================================
             # 9. DETERMINE HIERARCHY (BREADCRUMBS & CATEGORIES)
+            # Uses Official Roland Taxonomy from brand_taxonomy.py
             # ============================================================
-            main_category = "Musical Instruments"
+            main_category = None
             subcategory = None
             sub_subcategory = None
             
-            # Method A: Extract from Breadcrumbs (Most Accurate)
-            # Selector strategies for Roland's breadcrumbs
-            breadcrumb_selectors = [
-                 '.breadcrumb li',
-                 'ul.breadcrumbs li',
-                 'nav[aria-label="breadcrumb"] li',
-                 '.breadcrumb-item',
-                 '#breadcrumb li'
-            ]
+            # Method A: Extract from URL path (Most Reliable for Roland)
+            # Roland URLs follow pattern: /global/categories/{main}/{sub}/products/{product}
+            # Example: /global/categories/pianos/stage_pianos/products/rd-2000
+            url_path = url.lower()
             
-            breadcrumbs = []
-            for selector in breadcrumb_selectors:
-                elements = await page.locator(selector).all()
-                if len(elements) > 1:
-                    for elem in elements:
-                        text = await elem.inner_text()
-                        if text:
-                            breadcrumbs.append(text.strip())
-                    if breadcrumbs: 
-                        break
+            # Extract category from URL path
+            if '/categories/' in url_path:
+                parts = url_path.split('/categories/')[-1].split('/')
+                parts = [p for p in parts if p and p not in ['products', '']]
+                
+                if parts:
+                    # Map URL slug to official taxonomy label
+                    main_slug = parts[0].replace('-', '_')
+                    normalized_main = normalize_category("roland", main_slug)
+                    if normalized_main:
+                        main_category = normalized_main
+                    
+                    if len(parts) >= 2:
+                        sub_slug = parts[1].replace('-', '_')
+                        normalized_sub = normalize_category("roland", sub_slug)
+                        if normalized_sub:
+                            subcategory = normalized_sub
+                        
+                    if len(parts) >= 3:
+                        subsub_slug = parts[2].replace('-', '_')
+                        normalized_subsub = normalize_category("roland", subsub_slug)
+                        if normalized_subsub:
+                            sub_subcategory = normalized_subsub
             
-            if len(breadcrumbs) >= 2:
-                # Structure: Home > Categories > Main > Sub > Product
-                # Or: Home > Main > Sub > Product
+            # Method B: Extract from Breadcrumbs (Fallback)
+            if not main_category:
+                breadcrumb_selectors = [
+                     '.breadcrumb li',
+                     'ul.breadcrumbs li',
+                     'nav[aria-label="breadcrumb"] li',
+                     '.breadcrumb-item',
+                     '#breadcrumb li'
+                ]
                 
-                # Filter out 'Home' or 'Products' or 'Categories'
-                clean_crumbs = [b for b in breadcrumbs if b.lower() not in ['home', 'products', 'categories', 'top']]
+                breadcrumbs = []
+                for selector in breadcrumb_selectors:
+                    elements = await page.locator(selector).all()
+                    if len(elements) > 1:
+                        for elem in elements:
+                            text = await elem.inner_text()
+                            if text:
+                                breadcrumbs.append(text.strip())
+                        if breadcrumbs: 
+                            break
                 
-                # Remove the product name itself if it's the last crumb
-                if clean_crumbs and (clean_crumbs[-1].lower() in name.lower() or name.lower() in clean_crumbs[-1].lower()):
-                    clean_crumbs.pop()
-                
-                if len(clean_crumbs) >= 1:
-                     main_category = clean_crumbs[0]
-                if len(clean_crumbs) >= 2:
-                     subcategory = clean_crumbs[1]
-                if len(clean_crumbs) >= 3:
-                     sub_subcategory = clean_crumbs[2]
+                if len(breadcrumbs) >= 2:
+                    # Filter out 'Home' or 'Products' or 'Categories'
+                    clean_crumbs = [b for b in breadcrumbs if b.lower() not in ['home', 'products', 'categories', 'top']]
+                    
+                    # Remove the product name itself if it's the last crumb
+                    if clean_crumbs and (clean_crumbs[-1].lower() in name.lower() or name.lower() in clean_crumbs[-1].lower()):
+                        clean_crumbs.pop()
+                    
+                    # Normalize each breadcrumb to official taxonomy
+                    for i, crumb in enumerate(clean_crumbs[:3]):
+                        normalized = normalize_category("roland", crumb)
+                        if normalized:
+                            if i == 0:
+                                main_category = normalized
+                            elif i == 1:
+                                subcategory = normalized
+                            elif i == 2:
+                                sub_subcategory = normalized
 
-            # Method B: Fallback Keyword Matching (If breadcrumbs failed for main category)
-            if main_category == "Musical Instruments":
+            # Method C: Keyword Matching against Official Taxonomy (Last Resort)
+            if not main_category:
                 url_lower = url.lower()
                 name_lower = name.lower()
-
-                if 'drum' in url_lower or 'td-' in url_lower or 'drum' in name_lower:
-                    main_category = "Electronic Drums"
-                elif 'piano' in url_lower or 'fp-' in url_lower or 'rd-' in url_lower or 'piano' in name_lower:
-                    main_category = "Digital Pianos"
-                elif 'synth' in url_lower or 'juno' in url_lower or 'jupiter' in url_lower or 'synth' in name_lower:
-                    main_category = "Synthesizers"
-                elif 'guitar' in url_lower or 'amp' in url_lower or 'guitar' in name_lower:
-                    main_category = "Guitar Products"
-                elif 'aero' in url_lower or 'wind' in name_lower:
-                    main_category = "Wind Instruments"
-                elif 'keyboard' in url_lower or 'keyboard' in name_lower:
-                    main_category = "Keyboards"
+                combined = f"{url_lower} {name_lower}"
+                
+                # Map keywords to official Roland taxonomy categories
+                KEYWORD_MAP = {
+                    "Drums & Percussion": ['drum', 'td-', 'v-drum', 'percussion', 'cymbal', 'snare', 'kick'],
+                    "Pianos": ['piano', 'fp-', 'rd-', 'rg-', 'gp-', 'hp-', 'lx-'],
+                    "Synthesizers": ['synth', 'juno', 'jupiter', 'fantom', 'system-', 'sh-', 'gaia'],
+                    "Keyboards": ['keyboard', 'e-x', 'bk-', 'go:keys', 'arranger'],
+                    "Guitar & Bass": ['guitar', 'bass', 'amp', 'gr-', 'gk-'],
+                    "Wind Instruments": ['aero', 'wind', 'ae-'],
+                    "Amplifiers": ['amplifier', 'amp', 'cube', 'kc-', 'jc-'],
+                    "Production": ['mixer', 'interface', 'rubix', 'bridge', 'video', 'vr-'],
+                    "AIRA": ['aira', 'tr-', 'tb-', 'system-1', 'mc-'],
+                    "Roland Cloud": ['cloud', 'zenology', 'plugin'],
+                    "Accessories": ['cable', 'pedal', 'stand', 'bag', 'case', 'headphone', 'adapter'],
+                }
+                
+                for category, keywords in KEYWORD_MAP.items():
+                    if any(kw in combined for kw in keywords):
+                        # Validate against official taxonomy
+                        if validate_category("roland", category):
+                            main_category = category
+                            break
             
-            logger.info(f"     └─ Hierarchy: {main_category} > {subcategory} > {sub_subcategory}")
+            # Final fallback - use Accessories if nothing matched (it's the safest default)
+            if not main_category:
+                main_category = "Accessories"
+            
+            logger.info(f"     └─ Hierarchy: {main_category} > {subcategory or 'None'} > {sub_subcategory or 'None'}")
 
             # ============================================================
             # 10. EXTRACT ACCESSORIES (FROM ACCESSORIES TAB/PAGE)

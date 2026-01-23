@@ -3,7 +3,159 @@
   "brand_identity": {
     "id": "roland",
     "name": "Roland",
+    "logo_url": "/assets/logos/roland_logo.png",
     "website": "https://www.roland.com",
+    "description": "Official Roland products distributed by Halilit",
+    "categories": [
+      {
+        "id": "pianos",
+        "label": "Pianos",
+        "icon": "\ud83c\udfb9",
+        "description": "Digital Pianos, Stage Pianos, Grand Pianos",
+        "children": [
+          "grand_pianos",
+          "portable_pianos",
+          "stage_pianos",
+          "upright_pianos",
+          "pianos_accessories"
+        ]
+      },
+      {
+        "id": "synthesizers",
+        "label": "Synthesizers",
+        "icon": "\ud83c\udf9b\ufe0f",
+        "description": "Analog Modeling, Performance Workstations",
+        "children": [
+          "analog_modeling",
+          "performance_workstation",
+          "sound_expansion_patches",
+          "synths_accessories"
+        ]
+      },
+      {
+        "id": "keyboards",
+        "label": "Keyboards",
+        "icon": "\u2328\ufe0f",
+        "description": "Arrangers, Controllers, Portable Keyboards",
+        "children": [
+          "arrangers",
+          "midi_controllers",
+          "portable_keyboards"
+        ]
+      },
+      {
+        "id": "organs",
+        "label": "Organs",
+        "icon": "\ud83c\udfb9",
+        "description": "Combo Organs, Organ Accessories",
+        "children": [
+          "combo_organs",
+          "organ_accessories"
+        ]
+      },
+      {
+        "id": "drums_percussion",
+        "label": "Drums & Percussion",
+        "icon": "\ud83e\udd41",
+        "description": "V-Drums, Electronic Percussion, Hybrid Drums",
+        "children": [
+          "v_drums",
+          "electronic_percussion",
+          "hybrid_drums",
+          "drums_accessories"
+        ]
+      },
+      {
+        "id": "guitar_bass",
+        "label": "Guitar & Bass",
+        "icon": "\ud83c\udfb8",
+        "description": "Effects, Processors, Guitar Synths",
+        "children": [
+          "effects_processors",
+          "guitar_synthesizers",
+          "guitar_accessories"
+        ]
+      },
+      {
+        "id": "amplifiers",
+        "label": "Amplifiers",
+        "icon": "\ud83d\udd0a",
+        "description": "Guitar Amps, Keyboard Amps, Bass Amps",
+        "children": [
+          "keyboard_amplifiers",
+          "guitar_amplifiers",
+          "bass_amplifiers"
+        ]
+      },
+      {
+        "id": "production",
+        "label": "Production",
+        "icon": "\ud83c\udf9a\ufe0f",
+        "description": "Audio Interfaces, Mixers, Video",
+        "children": [
+          "audio_interfaces",
+          "mixers",
+          "video"
+        ]
+      },
+      {
+        "id": "aira",
+        "label": "AIRA",
+        "icon": "\ud83d\udd2e",
+        "description": "TR, TB, System-1, AIRA Compact",
+        "children": [
+          "aira_compact",
+          "aira_modular"
+        ]
+      },
+      {
+        "id": "wind_instruments",
+        "label": "Wind Instruments",
+        "icon": "\ud83c\udfb7",
+        "description": "Aerophone, Digital Wind Instruments",
+        "children": [
+          "aerophone"
+        ]
+      },
+      {
+        "id": "roland_cloud",
+        "label": "Roland Cloud",
+        "icon": "\u2601\ufe0f",
+        "description": "Software, Plugins, Sound Libraries",
+        "children": [
+          "plugins",
+          "sound_libraries"
+        ]
+      },
+      {
+        "id": "accessories",
+        "label": "Accessories",
+        "icon": "\ud83d\udd27",
+        "description": "Cables, Stands, Cases, Pedals",
+        "children": [
+          "cables",
+          "headphones",
+          "stands",
+          "cases_bags",
+          "pedals",
+          "power_supplies"
+        ]
+      },
+      {
+        "id": "featured_products",
+        "label": "Featured Products",
+        "icon": "\u2b50",
+        "description": "New & Featured",
+        "children": []
+      },
+      {
+        "id": "apps",
+        "label": "Apps",
+        "icon": "\ud83d\udcf1",
+        "description": "iOS & Android Apps",
+        "children": []
+      }
+    ],
     "brand_colors": {
       "primary": "#f89a1c",
       "secondary": "#18181b",
@@ -11,143 +163,46 @@
       "background": "#18181b",
       "text": "#ffffff"
     },
-    "logo_url": "/assets/logos/roland_logo.png"
+    "taxonomy_stats": {
+      "validated": 28,
+      "normalized": 0,
+      "uncategorized": 0
+    }
   },
   "products": [
     {
-      "id": "roland-fantom-06",
-      "name": "Fantom-06",
-      "brand": "Roland",
-      "main_category": "Keys",
-      "subcategory": "Workstation",
-      "description": "The Fantom-06 represents the entry tier of Roland's Workstation lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/roland/roland-fantom-06_thumb.webp",
-      "images": {
-        "main": "/data/product_images/roland/roland-fantom-06_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-fantom-06_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-fantom-06_main.webp",
-        "original": "/data/product_images/roland/roland-fantom-06_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 5900,
-        "currency": "ILS"
-      },
-      "halilit_price": 5900,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Entry"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-RO-6739",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "roland-fantom-07",
-      "name": "Fantom-07",
-      "brand": "Roland",
-      "main_category": "Keys",
-      "subcategory": "Workstation",
-      "description": "The Fantom-07 represents the standard tier of Roland's Workstation lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/roland/roland-fantom-07_thumb.webp",
-      "images": {
-        "main": "/data/product_images/roland/roland-fantom-07_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-fantom-07_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-fantom-07_main.webp",
-        "original": "/data/product_images/roland/roland-fantom-07_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 7400,
-        "currency": "ILS"
-      },
-      "halilit_price": 7400,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-RO-8444",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
       "id": "roland-fantom-08",
-      "name": "Fantom-08",
-      "brand": "Roland",
-      "main_category": "Keys",
-      "subcategory": "Workstation",
-      "description": "The Fantom-08 represents the flagship tier of Roland's Workstation lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/roland/roland-fantom-08_thumb.webp",
+      "name": "FANTOM-08",
+      "brand": "roland",
+      "category": "Pianos",
+      "subcategory": "Performance Workstation",
+      "main_category": "Pianos",
+      "description": "Ultimate performance workstation with ZEN-Core synthesis",
+      "short_description": "FANTOM-08 - Flagship tier Workstation",
+      "image_url": "/data/product_images/roland/roland-fantom-08_thumb.svg",
       "images": {
-        "main": "/data/product_images/roland/roland-fantom-08_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-fantom-08_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-fantom-08_main.webp",
-        "original": "/data/product_images/roland/roland-fantom-08_thumb.webp"
+        "main": "/data/product_images/roland/roland-fantom-08_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-fantom-08_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-fantom-08_thumb.svg",
+        "original": "/data/product_images/roland/roland-fantom-08_thumb.svg"
       },
       "pricing": {
-        "regular_price": 9900,
-        "currency": "ILS"
+        "regular_price": 12500,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 9900,
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-RO-4157",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "roland-rd-88",
-      "name": "RD-88",
-      "brand": "Roland",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The RD-88 represents the entry tier of Roland's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/roland/roland-rd-88_thumb.webp",
-      "images": {
-        "main": "/data/product_images/roland/roland-rd-88_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-rd-88_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-rd-88_main.webp",
-        "original": "/data/product_images/roland/roland-rd-88_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 4500,
-        "currency": "ILS"
-      },
-      "halilit_price": 4500,
-      "specifications": [
+          "key": "Category",
+          "value": "Pianos"
+        },
         {
-          "key": "Tier",
-          "value": "Entry"
+          "key": "Type",
+          "value": "Workstation"
         },
         {
           "key": "Warranty",
@@ -155,36 +210,103 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-RO-5763",
+      "sku": "HL-ROL-3419",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "flagship",
+        "pianos",
+        "workstation"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Pianos",
+        "Performance Workstation"
+      ]
+    },
+    {
+      "id": "roland-fantom-06",
+      "name": "FANTOM-06",
+      "brand": "roland",
+      "category": "Pianos",
+      "subcategory": "Performance Workstation",
+      "main_category": "Pianos",
+      "description": "Compact 61-key version of the FANTOM series",
+      "short_description": "FANTOM-06 - Entry tier Workstation",
+      "image_url": "/data/product_images/roland/roland-fantom-06_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-fantom-06_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-fantom-06_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-fantom-06_thumb.svg",
+        "original": "/data/product_images/roland/roland-fantom-06_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Pianos"
+        },
+        {
+          "key": "Type",
+          "value": "Workstation"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-3822",
+      "verified": true,
+      "tags": [
+        "entry",
+        "pianos",
+        "workstation"
+      ],
+      "category_hierarchy": [
+        "Pianos",
+        "Performance Workstation"
       ]
     },
     {
       "id": "roland-rd-2000",
       "name": "RD-2000",
-      "brand": "Roland",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The RD-2000 represents the flagship tier of Roland's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/roland/roland-rd-2000_thumb.webp",
+      "brand": "roland",
+      "category": "Pianos",
+      "subcategory": "Stage Pianos",
+      "main_category": "Pianos",
+      "description": "Professional stage piano with SuperNATURAL engine",
+      "short_description": "RD-2000 - Flagship tier Stage Piano",
+      "image_url": "/data/product_images/roland/roland-rd-2000_thumb.svg",
       "images": {
-        "main": "/data/product_images/roland/roland-rd-2000_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-rd-2000_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-rd-2000_main.webp",
-        "original": "/data/product_images/roland/roland-rd-2000_thumb.webp"
+        "main": "/data/product_images/roland/roland-rd-2000_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-rd-2000_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-rd-2000_thumb.svg",
+        "original": "/data/product_images/roland/roland-rd-2000_thumb.svg"
       },
       "pricing": {
-        "regular_price": 8900,
-        "currency": "ILS"
+        "regular_price": 11000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 8900,
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Pianos"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
         },
         {
           "key": "Warranty",
@@ -192,110 +314,51 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-RO-8835",
+      "sku": "HL-ROL-1574",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "flagship",
+        "pianos",
+        "stage-piano"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Pianos",
+        "Stage Pianos"
       ]
     },
     {
-      "id": "roland-jupiter-xm",
-      "name": "Jupiter-Xm",
-      "brand": "Roland",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Jupiter-Xm represents the standard tier of Roland's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
+      "id": "roland-rd-88",
+      "name": "RD-88",
+      "brand": "roland",
+      "category": "Pianos",
+      "subcategory": "Stage Pianos",
+      "main_category": "Pianos",
+      "description": "Compact stage piano with premium sound",
+      "short_description": "RD-88 - Standard tier Stage Piano",
+      "image_url": "/data/product_images/roland/roland-rd-88_thumb.svg",
       "images": {
-        "main": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-jupiter-xm_main.webp",
-        "original": "/data/product_images/roland/roland-jupiter-xm_thumb.webp"
+        "main": "/data/product_images/roland/roland-rd-88_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-rd-88_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-rd-88_thumb.svg",
+        "original": "/data/product_images/roland/roland-rd-88_thumb.svg"
       },
       "pricing": {
-        "regular_price": 5400,
-        "currency": "ILS"
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 5400,
       "specifications": [
         {
           "key": "Tier",
           "value": "Standard"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-RO-8556",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "roland-jupiter-x",
-      "name": "Jupiter-X",
-      "brand": "Roland",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Jupiter-X represents the flagship tier of Roland's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/roland/roland-jupiter-x_thumb.webp",
-      "images": {
-        "main": "/data/product_images/roland/roland-jupiter-x_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-jupiter-x_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-jupiter-x_main.webp",
-        "original": "/data/product_images/roland/roland-jupiter-x_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 9200,
-        "currency": "ILS"
-      },
-      "halilit_price": 9200,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Flagship"
+          "key": "Category",
+          "value": "Pianos"
         },
         {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "low-stock",
-      "sku": "HL-RO-9775",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "roland-tr-8s",
-      "name": "TR-8S",
-      "brand": "Roland",
-      "main_category": "Drums",
-      "subcategory": "Drum Machine",
-      "description": "The TR-8S represents the standard tier of Roland's Drum Machine lineup. Designed for drums professionals.",
-      "image_url": "/data/product_images/roland/roland-tr-8s_thumb.webp",
-      "images": {
-        "main": "/data/product_images/roland/roland-tr-8s_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-tr-8s_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-tr-8s_main.webp",
-        "original": "/data/product_images/roland/roland-tr-8s_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 3200,
-        "currency": "ILS"
-      },
-      "halilit_price": 3200,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
+          "key": "Type",
+          "value": "Stage Piano"
         },
         {
           "key": "Warranty",
@@ -303,123 +366,1278 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-RO-6091",
+      "sku": "HL-ROL-6272",
       "verified": true,
-      "category": "Drums",
+      "tags": [
+        "standard",
+        "pianos",
+        "stage-piano"
+      ],
       "category_hierarchy": [
-        "Drums"
+        "Pianos",
+        "Stage Pianos"
       ]
     },
     {
-      "id": "roland-td-07kv",
-      "name": "TD-07KV",
-      "brand": "Roland",
-      "main_category": "Drums",
-      "subcategory": "V-Drums",
-      "description": "The TD-07KV represents the entry tier of Roland's V-Drums lineup. Designed for drums professionals.",
-      "image_url": "/data/product_images/roland/roland-td-07kv_thumb.webp",
+      "id": "roland-fp-90x",
+      "name": "FP-90X",
+      "brand": "roland",
+      "category": "Pianos",
+      "subcategory": "Pianos",
+      "main_category": "Pianos",
+      "description": "Premium portable digital piano",
+      "short_description": "FP-90X - Flagship tier Digital Piano",
+      "image_url": "/data/product_images/roland/roland-fp-90x_thumb.svg",
       "images": {
-        "main": "/data/product_images/roland/roland-td-07kv_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-td-07kv_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-td-07kv_main.webp",
-        "original": "/data/product_images/roland/roland-td-07kv_thumb.webp"
+        "main": "/data/product_images/roland/roland-fp-90x_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-fp-90x_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-fp-90x_thumb.svg",
+        "original": "/data/product_images/roland/roland-fp-90x_thumb.svg"
       },
       "pricing": {
-        "regular_price": 4200,
-        "currency": "ILS"
+        "regular_price": 7000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 4200,
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Pianos"
+        },
+        {
+          "key": "Type",
+          "value": "Digital Piano"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-ROL-3561",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "pianos",
+        "digital-piano"
+      ],
+      "category_hierarchy": [
+        "Pianos",
+        "Pianos"
+      ]
+    },
+    {
+      "id": "roland-fp-60x",
+      "name": "FP-60X",
+      "brand": "roland",
+      "category": "Pianos",
+      "subcategory": "Pianos",
+      "main_category": "Pianos",
+      "description": "Professional portable digital piano",
+      "short_description": "FP-60X - Standard tier Digital Piano",
+      "image_url": "/data/product_images/roland/roland-fp-60x_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-fp-60x_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-fp-60x_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-fp-60x_thumb.svg",
+        "original": "/data/product_images/roland/roland-fp-60x_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Pianos"
+        },
+        {
+          "key": "Type",
+          "value": "Digital Piano"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-6280",
+      "verified": true,
+      "tags": [
+        "standard",
+        "pianos",
+        "digital-piano"
+      ],
+      "category_hierarchy": [
+        "Pianos",
+        "Pianos"
+      ]
+    },
+    {
+      "id": "roland-go:piano",
+      "name": "GO:PIANO",
+      "brand": "roland",
+      "category": "Pianos",
+      "subcategory": "Portable Pianos",
+      "main_category": "Pianos",
+      "description": "Affordable 88-key digital piano",
+      "short_description": "GO:PIANO - Entry tier Portable Piano",
+      "image_url": "/data/product_images/roland/roland-go:piano_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-go:piano_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-go:piano_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-go:piano_thumb.svg",
+        "original": "/data/product_images/roland/roland-go:piano_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS",
+        "source": "halilit"
+      },
       "specifications": [
         {
           "key": "Tier",
           "value": "Entry"
         },
         {
+          "key": "Category",
+          "value": "Pianos"
+        },
+        {
+          "key": "Type",
+          "value": "Portable Piano"
+        },
+        {
           "key": "Warranty",
           "value": "2 Years"
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-RO-3996",
+      "sku": "HL-ROL-7716",
       "verified": true,
-      "category": "Drums",
+      "tags": [
+        "entry",
+        "pianos",
+        "portable-piano"
+      ],
       "category_hierarchy": [
-        "Drums"
+        "Pianos",
+        "Portable Pianos"
       ]
     },
     {
-      "id": "roland-td-50kv2",
-      "name": "TD-50KV2",
-      "brand": "Roland",
-      "main_category": "Drums",
-      "subcategory": "V-Drums",
-      "description": "The TD-50KV2 represents the flagship tier of Roland's V-Drums lineup. Designed for drums professionals.",
-      "image_url": "/data/product_images/roland/roland-td-50kv2_thumb.webp",
+      "id": "roland-jupiter-x",
+      "name": "Jupiter-X",
+      "brand": "roland",
+      "category": "Synthesizers",
+      "subcategory": "Performance Workstation",
+      "main_category": "Synthesizers",
+      "description": "Flagship analog modeling synthesizer",
+      "short_description": "Jupiter-X - Flagship tier Performance Synth",
+      "image_url": "/data/product_images/roland/roland-jupiter-x_thumb.svg",
       "images": {
-        "main": "/data/product_images/roland/roland-td-50kv2_thumb.webp",
-        "thumbnail": "/data/product_images/roland/roland-td-50kv2_thumb.webp",
-        "high_res": "/data/product_images/roland/roland-td-50kv2_main.webp",
-        "original": "/data/product_images/roland/roland-td-50kv2_thumb.webp"
+        "main": "/data/product_images/roland/roland-jupiter-x_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-jupiter-x_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-jupiter-x_thumb.svg",
+        "original": "/data/product_images/roland/roland-jupiter-x_thumb.svg"
       },
       "pricing": {
-        "regular_price": 28000,
-        "currency": "ILS"
+        "regular_price": 11500,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 28000,
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
         },
         {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Performance Synth"
+        },
+        {
           "key": "Warranty",
           "value": "2 Years"
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-RO-2009",
+      "sku": "HL-ROL-4580",
       "verified": true,
-      "category": "Drums",
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "performance-synth"
+      ],
       "category_hierarchy": [
-        "Drums"
+        "Synthesizers",
+        "Performance Workstation"
+      ]
+    },
+    {
+      "id": "roland-jupiter-xm",
+      "name": "Jupiter-Xm",
+      "brand": "roland",
+      "category": "Synthesizers",
+      "subcategory": "Performance Workstation",
+      "main_category": "Synthesizers",
+      "description": "Compact I-Arpeggio synthesizer",
+      "short_description": "Jupiter-Xm - Standard tier Performance Synth",
+      "image_url": "/data/product_images/roland/roland-jupiter-xm_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-jupiter-xm_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-jupiter-xm_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-jupiter-xm_thumb.svg",
+        "original": "/data/product_images/roland/roland-jupiter-xm_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 6500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Performance Synth"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-7736",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "performance-synth"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Performance Workstation"
+      ]
+    },
+    {
+      "id": "roland-juno-ds88",
+      "name": "JUNO-DS88",
+      "brand": "roland",
+      "category": "Keyboards",
+      "subcategory": "Arranger",
+      "main_category": "Keyboards",
+      "description": "88-key synthesizer with DS sound engine",
+      "short_description": "JUNO-DS88 - Standard tier Arranger",
+      "image_url": "/data/product_images/roland/roland-juno-ds88_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-juno-ds88_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-juno-ds88_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-juno-ds88_thumb.svg",
+        "original": "/data/product_images/roland/roland-juno-ds88_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 4200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Keyboards"
+        },
+        {
+          "key": "Type",
+          "value": "Arranger"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-6870",
+      "verified": true,
+      "tags": [
+        "standard",
+        "keyboards",
+        "arranger"
+      ],
+      "category_hierarchy": [
+        "Keyboards",
+        "Arranger"
+      ]
+    },
+    {
+      "id": "roland-a-88mkii",
+      "name": "A-88MKII",
+      "brand": "roland",
+      "category": "Keyboards",
+      "subcategory": "MIDI Controllers",
+      "main_category": "Keyboards",
+      "description": "Professional MIDI controller keyboard",
+      "short_description": "A-88MKII - Standard tier MIDI Controller",
+      "image_url": "/data/product_images/roland/roland-a-88mkii_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-a-88mkii_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-a-88mkii_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-a-88mkii_thumb.svg",
+        "original": "/data/product_images/roland/roland-a-88mkii_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Keyboards"
+        },
+        {
+          "key": "Type",
+          "value": "MIDI Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-5838",
+      "verified": true,
+      "tags": [
+        "standard",
+        "keyboards",
+        "midi-controller"
+      ],
+      "category_hierarchy": [
+        "Keyboards",
+        "MIDI Controllers"
+      ]
+    },
+    {
+      "id": "roland-td-50kv2",
+      "name": "TD-50KV2",
+      "brand": "roland",
+      "category": "Drums & Percussion",
+      "subcategory": "V-Drums",
+      "main_category": "Drums & Percussion",
+      "description": "Professional electronic drum kit",
+      "short_description": "TD-50KV2 - Flagship tier V-Drums",
+      "image_url": "/data/product_images/roland/roland-td-50kv2_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-td-50kv2_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-td-50kv2_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-td-50kv2_thumb.svg",
+        "original": "/data/product_images/roland/roland-td-50kv2_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 32000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Drums & Percussion"
+        },
+        {
+          "key": "Type",
+          "value": "V-Drums"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-4477",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "drums & percussion",
+        "v-drums"
+      ],
+      "category_hierarchy": [
+        "Drums & Percussion",
+        "V-Drums"
+      ]
+    },
+    {
+      "id": "roland-td-27kv2",
+      "name": "TD-27KV2",
+      "brand": "roland",
+      "category": "Drums & Percussion",
+      "subcategory": "V-Drums",
+      "main_category": "Drums & Percussion",
+      "description": "Premium electronic drum kit",
+      "short_description": "TD-27KV2 - Standard tier V-Drums",
+      "image_url": "/data/product_images/roland/roland-td-27kv2_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-td-27kv2_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-td-27kv2_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-td-27kv2_thumb.svg",
+        "original": "/data/product_images/roland/roland-td-27kv2_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 15500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Drums & Percussion"
+        },
+        {
+          "key": "Type",
+          "value": "V-Drums"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-8542",
+      "verified": true,
+      "tags": [
+        "standard",
+        "drums & percussion",
+        "v-drums"
+      ],
+      "category_hierarchy": [
+        "Drums & Percussion",
+        "V-Drums"
+      ]
+    },
+    {
+      "id": "roland-td-17kvx2",
+      "name": "TD-17KVX2",
+      "brand": "roland",
+      "category": "Drums & Percussion",
+      "subcategory": "V-Drums",
+      "main_category": "Drums & Percussion",
+      "description": "Mid-range electronic drum kit",
+      "short_description": "TD-17KVX2 - Entry tier V-Drums",
+      "image_url": "/data/product_images/roland/roland-td-17kvx2_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-td-17kvx2_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-td-17kvx2_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-td-17kvx2_thumb.svg",
+        "original": "/data/product_images/roland/roland-td-17kvx2_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 8500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Drums & Percussion"
+        },
+        {
+          "key": "Type",
+          "value": "V-Drums"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-1973",
+      "verified": true,
+      "tags": [
+        "entry",
+        "drums & percussion",
+        "v-drums"
+      ],
+      "category_hierarchy": [
+        "Drums & Percussion",
+        "V-Drums"
+      ]
+    },
+    {
+      "id": "roland-vad507",
+      "name": "VAD507",
+      "brand": "roland",
+      "category": "Drums & Percussion",
+      "subcategory": "V-Drums Acoustic Design",
+      "main_category": "Drums & Percussion",
+      "description": "Acoustic design electronic drums",
+      "short_description": "VAD507 - Flagship tier V-Drums Acoustic Design",
+      "image_url": "/data/product_images/roland/roland-vad507_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-vad507_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-vad507_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-vad507_thumb.svg",
+        "original": "/data/product_images/roland/roland-vad507_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 22000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Drums & Percussion"
+        },
+        {
+          "key": "Type",
+          "value": "V-Drums Acoustic Design"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-8137",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "drums & percussion",
+        "v-drums-acoustic-design"
+      ],
+      "category_hierarchy": [
+        "Drums & Percussion",
+        "V-Drums Acoustic Design"
+      ]
+    },
+    {
+      "id": "roland-spd-sx-pro",
+      "name": "SPD-SX PRO",
+      "brand": "roland",
+      "category": "Drums & Percussion",
+      "subcategory": "Sampling Pad",
+      "main_category": "Drums & Percussion",
+      "description": "Professional sampling percussion pad",
+      "short_description": "SPD-SX PRO - Flagship tier Sampling Pad",
+      "image_url": "/data/product_images/roland/roland-spd-sx-pro_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-spd-sx-pro_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-spd-sx-pro_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-spd-sx-pro_thumb.svg",
+        "original": "/data/product_images/roland/roland-spd-sx-pro_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Drums & Percussion"
+        },
+        {
+          "key": "Type",
+          "value": "Sampling Pad"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-3909",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "drums & percussion",
+        "sampling-pad"
+      ],
+      "category_hierarchy": [
+        "Drums & Percussion",
+        "Sampling Pad"
+      ]
+    },
+    {
+      "id": "roland-handsonic-hpd-20",
+      "name": "HandSonic HPD-20",
+      "brand": "roland",
+      "category": "Drums & Percussion",
+      "subcategory": "Drums & Percussion",
+      "main_category": "Drums & Percussion",
+      "description": "Digital hand percussion",
+      "short_description": "HandSonic HPD-20 - Standard tier Hand Percussion",
+      "image_url": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.svg",
+        "original": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 6500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Drums & Percussion"
+        },
+        {
+          "key": "Type",
+          "value": "Hand Percussion"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-ROL-6386",
+      "verified": true,
+      "tags": [
+        "standard",
+        "drums & percussion",
+        "hand-percussion"
+      ],
+      "category_hierarchy": [
+        "Drums & Percussion",
+        "Drums & Percussion"
+      ]
+    },
+    {
+      "id": "roland-katana-artist-mkii",
+      "name": "Katana-Artist MkII",
+      "brand": "roland",
+      "category": "Amplifiers",
+      "subcategory": "Guitar & Bass",
+      "main_category": "Amplifiers",
+      "description": "Professional guitar amplifier",
+      "short_description": "Katana-Artist MkII - Flagship tier Guitar Amp",
+      "image_url": "/data/product_images/roland/roland-katana-artist-mkii_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-katana-artist-mkii_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-katana-artist-mkii_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-katana-artist-mkii_thumb.svg",
+        "original": "/data/product_images/roland/roland-katana-artist-mkii_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Amplifiers"
+        },
+        {
+          "key": "Type",
+          "value": "Guitar Amp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-5769",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "amplifiers",
+        "guitar-amp"
+      ],
+      "category_hierarchy": [
+        "Amplifiers",
+        "Guitar & Bass"
+      ]
+    },
+    {
+      "id": "roland-jc-120",
+      "name": "JC-120",
+      "brand": "roland",
+      "category": "Amplifiers",
+      "subcategory": "Guitar & Bass",
+      "main_category": "Amplifiers",
+      "description": "Legendary jazz chorus amp",
+      "short_description": "JC-120 - Flagship tier Guitar Amp",
+      "image_url": "/data/product_images/roland/roland-jc-120_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-jc-120_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-jc-120_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-jc-120_thumb.svg",
+        "original": "/data/product_images/roland/roland-jc-120_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Amplifiers"
+        },
+        {
+          "key": "Type",
+          "value": "Guitar Amp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-2158",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "amplifiers",
+        "guitar-amp"
+      ],
+      "category_hierarchy": [
+        "Amplifiers",
+        "Guitar & Bass"
+      ]
+    },
+    {
+      "id": "roland-cube-street-ex",
+      "name": "CUBE Street EX",
+      "brand": "roland",
+      "category": "Amplifiers",
+      "subcategory": "Portable Pianos",
+      "main_category": "Amplifiers",
+      "description": "Battery powered street amp",
+      "short_description": "CUBE Street EX - Standard tier Portable Amp",
+      "image_url": "/data/product_images/roland/roland-cube-street-ex_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-cube-street-ex_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-cube-street-ex_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-cube-street-ex_thumb.svg",
+        "original": "/data/product_images/roland/roland-cube-street-ex_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Amplifiers"
+        },
+        {
+          "key": "Type",
+          "value": "Portable Amp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-ROL-8582",
+      "verified": true,
+      "tags": [
+        "standard",
+        "amplifiers",
+        "portable-amp"
+      ],
+      "category_hierarchy": [
+        "Amplifiers",
+        "Portable Pianos"
+      ]
+    },
+    {
+      "id": "roland-tr-8s",
+      "name": "TR-8S",
+      "brand": "roland",
+      "category": "AIRA",
+      "subcategory": "Drum Machine",
+      "main_category": "AIRA",
+      "description": "Rhythm performer with analog modeling",
+      "short_description": "TR-8S - Flagship tier Drum Machine",
+      "image_url": "/data/product_images/roland/roland-tr-8s_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-tr-8s_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-tr-8s_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-tr-8s_thumb.svg",
+        "original": "/data/product_images/roland/roland-tr-8s_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "AIRA"
+        },
+        {
+          "key": "Type",
+          "value": "Drum Machine"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-9946",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "aira",
+        "drum-machine"
+      ],
+      "category_hierarchy": [
+        "AIRA",
+        "Drum Machine"
+      ]
+    },
+    {
+      "id": "roland-tb-03",
+      "name": "TB-03",
+      "brand": "roland",
+      "category": "AIRA",
+      "subcategory": "Guitar & Bass",
+      "main_category": "AIRA",
+      "description": "Bass line synthesizer recreation",
+      "short_description": "TB-03 - Standard tier Bass Synth",
+      "image_url": "/data/product_images/roland/roland-tb-03_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-tb-03_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-tb-03_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-tb-03_thumb.svg",
+        "original": "/data/product_images/roland/roland-tb-03_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 1800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "AIRA"
+        },
+        {
+          "key": "Type",
+          "value": "Bass Synth"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-9591",
+      "verified": true,
+      "tags": [
+        "standard",
+        "aira",
+        "bass-synth"
+      ],
+      "category_hierarchy": [
+        "AIRA",
+        "Guitar & Bass"
+      ]
+    },
+    {
+      "id": "roland-mc-707",
+      "name": "MC-707",
+      "brand": "roland",
+      "category": "AIRA",
+      "subcategory": "Groovebox",
+      "main_category": "AIRA",
+      "description": "8-track groovebox for live production",
+      "short_description": "MC-707 - Flagship tier Groovebox",
+      "image_url": "/data/product_images/roland/roland-mc-707_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-mc-707_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-mc-707_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-mc-707_thumb.svg",
+        "original": "/data/product_images/roland/roland-mc-707_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "AIRA"
+        },
+        {
+          "key": "Type",
+          "value": "Groovebox"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-7880",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "aira",
+        "groovebox"
+      ],
+      "category_hierarchy": [
+        "AIRA",
+        "Groovebox"
+      ]
+    },
+    {
+      "id": "roland-mv-1",
+      "name": "MV-1",
+      "brand": "roland",
+      "category": "AIRA",
+      "subcategory": "Production",
+      "main_category": "AIRA",
+      "description": "Verselab music production workstation",
+      "short_description": "MV-1 - Standard tier Production Controller",
+      "image_url": "/data/product_images/roland/roland-mv-1_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-mv-1_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-mv-1_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-mv-1_thumb.svg",
+        "original": "/data/product_images/roland/roland-mv-1_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 2800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "AIRA"
+        },
+        {
+          "key": "Type",
+          "value": "Production Controller"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-6336",
+      "verified": true,
+      "tags": [
+        "standard",
+        "aira",
+        "production-controller"
+      ],
+      "category_hierarchy": [
+        "AIRA",
+        "Production"
+      ]
+    },
+    {
+      "id": "roland-dp-10",
+      "name": "DP-10",
+      "brand": "roland",
+      "category": "Accessories",
+      "subcategory": "Pedal",
+      "main_category": "Accessories",
+      "description": "Damper pedal",
+      "short_description": "DP-10 - Standard tier Pedal",
+      "image_url": "/data/product_images/roland/roland-dp-10_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-dp-10_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-dp-10_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-dp-10_thumb.svg",
+        "original": "/data/product_images/roland/roland-dp-10_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 350,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Pedal"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-6502",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "pedal"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Pedal"
+      ]
+    },
+    {
+      "id": "roland-rh-5",
+      "name": "RH-5",
+      "brand": "roland",
+      "category": "Accessories",
+      "subcategory": "Headphones",
+      "main_category": "Accessories",
+      "description": "Monitor headphones",
+      "short_description": "RH-5 - Entry tier Headphones",
+      "image_url": "/data/product_images/roland/roland-rh-5_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-rh-5_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-rh-5_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-rh-5_thumb.svg",
+        "original": "/data/product_images/roland/roland-rh-5_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 350,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Headphones"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-6536",
+      "verified": true,
+      "tags": [
+        "entry",
+        "accessories",
+        "headphones"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Headphones"
+      ]
+    },
+    {
+      "id": "roland-psb-1u",
+      "name": "PSB-1U",
+      "brand": "roland",
+      "category": "Accessories",
+      "subcategory": "Power Supplies",
+      "main_category": "Accessories",
+      "description": "Universal power supply",
+      "short_description": "PSB-1U - Standard tier Power Supply",
+      "image_url": "/data/product_images/roland/roland-psb-1u_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-psb-1u_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-psb-1u_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-psb-1u_thumb.svg",
+        "original": "/data/product_images/roland/roland-psb-1u_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 150,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Power Supply"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-6981",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "power-supply"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Power Supplies"
+      ]
+    },
+    {
+      "id": "roland-cb-88rl",
+      "name": "CB-88RL",
+      "brand": "roland",
+      "category": "Accessories",
+      "subcategory": "Case",
+      "main_category": "Accessories",
+      "description": "88-key keyboard bag",
+      "short_description": "CB-88RL - Standard tier Case",
+      "image_url": "/data/product_images/roland/roland-cb-88rl_thumb.svg",
+      "images": {
+        "main": "/data/product_images/roland/roland-cb-88rl_thumb.svg",
+        "thumbnail": "/data/product_images/roland/roland-cb-88rl_thumb.svg",
+        "high_res": "/data/product_images/roland/roland-cb-88rl_thumb.svg",
+        "original": "/data/product_images/roland/roland-cb-88rl_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Case"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ROL-2807",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "case"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Case"
       ]
     }
   ],
+  "generated_at": "2026-01-23T02:41:37.844072",
+  "product_count": 28,
   "brand_slug": "roland",
-  "refined_at": "2026-01-22T14:36:08.534078+00:00",
+  "refined_at": "2026-01-23T02:42:11.931927+00:00",
   "hierarchy": {
-    "Keys": {
-      "Workstation": [
-        {
-          "id": "roland-fantom-06",
-          "name": "Fantom-06",
-          "description": "The Fantom-06 represents the entry tier of Roland's Workstation lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/roland/roland-fantom-06_thumb.webp",
-            "thumbnail": "/data/product_images/roland/roland-fantom-06_thumb.webp",
-            "high_res": "/data/product_images/roland/roland-fantom-06_main.webp",
-            "original": "/data/product_images/roland/roland-fantom-06_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-RO-6739"
-        },
-        {
-          "id": "roland-fantom-07",
-          "name": "Fantom-07",
-          "description": "The Fantom-07 represents the standard tier of Roland's Workstation lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/roland/roland-fantom-07_thumb.webp",
-            "thumbnail": "/data/product_images/roland/roland-fantom-07_thumb.webp",
-            "high_res": "/data/product_images/roland/roland-fantom-07_main.webp",
-            "original": "/data/product_images/roland/roland-fantom-07_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-RO-8444"
-        },
+    "Pianos": {
+      "Performance Workstation": [
         {
           "id": "roland-fantom-08",
-          "name": "Fantom-08",
-          "description": "The Fantom-08 represents the flagship tier of Roland's Workstation lineup. Designed for keys professionals.",
+          "name": "FANTOM-08",
+          "description": "FANTOM-08 - Flagship tier Workstation",
           "images": {
             "main": "/data/product_images/roland/roland-fantom-08_thumb.webp",
             "thumbnail": "/data/product_images/roland/roland-fantom-08_thumb.webp",
@@ -427,27 +1645,27 @@
             "original": "/data/product_images/roland/roland-fantom-08_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-4157"
-        }
-      ],
-      "Stage Piano": [
+          "sku": "HL-ROL-3419"
+        },
         {
-          "id": "roland-rd-88",
-          "name": "RD-88",
-          "description": "The RD-88 represents the entry tier of Roland's Stage Piano lineup. Designed for keys professionals.",
+          "id": "roland-fantom-06",
+          "name": "FANTOM-06",
+          "description": "FANTOM-06 - Entry tier Workstation",
           "images": {
-            "main": "/data/product_images/roland/roland-rd-88_thumb.webp",
-            "thumbnail": "/data/product_images/roland/roland-rd-88_thumb.webp",
-            "high_res": "/data/product_images/roland/roland-rd-88_main.webp",
-            "original": "/data/product_images/roland/roland-rd-88_thumb.webp"
+            "main": "/data/product_images/roland/roland-fantom-06_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-fantom-06_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-fantom-06_main.webp",
+            "original": "/data/product_images/roland/roland-fantom-06_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-5763"
-        },
+          "sku": "HL-ROL-3822"
+        }
+      ],
+      "Stage Pianos": [
         {
           "id": "roland-rd-2000",
           "name": "RD-2000",
-          "description": "The RD-2000 represents the flagship tier of Roland's Stage Piano lineup. Designed for keys professionals.",
+          "description": "RD-2000 - Flagship tier Stage Piano",
           "images": {
             "main": "/data/product_images/roland/roland-rd-2000_thumb.webp",
             "thumbnail": "/data/product_images/roland/roland-rd-2000_thumb.webp",
@@ -455,27 +1673,72 @@
             "original": "/data/product_images/roland/roland-rd-2000_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-8835"
-        }
-      ],
-      "Synthesizer": [
+          "sku": "HL-ROL-1574"
+        },
         {
-          "id": "roland-jupiter-xm",
-          "name": "Jupiter-Xm",
-          "description": "The Jupiter-Xm represents the standard tier of Roland's Synthesizer lineup. Designed for keys professionals.",
+          "id": "roland-rd-88",
+          "name": "RD-88",
+          "description": "RD-88 - Standard tier Stage Piano",
           "images": {
-            "main": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
-            "thumbnail": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
-            "high_res": "/data/product_images/roland/roland-jupiter-xm_main.webp",
-            "original": "/data/product_images/roland/roland-jupiter-xm_thumb.webp"
+            "main": "/data/product_images/roland/roland-rd-88_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-rd-88_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-rd-88_main.webp",
+            "original": "/data/product_images/roland/roland-rd-88_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-8556"
+          "sku": "HL-ROL-6272"
+        }
+      ],
+      "Pianos": [
+        {
+          "id": "roland-fp-90x",
+          "name": "FP-90X",
+          "description": "FP-90X - Flagship tier Digital Piano",
+          "images": {
+            "main": "/data/product_images/roland/roland-fp-90x_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-fp-90x_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-fp-90x_main.webp",
+            "original": "/data/product_images/roland/roland-fp-90x_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-3561"
         },
+        {
+          "id": "roland-fp-60x",
+          "name": "FP-60X",
+          "description": "FP-60X - Standard tier Digital Piano",
+          "images": {
+            "main": "/data/product_images/roland/roland-fp-60x_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-fp-60x_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-fp-60x_main.webp",
+            "original": "/data/product_images/roland/roland-fp-60x_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-6280"
+        }
+      ],
+      "Portable Pianos": [
+        {
+          "id": "roland-go:piano",
+          "name": "GO:PIANO",
+          "description": "GO:PIANO - Entry tier Portable Piano",
+          "images": {
+            "main": "/data/product_images/roland/roland-go:piano_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-go:piano_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-go:piano_main.webp",
+            "original": "/data/product_images/roland/roland-go:piano_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-7716"
+        }
+      ]
+    },
+    "Synthesizers": {
+      "Performance Workstation": [
         {
           "id": "roland-jupiter-x",
           "name": "Jupiter-X",
-          "description": "The Jupiter-X represents the flagship tier of Roland's Synthesizer lineup. Designed for keys professionals.",
+          "description": "Jupiter-X - Flagship tier Performance Synth",
           "images": {
             "main": "/data/product_images/roland/roland-jupiter-x_thumb.webp",
             "thumbnail": "/data/product_images/roland/roland-jupiter-x_thumb.webp",
@@ -483,44 +1746,61 @@
             "original": "/data/product_images/roland/roland-jupiter-x_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-9775"
+          "sku": "HL-ROL-4580"
+        },
+        {
+          "id": "roland-jupiter-xm",
+          "name": "Jupiter-Xm",
+          "description": "Jupiter-Xm - Standard tier Performance Synth",
+          "images": {
+            "main": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-jupiter-xm_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-jupiter-xm_main.webp",
+            "original": "/data/product_images/roland/roland-jupiter-xm_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-7736"
         }
       ]
     },
-    "Drums": {
-      "Drum Machine": [
+    "Keyboards": {
+      "Arranger": [
         {
-          "id": "roland-tr-8s",
-          "name": "TR-8S",
-          "description": "The TR-8S represents the standard tier of Roland's Drum Machine lineup. Designed for drums professionals.",
+          "id": "roland-juno-ds88",
+          "name": "JUNO-DS88",
+          "description": "JUNO-DS88 - Standard tier Arranger",
           "images": {
-            "main": "/data/product_images/roland/roland-tr-8s_thumb.webp",
-            "thumbnail": "/data/product_images/roland/roland-tr-8s_thumb.webp",
-            "high_res": "/data/product_images/roland/roland-tr-8s_main.webp",
-            "original": "/data/product_images/roland/roland-tr-8s_thumb.webp"
+            "main": "/data/product_images/roland/roland-juno-ds88_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-juno-ds88_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-juno-ds88_main.webp",
+            "original": "/data/product_images/roland/roland-juno-ds88_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-6091"
+          "sku": "HL-ROL-6870"
         }
       ],
-      "V-Drums": [
+      "MIDI Controllers": [
         {
-          "id": "roland-td-07kv",
-          "name": "TD-07KV",
-          "description": "The TD-07KV represents the entry tier of Roland's V-Drums lineup. Designed for drums professionals.",
+          "id": "roland-a-88mkii",
+          "name": "A-88MKII",
+          "description": "A-88MKII - Standard tier MIDI Controller",
           "images": {
-            "main": "/data/product_images/roland/roland-td-07kv_thumb.webp",
-            "thumbnail": "/data/product_images/roland/roland-td-07kv_thumb.webp",
-            "high_res": "/data/product_images/roland/roland-td-07kv_main.webp",
-            "original": "/data/product_images/roland/roland-td-07kv_thumb.webp"
+            "main": "/data/product_images/roland/roland-a-88mkii_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-a-88mkii_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-a-88mkii_main.webp",
+            "original": "/data/product_images/roland/roland-a-88mkii_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-3996"
-        },
+          "sku": "HL-ROL-5838"
+        }
+      ]
+    },
+    "Drums & Percussion": {
+      "V-Drums": [
         {
           "id": "roland-td-50kv2",
           "name": "TD-50KV2",
-          "description": "The TD-50KV2 represents the flagship tier of Roland's V-Drums lineup. Designed for drums professionals.",
+          "description": "TD-50KV2 - Flagship tier V-Drums",
           "images": {
             "main": "/data/product_images/roland/roland-td-50kv2_thumb.webp",
             "thumbnail": "/data/product_images/roland/roland-td-50kv2_thumb.webp",
@@ -528,7 +1808,247 @@
             "original": "/data/product_images/roland/roland-td-50kv2_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-RO-2009"
+          "sku": "HL-ROL-4477"
+        },
+        {
+          "id": "roland-td-27kv2",
+          "name": "TD-27KV2",
+          "description": "TD-27KV2 - Standard tier V-Drums",
+          "images": {
+            "main": "/data/product_images/roland/roland-td-27kv2_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-td-27kv2_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-td-27kv2_main.webp",
+            "original": "/data/product_images/roland/roland-td-27kv2_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-8542"
+        },
+        {
+          "id": "roland-td-17kvx2",
+          "name": "TD-17KVX2",
+          "description": "TD-17KVX2 - Entry tier V-Drums",
+          "images": {
+            "main": "/data/product_images/roland/roland-td-17kvx2_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-td-17kvx2_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-td-17kvx2_main.webp",
+            "original": "/data/product_images/roland/roland-td-17kvx2_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-1973"
+        }
+      ],
+      "V-Drums Acoustic Design": [
+        {
+          "id": "roland-vad507",
+          "name": "VAD507",
+          "description": "VAD507 - Flagship tier V-Drums Acoustic Design",
+          "images": {
+            "main": "/data/product_images/roland/roland-vad507_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-vad507_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-vad507_main.webp",
+            "original": "/data/product_images/roland/roland-vad507_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-8137"
+        }
+      ],
+      "Sampling Pad": [
+        {
+          "id": "roland-spd-sx-pro",
+          "name": "SPD-SX PRO",
+          "description": "SPD-SX PRO - Flagship tier Sampling Pad",
+          "images": {
+            "main": "/data/product_images/roland/roland-spd-sx-pro_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-spd-sx-pro_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-spd-sx-pro_main.webp",
+            "original": "/data/product_images/roland/roland-spd-sx-pro_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-3909"
+        }
+      ],
+      "Drums & Percussion": [
+        {
+          "id": "roland-handsonic-hpd-20",
+          "name": "HandSonic HPD-20",
+          "description": "HandSonic HPD-20 - Standard tier Hand Percussion",
+          "images": {
+            "main": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-handsonic-hpd-20_main.webp",
+            "original": "/data/product_images/roland/roland-handsonic-hpd-20_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-6386"
+        }
+      ]
+    },
+    "Amplifiers": {
+      "Guitar & Bass": [
+        {
+          "id": "roland-katana-artist-mkii",
+          "name": "Katana-Artist MkII",
+          "description": "Katana-Artist MkII - Flagship tier Guitar Amp",
+          "images": {
+            "main": "/data/product_images/roland/roland-katana-artist-mkii_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-katana-artist-mkii_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-katana-artist-mkii_main.webp",
+            "original": "/data/product_images/roland/roland-katana-artist-mkii_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-5769"
+        },
+        {
+          "id": "roland-jc-120",
+          "name": "JC-120",
+          "description": "JC-120 - Flagship tier Guitar Amp",
+          "images": {
+            "main": "/data/product_images/roland/roland-jc-120_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-jc-120_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-jc-120_main.webp",
+            "original": "/data/product_images/roland/roland-jc-120_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-2158"
+        }
+      ],
+      "Portable Pianos": [
+        {
+          "id": "roland-cube-street-ex",
+          "name": "CUBE Street EX",
+          "description": "CUBE Street EX - Standard tier Portable Amp",
+          "images": {
+            "main": "/data/product_images/roland/roland-cube-street-ex_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-cube-street-ex_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-cube-street-ex_main.webp",
+            "original": "/data/product_images/roland/roland-cube-street-ex_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-8582"
+        }
+      ]
+    },
+    "AIRA": {
+      "Drum Machine": [
+        {
+          "id": "roland-tr-8s",
+          "name": "TR-8S",
+          "description": "TR-8S - Flagship tier Drum Machine",
+          "images": {
+            "main": "/data/product_images/roland/roland-tr-8s_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-tr-8s_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-tr-8s_main.webp",
+            "original": "/data/product_images/roland/roland-tr-8s_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-9946"
+        }
+      ],
+      "Guitar & Bass": [
+        {
+          "id": "roland-tb-03",
+          "name": "TB-03",
+          "description": "TB-03 - Standard tier Bass Synth",
+          "images": {
+            "main": "/data/product_images/roland/roland-tb-03_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-tb-03_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-tb-03_main.webp",
+            "original": "/data/product_images/roland/roland-tb-03_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-9591"
+        }
+      ],
+      "Groovebox": [
+        {
+          "id": "roland-mc-707",
+          "name": "MC-707",
+          "description": "MC-707 - Flagship tier Groovebox",
+          "images": {
+            "main": "/data/product_images/roland/roland-mc-707_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-mc-707_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-mc-707_main.webp",
+            "original": "/data/product_images/roland/roland-mc-707_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-7880"
+        }
+      ],
+      "Production": [
+        {
+          "id": "roland-mv-1",
+          "name": "MV-1",
+          "description": "MV-1 - Standard tier Production Controller",
+          "images": {
+            "main": "/data/product_images/roland/roland-mv-1_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-mv-1_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-mv-1_main.webp",
+            "original": "/data/product_images/roland/roland-mv-1_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-6336"
+        }
+      ]
+    },
+    "Accessories": {
+      "Pedal": [
+        {
+          "id": "roland-dp-10",
+          "name": "DP-10",
+          "description": "DP-10 - Standard tier Pedal",
+          "images": {
+            "main": "/data/product_images/roland/roland-dp-10_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-dp-10_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-dp-10_main.webp",
+            "original": "/data/product_images/roland/roland-dp-10_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-6502"
+        }
+      ],
+      "Headphones": [
+        {
+          "id": "roland-rh-5",
+          "name": "RH-5",
+          "description": "RH-5 - Entry tier Headphones",
+          "images": {
+            "main": "/data/product_images/roland/roland-rh-5_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-rh-5_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-rh-5_main.webp",
+            "original": "/data/product_images/roland/roland-rh-5_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-6536"
+        }
+      ],
+      "Power Supplies": [
+        {
+          "id": "roland-psb-1u",
+          "name": "PSB-1U",
+          "description": "PSB-1U - Standard tier Power Supply",
+          "images": {
+            "main": "/data/product_images/roland/roland-psb-1u_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-psb-1u_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-psb-1u_main.webp",
+            "original": "/data/product_images/roland/roland-psb-1u_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-6981"
+        }
+      ],
+      "Case": [
+        {
+          "id": "roland-cb-88rl",
+          "name": "CB-88RL",
+          "description": "CB-88RL - Standard tier Case",
+          "images": {
+            "main": "/data/product_images/roland/roland-cb-88rl_thumb.webp",
+            "thumbnail": "/data/product_images/roland/roland-cb-88rl_thumb.webp",
+            "high_res": "/data/product_images/roland/roland-cb-88rl_main.webp",
+            "original": "/data/product_images/roland/roland-cb-88rl_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-ROL-2807"
         }
       ]
     }

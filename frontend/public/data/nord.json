@@ -3,7 +3,74 @@
   "brand_identity": {
     "id": "nord",
     "name": "Nord",
-    "website": "https://www.nord.com",
+    "logo_url": "/assets/logos/nord_logo.png",
+    "website": "https://www.nordkeyboards.com",
+    "description": "Official Nord products distributed by Halilit",
+    "categories": [
+      {
+        "id": "stage",
+        "label": "Stage",
+        "icon": "\ud83c\udfb9",
+        "description": "Flagship Stage Keyboards",
+        "children": []
+      },
+      {
+        "id": "piano",
+        "label": "Piano",
+        "icon": "\ud83c\udfb9",
+        "description": "Stage Piano Series",
+        "children": []
+      },
+      {
+        "id": "electro",
+        "label": "Electro",
+        "icon": "\ud83c\udfb9",
+        "description": "Electro-Mechanical Keyboards",
+        "children": []
+      },
+      {
+        "id": "lead",
+        "label": "Lead",
+        "icon": "\ud83c\udf9b\ufe0f",
+        "description": "Virtual Analog Synths",
+        "children": []
+      },
+      {
+        "id": "wave",
+        "label": "Wave",
+        "icon": "\ud83c\udf0a",
+        "description": "Wavetable Synthesizers",
+        "children": []
+      },
+      {
+        "id": "drum",
+        "label": "Drum",
+        "icon": "\ud83e\udd41",
+        "description": "Virtual Analog Drum Machines",
+        "children": []
+      },
+      {
+        "id": "c_organ",
+        "label": "C2D Organ",
+        "icon": "\ud83c\udfb9",
+        "description": "Combo Organ",
+        "children": []
+      },
+      {
+        "id": "accessories",
+        "label": "Accessories",
+        "icon": "\ud83d\udd27",
+        "description": "Pedals, Cases, Stands",
+        "children": []
+      },
+      {
+        "id": "software",
+        "label": "Software",
+        "icon": "\ud83d\udcbb",
+        "description": "Sound Manager, Sample Editor",
+        "children": []
+      }
+    ],
     "brand_colors": {
       "primary": "#e31e24",
       "secondary": "#450a0a",
@@ -11,180 +78,306 @@
       "background": "#450a0a",
       "text": "#ffffff"
     },
-    "logo_url": "/assets/logos/nord_logo.png"
+    "taxonomy_stats": {
+      "validated": 13,
+      "normalized": 0,
+      "uncategorized": 0
+    }
   },
   "products": [
     {
-      "id": "nord-nord-electro-6d-61",
-      "name": "Nord Electro 6D 61",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The Nord Electro 6D 61 represents the entry tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp",
+      "id": "nord-nord-stage-4-88",
+      "name": "Nord Stage 4 88",
+      "brand": "nord",
+      "category": "Stage",
+      "subcategory": "Stage",
+      "main_category": "Stage",
+      "description": "Ultimate stage keyboard",
+      "short_description": "Nord Stage 4 88 - Flagship tier Stage Piano",
+      "image_url": "/data/product_images/nord/nord-nord-stage-4-88_thumb.svg",
       "images": {
-        "main": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-electro-6d-61_main.webp",
-        "original": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp"
+        "main": "/data/product_images/nord/nord-nord-stage-4-88_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-stage-4-88_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-stage-4-88_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-stage-4-88_thumb.svg"
       },
       "pricing": {
-        "regular_price": 8500,
-        "currency": "ILS"
+        "regular_price": 22000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 8500,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Entry"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-NO-4264",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "nord-nord-electro-6d-73",
-      "name": "Nord Electro 6D 73",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The Nord Electro 6D 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp",
-      "images": {
-        "main": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-electro-6d-73_main.webp",
-        "original": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 9800,
-        "currency": "ILS"
-      },
-      "halilit_price": 9800,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-NO-2348",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "nord-nord-piano-5-73",
-      "name": "Nord Piano 5 73",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The Nord Piano 5 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
-      "images": {
-        "main": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-piano-5-73_main.webp",
-        "original": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 11500,
-        "currency": "ILS"
-      },
-      "halilit_price": 11500,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-NO-9539",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "nord-nord-piano-5-88",
-      "name": "Nord Piano 5 88",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The Nord Piano 5 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
-      "images": {
-        "main": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-piano-5-88_main.webp",
-        "original": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 12900,
-        "currency": "ILS"
-      },
-      "halilit_price": 12900,
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
         },
         {
+          "key": "Category",
+          "value": "Stage"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
+        },
+        {
           "key": "Warranty",
           "value": "2 Years"
         }
       ],
-      "availability": "low-stock",
-      "sku": "HL-NO-9907",
+      "availability": "in-stock",
+      "sku": "HL-NOR-5241",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "flagship",
+        "stage",
+        "stage-piano"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Stage",
+        "Stage"
       ]
     },
     {
       "id": "nord-nord-stage-4-compact",
       "name": "Nord Stage 4 Compact",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The Nord Stage 4 Compact represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
+      "brand": "nord",
+      "category": "Stage",
+      "subcategory": "Stage",
+      "main_category": "Stage",
+      "description": "Compact stage keyboard",
+      "short_description": "Nord Stage 4 Compact - Standard tier Stage Piano",
+      "image_url": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.svg",
       "images": {
-        "main": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-stage-4-compact_main.webp",
-        "original": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp"
+        "main": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.svg"
       },
       "pricing": {
-        "regular_price": 15500,
-        "currency": "ILS"
+        "regular_price": 17500,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 15500,
       "specifications": [
         {
           "key": "Tier",
           "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Stage"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NOR-4890",
+      "verified": true,
+      "tags": [
+        "standard",
+        "stage",
+        "stage-piano"
+      ],
+      "category_hierarchy": [
+        "Stage",
+        "Stage"
+      ]
+    },
+    {
+      "id": "nord-nord-piano-5-88",
+      "name": "Nord Piano 5 88",
+      "brand": "nord",
+      "category": "Piano",
+      "subcategory": "Stage",
+      "main_category": "Piano",
+      "description": "Premium stage piano",
+      "short_description": "Nord Piano 5 88 - Flagship tier Stage Piano",
+      "image_url": "/data/product_images/nord/nord-nord-piano-5-88_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-piano-5-88_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-piano-5-88_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-piano-5-88_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-piano-5-88_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 14500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Piano"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NOR-4392",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "piano",
+        "stage-piano"
+      ],
+      "category_hierarchy": [
+        "Piano",
+        "Stage"
+      ]
+    },
+    {
+      "id": "nord-nord-piano-5-73",
+      "name": "Nord Piano 5 73",
+      "brand": "nord",
+      "category": "Piano",
+      "subcategory": "Stage",
+      "main_category": "Piano",
+      "description": "73-key stage piano",
+      "short_description": "Nord Piano 5 73 - Standard tier Stage Piano",
+      "image_url": "/data/product_images/nord/nord-nord-piano-5-73_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-piano-5-73_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-piano-5-73_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-piano-5-73_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-piano-5-73_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 12500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Piano"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NOR-9566",
+      "verified": true,
+      "tags": [
+        "standard",
+        "piano",
+        "stage-piano"
+      ],
+      "category_hierarchy": [
+        "Piano",
+        "Stage"
+      ]
+    },
+    {
+      "id": "nord-nord-electro-7d-73",
+      "name": "Nord Electro 7D 73",
+      "brand": "nord",
+      "category": "Electro",
+      "subcategory": "Stage",
+      "main_category": "Electro",
+      "description": "Electro-mechanical keyboard",
+      "short_description": "Nord Electro 7D 73 - Standard tier Stage Piano",
+      "image_url": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 11500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Electro"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NOR-7444",
+      "verified": true,
+      "tags": [
+        "standard",
+        "electro",
+        "stage-piano"
+      ],
+      "category_hierarchy": [
+        "Electro",
+        "Stage"
+      ]
+    },
+    {
+      "id": "nord-nord-electro-7d-61",
+      "name": "Nord Electro 7D 61",
+      "brand": "nord",
+      "category": "Electro",
+      "subcategory": "Stage",
+      "main_category": "Electro",
+      "description": "Compact electro keyboard",
+      "short_description": "Nord Electro 7D 61 - Entry tier Stage Piano",
+      "image_url": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 10500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Electro"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
         },
         {
           "key": "Warranty",
@@ -192,184 +385,103 @@
         }
       ],
       "availability": "low-stock",
-      "sku": "HL-NO-6802",
+      "sku": "HL-NOR-3144",
       "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "nord-nord-stage-4-88",
-      "name": "Nord Stage 4 88",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The Nord Stage 4 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp",
-      "images": {
-        "main": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-stage-4-88_main.webp",
-        "original": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 17900,
-        "currency": "ILS"
-      },
-      "halilit_price": 17900,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Flagship"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
+      "tags": [
+        "entry",
+        "electro",
+        "stage-piano"
       ],
-      "availability": "in-stock",
-      "sku": "HL-NO-9058",
-      "verified": true,
-      "category": "Keys",
       "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "nord-nord-wave-2",
-      "name": "Nord Wave 2",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Nord Wave 2 represents the standard tier of Nord's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
-      "images": {
-        "main": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-wave-2_main.webp",
-        "original": "/data/product_images/nord/nord-nord-wave-2_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 9900,
-        "currency": "ILS"
-      },
-      "halilit_price": 9900,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-NO-2450",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "nord-nord-lead-a1",
-      "name": "Nord Lead A1",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Synthesizer",
-      "description": "The Nord Lead A1 represents the entry tier of Nord's Synthesizer lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
-      "images": {
-        "main": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-lead-a1_main.webp",
-        "original": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 6500,
-        "currency": "ILS"
-      },
-      "halilit_price": 6500,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Entry"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-NO-7450",
-      "verified": true,
-      "category": "Keys",
-      "category_hierarchy": [
-        "Keys"
-      ]
-    },
-    {
-      "id": "nord-nord-drum-3p",
-      "name": "Nord Drum 3P",
-      "brand": "Nord",
-      "main_category": "Drums",
-      "subcategory": "Percussion",
-      "description": "The Nord Drum 3P represents the standard tier of Nord's Percussion lineup. Designed for drums professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
-      "images": {
-        "main": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-drum-3p_main.webp",
-        "original": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp"
-      },
-      "pricing": {
-        "regular_price": 3200,
-        "currency": "ILS"
-      },
-      "halilit_price": 3200,
-      "specifications": [
-        {
-          "key": "Tier",
-          "value": "Standard"
-        },
-        {
-          "key": "Warranty",
-          "value": "2 Years"
-        }
-      ],
-      "availability": "in-stock",
-      "sku": "HL-NO-9473",
-      "verified": true,
-      "category": "Drums",
-      "category_hierarchy": [
-        "Drums"
+        "Electro",
+        "Stage"
       ]
     },
     {
       "id": "nord-nord-grand",
       "name": "Nord Grand",
-      "brand": "Nord",
-      "main_category": "Keys",
-      "subcategory": "Stage Piano",
-      "description": "The Nord Grand represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-      "image_url": "/data/product_images/nord/nord-nord-grand_thumb.webp",
+      "brand": "nord",
+      "category": "Piano",
+      "subcategory": "Stage",
+      "main_category": "Piano",
+      "description": "Grand piano experience",
+      "short_description": "Nord Grand - Flagship tier Stage Piano",
+      "image_url": "/data/product_images/nord/nord-nord-grand_thumb.svg",
       "images": {
-        "main": "/data/product_images/nord/nord-nord-grand_thumb.webp",
-        "thumbnail": "/data/product_images/nord/nord-nord-grand_thumb.webp",
-        "high_res": "/data/product_images/nord/nord-nord-grand_main.webp",
-        "original": "/data/product_images/nord/nord-nord-grand_thumb.webp"
+        "main": "/data/product_images/nord/nord-nord-grand_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-grand_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-grand_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-grand_thumb.svg"
       },
       "pricing": {
-        "regular_price": 14500,
-        "currency": "ILS"
+        "regular_price": 18000,
+        "currency": "ILS",
+        "source": "halilit"
       },
-      "halilit_price": 14500,
       "specifications": [
         {
           "key": "Tier",
           "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Piano"
+        },
+        {
+          "key": "Type",
+          "value": "Stage Piano"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-NOR-6847",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "piano",
+        "stage-piano"
+      ],
+      "category_hierarchy": [
+        "Piano",
+        "Stage"
+      ]
+    },
+    {
+      "id": "nord-nord-lead-a1",
+      "name": "Nord Lead A1",
+      "brand": "nord",
+      "category": "Lead",
+      "subcategory": "Synthesizer",
+      "main_category": "Lead",
+      "description": "Virtual analog synthesizer",
+      "short_description": "Nord Lead A1 - Standard tier Synthesizer",
+      "image_url": "/data/product_images/nord/nord-nord-lead-a1_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-lead-a1_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-lead-a1_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-lead-a1_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-lead-a1_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Lead"
+        },
+        {
+          "key": "Type",
+          "value": "Synthesizer"
         },
         {
           "key": "Warranty",
@@ -377,88 +489,290 @@
         }
       ],
       "availability": "in-stock",
-      "sku": "HL-NO-9710",
+      "sku": "HL-NOR-9630",
       "verified": true,
-      "category": "Keys",
+      "tags": [
+        "standard",
+        "lead",
+        "synthesizer"
+      ],
       "category_hierarchy": [
-        "Keys"
+        "Lead",
+        "Synthesizer"
+      ]
+    },
+    {
+      "id": "nord-nord-wave-2",
+      "name": "Nord Wave 2",
+      "brand": "nord",
+      "category": "Wave",
+      "subcategory": "Synthesizer",
+      "main_category": "Wave",
+      "description": "Wavetable synthesizer",
+      "short_description": "Nord Wave 2 - Flagship tier Synthesizer",
+      "image_url": "/data/product_images/nord/nord-nord-wave-2_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-wave-2_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-wave-2_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-wave-2_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-wave-2_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 12500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Wave"
+        },
+        {
+          "key": "Type",
+          "value": "Synthesizer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-NOR-9992",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "wave",
+        "synthesizer"
+      ],
+      "category_hierarchy": [
+        "Wave",
+        "Synthesizer"
+      ]
+    },
+    {
+      "id": "nord-nord-drum-3p",
+      "name": "Nord Drum 3P",
+      "brand": "nord",
+      "category": "Drum",
+      "subcategory": "Percussion",
+      "main_category": "Drum",
+      "description": "Virtual analog drum machine",
+      "short_description": "Nord Drum 3P - Standard tier Percussion",
+      "image_url": "/data/product_images/nord/nord-nord-drum-3p_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-drum-3p_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-drum-3p_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-drum-3p_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-drum-3p_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 4200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Drum"
+        },
+        {
+          "key": "Type",
+          "value": "Percussion"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NOR-1133",
+      "verified": true,
+      "tags": [
+        "standard",
+        "drum",
+        "percussion"
+      ],
+      "category_hierarchy": [
+        "Drum",
+        "Percussion"
+      ]
+    },
+    {
+      "id": "nord-nord-triple-pedal",
+      "name": "Nord Triple Pedal",
+      "brand": "nord",
+      "category": "Accessories",
+      "subcategory": "Pedal",
+      "main_category": "Accessories",
+      "description": "Triple pedal unit",
+      "short_description": "Nord Triple Pedal - Standard tier Pedal",
+      "image_url": "/data/product_images/nord/nord-nord-triple-pedal_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-triple-pedal_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-triple-pedal_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-triple-pedal_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-triple-pedal_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Pedal"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-NOR-3282",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "pedal"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Pedal"
+      ]
+    },
+    {
+      "id": "nord-nord-soft-case-stage-88",
+      "name": "Nord Soft Case Stage 88",
+      "brand": "nord",
+      "category": "Accessories",
+      "subcategory": "Case",
+      "main_category": "Accessories",
+      "description": "Stage 88 soft case",
+      "short_description": "Nord Soft Case Stage 88 - Standard tier Case",
+      "image_url": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 1200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Case"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-NOR-8026",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "case"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Case"
+      ]
+    },
+    {
+      "id": "nord-nord-keyboard-stand-ex",
+      "name": "Nord Keyboard Stand EX",
+      "brand": "nord",
+      "category": "Accessories",
+      "subcategory": "Stand",
+      "main_category": "Accessories",
+      "description": "Professional keyboard stand",
+      "short_description": "Nord Keyboard Stand EX - Standard tier Stand",
+      "image_url": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.svg",
+      "images": {
+        "main": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.svg",
+        "thumbnail": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.svg",
+        "high_res": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.svg",
+        "original": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.svg"
+      },
+      "pricing": {
+        "regular_price": 900,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Stand"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-NOR-7220",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "stand"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Stand"
       ]
     }
   ],
+  "generated_at": "2026-01-23T02:41:37.847209",
+  "product_count": 13,
   "brand_slug": "nord",
-  "refined_at": "2026-01-22T14:36:08.535400+00:00",
+  "refined_at": "2026-01-23T02:42:11.937227+00:00",
   "hierarchy": {
-    "Keys": {
-      "Stage Piano": [
-        {
-          "id": "nord-nord-electro-6d-61",
-          "name": "Nord Electro 6D 61",
-          "description": "The Nord Electro 6D 61 represents the entry tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp",
-            "thumbnail": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp",
-            "high_res": "/data/product_images/nord/nord-nord-electro-6d-61_main.webp",
-            "original": "/data/product_images/nord/nord-nord-electro-6d-61_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-NO-4264"
-        },
-        {
-          "id": "nord-nord-electro-6d-73",
-          "name": "Nord Electro 6D 73",
-          "description": "The Nord Electro 6D 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp",
-            "thumbnail": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp",
-            "high_res": "/data/product_images/nord/nord-nord-electro-6d-73_main.webp",
-            "original": "/data/product_images/nord/nord-nord-electro-6d-73_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-NO-2348"
-        },
-        {
-          "id": "nord-nord-piano-5-73",
-          "name": "Nord Piano 5 73",
-          "description": "The Nord Piano 5 73 represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
-            "thumbnail": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
-            "high_res": "/data/product_images/nord/nord-nord-piano-5-73_main.webp",
-            "original": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-NO-9539"
-        },
-        {
-          "id": "nord-nord-piano-5-88",
-          "name": "Nord Piano 5 88",
-          "description": "The Nord Piano 5 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
-            "thumbnail": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
-            "high_res": "/data/product_images/nord/nord-nord-piano-5-88_main.webp",
-            "original": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-NO-9907"
-        },
-        {
-          "id": "nord-nord-stage-4-compact",
-          "name": "Nord Stage 4 Compact",
-          "description": "The Nord Stage 4 Compact represents the standard tier of Nord's Stage Piano lineup. Designed for keys professionals.",
-          "images": {
-            "main": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
-            "thumbnail": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
-            "high_res": "/data/product_images/nord/nord-nord-stage-4-compact_main.webp",
-            "original": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp"
-          },
-          "model_number": null,
-          "sku": "HL-NO-6802"
-        },
+    "Stage": {
+      "Stage": [
         {
           "id": "nord-nord-stage-4-88",
           "name": "Nord Stage 4 88",
-          "description": "The Nord Stage 4 88 represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+          "description": "Nord Stage 4 88 - Flagship tier Stage Piano",
           "images": {
             "main": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp",
             "thumbnail": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp",
@@ -466,12 +780,55 @@
             "original": "/data/product_images/nord/nord-nord-stage-4-88_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-NO-9058"
+          "sku": "HL-NOR-5241"
+        },
+        {
+          "id": "nord-nord-stage-4-compact",
+          "name": "Nord Stage 4 Compact",
+          "description": "Nord Stage 4 Compact - Standard tier Stage Piano",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-stage-4-compact_main.webp",
+            "original": "/data/product_images/nord/nord-nord-stage-4-compact_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-4890"
+        }
+      ]
+    },
+    "Piano": {
+      "Stage": [
+        {
+          "id": "nord-nord-piano-5-88",
+          "name": "Nord Piano 5 88",
+          "description": "Nord Piano 5 88 - Flagship tier Stage Piano",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-piano-5-88_main.webp",
+            "original": "/data/product_images/nord/nord-nord-piano-5-88_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-4392"
+        },
+        {
+          "id": "nord-nord-piano-5-73",
+          "name": "Nord Piano 5 73",
+          "description": "Nord Piano 5 73 - Standard tier Stage Piano",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-piano-5-73_main.webp",
+            "original": "/data/product_images/nord/nord-nord-piano-5-73_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-9566"
         },
         {
           "id": "nord-nord-grand",
           "name": "Nord Grand",
-          "description": "The Nord Grand represents the flagship tier of Nord's Stage Piano lineup. Designed for keys professionals.",
+          "description": "Nord Grand - Flagship tier Stage Piano",
           "images": {
             "main": "/data/product_images/nord/nord-nord-grand_thumb.webp",
             "thumbnail": "/data/product_images/nord/nord-nord-grand_thumb.webp",
@@ -479,27 +836,46 @@
             "original": "/data/product_images/nord/nord-nord-grand_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-NO-9710"
+          "sku": "HL-NOR-6847"
         }
-      ],
-      "Synthesizer": [
+      ]
+    },
+    "Electro": {
+      "Stage": [
         {
-          "id": "nord-nord-wave-2",
-          "name": "Nord Wave 2",
-          "description": "The Nord Wave 2 represents the standard tier of Nord's Synthesizer lineup. Designed for keys professionals.",
+          "id": "nord-nord-electro-7d-73",
+          "name": "Nord Electro 7D 73",
+          "description": "Nord Electro 7D 73 - Standard tier Stage Piano",
           "images": {
-            "main": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
-            "thumbnail": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
-            "high_res": "/data/product_images/nord/nord-nord-wave-2_main.webp",
-            "original": "/data/product_images/nord/nord-nord-wave-2_thumb.webp"
+            "main": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-electro-7d-73_main.webp",
+            "original": "/data/product_images/nord/nord-nord-electro-7d-73_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-NO-2450"
+          "sku": "HL-NOR-7444"
         },
+        {
+          "id": "nord-nord-electro-7d-61",
+          "name": "Nord Electro 7D 61",
+          "description": "Nord Electro 7D 61 - Entry tier Stage Piano",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-electro-7d-61_main.webp",
+            "original": "/data/product_images/nord/nord-nord-electro-7d-61_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-3144"
+        }
+      ]
+    },
+    "Lead": {
+      "Synthesizer": [
         {
           "id": "nord-nord-lead-a1",
           "name": "Nord Lead A1",
-          "description": "The Nord Lead A1 represents the entry tier of Nord's Synthesizer lineup. Designed for keys professionals.",
+          "description": "Nord Lead A1 - Standard tier Synthesizer",
           "images": {
             "main": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
             "thumbnail": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp",
@@ -507,16 +883,33 @@
             "original": "/data/product_images/nord/nord-nord-lead-a1_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-NO-7450"
+          "sku": "HL-NOR-9630"
         }
       ]
     },
-    "Drums": {
+    "Wave": {
+      "Synthesizer": [
+        {
+          "id": "nord-nord-wave-2",
+          "name": "Nord Wave 2",
+          "description": "Nord Wave 2 - Flagship tier Synthesizer",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-wave-2_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-wave-2_main.webp",
+            "original": "/data/product_images/nord/nord-nord-wave-2_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-9992"
+        }
+      ]
+    },
+    "Drum": {
       "Percussion": [
         {
           "id": "nord-nord-drum-3p",
           "name": "Nord Drum 3P",
-          "description": "The Nord Drum 3P represents the standard tier of Nord's Percussion lineup. Designed for drums professionals.",
+          "description": "Nord Drum 3P - Standard tier Percussion",
           "images": {
             "main": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
             "thumbnail": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp",
@@ -524,7 +917,54 @@
             "original": "/data/product_images/nord/nord-nord-drum-3p_thumb.webp"
           },
           "model_number": null,
-          "sku": "HL-NO-9473"
+          "sku": "HL-NOR-1133"
+        }
+      ]
+    },
+    "Accessories": {
+      "Pedal": [
+        {
+          "id": "nord-nord-triple-pedal",
+          "name": "Nord Triple Pedal",
+          "description": "Nord Triple Pedal - Standard tier Pedal",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-triple-pedal_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-triple-pedal_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-triple-pedal_main.webp",
+            "original": "/data/product_images/nord/nord-nord-triple-pedal_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-3282"
+        }
+      ],
+      "Case": [
+        {
+          "id": "nord-nord-soft-case-stage-88",
+          "name": "Nord Soft Case Stage 88",
+          "description": "Nord Soft Case Stage 88 - Standard tier Case",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-soft-case-stage-88_main.webp",
+            "original": "/data/product_images/nord/nord-nord-soft-case-stage-88_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-8026"
+        }
+      ],
+      "Stand": [
+        {
+          "id": "nord-nord-keyboard-stand-ex",
+          "name": "Nord Keyboard Stand EX",
+          "description": "Nord Keyboard Stand EX - Standard tier Stand",
+          "images": {
+            "main": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.webp",
+            "thumbnail": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.webp",
+            "high_res": "/data/product_images/nord/nord-nord-keyboard-stand-ex_main.webp",
+            "original": "/data/product_images/nord/nord-nord-keyboard-stand-ex_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-NOR-7220"
         }
       ]
     }

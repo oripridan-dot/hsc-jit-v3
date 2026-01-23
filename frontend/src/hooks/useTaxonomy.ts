@@ -1,104 +1,172 @@
-import { useEffect, useState } from "react";
+/**
+ * useTaxonomy - Hook for accessing taxonomy data
+ *
+ * Provides easy access to:
+ * 1. Brand categories from taxonomy.json
+ * 2. Category-filtered products
+ * 3. Subcategory navigation
+ */
 
-// The Map Structure
-type TaxonomyMap = Record<string, string>;
+import { useEffect, useState, useMemo } from "react";
+import {
+  loadTaxonomyRegistry,
+  getBrandTaxonomySync,
+  type TaxonomyCategory,
+  type BrandTaxonomy,
+} from "../lib/taxonomyLoader";
 
-// Mapping between frontend display names and backend taxonomy keys
-const CATEGORY_MAPPING: Record<string, string> = {
-  "Keys & Pianos": "Keys",
-  "Drums & Percussion": "Drums",
-  "Guitars & Amps": "Guitar",
-  "Studio & Recording": "Studio",
-  "Live Sound": "PA",
-  "DJ & Production": "DJ",
-};
+interface UseTaxonomyResult {
+  /** All root categories for the brand */
+  categories: TaxonomyCategory[];
+  /** Get children of a category */
+  getChildren: (categoryId: string) => TaxonomyCategory[];
+  /** Check if taxonomy is loaded */
+  isLoaded: boolean;
+  /** Full brand taxonomy object */
+  taxonomy: BrandTaxonomy | null;
+}
 
-// Subcategory label normalization (frontend label → backend key)
-const SUBCATEGORY_MAPPING: Record<string, string> = {
-  // Keys
-  Synthesizers: "Synthesizer",
-  "MIDI Controllers": "Controller",
-  Workstations: "Workstation",
-  "Stage Pianos": "Stage Piano",
-
-  // Drums
-  "Drum Machines": "Drum Machine",
-  "Electronic Drum Kits": "V-Drums",
-
-  // Guitar
-  Amplifiers: "Amplifier",
-  "Effects Pedals": "Pedal",
-  "Multi-Effects": "Multi-Effects",
-
-  // Studio
-  "Audio Interfaces": "Interface",
-  "Studio Monitors": "Monitors",
-  Microphones: "Microphone",
-  "Outboard Gear": "Outboard",
-  Preamps: "Preamp",
-
-  // Live
-  "PA Speakers": "Speaker",
-  Mixers: "Mixer",
-  "Digital Mixers": "Digital Mixer",
-
-  // DJ
-  "DJ Controllers": "Controller",
-  Samplers: "Sampler",
-  Production: "Production",
-};
-
-export const useTaxonomy = () => {
-  const [map, setMap] = useState<TaxonomyMap>({});
-  const [loading, setLoading] = useState(true);
+/**
+ * Hook to access brand taxonomy
+ * @param brandId - Brand identifier
+ */
+export function useTaxonomy(brandId: string | undefined): UseTaxonomyResult {
+  const [taxonomy, setTaxonomy] = useState<BrandTaxonomy | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    fetch("/data/taxonomy.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setMap(data);
-        setLoading(false);
+    if (!brandId) {
+      setTaxonomy(null);
+      setIsLoaded(false);
+      return;
+    }
+
+    // First check sync cache
+    const cached = getBrandTaxonomySync(brandId);
+    if (cached) {
+      setTaxonomy(cached);
+      setIsLoaded(true);
+      return;
+    }
+
+    // Load async if not cached
+    loadTaxonomyRegistry()
+      .then((registry) => {
+        const brandTax = registry.brands[brandId.toLowerCase()];
+        if (brandTax) {
+          setTaxonomy(brandTax);
+          setIsLoaded(true);
+        }
       })
       .catch((err) => {
-        console.error("Failed to load taxonomy map:", err);
-        setLoading(false);
+        console.warn("Failed to load taxonomy:", err);
+        setIsLoaded(true);
       });
-  }, []);
+  }, [brandId]);
 
-  /**
-   * Resolves the best image for a given category context.
-   * Tries: "Cat > Sub" -> "Cat" -> Default
-   */
-  const getVisual = (category: string, subcategory?: string): string => {
-    if (!map) return "/assets/react.svg"; // Safe fallback
+  const categories = useMemo(() => {
+    if (!taxonomy) return [];
+    return taxonomy.root_categories || [];
+  }, [taxonomy]);
 
-    // Normalize category name using mapping
-    const normalizedCategory = CATEGORY_MAPPING[category] || category;
+  const getChildren = useMemo(() => {
+    return (categoryId: string): TaxonomyCategory[] => {
+      if (!taxonomy) return [];
 
-    // Normalize subcategory name
-    const normalizedSubcategory = subcategory
-      ? SUBCATEGORY_MAPPING[subcategory] || subcategory
-      : undefined;
+      // Find the parent category
+      const parent = taxonomy.categories.find((c) => c.id === categoryId);
+      if (!parent || !parent.children?.length) return [];
 
-    // 1. Try Specific Subcategory
-    if (normalizedCategory && normalizedSubcategory) {
-      const key = `${normalizedCategory} > ${normalizedSubcategory}`;
-      if (map[key]) return map[key];
-    }
-
-    // 2. Try Main Category
-    if (map[normalizedCategory]) return map[normalizedCategory];
-
-    // 3. Try fuzzy match (e.g., "Synthesizers" might match "Keys > Synthesizer")
-    if (normalizedSubcategory) {
-      const fuzzy = Object.keys(map).find((k) =>
-        k.toLowerCase().includes(normalizedSubcategory.toLowerCase()),
+      // Find all children by ID
+      return taxonomy.categories.filter((c) =>
+        parent.children.includes(c.id)
       );
-      if (fuzzy) return map[fuzzy];
-    }
+    };
+  }, [taxonomy]);
 
-    return "/assets/react.svg"; // Final Fallback
+  return {
+    categories,
+    getChildren,
+    isLoaded,
+    taxonomy,
   };
+}
 
-  return { getVisual, loading };
-};
+/**
+ * Hook to get category-filtered products
+ * @param products - All products
+ * @param categoryLabel - Category label to filter by (from taxonomy)
+ */
+export function useCategoryProducts<T extends { category?: string; main_category?: string }>(
+  products: T[],
+  categoryLabel: string | undefined
+): T[] {
+  return useMemo(() => {
+    if (!categoryLabel || !products.length) return products;
+
+    return products.filter((p) => {
+      const productCat = p.category || p.main_category;
+      if (!productCat) return false;
+      
+      // Case-insensitive match
+      return productCat.toLowerCase() === categoryLabel.toLowerCase();
+    });
+  }, [products, categoryLabel]);
+}
+
+/**
+ * Hook to group products by taxonomy categories
+ * Returns products organized by their categories
+ */
+export function useProductsByCategory<T extends { category?: string; main_category?: string }>(
+  products: T[],
+  brandId: string | undefined
+): Record<string, T[]> {
+  const { categories } = useTaxonomy(brandId);
+
+  return useMemo(() => {
+    const grouped: Record<string, T[]> = {};
+
+    // Initialize all categories
+    categories.forEach((cat) => {
+      grouped[cat.label] = [];
+    });
+
+    // Add "Other" for uncategorized
+    grouped["Other"] = [];
+
+    // Sort products into categories
+    products.forEach((product) => {
+      const productCat = product.category || product.main_category;
+
+      if (!productCat) {
+        grouped["Other"].push(product);
+        return;
+      }
+
+      // Find matching category
+      const matchedCat = categories.find(
+        (c) => c.label.toLowerCase() === productCat.toLowerCase()
+      );
+
+      if (matchedCat) {
+        grouped[matchedCat.label].push(product);
+      } else {
+        // Check if it's a subcategory
+        grouped[productCat] = grouped[productCat] || [];
+        grouped[productCat].push(product);
+      }
+    });
+
+    // Remove empty categories
+    Object.keys(grouped).forEach((key) => {
+      if (grouped[key].length === 0) {
+        delete grouped[key];
+      }
+    });
+
+    return grouped;
+  }, [products, categories]);
+}
+
+export default useTaxonomy;

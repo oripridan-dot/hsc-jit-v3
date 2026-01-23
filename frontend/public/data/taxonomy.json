@@ -1,76 +1,1171 @@
 {
-  "Acoustic": "/data/taxonomy/acoustic.webp",
-  "Amplifier": "/data/taxonomy/amplifier.webp",
-  "Controller": "/data/taxonomy/controller.webp",
-  "DJ": "/data/taxonomy/dj.webp",
-  "DJ > Controller": "/data/taxonomy/dj__controller.webp",
-  "DJ > Mixer": "/data/taxonomy/dj__mixer.webp",
-  "DJ > Production": "/data/taxonomy/dj__production.webp",
-  "DJ > Sampler": "/data/taxonomy/dj__sampler.webp",
-  "DJ > Turntable": "/data/taxonomy/dj__turntable.webp",
-  "Delay": "/data/taxonomy/delay.webp",
-  "Digital Mixer": "/data/taxonomy/digital_mixer.webp",
-  "Drum Machine": "/data/taxonomy/drum_machine.webp",
-  "Drums": "/data/taxonomy/drums.webp",
-  "Drums > Acoustic": "/data/taxonomy/drums__acoustic.webp",
-  "Drums > Drum Machine": "/data/taxonomy/drums__drum_machine.webp",
-  "Drums > Electric": "/data/taxonomy/drums__electric.webp",
-  "Drums > Percussion": "/data/taxonomy/drums__percussion.webp",
-  "Drums > V-Drums": "/data/taxonomy/drums__v-drums.webp",
-  "Electric": "/data/taxonomy/electric.webp",
-  "Guitar": "/data/taxonomy/guitar.webp",
-  "Guitar > Acoustic": "/data/taxonomy/guitar__acoustic.webp",
-  "Guitar > Amplifier": "/data/taxonomy/guitar__amplifier.webp",
-  "Guitar > Delay": "/data/taxonomy/guitar__delay.webp",
-  "Guitar > Electric": "/data/taxonomy/guitar__electric.webp",
-  "Guitar > Looper": "/data/taxonomy/guitar__looper.webp",
-  "Guitar > Multi-Effects": "/data/taxonomy/guitar__multi-effects.webp",
-  "Guitar > Pedal": "/data/taxonomy/guitar__pedal.webp",
-  "Interface": "/data/taxonomy/interface.webp",
-  "Keys": "/data/taxonomy/keys.webp",
-  "Keys > Controller": "/data/taxonomy/keys__controller.webp",
-  "Keys > Piano": "/data/taxonomy/keys__piano.webp",
-  "Keys > Pocket Operator": "/data/taxonomy/keys__pocket_operator.webp",
-  "Keys > Semi-Modular": "/data/taxonomy/keys__semi-modular.webp",
-  "Keys > Stage Piano": "/data/taxonomy/keys__stage_piano.webp",
-  "Keys > Synthesizer": "/data/taxonomy/keys__synthesizer.webp",
-  "Keys > Workstation": "/data/taxonomy/keys__workstation.webp",
-  "Looper": "/data/taxonomy/looper.webp",
-  "Microphone": "/data/taxonomy/microphone.webp",
-  "Mixer": "/data/taxonomy/mixer.webp",
-  "Monitor": "/data/taxonomy/monitor.webp",
-  "Monitors": "/data/taxonomy/monitors.webp",
-  "Multi-Effects": "/data/taxonomy/multi-effects.webp",
-  "Outboard": "/data/taxonomy/outboard.webp",
-  "PA": "/data/taxonomy/pa.webp",
-  "PA > Digital Mixer": "/data/taxonomy/pa__digital_mixer.webp",
-  "PA > Mixer": "/data/taxonomy/pa__mixer.webp",
-  "PA > Speaker": "/data/taxonomy/pa__speaker.webp",
-  "Pedal": "/data/taxonomy/pedal.webp",
-  "Percussion": "/data/taxonomy/percussion.webp",
-  "Piano": "/data/taxonomy/piano.webp",
-  "Pocket Operator": "/data/taxonomy/pocket_operator.webp",
-  "Preamp": "/data/taxonomy/preamp.webp",
-  "Production": "/data/taxonomy/production.webp",
-  "Recorder": "/data/taxonomy/recorder.webp",
-  "Sampler": "/data/taxonomy/sampler.webp",
-  "Semi-Modular": "/data/taxonomy/semi-modular.webp",
-  "Speaker": "/data/taxonomy/speaker.webp",
-  "Stage Piano": "/data/taxonomy/stage_piano.webp",
-  "Studio": "/data/taxonomy/studio.webp",
-  "Studio > Controller": "/data/taxonomy/studio__controller.webp",
-  "Studio > Interface": "/data/taxonomy/studio__interface.webp",
-  "Studio > Microphone": "/data/taxonomy/studio__microphone.webp",
-  "Studio > Mixer": "/data/taxonomy/studio__mixer.webp",
-  "Studio > Monitor": "/data/taxonomy/studio__monitor.webp",
-  "Studio > Monitors": "/data/taxonomy/studio__monitors.webp",
-  "Studio > Outboard": "/data/taxonomy/studio__outboard.webp",
-  "Studio > Preamp": "/data/taxonomy/studio__preamp.webp",
-  "Studio > Recorder": "/data/taxonomy/studio__recorder.webp",
-  "Studio > Subwoofer": "/data/taxonomy/studio__subwoofer.webp",
-  "Subwoofer": "/data/taxonomy/subwoofer.webp",
-  "Synthesizer": "/data/taxonomy/synthesizer.webp",
-  "Turntable": "/data/taxonomy/turntable.webp",
-  "V-Drums": "/data/taxonomy/v-drums.webp",
-  "Workstation": "/data/taxonomy/workstation.webp"
+  "version": "1.0.0",
+  "generated_at": "2026-01-23T02:42:11.920780+00:00",
+  "brands": {
+    "roland": {
+      "brand_id": "roland",
+      "brand_name": "Roland",
+      "base_url": "https://www.roland.com/global",
+      "last_verified": "2026-01-23",
+      "categories": [
+        {
+          "id": "pianos",
+          "label": "Pianos",
+          "parent_id": null,
+          "children": [
+            "grand_pianos",
+            "portable_pianos",
+            "stage_pianos",
+            "upright_pianos",
+            "pianos_accessories"
+          ],
+          "icon": "🎹",
+          "description": "Digital Pianos, Stage Pianos, Grand Pianos"
+        },
+        {
+          "id": "synthesizers",
+          "label": "Synthesizers",
+          "parent_id": null,
+          "children": [
+            "analog_modeling",
+            "performance_workstation",
+            "sound_expansion_patches",
+            "synths_accessories"
+          ],
+          "icon": "🎛️",
+          "description": "Analog Modeling, Performance Workstations"
+        },
+        {
+          "id": "keyboards",
+          "label": "Keyboards",
+          "parent_id": null,
+          "children": [
+            "arrangers",
+            "midi_controllers",
+            "portable_keyboards"
+          ],
+          "icon": "⌨️",
+          "description": "Arrangers, Controllers, Portable Keyboards"
+        },
+        {
+          "id": "organs",
+          "label": "Organs",
+          "parent_id": null,
+          "children": [
+            "combo_organs",
+            "organ_accessories"
+          ],
+          "icon": "🎹",
+          "description": "Combo Organs, Organ Accessories"
+        },
+        {
+          "id": "drums_percussion",
+          "label": "Drums & Percussion",
+          "parent_id": null,
+          "children": [
+            "v_drums",
+            "electronic_percussion",
+            "hybrid_drums",
+            "drums_accessories"
+          ],
+          "icon": "🥁",
+          "description": "V-Drums, Electronic Percussion, Hybrid Drums"
+        },
+        {
+          "id": "guitar_bass",
+          "label": "Guitar & Bass",
+          "parent_id": null,
+          "children": [
+            "effects_processors",
+            "guitar_synthesizers",
+            "guitar_accessories"
+          ],
+          "icon": "🎸",
+          "description": "Effects, Processors, Guitar Synths"
+        },
+        {
+          "id": "amplifiers",
+          "label": "Amplifiers",
+          "parent_id": null,
+          "children": [
+            "keyboard_amplifiers",
+            "guitar_amplifiers",
+            "bass_amplifiers"
+          ],
+          "icon": "🔊",
+          "description": "Guitar Amps, Keyboard Amps, Bass Amps"
+        },
+        {
+          "id": "production",
+          "label": "Production",
+          "parent_id": null,
+          "children": [
+            "audio_interfaces",
+            "mixers",
+            "video"
+          ],
+          "icon": "🎚️",
+          "description": "Audio Interfaces, Mixers, Video"
+        },
+        {
+          "id": "aira",
+          "label": "AIRA",
+          "parent_id": null,
+          "children": [
+            "aira_compact",
+            "aira_modular"
+          ],
+          "icon": "🔮",
+          "description": "TR, TB, System-1, AIRA Compact"
+        },
+        {
+          "id": "wind_instruments",
+          "label": "Wind Instruments",
+          "parent_id": null,
+          "children": [
+            "aerophone"
+          ],
+          "icon": "🎷",
+          "description": "Aerophone, Digital Wind Instruments"
+        },
+        {
+          "id": "roland_cloud",
+          "label": "Roland Cloud",
+          "parent_id": null,
+          "children": [
+            "plugins",
+            "sound_libraries"
+          ],
+          "icon": "☁️",
+          "description": "Software, Plugins, Sound Libraries"
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "parent_id": null,
+          "children": [
+            "cables",
+            "headphones",
+            "stands",
+            "cases_bags",
+            "pedals",
+            "power_supplies"
+          ],
+          "icon": "🔧",
+          "description": "Cables, Stands, Cases, Pedals"
+        },
+        {
+          "id": "featured_products",
+          "label": "Featured Products",
+          "parent_id": null,
+          "children": [],
+          "icon": "⭐",
+          "description": "New & Featured"
+        },
+        {
+          "id": "apps",
+          "label": "Apps",
+          "parent_id": null,
+          "children": [],
+          "icon": "📱",
+          "description": "iOS & Android Apps"
+        },
+        {
+          "id": "grand_pianos",
+          "label": "Grand Pianos",
+          "parent_id": "pianos",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "portable_pianos",
+          "label": "Portable Pianos",
+          "parent_id": "pianos",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "stage_pianos",
+          "label": "Stage Pianos",
+          "parent_id": "pianos",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "upright_pianos",
+          "label": "Upright Pianos",
+          "parent_id": "pianos",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "pianos_accessories",
+          "label": "Piano Accessories",
+          "parent_id": "pianos",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "analog_modeling",
+          "label": "Analog Modeling",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "performance_workstation",
+          "label": "Performance Workstation",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "sound_expansion_patches",
+          "label": "Sound Expansion & Patches",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "synths_accessories",
+          "label": "Synthesizer Accessories",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "arrangers",
+          "label": "Arrangers",
+          "parent_id": "keyboards",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "midi_controllers",
+          "label": "MIDI Controllers",
+          "parent_id": "keyboards",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "portable_keyboards",
+          "label": "Portable Keyboards",
+          "parent_id": "keyboards",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "combo_organs",
+          "label": "Combo Organs",
+          "parent_id": "organs",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "organ_accessories",
+          "label": "Organ Accessories",
+          "parent_id": "organs",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "v_drums",
+          "label": "V-Drums",
+          "parent_id": "drums_percussion",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "electronic_percussion",
+          "label": "Electronic Percussion",
+          "parent_id": "drums_percussion",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "hybrid_drums",
+          "label": "Hybrid Drums",
+          "parent_id": "drums_percussion",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "drums_accessories",
+          "label": "Drums Accessories",
+          "parent_id": "drums_percussion",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "keyboard_amplifiers",
+          "label": "Keyboard Amplifiers",
+          "parent_id": "amplifiers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "guitar_amplifiers",
+          "label": "Guitar Amplifiers",
+          "parent_id": "amplifiers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "bass_amplifiers",
+          "label": "Bass Amplifiers",
+          "parent_id": "amplifiers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "effects_processors",
+          "label": "Effects & Processors",
+          "parent_id": "guitar_bass",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "guitar_synthesizers",
+          "label": "Guitar Synthesizers",
+          "parent_id": "guitar_bass",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "guitar_accessories",
+          "label": "Guitar Accessories",
+          "parent_id": "guitar_bass",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "audio_interfaces",
+          "label": "Audio Interfaces",
+          "parent_id": "production",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "mixers",
+          "label": "Mixers",
+          "parent_id": "production",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "video",
+          "label": "Video",
+          "parent_id": "production",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "aira_compact",
+          "label": "AIRA Compact",
+          "parent_id": "aira",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "aira_modular",
+          "label": "AIRA Modular",
+          "parent_id": "aira",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "aerophone",
+          "label": "Aerophone",
+          "parent_id": "wind_instruments",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "plugins",
+          "label": "Plugins",
+          "parent_id": "roland_cloud",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "sound_libraries",
+          "label": "Sound Libraries",
+          "parent_id": "roland_cloud",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "cables",
+          "label": "Cables",
+          "parent_id": "accessories",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "headphones",
+          "label": "Headphones",
+          "parent_id": "accessories",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "stands",
+          "label": "Stands",
+          "parent_id": "accessories",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "cases_bags",
+          "label": "Cases & Bags",
+          "parent_id": "accessories",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "pedals",
+          "label": "Pedals",
+          "parent_id": "accessories",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "power_supplies",
+          "label": "Power Supplies",
+          "parent_id": "accessories",
+          "children": [],
+          "icon": null,
+          "description": null
+        }
+      ],
+      "root_categories": [
+        {
+          "id": "pianos",
+          "label": "Pianos",
+          "icon": "🎹",
+          "description": "Digital Pianos, Stage Pianos, Grand Pianos",
+          "children": [
+            "grand_pianos",
+            "portable_pianos",
+            "stage_pianos",
+            "upright_pianos",
+            "pianos_accessories"
+          ]
+        },
+        {
+          "id": "synthesizers",
+          "label": "Synthesizers",
+          "icon": "🎛️",
+          "description": "Analog Modeling, Performance Workstations",
+          "children": [
+            "analog_modeling",
+            "performance_workstation",
+            "sound_expansion_patches",
+            "synths_accessories"
+          ]
+        },
+        {
+          "id": "keyboards",
+          "label": "Keyboards",
+          "icon": "⌨️",
+          "description": "Arrangers, Controllers, Portable Keyboards",
+          "children": [
+            "arrangers",
+            "midi_controllers",
+            "portable_keyboards"
+          ]
+        },
+        {
+          "id": "organs",
+          "label": "Organs",
+          "icon": "🎹",
+          "description": "Combo Organs, Organ Accessories",
+          "children": [
+            "combo_organs",
+            "organ_accessories"
+          ]
+        },
+        {
+          "id": "drums_percussion",
+          "label": "Drums & Percussion",
+          "icon": "🥁",
+          "description": "V-Drums, Electronic Percussion, Hybrid Drums",
+          "children": [
+            "v_drums",
+            "electronic_percussion",
+            "hybrid_drums",
+            "drums_accessories"
+          ]
+        },
+        {
+          "id": "guitar_bass",
+          "label": "Guitar & Bass",
+          "icon": "🎸",
+          "description": "Effects, Processors, Guitar Synths",
+          "children": [
+            "effects_processors",
+            "guitar_synthesizers",
+            "guitar_accessories"
+          ]
+        },
+        {
+          "id": "amplifiers",
+          "label": "Amplifiers",
+          "icon": "🔊",
+          "description": "Guitar Amps, Keyboard Amps, Bass Amps",
+          "children": [
+            "keyboard_amplifiers",
+            "guitar_amplifiers",
+            "bass_amplifiers"
+          ]
+        },
+        {
+          "id": "production",
+          "label": "Production",
+          "icon": "🎚️",
+          "description": "Audio Interfaces, Mixers, Video",
+          "children": [
+            "audio_interfaces",
+            "mixers",
+            "video"
+          ]
+        },
+        {
+          "id": "aira",
+          "label": "AIRA",
+          "icon": "🔮",
+          "description": "TR, TB, System-1, AIRA Compact",
+          "children": [
+            "aira_compact",
+            "aira_modular"
+          ]
+        },
+        {
+          "id": "wind_instruments",
+          "label": "Wind Instruments",
+          "icon": "🎷",
+          "description": "Aerophone, Digital Wind Instruments",
+          "children": [
+            "aerophone"
+          ]
+        },
+        {
+          "id": "roland_cloud",
+          "label": "Roland Cloud",
+          "icon": "☁️",
+          "description": "Software, Plugins, Sound Libraries",
+          "children": [
+            "plugins",
+            "sound_libraries"
+          ]
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "icon": "🔧",
+          "description": "Cables, Stands, Cases, Pedals",
+          "children": [
+            "cables",
+            "headphones",
+            "stands",
+            "cases_bags",
+            "pedals",
+            "power_supplies"
+          ]
+        },
+        {
+          "id": "featured_products",
+          "label": "Featured Products",
+          "icon": "⭐",
+          "description": "New & Featured",
+          "children": []
+        },
+        {
+          "id": "apps",
+          "label": "Apps",
+          "icon": "📱",
+          "description": "iOS & Android Apps",
+          "children": []
+        }
+      ]
+    },
+    "boss": {
+      "brand_id": "boss",
+      "brand_name": "BOSS",
+      "base_url": "https://www.boss.info/global",
+      "last_verified": "2026-01-23",
+      "categories": [
+        {
+          "id": "effects_pedals",
+          "label": "Effects Pedals",
+          "parent_id": null,
+          "children": [
+            "stompboxes",
+            "wah_expression",
+            "loopers"
+          ],
+          "icon": "🎸",
+          "description": "Stompboxes, Compact Pedals"
+        },
+        {
+          "id": "multi_effects",
+          "label": "Multi-Effects",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎛️",
+          "description": "Floor Units, Desktop"
+        },
+        {
+          "id": "guitar_synthesizers",
+          "label": "Guitar Synthesizers",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎹",
+          "description": "GK, SY Series"
+        },
+        {
+          "id": "amplifiers",
+          "label": "Amplifiers",
+          "parent_id": null,
+          "children": [
+            "katana",
+            "cube",
+            "acoustic_amps"
+          ],
+          "icon": "🔊",
+          "description": "Katana, Cube, Acoustic"
+        },
+        {
+          "id": "acoustic",
+          "label": "Acoustic",
+          "parent_id": null,
+          "children": [],
+          "icon": "🪕",
+          "description": "Acoustic Amps, Preamps"
+        },
+        {
+          "id": "loop_station",
+          "label": "Loop Station",
+          "parent_id": null,
+          "children": [],
+          "icon": "🔁",
+          "description": "RC Series, Loop Stations"
+        },
+        {
+          "id": "vocal_effects",
+          "label": "Vocal Effects",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎤",
+          "description": "VE Series, Vocal Processors"
+        },
+        {
+          "id": "mixers_audio_solutions",
+          "label": "Mixers & Audio Solutions",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎚️",
+          "description": "Personal Mixers, Audio Interfaces"
+        },
+        {
+          "id": "tuners_metronomes",
+          "label": "Tuners & Metronomes",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎵",
+          "description": "TU Series, DB Series"
+        },
+        {
+          "id": "wireless",
+          "label": "Wireless",
+          "parent_id": null,
+          "children": [],
+          "icon": "📡",
+          "description": "WL Series"
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "parent_id": null,
+          "children": [],
+          "icon": "🔧",
+          "description": "Footswitches, Power Supplies, Cables"
+        },
+        {
+          "id": "apps",
+          "label": "Apps",
+          "parent_id": null,
+          "children": [],
+          "icon": "📱",
+          "description": "BOSS Tone Studio, BOSS Tuner"
+        },
+        {
+          "id": "featured_products",
+          "label": "Featured Products",
+          "parent_id": null,
+          "children": [],
+          "icon": "⭐",
+          "description": "New & Featured"
+        },
+        {
+          "id": "stompboxes",
+          "label": "Stompboxes",
+          "parent_id": "effects_pedals",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "wah_expression",
+          "label": "Wah & Expression",
+          "parent_id": "effects_pedals",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "loopers",
+          "label": "Loopers",
+          "parent_id": "effects_pedals",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "katana",
+          "label": "Katana Series",
+          "parent_id": "amplifiers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "cube",
+          "label": "Cube Series",
+          "parent_id": "amplifiers",
+          "children": [],
+          "icon": null,
+          "description": null
+        },
+        {
+          "id": "acoustic_amps",
+          "label": "Acoustic Amps",
+          "parent_id": "amplifiers",
+          "children": [],
+          "icon": null,
+          "description": null
+        }
+      ],
+      "root_categories": [
+        {
+          "id": "effects_pedals",
+          "label": "Effects Pedals",
+          "icon": "🎸",
+          "description": "Stompboxes, Compact Pedals",
+          "children": [
+            "stompboxes",
+            "wah_expression",
+            "loopers"
+          ]
+        },
+        {
+          "id": "multi_effects",
+          "label": "Multi-Effects",
+          "icon": "🎛️",
+          "description": "Floor Units, Desktop",
+          "children": []
+        },
+        {
+          "id": "guitar_synthesizers",
+          "label": "Guitar Synthesizers",
+          "icon": "🎹",
+          "description": "GK, SY Series",
+          "children": []
+        },
+        {
+          "id": "amplifiers",
+          "label": "Amplifiers",
+          "icon": "🔊",
+          "description": "Katana, Cube, Acoustic",
+          "children": [
+            "katana",
+            "cube",
+            "acoustic_amps"
+          ]
+        },
+        {
+          "id": "acoustic",
+          "label": "Acoustic",
+          "icon": "🪕",
+          "description": "Acoustic Amps, Preamps",
+          "children": []
+        },
+        {
+          "id": "loop_station",
+          "label": "Loop Station",
+          "icon": "🔁",
+          "description": "RC Series, Loop Stations",
+          "children": []
+        },
+        {
+          "id": "vocal_effects",
+          "label": "Vocal Effects",
+          "icon": "🎤",
+          "description": "VE Series, Vocal Processors",
+          "children": []
+        },
+        {
+          "id": "mixers_audio_solutions",
+          "label": "Mixers & Audio Solutions",
+          "icon": "🎚️",
+          "description": "Personal Mixers, Audio Interfaces",
+          "children": []
+        },
+        {
+          "id": "tuners_metronomes",
+          "label": "Tuners & Metronomes",
+          "icon": "🎵",
+          "description": "TU Series, DB Series",
+          "children": []
+        },
+        {
+          "id": "wireless",
+          "label": "Wireless",
+          "icon": "📡",
+          "description": "WL Series",
+          "children": []
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "icon": "🔧",
+          "description": "Footswitches, Power Supplies, Cables",
+          "children": []
+        },
+        {
+          "id": "apps",
+          "label": "Apps",
+          "icon": "📱",
+          "description": "BOSS Tone Studio, BOSS Tuner",
+          "children": []
+        },
+        {
+          "id": "featured_products",
+          "label": "Featured Products",
+          "icon": "⭐",
+          "description": "New & Featured",
+          "children": []
+        }
+      ]
+    },
+    "nord": {
+      "brand_id": "nord",
+      "brand_name": "Nord",
+      "base_url": "https://www.nordkeyboards.com",
+      "last_verified": "2026-01-23",
+      "categories": [
+        {
+          "id": "stage",
+          "label": "Stage",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎹",
+          "description": "Flagship Stage Keyboards"
+        },
+        {
+          "id": "piano",
+          "label": "Piano",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎹",
+          "description": "Stage Piano Series"
+        },
+        {
+          "id": "electro",
+          "label": "Electro",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎹",
+          "description": "Electro-Mechanical Keyboards"
+        },
+        {
+          "id": "lead",
+          "label": "Lead",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎛️",
+          "description": "Virtual Analog Synths"
+        },
+        {
+          "id": "wave",
+          "label": "Wave",
+          "parent_id": null,
+          "children": [],
+          "icon": "🌊",
+          "description": "Wavetable Synthesizers"
+        },
+        {
+          "id": "drum",
+          "label": "Drum",
+          "parent_id": null,
+          "children": [],
+          "icon": "🥁",
+          "description": "Virtual Analog Drum Machines"
+        },
+        {
+          "id": "c_organ",
+          "label": "C2D Organ",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎹",
+          "description": "Combo Organ"
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "parent_id": null,
+          "children": [],
+          "icon": "🔧",
+          "description": "Pedals, Cases, Stands"
+        },
+        {
+          "id": "software",
+          "label": "Software",
+          "parent_id": null,
+          "children": [],
+          "icon": "💻",
+          "description": "Sound Manager, Sample Editor"
+        }
+      ],
+      "root_categories": [
+        {
+          "id": "stage",
+          "label": "Stage",
+          "icon": "🎹",
+          "description": "Flagship Stage Keyboards",
+          "children": []
+        },
+        {
+          "id": "piano",
+          "label": "Piano",
+          "icon": "🎹",
+          "description": "Stage Piano Series",
+          "children": []
+        },
+        {
+          "id": "electro",
+          "label": "Electro",
+          "icon": "🎹",
+          "description": "Electro-Mechanical Keyboards",
+          "children": []
+        },
+        {
+          "id": "lead",
+          "label": "Lead",
+          "icon": "🎛️",
+          "description": "Virtual Analog Synths",
+          "children": []
+        },
+        {
+          "id": "wave",
+          "label": "Wave",
+          "icon": "🌊",
+          "description": "Wavetable Synthesizers",
+          "children": []
+        },
+        {
+          "id": "drum",
+          "label": "Drum",
+          "icon": "🥁",
+          "description": "Virtual Analog Drum Machines",
+          "children": []
+        },
+        {
+          "id": "c_organ",
+          "label": "C2D Organ",
+          "icon": "🎹",
+          "description": "Combo Organ",
+          "children": []
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "icon": "🔧",
+          "description": "Pedals, Cases, Stands",
+          "children": []
+        },
+        {
+          "id": "software",
+          "label": "Software",
+          "icon": "💻",
+          "description": "Sound Manager, Sample Editor",
+          "children": []
+        }
+      ]
+    },
+    "moog": {
+      "brand_id": "moog",
+      "brand_name": "Moog",
+      "base_url": "https://www.moogmusic.com",
+      "last_verified": "2026-01-23",
+      "categories": [
+        {
+          "id": "synthesizers",
+          "label": "Synthesizers",
+          "parent_id": null,
+          "children": [
+            "semi_modular",
+            "polyphonic",
+            "monophonic",
+            "modular"
+          ],
+          "icon": "🎛️",
+          "description": "Analog Synthesizers"
+        },
+        {
+          "id": "semi_modular",
+          "label": "Semi-Modular",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": "Mother-32, DFAM, Subharmonicon"
+        },
+        {
+          "id": "polyphonic",
+          "label": "Polyphonic",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": "One, Matriarch, Grandmother"
+        },
+        {
+          "id": "monophonic",
+          "label": "Monophonic",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": "Minimoog, Sub, Voyager"
+        },
+        {
+          "id": "modular",
+          "label": "Modular",
+          "parent_id": "synthesizers",
+          "children": [],
+          "icon": null,
+          "description": "Eurorack Modules"
+        },
+        {
+          "id": "effects",
+          "label": "Effects",
+          "parent_id": null,
+          "children": [],
+          "icon": "🎸",
+          "description": "Moogerfooger, Minifooger"
+        },
+        {
+          "id": "keyboards",
+          "label": "Keyboards",
+          "parent_id": null,
+          "children": [],
+          "icon": "⌨️",
+          "description": "Controllers"
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "parent_id": null,
+          "children": [],
+          "icon": "🔧",
+          "description": "Cables, Cases, Patch Cables"
+        },
+        {
+          "id": "apps",
+          "label": "Apps",
+          "parent_id": null,
+          "children": [],
+          "icon": "📱",
+          "description": "Animoog, Model D"
+        }
+      ],
+      "root_categories": [
+        {
+          "id": "synthesizers",
+          "label": "Synthesizers",
+          "icon": "🎛️",
+          "description": "Analog Synthesizers",
+          "children": [
+            "semi_modular",
+            "polyphonic",
+            "monophonic",
+            "modular"
+          ]
+        },
+        {
+          "id": "effects",
+          "label": "Effects",
+          "icon": "🎸",
+          "description": "Moogerfooger, Minifooger",
+          "children": []
+        },
+        {
+          "id": "keyboards",
+          "label": "Keyboards",
+          "icon": "⌨️",
+          "description": "Controllers",
+          "children": []
+        },
+        {
+          "id": "accessories",
+          "label": "Accessories",
+          "icon": "🔧",
+          "description": "Cables, Cases, Patch Cables",
+          "children": []
+        },
+        {
+          "id": "apps",
+          "label": "Apps",
+          "icon": "📱",
+          "description": "Animoog, Model D",
+          "children": []
+        }
+      ]
+    }
+  }
 }
