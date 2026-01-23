@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { describe, expect, it } from "vitest";
-import { SchemaValidator } from "../../src/lib/schemas";
 import type { MasterIndex } from "../../src/types";
 
 describe("Real Data Integrity", () => {
@@ -47,7 +46,7 @@ describe("Real Data Integrity", () => {
       expect(brandData).toHaveProperty("products");
       expect(Array.isArray(brandData.products)).toBe(true);
       expect(brandData.products.length).toBeGreaterThan(0);
-      
+
       // Verify first product has id
       expect(brandData.products[0]).toHaveProperty("id");
     }
