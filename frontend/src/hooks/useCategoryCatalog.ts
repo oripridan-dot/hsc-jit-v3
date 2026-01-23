@@ -48,12 +48,23 @@ export const useCategoryCatalog = (
       const promises = brandsToFetch.map((brand) =>
         fetch(`/data/${brand}.json`) // Files are in public/data/
           .then((res) => {
-            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            // Check content type to avoid parsing HTML (404 fallback) as JSON
+            const contentType = res.headers.get("content-type");
+            if (
+              !res.ok ||
+              (contentType && !contentType.includes("application/json"))
+            ) {
+              // Be silent about missing files for untracked brands in dev
+              return null;
+            }
             return res.json();
           })
-          .then((data) => (data as { products: Product[] }).products || [])
+          .then((data) => {
+            if (!data) return [];
+            return (data as { products: Product[] }).products || [];
+          })
           .catch((err) => {
-            console.warn(`Failed to load ${brand} master:`, err);
+            // console.warn(`Failed to load ${brand} master:`, err);
             return [] as Product[];
           }),
       );

@@ -3,9 +3,7 @@ import React, { useMemo, useState } from "react";
 import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
 import type { Product, ProductImagesObject } from "../../types";
-import { BrandIcon } from "../BrandIcon";
-
-import { brandThemes } from "../../styles/brandThemes";
+import { BRAND_COLORS, BrandIcon } from "../BrandIcon";
 
 interface TierBarProps {
   label: string;
@@ -60,26 +58,18 @@ export const TierBar: React.FC<TierBarProps> = ({
 
   // Sort and Normalize
   const { allNodes, filteredNodes, priceRange } = useMemo(() => {
-    // Filter products with valid price and sort
-    const valid = products
-      .filter((p) => {
-        const price =
-          typeof p.halilit_price === "number"
-            ? p.halilit_price
-            : p.pricing?.regular_price || 0;
-        return price > 0;
-      })
-      .sort((a, b) => {
-        const priceA =
-          typeof a.halilit_price === "number"
-            ? a.halilit_price
-            : a.pricing?.regular_price || 0;
-        const priceB =
-          typeof b.halilit_price === "number"
-            ? b.halilit_price
-            : b.pricing?.regular_price || 0;
-        return priceA - priceB;
-      });
+    // Filter products - Allow products without price (set to 0)
+    const valid = products.sort((a, b) => {
+      const priceA =
+        typeof a.halilit_price === "number"
+          ? a.halilit_price
+          : a.pricing?.regular_price || 0;
+      const priceB =
+        typeof b.halilit_price === "number"
+          ? b.halilit_price
+          : b.pricing?.regular_price || 0;
+      return priceA - priceB;
+    });
 
     if (!valid.length)
       return {
@@ -216,22 +206,6 @@ export const TierBar: React.FC<TierBarProps> = ({
         cursor: isDragging ? "ew-resize" : "default",
       }}
     >
-      {/* Subcategory Header */}
-      <div className="flex items-center justify-between mb-4 px-4">
-        <div className="flex items-center gap-3">
-          <h3 className="text-lg font-bold text-white tracking-tight">
-            {label}
-          </h3>
-          <span className="text-xs font-mono text-zinc-500 bg-zinc-800/50 px-2 py-0.5 rounded">
-            {filteredNodes.length} products
-          </span>
-        </div>
-        <div className="text-xs font-mono text-zinc-600">
-          ₪{Math.round(priceRange.min).toLocaleString()} - ₪
-          {Math.round(priceRange.max).toLocaleString()}
-        </div>
-      </div>
-
       {/* Reset Button & Keyboard Hint */}
       {(minHandle > 0 || maxHandle < 100) && (
         <div className="absolute top-12 right-4 flex items-center gap-2 z-50">
@@ -256,7 +230,7 @@ export const TierBar: React.FC<TierBarProps> = ({
 
       {/* Track with Handles */}
       <div
-        className="relative h-32 w-full px-12 pt-16"
+        className="relative h-40 w-full max-w-[95%] mx-auto px-12 md:px-24 pt-24"
         role="region"
         aria-label={`${label} price filter`}
         style={{ willChange: "contents" }}
@@ -300,29 +274,11 @@ export const TierBar: React.FC<TierBarProps> = ({
 
           {/* Product Nodes - Elevated Above Track */}
           <div
-            className="absolute left-0 right-0 -top-4 h-24"
+            className="absolute left-0 right-0 -top-8 h-24"
             style={{ willChange: "contents" }}
           >
             {filteredNodes.map((product) => {
-              const clampedPos = Math.max(3, Math.min(97, product.pos));
-              // Helper to safely get brand colors
-              const getBrandColor = (brandName: string) => {
-                const normalizedKey = brandName
-                  .toLowerCase()
-                  .replace(/\s+/g, "-");
-                // Direct lookup or fallback to default
-                if (brandThemes[normalizedKey])
-                  return brandThemes[normalizedKey].colors.primary;
-                // Try finding by partial match if exact key fails
-                const key = Object.keys(brandThemes).find((k) =>
-                  normalizedKey.includes(k),
-                );
-                return key
-                  ? brandThemes[key].colors.primary
-                  : brandThemes.default.colors.primary;
-              };
-              const brandColor = getBrandColor(product.brand);
-
+              const clampedPos = Math.max(2, Math.min(98, product.pos));
               return (
                 <div
                   key={product.id}
@@ -335,125 +291,194 @@ export const TierBar: React.FC<TierBarProps> = ({
                   <motion.div
                     className="relative cursor-pointer group"
                     style={{ x: "-50%" }}
-                    whileHover={{ scale: 1.15, zIndex: 30 }}
+                    whileHover={{ scale: 1.1, zIndex: 30 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    {/* Subtle Glow on Track Below Logo */}
+                    {/* Subtle Brand Color Light - Only on Hover */}
                     <div
                       className={cn(
-                        "absolute left-1/2 -translate-x-1/2 transition-all duration-500",
+                        "absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out",
                         "pointer-events-none",
                         activeItem === product.id
-                          ? "bottom-0 w-20 h-28 opacity-80"
-                          : "bottom-4 w-12 h-24 opacity-0 group-hover:opacity-40",
+                          ? "bottom-[-12px] w-12 h-12 opacity-40" // Hover: Subtle glow (50% less bright)
+                          : "bottom-[-8px] w-3 h-3 opacity-0 group-hover:opacity-15 group-hover:w-8 group-hover:h-8", // Default: Very small light
                       )}
                       style={{
-                        background: `radial-gradient(ellipse at center, ${brandColor}66 0%, ${brandColor}33 40%, transparent 70%)`,
+                        background: `radial-gradient(circle at center, ${BRAND_COLORS[product.brand] || "#fbbf24"}30 0%, ${BRAND_COLORS[product.brand] || "#fbbf24"}08 50%, transparent 70%)`,
                         filter: "blur(12px)",
                       }}
                     />
 
-                    {/* Product Thumbnail - Prominent Display */}
-                    <div className="relative">
-                      {product.displayImage ? (
-                        <img
-                          src={product.displayImage}
-                          alt={product.name}
-                          className={cn(
-                            "w-14 h-14 rounded-lg object-contain bg-zinc-800/50 border border-zinc-700/50 transition-all duration-300",
-                            activeItem === product.id
-                              ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110 border-amber-500/50"
-                              : "opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)] group-hover:border-amber-500/30",
-                          )}
-                        />
-                      ) : (
-                        <BrandIcon
-                          brand={product.brand}
-                          className={cn(
-                            "w-12 h-12 transition-all duration-300",
-                            activeItem === product.id
-                              ? "drop-shadow-[0_0_16px_rgba(255,200,100,0.9)] brightness-110"
-                              : "opacity-80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(255,200,100,0.6)]",
-                          )}
-                        />
-                      )}
+                    {/* Brand Logo Only - Bigger & Brighter */}
+                    <div className="relative flex justify-center flex-col items-center">
+                      <BrandIcon
+                        brand={product.brand}
+                        className={cn(
+                          "w-20 h-20 p-2 object-contain transition-all duration-500",
+                          activeItem === product.id
+                            ? "drop-shadow-[0_0_12px_rgba(255,200,100,0.5)] brightness-100 scale-110"
+                            : "opacity-80 brightness-90 group-hover:opacity-95 group-hover:brightness-100",
+                        )}
+                      />
 
-                      {/* Track Illumination Spot (Subtle) */}
+                      {/* Spacer to push logo up from track line */}
+                      <div className="h-4" />
+
+                      {/* Track Illumination - Subtle and 50% less bright when hovered */}
                       <div
                         className={cn(
-                          "absolute left-1/2 -translate-x-1/2 rounded-full transition-all duration-500",
+                          "absolute rounded-full transition-all duration-500",
+                          "left-1/2 -translate-x-1/2",
                           activeItem === product.id
-                            ? "bottom-[-40px] w-12 h-1 shadow-[0_0_12px_rgba(255,255,255,0.3)]"
-                            : "bottom-[-40px] w-4 h-0.5 group-hover:w-8",
+                            ? "w-20 h-1.5 z-50 opacity-50"
+                            : "w-0 h-1.5 opacity-0",
                         )}
                         style={{
+                          top: "calc(100% - 3px)",
                           backgroundColor:
                             activeItem === product.id
-                              ? `${brandColor}99`
+                              ? BRAND_COLORS[product.brand] || "#fbbf24"
                               : "transparent",
                           boxShadow:
                             activeItem === product.id
-                              ? `0 0 12px ${brandColor}`
+                              ? `0 0 8px 0.5px ${BRAND_COLORS[product.brand] || "#fbbf24"}`
                               : "none",
                         }}
                       />
                     </div>
                   </motion.div>
 
-                  {/* Hover Info - Larger Thumbnail */}
+                  {/* Hover Info - Standard Centered */}
                   <AnimatePresence>
                     {activeItem === product.id && (
                       <motion.div
                         initial={{
                           opacity: 0,
-                          y: 20,
-                          scale: 0.9,
+                          y: 10,
+                          scale: 0.95,
                           x: "-50%",
                         }}
-                        animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
-                        exit={{ opacity: 0, scale: 0.9, x: "-50%" }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                          scale: 1,
+                          x: "-50%",
+                        }}
+                        exit={{
+                          opacity: 0,
+                          scale: 0.95,
+                          x: "-50%",
+                        }}
                         transition={{ duration: 0.2 }}
-                        className="absolute bottom-full mb-4 left-1/2 w-64 z-50 pointer-events-none"
+                        className="absolute bottom-full mb-4 left-1/2 w-[580px] z-50 pointer-events-none"
                       >
                         <div
-                          className="bg-zinc-900/95 backdrop-blur-md border rounded-lg shadow-xl overflow-hidden relative z-50"
-                          style={{ borderColor: `${brandColor}40` }}
+                          className="bg-gradient-to-br from-zinc-900/98 to-black/98 backdrop-blur-xl border rounded-xl shadow-2xl overflow-hidden"
+                          style={{
+                            borderColor: `${BRAND_COLORS[product.brand] || "#f59e0b"}4D`,
+                            boxShadow: `0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 15px -3px ${BRAND_COLORS[product.brand] || "#f59e0b"}33`,
+                          }}
                         >
-                          <div className="flex h-24">
-                            <div className="w-24 bg-white/5 p-2 flex items-center justify-center border-r border-zinc-800">
-                              <img
-                                src={product.displayImage}
-                                className="max-h-full max-w-full object-contain"
-                                alt={product.name}
+                          {/* Header: Logo Frame + Name + Price */}
+                          <div
+                            className="flex items-stretch gap-0 border-b"
+                            style={{
+                              borderColor: `${BRAND_COLORS[product.brand] || "#f59e0b"}33`,
+                            }}
+                          >
+                            {/* Centered Logo Frame */}
+                            <div
+                              className="w-24 bg-gradient-to-br from-zinc-800/40 to-zinc-900/60 p-4 flex items-center justify-center border-r"
+                              style={{
+                                borderColor: `${BRAND_COLORS[product.brand] || "#f59e0b"}33`,
+                              }}
+                            >
+                              <BrandIcon
+                                brand={product.brand}
+                                className="w-12 h-12 object-contain"
                               />
                             </div>
-                            <div className="flex-1 p-3 flex flex-col justify-center min-w-0">
-                              <div
-                                className="text-[9px] uppercase tracking-wider font-semibold mb-0.5 truncate"
-                                style={{ color: `${brandColor}cc` }}
-                              >
-                                {product.brand}
-                              </div>
-                              <div className="font-medium text-white text-xs leading-snug line-clamp-2 mb-1">
+                            {/* Name and Price */}
+                            <div className="flex-1 p-5 flex items-center justify-between min-w-0">
+                              <h4 className="font-bold text-white text-base leading-tight line-clamp-2">
                                 {product.name}
-                              </div>
+                              </h4>
                               <div
-                                className="font-mono font-bold text-sm"
-                                style={{ color: brandColor }}
+                                className="font-mono font-black text-xl whitespace-nowrap flex-shrink-0 ml-4"
+                                style={{
+                                  color:
+                                    BRAND_COLORS[product.brand] || "#fbbf24",
+                                }}
                               >
                                 ₪{product.priceDisplay.toLocaleString()}
                               </div>
                             </div>
                           </div>
-                          {/* Connecting Line */}
-                          <div
-                            className="w-px h-3"
-                            style={{
-                              backgroundColor: `${brandColor}80`,
-                              margin: "0 auto",
-                            }}
-                          />
+
+                          {/* Body: Image + Features (Equal Width) */}
+                          <div className="flex gap-0 p-5 h-44">
+                            {/* Image Section - Left */}
+                            <div className="flex-1 bg-gradient-to-br from-zinc-800/50 to-zinc-900/80 p-5 flex items-center justify-center rounded-lg">
+                              <img
+                                src={product.displayImage}
+                                className="max-h-full max-w-full object-contain"
+                                style={{
+                                  filter: `drop-shadow(0 4px 12px ${BRAND_COLORS[product.brand] || "#f59e0b"}4D)`,
+                                }}
+                                alt={product.name}
+                              />
+                            </div>
+
+                            {/* Key Features - Right, Equal Size */}
+                            <div className="flex-1 bg-gradient-to-br from-zinc-800/30 to-zinc-900/50 p-5 ml-4 rounded-lg flex flex-col justify-start overflow-hidden">
+                              <div
+                                className="text-xs uppercase tracking-widest font-mono mb-3 font-bold"
+                                style={{
+                                  color: `${BRAND_COLORS[product.brand] || "#f59e0b"}99`,
+                                }}
+                              >
+                                Key Features
+                              </div>
+                              <ul className="text-base text-zinc-200 space-y-1.5">
+                                {product.features &&
+                                  product.features
+                                    .slice(0, 3)
+                                    .map((feature, idx) => (
+                                      <li
+                                        key={idx}
+                                        className="flex gap-2 line-clamp-1"
+                                      >
+                                        <span
+                                          className="flex-shrink-0 mt-0.5"
+                                          style={{
+                                            color:
+                                              BRAND_COLORS[product.brand] ||
+                                              "#fbbf24",
+                                          }}
+                                        >
+                                          •
+                                        </span>
+                                        <span className="truncate">
+                                          {feature}
+                                        </span>
+                                      </li>
+                                    ))}
+                                {(!product.features ||
+                                  product.features.length === 0) && (
+                                  <li className="text-zinc-500 italic text-sm">
+                                    No features
+                                  </li>
+                                )}
+                              </ul>
+                            </div>
+                          </div>
                         </div>
+                        <div
+                          className="w-[2px] h-4 mx-auto bg-gradient-to-b to-transparent"
+                          style={{
+                            backgroundColor: `${BRAND_COLORS[product.brand] || "#f59e0b"}99`,
+                          }}
+                        />
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -562,6 +587,14 @@ export const TierBar: React.FC<TierBarProps> = ({
             </div>
           </motion.div>
         </div>
+      </div>
+
+      {/* Subcategory Header - Center Below with Product Count */}
+      <div className="flex flex-col items-center justify-center mt-8 px-12 md:px-24 max-w-[95%] mx-auto">
+        <h3 className="text-lg font-bold text-white tracking-tight">{label}</h3>
+        <span className="text-xs font-mono text-zinc-500 mt-1">
+          {filteredNodes.length} products
+        </span>
       </div>
     </div>
   );

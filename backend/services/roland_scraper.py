@@ -680,7 +680,7 @@ class RolandScraper:
                             }
                             
                             # Add background type info (for thumbnail selection)
-                            ProductImageEnhancer.tag_images_with_background_info([img_dict])
+                            # ProductImageEnhancer.tag_images_with_background_info([img_dict])
 
                             images.append(ProductImage(
                                 url=src,
@@ -701,11 +701,11 @@ class RolandScraper:
                            for img in images]
             
             # Tag with background info and find best white bg image
-            images_dicts = ProductImageEnhancer.tag_images_with_background_info(images_dicts)
-            thumbnail_image = await ProductImageEnhancer.identify_white_background_image(page, images_dicts)
+            # images_dicts = ProductImageEnhancer.tag_images_with_background_info(images_dicts)
+            # thumbnail_image = await ProductImageEnhancer.identify_white_background_image(page, images_dicts)
             
-            if thumbnail_image:
-                logger.debug(f"   Selected thumbnail: {thumbnail_image['type']} background")
+            # if thumbnail_image:
+            #     logger.debug(f"   Selected thumbnail: {thumbnail_image['type']} background")
 
             # ============================================================
             # 4. EXTRACT ALL VIDEOS
@@ -1224,7 +1224,7 @@ async def test_scraper():
     print("="*80)
 
     # Scrape ALL products (no limit) - or set limit for testing
-    catalog = await scraper.scrape_all_products(max_products=None)
+    catalog = await scraper.scrape_all_products(max_products=3)
 
     print(f"\n✅ COMPREHENSIVE SCRAPING COMPLETE!")
     print(f"\n📊 CATALOG STATISTICS:")

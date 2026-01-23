@@ -4,12 +4,13 @@
  * Now includes Breadcrumbs and LayerNavigator for hierarchical navigation
  */
 import React, { useEffect, useState } from "react";
+import { useCategoryProducts } from "../hooks/useTaxonomy";
 import { catalogLoader } from "../lib/catalogLoader";
 import { useNavigationStore } from "../store/navigationStore";
-import { useCategoryProducts } from "../hooks/useTaxonomy";
 import type { Product } from "../types";
 import { Breadcrumbs, LayerNavigator } from "./ui";
 import { GalaxyDashboard } from "./views/GalaxyDashboard";
+import { ProductCockpit } from "./views/ProductCockpit";
 import { UniversalCategoryView } from "./views/UniversalCategoryView";
 
 export const Workbench: React.FC = () => {
@@ -20,21 +21,35 @@ export const Workbench: React.FC = () => {
     activePath,
     currentBrand,
     currentCategory,
+    goHome,
   } = useNavigationStore();
   const [brandProducts, setBrandProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   // Use taxonomy-aware category filtering
-  const categoryProducts = useCategoryProducts(brandProducts, currentCategory ?? undefined);
+  const categoryProducts = useCategoryProducts(
+    brandProducts,
+    currentCategory ?? undefined,
+  );
 
   // Load brand products when brand is selected
   useEffect(() => {
     if (currentLevel === "brand" && activePath[0]) {
       setIsLoading(true);
-      catalogLoader.loadBrand(activePath[0]).then((catalog) => {
-        setBrandProducts(catalog.products || []);
-        setIsLoading(false);
-      });
+      catalogLoader
+        .loadBrand(activePath[0])
+        .then((catalog) => {
+          setBrandProducts(catalog.products || []);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.warn(
+            `Redirecting to home - failed to load brand: ${activePath[0]}`,
+            error,
+          );
+          goHome();
+          setIsLoading(false);
+        });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentLevel, activePath[0]]);
@@ -43,79 +58,7 @@ export const Workbench: React.FC = () => {
   const renderView = () => {
     // Priority -1: Product Detail View (Deepest drill-down)
     if (currentLevel === "product" && selectedProduct) {
-      return (
-        <div className="flex-1 h-full flex flex-col bg-[#09090b]">
-          {/* Breadcrumbs */}
-          <Breadcrumbs />
-
-          {/* Product Detail - Now scrollable */}
-          <div className="flex-1 overflow-y-auto scrollbar-custom p-4 md:p-8 pb-32">
-            <div className="max-w-6xl mx-auto">
-              {/* Product Hero */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12">
-                {/* Image */}
-                <div className="bg-white/5 rounded-2xl p-6 md:p-8 flex items-center justify-center">
-                  <img
-                    src={selectedProduct.image_url || selectedProduct.image}
-                    alt={selectedProduct.name}
-                    className="max-w-full max-h-64 md:max-h-96 object-contain"
-                  />
-                </div>
-
-                {/* Info */}
-                <div className="flex flex-col justify-center">
-                  <div className="text-sm text-zinc-500 uppercase tracking-widest mb-2">
-                    {selectedProduct.brand}
-                  </div>
-                  <h1 className="text-3xl md:text-5xl font-black text-white mb-4">
-                    {selectedProduct.name}
-                  </h1>
-                  <div className="text-3xl md:text-4xl font-mono text-[#00ff94] mb-6">
-                    ₪
-                    {(
-                      selectedProduct.halilit_price ||
-                      selectedProduct.pricing?.regular_price ||
-                      0
-                    ).toLocaleString()}
-                  </div>
-                  <p className="text-zinc-400 leading-relaxed mb-8">
-                    {selectedProduct.description ||
-                      "Professional-grade equipment from " +
-                        selectedProduct.brand}
-                  </p>
-
-                  {/* Specs Grid */}
-                  {selectedProduct.specifications &&
-                    selectedProduct.specifications.length > 0 && (
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                        {selectedProduct.specifications.map((spec, idx) => (
-                          <div key={idx} className="bg-white/5 rounded p-3">
-                            <div className="text-xs text-zinc-500 uppercase">
-                              {spec.key}
-                            </div>
-                            <div className="text-white font-mono text-sm">
-                              {spec.value}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-
-                  {/* Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="flex-1 bg-[#00ff94] text-black font-bold py-3 md:py-4 px-6 rounded-lg hover:bg-[#00cc77] transition-colors">
-                      Add to Cart
-                    </button>
-                    <button className="px-6 py-3 md:py-4 border border-white/20 rounded-lg hover:bg-white/5 transition-colors text-white">
-                      ♡
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
+      return <ProductCockpit product={selectedProduct} />;
     }
 
     // Priority 0: Universal Category View (New Architecture)
@@ -127,8 +70,9 @@ export const Workbench: React.FC = () => {
     // Priority 1: Category/Family View with LayerNavigator
     if (currentLevel === "family" && currentCategory) {
       // Use category-filtered products from taxonomy
-      const displayProducts = categoryProducts.length > 0 ? categoryProducts : brandProducts;
-      
+      const displayProducts =
+        categoryProducts.length > 0 ? categoryProducts : brandProducts;
+
       return (
         <div className="flex-1 h-full flex flex-col overflow-hidden">
           {/* Breadcrumbs */}

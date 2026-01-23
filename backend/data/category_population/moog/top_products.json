@@ -1,0 +1,54 @@
+{
+  "brand": "moog",
+  "brand_name": "Moog",
+  "top_products": [
+    {
+      "id": "moog-moog-one-16",
+      "name": "Moog One 16",
+      "brand": "moog",
+      "category_ui": "keys",
+      "category_original": "synthesizers",
+      "subcategory": "synthesizers",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.moogmusic.com/products/moog-one/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:51:53.135382+00:00"
+    },
+    {
+      "id": "moog-subsequent-37",
+      "name": "Subsequent 37",
+      "brand": "moog",
+      "category_ui": "keys",
+      "category_original": "synthesizers",
+      "subcategory": "synthesizers",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.moogmusic.com/products/subsequent-37/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:51:54.764334+00:00"
+    },
+    {
+      "id": "moog-matriarch",
+      "name": "Matriarch",
+      "brand": "moog",
+      "category_ui": "keys",
+      "category_original": "synthesizers",
+      "subcategory": "synthesizers",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.moogmusic.com/products/matriarch/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:51:56.322960+00:00"
+    }
+  ],
+  "categories_covered": [
+    "keys"
+  ]
+}

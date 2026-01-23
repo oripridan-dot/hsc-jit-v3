@@ -1,0 +1,54 @@
+{
+  "brand": "universal-audio",
+  "brand_name": "Universal Audio",
+  "top_products": [
+    {
+      "id": "universal-audio-apollo-twin-x",
+      "name": "Apollo Twin X",
+      "brand": "universal-audio",
+      "category_ui": "studio",
+      "category_original": "audio_interfaces",
+      "subcategory": "audio_interfaces",
+      "description": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0558/1724/0665/files/sound_machine_wood_works_gallery_1_aad8a822-42e7-4cab-92aa-ab775326b18a.png?v=1742249051",
+      "image_local": "data/product_images/universal-audio/universal-audio-apollo-twin-x_thumb.jpg",
+      "product_url": "https://www.uaudio.com/audio-interfaces/apollo-twin-x/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:00.843846+00:00"
+    },
+    {
+      "id": "universal-audio-apollo-x8p",
+      "name": "Apollo x8p",
+      "brand": "universal-audio",
+      "category_ui": "studio",
+      "category_original": "audio_interfaces",
+      "subcategory": "audio_interfaces",
+      "description": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0558/1724/0665/files/uad_complete_4_gallery_1.png?v=1762189686",
+      "image_local": "data/product_images/universal-audio/universal-audio-apollo-x8p_thumb.jpg",
+      "product_url": "https://www.uaudio.com/audio-interfaces/apollo-x8p/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:02.914061+00:00"
+    },
+    {
+      "id": "universal-audio-volt-276",
+      "name": "Volt 276",
+      "brand": "universal-audio",
+      "category_ui": "studio",
+      "category_original": "audio_interfaces",
+      "subcategory": "audio_interfaces",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.uaudio.com/audio-interfaces/volt-276/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:04.414280+00:00"
+    }
+  ],
+  "categories_covered": [
+    "studio"
+  ]
+}

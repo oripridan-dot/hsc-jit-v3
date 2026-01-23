@@ -4,11 +4,12 @@ import { useCategoryCatalog } from "../../hooks/useCategoryCatalog";
 import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
 import type { Product } from "../../types";
+import { ModularRack } from "../smart-views/ModularRack";
 import { TierBar } from "../smart-views/TierBar";
 import { ProductGrid } from "../ui/ProductGrid";
 
 // View modes for different display preferences
-type ViewMode = "shelves" | "grid" | "compact";
+type ViewMode = "shelves" | "grid" | "compact" | "rack";
 
 export const UniversalCategoryView: React.FC = () => {
   const { currentUniversalCategory } = useNavigationStore();
@@ -131,7 +132,7 @@ export const UniversalCategoryView: React.FC = () => {
             </div>
 
             {/* View Mode Toggles */}
-            <div className="flex items-center gap-1 bg-zinc-900 rounded p-1 border border-zinc-800">
+            <div className="flex items-center gap-1 bg-zinc-900 rounded p-1 border border-zinc-800 flex-wrap">
               <button
                 onClick={() => setViewMode("shelves")}
                 className={cn(
@@ -168,6 +169,18 @@ export const UniversalCategoryView: React.FC = () => {
               >
                 ▤ Compact
               </button>
+              <button
+                onClick={() => setViewMode("rack")}
+                className={cn(
+                  "px-3 py-1.5 text-xs font-mono rounded transition-all",
+                  viewMode === "rack"
+                    ? "bg-purple-500 text-black font-bold"
+                    : "text-zinc-500 hover:text-white",
+                )}
+                title="Rack Modular View"
+              >
+                🎛️ Rack
+              </button>
             </div>
           </div>
         </div>
@@ -176,7 +189,7 @@ export const UniversalCategoryView: React.FC = () => {
       {/* Content Area - Now with Scrolling */}
       <div className="flex-1 overflow-y-auto scrollbar-custom px-4 md:px-8 py-6">
         {viewMode === "shelves" && shelfNames.length > 0 && (
-          <div className="space-y-6">
+          <div className="space-y-6 pt-48">
             {shelfNames.map((shelfName, i) => (
               <motion.div
                 key={shelfName}
@@ -212,6 +225,18 @@ export const UniversalCategoryView: React.FC = () => {
             showPrice={true}
             compactMode={true}
           />
+        )}
+
+        {viewMode === "rack" && shelfNames.length > 0 && (
+          <div className="pt-48">
+            <ModularRack
+              categoryName={activeCategory}
+              subcategories={shelfNames.map((name) => ({
+                name,
+                products: shelves[name],
+              }))}
+            />
+          </div>
         )}
 
         {products.length === 0 && (

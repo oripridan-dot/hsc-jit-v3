@@ -1,0 +1,35 @@
+{
+  "category": "live",
+  "products": [
+    {
+      "id": "mackie-profx12v3",
+      "name": "ProFX12v3",
+      "brand": "mackie",
+      "category_ui": "live",
+      "category_original": "mixers",
+      "subcategory": "mixers",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://mackie.com/products/profx12v3/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:29.535830+00:00"
+    },
+    {
+      "id": "mackie-thump15a",
+      "name": "Thump15A",
+      "brand": "mackie",
+      "category_ui": "live",
+      "category_original": "powered_speakers",
+      "subcategory": "powered_speakers",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://mackie.com/products/thump15a/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:30.901808+00:00"
+    }
+  ]
+}

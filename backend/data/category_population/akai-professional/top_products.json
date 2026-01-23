@@ -1,0 +1,55 @@
+{
+  "brand": "akai-professional",
+  "brand_name": "Akai Professional",
+  "top_products": [
+    {
+      "id": "akai-professional-mpc-live-ii",
+      "name": "MPC Live II",
+      "brand": "akai-professional",
+      "category_ui": "dj",
+      "category_original": "mpc",
+      "subcategory": "mpc",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.akaipro.com/products/mpc-live-ii/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:15.017200+00:00"
+    },
+    {
+      "id": "akai-professional-mpc-one",
+      "name": "MPC One+",
+      "brand": "akai-professional",
+      "category_ui": "dj",
+      "category_original": "mpc",
+      "subcategory": "mpc",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.akaipro.com/products/mpc-one-plus/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:16.510891+00:00"
+    },
+    {
+      "id": "akai-professional-mpk-mini-mk3",
+      "name": "MPK Mini MK3",
+      "brand": "akai-professional",
+      "category_ui": "keys",
+      "category_original": "midi_controllers",
+      "subcategory": "midi_controllers",
+      "description": "",
+      "image_url": "",
+      "image_local": "",
+      "product_url": "https://www.akaipro.com/products/mpk-mini-mk3/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:17.924886+00:00"
+    }
+  ],
+  "categories_covered": [
+    "dj",
+    "keys"
+  ]
+}

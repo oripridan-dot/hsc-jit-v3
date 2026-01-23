@@ -1,5 +1,5 @@
 /**
- * v3.7.4 Static Catalog Library
+ * v3.7.6 Static Catalog Library
  * Exports for easy importing - Zero backend dependency
  */
 
@@ -10,16 +10,25 @@ export type { SearchOptions } from "./instantSearch";
 
 // Taxonomy Registry
 export {
-  loadTaxonomyRegistry,
-  getBrandTaxonomySync,
-  getBrandRootCategories,
-  getBrandCategories,
-  getCategoryLabels,
-  validateCategory,
   getAvailableBrands,
+  getBrandCategories,
+  getBrandRootCategories,
+  getBrandTaxonomySync,
+  getCategoryLabels,
+  loadTaxonomyRegistry,
+  validateCategory,
 } from "./taxonomyLoader";
 export type {
-  TaxonomyRegistry,
   BrandTaxonomy,
   TaxonomyCategory,
+  TaxonomyRegistry,
 } from "./taxonomyLoader";
+
+// Dynamic Thumbnails (Most Expensive Product Selection)
+export {
+  buildDynamicThumbnailMap,
+  getMostExpensiveProductImage,
+  getThumbnailForCategory,
+  getTopProductsByCategory,
+} from "./dynamicThumbnails";
+export type { CategoryThumbnail } from "./dynamicThumbnails";

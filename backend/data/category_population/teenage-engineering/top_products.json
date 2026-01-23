@@ -1,0 +1,55 @@
+{
+  "brand": "teenage-engineering",
+  "brand_name": "Teenage Engineering",
+  "top_products": [
+    {
+      "id": "teenage-engineering-op-1-field",
+      "name": "OP-1 Field",
+      "brand": "teenage-engineering",
+      "category_ui": "keys",
+      "category_original": "synthesizers",
+      "subcategory": "synthesizers",
+      "description": "",
+      "image_url": "https://teenage.engineering/_img/store/31ea2ad038a9f77da51e1c45460187483f3abe01624df2ed774f9de8f9004e4b.webp",
+      "image_local": "data/product_images/teenage-engineering/teenage-engineering-op-1-field_thumb.jpg",
+      "product_url": "https://teenage.engineering/store/op-1-field/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:21.537748+00:00"
+    },
+    {
+      "id": "teenage-engineering-ep-133-k-o-ii",
+      "name": "EP-133 K.O. II",
+      "brand": "teenage-engineering",
+      "category_ui": "dj",
+      "category_original": "samplers",
+      "subcategory": "samplers",
+      "description": "",
+      "image_url": "https://teenage.engineering/_img/store/1fab92566ae02c001c463257d765272e006c622d36c49bfeb3a11d834074650d.webp",
+      "image_local": "data/product_images/teenage-engineering/teenage-engineering-ep-133-k-o-ii_thumb.jpg",
+      "product_url": "https://teenage.engineering/store/ep-133/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:22.981367+00:00"
+    },
+    {
+      "id": "teenage-engineering-op-z",
+      "name": "OP-Z",
+      "brand": "teenage-engineering",
+      "category_ui": "dj",
+      "category_original": "sequencers",
+      "subcategory": "sequencers",
+      "description": "",
+      "image_url": "https://teenage.engineering/_img/store/487d95cd06aa142e5bfa899114cdaa09ab95ac57a82336e91eaed9fc8f2b7192.webp",
+      "image_local": "data/product_images/teenage-engineering/teenage-engineering-op-z_thumb.jpg",
+      "product_url": "https://teenage.engineering/store/op-z/",
+      "price": null,
+      "is_flagship": true,
+      "scraped_at": "2026-01-23T03:52:24.472729+00:00"
+    }
+  ],
+  "categories_covered": [
+    "keys",
+    "dj"
+  ]
+}

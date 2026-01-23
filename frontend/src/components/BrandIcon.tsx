@@ -25,7 +25,7 @@ const LOGO_MAP: Record<string, string> = {
   "Warm Audio": "/assets/logos/warm-audio_logo.svg",
 };
 
-const BRAND_COLORS: Record<string, string> = {
+export const BRAND_COLORS: Record<string, string> = {
   Roland: "#FF6600", // Orange
   Boss: "#000000", // Black
   Nord: "#CC0000", // Red

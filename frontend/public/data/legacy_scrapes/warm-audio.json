@@ -1,0 +1,1047 @@
+{
+  "brand_name": "Warm Audio",
+  "brand_identity": {
+    "id": "warm-audio",
+    "name": "Warm Audio",
+    "logo_url": "/assets/logos/warm-audio_logo.svg",
+    "website": "https://www.warmaudio.com",
+    "description": "Official Warm Audio products distributed by Halilit",
+    "categories": [],
+    "brand_colors": {
+      "primary": "#ea580c",
+      "secondary": "#431407",
+      "accent": "#fb923c",
+      "background": "#2a150d",
+      "text": "#ffedd5"
+    },
+    "taxonomy_stats": {
+      "validated": 0,
+      "normalized": 15,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "warm-audio-wa-87-r2",
+      "name": "WA-87 R2",
+      "brand": "warm-audio",
+      "category": "Microphones",
+      "subcategory": "Condenser",
+      "main_category": "Microphones",
+      "description": "FET condenser microphone",
+      "short_description": "WA-87 R2 - Standard tier Condenser",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-87-r2_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-87-r2_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-87-r2_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-87-r2_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-87-r2_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Microphones"
+        },
+        {
+          "key": "Type",
+          "value": "Condenser"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-8116",
+      "verified": true,
+      "tags": [
+        "standard",
+        "microphones",
+        "condenser"
+      ],
+      "_taxonomy_warning": "Category 'Microphones' not in official taxonomy",
+      "category_hierarchy": [
+        "Microphones",
+        "Condenser"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-47",
+      "name": "WA-47",
+      "brand": "warm-audio",
+      "category": "Microphones",
+      "subcategory": "Tube Condenser",
+      "main_category": "Microphones",
+      "description": "Tube condenser microphone",
+      "short_description": "WA-47 - Flagship tier Tube Condenser",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-47_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-47_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-47_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-47_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-47_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Microphones"
+        },
+        {
+          "key": "Type",
+          "value": "Tube Condenser"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-WAR-9205",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "microphones",
+        "tube-condenser"
+      ],
+      "_taxonomy_warning": "Category 'Microphones' not in official taxonomy",
+      "category_hierarchy": [
+        "Microphones",
+        "Tube Condenser"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-47jr",
+      "name": "WA-47Jr",
+      "brand": "warm-audio",
+      "category": "Microphones",
+      "subcategory": "FET Condenser",
+      "main_category": "Microphones",
+      "description": "FET version of WA-47",
+      "short_description": "WA-47Jr - Standard tier FET Condenser",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-47jr_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-47jr_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-47jr_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-47jr_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-47jr_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Microphones"
+        },
+        {
+          "key": "Type",
+          "value": "FET Condenser"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-WAR-7344",
+      "verified": true,
+      "tags": [
+        "standard",
+        "microphones",
+        "fet-condenser"
+      ],
+      "_taxonomy_warning": "Category 'Microphones' not in official taxonomy",
+      "category_hierarchy": [
+        "Microphones",
+        "FET Condenser"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-14",
+      "name": "WA-14",
+      "brand": "warm-audio",
+      "category": "Microphones",
+      "subcategory": "Condenser",
+      "main_category": "Microphones",
+      "description": "Large diaphragm condenser",
+      "short_description": "WA-14 - Standard tier Condenser",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-14_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-14_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-14_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-14_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-14_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Microphones"
+        },
+        {
+          "key": "Type",
+          "value": "Condenser"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-6199",
+      "verified": true,
+      "tags": [
+        "standard",
+        "microphones",
+        "condenser"
+      ],
+      "_taxonomy_warning": "Category 'Microphones' not in official taxonomy",
+      "category_hierarchy": [
+        "Microphones",
+        "Condenser"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-251",
+      "name": "WA-251",
+      "brand": "warm-audio",
+      "category": "Microphones",
+      "subcategory": "Tube Condenser",
+      "main_category": "Microphones",
+      "description": "Vintage tube emulation",
+      "short_description": "WA-251 - Flagship tier Tube Condenser",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-251_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-251_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-251_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-251_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-251_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Microphones"
+        },
+        {
+          "key": "Type",
+          "value": "Tube Condenser"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-WAR-8223",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "microphones",
+        "tube-condenser"
+      ],
+      "_taxonomy_warning": "Category 'Microphones' not in official taxonomy",
+      "category_hierarchy": [
+        "Microphones",
+        "Tube Condenser"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-84",
+      "name": "WA-84",
+      "brand": "warm-audio",
+      "category": "Microphones",
+      "subcategory": "Small Diaphragm",
+      "main_category": "Microphones",
+      "description": "Small diaphragm condenser",
+      "short_description": "WA-84 - Standard tier Small Diaphragm",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-84_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-84_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-84_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-84_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-84_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Microphones"
+        },
+        {
+          "key": "Type",
+          "value": "Small Diaphragm"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-6015",
+      "verified": true,
+      "tags": [
+        "standard",
+        "microphones",
+        "small-diaphragm"
+      ],
+      "_taxonomy_warning": "Category 'Microphones' not in official taxonomy",
+      "category_hierarchy": [
+        "Microphones",
+        "Small Diaphragm"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-19",
+      "name": "WA-19",
+      "brand": "warm-audio",
+      "category": "Microphones",
+      "subcategory": "Dynamic",
+      "main_category": "Microphones",
+      "description": "Dynamic studio microphone",
+      "short_description": "WA-19 - Entry tier Dynamic",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-19_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-19_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-19_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-19_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-19_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Microphones"
+        },
+        {
+          "key": "Type",
+          "value": "Dynamic"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-4064",
+      "verified": true,
+      "tags": [
+        "entry",
+        "microphones",
+        "dynamic"
+      ],
+      "_taxonomy_warning": "Category 'Microphones' not in official taxonomy",
+      "category_hierarchy": [
+        "Microphones",
+        "Dynamic"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-73-eq",
+      "name": "WA-73-EQ",
+      "brand": "warm-audio",
+      "category": "Preamps",
+      "subcategory": "Preamp",
+      "main_category": "Preamps",
+      "description": "1073 style preamp/EQ",
+      "short_description": "WA-73-EQ - Standard tier Preamp",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-73-eq_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-73-eq_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-73-eq_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-73-eq_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-73-eq_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Preamps"
+        },
+        {
+          "key": "Type",
+          "value": "Preamp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-2956",
+      "verified": true,
+      "tags": [
+        "standard",
+        "preamps",
+        "preamp"
+      ],
+      "_taxonomy_warning": "Category 'Preamps' not in official taxonomy",
+      "category_hierarchy": [
+        "Preamps",
+        "Preamp"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-412",
+      "name": "WA-412",
+      "brand": "warm-audio",
+      "category": "Preamps",
+      "subcategory": "Preamp",
+      "main_category": "Preamps",
+      "description": "4-channel preamp",
+      "short_description": "WA-412 - Flagship tier Preamp",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-412_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-412_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-412_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-412_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-412_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Preamps"
+        },
+        {
+          "key": "Type",
+          "value": "Preamp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-8402",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "preamps",
+        "preamp"
+      ],
+      "_taxonomy_warning": "Category 'Preamps' not in official taxonomy",
+      "category_hierarchy": [
+        "Preamps",
+        "Preamp"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-mpx",
+      "name": "WA-MPX",
+      "brand": "warm-audio",
+      "category": "Preamps",
+      "subcategory": "Preamp",
+      "main_category": "Preamps",
+      "description": "Tube mic preamp",
+      "short_description": "WA-MPX - Entry tier Preamp",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-mpx_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-mpx_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-mpx_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-mpx_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-mpx_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Preamps"
+        },
+        {
+          "key": "Type",
+          "value": "Preamp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-4662",
+      "verified": true,
+      "tags": [
+        "entry",
+        "preamps",
+        "preamp"
+      ],
+      "_taxonomy_warning": "Category 'Preamps' not in official taxonomy",
+      "category_hierarchy": [
+        "Preamps",
+        "Preamp"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-2a",
+      "name": "WA-2A",
+      "brand": "warm-audio",
+      "category": "Outboard",
+      "subcategory": "Compressor",
+      "main_category": "Outboard",
+      "description": "Optical compressor",
+      "short_description": "WA-2A - Flagship tier Compressor",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-2a_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-2a_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-2a_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-2a_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-2a_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Outboard"
+        },
+        {
+          "key": "Type",
+          "value": "Compressor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-9830",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "outboard",
+        "compressor"
+      ],
+      "_taxonomy_warning": "Category 'Outboard' not in official taxonomy",
+      "category_hierarchy": [
+        "Outboard",
+        "Compressor"
+      ]
+    },
+    {
+      "id": "warm-audio-wa-76",
+      "name": "WA-76",
+      "brand": "warm-audio",
+      "category": "Outboard",
+      "subcategory": "Compressor",
+      "main_category": "Outboard",
+      "description": "FET limiting amplifier",
+      "short_description": "WA-76 - Standard tier Compressor",
+      "image_url": "/data/product_images/warm-audio/warm-audio-wa-76_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-wa-76_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-76_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-wa-76_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-wa-76_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Outboard"
+        },
+        {
+          "key": "Type",
+          "value": "Compressor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-9180",
+      "verified": true,
+      "tags": [
+        "standard",
+        "outboard",
+        "compressor"
+      ],
+      "_taxonomy_warning": "Category 'Outboard' not in official taxonomy",
+      "category_hierarchy": [
+        "Outboard",
+        "Compressor"
+      ]
+    },
+    {
+      "id": "warm-audio-bus-comp",
+      "name": "Bus-Comp",
+      "brand": "warm-audio",
+      "category": "Outboard",
+      "subcategory": "Compressor",
+      "main_category": "Outboard",
+      "description": "Stereo bus compressor",
+      "short_description": "Bus-Comp - Flagship tier Compressor",
+      "image_url": "/data/product_images/warm-audio/warm-audio-bus-comp_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-bus-comp_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-bus-comp_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-bus-comp_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-bus-comp_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Outboard"
+        },
+        {
+          "key": "Type",
+          "value": "Compressor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-8294",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "outboard",
+        "compressor"
+      ],
+      "_taxonomy_warning": "Category 'Outboard' not in official taxonomy",
+      "category_hierarchy": [
+        "Outboard",
+        "Compressor"
+      ]
+    },
+    {
+      "id": "warm-audio-centavo",
+      "name": "Centavo",
+      "brand": "warm-audio",
+      "category": "Pedals",
+      "subcategory": "Overdrive",
+      "main_category": "Pedals",
+      "description": "Professional overdrive",
+      "short_description": "Centavo - Entry tier Overdrive",
+      "image_url": "/data/product_images/warm-audio/warm-audio-centavo_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-centavo_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-centavo_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-centavo_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-centavo_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 950,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Pedals"
+        },
+        {
+          "key": "Type",
+          "value": "Overdrive"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-WAR-6745",
+      "verified": true,
+      "tags": [
+        "entry",
+        "pedals",
+        "overdrive"
+      ],
+      "_taxonomy_warning": "Category 'Pedals' not in official taxonomy",
+      "category_hierarchy": [
+        "Pedals",
+        "Overdrive"
+      ]
+    },
+    {
+      "id": "warm-audio-jet-phaser",
+      "name": "Jet Phaser",
+      "brand": "warm-audio",
+      "category": "Pedals",
+      "subcategory": "Phaser",
+      "main_category": "Pedals",
+      "description": "Classic phaser recreation",
+      "short_description": "Jet Phaser - Standard tier Phaser",
+      "image_url": "/data/product_images/warm-audio/warm-audio-jet-phaser_thumb.webp",
+      "images": {
+        "main": "/data/product_images/warm-audio/warm-audio-jet-phaser_thumb.webp",
+        "thumbnail": "/data/product_images/warm-audio/warm-audio-jet-phaser_thumb.webp",
+        "high_res": "/data/product_images/warm-audio/warm-audio-jet-phaser_main.webp",
+        "original": "/data/product_images/warm-audio/warm-audio-jet-phaser_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Pedals"
+        },
+        {
+          "key": "Type",
+          "value": "Phaser"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-WAR-4806",
+      "verified": true,
+      "tags": [
+        "standard",
+        "pedals",
+        "phaser"
+      ],
+      "_taxonomy_warning": "Category 'Pedals' not in official taxonomy",
+      "category_hierarchy": [
+        "Pedals",
+        "Phaser"
+      ]
+    }
+  ],
+  "generated_at": "2026-01-23T02:41:37.854430",
+  "product_count": 15,
+  "brand_slug": "warm-audio",
+  "refined_at": "2026-01-23T06:03:13.503203+00:00",
+  "hierarchy": {
+    "Microphones": {
+      "Condenser": [
+        {
+          "id": "warm-audio-wa-87-r2",
+          "name": "WA-87 R2",
+          "description": "WA-87 R2 - Standard tier Condenser",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-87-r2_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-87-r2_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-87-r2_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-87-r2_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-8116"
+        },
+        {
+          "id": "warm-audio-wa-14",
+          "name": "WA-14",
+          "description": "WA-14 - Standard tier Condenser",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-14_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-14_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-14_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-14_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-6199"
+        }
+      ],
+      "Tube Condenser": [
+        {
+          "id": "warm-audio-wa-47",
+          "name": "WA-47",
+          "description": "WA-47 - Flagship tier Tube Condenser",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-47_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-47_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-47_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-47_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-9205"
+        },
+        {
+          "id": "warm-audio-wa-251",
+          "name": "WA-251",
+          "description": "WA-251 - Flagship tier Tube Condenser",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-251_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-251_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-251_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-251_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-8223"
+        }
+      ],
+      "FET Condenser": [
+        {
+          "id": "warm-audio-wa-47jr",
+          "name": "WA-47Jr",
+          "description": "WA-47Jr - Standard tier FET Condenser",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-47jr_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-47jr_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-47jr_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-47jr_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-7344"
+        }
+      ],
+      "Small Diaphragm": [
+        {
+          "id": "warm-audio-wa-84",
+          "name": "WA-84",
+          "description": "WA-84 - Standard tier Small Diaphragm",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-84_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-84_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-84_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-84_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-6015"
+        }
+      ],
+      "Dynamic": [
+        {
+          "id": "warm-audio-wa-19",
+          "name": "WA-19",
+          "description": "WA-19 - Entry tier Dynamic",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-19_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-19_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-19_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-19_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-4064"
+        }
+      ]
+    },
+    "Preamps": {
+      "Preamp": [
+        {
+          "id": "warm-audio-wa-73-eq",
+          "name": "WA-73-EQ",
+          "description": "WA-73-EQ - Standard tier Preamp",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-73-eq_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-73-eq_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-73-eq_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-73-eq_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-2956"
+        },
+        {
+          "id": "warm-audio-wa-412",
+          "name": "WA-412",
+          "description": "WA-412 - Flagship tier Preamp",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-412_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-412_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-412_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-412_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-8402"
+        },
+        {
+          "id": "warm-audio-wa-mpx",
+          "name": "WA-MPX",
+          "description": "WA-MPX - Entry tier Preamp",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-mpx_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-mpx_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-mpx_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-mpx_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-4662"
+        }
+      ]
+    },
+    "Outboard": {
+      "Compressor": [
+        {
+          "id": "warm-audio-wa-2a",
+          "name": "WA-2A",
+          "description": "WA-2A - Flagship tier Compressor",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-2a_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-2a_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-2a_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-2a_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-9830"
+        },
+        {
+          "id": "warm-audio-wa-76",
+          "name": "WA-76",
+          "description": "WA-76 - Standard tier Compressor",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-wa-76_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-wa-76_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-wa-76_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-wa-76_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-9180"
+        },
+        {
+          "id": "warm-audio-bus-comp",
+          "name": "Bus-Comp",
+          "description": "Bus-Comp - Flagship tier Compressor",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-bus-comp_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-bus-comp_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-bus-comp_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-bus-comp_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-8294"
+        }
+      ]
+    },
+    "Pedals": {
+      "Overdrive": [
+        {
+          "id": "warm-audio-centavo",
+          "name": "Centavo",
+          "description": "Centavo - Entry tier Overdrive",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-centavo_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-centavo_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-centavo_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-centavo_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-6745"
+        }
+      ],
+      "Phaser": [
+        {
+          "id": "warm-audio-jet-phaser",
+          "name": "Jet Phaser",
+          "description": "Jet Phaser - Standard tier Phaser",
+          "images": {
+            "main": "/data/product_images/warm-audio/warm-audio-jet-phaser_thumb.webp",
+            "thumbnail": "/data/product_images/warm-audio/warm-audio-jet-phaser_thumb.webp",
+            "high_res": "/data/product_images/warm-audio/warm-audio-jet-phaser_main.webp",
+            "original": "/data/product_images/warm-audio/warm-audio-jet-phaser_thumb.webp"
+          },
+          "model_number": null,
+          "sku": "HL-WAR-4806"
+        }
+      ]
+    }
+  }
+}
