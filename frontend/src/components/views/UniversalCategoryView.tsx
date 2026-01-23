@@ -3,7 +3,7 @@
  * "Sub-Category Module - Product Exploration"
  *
  * STANDARD TEMPLATE - The ONLY and SINGLE template for subcategory browsing.
- * 
+ *
  * All data must comply to this structure:
  * - Spectrum Analyzer View: Price vs. Popularity visualization
  * - Three-panel information display (Visual, Specs, Price History)
@@ -18,15 +18,21 @@ import { SpectrumMiddleLayer } from "../smart-views/SpectrumLayer";
 
 export const UniversalCategoryView: React.FC = () => {
   const { currentUniversalCategory } = useNavigationStore();
-  const { products: allProducts } = useCategoryCatalog(currentUniversalCategory);
+  const { products: allProducts } = useCategoryCatalog(
+    currentUniversalCategory,
+  );
 
   // Filter and prepare products
   const sortedProducts = useMemo(() => {
     return allProducts
       .filter((p) => p && p.id)
       .sort((a, b) => {
-        const priceA = (a.halilit_price || a.pricing?.regular_price || 0) as number;
-        const priceB = (b.halilit_price || b.pricing?.regular_price || 0) as number;
+        const priceA = (a.halilit_price ||
+          a.pricing?.regular_price ||
+          0) as number;
+        const priceB = (b.halilit_price ||
+          b.pricing?.regular_price ||
+          0) as number;
         return priceA - priceB;
       });
   }, [allProducts]);

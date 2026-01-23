@@ -161,7 +161,10 @@ describe("Performance Tests", () => {
   describe("Memory Efficiency", () => {
     it("should handle product set without memory spikes", () => {
       const iterations = 1000;
-      const startMemory = (performance as any).memory?.usedJSHeapSize || 0;
+      const perfAPI = performance as unknown as {
+        memory?: { usedJSHeapSize: number };
+      };
+      const startMemory = perfAPI.memory?.usedJSHeapSize || 0;
 
       for (let i = 0; i < iterations; i++) {
         const filtered = allProducts.filter(
@@ -170,7 +173,7 @@ describe("Performance Tests", () => {
         expect(filtered.length).toBeGreaterThan(0);
       }
 
-      const endMemory = (performance as any).memory?.usedJSHeapSize || 0;
+      const endMemory = perfAPI.memory?.usedJSHeapSize || 0;
       const memoryIncrease = endMemory - startMemory;
 
       // Should not spike dramatically

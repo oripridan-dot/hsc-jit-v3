@@ -1,9 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useMemo, useState } from "react";
+import { BRAND_COLORS } from "../../lib/brandConstants";
 import { cn } from "../../lib/utils";
 import { useNavigationStore } from "../../store/navigationStore";
 import type { Product, ProductImagesObject } from "../../types";
-import { BRAND_COLORS, BrandIcon } from "../BrandIcon";
+import { BrandIcon } from "../BrandIcon";
 
 interface TierBarProps {
   label: string;

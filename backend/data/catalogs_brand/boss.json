@@ -1,0 +1,53 @@
+{
+  "brand_identity": {
+    "id": "boss",
+    "name": "Boss Corporation",
+    "description": "Professional effects and rhythm instruments",
+    "website": "https://www.boss.info"
+  },
+  "products": [
+    {
+      "id": "boss-gt-1",
+      "brand": "Boss",
+      "name": "GT-1 Multi-Effects Processor",
+      "model_number": "GT-1",
+      "sku": "GT-1",
+      "main_category": "Effects",
+      "description": "Advanced multi-effects processor with 160+ effects and amp modeling. The ultimate guitareffects solution.",
+      "short_description": "Multi-effects processor with amp modeling",
+      "specifications": [
+        {
+          "key": "Effects",
+          "value": "160+"
+        },
+        {
+          "key": "Amp Models",
+          "value": "50+"
+        },
+        {
+          "key": "Footswitches",
+          "value": "6 assignable"
+        },
+        {
+          "key": "CPU",
+          "value": "Dual core processor"
+        }
+      ],
+      "features": [
+        "160+ effects",
+        "50+ amp models",
+        "Expression pedal",
+        "USB"
+      ],
+      "tags": [
+        "guitar-effects",
+        "processor",
+        "amp-modeling",
+        "professional"
+      ],
+      "price_ils": 4500,
+      "availability": "in-stock",
+      "product_tier": "professional"
+    }
+  ]
+}

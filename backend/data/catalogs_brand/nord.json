@@ -1,0 +1,52 @@
+{
+  "brand_identity": {
+    "id": "nord",
+    "name": "Nord Keyboards",
+    "description": "Premium Scandinavian synthesizers and keyboards",
+    "website": "https://www.nordkeyboards.com"
+  },
+  "products": [
+    {
+      "id": "nord-lead-a1",
+      "brand": "Nord",
+      "name": "Nord Lead A1",
+      "model_number": "Lead A1",
+      "sku": "NLEAD-A1",
+      "main_category": "Synthesizers",
+      "description": "Four-part multi-timbral synthesizer with powerful sound synthesis and built-in sequencer. Premium Scandinavian engineering.",
+      "short_description": "Multi-timbral synthesizer with sequencer",
+      "specifications": [
+        {
+          "key": "Voices",
+          "value": "4-part multi-timbral"
+        },
+        {
+          "key": "Oscillators",
+          "value": "3 per voice"
+        },
+        {
+          "key": "Filter",
+          "value": "3x 24dB/octave filters"
+        },
+        {
+          "key": "Sequencer",
+          "value": "Built-in 4-part sequencer"
+        }
+      ],
+      "features": [
+        "Multi-timbral synthesis",
+        "Built-in sequencer",
+        "USB connectivity"
+      ],
+      "tags": [
+        "synthesizer",
+        "nordic",
+        "production",
+        "multi-timbral"
+      ],
+      "price_ils": 9200,
+      "availability": "in-stock",
+      "product_tier": "professional"
+    }
+  ]
+}

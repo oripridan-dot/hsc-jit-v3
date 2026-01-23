@@ -552,14 +552,12 @@ const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose }) => {
 
 export interface SpectrumMiddleLayerProps {
   products: Product[];
-  categoryName?: string;
   subcategories?: SubCategory[];
   className?: string;
 }
 
 export const SpectrumMiddleLayer: React.FC<SpectrumMiddleLayerProps> = ({
   products,
-  categoryName = "Products",
   subcategories = DEFAULT_SUBCATEGORIES,
   className = "",
 }) => {

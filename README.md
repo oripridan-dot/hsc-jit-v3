@@ -1,14 +1,48 @@
-# HSC-JIT v3.7.6 - Mission Control
+# HSC-JIT v3.8.1 - Mission Control
 
 **Production-Ready Static Product Catalog** | React 19 + TypeScript 5 + Tailwind CSS
 
 A zero-backend, static-first product catalog for musical instruments. All data pre-built into JSON files. No server, no database, no runtime API calls.
 
+**Status**: ✅ **PRODUCTION READY** | Branch: `v3.8.1-galaxy` | Frontend: `3.8.0`
+
+---
+
+---
+
+## ⚠️ Architecture Rules (CRITICAL)
+
+This is a **STATIC, PRODUCTION-FIRST APPLICATION**. All data comes from pre-built JSON files in `frontend/public/data/`.
+
+### Key Principles
+
+1. ✅ **Static JSON Only**: All frontend data loads from `public/data/*.json`
+2. ✅ **No Runtime API Calls**: Never fetch from `localhost:8000` in production code
+3. ✅ **No Server Deployment**: Just deploy the `frontend/dist/` folder
+4. ✅ **No WebSocket/Real-time**: Purely static React application
+5. ✅ **No Server-Side Rendering**: Client-side only
+
+### Data Regeneration
+
+To update product data in `public/data/`:
+
+```bash
+cd backend
+python3 forge_backbone.py
+```
+
+This runs offline scrapers and generates fresh JSON files. Then redeploy the frontend.
+
+### Backend Role
+
+- **FastAPI (`app/main.py`)**: Development-only validation tool
+- **Scrapers (`services/*.py`)**: Data extraction scripts
+- **Generator (`forge_backbone.py`)**: ⭐ Builds static catalogs
+- **Deployment**: **NOT deployed to production**
+
 ---
 
 ## 🚀 Quick Start
-
-### Development
 
 ```bash
 cd frontend

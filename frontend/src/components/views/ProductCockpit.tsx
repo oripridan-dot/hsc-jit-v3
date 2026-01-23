@@ -63,10 +63,10 @@ export const ProductCockpit: React.FC<ProductCockpitProps> = ({ product }) => {
           ),
         ];
       } else {
-        const imgObj = product.images as any;
-        if (imgObj.main) images.push(imgObj.main);
+        const imgObj = product.images as Record<string, unknown>;
+        if (imgObj.main) images.push(imgObj.main as string);
         if (imgObj.gallery && Array.isArray(imgObj.gallery)) {
-          images = [...images, ...imgObj.gallery];
+          images = [...images, ...(imgObj.gallery as string[])];
         }
       }
     }
@@ -401,7 +401,21 @@ export const ProductCockpit: React.FC<ProductCockpitProps> = ({ product }) => {
   );
 };
 
-const TabButton = ({ active, onClick, icon: Icon, label, count }: any) => (
+interface TabButtonProps {
+  active: boolean;
+  onClick: () => void;
+  icon: React.FC<{ className?: string }>;
+  label: string;
+  count?: number;
+}
+
+const TabButton: React.FC<TabButtonProps> = ({
+  active,
+  onClick,
+  icon: Icon,
+  label,
+  count,
+}) => (
   <button
     onClick={onClick}
     className={`relative py-4 text-sm font-medium transition-colors flex items-center gap-2

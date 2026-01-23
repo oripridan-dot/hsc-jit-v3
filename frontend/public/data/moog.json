@@ -1,0 +1,147 @@
+{
+  "brand_identity": {
+    "id": "moog",
+    "name": "Moog Music",
+    "description": "Legendary analog synthesizer pioneers",
+    "website": "https://www.moogmusic.com",
+    "brand_colors": {
+      "primary": "#000000",
+      "secondary": "#5c4033",
+      "accent": "#22c55e",
+      "background": "#1c1917",
+      "text": "#e5e7eb"
+    },
+    "logo_url": "/assets/logos/moog_logo.png",
+    "taxonomy_stats": {
+      "validated": 1,
+      "normalized": 0,
+      "uncategorized": 0
+    },
+    "categories": [
+      {
+        "id": "keys",
+        "label": "Keys & Pianos",
+        "icon": "🎹",
+        "description": "Keyboards and pianos",
+        "children": []
+      },
+      {
+        "id": "drums",
+        "label": "Drums & Percussion",
+        "icon": "🥁",
+        "description": "Drums and percussion",
+        "children": []
+      },
+      {
+        "id": "guitars",
+        "label": "Guitars & Amps",
+        "icon": "🎸",
+        "description": "Guitars and amplifiers",
+        "children": []
+      },
+      {
+        "id": "studio",
+        "label": "Studio & Recording",
+        "icon": "🎙️",
+        "description": "Studio and recording gear",
+        "children": []
+      },
+      {
+        "id": "live",
+        "label": "Live Sound",
+        "icon": "🔊",
+        "description": "Live sound equipment",
+        "children": []
+      },
+      {
+        "id": "dj",
+        "label": "DJ & Production",
+        "icon": "🎧",
+        "description": "DJ and production gear",
+        "children": []
+      },
+      {
+        "id": "software",
+        "label": "Software & Cloud",
+        "icon": "💻",
+        "description": "Software and cloud services",
+        "children": []
+      },
+      {
+        "id": "accessories",
+        "label": "Accessories",
+        "icon": "🔧",
+        "description": "Accessories and add-ons",
+        "children": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "moog-moog-one",
+      "brand": "Moog",
+      "name": "Moog One",
+      "model_number": "Moog One",
+      "sku": "MOOG-ONE",
+      "main_category": "keys",
+      "description": "The future of analog synthesis. Moog's first multi-voice analog synthesizer in 20 years with lush polyphony.",
+      "short_description": "Modern multi-voice analog synthesizer",
+      "specifications": [
+        {
+          "key": "Voices",
+          "value": "4-voice polyphony"
+        },
+        {
+          "key": "Oscillators",
+          "value": "2 analog + 1 digital per voice"
+        },
+        {
+          "key": "Filters",
+          "value": "Ladder + Multi-mode"
+        },
+        {
+          "key": "Sequencer",
+          "value": "Integrated arpeggiator"
+        }
+      ],
+      "features": [
+        "4-voice polyphony",
+        "Analog synthesis",
+        "Modern interface",
+        "USB MIDI"
+      ],
+      "tags": [
+        "synthesizer",
+        "analog",
+        "modern",
+        "moog",
+        "professional"
+      ],
+      "price_ils": 11000,
+      "availability": "pre-order",
+      "product_tier": "professional",
+      "category": "keys",
+      "images": [],
+      "category_hierarchy": [
+        "keys"
+      ]
+    }
+  ],
+  "brand_name": "Moog",
+  "brand_slug": "moog",
+  "refined_at": "2026-01-23T17:09:28.921813+00:00",
+  "hierarchy": {
+    "keys": {
+      "General": [
+        {
+          "id": "moog-moog-one",
+          "name": "Moog One",
+          "description": "Modern multi-voice analog synthesizer",
+          "images": [],
+          "model_number": "Moog One",
+          "sku": "MOOG-ONE"
+        }
+      ]
+    }
+  }
+}

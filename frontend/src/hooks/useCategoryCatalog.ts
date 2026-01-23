@@ -63,8 +63,8 @@ export const useCategoryCatalog = (
             if (!data) return [];
             return (data as { products: Product[] }).products || [];
           })
-          .catch((err) => {
-            // console.warn(`Failed to load ${brand} master:`, err);
+          .catch((_err) => {
+            // console.warn(`Failed to load ${brand} master:`, _err);
             return [] as Product[];
           }),
       );
