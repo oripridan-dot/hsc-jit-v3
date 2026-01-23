@@ -1,20 +1,15 @@
 /**
- * GalaxyDashboard / Halilit Master Desk
+ * GalaxyDashboard - v3.8.0 SCREEN 1
+ * "Bird's Eye View of Halilit's Reach"
  *
- * "The Atmosphere" meets "Digital Showroom"
- * Fully responsive layout with:
+ * The master control center showing all universal categories.
+ * Click a category to dive into SCREEN 2 (Sub-Category Module with Spectrum View).
+ *
+ * Features:
  * - Adaptive grid (1-6 columns based on viewport)
- * - Smooth scrolling support
- * - Professional category cards
+ * - Dynamic thumbnails (most expensive product per category)
  * - Touch-optimized for mobile
- *
- * ⭐ DYNAMIC THUMBNAIL SYSTEM:
- * Category thumbnails are automatically selected from the MOST EXPENSIVE
- * product in each category. This ensures:
- * 1. Always showcasing premium products
- * 2. Fully dynamic - updates when product data changes
- * 3. No manual curation needed
- * 4. Can be leveraged for marketing/featured products later
+ * - Smooth transitions between screens
  */
 import { motion } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
@@ -26,7 +21,6 @@ import {
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { useNavigationStore } from "../../store/navigationStore";
 import type { Product } from "../../types";
-import { CandyCard } from "../ui/CandyCard";
 
 // Placeholder for when no images are available
 const DEFAULT_FALLBACK = "/assets/react.svg";
@@ -222,19 +216,30 @@ export const GalaxyDashboard: React.FC = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2, delay: index * 0.05 }}
-                    className="relative"
+                    className="relative cursor-pointer group"
+                    onClick={() => handleCategoryClick(cat.id)}
                   >
-                    <CandyCard
-                      title={cat.label}
-                      subtitle={`${cat.description || "Dynamic Thumbnails"}`}
-                      subcategories={cat.subcategories}
-                      hasContent={cat.hasContent}
-                      onClick={() => handleCategoryClick(cat.id)}
-                      onSubcategoryClick={(sub) =>
-                        handleSubcategoryClick(cat.id, sub)
-                      }
-                      onBrandClick={handleBrandClick}
-                    />
+                    {/* Category Card */}
+                    <div className="relative w-full aspect-square rounded-xl border border-white/10 overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300">
+                      {/* Overlay Gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+                      
+                      {/* Content */}
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+                        <h3 className="text-2xl font-bold text-white mb-2 uppercase tracking-tight">
+                          {cat.label}
+                        </h3>
+                        <p className="text-sm text-zinc-300 mb-4">
+                          {cat.description}
+                        </p>
+                        <div className="text-xs text-zinc-400">
+                          {cat.subcategories?.length || 0} subcategories
+                        </div>
+                      </div>
+                      
+                      {/* Hover Indicator */}
+                      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
                   </motion.div>
                 );
               })}

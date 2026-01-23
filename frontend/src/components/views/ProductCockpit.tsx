@@ -1,3 +1,15 @@
+/**
+ * ProductCockpit - v3.8.0 SCREEN 3
+ * "Product Pop Interface - Official Product Knowledge"
+ *
+ * The comprehensive product detail view featuring:
+ * - Full specifications
+ * - Media gallery (images + videos)
+ * - Documentation & manuals
+ * - Related products & accessories
+ *
+ * This is the deepest drill-down in the 3-screen architecture.
+ */
 import { motion } from "framer-motion";
 import {
   ArrowLeft,

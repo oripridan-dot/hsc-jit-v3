@@ -8,21 +8,21 @@ export type { BrandCatalog, MasterIndex, Product } from "./catalogLoader";
 export { instantSearch } from "./instantSearch";
 export type { SearchOptions } from "./instantSearch";
 
-// Taxonomy Registry
+// Taxonomy Registry - Re-export from brandTaxonomy
 export {
-  getAvailableBrands,
-  getBrandCategories,
-  getBrandRootCategories,
-  getBrandTaxonomySync,
-  getCategoryLabels,
-  loadTaxonomyRegistry,
+  BRAND_TAXONOMIES,
+  getAllCategoryLabels,
+  getBrandTaxonomy,
+  getCategoryPath,
+  getChildCategories,
+  getRootCategories,
+  normalizeCategory,
   validateCategory,
-} from "./taxonomyLoader";
-export type {
-  BrandTaxonomy,
-  TaxonomyCategory,
-  TaxonomyRegistry,
-} from "./taxonomyLoader";
+} from "./brandTaxonomy";
+export type { BrandTaxonomy, CategoryNode } from "./brandTaxonomy";
+
+// Helper functions for compatibility
+export { getAvailableBrands } from "./brandTaxonomy";
 
 // Dynamic Thumbnails (Most Expensive Product Selection)
 export {

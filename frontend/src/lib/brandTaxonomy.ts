@@ -768,7 +768,7 @@ export function getCategoryPath(brandId: string, categoryId: string): string[] {
   if (!taxonomy) return [];
 
   const path: string[] = [];
-  let current = taxonomy.categories[categoryId];
+  let current: CategoryNode | undefined = taxonomy.categories[categoryId];
 
   while (current) {
     path.unshift(current.label);
@@ -788,4 +788,11 @@ export function getAllCategoryLabels(brandId: string): string[] {
   if (!taxonomy) return [];
 
   return Object.values(taxonomy.categories).map((cat) => cat.label);
+}
+
+/**
+ * Get list of all available brands
+ */
+export function getAvailableBrands(): string[] {
+  return Object.keys(BRAND_TAXONOMIES);
 }

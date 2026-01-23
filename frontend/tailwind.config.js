@@ -99,12 +99,12 @@ export default {
     },
     extend: {
       animation: {
-        'fade-in-up': 'fadeInUp 0.3s cubic-bezier(0.21, 1.02, 0.73, 1) forwards',
-        'scale-in': 'scaleIn 0.2s cubic-bezier(0.21, 1.02, 0.73, 1) forwards',
-        'slide-in-right': 'slideInRight 0.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards',
-        'shimmer': 'shimmer 2s infinite',
-        'pulse-gentle': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'glow-pulse': 'glowPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.21, 1.02, 0.73, 1) forwards',
+        'scale-in': 'scaleIn 0.5s cubic-bezier(0.21, 1.02, 0.73, 1) forwards',
+        'slide-in-right': 'slideInRight 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) forwards',
+        'shimmer': 'shimmer 3s infinite',
+        'pulse-gentle': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'glow-pulse': 'glowPulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         fadeInUp: {

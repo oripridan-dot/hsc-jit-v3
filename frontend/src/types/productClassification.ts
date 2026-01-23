@@ -125,7 +125,7 @@ export function classifyProduct(
   relatedProducts?: string[]
 ): ProductClassification {
   const primaryClass = getProductClass(brand, category);
-  const secondaryClasses = getSecondaryClasses(brand, category, subcategory);
+  const secondaryClasses = getSecondaryClasses(brand, category);
   
   return {
     primaryClass,

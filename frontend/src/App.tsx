@@ -8,17 +8,29 @@ import { initializeDevTools } from "./lib/devTools";
 // Initialize dev tools in development
 initializeDevTools();
 
+/**
+ * App - v3.8.0 Category Module
+ *
+ * Three Screen Architecture:
+ * 1. Galaxy Dashboard - Universal categories overview
+ * 2. Sub-Category Module - Product exploration with Spectrum View
+ * 3. Product Pop Interface - Detailed product knowledge
+ */
 function AppContent() {
   useEffect(() => {
     // Initialize search system from static JSON catalogs (non-blocking)
-    console.log("🚀 v3.7.5: Initializing Mission Control...");
+    console.log(
+      "🚀 v3.8.0 CATEGORY-MODUL: Initializing 3-Screen Architecture...",
+    );
 
     // Don't block - initialize in background
     setTimeout(() => {
       instantSearch
         .initialize()
         .then(() => {
-          console.log("✅ Catalog initialized from static data");
+          console.log(
+            "✅ Catalog initialized | Screens: Galaxy → Spectrum → ProductPop",
+          );
         })
         .catch((error) => {
           console.error("❌ Initialization error:", error);
@@ -43,7 +55,7 @@ function AppContent() {
             <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
             ONLINE
           </div>
-          <div>v3.7.6 DYNAMIC</div>
+          <div>v3.8.0 CATEGORY-MODUL</div>
         </div>
       </header>
 
