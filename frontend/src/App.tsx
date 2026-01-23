@@ -43,7 +43,13 @@ function AppContent() {
       {/* Global Header */}
       <header className="flex-shrink-0 h-14 bg-gradient-to-r from-black via-black to-[#0a0a0a] border-b border-white/10 flex items-center justify-between px-6 z-50 shadow-lg">
         <div className="flex items-baseline gap-4">
-          <div className="text-3xl font-black italic tracking-tight text-white" style={{ fontFamily: "'Helvetica Neue', Arial, sans-serif", fontStyle: "italic" }}>
+          <div
+            className="text-3xl font-black italic tracking-tight text-white"
+            style={{
+              fontFamily: "'Helvetica Neue', Arial, sans-serif",
+              fontStyle: "italic",
+            }}
+          >
             Halilit
           </div>
           <div className="text-[11px] font-bold tracking-[0.15em] text-zinc-400 uppercase">

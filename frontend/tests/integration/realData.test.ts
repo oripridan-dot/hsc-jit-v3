@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { describe, expect, it } from "vitest";
 import { SchemaValidator } from "../../src/lib/schemas";
+import type { MasterIndex } from "../../src/types";
 
 describe("Real Data Integrity", () => {
   const dataDir = path.resolve(process.cwd(), "public/data");
@@ -11,19 +12,19 @@ describe("Real Data Integrity", () => {
     expect(fs.existsSync(indexFile)).toBe(true);
   });
 
-  let indexData: any;
+  let indexData: MasterIndex | null = null;
 
   it("should load index.json and have 10 brands", () => {
     if (!fs.existsSync(indexFile)) return;
     const raw = fs.readFileSync(indexFile, "utf-8");
-    indexData = JSON.parse(raw);
+    indexData = JSON.parse(raw) as MasterIndex;
 
     // Basic schema check
     expect(indexData).toHaveProperty("brands");
     expect(Array.isArray(indexData.brands)).toBe(true);
     expect(indexData.brands.length).toBe(10);
 
-    const brandNames = indexData.brands.map((b: any) => b.slug).sort();
+    const brandNames = indexData.brands.map((b) => b.slug).sort();
     expect(brandNames).toEqual([
       "adam-audio",
       "akai-professional",

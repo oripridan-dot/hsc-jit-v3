@@ -1,0 +1,147 @@
+{
+  "brand_identity": {
+    "id": "universal-audio",
+    "name": "Universal Audio",
+    "description": "Professional audio plugins and hardware",
+    "website": "https://www.uaudio.com",
+    "brand_colors": {
+      "primary": "#1f2937",
+      "secondary": "#111827",
+      "accent": "#3b82f6",
+      "background": "#000000",
+      "text": "#f3f4f6"
+    },
+    "logo_url": "/assets/logos/universal-audio_logo.svg",
+    "taxonomy_stats": {
+      "validated": 1,
+      "normalized": 0,
+      "uncategorized": 0
+    },
+    "categories": [
+      {
+        "id": "keys",
+        "label": "Keys & Pianos",
+        "icon": "🎹",
+        "description": "Keyboards and pianos",
+        "children": []
+      },
+      {
+        "id": "drums",
+        "label": "Drums & Percussion",
+        "icon": "🥁",
+        "description": "Drums and percussion",
+        "children": []
+      },
+      {
+        "id": "guitars",
+        "label": "Guitars & Amps",
+        "icon": "🎸",
+        "description": "Guitars and amplifiers",
+        "children": []
+      },
+      {
+        "id": "studio",
+        "label": "Studio & Recording",
+        "icon": "🎙️",
+        "description": "Studio and recording gear",
+        "children": []
+      },
+      {
+        "id": "live",
+        "label": "Live Sound",
+        "icon": "🔊",
+        "description": "Live sound equipment",
+        "children": []
+      },
+      {
+        "id": "dj",
+        "label": "DJ & Production",
+        "icon": "🎧",
+        "description": "DJ and production gear",
+        "children": []
+      },
+      {
+        "id": "software",
+        "label": "Software & Cloud",
+        "icon": "💻",
+        "description": "Software and cloud services",
+        "children": []
+      },
+      {
+        "id": "accessories",
+        "label": "Accessories",
+        "icon": "🔧",
+        "description": "Accessories and add-ons",
+        "children": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "ua-luna-daw",
+      "brand": "Universal Audio",
+      "name": "Luna DAW",
+      "model_number": "Luna",
+      "sku": "LUNA-DAW",
+      "main_category": "software",
+      "description": "Powerful DAW with built-in mixing and mastery capabilities. Integrates with Apollo for real-time DSP processing.",
+      "short_description": "Professional DAW with integrated DSP",
+      "specifications": [
+        {
+          "key": "Format",
+          "value": "Native + DSP"
+        },
+        {
+          "key": "Tracks",
+          "value": "Unlimited"
+        },
+        {
+          "key": "Plugins",
+          "value": "100+ included"
+        },
+        {
+          "key": "Interface",
+          "value": "Apollo compatible"
+        }
+      ],
+      "features": [
+        "Unlimited tracks",
+        "Real-time DSP",
+        "100+ plugins",
+        "Apollo integration"
+      ],
+      "tags": [
+        "daw",
+        "software",
+        "professional",
+        "mixing",
+        "mastering"
+      ],
+      "price_ils": 12000,
+      "availability": "in-stock",
+      "product_tier": "professional",
+      "category": "software",
+      "images": [],
+      "category_hierarchy": [
+        "software"
+      ]
+    }
+  ],
+  "brand_name": "Universal-Audio",
+  "brand_slug": "universal-audio",
+  "refined_at": "2026-01-23T17:09:28.920686+00:00",
+  "hierarchy": {
+    "software": {
+      "General": [
+        {
+          "id": "ua-luna-daw",
+          "name": "Luna DAW",
+          "description": "Professional DAW with integrated DSP",
+          "images": [],
+          "model_number": "Luna",
+          "sku": "LUNA-DAW"
+        }
+      ]
+    }
+  }
+}

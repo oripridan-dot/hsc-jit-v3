@@ -48,12 +48,13 @@ export const Navigator: React.FC = () => {
   useEffect(() => {
     fetch("/data/index.json")
       .then((res) => res.json())
-      .then((data) => {
-        if (data.brands && Array.isArray(data.brands)) {
-          setBrands(data.brands);
+      .then((data: unknown) => {
+        const indexData = data as { brands?: unknown };
+        if (indexData.brands && Array.isArray(indexData.brands)) {
+          setBrands(indexData.brands as BrandInfo[]);
         }
       })
-      .catch((err) => console.error("Failed to load brands:", err));
+      .catch((_err) => console.error("Failed to load brands:", _err));
   }, []);
 
   // Get consolidated categories - always the same 8 categories

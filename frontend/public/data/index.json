@@ -1,72 +1,212 @@
 {
   "version": "3.7.4",
-  "build_timestamp": "2026-01-23T06:04:54.291622+00:00",
+  "build_timestamp": "2026-01-23T17:09:28.918984+00:00",
   "environment": "static_production",
-  "total_products": 3,
-  "total_verified": 3,
+  "total_products": 9,
+  "total_verified": 9,
   "brands": [
+    {
+      "id": "universal-audio",
+      "name": "Universal-Audio",
+      "slug": "universal-audio",
+      "count": 1,
+      "brand_color": "#1f2937",
+      "logo_url": "/assets/logos/universal-audio_logo.svg",
+      "file": "universal-audio.json",
+      "data_file": "universal-audio.json",
+      "product_count": 1,
+      "verified_count": 1,
+      "last_updated": "2026-01-23T17:09:28.921558+00:00"
+    },
+    {
+      "id": "moog",
+      "name": "Moog",
+      "slug": "moog",
+      "count": 1,
+      "brand_color": "#000000",
+      "logo_url": "/assets/logos/moog_logo.png",
+      "file": "moog.json",
+      "data_file": "moog.json",
+      "product_count": 1,
+      "verified_count": 1,
+      "last_updated": "2026-01-23T17:09:28.922710+00:00"
+    },
+    {
+      "id": "boss",
+      "name": "Boss",
+      "slug": "boss",
+      "count": 1,
+      "brand_color": "#0055a4",
+      "logo_url": "/assets/logos/boss_logo.png",
+      "file": "boss.json",
+      "data_file": "boss.json",
+      "product_count": 1,
+      "verified_count": 1,
+      "last_updated": "2026-01-23T17:09:28.923707+00:00"
+    },
     {
       "id": "roland",
       "name": "Roland",
       "slug": "roland",
-      "count": 3,
+      "count": 5,
       "brand_color": "#f89a1c",
       "logo_url": "/assets/logos/roland_logo.png",
       "file": "roland.json",
       "data_file": "roland.json",
-      "product_count": 3,
-      "verified_count": 3,
-      "last_updated": "2026-01-23T06:04:54.304659+00:00"
+      "product_count": 5,
+      "verified_count": 5,
+      "last_updated": "2026-01-23T17:09:28.927471+00:00"
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "slug": "nord",
+      "count": 1,
+      "brand_color": "#e31e24",
+      "logo_url": "/assets/logos/nord_logo.png",
+      "file": "nord.json",
+      "data_file": "nord.json",
+      "product_count": 1,
+      "verified_count": 1,
+      "last_updated": "2026-01-23T17:09:28.928744+00:00"
     }
   ],
   "search_graph": [
     {
-      "id": "roland-bridge_cast",
+      "id": "ua-luna-daw",
+      "label": "Luna DAW",
+      "brand": "universal-audio",
+      "brand_name": "Universal-Audio",
+      "category": "software",
+      "subcategory": "General",
+      "keywords": [
+        "Unlimited tracks",
+        "Real-time DSP",
+        "100+ plugins",
+        "Apollo integration"
+      ],
+      "description": "Powerful DAW with built-in mixing and mastery capabilities. Integrates with Apollo for real-time DSP"
+    },
+    {
+      "id": "moog-moog-one",
+      "label": "Moog One",
+      "brand": "moog",
+      "brand_name": "Moog",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [
+        "4-voice polyphony",
+        "Analog synthesis",
+        "Modern interface",
+        "USB MIDI"
+      ],
+      "description": "The future of analog synthesis. Moog's first multi-voice analog synthesizer in 20 years with lush po"
+    },
+    {
+      "id": "boss-gt-1",
+      "label": "GT-1 Multi-Effects Processor",
+      "brand": "boss",
+      "brand_name": "Boss",
+      "category": "studio",
+      "subcategory": "General",
+      "keywords": [
+        "160+ effects",
+        "50+ amp models",
+        "Expression pedal",
+        "USB"
+      ],
+      "description": "Advanced multi-effects processor with 160+ effects and amp modeling. The ultimate guitareffects solu"
+    },
+    {
+      "id": "roland-bridge-cast",
       "label": "BRIDGE CAST",
       "brand": "roland",
       "brand_name": "Roland",
-      "category": "Production",
-      "subcategory": null,
+      "category": "studio",
+      "subcategory": "studio",
       "keywords": [
-        "Professional audio streaming interface and mixer designed for online gamers",
-        "Powerful 32-bit hardware DSP allows you to dedicate all your computer resources to gaming and streaming",
-        "Create independent mixes for you and the online audience with dual audio busses",
-        "USB-C connectivity with Windows and Mac computers and mobile devices",
-        "Also works with the Sony PlayStation®5 console and Nintendo Switch*"
+        "Professional XLR microphone input with high-impedance preamp",
+        "Dual bus mixing for independent personal and stream audio",
+        "Voice Transformer effects for character and personality",
+        "Built-in studio effects: EQ, compression, noise suppression, reverb",
+        "Game-specific EQ presets for optimal audio in different games"
       ],
-      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for premium li"
+      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for profession"
     },
     {
       "id": "roland-dp603",
       "label": "DP603",
       "brand": "roland",
       "brand_name": "Roland",
-      "category": "Accessories",
-      "subcategory": null,
+      "category": "keys",
+      "subcategory": "keys",
       "keywords": [
-        "A Stylish Piano to Complement the Modern Home\n\nThe Roland DP603 stands apart from other models on the market. Slim and stylish, the linear cabinet design keeps curves and embellishments to a minimum. An integrated keyboard lid opens to provide an elegant music rest, and closes discreetly with a safety-conscious soft-fall motion. Despite its compact 35 cm (13.5-inch) depth, the DP603 offers the same acclaimed durability that the DP series has been famous for since 2003.",
-        "Express Yourself with SuperNATURAL Piano Modeling and the Responsive PHA-50 Keyboard\n\nStyle meets substance with the Roland DP603, which combines its minimalist look with heavyweight onboard tech that makes it a dream to play. This latest digital piano features the same sound engine as Roland’s flagship LX/HP models, and you’ll hear the benefits of our acclaimed SuperNATURAL Piano Modeling in performance that flawlessly recreates the rich, dynamic response of an acoustic instrument. You’ll also appreciate the new PHA-50 keyboard, whose blend of wood and molded material means it plays like traditional ivory, but without the associated maintenance and expense.",
-        "A Dynamic Speaker System Fills Your Home with Music\n\nThe DP603’s onboard speaker system projects warm, enveloping sound, with controllable volume that lets you play loudly or quietly to suit the scenario. This new piano goes even further to double as a wireless speaker system, so you won’t need to clutter your home with an additional hi-fi or stereo. Using Bluetooth wireless technology, simply connect the Roland DP603 with your smartphone or tablet, and then play back your favorite songs through the internal speakers. Or better still, jam along with them!\n\n*The Bluetooth feature may not be available depending on the country where you purchased this product.",
-        "Learn Faster with Onboard Educational Tools and Wireless Connection to Piano Apps\n\nLearning the piano can be a solitary experience, but the Roland DP603 supports you every step of the way. With 300 onboard songs ready for you to jam over, you’ll be improving in no time. If you need it, the built-in metronome tightens up your timing before the onboard recorder assesses your development. USB playback/save functions enhance your practice sessions and let you archive performances, while Twin Piano mode enables a learner and teacher to sit side-by-side and play in the same key range. And don’t forget the teaching power of apps—by connecting with your iPad or Android tablet via Bluetooth MIDI or a USB cable, you can access a world of popular apps and online practice videos. A great first step is Roland’s Piano Partner 2, which displays the sheet music of the DP603’s internal songs on your tablet’s screen."
+        "PHA-50 wooden key action with escapement for authentic feel",
+        "SuperNATURAL engine with 38 premium piano sounds",
+        "Powerful speaker system with dedicated subwoofer",
+        "Support for three pedal types: sustain, soft, and sostenuto",
+        "Internal recording and playback of up to 5 songs"
       ],
-      "description": "A SLIM AND STYLISH DIGITAL PIANO PERFECT FOR MODERN LIVING SPACES\n\nWhen you’ve finally perfected the"
+      "description": "The Roland DP603 brings the concert grand piano experience home with authentic wooden key action and"
     },
     {
-      "id": "roland-f107",
-      "label": "F107\nDigital Piano",
+      "id": "roland-juno-106",
+      "label": "JUNO-106 Synthesizer",
       "brand": "roland",
       "brand_name": "Roland",
-      "category": "Pianos",
-      "subcategory": null,
+      "category": "keys",
+      "subcategory": "keys",
       "keywords": [
-        "Streamlined and affordable home piano with class-leading sound and playability",
-        "Compact and attractive modern design based on the Roland F701, winner of the 2021 Red Dot Design Award",
-        "Deep expression from Roland’s acclaimed SuperNATURAL Piano technology",
-        "Authentic acoustic grand piano touch and response with the 88-note PHA-4 Standard keyboard",
-        "Simple and direct user interface for easy operation"
+        "6-voice polyphonic synthesis with dual oscillators per voice",
+        "Analog voltage-controlled filter for warm, responsive tone shaping",
+        "Analog chorus effect for lush, spacious soundscapes",
+        "Programmable arpeggiator with multiple modes",
+        "61-note keyboard with light touch action"
       ],
-      "description": "Slim, stylish, and affordable, the F107 brings exceptional piano performance to your modern living s"
+      "description": "The JUNO-106 is a legendary 6-voice polyphonic synthesizer that defined the sound of 1980s pop, new "
+    },
+    {
+      "id": "roland-tr-808",
+      "label": "TR-808 Rhythm Composer",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "drums",
+      "subcategory": "accessories",
+      "keywords": [
+        "Iconic 808 bass drum sound",
+        "Classic drum kit",
+        "Portable format"
+      ],
+      "description": "The most influential drum machine in history. The 808 defined the sound of hip-hop, electro, and ele"
+    },
+    {
+      "id": "roland-tr-909",
+      "label": "TR-909 Rhythm Composer",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "drums",
+      "subcategory": "accessories",
+      "keywords": [
+        "Iconic 909 bass",
+        "Crisp hi-hats",
+        "Deep kick drum"
+      ],
+      "description": "The drum machine that shaped house and techno. The 909 is synonymous with rave culture."
+    },
+    {
+      "id": "nord-lead-a1",
+      "label": "Nord Lead A1",
+      "brand": "nord",
+      "brand_name": "Nord",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [
+        "Multi-timbral synthesis",
+        "Built-in sequencer",
+        "USB connectivity"
+      ],
+      "description": "Four-part multi-timbral synthesizer with powerful sound synthesis and built-in sequencer. Premium Sc"
     }
   ],
-  "total_brands": 1
+  "total_brands": 5
 }
