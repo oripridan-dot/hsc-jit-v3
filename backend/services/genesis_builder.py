@@ -65,21 +65,43 @@ class GenesisBuilder:
 
     def construct(self) -> bool:
         """
-        Read blueprint and construct app structure.
+        Read blueprints (Global + Commercial) and construct app structure.
+        Merges Halilit commercial data with Brand global content.
         
         Returns:
             True if successful, False otherwise
         """
-        if not os.path.exists(self.blueprint_file):
-            print(f"⚠️  Blueprint missing: {self.blueprint_file}")
-            print(f"   Run SuperExplorer first: python backend/services/super_explorer.py")
+        # 1. Load Data Sources
+        global_path = f"backend/data/blueprints/{self.brand}_blueprint.json"
+        commercial_path = f"backend/data/blueprints/{self.brand}_commercial.json"
+        
+        global_data = []
+        if os.path.exists(global_path):
+            try:
+                with open(global_path, 'r') as f:
+                    global_data = json.load(f)
+            except Exception as e:
+                print(f"   ⚠️ Bad Global Blueprint: {e}")
+
+        commercial_data = []
+        if os.path.exists(commercial_path):
+            try:
+                 with open(commercial_path, 'r') as f:
+                    commercial_data = json.load(f)
+            except Exception as e:
+                print(f"   ⚠️ Bad Commercial Blueprint: {e}")
+
+        if not global_data and not commercial_data:
+            print(f"⚠️  No data found for {self.brand} (checked both sources)")
             return False
 
-        with open(self.blueprint_file, 'r') as f:
-            blueprint = json.load(f)
-
         print(f"🏗️  Initiating Genesis for {self.brand.upper()}...")
-        print(f"   Processing {len(blueprint)} products...")
+        print(f"   Sources: Global={len(global_data)}, Commercial={len(commercial_data)}")
+
+        # 2. Merge Logic (The "Split Source" Implementation)
+        blueprint = self._merge_catalogs(commercial_data, global_data)
+        
+        print(f"   Processing {len(blueprint)} merged products...")
         
         for idx, item in enumerate(blueprint, 1):
             success = self._build_node(item)
@@ -92,6 +114,74 @@ class GenesisBuilder:
         self._update_catalog_index(blueprint)
         print(f"✨ Genesis Complete for {self.brand}: {len(self.products_built)} products.")
         return True
+
+    def _merge_catalogs(self, commercial: List[Dict], global_data: List[Dict]) -> List[Dict]:
+        """
+        Merges the Commercial Catalog (Halilit) with the Global Catalog (Brand).
+        
+        Strategy:
+        1. If Commercial exists, it is the MASTER LIST (determines products getting IDs).
+        2. Global content is overlaid onto Commercial items via fuzzy match.
+        3. If no Commercial, fallback to Global.
+        """
+        if not commercial:
+            print("   ℹ️  Using Global Catalog only (No commercial data)")
+            return global_data
+            
+        merged = []
+        from difflib import SequenceMatcher
+        
+        print("   🔄 Merging Commercial & Global data...")
+        
+        for comm_item in commercial:
+            # Start with Commercial Data (Price, Stock, SKU, ID)
+            final_item = comm_item.copy()
+            
+            # Find Best Match in Global
+            best_match = None
+            best_score = 0.0
+            comm_name = comm_item.get('name', '').lower()
+            
+            for glob_item in global_data:
+                glob_name = glob_item.get('name', '').lower()
+                
+                # Check 1: Exact URL Slug Match? (If captured)
+                
+                # Check 2: Name Similarity
+                if comm_name and glob_name:
+                    ratio = SequenceMatcher(None, comm_name, glob_name).ratio()
+                    if ratio > 0.6 and ratio > best_score: # Threshold 0.6
+                        best_score = ratio
+                        best_match = glob_item
+
+            if best_match:
+                # OVERLAY GLOBAL CONTENT
+                # We KEEP commercial ID, SKU, Pricing
+                # We OVERWRITE/FILL Content
+                
+                # Category (Use Global taxonomy if available)
+                if best_match.get('category') and best_match['category'].lower() != 'general':
+                    final_item['category'] = best_match['category']
+
+                # Description
+                if best_match.get('description') and len(best_match['description']) > len(final_item.get('description', '')):
+                    final_item['description'] = best_match['description']
+                
+                # Specs
+                if best_match.get('specs'):
+                    final_item['specs'] = best_match.get('specs')
+                    
+                # Media - Merge lists? Or prefer Global?
+                # Global usually has better high-res images.
+                if best_match.get('image_url') and "placeholder" not in best_match['image_url']:
+                     final_item['remote_image'] = best_match['image_url'] # Use global image
+                
+                # Manuals / Docs (If extracted)
+                # (Assuming specs/downloads are in 'specs' dict or similar)
+            
+            merged.append(final_item)
+            
+        return merged
 
     def _update_catalog_index(self, blueprint: List[Dict]):
         """
@@ -144,6 +234,12 @@ class GenesisBuilder:
                 "category": final_cat,
                 "image_url": public_url,
                 "description": item.get('description', ''),
+                
+                # Extended Commerce Data (Halilit Integration)
+                "pricing": item.get('pricing', {}),
+                "sku": item.get('sku'),
+                "halilit_id": item.get('halilit_id'),
+                "halilit_url": item.get('url'),
             }
             
             # Carry over extra fields if needed? 

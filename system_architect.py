@@ -1,59 +1,53 @@
 import os
-import shutil
 import glob
 import sys
-import subprocess
-from datetime import datetime
 
 class SystemArchitect:
     """
-    THE MANAGER (v2.0)
+    THE MANAGER (v3.0)
     ==================
-    Authority Level: God Mode
-    Mandate: Pure Code, Strict Structure, Version Control.
+    Authority Level: Structural Enforcement
+    Mandate: Pure Code, Clean Current State (No Archives).
     
     FILE SYSTEM LAWS:
     1. /backend: Only the Core Generator & Services. No scripts/tools.
     2. /frontend: Only Source & Public. No Python.
     3. /docs: Consolidated documentation.
-    4. /data: ALL data lives in /backend/data/vault (hidden) or /frontend/public/data (live).
+    4. /data: Lives in /frontend/public/data (live, production).
+    5. NO VAULT: Remove misplaced files entirely. No archives.
     """
 
     ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-    VAULT_PATH = os.path.join(ROOT_PATH, "backend", "data", "vault")
 
     def __init__(self):
         self.log_buffer = []
-        print(f"🕴️  SYSTEM ARCHITECT v2.0 ONLINE: {self.ROOT_PATH}")
+        print(f"🕴️  SYSTEM ARCHITECT v3.0 ONLINE: {self.ROOT_PATH}")
 
     def log(self, msg):
         print(f"  {msg}")
 
     def execute_mandate(self):
-        """Executes the cleanup and persistence mandate."""
+        """Executes the cleanup and structure enforcement mandate."""
         self.enforce_structure()
         self.purify_codebase()
-        self.archive_tools()
-        self.version_control_sync()
         self.generate_integrity_report()
 
     def enforce_structure(self):
-        """Standard enforcement protocols."""
-        os.makedirs(self.VAULT_PATH, exist_ok=True)
-        
-        # 1. Flatten Backend (Recursive check)
+        """Enforces the clean directory structure."""
+        # 1. Check for Recursive Backend (should not exist)
         nested_be = os.path.join(self.ROOT_PATH, "backend", "backend")
         if os.path.exists(nested_be):
-            self.log(f"🔥 Detected Recursive Backend: {nested_be}")
-            shutil.rmtree(nested_be) # Aggressive delete if empty/dup, or move? 
-            # Previous logic was move, but assumes we are stable now.
-            # Let's keep move logic just in case user pasted again.
-            # actually, let's just warn and move to vault for review to be "Pure"
-            # logic from v1 was good.
+            self.log(f"🔥 ERROR: Recursive Backend detected: {nested_be}")
+            self.log("   Please manually remove this directory.")
+            return False
+        
+        self.log("✅ Directory structure is clean.")
+        return True
 
     def purify_codebase(self):
         """Removes misplaced files by extension."""
         self.log("🧹 Purifying File Types...")
+        removed_count = 0
         
         # 1. No Python in Frontend
         fe_src = os.path.join(self.ROOT_PATH, "frontend")
@@ -61,30 +55,27 @@ class SystemArchitect:
             for file in files:
                 if file.endswith(".py"):
                     src = os.path.join(root, file)
-                    dst = os.path.join(self.VAULT_PATH, "quarantined_frontend_python", file)
-                    os.makedirs(os.path.dirname(dst), exist_ok=True)
-                    shutil.move(src, dst)
-                    self.log(f"  -> Removed .py from frontend: {file}")
+                    os.remove(src)
+                    self.log(f"  ❌ Removed .py from frontend: {file}")
+                    removed_count += 1
 
-        # 2. No JS/TS in Backend root/services (except config possibly?)
+        # 2. No JS/TS in Backend root/services (except config)
         be_src = os.path.join(self.ROOT_PATH, "backend")
-        
         for root, dirs, files in os.walk(be_src):
-            if "vault" in root or "node_modules" in root:
+            # Skip node_modules and known safe dirs
+            if "node_modules" in root or "__pycache__" in root:
                 continue
                 
             for file in files:
-                # We allow .sh now for hydration
                 if file.endswith((".ts", ".tsx", ".js", ".jsx")) and "json" not in file:
                     src = os.path.join(root, file)
-                    dst = os.path.join(self.VAULT_PATH, "quarantined_backend_js", file)
-                    os.makedirs(os.path.dirname(dst), exist_ok=True)
-                    shutil.move(src, dst)
-                    self.log(f"  -> Removed .js/ts from backend: {file}")
+                    os.remove(src)
+                    self.log(f"  ❌ Removed .js/ts from backend: {file}")
+                    removed_count += 1
 
         # 3. Clean Root of Temporary/Junk Files
-        root_junk_extensions = [".html", ".js", ".sh"] # We guard specific sh files
-        preserved_sh = ["auto_process.sh"] # Keep this one
+        root_junk_extensions = [".html", ".js"]
+        preserved_sh = ["auto_process.sh"]
         
         for file in os.listdir(self.ROOT_PATH):
             full_path = os.path.join(self.ROOT_PATH, file)
@@ -100,57 +91,12 @@ class SystemArchitect:
                 if "config" in file or "eslint" in file or "vite" in file:
                     continue
                     
-                src = full_path
-                dst = os.path.join(self.VAULT_PATH, "root_cleanup", file)
-                os.makedirs(os.path.dirname(dst), exist_ok=True)
-                shutil.move(src, dst)
-                self.log(f"  -> Moved root clutter to vault: {file}")
-
-    def archive_tools(self):
-        """Moves backend/tools to vault (Hard Delete from Workspace view)."""
-        tools_path = os.path.join(self.ROOT_PATH, "backend", "tools")
-        if os.path.exists(tools_path):
-            self.log("🛡️  Archiving Manual Tools (User Request: Pure Code Only)...")
-            archive_dst = os.path.join(self.VAULT_PATH, "archived_tools")
-            
-            # If archive exists, merge/overwrite
-            if os.path.exists(archive_dst):
-                shutil.rmtree(archive_dst)
-            
-            shutil.move(tools_path, archive_dst)
-            self.log("  ✅ Backend Tools moved to Vault. Workspace is clean.")
-
-    def version_control_sync(self):
-        """Pushes updates to git."""
-        self.log("💾  Engaging Version Control...")
-        try:
-            # 1. Check if git repo
-            if not os.path.exists(os.path.join(self.ROOT_PATH, ".git")):
-                self.log("  ❌ Not a git repository.")
-                return
-
-            # 2. Add All
-            subprocess.run(["git", "add", "."], cwd=self.ROOT_PATH, check=True)
-            
-            # 3. Commit
-            msg = f"System Architect: Purify Codebase {datetime.now().strftime('%Y-%m-%d %H:%M')}"
-            # Check if there are changes to commit
-            status = subprocess.run(["git", "status", "--porcelain"], cwd=self.ROOT_PATH, capture_output=True, text=True)
-            if status.stdout.strip():
-                subprocess.run(["git", "commit", "-m", msg], cwd=self.ROOT_PATH, check=True)
-                self.log("  ✅ Changes Committed.")
-                
-                # 4. Push (Try)
-                # Note: This might fail if no upstream, but we try.
-                # subprocess.run(["git", "push"], cwd=self.ROOT_PATH) 
-                # Commented out push to avoid hanging if auth needed or no upstream. 
-                # User asked to push, but in this env, we might not have headers.
-                self.log("  ⚠️  Ready to Push. (Skipping auto-push to prevent auth lock)")
-            else:
-                self.log("  ✨ No changes to commit.")
-                
-        except Exception as e:
-            self.log(f"  ❌ Git Error: {str(e)}")
+                os.remove(full_path)
+                self.log(f"  ❌ Removed root clutter: {file}")
+                removed_count += 1
+        
+        if removed_count == 0:
+            self.log("  ✅ Codebase is clean. No misplaced files found.")
 
     def generate_integrity_report(self):
         """Outputs the state of the union"""
@@ -158,37 +104,51 @@ class SystemArchitect:
         print("--------------------------")
         
         # Check Critical Paths
-        # We expect backend/tools to be GONE (False)
-        
         paths = {
             "Core Generator": "backend/forge_backbone.py",
             "Service Layer": "backend/services",
             "Frontend App": "frontend/src",
-            "Manual Tools": "backend/tools" # Should be gone
         }
         
         for name, p in paths.items():
             exists = os.path.exists(os.path.join(self.ROOT_PATH, p))
-            if name == "Manual Tools":
-                status = "✅ CLEAN (ABSENT)" if not exists else "⚠️  WARNING (PRESENT)"
-            else:
-                status = "✅ ONLINE" if exists else "❌ CRITICAL MISSING"
+            status = "✅ ONLINE" if exists else "❌ CRITICAL MISSING"
             print(f"{name:<20} : {status}")
 
+        # Check for junk directories that should NOT exist
+        junk_paths = {
+            "Recursive Backend": "backend/backend",
+            "Node Modules (Root)": "node_modules",
+            "Manual Tools": "backend/tools",
+        }
+        
+        print("\n🧹 CLEANLINESS CHECK")
+        all_clean = True
+        for name, p in junk_paths.items():
+            exists = os.path.exists(os.path.join(self.ROOT_PATH, p))
+            if exists:
+                print(f"  ⚠️  {name:<25} - FOUND (should delete)")
+                all_clean = False
+            else:
+                print(f"  ✅ {name:<25} - clean")
+        
+        if all_clean:
+            print("\n✨ Workspace is clean. No archives. No history. Just code.")
+        else:
+            print("\n⚠️  Some cleanup needed. Run this script again.")
+
         # Check Lean Mode Status
-        venv_path = os.path.join(self.ROOT_PATH, "backend", "venv") # Nesting corrected
+        venv_path = os.path.join(self.ROOT_PATH, "backend", "venv")
         no_venv = not os.path.exists(venv_path) and not os.path.exists(os.path.join(self.ROOT_PATH, ".venv"))
         
-        print("\n📉 LEAN MODE STATUS")
+        print("\n📉 ENVIRONMENT STATUS")
         if no_venv:
-             print("  ✅ ACTIVE: No heavy Python environment detected.")
-             hydra = os.path.join(self.ROOT_PATH, "backend", "hydrate_env.sh")
-             if os.path.exists(hydra):
-                 print("  💧 ULTRA-READY: 'hydrate_env.sh' found in backend/.")
-             else:
-                 print("  ⚠️  ATTENTION: 'hydrate_env.sh' missing from backend/.")
+            print("  ✅ LEAN MODE: No Python environment (disk efficient)")
+            hydra = os.path.join(self.ROOT_PATH, "backend", "hydrate_env.sh")
+            if os.path.exists(hydra):
+                print("  💧 'hydrate_env.sh' ready for on-demand setup")
         else:
-            print("  ⚠️  INACTIVE: Heavy Python environment detected (Disk Usage High).")
+            print("  ⚠️  Heavy environment detected (consider running hydrate_env.sh --clean)")
 
 if __name__ == "__main__":
     arch = SystemArchitect()

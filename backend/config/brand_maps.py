@@ -36,11 +36,12 @@ BRAND_MAPS = {
         "logo_url": "https://www.nordkeyboards.com/sites/all/themes/nord/logo.png",
         "selectors": {
             "group": None,  # Flat list
-            "product": ".view-products .views-row",
+            # Updated for Next.js site structure (Jan 2026)
+            "product": "div[class*='ProductCardList'] a[href^='/products/']",
             "name": "h2",
-            "desc": ".field-body",
-            "link": "a",
-            "image": "img"
+            "desc": "p[class*='Description']",
+            "link": None, # The product element itself is the link
+            "image": "div[class*='ProductImageWrapper'] img"
         }
     },
     "moog": {

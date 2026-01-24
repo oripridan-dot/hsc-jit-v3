@@ -855,6 +855,16 @@ export const SpectrumMiddleLayer: React.FC<SpectrumMiddleLayerProps> = ({
                       >
                         ₪{currentPrice.toLocaleString()}
                       </div>
+                      {hoveredProduct.pricing?.eilat_price && (
+                          <div className="text-xs font-mono text-orange-400 mt-1">
+                             Eilat: ₪{hoveredProduct.pricing.eilat_price.toLocaleString()}
+                          </div>
+                      )}
+                      {hoveredProduct.pricing?.sale_price && hoveredProduct.pricing.sale_price > currentPrice && (
+                          <div className="text-[10px] font-mono text-slate-500 line-through mt-0.5">
+                             List: ₪{hoveredProduct.pricing.sale_price.toLocaleString()}
+                          </div>
+                      )}
                     </div>
 
                     {/* Monthly Price Grid - Stuck to bottom */}
