@@ -1,0 +1,97 @@
+{
+  "brand_identity": {
+    "id": "nord",
+    "name": "Nord Keyboards",
+    "description": "Premium Scandinavian synthesizers and keyboards",
+    "website": "https://www.nordkeyboards.com",
+    "brand_colors": {
+      "primary": "#e31e24",
+      "secondary": "#450a0a",
+      "accent": "#fbbf24",
+      "background": "#450a0a",
+      "text": "#ffffff"
+    },
+    "logo_url": "/assets/logos/nord_logo.png",
+    "taxonomy_stats": {
+      "validated": 1,
+      "normalized": 0,
+      "uncategorized": 0
+    },
+    "categories": [
+      {
+        "id": "keys",
+        "label": "Keys & Pianos",
+        "icon": "\ud83c\udfb9",
+        "description": "Keyboards and pianos",
+        "children": []
+      },
+      {
+        "id": "drums",
+        "label": "Drums & Percussion",
+        "icon": "\ud83e\udd41",
+        "description": "Drums and percussion",
+        "children": []
+      },
+      {
+        "id": "guitars",
+        "label": "Guitars & Amps",
+        "icon": "\ud83c\udfb8",
+        "description": "Guitars and amplifiers",
+        "children": []
+      },
+      {
+        "id": "studio",
+        "label": "Studio & Recording",
+        "icon": "\ud83c\udf99\ufe0f",
+        "description": "Studio and recording gear",
+        "children": []
+      },
+      {
+        "id": "live",
+        "label": "Live Sound",
+        "icon": "\ud83d\udd0a",
+        "description": "Live sound equipment",
+        "children": []
+      },
+      {
+        "id": "dj",
+        "label": "DJ & Production",
+        "icon": "\ud83c\udfa7",
+        "description": "DJ and production gear",
+        "children": []
+      },
+      {
+        "id": "software",
+        "label": "Software & Cloud",
+        "icon": "\ud83d\udcbb",
+        "description": "Software and cloud services",
+        "children": []
+      },
+      {
+        "id": "accessories",
+        "label": "Accessories",
+        "icon": "\ud83d\udd27",
+        "description": "Accessories and add-ons",
+        "children": []
+      }
+    ]
+  },
+  "products": [],
+  "brand_name": "Nord",
+  "brand_slug": "nord",
+  "refined_at": "2026-01-23T17:09:28.927679+00:00",
+  "hierarchy": {
+    "keys": {
+      "General": [
+        {
+          "id": "nord-lead-a1",
+          "name": "Nord Lead A1",
+          "description": "Multi-timbral synthesizer with sequencer",
+          "images": [],
+          "model_number": "Lead A1",
+          "sku": "NLEAD-A1"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "brand_identity": {
+    "id": "studio-logic",
+    "name": "STUDIO-LOGIC",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/studio-logic_logo.png",
+    "taxonomy_stats": {
+      "validated": 1,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "studio_logic_14_numacompact_case",
+      "name": "Studiologic Soft Case",
+      "brand": "studio-logic",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
+      "description": "Studiologic Soft Case",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
+        "thumbnail": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
+        "high_res": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
+        "original": "/data/thumbnails/studio_logic_14_numacompact_case.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Studio-Logic",
+  "brand_slug": "studio-logic",
+  "refined_at": "2026-01-24T02:50:44.820113+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "studio_logic_14_numacompact_case",
+          "name": "Studiologic Soft Case",
+          "description": "Studiologic Soft Case",
+          "images": {
+            "main": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
+            "thumbnail": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
+            "high_res": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
+            "original": "/data/thumbnails/studio_logic_14_numacompact_case.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

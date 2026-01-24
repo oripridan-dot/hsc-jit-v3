@@ -1,0 +1,489 @@
+{
+  "brand_identity": {
+    "id": "perri-s-leathers",
+    "name": "PERRI-S-LEATHERS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/perri-s-leathers_logo.png",
+    "taxonomy_stats": {
+      "validated": 15,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "perri_s_leathers_57_8168",
+      "name": "Perri's Leathers LPCP-8168",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_8168.jpg",
+      "description": "Perri's Leathers LPCP-8168",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_8168.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_8168.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_8168.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_8168.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_7552",
+      "name": "Perri's Leathers VGS-7552",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_7552.jpg",
+      "description": "Perri's Leathers VGS-7552",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_7552.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_7552.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_7552.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_7552.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_7112",
+      "name": "Perri's Leathers P25STUD-7112",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_7112.jpg",
+      "description": "Perri's Leathers P25STUD-7112",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_7112.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_7112.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_7112.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_7112.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_7581",
+      "name": "Perri's Leathers TWS-7581",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_7581.jpg",
+      "description": "Perri's Leathers TWS-7581",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_7581.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_7581.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_7581.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_7581.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_8170",
+      "name": "Perri's Leathers UKNWSP-8170",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_8170.jpg",
+      "description": "Perri's Leathers UKNWSP-8170",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_8170.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_8170.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_8170.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_8170.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_8177",
+      "name": "Perri's Leathers LPCP-8177",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_8177.jpg",
+      "description": "Perri's Leathers LPCP-8177",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_8177.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_8177.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_8177.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_8177.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_7134",
+      "name": "Perri's Leathers BM35PD-7134",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_7134.jpg",
+      "description": "Perri's Leathers BM35PD-7134",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_7134.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_7134.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_7134.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_7134.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_8172",
+      "name": "Perri's Leathers UKNWSP-8172",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_8172.jpg",
+      "description": "Perri's Leathers UKNWSP-8172",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_8172.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_8172.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_8172.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_8172.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_7553",
+      "name": "Perri's Leathers VGS-7553",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_7553.jpg",
+      "description": "Perri's Leathers VGS-7553",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_7553.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_7553.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_7553.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_7553.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_7135",
+      "name": "Perri's Leathers BM35PD-7135",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_7135.jpg",
+      "description": "Perri's Leathers BM35PD-7135",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_7135.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_7135.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_7135.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_7135.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_6556",
+      "name": "Perri's Leathers P25SSH-6556",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_6556.jpg",
+      "description": "Perri's Leathers P25SSH-6556",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_6556.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_6556.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_6556.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_6556.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_8265",
+      "name": "Perri's Leathers P25EPV-8265",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_8265.jpg",
+      "description": "Perri's Leathers P25EPV-8265",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_8265.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_8265.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_8265.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_8265.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_7555",
+      "name": "Perri's Leathers VGS-7555",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_7555.jpg",
+      "description": "Perri's Leathers VGS-7555",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_7555.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_7555.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_7555.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_7555.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_8092",
+      "name": "Perri's Leathers LPCP-8092",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_8092.jpg",
+      "description": "Perri's Leathers LPCP-8092",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_8092.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_8092.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_8092.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_8092.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "perri_s_leathers_57_1333",
+      "name": "Perri's Leathers P25INM-1333",
+      "brand": "perri-s-leathers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/perri_s_leathers_57_1333.jpg",
+      "description": "Perri's Leathers P25INM-1333",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/perri_s_leathers_57_1333.jpg",
+        "thumbnail": "/data/thumbnails/perri_s_leathers_57_1333.jpg",
+        "high_res": "/data/thumbnails/perri_s_leathers_57_1333.jpg",
+        "original": "/data/thumbnails/perri_s_leathers_57_1333.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Perri-S-Leathers",
+  "brand_slug": "perri-s-leathers",
+  "refined_at": "2026-01-24T02:50:45.076510+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "perri_s_leathers_57_8168",
+          "name": "Perri's Leathers LPCP-8168",
+          "description": "Perri's Leathers LPCP-8168",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_8168.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_8168.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_8168.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_8168.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_7552",
+          "name": "Perri's Leathers VGS-7552",
+          "description": "Perri's Leathers VGS-7552",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_7552.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_7552.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_7552.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_7552.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_7112",
+          "name": "Perri's Leathers P25STUD-7112",
+          "description": "Perri's Leathers P25STUD-7112",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_7112.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_7112.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_7112.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_7112.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_7581",
+          "name": "Perri's Leathers TWS-7581",
+          "description": "Perri's Leathers TWS-7581",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_7581.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_7581.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_7581.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_7581.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_8170",
+          "name": "Perri's Leathers UKNWSP-8170",
+          "description": "Perri's Leathers UKNWSP-8170",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_8170.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_8170.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_8170.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_8170.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_8177",
+          "name": "Perri's Leathers LPCP-8177",
+          "description": "Perri's Leathers LPCP-8177",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_8177.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_8177.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_8177.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_8177.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_7134",
+          "name": "Perri's Leathers BM35PD-7134",
+          "description": "Perri's Leathers BM35PD-7134",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_7134.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_7134.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_7134.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_7134.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_8172",
+          "name": "Perri's Leathers UKNWSP-8172",
+          "description": "Perri's Leathers UKNWSP-8172",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_8172.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_8172.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_8172.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_8172.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_7553",
+          "name": "Perri's Leathers VGS-7553",
+          "description": "Perri's Leathers VGS-7553",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_7553.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_7553.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_7553.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_7553.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_7135",
+          "name": "Perri's Leathers BM35PD-7135",
+          "description": "Perri's Leathers BM35PD-7135",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_7135.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_7135.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_7135.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_7135.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_6556",
+          "name": "Perri's Leathers P25SSH-6556",
+          "description": "Perri's Leathers P25SSH-6556",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_6556.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_6556.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_6556.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_6556.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_8265",
+          "name": "Perri's Leathers P25EPV-8265",
+          "description": "Perri's Leathers P25EPV-8265",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_8265.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_8265.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_8265.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_8265.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_7555",
+          "name": "Perri's Leathers VGS-7555",
+          "description": "Perri's Leathers VGS-7555",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_7555.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_7555.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_7555.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_7555.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_8092",
+          "name": "Perri's Leathers LPCP-8092",
+          "description": "Perri's Leathers LPCP-8092",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_8092.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_8092.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_8092.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_8092.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "perri_s_leathers_57_1333",
+          "name": "Perri's Leathers P25INM-1333",
+          "description": "Perri's Leathers P25INM-1333",
+          "images": {
+            "main": "/data/thumbnails/perri_s_leathers_57_1333.jpg",
+            "thumbnail": "/data/thumbnails/perri_s_leathers_57_1333.jpg",
+            "high_res": "/data/thumbnails/perri_s_leathers_57_1333.jpg",
+            "original": "/data/thumbnails/perri_s_leathers_57_1333.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

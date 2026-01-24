@@ -1,0 +1,210 @@
+{
+  "brand_identity": {
+    "id": "tombo",
+    "name": "TOMBO",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/tombo_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 6,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "tombo_34_1810_b",
+      "name": "Tombo Ultimo 1810 B",
+      "brand": "tombo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/tombo_34_1810_b.jpg",
+      "description": "Tombo Ultimo 1810 B",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/tombo_34_1810_b.jpg",
+        "thumbnail": "/data/thumbnails/tombo_34_1810_b.jpg",
+        "high_res": "/data/thumbnails/tombo_34_1810_b.jpg",
+        "original": "/data/thumbnails/tombo_34_1810_b.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "tombo_34_1204kn_c",
+      "name": "Tombo 1204KN Baby Harmonica Gold",
+      "brand": "tombo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/tombo_34_1204kn_c.jpg",
+      "description": "Tombo 1204KN Baby Harmonica Gold",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/tombo_34_1204kn_c.jpg",
+        "thumbnail": "/data/thumbnails/tombo_34_1204kn_c.jpg",
+        "high_res": "/data/thumbnails/tombo_34_1204kn_c.jpg",
+        "original": "/data/thumbnails/tombo_34_1204kn_c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "tombo_34_2248",
+      "name": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+      "brand": "tombo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/tombo_34_2248.jpg",
+      "description": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/tombo_34_2248.jpg",
+        "thumbnail": "/data/thumbnails/tombo_34_2248.jpg",
+        "high_res": "/data/thumbnails/tombo_34_2248.jpg",
+        "original": "/data/thumbnails/tombo_34_2248.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "tombo_34_2248_pg",
+      "name": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+      "brand": "tombo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/tombo_34_2248_pg.jpg",
+      "description": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/tombo_34_2248_pg.jpg",
+        "thumbnail": "/data/thumbnails/tombo_34_2248_pg.jpg",
+        "high_res": "/data/thumbnails/tombo_34_2248_pg.jpg",
+        "original": "/data/thumbnails/tombo_34_2248_pg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "tombo_34_1204n_c",
+      "name": "Tombo Baby Harmonica 1204N",
+      "brand": "tombo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/tombo_34_1204n_c.jpg",
+      "description": "Tombo Baby Harmonica 1204N",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/tombo_34_1204n_c.jpg",
+        "thumbnail": "/data/thumbnails/tombo_34_1204n_c.jpg",
+        "high_res": "/data/thumbnails/tombo_34_1204n_c.jpg",
+        "original": "/data/thumbnails/tombo_34_1204n_c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "tombo_34_lohp",
+      "name": "Lee Oskar LOHP Harmonica Case Tombo",
+      "brand": "tombo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/tombo_34_lohp.jpg",
+      "description": "Lee Oskar LOHP Harmonica Case Tombo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/tombo_34_lohp.jpg",
+        "thumbnail": "/data/thumbnails/tombo_34_lohp.jpg",
+        "high_res": "/data/thumbnails/tombo_34_lohp.jpg",
+        "original": "/data/thumbnails/tombo_34_lohp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Tombo",
+  "brand_slug": "tombo",
+  "refined_at": "2026-01-24T02:50:44.859362+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "tombo_34_1810_b",
+          "name": "Tombo Ultimo 1810 B",
+          "description": "Tombo Ultimo 1810 B",
+          "images": {
+            "main": "/data/thumbnails/tombo_34_1810_b.jpg",
+            "thumbnail": "/data/thumbnails/tombo_34_1810_b.jpg",
+            "high_res": "/data/thumbnails/tombo_34_1810_b.jpg",
+            "original": "/data/thumbnails/tombo_34_1810_b.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "tombo_34_1204kn_c",
+          "name": "Tombo 1204KN Baby Harmonica Gold",
+          "description": "Tombo 1204KN Baby Harmonica Gold",
+          "images": {
+            "main": "/data/thumbnails/tombo_34_1204kn_c.jpg",
+            "thumbnail": "/data/thumbnails/tombo_34_1204kn_c.jpg",
+            "high_res": "/data/thumbnails/tombo_34_1204kn_c.jpg",
+            "original": "/data/thumbnails/tombo_34_1204kn_c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "tombo_34_2248",
+          "name": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+          "description": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+          "images": {
+            "main": "/data/thumbnails/tombo_34_2248.jpg",
+            "thumbnail": "/data/thumbnails/tombo_34_2248.jpg",
+            "high_res": "/data/thumbnails/tombo_34_2248.jpg",
+            "original": "/data/thumbnails/tombo_34_2248.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "tombo_34_2248_pg",
+          "name": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+          "description": "Tombo MU-01 Short Cross Slide Chromatic 2248",
+          "images": {
+            "main": "/data/thumbnails/tombo_34_2248_pg.jpg",
+            "thumbnail": "/data/thumbnails/tombo_34_2248_pg.jpg",
+            "high_res": "/data/thumbnails/tombo_34_2248_pg.jpg",
+            "original": "/data/thumbnails/tombo_34_2248_pg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "tombo_34_1204n_c",
+          "name": "Tombo Baby Harmonica 1204N",
+          "description": "Tombo Baby Harmonica 1204N",
+          "images": {
+            "main": "/data/thumbnails/tombo_34_1204n_c.jpg",
+            "thumbnail": "/data/thumbnails/tombo_34_1204n_c.jpg",
+            "high_res": "/data/thumbnails/tombo_34_1204n_c.jpg",
+            "original": "/data/thumbnails/tombo_34_1204n_c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "tombo_34_lohp",
+          "name": "Lee Oskar LOHP Harmonica Case Tombo",
+          "description": "Lee Oskar LOHP Harmonica Case Tombo",
+          "images": {
+            "main": "/data/thumbnails/tombo_34_lohp.jpg",
+            "thumbnail": "/data/thumbnails/tombo_34_lohp.jpg",
+            "high_res": "/data/thumbnails/tombo_34_lohp.jpg",
+            "original": "/data/thumbnails/tombo_34_lohp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3279 @@
+{
+  "brand_identity": {
+    "id": "presonus",
+    "name": "PRESONUS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/presonus_logo.png",
+    "taxonomy_stats": {
+      "validated": 105,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "presonus_70_erispro6",
+      "name": "מוניטור אולפני PreSonus Eris Pro 6",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_erispro6.jpg",
+      "description": "מוניטור אולפני PreSonus Eris Pro 6",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_erispro6.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_erispro6.jpg",
+        "high_res": "/data/thumbnails/presonus_70_erispro6.jpg",
+        "original": "/data/thumbnails/presonus_70_erispro6.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_eris3_5_bt",
+      "name": "זוג מוניטורים אולפניים PreSonus Eris 3.5 BT 2nd Gen",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_eris3_5_bt.jpg",
+      "description": "זוג מוניטורים אולפניים PreSonus Eris 3.5 BT 2nd Gen",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_eris3_5_bt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_eris3_5_bt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_eris3_5_bt.jpg",
+        "original": "/data/thumbnails/presonus_70_eris3_5_bt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_eris5_bt",
+      "name": "זוג מוניטורים PreSonus Eris 5 BT 2nd Gen",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_eris5_bt.jpg",
+      "description": "זוג מוניטורים PreSonus Eris 5 BT 2nd Gen",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_eris5_bt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_eris5_bt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_eris5_bt.jpg",
+        "original": "/data/thumbnails/presonus_70_eris5_bt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_eris3_5",
+      "name": "זוג מוניטורים PreSonus Eris 3.5 2nd Gen",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_eris3_5.jpg",
+      "description": "זוג מוניטורים PreSonus Eris 3.5 2nd Gen",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_eris3_5.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_eris3_5.jpg",
+        "high_res": "/data/thumbnails/presonus_70_eris3_5.jpg",
+        "original": "/data/thumbnails/presonus_70_eris3_5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantumhd2eu",
+      "name": "PreSonus Quantum HD 2 USB-C Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantumhd2eu.jpg",
+      "description": "PreSonus Quantum HD 2 USB-C Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantumhd2eu.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantumhd2eu.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantumhd2eu.jpg",
+        "original": "/data/thumbnails/presonus_70_quantumhd2eu.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantumes2",
+      "name": "PreSonus Quantum ES 2 USB-C Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantumes2.jpg",
+      "description": "PreSonus Quantum ES 2 USB-C Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantumes2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantumes2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantumes2.jpg",
+        "original": "/data/thumbnails/presonus_70_quantumes2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_erispro8",
+      "name": "מוניטור אולפני PreSonus Eris Pro 8",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_erispro8.jpg",
+      "description": "מוניטור אולפני PreSonus Eris Pro 8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_erispro8.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_erispro8.jpg",
+        "high_res": "/data/thumbnails/presonus_70_erispro8.jpg",
+        "original": "/data/thumbnails/presonus_70_erispro8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_audioboxgocre",
+      "name": "PreSonus AudioBox Go Creator Bundle",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_audioboxgocre.jpg",
+      "description": "PreSonus AudioBox Go Creator Bundle",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_audioboxgocre.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_audioboxgocre.jpg",
+        "high_res": "/data/thumbnails/presonus_70_audioboxgocre.jpg",
+        "original": "/data/thumbnails/presonus_70_audioboxgocre.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_erisstudio4",
+      "name": "מוניטור אולפני PreSonus Eris Studio 4",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_erisstudio4.jpg",
+      "description": "מוניטור אולפני PreSonus Eris Studio 4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_erisstudio4.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_erisstudio4.jpg",
+        "high_res": "/data/thumbnails/presonus_70_erisstudio4.jpg",
+        "original": "/data/thumbnails/presonus_70_erisstudio4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_hd9",
+      "name": "אוזניות מוניטור PreSonus HD9",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_hd9.jpg",
+      "description": "אוזניות מוניטור PreSonus HD9",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_hd9.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_hd9.jpg",
+        "high_res": "/data/thumbnails/presonus_70_hd9.jpg",
+        "original": "/data/thumbnails/presonus_70_hd9.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studio24c",
+      "name": "PreSonus Studio 24C Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studio24c.jpg",
+      "description": "PreSonus Studio 24C Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studio24c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studio24c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studio24c.jpg",
+        "original": "/data/thumbnails/presonus_70_studio24c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_erisprosub10",
+      "name": "סאבוופר אולפני PreSonus Eris Pro Sub 10",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_erisprosub10.jpg",
+      "description": "סאבוופר אולפני PreSonus Eris Pro Sub 10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_erisprosub10.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_erisprosub10.jpg",
+        "high_res": "/data/thumbnails/presonus_70_erisprosub10.jpg",
+        "original": "/data/thumbnails/presonus_70_erisprosub10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantumhd8eu",
+      "name": "PreSonus Quantum HD 8 USB-C Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantumhd8eu.jpg",
+      "description": "PreSonus Quantum HD 8 USB-C Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantumhd8eu.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantumhd8eu.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantumhd8eu.jpg",
+        "original": "/data/thumbnails/presonus_70_quantumhd8eu.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_hd10bt",
+      "name": "אוזניות אלחוטיות PreSonus Eris HD10BT",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_hd10bt.jpg",
+      "description": "אוזניות אלחוטיות PreSonus Eris HD10BT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_hd10bt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_hd10bt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_hd10bt.jpg",
+        "original": "/data/thumbnails/presonus_70_hd10bt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_erissub8_bt",
+      "name": "סאבוופר אולפני PreSonus Eris SUB 8 BT",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_erissub8_bt.jpg",
+      "description": "סאבוופר אולפני PreSonus Eris SUB 8 BT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_erissub8_bt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_erissub8_bt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_erissub8_bt.jpg",
+        "original": "/data/thumbnails/presonus_70_erissub8_bt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantumes4",
+      "name": "PreSonus Quantum ES 4 USB-C Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantumes4.jpg",
+      "description": "PreSonus Quantum ES 4 USB-C Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantumes4.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantumes4.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantumes4.jpg",
+        "original": "/data/thumbnails/presonus_70_quantumes4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_abusb96cb",
+      "name": "PreSonus AudioBox 96 Complete Bundle",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_abusb96cb.jpg",
+      "description": "PreSonus AudioBox 96 Complete Bundle",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_abusb96cb.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_abusb96cb.jpg",
+        "high_res": "/data/thumbnails/presonus_70_abusb96cb.jpg",
+        "original": "/data/thumbnails/presonus_70_abusb96cb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_m7mk2",
+      "name": "מיקרופון קונדנסר לאולפן PreSonus M7 MKII",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_m7mk2.jpg",
+      "description": "מיקרופון קונדנסר לאולפן PreSonus M7 MKII",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_m7mk2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_m7mk2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_m7mk2.jpg",
+        "original": "/data/thumbnails/presonus_70_m7mk2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studio1810c",
+      "name": "PreSonus Studio 1810C",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studio1810c.jpg",
+      "description": "PreSonus Studio 1810C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studio1810c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studio1810c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studio1810c.jpg",
+        "original": "/data/thumbnails/presonus_70_studio1810c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_ar16c",
+      "name": "PreSonus StudioLive AR16c",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_ar16c.jpg",
+      "description": "PreSonus StudioLive AR16c",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_ar16c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_ar16c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_ar16c.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_ar16c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_erisstudio5",
+      "name": "מוניטור אולפני PreSonus Eris Studio 5",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_erisstudio5.jpg",
+      "description": "מוניטור אולפני PreSonus Eris Studio 5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_erisstudio5.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_erisstudio5.jpg",
+        "high_res": "/data/thumbnails/presonus_70_erisstudio5.jpg",
+        "original": "/data/thumbnails/presonus_70_erisstudio5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_revelator",
+      "name": "מיקרופון USB קונדנסר PreSonus Revelator",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_revelator.jpg",
+      "description": "מיקרופון USB קונדנסר PreSonus Revelator",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_revelator.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_revelator.jpg",
+        "high_res": "/data/thumbnails/presonus_70_revelator.jpg",
+        "original": "/data/thumbnails/presonus_70_revelator.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studio26c",
+      "name": "PreSonus Studio 26C USB Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studio26c.jpg",
+      "description": "PreSonus Studio 26C USB Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studio26c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studio26c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studio26c.jpg",
+        "original": "/data/thumbnails/presonus_70_studio26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantumesult",
+      "name": "PreSonus Quantum ES Ultimate Bundle",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantumesult.jpg",
+      "description": "PreSonus Quantum ES Ultimate Bundle",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantumesult.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantumesult.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantumesult.jpg",
+        "original": "/data/thumbnails/presonus_70_quantumesult.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_audioboxgo",
+      "name": "PreSonus AudioBox GO",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_audioboxgo.jpg",
+      "description": "PreSonus AudioBox GO",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_audioboxgo.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_audioboxgo.jpg",
+        "high_res": "/data/thumbnails/presonus_70_audioboxgo.jpg",
+        "original": "/data/thumbnails/presonus_70_audioboxgo.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_atomsq",
+      "name": "PreSonus ATOM SQ",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_atomsq.jpg",
+      "description": "PreSonus ATOM SQ",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_atomsq.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_atomsq.jpg",
+        "high_res": "/data/thumbnails/presonus_70_atomsq.jpg",
+        "original": "/data/thumbnails/presonus_70_atomsq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_ar12c",
+      "name": "PreSonus StudioLive AR12c",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_ar12c.jpg",
+      "description": "PreSonus StudioLive AR12c",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_ar12c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_ar12c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_ar12c.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_ar12c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_atom",
+      "name": "PreSonus ATOM",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_atom.jpg",
+      "description": "PreSonus ATOM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_atom.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_atom.jpg",
+        "high_res": "/data/thumbnails/presonus_70_atom.jpg",
+        "original": "/data/thumbnails/presonus_70_atom.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_ar8c",
+      "name": "PreSonus StudioLive AR8c",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_ar8c.jpg",
+      "description": "PreSonus StudioLive AR8c",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_ar8c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_ar8c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_ar8c.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_ar8c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_eris4_5_bt",
+      "name": "זוג מוניטורים PreSonus Eris 4.5 BT 2nd Gen",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_eris4_5_bt.jpg",
+      "description": "זוג מוניטורים PreSonus Eris 4.5 BT 2nd Gen",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_eris4_5_bt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_eris4_5_bt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_eris4_5_bt.jpg",
+        "original": "/data/thumbnails/presonus_70_eris4_5_bt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_revelatorio44",
+      "name": "PreSonus Revelator io44",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_revelatorio44.jpg",
+      "description": "PreSonus Revelator io44",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_revelatorio44.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_revelatorio44.jpg",
+        "high_res": "/data/thumbnails/presonus_70_revelatorio44.jpg",
+        "original": "/data/thumbnails/presonus_70_revelatorio44.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_faderportv2",
+      "name": "PreSonus Faderport V2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_faderportv2.jpg",
+      "description": "PreSonus Faderport V2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_faderportv2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_faderportv2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_faderportv2.jpg",
+        "original": "/data/thumbnails/presonus_70_faderportv2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_abitwo",
+      "name": "PreSonus AudioBox iTwo",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_abitwo.jpg",
+      "description": "PreSonus AudioBox iTwo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_abitwo.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_abitwo.jpg",
+        "high_res": "/data/thumbnails/presonus_70_abitwo.jpg",
+        "original": "/data/thumbnails/presonus_70_abitwo.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_hd7",
+      "name": "אוזניות מוניטור PreSonus HD7",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_hd7.jpg",
+      "description": "אוזניות מוניטור PreSonus HD7",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_hd7.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_hd7.jpg",
+        "high_res": "/data/thumbnails/presonus_70_hd7.jpg",
+        "original": "/data/thumbnails/presonus_70_hd7.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_revelatorio24",
+      "name": "PreSonus Revelator io24 USB Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_revelatorio24.jpg",
+      "description": "PreSonus Revelator io24 USB Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_revelatorio24.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_revelatorio24.jpg",
+        "high_res": "/data/thumbnails/presonus_70_revelatorio24.jpg",
+        "original": "/data/thumbnails/presonus_70_revelatorio24.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_erisstudio8",
+      "name": "מוניטור אולפני PreSonus Eris Studio 8",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_erisstudio8.jpg",
+      "description": "מוניטור אולפני PreSonus Eris Studio 8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_erisstudio8.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_erisstudio8.jpg",
+        "high_res": "/data/thumbnails/presonus_70_erisstudio8.jpg",
+        "original": "/data/thumbnails/presonus_70_erisstudio8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_rml_16ai",
+      "name": "PreSonus StudioLive RML16AI",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg",
+      "description": "PreSonus StudioLive RML16AI",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_ispd4",
+      "name": "PreSonus ISPD-4A Isolation Pads",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_ispd4.jpg",
+      "description": "PreSonus ISPD-4A Isolation Pads",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_ispd4.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_ispd4.jpg",
+        "high_res": "/data/thumbnails/presonus_70_ispd4.jpg",
+        "original": "/data/thumbnails/presonus_70_ispd4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studio68c",
+      "name": "PreSonus Studio 68C USB Audio Interface",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studio68c.jpg",
+      "description": "PreSonus Studio 68C USB Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studio68c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studio68c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studio68c.jpg",
+        "original": "/data/thumbnails/presonus_70_studio68c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_e7xt",
+      "name": "מוניטור אולפני PreSonus Eris E7 XT",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_e7xt.jpg",
+      "description": "מוניטור אולפני PreSonus Eris E7 XT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_e7xt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_e7xt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_e7xt.jpg",
+        "original": "/data/thumbnails/presonus_70_e7xt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantum2626",
+      "name": "PreSonus Quantum 2626",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantum2626.jpg",
+      "description": "PreSonus Quantum 2626",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantum2626.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantum2626.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantum2626.jpg",
+        "original": "/data/thumbnails/presonus_70_quantum2626.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studio1824c",
+      "name": "PreSonus Studio 1824C",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studio1824c.jpg",
+      "description": "PreSonus Studio 1824C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studio1824c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studio1824c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studio1824c.jpg",
+        "original": "/data/thumbnails/presonus_70_studio1824c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_iostation24c",
+      "name": "PreSonus ioStation 24c",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_iostation24c.jpg",
+      "description": "PreSonus ioStation 24c",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_iostation24c.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_iostation24c.jpg",
+        "high_res": "/data/thumbnails/presonus_70_iostation24c.jpg",
+        "original": "/data/thumbnails/presonus_70_iostation24c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantum2",
+      "name": "PreSonus Quantum 2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantum2.jpg",
+      "description": "PreSonus Quantum 2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantum2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantum2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantum2.jpg",
+        "original": "/data/thumbnails/presonus_70_quantum2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_microstationbt",
+      "name": "שלט מוניטורים PreSonus MicroStation BT",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_microstationbt.jpg",
+      "description": "שלט מוניטורים PreSonus MicroStation BT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_microstationbt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_microstationbt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_microstationbt.jpg",
+        "original": "/data/thumbnails/presonus_70_microstationbt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_r80v2",
+      "name": "מוניטור אולפני PreSonus R80 V2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_r80v2.jpg",
+      "description": "מוניטור אולפני PreSonus R80 V2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_r80v2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_r80v2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_r80v2.jpg",
+        "original": "/data/thumbnails/presonus_70_r80v2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_e8xt",
+      "name": "מוניטור אולפני PreSonus Eris E8 XT",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_e8xt.jpg",
+      "description": "מוניטור אולפני PreSonus Eris E8 XT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_e8xt.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_e8xt.jpg",
+        "high_res": "/data/thumbnails/presonus_70_e8xt.jpg",
+        "original": "/data/thumbnails/presonus_70_e8xt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_tubeprev2",
+      "name": "PreSonus TubePre V2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_tubeprev2.jpg",
+      "description": "PreSonus TubePre V2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_tubeprev2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_tubeprev2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_tubeprev2.jpg",
+        "original": "/data/thumbnails/presonus_70_tubeprev2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_e44",
+      "name": "מוניטור אולפני PreSonus Eris E44",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_e44.jpg",
+      "description": "מוניטור אולפני PreSonus Eris E44",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_e44.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_e44.jpg",
+        "high_res": "/data/thumbnails/presonus_70_e44.jpg",
+        "original": "/data/thumbnails/presonus_70_e44.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_quantum4848",
+      "name": "PreSonus Quantum 4848",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_quantum4848.jpg",
+      "description": "PreSonus Quantum 4848",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_quantum4848.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_quantum4848.jpg",
+        "high_res": "/data/thumbnails/presonus_70_quantum4848.jpg",
+        "original": "/data/thumbnails/presonus_70_quantum4848.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_bluetubedpv2",
+      "name": "PreSonus BlueTube DP v2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_bluetubedpv2.jpg",
+      "description": "PreSonus BlueTube DP v2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_bluetubedpv2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_bluetubedpv2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_bluetubedpv2.jpg",
+        "original": "/data/thumbnails/presonus_70_bluetubedpv2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_pd70",
+      "name": "מיקרופון דינמי לשידור PreSonus PD-70",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_pd70.jpg",
+      "description": "מיקרופון דינמי לשידור PreSonus PD-70",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_pd70.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_pd70.jpg",
+        "high_res": "/data/thumbnails/presonus_70_pd70.jpg",
+        "original": "/data/thumbnails/presonus_70_pd70.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studioch",
+      "name": "PreSonus Studio Channel",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studioch.jpg",
+      "description": "PreSonus Studio Channel",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studioch.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studioch.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studioch.jpg",
+        "original": "/data/thumbnails/presonus_70_studioch.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studio1_7pro",
+      "name": "PreSonus Studio One Pro 7",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studio1_7pro.jpg",
+      "description": "PreSonus Studio One Pro 7",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studio1_7pro.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studio1_7pro.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studio1_7pro.jpg",
+        "original": "/data/thumbnails/presonus_70_studio1_7pro.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_studio1_7pro_e",
+      "name": "PreSonus Studio One Pro 7 - Academic",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg",
+      "description": "PreSonus Studio One Pro 7 - Academic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg",
+        "high_res": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg",
+        "original": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_pm_2",
+      "name": "זוג מיקרופונים קונדנסר PreSonus PM-2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_pm_2.jpg",
+      "description": "זוג מיקרופונים קונדנסר PreSonus PM-2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_pm_2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_pm_2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_pm_2.jpg",
+        "original": "/data/thumbnails/presonus_70_pm_2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_px_1",
+      "name": "מיקרופון קונדנסר לאולפן PreSonus PX-1",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_px_1.jpg",
+      "description": "מיקרופון קונדנסר לאולפן PreSonus PX-1",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_px_1.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_px_1.jpg",
+        "high_res": "/data/thumbnails/presonus_70_px_1.jpg",
+        "original": "/data/thumbnails/presonus_70_px_1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_r65v2",
+      "name": "מוניטור אולפני PreSonus R65 V2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_r65v2.jpg",
+      "description": "מוניטור אולפני PreSonus R65 V2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_r65v2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_r65v2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_r65v2.jpg",
+        "original": "/data/thumbnails/presonus_70_r65v2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_dm7",
+      "name": "סט מיקרופונים לתופים Presonus DM-7",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_dm7.jpg",
+      "description": "סט מיקרופונים לתופים Presonus DM-7",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_dm7.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_dm7.jpg",
+        "high_res": "/data/thumbnails/presonus_70_dm7.jpg",
+        "original": "/data/thumbnails/presonus_70_dm7.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_r80",
+      "name": "מוניטור אולפני PreSonus R80",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_r80.jpg",
+      "description": "מוניטור אולפני PreSonus R80",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_r80.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_r80.jpg",
+        "high_res": "/data/thumbnails/presonus_70_r80.jpg",
+        "original": "/data/thumbnails/presonus_70_r80.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air15s",
+      "name": "PreSonus AIR15s",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air15s.jpg",
+      "description": "PreSonus AIR15s",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air15s.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air15s.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air15s.jpg",
+        "original": "/data/thumbnails/presonus_70_air15s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sw5e",
+      "name": "PreSonus SW5E",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sw5e.jpg",
+      "description": "PreSonus SW5E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sw5e.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sw5e.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sw5e.jpg",
+        "original": "/data/thumbnails/presonus_70_sw5e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sls3_32s",
+      "name": "PreSonus StudioLive 32S",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sls3_32s.jpg",
+      "description": "PreSonus StudioLive 32S",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sls3_32s.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sls3_32s.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sls3_32s.jpg",
+        "original": "/data/thumbnails/presonus_70_sls3_32s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_monitorstatv2",
+      "name": "PreSonus Monitor Station V2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_monitorstatv2.jpg",
+      "description": "PreSonus Monitor Station V2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_monitorstatv2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_monitorstatv2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_monitorstatv2.jpg",
+        "original": "/data/thumbnails/presonus_70_monitorstatv2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air10",
+      "name": "PreSonus AIR10",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air10.jpg",
+      "description": "PreSonus AIR10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air10.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air10.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air10.jpg",
+        "original": "/data/thumbnails/presonus_70_air10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sls3_32sc",
+      "name": "PreSonus StudioLive 32SC",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sls3_32sc.jpg",
+      "description": "PreSonus StudioLive 32SC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sls3_32sc.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sls3_32sc.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sls3_32sc.jpg",
+        "original": "/data/thumbnails/presonus_70_sls3_32sc.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_centstation_",
+      "name": "PreSonus Central Station PLUS",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_centstation_.jpg",
+      "description": "PreSonus Central Station PLUS",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_centstation_.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_centstation_.jpg",
+        "high_res": "/data/thumbnails/presonus_70_centstation_.jpg",
+        "original": "/data/thumbnails/presonus_70_centstation_.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air12",
+      "name": "PreSonus AIR12",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air12.jpg",
+      "description": "PreSonus AIR12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air12.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air12.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air12.jpg",
+        "original": "/data/thumbnails/presonus_70_air12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_nsb16_8",
+      "name": "PreSonus NSB 16.8",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_nsb16_8.jpg",
+      "description": "PreSonus NSB 16.8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_nsb16_8.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_nsb16_8.jpg",
+        "high_res": "/data/thumbnails/presonus_70_nsb16_8.jpg",
+        "original": "/data/thumbnails/presonus_70_nsb16_8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_cdl18s",
+      "name": "PreSonus CDL18s",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_cdl18s.jpg",
+      "description": "PreSonus CDL18s",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_cdl18s.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_cdl18s.jpg",
+        "high_res": "/data/thumbnails/presonus_70_cdl18s.jpg",
+        "original": "/data/thumbnails/presonus_70_cdl18s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_nsb8_8",
+      "name": "PreSonus NSB 8.8",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_nsb8_8.jpg",
+      "description": "PreSonus NSB 8.8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_nsb8_8.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_nsb8_8.jpg",
+        "high_res": "/data/thumbnails/presonus_70_nsb8_8.jpg",
+        "original": "/data/thumbnails/presonus_70_nsb8_8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_prm1",
+      "name": "מיקרופון מדידה מקצועי PreSonus PRM1",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_prm1.jpg",
+      "description": "מיקרופון מדידה מקצועי PreSonus PRM1",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_prm1.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_prm1.jpg",
+        "high_res": "/data/thumbnails/presonus_70_prm1.jpg",
+        "original": "/data/thumbnails/presonus_70_prm1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_faderport",
+      "name": "PreSonus FaderPort",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_faderport.jpg",
+      "description": "PreSonus FaderPort",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_faderport.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_faderport.jpg",
+        "high_res": "/data/thumbnails/presonus_70_faderport.jpg",
+        "original": "/data/thumbnails/presonus_70_faderport.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_hp2",
+      "name": "PreSonus HP2",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_hp2.jpg",
+      "description": "PreSonus HP2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_hp2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_hp2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_hp2.jpg",
+        "original": "/data/thumbnails/presonus_70_hp2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_32_4_2_ipadst",
+      "name": "PreSonus Mixer iPad Stand",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg",
+      "description": "PreSonus Mixer iPad Stand",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_hp4",
+      "name": "PreSonus HP4",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_hp4.jpg",
+      "description": "PreSonus HP4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_hp4.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_hp4.jpg",
+        "high_res": "/data/thumbnails/presonus_70_hp4.jpg",
+        "original": "/data/thumbnails/presonus_70_hp4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air12tote",
+      "name": "PreSonus AIR12 Tote Bag",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air12tote.jpg",
+      "description": "PreSonus AIR12 Tote Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air12tote.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air12tote.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air12tote.jpg",
+        "original": "/data/thumbnails/presonus_70_air12tote.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_faderport16",
+      "name": "PreSonus FaderPort 16",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_faderport16.jpg",
+      "description": "PreSonus FaderPort 16",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_faderport16.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_faderport16.jpg",
+        "high_res": "/data/thumbnails/presonus_70_faderport16.jpg",
+        "original": "/data/thumbnails/presonus_70_faderport16.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sls3_32r",
+      "name": "PreSonus StudioLive 32R",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sls3_32r.jpg",
+      "description": "PreSonus StudioLive 32R",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sls3_32r.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sls3_32r.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sls3_32r.jpg",
+        "original": "/data/thumbnails/presonus_70_sls3_32r.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_ar8_bag",
+      "name": "PreSonus StudioLive AR8 Bag",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg",
+      "description": "PreSonus StudioLive AR8 Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_ab96studio",
+      "name": "PreSonus AudioBox 96 Studio",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_ab96studio.jpg",
+      "description": "PreSonus AudioBox 96 Studio",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_ab96studio.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_ab96studio.jpg",
+        "high_res": "/data/thumbnails/presonus_70_ab96studio.jpg",
+        "original": "/data/thumbnails/presonus_70_ab96studio.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_t8",
+      "name": "סאבוופר אולפני PreSonus Temblor T8",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_t8.jpg",
+      "description": "סאבוופר אולפני PreSonus Temblor T8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_t8.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_t8.jpg",
+        "high_res": "/data/thumbnails/presonus_70_t8.jpg",
+        "original": "/data/thumbnails/presonus_70_t8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air15s_cover",
+      "name": "PreSonus AIR15s Subwoofer Cover",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air15s_cover.jpg",
+      "description": "PreSonus AIR15s Subwoofer Cover",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air15s_cover.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air15s_cover.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air15s_cover.jpg",
+        "original": "/data/thumbnails/presonus_70_air15s_cover.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_ult12",
+      "name": "PreSonus ULT12",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_ult12.jpg",
+      "description": "PreSonus ULT12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_ult12.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_ult12.jpg",
+        "high_res": "/data/thumbnails/presonus_70_ult12.jpg",
+        "original": "/data/thumbnails/presonus_70_ult12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_16_0_2",
+      "name": "PreSonus StudioLive 16.0.2 USB",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_16_0_2.jpg",
+      "description": "PreSonus StudioLive 16.0.2 USB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_16_0_2.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_16_0_2.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_16_0_2.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_16_0_2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_ar12_16_bag",
+      "name": "PreSonus StudoLive AR12 or AR16 Backpack",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg",
+      "description": "PreSonus StudoLive AR12 or AR16 Backpack",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air10tote",
+      "name": "PreSonus AIR10 Tote Bag",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air10tote.jpg",
+      "description": "PreSonus AIR10 Tote Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air10tote.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air10tote.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air10tote.jpg",
+        "original": "/data/thumbnails/presonus_70_air10tote.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_hp60",
+      "name": "PreSonus HP60",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_hp60.jpg",
+      "description": "PreSonus HP60",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_hp60.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_hp60.jpg",
+        "high_res": "/data/thumbnails/presonus_70_hp60.jpg",
+        "original": "/data/thumbnails/presonus_70_hp60.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_hp4bundle",
+      "name": "PreSonus HD9/HP4 Pack",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_hp4bundle.jpg",
+      "description": "PreSonus HD9/HP4 Pack",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_hp4bundle.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_hp4bundle.jpg",
+        "high_res": "/data/thumbnails/presonus_70_hp4bundle.jpg",
+        "original": "/data/thumbnails/presonus_70_hp4bundle.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_s8",
+      "name": "מוניטור אולפני PreSonus Sceptre S8",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_s8.jpg",
+      "description": "מוניטור אולפני PreSonus Sceptre S8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_s8.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_s8.jpg",
+        "high_res": "/data/thumbnails/presonus_70_s8.jpg",
+        "original": "/data/thumbnails/presonus_70_s8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sls3_32sx",
+      "name": "PreSonus StudioLive 32SX",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sls3_32sx.jpg",
+      "description": "PreSonus StudioLive 32SX",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sls3_32sx.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sls3_32sx.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sls3_32sx.jpg",
+        "original": "/data/thumbnails/presonus_70_sls3_32sx.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_t10",
+      "name": "סאבוופר אולפני PreSonus Temblor T10",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_t10.jpg",
+      "description": "סאבוופר אולפני PreSonus Temblor T10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_t10.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_t10.jpg",
+        "high_res": "/data/thumbnails/presonus_70_t10.jpg",
+        "original": "/data/thumbnails/presonus_70_t10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sl_32_4_2ai",
+      "name": "PreSonus StudioLive 32.4.2AI",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg",
+      "description": "PreSonus StudioLive 32.4.2AI",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg",
+        "original": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sls3_64s",
+      "name": "PreSonus StudioLive 64S",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sls3_64s.jpg",
+      "description": "PreSonus StudioLive 64S",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sls3_64s.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sls3_64s.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sls3_64s.jpg",
+        "original": "/data/thumbnails/presonus_70_sls3_64s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_cdl18s_cover",
+      "name": "PreSonus CDL18s Padded Dust Cover",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_cdl18s_cover.jpg",
+      "description": "PreSonus CDL18s Padded Dust Cover",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_cdl18s_cover.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_cdl18s_cover.jpg",
+        "high_res": "/data/thumbnails/presonus_70_cdl18s_cover.jpg",
+        "original": "/data/thumbnails/presonus_70_cdl18s_cover.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sls3_16r",
+      "name": "PreSonus StudioLive 16R",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sls3_16r.jpg",
+      "description": "PreSonus StudioLive 16R",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sls3_16r.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sls3_16r.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sls3_16r.jpg",
+        "original": "/data/thumbnails/presonus_70_sls3_16r.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_r65",
+      "name": "מוניטור אולפני PreSonus R65",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_r65.jpg",
+      "description": "מוניטור אולפני PreSonus R65",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_r65.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_r65.jpg",
+        "high_res": "/data/thumbnails/presonus_70_r65.jpg",
+        "original": "/data/thumbnails/presonus_70_r65.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_earmix16m",
+      "name": "PreSonus EarMix 16M",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_earmix16m.jpg",
+      "description": "PreSonus EarMix 16M",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_earmix16m.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_earmix16m.jpg",
+        "high_res": "/data/thumbnails/presonus_70_earmix16m.jpg",
+        "original": "/data/thumbnails/presonus_70_earmix16m.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_broadcastacc",
+      "name": "ערכת אביזרים לפודקאסט PreSonus",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_broadcastacc.jpg",
+      "description": "ערכת אביזרים לפודקאסט PreSonus",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_broadcastacc.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_broadcastacc.jpg",
+        "high_res": "/data/thumbnails/presonus_70_broadcastacc.jpg",
+        "original": "/data/thumbnails/presonus_70_broadcastacc.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air18s",
+      "name": "PreSonus AIR18s",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air18s.jpg",
+      "description": "PreSonus AIR18s",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air18s.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air18s.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air18s.jpg",
+        "original": "/data/thumbnails/presonus_70_air18s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_air15",
+      "name": "PreSonus AIR15",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_air15.jpg",
+      "description": "PreSonus AIR15",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_air15.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_air15.jpg",
+        "high_res": "/data/thumbnails/presonus_70_air15.jpg",
+        "original": "/data/thumbnails/presonus_70_air15.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_ult10",
+      "name": "PreSonus ULT10",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_ult10.jpg",
+      "description": "PreSonus ULT10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_ult10.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_ult10.jpg",
+        "high_res": "/data/thumbnails/presonus_70_ult10.jpg",
+        "original": "/data/thumbnails/presonus_70_ult10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_s6",
+      "name": "מוניטור אולפני PreSonus Sceptre S6",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_s6.jpg",
+      "description": "מוניטור אולפני PreSonus Sceptre S6",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_s6.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_s6.jpg",
+        "high_res": "/data/thumbnails/presonus_70_s6.jpg",
+        "original": "/data/thumbnails/presonus_70_s6.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_faderport8",
+      "name": "PreSonus FaderPort 8",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_faderport8.jpg",
+      "description": "PreSonus FaderPort 8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_faderport8.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_faderport8.jpg",
+        "high_res": "/data/thumbnails/presonus_70_faderport8.jpg",
+        "original": "/data/thumbnails/presonus_70_faderport8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "presonus_70_sls3_24r",
+      "name": "PreSonus StudioLive 24R",
+      "brand": "presonus",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/presonus_70_sls3_24r.jpg",
+      "description": "PreSonus StudioLive 24R",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/presonus_70_sls3_24r.jpg",
+        "thumbnail": "/data/thumbnails/presonus_70_sls3_24r.jpg",
+        "high_res": "/data/thumbnails/presonus_70_sls3_24r.jpg",
+        "original": "/data/thumbnails/presonus_70_sls3_24r.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Presonus",
+  "brand_slug": "presonus",
+  "refined_at": "2026-01-24T02:50:45.051275+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "presonus_70_erispro6",
+          "name": "מוניטור אולפני PreSonus Eris Pro 6",
+          "description": "מוניטור אולפני PreSonus Eris Pro 6",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_erispro6.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_erispro6.jpg",
+            "high_res": "/data/thumbnails/presonus_70_erispro6.jpg",
+            "original": "/data/thumbnails/presonus_70_erispro6.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_eris3_5_bt",
+          "name": "זוג מוניטורים אולפניים PreSonus Eris 3.5 BT 2nd Gen",
+          "description": "זוג מוניטורים אולפניים PreSonus Eris 3.5 BT 2nd Gen",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_eris3_5_bt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_eris3_5_bt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_eris3_5_bt.jpg",
+            "original": "/data/thumbnails/presonus_70_eris3_5_bt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_eris5_bt",
+          "name": "זוג מוניטורים PreSonus Eris 5 BT 2nd Gen",
+          "description": "זוג מוניטורים PreSonus Eris 5 BT 2nd Gen",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_eris5_bt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_eris5_bt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_eris5_bt.jpg",
+            "original": "/data/thumbnails/presonus_70_eris5_bt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_eris3_5",
+          "name": "זוג מוניטורים PreSonus Eris 3.5 2nd Gen",
+          "description": "זוג מוניטורים PreSonus Eris 3.5 2nd Gen",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_eris3_5.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_eris3_5.jpg",
+            "high_res": "/data/thumbnails/presonus_70_eris3_5.jpg",
+            "original": "/data/thumbnails/presonus_70_eris3_5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantumhd2eu",
+          "name": "PreSonus Quantum HD 2 USB-C Audio Interface",
+          "description": "PreSonus Quantum HD 2 USB-C Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantumhd2eu.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantumhd2eu.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantumhd2eu.jpg",
+            "original": "/data/thumbnails/presonus_70_quantumhd2eu.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantumes2",
+          "name": "PreSonus Quantum ES 2 USB-C Audio Interface",
+          "description": "PreSonus Quantum ES 2 USB-C Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantumes2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantumes2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantumes2.jpg",
+            "original": "/data/thumbnails/presonus_70_quantumes2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_erispro8",
+          "name": "מוניטור אולפני PreSonus Eris Pro 8",
+          "description": "מוניטור אולפני PreSonus Eris Pro 8",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_erispro8.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_erispro8.jpg",
+            "high_res": "/data/thumbnails/presonus_70_erispro8.jpg",
+            "original": "/data/thumbnails/presonus_70_erispro8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_audioboxgocre",
+          "name": "PreSonus AudioBox Go Creator Bundle",
+          "description": "PreSonus AudioBox Go Creator Bundle",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_audioboxgocre.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_audioboxgocre.jpg",
+            "high_res": "/data/thumbnails/presonus_70_audioboxgocre.jpg",
+            "original": "/data/thumbnails/presonus_70_audioboxgocre.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_erisstudio4",
+          "name": "מוניטור אולפני PreSonus Eris Studio 4",
+          "description": "מוניטור אולפני PreSonus Eris Studio 4",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_erisstudio4.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_erisstudio4.jpg",
+            "high_res": "/data/thumbnails/presonus_70_erisstudio4.jpg",
+            "original": "/data/thumbnails/presonus_70_erisstudio4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_hd9",
+          "name": "אוזניות מוניטור PreSonus HD9",
+          "description": "אוזניות מוניטור PreSonus HD9",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_hd9.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_hd9.jpg",
+            "high_res": "/data/thumbnails/presonus_70_hd9.jpg",
+            "original": "/data/thumbnails/presonus_70_hd9.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studio24c",
+          "name": "PreSonus Studio 24C Audio Interface",
+          "description": "PreSonus Studio 24C Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studio24c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studio24c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studio24c.jpg",
+            "original": "/data/thumbnails/presonus_70_studio24c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_erisprosub10",
+          "name": "סאבוופר אולפני PreSonus Eris Pro Sub 10",
+          "description": "סאבוופר אולפני PreSonus Eris Pro Sub 10",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_erisprosub10.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_erisprosub10.jpg",
+            "high_res": "/data/thumbnails/presonus_70_erisprosub10.jpg",
+            "original": "/data/thumbnails/presonus_70_erisprosub10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantumhd8eu",
+          "name": "PreSonus Quantum HD 8 USB-C Audio Interface",
+          "description": "PreSonus Quantum HD 8 USB-C Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantumhd8eu.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantumhd8eu.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantumhd8eu.jpg",
+            "original": "/data/thumbnails/presonus_70_quantumhd8eu.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_hd10bt",
+          "name": "אוזניות אלחוטיות PreSonus Eris HD10BT",
+          "description": "אוזניות אלחוטיות PreSonus Eris HD10BT",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_hd10bt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_hd10bt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_hd10bt.jpg",
+            "original": "/data/thumbnails/presonus_70_hd10bt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_erissub8_bt",
+          "name": "סאבוופר אולפני PreSonus Eris SUB 8 BT",
+          "description": "סאבוופר אולפני PreSonus Eris SUB 8 BT",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_erissub8_bt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_erissub8_bt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_erissub8_bt.jpg",
+            "original": "/data/thumbnails/presonus_70_erissub8_bt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantumes4",
+          "name": "PreSonus Quantum ES 4 USB-C Audio Interface",
+          "description": "PreSonus Quantum ES 4 USB-C Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantumes4.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantumes4.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantumes4.jpg",
+            "original": "/data/thumbnails/presonus_70_quantumes4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_abusb96cb",
+          "name": "PreSonus AudioBox 96 Complete Bundle",
+          "description": "PreSonus AudioBox 96 Complete Bundle",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_abusb96cb.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_abusb96cb.jpg",
+            "high_res": "/data/thumbnails/presonus_70_abusb96cb.jpg",
+            "original": "/data/thumbnails/presonus_70_abusb96cb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_m7mk2",
+          "name": "מיקרופון קונדנסר לאולפן PreSonus M7 MKII",
+          "description": "מיקרופון קונדנסר לאולפן PreSonus M7 MKII",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_m7mk2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_m7mk2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_m7mk2.jpg",
+            "original": "/data/thumbnails/presonus_70_m7mk2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studio1810c",
+          "name": "PreSonus Studio 1810C",
+          "description": "PreSonus Studio 1810C",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studio1810c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studio1810c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studio1810c.jpg",
+            "original": "/data/thumbnails/presonus_70_studio1810c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_ar16c",
+          "name": "PreSonus StudioLive AR16c",
+          "description": "PreSonus StudioLive AR16c",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_ar16c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_ar16c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_ar16c.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_ar16c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_erisstudio5",
+          "name": "מוניטור אולפני PreSonus Eris Studio 5",
+          "description": "מוניטור אולפני PreSonus Eris Studio 5",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_erisstudio5.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_erisstudio5.jpg",
+            "high_res": "/data/thumbnails/presonus_70_erisstudio5.jpg",
+            "original": "/data/thumbnails/presonus_70_erisstudio5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_revelator",
+          "name": "מיקרופון USB קונדנסר PreSonus Revelator",
+          "description": "מיקרופון USB קונדנסר PreSonus Revelator",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_revelator.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_revelator.jpg",
+            "high_res": "/data/thumbnails/presonus_70_revelator.jpg",
+            "original": "/data/thumbnails/presonus_70_revelator.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studio26c",
+          "name": "PreSonus Studio 26C USB Audio Interface",
+          "description": "PreSonus Studio 26C USB Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studio26c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studio26c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studio26c.jpg",
+            "original": "/data/thumbnails/presonus_70_studio26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantumesult",
+          "name": "PreSonus Quantum ES Ultimate Bundle",
+          "description": "PreSonus Quantum ES Ultimate Bundle",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantumesult.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantumesult.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantumesult.jpg",
+            "original": "/data/thumbnails/presonus_70_quantumesult.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_audioboxgo",
+          "name": "PreSonus AudioBox GO",
+          "description": "PreSonus AudioBox GO",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_audioboxgo.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_audioboxgo.jpg",
+            "high_res": "/data/thumbnails/presonus_70_audioboxgo.jpg",
+            "original": "/data/thumbnails/presonus_70_audioboxgo.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_atomsq",
+          "name": "PreSonus ATOM SQ",
+          "description": "PreSonus ATOM SQ",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_atomsq.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_atomsq.jpg",
+            "high_res": "/data/thumbnails/presonus_70_atomsq.jpg",
+            "original": "/data/thumbnails/presonus_70_atomsq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_ar12c",
+          "name": "PreSonus StudioLive AR12c",
+          "description": "PreSonus StudioLive AR12c",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_ar12c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_ar12c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_ar12c.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_ar12c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_atom",
+          "name": "PreSonus ATOM",
+          "description": "PreSonus ATOM",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_atom.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_atom.jpg",
+            "high_res": "/data/thumbnails/presonus_70_atom.jpg",
+            "original": "/data/thumbnails/presonus_70_atom.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_ar8c",
+          "name": "PreSonus StudioLive AR8c",
+          "description": "PreSonus StudioLive AR8c",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_ar8c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_ar8c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_ar8c.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_ar8c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_eris4_5_bt",
+          "name": "זוג מוניטורים PreSonus Eris 4.5 BT 2nd Gen",
+          "description": "זוג מוניטורים PreSonus Eris 4.5 BT 2nd Gen",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_eris4_5_bt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_eris4_5_bt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_eris4_5_bt.jpg",
+            "original": "/data/thumbnails/presonus_70_eris4_5_bt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_revelatorio44",
+          "name": "PreSonus Revelator io44",
+          "description": "PreSonus Revelator io44",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_revelatorio44.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_revelatorio44.jpg",
+            "high_res": "/data/thumbnails/presonus_70_revelatorio44.jpg",
+            "original": "/data/thumbnails/presonus_70_revelatorio44.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_faderportv2",
+          "name": "PreSonus Faderport V2",
+          "description": "PreSonus Faderport V2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_faderportv2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_faderportv2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_faderportv2.jpg",
+            "original": "/data/thumbnails/presonus_70_faderportv2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_abitwo",
+          "name": "PreSonus AudioBox iTwo",
+          "description": "PreSonus AudioBox iTwo",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_abitwo.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_abitwo.jpg",
+            "high_res": "/data/thumbnails/presonus_70_abitwo.jpg",
+            "original": "/data/thumbnails/presonus_70_abitwo.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_hd7",
+          "name": "אוזניות מוניטור PreSonus HD7",
+          "description": "אוזניות מוניטור PreSonus HD7",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_hd7.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_hd7.jpg",
+            "high_res": "/data/thumbnails/presonus_70_hd7.jpg",
+            "original": "/data/thumbnails/presonus_70_hd7.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_revelatorio24",
+          "name": "PreSonus Revelator io24 USB Audio Interface",
+          "description": "PreSonus Revelator io24 USB Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_revelatorio24.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_revelatorio24.jpg",
+            "high_res": "/data/thumbnails/presonus_70_revelatorio24.jpg",
+            "original": "/data/thumbnails/presonus_70_revelatorio24.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_erisstudio8",
+          "name": "מוניטור אולפני PreSonus Eris Studio 8",
+          "description": "מוניטור אולפני PreSonus Eris Studio 8",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_erisstudio8.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_erisstudio8.jpg",
+            "high_res": "/data/thumbnails/presonus_70_erisstudio8.jpg",
+            "original": "/data/thumbnails/presonus_70_erisstudio8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_rml_16ai",
+          "name": "PreSonus StudioLive RML16AI",
+          "description": "PreSonus StudioLive RML16AI",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_rml_16ai.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_ispd4",
+          "name": "PreSonus ISPD-4A Isolation Pads",
+          "description": "PreSonus ISPD-4A Isolation Pads",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_ispd4.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_ispd4.jpg",
+            "high_res": "/data/thumbnails/presonus_70_ispd4.jpg",
+            "original": "/data/thumbnails/presonus_70_ispd4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studio68c",
+          "name": "PreSonus Studio 68C USB Audio Interface",
+          "description": "PreSonus Studio 68C USB Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studio68c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studio68c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studio68c.jpg",
+            "original": "/data/thumbnails/presonus_70_studio68c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_e7xt",
+          "name": "מוניטור אולפני PreSonus Eris E7 XT",
+          "description": "מוניטור אולפני PreSonus Eris E7 XT",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_e7xt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_e7xt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_e7xt.jpg",
+            "original": "/data/thumbnails/presonus_70_e7xt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantum2626",
+          "name": "PreSonus Quantum 2626",
+          "description": "PreSonus Quantum 2626",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantum2626.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantum2626.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantum2626.jpg",
+            "original": "/data/thumbnails/presonus_70_quantum2626.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studio1824c",
+          "name": "PreSonus Studio 1824C",
+          "description": "PreSonus Studio 1824C",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studio1824c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studio1824c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studio1824c.jpg",
+            "original": "/data/thumbnails/presonus_70_studio1824c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_iostation24c",
+          "name": "PreSonus ioStation 24c",
+          "description": "PreSonus ioStation 24c",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_iostation24c.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_iostation24c.jpg",
+            "high_res": "/data/thumbnails/presonus_70_iostation24c.jpg",
+            "original": "/data/thumbnails/presonus_70_iostation24c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantum2",
+          "name": "PreSonus Quantum 2",
+          "description": "PreSonus Quantum 2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantum2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantum2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantum2.jpg",
+            "original": "/data/thumbnails/presonus_70_quantum2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_microstationbt",
+          "name": "שלט מוניטורים PreSonus MicroStation BT",
+          "description": "שלט מוניטורים PreSonus MicroStation BT",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_microstationbt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_microstationbt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_microstationbt.jpg",
+            "original": "/data/thumbnails/presonus_70_microstationbt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_r80v2",
+          "name": "מוניטור אולפני PreSonus R80 V2",
+          "description": "מוניטור אולפני PreSonus R80 V2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_r80v2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_r80v2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_r80v2.jpg",
+            "original": "/data/thumbnails/presonus_70_r80v2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_e8xt",
+          "name": "מוניטור אולפני PreSonus Eris E8 XT",
+          "description": "מוניטור אולפני PreSonus Eris E8 XT",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_e8xt.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_e8xt.jpg",
+            "high_res": "/data/thumbnails/presonus_70_e8xt.jpg",
+            "original": "/data/thumbnails/presonus_70_e8xt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_tubeprev2",
+          "name": "PreSonus TubePre V2",
+          "description": "PreSonus TubePre V2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_tubeprev2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_tubeprev2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_tubeprev2.jpg",
+            "original": "/data/thumbnails/presonus_70_tubeprev2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_e44",
+          "name": "מוניטור אולפני PreSonus Eris E44",
+          "description": "מוניטור אולפני PreSonus Eris E44",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_e44.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_e44.jpg",
+            "high_res": "/data/thumbnails/presonus_70_e44.jpg",
+            "original": "/data/thumbnails/presonus_70_e44.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_quantum4848",
+          "name": "PreSonus Quantum 4848",
+          "description": "PreSonus Quantum 4848",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_quantum4848.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_quantum4848.jpg",
+            "high_res": "/data/thumbnails/presonus_70_quantum4848.jpg",
+            "original": "/data/thumbnails/presonus_70_quantum4848.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_bluetubedpv2",
+          "name": "PreSonus BlueTube DP v2",
+          "description": "PreSonus BlueTube DP v2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_bluetubedpv2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_bluetubedpv2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_bluetubedpv2.jpg",
+            "original": "/data/thumbnails/presonus_70_bluetubedpv2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_pd70",
+          "name": "מיקרופון דינמי לשידור PreSonus PD-70",
+          "description": "מיקרופון דינמי לשידור PreSonus PD-70",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_pd70.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_pd70.jpg",
+            "high_res": "/data/thumbnails/presonus_70_pd70.jpg",
+            "original": "/data/thumbnails/presonus_70_pd70.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studioch",
+          "name": "PreSonus Studio Channel",
+          "description": "PreSonus Studio Channel",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studioch.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studioch.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studioch.jpg",
+            "original": "/data/thumbnails/presonus_70_studioch.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studio1_7pro",
+          "name": "PreSonus Studio One Pro 7",
+          "description": "PreSonus Studio One Pro 7",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studio1_7pro.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studio1_7pro.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studio1_7pro.jpg",
+            "original": "/data/thumbnails/presonus_70_studio1_7pro.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_studio1_7pro_e",
+          "name": "PreSonus Studio One Pro 7 - Academic",
+          "description": "PreSonus Studio One Pro 7 - Academic",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg",
+            "high_res": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg",
+            "original": "/data/thumbnails/presonus_70_studio1_7pro_e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_pm_2",
+          "name": "זוג מיקרופונים קונדנסר PreSonus PM-2",
+          "description": "זוג מיקרופונים קונדנסר PreSonus PM-2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_pm_2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_pm_2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_pm_2.jpg",
+            "original": "/data/thumbnails/presonus_70_pm_2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_px_1",
+          "name": "מיקרופון קונדנסר לאולפן PreSonus PX-1",
+          "description": "מיקרופון קונדנסר לאולפן PreSonus PX-1",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_px_1.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_px_1.jpg",
+            "high_res": "/data/thumbnails/presonus_70_px_1.jpg",
+            "original": "/data/thumbnails/presonus_70_px_1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_r65v2",
+          "name": "מוניטור אולפני PreSonus R65 V2",
+          "description": "מוניטור אולפני PreSonus R65 V2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_r65v2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_r65v2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_r65v2.jpg",
+            "original": "/data/thumbnails/presonus_70_r65v2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_dm7",
+          "name": "סט מיקרופונים לתופים Presonus DM-7",
+          "description": "סט מיקרופונים לתופים Presonus DM-7",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_dm7.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_dm7.jpg",
+            "high_res": "/data/thumbnails/presonus_70_dm7.jpg",
+            "original": "/data/thumbnails/presonus_70_dm7.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_r80",
+          "name": "מוניטור אולפני PreSonus R80",
+          "description": "מוניטור אולפני PreSonus R80",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_r80.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_r80.jpg",
+            "high_res": "/data/thumbnails/presonus_70_r80.jpg",
+            "original": "/data/thumbnails/presonus_70_r80.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air15s",
+          "name": "PreSonus AIR15s",
+          "description": "PreSonus AIR15s",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air15s.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air15s.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air15s.jpg",
+            "original": "/data/thumbnails/presonus_70_air15s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sw5e",
+          "name": "PreSonus SW5E",
+          "description": "PreSonus SW5E",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sw5e.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sw5e.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sw5e.jpg",
+            "original": "/data/thumbnails/presonus_70_sw5e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sls3_32s",
+          "name": "PreSonus StudioLive 32S",
+          "description": "PreSonus StudioLive 32S",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sls3_32s.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sls3_32s.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sls3_32s.jpg",
+            "original": "/data/thumbnails/presonus_70_sls3_32s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_monitorstatv2",
+          "name": "PreSonus Monitor Station V2",
+          "description": "PreSonus Monitor Station V2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_monitorstatv2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_monitorstatv2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_monitorstatv2.jpg",
+            "original": "/data/thumbnails/presonus_70_monitorstatv2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air10",
+          "name": "PreSonus AIR10",
+          "description": "PreSonus AIR10",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air10.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air10.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air10.jpg",
+            "original": "/data/thumbnails/presonus_70_air10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sls3_32sc",
+          "name": "PreSonus StudioLive 32SC",
+          "description": "PreSonus StudioLive 32SC",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sls3_32sc.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sls3_32sc.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sls3_32sc.jpg",
+            "original": "/data/thumbnails/presonus_70_sls3_32sc.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_centstation_",
+          "name": "PreSonus Central Station PLUS",
+          "description": "PreSonus Central Station PLUS",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_centstation_.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_centstation_.jpg",
+            "high_res": "/data/thumbnails/presonus_70_centstation_.jpg",
+            "original": "/data/thumbnails/presonus_70_centstation_.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air12",
+          "name": "PreSonus AIR12",
+          "description": "PreSonus AIR12",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air12.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air12.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air12.jpg",
+            "original": "/data/thumbnails/presonus_70_air12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_nsb16_8",
+          "name": "PreSonus NSB 16.8",
+          "description": "PreSonus NSB 16.8",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_nsb16_8.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_nsb16_8.jpg",
+            "high_res": "/data/thumbnails/presonus_70_nsb16_8.jpg",
+            "original": "/data/thumbnails/presonus_70_nsb16_8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_cdl18s",
+          "name": "PreSonus CDL18s",
+          "description": "PreSonus CDL18s",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_cdl18s.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_cdl18s.jpg",
+            "high_res": "/data/thumbnails/presonus_70_cdl18s.jpg",
+            "original": "/data/thumbnails/presonus_70_cdl18s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_nsb8_8",
+          "name": "PreSonus NSB 8.8",
+          "description": "PreSonus NSB 8.8",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_nsb8_8.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_nsb8_8.jpg",
+            "high_res": "/data/thumbnails/presonus_70_nsb8_8.jpg",
+            "original": "/data/thumbnails/presonus_70_nsb8_8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_prm1",
+          "name": "מיקרופון מדידה מקצועי PreSonus PRM1",
+          "description": "מיקרופון מדידה מקצועי PreSonus PRM1",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_prm1.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_prm1.jpg",
+            "high_res": "/data/thumbnails/presonus_70_prm1.jpg",
+            "original": "/data/thumbnails/presonus_70_prm1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_faderport",
+          "name": "PreSonus FaderPort",
+          "description": "PreSonus FaderPort",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_faderport.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_faderport.jpg",
+            "high_res": "/data/thumbnails/presonus_70_faderport.jpg",
+            "original": "/data/thumbnails/presonus_70_faderport.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_hp2",
+          "name": "PreSonus HP2",
+          "description": "PreSonus HP2",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_hp2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_hp2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_hp2.jpg",
+            "original": "/data/thumbnails/presonus_70_hp2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_32_4_2_ipadst",
+          "name": "PreSonus Mixer iPad Stand",
+          "description": "PreSonus Mixer iPad Stand",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_32_4_2_ipadst.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_hp4",
+          "name": "PreSonus HP4",
+          "description": "PreSonus HP4",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_hp4.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_hp4.jpg",
+            "high_res": "/data/thumbnails/presonus_70_hp4.jpg",
+            "original": "/data/thumbnails/presonus_70_hp4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air12tote",
+          "name": "PreSonus AIR12 Tote Bag",
+          "description": "PreSonus AIR12 Tote Bag",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air12tote.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air12tote.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air12tote.jpg",
+            "original": "/data/thumbnails/presonus_70_air12tote.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_faderport16",
+          "name": "PreSonus FaderPort 16",
+          "description": "PreSonus FaderPort 16",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_faderport16.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_faderport16.jpg",
+            "high_res": "/data/thumbnails/presonus_70_faderport16.jpg",
+            "original": "/data/thumbnails/presonus_70_faderport16.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sls3_32r",
+          "name": "PreSonus StudioLive 32R",
+          "description": "PreSonus StudioLive 32R",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sls3_32r.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sls3_32r.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sls3_32r.jpg",
+            "original": "/data/thumbnails/presonus_70_sls3_32r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_ar8_bag",
+          "name": "PreSonus StudioLive AR8 Bag",
+          "description": "PreSonus StudioLive AR8 Bag",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_ar8_bag.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_ab96studio",
+          "name": "PreSonus AudioBox 96 Studio",
+          "description": "PreSonus AudioBox 96 Studio",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_ab96studio.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_ab96studio.jpg",
+            "high_res": "/data/thumbnails/presonus_70_ab96studio.jpg",
+            "original": "/data/thumbnails/presonus_70_ab96studio.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_t8",
+          "name": "סאבוופר אולפני PreSonus Temblor T8",
+          "description": "סאבוופר אולפני PreSonus Temblor T8",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_t8.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_t8.jpg",
+            "high_res": "/data/thumbnails/presonus_70_t8.jpg",
+            "original": "/data/thumbnails/presonus_70_t8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air15s_cover",
+          "name": "PreSonus AIR15s Subwoofer Cover",
+          "description": "PreSonus AIR15s Subwoofer Cover",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air15s_cover.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air15s_cover.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air15s_cover.jpg",
+            "original": "/data/thumbnails/presonus_70_air15s_cover.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_ult12",
+          "name": "PreSonus ULT12",
+          "description": "PreSonus ULT12",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_ult12.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_ult12.jpg",
+            "high_res": "/data/thumbnails/presonus_70_ult12.jpg",
+            "original": "/data/thumbnails/presonus_70_ult12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_16_0_2",
+          "name": "PreSonus StudioLive 16.0.2 USB",
+          "description": "PreSonus StudioLive 16.0.2 USB",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_16_0_2.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_16_0_2.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_16_0_2.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_16_0_2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_ar12_16_bag",
+          "name": "PreSonus StudoLive AR12 or AR16 Backpack",
+          "description": "PreSonus StudoLive AR12 or AR16 Backpack",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_ar12_16_bag.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air10tote",
+          "name": "PreSonus AIR10 Tote Bag",
+          "description": "PreSonus AIR10 Tote Bag",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air10tote.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air10tote.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air10tote.jpg",
+            "original": "/data/thumbnails/presonus_70_air10tote.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_hp60",
+          "name": "PreSonus HP60",
+          "description": "PreSonus HP60",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_hp60.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_hp60.jpg",
+            "high_res": "/data/thumbnails/presonus_70_hp60.jpg",
+            "original": "/data/thumbnails/presonus_70_hp60.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_hp4bundle",
+          "name": "PreSonus HD9/HP4 Pack",
+          "description": "PreSonus HD9/HP4 Pack",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_hp4bundle.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_hp4bundle.jpg",
+            "high_res": "/data/thumbnails/presonus_70_hp4bundle.jpg",
+            "original": "/data/thumbnails/presonus_70_hp4bundle.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_s8",
+          "name": "מוניטור אולפני PreSonus Sceptre S8",
+          "description": "מוניטור אולפני PreSonus Sceptre S8",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_s8.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_s8.jpg",
+            "high_res": "/data/thumbnails/presonus_70_s8.jpg",
+            "original": "/data/thumbnails/presonus_70_s8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sls3_32sx",
+          "name": "PreSonus StudioLive 32SX",
+          "description": "PreSonus StudioLive 32SX",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sls3_32sx.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sls3_32sx.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sls3_32sx.jpg",
+            "original": "/data/thumbnails/presonus_70_sls3_32sx.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_t10",
+          "name": "סאבוופר אולפני PreSonus Temblor T10",
+          "description": "סאבוופר אולפני PreSonus Temblor T10",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_t10.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_t10.jpg",
+            "high_res": "/data/thumbnails/presonus_70_t10.jpg",
+            "original": "/data/thumbnails/presonus_70_t10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sl_32_4_2ai",
+          "name": "PreSonus StudioLive 32.4.2AI",
+          "description": "PreSonus StudioLive 32.4.2AI",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg",
+            "original": "/data/thumbnails/presonus_70_sl_32_4_2ai.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sls3_64s",
+          "name": "PreSonus StudioLive 64S",
+          "description": "PreSonus StudioLive 64S",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sls3_64s.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sls3_64s.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sls3_64s.jpg",
+            "original": "/data/thumbnails/presonus_70_sls3_64s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_cdl18s_cover",
+          "name": "PreSonus CDL18s Padded Dust Cover",
+          "description": "PreSonus CDL18s Padded Dust Cover",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_cdl18s_cover.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_cdl18s_cover.jpg",
+            "high_res": "/data/thumbnails/presonus_70_cdl18s_cover.jpg",
+            "original": "/data/thumbnails/presonus_70_cdl18s_cover.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sls3_16r",
+          "name": "PreSonus StudioLive 16R",
+          "description": "PreSonus StudioLive 16R",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sls3_16r.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sls3_16r.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sls3_16r.jpg",
+            "original": "/data/thumbnails/presonus_70_sls3_16r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_r65",
+          "name": "מוניטור אולפני PreSonus R65",
+          "description": "מוניטור אולפני PreSonus R65",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_r65.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_r65.jpg",
+            "high_res": "/data/thumbnails/presonus_70_r65.jpg",
+            "original": "/data/thumbnails/presonus_70_r65.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_earmix16m",
+          "name": "PreSonus EarMix 16M",
+          "description": "PreSonus EarMix 16M",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_earmix16m.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_earmix16m.jpg",
+            "high_res": "/data/thumbnails/presonus_70_earmix16m.jpg",
+            "original": "/data/thumbnails/presonus_70_earmix16m.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_broadcastacc",
+          "name": "ערכת אביזרים לפודקאסט PreSonus",
+          "description": "ערכת אביזרים לפודקאסט PreSonus",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_broadcastacc.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_broadcastacc.jpg",
+            "high_res": "/data/thumbnails/presonus_70_broadcastacc.jpg",
+            "original": "/data/thumbnails/presonus_70_broadcastacc.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air18s",
+          "name": "PreSonus AIR18s",
+          "description": "PreSonus AIR18s",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air18s.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air18s.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air18s.jpg",
+            "original": "/data/thumbnails/presonus_70_air18s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_air15",
+          "name": "PreSonus AIR15",
+          "description": "PreSonus AIR15",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_air15.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_air15.jpg",
+            "high_res": "/data/thumbnails/presonus_70_air15.jpg",
+            "original": "/data/thumbnails/presonus_70_air15.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_ult10",
+          "name": "PreSonus ULT10",
+          "description": "PreSonus ULT10",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_ult10.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_ult10.jpg",
+            "high_res": "/data/thumbnails/presonus_70_ult10.jpg",
+            "original": "/data/thumbnails/presonus_70_ult10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_s6",
+          "name": "מוניטור אולפני PreSonus Sceptre S6",
+          "description": "מוניטור אולפני PreSonus Sceptre S6",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_s6.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_s6.jpg",
+            "high_res": "/data/thumbnails/presonus_70_s6.jpg",
+            "original": "/data/thumbnails/presonus_70_s6.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_faderport8",
+          "name": "PreSonus FaderPort 8",
+          "description": "PreSonus FaderPort 8",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_faderport8.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_faderport8.jpg",
+            "high_res": "/data/thumbnails/presonus_70_faderport8.jpg",
+            "original": "/data/thumbnails/presonus_70_faderport8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "presonus_70_sls3_24r",
+          "name": "PreSonus StudioLive 24R",
+          "description": "PreSonus StudioLive 24R",
+          "images": {
+            "main": "/data/thumbnails/presonus_70_sls3_24r.jpg",
+            "thumbnail": "/data/thumbnails/presonus_70_sls3_24r.jpg",
+            "high_res": "/data/thumbnails/presonus_70_sls3_24r.jpg",
+            "original": "/data/thumbnails/presonus_70_sls3_24r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

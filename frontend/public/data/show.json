@@ -1,0 +1,644 @@
+{
+  "brand_identity": {
+    "id": "show",
+    "name": "SHOW",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/show_logo.png",
+    "taxonomy_stats": {
+      "validated": 20,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "show_03_wa320_vxm298",
+      "name": "Show WA-320",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_wa320_vxm298.jpg",
+      "description": "Show WA-320",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_wa320_vxm298.jpg",
+        "thumbnail": "/data/thumbnails/show_03_wa320_vxm298.jpg",
+        "high_res": "/data/thumbnails/show_03_wa320_vxm298.jpg",
+        "original": "/data/thumbnails/show_03_wa320_vxm298.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_wjp21r_vxm298",
+      "name": "Show WJP-21R",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_wjp21r_vxm298.jpg",
+      "description": "Show WJP-21R",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_wjp21r_vxm298.jpg",
+        "thumbnail": "/data/thumbnails/show_03_wjp21r_vxm298.jpg",
+        "high_res": "/data/thumbnails/show_03_wjp21r_vxm298.jpg",
+        "original": "/data/thumbnails/show_03_wjp21r_vxm298.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_wap10",
+      "name": "Show WAP-10",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_wap10.jpg",
+      "description": "Show WAP-10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_wap10.jpg",
+        "thumbnail": "/data/thumbnails/show_03_wap10.jpg",
+        "high_res": "/data/thumbnails/show_03_wap10.jpg",
+        "original": "/data/thumbnails/show_03_wap10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_sc35a",
+      "name": "Show SC35A",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_sc35a.jpg",
+      "description": "Show SC35A",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_sc35a.jpg",
+        "thumbnail": "/data/thumbnails/show_03_sc35a.jpg",
+        "high_res": "/data/thumbnails/show_03_sc35a.jpg",
+        "original": "/data/thumbnails/show_03_sc35a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_sc25p",
+      "name": "Show SC-25P",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_sc25p.jpg",
+      "description": "Show SC-25P",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_sc25p.jpg",
+        "thumbnail": "/data/thumbnails/show_03_sc25p.jpg",
+        "high_res": "/data/thumbnails/show_03_sc25p.jpg",
+        "original": "/data/thumbnails/show_03_sc25p.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csp220wp",
+      "name": "Show CSP-220WP",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csp220wp.jpg",
+      "description": "Show CSP-220WP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csp220wp.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csp220wp.jpg",
+        "high_res": "/data/thumbnails/show_03_csp220wp.jpg",
+        "original": "/data/thumbnails/show_03_csp220wp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csl6120",
+      "name": "Show CSL-6120",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csl6120.jpg",
+      "description": "Show CSL-6120",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csl6120.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csl6120.jpg",
+        "high_res": "/data/thumbnails/show_03_csl6120.jpg",
+        "original": "/data/thumbnails/show_03_csl6120.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csl810t",
+      "name": "Show CSL-810T",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csl810t.jpg",
+      "description": "Show CSL-810T",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csl810t.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csl810t.jpg",
+        "high_res": "/data/thumbnails/show_03_csl810t.jpg",
+        "original": "/data/thumbnails/show_03_csl810t.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csr_205",
+      "name": "Show CSR-205",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csr_205.jpg",
+      "description": "Show CSR-205",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csr_205.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csr_205.jpg",
+        "high_res": "/data/thumbnails/show_03_csr_205.jpg",
+        "original": "/data/thumbnails/show_03_csr_205.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csr_306y",
+      "name": "Show CSR-306Y",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csr_306y.jpg",
+      "description": "Show CSR-306Y",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csr_306y.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csr_306y.jpg",
+        "high_res": "/data/thumbnails/show_03_csr_306y.jpg",
+        "original": "/data/thumbnails/show_03_csr_306y.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_b2000_2",
+      "name": "Show B-2000.2",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_b2000_2.jpg",
+      "description": "Show B-2000.2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_b2000_2.jpg",
+        "thumbnail": "/data/thumbnails/show_03_b2000_2.jpg",
+        "high_res": "/data/thumbnails/show_03_b2000_2.jpg",
+        "original": "/data/thumbnails/show_03_b2000_2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_tu80ml",
+      "name": "Show TU-80ML",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_tu80ml.jpg",
+      "description": "Show TU-80ML",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_tu80ml.jpg",
+        "thumbnail": "/data/thumbnails/show_03_tu80ml.jpg",
+        "high_res": "/data/thumbnails/show_03_tu80ml.jpg",
+        "original": "/data/thumbnails/show_03_tu80ml.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_ta506m",
+      "name": "Show TA-506M",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_ta506m.jpg",
+      "description": "Show TA-506M",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_ta506m.jpg",
+        "thumbnail": "/data/thumbnails/show_03_ta506m.jpg",
+        "high_res": "/data/thumbnails/show_03_ta506m.jpg",
+        "original": "/data/thumbnails/show_03_ta506m.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csb175cv",
+      "name": "Show CSB-175CV",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csb175cv.jpg",
+      "description": "Show CSB-175CV",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csb175cv.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csb175cv.jpg",
+        "high_res": "/data/thumbnails/show_03_csb175cv.jpg",
+        "original": "/data/thumbnails/show_03_csb175cv.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_cs640",
+      "name": "Show CS-640",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_cs640.jpg",
+      "description": "Show CS-640",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_cs640.jpg",
+        "thumbnail": "/data/thumbnails/show_03_cs640.jpg",
+        "high_res": "/data/thumbnails/show_03_cs640.jpg",
+        "original": "/data/thumbnails/show_03_cs640.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csr_306",
+      "name": "Show CSR-306",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csr_306.jpg",
+      "description": "Show CSR-306",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csr_306.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csr_306.jpg",
+        "high_res": "/data/thumbnails/show_03_csr_306.jpg",
+        "original": "/data/thumbnails/show_03_csr_306.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_sa450m",
+      "name": "Show SA-450M",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_sa450m.jpg",
+      "description": "Show SA-450M",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_sa450m.jpg",
+        "thumbnail": "/data/thumbnails/show_03_sa450m.jpg",
+        "high_res": "/data/thumbnails/show_03_sa450m.jpg",
+        "original": "/data/thumbnails/show_03_sa450m.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csb175",
+      "name": "Show CSB175",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csb175.jpg",
+      "description": "Show CSB175",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csb175.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csb175.jpg",
+        "high_res": "/data/thumbnails/show_03_csb175.jpg",
+        "original": "/data/thumbnails/show_03_csb175.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_csl150cv",
+      "name": "Show CSL-150CV",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_csl150cv.jpg",
+      "description": "Show CSL-150CV",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_csl150cv.jpg",
+        "thumbnail": "/data/thumbnails/show_03_csl150cv.jpg",
+        "high_res": "/data/thumbnails/show_03_csl150cv.jpg",
+        "original": "/data/thumbnails/show_03_csl150cv.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "show_03_tu150",
+      "name": "Show TU-150",
+      "brand": "show",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/show_03_tu150.jpg",
+      "description": "Show TU-150",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/show_03_tu150.jpg",
+        "thumbnail": "/data/thumbnails/show_03_tu150.jpg",
+        "high_res": "/data/thumbnails/show_03_tu150.jpg",
+        "original": "/data/thumbnails/show_03_tu150.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Show",
+  "brand_slug": "show",
+  "refined_at": "2026-01-24T02:50:45.048436+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "show_03_wa320_vxm298",
+          "name": "Show WA-320",
+          "description": "Show WA-320",
+          "images": {
+            "main": "/data/thumbnails/show_03_wa320_vxm298.jpg",
+            "thumbnail": "/data/thumbnails/show_03_wa320_vxm298.jpg",
+            "high_res": "/data/thumbnails/show_03_wa320_vxm298.jpg",
+            "original": "/data/thumbnails/show_03_wa320_vxm298.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_wjp21r_vxm298",
+          "name": "Show WJP-21R",
+          "description": "Show WJP-21R",
+          "images": {
+            "main": "/data/thumbnails/show_03_wjp21r_vxm298.jpg",
+            "thumbnail": "/data/thumbnails/show_03_wjp21r_vxm298.jpg",
+            "high_res": "/data/thumbnails/show_03_wjp21r_vxm298.jpg",
+            "original": "/data/thumbnails/show_03_wjp21r_vxm298.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_wap10",
+          "name": "Show WAP-10",
+          "description": "Show WAP-10",
+          "images": {
+            "main": "/data/thumbnails/show_03_wap10.jpg",
+            "thumbnail": "/data/thumbnails/show_03_wap10.jpg",
+            "high_res": "/data/thumbnails/show_03_wap10.jpg",
+            "original": "/data/thumbnails/show_03_wap10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_sc35a",
+          "name": "Show SC35A",
+          "description": "Show SC35A",
+          "images": {
+            "main": "/data/thumbnails/show_03_sc35a.jpg",
+            "thumbnail": "/data/thumbnails/show_03_sc35a.jpg",
+            "high_res": "/data/thumbnails/show_03_sc35a.jpg",
+            "original": "/data/thumbnails/show_03_sc35a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_sc25p",
+          "name": "Show SC-25P",
+          "description": "Show SC-25P",
+          "images": {
+            "main": "/data/thumbnails/show_03_sc25p.jpg",
+            "thumbnail": "/data/thumbnails/show_03_sc25p.jpg",
+            "high_res": "/data/thumbnails/show_03_sc25p.jpg",
+            "original": "/data/thumbnails/show_03_sc25p.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csp220wp",
+          "name": "Show CSP-220WP",
+          "description": "Show CSP-220WP",
+          "images": {
+            "main": "/data/thumbnails/show_03_csp220wp.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csp220wp.jpg",
+            "high_res": "/data/thumbnails/show_03_csp220wp.jpg",
+            "original": "/data/thumbnails/show_03_csp220wp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csl6120",
+          "name": "Show CSL-6120",
+          "description": "Show CSL-6120",
+          "images": {
+            "main": "/data/thumbnails/show_03_csl6120.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csl6120.jpg",
+            "high_res": "/data/thumbnails/show_03_csl6120.jpg",
+            "original": "/data/thumbnails/show_03_csl6120.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csl810t",
+          "name": "Show CSL-810T",
+          "description": "Show CSL-810T",
+          "images": {
+            "main": "/data/thumbnails/show_03_csl810t.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csl810t.jpg",
+            "high_res": "/data/thumbnails/show_03_csl810t.jpg",
+            "original": "/data/thumbnails/show_03_csl810t.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csr_205",
+          "name": "Show CSR-205",
+          "description": "Show CSR-205",
+          "images": {
+            "main": "/data/thumbnails/show_03_csr_205.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csr_205.jpg",
+            "high_res": "/data/thumbnails/show_03_csr_205.jpg",
+            "original": "/data/thumbnails/show_03_csr_205.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csr_306y",
+          "name": "Show CSR-306Y",
+          "description": "Show CSR-306Y",
+          "images": {
+            "main": "/data/thumbnails/show_03_csr_306y.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csr_306y.jpg",
+            "high_res": "/data/thumbnails/show_03_csr_306y.jpg",
+            "original": "/data/thumbnails/show_03_csr_306y.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_b2000_2",
+          "name": "Show B-2000.2",
+          "description": "Show B-2000.2",
+          "images": {
+            "main": "/data/thumbnails/show_03_b2000_2.jpg",
+            "thumbnail": "/data/thumbnails/show_03_b2000_2.jpg",
+            "high_res": "/data/thumbnails/show_03_b2000_2.jpg",
+            "original": "/data/thumbnails/show_03_b2000_2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_tu80ml",
+          "name": "Show TU-80ML",
+          "description": "Show TU-80ML",
+          "images": {
+            "main": "/data/thumbnails/show_03_tu80ml.jpg",
+            "thumbnail": "/data/thumbnails/show_03_tu80ml.jpg",
+            "high_res": "/data/thumbnails/show_03_tu80ml.jpg",
+            "original": "/data/thumbnails/show_03_tu80ml.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_ta506m",
+          "name": "Show TA-506M",
+          "description": "Show TA-506M",
+          "images": {
+            "main": "/data/thumbnails/show_03_ta506m.jpg",
+            "thumbnail": "/data/thumbnails/show_03_ta506m.jpg",
+            "high_res": "/data/thumbnails/show_03_ta506m.jpg",
+            "original": "/data/thumbnails/show_03_ta506m.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csb175cv",
+          "name": "Show CSB-175CV",
+          "description": "Show CSB-175CV",
+          "images": {
+            "main": "/data/thumbnails/show_03_csb175cv.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csb175cv.jpg",
+            "high_res": "/data/thumbnails/show_03_csb175cv.jpg",
+            "original": "/data/thumbnails/show_03_csb175cv.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_cs640",
+          "name": "Show CS-640",
+          "description": "Show CS-640",
+          "images": {
+            "main": "/data/thumbnails/show_03_cs640.jpg",
+            "thumbnail": "/data/thumbnails/show_03_cs640.jpg",
+            "high_res": "/data/thumbnails/show_03_cs640.jpg",
+            "original": "/data/thumbnails/show_03_cs640.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csr_306",
+          "name": "Show CSR-306",
+          "description": "Show CSR-306",
+          "images": {
+            "main": "/data/thumbnails/show_03_csr_306.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csr_306.jpg",
+            "high_res": "/data/thumbnails/show_03_csr_306.jpg",
+            "original": "/data/thumbnails/show_03_csr_306.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_sa450m",
+          "name": "Show SA-450M",
+          "description": "Show SA-450M",
+          "images": {
+            "main": "/data/thumbnails/show_03_sa450m.jpg",
+            "thumbnail": "/data/thumbnails/show_03_sa450m.jpg",
+            "high_res": "/data/thumbnails/show_03_sa450m.jpg",
+            "original": "/data/thumbnails/show_03_sa450m.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csb175",
+          "name": "Show CSB175",
+          "description": "Show CSB175",
+          "images": {
+            "main": "/data/thumbnails/show_03_csb175.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csb175.jpg",
+            "high_res": "/data/thumbnails/show_03_csb175.jpg",
+            "original": "/data/thumbnails/show_03_csb175.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_csl150cv",
+          "name": "Show CSL-150CV",
+          "description": "Show CSL-150CV",
+          "images": {
+            "main": "/data/thumbnails/show_03_csl150cv.jpg",
+            "thumbnail": "/data/thumbnails/show_03_csl150cv.jpg",
+            "high_res": "/data/thumbnails/show_03_csl150cv.jpg",
+            "original": "/data/thumbnails/show_03_csl150cv.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "show_03_tu150",
+          "name": "Show TU-150",
+          "description": "Show TU-150",
+          "images": {
+            "main": "/data/thumbnails/show_03_tu150.jpg",
+            "thumbnail": "/data/thumbnails/show_03_tu150.jpg",
+            "high_res": "/data/thumbnails/show_03_tu150.jpg",
+            "original": "/data/thumbnails/show_03_tu150.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

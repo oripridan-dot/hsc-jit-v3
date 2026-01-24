@@ -1,0 +1,4302 @@
+{
+  "brand_identity": {
+    "id": "guild",
+    "name": "GUILD",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/guild_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 138,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "guild_77_om320_nat",
+      "name": "גיטרה אקוסטית Guild OM-320 Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om320_nat.jpg",
+      "description": "גיטרה אקוסטית Guild OM-320 Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om320_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om320_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_om320_nat.jpg",
+        "original": "/data/thumbnails/guild_77_om320_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_traveler",
+      "name": "גיטרה אקוסטית Guild Travel Mahogany",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_traveler.jpg",
+      "description": "גיטרה אקוסטית Guild Travel Mahogany",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_traveler.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_traveler.jpg",
+        "high_res": "/data/thumbnails/guild_77_traveler.jpg",
+        "original": "/data/thumbnails/guild_77_traveler.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d320_nat",
+      "name": "גיטרה אקוסטית Guild D-320 Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d320_nat.jpg",
+      "description": "גיטרה אקוסטית Guild D-320 Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d320_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d320_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_d320_nat.jpg",
+        "original": "/data/thumbnails/guild_77_d320_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_travelsp",
+      "name": "גיטרה אקוסטית Guild Travel Spruce",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_travelsp.jpg",
+      "description": "גיטרה אקוסטית Guild Travel Spruce",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_travelsp.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_travelsp.jpg",
+        "high_res": "/data/thumbnails/guild_77_travelsp.jpg",
+        "original": "/data/thumbnails/guild_77_travelsp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d340_nat",
+      "name": "גיטרה אקוסטית Guild D-340 Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d340_nat.jpg",
+      "description": "גיטרה אקוסטית Guild D-340 Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d340_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d340_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_d340_nat.jpg",
+        "original": "/data/thumbnails/guild_77_d340_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d140",
+      "name": "גיטרה אקוסטית Guild D140 Dreadnought Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d140.jpg",
+      "description": "גיטרה אקוסטית Guild D140 Dreadnought Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d140.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d140.jpg",
+        "high_res": "/data/thumbnails/guild_77_d140.jpg",
+        "original": "/data/thumbnails/guild_77_d140.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d50_atb",
+      "name": "גיטרה אקוסטית Guild D-50 Standard Antique Burst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d50_atb.jpg",
+      "description": "גיטרה אקוסטית Guild D-50 Standard Antique Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d50_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d50_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_d50_atb.jpg",
+        "original": "/data/thumbnails/guild_77_d50_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om240e",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-240E",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om240e.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-240E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om240e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om240e.jpg",
+        "high_res": "/data/thumbnails/guild_77_om240e.jpg",
+        "original": "/data/thumbnails/guild_77_om240e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om340_nat",
+      "name": "גיטרה אקוסטית Guild OM-340 Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om340_nat.jpg",
+      "description": "גיטרה אקוסטית Guild OM-340 Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om340_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om340_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_om340_nat.jpg",
+        "original": "/data/thumbnails/guild_77_om340_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f2512e",
+      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Maple",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f2512e.jpg",
+      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Maple",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f2512e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f2512e.jpg",
+        "high_res": "/data/thumbnails/guild_77_f2512e.jpg",
+        "original": "/data/thumbnails/guild_77_f2512e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om240ce_dbb",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om240ce_dbb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om240ce_dbb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om240ce_dbb.jpg",
+        "high_res": "/data/thumbnails/guild_77_om240ce_dbb.jpg",
+        "original": "/data/thumbnails/guild_77_om240ce_dbb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_s100polara_wh",
+      "name": "גיטרה חשמלית Guild S-100 Polara White",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_s100polara_wh.jpg",
+      "description": "גיטרה חשמלית Guild S-100 Polara White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_s100polara_wh.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_s100polara_wh.jpg",
+        "high_res": "/data/thumbnails/guild_77_s100polara_wh.jpg",
+        "original": "/data/thumbnails/guild_77_s100polara_wh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_s100polara_bk",
+      "name": "גיטרה חשמלית Guild S-100 Polara Black",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_s100polara_bk.jpg",
+      "description": "גיטרה חשמלית Guild S-100 Polara Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_s100polara_bk.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_s100polara_bk.jpg",
+        "high_res": "/data/thumbnails/guild_77_s100polara_bk.jpg",
+        "original": "/data/thumbnails/guild_77_s100polara_bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jumbo_jr_mn",
+      "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Mahogany",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Mahogany",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg",
+        "high_res": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg",
+        "original": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_ds240",
+      "name": "גיטרה אקוסטית Guild DS-240 Memoir",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_ds240.jpg",
+      "description": "גיטרה אקוסטית Guild DS-240 Memoir",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_ds240.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_ds240.jpg",
+        "high_res": "/data/thumbnails/guild_77_ds240.jpg",
+        "original": "/data/thumbnails/guild_77_ds240.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireiscsfg",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireiscsfg.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireiscsfg.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireiscsfg.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireiscsfg.jpg",
+        "original": "/data/thumbnails/guild_77_starfireiscsfg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_b240e",
+      "name": "גיטרה בס אקוסטית מוגברת Guild B-240E",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_b240e.jpg",
+      "description": "גיטרה בס אקוסטית מוגברת Guild B-240E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_b240e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_b240e.jpg",
+        "high_res": "/data/thumbnails/guild_77_b240e.jpg",
+        "original": "/data/thumbnails/guild_77_b240e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_a20",
+      "name": "גיטרה אקוסטית Guild A-20 Marley",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_a20.jpg",
+      "description": "גיטרה אקוסטית Guild A-20 Marley",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_a20.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_a20.jpg",
+        "high_res": "/data/thumbnails/guild_77_a20.jpg",
+        "original": "/data/thumbnails/guild_77_a20.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_bt258e",
+      "name": "גיטרה אקוסטית מוגברת 8 מיתרים Guild BT-258E Deluxe Baritone",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_bt258e.jpg",
+      "description": "גיטרה אקוסטית מוגברת 8 מיתרים Guild BT-258E Deluxe Baritone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_bt258e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_bt258e.jpg",
+        "high_res": "/data/thumbnails/guild_77_bt258e.jpg",
+        "original": "/data/thumbnails/guild_77_bt258e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d260ce",
+      "name": "גיטרה אקוסטית מוגברת Guild D-260CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d260ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-260CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d260ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d260ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_d260ce.jpg",
+        "original": "/data/thumbnails/guild_77_d260ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_surflinerdlx_rose",
+      "name": "גיטרה חשמלית Guild Surfliner Deluxe Rose Quartz Metallic",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg",
+      "description": "גיטרה חשמלית Guild Surfliner Deluxe Rose Quartz Metallic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg",
+        "high_res": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg",
+        "original": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d240e_fm",
+      "name": "גיטרה אקוסטית מוגברת Guild D-240E-FM",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d240e_fm.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-240E-FM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d240e_fm.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d240e_fm.jpg",
+        "high_res": "/data/thumbnails/guild_77_d240e_fm.jpg",
+        "original": "/data/thumbnails/guild_77_d240e_fm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om140ce",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-140CE Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om140ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-140CE Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om140ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om140ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_om140ce.jpg",
+        "original": "/data/thumbnails/guild_77_om140ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireidc_cab",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I DC",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireidc_cab.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I DC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireidc_cab.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireidc_cab.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireidc_cab.jpg",
+        "original": "/data/thumbnails/guild_77_starfireidc_cab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f250e",
+      "name": "גיטרה אקוסטית מוגברת Guild F-250E Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f250e.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild F-250E Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f250e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f250e.jpg",
+        "high_res": "/data/thumbnails/guild_77_f250e.jpg",
+        "original": "/data/thumbnails/guild_77_f250e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_gbajj",
+      "name": "Guild Acoustic Gig Bag Jumbo Junior",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_gbajj.jpg",
+      "description": "Guild Acoustic Gig Bag Jumbo Junior",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_gbajj.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_gbajj.jpg",
+        "high_res": "/data/thumbnails/guild_77_gbajj.jpg",
+        "original": "/data/thumbnails/guild_77_gbajj.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m140",
+      "name": "גיטרה אקוסטית Guild M140 Concert",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m140.jpg",
+      "description": "גיטרה אקוסטית Guild M140 Concert",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m140.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m140.jpg",
+        "high_res": "/data/thumbnails/guild_77_m140.jpg",
+        "original": "/data/thumbnails/guild_77_m140.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_surfliner_mnt",
+      "name": "גיטרה חשמלית Guild Surfliner White Sage",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_surfliner_mnt.jpg",
+      "description": "גיטרה חשמלית Guild Surfliner White Sage",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_surfliner_mnt.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_surfliner_mnt.jpg",
+        "high_res": "/data/thumbnails/guild_77_surfliner_mnt.jpg",
+        "original": "/data/thumbnails/guild_77_surfliner_mnt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_surflinerdlx_gr",
+      "name": "גיטרה חשמלית Guild Surfliner Deluxe Evergreen Metallic",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg",
+      "description": "גיטרה חשמלית Guild Surfliner Deluxe Evergreen Metallic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg",
+        "high_res": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg",
+        "original": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f250ce",
+      "name": "גיטרה אקוסטית מוגברת Guild F-250CE Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f250ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild F-250CE Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f250ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f250ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_f250ce.jpg",
+        "original": "/data/thumbnails/guild_77_f250ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_bagacojumbo",
+      "name": "Guild Premium Acoustic Gig Bag Jumbo",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_bagacojumbo.jpg",
+      "description": "Guild Premium Acoustic Gig Bag Jumbo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_bagacojumbo.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_bagacojumbo.jpg",
+        "high_res": "/data/thumbnails/guild_77_bagacojumbo.jpg",
+        "original": "/data/thumbnails/guild_77_bagacojumbo.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jj_mp",
+      "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Maple",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jj_mp.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Maple",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jj_mp.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jj_mp.jpg",
+        "high_res": "/data/thumbnails/guild_77_jj_mp.jpg",
+        "original": "/data/thumbnails/guild_77_jj_mp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_surfliner_blu",
+      "name": "גיטרה חשמלית Guild Surfliner Catalina Blue",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_surfliner_blu.jpg",
+      "description": "גיטרה חשמלית Guild Surfliner Catalina Blue",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_surfliner_blu.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_surfliner_blu.jpg",
+        "high_res": "/data/thumbnails/guild_77_surfliner_blu.jpg",
+        "original": "/data/thumbnails/guild_77_surfliner_blu.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_aristop90vsb",
+      "name": "גיטרה חשמלית Guild Aristocrat P90 Vintage Sunburst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_aristop90vsb.jpg",
+      "description": "גיטרה חשמלית Guild Aristocrat P90 Vintage Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_aristop90vsb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_aristop90vsb.jpg",
+        "high_res": "/data/thumbnails/guild_77_aristop90vsb.jpg",
+        "original": "/data/thumbnails/guild_77_aristop90vsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_surflinerdlx_bk",
+      "name": "גיטרה חשמלית Guild Surfliner Deluxe Black",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg",
+      "description": "גיטרה חשמלית Guild Surfliner Deluxe Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg",
+        "high_res": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg",
+        "original": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_b240e_fretless",
+      "name": "גיטרה בס אקוסטית מוגברת Guild B-240E Fretless",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_b240e_fretless.jpg",
+      "description": "גיטרה בס אקוסטית מוגברת Guild B-240E Fretless",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_b240e_fretless.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_b240e_fretless.jpg",
+        "high_res": "/data/thumbnails/guild_77_b240e_fretless.jpg",
+        "original": "/data/thumbnails/guild_77_b240e_fretless.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om240ce_oxb",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om240ce_oxb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om240ce_oxb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om240ce_oxb.jpg",
+        "high_res": "/data/thumbnails/guild_77_om240ce_oxb.jpg",
+        "original": "/data/thumbnails/guild_77_om240ce_oxb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d140ce_n",
+      "name": "גיטרה אקוסטית מוגברת Guild D-140CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d140ce_n.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-140CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d140ce_n.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d140ce_n.jpg",
+        "high_res": "/data/thumbnails/guild_77_d140ce_n.jpg",
+        "original": "/data/thumbnails/guild_77_d140ce_n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om260ce_tbb",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om260ce_tbb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om260ce_tbb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om260ce_tbb.jpg",
+        "high_res": "/data/thumbnails/guild_77_om260ce_tbb.jpg",
+        "original": "/data/thumbnails/guild_77_om260ce_tbb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireiscatb",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireiscatb.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireiscatb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireiscatb.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireiscatb.jpg",
+        "original": "/data/thumbnails/guild_77_starfireiscatb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d120_nat",
+      "name": "גיטרה אקוסטית Guild D-120 Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d120_nat.jpg",
+      "description": "גיטרה אקוסטית Guild D-120 Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d120_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d120_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_d120_nat.jpg",
+        "original": "/data/thumbnails/guild_77_d120_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f2512e_atb",
+      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f2512e_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f2512e_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f2512e_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_f2512e_atb.jpg",
+        "original": "/data/thumbnails/guild_77_f2512e_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om250ce",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-250CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om250ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-250CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om250ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om250ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_om250ce.jpg",
+        "original": "/data/thumbnails/guild_77_om250ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m120l_l",
+      "name": "גיטרה אקוסטית שמאלית Guild M-120L LH",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m120l_l.jpg",
+      "description": "גיטרה אקוסטית שמאלית Guild M-120L LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m120l_l.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m120l_l.jpg",
+        "high_res": "/data/thumbnails/guild_77_m120l_l.jpg",
+        "original": "/data/thumbnails/guild_77_m120l_l.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om240ce",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om240ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om240ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om240ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_om240ce.jpg",
+        "original": "/data/thumbnails/guild_77_om240ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireiscvwn",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireiscvwn.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireiscvwn.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireiscvwn.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireiscvwn.jpg",
+        "original": "/data/thumbnails/guild_77_starfireiscvwn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om150ce",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-150CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om150ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-150CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om150ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om150ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_om150ce.jpg",
+        "original": "/data/thumbnails/guild_77_om150ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d2612ce_atb",
+      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild D-2612CE Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d2612ce_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild D-2612CE Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d2612ce_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d2612ce_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_d2612ce_atb.jpg",
+        "original": "/data/thumbnails/guild_77_d2612ce_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_b140e",
+      "name": "גיטרה בס אקוסטית מוגברת Guild B-140E",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_b140e.jpg",
+      "description": "גיטרה בס אקוסטית מוגברת Guild B-140E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_b140e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_b140e.jpg",
+        "high_res": "/data/thumbnails/guild_77_b140e.jpg",
+        "original": "/data/thumbnails/guild_77_b140e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om240ce_acb",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om240ce_acb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om240ce_acb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om240ce_acb.jpg",
+        "high_res": "/data/thumbnails/guild_77_om240ce_acb.jpg",
+        "original": "/data/thumbnails/guild_77_om240ce_acb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om260ce_eb",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe Burl",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om260ce_eb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe Burl",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om260ce_eb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om260ce_eb.jpg",
+        "high_res": "/data/thumbnails/guild_77_om260ce_eb.jpg",
+        "original": "/data/thumbnails/guild_77_om260ce_eb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_p250e",
+      "name": "גיטרה אקוסטית מוגברת Guild P-250E",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_p250e.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild P-250E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_p250e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_p250e.jpg",
+        "high_res": "/data/thumbnails/guild_77_p250e.jpg",
+        "original": "/data/thumbnails/guild_77_p250e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f2512ce_dblond",
+      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512CE Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f2512ce_dblond.jpg",
+      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512CE Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f2512ce_dblond.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f2512ce_dblond.jpg",
+        "high_res": "/data/thumbnails/guild_77_f2512ce_dblond.jpg",
+        "original": "/data/thumbnails/guild_77_f2512ce_dblond.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireiscscw",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireiscscw.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireiscscw.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireiscscw.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireiscscw.jpg",
+        "original": "/data/thumbnails/guild_77_starfireiscscw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_p240",
+      "name": "גיטרה אקוסטית Guild P-240 Memoir",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_p240.jpg",
+      "description": "גיטרה אקוסטית Guild P-240 Memoir",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_p240.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_p240.jpg",
+        "high_res": "/data/thumbnails/guild_77_p240.jpg",
+        "original": "/data/thumbnails/guild_77_p240.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m240e_tb",
+      "name": "גיטרת אקוסטית מוגברת Guild M-240E Troubadour",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m240e_tb.jpg",
+      "description": "גיטרת אקוסטית מוגברת Guild M-240E Troubadour",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m240e_tb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m240e_tb.jpg",
+        "high_res": "/data/thumbnails/guild_77_m240e_tb.jpg",
+        "original": "/data/thumbnails/guild_77_m240e_tb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_gbad",
+      "name": "Guild Acoustic Gig Bag Orchestra/Dreadnough",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_gbad.jpg",
+      "description": "Guild Acoustic Gig Bag Orchestra/Dreadnough",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_gbad.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_gbad.jpg",
+        "high_res": "/data/thumbnails/guild_77_gbad.jpg",
+        "original": "/data/thumbnails/guild_77_gbad.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f1512",
+      "name": "גיטרה אקוסטית 12 מיתרים Guild F-1512",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f1512.jpg",
+      "description": "גיטרה אקוסטית 12 מיתרים Guild F-1512",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f1512.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f1512.jpg",
+        "high_res": "/data/thumbnails/guild_77_f1512.jpg",
+        "original": "/data/thumbnails/guild_77_f1512.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m260e",
+      "name": "גיטרה אקוסטית מוגברת Guild M-260E Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m260e.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild M-260E Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m260e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m260e.jpg",
+        "high_res": "/data/thumbnails/guild_77_m260e.jpg",
+        "original": "/data/thumbnails/guild_77_m260e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m240e",
+      "name": "גיטרה אקוסטית מוגברת Guild M-240E",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m240e.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild M-240E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m240e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m240e.jpg",
+        "high_res": "/data/thumbnails/guild_77_m240e.jpg",
+        "original": "/data/thumbnails/guild_77_m240e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d140ce_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild D-140CE ATB",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d140ce_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-140CE ATB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d140ce_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d140ce_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_d140ce_atb.jpg",
+        "original": "/data/thumbnails/guild_77_d140ce_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d240e_lh",
+      "name": "גיטרה אקוסטית שמאלית מוגברת Guild D-240E LH",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d240e_lh.jpg",
+      "description": "גיטרה אקוסטית שמאלית מוגברת Guild D-240E LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d240e_lh.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d240e_lh.jpg",
+        "high_res": "/data/thumbnails/guild_77_d240e_lh.jpg",
+        "original": "/data/thumbnails/guild_77_d240e_lh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d240e",
+      "name": "גיטרה אקוסטית מוגברת Guild D-240E",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d240e.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-240E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d240e.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d240e.jpg",
+        "high_res": "/data/thumbnails/guild_77_d240e.jpg",
+        "original": "/data/thumbnails/guild_77_d240e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_surfliner_org",
+      "name": "גיטרה חשמלית Guild Surfliner Sunset Orange",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_surfliner_org.jpg",
+      "description": "גיטרה חשמלית Guild Surfliner Sunset Orange",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_surfliner_org.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_surfliner_org.jpg",
+        "high_res": "/data/thumbnails/guild_77_surfliner_org.jpg",
+        "original": "/data/thumbnails/guild_77_surfliner_org.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om260ce_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om260ce_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om260ce_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om260ce_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_om260ce_atb.jpg",
+        "original": "/data/thumbnails/guild_77_om260ce_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_bagacudeluxe",
+      "name": "Guild Premium Acoustic Guitar Gig Bag",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_bagacudeluxe.jpg",
+      "description": "Guild Premium Acoustic Guitar Gig Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_bagacudeluxe.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_bagacudeluxe.jpg",
+        "high_res": "/data/thumbnails/guild_77_bagacudeluxe.jpg",
+        "original": "/data/thumbnails/guild_77_bagacudeluxe.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireidcvwn",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireidcvwn.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireidcvwn.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireidcvwn.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireidcvwn.jpg",
+        "original": "/data/thumbnails/guild_77_starfireidcvwn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d150ce",
+      "name": "גיטרה אקוסטית מוגברת Guild D-150CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d150ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-150CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d150ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d150ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_d150ce.jpg",
+        "original": "/data/thumbnails/guild_77_d150ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_gbabb",
+      "name": "Guild Acoustic Gig Bag Bass",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_gbabb.jpg",
+      "description": "Guild Acoustic Gig Bag Bass",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_gbabb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_gbabb.jpg",
+        "high_res": "/data/thumbnails/guild_77_gbabb.jpg",
+        "original": "/data/thumbnails/guild_77_gbabb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jj_bass",
+      "name": "גיטרה בס אקוסטית מוגברת Guild Jumbo Junior",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jj_bass.jpg",
+      "description": "גיטרה בס אקוסטית מוגברת Guild Jumbo Junior",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jj_bass.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jj_bass.jpg",
+        "high_res": "/data/thumbnails/guild_77_jj_bass.jpg",
+        "original": "/data/thumbnails/guild_77_jj_bass.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_aristohhtbb",
+      "name": "גיטרה חשמלית Guild Aristocrat HH Trans Black Burst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_aristohhtbb.jpg",
+      "description": "גיטרה חשמלית Guild Aristocrat HH Trans Black Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_aristohhtbb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_aristohhtbb.jpg",
+        "high_res": "/data/thumbnails/guild_77_aristohhtbb.jpg",
+        "original": "/data/thumbnails/guild_77_aristohhtbb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d40_nat",
+      "name": "גיטרה אקוסטית Guild D-40",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d40_nat.jpg",
+      "description": "גיטרה אקוסטית Guild D-40",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d40_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d40_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_d40_nat.jpg",
+        "original": "/data/thumbnails/guild_77_d40_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfirebassvwn",
+      "name": "גיטרה בס רבע נפח Guild Starfire I Bass Vintage Walnut",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfirebassvwn.jpg",
+      "description": "גיטרה בס רבע נפח Guild Starfire I Bass Vintage Walnut",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfirebassvwn.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfirebassvwn.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfirebassvwn.jpg",
+        "original": "/data/thumbnails/guild_77_starfirebassvwn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfirebasschr",
+      "name": "גיטרה בס רבע נפח Guild Starfire I Bass Cherry Red",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfirebasschr.jpg",
+      "description": "גיטרה בס רבע נפח Guild Starfire I Bass Cherry Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfirebasschr.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfirebasschr.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfirebasschr.jpg",
+        "original": "/data/thumbnails/guild_77_starfirebasschr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireidcchr",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireidcchr.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireidcchr.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireidcchr.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireidcchr.jpg",
+        "original": "/data/thumbnails/guild_77_starfireidcchr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireidcgrn",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireidcgrn.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireidcgrn.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireidcgrn.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireidcgrn.jpg",
+        "original": "/data/thumbnails/guild_77_starfireidcgrn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfireidcblu",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfireidcblu.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfireidcblu.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfireidcblu.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfireidcblu.jpg",
+        "original": "/data/thumbnails/guild_77_starfireidcblu.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfirebass2",
+      "name": "גיטרה בס רבע נפח Guild Starfire Bass II Cherry Red",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfirebass2.jpg",
+      "description": "גיטרה בס רבע נפח Guild Starfire Bass II Cherry Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfirebass2.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfirebass2.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfirebass2.jpg",
+        "original": "/data/thumbnails/guild_77_starfirebass2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jj_fm",
+      "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Reserve Maple",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jj_fm.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Reserve Maple",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jj_fm.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jj_fm.jpg",
+        "high_res": "/data/thumbnails/guild_77_jj_fm.jpg",
+        "original": "/data/thumbnails/guild_77_jj_fm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfirebass_blu",
+      "name": "גיטרה בס רבע נפח Guild Starfire I Bass Pelham Blue",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfirebass_blu.jpg",
+      "description": "גיטרה בס רבע נפח Guild Starfire I Bass Pelham Blue",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfirebass_blu.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfirebass_blu.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfirebass_blu.jpg",
+        "original": "/data/thumbnails/guild_77_starfirebass_blu.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jumbo_jr_fm",
+      "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Flamed Maple",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Flamed Maple",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg",
+        "high_res": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg",
+        "original": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_bagacobass",
+      "name": "Guild Premium Acoustic Bass Gig Bag",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_bagacobass.jpg",
+      "description": "Guild Premium Acoustic Bass Gig Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_bagacobass.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_bagacobass.jpg",
+        "high_res": "/data/thumbnails/guild_77_bagacobass.jpg",
+        "original": "/data/thumbnails/guild_77_bagacobass.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starireijet90gld",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Gold",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starireijet90gld.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Gold",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starireijet90gld.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starireijet90gld.jpg",
+        "high_res": "/data/thumbnails/guild_77_starireijet90gld.jpg",
+        "original": "/data/thumbnails/guild_77_starireijet90gld.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_ebgst",
+      "name": "Guild Starfire Premium Electric Gig Bag",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_ebgst.jpg",
+      "description": "Guild Starfire Premium Electric Gig Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_ebgst.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_ebgst.jpg",
+        "high_res": "/data/thumbnails/guild_77_ebgst.jpg",
+        "original": "/data/thumbnails/guild_77_ebgst.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_tbird_vwt",
+      "name": "גיטרה חשמלית Guild T-Bird ST Vintage White",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_tbird_vwt.jpg",
+      "description": "גיטרה חשמלית Guild T-Bird ST Vintage White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_tbird_vwt.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_tbird_vwt.jpg",
+        "high_res": "/data/thumbnails/guild_77_tbird_vwt.jpg",
+        "original": "/data/thumbnails/guild_77_tbird_vwt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfirejet90sbk",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Black",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfirejet90sbk.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfirejet90sbk.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfirejet90sbk.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfirejet90sbk.jpg",
+        "original": "/data/thumbnails/guild_77_starfirejet90sbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_s200_atb",
+      "name": "גיטרה חשמלית Guild S-200 T-Bird Antique Burst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_s200_atb.jpg",
+      "description": "גיטרה חשמלית Guild S-200 T-Bird Antique Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_s200_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_s200_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_s200_atb.jpg",
+        "original": "/data/thumbnails/guild_77_s200_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jetstarstvwt",
+      "name": "גיטרה חשמלית Guild Jetstar Vintage White",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jetstarstvwt.jpg",
+      "description": "גיטרה חשמלית Guild Jetstar Vintage White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jetstarstvwt.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jetstarstvwt.jpg",
+        "high_res": "/data/thumbnails/guild_77_jetstarstvwt.jpg",
+        "original": "/data/thumbnails/guild_77_jetstarstvwt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_bluesbird_blk",
+      "name": "גיטרה חשמלית Guild Bluesbird Black",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_bluesbird_blk.jpg",
+      "description": "גיטרה חשמלית Guild Bluesbird Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_bluesbird_blk.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_bluesbird_blk.jpg",
+        "high_res": "/data/thumbnails/guild_77_bluesbird_blk.jpg",
+        "original": "/data/thumbnails/guild_77_bluesbird_blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f150ce",
+      "name": "גיטרה אקוסטית מוגברת Guild F-150CE",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f150ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild F-150CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f150ce.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f150ce.jpg",
+        "high_res": "/data/thumbnails/guild_77_f150ce.jpg",
+        "original": "/data/thumbnails/guild_77_f150ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_bluesbird_itb",
+      "name": "גיטרה חשמלית Guild Bluesbird Iced Tea Burst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_bluesbird_itb.jpg",
+      "description": "גיטרה חשמלית Guild Bluesbird Iced Tea Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_bluesbird_itb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_bluesbird_itb.jpg",
+        "high_res": "/data/thumbnails/guild_77_bluesbird_itb.jpg",
+        "original": "/data/thumbnails/guild_77_bluesbird_itb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m20_n",
+      "name": "גיטרה אקוסטית Guild M-20 USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m20_n.jpg",
+      "description": "גיטרה אקוסטית Guild M-20 USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m20_n.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m20_n.jpg",
+        "high_res": "/data/thumbnails/guild_77_m20_n.jpg",
+        "original": "/data/thumbnails/guild_77_m20_n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d20e_vsb",
+      "name": "גיטרה אקוסטית מוגברת Guild D-20E USA Vintage Sunburst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d20e_vsb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-20E USA Vintage Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d20e_vsb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d20e_vsb.jpg",
+        "high_res": "/data/thumbnails/guild_77_d20e_vsb.jpg",
+        "original": "/data/thumbnails/guild_77_d20e_vsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire_i12_cr",
+      "name": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire I",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire_i12_cr.jpg",
+      "description": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire I",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire_i12_cr.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire_i12_cr.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire_i12_cr.jpg",
+        "original": "/data/thumbnails/guild_77_starfire_i12_cr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_s100polara_chr",
+      "name": "גיטרה חשמלית Guild S-100 Polara Cherry Red",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_s100polara_chr.jpg",
+      "description": "גיטרה חשמלית Guild S-100 Polara Cherry Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_s100polara_chr.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_s100polara_chr.jpg",
+        "high_res": "/data/thumbnails/guild_77_s100polara_chr.jpg",
+        "original": "/data/thumbnails/guild_77_s100polara_chr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jetstarstsfg",
+      "name": "גיטרה חשמלית Guild Jetstar Seafoam Green",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jetstarstsfg.jpg",
+      "description": "גיטרה חשמלית Guild Jetstar Seafoam Green",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jetstarstsfg.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jetstarstsfg.jpg",
+        "high_res": "/data/thumbnails/guild_77_jetstarstsfg.jpg",
+        "original": "/data/thumbnails/guild_77_jetstarstsfg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_om140ce_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild OM-140CE Antique Sunburst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_om140ce_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild OM-140CE Antique Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_om140ce_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_om140ce_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_om140ce_atb.jpg",
+        "original": "/data/thumbnails/guild_77_om140ce_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f40e_nat",
+      "name": "גיטרה אקוסטית מוגברת Guild F-40E USA Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f40e_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild F-40E USA Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f40e_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f40e_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_f40e_nat.jpg",
+        "original": "/data/thumbnails/guild_77_f40e_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m40e_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild M-40E USA ATB",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m40e_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild M-40E USA ATB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m40e_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m40e_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_m40e_atb.jpg",
+        "original": "/data/thumbnails/guild_77_m40e_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire5_bk",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire V Black",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire5_bk.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire V Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire5_bk.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire5_bk.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire5_bk.jpg",
+        "original": "/data/thumbnails/guild_77_starfire5_bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m25e_cab",
+      "name": "גיטרה אקוסטית מוגברת Guild M-25E USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m25e_cab.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild M-25E USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m25e_cab.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m25e_cab.jpg",
+        "high_res": "/data/thumbnails/guild_77_m25e_cab.jpg",
+        "original": "/data/thumbnails/guild_77_m25e_cab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire6_sm",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire VI Shoreline Mist",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire6_sm.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire VI Shoreline Mist",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire6_sm.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire6_sm.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire6_sm.jpg",
+        "original": "/data/thumbnails/guild_77_starfire6_sm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire6_fm",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire VI Flamed Maple",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire6_fm.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire VI Flamed Maple",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire6_fm.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire6_fm.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire6_fm.jpg",
+        "original": "/data/thumbnails/guild_77_starfire6_fm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire4_ch",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire IV Cherry Red",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire4_ch.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire IV Cherry Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire4_ch.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire4_ch.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire4_ch.jpg",
+        "original": "/data/thumbnails/guild_77_starfire4_ch.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfirebass",
+      "name": "גיטרה בס Guild Starfire Bass",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfirebass.jpg",
+      "description": "גיטרה בס Guild Starfire Bass",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfirebass.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfirebass.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfirebass.jpg",
+        "original": "/data/thumbnails/guild_77_starfirebass.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d20",
+      "name": "גיטרה אקוסטית Guild D-20 USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d20.jpg",
+      "description": "גיטרה אקוסטית Guild D-20 USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d20.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d20.jpg",
+        "high_res": "/data/thumbnails/guild_77_d20.jpg",
+        "original": "/data/thumbnails/guild_77_d20.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d20e_nat",
+      "name": "גיטרה אקוסטית מוגברת Guild D-20E USA Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d20e_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-20E USA Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d20e_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d20e_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_d20e_nat.jpg",
+        "original": "/data/thumbnails/guild_77_d20e_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_s200_blk",
+      "name": "גיטרה חשמלית Guild S-200 T-Bird Black",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_s200_blk.jpg",
+      "description": "גיטרה חשמלית Guild S-200 T-Bird Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_s200_blk.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_s200_blk.jpg",
+        "high_res": "/data/thumbnails/guild_77_s200_blk.jpg",
+        "original": "/data/thumbnails/guild_77_s200_blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_x175_bld",
+      "name": "גיטרה חשמלית Guild X-175B Manhattan Hollow Body",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_x175_bld.jpg",
+      "description": "גיטרה חשמלית Guild X-175B Manhattan Hollow Body",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_x175_bld.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_x175_bld.jpg",
+        "high_res": "/data/thumbnails/guild_77_x175_bld.jpg",
+        "original": "/data/thumbnails/guild_77_x175_bld.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_x175_spe_vib",
+      "name": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_x175_spe_vib.jpg",
+      "description": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_x175_spe_vib.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_x175_spe_vib.jpg",
+        "high_res": "/data/thumbnails/guild_77_x175_spe_vib.jpg",
+        "original": "/data/thumbnails/guild_77_x175_spe_vib.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_gb_m75_polora",
+      "name": "Guild Deluxe Electric Gig Bag - BB/M-75/Polara",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_gb_m75_polora.jpg",
+      "description": "Guild Deluxe Electric Gig Bag - BB/M-75/Polara",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_gb_m75_polora.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_gb_m75_polora.jpg",
+        "high_res": "/data/thumbnails/guild_77_gb_m75_polora.jpg",
+        "original": "/data/thumbnails/guild_77_gb_m75_polora.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_jumbobag",
+      "name": "Guild Deluxe Humidified Archtop Wood Case",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_jumbobag.jpg",
+      "description": "Guild Deluxe Humidified Archtop Wood Case",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_jumbobag.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_jumbobag.jpg",
+        "high_res": "/data/thumbnails/guild_77_jumbobag.jpg",
+        "original": "/data/thumbnails/guild_77_jumbobag.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_x175_man",
+      "name": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_x175_man.jpg",
+      "description": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_x175_man.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_x175_man.jpg",
+        "high_res": "/data/thumbnails/guild_77_x175_man.jpg",
+        "original": "/data/thumbnails/guild_77_x175_man.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_premiumbag",
+      "name": "Guild Acoustic Premium Gig Bag",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_premiumbag.jpg",
+      "description": "Guild Acoustic Premium Gig Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_premiumbag.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_premiumbag.jpg",
+        "high_res": "/data/thumbnails/guild_77_premiumbag.jpg",
+        "original": "/data/thumbnails/guild_77_premiumbag.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_aristohhscw",
+      "name": "גיטרה חשמלית Guild Aristocrat HH Snowcrest White",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_aristohhscw.jpg",
+      "description": "גיטרה חשמלית Guild Aristocrat HH Snowcrest White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_aristohhscw.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_aristohhscw.jpg",
+        "high_res": "/data/thumbnails/guild_77_aristohhscw.jpg",
+        "original": "/data/thumbnails/guild_77_aristohhscw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire412sl",
+      "name": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire IV ST-12",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire412sl.jpg",
+      "description": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire IV ST-12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire412sl.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire412sl.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire412sl.jpg",
+        "original": "/data/thumbnails/guild_77_starfire412sl.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m75_atb",
+      "name": "גיטרה חשמלית רבע נפח Guild M-75 Aristocrat",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m75_atb.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild M-75 Aristocrat",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m75_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m75_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_m75_atb.jpg",
+        "original": "/data/thumbnails/guild_77_m75_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire4st_vsb",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire4st_vsb.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire4st_vsb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire4st_vsb.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire4st_vsb.jpg",
+        "original": "/data/thumbnails/guild_77_starfire4st_vsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire4st_grn",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire4st_grn.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire4st_grn.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire4st_grn.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire4st_grn.jpg",
+        "original": "/data/thumbnails/guild_77_starfire4st_grn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire4st_fm",
+      "name": "גיטרה חשמלית Guild Starfire IV ST",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire4st_fm.jpg",
+      "description": "גיטרה חשמלית Guild Starfire IV ST",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire4st_fm.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire4st_fm.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire4st_fm.jpg",
+        "original": "/data/thumbnails/guild_77_starfire4st_fm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire5_scw",
+      "name": "גיטרה חשמלית Guild Starfire V Snowcrest White",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire5_scw.jpg",
+      "description": "גיטרה חשמלית Guild Starfire V Snowcrest White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire5_scw.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire5_scw.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire5_scw.jpg",
+        "original": "/data/thumbnails/guild_77_starfire5_scw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m40e_nat",
+      "name": "גיטרה אקוסטית מוגברת Guild M-40E USA Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m40e_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild M-40E USA Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m40e_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m40e_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_m40e_nat.jpg",
+        "original": "/data/thumbnails/guild_77_m40e_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire5_chr",
+      "name": "גיטרה חשמלית Guild Starfire V Cherry Red",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire5_chr.jpg",
+      "description": "גיטרה חשמלית Guild Starfire V Cherry Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire5_chr.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire5_chr.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire5_chr.jpg",
+        "original": "/data/thumbnails/guild_77_starfire5_chr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m20e_vsb",
+      "name": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m20e_vsb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m20e_vsb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m20e_vsb.jpg",
+        "high_res": "/data/thumbnails/guild_77_m20e_vsb.jpg",
+        "original": "/data/thumbnails/guild_77_m20e_vsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f40_nat",
+      "name": "גיטרה אקוסטית Guild F-40 USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f40_nat.jpg",
+      "description": "גיטרה אקוסטית Guild F-40 USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f40_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f40_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_f40_nat.jpg",
+        "original": "/data/thumbnails/guild_77_f40_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_m20e_n",
+      "name": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_m20e_n.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_m20e_n.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_m20e_n.jpg",
+        "high_res": "/data/thumbnails/guild_77_m20e_n.jpg",
+        "original": "/data/thumbnails/guild_77_m20e_n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f40e_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild F-40E USA ATB",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f40e_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild F-40E USA ATB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f40e_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f40e_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_f40e_atb.jpg",
+        "original": "/data/thumbnails/guild_77_f40e_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d40e_nat",
+      "name": "גיטרה אקוסטית מוגברת Guild D-40E USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d40e_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-40E USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d40e_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d40e_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_d40e_nat.jpg",
+        "original": "/data/thumbnails/guild_77_d40e_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfire6_sw",
+      "name": "גיטרה חשמלית רבע נפח Guild Starfire VI Snowcrest White",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfire6_sw.jpg",
+      "description": "גיטרה חשמלית רבע נפח Guild Starfire VI Snowcrest White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfire6_sw.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfire6_sw.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfire6_sw.jpg",
+        "original": "/data/thumbnails/guild_77_starfire6_sw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d40e_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild D-40E Antique Sunburst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d40e_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-40E Antique Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d40e_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d40e_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_d40e_atb.jpg",
+        "original": "/data/thumbnails/guild_77_d40e_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d55e_n",
+      "name": "גיטרה אקוסטית מוגברת Guild D-55E USA Natural",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d55e_n.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-55E USA Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d55e_n.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d55e_n.jpg",
+        "high_res": "/data/thumbnails/guild_77_d55e_n.jpg",
+        "original": "/data/thumbnails/guild_77_d55e_n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_d55e_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild D-55E USA Antique Burst",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_d55e_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild D-55E USA Antique Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_d55e_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_d55e_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_d55e_atb.jpg",
+        "original": "/data/thumbnails/guild_77_d55e_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f55e_nat",
+      "name": "גיטרה אקוסטית מוגברת Guild F-55E Natural USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f55e_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild F-55E Natural USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f55e_nat.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f55e_nat.jpg",
+        "high_res": "/data/thumbnails/guild_77_f55e_nat.jpg",
+        "original": "/data/thumbnails/guild_77_f55e_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_f55e_atb",
+      "name": "גיטרה אקוסטית מוגברת Guild F-55E USA",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_f55e_atb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Guild F-55E USA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_f55e_atb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_f55e_atb.jpg",
+        "high_res": "/data/thumbnails/guild_77_f55e_atb.jpg",
+        "original": "/data/thumbnails/guild_77_f55e_atb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_bridge_pin",
+      "name": "סט 6 פינים לגיטרה אקוסטית Guild",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_bridge_pin.jpg",
+      "description": "סט 6 פינים לגיטרה אקוסטית Guild",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_bridge_pin.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_bridge_pin.jpg",
+        "high_res": "/data/thumbnails/guild_77_bridge_pin.jpg",
+        "original": "/data/thumbnails/guild_77_bridge_pin.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_ebbstf",
+      "name": "Guild Premium Electric Gig Bag Starfire",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_ebbstf.jpg",
+      "description": "Guild Premium Electric Gig Bag Starfire",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_ebbstf.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_ebbstf.jpg",
+        "high_res": "/data/thumbnails/guild_77_ebbstf.jpg",
+        "original": "/data/thumbnails/guild_77_ebbstf.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_gbajb",
+      "name": "Guild Acoustic Gig Bag Jumbo-Size",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_gbajb.jpg",
+      "description": "Guild Acoustic Gig Bag Jumbo-Size",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_gbajb.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_gbajb.jpg",
+        "high_res": "/data/thumbnails/guild_77_gbajb.jpg",
+        "original": "/data/thumbnails/guild_77_gbajb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "guild_77_starfirebass2fm",
+      "name": "גיטרה בס רבע נפח Starfire Bass II Flamed Maple Guild",
+      "brand": "guild",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/guild_77_starfirebass2fm.jpg",
+      "description": "גיטרה בס רבע נפח Starfire Bass II Flamed Maple Guild",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/guild_77_starfirebass2fm.jpg",
+        "thumbnail": "/data/thumbnails/guild_77_starfirebass2fm.jpg",
+        "high_res": "/data/thumbnails/guild_77_starfirebass2fm.jpg",
+        "original": "/data/thumbnails/guild_77_starfirebass2fm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Guild",
+  "brand_slug": "guild",
+  "refined_at": "2026-01-24T02:50:44.655263+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "guild_77_om320_nat",
+          "name": "גיטרה אקוסטית Guild OM-320 Natural",
+          "description": "גיטרה אקוסטית Guild OM-320 Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om320_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om320_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_om320_nat.jpg",
+            "original": "/data/thumbnails/guild_77_om320_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_traveler",
+          "name": "גיטרה אקוסטית Guild Travel Mahogany",
+          "description": "גיטרה אקוסטית Guild Travel Mahogany",
+          "images": {
+            "main": "/data/thumbnails/guild_77_traveler.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_traveler.jpg",
+            "high_res": "/data/thumbnails/guild_77_traveler.jpg",
+            "original": "/data/thumbnails/guild_77_traveler.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d320_nat",
+          "name": "גיטרה אקוסטית Guild D-320 Natural",
+          "description": "גיטרה אקוסטית Guild D-320 Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d320_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d320_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_d320_nat.jpg",
+            "original": "/data/thumbnails/guild_77_d320_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_travelsp",
+          "name": "גיטרה אקוסטית Guild Travel Spruce",
+          "description": "גיטרה אקוסטית Guild Travel Spruce",
+          "images": {
+            "main": "/data/thumbnails/guild_77_travelsp.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_travelsp.jpg",
+            "high_res": "/data/thumbnails/guild_77_travelsp.jpg",
+            "original": "/data/thumbnails/guild_77_travelsp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d340_nat",
+          "name": "גיטרה אקוסטית Guild D-340 Natural",
+          "description": "גיטרה אקוסטית Guild D-340 Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d340_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d340_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_d340_nat.jpg",
+            "original": "/data/thumbnails/guild_77_d340_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d140",
+          "name": "גיטרה אקוסטית Guild D140 Dreadnought Natural",
+          "description": "גיטרה אקוסטית Guild D140 Dreadnought Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d140.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d140.jpg",
+            "high_res": "/data/thumbnails/guild_77_d140.jpg",
+            "original": "/data/thumbnails/guild_77_d140.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d50_atb",
+          "name": "גיטרה אקוסטית Guild D-50 Standard Antique Burst",
+          "description": "גיטרה אקוסטית Guild D-50 Standard Antique Burst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d50_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d50_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_d50_atb.jpg",
+            "original": "/data/thumbnails/guild_77_d50_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om240e",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-240E",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-240E",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om240e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om240e.jpg",
+            "high_res": "/data/thumbnails/guild_77_om240e.jpg",
+            "original": "/data/thumbnails/guild_77_om240e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om340_nat",
+          "name": "גיטרה אקוסטית Guild OM-340 Natural",
+          "description": "גיטרה אקוסטית Guild OM-340 Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om340_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om340_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_om340_nat.jpg",
+            "original": "/data/thumbnails/guild_77_om340_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f2512e",
+          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Maple",
+          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Maple",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f2512e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f2512e.jpg",
+            "high_res": "/data/thumbnails/guild_77_f2512e.jpg",
+            "original": "/data/thumbnails/guild_77_f2512e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om240ce_dbb",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om240ce_dbb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om240ce_dbb.jpg",
+            "high_res": "/data/thumbnails/guild_77_om240ce_dbb.jpg",
+            "original": "/data/thumbnails/guild_77_om240ce_dbb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_s100polara_wh",
+          "name": "גיטרה חשמלית Guild S-100 Polara White",
+          "description": "גיטרה חשמלית Guild S-100 Polara White",
+          "images": {
+            "main": "/data/thumbnails/guild_77_s100polara_wh.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_s100polara_wh.jpg",
+            "high_res": "/data/thumbnails/guild_77_s100polara_wh.jpg",
+            "original": "/data/thumbnails/guild_77_s100polara_wh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_s100polara_bk",
+          "name": "גיטרה חשמלית Guild S-100 Polara Black",
+          "description": "גיטרה חשמלית Guild S-100 Polara Black",
+          "images": {
+            "main": "/data/thumbnails/guild_77_s100polara_bk.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_s100polara_bk.jpg",
+            "high_res": "/data/thumbnails/guild_77_s100polara_bk.jpg",
+            "original": "/data/thumbnails/guild_77_s100polara_bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jumbo_jr_mn",
+          "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Mahogany",
+          "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Mahogany",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg",
+            "high_res": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg",
+            "original": "/data/thumbnails/guild_77_jumbo_jr_mn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_ds240",
+          "name": "גיטרה אקוסטית Guild DS-240 Memoir",
+          "description": "גיטרה אקוסטית Guild DS-240 Memoir",
+          "images": {
+            "main": "/data/thumbnails/guild_77_ds240.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_ds240.jpg",
+            "high_res": "/data/thumbnails/guild_77_ds240.jpg",
+            "original": "/data/thumbnails/guild_77_ds240.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireiscsfg",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireiscsfg.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireiscsfg.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireiscsfg.jpg",
+            "original": "/data/thumbnails/guild_77_starfireiscsfg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_b240e",
+          "name": "גיטרה בס אקוסטית מוגברת Guild B-240E",
+          "description": "גיטרה בס אקוסטית מוגברת Guild B-240E",
+          "images": {
+            "main": "/data/thumbnails/guild_77_b240e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_b240e.jpg",
+            "high_res": "/data/thumbnails/guild_77_b240e.jpg",
+            "original": "/data/thumbnails/guild_77_b240e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_a20",
+          "name": "גיטרה אקוסטית Guild A-20 Marley",
+          "description": "גיטרה אקוסטית Guild A-20 Marley",
+          "images": {
+            "main": "/data/thumbnails/guild_77_a20.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_a20.jpg",
+            "high_res": "/data/thumbnails/guild_77_a20.jpg",
+            "original": "/data/thumbnails/guild_77_a20.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_bt258e",
+          "name": "גיטרה אקוסטית מוגברת 8 מיתרים Guild BT-258E Deluxe Baritone",
+          "description": "גיטרה אקוסטית מוגברת 8 מיתרים Guild BT-258E Deluxe Baritone",
+          "images": {
+            "main": "/data/thumbnails/guild_77_bt258e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_bt258e.jpg",
+            "high_res": "/data/thumbnails/guild_77_bt258e.jpg",
+            "original": "/data/thumbnails/guild_77_bt258e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d260ce",
+          "name": "גיטרה אקוסטית מוגברת Guild D-260CE",
+          "description": "גיטרה אקוסטית מוגברת Guild D-260CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d260ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d260ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_d260ce.jpg",
+            "original": "/data/thumbnails/guild_77_d260ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_surflinerdlx_rose",
+          "name": "גיטרה חשמלית Guild Surfliner Deluxe Rose Quartz Metallic",
+          "description": "גיטרה חשמלית Guild Surfliner Deluxe Rose Quartz Metallic",
+          "images": {
+            "main": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg",
+            "high_res": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg",
+            "original": "/data/thumbnails/guild_77_surflinerdlx_rose.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d240e_fm",
+          "name": "גיטרה אקוסטית מוגברת Guild D-240E-FM",
+          "description": "גיטרה אקוסטית מוגברת Guild D-240E-FM",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d240e_fm.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d240e_fm.jpg",
+            "high_res": "/data/thumbnails/guild_77_d240e_fm.jpg",
+            "original": "/data/thumbnails/guild_77_d240e_fm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om140ce",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-140CE Natural",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-140CE Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om140ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om140ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_om140ce.jpg",
+            "original": "/data/thumbnails/guild_77_om140ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireidc_cab",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I DC",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I DC",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireidc_cab.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireidc_cab.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireidc_cab.jpg",
+            "original": "/data/thumbnails/guild_77_starfireidc_cab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f250e",
+          "name": "גיטרה אקוסטית מוגברת Guild F-250E Deluxe",
+          "description": "גיטרה אקוסטית מוגברת Guild F-250E Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f250e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f250e.jpg",
+            "high_res": "/data/thumbnails/guild_77_f250e.jpg",
+            "original": "/data/thumbnails/guild_77_f250e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_gbajj",
+          "name": "Guild Acoustic Gig Bag Jumbo Junior",
+          "description": "Guild Acoustic Gig Bag Jumbo Junior",
+          "images": {
+            "main": "/data/thumbnails/guild_77_gbajj.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_gbajj.jpg",
+            "high_res": "/data/thumbnails/guild_77_gbajj.jpg",
+            "original": "/data/thumbnails/guild_77_gbajj.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m140",
+          "name": "גיטרה אקוסטית Guild M140 Concert",
+          "description": "גיטרה אקוסטית Guild M140 Concert",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m140.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m140.jpg",
+            "high_res": "/data/thumbnails/guild_77_m140.jpg",
+            "original": "/data/thumbnails/guild_77_m140.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_surfliner_mnt",
+          "name": "גיטרה חשמלית Guild Surfliner White Sage",
+          "description": "גיטרה חשמלית Guild Surfliner White Sage",
+          "images": {
+            "main": "/data/thumbnails/guild_77_surfliner_mnt.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_surfliner_mnt.jpg",
+            "high_res": "/data/thumbnails/guild_77_surfliner_mnt.jpg",
+            "original": "/data/thumbnails/guild_77_surfliner_mnt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_surflinerdlx_gr",
+          "name": "גיטרה חשמלית Guild Surfliner Deluxe Evergreen Metallic",
+          "description": "גיטרה חשמלית Guild Surfliner Deluxe Evergreen Metallic",
+          "images": {
+            "main": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg",
+            "high_res": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg",
+            "original": "/data/thumbnails/guild_77_surflinerdlx_gr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f250ce",
+          "name": "גיטרה אקוסטית מוגברת Guild F-250CE Deluxe",
+          "description": "גיטרה אקוסטית מוגברת Guild F-250CE Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f250ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f250ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_f250ce.jpg",
+            "original": "/data/thumbnails/guild_77_f250ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_bagacojumbo",
+          "name": "Guild Premium Acoustic Gig Bag Jumbo",
+          "description": "Guild Premium Acoustic Gig Bag Jumbo",
+          "images": {
+            "main": "/data/thumbnails/guild_77_bagacojumbo.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_bagacojumbo.jpg",
+            "high_res": "/data/thumbnails/guild_77_bagacojumbo.jpg",
+            "original": "/data/thumbnails/guild_77_bagacojumbo.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jj_mp",
+          "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Maple",
+          "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Maple",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jj_mp.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jj_mp.jpg",
+            "high_res": "/data/thumbnails/guild_77_jj_mp.jpg",
+            "original": "/data/thumbnails/guild_77_jj_mp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_surfliner_blu",
+          "name": "גיטרה חשמלית Guild Surfliner Catalina Blue",
+          "description": "גיטרה חשמלית Guild Surfliner Catalina Blue",
+          "images": {
+            "main": "/data/thumbnails/guild_77_surfliner_blu.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_surfliner_blu.jpg",
+            "high_res": "/data/thumbnails/guild_77_surfliner_blu.jpg",
+            "original": "/data/thumbnails/guild_77_surfliner_blu.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_aristop90vsb",
+          "name": "גיטרה חשמלית Guild Aristocrat P90 Vintage Sunburst",
+          "description": "גיטרה חשמלית Guild Aristocrat P90 Vintage Sunburst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_aristop90vsb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_aristop90vsb.jpg",
+            "high_res": "/data/thumbnails/guild_77_aristop90vsb.jpg",
+            "original": "/data/thumbnails/guild_77_aristop90vsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_surflinerdlx_bk",
+          "name": "גיטרה חשמלית Guild Surfliner Deluxe Black",
+          "description": "גיטרה חשמלית Guild Surfliner Deluxe Black",
+          "images": {
+            "main": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg",
+            "high_res": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg",
+            "original": "/data/thumbnails/guild_77_surflinerdlx_bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_b240e_fretless",
+          "name": "גיטרה בס אקוסטית מוגברת Guild B-240E Fretless",
+          "description": "גיטרה בס אקוסטית מוגברת Guild B-240E Fretless",
+          "images": {
+            "main": "/data/thumbnails/guild_77_b240e_fretless.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_b240e_fretless.jpg",
+            "high_res": "/data/thumbnails/guild_77_b240e_fretless.jpg",
+            "original": "/data/thumbnails/guild_77_b240e_fretless.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om240ce_oxb",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om240ce_oxb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om240ce_oxb.jpg",
+            "high_res": "/data/thumbnails/guild_77_om240ce_oxb.jpg",
+            "original": "/data/thumbnails/guild_77_om240ce_oxb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d140ce_n",
+          "name": "גיטרה אקוסטית מוגברת Guild D-140CE",
+          "description": "גיטרה אקוסטית מוגברת Guild D-140CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d140ce_n.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d140ce_n.jpg",
+            "high_res": "/data/thumbnails/guild_77_d140ce_n.jpg",
+            "original": "/data/thumbnails/guild_77_d140ce_n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om260ce_tbb",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om260ce_tbb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om260ce_tbb.jpg",
+            "high_res": "/data/thumbnails/guild_77_om260ce_tbb.jpg",
+            "original": "/data/thumbnails/guild_77_om260ce_tbb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireiscatb",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireiscatb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireiscatb.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireiscatb.jpg",
+            "original": "/data/thumbnails/guild_77_starfireiscatb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d120_nat",
+          "name": "גיטרה אקוסטית Guild D-120 Natural",
+          "description": "גיטרה אקוסטית Guild D-120 Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d120_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d120_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_d120_nat.jpg",
+            "original": "/data/thumbnails/guild_77_d120_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f2512e_atb",
+          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Deluxe",
+          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512E Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f2512e_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f2512e_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_f2512e_atb.jpg",
+            "original": "/data/thumbnails/guild_77_f2512e_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om250ce",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-250CE",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-250CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om250ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om250ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_om250ce.jpg",
+            "original": "/data/thumbnails/guild_77_om250ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m120l_l",
+          "name": "גיטרה אקוסטית שמאלית Guild M-120L LH",
+          "description": "גיטרה אקוסטית שמאלית Guild M-120L LH",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m120l_l.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m120l_l.jpg",
+            "high_res": "/data/thumbnails/guild_77_m120l_l.jpg",
+            "original": "/data/thumbnails/guild_77_m120l_l.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om240ce",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om240ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om240ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_om240ce.jpg",
+            "original": "/data/thumbnails/guild_77_om240ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireiscvwn",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireiscvwn.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireiscvwn.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireiscvwn.jpg",
+            "original": "/data/thumbnails/guild_77_starfireiscvwn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om150ce",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-150CE",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-150CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om150ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om150ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_om150ce.jpg",
+            "original": "/data/thumbnails/guild_77_om150ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d2612ce_atb",
+          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild D-2612CE Deluxe",
+          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild D-2612CE Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d2612ce_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d2612ce_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_d2612ce_atb.jpg",
+            "original": "/data/thumbnails/guild_77_d2612ce_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_b140e",
+          "name": "גיטרה בס אקוסטית מוגברת Guild B-140E",
+          "description": "גיטרה בס אקוסטית מוגברת Guild B-140E",
+          "images": {
+            "main": "/data/thumbnails/guild_77_b140e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_b140e.jpg",
+            "high_res": "/data/thumbnails/guild_77_b140e.jpg",
+            "original": "/data/thumbnails/guild_77_b140e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om240ce_acb",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-240CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om240ce_acb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om240ce_acb.jpg",
+            "high_res": "/data/thumbnails/guild_77_om240ce_acb.jpg",
+            "original": "/data/thumbnails/guild_77_om240ce_acb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om260ce_eb",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe Burl",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe Burl",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om260ce_eb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om260ce_eb.jpg",
+            "high_res": "/data/thumbnails/guild_77_om260ce_eb.jpg",
+            "original": "/data/thumbnails/guild_77_om260ce_eb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_p250e",
+          "name": "גיטרה אקוסטית מוגברת Guild P-250E",
+          "description": "גיטרה אקוסטית מוגברת Guild P-250E",
+          "images": {
+            "main": "/data/thumbnails/guild_77_p250e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_p250e.jpg",
+            "high_res": "/data/thumbnails/guild_77_p250e.jpg",
+            "original": "/data/thumbnails/guild_77_p250e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f2512ce_dblond",
+          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512CE Deluxe",
+          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Guild F-2512CE Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f2512ce_dblond.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f2512ce_dblond.jpg",
+            "high_res": "/data/thumbnails/guild_77_f2512ce_dblond.jpg",
+            "original": "/data/thumbnails/guild_77_f2512ce_dblond.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireiscscw",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I SC",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireiscscw.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireiscscw.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireiscscw.jpg",
+            "original": "/data/thumbnails/guild_77_starfireiscscw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_p240",
+          "name": "גיטרה אקוסטית Guild P-240 Memoir",
+          "description": "גיטרה אקוסטית Guild P-240 Memoir",
+          "images": {
+            "main": "/data/thumbnails/guild_77_p240.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_p240.jpg",
+            "high_res": "/data/thumbnails/guild_77_p240.jpg",
+            "original": "/data/thumbnails/guild_77_p240.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m240e_tb",
+          "name": "גיטרת אקוסטית מוגברת Guild M-240E Troubadour",
+          "description": "גיטרת אקוסטית מוגברת Guild M-240E Troubadour",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m240e_tb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m240e_tb.jpg",
+            "high_res": "/data/thumbnails/guild_77_m240e_tb.jpg",
+            "original": "/data/thumbnails/guild_77_m240e_tb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_gbad",
+          "name": "Guild Acoustic Gig Bag Orchestra/Dreadnough",
+          "description": "Guild Acoustic Gig Bag Orchestra/Dreadnough",
+          "images": {
+            "main": "/data/thumbnails/guild_77_gbad.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_gbad.jpg",
+            "high_res": "/data/thumbnails/guild_77_gbad.jpg",
+            "original": "/data/thumbnails/guild_77_gbad.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f1512",
+          "name": "גיטרה אקוסטית 12 מיתרים Guild F-1512",
+          "description": "גיטרה אקוסטית 12 מיתרים Guild F-1512",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f1512.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f1512.jpg",
+            "high_res": "/data/thumbnails/guild_77_f1512.jpg",
+            "original": "/data/thumbnails/guild_77_f1512.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m260e",
+          "name": "גיטרה אקוסטית מוגברת Guild M-260E Deluxe",
+          "description": "גיטרה אקוסטית מוגברת Guild M-260E Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m260e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m260e.jpg",
+            "high_res": "/data/thumbnails/guild_77_m260e.jpg",
+            "original": "/data/thumbnails/guild_77_m260e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m240e",
+          "name": "גיטרה אקוסטית מוגברת Guild M-240E",
+          "description": "גיטרה אקוסטית מוגברת Guild M-240E",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m240e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m240e.jpg",
+            "high_res": "/data/thumbnails/guild_77_m240e.jpg",
+            "original": "/data/thumbnails/guild_77_m240e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d140ce_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild D-140CE ATB",
+          "description": "גיטרה אקוסטית מוגברת Guild D-140CE ATB",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d140ce_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d140ce_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_d140ce_atb.jpg",
+            "original": "/data/thumbnails/guild_77_d140ce_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d240e_lh",
+          "name": "גיטרה אקוסטית שמאלית מוגברת Guild D-240E LH",
+          "description": "גיטרה אקוסטית שמאלית מוגברת Guild D-240E LH",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d240e_lh.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d240e_lh.jpg",
+            "high_res": "/data/thumbnails/guild_77_d240e_lh.jpg",
+            "original": "/data/thumbnails/guild_77_d240e_lh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d240e",
+          "name": "גיטרה אקוסטית מוגברת Guild D-240E",
+          "description": "גיטרה אקוסטית מוגברת Guild D-240E",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d240e.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d240e.jpg",
+            "high_res": "/data/thumbnails/guild_77_d240e.jpg",
+            "original": "/data/thumbnails/guild_77_d240e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_surfliner_org",
+          "name": "גיטרה חשמלית Guild Surfliner Sunset Orange",
+          "description": "גיטרה חשמלית Guild Surfliner Sunset Orange",
+          "images": {
+            "main": "/data/thumbnails/guild_77_surfliner_org.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_surfliner_org.jpg",
+            "high_res": "/data/thumbnails/guild_77_surfliner_org.jpg",
+            "original": "/data/thumbnails/guild_77_surfliner_org.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om260ce_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-260CE Deluxe",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om260ce_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om260ce_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_om260ce_atb.jpg",
+            "original": "/data/thumbnails/guild_77_om260ce_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_bagacudeluxe",
+          "name": "Guild Premium Acoustic Guitar Gig Bag",
+          "description": "Guild Premium Acoustic Guitar Gig Bag",
+          "images": {
+            "main": "/data/thumbnails/guild_77_bagacudeluxe.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_bagacudeluxe.jpg",
+            "high_res": "/data/thumbnails/guild_77_bagacudeluxe.jpg",
+            "original": "/data/thumbnails/guild_77_bagacudeluxe.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireidcvwn",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireidcvwn.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireidcvwn.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireidcvwn.jpg",
+            "original": "/data/thumbnails/guild_77_starfireidcvwn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d150ce",
+          "name": "גיטרה אקוסטית מוגברת Guild D-150CE",
+          "description": "גיטרה אקוסטית מוגברת Guild D-150CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d150ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d150ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_d150ce.jpg",
+            "original": "/data/thumbnails/guild_77_d150ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_gbabb",
+          "name": "Guild Acoustic Gig Bag Bass",
+          "description": "Guild Acoustic Gig Bag Bass",
+          "images": {
+            "main": "/data/thumbnails/guild_77_gbabb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_gbabb.jpg",
+            "high_res": "/data/thumbnails/guild_77_gbabb.jpg",
+            "original": "/data/thumbnails/guild_77_gbabb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jj_bass",
+          "name": "גיטרה בס אקוסטית מוגברת Guild Jumbo Junior",
+          "description": "גיטרה בס אקוסטית מוגברת Guild Jumbo Junior",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jj_bass.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jj_bass.jpg",
+            "high_res": "/data/thumbnails/guild_77_jj_bass.jpg",
+            "original": "/data/thumbnails/guild_77_jj_bass.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_aristohhtbb",
+          "name": "גיטרה חשמלית Guild Aristocrat HH Trans Black Burst",
+          "description": "גיטרה חשמלית Guild Aristocrat HH Trans Black Burst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_aristohhtbb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_aristohhtbb.jpg",
+            "high_res": "/data/thumbnails/guild_77_aristohhtbb.jpg",
+            "original": "/data/thumbnails/guild_77_aristohhtbb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d40_nat",
+          "name": "גיטרה אקוסטית Guild D-40",
+          "description": "גיטרה אקוסטית Guild D-40",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d40_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d40_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_d40_nat.jpg",
+            "original": "/data/thumbnails/guild_77_d40_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfirebassvwn",
+          "name": "גיטרה בס רבע נפח Guild Starfire I Bass Vintage Walnut",
+          "description": "גיטרה בס רבע נפח Guild Starfire I Bass Vintage Walnut",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfirebassvwn.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfirebassvwn.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfirebassvwn.jpg",
+            "original": "/data/thumbnails/guild_77_starfirebassvwn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfirebasschr",
+          "name": "גיטרה בס רבע נפח Guild Starfire I Bass Cherry Red",
+          "description": "גיטרה בס רבע נפח Guild Starfire I Bass Cherry Red",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfirebasschr.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfirebasschr.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfirebasschr.jpg",
+            "original": "/data/thumbnails/guild_77_starfirebasschr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireidcchr",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireidcchr.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireidcchr.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireidcchr.jpg",
+            "original": "/data/thumbnails/guild_77_starfireidcchr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireidcgrn",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireidcgrn.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireidcgrn.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireidcgrn.jpg",
+            "original": "/data/thumbnails/guild_77_starfireidcgrn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfireidcblu",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I Double Cut",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfireidcblu.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfireidcblu.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfireidcblu.jpg",
+            "original": "/data/thumbnails/guild_77_starfireidcblu.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfirebass2",
+          "name": "גיטרה בס רבע נפח Guild Starfire Bass II Cherry Red",
+          "description": "גיטרה בס רבע נפח Guild Starfire Bass II Cherry Red",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfirebass2.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfirebass2.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfirebass2.jpg",
+            "original": "/data/thumbnails/guild_77_starfirebass2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jj_fm",
+          "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Reserve Maple",
+          "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Reserve Maple",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jj_fm.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jj_fm.jpg",
+            "high_res": "/data/thumbnails/guild_77_jj_fm.jpg",
+            "original": "/data/thumbnails/guild_77_jj_fm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfirebass_blu",
+          "name": "גיטרה בס רבע נפח Guild Starfire I Bass Pelham Blue",
+          "description": "גיטרה בס רבע נפח Guild Starfire I Bass Pelham Blue",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfirebass_blu.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfirebass_blu.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfirebass_blu.jpg",
+            "original": "/data/thumbnails/guild_77_starfirebass_blu.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jumbo_jr_fm",
+          "name": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Flamed Maple",
+          "description": "גיטרה אקוסטית מוגברת Guild Jumbo Junior Flamed Maple",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg",
+            "high_res": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg",
+            "original": "/data/thumbnails/guild_77_jumbo_jr_fm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_bagacobass",
+          "name": "Guild Premium Acoustic Bass Gig Bag",
+          "description": "Guild Premium Acoustic Bass Gig Bag",
+          "images": {
+            "main": "/data/thumbnails/guild_77_bagacobass.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_bagacobass.jpg",
+            "high_res": "/data/thumbnails/guild_77_bagacobass.jpg",
+            "original": "/data/thumbnails/guild_77_bagacobass.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starireijet90gld",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Gold",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Gold",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starireijet90gld.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starireijet90gld.jpg",
+            "high_res": "/data/thumbnails/guild_77_starireijet90gld.jpg",
+            "original": "/data/thumbnails/guild_77_starireijet90gld.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_ebgst",
+          "name": "Guild Starfire Premium Electric Gig Bag",
+          "description": "Guild Starfire Premium Electric Gig Bag",
+          "images": {
+            "main": "/data/thumbnails/guild_77_ebgst.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_ebgst.jpg",
+            "high_res": "/data/thumbnails/guild_77_ebgst.jpg",
+            "original": "/data/thumbnails/guild_77_ebgst.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_tbird_vwt",
+          "name": "גיטרה חשמלית Guild T-Bird ST Vintage White",
+          "description": "גיטרה חשמלית Guild T-Bird ST Vintage White",
+          "images": {
+            "main": "/data/thumbnails/guild_77_tbird_vwt.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_tbird_vwt.jpg",
+            "high_res": "/data/thumbnails/guild_77_tbird_vwt.jpg",
+            "original": "/data/thumbnails/guild_77_tbird_vwt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfirejet90sbk",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Black",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire I JET 90 Satin Black",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfirejet90sbk.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfirejet90sbk.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfirejet90sbk.jpg",
+            "original": "/data/thumbnails/guild_77_starfirejet90sbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_s200_atb",
+          "name": "גיטרה חשמלית Guild S-200 T-Bird Antique Burst",
+          "description": "גיטרה חשמלית Guild S-200 T-Bird Antique Burst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_s200_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_s200_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_s200_atb.jpg",
+            "original": "/data/thumbnails/guild_77_s200_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jetstarstvwt",
+          "name": "גיטרה חשמלית Guild Jetstar Vintage White",
+          "description": "גיטרה חשמלית Guild Jetstar Vintage White",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jetstarstvwt.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jetstarstvwt.jpg",
+            "high_res": "/data/thumbnails/guild_77_jetstarstvwt.jpg",
+            "original": "/data/thumbnails/guild_77_jetstarstvwt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_bluesbird_blk",
+          "name": "גיטרה חשמלית Guild Bluesbird Black",
+          "description": "גיטרה חשמלית Guild Bluesbird Black",
+          "images": {
+            "main": "/data/thumbnails/guild_77_bluesbird_blk.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_bluesbird_blk.jpg",
+            "high_res": "/data/thumbnails/guild_77_bluesbird_blk.jpg",
+            "original": "/data/thumbnails/guild_77_bluesbird_blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f150ce",
+          "name": "גיטרה אקוסטית מוגברת Guild F-150CE",
+          "description": "גיטרה אקוסטית מוגברת Guild F-150CE",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f150ce.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f150ce.jpg",
+            "high_res": "/data/thumbnails/guild_77_f150ce.jpg",
+            "original": "/data/thumbnails/guild_77_f150ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_bluesbird_itb",
+          "name": "גיטרה חשמלית Guild Bluesbird Iced Tea Burst",
+          "description": "גיטרה חשמלית Guild Bluesbird Iced Tea Burst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_bluesbird_itb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_bluesbird_itb.jpg",
+            "high_res": "/data/thumbnails/guild_77_bluesbird_itb.jpg",
+            "original": "/data/thumbnails/guild_77_bluesbird_itb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m20_n",
+          "name": "גיטרה אקוסטית Guild M-20 USA",
+          "description": "גיטרה אקוסטית Guild M-20 USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m20_n.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m20_n.jpg",
+            "high_res": "/data/thumbnails/guild_77_m20_n.jpg",
+            "original": "/data/thumbnails/guild_77_m20_n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d20e_vsb",
+          "name": "גיטרה אקוסטית מוגברת Guild D-20E USA Vintage Sunburst",
+          "description": "גיטרה אקוסטית מוגברת Guild D-20E USA Vintage Sunburst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d20e_vsb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d20e_vsb.jpg",
+            "high_res": "/data/thumbnails/guild_77_d20e_vsb.jpg",
+            "original": "/data/thumbnails/guild_77_d20e_vsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire_i12_cr",
+          "name": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire I",
+          "description": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire I",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire_i12_cr.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire_i12_cr.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire_i12_cr.jpg",
+            "original": "/data/thumbnails/guild_77_starfire_i12_cr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_s100polara_chr",
+          "name": "גיטרה חשמלית Guild S-100 Polara Cherry Red",
+          "description": "גיטרה חשמלית Guild S-100 Polara Cherry Red",
+          "images": {
+            "main": "/data/thumbnails/guild_77_s100polara_chr.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_s100polara_chr.jpg",
+            "high_res": "/data/thumbnails/guild_77_s100polara_chr.jpg",
+            "original": "/data/thumbnails/guild_77_s100polara_chr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jetstarstsfg",
+          "name": "גיטרה חשמלית Guild Jetstar Seafoam Green",
+          "description": "גיטרה חשמלית Guild Jetstar Seafoam Green",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jetstarstsfg.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jetstarstsfg.jpg",
+            "high_res": "/data/thumbnails/guild_77_jetstarstsfg.jpg",
+            "original": "/data/thumbnails/guild_77_jetstarstsfg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_om140ce_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild OM-140CE Antique Sunburst",
+          "description": "גיטרה אקוסטית מוגברת Guild OM-140CE Antique Sunburst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_om140ce_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_om140ce_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_om140ce_atb.jpg",
+            "original": "/data/thumbnails/guild_77_om140ce_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f40e_nat",
+          "name": "גיטרה אקוסטית מוגברת Guild F-40E USA Natural",
+          "description": "גיטרה אקוסטית מוגברת Guild F-40E USA Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f40e_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f40e_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_f40e_nat.jpg",
+            "original": "/data/thumbnails/guild_77_f40e_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m40e_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild M-40E USA ATB",
+          "description": "גיטרה אקוסטית מוגברת Guild M-40E USA ATB",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m40e_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m40e_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_m40e_atb.jpg",
+            "original": "/data/thumbnails/guild_77_m40e_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire5_bk",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire V Black",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire V Black",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire5_bk.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire5_bk.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire5_bk.jpg",
+            "original": "/data/thumbnails/guild_77_starfire5_bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m25e_cab",
+          "name": "גיטרה אקוסטית מוגברת Guild M-25E USA",
+          "description": "גיטרה אקוסטית מוגברת Guild M-25E USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m25e_cab.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m25e_cab.jpg",
+            "high_res": "/data/thumbnails/guild_77_m25e_cab.jpg",
+            "original": "/data/thumbnails/guild_77_m25e_cab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire6_sm",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire VI Shoreline Mist",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire VI Shoreline Mist",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire6_sm.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire6_sm.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire6_sm.jpg",
+            "original": "/data/thumbnails/guild_77_starfire6_sm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire6_fm",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire VI Flamed Maple",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire VI Flamed Maple",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire6_fm.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire6_fm.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire6_fm.jpg",
+            "original": "/data/thumbnails/guild_77_starfire6_fm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire4_ch",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire IV Cherry Red",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire IV Cherry Red",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire4_ch.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire4_ch.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire4_ch.jpg",
+            "original": "/data/thumbnails/guild_77_starfire4_ch.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfirebass",
+          "name": "גיטרה בס Guild Starfire Bass",
+          "description": "גיטרה בס Guild Starfire Bass",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfirebass.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfirebass.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfirebass.jpg",
+            "original": "/data/thumbnails/guild_77_starfirebass.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d20",
+          "name": "גיטרה אקוסטית Guild D-20 USA",
+          "description": "גיטרה אקוסטית Guild D-20 USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d20.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d20.jpg",
+            "high_res": "/data/thumbnails/guild_77_d20.jpg",
+            "original": "/data/thumbnails/guild_77_d20.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d20e_nat",
+          "name": "גיטרה אקוסטית מוגברת Guild D-20E USA Natural",
+          "description": "גיטרה אקוסטית מוגברת Guild D-20E USA Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d20e_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d20e_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_d20e_nat.jpg",
+            "original": "/data/thumbnails/guild_77_d20e_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_s200_blk",
+          "name": "גיטרה חשמלית Guild S-200 T-Bird Black",
+          "description": "גיטרה חשמלית Guild S-200 T-Bird Black",
+          "images": {
+            "main": "/data/thumbnails/guild_77_s200_blk.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_s200_blk.jpg",
+            "high_res": "/data/thumbnails/guild_77_s200_blk.jpg",
+            "original": "/data/thumbnails/guild_77_s200_blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_x175_bld",
+          "name": "גיטרה חשמלית Guild X-175B Manhattan Hollow Body",
+          "description": "גיטרה חשמלית Guild X-175B Manhattan Hollow Body",
+          "images": {
+            "main": "/data/thumbnails/guild_77_x175_bld.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_x175_bld.jpg",
+            "high_res": "/data/thumbnails/guild_77_x175_bld.jpg",
+            "original": "/data/thumbnails/guild_77_x175_bld.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_x175_spe_vib",
+          "name": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+          "description": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+          "images": {
+            "main": "/data/thumbnails/guild_77_x175_spe_vib.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_x175_spe_vib.jpg",
+            "high_res": "/data/thumbnails/guild_77_x175_spe_vib.jpg",
+            "original": "/data/thumbnails/guild_77_x175_spe_vib.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_gb_m75_polora",
+          "name": "Guild Deluxe Electric Gig Bag - BB/M-75/Polara",
+          "description": "Guild Deluxe Electric Gig Bag - BB/M-75/Polara",
+          "images": {
+            "main": "/data/thumbnails/guild_77_gb_m75_polora.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_gb_m75_polora.jpg",
+            "high_res": "/data/thumbnails/guild_77_gb_m75_polora.jpg",
+            "original": "/data/thumbnails/guild_77_gb_m75_polora.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_jumbobag",
+          "name": "Guild Deluxe Humidified Archtop Wood Case",
+          "description": "Guild Deluxe Humidified Archtop Wood Case",
+          "images": {
+            "main": "/data/thumbnails/guild_77_jumbobag.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_jumbobag.jpg",
+            "high_res": "/data/thumbnails/guild_77_jumbobag.jpg",
+            "original": "/data/thumbnails/guild_77_jumbobag.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_x175_man",
+          "name": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+          "description": "גיטרה חשמלית Guild X-175 Manhattan Hollow Body",
+          "images": {
+            "main": "/data/thumbnails/guild_77_x175_man.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_x175_man.jpg",
+            "high_res": "/data/thumbnails/guild_77_x175_man.jpg",
+            "original": "/data/thumbnails/guild_77_x175_man.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_premiumbag",
+          "name": "Guild Acoustic Premium Gig Bag",
+          "description": "Guild Acoustic Premium Gig Bag",
+          "images": {
+            "main": "/data/thumbnails/guild_77_premiumbag.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_premiumbag.jpg",
+            "high_res": "/data/thumbnails/guild_77_premiumbag.jpg",
+            "original": "/data/thumbnails/guild_77_premiumbag.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_aristohhscw",
+          "name": "גיטרה חשמלית Guild Aristocrat HH Snowcrest White",
+          "description": "גיטרה חשמלית Guild Aristocrat HH Snowcrest White",
+          "images": {
+            "main": "/data/thumbnails/guild_77_aristohhscw.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_aristohhscw.jpg",
+            "high_res": "/data/thumbnails/guild_77_aristohhscw.jpg",
+            "original": "/data/thumbnails/guild_77_aristohhscw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire412sl",
+          "name": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire IV ST-12",
+          "description": "גיטרה חשמלית רבע נפח 12 מיתרים Guild Starfire IV ST-12",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire412sl.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire412sl.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire412sl.jpg",
+            "original": "/data/thumbnails/guild_77_starfire412sl.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m75_atb",
+          "name": "גיטרה חשמלית רבע נפח Guild M-75 Aristocrat",
+          "description": "גיטרה חשמלית רבע נפח Guild M-75 Aristocrat",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m75_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m75_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_m75_atb.jpg",
+            "original": "/data/thumbnails/guild_77_m75_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire4st_vsb",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire4st_vsb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire4st_vsb.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire4st_vsb.jpg",
+            "original": "/data/thumbnails/guild_77_starfire4st_vsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire4st_grn",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire IV ST",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire4st_grn.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire4st_grn.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire4st_grn.jpg",
+            "original": "/data/thumbnails/guild_77_starfire4st_grn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire4st_fm",
+          "name": "גיטרה חשמלית Guild Starfire IV ST",
+          "description": "גיטרה חשמלית Guild Starfire IV ST",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire4st_fm.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire4st_fm.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire4st_fm.jpg",
+            "original": "/data/thumbnails/guild_77_starfire4st_fm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire5_scw",
+          "name": "גיטרה חשמלית Guild Starfire V Snowcrest White",
+          "description": "גיטרה חשמלית Guild Starfire V Snowcrest White",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire5_scw.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire5_scw.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire5_scw.jpg",
+            "original": "/data/thumbnails/guild_77_starfire5_scw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m40e_nat",
+          "name": "גיטרה אקוסטית מוגברת Guild M-40E USA Natural",
+          "description": "גיטרה אקוסטית מוגברת Guild M-40E USA Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m40e_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m40e_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_m40e_nat.jpg",
+            "original": "/data/thumbnails/guild_77_m40e_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire5_chr",
+          "name": "גיטרה חשמלית Guild Starfire V Cherry Red",
+          "description": "גיטרה חשמלית Guild Starfire V Cherry Red",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire5_chr.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire5_chr.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire5_chr.jpg",
+            "original": "/data/thumbnails/guild_77_starfire5_chr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m20e_vsb",
+          "name": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+          "description": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m20e_vsb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m20e_vsb.jpg",
+            "high_res": "/data/thumbnails/guild_77_m20e_vsb.jpg",
+            "original": "/data/thumbnails/guild_77_m20e_vsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f40_nat",
+          "name": "גיטרה אקוסטית Guild F-40 USA",
+          "description": "גיטרה אקוסטית Guild F-40 USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f40_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f40_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_f40_nat.jpg",
+            "original": "/data/thumbnails/guild_77_f40_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_m20e_n",
+          "name": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+          "description": "גיטרה אקוסטית מוגברת Guild M-20E USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_m20e_n.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_m20e_n.jpg",
+            "high_res": "/data/thumbnails/guild_77_m20e_n.jpg",
+            "original": "/data/thumbnails/guild_77_m20e_n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f40e_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild F-40E USA ATB",
+          "description": "גיטרה אקוסטית מוגברת Guild F-40E USA ATB",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f40e_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f40e_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_f40e_atb.jpg",
+            "original": "/data/thumbnails/guild_77_f40e_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d40e_nat",
+          "name": "גיטרה אקוסטית מוגברת Guild D-40E USA",
+          "description": "גיטרה אקוסטית מוגברת Guild D-40E USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d40e_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d40e_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_d40e_nat.jpg",
+            "original": "/data/thumbnails/guild_77_d40e_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfire6_sw",
+          "name": "גיטרה חשמלית רבע נפח Guild Starfire VI Snowcrest White",
+          "description": "גיטרה חשמלית רבע נפח Guild Starfire VI Snowcrest White",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfire6_sw.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfire6_sw.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfire6_sw.jpg",
+            "original": "/data/thumbnails/guild_77_starfire6_sw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d40e_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild D-40E Antique Sunburst",
+          "description": "גיטרה אקוסטית מוגברת Guild D-40E Antique Sunburst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d40e_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d40e_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_d40e_atb.jpg",
+            "original": "/data/thumbnails/guild_77_d40e_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d55e_n",
+          "name": "גיטרה אקוסטית מוגברת Guild D-55E USA Natural",
+          "description": "גיטרה אקוסטית מוגברת Guild D-55E USA Natural",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d55e_n.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d55e_n.jpg",
+            "high_res": "/data/thumbnails/guild_77_d55e_n.jpg",
+            "original": "/data/thumbnails/guild_77_d55e_n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_d55e_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild D-55E USA Antique Burst",
+          "description": "גיטרה אקוסטית מוגברת Guild D-55E USA Antique Burst",
+          "images": {
+            "main": "/data/thumbnails/guild_77_d55e_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_d55e_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_d55e_atb.jpg",
+            "original": "/data/thumbnails/guild_77_d55e_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f55e_nat",
+          "name": "גיטרה אקוסטית מוגברת Guild F-55E Natural USA",
+          "description": "גיטרה אקוסטית מוגברת Guild F-55E Natural USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f55e_nat.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f55e_nat.jpg",
+            "high_res": "/data/thumbnails/guild_77_f55e_nat.jpg",
+            "original": "/data/thumbnails/guild_77_f55e_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_f55e_atb",
+          "name": "גיטרה אקוסטית מוגברת Guild F-55E USA",
+          "description": "גיטרה אקוסטית מוגברת Guild F-55E USA",
+          "images": {
+            "main": "/data/thumbnails/guild_77_f55e_atb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_f55e_atb.jpg",
+            "high_res": "/data/thumbnails/guild_77_f55e_atb.jpg",
+            "original": "/data/thumbnails/guild_77_f55e_atb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_bridge_pin",
+          "name": "סט 6 פינים לגיטרה אקוסטית Guild",
+          "description": "סט 6 פינים לגיטרה אקוסטית Guild",
+          "images": {
+            "main": "/data/thumbnails/guild_77_bridge_pin.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_bridge_pin.jpg",
+            "high_res": "/data/thumbnails/guild_77_bridge_pin.jpg",
+            "original": "/data/thumbnails/guild_77_bridge_pin.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_ebbstf",
+          "name": "Guild Premium Electric Gig Bag Starfire",
+          "description": "Guild Premium Electric Gig Bag Starfire",
+          "images": {
+            "main": "/data/thumbnails/guild_77_ebbstf.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_ebbstf.jpg",
+            "high_res": "/data/thumbnails/guild_77_ebbstf.jpg",
+            "original": "/data/thumbnails/guild_77_ebbstf.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_gbajb",
+          "name": "Guild Acoustic Gig Bag Jumbo-Size",
+          "description": "Guild Acoustic Gig Bag Jumbo-Size",
+          "images": {
+            "main": "/data/thumbnails/guild_77_gbajb.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_gbajb.jpg",
+            "high_res": "/data/thumbnails/guild_77_gbajb.jpg",
+            "original": "/data/thumbnails/guild_77_gbajb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "guild_77_starfirebass2fm",
+          "name": "גיטרה בס רבע נפח Starfire Bass II Flamed Maple Guild",
+          "description": "גיטרה בס רבע נפח Starfire Bass II Flamed Maple Guild",
+          "images": {
+            "main": "/data/thumbnails/guild_77_starfirebass2fm.jpg",
+            "thumbnail": "/data/thumbnails/guild_77_starfirebass2fm.jpg",
+            "high_res": "/data/thumbnails/guild_77_starfirebass2fm.jpg",
+            "original": "/data/thumbnails/guild_77_starfirebass2fm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

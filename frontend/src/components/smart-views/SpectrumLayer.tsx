@@ -727,113 +727,96 @@ export const SpectrumMiddleLayer: React.FC<SpectrumMiddleLayerProps> = ({
           >
             {hoveredProduct &&
               (() => {
-                // Infer technical specs based on product type
-                const specs = {
-                  keys: hoveredProduct.name.includes("88")
-                    ? "88"
-                    : hoveredProduct.name.includes("61")
-                      ? "61"
-                      : hoveredProduct.name.includes("76")
-                        ? "76"
-                        : hoveredProduct.category === "Pianos"
-                          ? "88 Keys"
-                          : "61 Keys",
+                // Prepare specifications list
+                let specsList: { label: string; value: string }[] = [];
 
-                  voices:
-                    hoveredProduct.category === "Pianos"
-                      ? "256-voice"
-                      : hoveredProduct.category === "Synthesizers"
-                        ? "128-voice"
-                        : "64-voice",
+                if (
+                  hoveredProduct.specifications &&
+                  hoveredProduct.specifications.length > 0
+                ) {
+                  // Use real data
+                  specsList = hoveredProduct.specifications
+                    .slice(0, 6)
+                    .map((s) => ({
+                      label: s.key,
+                      value: String(s.value),
+                    }));
+                } else {
+                  // Fallback: Infer technical specs based on product type
+                  const inferredSpecs = {
+                    keys: hoveredProduct.name.includes("88")
+                      ? "88"
+                      : hoveredProduct.name.includes("61")
+                        ? "61"
+                        : hoveredProduct.name.includes("76")
+                          ? "76"
+                          : hoveredProduct.category === "Pianos"
+                            ? "88 Keys"
+                            : "61 Keys",
 
-                  engine: hoveredProduct.name.includes("Digital")
-                    ? "SuperNATURAL Piano"
-                    : hoveredProduct.name.includes("Stage")
-                      ? "Physical Modeling"
-                      : hoveredProduct.subcategory === "Analog"
-                        ? "Analog Circuit"
-                        : hoveredProduct.subcategory === "Synthesizer"
-                          ? "Digital Synthesis"
-                          : "Sample-based",
+                    voices:
+                      hoveredProduct.category === "Pianos"
+                        ? "256-voice"
+                        : hoveredProduct.category === "Synthesizers"
+                          ? "128-voice"
+                          : "64-voice",
 
-                  connections:
-                    hoveredProduct.category === "Pianos"
-                      ? "USB, MIDI, Stereo Out, Headphones × 2"
-                      : hoveredProduct.category === "Synthesizers"
-                        ? "USB, MIDI I/O, CV/Gate, Audio I/O"
-                        : "USB, MIDI, Audio I/O",
+                    engine: hoveredProduct.name.includes("Digital")
+                      ? "SuperNATURAL Piano"
+                      : hoveredProduct.name.includes("Stage")
+                        ? "Physical Modeling"
+                        : hoveredProduct.subcategory === "Analog"
+                          ? "Analog Circuit"
+                          : hoveredProduct.subcategory === "Synthesizer"
+                            ? "Digital Synthesis"
+                            : "Sample-based",
 
-                  display: hoveredProduct.name.includes("Pro")
-                    ? "Touch LCD Display"
-                    : "LED Matrix Display",
+                    connections:
+                      hoveredProduct.category === "Pianos"
+                        ? "USB, MIDI, Stereo Out, Headphones \u00d7 2"
+                        : hoveredProduct.category === "Synthesizers"
+                          ? "USB, MIDI I/O, CV/Gate, Audio I/O"
+                          : "USB, MIDI, Audio I/O",
 
-                  outputs:
-                    hoveredProduct.category === "Pianos"
-                      ? "2 × L/R + Headphone × 2"
-                      : "Stereo L/R + MIDI Out",
-                };
+                    display: hoveredProduct.name.includes("Pro")
+                      ? "Touch LCD Display"
+                      : "LED Matrix Display",
+
+                    outputs:
+                      hoveredProduct.category === "Pianos"
+                        ? "2 \u00d7 L/R + Headphone \u00d7 2"
+                        : "Stereo L/R + MIDI Out",
+                  };
+
+                  specsList = [
+                    { label: "Keys", value: inferredSpecs.keys },
+                    { label: "Polyphony", value: inferredSpecs.voices },
+                    { label: "Engine", value: inferredSpecs.engine },
+                    { label: "Display", value: inferredSpecs.display },
+                    { label: "I/O", value: inferredSpecs.connections },
+                    { label: "Outputs", value: inferredSpecs.outputs },
+                  ];
+                }
 
                 return (
                   <div className="flex flex-col justify-center h-full px-4 py-3">
-                    {/* Keys/Pads Count */}
-                    <div className="flex items-start gap-3 py-2.5 border-b border-slate-800/30">
-                      <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left">
-                        Keys
+                    {specsList.map((spec, index) => (
+                      <div
+                        key={index}
+                        className={`flex items-start gap-3 py-2.5 ${
+                          index < specsList.length - 1
+                            ? "border-b border-slate-800/30"
+                            : ""
+                        }`}
+                      >
+                        <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left truncate">
+                          {spec.label}
+                        </div>
+                        <div className="text-base font-bold text-white flex-1 text-left line-clamp-2">
+                          {spec.value}
+                        </div>
                       </div>
-                      <div className="text-base font-bold text-white flex-1 text-left">
-                        {specs.keys}
-                      </div>
-                    </div>
-
-                    {/* Polyphony */}
-                    <div className="flex items-start gap-3 py-2.5 border-b border-slate-800/30">
-                      <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left">
-                        Polyphony
-                      </div>
-                      <div className="text-base font-bold text-white flex-1 text-left">
-                        {specs.voices}
-                      </div>
-                    </div>
-
-                    {/* Sound Engine Type */}
-                    <div className="flex items-start gap-3 py-2.5 border-b border-slate-800/30">
-                      <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left">
-                        Engine
-                      </div>
-                      <div className="text-base font-bold text-white flex-1 text-left">
-                        {specs.engine}
-                      </div>
-                    </div>
-
-                    {/* Display Type */}
-                    <div className="flex items-start gap-3 py-2.5 border-b border-slate-800/30">
-                      <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left">
-                        Display
-                      </div>
-                      <div className="text-base font-bold text-white flex-1 text-left">
-                        {specs.display}
-                      </div>
-                    </div>
-
-                    {/* Connections */}
-                    <div className="flex items-start gap-3 py-2.5 border-b border-slate-800/30">
-                      <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left">
-                        I/O
-                      </div>
-                      <div className="text-base font-bold text-white flex-1 leading-tight text-left">
-                        {specs.connections}
-                      </div>
-                    </div>
-
-                    {/* Outputs */}
-                    <div className="flex items-start gap-3 py-2.5">
-                      <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left">
-                        Outputs
-                      </div>
-                      <div className="text-base font-bold text-white flex-1 text-left">
-                        {specs.outputs}
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 );
               })()}

@@ -1,0 +1,2225 @@
+{
+  "brand_identity": {
+    "id": "lag-guitars",
+    "name": "LAG-GUITARS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/lag-guitars_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 71,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "lag_guitars_38_glutku10s",
+      "name": "יוקללה סופרן Lag Tiki Uku 10",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutku10s.jpg",
+      "description": "יוקללה סופרן Lag Tiki Uku 10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutku10s.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutku10s.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutku10s.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutku10s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutku8s",
+      "name": "יוקללה סופרן Lag Tiki Uku 8",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutku8s.jpg",
+      "description": "יוקללה סופרן Lag Tiki Uku 8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutku8s.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutku8s.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutku8s.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutku8s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glubabytku11os",
+      "name": "יוקללה סופרן Lag Tiki Uku 110 BABYTKU110S",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg",
+      "description": "יוקללה סופרן Lag Tiki Uku 110 BABYTKU110S",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutku150te",
+      "name": "יוקללה טנור מוגברת Lag Tiki Uku 150",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutku150te.jpg",
+      "description": "יוקללה טנור מוגברת Lag Tiki Uku 150",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutku150te.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutku150te.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutku150te.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutku150te.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_te",
+      "name": "גיטרה אקוסטית מוגברת Lag Sauvage-TE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Sauvage-TE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70a",
+      "name": "גיטרה אקוסטית Lag Tramontane 70 Auditorium",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70a.jpg",
+      "description": "גיטרה אקוסטית Lag Tramontane 70 Auditorium",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70a.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70a.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70a.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaoc70_3_hit",
+      "name": "גיטרה קלאסית 3/4 Lag Occitania OC70-3-HIT",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg",
+      "description": "גיטרה קלאסית 3/4 Lag Occitania OC70-3-HIT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_d",
+      "name": "גיטרה אקוסטית Lag Sauvage-D",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg",
+      "description": "גיטרה אקוסטית Lag Sauvage-D",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_nasce",
+      "name": "גיטרה קלאסית מוגברת Lag Sauvage-N-ASCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg",
+      "description": "גיטרה קלאסית מוגברת Lag Sauvage-N-ASCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat88ace",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramonte 88 ACE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat88ace.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramonte 88 ACE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat88ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat88ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat88ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat88ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_bce",
+      "name": "גיטרה בס אקוסטית מוגברת Lag Sauvage-BCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg",
+      "description": "גיטרה בס אקוסטית מוגברת Lag Sauvage-BCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_jce",
+      "name": "גיטרה אקוסטית מוגברת Lag Sauvage-JCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Sauvage-JCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat88d",
+      "name": "גיטרה אקוסטית Lag T88D",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat88d.jpg",
+      "description": "גיטרה אקוסטית Lag T88D",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat88d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat88d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat88d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat88d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat118dce_brs",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane 118 DCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane 118 DCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutkb150fce",
+      "name": "בס מיני Lag TKB150FCE Fretless",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg",
+      "description": "בס מיני Lag TKB150FCE Fretless",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutkt8",
+      "name": "גיטרה אקוסטית מיני LAG TKT8 Tiki Uku Baby Guitar",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutkt8.jpg",
+      "description": "גיטרה אקוסטית מיני LAG TKT8 Tiki Uku Baby Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutkt8.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutkt8.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutkt8.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutkt8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glhthv20dce",
+      "name": "גיטרה אקוסטית מוגברת Lag HyVibe THV20DCE Smart Guitar",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag HyVibe THV20DCE Smart Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatravel_rc",
+      "name": "גיטרה אקוסטית מיני Lag Tramontane Travel RC",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg",
+      "description": "גיטרה אקוסטית מיני Lag Tramontane Travel RC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatl118dce",
+      "name": "גיטרה אקוסטית שמאלית מוגברת Lag Tramontane 118 TL118DCE Lefty",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg",
+      "description": "גיטרה אקוסטית שמאלית מוגברת Lag Tramontane 118 TL118DCE Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glhthv30ace",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane Hyvibe 30 THV30ACE Auditorium",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane Hyvibe 30 THV30ACE Auditorium",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat318d",
+      "name": "גיטרה אקוסטית LAG T318D Tramontane 318 Dreadnought",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat318d.jpg",
+      "description": "גיטרה אקוסטית LAG T318D Tramontane 318 Dreadnought",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat318d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat318d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat318d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat318d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatravel_ka",
+      "name": "גיטרה מיני אקוסטית Lag Tramontane Travel KA",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg",
+      "description": "גיטרה מיני אקוסטית Lag Tramontane Travel KA",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutku10c",
+      "name": "יוקללה קונצרט Lag Tiki Uku 10",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutku10c.jpg",
+      "description": "יוקללה קונצרט Lag Tiki Uku 10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutku10c.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutku10c.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutku10c.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutku10c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70d",
+      "name": "גיטרה אקוסטית Lag Tramontane 70 Dreadnought",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70d.jpg",
+      "description": "גיטרה אקוסטית Lag Tramontane 70 Dreadnought",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat318a",
+      "name": "גיטרה אקוסטית LAG T318A Tramontane 318 Auditorium",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat318a.jpg",
+      "description": "גיטרה אקוסטית LAG T318A Tramontane 318 Auditorium",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat318a.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat318a.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat318a.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat318a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_thv30dce",
+      "name": "גיטרה אקוסטית מוגברת Lag HyVibe THV30DCE Smart Guitar",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_thv30dce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag HyVibe THV30DCE Smart Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_thv30dce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_thv30dce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_thv30dce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_thv30dce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70dce_b_b",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70DCE B&B",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70DCE B&B",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatravel_rce",
+      "name": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel RCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg",
+      "description": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel RCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat118d",
+      "name": "גיטרה אקוסטית Lag T118D",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat118d.jpg",
+      "description": "גיטרה אקוסטית Lag T118D",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat118d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat118d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat118d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat118d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat118d_brs",
+      "name": "גיטרה אקוסטית Lag T118D-BRS",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg",
+      "description": "גיטרה אקוסטית Lag T118D-BRS",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatl70dce",
+      "name": "גיטרה אקוסטית מוגברת שמאלית Lag Tramontane 70 TL70DCE Lefty",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg",
+      "description": "גיטרה אקוסטית מוגברת שמאלית Lag Tramontane 70 TL70DCE Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatravel_sp",
+      "name": "גיטרה מיני אקוסטית LAG Tramontane Travel SP",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg",
+      "description": "גיטרה מיני אקוסטית LAG Tramontane Travel SP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glhtnlhv15ace",
+      "name": "גיטרה קלאסית שמאלית מוגברת Lag HyVibe 15 TNLHV15ACE Smart Guitar",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg",
+      "description": "גיטרה קלאסית שמאלית מוגברת Lag HyVibe 15 TNLHV15ACE Smart Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatravel_kae",
+      "name": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel KAE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg",
+      "description": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel KAE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutkt150e",
+      "name": "גיטרה מיני אקוסטית מוגברת LAG Tiki Uku Mini",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg",
+      "description": "גיטרה מיני אקוסטית מוגברת LAG Tiki Uku Mini",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat88a",
+      "name": "גיטרה אקוסטית Lag T88A",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat88a.jpg",
+      "description": "גיטרה אקוסטית Lag T88A",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat88a.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat88a.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat88a.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat88a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatl118d",
+      "name": "גיטרה אקוסטית שמאלית Lag TL118D",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatl118d.jpg",
+      "description": "גיטרה אקוסטית שמאלית Lag TL118D",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatl118d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatl118d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatl118d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatl118d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat318ace",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane 318 T318ACE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat318ace.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane 318 T318ACE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat318ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat318ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat318ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat318ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_ace",
+      "name": "גיטרה אקוסטית מוגברת Lag Sauvage-ACE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Sauvage-ACE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatravel_spe",
+      "name": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel SPE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg",
+      "description": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel SPE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glhthv10dce_lb",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane THV10DCE-LB Hyvibe 10",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane THV10DCE-LB Hyvibe 10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_dce",
+      "name": "גיטרה אקוסטית מוגברת Lag Sauvage-DCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Sauvage-DCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glasauvage_a",
+      "name": "גיטרה אקוסטית Lag Sauvage-A",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg",
+      "description": "גיטרה אקוסטית Lag Sauvage-A",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70dc",
+      "name": "גיטרה אקוסטית Lag T70DC-NAT",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70dc.jpg",
+      "description": "גיטרה אקוסטית Lag T70DC-NAT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70dc.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dc.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70dc.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70dc.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70ace_bls",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramonte 70 T70ACE-BLS",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramonte 70 T70ACE-BLS",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat170a",
+      "name": "גיטרה אקוסטית Lag Tramontane 170 Auditorium",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat170a.jpg",
+      "description": "גיטרה אקוסטית Lag Tramontane 170 Auditorium",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat170a.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat170a.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat170a.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat170a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat170d",
+      "name": "גיטרה אקוסטית Lag Tramonte 170 Dreadnought",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat170d.jpg",
+      "description": "גיטרה אקוסטית Lag Tramonte 170 Dreadnought",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat170d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat170d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat170d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat170d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaoc70",
+      "name": "גיטרה קלאסית Lag Occitania 70",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaoc70.jpg",
+      "description": "גיטרה קלאסית Lag Occitania 70",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaoc70.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaoc70.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaoc70.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaoc70_3",
+      "name": "גיטרה קלאסית Lag Occitania 70 3/4",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg",
+      "description": "גיטרה קלאסית Lag Occitania 70 3/4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatl70dce_nat",
+      "name": "גיטרה אקוסטית מוגברת שמאלית Lag Tramonte 70 DCE-NAT Lefty",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת שמאלית Lag Tramonte 70 DCE-NAT Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_hlg30as",
+      "name": "תיק לגיטרה אקוסטית Lag Auditorium Slim",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_hlg30as.jpg",
+      "description": "תיק לגיטרה אקוסטית Lag Auditorium Slim",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_hlg30as.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_hlg30as.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_hlg30as.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_hlg30as.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70dce",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70dce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70dce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70dce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70dce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaoc70_hit",
+      "name": "גיטרה קלאסית Lag Occitania 70 OC70-HIT",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg",
+      "description": "גיטרה קלאסית Lag Occitania 70 OC70-HIT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaocl70",
+      "name": "גיטרה קלאסית שמאלית Lag Occitania 70 Lefty",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaocl70.jpg",
+      "description": "גיטרה קלאסית שמאלית Lag Occitania 70 Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaocl70.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaocl70.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaocl70.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaocl70.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaoc88",
+      "name": "גיטרה קלאסית Lag Occitania 88",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaoc88.jpg",
+      "description": "גיטרה קלאסית Lag Occitania 88",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaoc88.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc88.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaoc88.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaoc88.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaoc118",
+      "name": "גיטרה קלאסית Lag Occitania 118",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaoc118.jpg",
+      "description": "גיטרה קלאסית Lag Occitania 118",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaoc118.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc118.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaoc118.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaoc118.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatn70a",
+      "name": "גיטרה אקוסטית Lag Tramonte 70 Auditorium Nylon",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatn70a.jpg",
+      "description": "גיטרה אקוסטית Lag Tramonte 70 Auditorium Nylon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatn70a.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatn70a.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatn70a.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatn70a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glaoc88ce",
+      "name": "גיטרה קלאסית מוגברת Lag Occitania 88 CE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg",
+      "description": "גיטרה קלאסית מוגברת Lag Occitania 88 CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutku8c",
+      "name": "יוקללה קונצרט Lag Tiki Uku 8",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutku8c.jpg",
+      "description": "יוקללה קונצרט Lag Tiki Uku 8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutku8c.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutku8c.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutku8c.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutku8c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatn170asce",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramonte 170 Country Slim",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramonte 170 Country Slim",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glatl70d",
+      "name": "גיטרה אקוסטית שמאלית Lag Tramonte 70 Lefty Dreadnought",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glatl70d.jpg",
+      "description": "גיטרה אקוסטית שמאלית Lag Tramonte 70 Lefty Dreadnought",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glatl70d.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glatl70d.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glatl70d.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glatl70d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glutkb150ce",
+      "name": "יוקללה בס Lag TK150CE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg",
+      "description": "יוקללה בס Lag TK150CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat118asce_ivo",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramonte 118 T118ASCE-IVO",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramonte 118 T118ASCE-IVO",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat118ace",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramonte 118 ACE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat118ace.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramonte 118 ACE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat118ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat118ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat118ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat118ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glhtlhv30ace",
+      "name": "גיטרה אקוסטית מוגברת שמאלית Lag HyVibe 30 TLHV30ACE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg",
+      "description": "גיטרה אקוסטית מוגברת שמאלית Lag HyVibe 30 TLHV30ACE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat177jce",
+      "name": "גיטרה אקוסטית מוגברת Lag T177JCE Tramonte 177 Jumbo",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat177jce.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag T177JCE Tramonte 177 Jumbo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat177jce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat177jce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat177jce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat177jce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70ace_brb",
+      "name": "גיטרה אקוסטית מוגברת Lag T70ACE-BRB",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag T70ACE-BRB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70dce_brb",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat70ace",
+      "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70ACE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat70ace.jpg",
+      "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70ACE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat70ace.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat70ace.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat70ace.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat70ace.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat177bce",
+      "name": "גיטרה בס אקוסטית מוגברת Lag Tramontane 177",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat177bce.jpg",
+      "description": "גיטרה בס אקוסטית מוגברת Lag Tramontane 177",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat177bce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat177bce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat177bce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat177bce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lag_guitars_38_glat177j12ce",
+      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Lag Tramonte 177 T177J12CE",
+      "brand": "lag-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg",
+      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Lag Tramonte 177 T177J12CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg",
+        "thumbnail": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg",
+        "high_res": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg",
+        "original": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Lag-Guitars",
+  "brand_slug": "lag-guitars",
+  "refined_at": "2026-01-24T02:50:44.645386+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "lag_guitars_38_glutku10s",
+          "name": "יוקללה סופרן Lag Tiki Uku 10",
+          "description": "יוקללה סופרן Lag Tiki Uku 10",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutku10s.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutku10s.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutku10s.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutku10s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutku8s",
+          "name": "יוקללה סופרן Lag Tiki Uku 8",
+          "description": "יוקללה סופרן Lag Tiki Uku 8",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutku8s.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutku8s.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutku8s.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutku8s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glubabytku11os",
+          "name": "יוקללה סופרן Lag Tiki Uku 110 BABYTKU110S",
+          "description": "יוקללה סופרן Lag Tiki Uku 110 BABYTKU110S",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glubabytku11os.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutku150te",
+          "name": "יוקללה טנור מוגברת Lag Tiki Uku 150",
+          "description": "יוקללה טנור מוגברת Lag Tiki Uku 150",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutku150te.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutku150te.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutku150te.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutku150te.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_te",
+          "name": "גיטרה אקוסטית מוגברת Lag Sauvage-TE",
+          "description": "גיטרה אקוסטית מוגברת Lag Sauvage-TE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_te.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70a",
+          "name": "גיטרה אקוסטית Lag Tramontane 70 Auditorium",
+          "description": "גיטרה אקוסטית Lag Tramontane 70 Auditorium",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70a.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70a.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70a.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaoc70_3_hit",
+          "name": "גיטרה קלאסית 3/4 Lag Occitania OC70-3-HIT",
+          "description": "גיטרה קלאסית 3/4 Lag Occitania OC70-3-HIT",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaoc70_3_hit.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_d",
+          "name": "גיטרה אקוסטית Lag Sauvage-D",
+          "description": "גיטרה אקוסטית Lag Sauvage-D",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_nasce",
+          "name": "גיטרה קלאסית מוגברת Lag Sauvage-N-ASCE",
+          "description": "גיטרה קלאסית מוגברת Lag Sauvage-N-ASCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_nasce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat88ace",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramonte 88 ACE",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramonte 88 ACE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat88ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat88ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat88ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat88ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_bce",
+          "name": "גיטרה בס אקוסטית מוגברת Lag Sauvage-BCE",
+          "description": "גיטרה בס אקוסטית מוגברת Lag Sauvage-BCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_bce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_jce",
+          "name": "גיטרה אקוסטית מוגברת Lag Sauvage-JCE",
+          "description": "גיטרה אקוסטית מוגברת Lag Sauvage-JCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_jce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat88d",
+          "name": "גיטרה אקוסטית Lag T88D",
+          "description": "גיטרה אקוסטית Lag T88D",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat88d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat88d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat88d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat88d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat118dce_brs",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane 118 DCE",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane 118 DCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat118dce_brs.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutkb150fce",
+          "name": "בס מיני Lag TKB150FCE Fretless",
+          "description": "בס מיני Lag TKB150FCE Fretless",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutkb150fce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutkt8",
+          "name": "גיטרה אקוסטית מיני LAG TKT8 Tiki Uku Baby Guitar",
+          "description": "גיטרה אקוסטית מיני LAG TKT8 Tiki Uku Baby Guitar",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutkt8.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutkt8.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutkt8.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutkt8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glhthv20dce",
+          "name": "גיטרה אקוסטית מוגברת Lag HyVibe THV20DCE Smart Guitar",
+          "description": "גיטרה אקוסטית מוגברת Lag HyVibe THV20DCE Smart Guitar",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glhthv20dce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatravel_rc",
+          "name": "גיטרה אקוסטית מיני Lag Tramontane Travel RC",
+          "description": "גיטרה אקוסטית מיני Lag Tramontane Travel RC",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatravel_rc.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatl118dce",
+          "name": "גיטרה אקוסטית שמאלית מוגברת Lag Tramontane 118 TL118DCE Lefty",
+          "description": "גיטרה אקוסטית שמאלית מוגברת Lag Tramontane 118 TL118DCE Lefty",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatl118dce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glhthv30ace",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane Hyvibe 30 THV30ACE Auditorium",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane Hyvibe 30 THV30ACE Auditorium",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glhthv30ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat318d",
+          "name": "גיטרה אקוסטית LAG T318D Tramontane 318 Dreadnought",
+          "description": "גיטרה אקוסטית LAG T318D Tramontane 318 Dreadnought",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat318d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat318d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat318d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat318d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatravel_ka",
+          "name": "גיטרה מיני אקוסטית Lag Tramontane Travel KA",
+          "description": "גיטרה מיני אקוסטית Lag Tramontane Travel KA",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatravel_ka.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutku10c",
+          "name": "יוקללה קונצרט Lag Tiki Uku 10",
+          "description": "יוקללה קונצרט Lag Tiki Uku 10",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutku10c.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutku10c.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutku10c.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutku10c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70d",
+          "name": "גיטרה אקוסטית Lag Tramontane 70 Dreadnought",
+          "description": "גיטרה אקוסטית Lag Tramontane 70 Dreadnought",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat318a",
+          "name": "גיטרה אקוסטית LAG T318A Tramontane 318 Auditorium",
+          "description": "גיטרה אקוסטית LAG T318A Tramontane 318 Auditorium",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat318a.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat318a.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat318a.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat318a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_thv30dce",
+          "name": "גיטרה אקוסטית מוגברת Lag HyVibe THV30DCE Smart Guitar",
+          "description": "גיטרה אקוסטית מוגברת Lag HyVibe THV30DCE Smart Guitar",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_thv30dce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_thv30dce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_thv30dce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_thv30dce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70dce_b_b",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70DCE B&B",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70DCE B&B",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70dce_b_b.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatravel_rce",
+          "name": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel RCE",
+          "description": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel RCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatravel_rce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat118d",
+          "name": "גיטרה אקוסטית Lag T118D",
+          "description": "גיטרה אקוסטית Lag T118D",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat118d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat118d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat118d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat118d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat118d_brs",
+          "name": "גיטרה אקוסטית Lag T118D-BRS",
+          "description": "גיטרה אקוסטית Lag T118D-BRS",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat118d_brs.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatl70dce",
+          "name": "גיטרה אקוסטית מוגברת שמאלית Lag Tramontane 70 TL70DCE Lefty",
+          "description": "גיטרה אקוסטית מוגברת שמאלית Lag Tramontane 70 TL70DCE Lefty",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatl70dce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatravel_sp",
+          "name": "גיטרה מיני אקוסטית LAG Tramontane Travel SP",
+          "description": "גיטרה מיני אקוסטית LAG Tramontane Travel SP",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatravel_sp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glhtnlhv15ace",
+          "name": "גיטרה קלאסית שמאלית מוגברת Lag HyVibe 15 TNLHV15ACE Smart Guitar",
+          "description": "גיטרה קלאסית שמאלית מוגברת Lag HyVibe 15 TNLHV15ACE Smart Guitar",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glhtnlhv15ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatravel_kae",
+          "name": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel KAE",
+          "description": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel KAE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatravel_kae.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutkt150e",
+          "name": "גיטרה מיני אקוסטית מוגברת LAG Tiki Uku Mini",
+          "description": "גיטרה מיני אקוסטית מוגברת LAG Tiki Uku Mini",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutkt150e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat88a",
+          "name": "גיטרה אקוסטית Lag T88A",
+          "description": "גיטרה אקוסטית Lag T88A",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat88a.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat88a.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat88a.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat88a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatl118d",
+          "name": "גיטרה אקוסטית שמאלית Lag TL118D",
+          "description": "גיטרה אקוסטית שמאלית Lag TL118D",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatl118d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatl118d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatl118d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatl118d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat318ace",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane 318 T318ACE",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane 318 T318ACE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat318ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat318ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat318ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat318ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_ace",
+          "name": "גיטרה אקוסטית מוגברת Lag Sauvage-ACE",
+          "description": "גיטרה אקוסטית מוגברת Lag Sauvage-ACE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatravel_spe",
+          "name": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel SPE",
+          "description": "גיטרה מיני אקוסטית מוגברת Lag Tramontane Travel SPE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatravel_spe.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glhthv10dce_lb",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane THV10DCE-LB Hyvibe 10",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane THV10DCE-LB Hyvibe 10",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glhthv10dce_lb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_dce",
+          "name": "גיטרה אקוסטית מוגברת Lag Sauvage-DCE",
+          "description": "גיטרה אקוסטית מוגברת Lag Sauvage-DCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_dce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glasauvage_a",
+          "name": "גיטרה אקוסטית Lag Sauvage-A",
+          "description": "גיטרה אקוסטית Lag Sauvage-A",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glasauvage_a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70dc",
+          "name": "גיטרה אקוסטית Lag T70DC-NAT",
+          "description": "גיטרה אקוסטית Lag T70DC-NAT",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70dc.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dc.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70dc.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70dc.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70ace_bls",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramonte 70 T70ACE-BLS",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramonte 70 T70ACE-BLS",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70ace_bls.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat170a",
+          "name": "גיטרה אקוסטית Lag Tramontane 170 Auditorium",
+          "description": "גיטרה אקוסטית Lag Tramontane 170 Auditorium",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat170a.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat170a.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat170a.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat170a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat170d",
+          "name": "גיטרה אקוסטית Lag Tramonte 170 Dreadnought",
+          "description": "גיטרה אקוסטית Lag Tramonte 170 Dreadnought",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat170d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat170d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat170d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat170d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaoc70",
+          "name": "גיטרה קלאסית Lag Occitania 70",
+          "description": "גיטרה קלאסית Lag Occitania 70",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaoc70.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaoc70.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaoc70.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaoc70_3",
+          "name": "גיטרה קלאסית Lag Occitania 70 3/4",
+          "description": "גיטרה קלאסית Lag Occitania 70 3/4",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaoc70_3.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatl70dce_nat",
+          "name": "גיטרה אקוסטית מוגברת שמאלית Lag Tramonte 70 DCE-NAT Lefty",
+          "description": "גיטרה אקוסטית מוגברת שמאלית Lag Tramonte 70 DCE-NAT Lefty",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatl70dce_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_hlg30as",
+          "name": "תיק לגיטרה אקוסטית Lag Auditorium Slim",
+          "description": "תיק לגיטרה אקוסטית Lag Auditorium Slim",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_hlg30as.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_hlg30as.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_hlg30as.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_hlg30as.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70dce",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70dce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70dce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70dce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaoc70_hit",
+          "name": "גיטרה קלאסית Lag Occitania 70 OC70-HIT",
+          "description": "גיטרה קלאסית Lag Occitania 70 OC70-HIT",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaoc70_hit.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaocl70",
+          "name": "גיטרה קלאסית שמאלית Lag Occitania 70 Lefty",
+          "description": "גיטרה קלאסית שמאלית Lag Occitania 70 Lefty",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaocl70.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaocl70.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaocl70.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaocl70.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaoc88",
+          "name": "גיטרה קלאסית Lag Occitania 88",
+          "description": "גיטרה קלאסית Lag Occitania 88",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaoc88.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc88.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaoc88.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaoc88.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaoc118",
+          "name": "גיטרה קלאסית Lag Occitania 118",
+          "description": "גיטרה קלאסית Lag Occitania 118",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaoc118.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc118.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaoc118.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaoc118.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatn70a",
+          "name": "גיטרה אקוסטית Lag Tramonte 70 Auditorium Nylon",
+          "description": "גיטרה אקוסטית Lag Tramonte 70 Auditorium Nylon",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatn70a.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatn70a.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatn70a.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatn70a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glaoc88ce",
+          "name": "גיטרה קלאסית מוגברת Lag Occitania 88 CE",
+          "description": "גיטרה קלאסית מוגברת Lag Occitania 88 CE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glaoc88ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutku8c",
+          "name": "יוקללה קונצרט Lag Tiki Uku 8",
+          "description": "יוקללה קונצרט Lag Tiki Uku 8",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutku8c.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutku8c.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutku8c.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutku8c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatn170asce",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramonte 170 Country Slim",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramonte 170 Country Slim",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatn170asce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glatl70d",
+          "name": "גיטרה אקוסטית שמאלית Lag Tramonte 70 Lefty Dreadnought",
+          "description": "גיטרה אקוסטית שמאלית Lag Tramonte 70 Lefty Dreadnought",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glatl70d.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glatl70d.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glatl70d.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glatl70d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glutkb150ce",
+          "name": "יוקללה בס Lag TK150CE",
+          "description": "יוקללה בס Lag TK150CE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glutkb150ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat118asce_ivo",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramonte 118 T118ASCE-IVO",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramonte 118 T118ASCE-IVO",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat118asce_ivo.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat118ace",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramonte 118 ACE",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramonte 118 ACE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat118ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat118ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat118ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat118ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glhtlhv30ace",
+          "name": "גיטרה אקוסטית מוגברת שמאלית Lag HyVibe 30 TLHV30ACE",
+          "description": "גיטרה אקוסטית מוגברת שמאלית Lag HyVibe 30 TLHV30ACE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glhtlhv30ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat177jce",
+          "name": "גיטרה אקוסטית מוגברת Lag T177JCE Tramonte 177 Jumbo",
+          "description": "גיטרה אקוסטית מוגברת Lag T177JCE Tramonte 177 Jumbo",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat177jce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat177jce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat177jce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat177jce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70ace_brb",
+          "name": "גיטרה אקוסטית מוגברת Lag T70ACE-BRB",
+          "description": "גיטרה אקוסטית מוגברת Lag T70ACE-BRB",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70ace_brb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70dce_brb",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 DCE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70dce_brb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat70ace",
+          "name": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70ACE",
+          "description": "גיטרה אקוסטית מוגברת Lag Tramontane 70 T70ACE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat70ace.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat70ace.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat70ace.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat70ace.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat177bce",
+          "name": "גיטרה בס אקוסטית מוגברת Lag Tramontane 177",
+          "description": "גיטרה בס אקוסטית מוגברת Lag Tramontane 177",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat177bce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat177bce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat177bce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat177bce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lag_guitars_38_glat177j12ce",
+          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Lag Tramonte 177 T177J12CE",
+          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Lag Tramonte 177 T177J12CE",
+          "images": {
+            "main": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg",
+            "thumbnail": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg",
+            "high_res": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg",
+            "original": "/data/thumbnails/lag_guitars_38_glat177j12ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

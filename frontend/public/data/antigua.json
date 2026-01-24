@@ -1,0 +1,582 @@
+{
+  "brand_identity": {
+    "id": "antigua",
+    "name": "ANTIGUA",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/antigua_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 18,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "antigua_36_as1203lq",
+      "name": "Antigua AS-1203LQ Alto Saxophone",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_as1203lq.jpg",
+      "description": "Antigua AS-1203LQ Alto Saxophone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_as1203lq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_as1203lq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_as1203lq.jpg",
+        "original": "/data/thumbnails/antigua_36_as1203lq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_tr1501lq",
+      "name": "Antigua TR1501LQ Trumpet",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_tr1501lq.jpg",
+      "description": "Antigua TR1501LQ Trumpet",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_tr1501lq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_tr1501lq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_tr1501lq.jpg",
+        "original": "/data/thumbnails/antigua_36_tr1501lq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_tr2561lq",
+      "name": "Antigua TR2561LQ Trumpet",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_tr2561lq.jpg",
+      "description": "Antigua TR2561LQ Trumpet",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_tr2561lq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_tr2561lq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_tr2561lq.jpg",
+        "original": "/data/thumbnails/antigua_36_tr2561lq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_wfl2210br1",
+      "name": "Antigua Vosi WFL2210 Side Flute",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_wfl2210br1.jpg",
+      "description": "Antigua Vosi WFL2210 Side Flute",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_wfl2210br1.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_wfl2210br1.jpg",
+        "high_res": "/data/thumbnails/antigua_36_wfl2210br1.jpg",
+        "original": "/data/thumbnails/antigua_36_wfl2210br1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_ts1203lq",
+      "name": "Antigua X/P TS1203LQ Bb Tenor Saxophone",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_ts1203lq.jpg",
+      "description": "Antigua X/P TS1203LQ Bb Tenor Saxophone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_ts1203lq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_ts1203lq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_ts1203lq.jpg",
+        "original": "/data/thumbnails/antigua_36_ts1203lq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_ts2150lq",
+      "name": "סקספון טנור Antigua TS-2150LQ",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_ts2150lq.jpg",
+      "description": "סקספון טנור Antigua TS-2150LQ",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_ts2150lq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_ts2150lq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_ts2150lq.jpg",
+        "original": "/data/thumbnails/antigua_36_ts2150lq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_cl1211a",
+      "name": "Antigua CL1211A XP Clarinet",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_cl1211a.jpg",
+      "description": "Antigua CL1211A XP Clarinet",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_cl1211a.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_cl1211a.jpg",
+        "high_res": "/data/thumbnails/antigua_36_cl1211a.jpg",
+        "original": "/data/thumbnails/antigua_36_cl1211a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_cl2220",
+      "name": "Antigua Vosi CL2220 Clarinet",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_cl2220.jpg",
+      "description": "Antigua Vosi CL2220 Clarinet",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_cl2220.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_cl2220.jpg",
+        "high_res": "/data/thumbnails/antigua_36_cl2220.jpg",
+        "original": "/data/thumbnails/antigua_36_cl2220.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_ss6200vlq",
+      "name": "Antigua SS6200 Vintage Gold",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_ss6200vlq.jpg",
+      "description": "Antigua SS6200 Vintage Gold",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_ss6200vlq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_ss6200vlq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_ss6200vlq.jpg",
+        "original": "/data/thumbnails/antigua_36_ss6200vlq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_as4240lqsh",
+      "name": "Antigua AS4240LQSH Alto Saxophone",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_as4240lqsh.jpg",
+      "description": "Antigua AS4240LQSH Alto Saxophone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_as4240lqsh.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_as4240lqsh.jpg",
+        "high_res": "/data/thumbnails/antigua_36_as4240lqsh.jpg",
+        "original": "/data/thumbnails/antigua_36_as4240lqsh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_as6200vlq",
+      "name": "Antigua AS6200 Vintage Gold",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_as6200vlq.jpg",
+      "description": "Antigua AS6200 Vintage Gold",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_as6200vlq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_as6200vlq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_as6200vlq.jpg",
+        "original": "/data/thumbnails/antigua_36_as6200vlq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_tb1203lq",
+      "name": "Antigua TB1203LQ Trombone",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_tb1203lq.jpg",
+      "description": "Antigua TB1203LQ Trombone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_tb1203lq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_tb1203lq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_tb1203lq.jpg",
+        "original": "/data/thumbnails/antigua_36_tb1203lq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_ep1120lq",
+      "name": "Antigua EP1120LQ Baritone",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_ep1120lq.jpg",
+      "description": "Antigua EP1120LQ Baritone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_ep1120lq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_ep1120lq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_ep1120lq.jpg",
+        "original": "/data/thumbnails/antigua_36_ep1120lq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_bb1120lqa",
+      "name": "Antigua BB1120LQ Tube",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_bb1120lqa.jpg",
+      "description": "Antigua BB1120LQ Tube",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_bb1120lqa.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_bb1120lqa.jpg",
+        "high_res": "/data/thumbnails/antigua_36_bb1120lqa.jpg",
+        "original": "/data/thumbnails/antigua_36_bb1120lqa.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_wst30b",
+      "name": "Antigua ST-30B Neckstrap",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_wst30b.jpg",
+      "description": "Antigua ST-30B Neckstrap",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_wst30b.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_wst30b.jpg",
+        "high_res": "/data/thumbnails/antigua_36_wst30b.jpg",
+        "original": "/data/thumbnails/antigua_36_wst30b.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_wcl3233sb",
+      "name": "Antigua CL3233 Clarinet",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_wcl3233sb.jpg",
+      "description": "Antigua CL3233 Clarinet",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_wcl3233sb.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_wcl3233sb.jpg",
+        "high_res": "/data/thumbnails/antigua_36_wcl3233sb.jpg",
+        "original": "/data/thumbnails/antigua_36_wcl3233sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_ts6200vlq",
+      "name": "Antigua TS6200 Vintage Gold",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_ts6200vlq.jpg",
+      "description": "Antigua TS6200 Vintage Gold",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_ts6200vlq.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_ts6200vlq.jpg",
+        "high_res": "/data/thumbnails/antigua_36_ts6200vlq.jpg",
+        "original": "/data/thumbnails/antigua_36_ts6200vlq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "antigua_36_fl1210",
+      "name": "Antigua FL1210 Side Flute",
+      "brand": "antigua",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/antigua_36_fl1210.jpg",
+      "description": "Antigua FL1210 Side Flute",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/antigua_36_fl1210.jpg",
+        "thumbnail": "/data/thumbnails/antigua_36_fl1210.jpg",
+        "high_res": "/data/thumbnails/antigua_36_fl1210.jpg",
+        "original": "/data/thumbnails/antigua_36_fl1210.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Antigua",
+  "brand_slug": "antigua",
+  "refined_at": "2026-01-24T02:50:45.032043+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "antigua_36_as1203lq",
+          "name": "Antigua AS-1203LQ Alto Saxophone",
+          "description": "Antigua AS-1203LQ Alto Saxophone",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_as1203lq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_as1203lq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_as1203lq.jpg",
+            "original": "/data/thumbnails/antigua_36_as1203lq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_tr1501lq",
+          "name": "Antigua TR1501LQ Trumpet",
+          "description": "Antigua TR1501LQ Trumpet",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_tr1501lq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_tr1501lq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_tr1501lq.jpg",
+            "original": "/data/thumbnails/antigua_36_tr1501lq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_tr2561lq",
+          "name": "Antigua TR2561LQ Trumpet",
+          "description": "Antigua TR2561LQ Trumpet",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_tr2561lq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_tr2561lq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_tr2561lq.jpg",
+            "original": "/data/thumbnails/antigua_36_tr2561lq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_wfl2210br1",
+          "name": "Antigua Vosi WFL2210 Side Flute",
+          "description": "Antigua Vosi WFL2210 Side Flute",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_wfl2210br1.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_wfl2210br1.jpg",
+            "high_res": "/data/thumbnails/antigua_36_wfl2210br1.jpg",
+            "original": "/data/thumbnails/antigua_36_wfl2210br1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_ts1203lq",
+          "name": "Antigua X/P TS1203LQ Bb Tenor Saxophone",
+          "description": "Antigua X/P TS1203LQ Bb Tenor Saxophone",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_ts1203lq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_ts1203lq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_ts1203lq.jpg",
+            "original": "/data/thumbnails/antigua_36_ts1203lq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_ts2150lq",
+          "name": "סקספון טנור Antigua TS-2150LQ",
+          "description": "סקספון טנור Antigua TS-2150LQ",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_ts2150lq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_ts2150lq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_ts2150lq.jpg",
+            "original": "/data/thumbnails/antigua_36_ts2150lq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_cl1211a",
+          "name": "Antigua CL1211A XP Clarinet",
+          "description": "Antigua CL1211A XP Clarinet",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_cl1211a.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_cl1211a.jpg",
+            "high_res": "/data/thumbnails/antigua_36_cl1211a.jpg",
+            "original": "/data/thumbnails/antigua_36_cl1211a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_cl2220",
+          "name": "Antigua Vosi CL2220 Clarinet",
+          "description": "Antigua Vosi CL2220 Clarinet",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_cl2220.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_cl2220.jpg",
+            "high_res": "/data/thumbnails/antigua_36_cl2220.jpg",
+            "original": "/data/thumbnails/antigua_36_cl2220.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_ss6200vlq",
+          "name": "Antigua SS6200 Vintage Gold",
+          "description": "Antigua SS6200 Vintage Gold",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_ss6200vlq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_ss6200vlq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_ss6200vlq.jpg",
+            "original": "/data/thumbnails/antigua_36_ss6200vlq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_as4240lqsh",
+          "name": "Antigua AS4240LQSH Alto Saxophone",
+          "description": "Antigua AS4240LQSH Alto Saxophone",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_as4240lqsh.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_as4240lqsh.jpg",
+            "high_res": "/data/thumbnails/antigua_36_as4240lqsh.jpg",
+            "original": "/data/thumbnails/antigua_36_as4240lqsh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_as6200vlq",
+          "name": "Antigua AS6200 Vintage Gold",
+          "description": "Antigua AS6200 Vintage Gold",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_as6200vlq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_as6200vlq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_as6200vlq.jpg",
+            "original": "/data/thumbnails/antigua_36_as6200vlq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_tb1203lq",
+          "name": "Antigua TB1203LQ Trombone",
+          "description": "Antigua TB1203LQ Trombone",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_tb1203lq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_tb1203lq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_tb1203lq.jpg",
+            "original": "/data/thumbnails/antigua_36_tb1203lq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_ep1120lq",
+          "name": "Antigua EP1120LQ Baritone",
+          "description": "Antigua EP1120LQ Baritone",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_ep1120lq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_ep1120lq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_ep1120lq.jpg",
+            "original": "/data/thumbnails/antigua_36_ep1120lq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_bb1120lqa",
+          "name": "Antigua BB1120LQ Tube",
+          "description": "Antigua BB1120LQ Tube",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_bb1120lqa.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_bb1120lqa.jpg",
+            "high_res": "/data/thumbnails/antigua_36_bb1120lqa.jpg",
+            "original": "/data/thumbnails/antigua_36_bb1120lqa.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_wst30b",
+          "name": "Antigua ST-30B Neckstrap",
+          "description": "Antigua ST-30B Neckstrap",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_wst30b.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_wst30b.jpg",
+            "high_res": "/data/thumbnails/antigua_36_wst30b.jpg",
+            "original": "/data/thumbnails/antigua_36_wst30b.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_wcl3233sb",
+          "name": "Antigua CL3233 Clarinet",
+          "description": "Antigua CL3233 Clarinet",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_wcl3233sb.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_wcl3233sb.jpg",
+            "high_res": "/data/thumbnails/antigua_36_wcl3233sb.jpg",
+            "original": "/data/thumbnails/antigua_36_wcl3233sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_ts6200vlq",
+          "name": "Antigua TS6200 Vintage Gold",
+          "description": "Antigua TS6200 Vintage Gold",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_ts6200vlq.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_ts6200vlq.jpg",
+            "high_res": "/data/thumbnails/antigua_36_ts6200vlq.jpg",
+            "original": "/data/thumbnails/antigua_36_ts6200vlq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "antigua_36_fl1210",
+          "name": "Antigua FL1210 Side Flute",
+          "description": "Antigua FL1210 Side Flute",
+          "images": {
+            "main": "/data/thumbnails/antigua_36_fl1210.jpg",
+            "thumbnail": "/data/thumbnails/antigua_36_fl1210.jpg",
+            "high_res": "/data/thumbnails/antigua_36_fl1210.jpg",
+            "original": "/data/thumbnails/antigua_36_fl1210.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

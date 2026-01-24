@@ -1,0 +1,4953 @@
+{
+  "brand_identity": {
+    "id": "vintage",
+    "name": "VINTAGE",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/vintage_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 159,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "vintage_20_v59mrsb",
+      "name": "גיטרה חשמלית Vintage V59MRSB Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v59mrsb.jpg",
+      "description": "גיטרה חשמלית Vintage V59MRSB Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v59mrsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v59mrsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v59mrsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v59mrsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lh_v10blk",
+      "name": "גיטרה חשמלית שמאלית Vintage V10 Coaster LH",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lh_v10blk.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V10 Coaster LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lh_v10blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lh_v10blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lh_v10blk.jpg",
+        "original": "/data/thumbnails/vintage_20_lh_v10blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v10wr",
+      "name": "גיטרה חשמלית Vintage V10 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v10wr.jpg",
+      "description": "גיטרה חשמלית Vintage V10 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v10wr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v10wr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v10wr.jpg",
+        "original": "/data/thumbnails/vintage_20_v10wr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v10blk",
+      "name": "גיטרה חשמלית Vintage V10 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v10blk.jpg",
+      "description": "גיטרה חשמלית Vintage V10 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v10blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v10blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v10blk.jpg",
+        "original": "/data/thumbnails/vintage_20_v10blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v10csb",
+      "name": "גיטרה חשמלית Vintage V10 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v10csb.jpg",
+      "description": "גיטרה חשמלית Vintage V10 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v10csb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v10csb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v10csb.jpg",
+        "original": "/data/thumbnails/vintage_20_v10csb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74blk",
+      "name": "גיטרה בס Vintage VJ74 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74blk.jpg",
+      "description": "גיטרה בס Vintage VJ74 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74blk.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500bghb",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500bghb.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500bghb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500bghb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500bghb.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500bghb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v74mrjp",
+      "name": "גיטרה בס Vintage V74 Icon Fretless",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v74mrjp.jpg",
+      "description": "גיטרה בס Vintage V74 Icon Fretless",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v74mrjp.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v74mrjp.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v74mrjp.jpg",
+        "original": "/data/thumbnails/vintage_20_v74mrjp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v60lb",
+      "name": "גיטרה חשמלית Vintage V60 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v60lb.jpg",
+      "description": "גיטרה חשמלית Vintage V60 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v60lb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v60lb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v60lb.jpg",
+        "original": "/data/thumbnails/vintage_20_v60lb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6hmrsb",
+      "name": "גיטרה חשמלית Vintage V6H ICON HSS",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6hmrsb.jpg",
+      "description": "גיטרה חשמלית Vintage V6H ICON HSS",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6hmrsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6hmrsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6hmrsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6hmrsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrct45bl",
+      "name": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrct45bl.jpg",
+      "description": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrct45bl.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrct45bl.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrct45bl.jpg",
+        "original": "/data/thumbnails/vintage_20_vrct45bl.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v4bkl",
+      "name": "גיטרה בס Vintage V4 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v4bkl.jpg",
+      "description": "גיטרה בס Vintage V4 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v4bkl.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v4bkl.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v4bkl.jpg",
+        "original": "/data/thumbnails/vintage_20_v4bkl.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v495sb",
+      "name": "גיטרה בס Vintage V495 Coaster Series 3 Tone Sunburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v495sb.jpg",
+      "description": "גיטרה בס Vintage V495 Coaster Series 3 Tone Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v495sb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v495sb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v495sb.jpg",
+        "original": "/data/thumbnails/vintage_20_v495sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lhv300oft",
+      "name": "ערכת גיטרה אקוסטית שמאלית Vintage V300 Natural LH",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lhv300oft.jpg",
+      "description": "ערכת גיטרה אקוסטית שמאלית Vintage V300 Natural LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lhv300oft.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lhv300oft.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lhv300oft.jpg",
+        "original": "/data/thumbnails/vintage_20_lhv300oft.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v42ssb",
+      "name": "גיטרה בס Vintage V42 ReIssued 3 Tone Sunburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v42ssb.jpg",
+      "description": "גיטרה בס Vintage V42 ReIssued 3 Tone Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v42ssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v42ssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v42ssb.jpg",
+        "original": "/data/thumbnails/vintage_20_v42ssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6lb",
+      "name": "גיטרה חשמלית Vintage V6LB Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6lb.jpg",
+      "description": "גיטרה חשמלית Vintage V6LB Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6lb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6lb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6lb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6lb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrct45bk",
+      "name": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrct45bk.jpg",
+      "description": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrct45bk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrct45bk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrct45bk.jpg",
+        "original": "/data/thumbnails/vintage_20_vrct45bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v62ab",
+      "name": "גיטרה חשמלית Vintage V62 Reissued Ash Blonde",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v62ab.jpg",
+      "description": "גיטרה חשמלית Vintage V62 Reissued Ash Blonde",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v62ab.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v62ab.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v62ab.jpg",
+        "original": "/data/thumbnails/vintage_20_v62ab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6pu0236",
+      "name": "גיטרה חשמלית Vintage V6 ProShop Unique",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6pu0236.jpg",
+      "description": "גיטרה חשמלית Vintage V6 ProShop Unique",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6pu0236.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6pu0236.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6pu0236.jpg",
+        "original": "/data/thumbnails/vintage_20_v6pu0236.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vs6vcr",
+      "name": "גיטרה חשמלית Vintage VS6V Vibrola Tailpiece",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vs6vcr.jpg",
+      "description": "גיטרה חשמלית Vintage VS6V Vibrola Tailpiece",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vs6vcr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vs6vcr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vs6vcr.jpg",
+        "original": "/data/thumbnails/vintage_20_vs6vcr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74vg",
+      "name": "גיטרה בס Vintage VJ74 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74vg.jpg",
+      "description": "גיטרה בס Vintage VJ74 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74vg.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74vg.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74vg.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74vg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v65vbk",
+      "name": "גיטרה חשמלית Vintage V65VBK Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v65vbk.jpg",
+      "description": "גיטרה חשמלית Vintage V65VBK Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v65vbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v65vbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v65vbk.jpg",
+        "original": "/data/thumbnails/vintage_20_v65vbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mrbk",
+      "name": "גיטרה חשמלית Vintage V6 Icon Distressed Boulevard Black",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mrbk.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Icon Distressed Boulevard Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mrbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mrbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mrbk.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mrbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrs654bk",
+      "name": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrs654bk.jpg",
+      "description": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrs654bk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrs654bk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrs654bk.jpg",
+        "original": "/data/thumbnails/vintage_20_vrs654bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrs654mw",
+      "name": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrs654mw.jpg",
+      "description": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrs654mw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrs654mw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrs654mw.jpg",
+        "original": "/data/thumbnails/vintage_20_vrs654mw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v60vw",
+      "name": "גיטרה חשמלית Vintage V60 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v60vw.jpg",
+      "description": "גיטרה חשמלית Vintage V60 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v60vw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v60vw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v60vw.jpg",
+        "original": "/data/thumbnails/vintage_20_v60vw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mrfr",
+      "name": "גיטרה חשמלית Vintage V6 Icon Distressed Firenza Red",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mrfr.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Icon Distressed Firenza Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mrfr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mrfr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mrfr.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mrfr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500sb_12",
+      "name": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500SB-12 Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500sb_12.jpg",
+      "description": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500SB-12 Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500sb_12.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500sb_12.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500sb_12.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500sb_12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vuk40n",
+      "name": "יוקללה טנור Vintage Tenor Ukulele Natural",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vuk40n.jpg",
+      "description": "יוקללה טנור Vintage Tenor Ukulele Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vuk40n.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vuk40n.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vuk40n.jpg",
+        "original": "/data/thumbnails/vintage_20_vuk40n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lv100mrpgm",
+      "name": "גיטרה חשמלית שמאלית Vintage V100 ICON LH",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lv100mrpgm.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V100 ICON LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lv100mrpgm.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lv100mrpgm.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lv100mrpgm.jpg",
+        "original": "/data/thumbnails/vintage_20_lv100mrpgm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v65hbld",
+      "name": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v65hbld.jpg",
+      "description": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v65hbld.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v65hbld.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v65hbld.jpg",
+        "original": "/data/thumbnails/vintage_20_v65hbld.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lv6hmrlb",
+      "name": "גיטרה חשמלית שמאלית Vintage V6H ICON Lefty",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lv6hmrlb.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V6H ICON Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lv6hmrlb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lv6hmrlb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lv6hmrlb.jpg",
+        "original": "/data/thumbnails/vintage_20_lv6hmrlb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74ssb",
+      "name": "גיטרה בס Vintage VJ74 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74ssb.jpg",
+      "description": "גיטרה בס Vintage VJ74 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74ssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74ssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74ssb.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74ssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100mu",
+      "name": "גיטרה חשמלית Vintage V100 Midge Ure Signature",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100mu.jpg",
+      "description": "גיטרה חשמלית Vintage V100 Midge Ure Signature",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100mu.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100mu.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100mu.jpg",
+        "original": "/data/thumbnails/vintage_20_v100mu.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100mrjbm",
+      "name": "גיטרה חשמלית Vintage V100MRJBM Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100mrjbm.jpg",
+      "description": "גיטרה חשמלית Vintage V100MRJBM Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100mrjbm.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100mrjbm.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100mrjbm.jpg",
+        "original": "/data/thumbnails/vintage_20_v100mrjbm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100mrtsb",
+      "name": "גיטרה חשמלית Vintage V100MRTSB Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100mrtsb.jpg",
+      "description": "גיטרה חשמלית Vintage V100MRTSB Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100mrtsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100mrtsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100mrtsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v100mrtsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrs652to",
+      "name": "גיטרה חשמלית Vintage REVO 'Surfmaster' Thinline Twin",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrs652to.jpg",
+      "description": "גיטרה חשמלית Vintage REVO 'Surfmaster' Thinline Twin",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrs652to.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrs652to.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrs652to.jpg",
+        "original": "/data/thumbnails/vintage_20_vrs652to.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100blk",
+      "name": "גיטרה חשמלית Vintage V100BLK ReIssued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100blk.jpg",
+      "description": "גיטרה חשמלית Vintage V100BLK ReIssued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100blk.jpg",
+        "original": "/data/thumbnails/vintage_20_v100blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v52mrbs",
+      "name": "גיטרה חשמלית Vintage V52 Icon Butterscotch",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v52mrbs.jpg",
+      "description": "גיטרה חשמלית Vintage V52 Icon Butterscotch",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v52mrbs.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v52mrbs.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v52mrbs.jpg",
+        "original": "/data/thumbnails/vintage_20_v52mrbs.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mrtbg",
+      "name": "גיטרה חשמלית Vintage V6 Thomas Blug",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mrtbg.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Thomas Blug",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mrtbg.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mrtbg.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mrtbg.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mrtbg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v42vw",
+      "name": "גיטרה בס Vintage V42 ReIssued Vintage White",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v42vw.jpg",
+      "description": "גיטרה בס Vintage V42 ReIssued Vintage White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v42vw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v42vw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v42vw.jpg",
+        "original": "/data/thumbnails/vintage_20_v42vw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100mrpgm",
+      "name": "גיטרה חשמלית Vintage V100MRPGM Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100mrpgm.jpg",
+      "description": "גיטרה חשמלית Vintage V100MRPGM Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100mrpgm.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100mrpgm.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100mrpgm.jpg",
+        "original": "/data/thumbnails/vintage_20_v100mrpgm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v62mrab",
+      "name": "גיטרה חשמלית Vintage V62MRAB Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v62mrab.jpg",
+      "description": "גיטרה חשמלית Vintage V62MRAB Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v62mrab.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v62mrab.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v62mrab.jpg",
+        "original": "/data/thumbnails/vintage_20_v62mrab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v42blk",
+      "name": "גיטרה בס Vintage V42 ReIssued Boulevard Black",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v42blk.jpg",
+      "description": "גיטרה בס Vintage V42 ReIssued Boulevard Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v42blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v42blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v42blk.jpg",
+        "original": "/data/thumbnails/vintage_20_v42blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj75mbk",
+      "name": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj75mbk.jpg",
+      "description": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj75mbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj75mbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj75mbk.jpg",
+        "original": "/data/thumbnails/vintage_20_vj75mbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6cab",
+      "name": "גיטרה חשמלית Vintage V6CAB Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6cab.jpg",
+      "description": "גיטרה חשמלית Vintage V6CAB Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6cab.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6cab.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6cab.jpg",
+        "original": "/data/thumbnails/vintage_20_v6cab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6jmh",
+      "name": "גיטרה חשמלית Vintage V6JMH Reissued Olympia White Fillmore",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6jmh.jpg",
+      "description": "גיטרה חשמלית Vintage V6JMH Reissued Olympia White Fillmore",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6jmh.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6jmh.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6jmh.jpg",
+        "original": "/data/thumbnails/vintage_20_v6jmh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v72hftb",
+      "name": "גיטרה חשמלית Vintage V72H Reissued Custom",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v72hftb.jpg",
+      "description": "גיטרה חשמלית Vintage V72H Reissued Custom",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v72hftb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v72hftb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v72hftb.jpg",
+        "original": "/data/thumbnails/vintage_20_v72hftb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100twr",
+      "name": "גיטרה חשמלית Vintage V100TWR Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100twr.jpg",
+      "description": "גיטרה חשמלית Vintage V100TWR Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100twr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100twr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100twr.jpg",
+        "original": "/data/thumbnails/vintage_20_v100twr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v58jdab",
+      "name": "גיטרה חשמלית Vintage V58 Jerry Donahue Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v58jdab.jpg",
+      "description": "גיטרה חשמלית Vintage V58 Jerry Donahue Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v58jdab.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v58jdab.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v58jdab.jpg",
+        "original": "/data/thumbnails/vintage_20_v58jdab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mrlb",
+      "name": "גיטרה חשמלית Vintage V6 Icon Distressed Laguna Blue",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mrlb.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Icon Distressed Laguna Blue",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mrlb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mrlb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mrlb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mrlb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100pgm",
+      "name": "גיטרה חשמלית Vintage V100 Reissued Lemon Drop",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100pgm.jpg",
+      "description": "גיטרה חשמלית Vintage V100 Reissued Lemon Drop",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100pgm.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100pgm.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100pgm.jpg",
+        "original": "/data/thumbnails/vintage_20_v100pgm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrv800bk",
+      "name": "גיטרה חשמלית 'Vintage REVO 'Vision",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrv800bk.jpg",
+      "description": "גיטרה חשמלית 'Vintage REVO 'Vision",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrv800bk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrv800bk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrv800bk.jpg",
+        "original": "/data/thumbnails/vintage_20_vrv800bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500psb",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500P Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500psb.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500P Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500psb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500psb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500psb.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500psb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500cr",
+      "name": "Vintage VSA500 Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500cr.jpg",
+      "description": "Vintage VSA500 Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500cr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500cr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500cr.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500cr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100it",
+      "name": "גיטרה חשמלית Vintage V100 Reissued Flamed Iced Tea",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100it.jpg",
+      "description": "גיטרה חשמלית Vintage V100 Reissued Flamed Iced Tea",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100it.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100it.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100it.jpg",
+        "original": "/data/thumbnails/vintage_20_v100it.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lv100it",
+      "name": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lv100it.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lv100it.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lv100it.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lv100it.jpg",
+        "original": "/data/thumbnails/vintage_20_lv100it.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500sb",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500sb.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500sb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500sb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500sb.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500cr_12",
+      "name": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500 Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500cr_12.jpg",
+      "description": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500 Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500cr_12.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500cr_12.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500cr_12.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500cr_12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100hb",
+      "name": "גיטרה חשמלית Vintage V100 Reissued Honeyburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100hb.jpg",
+      "description": "גיטרה חשמלית Vintage V100 Reissued Honeyburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100hb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100hb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100hb.jpg",
+        "original": "/data/thumbnails/vintage_20_v100hb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v59mrbk",
+      "name": "גיטרה חשמלית Vintage V59MRBK Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v59mrbk.jpg",
+      "description": "גיטרה חשמלית Vintage V59MRBK Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v59mrbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v59mrbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v59mrbk.jpg",
+        "original": "/data/thumbnails/vintage_20_v59mrbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v60cab",
+      "name": "גיטרה חשמלית Vintage V60 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v60cab.jpg",
+      "description": "גיטרה חשמלית Vintage V60 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v60cab.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v60cab.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v60cab.jpg",
+        "original": "/data/thumbnails/vintage_20_v60cab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100tsb",
+      "name": "גיטרה חשמלית Vintage V100 Reissued Tobacco Sunburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100tsb.jpg",
+      "description": "גיטרה חשמלית Vintage V100 Reissued Tobacco Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100tsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100tsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100tsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v100tsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100afd",
+      "name": "גיטרה חשמלית Vintage V100AFD Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100afd.jpg",
+      "description": "גיטרה חשמלית Vintage V100AFD Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100afd.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100afd.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100afd.jpg",
+        "original": "/data/thumbnails/vintage_20_v100afd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v65htsb",
+      "name": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v65htsb.jpg",
+      "description": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v65htsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v65htsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v65htsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v65htsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v65hbl",
+      "name": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v65hbl.jpg",
+      "description": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v65hbl.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v65hbl.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v65hbl.jpg",
+        "original": "/data/thumbnails/vintage_20_v65hbl.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6vw",
+      "name": "גיטרה חשמלית Vintage V6VW Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6vw.jpg",
+      "description": "גיטרה חשמלית Vintage V6VW Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6vw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6vw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6vw.jpg",
+        "original": "/data/thumbnails/vintage_20_v6vw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100blb",
+      "name": "גיטרה חשמלית Vintage V100BLB Reissued w/Bigsby",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100blb.jpg",
+      "description": "גיטרה חשמלית Vintage V100BLB Reissued w/Bigsby",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100blb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100blb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100blb.jpg",
+        "original": "/data/thumbnails/vintage_20_v100blb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100mrbk",
+      "name": "גיטרה חשמלית Vintage V100MRBK Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100mrbk.jpg",
+      "description": "גיטרה חשמלית Vintage V100MRBK Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100mrbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100mrbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100mrbk.jpg",
+        "original": "/data/thumbnails/vintage_20_v100mrbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrct45fr",
+      "name": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrct45fr.jpg",
+      "description": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrct45fr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrct45fr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrct45fr.jpg",
+        "original": "/data/thumbnails/vintage_20_vrct45fr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v60blk",
+      "name": "גיטרה חשמלית Vintage V60 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v60blk.jpg",
+      "description": "גיטרה חשמלית Vintage V60 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v60blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v60blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v60blk.jpg",
+        "original": "/data/thumbnails/vintage_20_v60blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v624frbk_b",
+      "name": "גיטרה חשמלית Vintage V624 ReIssued Floyd Rose",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v624frbk_b.jpg",
+      "description": "גיטרה חשמלית Vintage V624 ReIssued Floyd Rose",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v624frbk_b.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v624frbk_b.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v624frbk_b.jpg",
+        "original": "/data/thumbnails/vintage_20_v624frbk_b.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v62mrbk",
+      "name": "גיטרה חשמלית Vintage V62MRBK Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v62mrbk.jpg",
+      "description": "גיטרה חשמלית Vintage V62MRBK Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v62mrbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v62mrbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v62mrbk.jpg",
+        "original": "/data/thumbnails/vintage_20_v62mrbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74lb",
+      "name": "גיטרה בס Vintage VJ74 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74lb.jpg",
+      "description": "גיטרה בס Vintage VJ74 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74lb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74lb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74lb.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74lb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v65vvw",
+      "name": "גיטרה חשמלית Vintage V65VVW Reissued Vibrato",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v65vvw.jpg",
+      "description": "גיטרה חשמלית Vintage V65VVW Reissued Vibrato",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v65vvw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v65vvw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v65vvw.jpg",
+        "original": "/data/thumbnails/vintage_20_v65vvw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100thb",
+      "name": "גיטרה חשמלית Vintage V100THB Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100thb.jpg",
+      "description": "גיטרה חשמלית Vintage V100THB Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100thb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100thb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100thb.jpg",
+        "original": "/data/thumbnails/vintage_20_v100thb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vs6b",
+      "name": "גיטרה חשמלית Vintage VS6B Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vs6b.jpg",
+      "description": "גיטרה חשמלית Vintage VS6B Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vs6b.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vs6b.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vs6b.jpg",
+        "original": "/data/thumbnails/vintage_20_vs6b.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrv800sb",
+      "name": "גיטרה חשמלית 'Vintage REVO 'Vision",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrv800sb.jpg",
+      "description": "גיטרה חשמלית 'Vintage REVO 'Vision",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrv800sb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrv800sb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrv800sb.jpg",
+        "original": "/data/thumbnails/vintage_20_vrv800sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100mrcs",
+      "name": "גיטרה חשמלית Vintage V100MRCS Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100mrcs.jpg",
+      "description": "גיטרה חשמלית Vintage V100MRCS Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100mrcs.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100mrcs.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100mrcs.jpg",
+        "original": "/data/thumbnails/vintage_20_v100mrcs.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74pu1415",
+      "name": "גיטרה בס Vintage VJ74 ProShop Unique",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74pu1415.jpg",
+      "description": "גיטרה בס Vintage VJ74 ProShop Unique",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74pu1415.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74pu1415.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74pu1415.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74pu1415.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vrv800to",
+      "name": "גיטרה חשמלית 'Vintage REVO 'Vision",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vrv800to.jpg",
+      "description": "גיטרה חשמלית 'Vintage REVO 'Vision",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vrv800to.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vrv800to.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vrv800to.jpg",
+        "original": "/data/thumbnails/vintage_20_vrv800to.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v52bs",
+      "name": "גיטרה חשמלית Vintage V52 Reissued Butterscotch",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v52bs.jpg",
+      "description": "גיטרה חשמלית Vintage V52 Reissued Butterscotch",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v52bs.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v52bs.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v52bs.jpg",
+        "original": "/data/thumbnails/vintage_20_v52bs.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6m24bk",
+      "name": "גיטרה חשמלית Vintage V6M24BK Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6m24bk.jpg",
+      "description": "גיטרה חשמלית Vintage V6M24BK Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6m24bk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6m24bk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6m24bk.jpg",
+        "original": "/data/thumbnails/vintage_20_v6m24bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vs6mrcr",
+      "name": "גיטרה חשמלית Vintage VS6 Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vs6mrcr.jpg",
+      "description": "גיטרה חשמלית Vintage VS6 Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vs6mrcr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vs6mrcr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vs6mrcr.jpg",
+        "original": "/data/thumbnails/vintage_20_vs6mrcr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mrvg",
+      "name": "גיטרה חשמלית Vintage V6 Icon Distressed Ventura Green",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mrvg.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Icon Distressed Ventura Green",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mrvg.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mrvg.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mrvg.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mrvg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6hmrlb",
+      "name": "גיטרה חשמלית Vintage V6H ICON HSS",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6hmrlb.jpg",
+      "description": "גיטרה חשמלית Vintage V6H ICON HSS",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6hmrlb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6hmrlb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6hmrlb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6hmrlb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lv6hmrsb",
+      "name": "גיטרה חשמלית שמאלית Vintage V6H ICON HSS",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lv6hmrsb.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V6H ICON HSS",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lv6hmrsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lv6hmrsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lv6hmrsb.jpg",
+        "original": "/data/thumbnails/vintage_20_lv6hmrsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6hmrssb",
+      "name": "גיטרה חשמלית Vintage V6H ICON HSS",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6hmrssb.jpg",
+      "description": "גיטרה חשמלית Vintage V6H ICON HSS",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6hmrssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6hmrssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6hmrssb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6hmrssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mnat",
+      "name": "גיטרה חשמלית Vintage V6 Reissued Natural Ash",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mnat.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Reissued Natural Ash",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mnat.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mnat.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mnat.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mnat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6m24lb",
+      "name": "גיטרה חשמלית Vintage V6M24LB Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6m24lb.jpg",
+      "description": "גיטרה חשמלית Vintage V6M24LB Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6m24lb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6m24lb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6m24lb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6m24lb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74fr",
+      "name": "גיטרה בס Vintage VJ74 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74fr.jpg",
+      "description": "גיטרה בס Vintage VJ74 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74fr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74fr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74fr.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74fr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v4mtb",
+      "name": "גיטרה בס Vintage V4MTB Reissued Tony Butler",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v4mtb.jpg",
+      "description": "גיטרה בס Vintage V4MTB Reissued Tony Butler",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v4mtb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v4mtb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v4mtb.jpg",
+        "original": "/data/thumbnails/vintage_20_v4mtb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74car",
+      "name": "גיטרה בס Vintage VJ74 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74car.jpg",
+      "description": "גיטרה בס Vintage VJ74 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74car.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74car.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74car.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74car.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj75mssb",
+      "name": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj75mssb.jpg",
+      "description": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj75mssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj75mssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj75mssb.jpg",
+        "original": "/data/thumbnails/vintage_20_vj75mssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v72fr",
+      "name": "גיטרה חשמלית Vintage V72 Reissued Firenza Red",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v72fr.jpg",
+      "description": "גיטרה חשמלית Vintage V72 Reissued Firenza Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v72fr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v72fr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v72fr.jpg",
+        "original": "/data/thumbnails/vintage_20_v72fr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v49blk",
+      "name": "גיטרה בס Vintage V49 Coaster Series Black",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v49blk.jpg",
+      "description": "גיטרה בס Vintage V49 Coaster Series Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v49blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v49blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v49blk.jpg",
+        "original": "/data/thumbnails/vintage_20_v49blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mssb",
+      "name": "גיטרה חשמלית Vintage V6M Reissued Sunburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mssb.jpg",
+      "description": "גיטרה חשמלית Vintage V6M Reissued Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mssb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v49sb",
+      "name": "גיטרה בס Vintage V49 Coaster Series 3 Tone Sunburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v49sb.jpg",
+      "description": "גיטרה בס Vintage V49 Coaster Series 3 Tone Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v49sb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v49sb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v49sb.jpg",
+        "original": "/data/thumbnails/vintage_20_v49sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vuk30n",
+      "name": "Vintage VUK30N Concert Ukulele",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vuk30n.jpg",
+      "description": "Vintage VUK30N Concert Ukulele",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vuk30n.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vuk30n.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vuk30n.jpg",
+        "original": "/data/thumbnails/vintage_20_vuk30n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v75bk",
+      "name": "גיטרה חשמלית Vintage V75BK",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v75bk.jpg",
+      "description": "גיטרה חשמלית Vintage V75BK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v75bk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v75bk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v75bk.jpg",
+        "original": "/data/thumbnails/vintage_20_v75bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v40blk",
+      "name": "גיטרה בס Vintage V40 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v40blk.jpg",
+      "description": "גיטרה בס Vintage V40 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v40blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v40blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v40blk.jpg",
+        "original": "/data/thumbnails/vintage_20_v40blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v65hgy",
+      "name": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v65hgy.jpg",
+      "description": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v65hgy.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v65hgy.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v65hgy.jpg",
+        "original": "/data/thumbnails/vintage_20_v65hgy.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74mrssb",
+      "name": "גיטרה בס Vintage VJ74 ICON",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74mrssb.jpg",
+      "description": "גיטרה בס Vintage VJ74 ICON",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74mrssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74mrssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74mrssb.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74mrssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v49vw",
+      "name": "גיטרה בס Vintage V49 Coaster Series Vintage White",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v49vw.jpg",
+      "description": "גיטרה בס Vintage V49 Coaster Series Vintage White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v49vw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v49vw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v49vw.jpg",
+        "original": "/data/thumbnails/vintage_20_v49vw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v72ftb",
+      "name": "גיטרה חשמלית Vintage V72 Reissued Custom",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v72ftb.jpg",
+      "description": "גיטרה חשמלית Vintage V72 Reissued Custom",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v72ftb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v72ftb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v72ftb.jpg",
+        "original": "/data/thumbnails/vintage_20_v72ftb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mrssb",
+      "name": "גיטרה חשמלית Vintage V6 Icon Sunburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mrssb.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Icon Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mrssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mrssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mrssb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mrssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v60sb",
+      "name": "גיטרה חשמלית Vintage V60 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v60sb.jpg",
+      "description": "גיטרה חשמלית Vintage V60 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v60sb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v60sb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v60sb.jpg",
+        "original": "/data/thumbnails/vintage_20_v60sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v60rd",
+      "name": "גיטרה חשמלית Vintage V60 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v60rd.jpg",
+      "description": "גיטרה חשמלית Vintage V60 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v60rd.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v60rd.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v60rd.jpg",
+        "original": "/data/thumbnails/vintage_20_v60rd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v65vmrsb",
+      "name": "גיטרה חשמלית Vintage V65 ICON Vibrato",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v65vmrsb.jpg",
+      "description": "גיטרה חשמלית Vintage V65 ICON Vibrato",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v65vmrsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v65vmrsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v65vmrsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v65vmrsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vs6cr",
+      "name": "גיטרה חשמלית Vintage VS6CR Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vs6cr.jpg",
+      "description": "גיטרה חשמלית Vintage VS6CR Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vs6cr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vs6cr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vs6cr.jpg",
+        "original": "/data/thumbnails/vintage_20_vs6cr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6hmbb",
+      "name": "גיטרה חשמלית Vintage V6H Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6hmbb.jpg",
+      "description": "גיטרה חשמלית Vintage V6H Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6hmbb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6hmbb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6hmbb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6hmbb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v72vg",
+      "name": "גיטרה חשמלית Vintage V72 Reissued Ventura Green",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v72vg.jpg",
+      "description": "גיטרה חשמלית Vintage V72 Reissued Ventura Green",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v72vg.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v72vg.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v72vg.jpg",
+        "original": "/data/thumbnails/vintage_20_v72vg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6bb",
+      "name": "גיטרה חשמלית Vintage V6BB Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6bb.jpg",
+      "description": "גיטרה חשמלית Vintage V6BB Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6bb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6bb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6bb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6bb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v60blk_lh",
+      "name": "גיטרה חשמלית שמאלית Vintage V60 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v60blk_lh.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V60 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v60blk_lh.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v60blk_lh.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v60blk_lh.jpg",
+        "original": "/data/thumbnails/vintage_20_v60blk_lh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mrhdx",
+      "name": "גיטרה חשמלית Vintage V6 Thomas Blug",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mrhdx.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Thomas Blug",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mrhdx.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mrhdx.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mrhdx.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mrhdx.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100pu0252",
+      "name": "גיטרה חשמלית Vintage V100 ProShop Unique Series",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100pu0252.jpg",
+      "description": "גיטרה חשמלית Vintage V100 ProShop Unique Series",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100pu0252.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100pu0252.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100pu0252.jpg",
+        "original": "/data/thumbnails/vintage_20_v100pu0252.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v40vw",
+      "name": "גיטרה בס Vintage V40 Coaster",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v40vw.jpg",
+      "description": "גיטרה בס Vintage V40 Coaster",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v40vw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v40vw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v40vw.jpg",
+        "original": "/data/thumbnails/vintage_20_v40vw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500hb",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500hb.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500hb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500hb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500hb.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500hb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v964ssb",
+      "name": "גיטרה בס Vintage V96 Reissued 4-String",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v964ssb.jpg",
+      "description": "גיטרה בס Vintage V96 Reissued 4-String",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v964ssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v964ssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v964ssb.jpg",
+        "original": "/data/thumbnails/vintage_20_v964ssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v495blk",
+      "name": "גיטרה בס Vintage V495 Coaster Series Black",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v495blk.jpg",
+      "description": "גיטרה בס Vintage V495 Coaster Series Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v495blk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v495blk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v495blk.jpg",
+        "original": "/data/thumbnails/vintage_20_v495blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vs6cg",
+      "name": "גיטרה חשמלית Vintage VS6CG Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vs6cg.jpg",
+      "description": "גיטרה חשמלית Vintage VS6CG Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vs6cg.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vs6cg.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vs6cg.jpg",
+        "original": "/data/thumbnails/vintage_20_vs6cg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v132tsb",
+      "name": "גיטרה חשמלית Vintage V132TSB Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v132tsb.jpg",
+      "description": "גיטרה חשמלית Vintage V132TSB Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v132tsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v132tsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v132tsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v132tsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100nbcsb",
+      "name": "גיטרה חשמלית Vintage V100NBCSB ReIssued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100nbcsb.jpg",
+      "description": "גיטרה חשמלית Vintage V100NBCSB ReIssued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100nbcsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100nbcsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100nbcsb.jpg",
+        "original": "/data/thumbnails/vintage_20_v100nbcsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vga990n",
+      "name": "גיטרה אקוסטית מוגברת Vintage VGA990N",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vga990n.jpg",
+      "description": "גיטרה אקוסטית מוגברת Vintage VGA990N",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vga990n.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vga990n.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vga990n.jpg",
+        "original": "/data/thumbnails/vintage_20_vga990n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v300cr",
+      "name": "גיטרה אקוסטית Vintage V300CR",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v300cr.jpg",
+      "description": "גיטרה אקוסטית Vintage V300CR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v300cr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v300cr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v300cr.jpg",
+        "original": "/data/thumbnails/vintage_20_v300cr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500bcr",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500bcr.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500bcr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500bcr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500bcr.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500bcr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500gbk",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500gbk.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500gbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500gbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500gbk.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500gbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v501_12",
+      "name": "גיטרה אקוסטית 12 מיתרים Vintage V501",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v501_12.jpg",
+      "description": "גיטרה אקוסטית 12 מיתרים Vintage V501",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v501_12.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v501_12.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v501_12.jpg",
+        "original": "/data/thumbnails/vintage_20_v501_12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v300aq",
+      "name": "גיטרה אקוסטית Vintage V300AQ",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v300aq.jpg",
+      "description": "גיטרה אקוסטית Vintage V300AQ",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v300aq.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v300aq.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v300aq.jpg",
+        "original": "/data/thumbnails/vintage_20_v300aq.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v300aqoft",
+      "name": "ערכת גיטרה אקוסטית Vintage V300AQOFT",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v300aqoft.jpg",
+      "description": "ערכת גיטרה אקוסטית Vintage V300AQOFT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v300aqoft.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v300aqoft.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v300aqoft.jpg",
+        "original": "/data/thumbnails/vintage_20_v300aqoft.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500bbk",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500bbk.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500bbk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500bbk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500bbk.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500bbk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_ve440wk",
+      "name": "גיטרה אקוסטית מוגברת Vintage VE440WK",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_ve440wk.jpg",
+      "description": "גיטרה אקוסטית מוגברת Vintage VE440WK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_ve440wk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_ve440wk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_ve440wk.jpg",
+        "original": "/data/thumbnails/vintage_20_ve440wk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v501n",
+      "name": "גיטרה אקוסטית Vintage V501N",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v501n.jpg",
+      "description": "גיטרה אקוסטית Vintage V501N",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v501n.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v501n.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v501n.jpg",
+        "original": "/data/thumbnails/vintage_20_v501n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v300mb",
+      "name": "גיטרה אקוסטית Vintage V300MB",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v300mb.jpg",
+      "description": "גיטרה אקוסטית Vintage V300MB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v300mb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v300mb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v300mb.jpg",
+        "original": "/data/thumbnails/vintage_20_v300mb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_ve3000mgg",
+      "name": "גיטרה אקוסטית מוגברת Vintage VE3000MGG",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_ve3000mgg.jpg",
+      "description": "גיטרה אקוסטית מוגברת Vintage VE3000MGG",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_ve3000mgg.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_ve3000mgg.jpg",
+        "high_res": "/data/thumbnails/vintage_20_ve3000mgg.jpg",
+        "original": "/data/thumbnails/vintage_20_ve3000mgg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_amg1",
+      "name": "גיטרה אקוסטית Vintage AMG Resonator",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_amg1.jpg",
+      "description": "גיטרה אקוסטית Vintage AMG Resonator",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_amg1.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_amg1.jpg",
+        "high_res": "/data/thumbnails/vintage_20_amg1.jpg",
+        "original": "/data/thumbnails/vintage_20_amg1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v4mfr",
+      "name": "גיטרה בס Vintage V4 Reissued Maple Fingerboard",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v4mfr.jpg",
+      "description": "גיטרה בס Vintage V4 Reissued Maple Fingerboard",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v4mfr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v4mfr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v4mfr.jpg",
+        "original": "/data/thumbnails/vintage_20_v4mfr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_ve440wk_12",
+      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage VE440WK-12",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_ve440wk_12.jpg",
+      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage VE440WK-12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_ve440wk_12.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_ve440wk_12.jpg",
+        "high_res": "/data/thumbnails/vintage_20_ve440wk_12.jpg",
+        "original": "/data/thumbnails/vintage_20_ve440wk_12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_ve5000sb_12",
+      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage 'Statesboro' Paul Brett",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_ve5000sb_12.jpg",
+      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage 'Statesboro' Paul Brett",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_ve5000sb_12.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_ve5000sb_12.jpg",
+        "high_res": "/data/thumbnails/vintage_20_ve5000sb_12.jpg",
+        "original": "/data/thumbnails/vintage_20_ve5000sb_12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v300",
+      "name": "גיטרה אקוסטית Vintage V300",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v300.jpg",
+      "description": "גיטרה אקוסטית Vintage V300",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v300.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v300.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v300.jpg",
+        "original": "/data/thumbnails/vintage_20_v300.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_ve2000dlx",
+      "name": "גיטרה אקוסטית מוגברת Vintage VE2000DLX",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_ve2000dlx.jpg",
+      "description": "גיטרה אקוסטית מוגברת Vintage VE2000DLX",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_ve2000dlx.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_ve2000dlx.jpg",
+        "high_res": "/data/thumbnails/vintage_20_ve2000dlx.jpg",
+        "original": "/data/thumbnails/vintage_20_ve2000dlx.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v440wk",
+      "name": "גיטרה אקוסטית Vintage V440WK",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v440wk.jpg",
+      "description": "גיטרה אקוסטית Vintage V440WK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v440wk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v440wk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v440wk.jpg",
+        "original": "/data/thumbnails/vintage_20_v440wk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v660wk",
+      "name": "גיטרה אקוסטית Vintage V660WK",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v660wk.jpg",
+      "description": "גיטרה אקוסטית Vintage V660WK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v660wk.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v660wk.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v660wk.jpg",
+        "original": "/data/thumbnails/vintage_20_v660wk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vcag3",
+      "name": "תיק לגיטרה אקוסטית Vintage VCAG3 Canvas",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vcag3.jpg",
+      "description": "תיק לגיטרה אקוסטית Vintage VCAG3 Canvas",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vcag3.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vcag3.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vcag3.jpg",
+        "original": "/data/thumbnails/vintage_20_vcag3.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vceg1",
+      "name": "תיק לגיטרה חשמלית Vintage VCEG1 Canvas",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vceg1.jpg",
+      "description": "תיק לגיטרה חשמלית Vintage VCEG1 Canvas",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vceg1.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vceg1.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vceg1.jpg",
+        "original": "/data/thumbnails/vintage_20_vceg1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vcbg2",
+      "name": "תיק לגיטרה בס Vintage VCBG2 Canvas",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vcbg2.jpg",
+      "description": "תיק לגיטרה בס Vintage VCBG2 Canvas",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vcbg2.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vcbg2.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vcbg2.jpg",
+        "original": "/data/thumbnails/vintage_20_vcbg2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v4sb",
+      "name": "גיטרה בס Vintage V4SB Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v4sb.jpg",
+      "description": "גיטרה בס Vintage V4SB Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v4sb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v4sb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v4sb.jpg",
+        "original": "/data/thumbnails/vintage_20_v4sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v4mrssb",
+      "name": "גיטרה בס Vintage V4 Icon",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v4mrssb.jpg",
+      "description": "גיטרה בס Vintage V4 Icon",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v4mrssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v4mrssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v4mrssb.jpg",
+        "original": "/data/thumbnails/vintage_20_v4mrssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vj74mvw",
+      "name": "גיטרה בס Vintage VJ74 Reissued Maple Fingerboard",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vj74mvw.jpg",
+      "description": "גיטרה בס Vintage VJ74 Reissued Maple Fingerboard",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vj74mvw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vj74mvw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vj74mvw.jpg",
+        "original": "/data/thumbnails/vintage_20_vj74mvw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_vsa500mp",
+      "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_vsa500mp.jpg",
+      "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_vsa500mp.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_vsa500mp.jpg",
+        "high_res": "/data/thumbnails/vintage_20_vsa500mp.jpg",
+        "original": "/data/thumbnails/vintage_20_vsa500mp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v100mghb",
+      "name": "גיטרה חשמלית Vintage V100M Mini Double Coil Reissued",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v100mghb.jpg",
+      "description": "גיטרה חשמלית Vintage V100M Mini Double Coil Reissued",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v100mghb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v100mghb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v100mghb.jpg",
+        "original": "/data/thumbnails/vintage_20_v100mghb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v300noft",
+      "name": "ערכת גיטרה אקוסטית Vintage V300NOFT",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v300noft.jpg",
+      "description": "ערכת גיטרה אקוסטית Vintage V300NOFT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v300noft.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v300noft.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v300noft.jpg",
+        "original": "/data/thumbnails/vintage_20_v300noft.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6ssb",
+      "name": "גיטרה חשמלית Vintage V6 Reissued Sunset Sunburst",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6ssb.jpg",
+      "description": "גיטרה חשמלית Vintage V6 Reissued Sunset Sunburst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6ssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6ssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6ssb.jpg",
+        "original": "/data/thumbnails/vintage_20_v6ssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_ps02",
+      "name": "Vintage PS02",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_ps02.jpg",
+      "description": "Vintage PS02",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_ps02.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_ps02.jpg",
+        "high_res": "/data/thumbnails/vintage_20_ps02.jpg",
+        "original": "/data/thumbnails/vintage_20_ps02.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_v6mfr",
+      "name": "Vintage V6M Reissued Firenza Red",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_v6mfr.jpg",
+      "description": "Vintage V6M Reissued Firenza Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_v6mfr.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_v6mfr.jpg",
+        "high_res": "/data/thumbnails/vintage_20_v6mfr.jpg",
+        "original": "/data/thumbnails/vintage_20_v6mfr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lv6mssb",
+      "name": "גיטרה חשמלית שמאלית Vintage V6M Reissued LH",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lv6mssb.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V6M Reissued LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lv6mssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lv6mssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lv6mssb.jpg",
+        "original": "/data/thumbnails/vintage_20_lv6mssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lv6ssb",
+      "name": "גיטרה חשמלית שמאלית Vintage V6 Reissued LH",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lv6ssb.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V6 Reissued LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lv6ssb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lv6ssb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lv6ssb.jpg",
+        "original": "/data/thumbnails/vintage_20_lv6ssb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lv100tsb",
+      "name": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lv100tsb.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lv100tsb.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lv100tsb.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lv100tsb.jpg",
+        "original": "/data/thumbnails/vintage_20_lv100tsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "vintage_20_lvs6vw",
+      "name": "גיטרה חשמלית שמאלית Vintage LVS6VW",
+      "brand": "vintage",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/vintage_20_lvs6vw.jpg",
+      "description": "גיטרה חשמלית שמאלית Vintage LVS6VW",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/vintage_20_lvs6vw.jpg",
+        "thumbnail": "/data/thumbnails/vintage_20_lvs6vw.jpg",
+        "high_res": "/data/thumbnails/vintage_20_lvs6vw.jpg",
+        "original": "/data/thumbnails/vintage_20_lvs6vw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Vintage",
+  "brand_slug": "vintage",
+  "refined_at": "2026-01-24T02:50:44.532759+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "vintage_20_v59mrsb",
+          "name": "גיטרה חשמלית Vintage V59MRSB Icon",
+          "description": "גיטרה חשמלית Vintage V59MRSB Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v59mrsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v59mrsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v59mrsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v59mrsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lh_v10blk",
+          "name": "גיטרה חשמלית שמאלית Vintage V10 Coaster LH",
+          "description": "גיטרה חשמלית שמאלית Vintage V10 Coaster LH",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lh_v10blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lh_v10blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lh_v10blk.jpg",
+            "original": "/data/thumbnails/vintage_20_lh_v10blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v10wr",
+          "name": "גיטרה חשמלית Vintage V10 Coaster",
+          "description": "גיטרה חשמלית Vintage V10 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v10wr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v10wr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v10wr.jpg",
+            "original": "/data/thumbnails/vintage_20_v10wr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v10blk",
+          "name": "גיטרה חשמלית Vintage V10 Coaster",
+          "description": "גיטרה חשמלית Vintage V10 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v10blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v10blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v10blk.jpg",
+            "original": "/data/thumbnails/vintage_20_v10blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v10csb",
+          "name": "גיטרה חשמלית Vintage V10 Coaster",
+          "description": "גיטרה חשמלית Vintage V10 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v10csb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v10csb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v10csb.jpg",
+            "original": "/data/thumbnails/vintage_20_v10csb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74blk",
+          "name": "גיטרה בס Vintage VJ74 Reissued",
+          "description": "גיטרה בס Vintage VJ74 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74blk.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500bghb",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500bghb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500bghb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500bghb.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500bghb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v74mrjp",
+          "name": "גיטרה בס Vintage V74 Icon Fretless",
+          "description": "גיטרה בס Vintage V74 Icon Fretless",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v74mrjp.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v74mrjp.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v74mrjp.jpg",
+            "original": "/data/thumbnails/vintage_20_v74mrjp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v60lb",
+          "name": "גיטרה חשמלית Vintage V60 Coaster",
+          "description": "גיטרה חשמלית Vintage V60 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v60lb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v60lb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v60lb.jpg",
+            "original": "/data/thumbnails/vintage_20_v60lb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6hmrsb",
+          "name": "גיטרה חשמלית Vintage V6H ICON HSS",
+          "description": "גיטרה חשמלית Vintage V6H ICON HSS",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6hmrsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6hmrsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6hmrsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6hmrsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrct45bl",
+          "name": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+          "description": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrct45bl.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrct45bl.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrct45bl.jpg",
+            "original": "/data/thumbnails/vintage_20_vrct45bl.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v4bkl",
+          "name": "גיטרה בס Vintage V4 Reissued",
+          "description": "גיטרה בס Vintage V4 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v4bkl.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v4bkl.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v4bkl.jpg",
+            "original": "/data/thumbnails/vintage_20_v4bkl.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v495sb",
+          "name": "גיטרה בס Vintage V495 Coaster Series 3 Tone Sunburst",
+          "description": "גיטרה בס Vintage V495 Coaster Series 3 Tone Sunburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v495sb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v495sb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v495sb.jpg",
+            "original": "/data/thumbnails/vintage_20_v495sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lhv300oft",
+          "name": "ערכת גיטרה אקוסטית שמאלית Vintage V300 Natural LH",
+          "description": "ערכת גיטרה אקוסטית שמאלית Vintage V300 Natural LH",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lhv300oft.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lhv300oft.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lhv300oft.jpg",
+            "original": "/data/thumbnails/vintage_20_lhv300oft.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v42ssb",
+          "name": "גיטרה בס Vintage V42 ReIssued 3 Tone Sunburst",
+          "description": "גיטרה בס Vintage V42 ReIssued 3 Tone Sunburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v42ssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v42ssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v42ssb.jpg",
+            "original": "/data/thumbnails/vintage_20_v42ssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6lb",
+          "name": "גיטרה חשמלית Vintage V6LB Reissued",
+          "description": "גיטרה חשמלית Vintage V6LB Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6lb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6lb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6lb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6lb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrct45bk",
+          "name": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+          "description": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrct45bk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrct45bk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrct45bk.jpg",
+            "original": "/data/thumbnails/vintage_20_vrct45bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v62ab",
+          "name": "גיטרה חשמלית Vintage V62 Reissued Ash Blonde",
+          "description": "גיטרה חשמלית Vintage V62 Reissued Ash Blonde",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v62ab.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v62ab.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v62ab.jpg",
+            "original": "/data/thumbnails/vintage_20_v62ab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6pu0236",
+          "name": "גיטרה חשמלית Vintage V6 ProShop Unique",
+          "description": "גיטרה חשמלית Vintage V6 ProShop Unique",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6pu0236.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6pu0236.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6pu0236.jpg",
+            "original": "/data/thumbnails/vintage_20_v6pu0236.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vs6vcr",
+          "name": "גיטרה חשמלית Vintage VS6V Vibrola Tailpiece",
+          "description": "גיטרה חשמלית Vintage VS6V Vibrola Tailpiece",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vs6vcr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vs6vcr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vs6vcr.jpg",
+            "original": "/data/thumbnails/vintage_20_vs6vcr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74vg",
+          "name": "גיטרה בס Vintage VJ74 Reissued",
+          "description": "גיטרה בס Vintage VJ74 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74vg.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74vg.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74vg.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74vg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v65vbk",
+          "name": "גיטרה חשמלית Vintage V65VBK Reissued",
+          "description": "גיטרה חשמלית Vintage V65VBK Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v65vbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v65vbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v65vbk.jpg",
+            "original": "/data/thumbnails/vintage_20_v65vbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mrbk",
+          "name": "גיטרה חשמלית Vintage V6 Icon Distressed Boulevard Black",
+          "description": "גיטרה חשמלית Vintage V6 Icon Distressed Boulevard Black",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mrbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mrbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mrbk.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mrbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrs654bk",
+          "name": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+          "description": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrs654bk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrs654bk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrs654bk.jpg",
+            "original": "/data/thumbnails/vintage_20_vrs654bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrs654mw",
+          "name": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+          "description": "גיטרה חשמלית Vintage REVO 'Surfmaster' Quad",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrs654mw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrs654mw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrs654mw.jpg",
+            "original": "/data/thumbnails/vintage_20_vrs654mw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v60vw",
+          "name": "גיטרה חשמלית Vintage V60 Coaster",
+          "description": "גיטרה חשמלית Vintage V60 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v60vw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v60vw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v60vw.jpg",
+            "original": "/data/thumbnails/vintage_20_v60vw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mrfr",
+          "name": "גיטרה חשמלית Vintage V6 Icon Distressed Firenza Red",
+          "description": "גיטרה חשמלית Vintage V6 Icon Distressed Firenza Red",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mrfr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mrfr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mrfr.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mrfr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500sb_12",
+          "name": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500SB-12 Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500SB-12 Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500sb_12.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500sb_12.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500sb_12.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500sb_12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vuk40n",
+          "name": "יוקללה טנור Vintage Tenor Ukulele Natural",
+          "description": "יוקללה טנור Vintage Tenor Ukulele Natural",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vuk40n.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vuk40n.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vuk40n.jpg",
+            "original": "/data/thumbnails/vintage_20_vuk40n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lv100mrpgm",
+          "name": "גיטרה חשמלית שמאלית Vintage V100 ICON LH",
+          "description": "גיטרה חשמלית שמאלית Vintage V100 ICON LH",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lv100mrpgm.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lv100mrpgm.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lv100mrpgm.jpg",
+            "original": "/data/thumbnails/vintage_20_lv100mrpgm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v65hbld",
+          "name": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+          "description": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v65hbld.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v65hbld.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v65hbld.jpg",
+            "original": "/data/thumbnails/vintage_20_v65hbld.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lv6hmrlb",
+          "name": "גיטרה חשמלית שמאלית Vintage V6H ICON Lefty",
+          "description": "גיטרה חשמלית שמאלית Vintage V6H ICON Lefty",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lv6hmrlb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lv6hmrlb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lv6hmrlb.jpg",
+            "original": "/data/thumbnails/vintage_20_lv6hmrlb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74ssb",
+          "name": "גיטרה בס Vintage VJ74 Reissued",
+          "description": "גיטרה בס Vintage VJ74 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74ssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74ssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74ssb.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74ssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100mu",
+          "name": "גיטרה חשמלית Vintage V100 Midge Ure Signature",
+          "description": "גיטרה חשמלית Vintage V100 Midge Ure Signature",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100mu.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100mu.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100mu.jpg",
+            "original": "/data/thumbnails/vintage_20_v100mu.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100mrjbm",
+          "name": "גיטרה חשמלית Vintage V100MRJBM Icon",
+          "description": "גיטרה חשמלית Vintage V100MRJBM Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100mrjbm.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100mrjbm.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100mrjbm.jpg",
+            "original": "/data/thumbnails/vintage_20_v100mrjbm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100mrtsb",
+          "name": "גיטרה חשמלית Vintage V100MRTSB Icon",
+          "description": "גיטרה חשמלית Vintage V100MRTSB Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100mrtsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100mrtsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100mrtsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v100mrtsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrs652to",
+          "name": "גיטרה חשמלית Vintage REVO 'Surfmaster' Thinline Twin",
+          "description": "גיטרה חשמלית Vintage REVO 'Surfmaster' Thinline Twin",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrs652to.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrs652to.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrs652to.jpg",
+            "original": "/data/thumbnails/vintage_20_vrs652to.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100blk",
+          "name": "גיטרה חשמלית Vintage V100BLK ReIssued",
+          "description": "גיטרה חשמלית Vintage V100BLK ReIssued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100blk.jpg",
+            "original": "/data/thumbnails/vintage_20_v100blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v52mrbs",
+          "name": "גיטרה חשמלית Vintage V52 Icon Butterscotch",
+          "description": "גיטרה חשמלית Vintage V52 Icon Butterscotch",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v52mrbs.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v52mrbs.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v52mrbs.jpg",
+            "original": "/data/thumbnails/vintage_20_v52mrbs.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mrtbg",
+          "name": "גיטרה חשמלית Vintage V6 Thomas Blug",
+          "description": "גיטרה חשמלית Vintage V6 Thomas Blug",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mrtbg.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mrtbg.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mrtbg.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mrtbg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v42vw",
+          "name": "גיטרה בס Vintage V42 ReIssued Vintage White",
+          "description": "גיטרה בס Vintage V42 ReIssued Vintage White",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v42vw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v42vw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v42vw.jpg",
+            "original": "/data/thumbnails/vintage_20_v42vw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100mrpgm",
+          "name": "גיטרה חשמלית Vintage V100MRPGM Icon",
+          "description": "גיטרה חשמלית Vintage V100MRPGM Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100mrpgm.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100mrpgm.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100mrpgm.jpg",
+            "original": "/data/thumbnails/vintage_20_v100mrpgm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v62mrab",
+          "name": "גיטרה חשמלית Vintage V62MRAB Icon",
+          "description": "גיטרה חשמלית Vintage V62MRAB Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v62mrab.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v62mrab.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v62mrab.jpg",
+            "original": "/data/thumbnails/vintage_20_v62mrab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v42blk",
+          "name": "גיטרה בס Vintage V42 ReIssued Boulevard Black",
+          "description": "גיטרה בס Vintage V42 ReIssued Boulevard Black",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v42blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v42blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v42blk.jpg",
+            "original": "/data/thumbnails/vintage_20_v42blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj75mbk",
+          "name": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+          "description": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj75mbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj75mbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj75mbk.jpg",
+            "original": "/data/thumbnails/vintage_20_vj75mbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6cab",
+          "name": "גיטרה חשמלית Vintage V6CAB Reissued",
+          "description": "גיטרה חשמלית Vintage V6CAB Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6cab.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6cab.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6cab.jpg",
+            "original": "/data/thumbnails/vintage_20_v6cab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6jmh",
+          "name": "גיטרה חשמלית Vintage V6JMH Reissued Olympia White Fillmore",
+          "description": "גיטרה חשמלית Vintage V6JMH Reissued Olympia White Fillmore",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6jmh.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6jmh.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6jmh.jpg",
+            "original": "/data/thumbnails/vintage_20_v6jmh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v72hftb",
+          "name": "גיטרה חשמלית Vintage V72H Reissued Custom",
+          "description": "גיטרה חשמלית Vintage V72H Reissued Custom",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v72hftb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v72hftb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v72hftb.jpg",
+            "original": "/data/thumbnails/vintage_20_v72hftb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100twr",
+          "name": "גיטרה חשמלית Vintage V100TWR Reissued",
+          "description": "גיטרה חשמלית Vintage V100TWR Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100twr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100twr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100twr.jpg",
+            "original": "/data/thumbnails/vintage_20_v100twr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v58jdab",
+          "name": "גיטרה חשמלית Vintage V58 Jerry Donahue Reissued",
+          "description": "גיטרה חשמלית Vintage V58 Jerry Donahue Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v58jdab.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v58jdab.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v58jdab.jpg",
+            "original": "/data/thumbnails/vintage_20_v58jdab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mrlb",
+          "name": "גיטרה חשמלית Vintage V6 Icon Distressed Laguna Blue",
+          "description": "גיטרה חשמלית Vintage V6 Icon Distressed Laguna Blue",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mrlb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mrlb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mrlb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mrlb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100pgm",
+          "name": "גיטרה חשמלית Vintage V100 Reissued Lemon Drop",
+          "description": "גיטרה חשמלית Vintage V100 Reissued Lemon Drop",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100pgm.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100pgm.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100pgm.jpg",
+            "original": "/data/thumbnails/vintage_20_v100pgm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrv800bk",
+          "name": "גיטרה חשמלית 'Vintage REVO 'Vision",
+          "description": "גיטרה חשמלית 'Vintage REVO 'Vision",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrv800bk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrv800bk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrv800bk.jpg",
+            "original": "/data/thumbnails/vintage_20_vrv800bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500psb",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500P Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500P Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500psb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500psb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500psb.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500psb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500cr",
+          "name": "Vintage VSA500 Semi Acoustic",
+          "description": "Vintage VSA500 Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500cr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500cr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500cr.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500cr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100it",
+          "name": "גיטרה חשמלית Vintage V100 Reissued Flamed Iced Tea",
+          "description": "גיטרה חשמלית Vintage V100 Reissued Flamed Iced Tea",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100it.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100it.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100it.jpg",
+            "original": "/data/thumbnails/vintage_20_v100it.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lv100it",
+          "name": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+          "description": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lv100it.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lv100it.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lv100it.jpg",
+            "original": "/data/thumbnails/vintage_20_lv100it.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500sb",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500sb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500sb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500sb.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500cr_12",
+          "name": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500 Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח 12 מיתרים Vintage VSA500 Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500cr_12.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500cr_12.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500cr_12.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500cr_12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100hb",
+          "name": "גיטרה חשמלית Vintage V100 Reissued Honeyburst",
+          "description": "גיטרה חשמלית Vintage V100 Reissued Honeyburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100hb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100hb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100hb.jpg",
+            "original": "/data/thumbnails/vintage_20_v100hb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v59mrbk",
+          "name": "גיטרה חשמלית Vintage V59MRBK Icon",
+          "description": "גיטרה חשמלית Vintage V59MRBK Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v59mrbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v59mrbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v59mrbk.jpg",
+            "original": "/data/thumbnails/vintage_20_v59mrbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v60cab",
+          "name": "גיטרה חשמלית Vintage V60 Coaster",
+          "description": "גיטרה חשמלית Vintage V60 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v60cab.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v60cab.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v60cab.jpg",
+            "original": "/data/thumbnails/vintage_20_v60cab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100tsb",
+          "name": "גיטרה חשמלית Vintage V100 Reissued Tobacco Sunburst",
+          "description": "גיטרה חשמלית Vintage V100 Reissued Tobacco Sunburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100tsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100tsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100tsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v100tsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100afd",
+          "name": "גיטרה חשמלית Vintage V100AFD Reissued",
+          "description": "גיטרה חשמלית Vintage V100AFD Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100afd.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100afd.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100afd.jpg",
+            "original": "/data/thumbnails/vintage_20_v100afd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v65htsb",
+          "name": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+          "description": "גיטרה חשמלית Vintage V65 Reissued Hard Tail",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v65htsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v65htsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v65htsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v65htsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v65hbl",
+          "name": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+          "description": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v65hbl.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v65hbl.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v65hbl.jpg",
+            "original": "/data/thumbnails/vintage_20_v65hbl.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6vw",
+          "name": "גיטרה חשמלית Vintage V6VW Reissued",
+          "description": "גיטרה חשמלית Vintage V6VW Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6vw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6vw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6vw.jpg",
+            "original": "/data/thumbnails/vintage_20_v6vw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100blb",
+          "name": "גיטרה חשמלית Vintage V100BLB Reissued w/Bigsby",
+          "description": "גיטרה חשמלית Vintage V100BLB Reissued w/Bigsby",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100blb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100blb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100blb.jpg",
+            "original": "/data/thumbnails/vintage_20_v100blb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100mrbk",
+          "name": "גיטרה חשמלית Vintage V100MRBK Icon",
+          "description": "גיטרה חשמלית Vintage V100MRBK Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100mrbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100mrbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100mrbk.jpg",
+            "original": "/data/thumbnails/vintage_20_v100mrbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrct45fr",
+          "name": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+          "description": "גיטרה חשמלית Vintage REVO 'Colt' HS Duo",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrct45fr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrct45fr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrct45fr.jpg",
+            "original": "/data/thumbnails/vintage_20_vrct45fr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v60blk",
+          "name": "גיטרה חשמלית Vintage V60 Coaster",
+          "description": "גיטרה חשמלית Vintage V60 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v60blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v60blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v60blk.jpg",
+            "original": "/data/thumbnails/vintage_20_v60blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v624frbk_b",
+          "name": "גיטרה חשמלית Vintage V624 ReIssued Floyd Rose",
+          "description": "גיטרה חשמלית Vintage V624 ReIssued Floyd Rose",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v624frbk_b.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v624frbk_b.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v624frbk_b.jpg",
+            "original": "/data/thumbnails/vintage_20_v624frbk_b.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v62mrbk",
+          "name": "גיטרה חשמלית Vintage V62MRBK Icon",
+          "description": "גיטרה חשמלית Vintage V62MRBK Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v62mrbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v62mrbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v62mrbk.jpg",
+            "original": "/data/thumbnails/vintage_20_v62mrbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74lb",
+          "name": "גיטרה בס Vintage VJ74 Reissued",
+          "description": "גיטרה בס Vintage VJ74 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74lb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74lb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74lb.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74lb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v65vvw",
+          "name": "גיטרה חשמלית Vintage V65VVW Reissued Vibrato",
+          "description": "גיטרה חשמלית Vintage V65VVW Reissued Vibrato",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v65vvw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v65vvw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v65vvw.jpg",
+            "original": "/data/thumbnails/vintage_20_v65vvw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100thb",
+          "name": "גיטרה חשמלית Vintage V100THB Reissued",
+          "description": "גיטרה חשמלית Vintage V100THB Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100thb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100thb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100thb.jpg",
+            "original": "/data/thumbnails/vintage_20_v100thb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vs6b",
+          "name": "גיטרה חשמלית Vintage VS6B Reissued",
+          "description": "גיטרה חשמלית Vintage VS6B Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vs6b.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vs6b.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vs6b.jpg",
+            "original": "/data/thumbnails/vintage_20_vs6b.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrv800sb",
+          "name": "גיטרה חשמלית 'Vintage REVO 'Vision",
+          "description": "גיטרה חשמלית 'Vintage REVO 'Vision",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrv800sb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrv800sb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrv800sb.jpg",
+            "original": "/data/thumbnails/vintage_20_vrv800sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100mrcs",
+          "name": "גיטרה חשמלית Vintage V100MRCS Icon",
+          "description": "גיטרה חשמלית Vintage V100MRCS Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100mrcs.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100mrcs.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100mrcs.jpg",
+            "original": "/data/thumbnails/vintage_20_v100mrcs.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74pu1415",
+          "name": "גיטרה בס Vintage VJ74 ProShop Unique",
+          "description": "גיטרה בס Vintage VJ74 ProShop Unique",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74pu1415.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74pu1415.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74pu1415.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74pu1415.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vrv800to",
+          "name": "גיטרה חשמלית 'Vintage REVO 'Vision",
+          "description": "גיטרה חשמלית 'Vintage REVO 'Vision",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vrv800to.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vrv800to.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vrv800to.jpg",
+            "original": "/data/thumbnails/vintage_20_vrv800to.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v52bs",
+          "name": "גיטרה חשמלית Vintage V52 Reissued Butterscotch",
+          "description": "גיטרה חשמלית Vintage V52 Reissued Butterscotch",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v52bs.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v52bs.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v52bs.jpg",
+            "original": "/data/thumbnails/vintage_20_v52bs.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6m24bk",
+          "name": "גיטרה חשמלית Vintage V6M24BK Reissued",
+          "description": "גיטרה חשמלית Vintage V6M24BK Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6m24bk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6m24bk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6m24bk.jpg",
+            "original": "/data/thumbnails/vintage_20_v6m24bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vs6mrcr",
+          "name": "גיטרה חשמלית Vintage VS6 Icon",
+          "description": "גיטרה חשמלית Vintage VS6 Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vs6mrcr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vs6mrcr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vs6mrcr.jpg",
+            "original": "/data/thumbnails/vintage_20_vs6mrcr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mrvg",
+          "name": "גיטרה חשמלית Vintage V6 Icon Distressed Ventura Green",
+          "description": "גיטרה חשמלית Vintage V6 Icon Distressed Ventura Green",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mrvg.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mrvg.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mrvg.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mrvg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6hmrlb",
+          "name": "גיטרה חשמלית Vintage V6H ICON HSS",
+          "description": "גיטרה חשמלית Vintage V6H ICON HSS",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6hmrlb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6hmrlb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6hmrlb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6hmrlb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lv6hmrsb",
+          "name": "גיטרה חשמלית שמאלית Vintage V6H ICON HSS",
+          "description": "גיטרה חשמלית שמאלית Vintage V6H ICON HSS",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lv6hmrsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lv6hmrsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lv6hmrsb.jpg",
+            "original": "/data/thumbnails/vintage_20_lv6hmrsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6hmrssb",
+          "name": "גיטרה חשמלית Vintage V6H ICON HSS",
+          "description": "גיטרה חשמלית Vintage V6H ICON HSS",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6hmrssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6hmrssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6hmrssb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6hmrssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mnat",
+          "name": "גיטרה חשמלית Vintage V6 Reissued Natural Ash",
+          "description": "גיטרה חשמלית Vintage V6 Reissued Natural Ash",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mnat.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mnat.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mnat.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mnat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6m24lb",
+          "name": "גיטרה חשמלית Vintage V6M24LB Reissued",
+          "description": "גיטרה חשמלית Vintage V6M24LB Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6m24lb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6m24lb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6m24lb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6m24lb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74fr",
+          "name": "גיטרה בס Vintage VJ74 Reissued",
+          "description": "גיטרה בס Vintage VJ74 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74fr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74fr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74fr.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74fr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v4mtb",
+          "name": "גיטרה בס Vintage V4MTB Reissued Tony Butler",
+          "description": "גיטרה בס Vintage V4MTB Reissued Tony Butler",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v4mtb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v4mtb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v4mtb.jpg",
+            "original": "/data/thumbnails/vintage_20_v4mtb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74car",
+          "name": "גיטרה בס Vintage VJ74 Reissued",
+          "description": "גיטרה בס Vintage VJ74 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74car.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74car.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74car.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74car.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj75mssb",
+          "name": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+          "description": "גיטרה בס 5 מיתרים Vintage VJ75 Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj75mssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj75mssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj75mssb.jpg",
+            "original": "/data/thumbnails/vintage_20_vj75mssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v72fr",
+          "name": "גיטרה חשמלית Vintage V72 Reissued Firenza Red",
+          "description": "גיטרה חשמלית Vintage V72 Reissued Firenza Red",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v72fr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v72fr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v72fr.jpg",
+            "original": "/data/thumbnails/vintage_20_v72fr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v49blk",
+          "name": "גיטרה בס Vintage V49 Coaster Series Black",
+          "description": "גיטרה בס Vintage V49 Coaster Series Black",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v49blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v49blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v49blk.jpg",
+            "original": "/data/thumbnails/vintage_20_v49blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mssb",
+          "name": "גיטרה חשמלית Vintage V6M Reissued Sunburst",
+          "description": "גיטרה חשמלית Vintage V6M Reissued Sunburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mssb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v49sb",
+          "name": "גיטרה בס Vintage V49 Coaster Series 3 Tone Sunburst",
+          "description": "גיטרה בס Vintage V49 Coaster Series 3 Tone Sunburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v49sb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v49sb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v49sb.jpg",
+            "original": "/data/thumbnails/vintage_20_v49sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vuk30n",
+          "name": "Vintage VUK30N Concert Ukulele",
+          "description": "Vintage VUK30N Concert Ukulele",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vuk30n.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vuk30n.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vuk30n.jpg",
+            "original": "/data/thumbnails/vintage_20_vuk30n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v75bk",
+          "name": "גיטרה חשמלית Vintage V75BK",
+          "description": "גיטרה חשמלית Vintage V75BK",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v75bk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v75bk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v75bk.jpg",
+            "original": "/data/thumbnails/vintage_20_v75bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v40blk",
+          "name": "גיטרה בס Vintage V40 Coaster",
+          "description": "גיטרה בס Vintage V40 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v40blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v40blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v40blk.jpg",
+            "original": "/data/thumbnails/vintage_20_v40blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v65hgy",
+          "name": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+          "description": "גיטרה חשמלית Vintage V65H Reissued Hard Tail",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v65hgy.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v65hgy.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v65hgy.jpg",
+            "original": "/data/thumbnails/vintage_20_v65hgy.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74mrssb",
+          "name": "גיטרה בס Vintage VJ74 ICON",
+          "description": "גיטרה בס Vintage VJ74 ICON",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74mrssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74mrssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74mrssb.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74mrssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v49vw",
+          "name": "גיטרה בס Vintage V49 Coaster Series Vintage White",
+          "description": "גיטרה בס Vintage V49 Coaster Series Vintage White",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v49vw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v49vw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v49vw.jpg",
+            "original": "/data/thumbnails/vintage_20_v49vw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v72ftb",
+          "name": "גיטרה חשמלית Vintage V72 Reissued Custom",
+          "description": "גיטרה חשמלית Vintage V72 Reissued Custom",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v72ftb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v72ftb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v72ftb.jpg",
+            "original": "/data/thumbnails/vintage_20_v72ftb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mrssb",
+          "name": "גיטרה חשמלית Vintage V6 Icon Sunburst",
+          "description": "גיטרה חשמלית Vintage V6 Icon Sunburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mrssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mrssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mrssb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mrssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v60sb",
+          "name": "גיטרה חשמלית Vintage V60 Coaster",
+          "description": "גיטרה חשמלית Vintage V60 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v60sb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v60sb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v60sb.jpg",
+            "original": "/data/thumbnails/vintage_20_v60sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v60rd",
+          "name": "גיטרה חשמלית Vintage V60 Coaster",
+          "description": "גיטרה חשמלית Vintage V60 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v60rd.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v60rd.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v60rd.jpg",
+            "original": "/data/thumbnails/vintage_20_v60rd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v65vmrsb",
+          "name": "גיטרה חשמלית Vintage V65 ICON Vibrato",
+          "description": "גיטרה חשמלית Vintage V65 ICON Vibrato",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v65vmrsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v65vmrsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v65vmrsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v65vmrsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vs6cr",
+          "name": "גיטרה חשמלית Vintage VS6CR Reissued",
+          "description": "גיטרה חשמלית Vintage VS6CR Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vs6cr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vs6cr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vs6cr.jpg",
+            "original": "/data/thumbnails/vintage_20_vs6cr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6hmbb",
+          "name": "גיטרה חשמלית Vintage V6H Reissued",
+          "description": "גיטרה חשמלית Vintage V6H Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6hmbb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6hmbb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6hmbb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6hmbb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v72vg",
+          "name": "גיטרה חשמלית Vintage V72 Reissued Ventura Green",
+          "description": "גיטרה חשמלית Vintage V72 Reissued Ventura Green",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v72vg.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v72vg.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v72vg.jpg",
+            "original": "/data/thumbnails/vintage_20_v72vg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6bb",
+          "name": "גיטרה חשמלית Vintage V6BB Reissued",
+          "description": "גיטרה חשמלית Vintage V6BB Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6bb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6bb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6bb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6bb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v60blk_lh",
+          "name": "גיטרה חשמלית שמאלית Vintage V60 Coaster",
+          "description": "גיטרה חשמלית שמאלית Vintage V60 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v60blk_lh.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v60blk_lh.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v60blk_lh.jpg",
+            "original": "/data/thumbnails/vintage_20_v60blk_lh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mrhdx",
+          "name": "גיטרה חשמלית Vintage V6 Thomas Blug",
+          "description": "גיטרה חשמלית Vintage V6 Thomas Blug",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mrhdx.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mrhdx.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mrhdx.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mrhdx.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100pu0252",
+          "name": "גיטרה חשמלית Vintage V100 ProShop Unique Series",
+          "description": "גיטרה חשמלית Vintage V100 ProShop Unique Series",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100pu0252.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100pu0252.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100pu0252.jpg",
+            "original": "/data/thumbnails/vintage_20_v100pu0252.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v40vw",
+          "name": "גיטרה בס Vintage V40 Coaster",
+          "description": "גיטרה בס Vintage V40 Coaster",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v40vw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v40vw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v40vw.jpg",
+            "original": "/data/thumbnails/vintage_20_v40vw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500hb",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500hb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500hb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500hb.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500hb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v964ssb",
+          "name": "גיטרה בס Vintage V96 Reissued 4-String",
+          "description": "גיטרה בס Vintage V96 Reissued 4-String",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v964ssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v964ssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v964ssb.jpg",
+            "original": "/data/thumbnails/vintage_20_v964ssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v495blk",
+          "name": "גיטרה בס Vintage V495 Coaster Series Black",
+          "description": "גיטרה בס Vintage V495 Coaster Series Black",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v495blk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v495blk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v495blk.jpg",
+            "original": "/data/thumbnails/vintage_20_v495blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vs6cg",
+          "name": "גיטרה חשמלית Vintage VS6CG Reissued",
+          "description": "גיטרה חשמלית Vintage VS6CG Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vs6cg.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vs6cg.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vs6cg.jpg",
+            "original": "/data/thumbnails/vintage_20_vs6cg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v132tsb",
+          "name": "גיטרה חשמלית Vintage V132TSB Reissued",
+          "description": "גיטרה חשמלית Vintage V132TSB Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v132tsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v132tsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v132tsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v132tsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100nbcsb",
+          "name": "גיטרה חשמלית Vintage V100NBCSB ReIssued",
+          "description": "גיטרה חשמלית Vintage V100NBCSB ReIssued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100nbcsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100nbcsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100nbcsb.jpg",
+            "original": "/data/thumbnails/vintage_20_v100nbcsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vga990n",
+          "name": "גיטרה אקוסטית מוגברת Vintage VGA990N",
+          "description": "גיטרה אקוסטית מוגברת Vintage VGA990N",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vga990n.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vga990n.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vga990n.jpg",
+            "original": "/data/thumbnails/vintage_20_vga990n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v300cr",
+          "name": "גיטרה אקוסטית Vintage V300CR",
+          "description": "גיטרה אקוסטית Vintage V300CR",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v300cr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v300cr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v300cr.jpg",
+            "original": "/data/thumbnails/vintage_20_v300cr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500bcr",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500bcr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500bcr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500bcr.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500bcr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500gbk",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500gbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500gbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500gbk.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500gbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v501_12",
+          "name": "גיטרה אקוסטית 12 מיתרים Vintage V501",
+          "description": "גיטרה אקוסטית 12 מיתרים Vintage V501",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v501_12.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v501_12.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v501_12.jpg",
+            "original": "/data/thumbnails/vintage_20_v501_12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v300aq",
+          "name": "גיטרה אקוסטית Vintage V300AQ",
+          "description": "גיטרה אקוסטית Vintage V300AQ",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v300aq.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v300aq.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v300aq.jpg",
+            "original": "/data/thumbnails/vintage_20_v300aq.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v300aqoft",
+          "name": "ערכת גיטרה אקוסטית Vintage V300AQOFT",
+          "description": "ערכת גיטרה אקוסטית Vintage V300AQOFT",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v300aqoft.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v300aqoft.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v300aqoft.jpg",
+            "original": "/data/thumbnails/vintage_20_v300aqoft.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500bbk",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500B Reissued Semi Acoustic w/Bigsby",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500bbk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500bbk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500bbk.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500bbk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_ve440wk",
+          "name": "גיטרה אקוסטית מוגברת Vintage VE440WK",
+          "description": "גיטרה אקוסטית מוגברת Vintage VE440WK",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_ve440wk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_ve440wk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_ve440wk.jpg",
+            "original": "/data/thumbnails/vintage_20_ve440wk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v501n",
+          "name": "גיטרה אקוסטית Vintage V501N",
+          "description": "גיטרה אקוסטית Vintage V501N",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v501n.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v501n.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v501n.jpg",
+            "original": "/data/thumbnails/vintage_20_v501n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v300mb",
+          "name": "גיטרה אקוסטית Vintage V300MB",
+          "description": "גיטרה אקוסטית Vintage V300MB",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v300mb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v300mb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v300mb.jpg",
+            "original": "/data/thumbnails/vintage_20_v300mb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_ve3000mgg",
+          "name": "גיטרה אקוסטית מוגברת Vintage VE3000MGG",
+          "description": "גיטרה אקוסטית מוגברת Vintage VE3000MGG",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_ve3000mgg.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_ve3000mgg.jpg",
+            "high_res": "/data/thumbnails/vintage_20_ve3000mgg.jpg",
+            "original": "/data/thumbnails/vintage_20_ve3000mgg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_amg1",
+          "name": "גיטרה אקוסטית Vintage AMG Resonator",
+          "description": "גיטרה אקוסטית Vintage AMG Resonator",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_amg1.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_amg1.jpg",
+            "high_res": "/data/thumbnails/vintage_20_amg1.jpg",
+            "original": "/data/thumbnails/vintage_20_amg1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v4mfr",
+          "name": "גיטרה בס Vintage V4 Reissued Maple Fingerboard",
+          "description": "גיטרה בס Vintage V4 Reissued Maple Fingerboard",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v4mfr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v4mfr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v4mfr.jpg",
+            "original": "/data/thumbnails/vintage_20_v4mfr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_ve440wk_12",
+          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage VE440WK-12",
+          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage VE440WK-12",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_ve440wk_12.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_ve440wk_12.jpg",
+            "high_res": "/data/thumbnails/vintage_20_ve440wk_12.jpg",
+            "original": "/data/thumbnails/vintage_20_ve440wk_12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_ve5000sb_12",
+          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage 'Statesboro' Paul Brett",
+          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Vintage 'Statesboro' Paul Brett",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_ve5000sb_12.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_ve5000sb_12.jpg",
+            "high_res": "/data/thumbnails/vintage_20_ve5000sb_12.jpg",
+            "original": "/data/thumbnails/vintage_20_ve5000sb_12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v300",
+          "name": "גיטרה אקוסטית Vintage V300",
+          "description": "גיטרה אקוסטית Vintage V300",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v300.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v300.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v300.jpg",
+            "original": "/data/thumbnails/vintage_20_v300.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_ve2000dlx",
+          "name": "גיטרה אקוסטית מוגברת Vintage VE2000DLX",
+          "description": "גיטרה אקוסטית מוגברת Vintage VE2000DLX",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_ve2000dlx.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_ve2000dlx.jpg",
+            "high_res": "/data/thumbnails/vintage_20_ve2000dlx.jpg",
+            "original": "/data/thumbnails/vintage_20_ve2000dlx.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v440wk",
+          "name": "גיטרה אקוסטית Vintage V440WK",
+          "description": "גיטרה אקוסטית Vintage V440WK",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v440wk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v440wk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v440wk.jpg",
+            "original": "/data/thumbnails/vintage_20_v440wk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v660wk",
+          "name": "גיטרה אקוסטית Vintage V660WK",
+          "description": "גיטרה אקוסטית Vintage V660WK",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v660wk.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v660wk.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v660wk.jpg",
+            "original": "/data/thumbnails/vintage_20_v660wk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vcag3",
+          "name": "תיק לגיטרה אקוסטית Vintage VCAG3 Canvas",
+          "description": "תיק לגיטרה אקוסטית Vintage VCAG3 Canvas",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vcag3.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vcag3.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vcag3.jpg",
+            "original": "/data/thumbnails/vintage_20_vcag3.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vceg1",
+          "name": "תיק לגיטרה חשמלית Vintage VCEG1 Canvas",
+          "description": "תיק לגיטרה חשמלית Vintage VCEG1 Canvas",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vceg1.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vceg1.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vceg1.jpg",
+            "original": "/data/thumbnails/vintage_20_vceg1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vcbg2",
+          "name": "תיק לגיטרה בס Vintage VCBG2 Canvas",
+          "description": "תיק לגיטרה בס Vintage VCBG2 Canvas",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vcbg2.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vcbg2.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vcbg2.jpg",
+            "original": "/data/thumbnails/vintage_20_vcbg2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v4sb",
+          "name": "גיטרה בס Vintage V4SB Reissued",
+          "description": "גיטרה בס Vintage V4SB Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v4sb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v4sb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v4sb.jpg",
+            "original": "/data/thumbnails/vintage_20_v4sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v4mrssb",
+          "name": "גיטרה בס Vintage V4 Icon",
+          "description": "גיטרה בס Vintage V4 Icon",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v4mrssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v4mrssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v4mrssb.jpg",
+            "original": "/data/thumbnails/vintage_20_v4mrssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vj74mvw",
+          "name": "גיטרה בס Vintage VJ74 Reissued Maple Fingerboard",
+          "description": "גיטרה בס Vintage VJ74 Reissued Maple Fingerboard",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vj74mvw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vj74mvw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vj74mvw.jpg",
+            "original": "/data/thumbnails/vintage_20_vj74mvw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_vsa500mp",
+          "name": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "description": "גיטרה חשמלית רבע נפח Vintage VSA500 Reissued Semi Acoustic",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_vsa500mp.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_vsa500mp.jpg",
+            "high_res": "/data/thumbnails/vintage_20_vsa500mp.jpg",
+            "original": "/data/thumbnails/vintage_20_vsa500mp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v100mghb",
+          "name": "גיטרה חשמלית Vintage V100M Mini Double Coil Reissued",
+          "description": "גיטרה חשמלית Vintage V100M Mini Double Coil Reissued",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v100mghb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v100mghb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v100mghb.jpg",
+            "original": "/data/thumbnails/vintage_20_v100mghb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v300noft",
+          "name": "ערכת גיטרה אקוסטית Vintage V300NOFT",
+          "description": "ערכת גיטרה אקוסטית Vintage V300NOFT",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v300noft.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v300noft.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v300noft.jpg",
+            "original": "/data/thumbnails/vintage_20_v300noft.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6ssb",
+          "name": "גיטרה חשמלית Vintage V6 Reissued Sunset Sunburst",
+          "description": "גיטרה חשמלית Vintage V6 Reissued Sunset Sunburst",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6ssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6ssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6ssb.jpg",
+            "original": "/data/thumbnails/vintage_20_v6ssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_ps02",
+          "name": "Vintage PS02",
+          "description": "Vintage PS02",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_ps02.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_ps02.jpg",
+            "high_res": "/data/thumbnails/vintage_20_ps02.jpg",
+            "original": "/data/thumbnails/vintage_20_ps02.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_v6mfr",
+          "name": "Vintage V6M Reissued Firenza Red",
+          "description": "Vintage V6M Reissued Firenza Red",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_v6mfr.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_v6mfr.jpg",
+            "high_res": "/data/thumbnails/vintage_20_v6mfr.jpg",
+            "original": "/data/thumbnails/vintage_20_v6mfr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lv6mssb",
+          "name": "גיטרה חשמלית שמאלית Vintage V6M Reissued LH",
+          "description": "גיטרה חשמלית שמאלית Vintage V6M Reissued LH",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lv6mssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lv6mssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lv6mssb.jpg",
+            "original": "/data/thumbnails/vintage_20_lv6mssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lv6ssb",
+          "name": "גיטרה חשמלית שמאלית Vintage V6 Reissued LH",
+          "description": "גיטרה חשמלית שמאלית Vintage V6 Reissued LH",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lv6ssb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lv6ssb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lv6ssb.jpg",
+            "original": "/data/thumbnails/vintage_20_lv6ssb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lv100tsb",
+          "name": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+          "description": "גיטרה חשמלית שמאלית Vintage V100 Reissued LH",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lv100tsb.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lv100tsb.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lv100tsb.jpg",
+            "original": "/data/thumbnails/vintage_20_lv100tsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "vintage_20_lvs6vw",
+          "name": "גיטרה חשמלית שמאלית Vintage LVS6VW",
+          "description": "גיטרה חשמלית שמאלית Vintage LVS6VW",
+          "images": {
+            "main": "/data/thumbnails/vintage_20_lvs6vw.jpg",
+            "thumbnail": "/data/thumbnails/vintage_20_lvs6vw.jpg",
+            "high_res": "/data/thumbnails/vintage_20_lvs6vw.jpg",
+            "original": "/data/thumbnails/vintage_20_lvs6vw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

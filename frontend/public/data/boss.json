@@ -13,7 +13,7 @@
     },
     "logo_url": "/assets/logos/boss_logo.png",
     "taxonomy_stats": {
-      "validated": 1,
+      "validated": 0,
       "normalized": 0,
       "uncategorized": 0
     },
@@ -76,71 +76,9 @@
       }
     ]
   },
-  "products": [
-    {
-      "id": "boss-gt-1",
-      "brand": "Boss",
-      "name": "GT-1 Multi-Effects Processor",
-      "model_number": "GT-1",
-      "sku": "GT-1",
-      "main_category": "studio",
-      "description": "Advanced multi-effects processor with 160+ effects and amp modeling. The ultimate guitareffects solution.",
-      "short_description": "Multi-effects processor with amp modeling",
-      "specifications": [
-        {
-          "key": "Effects",
-          "value": "160+"
-        },
-        {
-          "key": "Amp Models",
-          "value": "50+"
-        },
-        {
-          "key": "Footswitches",
-          "value": "6 assignable"
-        },
-        {
-          "key": "CPU",
-          "value": "Dual core processor"
-        }
-      ],
-      "features": [
-        "160+ effects",
-        "50+ amp models",
-        "Expression pedal",
-        "USB"
-      ],
-      "tags": [
-        "guitar-effects",
-        "processor",
-        "amp-modeling",
-        "professional"
-      ],
-      "price_ils": 4500,
-      "availability": "in-stock",
-      "product_tier": "professional",
-      "category": "studio",
-      "images": [],
-      "category_hierarchy": [
-        "studio"
-      ]
-    }
-  ],
+  "products": [],
   "brand_name": "Boss",
   "brand_slug": "boss",
-  "refined_at": "2026-01-23T17:09:28.922968+00:00",
-  "hierarchy": {
-    "studio": {
-      "General": [
-        {
-          "id": "boss-gt-1",
-          "name": "GT-1 Multi-Effects Processor",
-          "description": "Multi-effects processor with amp modeling",
-          "images": [],
-          "model_number": "GT-1",
-          "sku": "GT-1"
-        }
-      ]
-    }
-  }
+  "refined_at": "2026-01-24T02:50:44.823284+00:00",
+  "hierarchy": {}
 }

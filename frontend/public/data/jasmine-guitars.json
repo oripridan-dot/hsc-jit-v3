@@ -1,0 +1,334 @@
+{
+  "brand_identity": {
+    "id": "jasmine-guitars",
+    "name": "JASMINE-GUITARS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/jasmine-guitars_logo.png",
+    "taxonomy_stats": {
+      "validated": 10,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "jasmine_guitars_04_jo37ce_nat",
+      "name": "גיטרה אקוסטית מוגברת Jasmine JO-37CE",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Jasmine JO-37CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_jc25ce_nat",
+      "name": "גיטרה קלאסית מוגברת Jasmine JC-25CE",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg",
+      "description": "גיטרה קלאסית מוגברת Jasmine JC-25CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_jc23_nat",
+      "name": "גיטרה קלאסית 3/4 Jasmine JC-23",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg",
+      "description": "גיטרה קלאסית 3/4 Jasmine JC-23",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_s34c",
+      "name": "גיטרה אקוסטית Jasmine S34C",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_s34c.jpg",
+      "description": "גיטרה אקוסטית Jasmine S34C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_s34c.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_s34c.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_s34c.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_s34c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_jo36_nat",
+      "name": "גיטרה אקוסטית Jasmine JO-36",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg",
+      "description": "גיטרה אקוסטית Jasmine JO-36",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_jc27_nat",
+      "name": "גיטרה קלאסית Jasmine JC-27",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg",
+      "description": "גיטרה קלאסית Jasmine JC-27",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_s35",
+      "name": "גיטרה אקוסטית Jasmine S35",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_s35.jpg",
+      "description": "גיטרה אקוסטית Jasmine S35",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_s35.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_s35.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_s35.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_s35.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_jd37ce_nat",
+      "name": "גיטרה אקוסטית מוגברת Jasmine JD-37CE",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Jasmine JD-37CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_jo36ce_nat",
+      "name": "גיטרה אקוסטית מוגברת Jasmine JO-36CE",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg",
+      "description": "גיטרה אקוסטית מוגברת Jasmine JO-36CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "jasmine_guitars_04_jc27ce_nat",
+      "name": "גיטרה קלאסית מוגברת Jasmine JC-27CE",
+      "brand": "jasmine-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg",
+      "description": "גיטרה קלאסית מוגברת Jasmine JC-27CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg",
+        "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg",
+        "high_res": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg",
+        "original": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Jasmine-Guitars",
+  "brand_slug": "jasmine-guitars",
+  "refined_at": "2026-01-24T02:50:44.672143+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "jasmine_guitars_04_jo37ce_nat",
+          "name": "גיטרה אקוסטית מוגברת Jasmine JO-37CE",
+          "description": "גיטרה אקוסטית מוגברת Jasmine JO-37CE",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jo37ce_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_jc25ce_nat",
+          "name": "גיטרה קלאסית מוגברת Jasmine JC-25CE",
+          "description": "גיטרה קלאסית מוגברת Jasmine JC-25CE",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jc25ce_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_jc23_nat",
+          "name": "גיטרה קלאסית 3/4 Jasmine JC-23",
+          "description": "גיטרה קלאסית 3/4 Jasmine JC-23",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jc23_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_s34c",
+          "name": "גיטרה אקוסטית Jasmine S34C",
+          "description": "גיטרה אקוסטית Jasmine S34C",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_s34c.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_s34c.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_s34c.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_s34c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_jo36_nat",
+          "name": "גיטרה אקוסטית Jasmine JO-36",
+          "description": "גיטרה אקוסטית Jasmine JO-36",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jo36_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_jc27_nat",
+          "name": "גיטרה קלאסית Jasmine JC-27",
+          "description": "גיטרה קלאסית Jasmine JC-27",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jc27_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_s35",
+          "name": "גיטרה אקוסטית Jasmine S35",
+          "description": "גיטרה אקוסטית Jasmine S35",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_s35.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_s35.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_s35.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_s35.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_jd37ce_nat",
+          "name": "גיטרה אקוסטית מוגברת Jasmine JD-37CE",
+          "description": "גיטרה אקוסטית מוגברת Jasmine JD-37CE",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jd37ce_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_jo36ce_nat",
+          "name": "גיטרה אקוסטית מוגברת Jasmine JO-36CE",
+          "description": "גיטרה אקוסטית מוגברת Jasmine JO-36CE",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jo36ce_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "jasmine_guitars_04_jc27ce_nat",
+          "name": "גיטרה קלאסית מוגברת Jasmine JC-27CE",
+          "description": "גיטרה קלאסית מוגברת Jasmine JC-27CE",
+          "images": {
+            "main": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg",
+            "thumbnail": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg",
+            "high_res": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg",
+            "original": "/data/thumbnails/jasmine_guitars_04_jc27ce_nat.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

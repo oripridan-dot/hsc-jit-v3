@@ -1,0 +1,489 @@
+{
+  "brand_identity": {
+    "id": "amphion",
+    "name": "AMPHION",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/amphion_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 15,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "amphion_06_one25a",
+      "name": "מוניטור אולפני אקטיבי Amphion One25A",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_one25a.jpg",
+      "description": "מוניטור אולפני אקטיבי Amphion One25A",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_one25a.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_one25a.jpg",
+        "high_res": "/data/thumbnails/amphion_06_one25a.jpg",
+        "original": "/data/thumbnails/amphion_06_one25a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_amp400_12",
+      "name": "Amphion Amp400.12",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_amp400_12.jpg",
+      "description": "Amphion Amp400.12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_amp400_12.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_amp400_12.jpg",
+        "high_res": "/data/thumbnails/amphion_06_amp400_12.jpg",
+        "original": "/data/thumbnails/amphion_06_amp400_12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_one18x",
+      "name": "מוניטור פאסיבי Amphion One18X",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_one18x.jpg",
+      "description": "מוניטור פאסיבי Amphion One18X",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_one18x.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_one18x.jpg",
+        "high_res": "/data/thumbnails/amphion_06_one18x.jpg",
+        "original": "/data/thumbnails/amphion_06_one18x.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_one12",
+      "name": "מוניטור פאסיבי Amphion One12",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_one12.jpg",
+      "description": "מוניטור פאסיבי Amphion One12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_one12.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_one12.jpg",
+        "high_res": "/data/thumbnails/amphion_06_one12.jpg",
+        "original": "/data/thumbnails/amphion_06_one12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_two18x",
+      "name": "מוניטור פאסיבי Amphion Two18X",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_two18x.jpg",
+      "description": "מוניטור פאסיבי Amphion Two18X",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_two18x.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_two18x.jpg",
+        "high_res": "/data/thumbnails/amphion_06_two18x.jpg",
+        "original": "/data/thumbnails/amphion_06_two18x.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_amp700",
+      "name": "Amphion Amp700",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_amp700.jpg",
+      "description": "Amphion Amp700",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_amp700.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_amp700.jpg",
+        "high_res": "/data/thumbnails/amphion_06_amp700.jpg",
+        "original": "/data/thumbnails/amphion_06_amp700.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_amp100mono",
+      "name": "Amphion Amp100 Mono",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_amp100mono.jpg",
+      "description": "Amphion Amp100 Mono",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_amp100mono.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_amp100mono.jpg",
+        "high_res": "/data/thumbnails/amphion_06_amp100mono.jpg",
+        "original": "/data/thumbnails/amphion_06_amp100mono.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_one18",
+      "name": "מוניטור פאסיבי Amphion One18",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_one18.jpg",
+      "description": "מוניטור פאסיבי Amphion One18",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_one18.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_one18.jpg",
+        "high_res": "/data/thumbnails/amphion_06_one18.jpg",
+        "original": "/data/thumbnails/amphion_06_one18.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_two18",
+      "name": "מוניטור פאסיבי Amphion Two18",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_two18.jpg",
+      "description": "מוניטור פאסיבי Amphion Two18",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_two18.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_two18.jpg",
+        "high_res": "/data/thumbnails/amphion_06_two18.jpg",
+        "original": "/data/thumbnails/amphion_06_two18.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_one15",
+      "name": "מוניטור פאסיבי Amphion One15",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_one15.jpg",
+      "description": "מוניטור פאסיבי Amphion One15",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_one15.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_one15.jpg",
+        "high_res": "/data/thumbnails/amphion_06_one15.jpg",
+        "original": "/data/thumbnails/amphion_06_one15.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_two15",
+      "name": "מוניטור פאסיבי Amphion Two15",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_two15.jpg",
+      "description": "מוניטור פאסיבי Amphion Two15",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_two15.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_two15.jpg",
+        "high_res": "/data/thumbnails/amphion_06_two15.jpg",
+        "original": "/data/thumbnails/amphion_06_two15.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_amp500",
+      "name": "Amphion Amp500",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_amp500.jpg",
+      "description": "Amphion Amp500",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_amp500.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_amp500.jpg",
+        "high_res": "/data/thumbnails/amphion_06_amp500.jpg",
+        "original": "/data/thumbnails/amphion_06_amp500.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_amp400_8",
+      "name": "Amphion Amp400.8",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_amp400_8.jpg",
+      "description": "Amphion Amp400.8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_amp400_8.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_amp400_8.jpg",
+        "high_res": "/data/thumbnails/amphion_06_amp400_8.jpg",
+        "original": "/data/thumbnails/amphion_06_amp400_8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_basetwo25",
+      "name": "Amphion BaseTwo25 System",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_basetwo25.jpg",
+      "description": "Amphion BaseTwo25 System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_basetwo25.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_basetwo25.jpg",
+        "high_res": "/data/thumbnails/amphion_06_basetwo25.jpg",
+        "original": "/data/thumbnails/amphion_06_basetwo25.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "amphion_06_flexbase25",
+      "name": "Amphion FlexBase25",
+      "brand": "amphion",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/amphion_06_flexbase25.jpg",
+      "description": "Amphion FlexBase25",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/amphion_06_flexbase25.jpg",
+        "thumbnail": "/data/thumbnails/amphion_06_flexbase25.jpg",
+        "high_res": "/data/thumbnails/amphion_06_flexbase25.jpg",
+        "original": "/data/thumbnails/amphion_06_flexbase25.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Amphion",
+  "brand_slug": "amphion",
+  "refined_at": "2026-01-24T02:50:45.068869+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "amphion_06_one25a",
+          "name": "מוניטור אולפני אקטיבי Amphion One25A",
+          "description": "מוניטור אולפני אקטיבי Amphion One25A",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_one25a.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_one25a.jpg",
+            "high_res": "/data/thumbnails/amphion_06_one25a.jpg",
+            "original": "/data/thumbnails/amphion_06_one25a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_amp400_12",
+          "name": "Amphion Amp400.12",
+          "description": "Amphion Amp400.12",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_amp400_12.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_amp400_12.jpg",
+            "high_res": "/data/thumbnails/amphion_06_amp400_12.jpg",
+            "original": "/data/thumbnails/amphion_06_amp400_12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_one18x",
+          "name": "מוניטור פאסיבי Amphion One18X",
+          "description": "מוניטור פאסיבי Amphion One18X",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_one18x.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_one18x.jpg",
+            "high_res": "/data/thumbnails/amphion_06_one18x.jpg",
+            "original": "/data/thumbnails/amphion_06_one18x.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_one12",
+          "name": "מוניטור פאסיבי Amphion One12",
+          "description": "מוניטור פאסיבי Amphion One12",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_one12.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_one12.jpg",
+            "high_res": "/data/thumbnails/amphion_06_one12.jpg",
+            "original": "/data/thumbnails/amphion_06_one12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_two18x",
+          "name": "מוניטור פאסיבי Amphion Two18X",
+          "description": "מוניטור פאסיבי Amphion Two18X",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_two18x.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_two18x.jpg",
+            "high_res": "/data/thumbnails/amphion_06_two18x.jpg",
+            "original": "/data/thumbnails/amphion_06_two18x.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_amp700",
+          "name": "Amphion Amp700",
+          "description": "Amphion Amp700",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_amp700.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_amp700.jpg",
+            "high_res": "/data/thumbnails/amphion_06_amp700.jpg",
+            "original": "/data/thumbnails/amphion_06_amp700.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_amp100mono",
+          "name": "Amphion Amp100 Mono",
+          "description": "Amphion Amp100 Mono",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_amp100mono.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_amp100mono.jpg",
+            "high_res": "/data/thumbnails/amphion_06_amp100mono.jpg",
+            "original": "/data/thumbnails/amphion_06_amp100mono.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_one18",
+          "name": "מוניטור פאסיבי Amphion One18",
+          "description": "מוניטור פאסיבי Amphion One18",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_one18.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_one18.jpg",
+            "high_res": "/data/thumbnails/amphion_06_one18.jpg",
+            "original": "/data/thumbnails/amphion_06_one18.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_two18",
+          "name": "מוניטור פאסיבי Amphion Two18",
+          "description": "מוניטור פאסיבי Amphion Two18",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_two18.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_two18.jpg",
+            "high_res": "/data/thumbnails/amphion_06_two18.jpg",
+            "original": "/data/thumbnails/amphion_06_two18.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_one15",
+          "name": "מוניטור פאסיבי Amphion One15",
+          "description": "מוניטור פאסיבי Amphion One15",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_one15.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_one15.jpg",
+            "high_res": "/data/thumbnails/amphion_06_one15.jpg",
+            "original": "/data/thumbnails/amphion_06_one15.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_two15",
+          "name": "מוניטור פאסיבי Amphion Two15",
+          "description": "מוניטור פאסיבי Amphion Two15",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_two15.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_two15.jpg",
+            "high_res": "/data/thumbnails/amphion_06_two15.jpg",
+            "original": "/data/thumbnails/amphion_06_two15.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_amp500",
+          "name": "Amphion Amp500",
+          "description": "Amphion Amp500",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_amp500.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_amp500.jpg",
+            "high_res": "/data/thumbnails/amphion_06_amp500.jpg",
+            "original": "/data/thumbnails/amphion_06_amp500.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_amp400_8",
+          "name": "Amphion Amp400.8",
+          "description": "Amphion Amp400.8",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_amp400_8.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_amp400_8.jpg",
+            "high_res": "/data/thumbnails/amphion_06_amp400_8.jpg",
+            "original": "/data/thumbnails/amphion_06_amp400_8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_basetwo25",
+          "name": "Amphion BaseTwo25 System",
+          "description": "Amphion BaseTwo25 System",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_basetwo25.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_basetwo25.jpg",
+            "high_res": "/data/thumbnails/amphion_06_basetwo25.jpg",
+            "original": "/data/thumbnails/amphion_06_basetwo25.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "amphion_06_flexbase25",
+          "name": "Amphion FlexBase25",
+          "description": "Amphion FlexBase25",
+          "images": {
+            "main": "/data/thumbnails/amphion_06_flexbase25.jpg",
+            "thumbnail": "/data/thumbnails/amphion_06_flexbase25.jpg",
+            "high_res": "/data/thumbnails/amphion_06_flexbase25.jpg",
+            "original": "/data/thumbnails/amphion_06_flexbase25.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

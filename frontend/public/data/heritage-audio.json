@@ -1,0 +1,798 @@
+{
+  "brand_identity": {
+    "id": "heritage-audio",
+    "name": "HERITAGE-AUDIO",
+    "brand_colors": {},
+    "taxonomy_stats": {
+      "validated": 25,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "heritage_audio_27_ha73jrii",
+      "name": "Heritage Audio 73 JR II",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg",
+      "description": "Heritage Audio 73 JR II",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha73x2elite",
+      "name": "Heritage Audio HA-73X2 Elite",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg",
+      "description": "Heritage Audio HA-73X2 Elite",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha73eqx2elite",
+      "name": "Heritage Audio HA-73 EQX2 Elite",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg",
+      "description": "Heritage Audio HA-73 EQX2 Elite",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha73elite",
+      "name": "Heritage Audio HA-73 Elite",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha73elite.jpg",
+      "description": "Heritage Audio HA-73 Elite",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha73elite.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha73elite.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha73elite.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha73elite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_hadtt73",
+      "name": "Heritage Audio DTT-73",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_hadtt73.jpg",
+      "description": "Heritage Audio DTT-73",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_hadtt73.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_hadtt73.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_hadtt73.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_hadtt73.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha81aelite",
+      "name": "Heritage Audio HA-81A EQ Elite",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg",
+      "description": "Heritage Audio HA-81A EQ Elite",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha73eqjr",
+      "name": "Heritage Audio 73EQ JR",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg",
+      "description": "Heritage Audio 73EQ JR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_hasuccessor",
+      "name": "Heritage Audio Successor",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg",
+      "description": "Heritage Audio Successor",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_grandchild670",
+      "name": "Heritage Audio Grandchild 670",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_grandchild670.jpg",
+      "description": "Heritage Audio Grandchild 670",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_grandchild670.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_grandchild670.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_grandchild670.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_grandchild670.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha_p_lane436",
+      "name": "Heritage Audio P.LANE Type 436",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg",
+      "description": "Heritage Audio P.LANE Type 436",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_hasuper8",
+      "name": "Heritage Audio Super 8",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_hasuper8.jpg",
+      "description": "Heritage Audio Super 8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_hasuper8.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_hasuper8.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_hasuper8.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_hasuper8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_i73proone",
+      "name": "Heritage Audio i73 PRO ONE",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_i73proone.jpg",
+      "description": "Heritage Audio i73 PRO ONE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_i73proone.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_i73proone.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_i73proone.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_i73proone.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_hatt73",
+      "name": "Heritage Audio TT-73",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_hatt73.jpg",
+      "description": "Heritage Audio TT-73",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_hatt73.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_hatt73.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_hatt73.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_hatt73.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha609aelite",
+      "name": "Heritage Audio HA-609A",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg",
+      "description": "Heritage Audio HA-609A",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_ha73eqelite",
+      "name": "Heritage Audio HA-73 EQ Elite",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg",
+      "description": "Heritage Audio HA-73 EQ Elite",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_habritstrip",
+      "name": "Heritage Audio BritStrip",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_habritstrip.jpg",
+      "description": "Heritage Audio BritStrip",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_habritstrip.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_habritstrip.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_habritstrip.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_habritstrip.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_i73pro2",
+      "name": "Heritage Audio i73 PRO 2",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_i73pro2.jpg",
+      "description": "Heritage Audio i73 PRO 2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_i73pro2.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_i73pro2.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_i73pro2.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_i73pro2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_hababyram",
+      "name": "Heritage Audio Baby RAM",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_hababyram.jpg",
+      "description": "Heritage Audio Baby RAM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_hababyram.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_hababyram.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_hababyram.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_hababyram.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_i73proedge",
+      "name": "Heritage Audio i73 PRO EDGE",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_i73proedge.jpg",
+      "description": "Heritage Audio i73 PRO EDGE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_i73proedge.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_i73proedge.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_i73proedge.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_i73proedge.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_haram2000",
+      "name": "Heritage Audio RAM System 2000",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_haram2000.jpg",
+      "description": "Heritage Audio RAM System 2000",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_haram2000.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_haram2000.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_haram2000.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_haram2000.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_haram1000",
+      "name": "Heritage Audio R.A.M 1000",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_haram1000.jpg",
+      "description": "Heritage Audio R.A.M 1000",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_haram1000.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_haram1000.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_haram1000.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_haram1000.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_73dione",
+      "name": "Heritage Audio 73 Active DI Box",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_73dione.jpg",
+      "description": "Heritage Audio 73 Active DI Box",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_73dione.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_73dione.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_73dione.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_73dione.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_73pditwo",
+      "name": "Heritage Audio 73 P DI2 - DI Box",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_73pditwo.jpg",
+      "description": "Heritage Audio 73 P DI2 - DI Box",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_73pditwo.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_73pditwo.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_73pditwo.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_73pditwo.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_73ditwo",
+      "name": "Heritage Audio 73 DI 2 - Active DI Box",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_73ditwo.jpg",
+      "description": "Heritage Audio 73 DI 2 - Active DI Box",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_73ditwo.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_73ditwo.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_73ditwo.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_73ditwo.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "heritage_audio_27_73pdione",
+      "name": "Heritage Audio 73 P DI One - DI Box",
+      "brand": "heritage-audio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/heritage_audio_27_73pdione.jpg",
+      "description": "Heritage Audio 73 P DI One - DI Box",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/heritage_audio_27_73pdione.jpg",
+        "thumbnail": "/data/thumbnails/heritage_audio_27_73pdione.jpg",
+        "high_res": "/data/thumbnails/heritage_audio_27_73pdione.jpg",
+        "original": "/data/thumbnails/heritage_audio_27_73pdione.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Heritage-Audio",
+  "brand_slug": "heritage-audio",
+  "refined_at": "2026-01-24T02:50:44.526232+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "heritage_audio_27_ha73jrii",
+          "name": "Heritage Audio 73 JR II",
+          "description": "Heritage Audio 73 JR II",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha73jrii.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha73x2elite",
+          "name": "Heritage Audio HA-73X2 Elite",
+          "description": "Heritage Audio HA-73X2 Elite",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha73x2elite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha73eqx2elite",
+          "name": "Heritage Audio HA-73 EQX2 Elite",
+          "description": "Heritage Audio HA-73 EQX2 Elite",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha73eqx2elite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha73elite",
+          "name": "Heritage Audio HA-73 Elite",
+          "description": "Heritage Audio HA-73 Elite",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha73elite.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha73elite.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha73elite.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha73elite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_hadtt73",
+          "name": "Heritage Audio DTT-73",
+          "description": "Heritage Audio DTT-73",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_hadtt73.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_hadtt73.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_hadtt73.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_hadtt73.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha81aelite",
+          "name": "Heritage Audio HA-81A EQ Elite",
+          "description": "Heritage Audio HA-81A EQ Elite",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha81aelite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha73eqjr",
+          "name": "Heritage Audio 73EQ JR",
+          "description": "Heritage Audio 73EQ JR",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha73eqjr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_hasuccessor",
+          "name": "Heritage Audio Successor",
+          "description": "Heritage Audio Successor",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_hasuccessor.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_grandchild670",
+          "name": "Heritage Audio Grandchild 670",
+          "description": "Heritage Audio Grandchild 670",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_grandchild670.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_grandchild670.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_grandchild670.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_grandchild670.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha_p_lane436",
+          "name": "Heritage Audio P.LANE Type 436",
+          "description": "Heritage Audio P.LANE Type 436",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha_p_lane436.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_hasuper8",
+          "name": "Heritage Audio Super 8",
+          "description": "Heritage Audio Super 8",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_hasuper8.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_hasuper8.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_hasuper8.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_hasuper8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_i73proone",
+          "name": "Heritage Audio i73 PRO ONE",
+          "description": "Heritage Audio i73 PRO ONE",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_i73proone.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_i73proone.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_i73proone.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_i73proone.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_hatt73",
+          "name": "Heritage Audio TT-73",
+          "description": "Heritage Audio TT-73",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_hatt73.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_hatt73.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_hatt73.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_hatt73.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha609aelite",
+          "name": "Heritage Audio HA-609A",
+          "description": "Heritage Audio HA-609A",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha609aelite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_ha73eqelite",
+          "name": "Heritage Audio HA-73 EQ Elite",
+          "description": "Heritage Audio HA-73 EQ Elite",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_ha73eqelite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_habritstrip",
+          "name": "Heritage Audio BritStrip",
+          "description": "Heritage Audio BritStrip",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_habritstrip.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_habritstrip.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_habritstrip.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_habritstrip.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_i73pro2",
+          "name": "Heritage Audio i73 PRO 2",
+          "description": "Heritage Audio i73 PRO 2",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_i73pro2.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_i73pro2.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_i73pro2.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_i73pro2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_hababyram",
+          "name": "Heritage Audio Baby RAM",
+          "description": "Heritage Audio Baby RAM",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_hababyram.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_hababyram.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_hababyram.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_hababyram.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_i73proedge",
+          "name": "Heritage Audio i73 PRO EDGE",
+          "description": "Heritage Audio i73 PRO EDGE",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_i73proedge.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_i73proedge.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_i73proedge.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_i73proedge.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_haram2000",
+          "name": "Heritage Audio RAM System 2000",
+          "description": "Heritage Audio RAM System 2000",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_haram2000.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_haram2000.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_haram2000.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_haram2000.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_haram1000",
+          "name": "Heritage Audio R.A.M 1000",
+          "description": "Heritage Audio R.A.M 1000",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_haram1000.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_haram1000.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_haram1000.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_haram1000.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_73dione",
+          "name": "Heritage Audio 73 Active DI Box",
+          "description": "Heritage Audio 73 Active DI Box",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_73dione.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_73dione.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_73dione.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_73dione.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_73pditwo",
+          "name": "Heritage Audio 73 P DI2 - DI Box",
+          "description": "Heritage Audio 73 P DI2 - DI Box",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_73pditwo.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_73pditwo.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_73pditwo.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_73pditwo.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_73ditwo",
+          "name": "Heritage Audio 73 DI 2 - Active DI Box",
+          "description": "Heritage Audio 73 DI 2 - Active DI Box",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_73ditwo.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_73ditwo.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_73ditwo.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_73ditwo.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "heritage_audio_27_73pdione",
+          "name": "Heritage Audio 73 P DI One - DI Box",
+          "description": "Heritage Audio 73 P DI One - DI Box",
+          "images": {
+            "main": "/data/thumbnails/heritage_audio_27_73pdione.jpg",
+            "thumbnail": "/data/thumbnails/heritage_audio_27_73pdione.jpg",
+            "high_res": "/data/thumbnails/heritage_audio_27_73pdione.jpg",
+            "original": "/data/thumbnails/heritage_audio_27_73pdione.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

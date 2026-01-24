@@ -1,0 +1,427 @@
+{
+  "brand_identity": {
+    "id": "dixon",
+    "name": "DIXON",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/dixon_logo.png",
+    "taxonomy_stats": {
+      "validated": 13,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "dixon_36_pdsan654bng",
+      "name": "Dixon Zebra Wood/Red Silkwood 14\" Snare",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_pdsan654bng.jpg",
+      "description": "Dixon Zebra Wood/Red Silkwood 14\" Snare",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_pdsan654bng.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_pdsan654bng.jpg",
+        "high_res": "/data/thumbnails/dixon_36_pdsan654bng.jpg",
+        "original": "/data/thumbnails/dixon_36_pdsan654bng.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_pdsan654cbrg",
+      "name": "Dixon Australian Rose Gum 14\" Snare",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg",
+      "description": "Dixon Australian Rose Gum 14\" Snare",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg",
+        "high_res": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg",
+        "original": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_pdpc81sp",
+      "name": "Dixon Practice 6\" Pad",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_pdpc81sp.jpg",
+      "description": "Dixon Practice 6\" Pad",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_pdpc81sp.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_pdpc81sp.jpg",
+        "high_res": "/data/thumbnails/dixon_36_pdpc81sp.jpg",
+        "original": "/data/thumbnails/dixon_36_pdpc81sp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_ppcpp",
+      "name": "Dixon Cajon Pedal Plus",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_ppcpp.jpg",
+      "description": "Dixon Cajon Pedal Plus",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_ppcpp.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_ppcpp.jpg",
+        "high_res": "/data/thumbnails/dixon_36_ppcpp.jpg",
+        "original": "/data/thumbnails/dixon_36_ppcpp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_pahcmsp",
+      "name": "Dixon PA-HCM-SP Hoop Cymbal Mount",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_pahcmsp.jpg",
+      "description": "Dixon PA-HCM-SP Hoop Cymbal Mount",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_pahcmsp.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_pahcmsp.jpg",
+        "high_res": "/data/thumbnails/dixon_36_pahcmsp.jpg",
+        "original": "/data/thumbnails/dixon_36_pahcmsp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_pahmmsp",
+      "name": "Dixon PA-HMM-SP Microphone Clamp",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_pahmmsp.jpg",
+      "description": "Dixon PA-HMM-SP Microphone Clamp",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_pahmmsp.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_pahmmsp.jpg",
+        "high_res": "/data/thumbnails/dixon_36_pahmmsp.jpg",
+        "original": "/data/thumbnails/dixon_36_pahmmsp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_pdpc8",
+      "name": "Dixon Practice 4\" Pad",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_pdpc8.jpg",
+      "description": "Dixon Practice 4\" Pad",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_pdpc8.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_pdpc8.jpg",
+        "high_res": "/data/thumbnails/dixon_36_pdpc8.jpg",
+        "original": "/data/thumbnails/dixon_36_pdpc8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_prwbds",
+      "name": "Dixon PRWBDS Rock Block Set",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_prwbds.jpg",
+      "description": "Dixon PRWBDS Rock Block Set",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_prwbds.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_prwbds.jpg",
+        "high_res": "/data/thumbnails/dixon_36_prwbds.jpg",
+        "original": "/data/thumbnails/dixon_36_prwbds.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_pdmtr16bl",
+      "name": "Dixon Tambourine 16 Jingle",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_pdmtr16bl.jpg",
+      "description": "Dixon Tambourine 16 Jingle",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_pdmtr16bl.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_pdmtr16bl.jpg",
+        "high_res": "/data/thumbnails/dixon_36_pdmtr16bl.jpg",
+        "original": "/data/thumbnails/dixon_36_pdmtr16bl.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_psg9000",
+      "name": "Dixon PSG9000 Bongo Stand",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_psg9000.jpg",
+      "description": "Dixon PSG9000 Bongo Stand",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_psg9000.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_psg9000.jpg",
+        "high_res": "/data/thumbnails/dixon_36_psg9000.jpg",
+        "original": "/data/thumbnails/dixon_36_psg9000.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_artisan",
+      "name": "סט תופים Dixon Artisan",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_artisan.jpg",
+      "description": "סט תופים Dixon Artisan",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_artisan.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_artisan.jpg",
+        "high_res": "/data/thumbnails/dixon_36_artisan.jpg",
+        "original": "/data/thumbnails/dixon_36_artisan.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_fuse",
+      "name": "סט תופים Dixon Fuse",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_fuse.jpg",
+      "description": "סט תופים Dixon Fuse",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_fuse.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_fuse.jpg",
+        "high_res": "/data/thumbnails/dixon_36_fuse.jpg",
+        "original": "/data/thumbnails/dixon_36_fuse.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "dixon_36_spark",
+      "name": "סט תופים Dixon Spark",
+      "brand": "dixon",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/dixon_36_spark.jpg",
+      "description": "סט תופים Dixon Spark",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/dixon_36_spark.jpg",
+        "thumbnail": "/data/thumbnails/dixon_36_spark.jpg",
+        "high_res": "/data/thumbnails/dixon_36_spark.jpg",
+        "original": "/data/thumbnails/dixon_36_spark.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Dixon",
+  "brand_slug": "dixon",
+  "refined_at": "2026-01-24T02:50:45.085136+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "dixon_36_pdsan654bng",
+          "name": "Dixon Zebra Wood/Red Silkwood 14\" Snare",
+          "description": "Dixon Zebra Wood/Red Silkwood 14\" Snare",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_pdsan654bng.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_pdsan654bng.jpg",
+            "high_res": "/data/thumbnails/dixon_36_pdsan654bng.jpg",
+            "original": "/data/thumbnails/dixon_36_pdsan654bng.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_pdsan654cbrg",
+          "name": "Dixon Australian Rose Gum 14\" Snare",
+          "description": "Dixon Australian Rose Gum 14\" Snare",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg",
+            "high_res": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg",
+            "original": "/data/thumbnails/dixon_36_pdsan654cbrg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_pdpc81sp",
+          "name": "Dixon Practice 6\" Pad",
+          "description": "Dixon Practice 6\" Pad",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_pdpc81sp.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_pdpc81sp.jpg",
+            "high_res": "/data/thumbnails/dixon_36_pdpc81sp.jpg",
+            "original": "/data/thumbnails/dixon_36_pdpc81sp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_ppcpp",
+          "name": "Dixon Cajon Pedal Plus",
+          "description": "Dixon Cajon Pedal Plus",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_ppcpp.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_ppcpp.jpg",
+            "high_res": "/data/thumbnails/dixon_36_ppcpp.jpg",
+            "original": "/data/thumbnails/dixon_36_ppcpp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_pahcmsp",
+          "name": "Dixon PA-HCM-SP Hoop Cymbal Mount",
+          "description": "Dixon PA-HCM-SP Hoop Cymbal Mount",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_pahcmsp.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_pahcmsp.jpg",
+            "high_res": "/data/thumbnails/dixon_36_pahcmsp.jpg",
+            "original": "/data/thumbnails/dixon_36_pahcmsp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_pahmmsp",
+          "name": "Dixon PA-HMM-SP Microphone Clamp",
+          "description": "Dixon PA-HMM-SP Microphone Clamp",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_pahmmsp.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_pahmmsp.jpg",
+            "high_res": "/data/thumbnails/dixon_36_pahmmsp.jpg",
+            "original": "/data/thumbnails/dixon_36_pahmmsp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_pdpc8",
+          "name": "Dixon Practice 4\" Pad",
+          "description": "Dixon Practice 4\" Pad",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_pdpc8.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_pdpc8.jpg",
+            "high_res": "/data/thumbnails/dixon_36_pdpc8.jpg",
+            "original": "/data/thumbnails/dixon_36_pdpc8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_prwbds",
+          "name": "Dixon PRWBDS Rock Block Set",
+          "description": "Dixon PRWBDS Rock Block Set",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_prwbds.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_prwbds.jpg",
+            "high_res": "/data/thumbnails/dixon_36_prwbds.jpg",
+            "original": "/data/thumbnails/dixon_36_prwbds.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_pdmtr16bl",
+          "name": "Dixon Tambourine 16 Jingle",
+          "description": "Dixon Tambourine 16 Jingle",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_pdmtr16bl.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_pdmtr16bl.jpg",
+            "high_res": "/data/thumbnails/dixon_36_pdmtr16bl.jpg",
+            "original": "/data/thumbnails/dixon_36_pdmtr16bl.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_psg9000",
+          "name": "Dixon PSG9000 Bongo Stand",
+          "description": "Dixon PSG9000 Bongo Stand",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_psg9000.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_psg9000.jpg",
+            "high_res": "/data/thumbnails/dixon_36_psg9000.jpg",
+            "original": "/data/thumbnails/dixon_36_psg9000.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_artisan",
+          "name": "סט תופים Dixon Artisan",
+          "description": "סט תופים Dixon Artisan",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_artisan.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_artisan.jpg",
+            "high_res": "/data/thumbnails/dixon_36_artisan.jpg",
+            "original": "/data/thumbnails/dixon_36_artisan.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_fuse",
+          "name": "סט תופים Dixon Fuse",
+          "description": "סט תופים Dixon Fuse",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_fuse.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_fuse.jpg",
+            "high_res": "/data/thumbnails/dixon_36_fuse.jpg",
+            "original": "/data/thumbnails/dixon_36_fuse.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "dixon_36_spark",
+          "name": "סט תופים Dixon Spark",
+          "description": "סט תופים Dixon Spark",
+          "images": {
+            "main": "/data/thumbnails/dixon_36_spark.jpg",
+            "thumbnail": "/data/thumbnails/dixon_36_spark.jpg",
+            "high_res": "/data/thumbnails/dixon_36_spark.jpg",
+            "original": "/data/thumbnails/dixon_36_spark.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

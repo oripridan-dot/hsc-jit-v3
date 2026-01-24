@@ -1,0 +1,2473 @@
+{
+  "brand_identity": {
+    "id": "solar-guitars",
+    "name": "SOLAR-GUITARS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/solar-guitars_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 79,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "solar_guitars_24_chug",
+      "name": "פדל פרה-אמפ Solar CHUG",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_chug.jpg",
+      "description": "פדל פרה-אמפ Solar CHUG",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_chug.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_chug.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_chug.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_chug.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a17frcar",
+      "name": "גיטרה חשמלית +Solar A1.7FRCAR Sustainiac",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a17frcar.jpg",
+      "description": "גיטרה חשמלית +Solar A1.7FRCAR Sustainiac",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a17frcar.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a17frcar.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a17frcar.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a17frcar.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26frpn",
+      "name": "גיטרה חשמלית Solar A2.6FRPN Canibalismo",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26frpn.jpg",
+      "description": "גיטרה חשמלית Solar A2.6FRPN Canibalismo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26frpn.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26frpn.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26frpn.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26frpn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a27c_",
+      "name": "גיטרה חשמלית +Solar A2.7 Canibalismo",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a27c_.jpg",
+      "description": "גיטרה חשמלית +Solar A2.7 Canibalismo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a27c_.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a27c_.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a27c_.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a27c_.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_xb46c",
+      "name": "גיטרה חשמלית Solar XB4.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_xb46c.jpg",
+      "description": "גיטרה חשמלית Solar XB4.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_xb46c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_xb46c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_xb46c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_xb46c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_x26c",
+      "name": "גיטרה חשמלית Solar X2.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_x26c.jpg",
+      "description": "גיטרה חשמלית Solar X2.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_x26c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_x26c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_x26c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_x26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a27fbb_",
+      "name": "גיטרה חשמלית +Solar A2.7FBB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg",
+      "description": "גיטרה חשמלית +Solar A2.7FBB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab45dn",
+      "name": "גיטרה בס Solar AB4.5DN",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab45dn.jpg",
+      "description": "גיטרה בס Solar AB4.5DN",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab45dn.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab45dn.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab45dn.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab45dn.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab44w",
+      "name": "גיטרה בס Solar AB4.4W",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab44w.jpg",
+      "description": "גיטרה בס Solar AB4.4W",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab44w.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab44w.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab44w.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab44w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_x26rop_",
+      "name": "גיטרה חשמלית +Solar X2.6ROP",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_x26rop_.jpg",
+      "description": "גיטרה חשמלית +Solar X2.6ROP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_x26rop_.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_x26rop_.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_x26rop_.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_x26rop_.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab44c",
+      "name": "גיטרה בס Solar AB4.4C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab44c.jpg",
+      "description": "גיטרה בס Solar AB4.4C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab44c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab44c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab44c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab44c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab46c",
+      "name": "גיטרה חשמלית Solar AB4.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab46c.jpg",
+      "description": "גיטרה חשמלית Solar AB4.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab46c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab46c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab46c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab46c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_xb461frbrg",
+      "name": "גיטרה חשמלית Solar XB4.6FRBRG",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg",
+      "description": "גיטרה חשמלית Solar XB4.6FRBRG",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab46w",
+      "name": "גיטרה חשמלית Solar AB4.6W",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab46w.jpg",
+      "description": "גיטרה חשמלית Solar AB4.6W",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab46w.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab46w.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab46w.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab46w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab47w",
+      "name": "גיטרה חשמלית 7 מיתרים Solar AB4.7W",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab47w.jpg",
+      "description": "גיטרה חשמלית 7 מיתרים Solar AB4.7W",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab47w.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab47w.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab47w.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab47w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26c_",
+      "name": "גיטרה חשמלית +Solar A2.6 Canibalismo",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26c_.jpg",
+      "description": "גיטרה חשמלית +Solar A2.6 Canibalismo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26c_.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26c_.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26c_.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26c_.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_sb46frfbr",
+      "name": "גיטרה חשמלית Solar SB4.6FRFBR",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg",
+      "description": "גיטרה חשמלית Solar SB4.6FRFBR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a16pn_",
+      "name": "גיטרה חשמלית +Solar A1.6PN Canibalismo",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a16pn_.jpg",
+      "description": "גיטרה חשמלית +Solar A1.6PN Canibalismo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a16pn_.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a16pn_.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a16pn_.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a16pn_.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_tuner_",
+      "name": "טיונר/בוסט +Solar CHUG Tuner",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_tuner_.jpg",
+      "description": "טיונר/בוסט +Solar CHUG Tuner",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_tuner_.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_tuner_.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_tuner_.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_tuner_.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab47c",
+      "name": "גיטרה חשמלית Solar AB4.7C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab47c.jpg",
+      "description": "גיטרה חשמלית Solar AB4.7C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab47c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab47c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab47c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab47c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s26c",
+      "name": "גיטרה חשמלית Solar S2.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s26c.jpg",
+      "description": "גיטרה חשמלית Solar S2.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s26c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s26c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s26c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a16c",
+      "name": "גיטרה חשמלית Solar A1.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a16c.jpg",
+      "description": "גיטרה חשמלית Solar A1.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a16c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a16c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a16c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a16c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26w",
+      "name": "גיטרה חשמלית Solar A2.6W",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26w.jpg",
+      "description": "גיטרה חשמלית Solar A2.6W",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26w.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26w.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26w.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26c",
+      "name": "גיטרה חשמלית Solar A2.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26c.jpg",
+      "description": "גיטרה חשמלית Solar A2.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s16frfbr",
+      "name": "גיטרה חשמלית Solar S1.6FRFBR",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg",
+      "description": "גיטרה חשמלית Solar S1.6FRFBR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_h26c",
+      "name": "גיטרה חשמלית Solar H2.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_h26c.jpg",
+      "description": "גיטרה חשמלית Solar H2.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_h26c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_h26c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_h26c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_h26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab16htpb",
+      "name": "גיטרה חשמלית Solar AB1.6HTPB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg",
+      "description": "גיטרה חשמלית Solar AB1.6HTPB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_t16c",
+      "name": "גיטרה חשמלית Solar T1.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_t16c.jpg",
+      "description": "גיטרה חשמלית Solar T1.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_t16c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_t16c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_t16c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_t16c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_t27fbb",
+      "name": "גיטרה חשמלית 7 מיתרים Solar T2.7FBB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_t27fbb.jpg",
+      "description": "גיטרה חשמלית 7 מיתרים Solar T2.7FBB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_t27fbb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_t27fbb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_t27fbb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_t27fbb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_t26n",
+      "name": "גיטרה חשמלית Solar T2.6N",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_t26n.jpg",
+      "description": "גיטרה חשמלית Solar T2.6N",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_t26n.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_t26n.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_t26n.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_t26n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_t26w",
+      "name": "גיטרה חשמלית Solar T2.6W",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_t26w.jpg",
+      "description": "גיטרה חשמלית Solar T2.6W",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_t26w.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_t26w.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_t26w.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_t26w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_t26c",
+      "name": "גיטרה חשמלית Solar T2.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_t26c.jpg",
+      "description": "גיטרה חשמלית Solar T2.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_t26c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_t26c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_t26c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_t26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a27tbr",
+      "name": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a27tbr.jpg",
+      "description": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a27tbr.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a27tbr.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a27tbr.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a27tbr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s16frqob",
+      "name": "גיטרה חשמלית Solar S1.6FRQOB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s16frqob.jpg",
+      "description": "גיטרה חשמלית Solar S1.6FRQOB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s16frqob.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s16frqob.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s16frqob.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s16frqob.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26frln",
+      "name": "גיטרה חשמלית Solar A2.6FR LN",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26frln.jpg",
+      "description": "גיטרה חשמלית Solar A2.6FR LN",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26frln.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26frln.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26frln.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26frln.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a16a",
+      "name": "גיטרה חשמלית Solar A1.6 Artist LTD",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a16a.jpg",
+      "description": "גיטרה חשמלית Solar A1.6 Artist LTD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a16a.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a16a.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a16a.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a16a.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_h27c",
+      "name": "גיטרה חשמלית Solar H2.7C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_h27c.jpg",
+      "description": "גיטרה חשמלית Solar H2.7C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_h27c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_h27c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_h27c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_h27c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab16g",
+      "name": "גיטרה חשמלית Solar AB1.6G",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab16g.jpg",
+      "description": "גיטרה חשמלית Solar AB1.6G",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab16g.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab16g.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab16g.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab16g.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26ln",
+      "name": "גיטרה חשמלית Solar A2.6LN",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26ln.jpg",
+      "description": "גיטרה חשמלית Solar A2.6LN",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26ln.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26ln.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26ln.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26ln.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s16blb",
+      "name": "גיטרה חשמלית Solar S1.6BLB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s16blb.jpg",
+      "description": "גיטרה חשמלית Solar S1.6BLB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s16blb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s16blb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s16blb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s16blb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26fb",
+      "name": "גיטרה חשמלית Solar A2.6FB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26fb.jpg",
+      "description": "גיטרה חשמלית Solar A2.6FB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26fb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26fb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26fb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26fb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a16fb",
+      "name": "גיטרה חשמלית Solar A1.6FB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a16fb.jpg",
+      "description": "גיטרה חשמלית Solar A1.6FB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a16fb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a16fb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a16fb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a16fb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s16hlb",
+      "name": "גיטרה חשמלית Solar S1.6HLB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s16hlb.jpg",
+      "description": "גיטרה חשמלית Solar S1.6HLB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s16hlb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s16hlb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s16hlb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s16hlb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_vb46c",
+      "name": "גיטרה חשמלית Solar VB4.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_vb46c.jpg",
+      "description": "גיטרה חשמלית Solar VB4.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_vb46c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_vb46c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_vb46c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_vb46c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s16frblb",
+      "name": "גיטרה חשמלית Solar S1.6FR BLB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s16frblb.jpg",
+      "description": "גיטרה חשמלית Solar S1.6FR BLB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s16frblb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s16frblb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s16frblb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s16frblb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_vb46w",
+      "name": "גיטרה חשמלית Solar VB4.6W",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_vb46w.jpg",
+      "description": "גיטרה חשמלית Solar VB4.6W",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_vb46w.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_vb46w.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_vb46w.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_vb46w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_e26fbb_27_bar",
+      "name": "גיטרה חשמלית Solar E2.6FBB-27",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg",
+      "description": "גיטרה חשמלית Solar E2.6FBB-27",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_e26c",
+      "name": "גיטרה חשמלית Solar E2.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_e26c.jpg",
+      "description": "גיטרה חשמלית Solar E2.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_e26c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_e26c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_e26c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_e26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_sb16fob",
+      "name": "גיטרה חשמלית Solar SB1.6FOB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_sb16fob.jpg",
+      "description": "גיטרה חשמלית Solar SB1.6FOB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_sb16fob.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_sb16fob.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_sb16fob.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_sb16fob.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26clh",
+      "name": "גיטרה חשמלית שמאלית Solar A2.6C LH",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26clh.jpg",
+      "description": "גיטרה חשמלית שמאלית Solar A2.6C LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26clh.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26clh.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26clh.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26clh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_sb16hfsb",
+      "name": "גיטרה חשמלית Solar SB1.6HFSB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg",
+      "description": "גיטרה חשמלית Solar SB1.6HFSB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26tbr",
+      "name": "גיטרה חשמלית Solar A2.6TBR",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26tbr.jpg",
+      "description": "גיטרה חשמלית Solar A2.6TBR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26tbr.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26tbr.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26tbr.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26tbr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_t16frbop",
+      "name": "גיטרה חשמלית Solar T1.6FRBOP",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_t16frbop.jpg",
+      "description": "גיטרה חשמלית Solar T1.6FRBOP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_t16frbop.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_t16frbop.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_t16frbop.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_t16frbop.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26c_27",
+      "name": "גיטרה חשמלית Solar A2.6C-27 Baritone",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26c_27.jpg",
+      "description": "גיטרה חשמלית Solar A2.6C-27 Baritone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26c_27.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26c_27.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26c_27.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26c_27.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab24c_bariton",
+      "name": "גיטרה בס בריטון Solar AB2.4C Baritone",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg",
+      "description": "גיטרה בס בריטון Solar AB2.4C Baritone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_gc26c",
+      "name": "גיטרה חשמלית Solar GC2.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_gc26c.jpg",
+      "description": "גיטרה חשמלית Solar GC2.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_gc26c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_gc26c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_gc26c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_gc26c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_sb16frfm",
+      "name": "גיטרה חשמלית Solar SB1.6FRFM",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg",
+      "description": "גיטרה חשמלית Solar SB1.6FRFM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s17pb",
+      "name": "גיטרה חשמלית 7 מיתרים Solar S1.7PB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s17pb.jpg",
+      "description": "גיטרה חשמלית 7 מיתרים Solar S1.7PB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s17pb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s17pb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s17pb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s17pb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s26w",
+      "name": "גיטרה חשמלית Solar S2.6W",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s26w.jpg",
+      "description": "גיטרה חשמלית Solar S2.6W",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s26w.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s26w.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s26w.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s26w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a1_6corner",
+      "name": "גיטרה חשמלית Solar A1.6Coroner",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg",
+      "description": "גיטרה חשמלית Solar A1.6Coroner",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab25an",
+      "name": "גיטרה בס 5 מיתרים Solar AB2.5AN",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab25an.jpg",
+      "description": "גיטרה בס 5 מיתרים Solar AB2.5AN",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab25an.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab25an.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab25an.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab25an.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab24bop",
+      "name": "גיטרה בס Solar AB2.4BOP SK",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab24bop.jpg",
+      "description": "גיטרה בס Solar AB2.4BOP SK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab24bop.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab24bop.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab24bop.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab24bop.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_gc16tfsb",
+      "name": "גיטרה חשמלית Solar GC1.6 FAB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg",
+      "description": "גיטרה חשמלית Solar GC1.6 FAB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s16pp",
+      "name": "גיטרה חשמלית Solar S1.6PP",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s16pp.jpg",
+      "description": "גיטרה חשמלית Solar S1.6PP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s16pp.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s16pp.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s16pp.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s16pp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_gc16c",
+      "name": "Solar GC1.6C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_gc16c.jpg",
+      "description": "Solar GC1.6C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_gc16c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_gc16c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_gc16c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_gc16c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a26tbrsk",
+      "name": "גיטרה חשמלית Solar A2.6TBR SK",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg",
+      "description": "גיטרה חשמלית Solar A2.6TBR SK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_gc26tbr",
+      "name": "גיטרה חשמלית Solar GC2.6TBR",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg",
+      "description": "גיטרה חשמלית Solar GC2.6TBR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a16atg",
+      "name": "גיטרה חשמלית Solar A1.6ATG",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a16atg.jpg",
+      "description": "גיטרה חשמלית Solar A1.6ATG",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a16atg.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a16atg.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a16atg.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a16atg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_s16pb",
+      "name": "Solar S1.6PB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_s16pb.jpg",
+      "description": "Solar S1.6PB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_s16pb.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_s16pb.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_s16pb.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_s16pb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_ab25c",
+      "name": "גיטרה בס 5 מיתרים Solar AB2.5C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_ab25c.jpg",
+      "description": "גיטרה בס 5 מיתרים Solar AB2.5C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_ab25c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_ab25c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_ab25c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_ab25c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_gc16tfab",
+      "name": "גיטרה חשמלית Solar GC1.6T-FAB",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg",
+      "description": "גיטרה חשמלית Solar GC1.6T-FAB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_gc26fbl",
+      "name": "גיטרה חשמלית Solar GC2.6FBL",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg",
+      "description": "גיטרה חשמלית Solar GC2.6FBL",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a16frc",
+      "name": "גיטרה חשמלית Solar A1.6FRC",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a16frc.jpg",
+      "description": "גיטרה חשמלית Solar A1.6FRC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a16frc.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a16frc.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a16frc.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a16frc.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a27clh",
+      "name": "גיטרה חשמלית שמאלית 7 מיתרים Solar A2.7C LH",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a27clh.jpg",
+      "description": "גיטרה חשמלית שמאלית 7 מיתרים Solar A2.7C LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a27clh.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a27clh.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a27clh.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a27clh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a27c",
+      "name": "גיטרה חשמלית 7 מיתרים Solar A2.7C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a27c.jpg",
+      "description": "גיטרה חשמלית 7 מיתרים Solar A2.7C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a27c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a27c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a27c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a27c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_gc26tbrsk",
+      "name": "גיטרה חשמלית Solar GC2.6TBR SK",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg",
+      "description": "גיטרה חשמלית Solar GC2.6TBR SK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a27tbrsk",
+      "name": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR SK",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg",
+      "description": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR SK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a18c",
+      "name": "גיטרה חשמלית 8 מיתרים Solar A1.8C",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a18c.jpg",
+      "description": "גיטרה חשמלית 8 מיתרים Solar A1.8C",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a18c.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a18c.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a18c.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a18c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "solar_guitars_24_a18dltd",
+      "name": "גיטרה חשמלית 8 מיתרים Solar A1.8D LTD",
+      "brand": "solar-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/solar_guitars_24_a18dltd.jpg",
+      "description": "גיטרה חשמלית 8 מיתרים Solar A1.8D LTD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/solar_guitars_24_a18dltd.jpg",
+        "thumbnail": "/data/thumbnails/solar_guitars_24_a18dltd.jpg",
+        "high_res": "/data/thumbnails/solar_guitars_24_a18dltd.jpg",
+        "original": "/data/thumbnails/solar_guitars_24_a18dltd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Solar-Guitars",
+  "brand_slug": "solar-guitars",
+  "refined_at": "2026-01-24T02:50:44.555273+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "solar_guitars_24_chug",
+          "name": "פדל פרה-אמפ Solar CHUG",
+          "description": "פדל פרה-אמפ Solar CHUG",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_chug.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_chug.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_chug.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_chug.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a17frcar",
+          "name": "גיטרה חשמלית +Solar A1.7FRCAR Sustainiac",
+          "description": "גיטרה חשמלית +Solar A1.7FRCAR Sustainiac",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a17frcar.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a17frcar.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a17frcar.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a17frcar.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26frpn",
+          "name": "גיטרה חשמלית Solar A2.6FRPN Canibalismo",
+          "description": "גיטרה חשמלית Solar A2.6FRPN Canibalismo",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26frpn.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26frpn.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26frpn.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26frpn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a27c_",
+          "name": "גיטרה חשמלית +Solar A2.7 Canibalismo",
+          "description": "גיטרה חשמלית +Solar A2.7 Canibalismo",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a27c_.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a27c_.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a27c_.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a27c_.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_xb46c",
+          "name": "גיטרה חשמלית Solar XB4.6C",
+          "description": "גיטרה חשמלית Solar XB4.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_xb46c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_xb46c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_xb46c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_xb46c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_x26c",
+          "name": "גיטרה חשמלית Solar X2.6C",
+          "description": "גיטרה חשמלית Solar X2.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_x26c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_x26c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_x26c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_x26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a27fbb_",
+          "name": "גיטרה חשמלית +Solar A2.7FBB",
+          "description": "גיטרה חשמלית +Solar A2.7FBB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a27fbb_.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab45dn",
+          "name": "גיטרה בס Solar AB4.5DN",
+          "description": "גיטרה בס Solar AB4.5DN",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab45dn.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab45dn.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab45dn.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab45dn.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab44w",
+          "name": "גיטרה בס Solar AB4.4W",
+          "description": "גיטרה בס Solar AB4.4W",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab44w.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab44w.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab44w.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab44w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_x26rop_",
+          "name": "גיטרה חשמלית +Solar X2.6ROP",
+          "description": "גיטרה חשמלית +Solar X2.6ROP",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_x26rop_.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_x26rop_.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_x26rop_.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_x26rop_.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab44c",
+          "name": "גיטרה בס Solar AB4.4C",
+          "description": "גיטרה בס Solar AB4.4C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab44c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab44c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab44c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab44c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab46c",
+          "name": "גיטרה חשמלית Solar AB4.6C",
+          "description": "גיטרה חשמלית Solar AB4.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab46c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab46c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab46c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab46c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_xb461frbrg",
+          "name": "גיטרה חשמלית Solar XB4.6FRBRG",
+          "description": "גיטרה חשמלית Solar XB4.6FRBRG",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_xb461frbrg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab46w",
+          "name": "גיטרה חשמלית Solar AB4.6W",
+          "description": "גיטרה חשמלית Solar AB4.6W",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab46w.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab46w.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab46w.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab46w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab47w",
+          "name": "גיטרה חשמלית 7 מיתרים Solar AB4.7W",
+          "description": "גיטרה חשמלית 7 מיתרים Solar AB4.7W",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab47w.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab47w.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab47w.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab47w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26c_",
+          "name": "גיטרה חשמלית +Solar A2.6 Canibalismo",
+          "description": "גיטרה חשמלית +Solar A2.6 Canibalismo",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26c_.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26c_.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26c_.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26c_.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_sb46frfbr",
+          "name": "גיטרה חשמלית Solar SB4.6FRFBR",
+          "description": "גיטרה חשמלית Solar SB4.6FRFBR",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_sb46frfbr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a16pn_",
+          "name": "גיטרה חשמלית +Solar A1.6PN Canibalismo",
+          "description": "גיטרה חשמלית +Solar A1.6PN Canibalismo",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a16pn_.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a16pn_.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a16pn_.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a16pn_.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_tuner_",
+          "name": "טיונר/בוסט +Solar CHUG Tuner",
+          "description": "טיונר/בוסט +Solar CHUG Tuner",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_tuner_.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_tuner_.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_tuner_.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_tuner_.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab47c",
+          "name": "גיטרה חשמלית Solar AB4.7C",
+          "description": "גיטרה חשמלית Solar AB4.7C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab47c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab47c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab47c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab47c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s26c",
+          "name": "גיטרה חשמלית Solar S2.6C",
+          "description": "גיטרה חשמלית Solar S2.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s26c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s26c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s26c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a16c",
+          "name": "גיטרה חשמלית Solar A1.6C",
+          "description": "גיטרה חשמלית Solar A1.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a16c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a16c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a16c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a16c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26w",
+          "name": "גיטרה חשמלית Solar A2.6W",
+          "description": "גיטרה חשמלית Solar A2.6W",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26w.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26w.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26w.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26c",
+          "name": "גיטרה חשמלית Solar A2.6C",
+          "description": "גיטרה חשמלית Solar A2.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s16frfbr",
+          "name": "גיטרה חשמלית Solar S1.6FRFBR",
+          "description": "גיטרה חשמלית Solar S1.6FRFBR",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s16frfbr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_h26c",
+          "name": "גיטרה חשמלית Solar H2.6C",
+          "description": "גיטרה חשמלית Solar H2.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_h26c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_h26c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_h26c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_h26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab16htpb",
+          "name": "גיטרה חשמלית Solar AB1.6HTPB",
+          "description": "גיטרה חשמלית Solar AB1.6HTPB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab16htpb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_t16c",
+          "name": "גיטרה חשמלית Solar T1.6C",
+          "description": "גיטרה חשמלית Solar T1.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_t16c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_t16c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_t16c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_t16c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_t27fbb",
+          "name": "גיטרה חשמלית 7 מיתרים Solar T2.7FBB",
+          "description": "גיטרה חשמלית 7 מיתרים Solar T2.7FBB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_t27fbb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_t27fbb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_t27fbb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_t27fbb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_t26n",
+          "name": "גיטרה חשמלית Solar T2.6N",
+          "description": "גיטרה חשמלית Solar T2.6N",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_t26n.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_t26n.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_t26n.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_t26n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_t26w",
+          "name": "גיטרה חשמלית Solar T2.6W",
+          "description": "גיטרה חשמלית Solar T2.6W",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_t26w.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_t26w.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_t26w.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_t26w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_t26c",
+          "name": "גיטרה חשמלית Solar T2.6C",
+          "description": "גיטרה חשמלית Solar T2.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_t26c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_t26c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_t26c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_t26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a27tbr",
+          "name": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR",
+          "description": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a27tbr.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a27tbr.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a27tbr.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a27tbr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s16frqob",
+          "name": "גיטרה חשמלית Solar S1.6FRQOB",
+          "description": "גיטרה חשמלית Solar S1.6FRQOB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s16frqob.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s16frqob.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s16frqob.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s16frqob.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26frln",
+          "name": "גיטרה חשמלית Solar A2.6FR LN",
+          "description": "גיטרה חשמלית Solar A2.6FR LN",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26frln.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26frln.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26frln.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26frln.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a16a",
+          "name": "גיטרה חשמלית Solar A1.6 Artist LTD",
+          "description": "גיטרה חשמלית Solar A1.6 Artist LTD",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a16a.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a16a.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a16a.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a16a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_h27c",
+          "name": "גיטרה חשמלית Solar H2.7C",
+          "description": "גיטרה חשמלית Solar H2.7C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_h27c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_h27c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_h27c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_h27c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab16g",
+          "name": "גיטרה חשמלית Solar AB1.6G",
+          "description": "גיטרה חשמלית Solar AB1.6G",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab16g.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab16g.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab16g.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab16g.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26ln",
+          "name": "גיטרה חשמלית Solar A2.6LN",
+          "description": "גיטרה חשמלית Solar A2.6LN",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26ln.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26ln.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26ln.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26ln.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s16blb",
+          "name": "גיטרה חשמלית Solar S1.6BLB",
+          "description": "גיטרה חשמלית Solar S1.6BLB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s16blb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s16blb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s16blb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s16blb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26fb",
+          "name": "גיטרה חשמלית Solar A2.6FB",
+          "description": "גיטרה חשמלית Solar A2.6FB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26fb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26fb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26fb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26fb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a16fb",
+          "name": "גיטרה חשמלית Solar A1.6FB",
+          "description": "גיטרה חשמלית Solar A1.6FB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a16fb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a16fb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a16fb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a16fb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s16hlb",
+          "name": "גיטרה חשמלית Solar S1.6HLB",
+          "description": "גיטרה חשמלית Solar S1.6HLB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s16hlb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s16hlb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s16hlb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s16hlb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_vb46c",
+          "name": "גיטרה חשמלית Solar VB4.6C",
+          "description": "גיטרה חשמלית Solar VB4.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_vb46c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_vb46c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_vb46c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_vb46c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s16frblb",
+          "name": "גיטרה חשמלית Solar S1.6FR BLB",
+          "description": "גיטרה חשמלית Solar S1.6FR BLB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s16frblb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s16frblb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s16frblb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s16frblb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_vb46w",
+          "name": "גיטרה חשמלית Solar VB4.6W",
+          "description": "גיטרה חשמלית Solar VB4.6W",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_vb46w.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_vb46w.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_vb46w.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_vb46w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_e26fbb_27_bar",
+          "name": "גיטרה חשמלית Solar E2.6FBB-27",
+          "description": "גיטרה חשמלית Solar E2.6FBB-27",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_e26fbb_27_bar.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_e26c",
+          "name": "גיטרה חשמלית Solar E2.6C",
+          "description": "גיטרה חשמלית Solar E2.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_e26c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_e26c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_e26c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_e26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_sb16fob",
+          "name": "גיטרה חשמלית Solar SB1.6FOB",
+          "description": "גיטרה חשמלית Solar SB1.6FOB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_sb16fob.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_sb16fob.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_sb16fob.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_sb16fob.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26clh",
+          "name": "גיטרה חשמלית שמאלית Solar A2.6C LH",
+          "description": "גיטרה חשמלית שמאלית Solar A2.6C LH",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26clh.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26clh.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26clh.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26clh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_sb16hfsb",
+          "name": "גיטרה חשמלית Solar SB1.6HFSB",
+          "description": "גיטרה חשמלית Solar SB1.6HFSB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_sb16hfsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26tbr",
+          "name": "גיטרה חשמלית Solar A2.6TBR",
+          "description": "גיטרה חשמלית Solar A2.6TBR",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26tbr.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26tbr.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26tbr.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26tbr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_t16frbop",
+          "name": "גיטרה חשמלית Solar T1.6FRBOP",
+          "description": "גיטרה חשמלית Solar T1.6FRBOP",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_t16frbop.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_t16frbop.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_t16frbop.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_t16frbop.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26c_27",
+          "name": "גיטרה חשמלית Solar A2.6C-27 Baritone",
+          "description": "גיטרה חשמלית Solar A2.6C-27 Baritone",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26c_27.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26c_27.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26c_27.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26c_27.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab24c_bariton",
+          "name": "גיטרה בס בריטון Solar AB2.4C Baritone",
+          "description": "גיטרה בס בריטון Solar AB2.4C Baritone",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab24c_bariton.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_gc26c",
+          "name": "גיטרה חשמלית Solar GC2.6C",
+          "description": "גיטרה חשמלית Solar GC2.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_gc26c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_gc26c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_gc26c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_gc26c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_sb16frfm",
+          "name": "גיטרה חשמלית Solar SB1.6FRFM",
+          "description": "גיטרה חשמלית Solar SB1.6FRFM",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_sb16frfm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s17pb",
+          "name": "גיטרה חשמלית 7 מיתרים Solar S1.7PB",
+          "description": "גיטרה חשמלית 7 מיתרים Solar S1.7PB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s17pb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s17pb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s17pb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s17pb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s26w",
+          "name": "גיטרה חשמלית Solar S2.6W",
+          "description": "גיטרה חשמלית Solar S2.6W",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s26w.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s26w.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s26w.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s26w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a1_6corner",
+          "name": "גיטרה חשמלית Solar A1.6Coroner",
+          "description": "גיטרה חשמלית Solar A1.6Coroner",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a1_6corner.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab25an",
+          "name": "גיטרה בס 5 מיתרים Solar AB2.5AN",
+          "description": "גיטרה בס 5 מיתרים Solar AB2.5AN",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab25an.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab25an.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab25an.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab25an.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab24bop",
+          "name": "גיטרה בס Solar AB2.4BOP SK",
+          "description": "גיטרה בס Solar AB2.4BOP SK",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab24bop.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab24bop.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab24bop.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab24bop.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_gc16tfsb",
+          "name": "גיטרה חשמלית Solar GC1.6 FAB",
+          "description": "גיטרה חשמלית Solar GC1.6 FAB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_gc16tfsb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s16pp",
+          "name": "גיטרה חשמלית Solar S1.6PP",
+          "description": "גיטרה חשמלית Solar S1.6PP",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s16pp.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s16pp.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s16pp.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s16pp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_gc16c",
+          "name": "Solar GC1.6C",
+          "description": "Solar GC1.6C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_gc16c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_gc16c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_gc16c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_gc16c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a26tbrsk",
+          "name": "גיטרה חשמלית Solar A2.6TBR SK",
+          "description": "גיטרה חשמלית Solar A2.6TBR SK",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a26tbrsk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_gc26tbr",
+          "name": "גיטרה חשמלית Solar GC2.6TBR",
+          "description": "גיטרה חשמלית Solar GC2.6TBR",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_gc26tbr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a16atg",
+          "name": "גיטרה חשמלית Solar A1.6ATG",
+          "description": "גיטרה חשמלית Solar A1.6ATG",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a16atg.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a16atg.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a16atg.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a16atg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_s16pb",
+          "name": "Solar S1.6PB",
+          "description": "Solar S1.6PB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_s16pb.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_s16pb.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_s16pb.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_s16pb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_ab25c",
+          "name": "גיטרה בס 5 מיתרים Solar AB2.5C",
+          "description": "גיטרה בס 5 מיתרים Solar AB2.5C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_ab25c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_ab25c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_ab25c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_ab25c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_gc16tfab",
+          "name": "גיטרה חשמלית Solar GC1.6T-FAB",
+          "description": "גיטרה חשמלית Solar GC1.6T-FAB",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_gc16tfab.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_gc26fbl",
+          "name": "גיטרה חשמלית Solar GC2.6FBL",
+          "description": "גיטרה חשמלית Solar GC2.6FBL",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_gc26fbl.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a16frc",
+          "name": "גיטרה חשמלית Solar A1.6FRC",
+          "description": "גיטרה חשמלית Solar A1.6FRC",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a16frc.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a16frc.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a16frc.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a16frc.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a27clh",
+          "name": "גיטרה חשמלית שמאלית 7 מיתרים Solar A2.7C LH",
+          "description": "גיטרה חשמלית שמאלית 7 מיתרים Solar A2.7C LH",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a27clh.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a27clh.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a27clh.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a27clh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a27c",
+          "name": "גיטרה חשמלית 7 מיתרים Solar A2.7C",
+          "description": "גיטרה חשמלית 7 מיתרים Solar A2.7C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a27c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a27c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a27c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a27c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_gc26tbrsk",
+          "name": "גיטרה חשמלית Solar GC2.6TBR SK",
+          "description": "גיטרה חשמלית Solar GC2.6TBR SK",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_gc26tbrsk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a27tbrsk",
+          "name": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR SK",
+          "description": "גיטרה חשמלית 7 מיתרים Solar A2.7TBR SK",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a27tbrsk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a18c",
+          "name": "גיטרה חשמלית 8 מיתרים Solar A1.8C",
+          "description": "גיטרה חשמלית 8 מיתרים Solar A1.8C",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a18c.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a18c.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a18c.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a18c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "solar_guitars_24_a18dltd",
+          "name": "גיטרה חשמלית 8 מיתרים Solar A1.8D LTD",
+          "description": "גיטרה חשמלית 8 מיתרים Solar A1.8D LTD",
+          "images": {
+            "main": "/data/thumbnails/solar_guitars_24_a18dltd.jpg",
+            "thumbnail": "/data/thumbnails/solar_guitars_24_a18dltd.jpg",
+            "high_res": "/data/thumbnails/solar_guitars_24_a18dltd.jpg",
+            "original": "/data/thumbnails/solar_guitars_24_a18dltd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

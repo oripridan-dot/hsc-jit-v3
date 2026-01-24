@@ -24,82 +24,90 @@ class HalilitBrandRegistry:
 
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            # Selector derived from inspection: <div class="brands"> <ul> <li> ...
-            brand_elements = soup.select('div.brands li')
+            # Selector found via inspection: .brands a (inside <div class="brands">)
+            brand_elements = soup.select('.brands a')
             
             if not brand_elements:
+                print("⚠️  Warning: Primary selector '.brands a' failed. Trying fallbacks...")
                 # Fallback to general link search if class not found
-                print("⚠️  Specific selector 'div.brands li' failed. Trying fallback.")
-                brand_elements = soup.select('a[href*="/brand/"]')
+                brand_elements = soup.select('a[href*="/g/"]')
 
             roster = []
+            seen_slugs = set()
             
             for el in brand_elements:
-                # The element might be an LI containing a Table containing an A
-                # Or it might be just an A if fallback triggered.
-                
-                link_el = el.find('a') if el.name != 'a' else el
-                if not link_el:
+                href = el.get('href', '')
+                if not href or '/g/' not in href:
                     continue
-                    
-                href = link_el['href']
                 
-                # Filter out irrelevant links if using broad selector
-                if '/g/' not in href and '/brand/' not in href and 'yatzran' not in str(href):
-                    # Some hrefs are /g/5193-Brand/... or /g/5193-yatzran/...
-                    # check if it looks like a brand link
-                     pass 
-
-                # Extract Slug and clean it (remove leading ID similar to "33109-")
-                raw_slug = href.split('/')[-1].lower()
-                # Remove leading numbers and dash (e.g. 33109-roland -> roland)
-                slug = re.sub(r'^\d+-', '', raw_slug)
-
-                # Extract Logo URL
-                img = el.select_one('img')
-                logo_url = img['src'] if img else None
-                if logo_url and not logo_url.startswith('http'):
-                    logo_url = f"https://www.halilit.com{logo_url}"
-
                 # Extract Name
-                # Priority: img alt -> derived from slug -> text
+                img = el.select_one('img')
+                # If alt exists, use it.
                 name = ""
                 if img and img.get('alt'):
                     name = img['alt'].strip()
                 
+                # Parse URL for slug and fallback name
+                # href example: https://www.halilit.com/g/5193-Brand/207910-ADAM-Audio
+                parts = href.split('/')
+                last_part = parts[-1] # 207910-ADAM-Audio
+                
+                # Regex to clean leading numbers ID (e.g. 207910-)
+                clean_slug_match = re.search(r'^\d+-(.+)$', last_part)
+                if clean_slug_match:
+                    slug_candidate = clean_slug_match.group(1)
+                else:
+                    slug_candidate = last_part
+                
+                slug = slug_candidate.lower() # adam-audio
+                
+                # Avoid duplicates (sometimes there are multiple links per brand)
+                if slug in seen_slugs:
+                    continue
+                seen_slugs.add(slug)
+
                 if not name:
-                    name = slug.replace('-', ' ').title()
-                    
-                # Store
-                if slug and name:
-                     # Avoid duplicates if any
-                     if not any(b['slug'] == slug for b in roster):
-                        roster.append({
-                            "name": name,
-                            "slug": slug,
-                            "halilit_url": href if href.startswith('http') else f"https://www.halilit.com{href}",
-                            "logo_url": logo_url
-                        })
+                    # Fallback name from slug, capitalizing and replacing dashes
+                    name = slug_candidate.replace('-', ' ')
+                
+                # Logo URL
+                logo_url = img['src'] if img else None
+                if logo_url and not logo_url.startswith('http'):
+                    logo_url = f"https://www.halilit.com{logo_url}"
+
+                # Handle URL normalization
+                if href.startswith('http'):
+                    full_url = href
+                else:
+                    # Remove leading dots or slashes
+                    clean_path = href.lstrip('./')
+                    full_url = f"https://www.halilit.com/{clean_path}"
+
+                roster.append({
+                    "name": name,
+                    "slug": slug,
+                    "halilit_url": full_url,
+                    "logo_url": logo_url
+                })
                 
             print(f"✅ Authenticated {len(roster)} Partners.")
             return roster
 
         except Exception as e:
             print(f"❌ Registry Protocol Failed: {e}")
-            import traceback
-            traceback.print_exc()
             return []
 
     def sync_logos(self, roster):
         """Ensures we have a local logo for every partner"""
-        # Adjust path to be relative to where script is run (backend root typically)
-        # If run from backend/, the path to frontend is ../frontend/
-        save_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "frontend/public/assets/logos")
-        # However, cleaner to use relative paths if we know CWD. 
-        # User specified: "../frontend/public/assets/logos"
-        # Since we run from backend/, that works.
-        
-        save_dir = "../frontend/public/assets/logos"
+        # Determine correct path relative to execution
+        base_dir = os.getcwd()
+        # If running from backend folder
+        if base_dir.endswith('backend'):
+             save_dir = "../frontend/public/assets/logos"
+        # If running from root
+        else:
+             save_dir = "frontend/public/assets/logos"
+            
         os.makedirs(save_dir, exist_ok=True)
         
         for brand in roster:
@@ -107,17 +115,23 @@ class HalilitBrandRegistry:
             
             # Simple sanitization
             safe_name = brand['slug'].replace(' ', '-')
-            ext = brand['logo_url'].split('.')[-1].split('?')[0] or 'png'
+            # Handle query params in logo url if any
+            clean_url = brand['logo_url'].split('?')[0]
+            ext = clean_url.split('.')[-1] or 'png'
+            # Default to png if ext is weird or too long
+            if len(ext) > 4: 
+                ext = 'png'
+            
             local_path = os.path.join(save_dir, f"{safe_name}_logo.{ext}")
             
             if not os.path.exists(local_path):
                 print(f"  ⬇️  Ingesting Logo: {brand['name']}")
                 try:
-                    img_data = requests.get(brand['logo_url'], timeout=10).content
+                    img_data = requests.get(brand['logo_url']).content
                     with open(local_path, 'wb') as f:
                         f.write(img_data)
-                except Exception as e:
-                    print(f"  ⚠️  Failed to download logo for {brand['name']}: {e}")
+                except:
+                    print(f"  ⚠️  Failed to download logo for {brand['name']}")
 
 if __name__ == "__main__":
     reg = HalilitBrandRegistry()

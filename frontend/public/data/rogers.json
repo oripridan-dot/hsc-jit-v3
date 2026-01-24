@@ -1,0 +1,303 @@
+{
+  "brand_identity": {
+    "id": "rogers",
+    "name": "ROGERS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/rogers_logo.png",
+    "taxonomy_stats": {
+      "validated": 9,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "rogers_36_twr26srm",
+      "name": "Roger's Tower Series 14x6.5\" Snare Drum Rogers",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_twr26srm.jpg",
+      "description": "Roger's Tower Series 14x6.5\" Snare Drum Rogers",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_twr26srm.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_twr26srm.jpg",
+        "high_res": "/data/thumbnails/rogers_36_twr26srm.jpg",
+        "original": "/data/thumbnails/rogers_36_twr26srm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_twr24srm",
+      "name": "Roger's Tower Series 14x5\" Snare Drum Rogers",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_twr24srm.jpg",
+      "description": "Roger's Tower Series 14x5\" Snare Drum Rogers",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_twr24srm.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_twr24srm.jpg",
+        "high_res": "/data/thumbnails/rogers_36_twr24srm.jpg",
+        "original": "/data/thumbnails/rogers_36_twr24srm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_37_bp",
+      "name": "Rogers Dyna-Sonic Snare NO.37-BP",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_37_bp.jpg",
+      "description": "Rogers Dyna-Sonic Snare NO.37-BP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_37_bp.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_37_bp.jpg",
+        "high_res": "/data/thumbnails/rogers_36_37_bp.jpg",
+        "original": "/data/thumbnails/rogers_36_37_bp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_twr23sbv",
+      "name": "Roger's Tower Series 13x6\" Snare Drum Rogers",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_twr23sbv.jpg",
+      "description": "Roger's Tower Series 13x6\" Snare Drum Rogers",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_twr23sbv.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_twr23sbv.jpg",
+        "high_res": "/data/thumbnails/rogers_36_twr23sbv.jpg",
+        "original": "/data/thumbnails/rogers_36_twr23sbv.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_cv0322hxrr",
+      "name": "סט תופים 3 חלקים Rogers CV-0322HX-RR",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_cv0322hxrr.jpg",
+      "description": "סט תופים 3 חלקים Rogers CV-0322HX-RR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_cv0322hxrr.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_cv0322hxrr.jpg",
+        "high_res": "/data/thumbnails/rogers_36_cv0322hxrr.jpg",
+        "original": "/data/thumbnails/rogers_36_cv0322hxrr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_37_rr",
+      "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-RR",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_37_rr.jpg",
+      "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-RR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_37_rr.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_37_rr.jpg",
+        "high_res": "/data/thumbnails/rogers_36_37_rr.jpg",
+        "original": "/data/thumbnails/rogers_36_37_rr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_37_bsl",
+      "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-BSL",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_37_bsl.jpg",
+      "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-BSL",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_37_bsl.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_37_bsl.jpg",
+        "high_res": "/data/thumbnails/rogers_36_37_bsl.jpg",
+        "original": "/data/thumbnails/rogers_36_37_bsl.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_37_blo",
+      "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-BLO",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_37_blo.jpg",
+      "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-BLO",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_37_blo.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_37_blo.jpg",
+        "high_res": "/data/thumbnails/rogers_36_37_blo.jpg",
+        "original": "/data/thumbnails/rogers_36_37_blo.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "rogers_36_37_wmp",
+      "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-WMP",
+      "brand": "rogers",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rogers_36_37_wmp.jpg",
+      "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-WMP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/rogers_36_37_wmp.jpg",
+        "thumbnail": "/data/thumbnails/rogers_36_37_wmp.jpg",
+        "high_res": "/data/thumbnails/rogers_36_37_wmp.jpg",
+        "original": "/data/thumbnails/rogers_36_37_wmp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Rogers",
+  "brand_slug": "rogers",
+  "refined_at": "2026-01-24T02:50:44.867456+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "rogers_36_twr26srm",
+          "name": "Roger's Tower Series 14x6.5\" Snare Drum Rogers",
+          "description": "Roger's Tower Series 14x6.5\" Snare Drum Rogers",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_twr26srm.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_twr26srm.jpg",
+            "high_res": "/data/thumbnails/rogers_36_twr26srm.jpg",
+            "original": "/data/thumbnails/rogers_36_twr26srm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_twr24srm",
+          "name": "Roger's Tower Series 14x5\" Snare Drum Rogers",
+          "description": "Roger's Tower Series 14x5\" Snare Drum Rogers",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_twr24srm.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_twr24srm.jpg",
+            "high_res": "/data/thumbnails/rogers_36_twr24srm.jpg",
+            "original": "/data/thumbnails/rogers_36_twr24srm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_37_bp",
+          "name": "Rogers Dyna-Sonic Snare NO.37-BP",
+          "description": "Rogers Dyna-Sonic Snare NO.37-BP",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_37_bp.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_37_bp.jpg",
+            "high_res": "/data/thumbnails/rogers_36_37_bp.jpg",
+            "original": "/data/thumbnails/rogers_36_37_bp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_twr23sbv",
+          "name": "Roger's Tower Series 13x6\" Snare Drum Rogers",
+          "description": "Roger's Tower Series 13x6\" Snare Drum Rogers",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_twr23sbv.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_twr23sbv.jpg",
+            "high_res": "/data/thumbnails/rogers_36_twr23sbv.jpg",
+            "original": "/data/thumbnails/rogers_36_twr23sbv.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_cv0322hxrr",
+          "name": "סט תופים 3 חלקים Rogers CV-0322HX-RR",
+          "description": "סט תופים 3 חלקים Rogers CV-0322HX-RR",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_cv0322hxrr.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_cv0322hxrr.jpg",
+            "high_res": "/data/thumbnails/rogers_36_cv0322hxrr.jpg",
+            "original": "/data/thumbnails/rogers_36_cv0322hxrr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_37_rr",
+          "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-RR",
+          "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-RR",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_37_rr.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_37_rr.jpg",
+            "high_res": "/data/thumbnails/rogers_36_37_rr.jpg",
+            "original": "/data/thumbnails/rogers_36_37_rr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_37_bsl",
+          "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-BSL",
+          "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-BSL",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_37_bsl.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_37_bsl.jpg",
+            "high_res": "/data/thumbnails/rogers_36_37_bsl.jpg",
+            "original": "/data/thumbnails/rogers_36_37_bsl.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_37_blo",
+          "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-BLO",
+          "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-BLO",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_37_blo.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_37_blo.jpg",
+            "high_res": "/data/thumbnails/rogers_36_37_blo.jpg",
+            "original": "/data/thumbnails/rogers_36_37_blo.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rogers_36_37_wmp",
+          "name": "Rogers Beavertail Dyna-Sonic Snare NO.37-WMP",
+          "description": "Rogers Beavertail Dyna-Sonic Snare NO.37-WMP",
+          "images": {
+            "main": "/data/thumbnails/rogers_36_37_wmp.jpg",
+            "thumbnail": "/data/thumbnails/rogers_36_37_wmp.jpg",
+            "high_res": "/data/thumbnails/rogers_36_37_wmp.jpg",
+            "original": "/data/thumbnails/rogers_36_37_wmp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "brand_identity": {
+    "id": "encore",
+    "name": "ENCORE",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/encore_logo.png",
+    "taxonomy_stats": {
+      "validated": 10,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "encore_20_e2sb",
+      "name": "גיטרה חשמלית Encore E2SB",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_e2sb.jpg",
+      "description": "גיטרה חשמלית Encore E2SB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_e2sb.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_e2sb.jpg",
+        "high_res": "/data/thumbnails/encore_20_e2sb.jpg",
+        "original": "/data/thumbnails/encore_20_e2sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_lh_ew100n",
+      "name": "גיטרה אקוסטית שמאלית Encore EW100N LH",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_lh_ew100n.jpg",
+      "description": "גיטרה אקוסטית שמאלית Encore EW100N LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_lh_ew100n.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_lh_ew100n.jpg",
+        "high_res": "/data/thumbnails/encore_20_lh_ew100n.jpg",
+        "original": "/data/thumbnails/encore_20_lh_ew100n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_ewp100n",
+      "name": "ערכת גיטרה אקוסטית Encore EWP100N",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_ewp100n.jpg",
+      "description": "ערכת גיטרה אקוסטית Encore EWP100N",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_ewp100n.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_ewp100n.jpg",
+        "high_res": "/data/thumbnails/encore_20_ewp100n.jpg",
+        "original": "/data/thumbnails/encore_20_ewp100n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_ewp100sb",
+      "name": "ערכת גיטרה אקוסטית Encore EWP100SB",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_ewp100sb.jpg",
+      "description": "ערכת גיטרה אקוסטית Encore EWP100SB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_ewp100sb.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_ewp100sb.jpg",
+        "high_res": "/data/thumbnails/encore_20_ewp100sb.jpg",
+        "original": "/data/thumbnails/encore_20_ewp100sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_ewp100bk",
+      "name": "ערכת גיטרה אקוסטית Encore EWP100BK",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_ewp100bk.jpg",
+      "description": "ערכת גיטרה אקוסטית Encore EWP100BK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_ewp100bk.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_ewp100bk.jpg",
+        "high_res": "/data/thumbnails/encore_20_ewp100bk.jpg",
+        "original": "/data/thumbnails/encore_20_ewp100bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_e2blk",
+      "name": "גיטרה חשמלית Encore E2BLK",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_e2blk.jpg",
+      "description": "גיטרה חשמלית Encore E2BLK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_e2blk.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_e2blk.jpg",
+        "high_res": "/data/thumbnails/encore_20_e2blk.jpg",
+        "original": "/data/thumbnails/encore_20_e2blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_e6vw",
+      "name": "גיטרה חשמלית Encore E6 Vintage White",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_e6vw.jpg",
+      "description": "גיטרה חשמלית Encore E6 Vintage White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_e6vw.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_e6vw.jpg",
+        "high_res": "/data/thumbnails/encore_20_e6vw.jpg",
+        "original": "/data/thumbnails/encore_20_e6vw.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_ew100sb",
+      "name": "גיטרה אקוסטית Encore EW100SB",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_ew100sb.jpg",
+      "description": "גיטרה אקוסטית Encore EW100SB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_ew100sb.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_ew100sb.jpg",
+        "high_res": "/data/thumbnails/encore_20_ew100sb.jpg",
+        "original": "/data/thumbnails/encore_20_ew100sb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_ew100bk",
+      "name": "גיטרה אקוסטית Encore EW100BK",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_ew100bk.jpg",
+      "description": "גיטרה אקוסטית Encore EW100BK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_ew100bk.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_ew100bk.jpg",
+        "high_res": "/data/thumbnails/encore_20_ew100bk.jpg",
+        "original": "/data/thumbnails/encore_20_ew100bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "encore_20_ew100n",
+      "name": "גיטרה אקוסטית Encore EW100N",
+      "brand": "encore",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/encore_20_ew100n.jpg",
+      "description": "גיטרה אקוסטית Encore EW100N",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/encore_20_ew100n.jpg",
+        "thumbnail": "/data/thumbnails/encore_20_ew100n.jpg",
+        "high_res": "/data/thumbnails/encore_20_ew100n.jpg",
+        "original": "/data/thumbnails/encore_20_ew100n.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Encore",
+  "brand_slug": "encore",
+  "refined_at": "2026-01-24T02:50:45.203103+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "encore_20_e2sb",
+          "name": "גיטרה חשמלית Encore E2SB",
+          "description": "גיטרה חשמלית Encore E2SB",
+          "images": {
+            "main": "/data/thumbnails/encore_20_e2sb.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_e2sb.jpg",
+            "high_res": "/data/thumbnails/encore_20_e2sb.jpg",
+            "original": "/data/thumbnails/encore_20_e2sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_lh_ew100n",
+          "name": "גיטרה אקוסטית שמאלית Encore EW100N LH",
+          "description": "גיטרה אקוסטית שמאלית Encore EW100N LH",
+          "images": {
+            "main": "/data/thumbnails/encore_20_lh_ew100n.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_lh_ew100n.jpg",
+            "high_res": "/data/thumbnails/encore_20_lh_ew100n.jpg",
+            "original": "/data/thumbnails/encore_20_lh_ew100n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_ewp100n",
+          "name": "ערכת גיטרה אקוסטית Encore EWP100N",
+          "description": "ערכת גיטרה אקוסטית Encore EWP100N",
+          "images": {
+            "main": "/data/thumbnails/encore_20_ewp100n.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_ewp100n.jpg",
+            "high_res": "/data/thumbnails/encore_20_ewp100n.jpg",
+            "original": "/data/thumbnails/encore_20_ewp100n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_ewp100sb",
+          "name": "ערכת גיטרה אקוסטית Encore EWP100SB",
+          "description": "ערכת גיטרה אקוסטית Encore EWP100SB",
+          "images": {
+            "main": "/data/thumbnails/encore_20_ewp100sb.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_ewp100sb.jpg",
+            "high_res": "/data/thumbnails/encore_20_ewp100sb.jpg",
+            "original": "/data/thumbnails/encore_20_ewp100sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_ewp100bk",
+          "name": "ערכת גיטרה אקוסטית Encore EWP100BK",
+          "description": "ערכת גיטרה אקוסטית Encore EWP100BK",
+          "images": {
+            "main": "/data/thumbnails/encore_20_ewp100bk.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_ewp100bk.jpg",
+            "high_res": "/data/thumbnails/encore_20_ewp100bk.jpg",
+            "original": "/data/thumbnails/encore_20_ewp100bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_e2blk",
+          "name": "גיטרה חשמלית Encore E2BLK",
+          "description": "גיטרה חשמלית Encore E2BLK",
+          "images": {
+            "main": "/data/thumbnails/encore_20_e2blk.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_e2blk.jpg",
+            "high_res": "/data/thumbnails/encore_20_e2blk.jpg",
+            "original": "/data/thumbnails/encore_20_e2blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_e6vw",
+          "name": "גיטרה חשמלית Encore E6 Vintage White",
+          "description": "גיטרה חשמלית Encore E6 Vintage White",
+          "images": {
+            "main": "/data/thumbnails/encore_20_e6vw.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_e6vw.jpg",
+            "high_res": "/data/thumbnails/encore_20_e6vw.jpg",
+            "original": "/data/thumbnails/encore_20_e6vw.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_ew100sb",
+          "name": "גיטרה אקוסטית Encore EW100SB",
+          "description": "גיטרה אקוסטית Encore EW100SB",
+          "images": {
+            "main": "/data/thumbnails/encore_20_ew100sb.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_ew100sb.jpg",
+            "high_res": "/data/thumbnails/encore_20_ew100sb.jpg",
+            "original": "/data/thumbnails/encore_20_ew100sb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_ew100bk",
+          "name": "גיטרה אקוסטית Encore EW100BK",
+          "description": "גיטרה אקוסטית Encore EW100BK",
+          "images": {
+            "main": "/data/thumbnails/encore_20_ew100bk.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_ew100bk.jpg",
+            "high_res": "/data/thumbnails/encore_20_ew100bk.jpg",
+            "original": "/data/thumbnails/encore_20_ew100bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "encore_20_ew100n",
+          "name": "גיטרה אקוסטית Encore EW100N",
+          "description": "גיטרה אקוסטית Encore EW100N",
+          "images": {
+            "main": "/data/thumbnails/encore_20_ew100n.jpg",
+            "thumbnail": "/data/thumbnails/encore_20_ew100n.jpg",
+            "high_res": "/data/thumbnails/encore_20_ew100n.jpg",
+            "original": "/data/thumbnails/encore_20_ew100n.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

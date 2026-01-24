@@ -1,0 +1,3712 @@
+{
+  "brand_identity": {
+    "id": "cordoba-guitars",
+    "name": "CORDOBA-GUITARS",
+    "brand_colors": {},
+    "taxonomy_stats": {
+      "validated": 119,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "cordoba_guitars_76_c1m",
+      "name": "גיטרה קלאסית Cordoba C1M",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1m.jpg",
+      "description": "גיטרה קלאסית Cordoba C1M",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1m.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1m.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1m.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_musicstand",
+      "name": "Cordoba Music Stand",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg",
+      "description": "Cordoba Music Stand",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_cp100",
+      "name": "ערכת גיטרה קלאסית Cordoba CP100",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_cp100.jpg",
+      "description": "ערכת גיטרה קלאסית Cordoba CP100",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_cp100.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_cp100.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_cp100.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_cp100.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_35t_ce",
+      "name": "יוקללה טנור מוגברת Cordoba 35T-CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg",
+      "description": "יוקללה טנור מוגברת Cordoba 35T-CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gb1_2",
+      "name": "Cordoba Gig Bag 1/2 size",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg",
+      "description": "Cordoba Gig Bag 1/2 size",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gb3_4",
+      "name": "Cordoba Gig Bag 3/4 size",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg",
+      "description": "Cordoba Gig Bag 3/4 size",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gb1_4",
+      "name": "Cordoba Gig Bag 1/4 size",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg",
+      "description": "Cordoba Gig Bag 1/4 size",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5_crosslim",
+      "name": "גיטרה קלאסית Cordoba C5 Crossover Limited Edition",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg",
+      "description": "גיטרה קלאסית Cordoba C5 Crossover Limited Edition",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion12_rii",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Rose II",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Rose II",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gigbagfullsize",
+      "name": "Cordoba Standard Gig Bag",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg",
+      "description": "Cordoba Standard Gig Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_stool",
+      "name": "Cordoba Rustic Bar Stool",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_stool.jpg",
+      "description": "Cordoba Rustic Bar Stool",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_stool.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_stool.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_stool.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_stool.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_stage_eb",
+      "name": "גיטרה קלאסית מוגברת Cordoba Stage Edge Burst",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Stage Edge Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cm",
+      "name": "יוקללה קונצרט Cordoba 15CM",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cm.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cm.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cm.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c3m",
+      "name": "גיטרה קלאסית Cordoba C3M",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c3m.jpg",
+      "description": "גיטרה קלאסית Cordoba C3M",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c3m.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c3m.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c3m.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c3m.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_string_hard",
+      "name": "Cordoba Nylon Guitar Strings - Hard",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg",
+      "description": "Cordoba Nylon Guitar Strings - Hard",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cm_matizcr",
+      "name": "יוקללה קונצרט Cordoba 15CM Matiz",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CM Matiz",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_pcb100",
+      "name": "תיק לגיטרה קלאסית Cordoba Polyfoam Full Size",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg",
+      "description": "תיק לגיטרה קלאסית Cordoba Polyfoam Full Size",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1m_1_2",
+      "name": "גיטרה קלאסית חצי נפח Cordoba C1M 1/2",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg",
+      "description": "גיטרה קלאסית חצי נפח Cordoba C1M 1/2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1m_3_4",
+      "name": "גיטרה קלאסית Cordoba C1M 3/4",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg",
+      "description": "גיטרה קלאסית Cordoba C1M 3/4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minillfmh",
+      "name": "גיטרה קלאסית מיני Cordoba Mini II FMH",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg",
+      "description": "גיטרה קלאסית מיני Cordoba Mini II FMH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_digtunerclip",
+      "name": "Cordoba Digital Clip-on Tuner",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg",
+      "description": "Cordoba Digital Clip-on Tuner",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gb_classic",
+      "name": "תיק לגיטרה קלאסית Cordoba Deluxe Gig Bag",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg",
+      "description": "תיק לגיטרה קלאסית Cordoba Deluxe Gig Bag",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1_matiz_aqua",
+      "name": "גיטרה קלאסית Cordoba C1 Matiz Aqua",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg",
+      "description": "גיטרה קלאסית Cordoba C1 Matiz Aqua",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cfm_rr",
+      "name": "יוקללה קונצרט Cordoba 15CFM Rose Red",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CFM Rose Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cm_bundle",
+      "name": "ערכת יוקללה קונצרט Cordoba 15CM Concert Ukulele Pack",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg",
+      "description": "ערכת יוקללה קונצרט Cordoba 15CM Concert Ukulele Pack",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1",
+      "name": "גיטרה קלאסית Cordoba C1",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1.jpg",
+      "description": "גיטרה קלאסית Cordoba C1",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1_3_4",
+      "name": "גיטרה קלאסית Cordoba C1 3/4",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg",
+      "description": "גיטרה קלאסית Cordoba C1 3/4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cm_matizmint",
+      "name": "יוקללה קונצרט Cordoba 15CM Matiz",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CM Matiz",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_stage_na",
+      "name": "גיטרה קלאסית מוגברת Cordoba Stage Natural Amber",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Stage Natural Amber",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_soundholecover",
+      "name": "Cordoba Soundhole Cover",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg",
+      "description": "Cordoba Soundhole Cover",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1_matiz_coral",
+      "name": "גיטרה קלאסית Cordoba C1 Matiz Coral",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg",
+      "description": "גיטרה קלאסית Cordoba C1 Matiz Coral",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_string_med",
+      "name": "Cordoba Nylon Guitar Strings - Medium",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_string_med.jpg",
+      "description": "Cordoba Nylon Guitar Strings - Medium",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_string_med.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_string_med.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_string_med.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_string_med.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_stage_bb",
+      "name": "גיטרה קלאסית מוגברת Cordoba Stage Black Burst",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Stage Black Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1_matiz_ps",
+      "name": "גיטרה קלאסית Cordoba C1 Matiz Pale Sky",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg",
+      "description": "גיטרה קלאסית Cordoba C1 Matiz Pale Sky",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_stage_tr",
+      "name": "גיטרה קלאסית מוגברת Cordoba Stage Traditional Cedar",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Stage Traditional Cedar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gkstudionegra_wr",
+      "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra Wine Red",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra Wine Red",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1m_1_4",
+      "name": "גיטרה קלאסית Cordoba C1M 1/4",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg",
+      "description": "גיטרה קלאסית Cordoba C1M 1/4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1m_ce",
+      "name": "גיטרה קלאסית מוגברת Cordoba C1M-CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba C1M-CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minim",
+      "name": "גיטרה קלאסית מיני Cordoba Mini M",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minim.jpg",
+      "description": "גיטרה קלאסית מיני Cordoba Mini M",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minim.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minim.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minim.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minim.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c1_matiz_cl_bu",
+      "name": "גיטרה קלאסית Cordoba C1 Matiz Classic Blue",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg",
+      "description": "גיטרה קלאסית Cordoba C1 Matiz Classic Blue",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_string_fusion",
+      "name": "Cordoba Nylon Guitar Strings - Fusion",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg",
+      "description": "Cordoba Nylon Guitar Strings - Fusion",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cm_matizm",
+      "name": "יוקללה קונצרט Cordoba 15CM Matiz",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CM Matiz",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minillmh",
+      "name": "גיטרה קלאסית מיני Cordoba Mini II MH",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg",
+      "description": "גיטרה קלאסית מיני Cordoba Mini II MH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cb",
+      "name": "יוקללה קונצרט Cordoba 15CB",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cb.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cb.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cb.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cb.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gb20",
+      "name": "תיק ליוקללה טנור Cordoba Standard",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gb20.jpg",
+      "description": "תיק ליוקללה טנור Cordoba Standard",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gb20.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb20.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gb20.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gb20.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5sp",
+      "name": "גיטרה קלאסית Cordoba C5-SP",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg",
+      "description": "גיטרה קלאסית Cordoba C5-SP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15sm",
+      "name": "יוקללה סופרן Cordoba 15SM",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15sm.jpg",
+      "description": "יוקללה סופרן Cordoba 15SM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15sm.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15sm.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15sm.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15sm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gkpronegra",
+      "name": "גיטרה קלאסית מוגברת Cordoba GK Pro Negra",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba GK Pro Negra",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gbconcertuk",
+      "name": "תיק ליוקללה קונצרט Cordoba Standard",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg",
+      "description": "תיק ליוקללה קונצרט Cordoba Standard",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gb10",
+      "name": "תיק ליוקללה סופרן Cordoba Standard",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gb10.jpg",
+      "description": "תיק ליוקללה סופרן Cordoba Standard",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gb10.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb10.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gb10.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gb10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_requinto_1_2",
+      "name": "גיטרה קלאסית חצי נפח Cordoba Requinto 1/2",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg",
+      "description": "גיטרה קלאסית חצי נפח Cordoba Requinto 1/2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minilleb_ce",
+      "name": "גיטרה מיני קלאסית מוגברת Cordoba Mini II EB-CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg",
+      "description": "גיטרה מיני קלאסית מוגברת Cordoba Mini II EB-CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5ce_cordoba",
+      "name": "גיטרה קלאסית Cordoba C5-CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg",
+      "description": "גיטרה קלאסית Cordoba C5-CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5",
+      "name": "גיטרה קלאסית Cordoba C5",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5.jpg",
+      "description": "גיטרה קלאסית Cordoba C5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_dolce",
+      "name": "גיטרה קלאסית Cordoba DOLCE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_dolce.jpg",
+      "description": "גיטרה קלאסית Cordoba DOLCE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_dolce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_dolce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_dolce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_dolce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minillsfe",
+      "name": "גיטרה קלאסית מיני Cordoba Mini II Santa Fe",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg",
+      "description": "גיטרה קלאסית מיני Cordoba Mini II Santa Fe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minisp_pk",
+      "name": "גיטרה קלאסית מיני Cordoba Mini II Padauk",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg",
+      "description": "גיטרה קלאסית מיני Cordoba Mini II Padauk",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minioce",
+      "name": "גיטרה קלאסית מוגברת מיני Cordoba Mini O-CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minioce.jpg",
+      "description": "גיטרה קלאסית מוגברת מיני Cordoba Mini O-CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minioce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minioce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minioce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minioce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_25t",
+      "name": "יוקללה טנור Cordoba 25T",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_25t.jpg",
+      "description": "יוקללה טנור Cordoba 25T",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_25t.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_25t.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_25t.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_25t.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_mini2mhce",
+      "name": "גיטרה מיני קלאסית מוגברת Cordoba Mini II MH CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg",
+      "description": "גיטרה מיני קלאסית מוגברת Cordoba Mini II MH CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minillbass",
+      "name": "גיטרה מיני בס אקוסטית מוגברת Cordoba MINI II Bass MH-E",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg",
+      "description": "גיטרה מיני בס אקוסטית מוגברת Cordoba MINI II Bass MH-E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_cadete",
+      "name": "גיטרה קלאסית 3/4 Cordoba Cadete",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_cadete.jpg",
+      "description": "גיטרה קלאסית 3/4 Cordoba Cadete",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_cadete.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_cadete.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_cadete.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_cadete.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_24t_ce",
+      "name": "יוקללה טנור מוגברת Cordoba 24T-CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg",
+      "description": "יוקללה טנור מוגברת Cordoba 24T-CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5limited",
+      "name": "גיטרה קלאסית Cordoba C5 Limited",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg",
+      "description": "גיטרה קלאסית Cordoba C5 Limited",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gbb",
+      "name": "תיק ליוקללה בריטון Cordoba Deluxe",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gbb.jpg",
+      "description": "תיק ליוקללה בריטון Cordoba Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gbb.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbb.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gbb.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gbb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5cd",
+      "name": "גיטרה קלאסית Cordoba C5-CD",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg",
+      "description": "גיטרה קלאסית Cordoba C5-CD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5_lh",
+      "name": "גיטרה קלאסית שמאלית Cordoba C5 Lefty",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg",
+      "description": "גיטרה קלאסית שמאלית Cordoba C5 Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_minikoa",
+      "name": "גיטרה קלאסית מיני Cordoba Mini Koa Limited",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg",
+      "description": "גיטרה קלאסית מיני Cordoba Mini Koa Limited",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gbdelux1_4",
+      "name": "Cordoba Deluxe Gig Bag 1/4",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg",
+      "description": "Cordoba Deluxe Gig Bag 1/4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion5jet_blk",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Jet Black",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Jet Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5ce_sp",
+      "name": "גיטרה קלאסית מוגברת Cordoba C5-CE Spruce",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba C5-CE Spruce",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_concertuke",
+      "name": "תיק ליוקללה קונצרט Cordoba Deluxe",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg",
+      "description": "תיק ליוקללה קונצרט Cordoba Deluxe",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gbdelux1_2_3_4",
+      "name": "Cordoba Deluxe Gig Bag 1/2-3/4 size",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg",
+      "description": "Cordoba Deluxe Gig Bag 1/2-3/4 size",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion5",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c7sp",
+      "name": "גיטרה קלאסית Cordoba C7-SP",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg",
+      "description": "גיטרה קלאסית Cordoba C7-SP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5_cet",
+      "name": "גיטרה קלאסית מוגברת Cordoba C5-CET",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba C5-CET",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion5_snb",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Sonata Burst",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Sonata Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5cet_lim",
+      "name": "גיטרה קלאסית מוגברת Cordoba C5-CET Limited",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba C5-CET Limited",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion5edgebr",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Edge Burst",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Edge Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c5ce_lh",
+      "name": "גיטרה קלאסית מוגברת שמאלית Cordoba C5CE-LH",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg",
+      "description": "גיטרה קלאסית מוגברת שמאלית Cordoba C5CE-LH",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_f7",
+      "name": "גיטרה קלאסית Cordoba F7 Flamenco",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_f7.jpg",
+      "description": "גיטרה קלאסית Cordoba F7 Flamenco",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_f7.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_f7.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_f7.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_f7.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c7cd",
+      "name": "גיטרה קלאסית Cordoba C7-CD",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg",
+      "description": "גיטרה קלאסית Cordoba C7-CD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_20bm",
+      "name": "יוקללה בריטון Cordoba 20BM",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_20bm.jpg",
+      "description": "יוקללה בריטון Cordoba 20BM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_20bm.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_20bm.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_20bm.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_20bm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_20cm",
+      "name": "יוקללה קונצרט Cordoba 20CM",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_20cm.jpg",
+      "description": "יוקללה קונצרט Cordoba 20CM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_20cm.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_20cm.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_20cm.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_20cm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_f7paco",
+      "name": "גיטרה קלאסית Cordoba F7 Paco",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg",
+      "description": "גיטרה קלאסית Cordoba F7 Paco",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_24t",
+      "name": "יוקללה טנור Cordoba 24T",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_24t.jpg",
+      "description": "יוקללה טנור Cordoba 24T",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_24t.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_24t.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_24t.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_24t.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_20tm_ce",
+      "name": "יוקללה טנור מוגברת Cordoba 20TM-CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg",
+      "description": "יוקללה טנור מוגברת Cordoba 20TM-CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15tm",
+      "name": "יוקללה טנור Cordoba 15TM",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15tm.jpg",
+      "description": "יוקללה טנור Cordoba 15TM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15tm.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15tm.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15tm.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15tm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cm_e",
+      "name": "יוקללה קונצרט מוגברת Cordoba 15CM-E",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg",
+      "description": "יוקללה קונצרט מוגברת Cordoba 15CM-E",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion12_ncd",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Natural",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Natural",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gkstudiolimi",
+      "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Limited",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Limited",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gkstudionegra",
+      "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gkstudionegra_l",
+      "name": "גיטרה קלאסית שמאלית מוגברת Cordoba GK Studio Negra Lefty",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg",
+      "description": "גיטרה קלאסית שמאלית מוגברת Cordoba GK Studio Negra Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gkstudio",
+      "name": "גיטרה קלאסית מוגברת Cordoba GK Studio",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba GK Studio",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_gkstudio_eb",
+      "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Edge Burst",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Edge Burst",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_cecd",
+      "name": "גיטרה קלאסית מוגברת Cordoba Orchestra CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_cecd.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Orchestra CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_cecd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_cecd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_cecd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_cecd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion12_maple",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Maple",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Maple",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c10sp",
+      "name": "גיטרה קלאסית Cordoba C10 SP",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg",
+      "description": "גיטרה קלאסית Cordoba C10 SP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_fusion14_maple",
+      "name": "גיטרה קלאסית מוגברת Cordoba Fusion 14 Maple",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba Fusion 14 Maple",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_55fce",
+      "name": "גיטרה קלאסית מוגברת Cordoba 55FCE Thin",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_55fce.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba 55FCE Thin",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_55fce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_55fce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_55fce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_55fce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c10_crossover",
+      "name": "גיטרה קלאסית Cordoba C10 Crossover",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg",
+      "description": "גיטרה קלאסית Cordoba C10 Crossover",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c10cd",
+      "name": "גיטרה קלאסית Cordoba C10 CD",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg",
+      "description": "גיטרה קלאסית Cordoba C10 CD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_f10_flamenco",
+      "name": "גיטרה קלאסית Cordoba F10 Flamenco",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg",
+      "description": "גיטרה קלאסית Cordoba F10 Flamenco",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_estesosp",
+      "name": "גיטרה קלאסית Cordoba Esteso SP",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg",
+      "description": "גיטרה קלאסית Cordoba Esteso SP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_45limited",
+      "name": "גיטרה קלאסית Cordoba 45Limited",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_45limited.jpg",
+      "description": "גיטרה קלאסית Cordoba 45Limited",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_45limited.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_45limited.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_45limited.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_45limited.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c9crossovercd",
+      "name": "גיטרה קלאסית Cordoba C9 Crossover",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg",
+      "description": "גיטרה קלאסית Cordoba C9 Crossover",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c9cd",
+      "name": "גיטרה קלאסית Cordoba C9 CD",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg",
+      "description": "גיטרה קלאסית Cordoba C9 CD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c10_lefty",
+      "name": "גיטרה קלאסית שמאלית Cordoba C10 CD Lefty",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg",
+      "description": "גיטרה קלאסית שמאלית Cordoba C10 CD Lefty",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_friederichcd",
+      "name": "גיטרה קלאסית Cordoba Friederich",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg",
+      "description": "גיטרה קלאסית Cordoba Friederich",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c12sp",
+      "name": "גיטרה קלאסית Cordoba C12 SP",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg",
+      "description": "גיטרה קלאסית Cordoba C12 SP",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c12",
+      "name": "גיטרה קלאסית Cordoba C12 CD",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c12.jpg",
+      "description": "גיטרה קלאסית Cordoba C12 CD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c12.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c12.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c12.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_c7ce",
+      "name": "גיטרה קלאסית מוגברת Cordoba C7CE",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg",
+      "description": "גיטרה קלאסית מוגברת Cordoba C7CE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cfm_gg",
+      "name": "יוקללה קונצרט Cordoba 15CFM Granite Grey",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CFM Granite Grey",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_xxxx",
+      "name": "גיטרה קלאסית Cordoba Hauser",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_xxxx.jpg",
+      "description": "גיטרה קלאסית Cordoba Hauser",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_xxxx.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_xxxx.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_xxxx.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_xxxx.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_15cfm_jg",
+      "name": "יוקללה קונצרט Cordoba 15CFM Jade Green",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg",
+      "description": "יוקללה קונצרט Cordoba 15CFM Jade Green",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_20tm",
+      "name": "יוקללה טנור Cordoba 20TM",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_20tm.jpg",
+      "description": "יוקללה טנור Cordoba 20TM",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_20tm.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_20tm.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_20tm.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_20tm.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_ukulelepconcert",
+      "name": "ערכת יוקללה קונצרט Cordoba Ukulele Player Pack Concert",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg",
+      "description": "ערכת יוקללה קונצרט Cordoba Ukulele Player Pack Concert",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_up100",
+      "name": "ערכת יוקללה קונצרט ואביזרים Cordoba UP100",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_up100.jpg",
+      "description": "ערכת יוקללה קונצרט ואביזרים Cordoba UP100",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_up100.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_up100.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_up100.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_up100.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "cordoba_guitars_76_torres",
+      "name": "גיטרה קלאסית Cordoba Torres",
+      "brand": "cordoba-guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/cordoba_guitars_76_torres.jpg",
+      "description": "גיטרה קלאסית Cordoba Torres",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/cordoba_guitars_76_torres.jpg",
+        "thumbnail": "/data/thumbnails/cordoba_guitars_76_torres.jpg",
+        "high_res": "/data/thumbnails/cordoba_guitars_76_torres.jpg",
+        "original": "/data/thumbnails/cordoba_guitars_76_torres.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Cordoba-Guitars",
+  "brand_slug": "cordoba-guitars",
+  "refined_at": "2026-01-24T02:50:44.868935+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "cordoba_guitars_76_c1m",
+          "name": "גיטרה קלאסית Cordoba C1M",
+          "description": "גיטרה קלאסית Cordoba C1M",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1m.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1m.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1m.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_musicstand",
+          "name": "Cordoba Music Stand",
+          "description": "Cordoba Music Stand",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_musicstand.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_cp100",
+          "name": "ערכת גיטרה קלאסית Cordoba CP100",
+          "description": "ערכת גיטרה קלאסית Cordoba CP100",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_cp100.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_cp100.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_cp100.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_cp100.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_35t_ce",
+          "name": "יוקללה טנור מוגברת Cordoba 35T-CE",
+          "description": "יוקללה טנור מוגברת Cordoba 35T-CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_35t_ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gb1_2",
+          "name": "Cordoba Gig Bag 1/2 size",
+          "description": "Cordoba Gig Bag 1/2 size",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gb1_2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gb3_4",
+          "name": "Cordoba Gig Bag 3/4 size",
+          "description": "Cordoba Gig Bag 3/4 size",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gb3_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gb1_4",
+          "name": "Cordoba Gig Bag 1/4 size",
+          "description": "Cordoba Gig Bag 1/4 size",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gb1_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5_crosslim",
+          "name": "גיטרה קלאסית Cordoba C5 Crossover Limited Edition",
+          "description": "גיטרה קלאסית Cordoba C5 Crossover Limited Edition",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5_crosslim.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion12_rii",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Rose II",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Rose II",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion12_rii.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gigbagfullsize",
+          "name": "Cordoba Standard Gig Bag",
+          "description": "Cordoba Standard Gig Bag",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gigbagfullsize.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_stool",
+          "name": "Cordoba Rustic Bar Stool",
+          "description": "Cordoba Rustic Bar Stool",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_stool.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_stool.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_stool.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_stool.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_stage_eb",
+          "name": "גיטרה קלאסית מוגברת Cordoba Stage Edge Burst",
+          "description": "גיטרה קלאסית מוגברת Cordoba Stage Edge Burst",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_stage_eb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cm",
+          "name": "יוקללה קונצרט Cordoba 15CM",
+          "description": "יוקללה קונצרט Cordoba 15CM",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cm.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cm.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c3m",
+          "name": "גיטרה קלאסית Cordoba C3M",
+          "description": "גיטרה קלאסית Cordoba C3M",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c3m.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c3m.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c3m.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c3m.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_string_hard",
+          "name": "Cordoba Nylon Guitar Strings - Hard",
+          "description": "Cordoba Nylon Guitar Strings - Hard",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_string_hard.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cm_matizcr",
+          "name": "יוקללה קונצרט Cordoba 15CM Matiz",
+          "description": "יוקללה קונצרט Cordoba 15CM Matiz",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cm_matizcr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_pcb100",
+          "name": "תיק לגיטרה קלאסית Cordoba Polyfoam Full Size",
+          "description": "תיק לגיטרה קלאסית Cordoba Polyfoam Full Size",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_pcb100.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1m_1_2",
+          "name": "גיטרה קלאסית חצי נפח Cordoba C1M 1/2",
+          "description": "גיטרה קלאסית חצי נפח Cordoba C1M 1/2",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1m_1_2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1m_3_4",
+          "name": "גיטרה קלאסית Cordoba C1M 3/4",
+          "description": "גיטרה קלאסית Cordoba C1M 3/4",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1m_3_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minillfmh",
+          "name": "גיטרה קלאסית מיני Cordoba Mini II FMH",
+          "description": "גיטרה קלאסית מיני Cordoba Mini II FMH",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minillfmh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_digtunerclip",
+          "name": "Cordoba Digital Clip-on Tuner",
+          "description": "Cordoba Digital Clip-on Tuner",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_digtunerclip.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gb_classic",
+          "name": "תיק לגיטרה קלאסית Cordoba Deluxe Gig Bag",
+          "description": "תיק לגיטרה קלאסית Cordoba Deluxe Gig Bag",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gb_classic.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1_matiz_aqua",
+          "name": "גיטרה קלאסית Cordoba C1 Matiz Aqua",
+          "description": "גיטרה קלאסית Cordoba C1 Matiz Aqua",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_aqua.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cfm_rr",
+          "name": "יוקללה קונצרט Cordoba 15CFM Rose Red",
+          "description": "יוקללה קונצרט Cordoba 15CFM Rose Red",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cfm_rr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cm_bundle",
+          "name": "ערכת יוקללה קונצרט Cordoba 15CM Concert Ukulele Pack",
+          "description": "ערכת יוקללה קונצרט Cordoba 15CM Concert Ukulele Pack",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cm_bundle.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1",
+          "name": "גיטרה קלאסית Cordoba C1",
+          "description": "גיטרה קלאסית Cordoba C1",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1_3_4",
+          "name": "גיטרה קלאסית Cordoba C1 3/4",
+          "description": "גיטרה קלאסית Cordoba C1 3/4",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1_3_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cm_matizmint",
+          "name": "יוקללה קונצרט Cordoba 15CM Matiz",
+          "description": "יוקללה קונצרט Cordoba 15CM Matiz",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cm_matizmint.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_stage_na",
+          "name": "גיטרה קלאסית מוגברת Cordoba Stage Natural Amber",
+          "description": "גיטרה קלאסית מוגברת Cordoba Stage Natural Amber",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_stage_na.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_soundholecover",
+          "name": "Cordoba Soundhole Cover",
+          "description": "Cordoba Soundhole Cover",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_soundholecover.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1_matiz_coral",
+          "name": "גיטרה קלאסית Cordoba C1 Matiz Coral",
+          "description": "גיטרה קלאסית Cordoba C1 Matiz Coral",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_coral.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_string_med",
+          "name": "Cordoba Nylon Guitar Strings - Medium",
+          "description": "Cordoba Nylon Guitar Strings - Medium",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_string_med.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_string_med.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_string_med.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_string_med.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_stage_bb",
+          "name": "גיטרה קלאסית מוגברת Cordoba Stage Black Burst",
+          "description": "גיטרה קלאסית מוגברת Cordoba Stage Black Burst",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_stage_bb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1_matiz_ps",
+          "name": "גיטרה קלאסית Cordoba C1 Matiz Pale Sky",
+          "description": "גיטרה קלאסית Cordoba C1 Matiz Pale Sky",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_ps.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_stage_tr",
+          "name": "גיטרה קלאסית מוגברת Cordoba Stage Traditional Cedar",
+          "description": "גיטרה קלאסית מוגברת Cordoba Stage Traditional Cedar",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_stage_tr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gkstudionegra_wr",
+          "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra Wine Red",
+          "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra Wine Red",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_wr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1m_1_4",
+          "name": "גיטרה קלאסית Cordoba C1M 1/4",
+          "description": "גיטרה קלאסית Cordoba C1M 1/4",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1m_1_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1m_ce",
+          "name": "גיטרה קלאסית מוגברת Cordoba C1M-CE",
+          "description": "גיטרה קלאסית מוגברת Cordoba C1M-CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1m_ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minim",
+          "name": "גיטרה קלאסית מיני Cordoba Mini M",
+          "description": "גיטרה קלאסית מיני Cordoba Mini M",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minim.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minim.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minim.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minim.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c1_matiz_cl_bu",
+          "name": "גיטרה קלאסית Cordoba C1 Matiz Classic Blue",
+          "description": "גיטרה קלאסית Cordoba C1 Matiz Classic Blue",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c1_matiz_cl_bu.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_string_fusion",
+          "name": "Cordoba Nylon Guitar Strings - Fusion",
+          "description": "Cordoba Nylon Guitar Strings - Fusion",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_string_fusion.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cm_matizm",
+          "name": "יוקללה קונצרט Cordoba 15CM Matiz",
+          "description": "יוקללה קונצרט Cordoba 15CM Matiz",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cm_matizm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minillmh",
+          "name": "גיטרה קלאסית מיני Cordoba Mini II MH",
+          "description": "גיטרה קלאסית מיני Cordoba Mini II MH",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minillmh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cb",
+          "name": "יוקללה קונצרט Cordoba 15CB",
+          "description": "יוקללה קונצרט Cordoba 15CB",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cb.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cb.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cb.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gb20",
+          "name": "תיק ליוקללה טנור Cordoba Standard",
+          "description": "תיק ליוקללה טנור Cordoba Standard",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gb20.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb20.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gb20.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gb20.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5sp",
+          "name": "גיטרה קלאסית Cordoba C5-SP",
+          "description": "גיטרה קלאסית Cordoba C5-SP",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5sp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15sm",
+          "name": "יוקללה סופרן Cordoba 15SM",
+          "description": "יוקללה סופרן Cordoba 15SM",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15sm.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15sm.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15sm.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15sm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gkpronegra",
+          "name": "גיטרה קלאסית מוגברת Cordoba GK Pro Negra",
+          "description": "גיטרה קלאסית מוגברת Cordoba GK Pro Negra",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gkpronegra.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gbconcertuk",
+          "name": "תיק ליוקללה קונצרט Cordoba Standard",
+          "description": "תיק ליוקללה קונצרט Cordoba Standard",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gbconcertuk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gb10",
+          "name": "תיק ליוקללה סופרן Cordoba Standard",
+          "description": "תיק ליוקללה סופרן Cordoba Standard",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gb10.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gb10.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gb10.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gb10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_requinto_1_2",
+          "name": "גיטרה קלאסית חצי נפח Cordoba Requinto 1/2",
+          "description": "גיטרה קלאסית חצי נפח Cordoba Requinto 1/2",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_requinto_1_2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minilleb_ce",
+          "name": "גיטרה מיני קלאסית מוגברת Cordoba Mini II EB-CE",
+          "description": "גיטרה מיני קלאסית מוגברת Cordoba Mini II EB-CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minilleb_ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5ce_cordoba",
+          "name": "גיטרה קלאסית Cordoba C5-CE",
+          "description": "גיטרה קלאסית Cordoba C5-CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5ce_cordoba.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5",
+          "name": "גיטרה קלאסית Cordoba C5",
+          "description": "גיטרה קלאסית Cordoba C5",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_dolce",
+          "name": "גיטרה קלאסית Cordoba DOLCE",
+          "description": "גיטרה קלאסית Cordoba DOLCE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_dolce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_dolce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_dolce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_dolce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minillsfe",
+          "name": "גיטרה קלאסית מיני Cordoba Mini II Santa Fe",
+          "description": "גיטרה קלאסית מיני Cordoba Mini II Santa Fe",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minillsfe.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minisp_pk",
+          "name": "גיטרה קלאסית מיני Cordoba Mini II Padauk",
+          "description": "גיטרה קלאסית מיני Cordoba Mini II Padauk",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minisp_pk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minioce",
+          "name": "גיטרה קלאסית מוגברת מיני Cordoba Mini O-CE",
+          "description": "גיטרה קלאסית מוגברת מיני Cordoba Mini O-CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minioce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minioce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minioce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minioce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_25t",
+          "name": "יוקללה טנור Cordoba 25T",
+          "description": "יוקללה טנור Cordoba 25T",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_25t.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_25t.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_25t.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_25t.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_mini2mhce",
+          "name": "גיטרה מיני קלאסית מוגברת Cordoba Mini II MH CE",
+          "description": "גיטרה מיני קלאסית מוגברת Cordoba Mini II MH CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_mini2mhce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minillbass",
+          "name": "גיטרה מיני בס אקוסטית מוגברת Cordoba MINI II Bass MH-E",
+          "description": "גיטרה מיני בס אקוסטית מוגברת Cordoba MINI II Bass MH-E",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minillbass.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_cadete",
+          "name": "גיטרה קלאסית 3/4 Cordoba Cadete",
+          "description": "גיטרה קלאסית 3/4 Cordoba Cadete",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_cadete.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_cadete.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_cadete.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_cadete.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_24t_ce",
+          "name": "יוקללה טנור מוגברת Cordoba 24T-CE",
+          "description": "יוקללה טנור מוגברת Cordoba 24T-CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_24t_ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5limited",
+          "name": "גיטרה קלאסית Cordoba C5 Limited",
+          "description": "גיטרה קלאסית Cordoba C5 Limited",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5limited.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gbb",
+          "name": "תיק ליוקללה בריטון Cordoba Deluxe",
+          "description": "תיק ליוקללה בריטון Cordoba Deluxe",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gbb.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbb.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gbb.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gbb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5cd",
+          "name": "גיטרה קלאסית Cordoba C5-CD",
+          "description": "גיטרה קלאסית Cordoba C5-CD",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5cd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5_lh",
+          "name": "גיטרה קלאסית שמאלית Cordoba C5 Lefty",
+          "description": "גיטרה קלאסית שמאלית Cordoba C5 Lefty",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5_lh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_minikoa",
+          "name": "גיטרה קלאסית מיני Cordoba Mini Koa Limited",
+          "description": "גיטרה קלאסית מיני Cordoba Mini Koa Limited",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_minikoa.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gbdelux1_4",
+          "name": "Cordoba Deluxe Gig Bag 1/4",
+          "description": "Cordoba Deluxe Gig Bag 1/4",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gbdelux1_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion5jet_blk",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Jet Black",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Jet Black",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion5jet_blk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5ce_sp",
+          "name": "גיטרה קלאסית מוגברת Cordoba C5-CE Spruce",
+          "description": "גיטרה קלאסית מוגברת Cordoba C5-CE Spruce",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5ce_sp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_concertuke",
+          "name": "תיק ליוקללה קונצרט Cordoba Deluxe",
+          "description": "תיק ליוקללה קונצרט Cordoba Deluxe",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_concertuke.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gbdelux1_2_3_4",
+          "name": "Cordoba Deluxe Gig Bag 1/2-3/4 size",
+          "description": "Cordoba Deluxe Gig Bag 1/2-3/4 size",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gbdelux1_2_3_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion5",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c7sp",
+          "name": "גיטרה קלאסית Cordoba C7-SP",
+          "description": "גיטרה קלאסית Cordoba C7-SP",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c7sp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5_cet",
+          "name": "גיטרה קלאסית מוגברת Cordoba C5-CET",
+          "description": "גיטרה קלאסית מוגברת Cordoba C5-CET",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5_cet.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion5_snb",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Sonata Burst",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Sonata Burst",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion5_snb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5cet_lim",
+          "name": "גיטרה קלאסית מוגברת Cordoba C5-CET Limited",
+          "description": "גיטרה קלאסית מוגברת Cordoba C5-CET Limited",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5cet_lim.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion5edgebr",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Edge Burst",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 5 Edge Burst",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion5edgebr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c5ce_lh",
+          "name": "גיטרה קלאסית מוגברת שמאלית Cordoba C5CE-LH",
+          "description": "גיטרה קלאסית מוגברת שמאלית Cordoba C5CE-LH",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c5ce_lh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_f7",
+          "name": "גיטרה קלאסית Cordoba F7 Flamenco",
+          "description": "גיטרה קלאסית Cordoba F7 Flamenco",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_f7.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_f7.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_f7.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_f7.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c7cd",
+          "name": "גיטרה קלאסית Cordoba C7-CD",
+          "description": "גיטרה קלאסית Cordoba C7-CD",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c7cd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_20bm",
+          "name": "יוקללה בריטון Cordoba 20BM",
+          "description": "יוקללה בריטון Cordoba 20BM",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_20bm.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_20bm.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_20bm.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_20bm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_20cm",
+          "name": "יוקללה קונצרט Cordoba 20CM",
+          "description": "יוקללה קונצרט Cordoba 20CM",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_20cm.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_20cm.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_20cm.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_20cm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_f7paco",
+          "name": "גיטרה קלאסית Cordoba F7 Paco",
+          "description": "גיטרה קלאסית Cordoba F7 Paco",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_f7paco.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_24t",
+          "name": "יוקללה טנור Cordoba 24T",
+          "description": "יוקללה טנור Cordoba 24T",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_24t.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_24t.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_24t.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_24t.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_20tm_ce",
+          "name": "יוקללה טנור מוגברת Cordoba 20TM-CE",
+          "description": "יוקללה טנור מוגברת Cordoba 20TM-CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_20tm_ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15tm",
+          "name": "יוקללה טנור Cordoba 15TM",
+          "description": "יוקללה טנור Cordoba 15TM",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15tm.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15tm.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15tm.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15tm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cm_e",
+          "name": "יוקללה קונצרט מוגברת Cordoba 15CM-E",
+          "description": "יוקללה קונצרט מוגברת Cordoba 15CM-E",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cm_e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion12_ncd",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Natural",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Natural",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion12_ncd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gkstudiolimi",
+          "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Limited",
+          "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Limited",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gkstudiolimi.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gkstudionegra",
+          "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra",
+          "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Negra",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gkstudionegra.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gkstudionegra_l",
+          "name": "גיטרה קלאסית שמאלית מוגברת Cordoba GK Studio Negra Lefty",
+          "description": "גיטרה קלאסית שמאלית מוגברת Cordoba GK Studio Negra Lefty",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gkstudionegra_l.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gkstudio",
+          "name": "גיטרה קלאסית מוגברת Cordoba GK Studio",
+          "description": "גיטרה קלאסית מוגברת Cordoba GK Studio",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gkstudio.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_gkstudio_eb",
+          "name": "גיטרה קלאסית מוגברת Cordoba GK Studio Edge Burst",
+          "description": "גיטרה קלאסית מוגברת Cordoba GK Studio Edge Burst",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_gkstudio_eb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_cecd",
+          "name": "גיטרה קלאסית מוגברת Cordoba Orchestra CE",
+          "description": "גיטרה קלאסית מוגברת Cordoba Orchestra CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_cecd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_cecd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_cecd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_cecd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion12_maple",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Maple",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 12 Maple",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion12_maple.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c10sp",
+          "name": "גיטרה קלאסית Cordoba C10 SP",
+          "description": "גיטרה קלאסית Cordoba C10 SP",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c10sp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_fusion14_maple",
+          "name": "גיטרה קלאסית מוגברת Cordoba Fusion 14 Maple",
+          "description": "גיטרה קלאסית מוגברת Cordoba Fusion 14 Maple",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_fusion14_maple.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_55fce",
+          "name": "גיטרה קלאסית מוגברת Cordoba 55FCE Thin",
+          "description": "גיטרה קלאסית מוגברת Cordoba 55FCE Thin",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_55fce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_55fce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_55fce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_55fce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c10_crossover",
+          "name": "גיטרה קלאסית Cordoba C10 Crossover",
+          "description": "גיטרה קלאסית Cordoba C10 Crossover",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c10_crossover.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c10cd",
+          "name": "גיטרה קלאסית Cordoba C10 CD",
+          "description": "גיטרה קלאסית Cordoba C10 CD",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c10cd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_f10_flamenco",
+          "name": "גיטרה קלאסית Cordoba F10 Flamenco",
+          "description": "גיטרה קלאסית Cordoba F10 Flamenco",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_f10_flamenco.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_estesosp",
+          "name": "גיטרה קלאסית Cordoba Esteso SP",
+          "description": "גיטרה קלאסית Cordoba Esteso SP",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_estesosp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_45limited",
+          "name": "גיטרה קלאסית Cordoba 45Limited",
+          "description": "גיטרה קלאסית Cordoba 45Limited",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_45limited.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_45limited.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_45limited.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_45limited.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c9crossovercd",
+          "name": "גיטרה קלאסית Cordoba C9 Crossover",
+          "description": "גיטרה קלאסית Cordoba C9 Crossover",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c9crossovercd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c9cd",
+          "name": "גיטרה קלאסית Cordoba C9 CD",
+          "description": "גיטרה קלאסית Cordoba C9 CD",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c9cd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c10_lefty",
+          "name": "גיטרה קלאסית שמאלית Cordoba C10 CD Lefty",
+          "description": "גיטרה קלאסית שמאלית Cordoba C10 CD Lefty",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c10_lefty.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_friederichcd",
+          "name": "גיטרה קלאסית Cordoba Friederich",
+          "description": "גיטרה קלאסית Cordoba Friederich",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_friederichcd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c12sp",
+          "name": "גיטרה קלאסית Cordoba C12 SP",
+          "description": "גיטרה קלאסית Cordoba C12 SP",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c12sp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c12",
+          "name": "גיטרה קלאסית Cordoba C12 CD",
+          "description": "גיטרה קלאסית Cordoba C12 CD",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c12.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c12.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c12.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_c7ce",
+          "name": "גיטרה קלאסית מוגברת Cordoba C7CE",
+          "description": "גיטרה קלאסית מוגברת Cordoba C7CE",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_c7ce.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cfm_gg",
+          "name": "יוקללה קונצרט Cordoba 15CFM Granite Grey",
+          "description": "יוקללה קונצרט Cordoba 15CFM Granite Grey",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cfm_gg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_xxxx",
+          "name": "גיטרה קלאסית Cordoba Hauser",
+          "description": "גיטרה קלאסית Cordoba Hauser",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_xxxx.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_xxxx.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_xxxx.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_xxxx.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_15cfm_jg",
+          "name": "יוקללה קונצרט Cordoba 15CFM Jade Green",
+          "description": "יוקללה קונצרט Cordoba 15CFM Jade Green",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_15cfm_jg.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_20tm",
+          "name": "יוקללה טנור Cordoba 20TM",
+          "description": "יוקללה טנור Cordoba 20TM",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_20tm.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_20tm.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_20tm.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_20tm.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_ukulelepconcert",
+          "name": "ערכת יוקללה קונצרט Cordoba Ukulele Player Pack Concert",
+          "description": "ערכת יוקללה קונצרט Cordoba Ukulele Player Pack Concert",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_ukulelepconcert.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_up100",
+          "name": "ערכת יוקללה קונצרט ואביזרים Cordoba UP100",
+          "description": "ערכת יוקללה קונצרט ואביזרים Cordoba UP100",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_up100.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_up100.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_up100.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_up100.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "cordoba_guitars_76_torres",
+          "name": "גיטרה קלאסית Cordoba Torres",
+          "description": "גיטרה קלאסית Cordoba Torres",
+          "images": {
+            "main": "/data/thumbnails/cordoba_guitars_76_torres.jpg",
+            "thumbnail": "/data/thumbnails/cordoba_guitars_76_torres.jpg",
+            "high_res": "/data/thumbnails/cordoba_guitars_76_torres.jpg",
+            "original": "/data/thumbnails/cordoba_guitars_76_torres.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

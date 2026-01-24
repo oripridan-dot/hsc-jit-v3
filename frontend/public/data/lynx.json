@@ -1,0 +1,582 @@
+{
+  "brand_identity": {
+    "id": "lynx",
+    "name": "LYNX",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/lynx_logo.png",
+    "taxonomy_stats": {
+      "validated": 18,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "lynx_48_mesa",
+      "name": "Lynx Mesa Thunderbolt 3 Audio Interface",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_mesa.jpg",
+      "description": "Lynx Mesa Thunderbolt 3 Audio Interface",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_mesa.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_mesa.jpg",
+        "high_res": "/data/thumbnails/lynx_48_mesa.jpg",
+        "original": "/data/thumbnails/lynx_48_mesa.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_e22",
+      "name": "Lynx E22",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_e22.jpg",
+      "description": "Lynx E22",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_e22.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_e22.jpg",
+        "high_res": "/data/thumbnails/lynx_48_e22.jpg",
+        "original": "/data/thumbnails/lynx_48_e22.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran8hd",
+      "name": "Lynx Aurora(n) 8 HD",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran8hd.jpg",
+      "description": "Lynx Aurora(n) 8 HD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran8hd.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran8hd.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran8hd.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran8hd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran32dnt",
+      "name": "Lynx Aurora(n) 32 DNT",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran32dnt.jpg",
+      "description": "Lynx Aurora(n) 32 DNT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran32dnt.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran32dnt.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran32dnt.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran32dnt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran8tb",
+      "name": "Lynx Aurora(n) 8 Thunderbolt",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran8tb.jpg",
+      "description": "Lynx Aurora(n) 8 Thunderbolt",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran8tb.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran8tb.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran8tb.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran8tb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran8usb",
+      "name": "Lynx Aurora(n) 8 USB",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran8usb.jpg",
+      "description": "Lynx Aurora(n) 8 USB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran8usb.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran8usb.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran8usb.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran8usb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_lt_usb",
+      "name": "Lynx LT-USB",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_lt_usb.jpg",
+      "description": "Lynx LT-USB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_lt_usb.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_lt_usb.jpg",
+        "high_res": "/data/thumbnails/lynx_48_lt_usb.jpg",
+        "original": "/data/thumbnails/lynx_48_lt_usb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran8dnt",
+      "name": "Lynx Aurora(n) 8 DNT",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran8dnt.jpg",
+      "description": "Lynx Aurora(n) 8 DNT",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran8dnt.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran8dnt.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran8dnt.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran8dnt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_e44",
+      "name": "Lynx E44",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_e44.jpg",
+      "description": "Lynx E44",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_e44.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_e44.jpg",
+        "high_res": "/data/thumbnails/lynx_48_e44.jpg",
+        "original": "/data/thumbnails/lynx_48_e44.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran16usb",
+      "name": "Lynx Aurora(n) 16 USB",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran16usb.jpg",
+      "description": "Lynx Aurora(n) 16 USB",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran16usb.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran16usb.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran16usb.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran16usb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran16hd",
+      "name": "Lynx Aurora(n) 16 HD",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran16hd.jpg",
+      "description": "Lynx Aurora(n) 16 HD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran16hd.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran16hd.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran16hd.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran16hd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_aes16_e",
+      "name": "Lynx AES16e",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_aes16_e.jpg",
+      "description": "Lynx AES16e",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_aes16_e.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_aes16_e.jpg",
+        "high_res": "/data/thumbnails/lynx_48_aes16_e.jpg",
+        "original": "/data/thumbnails/lynx_48_aes16_e.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran16dnt",
+      "name": "Lynx Aurora(n) 16 Dante",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran16dnt.jpg",
+      "description": "Lynx Aurora(n) 16 Dante",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran16dnt.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran16dnt.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran16dnt.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran16dnt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran24hd",
+      "name": "Lynx Aurora(n) 24 HD",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran24hd.jpg",
+      "description": "Lynx Aurora(n) 24 HD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran24hd.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran24hd.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran24hd.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran24hd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_aurora8_tb",
+      "name": "Lynx Aurora 8 Thunderbolt",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_aurora8_tb.jpg",
+      "description": "Lynx Aurora 8 Thunderbolt",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_aurora8_tb.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_aurora8_tb.jpg",
+        "high_res": "/data/thumbnails/lynx_48_aurora8_tb.jpg",
+        "original": "/data/thumbnails/lynx_48_aurora8_tb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran24tb",
+      "name": "Lynx Aurora(n) 24 Thunderbolt",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran24tb.jpg",
+      "description": "Lynx Aurora(n) 24 Thunderbolt",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran24tb.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran24tb.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran24tb.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran24tb.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran24dnt",
+      "name": "Lynx Aurora(n) 24 Dante",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran24dnt.jpg",
+      "description": "Lynx Aurora(n) 24 Dante",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran24dnt.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran24dnt.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran24dnt.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran24dnt.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "lynx_48_auroran32hd",
+      "name": "Lynx Aurora(n) 32 HD",
+      "brand": "lynx",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/lynx_48_auroran32hd.jpg",
+      "description": "Lynx Aurora(n) 32 HD",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/lynx_48_auroran32hd.jpg",
+        "thumbnail": "/data/thumbnails/lynx_48_auroran32hd.jpg",
+        "high_res": "/data/thumbnails/lynx_48_auroran32hd.jpg",
+        "original": "/data/thumbnails/lynx_48_auroran32hd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Lynx",
+  "brand_slug": "lynx",
+  "refined_at": "2026-01-24T02:50:45.078244+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "lynx_48_mesa",
+          "name": "Lynx Mesa Thunderbolt 3 Audio Interface",
+          "description": "Lynx Mesa Thunderbolt 3 Audio Interface",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_mesa.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_mesa.jpg",
+            "high_res": "/data/thumbnails/lynx_48_mesa.jpg",
+            "original": "/data/thumbnails/lynx_48_mesa.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_e22",
+          "name": "Lynx E22",
+          "description": "Lynx E22",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_e22.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_e22.jpg",
+            "high_res": "/data/thumbnails/lynx_48_e22.jpg",
+            "original": "/data/thumbnails/lynx_48_e22.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran8hd",
+          "name": "Lynx Aurora(n) 8 HD",
+          "description": "Lynx Aurora(n) 8 HD",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran8hd.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran8hd.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran8hd.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran8hd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran32dnt",
+          "name": "Lynx Aurora(n) 32 DNT",
+          "description": "Lynx Aurora(n) 32 DNT",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran32dnt.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran32dnt.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran32dnt.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran32dnt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran8tb",
+          "name": "Lynx Aurora(n) 8 Thunderbolt",
+          "description": "Lynx Aurora(n) 8 Thunderbolt",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran8tb.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran8tb.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran8tb.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran8tb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran8usb",
+          "name": "Lynx Aurora(n) 8 USB",
+          "description": "Lynx Aurora(n) 8 USB",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran8usb.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran8usb.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran8usb.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran8usb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_lt_usb",
+          "name": "Lynx LT-USB",
+          "description": "Lynx LT-USB",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_lt_usb.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_lt_usb.jpg",
+            "high_res": "/data/thumbnails/lynx_48_lt_usb.jpg",
+            "original": "/data/thumbnails/lynx_48_lt_usb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran8dnt",
+          "name": "Lynx Aurora(n) 8 DNT",
+          "description": "Lynx Aurora(n) 8 DNT",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran8dnt.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran8dnt.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran8dnt.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran8dnt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_e44",
+          "name": "Lynx E44",
+          "description": "Lynx E44",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_e44.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_e44.jpg",
+            "high_res": "/data/thumbnails/lynx_48_e44.jpg",
+            "original": "/data/thumbnails/lynx_48_e44.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran16usb",
+          "name": "Lynx Aurora(n) 16 USB",
+          "description": "Lynx Aurora(n) 16 USB",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran16usb.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran16usb.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran16usb.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran16usb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran16hd",
+          "name": "Lynx Aurora(n) 16 HD",
+          "description": "Lynx Aurora(n) 16 HD",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran16hd.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran16hd.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran16hd.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran16hd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_aes16_e",
+          "name": "Lynx AES16e",
+          "description": "Lynx AES16e",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_aes16_e.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_aes16_e.jpg",
+            "high_res": "/data/thumbnails/lynx_48_aes16_e.jpg",
+            "original": "/data/thumbnails/lynx_48_aes16_e.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran16dnt",
+          "name": "Lynx Aurora(n) 16 Dante",
+          "description": "Lynx Aurora(n) 16 Dante",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran16dnt.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran16dnt.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran16dnt.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran16dnt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran24hd",
+          "name": "Lynx Aurora(n) 24 HD",
+          "description": "Lynx Aurora(n) 24 HD",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran24hd.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran24hd.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran24hd.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran24hd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_aurora8_tb",
+          "name": "Lynx Aurora 8 Thunderbolt",
+          "description": "Lynx Aurora 8 Thunderbolt",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_aurora8_tb.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_aurora8_tb.jpg",
+            "high_res": "/data/thumbnails/lynx_48_aurora8_tb.jpg",
+            "original": "/data/thumbnails/lynx_48_aurora8_tb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran24tb",
+          "name": "Lynx Aurora(n) 24 Thunderbolt",
+          "description": "Lynx Aurora(n) 24 Thunderbolt",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran24tb.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran24tb.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran24tb.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran24tb.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran24dnt",
+          "name": "Lynx Aurora(n) 24 Dante",
+          "description": "Lynx Aurora(n) 24 Dante",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran24dnt.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran24dnt.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran24dnt.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran24dnt.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "lynx_48_auroran32hd",
+          "name": "Lynx Aurora(n) 32 HD",
+          "description": "Lynx Aurora(n) 32 HD",
+          "images": {
+            "main": "/data/thumbnails/lynx_48_auroran32hd.jpg",
+            "thumbnail": "/data/thumbnails/lynx_48_auroran32hd.jpg",
+            "high_res": "/data/thumbnails/lynx_48_auroran32hd.jpg",
+            "original": "/data/thumbnails/lynx_48_auroran32hd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

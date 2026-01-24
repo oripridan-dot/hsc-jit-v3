@@ -1,0 +1,705 @@
+{
+  "brand_identity": {
+    "id": "hiwatt",
+    "name": "HIWATT",
+    "brand_colors": {},
+    "taxonomy_stats": {
+      "validated": 22,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "hiwatt_75_hi5",
+      "name": "מגבר מנורות לגיטרה חשמלית \"Hiwatt Hi-5 1x10",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_hi5.jpg",
+      "description": "מגבר מנורות לגיטרה חשמלית \"Hiwatt Hi-5 1x10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_hi5.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_hi5.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_hi5.jpg",
+        "original": "/data/thumbnails/hiwatt_75_hi5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_t2010",
+      "name": "מגבר מנורות לגיטרה חשמלית Hiwatt T20/10",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_t2010.jpg",
+      "description": "מגבר מנורות לגיטרה חשמלית Hiwatt T20/10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_t2010.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_t2010.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_t2010.jpg",
+        "original": "/data/thumbnails/hiwatt_75_t2010.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_t4020",
+      "name": "מגבר ראש מנורות לגיטרה חשמלית Hiwatt T40/20",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_t4020.jpg",
+      "description": "מגבר ראש מנורות לגיטרה חשמלית Hiwatt T40/20",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_t4020.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_t4020.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_t4020.jpg",
+        "original": "/data/thumbnails/hiwatt_75_t4020.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_t4020212",
+      "name": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 2x12",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_t4020212.jpg",
+      "description": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 2x12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_t4020212.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_t4020212.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_t4020212.jpg",
+        "original": "/data/thumbnails/hiwatt_75_t4020212.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_t4020112",
+      "name": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 1X12",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_t4020112.jpg",
+      "description": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 1X12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_t4020112.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_t4020112.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_t4020112.jpg",
+        "original": "/data/thumbnails/hiwatt_75_t4020112.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_leeds50r",
+      "name": "מגבר לגיטרה חשמלית Hiwatt Leeds 50R",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_leeds50r.jpg",
+      "description": "מגבר לגיטרה חשמלית Hiwatt Leeds 50R",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_leeds50r.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_leeds50r.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_leeds50r.jpg",
+        "original": "/data/thumbnails/hiwatt_75_leeds50r.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_leeds17",
+      "name": "מגבר לגיטרה חשמלית Hiwatt Leeds 17",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_leeds17.jpg",
+      "description": "מגבר לגיטרה חשמלית Hiwatt Leeds 17",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_leeds17.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_leeds17.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_leeds17.jpg",
+        "original": "/data/thumbnails/hiwatt_75_leeds17.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_superleeds150c",
+      "name": "מגבר נייד לגיטרה חשמלית Hiwatt Super Leeds 150R",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_superleeds150c.jpg",
+      "description": "מגבר נייד לגיטרה חשמלית Hiwatt Super Leeds 150R",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_superleeds150c.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_superleeds150c.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_superleeds150c.jpg",
+        "original": "/data/thumbnails/hiwatt_75_superleeds150c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_superleeds150hd",
+      "name": "מגבר ראש לגיטרה חשמלית Hiwatt Super Leeds 150R Head",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg",
+      "description": "מגבר ראש לגיטרה חשמלית Hiwatt Super Leeds 150R Head",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg",
+        "original": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_leeds25r",
+      "name": "מגבר לגיטרה חשמלית Hiwatt Leeds 25R",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_leeds25r.jpg",
+      "description": "מגבר לגיטרה חשמלית Hiwatt Leeds 25R",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_leeds25r.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_leeds25r.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_leeds25r.jpg",
+        "original": "/data/thumbnails/hiwatt_75_leeds25r.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_bulldog77",
+      "name": "מגבר לגיטרה בס Hiwatt Bulldog 77",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_bulldog77.jpg",
+      "description": "מגבר לגיטרה בס Hiwatt Bulldog 77",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_bulldog77.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_bulldog77.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_bulldog77.jpg",
+        "original": "/data/thumbnails/hiwatt_75_bulldog77.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_leedsgo40",
+      "name": "מגבר נייד לגיטרה ומיקרופון Hiwatt Leeds GO40",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_leedsgo40.jpg",
+      "description": "מגבר נייד לגיטרה ומיקרופון Hiwatt Leeds GO40",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_leedsgo40.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_leedsgo40.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_leedsgo40.jpg",
+        "original": "/data/thumbnails/hiwatt_75_leedsgo40.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_bulldog17",
+      "name": "מגבר לגיטרה בס Hiwatt Bulldog 17",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_bulldog17.jpg",
+      "description": "מגבר לגיטרה בס Hiwatt Bulldog 17",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_bulldog17.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_bulldog17.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_bulldog17.jpg",
+        "original": "/data/thumbnails/hiwatt_75_bulldog17.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_bulldog770",
+      "name": "ראש מגבר לגיטרה בס Hiwatt Bulldog 770",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_bulldog770.jpg",
+      "description": "ראש מגבר לגיטרה בס Hiwatt Bulldog 770",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_bulldog770.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_bulldog770.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_bulldog770.jpg",
+        "original": "/data/thumbnails/hiwatt_75_bulldog770.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_bulldog30",
+      "name": "מגבר לגיטרה בס Hiwatt Bulldog 30",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_bulldog30.jpg",
+      "description": "מגבר לגיטרה בס Hiwatt Bulldog 30",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_bulldog30.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_bulldog30.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_bulldog30.jpg",
+        "original": "/data/thumbnails/hiwatt_75_bulldog30.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_bulldog440",
+      "name": "ראש מגבר לגיטרה בס Hiwatt Bulldog 440",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_bulldog440.jpg",
+      "description": "ראש מגבר לגיטרה בס Hiwatt Bulldog 440",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_bulldog440.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_bulldog440.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_bulldog440.jpg",
+        "original": "/data/thumbnails/hiwatt_75_bulldog440.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_hg212",
+      "name": "קבינה לגיטרה חשמלית \"Hiwatt HG212 2x12",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_hg212.jpg",
+      "description": "קבינה לגיטרה חשמלית \"Hiwatt HG212 2x12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_hg212.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_hg212.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_hg212.jpg",
+        "original": "/data/thumbnails/hiwatt_75_hg212.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_hg412",
+      "name": "קבינה לגיטרה חשמלית \"Hiwatt HG412 4x12",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_hg412.jpg",
+      "description": "קבינה לגיטרה חשמלית \"Hiwatt HG412 4x12",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_hg412.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_hg412.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_hg412.jpg",
+        "original": "/data/thumbnails/hiwatt_75_hg412.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_b410",
+      "name": "קבינה לגיטרה חשמלית \"Hiwatt B410 4x10",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_b410.jpg",
+      "description": "קבינה לגיטרה חשמלית \"Hiwatt B410 4x10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_b410.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_b410.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_b410.jpg",
+        "original": "/data/thumbnails/hiwatt_75_b410.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_hb115nh",
+      "name": "קבינה לגיטרת בס \"Hiwatt HB115HN 1x15",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_hb115nh.jpg",
+      "description": "קבינה לגיטרת בס \"Hiwatt HB115HN 1x15",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_hb115nh.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_hb115nh.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_hb115nh.jpg",
+        "original": "/data/thumbnails/hiwatt_75_hb115nh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_fs201",
+      "name": "פדל פוטסוויץ' Hiwatt FS201",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_fs201.jpg",
+      "description": "פדל פוטסוויץ' Hiwatt FS201",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_fs201.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_fs201.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_fs201.jpg",
+        "original": "/data/thumbnails/hiwatt_75_fs201.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "hiwatt_75_fs301l",
+      "name": "פדל פוטסוויץ' Hiwatt FS301L",
+      "brand": "hiwatt",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/hiwatt_75_fs301l.jpg",
+      "description": "פדל פוטסוויץ' Hiwatt FS301L",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/hiwatt_75_fs301l.jpg",
+        "thumbnail": "/data/thumbnails/hiwatt_75_fs301l.jpg",
+        "high_res": "/data/thumbnails/hiwatt_75_fs301l.jpg",
+        "original": "/data/thumbnails/hiwatt_75_fs301l.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Hiwatt",
+  "brand_slug": "hiwatt",
+  "refined_at": "2026-01-24T02:50:44.820889+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "hiwatt_75_hi5",
+          "name": "מגבר מנורות לגיטרה חשמלית \"Hiwatt Hi-5 1x10",
+          "description": "מגבר מנורות לגיטרה חשמלית \"Hiwatt Hi-5 1x10",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_hi5.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_hi5.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_hi5.jpg",
+            "original": "/data/thumbnails/hiwatt_75_hi5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_t2010",
+          "name": "מגבר מנורות לגיטרה חשמלית Hiwatt T20/10",
+          "description": "מגבר מנורות לגיטרה חשמלית Hiwatt T20/10",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_t2010.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_t2010.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_t2010.jpg",
+            "original": "/data/thumbnails/hiwatt_75_t2010.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_t4020",
+          "name": "מגבר ראש מנורות לגיטרה חשמלית Hiwatt T40/20",
+          "description": "מגבר ראש מנורות לגיטרה חשמלית Hiwatt T40/20",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_t4020.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_t4020.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_t4020.jpg",
+            "original": "/data/thumbnails/hiwatt_75_t4020.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_t4020212",
+          "name": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 2x12",
+          "description": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 2x12",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_t4020212.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_t4020212.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_t4020212.jpg",
+            "original": "/data/thumbnails/hiwatt_75_t4020212.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_t4020112",
+          "name": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 1X12",
+          "description": "מגבר מנורות לגיטרה חשמלית Hiwatt T40/20 1X12",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_t4020112.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_t4020112.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_t4020112.jpg",
+            "original": "/data/thumbnails/hiwatt_75_t4020112.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_leeds50r",
+          "name": "מגבר לגיטרה חשמלית Hiwatt Leeds 50R",
+          "description": "מגבר לגיטרה חשמלית Hiwatt Leeds 50R",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_leeds50r.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_leeds50r.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_leeds50r.jpg",
+            "original": "/data/thumbnails/hiwatt_75_leeds50r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_leeds17",
+          "name": "מגבר לגיטרה חשמלית Hiwatt Leeds 17",
+          "description": "מגבר לגיטרה חשמלית Hiwatt Leeds 17",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_leeds17.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_leeds17.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_leeds17.jpg",
+            "original": "/data/thumbnails/hiwatt_75_leeds17.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_superleeds150c",
+          "name": "מגבר נייד לגיטרה חשמלית Hiwatt Super Leeds 150R",
+          "description": "מגבר נייד לגיטרה חשמלית Hiwatt Super Leeds 150R",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_superleeds150c.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_superleeds150c.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_superleeds150c.jpg",
+            "original": "/data/thumbnails/hiwatt_75_superleeds150c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_superleeds150hd",
+          "name": "מגבר ראש לגיטרה חשמלית Hiwatt Super Leeds 150R Head",
+          "description": "מגבר ראש לגיטרה חשמלית Hiwatt Super Leeds 150R Head",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg",
+            "original": "/data/thumbnails/hiwatt_75_superleeds150hd.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_leeds25r",
+          "name": "מגבר לגיטרה חשמלית Hiwatt Leeds 25R",
+          "description": "מגבר לגיטרה חשמלית Hiwatt Leeds 25R",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_leeds25r.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_leeds25r.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_leeds25r.jpg",
+            "original": "/data/thumbnails/hiwatt_75_leeds25r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_bulldog77",
+          "name": "מגבר לגיטרה בס Hiwatt Bulldog 77",
+          "description": "מגבר לגיטרה בס Hiwatt Bulldog 77",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_bulldog77.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_bulldog77.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_bulldog77.jpg",
+            "original": "/data/thumbnails/hiwatt_75_bulldog77.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_leedsgo40",
+          "name": "מגבר נייד לגיטרה ומיקרופון Hiwatt Leeds GO40",
+          "description": "מגבר נייד לגיטרה ומיקרופון Hiwatt Leeds GO40",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_leedsgo40.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_leedsgo40.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_leedsgo40.jpg",
+            "original": "/data/thumbnails/hiwatt_75_leedsgo40.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_bulldog17",
+          "name": "מגבר לגיטרה בס Hiwatt Bulldog 17",
+          "description": "מגבר לגיטרה בס Hiwatt Bulldog 17",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_bulldog17.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_bulldog17.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_bulldog17.jpg",
+            "original": "/data/thumbnails/hiwatt_75_bulldog17.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_bulldog770",
+          "name": "ראש מגבר לגיטרה בס Hiwatt Bulldog 770",
+          "description": "ראש מגבר לגיטרה בס Hiwatt Bulldog 770",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_bulldog770.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_bulldog770.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_bulldog770.jpg",
+            "original": "/data/thumbnails/hiwatt_75_bulldog770.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_bulldog30",
+          "name": "מגבר לגיטרה בס Hiwatt Bulldog 30",
+          "description": "מגבר לגיטרה בס Hiwatt Bulldog 30",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_bulldog30.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_bulldog30.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_bulldog30.jpg",
+            "original": "/data/thumbnails/hiwatt_75_bulldog30.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_bulldog440",
+          "name": "ראש מגבר לגיטרה בס Hiwatt Bulldog 440",
+          "description": "ראש מגבר לגיטרה בס Hiwatt Bulldog 440",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_bulldog440.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_bulldog440.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_bulldog440.jpg",
+            "original": "/data/thumbnails/hiwatt_75_bulldog440.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_hg212",
+          "name": "קבינה לגיטרה חשמלית \"Hiwatt HG212 2x12",
+          "description": "קבינה לגיטרה חשמלית \"Hiwatt HG212 2x12",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_hg212.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_hg212.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_hg212.jpg",
+            "original": "/data/thumbnails/hiwatt_75_hg212.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_hg412",
+          "name": "קבינה לגיטרה חשמלית \"Hiwatt HG412 4x12",
+          "description": "קבינה לגיטרה חשמלית \"Hiwatt HG412 4x12",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_hg412.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_hg412.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_hg412.jpg",
+            "original": "/data/thumbnails/hiwatt_75_hg412.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_b410",
+          "name": "קבינה לגיטרה חשמלית \"Hiwatt B410 4x10",
+          "description": "קבינה לגיטרה חשמלית \"Hiwatt B410 4x10",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_b410.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_b410.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_b410.jpg",
+            "original": "/data/thumbnails/hiwatt_75_b410.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_hb115nh",
+          "name": "קבינה לגיטרת בס \"Hiwatt HB115HN 1x15",
+          "description": "קבינה לגיטרת בס \"Hiwatt HB115HN 1x15",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_hb115nh.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_hb115nh.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_hb115nh.jpg",
+            "original": "/data/thumbnails/hiwatt_75_hb115nh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_fs201",
+          "name": "פדל פוטסוויץ' Hiwatt FS201",
+          "description": "פדל פוטסוויץ' Hiwatt FS201",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_fs201.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_fs201.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_fs201.jpg",
+            "original": "/data/thumbnails/hiwatt_75_fs201.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "hiwatt_75_fs301l",
+          "name": "פדל פוטסוויץ' Hiwatt FS301L",
+          "description": "פדל פוטסוויץ' Hiwatt FS301L",
+          "images": {
+            "main": "/data/thumbnails/hiwatt_75_fs301l.jpg",
+            "thumbnail": "/data/thumbnails/hiwatt_75_fs301l.jpg",
+            "high_res": "/data/thumbnails/hiwatt_75_fs301l.jpg",
+            "original": "/data/thumbnails/hiwatt_75_fs301l.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

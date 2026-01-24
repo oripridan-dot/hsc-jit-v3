@@ -1,0 +1,179 @@
+{
+  "brand_identity": {
+    "id": "mjc-ironworks",
+    "name": "MJC-IRONWORKS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/mjc-ironworks_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 5,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "mjc_ironworks_65_mjcabrst1356",
+      "name": "MJC Ironworks MED Acoustic Guitar",
+      "brand": "mjc-ironworks",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg",
+      "description": "MJC Ironworks MED Acoustic Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg",
+        "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg",
+        "high_res": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg",
+        "original": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "mjc_ironworks_65_mjcabrst1254",
+      "name": "MJC Ironworks ML Acoustic Guitar",
+      "brand": "mjc-ironworks",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg",
+      "description": "MJC Ironworks ML Acoustic Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg",
+        "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg",
+        "high_res": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg",
+        "original": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "mjc_ironworks_65_mjcabrst1048",
+      "name": "MJC Ironworks XL Acoustic Guitar",
+      "brand": "mjc-ironworks",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg",
+      "description": "MJC Ironworks XL Acoustic Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg",
+        "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg",
+        "high_res": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg",
+        "original": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "mjc_ironworks_65_mjcmed1152",
+      "name": "MJC Ironworks MED Electric Guitar",
+      "brand": "mjc-ironworks",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg",
+      "description": "MJC Ironworks MED Electric Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg",
+        "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg",
+        "high_res": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg",
+        "original": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "mjc_ironworks_65_mjcxmed1254",
+      "name": "MJC Ironworks MEDX Electric Guitar",
+      "brand": "mjc-ironworks",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg",
+      "description": "MJC Ironworks MEDX Electric Guitar",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg",
+        "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg",
+        "high_res": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg",
+        "original": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Mjc-Ironworks",
+  "brand_slug": "mjc-ironworks",
+  "refined_at": "2026-01-24T02:50:44.853454+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "mjc_ironworks_65_mjcabrst1356",
+          "name": "MJC Ironworks MED Acoustic Guitar",
+          "description": "MJC Ironworks MED Acoustic Guitar",
+          "images": {
+            "main": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg",
+            "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg",
+            "high_res": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg",
+            "original": "/data/thumbnails/mjc_ironworks_65_mjcabrst1356.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "mjc_ironworks_65_mjcabrst1254",
+          "name": "MJC Ironworks ML Acoustic Guitar",
+          "description": "MJC Ironworks ML Acoustic Guitar",
+          "images": {
+            "main": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg",
+            "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg",
+            "high_res": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg",
+            "original": "/data/thumbnails/mjc_ironworks_65_mjcabrst1254.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "mjc_ironworks_65_mjcabrst1048",
+          "name": "MJC Ironworks XL Acoustic Guitar",
+          "description": "MJC Ironworks XL Acoustic Guitar",
+          "images": {
+            "main": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg",
+            "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg",
+            "high_res": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg",
+            "original": "/data/thumbnails/mjc_ironworks_65_mjcabrst1048.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "mjc_ironworks_65_mjcmed1152",
+          "name": "MJC Ironworks MED Electric Guitar",
+          "description": "MJC Ironworks MED Electric Guitar",
+          "images": {
+            "main": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg",
+            "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg",
+            "high_res": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg",
+            "original": "/data/thumbnails/mjc_ironworks_65_mjcmed1152.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "mjc_ironworks_65_mjcxmed1254",
+          "name": "MJC Ironworks MEDX Electric Guitar",
+          "description": "MJC Ironworks MEDX Electric Guitar",
+          "images": {
+            "main": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg",
+            "thumbnail": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg",
+            "high_res": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg",
+            "original": "/data/thumbnails/mjc_ironworks_65_mjcxmed1254.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,706 @@
+{
+  "brand_identity": {
+    "id": "krk-systems",
+    "name": "KRK-SYSTEMS",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/krk-systems_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 22,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "krk_systems_21_rp8g5",
+      "name": "מוניטור אולפני KRK Rokit 8 G5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_rp8g5.jpg",
+      "description": "מוניטור אולפני KRK Rokit 8 G5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_rp8g5.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_rp8g5.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_rp8g5.jpg",
+        "original": "/data/thumbnails/krk_systems_21_rp8g5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_rp7g5",
+      "name": "מוניטור אולפני KRK Rokit 7 G5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_rp7g5.jpg",
+      "description": "מוניטור אולפני KRK Rokit 7 G5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_rp7g5.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_rp7g5.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_rp7g5.jpg",
+        "original": "/data/thumbnails/krk_systems_21_rp7g5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_rp5g5w",
+      "name": "מוניטור אולפני KRK Rokit 5 G5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_rp5g5w.jpg",
+      "description": "מוניטור אולפני KRK Rokit 5 G5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_rp5g5w.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_rp5g5w.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_rp5g5w.jpg",
+        "original": "/data/thumbnails/krk_systems_21_rp5g5w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_rp5g5",
+      "name": "מוניטור אולפני KRK Rokit 5 G5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_rp5g5.jpg",
+      "description": "מוניטור אולפני KRK Rokit 5 G5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_rp5g5.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_rp5g5.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_rp5g5.jpg",
+        "original": "/data/thumbnails/krk_systems_21_rp5g5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_goaux3",
+      "name": "זוג מוניטורים KRK GoAux 3",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_goaux3.jpg",
+      "description": "זוג מוניטורים KRK GoAux 3",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_goaux3.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_goaux3.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_goaux3.jpg",
+        "original": "/data/thumbnails/krk_systems_21_goaux3.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_k5w",
+      "name": "מוניטור אולפני KRK Kreate 5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_k5w.jpg",
+      "description": "מוניטור אולפני KRK Kreate 5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_k5w.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_k5w.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_k5w.jpg",
+        "original": "/data/thumbnails/krk_systems_21_k5w.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_k5",
+      "name": "מוניטור אולפני KRK Kreate 5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_k5.jpg",
+      "description": "מוניטור אולפני KRK Kreate 5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_k5.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_k5.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_k5.jpg",
+        "original": "/data/thumbnails/krk_systems_21_k5.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_k5s",
+      "name": "מוניטור אולפני KRK Kreate 5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_k5s.jpg",
+      "description": "מוניטור אולפני KRK Kreate 5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_k5s.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_k5s.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_k5s.jpg",
+        "original": "/data/thumbnails/krk_systems_21_k5s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_k3",
+      "name": "זוג מוניטורים אולפניים KRK Kreate 3",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_k3.jpg",
+      "description": "זוג מוניטורים אולפניים KRK Kreate 3",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_k3.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_k3.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_k3.jpg",
+        "original": "/data/thumbnails/krk_systems_21_k3.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_k8",
+      "name": "מוניטור אולפני KRK Kreate 8",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_k8.jpg",
+      "description": "מוניטור אולפני KRK Kreate 8",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_k8.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_k8.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_k8.jpg",
+        "original": "/data/thumbnails/krk_systems_21_k8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_k5l",
+      "name": "מוניטור אולפני KRK Kreate 5",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_k5l.jpg",
+      "description": "מוניטור אולפני KRK Kreate 5",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_k5l.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_k5l.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_k5l.jpg",
+        "original": "/data/thumbnails/krk_systems_21_k5l.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_s12_4",
+      "name": "סאבוופר אולפני KRK S12.4 Subwoofer",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_s12_4.jpg",
+      "description": "סאבוופר אולפני KRK S12.4 Subwoofer",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_s12_4.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_s12_4.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_s12_4.jpg",
+        "original": "/data/thumbnails/krk_systems_21_s12_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_kns6402",
+      "name": "אוזניות KRK KNS 6402",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_kns6402.jpg",
+      "description": "אוזניות KRK KNS 6402",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_kns6402.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_kns6402.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_kns6402.jpg",
+        "original": "/data/thumbnails/krk_systems_21_kns6402.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_kns8402",
+      "name": "אוזניות KRK KNS 8402",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_kns8402.jpg",
+      "description": "אוזניות KRK KNS 8402",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_kns8402.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_kns8402.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_kns8402.jpg",
+        "original": "/data/thumbnails/krk_systems_21_kns8402.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_cblk00030",
+      "name": "כבל מאריך לאוזניות KRK",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_cblk00030.jpg",
+      "description": "כבל מאריך לאוזניות KRK",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_cblk00030.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_cblk00030.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_cblk00030.jpg",
+        "original": "/data/thumbnails/krk_systems_21_cblk00030.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_v4s4",
+      "name": "מוניטור אולפני KRK V4 S4",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_v4s4.jpg",
+      "description": "מוניטור אולפני KRK V4 S4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_v4s4.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_v4s4.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_v4s4.jpg",
+        "original": "/data/thumbnails/krk_systems_21_v4s4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_v6s4",
+      "name": "מוניטור אולפני KRK V6 S4",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_v6s4.jpg",
+      "description": "מוניטור אולפני KRK V6 S4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_v6s4.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_v6s4.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_v6s4.jpg",
+        "original": "/data/thumbnails/krk_systems_21_v6s4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_v8s4",
+      "name": "מוניטור אולפני KRK V8 S4",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_v8s4.jpg",
+      "description": "מוניטור אולפני KRK V8 S4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_v8s4.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_v8s4.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_v8s4.jpg",
+        "original": "/data/thumbnails/krk_systems_21_v8s4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_cl8g3ss",
+      "name": "מוניטור אולפני KRK Classic 8ss Scott Storch",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg",
+      "description": "מוניטור אולפני KRK Classic 8ss Scott Storch",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg",
+        "original": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_goaux4",
+      "name": "זוג מוניטורים KRK GoAux 4",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_goaux4.jpg",
+      "description": "זוג מוניטורים KRK GoAux 4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_goaux4.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_goaux4.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_goaux4.jpg",
+        "original": "/data/thumbnails/krk_systems_21_goaux4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_s10_4",
+      "name": "סאבוופר אולפני KRK S10.4 Subwoofer",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_s10_4.jpg",
+      "description": "סאבוופר אולפני KRK S10.4 Subwoofer",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_s10_4.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_s10_4.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_s10_4.jpg",
+        "original": "/data/thumbnails/krk_systems_21_s10_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "krk_systems_21_s8_4",
+      "name": "סאבוופר אולפני KRK S8.4 Subwoofer",
+      "brand": "krk-systems",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/krk_systems_21_s8_4.jpg",
+      "description": "סאבוופר אולפני KRK S8.4 Subwoofer",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/krk_systems_21_s8_4.jpg",
+        "thumbnail": "/data/thumbnails/krk_systems_21_s8_4.jpg",
+        "high_res": "/data/thumbnails/krk_systems_21_s8_4.jpg",
+        "original": "/data/thumbnails/krk_systems_21_s8_4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Krk-Systems",
+  "brand_slug": "krk-systems",
+  "refined_at": "2026-01-24T02:50:45.081237+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "krk_systems_21_rp8g5",
+          "name": "מוניטור אולפני KRK Rokit 8 G5",
+          "description": "מוניטור אולפני KRK Rokit 8 G5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_rp8g5.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_rp8g5.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_rp8g5.jpg",
+            "original": "/data/thumbnails/krk_systems_21_rp8g5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_rp7g5",
+          "name": "מוניטור אולפני KRK Rokit 7 G5",
+          "description": "מוניטור אולפני KRK Rokit 7 G5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_rp7g5.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_rp7g5.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_rp7g5.jpg",
+            "original": "/data/thumbnails/krk_systems_21_rp7g5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_rp5g5w",
+          "name": "מוניטור אולפני KRK Rokit 5 G5",
+          "description": "מוניטור אולפני KRK Rokit 5 G5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_rp5g5w.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_rp5g5w.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_rp5g5w.jpg",
+            "original": "/data/thumbnails/krk_systems_21_rp5g5w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_rp5g5",
+          "name": "מוניטור אולפני KRK Rokit 5 G5",
+          "description": "מוניטור אולפני KRK Rokit 5 G5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_rp5g5.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_rp5g5.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_rp5g5.jpg",
+            "original": "/data/thumbnails/krk_systems_21_rp5g5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_goaux3",
+          "name": "זוג מוניטורים KRK GoAux 3",
+          "description": "זוג מוניטורים KRK GoAux 3",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_goaux3.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_goaux3.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_goaux3.jpg",
+            "original": "/data/thumbnails/krk_systems_21_goaux3.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_k5w",
+          "name": "מוניטור אולפני KRK Kreate 5",
+          "description": "מוניטור אולפני KRK Kreate 5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_k5w.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_k5w.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_k5w.jpg",
+            "original": "/data/thumbnails/krk_systems_21_k5w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_k5",
+          "name": "מוניטור אולפני KRK Kreate 5",
+          "description": "מוניטור אולפני KRK Kreate 5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_k5.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_k5.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_k5.jpg",
+            "original": "/data/thumbnails/krk_systems_21_k5.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_k5s",
+          "name": "מוניטור אולפני KRK Kreate 5",
+          "description": "מוניטור אולפני KRK Kreate 5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_k5s.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_k5s.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_k5s.jpg",
+            "original": "/data/thumbnails/krk_systems_21_k5s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_k3",
+          "name": "זוג מוניטורים אולפניים KRK Kreate 3",
+          "description": "זוג מוניטורים אולפניים KRK Kreate 3",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_k3.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_k3.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_k3.jpg",
+            "original": "/data/thumbnails/krk_systems_21_k3.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_k8",
+          "name": "מוניטור אולפני KRK Kreate 8",
+          "description": "מוניטור אולפני KRK Kreate 8",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_k8.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_k8.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_k8.jpg",
+            "original": "/data/thumbnails/krk_systems_21_k8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_k5l",
+          "name": "מוניטור אולפני KRK Kreate 5",
+          "description": "מוניטור אולפני KRK Kreate 5",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_k5l.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_k5l.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_k5l.jpg",
+            "original": "/data/thumbnails/krk_systems_21_k5l.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_s12_4",
+          "name": "סאבוופר אולפני KRK S12.4 Subwoofer",
+          "description": "סאבוופר אולפני KRK S12.4 Subwoofer",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_s12_4.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_s12_4.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_s12_4.jpg",
+            "original": "/data/thumbnails/krk_systems_21_s12_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_kns6402",
+          "name": "אוזניות KRK KNS 6402",
+          "description": "אוזניות KRK KNS 6402",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_kns6402.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_kns6402.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_kns6402.jpg",
+            "original": "/data/thumbnails/krk_systems_21_kns6402.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_kns8402",
+          "name": "אוזניות KRK KNS 8402",
+          "description": "אוזניות KRK KNS 8402",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_kns8402.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_kns8402.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_kns8402.jpg",
+            "original": "/data/thumbnails/krk_systems_21_kns8402.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_cblk00030",
+          "name": "כבל מאריך לאוזניות KRK",
+          "description": "כבל מאריך לאוזניות KRK",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_cblk00030.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_cblk00030.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_cblk00030.jpg",
+            "original": "/data/thumbnails/krk_systems_21_cblk00030.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_v4s4",
+          "name": "מוניטור אולפני KRK V4 S4",
+          "description": "מוניטור אולפני KRK V4 S4",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_v4s4.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_v4s4.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_v4s4.jpg",
+            "original": "/data/thumbnails/krk_systems_21_v4s4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_v6s4",
+          "name": "מוניטור אולפני KRK V6 S4",
+          "description": "מוניטור אולפני KRK V6 S4",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_v6s4.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_v6s4.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_v6s4.jpg",
+            "original": "/data/thumbnails/krk_systems_21_v6s4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_v8s4",
+          "name": "מוניטור אולפני KRK V8 S4",
+          "description": "מוניטור אולפני KRK V8 S4",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_v8s4.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_v8s4.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_v8s4.jpg",
+            "original": "/data/thumbnails/krk_systems_21_v8s4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_cl8g3ss",
+          "name": "מוניטור אולפני KRK Classic 8ss Scott Storch",
+          "description": "מוניטור אולפני KRK Classic 8ss Scott Storch",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg",
+            "original": "/data/thumbnails/krk_systems_21_cl8g3ss.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_goaux4",
+          "name": "זוג מוניטורים KRK GoAux 4",
+          "description": "זוג מוניטורים KRK GoAux 4",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_goaux4.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_goaux4.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_goaux4.jpg",
+            "original": "/data/thumbnails/krk_systems_21_goaux4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_s10_4",
+          "name": "סאבוופר אולפני KRK S10.4 Subwoofer",
+          "description": "סאבוופר אולפני KRK S10.4 Subwoofer",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_s10_4.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_s10_4.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_s10_4.jpg",
+            "original": "/data/thumbnails/krk_systems_21_s10_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "krk_systems_21_s8_4",
+          "name": "סאבוופר אולפני KRK S8.4 Subwoofer",
+          "description": "סאבוופר אולפני KRK S8.4 Subwoofer",
+          "images": {
+            "main": "/data/thumbnails/krk_systems_21_s8_4.jpg",
+            "thumbnail": "/data/thumbnails/krk_systems_21_s8_4.jpg",
+            "high_res": "/data/thumbnails/krk_systems_21_s8_4.jpg",
+            "original": "/data/thumbnails/krk_systems_21_s8_4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

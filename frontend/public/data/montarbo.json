@@ -1,0 +1,706 @@
+{
+  "brand_identity": {
+    "id": "montarbo",
+    "name": "MONTARBO",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/montarbo_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 22,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "montarbo_33_nettuno20kit",
+      "name": "Montarbo Nettuno 20",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
+      "description": "Montarbo Nettuno 20",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
+        "original": "/data/thumbnails/montarbo_33_nettuno20kit.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_mdi2p",
+      "name": "Montarbo MDI-2P Direct Box",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_mdi2p.jpg",
+      "description": "Montarbo MDI-2P Direct Box",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_mdi2p.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_mdi2p.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_mdi2p.jpg",
+        "original": "/data/thumbnails/montarbo_33_mdi2p.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_nettuno50_top",
+      "name": "Montarbo Nettuno 50 Top Active Loudspeaker",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+      "description": "Montarbo Nettuno 50 Top Active Loudspeaker",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+        "original": "/data/thumbnails/montarbo_33_nettuno50_top.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_mdi2u",
+      "name": "Montarbo MDI-2U Direct Box",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_mdi2u.jpg",
+      "description": "Montarbo MDI-2U Direct Box",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_mdi2u.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_mdi2u.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_mdi2u.jpg",
+        "original": "/data/thumbnails/montarbo_33_mdi2u.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_nettuno10",
+      "name": "Montarbo Nettuno 10",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_nettuno10.jpg",
+      "description": "Montarbo Nettuno 10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_nettuno10.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_nettuno10.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_nettuno10.jpg",
+        "original": "/data/thumbnails/montarbo_33_nettuno10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_nettuno50sub",
+      "name": "Montarbo Nettuno 50 Sub Active Subwoofer",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
+      "description": "Montarbo Nettuno 50 Sub Active Subwoofer",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
+        "original": "/data/thumbnails/montarbo_33_nettuno50sub.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_b108",
+      "name": "Montarbo B108",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_b108.jpg",
+      "description": "Montarbo B108",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_b108.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_b108.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_b108.jpg",
+        "original": "/data/thumbnails/montarbo_33_b108.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_b112",
+      "name": "Montarbo B112",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_b112.jpg",
+      "description": "Montarbo B112",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_b112.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_b112.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_b112.jpg",
+        "original": "/data/thumbnails/montarbo_33_b112.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_b115",
+      "name": "Montarbo B115",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_b115.jpg",
+      "description": "Montarbo B115",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_b115.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_b115.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_b115.jpg",
+        "original": "/data/thumbnails/montarbo_33_b115.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_r115",
+      "name": "Montarbo R115",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_r115.jpg",
+      "description": "Montarbo R115",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_r115.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_r115.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_r115.jpg",
+        "original": "/data/thumbnails/montarbo_33_r115.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_r110",
+      "name": "Montarbo R110",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_r110.jpg",
+      "description": "Montarbo R110",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_r110.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_r110.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_r110.jpg",
+        "original": "/data/thumbnails/montarbo_33_r110.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_r112",
+      "name": "Montarbo R112",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_r112.jpg",
+      "description": "Montarbo R112",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_r112.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_r112.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_r112.jpg",
+        "original": "/data/thumbnails/montarbo_33_r112.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_b110",
+      "name": "Montarbo B110",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_b110.jpg",
+      "description": "Montarbo B110",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_b110.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_b110.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_b110.jpg",
+        "original": "/data/thumbnails/montarbo_33_b110.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_r108",
+      "name": "Montarbo R108",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_r108.jpg",
+      "description": "Montarbo R108",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_r108.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_r108.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_r108.jpg",
+        "original": "/data/thumbnails/montarbo_33_r108.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_mdh40",
+      "name": "Montarbo MDH-40",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_mdh40.jpg",
+      "description": "Montarbo MDH-40",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_mdh40.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_mdh40.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_mdh40.jpg",
+        "original": "/data/thumbnails/montarbo_33_mdh40.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_r15s",
+      "name": "Montarbo R15S",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_r15s.jpg",
+      "description": "Montarbo R15S",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_r15s.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_r15s.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_r15s.jpg",
+        "original": "/data/thumbnails/montarbo_33_r15s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_r18s",
+      "name": "Montarbo R18S",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_r18s.jpg",
+      "description": "Montarbo R18S",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_r18s.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_r18s.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_r18s.jpg",
+        "original": "/data/thumbnails/montarbo_33_r18s.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_l206",
+      "name": "Montarbo L206",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_l206.jpg",
+      "description": "Montarbo L206",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_l206.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_l206.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_l206.jpg",
+        "original": "/data/thumbnails/montarbo_33_l206.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_cover_cvb110",
+      "name": "Montarbo Cover for B110",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
+      "description": "Montarbo Cover for B110",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
+        "original": "/data/thumbnails/montarbo_33_cover_cvb110.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_cover_cvb108",
+      "name": "Montarbo Cover for B108",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
+      "description": "Montarbo Cover for B108",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
+        "original": "/data/thumbnails/montarbo_33_cover_cvb108.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_cover_cvb112",
+      "name": "Montarbo Cover for B112",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
+      "description": "Montarbo Cover for B112",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
+        "original": "/data/thumbnails/montarbo_33_cover_cvb112.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "montarbo_33_cover_cvb115",
+      "name": "Montarbo Cover for B115",
+      "brand": "montarbo",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
+      "description": "Montarbo Cover for B115",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
+        "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
+        "high_res": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
+        "original": "/data/thumbnails/montarbo_33_cover_cvb115.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Montarbo",
+  "brand_slug": "montarbo",
+  "refined_at": "2026-01-24T02:50:44.669497+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "montarbo_33_nettuno20kit",
+          "name": "Montarbo Nettuno 20",
+          "description": "Montarbo Nettuno 20",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
+            "original": "/data/thumbnails/montarbo_33_nettuno20kit.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_mdi2p",
+          "name": "Montarbo MDI-2P Direct Box",
+          "description": "Montarbo MDI-2P Direct Box",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_mdi2p.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_mdi2p.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_mdi2p.jpg",
+            "original": "/data/thumbnails/montarbo_33_mdi2p.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_nettuno50_top",
+          "name": "Montarbo Nettuno 50 Top Active Loudspeaker",
+          "description": "Montarbo Nettuno 50 Top Active Loudspeaker",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+            "original": "/data/thumbnails/montarbo_33_nettuno50_top.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_mdi2u",
+          "name": "Montarbo MDI-2U Direct Box",
+          "description": "Montarbo MDI-2U Direct Box",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_mdi2u.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_mdi2u.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_mdi2u.jpg",
+            "original": "/data/thumbnails/montarbo_33_mdi2u.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_nettuno10",
+          "name": "Montarbo Nettuno 10",
+          "description": "Montarbo Nettuno 10",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_nettuno10.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_nettuno10.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_nettuno10.jpg",
+            "original": "/data/thumbnails/montarbo_33_nettuno10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_nettuno50sub",
+          "name": "Montarbo Nettuno 50 Sub Active Subwoofer",
+          "description": "Montarbo Nettuno 50 Sub Active Subwoofer",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
+            "original": "/data/thumbnails/montarbo_33_nettuno50sub.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_b108",
+          "name": "Montarbo B108",
+          "description": "Montarbo B108",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_b108.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_b108.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_b108.jpg",
+            "original": "/data/thumbnails/montarbo_33_b108.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_b112",
+          "name": "Montarbo B112",
+          "description": "Montarbo B112",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_b112.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_b112.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_b112.jpg",
+            "original": "/data/thumbnails/montarbo_33_b112.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_b115",
+          "name": "Montarbo B115",
+          "description": "Montarbo B115",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_b115.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_b115.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_b115.jpg",
+            "original": "/data/thumbnails/montarbo_33_b115.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_r115",
+          "name": "Montarbo R115",
+          "description": "Montarbo R115",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_r115.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_r115.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_r115.jpg",
+            "original": "/data/thumbnails/montarbo_33_r115.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_r110",
+          "name": "Montarbo R110",
+          "description": "Montarbo R110",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_r110.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_r110.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_r110.jpg",
+            "original": "/data/thumbnails/montarbo_33_r110.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_r112",
+          "name": "Montarbo R112",
+          "description": "Montarbo R112",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_r112.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_r112.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_r112.jpg",
+            "original": "/data/thumbnails/montarbo_33_r112.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_b110",
+          "name": "Montarbo B110",
+          "description": "Montarbo B110",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_b110.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_b110.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_b110.jpg",
+            "original": "/data/thumbnails/montarbo_33_b110.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_r108",
+          "name": "Montarbo R108",
+          "description": "Montarbo R108",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_r108.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_r108.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_r108.jpg",
+            "original": "/data/thumbnails/montarbo_33_r108.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_mdh40",
+          "name": "Montarbo MDH-40",
+          "description": "Montarbo MDH-40",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_mdh40.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_mdh40.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_mdh40.jpg",
+            "original": "/data/thumbnails/montarbo_33_mdh40.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_r15s",
+          "name": "Montarbo R15S",
+          "description": "Montarbo R15S",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_r15s.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_r15s.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_r15s.jpg",
+            "original": "/data/thumbnails/montarbo_33_r15s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_r18s",
+          "name": "Montarbo R18S",
+          "description": "Montarbo R18S",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_r18s.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_r18s.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_r18s.jpg",
+            "original": "/data/thumbnails/montarbo_33_r18s.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_l206",
+          "name": "Montarbo L206",
+          "description": "Montarbo L206",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_l206.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_l206.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_l206.jpg",
+            "original": "/data/thumbnails/montarbo_33_l206.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_cover_cvb110",
+          "name": "Montarbo Cover for B110",
+          "description": "Montarbo Cover for B110",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
+            "original": "/data/thumbnails/montarbo_33_cover_cvb110.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_cover_cvb108",
+          "name": "Montarbo Cover for B108",
+          "description": "Montarbo Cover for B108",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
+            "original": "/data/thumbnails/montarbo_33_cover_cvb108.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_cover_cvb112",
+          "name": "Montarbo Cover for B112",
+          "description": "Montarbo Cover for B112",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
+            "original": "/data/thumbnails/montarbo_33_cover_cvb112.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_cover_cvb115",
+          "name": "Montarbo Cover for B115",
+          "description": "Montarbo Cover for B115",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
+            "original": "/data/thumbnails/montarbo_33_cover_cvb115.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

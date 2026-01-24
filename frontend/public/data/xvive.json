@@ -1,0 +1,985 @@
+{
+  "brand_identity": {
+    "id": "xvive",
+    "name": "XVIVE",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/xvive_logo.png",
+    "taxonomy_stats": {
+      "validated": 31,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "xvive_35_t1",
+      "name": "Xvive T1 Golden Brownie Distortion",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_t1.jpg",
+      "description": "Xvive T1 Golden Brownie Distortion",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_t1.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_t1.jpg",
+        "high_res": "/data/thumbnails/xvive_35_t1.jpg",
+        "original": "/data/thumbnails/xvive_35_t1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_v9",
+      "name": "Xvive V9 LEMON SQUEEZER",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_v9.jpg",
+      "description": "Xvive V9 LEMON SQUEEZER",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_v9.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_v9.jpg",
+        "high_res": "/data/thumbnails/xvive_35_v9.jpg",
+        "original": "/data/thumbnails/xvive_35_v9.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u2_red",
+      "name": "Xvive U2 Wireless Guitar System",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u2_red.jpg",
+      "description": "Xvive U2 Wireless Guitar System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u2_red.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u2_red.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u2_red.jpg",
+        "original": "/data/thumbnails/xvive_35_u2_red.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_v10",
+      "name": "פדל בוסטר Xvive V10 Amp Litone",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_v10.jpg",
+      "description": "פדל בוסטר Xvive V10 Amp Litone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_v10.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_v10.jpg",
+        "high_res": "/data/thumbnails/xvive_35_v10.jpg",
+        "original": "/data/thumbnails/xvive_35_v10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_o2",
+      "name": "Xvive O2 SWEET LEO Overdrive",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_o2.jpg",
+      "description": "Xvive O2 SWEET LEO Overdrive",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_o2.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_o2.jpg",
+        "high_res": "/data/thumbnails/xvive_35_o2.jpg",
+        "original": "/data/thumbnails/xvive_35_o2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u2_gold",
+      "name": "Xvive U2 Wireless Guitar System - Gold",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u2_gold.jpg",
+      "description": "Xvive U2 Wireless Guitar System - Gold",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u2_gold.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u2_gold.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u2_gold.jpg",
+        "original": "/data/thumbnails/xvive_35_u2_gold.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_o1",
+      "name": "Xvive O1 Tube Squasher Overdrive",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_o1.jpg",
+      "description": "Xvive O1 Tube Squasher Overdrive",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_o1.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_o1.jpg",
+        "high_res": "/data/thumbnails/xvive_35_o1.jpg",
+        "original": "/data/thumbnails/xvive_35_o1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u2_wood",
+      "name": "Xvive U2 Wireless Guitar System - Redwood",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u2_wood.jpg",
+      "description": "Xvive U2 Wireless Guitar System - Redwood",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u2_wood.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u2_wood.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u2_wood.jpg",
+        "original": "/data/thumbnails/xvive_35_u2_wood.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_v1",
+      "name": "Xvive V1 Classic Rock Pedal",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_v1.jpg",
+      "description": "Xvive V1 Classic Rock Pedal",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_v1.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_v1.jpg",
+        "high_res": "/data/thumbnails/xvive_35_v1.jpg",
+        "original": "/data/thumbnails/xvive_35_v1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_v16",
+      "name": "Xvive V16 Undulator Tremolo",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_v16.jpg",
+      "description": "Xvive V16 Undulator Tremolo",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_v16.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_v16.jpg",
+        "high_res": "/data/thumbnails/xvive_35_v16.jpg",
+        "original": "/data/thumbnails/xvive_35_v16.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_e1",
+      "name": "Xvive ECHOMAN",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_e1.jpg",
+      "description": "Xvive ECHOMAN",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_e1.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_e1.jpg",
+        "high_res": "/data/thumbnails/xvive_35_e1.jpg",
+        "original": "/data/thumbnails/xvive_35_e1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_t9",
+      "name": "Xvive T9 In Ear Monitors",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_t9.jpg",
+      "description": "Xvive T9 In Ear Monitors",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_t9.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_t9.jpg",
+        "high_res": "/data/thumbnails/xvive_35_t9.jpg",
+        "original": "/data/thumbnails/xvive_35_t9.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u3d",
+      "name": "Xvive U3D Stereo Bluetooth Receiver Set",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u3d.jpg",
+      "description": "Xvive U3D Stereo Bluetooth Receiver Set",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u3d.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u3d.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u3d.jpg",
+        "original": "/data/thumbnails/xvive_35_u3d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_p3d",
+      "name": "Xvive P3D Stereo Bluetooth Receiver Set",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_p3d.jpg",
+      "description": "Xvive P3D Stereo Bluetooth Receiver Set",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_p3d.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_p3d.jpg",
+        "high_res": "/data/thumbnails/xvive_35_p3d.jpg",
+        "original": "/data/thumbnails/xvive_35_p3d.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_xv1r",
+      "name": "Xvive XV1-R Portable Stereo Recorder",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_xv1r.jpg",
+      "description": "Xvive XV1-R Portable Stereo Recorder",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_xv1r.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_xv1r.jpg",
+        "high_res": "/data/thumbnails/xvive_35_xv1r.jpg",
+        "original": "/data/thumbnails/xvive_35_xv1r.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_cu4",
+      "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_cu4.jpg",
+      "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_cu4.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_cu4.jpg",
+        "high_res": "/data/thumbnails/xvive_35_cu4.jpg",
+        "original": "/data/thumbnails/xvive_35_cu4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u4",
+      "name": "Xvive U4 In-Ear Monitor Wireless System",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u4.jpg",
+      "description": "Xvive U4 In-Ear Monitor Wireless System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u4.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u4.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u4.jpg",
+        "original": "/data/thumbnails/xvive_35_u4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_v13",
+      "name": "Xvive V13 Mini DI",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_v13.jpg",
+      "description": "Xvive V13 Mini DI",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_v13.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_v13.jpg",
+        "high_res": "/data/thumbnails/xvive_35_v13.jpg",
+        "original": "/data/thumbnails/xvive_35_v13.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u7",
+      "name": "Xvive U7 Saxophone and Trumpet Wireless System",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u7.jpg",
+      "description": "Xvive U7 Saxophone and Trumpet Wireless System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u7.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u7.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u7.jpg",
+        "original": "/data/thumbnails/xvive_35_u7.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_ga1",
+      "name": "Xvive GA-1",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_ga1.jpg",
+      "description": "Xvive GA-1",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_ga1.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_ga1.jpg",
+        "high_res": "/data/thumbnails/xvive_35_ga1.jpg",
+        "original": "/data/thumbnails/xvive_35_ga1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u8",
+      "name": "Xvive U8 Acoustic Guitar Wireless System",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u8.jpg",
+      "description": "Xvive U8 Acoustic Guitar Wireless System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u8.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u8.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u8.jpg",
+        "original": "/data/thumbnails/xvive_35_u8.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u9",
+      "name": "Xvive U9 Violin Wireless System",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u9.jpg",
+      "description": "Xvive U9 Violin Wireless System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u9.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u9.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u9.jpg",
+        "original": "/data/thumbnails/xvive_35_u9.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u4r",
+      "name": "Xvive U4R In-Ear Monitor Wireless Receiver",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u4r.jpg",
+      "description": "Xvive U4R In-Ear Monitor Wireless Receiver",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u4r.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u4r.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u4r.jpg",
+        "original": "/data/thumbnails/xvive_35_u4r.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_v12",
+      "name": "Xvive V12 ABY Mini",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_v12.jpg",
+      "description": "Xvive V12 ABY Mini",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_v12.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_v12.jpg",
+        "high_res": "/data/thumbnails/xvive_35_v12.jpg",
+        "original": "/data/thumbnails/xvive_35_v12.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_cu4r2",
+      "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_cu4r2.jpg",
+      "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_cu4r2.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_cu4r2.jpg",
+        "high_res": "/data/thumbnails/xvive_35_cu4r2.jpg",
+        "original": "/data/thumbnails/xvive_35_cu4r2.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u3",
+      "name": "Xvive U3 Wireless Dynamic MIC/LINE System",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u3.jpg",
+      "description": "Xvive U3 Wireless Dynamic MIC/LINE System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u3.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u3.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u3.jpg",
+        "original": "/data/thumbnails/xvive_35_u3.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_u3c",
+      "name": "Xvive U3C Wireless Condenser Microphone System",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u3c.jpg",
+      "description": "Xvive U3C Wireless Condenser Microphone System",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_u3c.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_u3c.jpg",
+        "high_res": "/data/thumbnails/xvive_35_u3c.jpg",
+        "original": "/data/thumbnails/xvive_35_u3c.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_px",
+      "name": "Xvive PX Portable 3-Channel Personal Mixer",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_px.jpg",
+      "description": "Xvive PX Portable 3-Channel Personal Mixer",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_px.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_px.jpg",
+        "high_res": "/data/thumbnails/xvive_35_px.jpg",
+        "original": "/data/thumbnails/xvive_35_px.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_cu4r4",
+      "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_cu4r4.jpg",
+      "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_cu4r4.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_cu4r4.jpg",
+        "high_res": "/data/thumbnails/xvive_35_cu4r4.jpg",
+        "original": "/data/thumbnails/xvive_35_cu4r4.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_at1",
+      "name": "Xvive AT-1 Portable Audio Tester",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_at1.jpg",
+      "description": "Xvive AT-1 Portable Audio Tester",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_at1.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_at1.jpg",
+        "high_res": "/data/thumbnails/xvive_35_at1.jpg",
+        "original": "/data/thumbnails/xvive_35_at1.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "xvive_35_d3",
+      "name": "Xvive D3 Duet Looper",
+      "brand": "xvive",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_d3.jpg",
+      "description": "Xvive D3 Duet Looper",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/xvive_35_d3.jpg",
+        "thumbnail": "/data/thumbnails/xvive_35_d3.jpg",
+        "high_res": "/data/thumbnails/xvive_35_d3.jpg",
+        "original": "/data/thumbnails/xvive_35_d3.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Xvive",
+  "brand_slug": "xvive",
+  "refined_at": "2026-01-24T02:50:45.073548+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "xvive_35_t1",
+          "name": "Xvive T1 Golden Brownie Distortion",
+          "description": "Xvive T1 Golden Brownie Distortion",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_t1.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_t1.jpg",
+            "high_res": "/data/thumbnails/xvive_35_t1.jpg",
+            "original": "/data/thumbnails/xvive_35_t1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v9",
+          "name": "Xvive V9 LEMON SQUEEZER",
+          "description": "Xvive V9 LEMON SQUEEZER",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v9.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v9.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v9.jpg",
+            "original": "/data/thumbnails/xvive_35_v9.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u2_red",
+          "name": "Xvive U2 Wireless Guitar System",
+          "description": "Xvive U2 Wireless Guitar System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u2_red.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u2_red.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u2_red.jpg",
+            "original": "/data/thumbnails/xvive_35_u2_red.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v10",
+          "name": "פדל בוסטר Xvive V10 Amp Litone",
+          "description": "פדל בוסטר Xvive V10 Amp Litone",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v10.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v10.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v10.jpg",
+            "original": "/data/thumbnails/xvive_35_v10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_o2",
+          "name": "Xvive O2 SWEET LEO Overdrive",
+          "description": "Xvive O2 SWEET LEO Overdrive",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_o2.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_o2.jpg",
+            "high_res": "/data/thumbnails/xvive_35_o2.jpg",
+            "original": "/data/thumbnails/xvive_35_o2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u2_gold",
+          "name": "Xvive U2 Wireless Guitar System - Gold",
+          "description": "Xvive U2 Wireless Guitar System - Gold",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u2_gold.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u2_gold.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u2_gold.jpg",
+            "original": "/data/thumbnails/xvive_35_u2_gold.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_o1",
+          "name": "Xvive O1 Tube Squasher Overdrive",
+          "description": "Xvive O1 Tube Squasher Overdrive",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_o1.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_o1.jpg",
+            "high_res": "/data/thumbnails/xvive_35_o1.jpg",
+            "original": "/data/thumbnails/xvive_35_o1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u2_wood",
+          "name": "Xvive U2 Wireless Guitar System - Redwood",
+          "description": "Xvive U2 Wireless Guitar System - Redwood",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u2_wood.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u2_wood.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u2_wood.jpg",
+            "original": "/data/thumbnails/xvive_35_u2_wood.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v1",
+          "name": "Xvive V1 Classic Rock Pedal",
+          "description": "Xvive V1 Classic Rock Pedal",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v1.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v1.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v1.jpg",
+            "original": "/data/thumbnails/xvive_35_v1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v16",
+          "name": "Xvive V16 Undulator Tremolo",
+          "description": "Xvive V16 Undulator Tremolo",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v16.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v16.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v16.jpg",
+            "original": "/data/thumbnails/xvive_35_v16.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_e1",
+          "name": "Xvive ECHOMAN",
+          "description": "Xvive ECHOMAN",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_e1.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_e1.jpg",
+            "high_res": "/data/thumbnails/xvive_35_e1.jpg",
+            "original": "/data/thumbnails/xvive_35_e1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_t9",
+          "name": "Xvive T9 In Ear Monitors",
+          "description": "Xvive T9 In Ear Monitors",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_t9.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_t9.jpg",
+            "high_res": "/data/thumbnails/xvive_35_t9.jpg",
+            "original": "/data/thumbnails/xvive_35_t9.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u3d",
+          "name": "Xvive U3D Stereo Bluetooth Receiver Set",
+          "description": "Xvive U3D Stereo Bluetooth Receiver Set",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u3d.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u3d.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u3d.jpg",
+            "original": "/data/thumbnails/xvive_35_u3d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_p3d",
+          "name": "Xvive P3D Stereo Bluetooth Receiver Set",
+          "description": "Xvive P3D Stereo Bluetooth Receiver Set",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_p3d.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_p3d.jpg",
+            "high_res": "/data/thumbnails/xvive_35_p3d.jpg",
+            "original": "/data/thumbnails/xvive_35_p3d.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_xv1r",
+          "name": "Xvive XV1-R Portable Stereo Recorder",
+          "description": "Xvive XV1-R Portable Stereo Recorder",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_xv1r.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_xv1r.jpg",
+            "high_res": "/data/thumbnails/xvive_35_xv1r.jpg",
+            "original": "/data/thumbnails/xvive_35_xv1r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_cu4",
+          "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
+          "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_cu4.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_cu4.jpg",
+            "high_res": "/data/thumbnails/xvive_35_cu4.jpg",
+            "original": "/data/thumbnails/xvive_35_cu4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u4",
+          "name": "Xvive U4 In-Ear Monitor Wireless System",
+          "description": "Xvive U4 In-Ear Monitor Wireless System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u4.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u4.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u4.jpg",
+            "original": "/data/thumbnails/xvive_35_u4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v13",
+          "name": "Xvive V13 Mini DI",
+          "description": "Xvive V13 Mini DI",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v13.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v13.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v13.jpg",
+            "original": "/data/thumbnails/xvive_35_v13.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u7",
+          "name": "Xvive U7 Saxophone and Trumpet Wireless System",
+          "description": "Xvive U7 Saxophone and Trumpet Wireless System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u7.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u7.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u7.jpg",
+            "original": "/data/thumbnails/xvive_35_u7.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_ga1",
+          "name": "Xvive GA-1",
+          "description": "Xvive GA-1",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_ga1.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_ga1.jpg",
+            "high_res": "/data/thumbnails/xvive_35_ga1.jpg",
+            "original": "/data/thumbnails/xvive_35_ga1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u8",
+          "name": "Xvive U8 Acoustic Guitar Wireless System",
+          "description": "Xvive U8 Acoustic Guitar Wireless System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u8.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u8.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u8.jpg",
+            "original": "/data/thumbnails/xvive_35_u8.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u9",
+          "name": "Xvive U9 Violin Wireless System",
+          "description": "Xvive U9 Violin Wireless System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u9.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u9.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u9.jpg",
+            "original": "/data/thumbnails/xvive_35_u9.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u4r",
+          "name": "Xvive U4R In-Ear Monitor Wireless Receiver",
+          "description": "Xvive U4R In-Ear Monitor Wireless Receiver",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u4r.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u4r.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u4r.jpg",
+            "original": "/data/thumbnails/xvive_35_u4r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v12",
+          "name": "Xvive V12 ABY Mini",
+          "description": "Xvive V12 ABY Mini",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v12.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v12.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v12.jpg",
+            "original": "/data/thumbnails/xvive_35_v12.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_cu4r2",
+          "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
+          "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_cu4r2.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_cu4r2.jpg",
+            "high_res": "/data/thumbnails/xvive_35_cu4r2.jpg",
+            "original": "/data/thumbnails/xvive_35_cu4r2.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u3",
+          "name": "Xvive U3 Wireless Dynamic MIC/LINE System",
+          "description": "Xvive U3 Wireless Dynamic MIC/LINE System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u3.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u3.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u3.jpg",
+            "original": "/data/thumbnails/xvive_35_u3.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u3c",
+          "name": "Xvive U3C Wireless Condenser Microphone System",
+          "description": "Xvive U3C Wireless Condenser Microphone System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u3c.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u3c.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u3c.jpg",
+            "original": "/data/thumbnails/xvive_35_u3c.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_px",
+          "name": "Xvive PX Portable 3-Channel Personal Mixer",
+          "description": "Xvive PX Portable 3-Channel Personal Mixer",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_px.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_px.jpg",
+            "high_res": "/data/thumbnails/xvive_35_px.jpg",
+            "original": "/data/thumbnails/xvive_35_px.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_cu4r4",
+          "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
+          "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_cu4r4.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_cu4r4.jpg",
+            "high_res": "/data/thumbnails/xvive_35_cu4r4.jpg",
+            "original": "/data/thumbnails/xvive_35_cu4r4.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_at1",
+          "name": "Xvive AT-1 Portable Audio Tester",
+          "description": "Xvive AT-1 Portable Audio Tester",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_at1.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_at1.jpg",
+            "high_res": "/data/thumbnails/xvive_35_at1.jpg",
+            "original": "/data/thumbnails/xvive_35_at1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_d3",
+          "name": "Xvive D3 Duet Looper",
+          "description": "Xvive D3 Duet Looper",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_d3.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_d3.jpg",
+            "high_res": "/data/thumbnails/xvive_35_d3.jpg",
+            "original": "/data/thumbnails/xvive_35_d3.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

@@ -13,7 +13,7 @@
     },
     "logo_url": "/assets/logos/nord_logo.png",
     "taxonomy_stats": {
-      "validated": 1,
+      "validated": 0,
       "normalized": 0,
       "uncategorized": 0
     },
@@ -76,70 +76,9 @@
       }
     ]
   },
-  "products": [
-    {
-      "id": "nord-lead-a1",
-      "brand": "Nord",
-      "name": "Nord Lead A1",
-      "model_number": "Lead A1",
-      "sku": "NLEAD-A1",
-      "main_category": "keys",
-      "description": "Four-part multi-timbral synthesizer with powerful sound synthesis and built-in sequencer. Premium Scandinavian engineering.",
-      "short_description": "Multi-timbral synthesizer with sequencer",
-      "specifications": [
-        {
-          "key": "Voices",
-          "value": "4-part multi-timbral"
-        },
-        {
-          "key": "Oscillators",
-          "value": "3 per voice"
-        },
-        {
-          "key": "Filter",
-          "value": "3x 24dB/octave filters"
-        },
-        {
-          "key": "Sequencer",
-          "value": "Built-in 4-part sequencer"
-        }
-      ],
-      "features": [
-        "Multi-timbral synthesis",
-        "Built-in sequencer",
-        "USB connectivity"
-      ],
-      "tags": [
-        "synthesizer",
-        "nordic",
-        "production",
-        "multi-timbral"
-      ],
-      "price_ils": 9200,
-      "availability": "in-stock",
-      "product_tier": "professional",
-      "category": "keys",
-      "images": [],
-      "category_hierarchy": [
-        "keys"
-      ]
-    }
-  ],
+  "products": [],
   "brand_name": "Nord",
   "brand_slug": "nord",
-  "refined_at": "2026-01-23T17:09:28.927679+00:00",
-  "hierarchy": {
-    "keys": {
-      "General": [
-        {
-          "id": "nord-lead-a1",
-          "name": "Nord Lead A1",
-          "description": "Multi-timbral synthesizer with sequencer",
-          "images": [],
-          "model_number": "Lead A1",
-          "sku": "NLEAD-A1"
-        }
-      ]
-    }
-  }
+  "refined_at": "2026-01-24T02:50:44.854663+00:00",
+  "hierarchy": {}
 }

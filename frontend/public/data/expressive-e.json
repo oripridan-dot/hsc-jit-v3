@@ -1,0 +1,148 @@
+{
+  "brand_identity": {
+    "id": "expressive-e",
+    "name": "EXPRESSIVE-E",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/expressive-e_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 4,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "expressive_e_22_xpeosm61",
+      "name": "סינתיסייזר פוליפוני Expressive E Osmose 61",
+      "brand": "expressive-e",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
+      "description": "סינתיסייזר פוליפוני Expressive E Osmose 61",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
+        "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
+        "high_res": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
+        "original": "/data/thumbnails/expressive_e_22_xpeosm61.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "expressive_e_22_touche",
+      "name": "Expressive E Touché",
+      "brand": "expressive-e",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/expressive_e_22_touche.jpg",
+      "description": "Expressive E Touché",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/expressive_e_22_touche.jpg",
+        "thumbnail": "/data/thumbnails/expressive_e_22_touche.jpg",
+        "high_res": "/data/thumbnails/expressive_e_22_touche.jpg",
+        "original": "/data/thumbnails/expressive_e_22_touche.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "expressive_e_22_xpeosm49",
+      "name": "סינתיסייזר פוליפוני Expressive E Osmose",
+      "brand": "expressive-e",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
+      "description": "סינתיסייזר פוליפוני Expressive E Osmose",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
+        "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
+        "high_res": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
+        "original": "/data/thumbnails/expressive_e_22_xpeosm49.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "expressive_e_22_touchese",
+      "name": "Expressive E Touché SE",
+      "brand": "expressive-e",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/expressive_e_22_touchese.jpg",
+      "description": "Expressive E Touché SE",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/expressive_e_22_touchese.jpg",
+        "thumbnail": "/data/thumbnails/expressive_e_22_touchese.jpg",
+        "high_res": "/data/thumbnails/expressive_e_22_touchese.jpg",
+        "original": "/data/thumbnails/expressive_e_22_touchese.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Expressive-E",
+  "brand_slug": "expressive-e",
+  "refined_at": "2026-01-24T02:50:44.493350+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "expressive_e_22_xpeosm61",
+          "name": "סינתיסייזר פוליפוני Expressive E Osmose 61",
+          "description": "סינתיסייזר פוליפוני Expressive E Osmose 61",
+          "images": {
+            "main": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
+            "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
+            "high_res": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
+            "original": "/data/thumbnails/expressive_e_22_xpeosm61.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "expressive_e_22_touche",
+          "name": "Expressive E Touché",
+          "description": "Expressive E Touché",
+          "images": {
+            "main": "/data/thumbnails/expressive_e_22_touche.jpg",
+            "thumbnail": "/data/thumbnails/expressive_e_22_touche.jpg",
+            "high_res": "/data/thumbnails/expressive_e_22_touche.jpg",
+            "original": "/data/thumbnails/expressive_e_22_touche.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "expressive_e_22_xpeosm49",
+          "name": "סינתיסייזר פוליפוני Expressive E Osmose",
+          "description": "סינתיסייזר פוליפוני Expressive E Osmose",
+          "images": {
+            "main": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
+            "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
+            "high_res": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
+            "original": "/data/thumbnails/expressive_e_22_xpeosm49.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "expressive_e_22_touchese",
+          "name": "Expressive E Touché SE",
+          "description": "Expressive E Touché SE",
+          "images": {
+            "main": "/data/thumbnails/expressive_e_22_touchese.jpg",
+            "thumbnail": "/data/thumbnails/expressive_e_22_touchese.jpg",
+            "high_res": "/data/thumbnails/expressive_e_22_touchese.jpg",
+            "original": "/data/thumbnails/expressive_e_22_touchese.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

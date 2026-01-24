@@ -1,0 +1,799 @@
+{
+  "brand_identity": {
+    "id": "v-moda",
+    "name": "V-MODA",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/v-moda_logo.png",
+    "taxonomy_stats": {
+      "validated": 25,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "v_moda_87_hexmlite_bk",
+      "name": "V-MODA Hexamove Lite",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
+      "description": "V-MODA Hexamove Lite",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
+        "original": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_hexmlite_wh",
+      "name": "V-MODA Hexamove Lite",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
+      "description": "V-MODA Hexamove Lite",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
+        "original": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_hexmpr_wh",
+      "name": "V-MODA Hexamove Pro - White",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
+      "description": "V-MODA Hexamove Pro - White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
+        "original": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_s80bt_bk",
+      "name": "אוזניות אלחוטיות V-MODA S-80",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
+      "description": "אוזניות אלחוטיות V-MODA S-80",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
+        "original": "/data/thumbnails/v_moda_87_s80bt_bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_m200bk",
+      "name": "אוזניות V-MODA M-200",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_m200bk.jpg",
+      "description": "אוזניות V-MODA M-200",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_m200bk.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_m200bk.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_m200bk.jpg",
+        "original": "/data/thumbnails/v_moda_87_m200bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_m100pro",
+      "name": "אוזניות V-MODA M-100 Pro",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_m100pro.jpg",
+      "description": "אוזניות V-MODA M-100 Pro",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_m100pro.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_m100pro.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_m100pro.jpg",
+        "original": "/data/thumbnails/v_moda_87_m100pro.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_m10",
+      "name": "אוזניות V-MODA M-10",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_m10.jpg",
+      "description": "אוזניות V-MODA M-10",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_m10.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_m10.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_m10.jpg",
+        "original": "/data/thumbnails/v_moda_87_m10.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frziblack",
+      "name": "V-MODA Forza Black IPhone Headphones",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frziblack.jpg",
+      "description": "V-MODA Forza Black IPhone Headphones",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frziblack.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frziblack.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frziblack.jpg",
+        "original": "/data/thumbnails/v_moda_87_frziblack.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_m200anc",
+      "name": "אוזניות אלחוטיות V-MODA M-200 ANC",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_m200anc.jpg",
+      "description": "אוזניות אלחוטיות V-MODA M-200 ANC",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_m200anc.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_m200anc.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_m200anc.jpg",
+        "original": "/data/thumbnails/v_moda_87_m200anc.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_xfbtrouge",
+      "name": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
+      "description": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
+        "original": "/data/thumbnails/v_moda_87_xfbtrouge.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_xsubk",
+      "name": "V-MODA XS On-Ear Headphones Matte Black",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_xsubk.jpg",
+      "description": "V-MODA XS On-Ear Headphones Matte Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_xsubk.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_xsubk.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_xsubk.jpg",
+        "original": "/data/thumbnails/v_moda_87_xsubk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_xfbt2mwhite",
+      "name": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
+      "description": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
+        "original": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_ccpblack",
+      "name": "V-MODA CoilPro Cable",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_ccpblack.jpg",
+      "description": "V-MODA CoilPro Cable",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_ccpblack.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_ccpblack.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_ccpblack.jpg",
+        "original": "/data/thumbnails/v_moda_87_ccpblack.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzmagunblack",
+      "name": "V-MODA Forza Metallo Gunblack Android",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
+      "description": "V-MODA Forza Metallo Gunblack Android",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzmagunblack.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzmwgunblack",
+      "name": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
+      "description": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzmargold",
+      "name": "V-MODA FORZA Metallo Rose Gold Android",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzmargold.jpg",
+      "description": "V-MODA FORZA Metallo Rose Gold Android",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzmargold.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzmargold.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzmargold.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzmargold.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzmirgold",
+      "name": "V-MODA Forza Metallo Rose Gold IPhone",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
+      "description": "V-MODA Forza Metallo Rose Gold IPhone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzmirgold.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzawhite",
+      "name": "V-MODA Forza White Android",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzawhite.jpg",
+      "description": "V-MODA Forza White Android",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzawhite.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzawhite.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzawhite.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzawhite.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzmigunblack",
+      "name": "V-MODA Forza Metallo Gunblack Iphone",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
+      "description": "V-MODA Forza Metallo Gunblack Iphone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzmigunblack.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzablack",
+      "name": "V-MODA Forza Black Android",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzablack.jpg",
+      "description": "V-MODA Forza Black Android",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzablack.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzablack.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzablack.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzablack.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_vlct_bk",
+      "name": "V-MODA In-Ear BassFit Wireless Headphones",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+      "description": "V-MODA In-Ear BassFit Wireless Headphones",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+        "original": "/data/thumbnails/v_moda_87_vlct_bk.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_frzmwwsilver",
+      "name": "V-MODA Forza Metallo Wireless White Silver",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+      "description": "V-MODA Forza Metallo Wireless White Silver",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+        "original": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_vc3szor",
+      "name": "V-MODA SpeakEazy 3-Button Cable Orange",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+      "description": "V-MODA SpeakEazy 3-Button Cable Orange",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+        "original": "/data/thumbnails/v_moda_87_vc3szor.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_remix_silver",
+      "name": "V-MODA REMIX Bluetooth Speaker",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+      "description": "V-MODA REMIX Bluetooth Speaker",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+        "original": "/data/thumbnails/v_moda_87_remix_silver.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "v_moda_87_boomprox",
+      "name": "V-MODA BoomPro X Microphone",
+      "brand": "v-moda",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_boomprox.jpg",
+      "description": "V-MODA BoomPro X Microphone",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/v_moda_87_boomprox.jpg",
+        "thumbnail": "/data/thumbnails/v_moda_87_boomprox.jpg",
+        "high_res": "/data/thumbnails/v_moda_87_boomprox.jpg",
+        "original": "/data/thumbnails/v_moda_87_boomprox.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "V-Moda",
+  "brand_slug": "v-moda",
+  "refined_at": "2026-01-24T02:50:44.529274+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "v_moda_87_hexmlite_bk",
+          "name": "V-MODA Hexamove Lite",
+          "description": "V-MODA Hexamove Lite",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
+            "original": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_hexmlite_wh",
+          "name": "V-MODA Hexamove Lite",
+          "description": "V-MODA Hexamove Lite",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
+            "original": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_hexmpr_wh",
+          "name": "V-MODA Hexamove Pro - White",
+          "description": "V-MODA Hexamove Pro - White",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
+            "original": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_s80bt_bk",
+          "name": "אוזניות אלחוטיות V-MODA S-80",
+          "description": "אוזניות אלחוטיות V-MODA S-80",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
+            "original": "/data/thumbnails/v_moda_87_s80bt_bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_m200bk",
+          "name": "אוזניות V-MODA M-200",
+          "description": "אוזניות V-MODA M-200",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_m200bk.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_m200bk.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_m200bk.jpg",
+            "original": "/data/thumbnails/v_moda_87_m200bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_m100pro",
+          "name": "אוזניות V-MODA M-100 Pro",
+          "description": "אוזניות V-MODA M-100 Pro",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_m100pro.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_m100pro.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_m100pro.jpg",
+            "original": "/data/thumbnails/v_moda_87_m100pro.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_m10",
+          "name": "אוזניות V-MODA M-10",
+          "description": "אוזניות V-MODA M-10",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_m10.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_m10.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_m10.jpg",
+            "original": "/data/thumbnails/v_moda_87_m10.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frziblack",
+          "name": "V-MODA Forza Black IPhone Headphones",
+          "description": "V-MODA Forza Black IPhone Headphones",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frziblack.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frziblack.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frziblack.jpg",
+            "original": "/data/thumbnails/v_moda_87_frziblack.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_m200anc",
+          "name": "אוזניות אלחוטיות V-MODA M-200 ANC",
+          "description": "אוזניות אלחוטיות V-MODA M-200 ANC",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_m200anc.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_m200anc.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_m200anc.jpg",
+            "original": "/data/thumbnails/v_moda_87_m200anc.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_xfbtrouge",
+          "name": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
+          "description": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
+            "original": "/data/thumbnails/v_moda_87_xfbtrouge.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_xsubk",
+          "name": "V-MODA XS On-Ear Headphones Matte Black",
+          "description": "V-MODA XS On-Ear Headphones Matte Black",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_xsubk.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_xsubk.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_xsubk.jpg",
+            "original": "/data/thumbnails/v_moda_87_xsubk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_xfbt2mwhite",
+          "name": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
+          "description": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
+            "original": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_ccpblack",
+          "name": "V-MODA CoilPro Cable",
+          "description": "V-MODA CoilPro Cable",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_ccpblack.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_ccpblack.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_ccpblack.jpg",
+            "original": "/data/thumbnails/v_moda_87_ccpblack.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzmagunblack",
+          "name": "V-MODA Forza Metallo Gunblack Android",
+          "description": "V-MODA Forza Metallo Gunblack Android",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzmagunblack.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzmwgunblack",
+          "name": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
+          "description": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzmargold",
+          "name": "V-MODA FORZA Metallo Rose Gold Android",
+          "description": "V-MODA FORZA Metallo Rose Gold Android",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzmargold.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzmargold.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzmargold.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzmargold.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzmirgold",
+          "name": "V-MODA Forza Metallo Rose Gold IPhone",
+          "description": "V-MODA Forza Metallo Rose Gold IPhone",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzmirgold.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzawhite",
+          "name": "V-MODA Forza White Android",
+          "description": "V-MODA Forza White Android",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzawhite.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzawhite.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzawhite.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzawhite.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzmigunblack",
+          "name": "V-MODA Forza Metallo Gunblack Iphone",
+          "description": "V-MODA Forza Metallo Gunblack Iphone",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzmigunblack.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzablack",
+          "name": "V-MODA Forza Black Android",
+          "description": "V-MODA Forza Black Android",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzablack.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzablack.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzablack.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzablack.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_vlct_bk",
+          "name": "V-MODA In-Ear BassFit Wireless Headphones",
+          "description": "V-MODA In-Ear BassFit Wireless Headphones",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+            "original": "/data/thumbnails/v_moda_87_vlct_bk.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_frzmwwsilver",
+          "name": "V-MODA Forza Metallo Wireless White Silver",
+          "description": "V-MODA Forza Metallo Wireless White Silver",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+            "original": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_vc3szor",
+          "name": "V-MODA SpeakEazy 3-Button Cable Orange",
+          "description": "V-MODA SpeakEazy 3-Button Cable Orange",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+            "original": "/data/thumbnails/v_moda_87_vc3szor.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_remix_silver",
+          "name": "V-MODA REMIX Bluetooth Speaker",
+          "description": "V-MODA REMIX Bluetooth Speaker",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+            "original": "/data/thumbnails/v_moda_87_remix_silver.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "v_moda_87_boomprox",
+          "name": "V-MODA BoomPro X Microphone",
+          "description": "V-MODA BoomPro X Microphone",
+          "images": {
+            "main": "/data/thumbnails/v_moda_87_boomprox.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_boomprox.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_boomprox.jpg",
+            "original": "/data/thumbnails/v_moda_87_boomprox.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}

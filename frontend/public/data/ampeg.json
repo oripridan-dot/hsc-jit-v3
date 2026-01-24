@@ -1,0 +1,179 @@
+{
+  "brand_identity": {
+    "id": "ampeg",
+    "name": "AMPEG",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/ampeg_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 5,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
+  "products": [
+    {
+      "id": "ampeg_63_classic",
+      "name": "פדל פראמפ לבס Ampeg Classic",
+      "brand": "ampeg",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/ampeg_63_classic.jpg",
+      "description": "פדל פראמפ לבס Ampeg Classic",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/ampeg_63_classic.jpg",
+        "thumbnail": "/data/thumbnails/ampeg_63_classic.jpg",
+        "high_res": "/data/thumbnails/ampeg_63_classic.jpg",
+        "original": "/data/thumbnails/ampeg_63_classic.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "ampeg_63_scraemblarbass",
+      "name": "Ampeg Scrambler Bass Overdrive",
+      "brand": "ampeg",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+      "description": "Ampeg Scrambler Bass Overdrive",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+        "thumbnail": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+        "high_res": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+        "original": "/data/thumbnails/ampeg_63_scraemblarbass.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "ampeg_63_liquifier",
+      "name": "Ampeg Liquifier Analog Chorus",
+      "brand": "ampeg",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/ampeg_63_liquifier.jpg",
+      "description": "Ampeg Liquifier Analog Chorus",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/ampeg_63_liquifier.jpg",
+        "thumbnail": "/data/thumbnails/ampeg_63_liquifier.jpg",
+        "high_res": "/data/thumbnails/ampeg_63_liquifier.jpg",
+        "original": "/data/thumbnails/ampeg_63_liquifier.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "ampeg_63_svtvr",
+      "name": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
+      "brand": "ampeg",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/ampeg_63_svtvr.jpg",
+      "description": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/ampeg_63_svtvr.jpg",
+        "thumbnail": "/data/thumbnails/ampeg_63_svtvr.jpg",
+        "high_res": "/data/thumbnails/ampeg_63_svtvr.jpg",
+        "original": "/data/thumbnails/ampeg_63_svtvr.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "ampeg_63_pf210he",
+      "name": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
+      "brand": "ampeg",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/ampeg_63_pf210he.jpg",
+      "description": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
+      "main_category": "accessories",
+      "images": {
+        "main": "/data/thumbnails/ampeg_63_pf210he.jpg",
+        "thumbnail": "/data/thumbnails/ampeg_63_pf210he.jpg",
+        "high_res": "/data/thumbnails/ampeg_63_pf210he.jpg",
+        "original": "/data/thumbnails/ampeg_63_pf210he.jpg"
+      },
+      "category_hierarchy": [
+        "accessories"
+      ]
+    }
+  ],
+  "brand_name": "Ampeg",
+  "brand_slug": "ampeg",
+  "refined_at": "2026-01-24T02:50:45.080140+00:00",
+  "hierarchy": {
+    "accessories": {
+      "General": [
+        {
+          "id": "ampeg_63_classic",
+          "name": "פדל פראמפ לבס Ampeg Classic",
+          "description": "פדל פראמפ לבס Ampeg Classic",
+          "images": {
+            "main": "/data/thumbnails/ampeg_63_classic.jpg",
+            "thumbnail": "/data/thumbnails/ampeg_63_classic.jpg",
+            "high_res": "/data/thumbnails/ampeg_63_classic.jpg",
+            "original": "/data/thumbnails/ampeg_63_classic.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "ampeg_63_scraemblarbass",
+          "name": "Ampeg Scrambler Bass Overdrive",
+          "description": "Ampeg Scrambler Bass Overdrive",
+          "images": {
+            "main": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+            "thumbnail": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+            "high_res": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+            "original": "/data/thumbnails/ampeg_63_scraemblarbass.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "ampeg_63_liquifier",
+          "name": "Ampeg Liquifier Analog Chorus",
+          "description": "Ampeg Liquifier Analog Chorus",
+          "images": {
+            "main": "/data/thumbnails/ampeg_63_liquifier.jpg",
+            "thumbnail": "/data/thumbnails/ampeg_63_liquifier.jpg",
+            "high_res": "/data/thumbnails/ampeg_63_liquifier.jpg",
+            "original": "/data/thumbnails/ampeg_63_liquifier.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "ampeg_63_svtvr",
+          "name": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
+          "description": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
+          "images": {
+            "main": "/data/thumbnails/ampeg_63_svtvr.jpg",
+            "thumbnail": "/data/thumbnails/ampeg_63_svtvr.jpg",
+            "high_res": "/data/thumbnails/ampeg_63_svtvr.jpg",
+            "original": "/data/thumbnails/ampeg_63_svtvr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "ampeg_63_pf210he",
+          "name": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
+          "description": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
+          "images": {
+            "main": "/data/thumbnails/ampeg_63_pf210he.jpg",
+            "thumbnail": "/data/thumbnails/ampeg_63_pf210he.jpg",
+            "high_res": "/data/thumbnails/ampeg_63_pf210he.jpg",
+            "original": "/data/thumbnails/ampeg_63_pf210he.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        }
+      ]
+    }
+  }
+}
