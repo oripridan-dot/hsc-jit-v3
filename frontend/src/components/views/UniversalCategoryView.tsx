@@ -59,10 +59,7 @@ export const UniversalCategoryView: React.FC = () => {
         {/* Spectrum View - THE STANDARD TEMPLATE */}
         <div className="flex-1 overflow-y-auto scrollbar-custom">
           {sortedProducts.length > 0 ? (
-            <SpectrumMiddleLayer
-              products={sortedProducts}
-              categoryName={categoryName}
-            />
+            <SpectrumMiddleLayer products={sortedProducts} />
           ) : (
             <div className="flex items-center justify-center h-full text-zinc-500">
               <div className="text-center">

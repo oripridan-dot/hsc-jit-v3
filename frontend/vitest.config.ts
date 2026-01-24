@@ -8,7 +8,10 @@ import path from "path";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    // @ts-expect-error - Vite version mismatch in monorepo
+    react(),
+  ],
   test: {
     globals: true,
     environment: "jsdom",
@@ -23,6 +26,7 @@ export default defineConfig({
         "**/*.spec.ts",
         "**/mockData.ts",
       ],
+      // @ts-expect-error - Coverage types mismatch
       lines: 80,
       functions: 80,
       branches: 75,

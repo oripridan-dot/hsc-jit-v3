@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { MediaBar } from "./components/MediaBar";
 import { Workbench } from "./components/Workbench";
 import "./index.css";
 import { instantSearch } from "./lib";
@@ -73,6 +74,9 @@ function AppContent() {
           </main>
         </ErrorBoundary>
       </div>
+
+      {/* Media Deck */}
+      <MediaBar />
     </div>
   );
 }

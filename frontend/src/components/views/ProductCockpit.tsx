@@ -37,9 +37,21 @@ export const ProductCockpit: React.FC<ProductCockpitProps> = ({ product }) => {
   const [activeTab, setActiveTab] = useState<"specs" | "docs" | "accessories">(
     "specs",
   );
+  const [showEilat, setShowEilat] = useState(false);
 
   // Safely extract manual list
   const manuals = product.manuals || [];
+
+  // Pricing Logic
+  const pricing = product.pricing || {};
+  const regularPrice = pricing.regular_price || product.halilit_price || 0;
+  const eilatPrice = pricing.eilat_price;
+  const listPrice = pricing.sale_price; // Backend maps "old/list price" to sale_price
+
+  // Display Logic
+  const currentPrice = showEilat && eilatPrice ? eilatPrice : regularPrice;
+  const isEilatMode = showEilat && !!eilatPrice;
+
 
   // Safely extract accessories
   const accessories = product.accessories || [];
@@ -212,10 +224,55 @@ export const ProductCockpit: React.FC<ProductCockpitProps> = ({ product }) => {
           <div className="w-full md:w-[45%] lg:w-[40%] flex flex-col bg-[#09090b] border-l border-white/5">
             {/* Product Summary */}
             <div className="p-8 pb-4">
-              <div className="text-4xl font-mono text-[#00ff94] mb-2 tracking-tighter">
-                {product.halilit_price || product.pricing?.regular_price
-                  ? `₪${(product.halilit_price || product.pricing?.regular_price || 0).toLocaleString()}`
-                  : "Price on Request"}
+              <div className="flex flex-col mb-4">
+                <div className="flex items-baseline justify-between w-full">
+                  <div
+                    className={`text-4xl font-mono tracking-tighter transition-colors duration-300 ${
+                      isEilatMode ? "text-orange-400" : "text-[#00ff94]"
+                    }`}
+                  >
+                    {currentPrice
+                      ? `₪${currentPrice.toLocaleString()}`
+                      : "Price on Request"}
+                  </div>
+
+                  {eilatPrice && (
+                    <button
+                      onClick={() => setShowEilat(!showEilat)}
+                      className={`text-xs px-3 py-1.5 rounded-full border font-medium transition-all duration-300 flex items-center gap-2 ${
+                        isEilatMode
+                          ? "bg-orange-500/20 text-orange-400 border-orange-500/50 hover:bg-orange-500/30"
+                          : "bg-white/5 text-zinc-400 border-white/10 hover:bg-white/10"
+                      }`}
+                    >
+                      {isEilatMode ? (
+                        <>
+                          <span>☀️</span> Eilat Price
+                        </>
+                      ) : (
+                        <>
+                          <span>🏙️</span> Standard Price
+                        </>
+                      )}
+                    </button>
+                  )}
+                </div>
+
+                {/* Strikethrough Logic */}
+                {!isEilatMode && listPrice && listPrice > regularPrice && (
+                  <div className="text-zinc-500 line-through text-sm font-mono mt-1">
+                    List: ₪{listPrice.toLocaleString()}
+                  </div>
+                )}
+
+                {/* Eilat Savings */}
+                {isEilatMode && (
+                  <div className="text-orange-400/60 text-sm font-mono mt-1">
+                    VAT Free Savings: ₪{(
+                      regularPrice - (eilatPrice || 0)
+                    ).toLocaleString()}
+                  </div>
+                )}
               </div>
               <p className="text-zinc-400 text-sm leading-relaxed line-clamp-3 md:line-clamp-none">
                 {product.description ||
@@ -404,7 +461,7 @@ export const ProductCockpit: React.FC<ProductCockpitProps> = ({ product }) => {
 interface TabButtonProps {
   active: boolean;
   onClick: () => void;
-  icon: React.FC<{ className?: string }>;
+  icon: React.ElementType;
   label: string;
   count?: number;
 }

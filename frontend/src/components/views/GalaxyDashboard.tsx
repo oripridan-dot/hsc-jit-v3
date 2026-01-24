@@ -1,251 +1,155 @@
 /**
- * GalaxyDashboard - v3.8.0 SCREEN 1
- * "Bird's Eye View of Halilit's Reach"
+ * GalaxyDashboard v3.13.0 - "UI/UX Basics"
+ * ==========================================
+ * Optimized layout for intuitive 16:9 desktop experience.
  *
- * The master control center showing all universal categories.
- * Click a category to dive into SCREEN 2 (Sub-Category Module with Spectrum View).
- *
- * Features:
- * - Adaptive grid (1-6 columns based on viewport)
- * - Dynamic thumbnails (most expensive product per category)
- * - Touch-optimized for mobile
- * - Smooth transitions between screens
+ * Layout Strategy:
+ * - 4 columns × 2 rows (Optimizes vertical breathing room)
+ * - Taller cards allow for proper square thumbnails
+ * - "App Grid" feel for subcategories
+ * - Clear hierarchy and affordances
  */
-import { motion } from "framer-motion";
-import React, { useEffect, useMemo, useState } from "react";
-import { catalogLoader } from "../../lib/catalogLoader";
-import {
-  buildDynamicThumbnailMap,
-  getThumbnailForCategory,
-  type CategoryThumbnail,
-} from "../../lib/dynamicThumbnails";
+import React from "react";
+import { BRAND_COLORS } from "../../lib/brandColors";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { useNavigationStore } from "../../store/navigationStore";
-import type { Product } from "../../types";
-
-// Placeholder for when no images are available
-const DEFAULT_FALLBACK = "/assets/react.svg";
 
 export const GalaxyDashboard: React.FC = () => {
-  const { selectUniversalCategory } = useNavigationStore();
-  const [gridColumns, setGridColumns] = useState(3);
-  const [allProducts, setAllProducts] = useState<Product[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const { currentSubcategory, selectSubcategory } = useNavigationStore();
 
-  // ============================================================
-  // 1. LOAD ALL PRODUCTS FROM ALL BRANDS
-  // ============================================================
-  useEffect(() => {
-    const loadAllProducts = async () => {
-      setIsLoading(true);
-
-      try {
-        // 1. Load the Master Index first to see available brands
-        const index = await catalogLoader.loadIndex();
-        const availableBrands = index.brands.map((b) => b.id);
-
-        console.log("📦 Available brands in index:", availableBrands);
-
-        // 2. Load only available brand catalogs
-        const catalogPromises = availableBrands.map((brand) =>
-          catalogLoader.loadBrand(brand).catch((err) => {
-            console.warn(`Failed to load brand ${brand}:`, err);
-            return null;
-          }),
-        );
-
-        const catalogs = await Promise.all(catalogPromises);
-
-        // Combine all products
-        const allProds: Product[] = [];
-        catalogs.forEach((catalog) => {
-          if (catalog?.products) {
-            allProds.push(...catalog.products);
-          }
-        });
-
-        setAllProducts(allProds);
-        console.log(
-          `✅ Loaded ${allProds.length} products for dynamic thumbnails`,
-        );
-      } catch (err) {
-        console.warn("Failed to load products:", err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadAllProducts();
-  }, []);
-
-  // ============================================================
-  // 2. BUILD DYNAMIC THUMBNAIL MAP (MOST EXPENSIVE PRODUCTS)
-  // ============================================================
-  const thumbnailMap = useMemo(() => {
-    if (allProducts.length === 0) return new Map();
-    return buildDynamicThumbnailMap(allProducts);
-  }, [allProducts]);
-
-  // Calculate responsive grid columns
-  useEffect(() => {
-    const calculateColumns = () => {
-      const width = window.innerWidth;
-      if (width < 640) return 1; // Mobile
-      if (width < 1024) return 2; // Tablet
-      if (width < 1280) return 2; // Small desktop
-      if (width < 1536) return 3; // Desktop
-      return 3; // Large screens
-    };
-
-    setGridColumns(calculateColumns());
-
-    const handleResize = () => {
-      setGridColumns(calculateColumns());
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // Derive visible categories from UNIVERSAL_CATEGORIES
-  const visibleCategories = UNIVERSAL_CATEGORIES.slice(0, 6); // Limit to 6 for grid fit
-
-  // ============================================================
-  // 3. ENHANCE CATEGORIES WITH DYNAMIC SUBCATEGORY THUMBNAILS
-  // ============================================================
-  const enhancedCategories = useMemo(() => {
-    console.log(
-      "🔍 Building enhanced categories with",
-      thumbnailMap.size,
-      "thumbnails",
-    );
-
-    return visibleCategories.map((cat) => {
-      // Get dynamic thumbnail for main category
-      const mainThumbnail = getThumbnailForCategory(thumbnailMap, cat.id);
-      const hasContent = !!mainThumbnail;
-
-      // Enhance subcategories with dynamic thumbnails
-      const enhancedSubcategories = cat.subcategories?.map((sub) => {
-        const subThumbnail = getThumbnailForCategory(
-          thumbnailMap,
-          cat.id,
-          sub.label,
-        );
-        return {
-          ...sub,
-          image: subThumbnail || sub.image || DEFAULT_FALLBACK,
-          hasContent: !!subThumbnail,
-        };
-      });
-
-      return {
-        ...cat,
-        mainThumbnail: mainThumbnail || DEFAULT_FALLBACK,
-        subcategories: enhancedSubcategories,
-        hasContent,
-      };
-    });
-  }, [visibleCategories, thumbnailMap]);
-
-  const handleCategoryClick = (categoryId: string) => {
-    selectUniversalCategory(categoryId);
+  const handleSubcategoryClick = (subcategoryId: string) => {
+    selectSubcategory(subcategoryId);
   };
 
   return (
-    <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden">
-      {/* Compact Grid - All Categories Visible */}
-      <main className="flex-1 overflow-hidden p-4">
-        <div className="h-full w-full max-w-[2000px] mx-auto flex flex-col">
-          {isLoading ? (
-            <div className="flex items-center justify-center h-64">
-              <div className="text-zinc-500 font-mono text-sm">
-                Loading dynamic thumbnails...
+    <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden font-sans">
+      {/* Header - Simple & Clean */}
+      <div className="flex-shrink-0 border-b border-zinc-800/50 px-6 py-3 bg-zinc-900/30 backdrop-blur-md">
+        <div className="flex items-center gap-3">
+          <div className="h-2 w-2 rounded-full bg-cyan-500 animate-pulse" />
+          <span className="text-sm font-medium text-zinc-300 tracking-wide">
+            GALAXY VIEW
+          </span>
+          {currentSubcategory && (
+            <>
+              <span className="text-zinc-600">/</span>
+              <span className="text-sm text-cyan-400 font-semibold">
+                Selection Active
+              </span>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* Main Grid: "Unbreakable" Layout - Fits Single Screen */}
+      <main className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-3 p-3 lg:p-4 overflow-hidden h-full min-h-0">
+        {UNIVERSAL_CATEGORIES.map((category) => (
+          <div
+            key={category.id}
+            className="group relative flex flex-col rounded-xl bg-zinc-900/40 border border-white/5 p-3 hover:bg-zinc-800/40 hover:border-white/10 transition-all duration-300 h-full min-h-0 shadow-lg"
+          >
+            {/* Category Identity */}
+            <div className="flex items-center gap-2 mb-2 flex-shrink-0">
+              <div
+                className="w-1 h-5 rounded-full"
+                style={{ backgroundColor: category.color }}
+              />
+              <div className="flex-1 min-w-0">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-white truncate">
+                  {category.label}
+                </h3>
+              </div>
+              <div className="text-[9px] text-zinc-600 font-mono">
+                {category.subcategories.length}
               </div>
             </div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="flex-1 grid gap-3 auto-rows-fr"
-              style={{
-                gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))`,
-                gridTemplateRows: "repeat(2, minmax(0, 1fr))",
-              }}
-            >
-              {enhancedCategories.map((cat, index) => {
-                const thumbnail = thumbnailMap.get(cat.id) as
-                  | CategoryThumbnail
-                  | undefined;
+
+            {/* Subcategories Grid: 2 cols x 3 rows (Strict Structure) */}
+            <div className="flex-1 grid grid-cols-2 grid-rows-3 gap-2 min-h-0">
+              {category.subcategories.map((subcategory) => {
+                const isSelected = currentSubcategory === subcategory.id;
+                // Get participating brands (limit to 3 for visual balance)
+                const brandList = subcategory.brands
+                  ? subcategory.brands.slice(0, 3)
+                  : [];
+
                 return (
-                  <motion.div
-                    key={cat.id}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.2, delay: index * 0.05 }}
-                    className="relative cursor-pointer group"
-                    onClick={() => handleCategoryClick(cat.id)}
+                  <button
+                    key={subcategory.id}
+                    onClick={() => handleSubcategoryClick(subcategory.id)}
+                    className={`
+                      relative flex flex-col items-center justify-between p-1.5 rounded-lg transition-all duration-300 group/item text-left w-full h-full overflow-hidden
+                      ${
+                        isSelected
+                          ? "bg-zinc-800/80 shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] border-b border-cyan-500/50"
+                          : "bg-black/60 shadow-[inset_0_4px_8px_rgba(0,0,0,0.8)] border-b border-white/5 hover:bg-black/80"
+                      }
+                    `}
                   >
-                    {/* Category Card */}
-                    <div className="relative w-full h-full rounded-xl border border-white/10 overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300">
-                      {/* Thumbnail Background */}
-                      {thumbnail?.imageUrl && (
-                        <div
-                          className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity duration-300"
-                          style={{
-                            backgroundImage: `url('${thumbnail.imageUrl}')`,
-                          }}
-                        />
-                      )}
+                    {/* Thumbnail Container - Flex to fit available height */}
+                    <div className="relative w-full flex-1 min-h-0 mb-1 rounded-md flex items-center justify-center overflow-hidden">
+                      {/* Deep Slot Shadow */}
+                      <div className="absolute inset-0 bg-black/40 shadow-[inset_0_0_15px_rgba(0,0,0,0.9)] rounded-md pointer-events-none z-0" />
 
-                      {/* Overlay Gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-
-                      {/* Content */}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 z-10">
-                        <h3 className="text-3xl font-black text-white mb-2 uppercase tracking-tight drop-shadow-lg">
-                          {cat.label}
-                        </h3>
-                        <p className="text-sm text-zinc-200 mb-4 drop-shadow">
-                          {cat.description}
-                        </p>
-                        <div className="text-xs text-zinc-300">
-                          {cat.subcategories?.length || 0} subcategories
-                        </div>
+                      {/* Brand Lightshow */}
+                      <div className="absolute bottom-0.5 w-full flex justify-center gap-1 z-0 px-2 pointer-events-none">
+                        {brandList.map((brand, idx) => {
+                          const color =
+                            BRAND_COLORS[brand] || BRAND_COLORS.default;
+                          return (
+                            <div
+                              key={idx}
+                              className={`
+                                 h-0.5 w-2 rounded-full shadow-[0_0_4px_rgba(255,255,255,0.2)] transition-all duration-500
+                                 ${isSelected ? "opacity-100 shadow-[0_0_6px_currentColor]" : "opacity-30 group-hover/item:opacity-70"}
+                               `}
+                              style={{
+                                backgroundColor: color,
+                                color: color,
+                              }}
+                            />
+                          );
+                        })}
                       </div>
 
-                      {/* Hover Indicator */}
-                      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                      {subcategory.image ? (
+                        <img
+                          src={subcategory.image}
+                          alt={subcategory.label}
+                          className={`
+                            relative z-10 w-full h-full object-contain p-1 transition-all duration-300 drop-shadow-xl
+                            ${isSelected ? "scale-105 opacity-100 brightness-110" : "opacity-90 grayscale-[20%] group-hover/item:grayscale-0 group-hover/item:opacity-100 group-hover/item:scale-105"}
+                          `}
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-zinc-700 relative z-10">
+                          <span className="text-[8px]">NO IMG</span>
+                        </div>
+                      )}
+
+                      {/* Selection Highlight */}
+                      {isSelected && (
+                        <div className="absolute inset-0 rounded-md ring-1 ring-cyan-500/30 pointer-events-none" />
+                      )}
                     </div>
-                  </motion.div>
+
+                    {/* Simple Label */}
+                    <div className="w-full text-center flex-shrink-0">
+                      <p
+                        className={`
+                        text-[9px] font-semibold leading-tight tracking-wide truncate
+                        ${isSelected ? "text-cyan-400" : "text-zinc-400 group-hover/item:text-zinc-200"}
+                      `}
+                      >
+                        {subcategory.label}
+                      </p>
+                    </div>
+                  </button>
                 );
               })}
-            </motion.div>
-          )}
-
-          {/* Compact Footer */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.6 }}
-            className="mt-3 text-center flex-shrink-0"
-          >
-            <div className="inline-flex items-center gap-3 px-4 py-2 bg-zinc-900/50 rounded-lg border border-zinc-800 text-xs">
-              <button className="font-mono text-zinc-500 hover:text-cyan-400 transition-colors">
-                SEARCH
-              </button>
-              <div className="w-px h-3 bg-zinc-700" />
-              <button className="font-mono text-zinc-500 hover:text-cyan-400 transition-colors">
-                BRANDS
-              </button>
-              <div className="w-px h-3 bg-zinc-700" />
-              <span className="font-mono text-zinc-700">
-                {allProducts.length} products
-              </span>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        ))}
       </main>
     </div>
   );
