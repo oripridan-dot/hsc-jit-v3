@@ -59,8 +59,8 @@ interface NavState {
   toggleViewMode: () => void;
   warpTo: (level: NavLevel, path: string[]) => void;
   selectBrand: (brandId: string) => void;
-  selectUniversalCategory: (category: string) => void;
-  selectSubcategory: (category: string, subcategory: string) => void;
+  selectUniversalCategory: (category: string | null) => void;
+  selectSubcategory: (subcategory: string | null) => void;
   selectCategory: (brandId: string, category: string) => void;
   selectProduct: (product: Product) => void;
   selectLayer: (layerName: string) => void; // New: Navigate to hierarchical layer
@@ -129,26 +129,43 @@ export const useNavigationStore = create<NavState>(
 
       selectUniversalCategory: (category) => {
         console.log("🌌 Universal Category Selected:", category);
-        set({
-          currentLevel: "universal",
-          selectedProduct: null,
-          currentUniversalCategory: category,
-          currentSubcategory: null,
-          activePath: [category],
-          currentBrand: null,
-        });
+        if (!category) {
+          set({
+            currentLevel: "galaxy",
+            selectedProduct: null,
+            currentUniversalCategory: null,
+            currentSubcategory: null,
+            activePath: [],
+            currentBrand: null,
+          });
+        } else {
+          set({
+            currentLevel: "universal",
+            selectedProduct: null,
+            currentUniversalCategory: category,
+            currentSubcategory: null,
+            activePath: [category],
+            currentBrand: null,
+          });
+        }
       },
 
-      selectSubcategory: (category, subcategory) => {
-        console.log("🌌 Subcategory Selected:", category, subcategory);
-        set({
-          currentLevel: "universal",
-          selectedProduct: null,
-          currentUniversalCategory: category,
-          currentSubcategory: subcategory,
-          activePath: [category, subcategory],
-          currentBrand: null,
-        });
+      selectSubcategory: (subcategory) => {
+        const { currentUniversalCategory } = get();
+        console.log("🌌 Subcategory Selected:", subcategory);
+        if (!subcategory) {
+          set({
+            currentSubcategory: null,
+            activePath: currentUniversalCategory ? [currentUniversalCategory] : [],
+          });
+        } else {
+          set({
+            currentSubcategory: subcategory,
+            activePath: currentUniversalCategory 
+              ? [currentUniversalCategory, subcategory] 
+              : [subcategory],
+          });
+        }
       },
 
       // Select a category within a brand (Category/Family Level view)
