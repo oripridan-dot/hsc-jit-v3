@@ -40,7 +40,7 @@ class TaxonomyRegistry:
         "accessories": Category("accessories", "Accessories", "🔧", "Accessories and add-ons"),
     }
     
-    # Brand-specific category mappings
+    # Manufacturer specific mappings
     BRAND_TAXONOMIES = {
         "roland": {
             "Production": "studio",
@@ -90,7 +90,57 @@ class TaxonomyRegistry:
             "Accessories": "accessories",
             "Software": "software",
             "Uncategorized": "accessories",
+        },
+        "bespeco": {
+             "Stands": "accessories",
+             "Cables": "accessories",
+             "Connectors": "accessories",
+             "Bags": "accessories",
+             "Accessories": "accessories",
+             "keys": "accessories", # Bespeco keys are usually stands
+             "Keys": "accessories"
+        },
+        # Explicit Fix for Foxgear
+        "foxgear-guitar-effects-and-pedals": {
+            "general": "guitars",  # Foxgear makes pedals, "general" implies their main line
+            "pedals": "guitars",
+            "effects": "guitars"
         }
+    }
+
+    # Global Keyword Matcher (Fallback system)
+    # Maps common terms in category names to Universal IDs
+    GLOBAL_KEYWORD_RULES = {
+        # Guitars
+        "guitar": "guitars", "bass": "guitars", "amp": "guitars", 
+        "pedal": "guitars", "fuzz": "guitars", "distortion": "guitars", "overdrive": "guitars",
+        "ukulele": "guitars", "mandolin": "guitars", "banjo": "guitars",
+        
+        # Drums
+        "drum": "drums", "percussion": "drums", "cajon": "drums", "cymbal": "drums", 
+        "snare": "drums", "tom": "drums", "stick": "drums", "hardware": "drums",
+        
+        # Keys
+        "piano": "keys", "synth": "keys", "keyboard": "keys", "organ": "keys", "accordion": "keys",
+        
+        # Studio
+        "studio": "studio", "recording": "studio", "monitor": "studio", 
+        "microphone": "studio", "mic": "studio", "interface": "studio", "preamp": "studio",
+        
+        # Live
+        "live": "live", "wireless": "live", "mixer": "live", "pa system": "live", 
+        "speaker": "live", "subwoofer": "live", "loudspeaker": "live",
+        
+        # DJ
+        "dj": "dj", "controller": "dj", "turntable": "dj",
+        
+        # Software
+        "software": "software", "plugin": "software", "cloud": "software", "app": "software",
+        
+        # Accessories
+        "accessory": "accessories", "accessories": "accessories", "case": "accessories", 
+        "bag": "accessories", "cable": "accessories", "stand": "accessories", "tuner": "accessories",
+        "stool": "accessories", "bench": "accessories", "metronome": "accessories", "general": "accessories"
     }
     
     def __init__(self):
@@ -107,6 +157,14 @@ class TaxonomyRegistry:
         if not raw_category:
             return None
         
+        raw_lower = raw_category.lower().strip()
+        
+        # 0. Pre-Validation: Is it already a Universal Category?
+        # This handles cases where the scraper already found a perfect match (e.g. "keys", "drums")
+        if raw_lower in self.UNIVERSAL_CATEGORIES:
+            return raw_lower
+
+        # 1. Brand-Specific Mapping (Highest Priority)
         brand_map = self.BRAND_TAXONOMIES.get(brand_id, {})
         
         # Try exact match
@@ -115,17 +173,22 @@ class TaxonomyRegistry:
         
         # Try case-insensitive match
         for key, value in brand_map.items():
-            if key.lower() == raw_category.lower():
+            if key.lower() == raw_lower:
                 return value
         
-        # Try substring match
-        raw_lower = raw_category.lower()
+        # Try substring in brand map
         for key, value in brand_map.items():
             if key.lower() in raw_lower or raw_lower in key.lower():
                 return value
         
-        # Default to accessories
-        return "accessories"
+        # 2. Global Keyword Fallback (Systemic Standardization)
+        # This catches "Electric Guitars" -> "guitars", "Snare Drums" -> "drums", etc.
+        for keyword, universal_id in self.GLOBAL_KEYWORD_RULES.items():
+             if keyword in raw_lower:
+                 return universal_id
+
+        # No match found
+        return None
     
     def get_brand(self, brand_id: str) -> Optional[BrandTaxonomy]:
         """Get taxonomy for a specific brand"""

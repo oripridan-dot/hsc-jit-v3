@@ -23,12 +23,16 @@ from pathlib import Path
 from datetime import datetime, timezone
 from typing import Dict, List, Any
 import logging
+import requests
 import urllib.request
 import urllib.error
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from io import BytesIO
 import base64
 from services.visual_factory import VisualFactory
 from models.taxonomy_registry import TaxonomyRegistry, get_registry
+from services.catalog_verifier import CatalogVerifier
 
 # --- SETUP LOGGING ---
 logging.basicConfig(
@@ -38,7 +42,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
-SOURCE_DIR = Path("../data/catalogs_brand")  # Where scraper outputs live
+SOURCE_DIR = Path("data/vault/catalogs_brand")  # Where scraper outputs live (Data Vault)
 PUBLIC_DATA_PATH = Path("../frontend/public/data")  # The "Live" destination
 LOGOS_DIR = PUBLIC_DATA_PATH / "logos"  # Logo destination
 CATALOG_VERSION = "3.7.4"
@@ -145,6 +149,7 @@ class HalilitCatalog:
             "images_verified": 0,
             "errors": []
         }
+        self.lock = threading.Lock()
     
     def _download_logo(self, logo_url: str, brand_slug: str) -> str:
         """
@@ -190,26 +195,61 @@ class HalilitCatalog:
             if local_path.exists():
                 return f"/data/logos/{brand_slug}_logo{ext}"
             
-            # Download with timeout
-            req = urllib.request.Request(
-                logo_url,
-                headers={'User-Agent': 'Mozilla/5.0 (Halilit Catalog Builder)'}
-            )
-            with urllib.request.urlopen(req, timeout=5) as response:
-                logo_data = response.read()
-                
-                # Save locally
+            # Download with timeout (Standardized via requests)
+            headers = {'User-Agent': 'Mozilla/5.0 (Halilit Catalog Builder)'}
+            response = requests.get(logo_url, headers=headers, timeout=10)
+            
+            if response.status_code == 200:
                 with open(local_path, 'wb') as f:
-                    f.write(logo_data)
-                
-                logger.info(f"      ✓ Downloaded logo: {brand_slug} ({len(logo_data)} bytes)")
+                    f.write(response.content)
+                logger.info(f"      ✓ Downloaded logo: {brand_slug} ({len(response.content)} bytes)")
                 return f"/data/logos/{brand_slug}_logo{ext}"
+            else:
+                logger.info(f"      ⚪ Logo skipped (Status {response.status_code})")
+                return logo_url
         
         except Exception as e:
-            logger.warning(f"      ⚠️  Failed to download logo from {logo_url}: {e}")
+            logger.info(f"      ⚪ Logo skipped: {e}")
             # Fallback: return original URL and let browser fetch it
             return logo_url
     
+    def _enforce_naming_convention(self, name: str) -> str:
+        """
+        Enforce Halilit Naming Standards:
+        1. Title Case (e.g. "GRAND PIANO" -> "Grand Piano")
+        2. Clean unnecessary spaces
+        3. Preserve known acronyms (optional expansion)
+        """
+        if not name:
+            return ""
+        
+        # 1. Clean spaces
+        clean_name = " ".join(name.split())
+        
+        # 2. Fix ALL CAPS (if length > 3 to avoid acronyms like 'RD-88')
+        # We detect if the ratio of uppercase letters is high
+        upper_ratio = sum(1 for c in clean_name if c.isupper()) / len(clean_name) if len(clean_name) > 0 else 0
+        if upper_ratio > 0.8 and len(clean_name) > 4:
+            # Convert to Title Case
+            clean_name = clean_name.title()
+            
+            # Fix specific acronyms that get broken by .title()
+            # e.g. "Tr-08" -> "TR-08"
+            replacements = {
+               "Tr-": "TR-",
+               "Tb-": "TB-",
+               "Juno-": "JUNO-",
+               "Rd-": "RD-",
+               "Fp-": "FP-",
+               "Usb": "USB",
+               "Midi": "MIDI",
+               "Dj": "DJ"
+            }
+            for k, v in replacements.items():
+                clean_name = clean_name.replace(k, v)
+                
+        return clean_name
+
     def build(self):
         """Main Catalog Build Process"""
         logger.info(f"📚 [CATALOG] Building Halilit Catalog v{CATALOG_VERSION}...")
@@ -229,7 +269,10 @@ class HalilitCatalog:
             # 4. Finalize Catalog
             self._finalize_catalog()
             
-            # 5. Report
+            # 5. Verification
+            self._verify_output()
+            
+            # 6. Report
             self._report()
             
             logger.info("✅ [CATALOG] Complete. System ready at frontend/public/data/index.json")
@@ -279,12 +322,20 @@ class HalilitCatalog:
         # Filter out "-brand.json" and "_brand.json" files to avoid duplicates (only process catalogs)
         catalog_files = [f for f in catalog_files if not ('_brand.json' in f.name or '-brand.json' in f.name)]
         
-        for catalog_file in catalog_files:
-            try:
-                self._process_brand(catalog_file)
-            except Exception as e:
-                logger.error(f"      ❌ Failed: {catalog_file.name} - {e}")
-                self.stats["errors"].append(str(e))
+        MAX_WORKERS = 8 # Parallel processing
+        logger.info(f"      🚀 Accelerating with {MAX_WORKERS} concurrent workers...")
+        
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            future_to_file = {executor.submit(self._process_brand, cf): cf for cf in catalog_files}
+            
+            for future in as_completed(future_to_file):
+                cf = future_to_file[future]
+                try:
+                    future.result()
+                except Exception as e:
+                    logger.error(f"      ❌ Failed: {cf.name} - {e}")
+                    with self.lock:
+                        self.stats["errors"].append(str(e))
     
     def _process_brand(self, catalog_file: Path):
         """Process a single brand catalog."""
@@ -321,24 +372,25 @@ class HalilitCatalog:
             brand_identity = refined_data.get('brand_identity', {})
             brand_colors = brand_identity.get('brand_colors', {})
             
-            self.master_index["brands"].append({
-                "id": safe_slug,
-                "name": brand_name,
-                "slug": safe_slug,
-                "count": product_count,
-                # Frontend expects:
-                "brand_color": brand_colors.get('primary'),
-                "logo_url": brand_identity.get('logo_url'),
-                "file": f"{safe_slug}.json",
-                "data_file": f"{safe_slug}.json",
-                "product_count": product_count,
-                "verified_count": product_count,
-                "last_updated": datetime.now(timezone.utc).isoformat()
-            })
-            
-            # --- UPDATE STATS ---
-            self.stats["brands_processed"] += 1
-            self.stats["products_total"] += product_count
+            with self.lock:
+                self.master_index["brands"].append({
+                    "id": safe_slug,
+                    "name": brand_name,
+                    "slug": safe_slug,
+                    "count": product_count,
+                    # Frontend expects:
+                    "brand_color": brand_colors.get('primary'),
+                    "logo_url": brand_identity.get('logo_url'),
+                    "file": f"{safe_slug}.json",
+                    "data_file": f"{safe_slug}.json",
+                    "product_count": product_count,
+                    "verified_count": product_count,
+                    "last_updated": datetime.now(timezone.utc).isoformat()
+                })
+                
+                # --- UPDATE STATS ---
+                self.stats["brands_processed"] += 1
+                self.stats["products_total"] += product_count
             
         except json.JSONDecodeError as e:
             logger.error(f"      ❌ Invalid JSON in {catalog_file.name}: {e}")
@@ -407,6 +459,14 @@ class HalilitCatalog:
                 if not product.get('id'):
                     product['id'] = f"{slug}-product-{idx}"
                 
+                # --- NAMING STANDARDIZATION ---
+                # Apply Title Case and Cleanup before any other processing
+                original_name = product.get('name', '')
+                standardized_name = self._enforce_naming_convention(original_name)
+                if standardized_name != original_name:
+                    # logger.info(f"      ✨ Renamed: {original_name} -> {standardized_name}")
+                    product['name'] = standardized_name
+
                 # --- TAXONOMY VALIDATION CHECKPOINT ---
                 raw_category = product.get('main_category') or product.get('category')
                 raw_subcategory = product.get('subcategory')
@@ -622,6 +682,24 @@ class HalilitCatalog:
         logger.info(f"      ✓ {self.master_index['total_products']} products")
         logger.info(f"      ✓ {len(self.master_index['search_graph'])} search entries")
     
+    def _verify_output(self):
+        """Run post-generation verification"""
+        logger.info("   [4.5/5] Verifying catalog integrity...")
+        verifier = CatalogVerifier(self.output_dir)
+        report = verifier.verify()
+        
+        # Merge verifier stats into build stats
+        self.stats["verification"] = report["stats"]
+        if report["status"] == "FAIL":
+            self.stats["errors"].append(f"Verification FAILED with {report['stats']['errors']} errors")
+        
+        # Log Top Issues
+        for issue in report["issues"][:5]: # Show top 5
+             logger.warning(f"      ⚠️  [{issue['level']}] {issue['context']}: {issue['message']}")
+        
+        if len(report['issues']) > 5:
+             logger.warning(f"      ... and {len(report['issues']) - 5} more issues.")
+
     def _report(self):
         """Print final catalog build report."""
         logger.info("   [4/4] Catalog Build Report")

@@ -127,11 +127,16 @@ class HalilitBrandRegistry:
             if not os.path.exists(local_path):
                 print(f"  ⬇️  Ingesting Logo: {brand['name']}")
                 try:
-                    img_data = requests.get(brand['logo_url']).content
-                    with open(local_path, 'wb') as f:
-                        f.write(img_data)
-                except:
-                    print(f"  ⚠️  Failed to download logo for {brand['name']}")
+                    # Use session to ensure headers/User-Agent are sent
+                    response = self.session.get(brand['logo_url'], timeout=10)
+                    if response.status_code == 200:
+                        with open(local_path, 'wb') as f:
+                            f.write(response.content)
+                    else:
+                         print(f"     ⚪ Logo skipped (Status {response.status_code})")
+                except Exception as e:
+                    # Log as info/debug rather than warning if it's just a connection blip
+                    print(f"     ⚪ Logo skipped for {brand['name']}")
 
 if __name__ == "__main__":
     reg = HalilitBrandRegistry()

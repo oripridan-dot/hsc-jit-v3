@@ -43,8 +43,14 @@ class GenesisBuilder:
     
     # Use absolute paths based on file location to be safe
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # hsc-jit-v3/backend
-    FRONTEND_DATA = os.path.join(os.path.dirname(BASE_DIR), "frontend/public/data")
-    FRONTEND_IMAGES = os.path.join(os.path.dirname(BASE_DIR), "frontend/public/data/images")
+    
+    # OUTPUT DESTINATION: Data Vault (Intermediate Storage)
+    # We scrape to Vault, then Forge Backbone refines it to Frontend
+    OUTPUT_DIR = os.path.join(BASE_DIR, "data", "vault", "catalogs_brand")
+    
+    # LEGACY / REFERENCE:
+    # FRONTEND_DATA = os.path.join(os.path.dirname(BASE_DIR), "frontend/public/data")
+    # FRONTEND_IMAGES = os.path.join(os.path.dirname(BASE_DIR), "frontend/public/data/images")
 
     def __init__(self, brand_key: str):
         """
@@ -92,7 +98,10 @@ class GenesisBuilder:
         Update the brand catalog file (e.g. roland.json) with new image URLs.
         Preserves existing brand identity if file exists.
         """
-        catalog_path = os.path.join(self.FRONTEND_DATA, f"{self.brand}.json")
+        # Ensure Vault directory exists
+        os.makedirs(self.OUTPUT_DIR, exist_ok=True)
+            
+        catalog_path = os.path.join(self.OUTPUT_DIR, f"{self.brand}.json")
         catalog_data = {}
         
         if os.path.exists(catalog_path):
@@ -159,8 +168,8 @@ class GenesisBuilder:
         try:
             # 1. Prepare Paths
             safe_id = item['id']
-            product_folder = os.path.join(self.FRONTEND_DATA, self.brand)
-            image_folder = os.path.join(self.FRONTEND_IMAGES, self.brand)
+            product_folder = os.path.join(self.OUTPUT_DIR, self.brand)
+            image_folder = os.path.join(self.OUTPUT_DIR, "images", self.brand)
             
             os.makedirs(product_folder, exist_ok=True)
             os.makedirs(image_folder, exist_ok=True)
