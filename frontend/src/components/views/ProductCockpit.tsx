@@ -404,7 +404,7 @@ export const ProductCockpit: React.FC<ProductCockpitProps> = ({ product }) => {
 interface TabButtonProps {
   active: boolean;
   onClick: () => void;
-  icon: React.FC<{ className?: string }>;
+  icon: React.ElementType;
   label: string;
   count?: number;
 }

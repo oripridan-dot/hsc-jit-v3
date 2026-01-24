@@ -90,7 +90,7 @@ export const SpectrumDemo: React.FC = () => {
         </div>
 
         {/* The Spectrum Layer */}
-        <SpectrumMiddleLayer products={products} categoryName="Keys & Pianos" />
+        <SpectrumMiddleLayer products={products} />
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">

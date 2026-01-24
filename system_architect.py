@@ -67,24 +67,44 @@ class SystemArchitect:
                     self.log(f"  -> Removed .py from frontend: {file}")
 
         # 2. No JS/TS in Backend root/services (except config possibly?)
-        # We'll be strict. Backend is Python.
         be_src = os.path.join(self.ROOT_PATH, "backend")
-        allowed_dirs = ["static", "templates"] # If flask/django, but this is script.
         
         for root, dirs, files in os.walk(be_src):
-            # Skip vault
             if "vault" in root or "node_modules" in root:
                 continue
                 
             for file in files:
+                # We allow .sh now for hydration
                 if file.endswith((".ts", ".tsx", ".js", ".jsx")) and "json" not in file:
-                    # check if actually needed?
-                    # basic rule: move to vault
                     src = os.path.join(root, file)
                     dst = os.path.join(self.VAULT_PATH, "quarantined_backend_js", file)
                     os.makedirs(os.path.dirname(dst), exist_ok=True)
                     shutil.move(src, dst)
                     self.log(f"  -> Removed .js/ts from backend: {file}")
+
+        # 3. Clean Root of Temporary/Junk Files
+        root_junk_extensions = [".html", ".js", ".sh"] # We guard specific sh files
+        preserved_sh = ["auto_process.sh"] # Keep this one
+        
+        for file in os.listdir(self.ROOT_PATH):
+            full_path = os.path.join(self.ROOT_PATH, file)
+            if not os.path.isfile(full_path):
+                continue
+                
+            ext = os.path.splitext(file)[1]
+            if ext in root_junk_extensions:
+                if file in preserved_sh:
+                    continue
+                
+                # Check if it's a known config file
+                if "config" in file or "eslint" in file or "vite" in file:
+                    continue
+                    
+                src = full_path
+                dst = os.path.join(self.VAULT_PATH, "root_cleanup", file)
+                os.makedirs(os.path.dirname(dst), exist_ok=True)
+                shutil.move(src, dst)
+                self.log(f"  -> Moved root clutter to vault: {file}")
 
     def archive_tools(self):
         """Moves backend/tools to vault (Hard Delete from Workspace view)."""
@@ -154,6 +174,21 @@ class SystemArchitect:
             else:
                 status = "✅ ONLINE" if exists else "❌ CRITICAL MISSING"
             print(f"{name:<20} : {status}")
+
+        # Check Lean Mode Status
+        venv_path = os.path.join(self.ROOT_PATH, "backend", "venv") # Nesting corrected
+        no_venv = not os.path.exists(venv_path) and not os.path.exists(os.path.join(self.ROOT_PATH, ".venv"))
+        
+        print("\n📉 LEAN MODE STATUS")
+        if no_venv:
+             print("  ✅ ACTIVE: No heavy Python environment detected.")
+             hydra = os.path.join(self.ROOT_PATH, "backend", "hydrate_env.sh")
+             if os.path.exists(hydra):
+                 print("  💧 ULTRA-READY: 'hydrate_env.sh' found in backend/.")
+             else:
+                 print("  ⚠️  ATTENTION: 'hydrate_env.sh' missing from backend/.")
+        else:
+            print("  ⚠️  INACTIVE: Heavy Python environment detected (Disk Usage High).")
 
 if __name__ == "__main__":
     arch = SystemArchitect()
