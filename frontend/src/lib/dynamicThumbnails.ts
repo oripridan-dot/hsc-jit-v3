@@ -244,7 +244,7 @@ export function buildDynamicThumbnailMap(
     }
 
     // B. Find Hero for each Subcategory
-    for (const sub of catDetails.subcategories) {
+    for (const sub of catDetails.spectrum) {
       const matchers = SUBCATEGORY_MATCHERS[sub.label];
 
       // Filter products that match THIS subcategory using keywords
