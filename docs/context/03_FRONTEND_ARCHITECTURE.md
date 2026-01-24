@@ -17,7 +17,11 @@
 
 ## 🧩 Component Registry
 ### UI Components
+- `frontend/src/components/SystemHud.tsx`
+- `frontend/src/components/smart-views/TierBar.tsx`
 - `frontend/src/components/ui/ContextBadge.tsx`
+- `frontend/src/components/ui/Control.tsx`
+- `frontend/src/components/ui/Surface.tsx`
 - `frontend/src/components/views/GalaxyDashboard.tsx`
 - `frontend/src/components/views/ProductPopInterface.tsx`
 - `frontend/src/components/views/SpectrumModule.tsx`

@@ -1,13 +1,13 @@
 # 🆔 01_PROJECT_IDENTITY.md
 
-**Generated:** 2026-01-24 18:39:49
+**Generated:** 2026-01-24 22:57:26
 
 ## 📌 Status
 - **Project:** HSC-JIT v3
 - **Version:** 3.9.0
 - **Branch:** `v3.9.0-pop-interface`
-- **Commit:** `a2a7c977`
-- **Last Message:** Merge branch 'v3.8.2-full-catalog'
+- **Commit:** `32bd72be`
+- **Last Message:** Implement dynamic price curtains in TierBar and update catalogs
 - **Total Files Tracked:** 4835
 
 ## 🎯 Primary Directive
@@ -103,6 +103,7 @@ Every file in the repository (excluding git/node_modules):
 - `backend/data/blueprints/rhythm-tech_blueprint.json`
 - `backend/data/blueprints/rogers_blueprint.json`
 - `backend/data/blueprints/roland_blueprint.json`
+- `backend/data/blueprints/roland_commercial.json`
 - `backend/data/blueprints/santos-martinez_blueprint.json`
 - `backend/data/blueprints/show_blueprint.json`
 - `backend/data/blueprints/solar-guitars_blueprint.json`
@@ -119,6 +120,7 @@ Every file in the repository (excluding git/node_modules):
 - `backend/data/blueprints/washburn_blueprint.json`
 - `backend/data/blueprints/xotic_blueprint.json`
 - `backend/data/blueprints/xvive_blueprint.json`
+- `backend/data/system_status.json`
 - `backend/data/vault/catalogs_brand/-eaw-eastern-acoustic-works-.json`
 - `backend/data/vault/catalogs_brand/-eaw-eastern-acoustic-works-/_eaw_eastern_acoustic_works__89_cis300.json`
 - `backend/data/vault/catalogs_brand/-eaw-eastern-acoustic-works-/_eaw_eastern_acoustic_works__89_cis400.json`
@@ -3464,6 +3466,7 @@ Every file in the repository (excluding git/node_modules):
 - `backend/data/vault/catalogs_brand/rogers/rogers_36_twr23sbv.json`
 - `backend/data/vault/catalogs_brand/rogers/rogers_36_twr24srm.json`
 - `backend/data/vault/catalogs_brand/rogers/rogers_36_twr26srm.json`
+- `backend/data/vault/catalogs_brand/roland.json`
 - `backend/data/vault/catalogs_brand/santos-martinez.json`
 - `backend/data/vault/catalogs_brand/santos-martinez/santos_martinez_20_sm120.json`
 - `backend/data/vault/catalogs_brand/santos-martinez/santos_martinez_20_sm250.json`
@@ -4182,6 +4185,7 @@ Every file in the repository (excluding git/node_modules):
 - `backend/generate_final_category_thumbnails.py`
 - `backend/generate_flagship_thumbnails.py`
 - `backend/generate_frontend_json.py`
+- `backend/heartbeat.py`
 - `backend/hydrate_env.sh`
 - `backend/mass_ingest_protocol.py`
 - `backend/models/__init__.py`
@@ -4217,21 +4221,11 @@ Every file in the repository (excluding git/node_modules):
 - `backend/thumbnail_pipeline.py`
 - `backend/update_manifests.py`
 - `context_forge.py`
-- `docs/ACTIVATION_GUIDE.md`
 - `docs/BRAND_TAXONOMY_ARCHITECTURE.md`
 - `docs/CATEGORY_CONSOLIDATION_ARCHITECTURE.md`
-- `docs/CATEGORY_THUMBNAILS_COMPLETE.md`
-- `docs/CATEGORY_THUMBNAILS_GUIDE.md`
-- `docs/CLEANUP_SUMMARY.md`
-- `docs/CURRENT_STATE.md`
-- `docs/DEPLOYMENT_COMPLETE.md`
-- `docs/GALAXYDASHBOARD_IMPLEMENTATION_SUMMARY.md`
 - `docs/GALAXY_DASHBOARD_MASTER.md`
 - `docs/HOW_THUMBNAILS_WORK.md`
-- `docs/SCRAPER_STATUS.md`
-- `docs/STATUS_REPORT.md`
 - `docs/SYSTEM_ARCHITECTURE.md`
-- `docs/THUMBNAIL_PIPELINE_DIAGNOSIS.md`
 - `docs/brand_scrapers/adam-audio_scraping_guide.json`
 - `docs/context/01_PROJECT_IDENTITY.md`
 - `docs/context/02_BACKEND_PIPELINE.md`
@@ -4626,6 +4620,7 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/assets/thumbs/stands.svg`
 - `frontend/public/assets/thumbs/synth.svg`
 - `frontend/public/data/-eaw-eastern-acoustic-works-.json`
+- `frontend/public/data/accessories-utility.json`
 - `frontend/public/data/accessories.json`
 - `frontend/public/data/adam-audio.json`
 - `frontend/public/data/adams.json`
@@ -4795,6 +4790,7 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/steinberg-.json`
 - `frontend/public/data/studio-logic.json`
 - `frontend/public/data/studio-recording.json`
+- `frontend/public/data/system_manifest.json`
 - `frontend/public/data/taxonomy.json`
 - `frontend/public/data/tombo.json`
 - `frontend/public/data/topp-pro.json`
@@ -4808,7 +4804,11 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/xvive.json`
 - `frontend/src/App.tsx`
 - `frontend/src/assets/react.svg`
+- `frontend/src/components/SystemHud.tsx`
+- `frontend/src/components/smart-views/TierBar.tsx`
 - `frontend/src/components/ui/ContextBadge.tsx`
+- `frontend/src/components/ui/Control.tsx`
+- `frontend/src/components/ui/Surface.tsx`
 - `frontend/src/components/ui/index.ts`
 - `frontend/src/components/views/GalaxyDashboard.tsx`
 - `frontend/src/components/views/ProductPopInterface.tsx`

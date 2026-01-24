@@ -45,7 +45,7 @@ logger = logging.getLogger(__name__)
 SOURCE_DIR = Path("data/vault/catalogs_brand")  # Where scraper outputs live (Data Vault)
 PUBLIC_DATA_PATH = Path("../frontend/public/data")  # The "Live" destination
 LOGOS_DIR = PUBLIC_DATA_PATH / "logos"  # Logo destination
-CATALOG_VERSION = "3.7.4"
+CATALOG_VERSION = "3.9.0"
 
 # Brand color themes (WCAG AA compliant)
 BRAND_THEMES = {
