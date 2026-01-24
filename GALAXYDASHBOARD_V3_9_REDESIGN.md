@@ -59,7 +59,8 @@ When user clicks "KEYS & PIANOS", they see all 6 subcategories as thumbnails:
 └──────────────────────────────────────────────────────┘
 ```
 
-**Click a subcategory →** 
+**Click a subcategory →**
+
 - Highlights with cyan border
 - Cyan dot appears in top-right
 - Bottom buttons update
@@ -70,6 +71,7 @@ When user clicks "KEYS & PIANOS", they see all 6 subcategories as thumbnails:
 ## 🔄 User Interactions
 
 ### Scenario 1: Browse Categories
+
 ```
 User starts → Sees 8 main categories
 User clicks "DRUMS & PERCUSSION" → Level 2 opens showing 6 drum subcategories
@@ -77,6 +79,7 @@ User clicks "← Back to Categories" → Returns to Level 1
 ```
 
 ### Scenario 2: Select Subcategory
+
 ```
 User at Level 1 → Clicks "KEYS & PIANOS"
 User at Level 2 → Clicks "Synthesizers" thumbnail
@@ -88,6 +91,7 @@ Status:
 ```
 
 ### Scenario 3: Switch Subcategory via Buttons
+
 ```
 User has "Synthesizers" selected (Level 2)
 User clicks "Stage Pianos" button at bottom
@@ -102,6 +106,7 @@ Status:
 ## 🎨 UI Components
 
 ### Header Bar
+
 - Back button (visible only when not at Level 1)
 - Breadcrumb showing: "Category Name → Subcategory Name"
 - Product count in top-right
@@ -111,6 +116,7 @@ Status:
 ```
 
 ### Subcategory Grid
+
 - Responsive: 2-4 columns based on viewport width
 - Each card shows:
   - Thumbnail image (400x400 from universalCategories.ts)
@@ -119,6 +125,7 @@ Status:
   - Selected: Cyan border + cyan dot
 
 ### Bottom Control Bar
+
 - Shows quick-access buttons for all subcategories in current category
 - Selected subcategory button: Cyan background, glowing shadow
 - Unselected buttons: Gray background, hover effect
@@ -176,12 +183,14 @@ UNIVERSAL_CATEGORIES (hardcoded)
 The bottom control bar is **ready for Spectrum Module integration**:
 
 When user has a subcategory selected:
+
 1. Store contains `currentUniversalCategory` and `currentSubcategory`
 2. Products are being loaded based on that selection
 3. Spectrum Module screen can read these values
 4. Display products filtered by category/subcategory
 
 **Files already prepared:**
+
 - `GalaxyDashboard.tsx` - Handles navigation
 - `navigationStore.ts` - Maintains selection state
 - `universalCategories.ts` - Defines all 40 categories with thumbnails
@@ -191,26 +200,31 @@ When user has a subcategory selected:
 ## 🎯 Key Features
 
 ✅ **Two-level Navigation**
+
 - Main categories → Subcategories
 - Back button to return to main
 
 ✅ **Visual Feedback**
+
 - Thumbnails with product images
 - Selection indicators (cyan border + dot)
 - Hover effects for interactivity
 - Bottom buttons for quick switching
 
 ✅ **Responsive Design**
+
 - Scales from mobile (2 columns) to desktop (4 columns)
 - Touch-friendly on all devices
 - Smooth animations
 
 ✅ **State Persistence**
+
 - Selection state saved to localStorage
 - User returns to same category on reload
 - Breadcrumbs show current path
 
 ✅ **Ready for Integration**
+
 - Navigation state available for Spectrum Module
 - Products loading based on selection
 - Category/subcategory info in store

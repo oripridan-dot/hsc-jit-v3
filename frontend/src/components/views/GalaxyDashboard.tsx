@@ -140,9 +140,7 @@ export const GalaxyDashboard: React.FC = () => {
                 )}
               </span>
             )}
-            {!currentUniversalCategory && (
-              <span>🏠 SELECT A CATEGORY</span>
-            )}
+            {!currentUniversalCategory && <span>🏠 SELECT A CATEGORY</span>}
           </div>
           <div className="font-mono text-xs text-zinc-500">
             {allProducts.length} products
@@ -292,7 +290,8 @@ export const GalaxyDashboard: React.FC = () => {
                     {selectedSubcategory.label}
                   </div>
                   <div>
-                    {selectedSubcategory.brands?.join(", ") || "Multiple brands"}
+                    {selectedSubcategory.brands?.join(", ") ||
+                      "Multiple brands"}
                   </div>
                 </div>
                 <div className="flex gap-2">

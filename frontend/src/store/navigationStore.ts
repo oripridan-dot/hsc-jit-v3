@@ -156,13 +156,15 @@ export const useNavigationStore = create<NavState>(
         if (!subcategory) {
           set({
             currentSubcategory: null,
-            activePath: currentUniversalCategory ? [currentUniversalCategory] : [],
+            activePath: currentUniversalCategory
+              ? [currentUniversalCategory]
+              : [],
           });
         } else {
           set({
             currentSubcategory: subcategory,
-            activePath: currentUniversalCategory 
-              ? [currentUniversalCategory, subcategory] 
+            activePath: currentUniversalCategory
+              ? [currentUniversalCategory, subcategory]
               : [subcategory],
           });
         }
