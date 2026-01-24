@@ -38,7 +38,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
-SOURCE_DIR = Path("./data/catalogs_brand")  # Where scraper outputs live
+SOURCE_DIR = Path("../data/catalogs_brand")  # Where scraper outputs live
 PUBLIC_DATA_PATH = Path("../frontend/public/data")  # The "Live" destination
 LOGOS_DIR = PUBLIC_DATA_PATH / "logos"  # Logo destination
 CATALOG_VERSION = "3.7.4"
