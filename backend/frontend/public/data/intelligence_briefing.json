@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-01-23 18:56:25.472957",
+  "system_metrics": {
+    "total_global_products": 22,
+    "total_local_products": 22,
+    "overall_market_penetration": 100.0,
+    "brands_analyzed": [
+      "roland",
+      "nord",
+      "boss",
+      "moog"
+    ]
+  },
+  "brands": {
+    "roland": {
+      "total_global_skus": 14,
+      "halilit_stock_count": 22,
+      "matched_count": 7,
+      "missing_count": 7,
+      "market_penetration_percent": 50.0,
+      "missing_flagships": [],
+      "missing_products": [
+        "GAIA 2",
+        "SH-4d",
+        "JUNO-X",
+        "TR-06",
+        "GO:KEYS 5",
+        "GO:KEYS 3",
+        "A-88MKII"
+      ],
+      "ingestion_status": "READY_TO_RECORD",
+      "recommendation": "GOOD_COVERAGE - Minor gaps in entry-level products."
+    },
+    "nord": {
+      "total_global_skus": 0,
+      "halilit_stock_count": 0,
+      "matched_count": 0,
+      "missing_count": 0,
+      "market_penetration_percent": 0,
+      "missing_flagships": [],
+      "missing_products": [],
+      "ingestion_status": "NO_LOCAL_STOCK",
+      "recommendation": "NO_LOCAL_INVENTORY - Consider sourcing or licensing data."
+    },
+    "boss": {
+      "total_global_skus": 8,
+      "halilit_stock_count": 0,
+      "matched_count": 0,
+      "missing_count": 8,
+      "market_penetration_percent": 0.0,
+      "missing_flagships": [],
+      "missing_products": [
+        "Explore",
+        "Explore",
+        "Explore",
+        "Explore",
+        "Explore",
+        "Find Out More",
+        "Find Out More",
+        "Find Out More"
+      ],
+      "ingestion_status": "NO_LOCAL_STOCK",
+      "recommendation": "NO_LOCAL_INVENTORY - Consider sourcing or licensing data."
+    },
+    "moog": {
+      "total_global_skus": 0,
+      "halilit_stock_count": 0,
+      "matched_count": 0,
+      "missing_count": 0,
+      "market_penetration_percent": 0,
+      "missing_flagships": [],
+      "missing_products": [],
+      "ingestion_status": "NO_LOCAL_STOCK",
+      "recommendation": "NO_LOCAL_INVENTORY - Consider sourcing or licensing data."
+    }
+  }
+}
