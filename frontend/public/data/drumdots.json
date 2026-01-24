@@ -16,33 +16,49 @@
       "name": "Drumdots DD6M",
       "brand": "drumdots",
       "category": "drums",
-      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2672673/original/63aff6c07cdb4e9bee57793ec75c76bf.jpg",
+      "image_url": "/data/thumbnails/drumdots_75_dd6m.jpg",
       "description": "Drumdots DD6M",
+      "pricing": {},
+      "sku": null,
+      "halilit_id": null,
+      "halilit_url": null,
       "main_category": "drums",
-      "images": [],
+      "images": {
+        "main": "/data/thumbnails/drumdots_75_dd6m.jpg",
+        "thumbnail": "/data/thumbnails/drumdots_75_dd6m.jpg",
+        "high_res": "/data/thumbnails/drumdots_75_dd6m.jpg",
+        "original": "/data/thumbnails/drumdots_75_dd6m.jpg"
+      },
       "category_hierarchy": [
         "drums"
-      ],
-      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2672673/original/63aff6c07cdb4e9bee57793ec75c76bf.jpg"
+      ]
     },
     {
       "id": "drumdots_75_dd4",
       "name": "Drumdots DD4",
       "brand": "drumdots",
       "category": "drums",
-      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7467128/original/59851fa8fbd31c8f2e33b18039ce5e01.jpg",
+      "image_url": "/data/thumbnails/drumdots_75_dd4.jpg",
       "description": "Drumdots DD4",
+      "pricing": {},
+      "sku": null,
+      "halilit_id": null,
+      "halilit_url": null,
       "main_category": "drums",
-      "images": [],
+      "images": {
+        "main": "/data/thumbnails/drumdots_75_dd4.jpg",
+        "thumbnail": "/data/thumbnails/drumdots_75_dd4.jpg",
+        "high_res": "/data/thumbnails/drumdots_75_dd4.jpg",
+        "original": "/data/thumbnails/drumdots_75_dd4.jpg"
+      },
       "category_hierarchy": [
         "drums"
-      ],
-      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7467128/original/59851fa8fbd31c8f2e33b18039ce5e01.jpg"
+      ]
     }
   ],
   "brand_name": "Drumdots",
   "brand_slug": "drumdots",
-  "refined_at": "2026-01-24T04:22:17.786349+00:00",
+  "refined_at": "2026-01-24T22:08:36.898602+00:00",
   "hierarchy": {
     "drums": {
       "General": [
@@ -50,7 +66,12 @@
           "id": "drumdots_75_dd6m",
           "name": "Drumdots DD6M",
           "description": "Drumdots DD6M",
-          "images": [],
+          "images": {
+            "main": "/data/thumbnails/drumdots_75_dd6m.jpg",
+            "thumbnail": "/data/thumbnails/drumdots_75_dd6m.jpg",
+            "high_res": "/data/thumbnails/drumdots_75_dd6m.jpg",
+            "original": "/data/thumbnails/drumdots_75_dd6m.jpg"
+          },
           "model_number": null,
           "sku": null
         },
@@ -58,7 +79,12 @@
           "id": "drumdots_75_dd4",
           "name": "Drumdots DD4",
           "description": "Drumdots DD4",
-          "images": [],
+          "images": {
+            "main": "/data/thumbnails/drumdots_75_dd4.jpg",
+            "thumbnail": "/data/thumbnails/drumdots_75_dd4.jpg",
+            "high_res": "/data/thumbnails/drumdots_75_dd4.jpg",
+            "original": "/data/thumbnails/drumdots_75_dd4.jpg"
+          },
           "model_number": null,
           "sku": null
         }

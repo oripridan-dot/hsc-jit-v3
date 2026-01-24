@@ -1,6 +1,6 @@
 # backend/models/product_hierarchy.py
 from typing import List, Dict, Optional, Any, Literal
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 from datetime import datetime
 from enum import Enum
 
@@ -28,11 +28,11 @@ class ProductCore(BaseModel):
     """
     id: str
     brand: str
-    name: str
+    name: str = "Unknown Product"
     sku: Optional[str] = None
     
     # Classification
-    main_category: str
+    main_category: str = Field(..., alias="category")
     subcategory: Optional[str] = None
     
     # Data
@@ -52,3 +52,23 @@ class ProductCore(BaseModel):
 
     class Config:
         arbitrary_types_allowed = True
+        populate_by_name = True
+
+class ProductCatalog(BaseModel):
+    brand_identity: Dict[str, Any]
+    products: List[ProductCore]
+    total_products: int = 0
+    last_updated: datetime = Field(default_factory=datetime.utcnow)
+
+    @validator('total_products', pre=True, always=True)
+    def set_total_products(cls, v, values):
+        if v is None or v == 0:
+            if 'products' in values and values['products']:
+                return len(values['products'])
+        return v or 0
+
+    @validator('last_updated', pre=True, always=True)
+    def set_last_updated(cls, v):
+        if v is None:
+            return datetime.utcnow()
+        return v

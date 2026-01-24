@@ -1,80 +1,119 @@
 {
-  "guitars-bass": {
-    "label": "Guitars & Bass",
-    "color": "var(--galaxy-orange)",
-    "description": "The Plucked Universe",
-    "spectrum": [
-      { "id": "electric-guitars", "label": "Electric Guitars" },
-      { "id": "acoustic-guitars", "label": "Acoustic Guitars" },
-      { "id": "bass-guitars", "label": "Bass Guitars" },
-      { "id": "guitar-amps", "label": "Amps & Cabinets" },
-      { "id": "guitar-pedals", "label": "Pedals & Effects" },
-      { "id": "folk-instruments", "label": "Ukulele & Folk" },
-      { "id": "guitar-accessories", "label": "Strings, Cables & Care" }
-    ]
-  },
-  "drums-percussion": {
-    "label": "Drums & Percussion",
-    "color": "var(--galaxy-red)",
-    "description": "The Struck Universe",
-    "spectrum": [
-      { "id": "acoustic-drums", "label": "Acoustic Kits" },
-      { "id": "electronic-drums", "label": "Electronic Drums" },
-      { "id": "cymbals", "label": "Cymbals" },
-      { "id": "snares", "label": "Snare Drums" },
-      { "id": "sticks-heads", "label": "Sticks & Heads" },
-      { "id": "percussion", "label": "World Percussion" },
-      { "id": "drum-hardware", "label": "Stands & Pedals" }
-    ]
-  },
-  "keys-production": {
-    "label": "Keys & Synths",
-    "color": "var(--galaxy-purple)",
-    "description": "The Synthesis Universe",
-    "spectrum": [
-      { "id": "synthesizers", "label": "Synthesizers" },
-      { "id": "stage-pianos", "label": "Stage Pianos" },
-      { "id": "midi-controllers", "label": "MIDI Controllers" },
-      { "id": "grooveboxes", "label": "Grooveboxes & Samplers" },
-      { "id": "eurorack", "label": "Eurorack & Modular" },
-      { "id": "keys-accessories", "label": "Stands & Pedals" }
-    ]
-  },
-  "studio-recording": {
-    "label": "Studio & Recording",
-    "color": "var(--galaxy-blue)",
-    "description": "The Engineer's Universe",
-    "spectrum": [
-      { "id": "audio-interfaces", "label": "Audio Interfaces" },
-      { "id": "studio-monitors", "label": "Studio Monitors" },
-      { "id": "studio-microphones", "label": "Microphones" },
-      { "id": "outboard-gear", "label": "Pre-amps & Outboard" },
-      { "id": "software-plugins", "label": "Software & Plugins" },
-      { "id": "studio-accessories", "label": "Acoustic Treatment & Cables" }
-    ]
-  },
-  "live-dj": {
-    "label": "Live Sound & DJ",
-    "color": "var(--galaxy-green)",
-    "description": "The Stage Universe",
-    "spectrum": [
-      { "id": "pa-systems", "label": "PA Speakers" },
-      { "id": "live-mixers", "label": "Live Mixers" },
-      { "id": "dj-equipment", "label": "DJ Gear" },
-      { "id": "lighting", "label": "Stage Lighting" },
-      { "id": "live-mics", "label": "Wireless Systems" },
-      { "id": "live-accessories", "label": "Stands & Cases" }
-    ]
-  },
-  "accessories-utility": {
-    "label": "General Utility",
-    "color": "var(--galaxy-gray)",
-    "description": "The Connection Universe",
-    "spectrum": [
-      { "id": "cables", "label": "All Cables" },
-      { "id": "stands", "label": "All Stands" },
-      { "id": "cases-bags", "label": "Cases & Bags" },
-      { "id": "power-supplies", "label": "Power & Batteries" }
-    ]
+  "version": "1.0",
+  "exported_at": "2026-01-24T22:08:36.852021+00:00",
+  "universal_categories": [
+    {
+      "id": "keys",
+      "label": "Keys & Pianos",
+      "icon": "\ud83c\udfb9",
+      "description": "Keyboards and pianos"
+    },
+    {
+      "id": "drums",
+      "label": "Drums & Percussion",
+      "icon": "\ud83e\udd41",
+      "description": "Drums and percussion"
+    },
+    {
+      "id": "guitars",
+      "label": "Guitars & Amps",
+      "icon": "\ud83c\udfb8",
+      "description": "Guitars and amplifiers"
+    },
+    {
+      "id": "studio",
+      "label": "Studio & Recording",
+      "icon": "\ud83c\udf99\ufe0f",
+      "description": "Studio and recording gear"
+    },
+    {
+      "id": "live",
+      "label": "Live Sound",
+      "icon": "\ud83d\udd0a",
+      "description": "Live sound equipment"
+    },
+    {
+      "id": "dj",
+      "label": "DJ & Production",
+      "icon": "\ud83c\udfa7",
+      "description": "DJ and production gear"
+    },
+    {
+      "id": "software",
+      "label": "Software & Cloud",
+      "icon": "\ud83d\udcbb",
+      "description": "Software and cloud services"
+    },
+    {
+      "id": "accessories",
+      "label": "Accessories",
+      "icon": "\ud83d\udd27",
+      "description": "Accessories and add-ons"
+    }
+  ],
+  "brand_mappings": {
+    "roland": {
+      "Production": "studio",
+      "Drums": "drums",
+      "Keys": "keys",
+      "Keyboards": "keys",
+      "Synthesizers": "keys",
+      "Pianos": "keys",
+      "Controllers": "accessories",
+      "Interfaces": "studio",
+      "Software": "software",
+      "Effects": "studio",
+      "Amplifiers": "live",
+      "Speakers": "live",
+      "Uncategorized": "accessories"
+    },
+    "nord": {
+      "Keyboards": "keys",
+      "Synthesizers": "keys",
+      "Controllers": "keys",
+      "Pedals": "accessories",
+      "Accessories": "accessories",
+      "Software": "software",
+      "Uncategorized": "accessories"
+    },
+    "boss": {
+      "Effects": "studio",
+      "Guitars": "guitars",
+      "Drums": "drums",
+      "Keyboards": "keys",
+      "Controllers": "accessories",
+      "Interfaces": "studio",
+      "Uncategorized": "accessories"
+    },
+    "moog": {
+      "Synthesizers": "keys",
+      "Controllers": "keys",
+      "Effects": "studio",
+      "Accessories": "accessories",
+      "Software": "software",
+      "Uncategorized": "accessories"
+    },
+    "universal-audio": {
+      "Plugins": "software",
+      "Hardware": "studio",
+      "Interfaces": "studio",
+      "Accessories": "accessories",
+      "Software": "software",
+      "Uncategorized": "accessories"
+    },
+    "bespeco": {
+      "Stands": "accessories",
+      "Cables": "accessories",
+      "Connectors": "accessories",
+      "Bags": "accessories",
+      "Accessories": "accessories",
+      "keys": "accessories",
+      "Keys": "accessories"
+    },
+    "foxgear-guitar-effects-and-pedals": {
+      "general": "guitars",
+      "pedals": "guitars",
+      "effects": "guitars"
+    }
   }
 }

@@ -15,8 +15,8 @@ class MasterCatalogManager:
     
     def __init__(self, brand_id: str):
         self.brand_id = brand_id.lower()
-        self.file_path = Path(f"backend/data/catalogs_brand/{self.brand_id}.json")
-        self.backup_path = Path(f"backend/data/catalogs_brand/backups/{self.brand_id}_{datetime.now().strftime('%Y%m%d')}.json")
+        self.file_path = Path(f"backend/data/vault/catalogs_brand/{self.brand_id}.json")
+        self.backup_path = Path(f"backend/data/vault/catalogs_brand/backups/{self.brand_id}_{datetime.now().strftime('%Y%m%d')}.json")
         self._ensure_dirs()
 
     def _ensure_dirs(self):
