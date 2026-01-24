@@ -1,214 +1,106 @@
 /**
- * GalaxyDashboard - v3.10.0 REDESIGNED
- * "Full Subcategory Thumbnail Browser"
- *
- * Single-view interface showing all 40 subcategories organized by main categories.
- * Each main category displays its subcategories as clickable thumbnails.
- *
- * Features:
- * - All 8 main categories visible on one page
- * - All 40 subcategories with real product thumbnails
- * - Click subcategory → Load products
- * - Fully responsive (mobile to desktop)
- * - Beautiful category section layout
+ * GalaxyDashboard v3.11.0 - "Perfect Fit Grid"
+ * ============================================
+ * NO SCROLL. All 8 categories + subcategories visible in one screen.
+ * 
+ * Layout Strategy:
+ * - 2×4 grid of main categories (fills viewport height)
+ * - Each category shows icon + subcategories as compact buttons
+ * - Click subcategory → Navigates to Spectrum Module
+ * 
+ * Removed:
+ * - Product loading (not needed here)
+ * - Responsive grid calculations (fixed layout)
+ * - Staggered animations (instant load)
+ * - Scrolling main content
  */
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import { catalogLoader } from "../../lib/catalogLoader";
+import React from "react";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { useNavigationStore } from "../../store/navigationStore";
-import type { Product } from "../../types";
 
 export const GalaxyDashboard: React.FC = () => {
   const { currentSubcategory, selectSubcategory } = useNavigationStore();
 
-  const [allProducts, setAllProducts] = useState<Product[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [subcategoryGridColumns, setSubcategoryGridColumns] = useState(3);
-
-  // ============================================================
-  // 1. LOAD ALL PRODUCTS
-  // ============================================================
-  useEffect(() => {
-    const loadAllProducts = async () => {
-      setIsLoading(true);
-      try {
-        const index = await catalogLoader.loadIndex();
-        const availableBrands = index.brands.map((b) => b.id);
-
-        const catalogPromises = availableBrands.map((brand) =>
-          catalogLoader.loadBrand(brand).catch((err) => {
-            console.warn(`Failed to load brand ${brand}:`, err);
-            return null;
-          }),
-        );
-
-        const catalogs = await Promise.all(catalogPromises);
-        const allProds: Product[] = [];
-        catalogs.forEach((catalog) => {
-          if (catalog?.products) {
-            allProds.push(...catalog.products);
-          }
-        });
-
-        setAllProducts(allProds);
-        console.log(`✅ Loaded ${allProds.length} products`);
-      } catch (err) {
-        console.warn("Failed to load products:", err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadAllProducts();
-  }, []);
-
-  // ============================================================
-  // 2. RESPONSIVE GRID FOR SUBCATEGORIES
-  // ============================================================
-  useEffect(() => {
-    const calculateSubcategoryColumns = () => {
-      const width = window.innerWidth;
-      if (width < 640) return 2; // Mobile: 2 columns
-      if (width < 768) return 3; // Tablet: 3 columns
-      if (width < 1024) return 3; // Small desktop: 3 columns
-      if (width < 1280) return 4; // Desktop: 4 columns
-      return 5; // Large desktop: 5 columns
-    };
-
-    setSubcategoryGridColumns(calculateSubcategoryColumns());
-
-    const handleResize = () => {
-      setSubcategoryGridColumns(calculateSubcategoryColumns());
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // ============================================================
-  // 3. HANDLE SUBCATEGORY CLICK
-  // ============================================================
   const handleSubcategoryClick = (subcategoryId: string) => {
     selectSubcategory(subcategoryId);
   };
 
   return (
     <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden">
-      {/* Header */}
-      <div className="flex-shrink-0 border-b border-zinc-800 px-4 py-3 bg-zinc-900/50">
-        <div className="flex items-center justify-between max-w-[2000px] mx-auto">
-          <div className="flex-1 font-mono text-xs text-zinc-500">
-            {currentSubcategory ? (
-              <span>🎯 Category Selected</span>
-            ) : (
-              <span>🏠 Browse All Categories & Subcategories</span>
-            )}
-          </div>
-          <div className="font-mono text-xs text-zinc-500">
-            {allProducts.length} products
-          </div>
+      {/* Compact Header */}
+      <div className="flex-shrink-0 border-b border-zinc-800 px-4 py-2 bg-zinc-900/50">
+        <div className="flex items-center justify-between">
+          <span className="font-mono text-xs text-zinc-400">
+            {currentSubcategory ? "🎯 Category Selected" : "🌌 Galaxy View"}
+          </span>
         </div>
       </div>
 
-      {/* Main Content - All Categories with Subcategories */}
-      <main className="flex-1 overflow-y-auto p-4">
-        <div className="w-full max-w-[2000px] mx-auto space-y-6">
-          {isLoading ? (
-            <div className="flex items-center justify-center h-64">
-              <div className="text-zinc-500 font-mono text-sm">
-                Loading subcategory thumbnails...
-              </div>
+      {/* Perfect Fit Grid: 2 columns × 4 rows = 8 categories */}
+      <main className="flex-1 grid grid-cols-2 gap-3 p-3 overflow-hidden">
+        {UNIVERSAL_CATEGORIES.map((category) => (
+          <div
+            key={category.id}
+            className="border border-zinc-800 rounded-lg bg-zinc-900/30 p-3 flex flex-col overflow-hidden"
+            style={{ borderColor: category.color + "40" }}
+          >
+            {/* Category Header - Compact */}
+            <div className="flex items-center gap-2 mb-2 pb-2 border-b border-zinc-800/50">
+              <div
+                className="w-2 h-2 rounded-full"
+                style={{ backgroundColor: category.color }}
+              />
+              <h3 className="text-sm font-bold uppercase tracking-tight truncate flex-1">
+                {category.label}
+              </h3>
+              <span className="text-[10px] text-zinc-500">
+                {category.subcategories.length}
+              </span>
             </div>
-          ) : (
-            UNIVERSAL_CATEGORIES.map((category, catIndex) => (
-              <motion.section
-                key={category.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: catIndex * 0.05 }}
-                className="border border-zinc-800 rounded-lg bg-zinc-900/30 p-4 hover:bg-zinc-900/50 transition-colors"
-              >
-                {/* Category Header */}
-                <div className="mb-4 pb-3 border-b border-zinc-800">
-                  <h2 className="text-xl font-bold uppercase tracking-tight mb-1">
-                    {category.label}
-                  </h2>
-                  <p className="text-xs text-zinc-400">
-                    {category.description}
-                  </p>
-                </div>
 
-                {/* Subcategories Grid */}
-                <div
-                  className="grid gap-3"
-                  style={{
-                    gridTemplateColumns: `repeat(${subcategoryGridColumns}, minmax(0, 1fr))`,
-                  }}
+            {/* Subcategories - Compact Button Grid */}
+            <div className="grid grid-cols-2 gap-1.5 flex-1 overflow-y-auto custom-scrollbar">
+              {category.subcategories.map((subcategory) => (
+                <button
+                  key={subcategory.id}
+                  onClick={() => handleSubcategoryClick(subcategory.id)}
+                  className={`
+                    relative group rounded text-left p-2 transition-all duration-200
+                    ${
+                      currentSubcategory === subcategory.id
+                        ? "bg-cyan-500/20 border border-cyan-500/50"
+                        : "bg-zinc-800/30 border border-zinc-700/30 hover:bg-zinc-700/40 hover:border-zinc-600/50"
+                    }
+                  `}
                 >
-                  {category.subcategories?.map((subcategory, subIndex) => (
+                  {/* Subcategory Image Background */}
+                  {subcategory.image && (
+                    <div
+                      className="absolute inset-0 bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity rounded"
+                      style={{ backgroundImage: `url('${subcategory.image}')` }}
+                    />
+                  )}
+
+                  {/* Content */}
+                  <div className="relative z-10">
+                    <p className="text-[11px] font-semibold text-white truncate">
+                      {subcategory.label}
+                    </p>
+                  </div>
+
+                  {/* Selection Dot */}
+                  {currentSubcategory === subcategory.id && (
                     <motion.div
-                      key={subcategory.id}
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{
-                        duration: 0.2,
-                        delay: subIndex * 0.02,
-                      }}
-                      className={`relative cursor-pointer group overflow-hidden rounded-lg border transition-all duration-300 ${
-                        currentSubcategory === subcategory.id
-                          ? "border-cyan-500 shadow-lg shadow-cyan-500/50"
-                          : "border-white/10 hover:border-white/30 hover:shadow-lg hover:shadow-white/5"
-                      }`}
-                      onClick={() => handleSubcategoryClick(subcategory.id)}
-                    >
-                      {/* Thumbnail Container */}
-                      <div className="relative w-full aspect-square bg-zinc-800 overflow-hidden">
-                        {/* Background Image */}
-                        {subcategory.image && (
-                          <div
-                            className="absolute inset-0 bg-cover bg-center opacity-50 group-hover:opacity-70 transition-opacity duration-300"
-                            style={{
-                              backgroundImage: `url('${subcategory.image}')`,
-                            }}
-                          />
-                        )}
-
-                        {/* Overlay Gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity" />
-
-                        {/* Content */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-end p-3 z-10">
-                          <div className="text-center drop-shadow-lg">
-                            <p className="text-sm font-semibold text-white">
-                              {subcategory.label}
-                            </p>
-                            {subcategory.brands && subcategory.brands.length > 0 && (
-                              <p className="text-xs text-zinc-300 mt-1 truncate">
-                                {subcategory.brands.join(", ")}
-                              </p>
-                            )}
-                          </div>
-                        </div>
-
-                        {/* Selection Indicator */}
-                        {currentSubcategory === subcategory.id && (
-                          <motion.div
-                            layoutId="selected-indicator"
-                            className="absolute top-2 right-2 w-3 h-3 rounded-full bg-cyan-500 shadow-lg shadow-cyan-500/50"
-                          />
-                        )}
-
-                        {/* Hover Border Animation */}
-                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.section>
-            ))
-          )}
-        </div>
+                      layoutId="galaxy-selection"
+                      className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-cyan-400"
+                    />
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
       </main>
     </div>
   );

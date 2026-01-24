@@ -177,6 +177,7 @@
 ## 🎨 Design Specifications
 
 ### Colors
+
 - **Background**: #0e0e10 (Deep black)
 - **Card Background**: Linear gradient from #27272a to #18181b
 - **Selected Border**: #06b6d4 (Cyan)
@@ -184,17 +185,20 @@
 - **Secondary Text**: #a1a1aa (Light gray)
 
 ### Typography
+
 - **Category Labels**: 3xl, font-black, uppercase
 - **Subcategory Labels**: sm, font-semibold
 - **Control Text**: xs, font-mono
 
 ### Sizes
+
 - **Category Cards**: 1fr (responsive grid)
 - **Subcategory Cards**: aspect-square
 - **Thumbnails**: 400×400px (WebP)
 - **Grid Gap**: 12px (3 units in Tailwind)
 
 ### Animations
+
 - **Initial**: opacity 0, y +10px
 - **Animate**: opacity 1, y 0px
 - **Duration**: 400ms (transitions), 200ms (scale)
@@ -204,24 +208,24 @@
 
 ## 🚀 State Indicators
 
-| State | Visual | Meaning |
-|-------|--------|---------|
-| **Hover** | Image opacity ↑ | This category is interactive |
-| **Selected Subcategory** | Cyan border + dot | This subcategory is active |
-| **Selected Button** | Cyan bg + glow | Quick navigation available |
-| **Loading** | Spinner text | Products are loading |
-| **No Selection** | Gray cards | Browse mode |
+| State                    | Visual            | Meaning                      |
+| ------------------------ | ----------------- | ---------------------------- |
+| **Hover**                | Image opacity ↑   | This category is interactive |
+| **Selected Subcategory** | Cyan border + dot | This subcategory is active   |
+| **Selected Button**      | Cyan bg + glow    | Quick navigation available   |
+| **Loading**              | Spinner text      | Products are loading         |
+| **No Selection**         | Gray cards        | Browse mode                  |
 
 ---
 
 ## 📱 Responsive Breakpoints
 
-| Viewport | Columns | Layout |
-|----------|---------|--------|
-| < 640px (Mobile) | 2 | Compact grid |
-| 640-1024px (Tablet) | 3 | Medium grid |
-| 1024-1536px (Desktop) | 3-4 | Large grid |
-| > 1536px (Large) | 4 | Full width |
+| Viewport              | Columns | Layout       |
+| --------------------- | ------- | ------------ |
+| < 640px (Mobile)      | 2       | Compact grid |
+| 640-1024px (Tablet)   | 3       | Medium grid  |
+| 1024-1536px (Desktop) | 3-4     | Large grid   |
+| > 1536px (Large)      | 4       | Full width   |
 
 ---
 

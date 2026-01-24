@@ -11,12 +11,14 @@
 ### Main Page Features
 
 **Single-Page Layout** - No navigation layers
+
 - All 8 main categories visible as sections
 - All 40 subcategories as thumbnail grids within each category
 - Fully scrollable interface
 - No intermediate "back" navigation needed
 
 **Category Sections** (in order)
+
 1. 🎹 **Keys & Pianos** - Synths, Stage Pianos, Organs, Controllers, Electronic Pianos, Digital Pianos
 2. 🥁 **Drums & Percussion** - E-Drums, Acoustic Drums, Cymbals, Percussion, Drum Machines, Samplers
 3. 🎸 **Guitars & Amps** - Acoustic Guitars, Electric Guitars, Amplifiers, Effects, Bass Guitars, Drums
@@ -29,18 +31,21 @@
 ### Interactive Features
 
 **Click Any Subcategory Thumbnail To:**
+
 - Select that category
 - See cyan border + selection dot indicator
 - Prepare for product filtering (ready for Spectrum Module)
 
 **Responsive Grid:**
+
 - **Mobile (< 640px)**: 2 columns
-- **Tablet (640-1024px)**: 3 columns  
+- **Tablet (640-1024px)**: 3 columns
 - **Desktop (1024-1280px)**: 4 columns
 - **Large (> 1280px)**: 5 columns
 - **Resize your window** - grid reflows in real-time
 
 **Visual Design:**
+
 - Real product images (flagship models from each brand)
 - Dark theme with cyan selection highlights
 - Smooth hover animations
@@ -59,14 +64,14 @@ The app is running on Vite dev server with hot-reload enabled. Changes update au
 
 ## Deployment Details
 
-| Aspect | Status | Details |
-|--------|--------|---------|
-| **Component** | ✅ Deployed | [GalaxyDashboard.tsx](../frontend/src/components/views/GalaxyDashboard.tsx) |
-| **Commit** | ✅ Done | `c8febd93` - feat: v3.10.0 |
-| **Dev Server** | ✅ Running | `pnpm dev` at localhost:5173 |
-| **Thumbnails** | ✅ Present | 84 WebP files (40 categories × 2 sizes) |
-| **TypeScript** | ✅ Compiles | No errors, fully typed |
-| **Responsive** | ✅ Working | 2-5 columns with breakpoints |
+| Aspect         | Status      | Details                                                                     |
+| -------------- | ----------- | --------------------------------------------------------------------------- |
+| **Component**  | ✅ Deployed | [GalaxyDashboard.tsx](../frontend/src/components/views/GalaxyDashboard.tsx) |
+| **Commit**     | ✅ Done     | `c8febd93` - feat: v3.10.0                                                  |
+| **Dev Server** | ✅ Running  | `pnpm dev` at localhost:5173                                                |
+| **Thumbnails** | ✅ Present  | 84 WebP files (40 categories × 2 sizes)                                     |
+| **TypeScript** | ✅ Compiles | No errors, fully typed                                                      |
+| **Responsive** | ✅ Working  | 2-5 columns with breakpoints                                                |
 
 ---
 
@@ -98,22 +103,26 @@ frontend/
 ## How It Works
 
 ### 1. Component Loads
+
 - All 8 UNIVERSAL_CATEGORIES loaded from `universalCategories.ts`
 - Each category has an array of subcategories (5-6 per category = 40 total)
 - Product catalog loaded (900+ items from all brands)
 
 ### 2. Responsive Calculation
+
 - Window resize listener calculates grid columns (2-5)
 - CSS Grid applies `gridTemplateColumns: repeat(N, minmax(0, 1fr))`
 - Smooth reflow on viewport change
 
 ### 3. User Interaction
+
 - Click any subcategory thumbnail
 - `selectSubcategory(subcategoryId)` called via Zustand store
 - Cyan border + dot indicator appears on selected item
 - `currentSubcategory` state updated for filtering
 
 ### 4. Future: Product Display
+
 - Selected subcategory ID available to Spectrum Module
 - Filter 900+ products by `category` field
 - Display matching products (coming in next phase)
@@ -169,12 +178,14 @@ frontend/
 ## Next Steps
 
 ### Phase 5: Spectrum Module Integration
+
 1. Add Spectrum Module component to show selected category's products
 2. Filter products by `currentSubcategory` from store
 3. Display product grid with images, names, prices
 4. Add to cart / detailed view buttons
 
 ### Potential Enhancements
+
 - [ ] Search bar to filter subcategories
 - [ ] Multi-brand filter
 - [ ] Keyboard navigation (arrow keys)
@@ -186,6 +197,7 @@ frontend/
 ## Key Code Snippets
 
 ### Selection Handler
+
 ```typescript
 const handleSubcategoryClick = (subcategoryId: string) => {
   selectSubcategory(subcategoryId);
@@ -193,16 +205,18 @@ const handleSubcategoryClick = (subcategoryId: string) => {
 ```
 
 ### Responsive Grid
+
 ```typescript
 const calculateSubcategoryColumns = () => {
-  if (width < 640) return 2;  // Mobile
+  if (width < 640) return 2; // Mobile
   if (width < 1024) return 3; // Tablet
   if (width < 1280) return 4; // Desktop
-  return 5;                   // Large
+  return 5; // Large
 };
 ```
 
 ### Render Loop
+
 ```typescript
 UNIVERSAL_CATEGORIES.map((category) => (
   <section key={category.id} className="border-zinc-800 rounded-lg">
@@ -253,6 +267,7 @@ UNIVERSAL_CATEGORIES.map((category) => (
 ## Documentation
 
 **Full Documentation Available**:
+
 - [GALAXYDASHBOARD_v3.10.0_RELEASE.md](GALAXYDASHBOARD_v3.10.0_RELEASE.md) - Complete specs
 - [CATEGORY_CONSOLIDATION_ARCHITECTURE.md](CATEGORY_CONSOLIDATION_ARCHITECTURE.md) - Category system
 - [GalaxyDashboard.tsx](../frontend/src/components/views/GalaxyDashboard.tsx) - Source code
@@ -288,4 +303,4 @@ The UI layer is complete. The backend is ready for Spectrum Module integration.
 
 ---
 
-*Last Updated: January 24, 2025 | v3.10.0 | HSC-JIT Frontend*
+_Last Updated: January 24, 2025 | v3.10.0 | HSC-JIT Frontend_

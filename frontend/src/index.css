@@ -209,25 +209,30 @@ body {
   }
 
   /* Custom Scrollbar Styling */
-  .scrollbar-custom::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  .scrollbar-custom::-webkit-scrollbar,
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
   }
-  .scrollbar-custom::-webkit-scrollbar-track {
-    background: rgba(39, 39, 42, 0.5);
-    border-radius: 4px;
+  .scrollbar-custom::-webkit-scrollbar-track,
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(39, 39, 42, 0.3);
+    border-radius: 2px;
   }
-  .scrollbar-custom::-webkit-scrollbar-thumb {
-    background: rgba(113, 113, 122, 0.8);
-    border-radius: 4px;
+  .scrollbar-custom::-webkit-scrollbar-thumb,
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(113, 113, 122, 0.5);
+    border-radius: 2px;
     transition: background 0.2s;
   }
-  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-    background: rgba(161, 161, 170, 0.9);
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover,
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(161, 161, 170, 0.7);
   }
-  .scrollbar-custom {
+  .scrollbar-custom,
+  .custom-scrollbar {
     scrollbar-width: thin;
-    scrollbar-color: rgba(113, 113, 122, 0.8) rgba(39, 39, 42, 0.5);
+    scrollbar-color: rgba(113, 113, 122, 0.5) rgba(39, 39, 42, 0.3);
   }
 
   /* Responsive Text Utilities */

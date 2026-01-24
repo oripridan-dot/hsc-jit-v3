@@ -9,9 +9,11 @@ Your GalaxyDashboard has been **completely redesigned** to feature a two-level i
 ## 🎬 User Experience Flow
 
 ### Starting View: Main Categories
+
 User sees 8 main categories in a responsive grid:
+
 - Keys & Pianos
-- Drums & Percussion  
+- Drums & Percussion
 - Guitars & Amps
 - Studio & Recording
 - Live Sound
@@ -20,7 +22,9 @@ User sees 8 main categories in a responsive grid:
 - Accessories
 
 ### Click a Category → Subcategories Appear
+
 When user clicks "KEYS & PIANOS", the view transforms to show 6 subcategories:
+
 - Synthesizers (thumbnail: Roland SYSTEM-8)
 - Stage Pianos (thumbnail: Roland RD-2000 EX)
 - MIDI Controllers (thumbnail: Akai APC64)
@@ -29,7 +33,9 @@ When user clicks "KEYS & PIANOS", the view transforms to show 6 subcategories:
 - Workstations (thumbnail: Roland JUNO-D8)
 
 ### Click a Subcategory → Select It
+
 When user clicks "Synthesizers":
+
 - **Cyan border** appears around the thumbnail
 - **Cyan dot** appears in top-right corner
 - **Bottom buttons** show all 6 subcategories for quick access
@@ -37,7 +43,9 @@ When user clicks "Synthesizers":
 - **Breadcrumb** updates to show: "KEYS & PIANOS → Synthesizers"
 
 ### Bottom Buttons → Quick Switching
+
 User can click any button at bottom to instantly switch subcategories:
+
 - "Synthesizers" (currently selected, glowing cyan)
 - "Stage Pianos" (gray, clickable)
 - "Controllers" (gray, clickable)
@@ -46,6 +54,7 @@ User can click any button at bottom to instantly switch subcategories:
 - "Workstations" (gray, clickable)
 
 ### Back Button → Return to Main
+
 User clicks "← Back to Categories" to return to the 8-category grid.
 
 ---
@@ -55,6 +64,7 @@ User clicks "← Back to Categories" to return to the 8-category grid.
 ### File: `frontend/src/components/views/GalaxyDashboard.tsx`
 
 **Key Features:**
+
 ```typescript
 // Two view modes based on selection state
 if (!currentUniversalCategory) {
@@ -67,11 +77,13 @@ if (!currentUniversalCategory) {
 ```
 
 **Components:**
+
 - Header bar (back button + breadcrumb + product count)
 - Main grid (categories or subcategories)
 - Bottom control bar (subcategory buttons)
 
 **Interactions:**
+
 - `handleCategoryClick()` - Navigate to level 2
 - `handleSubcategoryClick()` - Select a subcategory
 - `handleBackToMainCategories()` - Return to level 1
@@ -81,6 +93,7 @@ if (!currentUniversalCategory) {
 ### File: `frontend/src/store/navigationStore.ts`
 
 **Updated Actions:**
+
 ```typescript
 // Pass null to go back to galaxy view
 selectUniversalCategory(categoryId: string | null)
@@ -90,6 +103,7 @@ selectSubcategory(subcategoryId: string | null)
 ```
 
 **State Variables:**
+
 ```typescript
 currentUniversalCategory: string | null  // "keys", "drums", etc.
 currentSubcategory: string | null        // "synths", "controllers", etc.
@@ -101,12 +115,14 @@ activePath: string[]                     // Breadcrumb path
 ## 🎨 Visual Design
 
 ### Responsive Grid
+
 - **Mobile (< 640px)**: 2 columns
 - **Tablet (640-1024px)**: 3 columns
 - **Desktop (1024-1536px)**: 3 columns
 - **Large Desktop (> 1536px)**: 4 columns
 
 ### Colors & Indicators
+
 - **Selected Subcategory**: Cyan border + glowing dot
 - **Hover State**: Increased image opacity
 - **Bottom Buttons**:
@@ -114,6 +130,7 @@ activePath: string[]                     // Breadcrumb path
   - Unselected: Gray background
 
 ### Images
+
 - All thumbnails from `frontend/public/data/category_thumbnails/`
 - 400×400px WebP files (flagship products)
 - Smooth transitions with Framer Motion
@@ -123,6 +140,7 @@ activePath: string[]                     // Breadcrumb path
 ## 📊 Data Structure
 
 ### universalCategories.ts
+
 ```typescript
 UNIVERSAL_CATEGORIES = [
   {
@@ -133,13 +151,13 @@ UNIVERSAL_CATEGORIES = [
         id: "synths",
         label: "Synthesizers",
         image: "/data/category_thumbnails/keys-synths_thumb.webp",
-        brands: ["nord", "moog", "roland"]
+        brands: ["nord", "moog", "roland"],
       },
       // ... 5 more subcategories
-    ]
+    ],
   },
   // ... 7 more main categories
-]
+];
 ```
 
 ---
@@ -177,26 +195,31 @@ Ready for Spectrum Module integration
 ## ✨ Features Implemented
 
 ✅ **Two-Level Navigation**
+
 - Main categories in grid format
 - Subcategories appear when category is selected
 - Back button to return to main
 
 ✅ **All 40 Subcategories Visible**
+
 - Each shows flagship product thumbnail
 - Responsive grid layout
 - Click to select
 
 ✅ **Selection State**
+
 - Cyan border + dot indicator
 - Bottom buttons show all options
 - Products load based on selection
 
 ✅ **Responsive Design**
+
 - 2-4 columns based on viewport
 - Touch-friendly on mobile
 - Smooth animations
 
 ✅ **Navigation State**
+
 - Persisted to localStorage
 - Back button functionality
 - Breadcrumb tracking
@@ -222,29 +245,38 @@ Ready for Spectrum Module integration
 ## 🚀 Next Steps for Your Team
 
 ### 1. Spectrum Module Integration
+
 Create a "Spectrum Module" screen that displays:
+
 - Filtered products based on `currentUniversalCategory` + `currentSubcategory`
 - Product grid with images, prices, specs
 - Click product → Detail view
 
 ### 2. Product Loading
+
 Connect the selector state to product filtering:
+
 ```typescript
-const filteredProducts = allProducts.filter(p =>
-  p.category === currentUniversalCategory &&
-  p.subcategory === currentSubcategory
-)
+const filteredProducts = allProducts.filter(
+  (p) =>
+    p.category === currentUniversalCategory &&
+    p.subcategory === currentSubcategory,
+);
 ```
 
 ### 3. Spectrum Module Display
+
 Replace the bottom control bar with a Spectrum Module that shows:
+
 - Category/subcategory info
 - Product grid (40-100 items)
 - Product details sidebar
 - Search/filter options
 
 ### 4. Navigation Integration
+
 Update `App.tsx` to show:
+
 - GalaxyDashboard when at level 1
 - GalaxyDashboard + Spectrum Module when at level 2+
 
@@ -252,18 +284,19 @@ Update `App.tsx` to show:
 
 ## 📁 Key Files
 
-| File | Purpose |
-|------|---------|
+| File                                                | Purpose                               |
+| --------------------------------------------------- | ------------------------------------- |
 | `frontend/src/components/views/GalaxyDashboard.tsx` | Main dashboard component (REDESIGNED) |
-| `frontend/src/store/navigationStore.ts` | Navigation state & actions (UPDATED) |
-| `frontend/src/lib/universalCategories.ts` | Category definitions + image paths |
-| `frontend/public/data/category_thumbnails/` | Flagship product images (80 files) |
+| `frontend/src/store/navigationStore.ts`             | Navigation state & actions (UPDATED)  |
+| `frontend/src/lib/universalCategories.ts`           | Category definitions + image paths    |
+| `frontend/public/data/category_thumbnails/`         | Flagship product images (80 files)    |
 
 ---
 
 ## 🎯 Summary
 
 You now have a **fully interactive category browser** with:
+
 - 8 main categories + 40 subcategories
 - Visual feedback for selections
 - Quick navigation buttons
