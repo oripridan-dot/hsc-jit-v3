@@ -1,4 +1,15 @@
-# HSC-JIT v3.7 - Copilot System Instructions
+# HSC-JIT v3.9.0 - Copilot System Instructions
+
+## 🛡️ MANDATORY CONTEXT PROTOCOL (READ FIRST)
+
+**The "Context Forge" system is critical for consistency.**
+
+1. **CHECK CONTEXT**: Before answering complex questions, check `docs/context/*.md`.
+2. **UPDATE CONTEXT**: If you make _structural_ changes (new tech, new folders, file renames), you MUST remind the user to run:
+   > "Please run `python3 context_forge.py` to update the AI context files."
+3. **USE CONTEXT**: When the user provides the files from `docs/context/`, treat them as the **absolute source of truth**.
+
+---
 
 ## 🎯 Core Architecture: "Static First"
 
@@ -109,22 +120,25 @@ Brand-specific taxonomies (Roland's "Pianos", Nord's "Stage", etc.) are translat
 
 ### The 8 Universal Categories (FIXED ORDER)
 
-| # | ID | Label | Icon |
-|---|---|---|---|
-| 1 | `keys` | Keys & Pianos | 🎹 |
-| 2 | `drums` | Drums & Percussion | 🥁 |
-| 3 | `guitars` | Guitars & Amps | 🎸 |
-| 4 | `studio` | Studio & Recording | 🎙️ |
-| 5 | `live` | Live Sound | 🔊 |
-| 6 | `dj` | DJ & Production | 🎧 |
-| 7 | `software` | Software & Cloud | 💻 |
-| 8 | `accessories` | Accessories | 🔧 |
+| #   | ID            | Label              | Icon |
+| --- | ------------- | ------------------ | ---- |
+| 1   | `keys`        | Keys & Pianos      | 🎹   |
+| 2   | `drums`       | Drums & Percussion | 🥁   |
+| 3   | `guitars`     | Guitars & Amps     | 🎸   |
+| 4   | `studio`      | Studio & Recording | 🎙️   |
+| 5   | `live`        | Live Sound         | 🔊   |
+| 6   | `dj`          | DJ & Production    | 🎧   |
+| 7   | `software`    | Software & Cloud   | 💻   |
+| 8   | `accessories` | Accessories        | 🔧   |
 
 ### How to Use Category Consolidation
 
 ```typescript
 // ✅ CORRECT: Use consolidateCategory for UI display
-import { consolidateCategory, getConsolidatedCategory } from './lib/categoryConsolidator';
+import {
+  consolidateCategory,
+  getConsolidatedCategory,
+} from "./lib/categoryConsolidator";
 
 // Roland says "Pianos", UI shows "Keys & Pianos"
 const uiCategoryId = consolidateCategory("roland", "Pianos");
@@ -136,11 +150,11 @@ const category = getConsolidatedCategory(uiCategoryId);
 
 ### Key Files
 
-| File | Purpose |
-|---|---|
-| `frontend/src/lib/categoryConsolidator.ts` | TypeScript consolidation logic |
-| `backend/models/category_consolidator.py` | Python equivalent for backend |
-| `docs/CATEGORY_CONSOLIDATION_ARCHITECTURE.md` | Full documentation |
+| File                                          | Purpose                        |
+| --------------------------------------------- | ------------------------------ |
+| `frontend/src/lib/categoryConsolidator.ts`    | TypeScript consolidation logic |
+| `backend/models/category_consolidator.py`     | Python equivalent for backend  |
+| `docs/CATEGORY_CONSOLIDATION_ARCHITECTURE.md` | Full documentation             |
 
 ---
 
@@ -399,6 +413,6 @@ A: Not in production. The app is static. If you need live updates, redesign the 
 
 ---
 
-**Version:** 3.7.3-DNA (Connectivity Intelligence)  
-**Last Updated:** January 2026  
+**Version:** 3.9.0
+**Last Updated:** January 2026
 **Status:** Production-Ready

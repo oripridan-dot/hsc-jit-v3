@@ -1,156 +1,133 @@
-/**
- * GalaxyDashboard v3.13.0 - "UI/UX Basics"
- * ==========================================
- * Optimized layout for intuitive 16:9 desktop experience.
- *
- * Layout Strategy:
- * - 4 columns × 2 rows (Optimizes vertical breathing room)
- * - Taller cards allow for proper square thumbnails
- * - "App Grid" feel for subcategories
- * - Clear hierarchy and affordances
- */
-import React from "react";
-import { BRAND_COLORS } from "../../lib/brandColors";
-import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
-import { useNavigationStore } from "../../store/navigationStore";
+import React from 'react';
+import { UNIVERSAL_CATEGORIES } from '../../lib/universalCategories';
+import { useNavigationStore } from '../../store/navigationStore';
+import * as LucideIcons from 'lucide-react';
 
-export const GalaxyDashboard: React.FC = () => {
-  const { currentSubcategory, selectSubcategory } = useNavigationStore();
-
-  const handleSubcategoryClick = (subcategoryId: string) => {
-    selectSubcategory(subcategoryId);
-  };
+export const GalaxyDashboard = () => {
+  const { goToSpectrum } = useNavigationStore();
 
   return (
-    <div className="h-full w-full flex flex-col bg-[#0e0e10] text-white overflow-hidden font-sans">
-      {/* Header - Simple & Clean */}
-      <div className="flex-shrink-0 border-b border-zinc-800/50 px-6 py-3 bg-zinc-900/30 backdrop-blur-md">
-        <div className="flex items-center gap-3">
-          <div className="h-2 w-2 rounded-full bg-cyan-500 animate-pulse" />
-          <span className="text-sm font-medium text-zinc-300 tracking-wide">
-            GALAXY VIEW
+    <div className="w-full h-full bg-[#0e0e10] p-6 lg:p-8 flex flex-col overflow-y-auto custom-scrollbar">
+      
+      {/* Header Area */}
+      <div className="mb-8 flex items-end gap-4 shrink-0 px-2">
+        <h1 className="text-4xl font-black italic tracking-tighter text-white/90">
+          GALAXIES
+          <span className="block text-sm font-bold not-italic tracking-widest text-zinc-500 mt-1">
+            SECTOR VIEW
           </span>
-          {currentSubcategory && (
-            <>
-              <span className="text-zinc-600">/</span>
-              <span className="text-sm text-cyan-400 font-semibold">
-                Selection Active
-              </span>
-            </>
-          )}
-        </div>
+        </h1>
+        <div className="h-px flex-1 bg-gradient-to-r from-zinc-800 to-transparent mb-3" />
       </div>
 
-      {/* Main Grid: "Unbreakable" Layout - Fits Single Screen */}
-      <main className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-3 p-3 lg:p-4 overflow-hidden h-full min-h-0">
-        {UNIVERSAL_CATEGORIES.map((category) => (
-          <div
-            key={category.id}
-            className="group relative flex flex-col rounded-xl bg-zinc-900/40 border border-white/5 p-3 hover:bg-zinc-800/40 hover:border-white/10 transition-all duration-300 h-full min-h-0 shadow-lg"
-          >
-            {/* Category Identity */}
-            <div className="flex items-center gap-2 mb-2 flex-shrink-0">
-              <div
-                className="w-1 h-5 rounded-full"
-                style={{ backgroundColor: category.color }}
-              />
-              <div className="flex-1 min-w-0">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-white truncate">
-                  {category.label}
-                </h3>
+      {/* The Shelf Rack */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8 pb-10">
+        {UNIVERSAL_CATEGORIES.map((tribe, index) => {
+          // Dynamic Icon Resolution
+          const IconComponent = (LucideIcons as any)[tribe.iconName] || LucideIcons.HelpCircle;
+
+          return (
+            <div 
+              key={tribe.id} 
+              className="group relative bg-[#18181b] rounded-t-xl overflow-hidden shadow-2xl flex flex-col"
+              style={{
+                boxShadow: `0 20px 40px -10px rgba(0,0,0,0.5)`
+              }}
+            >
+              {/* Shelf Top (The "Lip") */}
+              <div className="relative h-14 bg-[#202023] border-b border-black flex items-center px-4 justify-between z-10 transition-colors duration-300 group-hover:bg-[#25252a]">
+                 {/* Top Highlight for 3D effect */}
+                 <div className="absolute top-0 left-0 right-0 h-px bg-white/10" />
+                 
+                 <div className="flex items-center gap-3">
+                   <div 
+                      className="w-8 h-8 rounded flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300"
+                      style={{ backgroundColor: tribe.color }}
+                   >
+                      <IconComponent className="w-5 h-5 text-black" />
+                   </div>
+                   <div>
+                     <span className="block text-[9px] font-black uppercase tracking-widest text-zinc-500 leading-none mb-0.5">
+                       SECTOR 0{index + 1}
+                     </span>
+                     <h2 className="text-lg font-bold uppercase tracking-tight text-zinc-200 leading-none group-hover:text-white transition-colors">
+                       {tribe.label}
+                     </h2>
+                   </div>
+                 </div>
+
+                 {/* Decorative LEDs */}
+                 <div className="flex gap-1.5 opacity-50">
+                    <div className="w-1.5 h-1.5 rounded-full bg-zinc-700" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-zinc-700" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                 </div>
               </div>
-              <div className="text-[9px] text-zinc-600 font-mono">
-                {category.subcategories.length}
-              </div>
-            </div>
 
-            {/* Subcategories Grid: 2 cols x 3 rows (Strict Structure) */}
-            <div className="flex-1 grid grid-cols-2 grid-rows-3 gap-2 min-h-0">
-              {category.subcategories.map((subcategory) => {
-                const isSelected = currentSubcategory === subcategory.id;
-                // Get participating brands (limit to 3 for visual balance)
-                const brandList = subcategory.brands
-                  ? subcategory.brands.slice(0, 3)
-                  : [];
+              {/* The "Carved" Shelf Body */}
+              <div className="relative bg-[#0a0a0c] p-2 shadow-[inset_0_10px_20px_rgba(0,0,0,0.8)] border-t border-black min-h-[180px]">
+                 
+                 {/* Texture Overlay */}
+                 <div className="absolute inset-0 pointer-events-none opacity-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800/20 via-transparent to-transparent" />
 
-                return (
-                  <button
-                    key={subcategory.id}
-                    onClick={() => handleSubcategoryClick(subcategory.id)}
-                    className={`
-                      relative flex flex-col items-center justify-between p-1.5 rounded-lg transition-all duration-300 group/item text-left w-full h-full overflow-hidden
-                      ${
-                        isSelected
-                          ? "bg-zinc-800/80 shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] border-b border-cyan-500/50"
-                          : "bg-black/60 shadow-[inset_0_4px_8px_rgba(0,0,0,0.8)] border-b border-white/5 hover:bg-black/80"
-                      }
-                    `}
-                  >
-                    {/* Thumbnail Container - Flex to fit available height */}
-                    <div className="relative w-full flex-1 min-h-0 mb-1 rounded-md flex items-center justify-center overflow-hidden">
-                      {/* Deep Slot Shadow */}
-                      <div className="absolute inset-0 bg-black/40 shadow-[inset_0_0_15px_rgba(0,0,0,0.9)] rounded-md pointer-events-none z-0" />
-
-                      {/* Brand Lightshow */}
-                      <div className="absolute bottom-0.5 w-full flex justify-center gap-1 z-0 px-2 pointer-events-none">
-                        {brandList.map((brand, idx) => {
-                          const color =
-                            BRAND_COLORS[brand] || BRAND_COLORS.default;
-                          return (
-                            <div
-                              key={idx}
-                              className={`
-                                 h-0.5 w-2 rounded-full shadow-[0_0_4px_rgba(255,255,255,0.2)] transition-all duration-500
-                                 ${isSelected ? "opacity-100 shadow-[0_0_6px_currentColor]" : "opacity-30 group-hover/item:opacity-70"}
-                               `}
-                              style={{
-                                backgroundColor: color,
-                                color: color,
-                              }}
-                            />
-                          );
-                        })}
-                      </div>
-
-                      {subcategory.image ? (
-                        <img
-                          src={subcategory.image}
-                          alt={subcategory.label}
-                          className={`
-                            relative z-10 w-full h-full object-contain p-1 transition-all duration-300 drop-shadow-xl
-                            ${isSelected ? "scale-105 opacity-100 brightness-110" : "opacity-90 grayscale-[20%] group-hover/item:grayscale-0 group-hover/item:opacity-100 group-hover/item:scale-105"}
-                          `}
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center text-zinc-700 relative z-10">
-                          <span className="text-[8px]">NO IMG</span>
-                        </div>
-                      )}
-
-                      {/* Selection Highlight */}
-                      {isSelected && (
-                        <div className="absolute inset-0 rounded-md ring-1 ring-cyan-500/30 pointer-events-none" />
-                      )}
-                    </div>
-
-                    {/* Simple Label */}
-                    <div className="w-full text-center flex-shrink-0">
-                      <p
-                        className={`
-                        text-[9px] font-semibold leading-tight tracking-wide truncate
-                        ${isSelected ? "text-cyan-400" : "text-zinc-400 group-hover/item:text-zinc-200"}
-                      `}
+                 {/* The Modules (Subcategories) */}
+                 <div className="relative z-10 grid grid-cols-3 gap-2">
+                    {tribe.spectrum.slice(0, 6).map((sub) => (
+                      <button
+                        key={sub.id}
+                        onClick={() => goToSpectrum(tribe.id, sub.id, [])}
+                        className="group/item relative flex flex-col items-center justify-between rounded-lg bg-[#030303] overflow-hidden transition-all duration-300 hover:bg-[#050505] shadow-[inset_0_2px_4px_rgba(0,0,0,1)] border border-white/5"
                       >
-                        {subcategory.label}
-                      </p>
-                    </div>
-                  </button>
-                );
-              })}
+                         {/* 1. Deep Shadow Layer (The Recess) */}
+                         <div className="absolute inset-0 pointer-events-none shadow-[inset_0_5px_15px_rgba(0,0,0,0.95)] z-20 rounded-lg" />
+                         
+                         {/* 2. Soft Illumination (The "Dimmed Light") */}
+                         <div 
+                            className="absolute inset-x-0 top-0 h-[80%] opacity-15 group-hover/item:opacity-30 transition-opacity duration-500"
+                            style={{
+                              background: `radial-gradient(circle at 50% 0%, ${tribe.color}, transparent 70%)`
+                            }}
+                         />
+
+                         {/* 3. Product Thumbnail - Standardized Size & Crop */}
+                         <div className="relative w-full aspect-square flex items-center justify-center p-4 z-10">
+                           <img 
+                             src={sub.image} 
+                             alt={sub.label}
+                             className="w-full h-full object-contain filter brightness-[0.7] contrast-[1.1] group-hover/item:brightness-100 group-hover/item:scale-110 transition-all duration-300 drop-shadow-2xl"
+                           />
+                         </div>
+
+                         {/* 4. Label Plate */}
+                         <div className="w-full py-2 bg-[#08080a] border-t border-white/5 z-20 flex items-center justify-center relative">
+                            {/* Top bevel on plate */}
+                            <div className="absolute top-0 inset-x-0 h-px bg-black/50" />
+                            
+                            <span 
+                              className="text-[9px] font-black text-zinc-600 uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors truncate px-2"
+                            >
+                              {sub.label}
+                            </span>
+                            
+                            {/* Active Indicator Color */}
+                            <div 
+                                className="absolute bottom-0 left-0 right-0 h-[2px] opacity-0 group-hover/item:opacity-100 transition-opacity"
+                                style={{ backgroundColor: tribe.color }}
+                            />
+                         </div>
+                      </button>
+                    ))}
+                 </div>
+              </div>
+
+               {/* Shelf Bottom Lip */}
+               <div className="h-2 bg-[#202023] border-t border-white/5 shadow-lg relative rounded-b-xl">
+                 <div className="absolute inset-x-0 bottom-0 h-px bg-black opacity-50" />
+               </div>
             </div>
-          </div>
-        ))}
-      </main>
+          );
+        })}
+      </div>
     </div>
   );
 };

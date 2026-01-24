@@ -1,88 +1,50 @@
-import { useEffect } from "react";
-import ErrorBoundary from "./components/ErrorBoundary";
-import { MediaBar } from "./components/MediaBar";
-import { Workbench } from "./components/Workbench";
-import "./index.css";
-import { instantSearch } from "./lib";
-import { initializeDevTools } from "./lib/devTools";
-
-// Initialize dev tools in development
-initializeDevTools();
-
-/**
- * App - v3.8.0 Category Module
- *
- * Three Screen Architecture:
- * 1. Galaxy Dashboard - Universal categories overview
- * 2. Sub-Category Module - Product exploration with Spectrum View
- * 3. Product Pop Interface - Detailed product knowledge
- */
-function AppContent() {
-  useEffect(() => {
-    // Initialize search system from static JSON catalogs (non-blocking)
-    console.log(
-      "🚀 v3.8.0 CATEGORY-MODUL: Initializing 3-Screen Architecture...",
-    );
-
-    // Don't block - initialize in background
-    setTimeout(() => {
-      instantSearch
-        .initialize()
-        .then(() => {
-          console.log(
-            "✅ Catalog initialized | Screens: Galaxy → Spectrum → ProductPop",
-          );
-        })
-        .catch((error) => {
-          console.error("❌ Initialization error:", error);
-        });
-    }, 100); // Defer to next tick
-  }, []); // Run once on mount
-
-  return (
-    <div className="flex h-screen w-screen flex-col bg-[#0a0a0a] text-white font-sans overflow-hidden">
-      {/* Global Header */}
-      <header className="flex-shrink-0 h-14 bg-gradient-to-r from-black via-black to-[#0a0a0a] border-b border-white/10 flex items-center justify-between px-6 z-50 shadow-lg">
-        <div className="flex items-baseline gap-4">
-          <div
-            className="text-3xl font-black italic tracking-tight text-white"
-            style={{
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontStyle: "italic",
-            }}
-          >
-            Halilit
-          </div>
-          <div className="text-[11px] font-bold tracking-[0.15em] text-zinc-400 uppercase">
-            Support Center
-          </div>
-        </div>
-        <div className="flex items-center gap-6 text-[11px] font-mono text-zinc-400">
-          <div className="flex items-center gap-2.5">
-            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-semibold">ONLINE</span>
-          </div>
-          <div className="text-zinc-600">v3.8.0 CATEGORY-MODUL</div>
-        </div>
-      </header>
-
-      {/* MAIN APPLICATION FRAME - Galaxy Dashboard is the navigator */}
-      <div className="flex-1 flex min-h-0 relative">
-        <ErrorBoundary name="Workbench">
-          <main className="flex-1 relative z-10 flex flex-col overflow-hidden">
-            <Workbench />
-          </main>
-        </ErrorBoundary>
-      </div>
-
-      {/* Media Deck */}
-      <MediaBar />
-    </div>
-  );
-}
+// frontend/src/App.tsx
+import React from 'react';
+import { useNavigationStore } from './store/navigationStore';
+import { GalaxyDashboard } from './components/views/GalaxyDashboard';
+import { SpectrumModule } from './components/views/SpectrumModule';
+import { ProductPopInterface } from './components/views/ProductPopInterface'; // (Assume exists)
 
 function App() {
-  return <AppContent />;
+  // Extract strictly what we need
+  const { currentView, activeProductId } = useNavigationStore();
+
+  return (
+    <div className="flex h-screen w-screen flex-col bg-black text-white font-sans overflow-hidden">
+      
+      {/* Global Header (Optional) */}
+      <header className="h-12 bg-black border-b border-zinc-900 flex items-center px-6">
+         <span className="font-black italic text-lg tracking-tight">Halilit<span className="text-zinc-600">SC</span></span>
+      </header>
+
+      {/* Main Stage */}
+      <main className="flex-1 relative overflow-hidden">
+        
+        {/* Layer 1: Galaxy */}
+        {currentView === 'GALAXY' && (
+          <div className="absolute inset-0 animate-fade-in">
+            <GalaxyDashboard />
+          </div>
+        )}
+
+        {/* Layer 2: Spectrum */}
+        {currentView === 'SPECTRUM' && (
+          <div className="absolute inset-0 animate-slide-up">
+            <SpectrumModule />
+          </div>
+        )}
+
+        {/* Layer 3: Product Pop (Overlay) */}
+        {currentView === 'PRODUCT_POP' && activeProductId && (
+           <div className="absolute inset-0 z-50 bg-black/90 backdrop-blur-sm animate-fade-in flex items-center justify-center p-4">
+             {/* This would be your Flight Case Modal */}
+             <ProductPopInterface productId={activeProductId} /> 
+           </div>
+        )}
+
+      </main>
+    </div>
+  );
 }
 
 export default App;

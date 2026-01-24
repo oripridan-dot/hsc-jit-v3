@@ -4,6 +4,10 @@
 echo "🏗️  Running System Architect..."
 python3 system_architect.py
 
+# 1.5 Generate AI Context
+echo "🧠 Forging AI Context..."
+python3 context_forge.py
+
 # 2. Run the Mass Ingestion Protocol (if you want to scrape/update)
 # Uncomment the line below if you want it to run on every save (might be slow)
 # echo "🚀 Updating Data Skeleton..."
