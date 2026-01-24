@@ -10,24 +10,14 @@ import type { Product } from "../types";
  *
  * Flow:
  * 1. User selects consolidated category (e.g., "keys")
- * 2. Hook loads all brand catalogs
+ * 2. Hook loads all brand catalogs (discovered via index.json)
  * 3. For each product, consolidate its brand category to UI category
  * 4. Filter products where consolidated category matches selection
  */
 
-// The list of brands your system tracks (corresponds to your JSON filenames)
-const TRACKED_BRANDS = [
-  "roland",
-  "boss",
-  "nord",
-  "moog",
-  "mackie",
-  "adam-audio",
-  "akai-professional",
-  "teenage-engineering",
-  "universal-audio",
-  "warm-audio",
-];
+interface CatalogIndex {
+  brands: Array<{ slug: string }>;
+}
 
 export const useCategoryCatalog = (
   category: string | null,
@@ -41,95 +31,85 @@ export const useCategoryCatalog = (
       setLoading(true);
       let aggregated: Product[] = [];
 
-      // If a specific brand is provided, only fetch that brand
-      const brandsToFetch = brandId ? [brandId] : TRACKED_BRANDS;
+      try {
+        let brandsToFetch: string[] = [];
 
-      // Parallel fetch of all Master Files
-      const promises = brandsToFetch.map((brand) =>
-        fetch(`/data/${brand}.json`) // Files are in public/data/
-          .then((res) => {
-            // Check content type to avoid parsing HTML (404 fallback) as JSON
-            const contentType = res.headers.get("content-type");
-            if (
-              !res.ok ||
-              (contentType && !contentType.includes("application/json"))
-            ) {
-              // Be silent about missing files for untracked brands in dev
-              return null;
+        if (brandId) {
+          brandsToFetch = [brandId];
+        } else {
+          try {
+            const indexRes = await fetch("/data/index.json");
+            if (indexRes.ok) {
+              const indexData = (await indexRes.json()) as CatalogIndex;
+              brandsToFetch = indexData.brands.map((b) => b.slug);
+            } else {
+              console.error("Failed to fetch index.json");
             }
-            return res.json();
-          })
-          .then((data) => {
-            if (!data) return [];
-            return (data as { products: Product[] }).products || [];
-          })
-          .catch((_err) => {
-            // console.warn(`Failed to load ${brand} master:`, _err);
-            return [] as Product[];
-          }),
-      );
-
-      const results = await Promise.all(promises);
-
-      // Flatten arrays
-      aggregated = results.flat();
-
-      console.log(
-        `📦 [useCategoryCatalog] Loaded ${aggregated.length} total products`,
-        brandId ? `for brand: "${brandId}"` : "",
-        category ? `category: "${category}"` : "",
-      );
-
-      // Filter by CONSOLIDATED category - translate brand categories to UI categories
-      const filtered = aggregated.filter((p) => {
-        // If no category filter or "All", include everything
-        if (!category || category === "All") return true;
-
-        // Get the product's brand and category
-        const productBrand = (p.brand || "").toLowerCase();
-        const productCategory = p.main_category || p.category || "";
-
-        // Consolidate the product's category to get its UI category ID
-        const consolidatedId = consolidateCategory(
-          productBrand,
-          productCategory,
-        );
-
-        // Match against the requested consolidated category
-        // The category param should be a consolidated ID like "keys", "drums", etc.
-        const requestedCategory = category.toLowerCase();
-
-        if (consolidatedId === requestedCategory) {
-          return true;
+          } catch (e) {
+            console.error("Error loading index.json", e);
+          }
         }
 
-        // Also check if the category param matches the consolidated category label
-        // This handles cases where labels like "Keys & Pianos" are passed
-        const labelMappings: Record<string, string> = {
-          "keys & pianos": "keys",
-          "drums & percussion": "drums",
-          "guitars & amps": "guitars",
-          "studio & recording": "studio",
-          "live sound": "live",
-          "dj & production": "dj",
-          "software & cloud": "software",
-          accessories: "accessories",
-        };
+        if (brandsToFetch.length === 0) {
+          console.warn("No brands found to fetch");
+          setLoading(false);
+          return;
+        }
 
-        const normalizedCategory =
-          labelMappings[requestedCategory] || requestedCategory;
-        return consolidatedId === normalizedCategory;
-      });
+        // Parallel fetch of all Master Files
+        const promises = brandsToFetch.map((brand) =>
+          fetch(`/data/${brand}.json`)
+            .then((res) => {
+              const contentType = res.headers.get("content-type");
+              if (
+                !res.ok ||
+                (contentType && !contentType.includes("application/json"))
+              ) {
+                return null;
+              }
+              return res.json();
+            })
+            .then((data) => {
+              if (!data) return [];
+              return (data as { products: Product[] }).products || [];
+            })
+            .catch((_err) => {
+              return [] as Product[];
+            }),
+        );
 
-      console.log(
-        `🔍 [useCategoryCatalog] Filtered to ${filtered.length} products for consolidated category: "${category}"`,
-      );
-      if (filtered.length > 0) {
-        console.log(`📝 Sample product:`, filtered[0]);
+        const results = await Promise.all(promises);
+        aggregated = results.flat();
+
+        console.log(
+          `📦 [useCategoryCatalog] Loaded ${aggregated.length} products`,
+          brandId
+            ? `for brand: "${brandId}"`
+            : `from ${brandsToFetch.length} brands`,
+        );
+
+        // Filter by CONSOLIDATED category
+        const filtered = aggregated.filter((p) => {
+          if (!category || category === "All") return true;
+
+          const productBrand = (p.brand || "").toLowerCase();
+          const productCategory = p.main_category || p.category || "";
+
+          const consolidatedId = consolidateCategory(
+            productBrand,
+            productCategory,
+          );
+
+          return consolidatedId === category.toLowerCase();
+        });
+
+        setProducts(filtered);
+      } catch (err) {
+        console.error("Catalog load error:", err);
+        setProducts([]);
+      } finally {
+        setLoading(false);
       }
-
-      setProducts(filtered);
-      setLoading(false);
     };
 
     fetchAll();

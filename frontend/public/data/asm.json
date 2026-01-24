@@ -15,91 +15,70 @@
       "id": "asm_85_hskb",
       "name": "סינתיסייזר ASM Hydrasynth Keyboard",
       "brand": "asm",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/asm_85_hskb.jpg",
+      "category": "keys",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6564955/original/2c65e58e3b7606b70dc5b071af4652bb.jpg",
       "description": "סינתיסייזר ASM Hydrasynth Keyboard",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hskb.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hskb.jpg",
-        "high_res": "/data/thumbnails/asm_85_hskb.jpg",
-        "original": "/data/thumbnails/asm_85_hskb.jpg"
-      },
+      "main_category": "keys",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "keys"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6564955/original/2c65e58e3b7606b70dc5b071af4652bb.jpg"
     },
     {
       "id": "asm_85_hsdr",
       "name": "סינתיסייזר ASM Hydrasynth Desktop",
       "brand": "asm",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/asm_85_hsdr.jpg",
+      "category": "keys",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6564461/original/df36daabf7f7beb69c095e15ec977c4b.jpg",
       "description": "סינתיסייזר ASM Hydrasynth Desktop",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hsdr.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hsdr.jpg",
-        "high_res": "/data/thumbnails/asm_85_hsdr.jpg",
-        "original": "/data/thumbnails/asm_85_hsdr.jpg"
-      },
+      "main_category": "keys",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "keys"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6564461/original/df36daabf7f7beb69c095e15ec977c4b.jpg"
     },
     {
       "id": "asm_85_hsmk",
       "name": "סינתיסייזר ASM Hydrasynth Explorer",
       "brand": "asm",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/asm_85_hsmk.jpg",
+      "category": "keys",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11450428/original/1444d1a677364f7c4d307654af04631f.jpg",
       "description": "סינתיסייזר ASM Hydrasynth Explorer",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hsmk.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hsmk.jpg",
-        "high_res": "/data/thumbnails/asm_85_hsmk.jpg",
-        "original": "/data/thumbnails/asm_85_hsmk.jpg"
-      },
+      "main_category": "keys",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "keys"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11450428/original/1444d1a677364f7c4d307654af04631f.jpg"
     },
     {
       "id": "asm_85_hslx",
       "name": "סינתיסייזר ASM Hydrasynth Deluxe",
       "brand": "asm",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/asm_85_hslx.jpg",
+      "category": "keys",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11454436/original/53ec510b184e71fe239a8120f9ab6865.jpg",
       "description": "סינתיסייזר ASM Hydrasynth Deluxe",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hslx.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hslx.jpg",
-        "high_res": "/data/thumbnails/asm_85_hslx.jpg",
-        "original": "/data/thumbnails/asm_85_hslx.jpg"
-      },
+      "main_category": "keys",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "keys"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11454436/original/53ec510b184e71fe239a8120f9ab6865.jpg"
     }
   ],
   "brand_name": "Asm",
   "brand_slug": "asm",
-  "refined_at": "2026-01-24T02:50:44.497789+00:00",
+  "refined_at": "2026-01-24T04:16:05.281926+00:00",
   "hierarchy": {
-    "accessories": {
+    "keys": {
       "General": [
         {
           "id": "asm_85_hskb",
           "name": "סינתיסייזר ASM Hydrasynth Keyboard",
           "description": "סינתיסייזר ASM Hydrasynth Keyboard",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hskb.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hskb.jpg",
-            "high_res": "/data/thumbnails/asm_85_hskb.jpg",
-            "original": "/data/thumbnails/asm_85_hskb.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         },
@@ -107,12 +86,7 @@
           "id": "asm_85_hsdr",
           "name": "סינתיסייזר ASM Hydrasynth Desktop",
           "description": "סינתיסייזר ASM Hydrasynth Desktop",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hsdr.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hsdr.jpg",
-            "high_res": "/data/thumbnails/asm_85_hsdr.jpg",
-            "original": "/data/thumbnails/asm_85_hsdr.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         },
@@ -120,12 +94,7 @@
           "id": "asm_85_hsmk",
           "name": "סינתיסייזר ASM Hydrasynth Explorer",
           "description": "סינתיסייזר ASM Hydrasynth Explorer",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hsmk.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hsmk.jpg",
-            "high_res": "/data/thumbnails/asm_85_hsmk.jpg",
-            "original": "/data/thumbnails/asm_85_hsmk.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         },
@@ -133,12 +102,7 @@
           "id": "asm_85_hslx",
           "name": "סינתיסייזר ASM Hydrasynth Deluxe",
           "description": "סינתיסייזר ASM Hydrasynth Deluxe",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hslx.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hslx.jpg",
-            "high_res": "/data/thumbnails/asm_85_hslx.jpg",
-            "original": "/data/thumbnails/asm_85_hslx.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         }

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported_at": "2026-01-24T02:50:44.444744+00:00",
+  "exported_at": "2026-01-24T04:16:05.258414+00:00",
   "universal_categories": [
     {
       "id": "keys",
@@ -100,6 +100,20 @@
       "Accessories": "accessories",
       "Software": "software",
       "Uncategorized": "accessories"
+    },
+    "bespeco": {
+      "Stands": "accessories",
+      "Cables": "accessories",
+      "Connectors": "accessories",
+      "Bags": "accessories",
+      "Accessories": "accessories",
+      "keys": "accessories",
+      "Keys": "accessories"
+    },
+    "foxgear-guitar-effects-and-pedals": {
+      "general": "guitars",
+      "pedals": "guitars",
+      "effects": "guitars"
     }
   }
 }

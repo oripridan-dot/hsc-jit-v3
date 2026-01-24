@@ -15,109 +15,84 @@
       "id": "ampeg_63_classic",
       "name": "פדל פראמפ לבס Ampeg Classic",
       "brand": "ampeg",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/ampeg_63_classic.jpg",
+      "category": "guitars",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2228124/original/7ce689b2d1cac655194138254195e385.jpg",
       "description": "פדל פראמפ לבס Ampeg Classic",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_classic.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_classic.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_classic.jpg",
-        "original": "/data/thumbnails/ampeg_63_classic.jpg"
-      },
+      "main_category": "guitars",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "guitars"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2228124/original/7ce689b2d1cac655194138254195e385.jpg"
     },
     {
       "id": "ampeg_63_scraemblarbass",
       "name": "Ampeg Scrambler Bass Overdrive",
       "brand": "ampeg",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+      "category": "guitars",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2134326/original/10465a73f918d1d9a03f9c6bdf6680a5.jpg",
       "description": "Ampeg Scrambler Bass Overdrive",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
-        "original": "/data/thumbnails/ampeg_63_scraemblarbass.jpg"
-      },
+      "main_category": "guitars",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "guitars"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2134326/original/10465a73f918d1d9a03f9c6bdf6680a5.jpg"
     },
     {
       "id": "ampeg_63_liquifier",
       "name": "Ampeg Liquifier Analog Chorus",
       "brand": "ampeg",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/ampeg_63_liquifier.jpg",
+      "category": "guitars",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6986421/original/2d8354c69d566ae2d9aa00c2e4b1bd29.jpg",
       "description": "Ampeg Liquifier Analog Chorus",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_liquifier.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_liquifier.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_liquifier.jpg",
-        "original": "/data/thumbnails/ampeg_63_liquifier.jpg"
-      },
+      "main_category": "guitars",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "guitars"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6986421/original/2d8354c69d566ae2d9aa00c2e4b1bd29.jpg"
     },
     {
       "id": "ampeg_63_svtvr",
       "name": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
       "brand": "ampeg",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/ampeg_63_svtvr.jpg",
+      "category": "guitars",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13615934/original/d293b5c88dfa47c8034091083b4f64b9.jpg",
       "description": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_svtvr.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_svtvr.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_svtvr.jpg",
-        "original": "/data/thumbnails/ampeg_63_svtvr.jpg"
-      },
+      "main_category": "guitars",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "guitars"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13615934/original/d293b5c88dfa47c8034091083b4f64b9.jpg"
     },
     {
       "id": "ampeg_63_pf210he",
       "name": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
       "brand": "ampeg",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/ampeg_63_pf210he.jpg",
+      "category": "guitars",
+      "image_url": "https://d3m9l0v76dty0.cloudfront.net/system/photos/560627/original/5f94062acfc618b7a978bf2efedebdd3.jpg",
       "description": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_pf210he.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_pf210he.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_pf210he.jpg",
-        "original": "/data/thumbnails/ampeg_63_pf210he.jpg"
-      },
+      "main_category": "guitars",
+      "images": [],
       "category_hierarchy": [
-        "accessories"
-      ]
+        "guitars"
+      ],
+      "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/560627/original/5f94062acfc618b7a978bf2efedebdd3.jpg"
     }
   ],
   "brand_name": "Ampeg",
   "brand_slug": "ampeg",
-  "refined_at": "2026-01-24T02:50:45.080140+00:00",
+  "refined_at": "2026-01-24T04:16:06.060051+00:00",
   "hierarchy": {
-    "accessories": {
+    "guitars": {
       "General": [
         {
           "id": "ampeg_63_classic",
           "name": "פדל פראמפ לבס Ampeg Classic",
           "description": "פדל פראמפ לבס Ampeg Classic",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_classic.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_classic.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_classic.jpg",
-            "original": "/data/thumbnails/ampeg_63_classic.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         },
@@ -125,12 +100,7 @@
           "id": "ampeg_63_scraemblarbass",
           "name": "Ampeg Scrambler Bass Overdrive",
           "description": "Ampeg Scrambler Bass Overdrive",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
-            "original": "/data/thumbnails/ampeg_63_scraemblarbass.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         },
@@ -138,12 +108,7 @@
           "id": "ampeg_63_liquifier",
           "name": "Ampeg Liquifier Analog Chorus",
           "description": "Ampeg Liquifier Analog Chorus",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_liquifier.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_liquifier.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_liquifier.jpg",
-            "original": "/data/thumbnails/ampeg_63_liquifier.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         },
@@ -151,12 +116,7 @@
           "id": "ampeg_63_svtvr",
           "name": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
           "description": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_svtvr.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_svtvr.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_svtvr.jpg",
-            "original": "/data/thumbnails/ampeg_63_svtvr.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         },
@@ -164,12 +124,7 @@
           "id": "ampeg_63_pf210he",
           "name": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
           "description": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_pf210he.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_pf210he.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_pf210he.jpg",
-            "original": "/data/thumbnails/ampeg_63_pf210he.jpg"
-          },
+          "images": [],
           "model_number": null,
           "sku": null
         }
