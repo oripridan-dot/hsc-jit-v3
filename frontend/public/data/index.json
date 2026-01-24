@@ -1,212 +1,225 @@
 {
   "version": "3.7.4",
-  "build_timestamp": "2026-01-23T17:09:28.918984+00:00",
+  "build_timestamp": "2026-01-24T00:16:08.631588+00:00",
   "environment": "static_production",
-  "total_products": 9,
-  "total_verified": 9,
+  "total_products": 20,
+  "total_verified": 20,
   "brands": [
-    {
-      "id": "universal-audio",
-      "name": "Universal-Audio",
-      "slug": "universal-audio",
-      "count": 1,
-      "brand_color": "#1f2937",
-      "logo_url": "/assets/logos/universal-audio_logo.svg",
-      "file": "universal-audio.json",
-      "data_file": "universal-audio.json",
-      "product_count": 1,
-      "verified_count": 1,
-      "last_updated": "2026-01-23T17:09:28.921558+00:00"
-    },
-    {
-      "id": "moog",
-      "name": "Moog",
-      "slug": "moog",
-      "count": 1,
-      "brand_color": "#000000",
-      "logo_url": "/assets/logos/moog_logo.png",
-      "file": "moog.json",
-      "data_file": "moog.json",
-      "product_count": 1,
-      "verified_count": 1,
-      "last_updated": "2026-01-23T17:09:28.922710+00:00"
-    },
-    {
-      "id": "boss",
-      "name": "Boss",
-      "slug": "boss",
-      "count": 1,
-      "brand_color": "#0055a4",
-      "logo_url": "/assets/logos/boss_logo.png",
-      "file": "boss.json",
-      "data_file": "boss.json",
-      "product_count": 1,
-      "verified_count": 1,
-      "last_updated": "2026-01-23T17:09:28.923707+00:00"
-    },
     {
       "id": "roland",
       "name": "Roland",
       "slug": "roland",
-      "count": 5,
+      "count": 20,
       "brand_color": "#f89a1c",
-      "logo_url": "/assets/logos/roland_logo.png",
+      "logo_url": "/data/logos/roland_logo.jpg",
       "file": "roland.json",
       "data_file": "roland.json",
-      "product_count": 5,
-      "verified_count": 5,
-      "last_updated": "2026-01-23T17:09:28.927471+00:00"
-    },
-    {
-      "id": "nord",
-      "name": "Nord",
-      "slug": "nord",
-      "count": 1,
-      "brand_color": "#e31e24",
-      "logo_url": "/assets/logos/nord_logo.png",
-      "file": "nord.json",
-      "data_file": "nord.json",
-      "product_count": 1,
-      "verified_count": 1,
-      "last_updated": "2026-01-23T17:09:28.928744+00:00"
+      "product_count": 20,
+      "verified_count": 20,
+      "last_updated": "2026-01-24T00:16:08.635046+00:00"
     }
   ],
   "search_graph": [
     {
-      "id": "ua-luna-daw",
-      "label": "Luna DAW",
-      "brand": "universal-audio",
-      "brand_name": "Universal-Audio",
-      "category": "software",
-      "subcategory": "General",
-      "keywords": [
-        "Unlimited tracks",
-        "Real-time DSP",
-        "100+ plugins",
-        "Apollo integration"
-      ],
-      "description": "Powerful DAW with built-in mixing and mastery capabilities. Integrates with Apollo for real-time DSP"
-    },
-    {
-      "id": "moog-moog-one",
-      "label": "Moog One",
-      "brand": "moog",
-      "brand_name": "Moog",
+      "id": "roland-a-88mk2",
+      "label": "A-88MKII\nMIDI Keyboard Controller",
+      "brand": "roland",
+      "brand_name": "Roland",
       "category": "keys",
       "subcategory": "General",
-      "keywords": [
-        "4-voice polyphony",
-        "Analog synthesis",
-        "Modern interface",
-        "USB MIDI"
-      ],
-      "description": "The future of analog synthesis. Moog's first multi-voice analog synthesizer in 20 years with lush po"
+      "keywords": [],
+      "description": "A-88MKII: MIDI Keyboard Controller - Play. Control. Rejoice."
     },
     {
-      "id": "boss-gt-1",
-      "label": "GT-1 Multi-Effects Processor",
-      "brand": "boss",
-      "brand_name": "Boss",
-      "category": "studio",
-      "subcategory": "General",
-      "keywords": [
-        "160+ effects",
-        "50+ amp models",
-        "Expression pedal",
-        "USB"
-      ],
-      "description": "Advanced multi-effects processor with 160+ effects and amp modeling. The ultimate guitareffects solu"
-    },
-    {
-      "id": "roland-bridge-cast",
+      "id": "roland-bridge_cast",
       "label": "BRIDGE CAST",
       "brand": "roland",
       "brand_name": "Roland",
-      "category": "studio",
-      "subcategory": "studio",
-      "keywords": [
-        "Professional XLR microphone input with high-impedance preamp",
-        "Dual bus mixing for independent personal and stream audio",
-        "Voice Transformer effects for character and personality",
-        "Built-in studio effects: EQ, compression, noise suppression, reverb",
-        "Game-specific EQ presets for optimal audio in different games"
-      ],
-      "description": "Take online gaming sound to the next level with BRIDGE CAST, your all-in-one solution for profession"
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "BRIDGE CAST: Dual Bus Gaming Mixer - Pro Sound for Pro Gamers"
     },
     {
-      "id": "roland-dp603",
-      "label": "DP603",
+      "id": "roland-cb-404",
+      "label": "CB-404\nCarrying Case",
       "brand": "roland",
       "brand_name": "Roland",
-      "category": "keys",
-      "subcategory": "keys",
-      "keywords": [
-        "PHA-50 wooden key action with escapement for authentic feel",
-        "SuperNATURAL engine with 38 premium piano sounds",
-        "Powerful speaker system with dedicated subwoofer",
-        "Support for three pedal types: sustain, soft, and sostenuto",
-        "Internal recording and playback of up to 5 songs"
-      ],
-      "description": "The Roland DP603 brings the concert grand piano experience home with authentic wooden key action and"
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "CB-404: Carrying Case - Custom Carrying Case for the SP-404 Series"
     },
     {
-      "id": "roland-juno-106",
-      "label": "JUNO-106 Synthesizer",
+      "id": "roland-cb-b88s",
+      "label": "CB-B88S\nKeyboard Bag",
       "brand": "roland",
       "brand_name": "Roland",
-      "category": "keys",
-      "subcategory": "keys",
-      "keywords": [
-        "6-voice polyphonic synthesis with dual oscillators per voice",
-        "Analog voltage-controlled filter for warm, responsive tone shaping",
-        "Analog chorus effect for lush, spacious soundscapes",
-        "Programmable arpeggiator with multiple modes",
-        "61-note keyboard with light touch action"
-      ],
-      "description": "The JUNO-106 is a legendary 6-voice polyphonic synthesizer that defined the sound of 1980s pop, new "
-    },
-    {
-      "id": "roland-tr-808",
-      "label": "TR-808 Rhythm Composer",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "drums",
-      "subcategory": "accessories",
-      "keywords": [
-        "Iconic 808 bass drum sound",
-        "Classic drum kit",
-        "Portable format"
-      ],
-      "description": "The most influential drum machine in history. The 808 defined the sound of hip-hop, electro, and ele"
-    },
-    {
-      "id": "roland-tr-909",
-      "label": "TR-909 Rhythm Composer",
-      "brand": "roland",
-      "brand_name": "Roland",
-      "category": "drums",
-      "subcategory": "accessories",
-      "keywords": [
-        "Iconic 909 bass",
-        "Crisp hi-hats",
-        "Deep kick drum"
-      ],
-      "description": "The drum machine that shaped house and techno. The 909 is synonymous with rave culture."
-    },
-    {
-      "id": "nord-lead-a1",
-      "label": "Nord Lead A1",
-      "brand": "nord",
-      "brand_name": "Nord",
       "category": "keys",
       "subcategory": "General",
-      "keywords": [
-        "Multi-timbral synthesis",
-        "Built-in sequencer",
-        "USB connectivity"
-      ],
-      "description": "Four-part multi-timbral synthesizer with powerful sound synthesis and built-in sequencer. Premium Sc"
+      "keywords": [],
+      "description": "CB-B88S: Keyboard Bag - Carrying Bag for Slim 88-Note Keyboards"
+    },
+    {
+      "id": "roland-cb-v61",
+      "label": "CB-V61\nKeyboard Bag",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "CB-V61: Keyboard Bag - Versatile Carrying Bag for Portable 61-Note Keyboards"
+    },
+    {
+      "id": "roland-e-x10",
+      "label": "E-X10\nArranger Keyboard",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "E-X10: Arranger Keyboard - Trusted Roland Quality in a Stylish Portable Keyboard"
+    },
+    {
+      "id": "roland-e-x50",
+      "label": "E-X50",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "E-X50: Arranger Keyboard - Your Musical Centerpiece"
+    },
+    {
+      "id": "roland-fantom_series",
+      "label": "FANTOM EX",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "FANTOM EX Series"
+    },
+    {
+      "id": "roland-gokeys_3",
+      "label": "GO:KEYS 3\nMusic Creation Keyboard",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "GO:KEYS 3: Music Creation Keyboard - Unlock Your Inner Musician"
+    },
+    {
+      "id": "roland-gokeys_5",
+      "label": "GO:KEYS 5\nMusic Creation Keyboard",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "GO:KEYS 5: Music Creation Keyboard - Unlock Your Inner Musician"
+    },
+    {
+      "id": "roland-gopiano_go-61p-a",
+      "label": "GO:PIANO with Alexa Built-in\nDigital Piano",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "GO:PIANO with Alexa Built-in: Digital Piano - Bring Music into Your Life with Alexa Technology"
+    },
+    {
+      "id": "roland-gopiano_go-88p",
+      "label": "GO:PIANO88",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "GO:PIANO88: Digital Piano (GO-88P) - Full-Size 88-Note Piano. Play-Anywhere Portability. Smartphone-"
+    },
+    {
+      "id": "roland-ks-11z",
+      "label": "KS-11Z\nKeyboard Stand",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "keys",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "KS-11Z: Keyboard Stand - Heavy-Duty Z-Stand with Wide Adjustment Range"
+    },
+    {
+      "id": "roland-rh-5",
+      "label": "RH-5\nMonitor Headphones",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "RH-5: Headphones - Headphones for Everyday Music Making and Audio Playback"
+    },
+    {
+      "id": "roland-ric-g3",
+      "label": "RIC-G3",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "RIC-G3: Gold Series Instrument Cable - "
+    },
+    {
+      "id": "roland-rmc-b20-hiz",
+      "label": "RMC-B20-HIZ",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "RMC-B20-HIZ: Black Series Microphone Cable - "
+    },
+    {
+      "id": "roland-rmc-b3",
+      "label": "RMC-B3",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "RMC-B3: Black Series Microphone Cable - "
+    },
+    {
+      "id": "roland-rmc-g3",
+      "label": "RMC-G3",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "RMC-G3: Gold Series Microphone Cable - "
+    },
+    {
+      "id": "roland-rmc-gq3",
+      "label": "RMC-GQ3",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "RMC-GQ3: Roland Gold Series Quad Microphone Cable - "
+    },
+    {
+      "id": "roland-rmidi-b3",
+      "label": "RMIDI-B3",
+      "brand": "roland",
+      "brand_name": "Roland",
+      "category": "accessories",
+      "subcategory": "General",
+      "keywords": [],
+      "description": "RMIDI-B3: Black Series MIDI Cable - "
     }
   ],
-  "total_brands": 5
+  "total_brands": 1
 }

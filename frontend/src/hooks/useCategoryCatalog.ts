@@ -1,18 +1,23 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { consolidateCategory } from "../lib/categoryConsolidator";
+import { useNavigationStore } from "../store/navigationStore";
 import type { Product } from "../types";
 
 /**
- * useCategoryCatalog - Category Consolidation-Aware Product Loading
+ * useCategoryCatalog - REAL-TIME CATEGORY COMPUTATION
  *
- * This hook loads products and filters them using the CONSOLIDATED category system.
- * Brand categories are translated to universal UI categories for filtering.
+ * ✅ UNIFIED: Loads ALL brand catalogs and computes categories in real-time
+ * - Loads all brand catalogs once (cached)
+ * - When category selected: filters all brands + combines results
+ * - Categories are DERIVED from brand catalogs (not pre-built)
+ * - Single brand catalogs are source of truth
  *
  * Flow:
- * 1. User selects consolidated category (e.g., "keys")
- * 2. Hook loads all brand catalogs
- * 3. For each product, consolidate its brand category to UI category
- * 4. Filter products where consolidated category matches selection
+ * 1. Load all brand catalogs (once, cached)
+ * 2. User selects "Keys & Pianos" category
+ * 3. Real-time: Filter each brand's products by category
+ * 4. Combine results from all brands
+ * 5. Display: Products from all brands in that category
  */
 
 // The list of brands your system tracks (corresponds to your JSON filenames)
@@ -35,76 +40,111 @@ export const useCategoryCatalog = (
 ) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const [allBrandCatalogs, setAllBrandCatalogs] = useState<
+    Record<string, Product[]>
+  >({});
 
+  // Use store for error handling
+  const { setCatalogLoading, setCatalogError } = useNavigationStore();
+
+  // STEP 1: Load ALL brand catalogs once (cached)
   useEffect(() => {
-    const fetchAll = async () => {
+    const fetchAllBrands = async () => {
       setLoading(true);
-      let aggregated: Product[] = [];
+      setCatalogLoading(true);
 
-      // If a specific brand is provided, only fetch that brand
-      const brandsToFetch = brandId ? [brandId] : TRACKED_BRANDS;
+      try {
+        const brandsToFetch = brandId ? [brandId] : TRACKED_BRANDS;
 
-      // Parallel fetch of all Master Files
-      const promises = brandsToFetch.map((brand) =>
-        fetch(`/data/${brand}.json`) // Files are in public/data/
-          .then((res) => {
-            // Check content type to avoid parsing HTML (404 fallback) as JSON
-            const contentType = res.headers.get("content-type");
-            if (
-              !res.ok ||
-              (contentType && !contentType.includes("application/json"))
-            ) {
-              // Be silent about missing files for untracked brands in dev
-              return null;
-            }
-            return res.json();
-          })
-          .then((data) => {
-            if (!data) return [];
-            return (data as { products: Product[] }).products || [];
-          })
-          .catch((_err) => {
-            // console.warn(`Failed to load ${brand} master:`, _err);
-            return [] as Product[];
-          }),
-      );
+        // Parallel fetch of all brand catalogs
+        const promises = brandsToFetch.map((brand) =>
+          fetch(`/data/${brand}.json`)
+            .then((res) => {
+              const contentType = res.headers.get("content-type");
+              if (
+                !res.ok ||
+                (contentType && !contentType.includes("application/json"))
+              ) {
+                return null;
+              }
+              return res.json();
+            })
+            .then((data) => {
+              if (!data) return null;
+              return {
+                brand,
+                products: (data as { products: Product[] }).products || [],
+              };
+            })
+            .catch(() => null),
+        );
 
-      const results = await Promise.all(promises);
+        const results = await Promise.all(promises);
 
-      // Flatten arrays
-      aggregated = results.flat();
+        // Build map of brand → products
+        const catalogs: Record<string, Product[]> = {};
+        results.forEach((result) => {
+          if (result) {
+            catalogs[result.brand] = result.products;
+          }
+        });
 
+        setAllBrandCatalogs(catalogs);
+
+        console.log(
+          `📦 [REAL-TIME CATEGORIES] Loaded ${Object.keys(catalogs).length} brand catalogs`,
+          brandsToFetch,
+        );
+
+        setCatalogError(null);
+      } catch (error) {
+        const errorMessage =
+          error instanceof Error ? error.message : "Unknown error";
+        setCatalogError(errorMessage);
+        setAllBrandCatalogs({});
+      } finally {
+        setLoading(false);
+        setCatalogLoading(false);
+      }
+    };
+
+    fetchAllBrands();
+  }, [brandId, setCatalogLoading, setCatalogError]);
+
+  // STEP 2: Compute category in real-time by filtering + combining brands
+  const filtered = useMemo(() => {
+    if (!category) {
+      // No category selected, return all products
+      const all = Object.values(allBrandCatalogs).flat();
       console.log(
-        `📦 [useCategoryCatalog] Loaded ${aggregated.length} total products`,
-        brandId ? `for brand: "${brandId}"` : "",
-        category ? `category: "${category}"` : "",
+        `📦 [REAL-TIME CATEGORIES] No category filter: ${all.length} products from all brands`,
       );
+      return all;
+    }
 
-      // Filter by CONSOLIDATED category - translate brand categories to UI categories
-      const filtered = aggregated.filter((p) => {
-        // If no category filter or "All", include everything
-        if (!category || category === "All") return true;
+    // Filter each brand's products by consolidated category
+    const categoryProducts: Product[] = [];
 
-        // Get the product's brand and category
-        const productBrand = (p.brand || "").toLowerCase();
+    for (const [brandName, brandProducts] of Object.entries(allBrandCatalogs)) {
+      const brandFiltered = brandProducts.filter((p) => {
+        // Get product's category
+        const productBrand = brandName.toLowerCase();
         const productCategory = p.main_category || p.category || "";
 
-        // Consolidate the product's category to get its UI category ID
+        // Consolidate to UI category
         const consolidatedId = consolidateCategory(
           productBrand,
           productCategory,
         );
 
-        // Match against the requested consolidated category
-        // The category param should be a consolidated ID like "keys", "drums", etc.
+        // Match requested category
         const requestedCategory = category.toLowerCase();
 
         if (consolidatedId === requestedCategory) {
           return true;
         }
 
-        // Also check if the category param matches the consolidated category label
-        // This handles cases where labels like "Keys & Pianos" are passed
+        // Also handle label matching
         const labelMappings: Record<string, string> = {
           "keys & pianos": "keys",
           "drums & percussion": "drums",
@@ -121,19 +161,20 @@ export const useCategoryCatalog = (
         return consolidatedId === normalizedCategory;
       });
 
-      console.log(
-        `🔍 [useCategoryCatalog] Filtered to ${filtered.length} products for consolidated category: "${category}"`,
-      );
-      if (filtered.length > 0) {
-        console.log(`📝 Sample product:`, filtered[0]);
-      }
+      categoryProducts.push(...brandFiltered);
+    }
 
-      setProducts(filtered);
-      setLoading(false);
-    };
+    console.log(
+      `🔍 [REAL-TIME CATEGORIES] Category "${category}" computed: ${categoryProducts.length} products from ${Object.keys(allBrandCatalogs).length} brands`,
+    );
 
-    fetchAll();
-  }, [category, brandId]);
+    return categoryProducts;
+  }, [allBrandCatalogs, category]);
 
-  return { products, loading };
+  // Update products when filtered results change
+  useEffect(() => {
+    setProducts(filtered);
+  }, [filtered]);
+
+  return { products, loading, allBrandCatalogs };
 };

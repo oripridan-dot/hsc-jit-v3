@@ -1,0 +1,864 @@
+{
+  "products": [
+    {
+      "id": "mackie-cr3-x",
+      "name": "CR3-X",
+      "brand": "mackie",
+      "category": "Monitors",
+      "subcategory": "Multimedia Monitor",
+      "main_category": "Monitors",
+      "description": "3-inch creative reference",
+      "short_description": "CR3-X - Entry tier Multimedia Monitor",
+      "image_url": "https://www.mackie.com/products/cr3-x/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-cr3-x_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-cr3-x_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-cr3-x_main.webp",
+        "original": "/data/product_images/mackie/mackie-cr3-x_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 550,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Multimedia Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-7025",
+      "verified": true,
+      "tags": [
+        "entry",
+        "monitors",
+        "multimedia-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Multimedia Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-cr4-x",
+      "name": "CR4-X",
+      "brand": "mackie",
+      "category": "Monitors",
+      "subcategory": "Multimedia Monitor",
+      "main_category": "Monitors",
+      "description": "4-inch creative reference",
+      "short_description": "CR4-X - Entry tier Multimedia Monitor",
+      "image_url": "https://www.mackie.com/products/cr4-x/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-cr4-x_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-cr4-x_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-cr4-x_main.webp",
+        "original": "/data/product_images/mackie/mackie-cr4-x_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 750,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Multimedia Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-6480",
+      "verified": true,
+      "tags": [
+        "entry",
+        "monitors",
+        "multimedia-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Multimedia Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-cr5-x",
+      "name": "CR5-X",
+      "brand": "mackie",
+      "category": "Monitors",
+      "subcategory": "Multimedia Monitor",
+      "main_category": "Monitors",
+      "description": "5-inch creative reference",
+      "short_description": "CR5-X - Standard tier Multimedia Monitor",
+      "image_url": "https://www.mackie.com/products/cr5-x/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-cr5-x_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-cr5-x_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-cr5-x_main.webp",
+        "original": "/data/product_images/mackie/mackie-cr5-x_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 950,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Multimedia Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MAC-4917",
+      "verified": true,
+      "tags": [
+        "standard",
+        "monitors",
+        "multimedia-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Multimedia Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-mr524",
+      "name": "MR524",
+      "brand": "mackie",
+      "category": "Monitors",
+      "subcategory": "Studio Monitor",
+      "main_category": "Monitors",
+      "description": "5-inch studio monitor",
+      "short_description": "MR524 - Standard tier Studio Monitor",
+      "image_url": "https://www.mackie.com/products/mr524/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-mr524_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-mr524_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-mr524_main.webp",
+        "original": "/data/product_images/mackie/mackie-mr524_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Studio Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-2231",
+      "verified": true,
+      "tags": [
+        "standard",
+        "monitors",
+        "studio-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Studio Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-mr624",
+      "name": "MR624",
+      "brand": "mackie",
+      "category": "Monitors",
+      "subcategory": "Studio Monitor",
+      "main_category": "Monitors",
+      "description": "6-inch studio monitor",
+      "short_description": "MR624 - Standard tier Studio Monitor",
+      "image_url": "https://www.mackie.com/products/mr624/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-mr624_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-mr624_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-mr624_main.webp",
+        "original": "/data/product_images/mackie/mackie-mr624_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Studio Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-5550",
+      "verified": true,
+      "tags": [
+        "standard",
+        "monitors",
+        "studio-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Studio Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-hr824mk2",
+      "name": "HR824mk2",
+      "brand": "mackie",
+      "category": "Monitors",
+      "subcategory": "Reference Monitor",
+      "main_category": "Monitors",
+      "description": "8-inch reference monitor",
+      "short_description": "HR824mk2 - Flagship tier Reference Monitor",
+      "image_url": "https://www.mackie.com/products/hr824mk2/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-hr824mk2_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-hr824mk2_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-hr824mk2_main.webp",
+        "original": "/data/product_images/mackie/mackie-hr824mk2_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Reference Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-7419",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "monitors",
+        "reference-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Reference Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-profx6v3",
+      "name": "ProFX6v3",
+      "brand": "mackie",
+      "category": "Mixers",
+      "subcategory": "Analog Mixer",
+      "main_category": "Mixers",
+      "description": "6-channel mixer",
+      "short_description": "ProFX6v3 - Entry tier Analog Mixer",
+      "image_url": "https://www.mackie.com/products/profx6v3/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-profx6v3_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-profx6v3_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-profx6v3_main.webp",
+        "original": "/data/product_images/mackie/mackie-profx6v3_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 900,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Mixers"
+        },
+        {
+          "key": "Type",
+          "value": "Analog Mixer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MAC-2844",
+      "verified": true,
+      "tags": [
+        "entry",
+        "mixers",
+        "analog-mixer"
+      ],
+      "_taxonomy_warning": "Category 'Mixers' not in official taxonomy",
+      "category_hierarchy": [
+        "Mixers",
+        "Analog Mixer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-profx10v3",
+      "name": "ProFX10v3",
+      "brand": "mackie",
+      "category": "Mixers",
+      "subcategory": "Analog Mixer",
+      "main_category": "Mixers",
+      "description": "10-channel mixer",
+      "short_description": "ProFX10v3 - Standard tier Analog Mixer",
+      "image_url": "https://www.mackie.com/products/profx10v3/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-profx10v3_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-profx10v3_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-profx10v3_main.webp",
+        "original": "/data/product_images/mackie/mackie-profx10v3_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Mixers"
+        },
+        {
+          "key": "Type",
+          "value": "Analog Mixer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MAC-6129",
+      "verified": true,
+      "tags": [
+        "standard",
+        "mixers",
+        "analog-mixer"
+      ],
+      "_taxonomy_warning": "Category 'Mixers' not in official taxonomy",
+      "category_hierarchy": [
+        "Mixers",
+        "Analog Mixer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-profx16v3",
+      "name": "ProFX16v3",
+      "brand": "mackie",
+      "category": "Mixers",
+      "subcategory": "Analog Mixer",
+      "main_category": "Mixers",
+      "description": "16-channel mixer",
+      "short_description": "ProFX16v3 - Standard tier Analog Mixer",
+      "image_url": "https://www.mackie.com/products/profx16v3/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-profx16v3_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-profx16v3_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-profx16v3_main.webp",
+        "original": "/data/product_images/mackie/mackie-profx16v3_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Mixers"
+        },
+        {
+          "key": "Type",
+          "value": "Analog Mixer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-3768",
+      "verified": true,
+      "tags": [
+        "standard",
+        "mixers",
+        "analog-mixer"
+      ],
+      "_taxonomy_warning": "Category 'Mixers' not in official taxonomy",
+      "category_hierarchy": [
+        "Mixers",
+        "Analog Mixer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-dl16s",
+      "name": "DL16S",
+      "brand": "mackie",
+      "category": "Mixers",
+      "subcategory": "Digital Mixer",
+      "main_category": "Mixers",
+      "description": "16-channel digital mixer",
+      "short_description": "DL16S - Standard tier Digital Mixer",
+      "image_url": "https://www.mackie.com/products/dl16s/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-dl16s_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-dl16s_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-dl16s_main.webp",
+        "original": "/data/product_images/mackie/mackie-dl16s_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Mixers"
+        },
+        {
+          "key": "Type",
+          "value": "Digital Mixer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-5017",
+      "verified": true,
+      "tags": [
+        "standard",
+        "mixers",
+        "digital-mixer"
+      ],
+      "_taxonomy_warning": "Category 'Mixers' not in official taxonomy",
+      "category_hierarchy": [
+        "Mixers",
+        "Digital Mixer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-dl32s",
+      "name": "DL32S",
+      "brand": "mackie",
+      "category": "Mixers",
+      "subcategory": "Digital Mixer",
+      "main_category": "Mixers",
+      "description": "32-channel digital mixer",
+      "short_description": "DL32S - Flagship tier Digital Mixer",
+      "image_url": "https://www.mackie.com/products/dl32s/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-dl32s_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-dl32s_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-dl32s_main.webp",
+        "original": "/data/product_images/mackie/mackie-dl32s_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Mixers"
+        },
+        {
+          "key": "Type",
+          "value": "Digital Mixer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-9442",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "mixers",
+        "digital-mixer"
+      ],
+      "_taxonomy_warning": "Category 'Mixers' not in official taxonomy",
+      "category_hierarchy": [
+        "Mixers",
+        "Digital Mixer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-thump212",
+      "name": "Thump212",
+      "brand": "mackie",
+      "category": "PA Speakers",
+      "subcategory": "Powered Speaker",
+      "main_category": "PA Speakers",
+      "description": "12-inch powered speaker",
+      "short_description": "Thump212 - Entry tier Powered Speaker",
+      "image_url": "https://www.mackie.com/products/thump212/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-thump212_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-thump212_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-thump212_main.webp",
+        "original": "/data/product_images/mackie/mackie-thump212_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "PA Speakers"
+        },
+        {
+          "key": "Type",
+          "value": "Powered Speaker"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-6530",
+      "verified": true,
+      "tags": [
+        "entry",
+        "pa speakers",
+        "powered-speaker"
+      ],
+      "_taxonomy_warning": "Category 'PA Speakers' not in official taxonomy",
+      "category_hierarchy": [
+        "PA Speakers",
+        "Powered Speaker"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-thump215",
+      "name": "Thump215",
+      "brand": "mackie",
+      "category": "PA Speakers",
+      "subcategory": "Powered Speaker",
+      "main_category": "PA Speakers",
+      "description": "15-inch powered speaker",
+      "short_description": "Thump215 - Standard tier Powered Speaker",
+      "image_url": "https://www.mackie.com/products/thump215/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-thump215_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-thump215_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-thump215_main.webp",
+        "original": "/data/product_images/mackie/mackie-thump215_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "PA Speakers"
+        },
+        {
+          "key": "Type",
+          "value": "Powered Speaker"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-3902",
+      "verified": true,
+      "tags": [
+        "standard",
+        "pa speakers",
+        "powered-speaker"
+      ],
+      "_taxonomy_warning": "Category 'PA Speakers' not in official taxonomy",
+      "category_hierarchy": [
+        "PA Speakers",
+        "Powered Speaker"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-thump215xt",
+      "name": "Thump215XT",
+      "brand": "mackie",
+      "category": "PA Speakers",
+      "subcategory": "Powered Speaker",
+      "main_category": "PA Speakers",
+      "description": "15-inch enhanced speaker",
+      "short_description": "Thump215XT - Standard tier Powered Speaker",
+      "image_url": "https://www.mackie.com/products/thump215xt/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-thump215xt_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-thump215xt_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-thump215xt_main.webp",
+        "original": "/data/product_images/mackie/mackie-thump215xt_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "PA Speakers"
+        },
+        {
+          "key": "Type",
+          "value": "Powered Speaker"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-9787",
+      "verified": true,
+      "tags": [
+        "standard",
+        "pa speakers",
+        "powered-speaker"
+      ],
+      "_taxonomy_warning": "Category 'PA Speakers' not in official taxonomy",
+      "category_hierarchy": [
+        "PA Speakers",
+        "Powered Speaker"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "mackie-srm210-v-class",
+      "name": "SRM210 V-Class",
+      "brand": "mackie",
+      "category": "PA Speakers",
+      "subcategory": "Powered Speaker",
+      "main_category": "PA Speakers",
+      "description": "10-inch V-Class speaker",
+      "short_description": "SRM210 V-Class - Flagship tier Powered Speaker",
+      "image_url": "https://www.mackie.com/products/srm210-v-class/",
+      "images": {
+        "main": "/data/product_images/mackie/mackie-srm210-v-class_thumb.webp",
+        "thumbnail": "/data/product_images/mackie/mackie-srm210-v-class_thumb.webp",
+        "high_res": "/data/product_images/mackie/mackie-srm210-v-class_main.webp",
+        "original": "/data/product_images/mackie/mackie-srm210-v-class_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "PA Speakers"
+        },
+        {
+          "key": "Type",
+          "value": "Powered Speaker"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MAC-4424",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "pa speakers",
+        "powered-speaker"
+      ],
+      "_taxonomy_warning": "Category 'PA Speakers' not in official taxonomy",
+      "category_hierarchy": [
+        "PA Speakers",
+        "Powered Speaker"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    }
+  ],
+  "brand_metadata": {
+    "logo_url": "https://www.mackie.com/images/logo.png",
+    "brand_name": "Mackie",
+    "logo_source": "official_brand_website"
+  }
+}

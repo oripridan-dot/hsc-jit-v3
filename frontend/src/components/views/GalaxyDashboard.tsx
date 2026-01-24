@@ -2,8 +2,9 @@
  * GalaxyDashboard - v3.8.0 SCREEN 1
  * "Bird's Eye View of Halilit's Reach"
  *
- * The master control center showing all universal categories.
- * Click a category to dive into SCREEN 2 (Sub-Category Module with Spectrum View).
+ * ✅ UNIFIED CATALOG INTEGRATION
+ * - Shows universal categories
+ * - Click a category to dive into SCREEN 2 (loads single catalog at a time)
  *
  * Features:
  * - Adaptive grid (1-6 columns based on viewport)
@@ -33,8 +34,10 @@ export const GalaxyDashboard: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   // ============================================================
-  // 1. LOAD ALL PRODUCTS FROM ALL BRANDS
+  // 1. LOAD ALL PRODUCTS FROM ALL BRANDS (FOR CATEGORY THUMBNAILS)
   // ============================================================
+  // NOTE: This ONLY loads products once for dynamic thumbnails.
+  // Actual product viewing uses UNIFIED CATALOG (single catalog at a time)
   useEffect(() => {
     const loadAllProducts = async () => {
       setIsLoading(true);
@@ -44,7 +47,10 @@ export const GalaxyDashboard: React.FC = () => {
         const index = await catalogLoader.loadIndex();
         const availableBrands = index.brands.map((b) => b.id);
 
-        console.log("📦 Available brands in index:", availableBrands);
+        console.log(
+          "📦 UNIFIED CATALOG: Loading brands for category thumbnails:",
+          availableBrands,
+        );
 
         // 2. Load only available brand catalogs
         const catalogPromises = availableBrands.map((brand) =>
@@ -66,7 +72,7 @@ export const GalaxyDashboard: React.FC = () => {
 
         setAllProducts(allProds);
         console.log(
-          `✅ Loaded ${allProds.length} products for dynamic thumbnails`,
+          `✅ UNIFIED CATALOG: Loaded ${allProds.length} products for dynamic thumbnails`,
         );
       } catch (err) {
         console.warn("Failed to load products:", err);

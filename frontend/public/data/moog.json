@@ -21,56 +21,56 @@
       {
         "id": "keys",
         "label": "Keys & Pianos",
-        "icon": "🎹",
+        "icon": "\ud83c\udfb9",
         "description": "Keyboards and pianos",
         "children": []
       },
       {
         "id": "drums",
         "label": "Drums & Percussion",
-        "icon": "🥁",
+        "icon": "\ud83e\udd41",
         "description": "Drums and percussion",
         "children": []
       },
       {
         "id": "guitars",
         "label": "Guitars & Amps",
-        "icon": "🎸",
+        "icon": "\ud83c\udfb8",
         "description": "Guitars and amplifiers",
         "children": []
       },
       {
         "id": "studio",
         "label": "Studio & Recording",
-        "icon": "🎙️",
+        "icon": "\ud83c\udf99\ufe0f",
         "description": "Studio and recording gear",
         "children": []
       },
       {
         "id": "live",
         "label": "Live Sound",
-        "icon": "🔊",
+        "icon": "\ud83d\udd0a",
         "description": "Live sound equipment",
         "children": []
       },
       {
         "id": "dj",
         "label": "DJ & Production",
-        "icon": "🎧",
+        "icon": "\ud83c\udfa7",
         "description": "DJ and production gear",
         "children": []
       },
       {
         "id": "software",
         "label": "Software & Cloud",
-        "icon": "💻",
+        "icon": "\ud83d\udcbb",
         "description": "Software and cloud services",
         "children": []
       },
       {
         "id": "accessories",
         "label": "Accessories",
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "description": "Accessories and add-ons",
         "children": []
       }
@@ -121,10 +121,750 @@
       "availability": "pre-order",
       "product_tier": "professional",
       "category": "keys",
-      "images": [],
+      "images": [
+        {
+          "url": "https://via.placeholder.com/400x300/00b8cc/FFFFFF?text=moog-moog-one",
+          "type": "main",
+          "alt_text": "Moog One main image",
+          "description": "Main product image for Moog One"
+        }
+      ],
       "category_hierarchy": [
         "keys"
-      ]
+      ],
+      "image_url": "https://www.moogmusic.com/products/one/",
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-minimoog-model-d",
+      "name": "Minimoog Model D",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Monophonic",
+      "main_category": "Synthesizers",
+      "description": "Legendary monophonic synthesizer",
+      "short_description": "Minimoog Model D - Flagship tier Monophonic",
+      "image_url": "https://www.moogmusic.com/products/minimodel-d/",
+      "images": {
+        "main": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-minimoog-model-d_main.webp",
+        "original": "/data/product_images/moog/moog-minimoog-model-d_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 25000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Monophonic"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-8048",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "monophonic"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Monophonic"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-moog-one-16-voice",
+      "name": "Moog One 16-Voice",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Polyphonic",
+      "main_category": "Synthesizers",
+      "description": "16-voice polyphonic synthesizer",
+      "short_description": "Moog One 16-Voice - Flagship tier Polyphonic",
+      "image_url": "https://www.moogmusic.com/products/one-16-voice/",
+      "images": {
+        "main": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-moog-one-16-voice_main.webp",
+        "original": "/data/product_images/moog/moog-moog-one-16-voice_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 55000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Polyphonic"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MOO-3941",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "polyphonic"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Polyphonic"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-moog-one-8-voice",
+      "name": "Moog One 8-Voice",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Polyphonic",
+      "main_category": "Synthesizers",
+      "description": "8-voice polyphonic synthesizer",
+      "short_description": "Moog One 8-Voice - Flagship tier Polyphonic",
+      "image_url": "https://www.moogmusic.com/products/one-8-voice/",
+      "images": {
+        "main": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-moog-one-8-voice_main.webp",
+        "original": "/data/product_images/moog/moog-moog-one-8-voice_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 42000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Polyphonic"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MOO-7735",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "polyphonic"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Polyphonic"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-matriarch",
+      "name": "Matriarch",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "4-note paraphonic semi-modular",
+      "short_description": "Matriarch - Flagship tier Semi-Modular",
+      "image_url": "https://www.moogmusic.com/products/matriarch/",
+      "images": {
+        "main": "/data/product_images/moog/moog-matriarch_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-matriarch_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-matriarch_main.webp",
+        "original": "/data/product_images/moog/moog-matriarch_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 11000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Semi-Modular"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-9841",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "synthesizers",
+        "semi-modular"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Semi-Modular"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-grandmother",
+      "name": "Grandmother",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "Semi-modular analog synthesizer",
+      "short_description": "Grandmother - Standard tier Semi-Modular",
+      "image_url": "https://www.moogmusic.com/products/grandmother/",
+      "images": {
+        "main": "/data/product_images/moog/moog-grandmother_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-grandmother_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-grandmother_main.webp",
+        "original": "/data/product_images/moog/moog-grandmother_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Semi-Modular"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-4257",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "semi-modular"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Semi-Modular"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-subsequent-37",
+      "name": "Subsequent 37",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Monophonic",
+      "main_category": "Synthesizers",
+      "description": "Analog synthesizer",
+      "short_description": "Subsequent 37 - Standard tier Monophonic",
+      "image_url": "https://www.moogmusic.com/products/subsequent-37/",
+      "images": {
+        "main": "/data/product_images/moog/moog-subsequent-37_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-subsequent-37_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-subsequent-37_main.webp",
+        "original": "/data/product_images/moog/moog-subsequent-37_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 8500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Monophonic"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MOO-1003",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "monophonic"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Monophonic"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-subsequent-25",
+      "name": "Subsequent 25",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Monophonic",
+      "main_category": "Synthesizers",
+      "description": "Compact analog synthesizer",
+      "short_description": "Subsequent 25 - Entry tier Monophonic",
+      "image_url": "https://www.moogmusic.com/products/subsequent-25/",
+      "images": {
+        "main": "/data/product_images/moog/moog-subsequent-25_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-subsequent-25_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-subsequent-25_main.webp",
+        "original": "/data/product_images/moog/moog-subsequent-25_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Monophonic"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-8824",
+      "verified": true,
+      "tags": [
+        "entry",
+        "synthesizers",
+        "monophonic"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Monophonic"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-mother-32",
+      "name": "Mother-32",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "Tabletop semi-modular synth",
+      "short_description": "Mother-32 - Standard tier Semi-Modular",
+      "image_url": "https://www.moogmusic.com/products/mother-32/",
+      "images": {
+        "main": "/data/product_images/moog/moog-mother-32_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-mother-32_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-mother-32_main.webp",
+        "original": "/data/product_images/moog/moog-mother-32_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Semi-Modular"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-2602",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "semi-modular"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Semi-Modular"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-dfam",
+      "name": "DFAM",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Percussion",
+      "main_category": "Synthesizers",
+      "description": "Drummer From Another Mother",
+      "short_description": "DFAM - Standard tier Percussion",
+      "image_url": "https://www.moogmusic.com/products/dfam/",
+      "images": {
+        "main": "/data/product_images/moog/moog-dfam_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-dfam_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-dfam_main.webp",
+        "original": "/data/product_images/moog/moog-dfam_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Percussion"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-5351",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "percussion"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Percussion"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-subharmonicon",
+      "name": "Subharmonicon",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Semi-Modular",
+      "main_category": "Synthesizers",
+      "description": "Polyrhythmic synthesizer",
+      "short_description": "Subharmonicon - Standard tier Semi-Modular",
+      "image_url": "https://www.moogmusic.com/products/subharmonicon/",
+      "images": {
+        "main": "/data/product_images/moog/moog-subharmonicon_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-subharmonicon_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-subharmonicon_main.webp",
+        "original": "/data/product_images/moog/moog-subharmonicon_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Semi-Modular"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-2379",
+      "verified": true,
+      "tags": [
+        "standard",
+        "synthesizers",
+        "semi-modular"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Semi-Modular"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-mavis",
+      "name": "Mavis",
+      "brand": "moog",
+      "category": "Synthesizers",
+      "subcategory": "Build Kit",
+      "main_category": "Synthesizers",
+      "description": "Analog synthesizer build kit",
+      "short_description": "Mavis - Entry tier Build Kit",
+      "image_url": "https://www.moogmusic.com/products/mavis/",
+      "images": {
+        "main": "/data/product_images/moog/moog-mavis_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-mavis_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-mavis_main.webp",
+        "original": "/data/product_images/moog/moog-mavis_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Synthesizers"
+        },
+        {
+          "key": "Type",
+          "value": "Build Kit"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-MOO-2883",
+      "verified": true,
+      "tags": [
+        "entry",
+        "synthesizers",
+        "build-kit"
+      ],
+      "category_hierarchy": [
+        "Synthesizers",
+        "Build Kit"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-moogerfooger-mf-104m",
+      "name": "Moogerfooger MF-104M",
+      "brand": "moog",
+      "category": "Effects",
+      "subcategory": "Analog Delay",
+      "main_category": "Effects",
+      "description": "Analog delay pedal",
+      "short_description": "Moogerfooger MF-104M - Flagship tier Analog Delay",
+      "image_url": "https://www.moogmusic.com/products/moogerfooger-mf-104m/",
+      "images": {
+        "main": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-moogerfooger-mf-104m_main.webp",
+        "original": "/data/product_images/moog/moog-moogerfooger-mf-104m_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Analog Delay"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MOO-6008",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "effects",
+        "analog-delay"
+      ],
+      "category_hierarchy": [
+        "Effects",
+        "Analog Delay"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "moog-minitaur-case",
+      "name": "Minitaur Case",
+      "brand": "moog",
+      "category": "Accessories",
+      "subcategory": "Case",
+      "main_category": "Accessories",
+      "description": "Protective case",
+      "short_description": "Minitaur Case - Standard tier Case",
+      "image_url": "https://www.moogmusic.com/products/minitaur-case/",
+      "images": {
+        "main": "/data/product_images/moog/moog-minitaur-case_thumb.webp",
+        "thumbnail": "/data/product_images/moog/moog-minitaur-case_thumb.webp",
+        "high_res": "/data/product_images/moog/moog-minitaur-case_main.webp",
+        "original": "/data/product_images/moog/moog-minitaur-case_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 600,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Accessories"
+        },
+        {
+          "key": "Type",
+          "value": "Case"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-MOO-6456",
+      "verified": true,
+      "tags": [
+        "standard",
+        "accessories",
+        "case"
+      ],
+      "category_hierarchy": [
+        "Accessories",
+        "Case"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
     }
   ],
   "brand_name": "Moog",
@@ -143,5 +883,10 @@
         }
       ]
     }
+  },
+  "brand_metadata": {
+    "logo_url": "https://www.moogmusic.com/images/moog-logo.svg",
+    "brand_name": "Moog",
+    "logo_source": "official_brand_website"
   }
 }

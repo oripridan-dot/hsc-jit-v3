@@ -47,6 +47,12 @@ interface NavState {
   ecosystem: EcosystemNode | null;
   navigationHistory: string[][]; // Track breadcrumb history for better UX
 
+  // UNIFIED CATALOG STATE - Only ONE catalog loaded at a time
+  currentCatalogBrand: string | null; // Brand whose catalog is currently loaded
+  catalogProducts: Product[]; // Products from current catalog only
+  catalogLoading: boolean;
+  catalogError: string | null;
+
   // UI state
   expandedNodes: Set<string>;
   searchQuery: string;
@@ -73,6 +79,13 @@ interface NavState {
   setIsSearching: (isSearching: boolean) => void;
   setSearchInsight: (insight: string | null) => void;
   setWhiteBgImage: (productId: string, imageUrl: string) => void;
+
+  // UNIFIED CATALOG ACTIONS - Load single catalog per brand
+  loadCatalogForBrand: (brandId: string, products: Product[]) => void;
+  setCatalogLoading: (loading: boolean) => void;
+  setCatalogError: (error: string | null) => void;
+  clearCatalog: () => void;
+
   reset: () => void;
 }
 
@@ -96,6 +109,12 @@ export const useNavigationStore = create<NavState>(
       isSearching: false,
       searchInsight: null,
       whiteBgImages: {},
+
+      // UNIFIED CATALOG - Single catalog loaded at a time
+      currentCatalogBrand: null,
+      catalogProducts: [],
+      catalogLoading: false,
+      catalogError: null,
 
       toggleViewMode: () =>
         set((state) => ({
@@ -283,6 +302,36 @@ export const useNavigationStore = create<NavState>(
         });
       },
 
+      // UNIFIED CATALOG ACTIONS
+      loadCatalogForBrand: (brandId: string, products: Product[]) => {
+        console.log(
+          `📦 Loading unified catalog: ${brandId} (${products.length} products)`,
+        );
+        set({
+          currentCatalogBrand: brandId,
+          catalogProducts: products,
+          catalogLoading: false,
+          catalogError: null,
+        });
+      },
+
+      setCatalogLoading: (loading: boolean) => {
+        set({ catalogLoading: loading });
+      },
+
+      setCatalogError: (error: string | null) => {
+        set({ catalogError: error });
+      },
+
+      clearCatalog: () => {
+        set({
+          currentCatalogBrand: null,
+          catalogProducts: [],
+          catalogLoading: false,
+          catalogError: null,
+        });
+      },
+
       // Reset to initial state
       reset: () => {
         set({
@@ -297,6 +346,10 @@ export const useNavigationStore = create<NavState>(
           searchInsight: null,
           expandedNodes: new Set(),
           whiteBgImages: {},
+          currentCatalogBrand: null,
+          catalogProducts: [],
+          catalogLoading: false,
+          catalogError: null,
         });
       },
     })) as StateCreator<NavState>,

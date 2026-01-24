@@ -1,36 +1,34 @@
 /**
  * Workbench - v3.8.0 Category Module Router
- * 
+ *
  * THREE SCREENS ARCHITECTURE:
  * 1. Galaxy Dashboard - Bird's eye view of Halilit's reach
- * 2. Sub-Category Module (UniversalCategoryView) - Find products, navigate subcategories  
+ * 2. Sub-Category Module (UniversalCategoryView) - Find products, navigate subcategories
  * 3. Product Pop Interface (ProductCockpit) - Official product knowledge
- * 
+ * 4. Skeleton View - NEW Genesis protocol skeleton products
+ *
  * Nothing more, nothing less.
  */
 import React from "react";
 import { useNavigationStore } from "../store/navigationStore";
 import { GalaxyDashboard } from "./views/GalaxyDashboard";
 import { ProductCockpit } from "./views/ProductCockpit";
-import { UniversalCategoryView } from "./views/UniversalCategoryView";
+import { SkeletonView } from "./views/SkeletonView";
 
 export const Workbench: React.FC = () => {
-  const {
-    currentLevel,
-    currentUniversalCategory,
-    selectedProduct,
-  } = useNavigationStore();
+  const { currentLevel, currentUniversalCategory, selectedProduct } =
+    useNavigationStore();
 
-  // The v3.8.0 Router - THREE SCREENS ONLY
+  // The v3.8.0 Router - THREE SCREENS + SKELETON VIEW
   const renderView = () => {
     // SCREEN 3: Product Pop Interface (Deepest drill-down)
     if (currentLevel === "product" && selectedProduct) {
       return <ProductCockpit product={selectedProduct} />;
     }
 
-    // SCREEN 2: Sub-Category Module (Universal Category View with Spectrum)
+    // SCREEN 2: Sub-Category Module (REPLACED BY SKELETON VIEW FOR GENESIS PHASE)
     if (currentLevel === "universal" && currentUniversalCategory) {
-      return <UniversalCategoryView />;
+      return <SkeletonView />;
     }
 
     // SCREEN 1: Galaxy Dashboard (Default home view)

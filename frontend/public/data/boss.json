@@ -21,56 +21,56 @@
       {
         "id": "keys",
         "label": "Keys & Pianos",
-        "icon": "🎹",
+        "icon": "\ud83c\udfb9",
         "description": "Keyboards and pianos",
         "children": []
       },
       {
         "id": "drums",
         "label": "Drums & Percussion",
-        "icon": "🥁",
+        "icon": "\ud83e\udd41",
         "description": "Drums and percussion",
         "children": []
       },
       {
         "id": "guitars",
         "label": "Guitars & Amps",
-        "icon": "🎸",
+        "icon": "\ud83c\udfb8",
         "description": "Guitars and amplifiers",
         "children": []
       },
       {
         "id": "studio",
         "label": "Studio & Recording",
-        "icon": "🎙️",
+        "icon": "\ud83c\udf99\ufe0f",
         "description": "Studio and recording gear",
         "children": []
       },
       {
         "id": "live",
         "label": "Live Sound",
-        "icon": "🔊",
+        "icon": "\ud83d\udd0a",
         "description": "Live sound equipment",
         "children": []
       },
       {
         "id": "dj",
         "label": "DJ & Production",
-        "icon": "🎧",
+        "icon": "\ud83c\udfa7",
         "description": "DJ and production gear",
         "children": []
       },
       {
         "id": "software",
         "label": "Software & Cloud",
-        "icon": "💻",
+        "icon": "\ud83d\udcbb",
         "description": "Software and cloud services",
         "children": []
       },
       {
         "id": "accessories",
         "label": "Accessories",
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "description": "Accessories and add-ons",
         "children": []
       }
@@ -120,10 +120,862 @@
       "availability": "in-stock",
       "product_tier": "professional",
       "category": "studio",
-      "images": [],
+      "images": [
+        {
+          "url": "https://via.placeholder.com/400x300/005e2f/FFFFFF?text=boss-gt-1",
+          "type": "main",
+          "alt_text": "GT-1 Multi-Effects Processor main image",
+          "description": "Main product image for GT-1 Multi-Effects Processor"
+        }
+      ],
       "category_hierarchy": [
         "studio"
-      ]
+      ],
+      "image_url": "https://www.boss.info/global/products/gt-1/",
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-ds-1",
+      "name": "DS-1",
+      "brand": "boss",
+      "category": "Effects Pedals",
+      "subcategory": "Distortion",
+      "main_category": "Effects Pedals",
+      "description": "Classic distortion pedal",
+      "short_description": "DS-1 - Entry tier Distortion",
+      "image_url": "https://www.boss.info/global/products/ds-1/",
+      "images": {
+        "main": "/data/product_images/boss/boss-ds-1_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-ds-1_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-ds-1_main.webp",
+        "original": "/data/product_images/boss/boss-ds-1_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 350,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Effects Pedals"
+        },
+        {
+          "key": "Type",
+          "value": "Distortion"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-7643",
+      "verified": true,
+      "tags": [
+        "entry",
+        "effects pedals",
+        "distortion"
+      ],
+      "category_hierarchy": [
+        "Effects Pedals",
+        "Distortion"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-od-3",
+      "name": "OD-3",
+      "brand": "boss",
+      "category": "Effects Pedals",
+      "subcategory": "Overdrive",
+      "main_category": "Effects Pedals",
+      "description": "Warm overdrive pedal",
+      "short_description": "OD-3 - Standard tier Overdrive",
+      "image_url": "https://www.boss.info/global/products/od-3/",
+      "images": {
+        "main": "/data/product_images/boss/boss-od-3_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-od-3_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-od-3_main.webp",
+        "original": "/data/product_images/boss/boss-od-3_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 450,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Effects Pedals"
+        },
+        {
+          "key": "Type",
+          "value": "Overdrive"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-BOS-6244",
+      "verified": true,
+      "tags": [
+        "standard",
+        "effects pedals",
+        "overdrive"
+      ],
+      "category_hierarchy": [
+        "Effects Pedals",
+        "Overdrive"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-dd-8",
+      "name": "DD-8",
+      "brand": "boss",
+      "category": "Effects Pedals",
+      "subcategory": "Delay",
+      "main_category": "Effects Pedals",
+      "description": "Digital delay with multiple modes",
+      "short_description": "DD-8 - Standard tier Delay",
+      "image_url": "https://www.boss.info/global/products/dd-8/",
+      "images": {
+        "main": "/data/product_images/boss/boss-dd-8_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-dd-8_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-dd-8_main.webp",
+        "original": "/data/product_images/boss/boss-dd-8_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 900,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Effects Pedals"
+        },
+        {
+          "key": "Type",
+          "value": "Delay"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-6453",
+      "verified": true,
+      "tags": [
+        "standard",
+        "effects pedals",
+        "delay"
+      ],
+      "category_hierarchy": [
+        "Effects Pedals",
+        "Delay"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-rv-6",
+      "name": "RV-6",
+      "brand": "boss",
+      "category": "Effects Pedals",
+      "subcategory": "Reverb",
+      "main_category": "Effects Pedals",
+      "description": "Versatile reverb pedal",
+      "short_description": "RV-6 - Standard tier Reverb",
+      "image_url": "https://www.boss.info/global/products/rv-6/",
+      "images": {
+        "main": "/data/product_images/boss/boss-rv-6_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-rv-6_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-rv-6_main.webp",
+        "original": "/data/product_images/boss/boss-rv-6_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 700,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Effects Pedals"
+        },
+        {
+          "key": "Type",
+          "value": "Reverb"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-6700",
+      "verified": true,
+      "tags": [
+        "standard",
+        "effects pedals",
+        "reverb"
+      ],
+      "category_hierarchy": [
+        "Effects Pedals",
+        "Reverb"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-rc-5",
+      "name": "RC-5",
+      "brand": "boss",
+      "category": "Loop Station",
+      "subcategory": "Looper",
+      "main_category": "Loop Station",
+      "description": "Compact loop station",
+      "short_description": "RC-5 - Standard tier Looper",
+      "image_url": "https://www.boss.info/global/products/rc-5/",
+      "images": {
+        "main": "/data/product_images/boss/boss-rc-5_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-rc-5_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-rc-5_main.webp",
+        "original": "/data/product_images/boss/boss-rc-5_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Loop Station"
+        },
+        {
+          "key": "Type",
+          "value": "Looper"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-4352",
+      "verified": true,
+      "tags": [
+        "standard",
+        "loop station",
+        "looper"
+      ],
+      "category_hierarchy": [
+        "Loop Station",
+        "Looper"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-rc-505mkii",
+      "name": "RC-505mkII",
+      "brand": "boss",
+      "category": "Loop Station",
+      "subcategory": "Looper",
+      "main_category": "Loop Station",
+      "description": "Tabletop loop station",
+      "short_description": "RC-505mkII - Flagship tier Looper",
+      "image_url": "https://www.boss.info/global/products/rc-505mkii/",
+      "images": {
+        "main": "/data/product_images/boss/boss-rc-505mkii_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-rc-505mkii_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-rc-505mkii_main.webp",
+        "original": "/data/product_images/boss/boss-rc-505mkii_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Loop Station"
+        },
+        {
+          "key": "Type",
+          "value": "Looper"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-BOS-4078",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "loop station",
+        "looper"
+      ],
+      "category_hierarchy": [
+        "Loop Station",
+        "Looper"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-gt-1000",
+      "name": "GT-1000",
+      "brand": "boss",
+      "category": "Multi-Effects",
+      "subcategory": "Multi-FX",
+      "main_category": "Multi-Effects",
+      "description": "Flagship guitar processor",
+      "short_description": "GT-1000 - Flagship tier Multi-FX",
+      "image_url": "https://www.boss.info/global/products/gt-1000/",
+      "images": {
+        "main": "/data/product_images/boss/boss-gt-1000_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-gt-1000_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-gt-1000_main.webp",
+        "original": "/data/product_images/boss/boss-gt-1000_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Multi-Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Multi-FX"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-4068",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "multi-effects",
+        "multi-fx"
+      ],
+      "category_hierarchy": [
+        "Multi-Effects",
+        "Multi-FX"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-gt-1000core",
+      "name": "GT-1000CORE",
+      "brand": "boss",
+      "category": "Multi-Effects",
+      "subcategory": "Multi-FX",
+      "main_category": "Multi-Effects",
+      "description": "Compact flagship processor",
+      "short_description": "GT-1000CORE - Standard tier Multi-FX",
+      "image_url": "https://www.boss.info/global/products/gt-1000core/",
+      "images": {
+        "main": "/data/product_images/boss/boss-gt-1000core_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-gt-1000core_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-gt-1000core_main.webp",
+        "original": "/data/product_images/boss/boss-gt-1000core_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Multi-Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Multi-FX"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-2048",
+      "verified": true,
+      "tags": [
+        "standard",
+        "multi-effects",
+        "multi-fx"
+      ],
+      "category_hierarchy": [
+        "Multi-Effects",
+        "Multi-FX"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-gx-100",
+      "name": "GX-100",
+      "brand": "boss",
+      "category": "Multi-Effects",
+      "subcategory": "Multi-FX",
+      "main_category": "Multi-Effects",
+      "description": "Guitar effects processor with touchscreen",
+      "short_description": "GX-100 - Standard tier Multi-FX",
+      "image_url": "https://www.boss.info/global/products/gx-100/",
+      "images": {
+        "main": "/data/product_images/boss/boss-gx-100_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-gx-100_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-gx-100_main.webp",
+        "original": "/data/product_images/boss/boss-gx-100_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Multi-Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Multi-FX"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-6068",
+      "verified": true,
+      "tags": [
+        "standard",
+        "multi-effects",
+        "multi-fx"
+      ],
+      "category_hierarchy": [
+        "Multi-Effects",
+        "Multi-FX"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-me-90",
+      "name": "ME-90",
+      "brand": "boss",
+      "category": "Multi-Effects",
+      "subcategory": "Multi-FX",
+      "main_category": "Multi-Effects",
+      "description": "Easy-to-use multi-effects",
+      "short_description": "ME-90 - Entry tier Multi-FX",
+      "image_url": "https://www.boss.info/global/products/me-90/",
+      "images": {
+        "main": "/data/product_images/boss/boss-me-90_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-me-90_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-me-90_main.webp",
+        "original": "/data/product_images/boss/boss-me-90_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Multi-Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Multi-FX"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-3210",
+      "verified": true,
+      "tags": [
+        "entry",
+        "multi-effects",
+        "multi-fx"
+      ],
+      "category_hierarchy": [
+        "Multi-Effects",
+        "Multi-FX"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-katana-50-gen3",
+      "name": "Katana-50 Gen3",
+      "brand": "boss",
+      "category": "Amplifiers",
+      "subcategory": "Combo Amp",
+      "main_category": "Amplifiers",
+      "description": "50W combo amplifier",
+      "short_description": "Katana-50 Gen3 - Entry tier Combo Amp",
+      "image_url": "https://www.boss.info/global/products/katana-50-gen3/",
+      "images": {
+        "main": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-katana-50-gen3_main.webp",
+        "original": "/data/product_images/boss/boss-katana-50-gen3_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Amplifiers"
+        },
+        {
+          "key": "Type",
+          "value": "Combo Amp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-7424",
+      "verified": true,
+      "tags": [
+        "entry",
+        "amplifiers",
+        "combo-amp"
+      ],
+      "category_hierarchy": [
+        "Amplifiers",
+        "Combo Amp"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-katana-100-gen3",
+      "name": "Katana-100 Gen3",
+      "brand": "boss",
+      "category": "Amplifiers",
+      "subcategory": "Combo Amp",
+      "main_category": "Amplifiers",
+      "description": "100W combo amplifier",
+      "short_description": "Katana-100 Gen3 - Standard tier Combo Amp",
+      "image_url": "https://www.boss.info/global/products/katana-100-gen3/",
+      "images": {
+        "main": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-katana-100-gen3_main.webp",
+        "original": "/data/product_images/boss/boss-katana-100-gen3_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1900,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Amplifiers"
+        },
+        {
+          "key": "Type",
+          "value": "Combo Amp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-5655",
+      "verified": true,
+      "tags": [
+        "standard",
+        "amplifiers",
+        "combo-amp"
+      ],
+      "category_hierarchy": [
+        "Amplifiers",
+        "Combo Amp"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-katana-artist-mkii",
+      "name": "Katana-Artist MkII",
+      "brand": "boss",
+      "category": "Amplifiers",
+      "subcategory": "Combo Amp",
+      "main_category": "Amplifiers",
+      "description": "Premium Waza amp",
+      "short_description": "Katana-Artist MkII - Flagship tier Combo Amp",
+      "image_url": "https://www.boss.info/global/products/katana-artist-mkii/",
+      "images": {
+        "main": "/data/product_images/boss/boss-katana-artist-mkii_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-katana-artist-mkii_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-katana-artist-mkii_main.webp",
+        "original": "/data/product_images/boss/boss-katana-artist-mkii_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Amplifiers"
+        },
+        {
+          "key": "Type",
+          "value": "Combo Amp"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-6666",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "amplifiers",
+        "combo-amp"
+      ],
+      "category_hierarchy": [
+        "Amplifiers",
+        "Combo Amp"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-ve-20",
+      "name": "VE-20",
+      "brand": "boss",
+      "category": "Vocal Effects",
+      "subcategory": "Vocal Effects",
+      "main_category": "Vocal Effects",
+      "description": "Vocal performer processor",
+      "short_description": "VE-20 - Standard tier Vocal Processor",
+      "image_url": "https://www.boss.info/global/products/ve-20/",
+      "images": {
+        "main": "/data/product_images/boss/boss-ve-20_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-ve-20_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-ve-20_main.webp",
+        "original": "/data/product_images/boss/boss-ve-20_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Vocal Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Vocal Processor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-4612",
+      "verified": true,
+      "tags": [
+        "standard",
+        "vocal effects",
+        "vocal-processor"
+      ],
+      "category_hierarchy": [
+        "Vocal Effects",
+        "Vocal Effects"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
+    },
+    {
+      "id": "boss-ve-500",
+      "name": "VE-500",
+      "brand": "boss",
+      "category": "Vocal Effects",
+      "subcategory": "Vocal Effects",
+      "main_category": "Vocal Effects",
+      "description": "Professional vocal effects",
+      "short_description": "VE-500 - Flagship tier Vocal Processor",
+      "image_url": "https://www.boss.info/global/products/ve-500/",
+      "images": {
+        "main": "/data/product_images/boss/boss-ve-500_thumb.webp",
+        "thumbnail": "/data/product_images/boss/boss-ve-500_thumb.webp",
+        "high_res": "/data/product_images/boss/boss-ve-500_main.webp",
+        "original": "/data/product_images/boss/boss-ve-500_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Vocal Effects"
+        },
+        {
+          "key": "Type",
+          "value": "Vocal Processor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-BOS-6855",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "vocal effects",
+        "vocal-processor"
+      ],
+      "category_hierarchy": [
+        "Vocal Effects",
+        "Vocal Effects"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "official_brand_product_page"
+      }
     }
   ],
   "brand_name": "Boss",
@@ -142,5 +994,10 @@
         }
       ]
     }
+  },
+  "brand_metadata": {
+    "logo_url": "https://www.boss.info/global/en/images/boss_logo.png",
+    "brand_name": "Boss",
+    "logo_source": "official_brand_website"
   }
 }

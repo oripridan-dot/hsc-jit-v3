@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo Accessibility Test</title>
+    <style>
+        body { font-family: monospace; background: #0f0f0f; color: #fff; padding: 20px; }
+        .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+        .logo-item { border: 1px solid #444; padding: 10px; text-align: center; }
+        .logo-item img { max-width: 100%; height: auto; background: #222; padding: 5px; }
+        .success { color: #10b981; }
+        .error { color: #ef4444; }
+    </style>
+</head>
+<body>
+    <h1>🎵 Brand Logo Accessibility Test</h1>
+    <p>Testing if logos are accessible from Vite dev server...</p>
+    <div class="logo-grid" id="grid"></div>
+    <p id="summary" style="margin-top: 20px;"></p>
+
+    <script>
+        const brands = [
+            'roland', 'boss', 'nord', 'moog', 'mackie', 
+            'adam-audio', 'akai-professional', 'teenage-engineering', 
+            'universal-audio', 'warm-audio'
+        ];
+        const baseUrl = window.location.origin;
+        let loaded = 0, failed = 0;
+
+        brands.forEach(brand => {
+            const logoUrl = `/data/logos/${brand}_logo.jpg`;
+            const item = document.createElement('div');
+            item.className = 'logo-item';
+            item.innerHTML = `<div>${brand}</div><img src="${logoUrl}" id="img-${brand}" style="opacity:0.3;" />`;
+            
+            const img = item.querySelector('img');
+            img.onload = () => {
+                loaded++;
+                item.classList.add('success');
+                img.style.opacity = '1';
+                item.innerHTML += '<p class="success">✓ Loaded</p>';
+            };
+            img.onerror = () => {
+                failed++;
+                item.classList.add('error');
+                item.innerHTML += '<p class="error">✗ Failed</p>';
+            };
+            
+            document.getElementById('grid').appendChild(item);
+        });
+
+        setTimeout(() => {
+            const summary = document.getElementById('summary');
+            summary.innerHTML = `<strong>Results: ${loaded}/${brands.length} logos loaded successfully</strong>`;
+            if (failed > 0) summary.innerHTML += ` | ${failed} failed`;
+            summary.className = failed === 0 ? 'success' : 'error';
+        }, 2000);
+    </script>
+</body>
+</html>

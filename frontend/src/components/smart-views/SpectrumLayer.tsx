@@ -71,7 +71,26 @@ const getBrandColor = (brand: string): string => {
 
 // --- Helper: Get brand logo path ---
 const getBrandLogo = (brand: string): string => {
-  return `/data/logos/${brand.toLowerCase()}_logo.jpg`;
+  // Map brand names to logo filenames (handles hyphens and capitalization)
+  const logoMap: Record<string, string> = {
+    roland: "roland_logo.jpg",
+    boss: "boss_logo.jpg",
+    nord: "nord_logo.jpg",
+    moog: "moog_logo.jpg",
+    korg: "korg_logo.jpg",
+    yamaha: "yamaha_logo.jpg",
+    arturia: "arturia_logo.jpg",
+    mackie: "mackie_logo.jpg",
+    "akai-professional": "akai-professional_logo.jpg",
+    "adam-audio": "adam-audio_logo.jpg",
+    "teenage-engineering": "teenage-engineering_logo.jpg",
+    "universal-audio": "universal-audio_logo.jpg",
+    "warm-audio": "warm-audio_logo.jpg",
+  };
+
+  const normalizedBrand = brand.toLowerCase().trim();
+  const logoFile = logoMap[normalizedBrand] || `${normalizedBrand}_logo.jpg`;
+  return `/data/logos/${logoFile}`;
 };
 
 // --- Helper: Get first product image ---
@@ -320,32 +339,41 @@ const SpectrumGrid: React.FC<SpectrumGridProps> = React.memo(
           ₪10k+
         </div>
 
-        {/* Product Dots */}
+        {/* Product Dots - Show Brand Logos */}
         {visibleProducts.map((product) => {
           const price = getProductPrice(product);
           const popularity = getPopularityScore(product);
           const xPos = (price / maxPrice) * 100;
           const yPos = 100 - (popularity / maxPopularity) * 100;
           const brandColor = getBrandColor(product.brand);
+          const logoUrl = getBrandLogo(product.brand);
 
           return (
             <button
               key={product.id}
-              className="absolute w-12 h-12 -ml-6 -mt-6 rounded border-2 border-white/20 shadow-xl focus:outline-none focus:ring-4 focus:ring-white/50 bg-white p-1.5 overflow-hidden"
+              className="absolute w-16 h-16 -ml-8 -mt-8 rounded-lg border-2 border-white/40 shadow-xl focus:outline-none focus:ring-4 focus:ring-white/50 bg-gradient-to-br from-white/5 to-black/40 p-2 overflow-hidden hover:scale-150 transition-all duration-200 group"
               style={{
                 left: `${Math.max(2, Math.min(98, xPos))}%`,
                 top: `${Math.max(2, Math.min(98, yPos))}%`,
-                boxShadow: `0 0 20px ${brandColor}90, 0 0 40px ${brandColor}40`,
+                boxShadow: `0 0 25px ${brandColor}80, 0 0 50px ${brandColor}40, inset 0 0 15px rgba(255,255,255,0.15)`,
               }}
               onMouseEnter={() => onHover(product)}
               onMouseLeave={() => onHover(null)}
               onClick={() => onSelect(product)}
               aria-label={`View ${product.name}`}
+              title={product.name}
             >
               <img
-                src={getBrandLogo(product.brand)}
+                src={logoUrl}
                 alt={product.brand}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
+              />
+              {/* Glow overlay on hover */}
+              <div
+                className="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-200 pointer-events-none"
+                style={{
+                  background: `radial-gradient(circle, ${brandColor}50 0%, transparent 70%)`,
+                }}
               />
             </button>
           );
@@ -727,7 +755,78 @@ export const SpectrumMiddleLayer: React.FC<SpectrumMiddleLayerProps> = ({
           >
             {hoveredProduct &&
               (() => {
-                // Infer technical specs based on product type
+                // Detect if product is strictly a musical instrument (Keys/Synth/Piano)
+                // If not (e.g. Cable, Case, Accessory), we show generic info instead of Fake Specs.
+                const isInstrument =
+                  ["Keyboards", "Pianos", "Synthesizers"].includes(
+                    hoveredProduct.category || "",
+                  ) ||
+                  hoveredProduct.name.toLowerCase().includes("keyboard") ||
+                  hoveredProduct.name.toLowerCase().includes("piano") ||
+                  hoveredProduct.name.toLowerCase().includes("synth");
+
+                // Helper component for uniform rows
+                const SpecRow = ({
+                  label,
+                  value,
+                }: {
+                  label: string;
+                  value: React.ReactNode;
+                }) => (
+                  <div className="flex items-start gap-3 py-2.5 border-b border-slate-800/30 last:border-0">
+                    <div className="text-xs text-slate-500 uppercase tracking-wider font-bold min-w-[90px] pt-0.5 text-left">
+                      {label}
+                    </div>
+                    <div className="text-base font-bold text-white flex-1 text-left leading-tight">
+                      {value}
+                    </div>
+                  </div>
+                );
+
+                // 1. GENERIC / ACCESSORY VIEW
+                if (!isInstrument) {
+                  return (
+                    <div className="flex flex-col justify-center h-full px-4 py-3">
+                      <SpecRow
+                        label="Category"
+                        value={hoveredProduct.category || "General"}
+                      />
+                      <SpecRow
+                        label="Model"
+                        value={hoveredProduct.name.split("\n")[0]}
+                      />
+
+                      {/* Show real specs if we have them, otherwise general metadata */}
+                      {hoveredProduct.specs &&
+                      hoveredProduct.specs.length > 0 ? (
+                        hoveredProduct.specs
+                          .slice(0, 4)
+                          .map((s, i) => (
+                            <SpecRow
+                              key={i}
+                              label={s.key}
+                              value={String(s.value)}
+                            />
+                          ))
+                      ) : (
+                        <>
+                          <SpecRow label="ID" value={hoveredProduct.id} />
+                          <SpecRow label="Status" value="Logistics Ready" />
+                          <SpecRow
+                            label="Info"
+                            value={
+                              hoveredProduct.description
+                                ? "Has Description"
+                                : "No Description"
+                            }
+                          />
+                        </>
+                      )}
+                    </div>
+                  );
+                }
+
+                // 2. INSTRUMENT VIEW (Fallthrough to original logic)
                 const specs = {
                   keys: hoveredProduct.name.includes("88")
                     ? "88"

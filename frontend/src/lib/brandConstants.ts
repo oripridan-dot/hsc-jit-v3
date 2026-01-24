@@ -4,7 +4,7 @@
  */
 
 export const LOGO_MAP: Record<string, string> = {
-  Roland: "/assets/logos/roland_logo.png",
+  Roland: "/data/logos/roland_logo.jpg",
   Boss: "/assets/logos/boss_logo.png",
   Nord: "/assets/logos/nord_logo.png",
   Moog: "/assets/logos/moog_logo.png",

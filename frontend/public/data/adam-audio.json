@@ -1,0 +1,750 @@
+{
+  "products": [
+    {
+      "id": "adam-audio-t5v",
+      "name": "T5V",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Near-field Monitor",
+      "main_category": "Monitors",
+      "description": "5-inch studio monitor",
+      "short_description": "T5V - Entry tier Near-field Monitor",
+      "image_url": "https://via.placeholder.com/400x300/00c708/FFFFFF?text=adam-audio-t5v",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-t5v_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-t5v_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-t5v_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-t5v_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1100,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Near-field Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-7471",
+      "verified": true,
+      "tags": [
+        "entry",
+        "monitors",
+        "near-field-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Near-field Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-t7v",
+      "name": "T7V",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Near-field Monitor",
+      "main_category": "Monitors",
+      "description": "7-inch studio monitor",
+      "short_description": "T7V - Entry tier Near-field Monitor",
+      "image_url": "https://via.placeholder.com/400x300/007d07/FFFFFF?text=adam-audio-t7v",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-t7v_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-t7v_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-t7v_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-t7v_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1400,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Entry"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Near-field Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-ADA-2762",
+      "verified": true,
+      "tags": [
+        "entry",
+        "monitors",
+        "near-field-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Near-field Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-t8v",
+      "name": "T8V",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Near-field Monitor",
+      "main_category": "Monitors",
+      "description": "8-inch studio monitor",
+      "short_description": "T8V - Standard tier Near-field Monitor",
+      "image_url": "https://via.placeholder.com/400x300/0003b0/FFFFFF?text=adam-audio-t8v",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-t8v_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-t8v_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-t8v_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-t8v_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 1700,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Near-field Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-2147",
+      "verified": true,
+      "tags": [
+        "standard",
+        "monitors",
+        "near-field-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Near-field Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-a4v",
+      "name": "A4V",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Near-field Monitor",
+      "main_category": "Monitors",
+      "description": "4-inch premium monitor",
+      "short_description": "A4V - Standard tier Near-field Monitor",
+      "image_url": "https://via.placeholder.com/400x300/004ce0/FFFFFF?text=adam-audio-a4v",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-a4v_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-a4v_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-a4v_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-a4v_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Near-field Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-2226",
+      "verified": true,
+      "tags": [
+        "standard",
+        "monitors",
+        "near-field-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Near-field Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-a7v",
+      "name": "A7V",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Near-field Monitor",
+      "main_category": "Monitors",
+      "description": "7-inch A Series monitor",
+      "short_description": "A7V - Standard tier Near-field Monitor",
+      "image_url": "https://via.placeholder.com/400x300/00b2d9/FFFFFF?text=adam-audio-a7v",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-a7v_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-a7v_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-a7v_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-a7v_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 4800,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Near-field Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-2648",
+      "verified": true,
+      "tags": [
+        "standard",
+        "monitors",
+        "near-field-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Near-field Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-a77h",
+      "name": "A77H",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Horizontal Monitor",
+      "main_category": "Monitors",
+      "description": "Horizontal A Series monitor",
+      "short_description": "A77H - Flagship tier Horizontal Monitor",
+      "image_url": "https://via.placeholder.com/400x300/00b151/FFFFFF?text=adam-audio-a77h",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-a77h_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-a77h_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-a77h_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-a77h_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Horizontal Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-9817",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "monitors",
+        "horizontal-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Horizontal Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-s2v",
+      "name": "S2V",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Premium Monitor",
+      "main_category": "Monitors",
+      "description": "S Series 2-way monitor",
+      "short_description": "S2V - Flagship tier Premium Monitor",
+      "image_url": "https://via.placeholder.com/400x300/00f2a6/FFFFFF?text=adam-audio-s2v",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-s2v_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-s2v_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-s2v_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-s2v_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 9500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Premium Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "low-stock",
+      "sku": "HL-ADA-4004",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "monitors",
+        "premium-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Premium Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-s3h",
+      "name": "S3H",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Main Monitor",
+      "main_category": "Monitors",
+      "description": "S Series 3-way horizontal",
+      "short_description": "S3H - Flagship tier Main Monitor",
+      "image_url": "https://via.placeholder.com/400x300/005b3e/FFFFFF?text=adam-audio-s3h",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-s3h_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-s3h_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-s3h_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-s3h_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 15000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Main Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-2272",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "monitors",
+        "main-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Main Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-s3v",
+      "name": "S3V",
+      "brand": "adam-audio",
+      "category": "Monitors",
+      "subcategory": "Main Monitor",
+      "main_category": "Monitors",
+      "description": "S Series 3-way vertical",
+      "short_description": "S3V - Flagship tier Main Monitor",
+      "image_url": "https://via.placeholder.com/400x300/0085b7/FFFFFF?text=adam-audio-s3v",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-s3v_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-s3v_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-s3v_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-s3v_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 15000,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Monitors"
+        },
+        {
+          "key": "Type",
+          "value": "Main Monitor"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-5435",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "monitors",
+        "main-monitor"
+      ],
+      "_taxonomy_warning": "Category 'Monitors' not in official taxonomy",
+      "category_hierarchy": [
+        "Monitors",
+        "Main Monitor"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-t10s",
+      "name": "T10S",
+      "brand": "adam-audio",
+      "category": "Subwoofers",
+      "subcategory": "Subwoofer",
+      "main_category": "Subwoofers",
+      "description": "T Series subwoofer",
+      "short_description": "T10S - Standard tier Subwoofer",
+      "image_url": "https://via.placeholder.com/400x300/009b26/FFFFFF?text=adam-audio-t10s",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-t10s_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-t10s_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-t10s_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-t10s_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 2500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Subwoofers"
+        },
+        {
+          "key": "Type",
+          "value": "Subwoofer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-9474",
+      "verified": true,
+      "tags": [
+        "standard",
+        "subwoofers",
+        "subwoofer"
+      ],
+      "_taxonomy_warning": "Category 'Subwoofers' not in official taxonomy",
+      "category_hierarchy": [
+        "Subwoofers",
+        "Subwoofer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-sub8",
+      "name": "Sub8",
+      "brand": "adam-audio",
+      "category": "Subwoofers",
+      "subcategory": "Subwoofer",
+      "main_category": "Subwoofers",
+      "description": "A Series subwoofer",
+      "short_description": "Sub8 - Standard tier Subwoofer",
+      "image_url": "https://via.placeholder.com/400x300/00ff62/FFFFFF?text=adam-audio-sub8",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-sub8_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-sub8_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-sub8_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-sub8_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 3200,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Standard"
+        },
+        {
+          "key": "Category",
+          "value": "Subwoofers"
+        },
+        {
+          "key": "Type",
+          "value": "Subwoofer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-5673",
+      "verified": true,
+      "tags": [
+        "standard",
+        "subwoofers",
+        "subwoofer"
+      ],
+      "_taxonomy_warning": "Category 'Subwoofers' not in official taxonomy",
+      "category_hierarchy": [
+        "Subwoofers",
+        "Subwoofer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-sub12",
+      "name": "Sub12",
+      "brand": "adam-audio",
+      "category": "Subwoofers",
+      "subcategory": "Subwoofer",
+      "main_category": "Subwoofers",
+      "description": "12-inch studio subwoofer",
+      "short_description": "Sub12 - Flagship tier Subwoofer",
+      "image_url": "https://via.placeholder.com/400x300/000978/FFFFFF?text=adam-audio-sub12",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-sub12_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-sub12_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-sub12_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-sub12_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 5500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Subwoofers"
+        },
+        {
+          "key": "Type",
+          "value": "Subwoofer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-5045",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "subwoofers",
+        "subwoofer"
+      ],
+      "_taxonomy_warning": "Category 'Subwoofers' not in official taxonomy",
+      "category_hierarchy": [
+        "Subwoofers",
+        "Subwoofer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    },
+    {
+      "id": "adam-audio-sub15",
+      "name": "Sub15",
+      "brand": "adam-audio",
+      "category": "Subwoofers",
+      "subcategory": "Subwoofer",
+      "main_category": "Subwoofers",
+      "description": "15-inch studio subwoofer",
+      "short_description": "Sub15 - Flagship tier Subwoofer",
+      "image_url": "https://via.placeholder.com/400x300/009dc9/FFFFFF?text=adam-audio-sub15",
+      "images": {
+        "main": "/data/product_images/adam-audio/adam-audio-sub15_thumb.webp",
+        "thumbnail": "/data/product_images/adam-audio/adam-audio-sub15_thumb.webp",
+        "high_res": "/data/product_images/adam-audio/adam-audio-sub15_main.webp",
+        "original": "/data/product_images/adam-audio/adam-audio-sub15_thumb.webp"
+      },
+      "pricing": {
+        "regular_price": 7500,
+        "currency": "ILS",
+        "source": "halilit"
+      },
+      "specifications": [
+        {
+          "key": "Tier",
+          "value": "Flagship"
+        },
+        {
+          "key": "Category",
+          "value": "Subwoofers"
+        },
+        {
+          "key": "Type",
+          "value": "Subwoofer"
+        },
+        {
+          "key": "Warranty",
+          "value": "2 Years"
+        }
+      ],
+      "availability": "in-stock",
+      "sku": "HL-ADA-5045",
+      "verified": true,
+      "tags": [
+        "flagship",
+        "subwoofers",
+        "subwoofer"
+      ],
+      "_taxonomy_warning": "Category 'Subwoofers' not in official taxonomy",
+      "category_hierarchy": [
+        "Subwoofers",
+        "Subwoofer"
+      ],
+      "_metadata": {
+        "images_enriched": true,
+        "image_source": "placeholder"
+      }
+    }
+  ],
+  "brand_metadata": {
+    "logo_url": "https://www.adam-audio.com/images/adam-logo.png",
+    "brand_name": "Adam Audio",
+    "logo_source": "official_brand_website"
+  }
+}
