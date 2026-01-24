@@ -3,9 +3,19 @@
  *
  * All subcategory images are REAL product thumbnails processed through VisualFactory.
  * Images are WebP format, 400x400, with transparent backgrounds.
+ *
+ * REFACTOR NOTE (v3.13.0):
+ * This file now derives "The 8 Categories" from `categoryConsolidator.ts`
+ * to ensure a Single Source of Truth for ID, Label, Color, and Sort Order.
+ * It strictly adds the UI-specific layer (Thumbnails, Icons, Subcategories).
  */
 
 import type { Product } from "../types";
+import {
+  type ConsolidatedCategory,
+  CONSOLIDATED_CATEGORIES,
+  productMatchesConsolidatedCategory,
+} from "./categoryConsolidator";
 
 export interface SubcategoryDef {
   id: string;
@@ -14,24 +24,23 @@ export interface SubcategoryDef {
   brands?: string[];
 }
 
-export interface UniversalCategoryDef {
-  id: string;
-  label: string;
+export interface UniversalCategoryDef extends Omit<
+  ConsolidatedCategory,
+  "icon"
+> {
+  // We override 'icon' with 'iconName' for Lucide compatibility
+  // The original 'icon' (emoji) is ignored here or could be used as fallback
   iconName: string;
-  description: string;
   subcategories: SubcategoryDef[];
-  color: string;
 }
 
-/**
- * The "Universal 8" - Real product thumbnails from VisualFactory
- */
-export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
-  {
-    id: "keys",
-    label: "Keys & Pianos",
+// Map of purely UI definitions (Subcategories + Images + Icon Names)
+const UI_DEFINITIONS: Record<
+  string,
+  { iconName: string; subcategories: SubcategoryDef[] }
+> = {
+  keys: {
     iconName: "Piano",
-    description: "Synths, Stage Pianos, Controllers",
     subcategories: [
       {
         id: "synths",
@@ -70,13 +79,9 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["roland"],
       },
     ],
-    color: "#f59e0b",
   },
-  {
-    id: "drums",
-    label: "Drums & Percussion",
+  drums: {
     iconName: "Music",
-    description: "V-Drums, Acoustic, Cymbals",
     subcategories: [
       {
         id: "electronic-drums",
@@ -115,13 +120,9 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["akai-professional"],
       },
     ],
-    color: "#ef4444",
   },
-  {
-    id: "guitars",
-    label: "Guitars & Amps",
+  guitars: {
     iconName: "Zap",
-    description: "Pedals, Amps, Effects",
     subcategories: [
       {
         id: "electric-guitars",
@@ -160,13 +161,9 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["boss"],
       },
     ],
-    color: "#a855f7",
   },
-  {
-    id: "studio",
-    label: "Studio & Recording",
+  studio: {
     iconName: "Mic2",
-    description: "Monitors, Interfaces, Mics",
     subcategories: [
       {
         id: "interfaces",
@@ -205,13 +202,9 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["universal-audio"],
       },
     ],
-    color: "#06b6d4",
   },
-  {
-    id: "live",
-    label: "Live Sound",
+  live: {
     iconName: "Speaker",
-    description: "PA Systems, Mixers, Subwoofers",
     subcategories: [
       {
         id: "pa-speakers",
@@ -250,13 +243,9 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["roland"],
       },
     ],
-    color: "#22c55e",
   },
-  {
-    id: "dj",
-    label: "DJ & Production",
+  dj: {
     iconName: "Disc3",
-    description: "Controllers, Turntables",
     subcategories: [
       {
         id: "controllers",
@@ -295,13 +284,9 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["teenage-engineering"],
       },
     ],
-    color: "#ec4899",
   },
-  {
-    id: "software",
-    label: "Software & Cloud",
+  software: {
     iconName: "Cloud",
-    description: "Plugins, Cloud Services",
     subcategories: [
       {
         id: "plugins",
@@ -322,13 +307,9 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["roland"],
       },
     ],
-    color: "#3b82f6",
   },
-  {
-    id: "accessories",
-    label: "Accessories",
+  accessories: {
     iconName: "Wrench",
-    description: "Stands, Cases, Cables",
     subcategories: [
       {
         id: "cables",
@@ -361,9 +342,24 @@ export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] = [
         brands: ["boss"],
       },
     ],
-    color: "#6b7280",
   },
-];
+};
+
+/**
+ * The "Universal 8" - Generated from Single Source of Truth
+ */
+export const UNIVERSAL_CATEGORIES: UniversalCategoryDef[] =
+  CONSOLIDATED_CATEGORIES.map((cat) => {
+    const ui = UI_DEFINITIONS[cat.id] || {
+      iconName: "HelpCircle",
+      subcategories: [],
+    };
+    return {
+      ...cat, // Inherit id, label, color, description, sortOrder
+      iconName: ui.iconName, // Override/Add iconName
+      subcategories: ui.subcategories,
+    };
+  });
 
 export function getCategoryById(id: string): UniversalCategoryDef | undefined {
   return UNIVERSAL_CATEGORIES.find((cat) => cat.id === id);
@@ -374,69 +370,10 @@ export function getSubcategories(categoryId: string): SubcategoryDef[] {
   return category?.subcategories || [];
 }
 
-export function matchProductToCategory(product: Product): string {
-  const productCategory = (
-    product.main_category ||
-    product.category ||
-    ""
-  ).toLowerCase();
-
-  for (const cat of UNIVERSAL_CATEGORIES) {
-    if (cat.label.toLowerCase().includes(productCategory)) {
-      return cat.id;
-    }
-    if (productCategory.includes(cat.id)) {
-      return cat.id;
-    }
-  }
-
-  const keywordMap: Record<string, string> = {
-    piano: "keys",
-    keyboard: "keys",
-    synth: "keys",
-    organ: "keys",
-    controller: "keys",
-    workstation: "keys",
-    drum: "drums",
-    percussion: "drums",
-    cymbal: "drums",
-    guitar: "guitars",
-    bass: "guitars",
-    amp: "guitars",
-    pedal: "guitars",
-    effect: "guitars",
-    monitor: "studio",
-    interface: "studio",
-    microphone: "studio",
-    mic: "studio",
-    preamp: "studio",
-    speaker: "live",
-    mixer: "live",
-    wireless: "live",
-    pa: "live",
-    dj: "dj",
-    sampler: "dj",
-    groovebox: "dj",
-    turntable: "dj",
-    headphone: "dj",
-    software: "software",
-    plugin: "software",
-    cloud: "software",
-    cable: "accessories",
-    stand: "accessories",
-    case: "accessories",
-    bag: "accessories",
-  };
-
-  for (const [keyword, categoryId] of Object.entries(keywordMap)) {
-    if (productCategory.includes(keyword)) {
-      return categoryId;
-    }
-  }
-
-  return "accessories";
-}
-
+/**
+ * Filter products by consolidated category
+ * USES: categoryConsolidator.ts logic (Single Source of Truth)
+ */
 export function filterByCategory(
   products: Product[],
   categoryId: string,
@@ -445,5 +382,7 @@ export function filterByCategory(
     return products;
   }
 
-  return products.filter((p) => matchProductToCategory(p) === categoryId);
+  return products.filter((p) =>
+    productMatchesConsolidatedCategory(p, categoryId),
+  );
 }
