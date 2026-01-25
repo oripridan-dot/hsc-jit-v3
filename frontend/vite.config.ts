@@ -19,7 +19,7 @@ export default defineConfig({
         manualChunks: {
           // Core vendor
           "vendor-react": ["react", "react-dom"],
-          "vendor-zod": ["zod", "zustand", "react-error-boundary"],
+          "vendor-zod": ["zod", "zustand"],
           // Separate heavy libraries
           "vendor-framer": ["framer-motion"],
           "vendor-lucide": ["lucide-react"],
