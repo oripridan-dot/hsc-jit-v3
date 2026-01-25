@@ -261,6 +261,7 @@ class CatalogLoader {
     // Handle both new format (brand_identity) and legacy format (brand_name)
     const brandIdentity = data.brand_identity || {
       id: brandId,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       name: (data as any).brand_name || brandEntry.name || brandId,
     };
 
@@ -289,6 +290,7 @@ class CatalogLoader {
         }
 
         // Generate specs_preview if missing (for Data Stream UI)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         if (!(p as any).specs_preview) {
           let preview: { key: string; val: string }[] = [];
 
@@ -307,10 +309,14 @@ class CatalogLoader {
           }
           // Priority 3: Legacy Specs (Dict)
           else if (
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (p as any).specs &&
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             typeof (p as any).specs === "object" &&
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             !Array.isArray((p as any).specs)
           ) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const specs = (p as any).specs;
             preview = Object.entries(specs)
               .slice(0, 4)
@@ -321,18 +327,20 @@ class CatalogLoader {
           }
 
           if (preview.length > 0) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (p as any).specs_preview = preview;
           }
         }
 
         // Generate filters from subcategory (for 1176 Filter Engine)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         if (!(p as any).filters) {
           const filters = new Set<string>();
           if (p.subcategory && p.subcategory !== "Uncategorized") {
             filters.add(p.subcategory);
           }
           if (p.category_hierarchy && Array.isArray(p.category_hierarchy)) {
-            p.category_hierarchy.forEach((c) => {
+            p.category_hierarchy.forEach((c: string) => {
               if (
                 c &&
                 c !== "Uncategorized" &&
@@ -343,6 +351,7 @@ class CatalogLoader {
             });
           }
           if (filters.size > 0) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (p as any).filters = Array.from(filters);
           }
         }
@@ -504,7 +513,7 @@ class CatalogLoader {
             return targetCategories.includes(productCategory);
           });
           products.push(...matchingProducts);
-        } catch (error) {
+        } catch (_error) {
           // Skip brands that fail to load
           console.warn(`Failed to load ${brandEntry.id}, skipping...`);
         }
@@ -540,7 +549,7 @@ class CatalogLoader {
             console.log(`Found product ${productId} in brand ${brandEntry.id}`);
             return product;
           }
-        } catch (error) {
+        } catch (_error) {
           // Continue searching other brands
         }
       }

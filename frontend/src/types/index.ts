@@ -154,11 +154,17 @@ export interface Product {
   logo_url?: string;
   manuals?: ProductManual[];
   manual_urls?: string[];
+  media?: {
+    thumbnail?: string;
+    gallery?: string[];
+    [key: string]: string | string[] | undefined;
+  };
 
   // Technical
-  specs?: Specification[];
+  specs?: Specification[] | Record<string, string | number | boolean>;
   specifications?: Specification[];
   features?: string[];
+  category_hierarchy?: string[];
 
   // Commerce
   sku?: string;
@@ -187,6 +193,10 @@ export interface Product {
   // Knowledge base and resources
   knowledgebase?: DocumentResource[];
   resources?: DocumentResource[];
+
+  // UI optimization fields (added at runtime by catalogLoader)
+  specs_preview?: Array<{ key: string; val: string }>;
+  filters?: string[];
 
   // Metadata
   verified: boolean;

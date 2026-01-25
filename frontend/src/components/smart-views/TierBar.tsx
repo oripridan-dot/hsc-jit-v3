@@ -1,25 +1,17 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { RotateCcw, ZoomIn } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
+import type { Product } from "../../types";
 
-export interface TierBarProduct {
-  id: string;
-  price: number;
-  logo_url: string;
-  brand: string;
-  name: string;
-  image_url?: string;
-  stock_status?: string;
-  specs_preview?: any[]; // Keep flexible
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-}
+// TierBarProduct is a type alias for Product with extended functionality
+export type TierBarProduct = Product;
 
 interface TierBarProps {
-  products: TierBarProduct[];
-  onHoverProduct: (product: TierBarProduct | null) => void;
+  products: Product[];
+  onHoverProduct: (product: Product | null) => void;
   onSelectProduct: (productId: string) => void;
 }
+
 export const TierBar = ({
   products,
   onHoverProduct,
@@ -30,9 +22,10 @@ export const TierBar = ({
   // 1. Calculate Global Price Extremes (Stable across zooms)
   const { globalMin, globalMax } = useMemo(() => {
     if (!products.length) return { globalMin: 0, globalMax: 10000 };
-    const prices = products.map(
-      (p) => p.pricing?.regular_price ?? p.price ?? 0,
-    );
+    const prices = products.map((p) => {
+      const pricing = typeof p.pricing === "number" ? p.pricing : p.pricing?.regular_price;
+      return pricing ?? p.price ?? 0;
+    });
     return { globalMin: Math.min(...prices), globalMax: Math.max(...prices) };
   }, [products]);
 
@@ -106,8 +99,8 @@ export const TierBar = ({
       <div className="absolute inset-x-0 bottom-16 top-0 overflow-hidden mx-12">
         <AnimatePresence mode="popLayout">
           {products.map((product) => {
-            const productPrice =
-              product.pricing?.regular_price ?? product.price ?? 0;
+            const pricing = typeof product.pricing === "number" ? product.pricing : product.pricing?.regular_price;
+            const productPrice = pricing ?? product.price ?? 0;
             if (!isVisible(productPrice)) return null;
 
             const position = getPosition(productPrice);

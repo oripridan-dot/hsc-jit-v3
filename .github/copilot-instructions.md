@@ -418,31 +418,233 @@ A: Not in production. The app is static. If you need live updates, redesign the 
 **Status:** Production-Ready
 
 ## 🌌 7. Galaxy View: The "Deep Slot" Lighting Engine
+
 **Visual Directive:** The `CategoryShelf` must resemble a physical, deep industrial slot or server rack.
 **Lighting Logic:** The "Light Rig" sits deep inside the slot (Z-axis depth) and casts a "Brand Aura" that manifests the colors of the specific brands contained in that catalog.
 
 ### **A. Spacial Rules (The "Deep Slot" CSS)**
+
 Every shelf MUST follow this layer composition (Z-Index order):
+
 1.  **Base (Z=0):** `bg-black` (The void).
 2.  **The Light Rig (Z=1):** A dynamic `radial-gradient` located at `bottom center`.
-    * *Rule:* It simulates a light source on the "floor" of the slot, shining upward.
-    * *Shape:* `circle at 50% 100%`.
-    * *Behavior:* `opacity-40` (Ambient) -> `opacity-100` (Hover/Active).
+    - _Rule:_ It simulates a light source on the "floor" of the slot, shining upward.
+    - _Shape:_ `circle at 50% 100%`.
+    - _Behavior:_ `opacity-40` (Ambient) -> `opacity-100` (Hover/Active).
 3.  **The Depth Mask (Z=2):** An inset shadow overlay to create the 3D "walls".
-    * *Style:* `shadow-[inset_0_0_40px_rgba(0,0,0,0.8)]`.
-    * *Result:* Darkens the edges, making the center light look "deep" inside.
+    - _Style:_ `shadow-[inset_0_0_40px_rgba(0,0,0,0.8)]`.
+    - _Result:_ Darkens the edges, making the center light look "deep" inside.
 4.  **The Grid (Z=3):** A subtle `scanline` or `grid` pattern (opacity 5%) to give texture to the light.
-5.  **Content (Z=10):** Text and badges floating *above* the light.
+5.  **Content (Z=10):** Text and badges floating _above_ the light.
 
 ### **B. Brand Aura Logic (The Colors)**
+
 Never hardcode colors. You MUST generate the gradient string dynamically based on the `products` prop:
+
 1.  **Sampling:** Identify the Top 2 Brands in the product list by frequency.
 2.  **Lookup:** Retrieve their HEX codes from `BRAND_COLORS`.
 3.  **Synthesis:** Construct the `radial-gradient` string:
-    * *Core (0%):* Primary Brand Color (e.g., Nord Red).
-    * *Mid (40%):* Secondary Brand Color (e.g., Moog Black/Grey) OR blend with Primary.
-    * *Edge (80%):* `transparent` (fading into the black void).
-    * *Fallback:* If no products, use `zinc-800` to `transparent`.
+    - _Core (0%):_ Primary Brand Color (e.g., Nord Red).
+    - _Mid (40%):_ Secondary Brand Color (e.g., Moog Black/Grey) OR blend with Primary.
+    - _Edge (80%):_ `transparent` (fading into the black void).
+    - _Fallback:_ If no products, use `zinc-800` to `transparent`.
 
 **Example Copilot Prompt to use in code:**
 `// GENERATE AURA: Calculate 'shelfAtmosphere' using radial-gradient(circle at bottom) blending top 2 brand colors from 'products'.`
+
+---
+
+## 🔗 8. Product Relationships: "God's View" Interface
+
+**Architecture:** The `ProductPopInterface` implements "God's View" - a unified display of both commercial data (Halilit) and technical knowledge (Official Brand Sources) with intelligent product relationship discovery.
+
+### **A. The Three Relationship Categories**
+
+Every product MUST be analyzed for three types of relationships:
+
+1. **Necessities** (Required for Operation)
+   - Items without which the product cannot function
+   - Examples: Power supplies for keyboards, cables for audio equipment, stands for microphones
+   - **Visual Treatment**: Red border, AlertTriangle icon, "REQUIRED" label
+   - **Scoring Rule**: Extracted via keyword matching (power, cables, stands) + category heuristics
+   - **Confidence Threshold**: Must score > 0.6 to display
+
+2. **Accessories** (Optional Enhancements)
+   - Compatible add-ons that improve functionality
+   - Examples: Cases for instruments, upgrades for synthesizers, extra straps
+   - **Visual Treatment**: Green border, ShoppingCart icon, optional display
+   - **Scoring Rule**: Same brand + accessory category OR explicit keywords
+   - **Confidence Threshold**: Must score > 0.6 to display
+
+3. **Related Products** (Similar Alternatives)
+   - Products in the same category/price tier
+   - Examples: Other keyboards in the same series, competing microphone models
+   - **Visual Treatment**: Gray border, ChevronRight icon, "Similar Models" section
+   - **Scoring Rule**: Category match + price similarity (within 50%) + brand/model name overlap
+   - **Confidence Threshold**: Must score > 0.7 to display
+
+### **B. Implementation in Backend (ProductRelationshipEngine)**
+
+**Location**: `backend/services/relationship_engine.py`
+
+**Key Methods**:
+
+- `analyze_all_blueprints(products)` - Main entry point, scores all products for relationships
+- `_score_necessity()` - Calculates necessity score (0.0-1.0)
+- `_score_accessory()` - Calculates accessory score (0.0-1.0)
+- `_score_related()` - Calculates related product score (0.0-1.0)
+
+**Rules**:
+
+- ✅ Must scan ALL products to build cross-brand compatibility matrix
+- ✅ Scores are additive; higher scores = stronger signal
+- ✅ Graceful degradation: If relationship analysis fails, products still display (without relationships)
+- ✅ Domain-aware: Can match products across brands (e.g., RCF speaker + Bespeco cables)
+
+### **C. Implementation in Frontend (ProductPopInterface)**
+
+**Location**: `frontend/src/components/views/ProductPopInterface.tsx`
+
+**Components**:
+
+- `ProductPopInterface` - Main component with split-view (info | resources | relationships)
+- `RelationshipSection` - Displays three relationship grids
+- `RelationshipCardComponent` - Individual relationship card with variant styling
+
+**Data Flow**:
+
+```
+Product JSON (with necessities/accessories/related arrays)
+  ↓
+<ProductPopInterface /> loads product
+  ↓
+Passes to <RelationshipSection necessities={} accessories={} related={} />
+  ↓
+RelationshipCardComponent renders with variant styling
+```
+
+**UI Behavior**:
+
+- Necessity cards are highlighted prominently (red border, always visible)
+- Accessory cards are green (optional, grid layout)
+- Related cards are gray (secondary importance)
+- Cards are clickable to navigate to the related product
+- Stock status badge appears if product is out of stock
+- Product images fade in on hover (background overlay effect)
+
+### **D. Integration with GenesisBuilder**
+
+**When**: During the `construct()` method, after all products are merged
+
+**How**:
+
+```python
+# After merging commercial + global data
+engine = ProductRelationshipEngine()
+blueprint = list(engine.analyze_all_blueprints(blueprint).values())
+```
+
+**Result**: Each product in the blueprint now has:
+
+- `necessities`: List[ProductRelationship]
+- `accessories`: List[ProductRelationship]
+- `related`: List[ProductRelationship]
+
+### **E. Type Definitions**
+
+**Updated**: `frontend/src/types/index.ts`
+
+```typescript
+interface ProductRelationship {
+  id: string;
+  name: string;
+  type:
+    | "accessory"
+    | "related"
+    | "alternative"
+    | "upgrade"
+    | "bundle"
+    | "necessity";
+  category?: string;
+  relevance?: number;
+  sku?: string;
+  price?: number | string;
+  image_url?: string;
+  logo_url?: string;
+  brand?: string;
+  inStock?: boolean;
+}
+
+interface Product {
+  // ... existing fields ...
+  necessities?: ProductRelationship[];
+  accessories?: ProductRelationship[];
+  related?: ProductRelationship[];
+  official_manuals?: OfficialMedia[];
+  official_gallery?: string[];
+  official_specs?: Record<string, string>;
+}
+```
+
+### **F. Critical Rules for Implementation**
+
+1. **No Hardcoded Relationships**: All relationships must be discovered algorithmically via scoring
+2. **Cross-Brand Compatible**: A Moog synthesizer can have a Boss pedal as related, if they're in the same price/tier
+3. **Graceful Degradation**: If relationship analysis fails, products still render (empty arrays)
+4. **Lazy Loading**: Relationships are computed at build time, not runtime
+5. **Source Attribution**: Each official media asset tracks `source_domain` for transparency
+
+### **G. Extending for New Brands**
+
+When adding a new brand scraper:
+
+1. **Implement** official_manuals extraction (PDFs from brand site)
+2. **Implement** official_gallery extraction (images from brand site)
+3. **Implement** official_specs extraction (specs from brand site)
+4. Run `GenesisBuilder` which auto-discovers relationships
+5. Products automatically display in UI with relationship cards
+
+**No manual relationship mapping needed** - it all comes from `ProductRelationshipEngine`.
+
+# DATA INGESTION PROTOCOL (STRICT)
+
+## Phase 1: AS-IS Scraping (The Raw Zone)
+- **Rule**: Scrapers MUST NOT normalize or clean data. 
+- **Action**: They must extract text, HTML blocks, and image links exactly as they appear on the brand's site.
+- **Storage**: All scraped data must be passed to `RawCollector.save_as_is()` immediately.
+- **Forbidden**: Do not rename keys (e.g., do not change "Technical Specifications" to "specs" inside the scraper). Keep the original keys.
+
+## Phase 2: Processing (The Refinery)
+- **Rule**: Processing only happens *after* the raw file is saved to disk.
+- **Input**: Processors must accept the output of `RawCollector`.
+- **Output**: Processors must output a standardized `ProductBlueprint` (JSON) compatible with `GenesisBuilder`.
+
+## Phase 3: Frontend Execution (Genesis)
+- **Rule**: The frontend never reads raw data. It only reads the final JSONs generated by `GenesisBuilder` from the blueprints.
+
+# GAP ANALYSIS & DISCOVERY WORKFLOW
+
+## 1. Radar Scanning (Light)
+- **Goal**: Scrape ONLY Model Name, Category, and URL. Do not download images or manuals.
+- **Service**: `backend/services/global_radar.py`
+- **Output**: `backend/data/radar/{brand}_global.json`
+
+## 2. Opportunity Reporting
+- **Goal**: Compare "Global Radar" vs "Halilit Blueprints" to find missing products.
+- **Service**: `backend/services/gap_analyzer.py`
+- **Action**: Run `GapAnalyzer.run_analysis(brand)` after every ingestion cycle.
+- **Output**: `backend/data/reports/opportunities/{brand}_opportunities.json`
+
+## 3. UI Display
+- The "Admin/Dashboard" should read from the `reports/opportunities` folder to display a "Potential New Products" grid.
+
+# DATA QUALITY ASSURANCE (THE DELTA AUDITOR)
+
+## The Audit Protocol
+- Every time a blueprint is generated, it MUST be audited against the Raw Data.
+- **Missing Data (Red Flags):** If `manuals` array is empty or `specs` object is empty, flag as critical.
+- **Extra Data (Gold Flags):** If the Raw Data contains keywords like "firmware", "360", "driver", "software" that are NOT mapped to the blueprint, flag as "Unmapped Opportunity".
+
+## Report Location
+- All audit reports must be saved to `backend/data/reports/audit/{brand}_audit_report.json`.
+- The frontend "Admin Dashboard" will consume these JSON files to show the "Ingestion Health" status.

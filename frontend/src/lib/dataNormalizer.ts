@@ -3,7 +3,7 @@
  * Normalizes all product data to a consistent format
  */
 
-import type { Product, ProductPricing, ProductImage } from "../types";
+import type { Product, ProductImage, ProductPricing } from "../types";
 
 // Loose interface for incoming raw data
 interface RawProductInput {

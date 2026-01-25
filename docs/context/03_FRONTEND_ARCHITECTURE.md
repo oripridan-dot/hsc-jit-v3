@@ -21,6 +21,7 @@
 - `frontend/src/components/smart-views/TierBar.tsx`
 - `frontend/src/components/ui/ContextBadge.tsx`
 - `frontend/src/components/ui/Control.tsx`
+- `frontend/src/components/ui/RelationshipCard.tsx`
 - `frontend/src/components/ui/Surface.tsx`
 - `frontend/src/components/views/GalaxyDashboard.tsx`
 - `frontend/src/components/views/ProductPopInterface.tsx`
@@ -38,10 +39,13 @@
 - `frontend/src/lib/brandTaxonomy.ts`
 - `frontend/src/lib/catalogLoader.ts`
 - `frontend/src/lib/categoryConsolidator.ts`
+- `frontend/src/lib/dataNormalizer.ts`
 - `frontend/src/lib/devTools.ts`
 - `frontend/src/lib/dynamicThumbnails.ts`
+- `frontend/src/lib/imageResolver.ts`
 - `frontend/src/lib/index.ts`
 - `frontend/src/lib/instantSearch.ts`
+- `frontend/src/lib/priceFormatter.ts`
 - `frontend/src/lib/safeFetch.ts`
 - `frontend/src/lib/schemas.ts`
 - `frontend/src/lib/taxonomyLoader.ts`

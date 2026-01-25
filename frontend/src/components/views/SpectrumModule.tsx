@@ -210,7 +210,7 @@ export const SpectrumModule = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-x-12 gap-y-3 border-t border-zinc-900/80 pt-4">
-                {hoveredProduct.specs_preview?.map((spec, idx: number) => (
+                {hoveredProduct.specs_preview?.map((spec: { key: string; val: string }, idx: number) => (
                   <div
                     key={idx}
                     className="flex justify-between items-baseline group/spec"

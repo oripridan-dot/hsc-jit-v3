@@ -3,6 +3,8 @@
  * Falls back to brand logo if product image is missing/invalid
  */
 
+import type { Product } from "../types";
+
 export const PLACEHOLDER_COLORS = {
   primary: "#1a1a1a",
   accent: "#ff9900",
@@ -12,7 +14,7 @@ export const PLACEHOLDER_COLORS = {
  * Resolve a valid image URL for a product
  * Prioritizes: product image > brand logo > generated placeholder
  */
-export function resolveProductImage(product: any): string {
+export function resolveProductImage(product: Product | null | undefined): string {
   if (!product) {
     console.warn("⚠️ NO PRODUCT PROVIDED");
     return generatePlaceholderImage("Unknown");
@@ -96,7 +98,7 @@ function isValidImageUrl(url: string): boolean {
 /**
  * Generate a data URL placeholder image for products without images
  */
-export function generatePlaceholderImage(productName: string): string {
+export function generatePlaceholderImage(_productName: string): string {
   // Create a simple SVG placeholder with product name hint
   const svg = `<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -119,7 +121,7 @@ export function generatePlaceholderImage(productName: string): string {
 /**
  * Batch resolve images for multiple products
  */
-export function resolveProductImages(products: any[]): any[] {
+export function resolveProductImages(products: Product[]): Array<Product & { resolved_image_url: string }> {
   return products.map((product) => ({
     ...product,
     resolved_image_url: resolveProductImage(product),
