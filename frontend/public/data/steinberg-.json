@@ -5,7 +5,7 @@
     "brand_colors": {},
     "logo_url": "/assets/logos/steinberg-_logo.png",
     "taxonomy_stats": {
-      "validated": 15,
+      "validated": 5,
       "normalized": 0,
       "uncategorized": 0
     }
@@ -53,94 +53,6 @@
       },
       "category_hierarchy": [
         "studio"
-      ]
-    },
-    {
-      "id": "steinberg__45_dac_cubase_pro",
-      "name": "Steinberg Cubase Pro 15",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg",
-      "description": "Steinberg Cubase Pro 15",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg",
-        "original": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "steinberg__45_ixo22_w",
-      "name": "Steinberg IXO22 USB Audio Interface",
-      "brand": "steinberg-",
-      "category": "studio",
-      "image_url": "/data/thumbnails/steinberg__45_ixo22_w.jpg",
-      "description": "Steinberg IXO22 USB Audio Interface",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_ixo22_w.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_ixo22_w.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_ixo22_w.jpg",
-        "original": "/data/thumbnails/steinberg__45_ixo22_w.jpg"
-      },
-      "category_hierarchy": [
-        "studio"
-      ]
-    },
-    {
-      "id": "steinberg__45_dac_cubase_art",
-      "name": "Steinberg Cubase Artist 15",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg",
-      "description": "Steinberg Cubase Artist 15",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg",
-        "original": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "steinberg__45_dac_cubase_elem",
-      "name": "Steinberg Cubase Elements 15",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg",
-      "description": "Steinberg Cubase Elements 15",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg",
-        "original": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
       ]
     },
     {
@@ -208,143 +120,11 @@
       "category_hierarchy": [
         "accessories"
       ]
-    },
-    {
-      "id": "steinberg__45_ur242",
-      "name": "Steinberg UR242",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_ur242.jpg",
-      "description": "Steinberg UR242",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_ur242.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_ur242.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_ur242.jpg",
-        "original": "/data/thumbnails/steinberg__45_ur242.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "steinberg__45_wavelabpro11",
-      "name": "Steinberg WaveLab Pro",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_wavelabpro11.jpg",
-      "description": "Steinberg  WaveLab Pro",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_wavelabpro11.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_wavelabpro11.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_wavelabpro11.jpg",
-        "original": "/data/thumbnails/steinberg__45_wavelabpro11.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "steinberg__45_ur44",
-      "name": "Steinberg UR-44",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_ur44.jpg",
-      "description": "Steinberg UR-44",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_ur44.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_ur44.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_ur44.jpg",
-        "original": "/data/thumbnails/steinberg__45_ur44.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "steinberg__45_guitar_rec_kit",
-      "name": "Steinberg The Guitar Recording Kit",
-      "brand": "steinberg-",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg",
-      "description": "Steinberg The Guitar Recording Kit",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg",
-        "original": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "steinberg__45_urrt4",
-      "name": "Steinberg UR-RT4",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_urrt4.jpg",
-      "description": "Steinberg UR-RT4",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_urrt4.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_urrt4.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_urrt4.jpg",
-        "original": "/data/thumbnails/steinberg__45_urrt4.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "steinberg__45_urrt2",
-      "name": "Steinberg UR-RT2",
-      "brand": "steinberg-",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/steinberg__45_urrt2.jpg",
-      "description": "Steinberg UR-RT2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/steinberg__45_urrt2.jpg",
-        "thumbnail": "/data/thumbnails/steinberg__45_urrt2.jpg",
-        "high_res": "/data/thumbnails/steinberg__45_urrt2.jpg",
-        "original": "/data/thumbnails/steinberg__45_urrt2.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
     }
   ],
   "brand_name": "Steinberg-",
   "brand_slug": "steinberg-",
-  "refined_at": "2026-01-25T02:01:47.581657+00:00",
+  "refined_at": "2026-01-25T09:02:28.570974+00:00",
   "hierarchy": {
     "studio": {
       "General": [
@@ -373,63 +153,11 @@
           },
           "model_number": null,
           "sku": null
-        },
-        {
-          "id": "steinberg__45_ixo22_w",
-          "name": "Steinberg IXO22 USB Audio Interface",
-          "description": "Steinberg IXO22 USB Audio Interface",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_ixo22_w.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_ixo22_w.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_ixo22_w.jpg",
-            "original": "/data/thumbnails/steinberg__45_ixo22_w.jpg"
-          },
-          "model_number": null,
-          "sku": null
         }
       ]
     },
     "accessories": {
       "General": [
-        {
-          "id": "steinberg__45_dac_cubase_pro",
-          "name": "Steinberg Cubase Pro 15",
-          "description": "Steinberg Cubase Pro 15",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg",
-            "original": "/data/thumbnails/steinberg__45_dac_cubase_pro.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "steinberg__45_dac_cubase_art",
-          "name": "Steinberg Cubase Artist 15",
-          "description": "Steinberg Cubase Artist 15",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg",
-            "original": "/data/thumbnails/steinberg__45_dac_cubase_art.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "steinberg__45_dac_cubase_elem",
-          "name": "Steinberg Cubase Elements 15",
-          "description": "Steinberg Cubase Elements 15",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg",
-            "original": "/data/thumbnails/steinberg__45_dac_cubase_elem.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
         {
           "id": "steinberg__45_dac_cubase_pro_ee",
           "name": "Steinberg Cubase Pro 15 - בהנחה אקדמית",
@@ -465,88 +193,6 @@
             "thumbnail": "/data/thumbnails/steinberg__45_dac_cubase_elem_e.jpg",
             "high_res": "/data/thumbnails/steinberg__45_dac_cubase_elem_e.jpg",
             "original": "/data/thumbnails/steinberg__45_dac_cubase_elem_e.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "steinberg__45_ur242",
-          "name": "Steinberg UR242",
-          "description": "Steinberg UR242",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_ur242.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_ur242.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_ur242.jpg",
-            "original": "/data/thumbnails/steinberg__45_ur242.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "steinberg__45_wavelabpro11",
-          "name": "Steinberg WaveLab Pro",
-          "description": "Steinberg  WaveLab Pro",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_wavelabpro11.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_wavelabpro11.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_wavelabpro11.jpg",
-            "original": "/data/thumbnails/steinberg__45_wavelabpro11.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "steinberg__45_ur44",
-          "name": "Steinberg UR-44",
-          "description": "Steinberg UR-44",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_ur44.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_ur44.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_ur44.jpg",
-            "original": "/data/thumbnails/steinberg__45_ur44.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "steinberg__45_urrt4",
-          "name": "Steinberg UR-RT4",
-          "description": "Steinberg UR-RT4",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_urrt4.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_urrt4.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_urrt4.jpg",
-            "original": "/data/thumbnails/steinberg__45_urrt4.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "steinberg__45_urrt2",
-          "name": "Steinberg UR-RT2",
-          "description": "Steinberg UR-RT2",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_urrt2.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_urrt2.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_urrt2.jpg",
-            "original": "/data/thumbnails/steinberg__45_urrt2.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "guitars": {
-      "General": [
-        {
-          "id": "steinberg__45_guitar_rec_kit",
-          "name": "Steinberg The Guitar Recording Kit",
-          "description": "Steinberg The Guitar Recording Kit",
-          "images": {
-            "main": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg",
-            "thumbnail": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg",
-            "high_res": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg",
-            "original": "/data/thumbnails/steinberg__45_guitar_rec_kit.jpg"
           },
           "model_number": null,
           "sku": null

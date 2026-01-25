@@ -8,9 +8,10 @@
  * 🔄 REAL-TIME: Auto-updates on data changes
  */
 
+import { normalizeProducts } from "./dataNormalizer";
+
 import type {
   BrandIdentity,
-  ProductImagesObject,
   ProductImagesType,
   Product as ProductType,
 } from "../types/index";
@@ -257,35 +258,96 @@ class CatalogLoader {
     }
 
     // Transform to BrandCatalog format with full validation
+    // Handle both new format (brand_identity) and legacy format (brand_name)
+    const brandIdentity = data.brand_identity || {
+      id: brandId,
+      name: (data as any).brand_name || brandEntry.name || brandId,
+    };
+
     const catalog: BrandCatalog = {
-      brand_id: data.brand_identity?.id || brandId,
-      brand_name: data.brand_identity?.name || brandEntry.name,
+      brand_id: brandIdentity.id || brandId,
+      brand_name: brandIdentity.name || brandEntry.name,
       brand_color:
-        data.brand_identity?.brand_colors?.primary ||
+        brandIdentity.brand_colors?.primary ||
         brandEntry.brand_color ||
         undefined,
-      secondary_color:
-        data.brand_identity?.brand_colors?.secondary || undefined,
-      logo_url:
-        data.brand_identity?.logo_url || brandEntry.logo_url || undefined,
-      brand_website: data.brand_identity?.website || undefined,
-      description: data.brand_identity?.description || undefined,
-      brand_identity: data.brand_identity,
-      products: data.products.map((p: Product): Product => {
-        // Normalize images to standard format
-        const normalizedImages = this.transformImages(p.images);
-        const primaryImage = this.extractImageUrl(p);
-        const normalizedImagesObj = normalizedImages as ProductImagesObject;
+      secondary_color: brandIdentity.brand_colors?.secondary || undefined,
+      logo_url: brandIdentity.logo_url || brandEntry.logo_url || undefined,
+      brand_website: brandIdentity.website || undefined,
+      description: brandIdentity.description || undefined,
+      brand_identity: brandIdentity,
+      // Normalize products to handle different data structures
+      products: normalizeProducts(data.products).map((p: Product): Product => {
+        // Ensure brand is set
+        if (!p.brand) {
+          p.brand = brandIdentity.name || brandEntry.name || brandId;
+        }
+        // Ensure logo is set
+        if (!p.logo_url) {
+          p.logo_url =
+            brandIdentity.logo_url || brandEntry.logo_url || undefined;
+        }
 
-        return {
-          ...p,
-          // Ensure required fields
-          category: p.category || p.main_category || "Uncategorized",
-          verified: p.verified ?? true,
-          // Normalize images
-          images: normalizedImages,
-          image_url: primaryImage || normalizedImagesObj.main || "",
-        };
+        // Generate specs_preview if missing (for Data Stream UI)
+        if (!(p as any).specs_preview) {
+          let preview: { key: string; val: string }[] = [];
+
+          // Priority 1: Official Specs (Dict)
+          if (p.official_specs) {
+            preview = Object.entries(p.official_specs)
+              .slice(0, 4)
+              .map(([k, v]) => ({ key: k, val: String(v) }));
+          }
+          // Priority 2: Specifications (Array)
+          else if (p.specifications && Array.isArray(p.specifications)) {
+            preview = p.specifications.slice(0, 4).map((s) => ({
+              key: s.key,
+              val: String(s.value),
+            }));
+          }
+          // Priority 3: Legacy Specs (Dict)
+          else if (
+            (p as any).specs &&
+            typeof (p as any).specs === "object" &&
+            !Array.isArray((p as any).specs)
+          ) {
+            const specs = (p as any).specs;
+            preview = Object.entries(specs)
+              .slice(0, 4)
+              .map(([k, v]) => ({
+                key: k,
+                val: String(v),
+              }));
+          }
+
+          if (preview.length > 0) {
+            (p as any).specs_preview = preview;
+          }
+        }
+
+        // Generate filters from subcategory (for 1176 Filter Engine)
+        if (!(p as any).filters) {
+          const filters = new Set<string>();
+          if (p.subcategory && p.subcategory !== "Uncategorized") {
+            filters.add(p.subcategory);
+          }
+          if (p.category_hierarchy && Array.isArray(p.category_hierarchy)) {
+            p.category_hierarchy.forEach((c) => {
+              if (
+                c &&
+                c !== "Uncategorized" &&
+                c.toLowerCase() !== (p.main_category || "").toLowerCase()
+              ) {
+                filters.add(c);
+              }
+            });
+          }
+          if (filters.size > 0) {
+            (p as any).filters = Array.from(filters);
+          }
+        }
+
+        return p;
       }),
     };
 
@@ -394,6 +456,100 @@ class CatalogLoader {
         buildTimestamp: "",
         version: "",
       };
+    }
+  }
+
+  /**
+   * Load products by category ID
+   * Searches across all brands for products in the given category
+   * Used by Spectrum view for category-based filtering
+   */
+  async loadProductsByCategory(categoryId: string): Promise<Product[]> {
+    try {
+      const index = await this.loadIndex();
+      const products: Product[] = [];
+
+      // MAPPING: Galaxy ID (Frontend) -> Universal IDs (Backend)
+      // This bridges the gap between the "Galaxy View" and the underlying data
+      const galaxyMap: Record<string, string[]> = {
+        "guitars-bass": ["guitars"],
+        "drums-percussion": ["drums"],
+        "keys-production": ["keys"], // "production" usually implies keys/synths in this context
+        "studio-recording": ["studio", "software"], // Software is arguably part of studio
+        "live-dj": ["live", "dj"],
+        "accessories-utility": ["accessories"],
+      };
+
+      // Determine which backend categories we are looking for
+      // If the categoryId is not a Galaxy ID, assume it is a raw Universal ID
+      const targetCategories = galaxyMap[categoryId] || [categoryId];
+
+      console.log(
+        `🔍 Searching for products in categories: ${targetCategories.join(", ")} (Request: ${categoryId})`,
+      );
+
+      // Load each brand and filter by category
+      for (const brandEntry of index.brands) {
+        try {
+          const catalog = await this.loadBrand(brandEntry.id);
+          // Filter products that match the category
+          const matchingProducts = catalog.products.filter((p) => {
+            const productCategory = (
+              p.main_category ||
+              p.category ||
+              ""
+            ).toLowerCase();
+
+            // Check exact match against allowed backend categories
+            return targetCategories.includes(productCategory);
+          });
+          products.push(...matchingProducts);
+        } catch (error) {
+          // Skip brands that fail to load
+          console.warn(`Failed to load ${brandEntry.id}, skipping...`);
+        }
+      }
+
+      console.log(
+        `📦 Loaded ${products.length} products for category: ${categoryId}`,
+      );
+      return products;
+    } catch (error) {
+      console.error(
+        `Failed to load products by category ${categoryId}:`,
+        error,
+      );
+      return [];
+    }
+  }
+
+  /**
+   * Find a specific product by ID across all brands
+   * Returns the full product object with all details
+   */
+  async findProductById(productId: string): Promise<Product | null> {
+    try {
+      const index = await this.loadIndex();
+
+      // Try each brand until we find the product
+      for (const brandEntry of index.brands) {
+        try {
+          const catalog = await this.loadBrand(brandEntry.id);
+          const product = catalog.products.find((p) => p.id === productId);
+          if (product) {
+            console.log(`Found product ${productId} in brand ${brandEntry.id}`);
+            return product;
+          }
+        } catch (error) {
+          // Continue searching other brands
+        }
+      }
+
+      console.warn(`Product ${productId} not found in any brand catalog`);
+      return null;
+    } catch (error) {
+      console.error(`Failed to find product ${productId}:`, error);
+      return null;
     }
   }
 

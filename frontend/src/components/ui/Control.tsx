@@ -13,7 +13,7 @@ export const Control = ({
   variant = "1176",
   active = false,
   label,
-  icon,
+  icon: _icon,
   children,
   className = "",
   ...props

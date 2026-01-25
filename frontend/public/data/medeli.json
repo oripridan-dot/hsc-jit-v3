@@ -1,71 +1,23 @@
 {
-  "brand_identity": {
-    "id": "medeli",
-    "name": "MEDELI",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/medeli_logo.jpg",
-    "taxonomy_stats": {
-      "validated": 67,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Medeli",
   "products": [
-    {
-      "id": "medeli_85_mk37",
-      "name": "אורגן Medeli MK37",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk37.jpg",
-      "description": "אורגן Medeli MK37",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk37.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk37.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk37.jpg",
-        "original": "/data/thumbnails/medeli_85_mk37.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mz923",
-      "name": "סט תופים אלקטרוניים Medeli MZ923",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mz923.jpg",
-      "description": "סט תופים אלקטרוניים Medeli MZ923",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mz923.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mz923.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mz923.jpg",
-        "original": "/data/thumbnails/medeli_85_mz923.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
     {
       "id": "medeli_85_dd225",
       "name": "Medeli DD225",
-      "brand": "medeli",
+      "description": "Medeli DD225",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dd225.jpg",
-      "description": "Medeli DD225",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7192603-medeli-dd225-portable-drum",
+      "is_sold": true,
+      "price": 740.0,
+      "halilit_url": "https://www.halilit.com/items/7192603-medeli-dd225-portable-drum",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 740.0,
+        "original_price": 740.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dd225.jpg",
@@ -78,60 +30,22 @@
       ]
     },
     {
-      "id": "medeli_85_mk49",
-      "name": "אורגן Medeli MK49",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk49.jpg",
-      "description": "אורגן Medeli MK49",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk49.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk49.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk49.jpg",
-        "original": "/data/thumbnails/medeli_85_mk49.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_dd630",
-      "name": "סט תופים אלקטרוניים Medeli DD-630",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_dd630.jpg",
-      "description": "סט תופים אלקטרוניים Medeli DD-630",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_dd630.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_dd630.jpg",
-        "high_res": "/data/thumbnails/medeli_85_dd630.jpg",
-        "original": "/data/thumbnails/medeli_85_dd630.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_dd112",
       "name": "Medeli DD112",
-      "brand": "medeli",
+      "description": "Medeli DD112",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dd112.jpg",
-      "description": "Medeli DD112",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7186769-medeli-dd112-portable-drum",
+      "is_sold": true,
+      "price": 287.0,
+      "halilit_url": "https://www.halilit.com/items/7186769-medeli-dd112-portable-drum",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 287.0,
+        "original_price": 287.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dd112.jpg",
@@ -144,38 +58,22 @@
       ]
     },
     {
-      "id": "medeli_85_mz528",
-      "name": "סט תופים אלקטרוניים Medeli MZ528",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mz528.jpg",
-      "description": "סט תופים אלקטרוניים Medeli MZ528",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mz528.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mz528.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mz528.jpg",
-        "original": "/data/thumbnails/medeli_85_mz528.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_tp110",
       "name": "Medeli TP110",
-      "brand": "medeli",
+      "description": "Medeli TP110",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_tp110.jpg",
-      "description": "Medeli TP110",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8608879-medeli-tp110-portable-drum",
+      "is_sold": true,
+      "price": 347.0,
+      "halilit_url": "https://www.halilit.com/items/8608879-medeli-tp110-portable-drum",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 347.0,
+        "original_price": 347.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_tp110.jpg",
@@ -190,14 +88,20 @@
     {
       "id": "medeli_85_dante_zen",
       "name": "Medeli Dante ZEN",
-      "brand": "medeli",
+      "description": "Medeli Dante ZEN",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dante_zen.jpg",
-      "description": "Medeli Dante ZEN",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5812618-medeli-dante-zen-oriental-workstation",
+      "is_sold": true,
+      "price": 3627.0,
+      "halilit_url": "https://www.halilit.com/items/5812618-medeli-dante-zen-oriental-workstation",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3627.0,
+        "original_price": 3627.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dante_zen.jpg",
@@ -212,14 +116,20 @@
     {
       "id": "medeli_85_dd325",
       "name": "Medeli DD325",
-      "brand": "medeli",
+      "description": "Medeli DD325",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dd325.jpg",
-      "description": "Medeli DD325",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7193743-medeli-dd325-portable-drum",
+      "is_sold": true,
+      "price": 913.0,
+      "halilit_url": "https://www.halilit.com/items/7193743-medeli-dd325-portable-drum",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 913.0,
+        "original_price": 913.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dd325.jpg",
@@ -232,170 +142,22 @@
       ]
     },
     {
-      "id": "medeli_85_mk61",
-      "name": "אורגן Medeli MK61",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk61.jpg",
-      "description": "אורגן Medeli MK61",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk61.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk61.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk61.jpg",
-        "original": "/data/thumbnails/medeli_85_mk61.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_m361",
-      "name": "אורגן Medeli M361",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_m361.jpg",
-      "description": "אורגן Medeli M361",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_m361.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_m361.jpg",
-        "high_res": "/data/thumbnails/medeli_85_m361.jpg",
-        "original": "/data/thumbnails/medeli_85_m361.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mz928",
-      "name": "סט תופים אלקטרוניים Medeli MZ928",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mz928.jpg",
-      "description": "סט תופים אלקטרוניים Medeli MZ928",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mz928.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mz928.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mz928.jpg",
-        "original": "/data/thumbnails/medeli_85_mz928.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mz520",
-      "name": "סט תופים אלקטרוניים Medeli MZ520",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mz520.jpg",
-      "description": "סט תופים אלקטרוניים Medeli MZ520",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mz520.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mz520.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mz520.jpg",
-        "original": "/data/thumbnails/medeli_85_mz520.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_m331",
-      "name": "אורגן Medeli M331",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_m331.jpg",
-      "description": "אורגן Medeli M331",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_m331.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_m331.jpg",
-        "high_res": "/data/thumbnails/medeli_85_m331.jpg",
-        "original": "/data/thumbnails/medeli_85_m331.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mz725",
-      "name": "סט תופים אלקטרוניים Medeli MZ725",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mz725.jpg",
-      "description": "סט תופים אלקטרוניים Medeli MZ725",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mz725.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mz725.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mz725.jpg",
-        "original": "/data/thumbnails/medeli_85_mz725.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mk300",
-      "name": "אורגן Medeli MK300",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk300.jpg",
-      "description": "אורגן Medeli MK300",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk300.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk300.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk300.jpg",
-        "original": "/data/thumbnails/medeli_85_mk300.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_akx10",
       "name": "Medeli AKX10",
-      "brand": "medeli",
+      "description": "Medeli AKX10",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_akx10.jpg",
-      "description": "Medeli AKX10",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4629762-medeli-akx10-digital-workstation",
+      "is_sold": true,
+      "price": 3064.0,
+      "halilit_url": "https://www.halilit.com/items/4629762-medeli-akx10-digital-workstation",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3064.0,
+        "original_price": 3064.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_akx10.jpg",
@@ -408,38 +170,22 @@
       ]
     },
     {
-      "id": "medeli_85_mk1_bk",
-      "name": "אורגן Medeli MK1",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk1_bk.jpg",
-      "description": "אורגן Medeli MK1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk1_bk.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk1_bk.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk1_bk.jpg",
-        "original": "/data/thumbnails/medeli_85_mk1_bk.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_dp388",
       "name": "Medeli DP388",
-      "brand": "medeli",
+      "description": "Medeli DP388",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dp388.jpg",
-      "description": "Medeli DP388",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/444693-medeli-dp388",
+      "is_sold": true,
+      "price": 2972.0,
+      "halilit_url": "https://www.halilit.com/items/444693-medeli-dp388",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2972.0,
+        "original_price": 2972.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dp388.jpg",
@@ -452,82 +198,22 @@
       ]
     },
     {
-      "id": "medeli_85_mk200",
-      "name": "אורגן Medeli MK200",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk200.jpg",
-      "description": "אורגן Medeli MK200",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk200.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk200.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk200.jpg",
-        "original": "/data/thumbnails/medeli_85_mk200.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_aw830",
-      "name": "אורגן Medeli AW830",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_aw830.jpg",
-      "description": "אורגן Medeli AW830",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_aw830.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_aw830.jpg",
-        "high_res": "/data/thumbnails/medeli_85_aw830.jpg",
-        "original": "/data/thumbnails/medeli_85_aw830.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mk401",
-      "name": "אורגן Medeli MK401",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk401.jpg",
-      "description": "אורגן Medeli MK401",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk401.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk401.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk401.jpg",
-        "original": "/data/thumbnails/medeli_85_mk401.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_mr101",
       "name": "Medeli Rhythm Machine MR101",
-      "brand": "medeli",
+      "description": "Medeli Rhythm Machine MR101",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_mr101.jpg",
-      "description": "Medeli Rhythm Machine MR101",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7568173-medeli-rhythm-machine-mr101",
+      "is_sold": true,
+      "price": 309.0,
+      "halilit_url": "https://www.halilit.com/items/7568173-medeli-rhythm-machine-mr101",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 309.0,
+        "original_price": 309.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_mr101.jpg",
@@ -540,148 +226,22 @@
       ]
     },
     {
-      "id": "medeli_85_mk110",
-      "name": "אורגן Medeli MK110",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk110.jpg",
-      "description": "אורגן Medeli MK110",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk110.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk110.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk110.jpg",
-        "original": "/data/thumbnails/medeli_85_mk110.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_m221l",
-      "name": "אורגן Medeli M221L",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_m221l.jpg",
-      "description": "אורגן Medeli M221L",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_m221l.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_m221l.jpg",
-        "high_res": "/data/thumbnails/medeli_85_m221l.jpg",
-        "original": "/data/thumbnails/medeli_85_m221l.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mk1_wh",
-      "name": "אורגן Medeli MK1",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk1_wh.jpg",
-      "description": "אורגן Medeli MK1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk1_wh.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk1_wh.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk1_wh.jpg",
-        "original": "/data/thumbnails/medeli_85_mk1_wh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mk1_gr",
-      "name": "אורגן Medeli MK1",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk1_gr.jpg",
-      "description": "אורגן Medeli MK1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk1_gr.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk1_gr.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk1_gr.jpg",
-        "original": "/data/thumbnails/medeli_85_mk1_gr.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mk1_bp",
-      "name": "אורגן Medeli MK1",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk1_bp.jpg",
-      "description": "אורגן Medeli MK1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk1_bp.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk1_bp.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk1_bp.jpg",
-        "original": "/data/thumbnails/medeli_85_mk1_bp.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_mk1_ye",
-      "name": "אורגן Medeli MK1",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk1_ye.jpg",
-      "description": "אורגן Medeli MK1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk1_ye.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk1_ye.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk1_ye.jpg",
-        "original": "/data/thumbnails/medeli_85_mk1_ye.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_mr101s",
       "name": "Medeli Rhythm Machine MR101S",
-      "brand": "medeli",
+      "description": "Medeli Rhythm Machine MR101S",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_mr101s.jpg",
-      "description": "Medeli Rhythm Machine MR101S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8600691-medeli-rhythm-machine-mr101s",
+      "is_sold": true,
+      "price": 322.0,
+      "halilit_url": "https://www.halilit.com/items/8600691-medeli-rhythm-machine-mr101s",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 322.0,
+        "original_price": 322.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_mr101s.jpg",
@@ -694,104 +254,22 @@
       ]
     },
     {
-      "id": "medeli_85_cp203",
-      "name": "פסנתר חשמלי Medeli CP2O3",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_cp203.jpg",
-      "description": "פסנתר חשמלי Medeli CP2O3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_cp203.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_cp203.jpg",
-        "high_res": "/data/thumbnails/medeli_85_cp203.jpg",
-        "original": "/data/thumbnails/medeli_85_cp203.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_ik100",
-      "name": "אורגן Medeli IK100",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_ik100.jpg",
-      "description": "אורגן Medeli IK100",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_ik100.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_ik100.jpg",
-        "high_res": "/data/thumbnails/medeli_85_ik100.jpg",
-        "original": "/data/thumbnails/medeli_85_ik100.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_up605",
-      "name": "פסנתר חשמלי Medeli UP605",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_up605.jpg",
-      "description": "פסנתר חשמלי Medeli UP605",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_up605.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_up605.jpg",
-        "high_res": "/data/thumbnails/medeli_85_up605.jpg",
-        "original": "/data/thumbnails/medeli_85_up605.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_cp203_wh",
-      "name": "פסנתר חשמלי Medeli CP2O3",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_cp203_wh.jpg",
-      "description": "פסנתר חשמלי Medeli CP2O3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_cp203_wh.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_cp203_wh.jpg",
-        "high_res": "/data/thumbnails/medeli_85_cp203_wh.jpg",
-        "original": "/data/thumbnails/medeli_85_cp203_wh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_ak603",
       "name": "Medeli AK603",
-      "brand": "medeli",
+      "description": "Medeli AK603",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_ak603.jpg",
-      "description": "Medeli AK603",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8599243-medeli-ak603-digital-workstation",
+      "is_sold": true,
+      "price": 1624.0,
+      "halilit_url": "https://www.halilit.com/items/8599243-medeli-ak603-digital-workstation",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1624.0,
+        "original_price": 1624.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_ak603.jpg",
@@ -806,14 +284,20 @@
     {
       "id": "medeli_85_dp460k",
       "name": "Medeli DP460K",
-      "brand": "medeli",
+      "description": "Medeli DP460K",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dp460k.jpg",
-      "description": "Medeli DP460K",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4955603-medeli-dp460k",
+      "is_sold": true,
+      "price": 3509.0,
+      "halilit_url": "https://www.halilit.com/items/4955603-medeli-dp460k",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3509.0,
+        "original_price": 3509.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dp460k.jpg",
@@ -828,14 +312,20 @@
     {
       "id": "medeli_85_dp460k_wh",
       "name": "Medeli DP460K",
-      "brand": "medeli",
+      "description": "Medeli DP460K",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dp460k_wh.jpg",
-      "description": "Medeli DP460K",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7717594-medeli-dp460k-digital-piano",
+      "is_sold": true,
+      "price": 3535.0,
+      "halilit_url": "https://www.halilit.com/items/7717594-medeli-dp460k-digital-piano",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3535.0,
+        "original_price": 3535.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dp460k_wh.jpg",
@@ -848,60 +338,22 @@
       ]
     },
     {
-      "id": "medeli_85_mk100",
-      "name": "אורגן Medeli MK100",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_mk100.jpg",
-      "description": "אורגן Medeli MK100",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_mk100.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_mk100.jpg",
-        "high_res": "/data/thumbnails/medeli_85_mk100.jpg",
-        "original": "/data/thumbnails/medeli_85_mk100.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_ik110",
-      "name": "אורגן Medeli IK110",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_ik110.jpg",
-      "description": "אורגן Medeli IK110",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_ik110.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_ik110.jpg",
-        "high_res": "/data/thumbnails/medeli_85_ik110.jpg",
-        "original": "/data/thumbnails/medeli_85_ik110.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_dp250rb",
       "name": "Medeli DP250",
-      "brand": "medeli",
+      "description": "Medeli DP250",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dp250rb.jpg",
-      "description": "Medeli DP250",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/444694-medeli-dp250",
+      "is_sold": true,
+      "price": 2309.0,
+      "halilit_url": "https://www.halilit.com/items/444694-medeli-dp250",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2309.0,
+        "original_price": 2309.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dp250rb.jpg",
@@ -916,15 +368,21 @@
     {
       "id": "medeli_85_st450_wh",
       "name": "Medeli ST450 Three Pedals Stand",
-      "brand": "medeli",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/medeli_85_st450_wh.jpg",
       "description": "Medeli ST450 Three Pedals Stand",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/medeli_85_st450_wh.jpg",
+      "product_url": "https://www.halilit.com/items/7717467-medeli-st450-three-pedals-stand",
+      "is_sold": true,
+      "price": 399.0,
+      "halilit_url": "https://www.halilit.com/items/7717467-medeli-st450-three-pedals-stand",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 399.0,
+        "original_price": 399.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_st450_wh.jpg",
         "thumbnail": "/data/thumbnails/medeli_85_st450_wh.jpg",
@@ -932,21 +390,27 @@
         "original": "/data/thumbnails/medeli_85_st450_wh.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "medeli_85_st430",
       "name": "Medeli ST430 Three Pedals Stand",
-      "brand": "medeli",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/medeli_85_st430.jpg",
       "description": "Medeli ST430 Three Pedals Stand",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/medeli_85_st430.jpg",
+      "product_url": "https://www.halilit.com/items/5502086-medeli-st430-three-pedals-stand",
+      "is_sold": true,
+      "price": 410.0,
+      "halilit_url": "https://www.halilit.com/items/5502086-medeli-st430-three-pedals-stand",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 410.0,
+        "original_price": 410.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_st430.jpg",
         "thumbnail": "/data/thumbnails/medeli_85_st430.jpg",
@@ -954,21 +418,27 @@
         "original": "/data/thumbnails/medeli_85_st430.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "medeli_85_st430_wh",
       "name": "Medeli ST430 Three Pedals Stand",
-      "brand": "medeli",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/medeli_85_st430_wh.jpg",
       "description": "Medeli ST430 Three Pedals Stand",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/medeli_85_st430_wh.jpg",
+      "product_url": "https://www.halilit.com/items/7717528-medeli-st430-three-pedals-stand",
+      "is_sold": true,
+      "price": 399.0,
+      "halilit_url": "https://www.halilit.com/items/7717528-medeli-st430-three-pedals-stand",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 399.0,
+        "original_price": 399.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_st430_wh.jpg",
         "thumbnail": "/data/thumbnails/medeli_85_st430_wh.jpg",
@@ -976,20 +446,26 @@
         "original": "/data/thumbnails/medeli_85_st430_wh.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "medeli_85_dp260",
       "name": "Medeli DP260",
-      "brand": "medeli",
+      "description": "Medeli DP260",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dp260.jpg",
-      "description": "Medeli DP260",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2150368-medeli-dp260",
+      "is_sold": true,
+      "price": 2494.0,
+      "halilit_url": "https://www.halilit.com/items/2150368-medeli-dp260",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2494.0,
+        "original_price": 2494.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dp260.jpg",
@@ -1004,14 +480,20 @@
     {
       "id": "medeli_85_dp280k",
       "name": "Medeli DP280K",
-      "brand": "medeli",
+      "description": "Medeli DP280K",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dp280k.jpg",
-      "description": "Medeli DP280K",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4439788-medeli-dp280k-",
+      "is_sold": true,
+      "price": 2771.0,
+      "halilit_url": "https://www.halilit.com/items/4439788-medeli-dp280k-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2771.0,
+        "original_price": 2771.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dp280k.jpg",
@@ -1026,86 +508,26 @@
     {
       "id": "medeli_85_st450",
       "name": "Medeli ST450 Three Pedals Stand",
-      "brand": "medeli",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/medeli_85_st450.jpg",
       "description": "Medeli ST450 Three Pedals Stand",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/medeli_85_st450.jpg",
+      "product_url": "https://www.halilit.com/items/7194869-medeli-st450-three-pedals-stand",
+      "is_sold": true,
+      "price": 387.0,
+      "halilit_url": "https://www.halilit.com/items/7194869-medeli-st450-three-pedals-stand",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 387.0,
+        "original_price": 387.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_st450.jpg",
         "thumbnail": "/data/thumbnails/medeli_85_st450.jpg",
         "high_res": "/data/thumbnails/medeli_85_st450.jpg",
         "original": "/data/thumbnails/medeli_85_st450.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "medeli_85_dd401",
-      "name": "סט תופים אלקטרוניים Medeli DD-401",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_dd401.jpg",
-      "description": "סט תופים אלקטרוניים Medeli DD-401",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_dd401.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_dd401.jpg",
-        "high_res": "/data/thumbnails/medeli_85_dd401.jpg",
-        "original": "/data/thumbnails/medeli_85_dd401.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_dd610",
-      "name": "סט תופים אלקטרוניים Medeli DD-610",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_dd610.jpg",
-      "description": "סט תופים אלקטרוניים Medeli DD-610",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_dd610.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_dd610.jpg",
-        "high_res": "/data/thumbnails/medeli_85_dd610.jpg",
-        "original": "/data/thumbnails/medeli_85_dd610.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_dd522",
-      "name": "סט תופים אלקטרוניים Medeli DD-522",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_dd522.jpg",
-      "description": "סט תופים אלקטרוניים Medeli DD-522",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_dd522.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_dd522.jpg",
-        "high_res": "/data/thumbnails/medeli_85_dd522.jpg",
-        "original": "/data/thumbnails/medeli_85_dd522.jpg"
       },
       "category_hierarchy": [
         "accessories"
@@ -1114,14 +536,20 @@
     {
       "id": "medeli_85_dp740k",
       "name": "Medeli DP740K",
-      "brand": "medeli",
+      "description": "Medeli DP740K",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_dp740k.jpg",
-      "description": "Medeli DP740K",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1213173-medeli-dp740k-piano",
+      "is_sold": true,
+      "price": 3953.0,
+      "halilit_url": "https://www.halilit.com/items/1213173-medeli-dp740k-piano",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3953.0,
+        "original_price": 3953.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_dp740k.jpg",
@@ -1134,280 +562,22 @@
       ]
     },
     {
-      "id": "medeli_85_dd635d",
-      "name": "סט תופים אלקטרוניים Medeli DD-635D",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_dd635d.jpg",
-      "description": "סט תופים אלקטרוניים Medeli DD-635D",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_dd635d.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_dd635d.jpg",
-        "high_res": "/data/thumbnails/medeli_85_dd635d.jpg",
-        "original": "/data/thumbnails/medeli_85_dd635d.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_spa500_wh",
-      "name": "פסנתר חשמלי Medeli SP-A500 White",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_spa500_wh.jpg",
-      "description": "פסנתר חשמלי Medeli SP-A500 White",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_spa500_wh.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_spa500_wh.jpg",
-        "high_res": "/data/thumbnails/medeli_85_spa500_wh.jpg",
-        "original": "/data/thumbnails/medeli_85_spa500_wh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_spa500",
-      "name": "פסנתר חשמלי Medeli SP-A500",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_spa500.jpg",
-      "description": "פסנתר חשמלי Medeli SP-A500",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_spa500.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_spa500.jpg",
-        "high_res": "/data/thumbnails/medeli_85_spa500.jpg",
-        "original": "/data/thumbnails/medeli_85_spa500.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_sp201_",
-      "name": "פסנתר חשמלי +Medeli SP201",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_sp201_.jpg",
-      "description": "פסנתר חשמלי +Medeli SP201",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_sp201_.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_sp201_.jpg",
-        "high_res": "/data/thumbnails/medeli_85_sp201_.jpg",
-        "original": "/data/thumbnails/medeli_85_sp201_.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_sp201",
-      "name": "פסנתר חשמלי Medeli SP201",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_sp201.jpg",
-      "description": "פסנתר חשמלי Medeli SP201",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_sp201.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_sp201.jpg",
-        "high_res": "/data/thumbnails/medeli_85_sp201.jpg",
-        "original": "/data/thumbnails/medeli_85_sp201.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_sp201__wh",
-      "name": "פסנתר חשמלי +Medeli SP201",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_sp201__wh.jpg",
-      "description": "פסנתר חשמלי +Medeli SP201",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_sp201__wh.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_sp201__wh.jpg",
-        "high_res": "/data/thumbnails/medeli_85_sp201__wh.jpg",
-        "original": "/data/thumbnails/medeli_85_sp201__wh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_sp201_wh",
-      "name": "פסנתר חשמלי Medeli SP201",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_sp201_wh.jpg",
-      "description": "פסנתר חשמלי Medeli SP201",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_sp201_wh.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_sp201_wh.jpg",
-        "high_res": "/data/thumbnails/medeli_85_sp201_wh.jpg",
-        "original": "/data/thumbnails/medeli_85_sp201_wh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_spc120",
-      "name": "פסנתר חשמלי Medeli SP-C120",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_spc120.jpg",
-      "description": "פסנתר חשמלי Medeli SP-C120",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_spc120.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_spc120.jpg",
-        "high_res": "/data/thumbnails/medeli_85_spc120.jpg",
-        "original": "/data/thumbnails/medeli_85_spc120.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_spc120_wh",
-      "name": "פסנתר חשמלי Medeli SP-C120",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_spc120_wh.jpg",
-      "description": "פסנתר חשמלי Medeli SP-C120",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_spc120_wh.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_spc120_wh.jpg",
-        "high_res": "/data/thumbnails/medeli_85_spc120_wh.jpg",
-        "original": "/data/thumbnails/medeli_85_spc120_wh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_sp5300",
-      "name": "פסנתר חשמלי Medeli SP-5300",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_sp5300.jpg",
-      "description": "פסנתר חשמלי Medeli SP-5300",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_sp5300.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_sp5300.jpg",
-        "high_res": "/data/thumbnails/medeli_85_sp5300.jpg",
-        "original": "/data/thumbnails/medeli_85_sp5300.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_sp4000",
-      "name": "פסנתר חשמלי Medeli SP-4000",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_sp4000.jpg",
-      "description": "פסנתר חשמלי Medeli SP-4000",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_sp4000.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_sp4000.jpg",
-        "high_res": "/data/thumbnails/medeli_85_sp4000.jpg",
-        "original": "/data/thumbnails/medeli_85_sp4000.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_sp4200",
-      "name": "פסנתר חשמלי Medeli SP-4200",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_sp4200.jpg",
-      "description": "פסנתר חשמלי Medeli SP-4200",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_sp4200.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_sp4200.jpg",
-        "high_res": "/data/thumbnails/medeli_85_sp4200.jpg",
-        "original": "/data/thumbnails/medeli_85_sp4200.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_ap30b",
       "name": "Medeli AP30",
-      "brand": "medeli",
+      "description": "Medeli AP30",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_ap30b.jpg",
-      "description": "Medeli AP30",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588096-medeli-ap30-drum-amplifier",
+      "is_sold": true,
+      "price": 729.0,
+      "halilit_url": "https://www.halilit.com/items/7588096-medeli-ap30-drum-amplifier",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 729.0,
+        "original_price": 729.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_ap30b.jpg",
@@ -1420,60 +590,22 @@
       ]
     },
     {
-      "id": "medeli_85_m211k",
-      "name": "אורגן Medeli M211K",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_m211k.jpg",
-      "description": "אורגן Medeli M211K",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_m211k.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_m211k.jpg",
-        "high_res": "/data/thumbnails/medeli_85_m211k.jpg",
-        "original": "/data/thumbnails/medeli_85_m211k.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "medeli_85_p80a",
-      "name": "פדל ססטיין Medeli P80A",
-      "brand": "medeli",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/medeli_85_p80a.jpg",
-      "description": "פדל ססטיין Medeli P80A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/medeli_85_p80a.jpg",
-        "thumbnail": "/data/thumbnails/medeli_85_p80a.jpg",
-        "high_res": "/data/thumbnails/medeli_85_p80a.jpg",
-        "original": "/data/thumbnails/medeli_85_p80a.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "medeli_85_ap33",
       "name": "Medeli AP33",
-      "brand": "medeli",
+      "description": "Medeli AP33",
       "category": "accessories",
       "image_url": "/data/thumbnails/medeli_85_ap33.jpg",
-      "description": "Medeli AP33",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8363418-medeli-ap33-drum-monitor",
+      "is_sold": true,
+      "price": 882.0,
+      "halilit_url": "https://www.halilit.com/items/8363418-medeli-ap33-drum-monitor",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 882.0,
+        "original_price": 882.0
+      },
+      "brand": "Medeli",
+      "logo_url": "/assets/logos/medeli_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/medeli_85_ap33.jpg",
@@ -1486,38 +618,23 @@
       ]
     }
   ],
-  "brand_name": "Medeli",
+  "generated_at": "2026-01-25T22:19:24.320156",
   "brand_slug": "medeli",
-  "refined_at": "2026-01-25T02:01:47.233199+00:00",
+  "refined_at": "2026-01-25T22:19:24.379356+00:00",
+  "brand_identity": {
+    "id": "medeli",
+    "name": "Medeli",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/medeli_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 22,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
-        {
-          "id": "medeli_85_mk37",
-          "name": "אורגן Medeli MK37",
-          "description": "אורגן Medeli MK37",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk37.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk37.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk37.jpg",
-            "original": "/data/thumbnails/medeli_85_mk37.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mz923",
-          "name": "סט תופים אלקטרוניים Medeli MZ923",
-          "description": "סט תופים אלקטרוניים Medeli MZ923",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mz923.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mz923.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mz923.jpg",
-            "original": "/data/thumbnails/medeli_85_mz923.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
         {
           "id": "medeli_85_dd225",
           "name": "Medeli DD225",
@@ -1532,32 +649,6 @@
           "sku": null
         },
         {
-          "id": "medeli_85_mk49",
-          "name": "אורגן Medeli MK49",
-          "description": "אורגן Medeli MK49",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk49.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk49.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk49.jpg",
-            "original": "/data/thumbnails/medeli_85_mk49.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_dd630",
-          "name": "סט תופים אלקטרוניים Medeli DD-630",
-          "description": "סט תופים אלקטרוניים Medeli DD-630",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dd630.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dd630.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dd630.jpg",
-            "original": "/data/thumbnails/medeli_85_dd630.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "medeli_85_dd112",
           "name": "Medeli DD112",
           "description": "Medeli DD112",
@@ -1566,19 +657,6 @@
             "thumbnail": "/data/thumbnails/medeli_85_dd112.jpg",
             "high_res": "/data/thumbnails/medeli_85_dd112.jpg",
             "original": "/data/thumbnails/medeli_85_dd112.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mz528",
-          "name": "סט תופים אלקטרוניים Medeli MZ528",
-          "description": "סט תופים אלקטרוניים Medeli MZ528",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mz528.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mz528.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mz528.jpg",
-            "original": "/data/thumbnails/medeli_85_mz528.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1623,97 +701,6 @@
           "sku": null
         },
         {
-          "id": "medeli_85_mk61",
-          "name": "אורגן Medeli MK61",
-          "description": "אורגן Medeli MK61",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk61.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk61.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk61.jpg",
-            "original": "/data/thumbnails/medeli_85_mk61.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_m361",
-          "name": "אורגן Medeli M361",
-          "description": "אורגן Medeli M361",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_m361.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_m361.jpg",
-            "high_res": "/data/thumbnails/medeli_85_m361.jpg",
-            "original": "/data/thumbnails/medeli_85_m361.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mz928",
-          "name": "סט תופים אלקטרוניים Medeli MZ928",
-          "description": "סט תופים אלקטרוניים Medeli MZ928",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mz928.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mz928.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mz928.jpg",
-            "original": "/data/thumbnails/medeli_85_mz928.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mz520",
-          "name": "סט תופים אלקטרוניים Medeli MZ520",
-          "description": "סט תופים אלקטרוניים Medeli MZ520",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mz520.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mz520.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mz520.jpg",
-            "original": "/data/thumbnails/medeli_85_mz520.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_m331",
-          "name": "אורגן Medeli M331",
-          "description": "אורגן Medeli M331",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_m331.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_m331.jpg",
-            "high_res": "/data/thumbnails/medeli_85_m331.jpg",
-            "original": "/data/thumbnails/medeli_85_m331.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mz725",
-          "name": "סט תופים אלקטרוניים Medeli MZ725",
-          "description": "סט תופים אלקטרוניים Medeli MZ725",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mz725.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mz725.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mz725.jpg",
-            "original": "/data/thumbnails/medeli_85_mz725.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mk300",
-          "name": "אורגן Medeli MK300",
-          "description": "אורגן Medeli MK300",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk300.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk300.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk300.jpg",
-            "original": "/data/thumbnails/medeli_85_mk300.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "medeli_85_akx10",
           "name": "Medeli AKX10",
           "description": "Medeli AKX10",
@@ -1722,19 +709,6 @@
             "thumbnail": "/data/thumbnails/medeli_85_akx10.jpg",
             "high_res": "/data/thumbnails/medeli_85_akx10.jpg",
             "original": "/data/thumbnails/medeli_85_akx10.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mk1_bk",
-          "name": "אורגן Medeli MK1",
-          "description": "אורגן Medeli MK1",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk1_bk.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk1_bk.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk1_bk.jpg",
-            "original": "/data/thumbnails/medeli_85_mk1_bk.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1753,45 +727,6 @@
           "sku": null
         },
         {
-          "id": "medeli_85_mk200",
-          "name": "אורגן Medeli MK200",
-          "description": "אורגן Medeli MK200",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk200.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk200.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk200.jpg",
-            "original": "/data/thumbnails/medeli_85_mk200.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_aw830",
-          "name": "אורגן Medeli AW830",
-          "description": "אורגן Medeli AW830",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_aw830.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_aw830.jpg",
-            "high_res": "/data/thumbnails/medeli_85_aw830.jpg",
-            "original": "/data/thumbnails/medeli_85_aw830.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mk401",
-          "name": "אורגן Medeli MK401",
-          "description": "אורגן Medeli MK401",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk401.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk401.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk401.jpg",
-            "original": "/data/thumbnails/medeli_85_mk401.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "medeli_85_mr101",
           "name": "Medeli Rhythm Machine MR101",
           "description": "Medeli Rhythm Machine MR101",
@@ -1805,84 +740,6 @@
           "sku": null
         },
         {
-          "id": "medeli_85_mk110",
-          "name": "אורגן Medeli MK110",
-          "description": "אורגן Medeli MK110",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk110.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk110.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk110.jpg",
-            "original": "/data/thumbnails/medeli_85_mk110.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_m221l",
-          "name": "אורגן Medeli M221L",
-          "description": "אורגן Medeli M221L",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_m221l.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_m221l.jpg",
-            "high_res": "/data/thumbnails/medeli_85_m221l.jpg",
-            "original": "/data/thumbnails/medeli_85_m221l.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mk1_wh",
-          "name": "אורגן Medeli MK1",
-          "description": "אורגן Medeli MK1",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk1_wh.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk1_wh.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk1_wh.jpg",
-            "original": "/data/thumbnails/medeli_85_mk1_wh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mk1_gr",
-          "name": "אורגן Medeli MK1",
-          "description": "אורגן Medeli MK1",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk1_gr.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk1_gr.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk1_gr.jpg",
-            "original": "/data/thumbnails/medeli_85_mk1_gr.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mk1_bp",
-          "name": "אורגן Medeli MK1",
-          "description": "אורגן Medeli MK1",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk1_bp.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk1_bp.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk1_bp.jpg",
-            "original": "/data/thumbnails/medeli_85_mk1_bp.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_mk1_ye",
-          "name": "אורגן Medeli MK1",
-          "description": "אורגן Medeli MK1",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk1_ye.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk1_ye.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk1_ye.jpg",
-            "original": "/data/thumbnails/medeli_85_mk1_ye.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "medeli_85_mr101s",
           "name": "Medeli Rhythm Machine MR101S",
           "description": "Medeli Rhythm Machine MR101S",
@@ -1891,58 +748,6 @@
             "thumbnail": "/data/thumbnails/medeli_85_mr101s.jpg",
             "high_res": "/data/thumbnails/medeli_85_mr101s.jpg",
             "original": "/data/thumbnails/medeli_85_mr101s.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_cp203",
-          "name": "פסנתר חשמלי Medeli CP2O3",
-          "description": "פסנתר חשמלי Medeli CP2O3",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_cp203.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_cp203.jpg",
-            "high_res": "/data/thumbnails/medeli_85_cp203.jpg",
-            "original": "/data/thumbnails/medeli_85_cp203.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_ik100",
-          "name": "אורגן Medeli IK100",
-          "description": "אורגן Medeli IK100",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_ik100.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_ik100.jpg",
-            "high_res": "/data/thumbnails/medeli_85_ik100.jpg",
-            "original": "/data/thumbnails/medeli_85_ik100.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_up605",
-          "name": "פסנתר חשמלי Medeli UP605",
-          "description": "פסנתר חשמלי Medeli UP605",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_up605.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_up605.jpg",
-            "high_res": "/data/thumbnails/medeli_85_up605.jpg",
-            "original": "/data/thumbnails/medeli_85_up605.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_cp203_wh",
-          "name": "פסנתר חשמלי Medeli CP2O3",
-          "description": "פסנתר חשמלי Medeli CP2O3",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_cp203_wh.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_cp203_wh.jpg",
-            "high_res": "/data/thumbnails/medeli_85_cp203_wh.jpg",
-            "original": "/data/thumbnails/medeli_85_cp203_wh.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1987,32 +792,6 @@
           "sku": null
         },
         {
-          "id": "medeli_85_mk100",
-          "name": "אורגן Medeli MK100",
-          "description": "אורגן Medeli MK100",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_mk100.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_mk100.jpg",
-            "high_res": "/data/thumbnails/medeli_85_mk100.jpg",
-            "original": "/data/thumbnails/medeli_85_mk100.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_ik110",
-          "name": "אורגן Medeli IK110",
-          "description": "אורגן Medeli IK110",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_ik110.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_ik110.jpg",
-            "high_res": "/data/thumbnails/medeli_85_ik110.jpg",
-            "original": "/data/thumbnails/medeli_85_ik110.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "medeli_85_dp250rb",
           "name": "Medeli DP250",
           "description": "Medeli DP250",
@@ -2025,296 +804,6 @@
           "model_number": null,
           "sku": null
         },
-        {
-          "id": "medeli_85_dp260",
-          "name": "Medeli DP260",
-          "description": "Medeli DP260",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dp260.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dp260.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dp260.jpg",
-            "original": "/data/thumbnails/medeli_85_dp260.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_dp280k",
-          "name": "Medeli DP280K",
-          "description": "Medeli DP280K",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dp280k.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dp280k.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dp280k.jpg",
-            "original": "/data/thumbnails/medeli_85_dp280k.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_dd401",
-          "name": "סט תופים אלקטרוניים Medeli DD-401",
-          "description": "סט תופים אלקטרוניים Medeli DD-401",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dd401.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dd401.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dd401.jpg",
-            "original": "/data/thumbnails/medeli_85_dd401.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_dd610",
-          "name": "סט תופים אלקטרוניים Medeli DD-610",
-          "description": "סט תופים אלקטרוניים Medeli DD-610",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dd610.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dd610.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dd610.jpg",
-            "original": "/data/thumbnails/medeli_85_dd610.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_dd522",
-          "name": "סט תופים אלקטרוניים Medeli DD-522",
-          "description": "סט תופים אלקטרוניים Medeli DD-522",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dd522.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dd522.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dd522.jpg",
-            "original": "/data/thumbnails/medeli_85_dd522.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_dp740k",
-          "name": "Medeli DP740K",
-          "description": "Medeli DP740K",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dp740k.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dp740k.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dp740k.jpg",
-            "original": "/data/thumbnails/medeli_85_dp740k.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_dd635d",
-          "name": "סט תופים אלקטרוניים Medeli DD-635D",
-          "description": "סט תופים אלקטרוניים Medeli DD-635D",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_dd635d.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_dd635d.jpg",
-            "high_res": "/data/thumbnails/medeli_85_dd635d.jpg",
-            "original": "/data/thumbnails/medeli_85_dd635d.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_spa500_wh",
-          "name": "פסנתר חשמלי Medeli SP-A500 White",
-          "description": "פסנתר חשמלי Medeli SP-A500 White",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_spa500_wh.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_spa500_wh.jpg",
-            "high_res": "/data/thumbnails/medeli_85_spa500_wh.jpg",
-            "original": "/data/thumbnails/medeli_85_spa500_wh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_spa500",
-          "name": "פסנתר חשמלי Medeli SP-A500",
-          "description": "פסנתר חשמלי Medeli SP-A500",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_spa500.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_spa500.jpg",
-            "high_res": "/data/thumbnails/medeli_85_spa500.jpg",
-            "original": "/data/thumbnails/medeli_85_spa500.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_sp201_",
-          "name": "פסנתר חשמלי +Medeli SP201",
-          "description": "פסנתר חשמלי +Medeli SP201",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_sp201_.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_sp201_.jpg",
-            "high_res": "/data/thumbnails/medeli_85_sp201_.jpg",
-            "original": "/data/thumbnails/medeli_85_sp201_.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_sp201",
-          "name": "פסנתר חשמלי Medeli SP201",
-          "description": "פסנתר חשמלי Medeli SP201",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_sp201.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_sp201.jpg",
-            "high_res": "/data/thumbnails/medeli_85_sp201.jpg",
-            "original": "/data/thumbnails/medeli_85_sp201.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_sp201__wh",
-          "name": "פסנתר חשמלי +Medeli SP201",
-          "description": "פסנתר חשמלי +Medeli SP201",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_sp201__wh.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_sp201__wh.jpg",
-            "high_res": "/data/thumbnails/medeli_85_sp201__wh.jpg",
-            "original": "/data/thumbnails/medeli_85_sp201__wh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_sp201_wh",
-          "name": "פסנתר חשמלי Medeli SP201",
-          "description": "פסנתר חשמלי Medeli SP201",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_sp201_wh.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_sp201_wh.jpg",
-            "high_res": "/data/thumbnails/medeli_85_sp201_wh.jpg",
-            "original": "/data/thumbnails/medeli_85_sp201_wh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_spc120",
-          "name": "פסנתר חשמלי Medeli SP-C120",
-          "description": "פסנתר חשמלי Medeli SP-C120",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_spc120.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_spc120.jpg",
-            "high_res": "/data/thumbnails/medeli_85_spc120.jpg",
-            "original": "/data/thumbnails/medeli_85_spc120.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_spc120_wh",
-          "name": "פסנתר חשמלי Medeli SP-C120",
-          "description": "פסנתר חשמלי Medeli SP-C120",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_spc120_wh.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_spc120_wh.jpg",
-            "high_res": "/data/thumbnails/medeli_85_spc120_wh.jpg",
-            "original": "/data/thumbnails/medeli_85_spc120_wh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_sp5300",
-          "name": "פסנתר חשמלי Medeli SP-5300",
-          "description": "פסנתר חשמלי Medeli SP-5300",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_sp5300.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_sp5300.jpg",
-            "high_res": "/data/thumbnails/medeli_85_sp5300.jpg",
-            "original": "/data/thumbnails/medeli_85_sp5300.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_sp4000",
-          "name": "פסנתר חשמלי Medeli SP-4000",
-          "description": "פסנתר חשמלי Medeli SP-4000",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_sp4000.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_sp4000.jpg",
-            "high_res": "/data/thumbnails/medeli_85_sp4000.jpg",
-            "original": "/data/thumbnails/medeli_85_sp4000.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_sp4200",
-          "name": "פסנתר חשמלי Medeli SP-4200",
-          "description": "פסנתר חשמלי Medeli SP-4200",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_sp4200.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_sp4200.jpg",
-            "high_res": "/data/thumbnails/medeli_85_sp4200.jpg",
-            "original": "/data/thumbnails/medeli_85_sp4200.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_ap30b",
-          "name": "Medeli AP30",
-          "description": "Medeli AP30",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_ap30b.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_ap30b.jpg",
-            "high_res": "/data/thumbnails/medeli_85_ap30b.jpg",
-            "original": "/data/thumbnails/medeli_85_ap30b.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_m211k",
-          "name": "אורגן Medeli M211K",
-          "description": "אורגן Medeli M211K",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_m211k.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_m211k.jpg",
-            "high_res": "/data/thumbnails/medeli_85_m211k.jpg",
-            "original": "/data/thumbnails/medeli_85_m211k.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_p80a",
-          "name": "פדל ססטיין Medeli P80A",
-          "description": "פדל ססטיין Medeli P80A",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_p80a.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_p80a.jpg",
-            "high_res": "/data/thumbnails/medeli_85_p80a.jpg",
-            "original": "/data/thumbnails/medeli_85_p80a.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "medeli_85_ap33",
-          "name": "Medeli AP33",
-          "description": "Medeli AP33",
-          "images": {
-            "main": "/data/thumbnails/medeli_85_ap33.jpg",
-            "thumbnail": "/data/thumbnails/medeli_85_ap33.jpg",
-            "high_res": "/data/thumbnails/medeli_85_ap33.jpg",
-            "original": "/data/thumbnails/medeli_85_ap33.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "guitars": {
-      "General": [
         {
           "id": "medeli_85_st450_wh",
           "name": "Medeli ST450 Three Pedals Stand",
@@ -2355,6 +844,32 @@
           "sku": null
         },
         {
+          "id": "medeli_85_dp260",
+          "name": "Medeli DP260",
+          "description": "Medeli DP260",
+          "images": {
+            "main": "/data/thumbnails/medeli_85_dp260.jpg",
+            "thumbnail": "/data/thumbnails/medeli_85_dp260.jpg",
+            "high_res": "/data/thumbnails/medeli_85_dp260.jpg",
+            "original": "/data/thumbnails/medeli_85_dp260.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "medeli_85_dp280k",
+          "name": "Medeli DP280K",
+          "description": "Medeli DP280K",
+          "images": {
+            "main": "/data/thumbnails/medeli_85_dp280k.jpg",
+            "thumbnail": "/data/thumbnails/medeli_85_dp280k.jpg",
+            "high_res": "/data/thumbnails/medeli_85_dp280k.jpg",
+            "original": "/data/thumbnails/medeli_85_dp280k.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "medeli_85_st450",
           "name": "Medeli ST450 Three Pedals Stand",
           "description": "Medeli ST450 Three Pedals Stand",
@@ -2363,6 +878,45 @@
             "thumbnail": "/data/thumbnails/medeli_85_st450.jpg",
             "high_res": "/data/thumbnails/medeli_85_st450.jpg",
             "original": "/data/thumbnails/medeli_85_st450.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "medeli_85_dp740k",
+          "name": "Medeli DP740K",
+          "description": "Medeli DP740K",
+          "images": {
+            "main": "/data/thumbnails/medeli_85_dp740k.jpg",
+            "thumbnail": "/data/thumbnails/medeli_85_dp740k.jpg",
+            "high_res": "/data/thumbnails/medeli_85_dp740k.jpg",
+            "original": "/data/thumbnails/medeli_85_dp740k.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "medeli_85_ap30b",
+          "name": "Medeli AP30",
+          "description": "Medeli AP30",
+          "images": {
+            "main": "/data/thumbnails/medeli_85_ap30b.jpg",
+            "thumbnail": "/data/thumbnails/medeli_85_ap30b.jpg",
+            "high_res": "/data/thumbnails/medeli_85_ap30b.jpg",
+            "original": "/data/thumbnails/medeli_85_ap30b.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "medeli_85_ap33",
+          "name": "Medeli AP33",
+          "description": "Medeli AP33",
+          "images": {
+            "main": "/data/thumbnails/medeli_85_ap33.jpg",
+            "thumbnail": "/data/thumbnails/medeli_85_ap33.jpg",
+            "high_res": "/data/thumbnails/medeli_85_ap33.jpg",
+            "original": "/data/thumbnails/medeli_85_ap33.jpg"
           },
           "model_number": null,
           "sku": null

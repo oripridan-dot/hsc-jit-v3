@@ -137,7 +137,8 @@ export const BrandStatsSchema = z.object({
 
 export const BrandFileSchema = z
   .object({
-    brand_identity: BrandIdentitySchema,
+    brand_identity: BrandIdentitySchema.optional().nullable(),
+    brand_name: z.string().optional().nullable(), // Support legacy format
     products: z.array(ProductSchema),
     stats: BrandStatsSchema.optional(),
   })

@@ -1,578 +1,24 @@
 {
-  "brand_identity": {
-    "id": "washburn",
-    "name": "WASHBURN",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/washburn_logo.jpg",
-    "taxonomy_stats": {
-      "validated": 54,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Washburn",
   "products": [
-    {
-      "id": "washburn_04_c5_wsh",
-      "name": "גיטרה קלאסית Washburn C5",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_c5_wsh.jpg",
-      "description": "גיטרה קלאסית Washburn C5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_c5_wsh.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_c5_wsh.jpg",
-        "high_res": "/data/thumbnails/washburn_04_c5_wsh.jpg",
-        "original": "/data/thumbnails/washburn_04_c5_wsh.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wcgm55k",
-      "name": "גיטרה אקוסטית מיני Washburn G-Mini 55 Koa",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wcgm55k.jpg",
-      "description": "גיטרה אקוסטית מיני Washburn G-Mini 55 Koa",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wcgm55k.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wcgm55k.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wcgm55k.jpg",
-        "original": "/data/thumbnails/washburn_04_wcgm55k.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_sdftb_cube10gx",
-      "name": "חבילת גיטרה חשמלית Washburn Sonamaster שחורה + מגבר Roland Cube10GX",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg",
-      "description": "חבילת גיטרה חשמלית Washburn Sonamaster שחורה + מגבר Roland Cube10GX",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg",
-        "high_res": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg",
-        "original": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_sb1pb",
-      "name": "גיטרת בס Washburn Sonamaster SB1PB",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_sb1pb.jpg",
-      "description": "גיטרת בס Washburn Sonamaster SB1PB",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_sb1pb.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_sb1pb.jpg",
-        "high_res": "/data/thumbnails/washburn_04_sb1pb.jpg",
-        "original": "/data/thumbnails/washburn_04_sb1pb.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_hf11s",
-      "name": "גיטרה אקוסטית Washburn Heritage F11S",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_hf11s.jpg",
-      "description": "גיטרה אקוסטית Washburn Heritage F11S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_hf11s.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_hf11s.jpg",
-        "high_res": "/data/thumbnails/washburn_04_hf11s.jpg",
-        "original": "/data/thumbnails/washburn_04_hf11s.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wcg20sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn G20SCE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wcg20sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn G20SCE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wcg20sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wcg20sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wcg20sce.jpg",
-        "original": "/data/thumbnails/washburn_04_wcg20sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ea15atb",
-      "name": "גיטרה אקוסטית מוגברת Washburn Festival EA15",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ea15atb.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Festival EA15",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ea15atb.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ea15atb.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ea15atb.jpg",
-        "original": "/data/thumbnails/washburn_04_ea15atb.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wcg10sens",
-      "name": "גיטרה אקוסטית מוגברת Washburn G10SENS",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wcg10sens.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn G10SENS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wcg10sens.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wcg10sens.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wcg10sens.jpg",
-        "original": "/data/thumbnails/washburn_04_wcg10sens.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wld10sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn WLD10S CE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wld10sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn WLD10S CE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wld10sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wld10sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wld10sce.jpg",
-        "original": "/data/thumbnails/washburn_04_wld10sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ad5cebpack",
-      "name": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ad5cebpack.jpg",
-      "description": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ad5cebpack.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ad5cebpack.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ad5cebpack.jpg",
-        "original": "/data/thumbnails/washburn_04_ad5cebpack.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wa90cevsb",
-      "name": "גיטרה אקוסטית מוגברת Washburn WA90CE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wa90cevsb.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn WA90CE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wa90cevsb.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wa90cevsb.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wa90cevsb.jpg",
-        "original": "/data/thumbnails/washburn_04_wa90cevsb.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wcg55ce",
-      "name": "גיטרה אקוסטית מוגברת Washburn G55CE KOA",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wcg55ce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn G55CE KOA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wcg55ce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wcg55ce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wcg55ce.jpg",
-        "original": "/data/thumbnails/washburn_04_wcg55ce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_hd10s",
-      "name": "גיטרה אקוסטית Washburn HD10S",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_hd10s.jpg",
-      "description": "גיטרה אקוסטית Washburn HD10S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_hd10s.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_hd10s.jpg",
-        "high_res": "/data/thumbnails/washburn_04_hd10s.jpg",
-        "original": "/data/thumbnails/washburn_04_hd10s.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_af5",
-      "name": "גיטרה אקוסטית Washburn Apprentice F5",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_af5.jpg",
-      "description": "גיטרה אקוסטית Washburn Apprentice F5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_af5.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_af5.jpg",
-        "high_res": "/data/thumbnails/washburn_04_af5.jpg",
-        "original": "/data/thumbnails/washburn_04_af5.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_sdfsb_cube10gx",
-      "name": "חבילת גיטרה חשמלית Washburn Sonamaster + מגבר Roland Cube10GX",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg",
-      "description": "חבילת גיטרה חשמלית Washburn Sonamaster + מגבר Roland Cube10GX",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg",
-        "high_res": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg",
-        "original": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_btsc56sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn Bella Tono Allure SC56S",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_btsc56sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Bella Tono Allure SC56S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_btsc56sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_btsc56sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_btsc56sce.jpg",
-        "original": "/data/thumbnails/washburn_04_btsc56sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wi200probk",
-      "name": "גיטרה חשמלית Washburn WI200PRO",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wi200probk.jpg",
-      "description": "גיטרה חשמלית Washburn WI200PRO",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wi200probk.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wi200probk.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wi200probk.jpg",
-        "original": "/data/thumbnails/washburn_04_wi200probk.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_agm5k",
-      "name": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_agm5k.jpg",
-      "description": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_agm5k.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_agm5k.jpg",
-        "high_res": "/data/thumbnails/washburn_04_agm5k.jpg",
-        "original": "/data/thumbnails/washburn_04_agm5k.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_agm5bmk",
-      "name": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_agm5bmk.jpg",
-      "description": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_agm5bmk.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_agm5bmk.jpg",
-        "high_res": "/data/thumbnails/washburn_04_agm5bmk.jpg",
-        "original": "/data/thumbnails/washburn_04_agm5bmk.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_bts9ch",
-      "name": "גיטרה אקוסטית Washburn BT Novo S9",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_bts9ch.jpg",
-      "description": "גיטרה אקוסטית Washburn BT Novo S9",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_bts9ch.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_bts9ch.jpg",
-        "high_res": "/data/thumbnails/washburn_04_bts9ch.jpg",
-        "original": "/data/thumbnails/washburn_04_bts9ch.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_bts24s",
-      "name": "גיטרה אקוסטית Washburn Bella Tono Elegante S24S",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_bts24s.jpg",
-      "description": "גיטרה אקוסטית Washburn Bella Tono Elegante S24S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_bts24s.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_bts24s.jpg",
-        "high_res": "/data/thumbnails/washburn_04_bts24s.jpg",
-        "original": "/data/thumbnails/washburn_04_bts24s.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wd160sw",
-      "name": "גיטרה אקוסטית Washburn WD160SW",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wd160sw.jpg",
-      "description": "גיטרה אקוסטית Washburn WD160SW",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wd160sw.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wd160sw.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wd160sw.jpg",
-        "original": "/data/thumbnails/washburn_04_wd160sw.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ad5cepack",
-      "name": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ad5cepack.jpg",
-      "description": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ad5cepack.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ad5cepack.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ad5cepack.jpg",
-        "original": "/data/thumbnails/washburn_04_ad5cepack.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ag40ce",
-      "name": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ag40ce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ag40ce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ag40ce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ag40ce.jpg",
-        "original": "/data/thumbnails/washburn_04_ag40ce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_dfefe",
-      "name": "גיטרה אקוסטית מוגברת Washburn Deep Forest Ebony FE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_dfefe.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Deep Forest Ebony FE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_dfefe.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_dfefe.jpg",
-        "high_res": "/data/thumbnails/washburn_04_dfefe.jpg",
-        "original": "/data/thumbnails/washburn_04_dfefe.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
     {
       "id": "washburn_04_sb1pts",
       "name": "Washburn Sonamaster SB1P",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_sb1pts.jpg",
       "description": "Washburn Sonamaster SB1P",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/washburn_04_sb1pts.jpg",
+      "product_url": "https://www.halilit.com/items/3202206-Washburn-Sonamaster-SB1P-Bass-Guitar",
+      "is_sold": true,
+      "price": 811.0,
+      "halilit_url": "https://www.halilit.com/items/3202206-Washburn-Sonamaster-SB1P-Bass-Guitar",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 811.0,
+        "original_price": 811.0
+      },
+      "brand": "Washburn",
+      "logo_url": "/assets/logos/washburn_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/washburn_04_sb1pts.jpg",
         "thumbnail": "/data/thumbnails/washburn_04_sb1pts.jpg",
@@ -580,483 +26,27 @@
         "original": "/data/thumbnails/washburn_04_sb1pts.jpg"
       },
       "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_hj40sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn HJ40SCE Heritage Jumbo",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_hj40sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn HJ40SCE Heritage Jumbo",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_hj40sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_hj40sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_hj40sce.jpg",
-        "original": "/data/thumbnails/washburn_04_hj40sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_s1ts",
-      "name": "גיטרה חשמלית Washburn Sonamaster S1",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_s1ts.jpg",
-      "description": "גיטרה חשמלית Washburn Sonamaster S1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_s1ts.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_s1ts.jpg",
-        "high_res": "/data/thumbnails/washburn_04_s1ts.jpg",
-        "original": "/data/thumbnails/washburn_04_s1ts.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wd260swce",
-      "name": "גיטרה אקוסטית מוגברת Washburn WD260SWCE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wd260swce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn WD260SWCE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wd260swce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wd260swce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wd260swce.jpg",
-        "original": "/data/thumbnails/washburn_04_wd260swce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_af5k",
-      "name": "גיטרה אקוסטית Washburn Apprentice F5 K",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_af5k.jpg",
-      "description": "גיטרה אקוסטית Washburn Apprentice F5 K",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_af5k.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_af5k.jpg",
-        "high_res": "/data/thumbnails/washburn_04_af5k.jpg",
-        "original": "/data/thumbnails/washburn_04_af5k.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ad5k",
-      "name": "גיטרה אקוסטית Washburn Apprentice D5-K",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ad5k.jpg",
-      "description": "גיטרה אקוסטית Washburn Apprentice D5-K",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ad5k.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ad5k.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ad5k.jpg",
-        "original": "/data/thumbnails/washburn_04_ad5k.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ea20snb",
-      "name": "גיטרה אקוסטית מוגברת Washburn EA20SNB Nuno Bettencourt",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ea20snb.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn EA20SNB Nuno Bettencourt",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ea20snb.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ea20snb.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ea20snb.jpg",
-        "original": "/data/thumbnails/washburn_04_ea20snb.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_c5ce_washburn",
-      "name": "גיטרה קלאסית מוגברת Washburn C5CE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_c5ce_washburn.jpg",
-      "description": "גיטרה קלאסית מוגברת Washburn C5CE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_c5ce_washburn.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_c5ce_washburn.jpg",
-        "high_res": "/data/thumbnails/washburn_04_c5ce_washburn.jpg",
-        "original": "/data/thumbnails/washburn_04_c5ce_washburn.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_c40",
-      "name": "גיטרה קלאסית Washburn C40",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_c40.jpg",
-      "description": "גיטרה קלאסית Washburn C40",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_c40.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_c40.jpg",
-        "high_res": "/data/thumbnails/washburn_04_c40.jpg",
-        "original": "/data/thumbnails/washburn_04_c40.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_c64sce",
-      "name": "גיטרה קלאסית מוגברת Washburn C64SCE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_c64sce.jpg",
-      "description": "גיטרה קלאסית מוגברת Washburn C64SCE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_c64sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_c64sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_c64sce.jpg",
-        "original": "/data/thumbnails/washburn_04_c64sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wlo10sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn WLO10SCE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wlo10sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn WLO10SCE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wlo10sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wlo10sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wlo10sce.jpg",
-        "original": "/data/thumbnails/washburn_04_wlo10sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ad5",
-      "name": "גיטרה אקוסטית Washburn Apprentice D5",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ad5.jpg",
-      "description": "גיטרה אקוסטית Washburn Apprentice D5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ad5.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ad5.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ad5.jpg",
-        "original": "/data/thumbnails/washburn_04_ad5.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_hd10scetb",
-      "name": "גיטרה אקוסטית מוגברת Washburn Heritage HD10SCETB",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_hd10scetb.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Heritage HD10SCETB",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_hd10scetb.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_hd10scetb.jpg",
-        "high_res": "/data/thumbnails/washburn_04_hd10scetb.jpg",
-        "original": "/data/thumbnails/washburn_04_hd10scetb.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ag40cek",
-      "name": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CEK",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ag40cek.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CEK",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ag40cek.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ag40cek.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ag40cek.jpg",
-        "original": "/data/thumbnails/washburn_04_ag40cek.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_ag70ce",
-      "name": "גיטרה אקוסטית מוגברת Washburn Apprentice AG70CE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ag70ce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Apprentice AG70CE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_ag70ce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_ag70ce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_ag70ce.jpg",
-        "original": "/data/thumbnails/washburn_04_ag70ce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_hd20sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn Heritage 20 HD20SCE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_hd20sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Heritage 20 HD20SCE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_hd20sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_hd20sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_hd20sce.jpg",
-        "original": "/data/thumbnails/washburn_04_hd20sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wcg15sce12",
-      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Washburn G15SCE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wcg15sce12.jpg",
-      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Washburn G15SCE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wcg15sce12.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wcg15sce12.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wcg15sce12.jpg",
-        "original": "/data/thumbnails/washburn_04_wcg15sce12.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wcg66sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn Comfort G66SCE Spalt Maple",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wcg66sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Comfort G66SCE Spalt Maple",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wcg66sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wcg66sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wcg66sce.jpg",
-        "original": "/data/thumbnails/washburn_04_wcg66sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_wcg25sce",
-      "name": "גיטרה אקוסטית מוגברת Washburn Comfort G25SCE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_wcg25sce.jpg",
-      "description": "גיטרה אקוסטית מוגברת Washburn Comfort G25SCE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_wcg25sce.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_wcg25sce.jpg",
-        "high_res": "/data/thumbnails/washburn_04_wcg25sce.jpg",
-        "original": "/data/thumbnails/washburn_04_wcg25sce.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_eact42s",
-      "name": "גיטרה קלאסית מוגברת Washburn Festival EACT42S",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_eact42s.jpg",
-      "description": "גיטרה קלאסית מוגברת Washburn Festival EACT42S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_eact42s.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_eact42s.jpg",
-        "high_res": "/data/thumbnails/washburn_04_eact42s.jpg",
-        "original": "/data/thumbnails/washburn_04_eact42s.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_t24nmk",
-      "name": "גיטרה בס Washburn T24",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_t24nmk.jpg",
-      "description": "גיטרה בס Washburn T24",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_t24nmk.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_t24nmk.jpg",
-        "high_res": "/data/thumbnails/washburn_04_t24nmk.jpg",
-        "original": "/data/thumbnails/washburn_04_t24nmk.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_sdfsb",
-      "name": "גיטרה חשמלית Washburn Sonamaster SDFSB Deluxe",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_sdfsb.jpg",
-      "description": "גיטרה חשמלית Washburn Sonamaster SDFSB Deluxe",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_sdfsb.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_sdfsb.jpg",
-        "high_res": "/data/thumbnails/washburn_04_sdfsb.jpg",
-        "original": "/data/thumbnails/washburn_04_sdfsb.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "washburn_04_gcdndlx",
       "name": "Washburn Deluxe Dreadnought Acoustic Guitar Case",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_gcdndlx.jpg",
       "description": "Washburn Deluxe Dreadnought Acoustic Guitar Case",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/washburn_04_gcdndlx.jpg",
+      "product_url": "https://www.halilit.com/items/4274685-washburn-deluxe-dreadnought-acoustic-guitar-case",
+      "is_sold": true,
+      "price": 458.0,
+      "halilit_url": "https://www.halilit.com/items/4274685-washburn-deluxe-dreadnought-acoustic-guitar-case",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 458.0,
+        "original_price": 458.0
+      },
+      "brand": "Washburn",
+      "logo_url": "/assets/logos/washburn_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/washburn_04_gcdndlx.jpg",
         "thumbnail": "/data/thumbnails/washburn_04_gcdndlx.jpg",
@@ -1064,43 +54,27 @@
         "original": "/data/thumbnails/washburn_04_gcdndlx.jpg"
       },
       "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_sdftb",
-      "name": "גיטרה חשמלית Washburn Sonamaster SDFTB Deluxe",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_sdftb.jpg",
-      "description": "גיטרה חשמלית Washburn Sonamaster SDFTB Deluxe",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_sdftb.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_sdftb.jpg",
-        "high_res": "/data/thumbnails/washburn_04_sdftb.jpg",
-        "original": "/data/thumbnails/washburn_04_sdftb.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "washburn_04_ws300hwh",
       "name": "Washburn WS300HWH",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ws300hwh.jpg",
       "description": "Washburn WS300HWH",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/washburn_04_ws300hwh.jpg",
+      "product_url": "https://www.halilit.com/items/7773708-washburn-ws300hwh",
+      "is_sold": true,
+      "price": 680.0,
+      "halilit_url": "https://www.halilit.com/items/7773708-washburn-ws300hwh",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 680.0,
+        "original_price": 680.0
+      },
+      "brand": "Washburn",
+      "logo_url": "/assets/logos/washburn_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/washburn_04_ws300hwh.jpg",
         "thumbnail": "/data/thumbnails/washburn_04_ws300hwh.jpg",
@@ -1108,21 +82,27 @@
         "original": "/data/thumbnails/washburn_04_ws300hwh.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "washburn_04_ws300b",
       "name": "Washburn WS300B",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ws300b.jpg",
       "description": "Washburn WS300B",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/washburn_04_ws300b.jpg",
+      "product_url": "https://www.halilit.com/items/7773499-washburn-ws300b",
+      "is_sold": true,
+      "price": 595.0,
+      "halilit_url": "https://www.halilit.com/items/7773499-washburn-ws300b",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 595.0,
+        "original_price": 595.0
+      },
+      "brand": "Washburn",
+      "logo_url": "/assets/logos/washburn_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/washburn_04_ws300b.jpg",
         "thumbnail": "/data/thumbnails/washburn_04_ws300b.jpg",
@@ -1130,21 +110,27 @@
         "original": "/data/thumbnails/washburn_04_ws300b.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "washburn_04_ws300ts",
       "name": "Washburn WS300TS",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ws300ts.jpg",
       "description": "Washburn WS300TS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/washburn_04_ws300ts.jpg",
+      "product_url": "https://www.halilit.com/items/7773652-washburn-ws300ts",
+      "is_sold": true,
+      "price": 680.0,
+      "halilit_url": "https://www.halilit.com/items/7773652-washburn-ws300ts",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 680.0,
+        "original_price": 680.0
+      },
+      "brand": "Washburn",
+      "logo_url": "/assets/logos/washburn_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/washburn_04_ws300ts.jpg",
         "thumbnail": "/data/thumbnails/washburn_04_ws300ts.jpg",
@@ -1152,21 +138,27 @@
         "original": "/data/thumbnails/washburn_04_ws300ts.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "washburn_04_ws300hb",
       "name": "Washburn WS300HB",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_ws300hb.jpg",
       "description": "Washburn WS300HB",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/washburn_04_ws300hb.jpg",
+      "product_url": "https://www.halilit.com/items/7773674-washburn-ws300hb",
+      "is_sold": true,
+      "price": 680.0,
+      "halilit_url": "https://www.halilit.com/items/7773674-washburn-ws300hb",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 680.0,
+        "original_price": 680.0
+      },
+      "brand": "Washburn",
+      "logo_url": "/assets/logos/washburn_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/washburn_04_ws300hb.jpg",
         "thumbnail": "/data/thumbnails/washburn_04_ws300hb.jpg",
@@ -1174,363 +166,27 @@
         "original": "/data/thumbnails/washburn_04_ws300hb.jpg"
       },
       "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "washburn_04_m3swetwrk",
-      "name": "מנדולינה חשמלית Washburn Americana M3SWE",
-      "brand": "washburn",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/washburn_04_m3swetwrk.jpg",
-      "description": "מנדולינה חשמלית Washburn Americana M3SWE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/washburn_04_m3swetwrk.jpg",
-        "thumbnail": "/data/thumbnails/washburn_04_m3swetwrk.jpg",
-        "high_res": "/data/thumbnails/washburn_04_m3swetwrk.jpg",
-        "original": "/data/thumbnails/washburn_04_m3swetwrk.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "Washburn",
+  "generated_at": "2026-01-25T22:19:24.319057",
   "brand_slug": "washburn",
-  "refined_at": "2026-01-25T02:01:47.720291+00:00",
+  "refined_at": "2026-01-25T22:19:24.384646+00:00",
+  "brand_identity": {
+    "id": "washburn",
+    "name": "Washburn",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/washburn_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 6,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
-    "guitars": {
+    "accessories": {
       "General": [
-        {
-          "id": "washburn_04_c5_wsh",
-          "name": "גיטרה קלאסית Washburn C5",
-          "description": "גיטרה קלאסית Washburn C5",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_c5_wsh.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_c5_wsh.jpg",
-            "high_res": "/data/thumbnails/washburn_04_c5_wsh.jpg",
-            "original": "/data/thumbnails/washburn_04_c5_wsh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wcgm55k",
-          "name": "גיטרה אקוסטית מיני Washburn G-Mini 55 Koa",
-          "description": "גיטרה אקוסטית מיני Washburn G-Mini 55 Koa",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wcgm55k.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wcgm55k.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wcgm55k.jpg",
-            "original": "/data/thumbnails/washburn_04_wcgm55k.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_sdftb_cube10gx",
-          "name": "חבילת גיטרה חשמלית Washburn Sonamaster שחורה + מגבר Roland Cube10GX",
-          "description": "חבילת גיטרה חשמלית Washburn Sonamaster שחורה + מגבר Roland Cube10GX",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg",
-            "high_res": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg",
-            "original": "/data/thumbnails/washburn_04_sdftb_cube10gx.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_sb1pb",
-          "name": "גיטרת בס Washburn Sonamaster SB1PB",
-          "description": "גיטרת בס Washburn Sonamaster SB1PB",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_sb1pb.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_sb1pb.jpg",
-            "high_res": "/data/thumbnails/washburn_04_sb1pb.jpg",
-            "original": "/data/thumbnails/washburn_04_sb1pb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_hf11s",
-          "name": "גיטרה אקוסטית Washburn Heritage F11S",
-          "description": "גיטרה אקוסטית Washburn Heritage F11S",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_hf11s.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_hf11s.jpg",
-            "high_res": "/data/thumbnails/washburn_04_hf11s.jpg",
-            "original": "/data/thumbnails/washburn_04_hf11s.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wcg20sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn G20SCE",
-          "description": "גיטרה אקוסטית מוגברת Washburn G20SCE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wcg20sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wcg20sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wcg20sce.jpg",
-            "original": "/data/thumbnails/washburn_04_wcg20sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ea15atb",
-          "name": "גיטרה אקוסטית מוגברת Washburn Festival EA15",
-          "description": "גיטרה אקוסטית מוגברת Washburn Festival EA15",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ea15atb.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ea15atb.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ea15atb.jpg",
-            "original": "/data/thumbnails/washburn_04_ea15atb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wcg10sens",
-          "name": "גיטרה אקוסטית מוגברת Washburn G10SENS",
-          "description": "גיטרה אקוסטית מוגברת Washburn G10SENS",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wcg10sens.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wcg10sens.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wcg10sens.jpg",
-            "original": "/data/thumbnails/washburn_04_wcg10sens.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wld10sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn WLD10S CE",
-          "description": "גיטרה אקוסטית מוגברת Washburn WLD10S CE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wld10sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wld10sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wld10sce.jpg",
-            "original": "/data/thumbnails/washburn_04_wld10sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ad5cebpack",
-          "name": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-          "description": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ad5cebpack.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ad5cebpack.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ad5cebpack.jpg",
-            "original": "/data/thumbnails/washburn_04_ad5cebpack.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wa90cevsb",
-          "name": "גיטרה אקוסטית מוגברת Washburn WA90CE",
-          "description": "גיטרה אקוסטית מוגברת Washburn WA90CE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wa90cevsb.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wa90cevsb.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wa90cevsb.jpg",
-            "original": "/data/thumbnails/washburn_04_wa90cevsb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wcg55ce",
-          "name": "גיטרה אקוסטית מוגברת Washburn G55CE KOA",
-          "description": "גיטרה אקוסטית מוגברת Washburn G55CE KOA",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wcg55ce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wcg55ce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wcg55ce.jpg",
-            "original": "/data/thumbnails/washburn_04_wcg55ce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_hd10s",
-          "name": "גיטרה אקוסטית Washburn HD10S",
-          "description": "גיטרה אקוסטית Washburn HD10S",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_hd10s.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_hd10s.jpg",
-            "high_res": "/data/thumbnails/washburn_04_hd10s.jpg",
-            "original": "/data/thumbnails/washburn_04_hd10s.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_af5",
-          "name": "גיטרה אקוסטית Washburn Apprentice F5",
-          "description": "גיטרה אקוסטית Washburn Apprentice F5",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_af5.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_af5.jpg",
-            "high_res": "/data/thumbnails/washburn_04_af5.jpg",
-            "original": "/data/thumbnails/washburn_04_af5.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_sdfsb_cube10gx",
-          "name": "חבילת גיטרה חשמלית Washburn Sonamaster + מגבר Roland Cube10GX",
-          "description": "חבילת גיטרה חשמלית Washburn Sonamaster + מגבר Roland Cube10GX",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg",
-            "high_res": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg",
-            "original": "/data/thumbnails/washburn_04_sdfsb_cube10gx.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_btsc56sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn Bella Tono Allure SC56S",
-          "description": "גיטרה אקוסטית מוגברת Washburn Bella Tono Allure SC56S",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_btsc56sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_btsc56sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_btsc56sce.jpg",
-            "original": "/data/thumbnails/washburn_04_btsc56sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wi200probk",
-          "name": "גיטרה חשמלית Washburn WI200PRO",
-          "description": "גיטרה חשמלית Washburn WI200PRO",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wi200probk.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wi200probk.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wi200probk.jpg",
-            "original": "/data/thumbnails/washburn_04_wi200probk.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_agm5k",
-          "name": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-          "description": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_agm5k.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_agm5k.jpg",
-            "high_res": "/data/thumbnails/washburn_04_agm5k.jpg",
-            "original": "/data/thumbnails/washburn_04_agm5k.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_agm5bmk",
-          "name": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-          "description": "גיטרה אקוסטית מיני Washburn Apprentice G-Mini 5",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_agm5bmk.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_agm5bmk.jpg",
-            "high_res": "/data/thumbnails/washburn_04_agm5bmk.jpg",
-            "original": "/data/thumbnails/washburn_04_agm5bmk.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_bts9ch",
-          "name": "גיטרה אקוסטית Washburn BT Novo S9",
-          "description": "גיטרה אקוסטית Washburn BT Novo S9",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_bts9ch.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_bts9ch.jpg",
-            "high_res": "/data/thumbnails/washburn_04_bts9ch.jpg",
-            "original": "/data/thumbnails/washburn_04_bts9ch.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_bts24s",
-          "name": "גיטרה אקוסטית Washburn Bella Tono Elegante S24S",
-          "description": "גיטרה אקוסטית Washburn Bella Tono Elegante S24S",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_bts24s.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_bts24s.jpg",
-            "high_res": "/data/thumbnails/washburn_04_bts24s.jpg",
-            "original": "/data/thumbnails/washburn_04_bts24s.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wd160sw",
-          "name": "גיטרה אקוסטית Washburn WD160SW",
-          "description": "גיטרה אקוסטית Washburn WD160SW",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wd160sw.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wd160sw.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wd160sw.jpg",
-            "original": "/data/thumbnails/washburn_04_wd160sw.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ad5cepack",
-          "name": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-          "description": "ערכת גיטרה אקוסטית מוגברת Washburn Apprentice D5CE-Pack",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ad5cepack.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ad5cepack.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ad5cepack.jpg",
-            "original": "/data/thumbnails/washburn_04_ad5cepack.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ag40ce",
-          "name": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CE",
-          "description": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ag40ce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ag40ce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ag40ce.jpg",
-            "original": "/data/thumbnails/washburn_04_ag40ce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_dfefe",
-          "name": "גיטרה אקוסטית מוגברת Washburn Deep Forest Ebony FE",
-          "description": "גיטרה אקוסטית מוגברת Washburn Deep Forest Ebony FE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_dfefe.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_dfefe.jpg",
-            "high_res": "/data/thumbnails/washburn_04_dfefe.jpg",
-            "original": "/data/thumbnails/washburn_04_dfefe.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
         {
           "id": "washburn_04_sb1pts",
           "name": "Washburn Sonamaster SB1P",
@@ -1545,279 +201,6 @@
           "sku": null
         },
         {
-          "id": "washburn_04_hj40sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn HJ40SCE Heritage Jumbo",
-          "description": "גיטרה אקוסטית מוגברת Washburn HJ40SCE Heritage Jumbo",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_hj40sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_hj40sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_hj40sce.jpg",
-            "original": "/data/thumbnails/washburn_04_hj40sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_s1ts",
-          "name": "גיטרה חשמלית Washburn Sonamaster S1",
-          "description": "גיטרה חשמלית Washburn Sonamaster S1",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_s1ts.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_s1ts.jpg",
-            "high_res": "/data/thumbnails/washburn_04_s1ts.jpg",
-            "original": "/data/thumbnails/washburn_04_s1ts.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wd260swce",
-          "name": "גיטרה אקוסטית מוגברת Washburn WD260SWCE",
-          "description": "גיטרה אקוסטית מוגברת Washburn WD260SWCE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wd260swce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wd260swce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wd260swce.jpg",
-            "original": "/data/thumbnails/washburn_04_wd260swce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_af5k",
-          "name": "גיטרה אקוסטית Washburn Apprentice F5 K",
-          "description": "גיטרה אקוסטית Washburn Apprentice F5 K",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_af5k.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_af5k.jpg",
-            "high_res": "/data/thumbnails/washburn_04_af5k.jpg",
-            "original": "/data/thumbnails/washburn_04_af5k.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ad5k",
-          "name": "גיטרה אקוסטית Washburn Apprentice D5-K",
-          "description": "גיטרה אקוסטית Washburn Apprentice D5-K",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ad5k.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ad5k.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ad5k.jpg",
-            "original": "/data/thumbnails/washburn_04_ad5k.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ea20snb",
-          "name": "גיטרה אקוסטית מוגברת Washburn EA20SNB Nuno Bettencourt",
-          "description": "גיטרה אקוסטית מוגברת Washburn EA20SNB Nuno Bettencourt",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ea20snb.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ea20snb.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ea20snb.jpg",
-            "original": "/data/thumbnails/washburn_04_ea20snb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_c5ce_washburn",
-          "name": "גיטרה קלאסית מוגברת Washburn C5CE",
-          "description": "גיטרה קלאסית מוגברת Washburn C5CE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_c5ce_washburn.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_c5ce_washburn.jpg",
-            "high_res": "/data/thumbnails/washburn_04_c5ce_washburn.jpg",
-            "original": "/data/thumbnails/washburn_04_c5ce_washburn.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_c40",
-          "name": "גיטרה קלאסית Washburn C40",
-          "description": "גיטרה קלאסית Washburn C40",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_c40.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_c40.jpg",
-            "high_res": "/data/thumbnails/washburn_04_c40.jpg",
-            "original": "/data/thumbnails/washburn_04_c40.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_c64sce",
-          "name": "גיטרה קלאסית מוגברת Washburn C64SCE",
-          "description": "גיטרה קלאסית מוגברת Washburn C64SCE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_c64sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_c64sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_c64sce.jpg",
-            "original": "/data/thumbnails/washburn_04_c64sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wlo10sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn WLO10SCE",
-          "description": "גיטרה אקוסטית מוגברת Washburn WLO10SCE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wlo10sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wlo10sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wlo10sce.jpg",
-            "original": "/data/thumbnails/washburn_04_wlo10sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ad5",
-          "name": "גיטרה אקוסטית Washburn Apprentice D5",
-          "description": "גיטרה אקוסטית Washburn Apprentice D5",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ad5.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ad5.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ad5.jpg",
-            "original": "/data/thumbnails/washburn_04_ad5.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_hd10scetb",
-          "name": "גיטרה אקוסטית מוגברת Washburn Heritage HD10SCETB",
-          "description": "גיטרה אקוסטית מוגברת Washburn Heritage HD10SCETB",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_hd10scetb.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_hd10scetb.jpg",
-            "high_res": "/data/thumbnails/washburn_04_hd10scetb.jpg",
-            "original": "/data/thumbnails/washburn_04_hd10scetb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ag40cek",
-          "name": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CEK",
-          "description": "גיטרה אקוסטית מוגברת Washburn Apprentice AG40CEK",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ag40cek.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ag40cek.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ag40cek.jpg",
-            "original": "/data/thumbnails/washburn_04_ag40cek.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_ag70ce",
-          "name": "גיטרה אקוסטית מוגברת Washburn Apprentice AG70CE",
-          "description": "גיטרה אקוסטית מוגברת Washburn Apprentice AG70CE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_ag70ce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_ag70ce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_ag70ce.jpg",
-            "original": "/data/thumbnails/washburn_04_ag70ce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_hd20sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn Heritage 20 HD20SCE",
-          "description": "גיטרה אקוסטית מוגברת Washburn Heritage 20 HD20SCE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_hd20sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_hd20sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_hd20sce.jpg",
-            "original": "/data/thumbnails/washburn_04_hd20sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wcg15sce12",
-          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Washburn G15SCE",
-          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Washburn G15SCE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wcg15sce12.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wcg15sce12.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wcg15sce12.jpg",
-            "original": "/data/thumbnails/washburn_04_wcg15sce12.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wcg66sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn Comfort G66SCE Spalt Maple",
-          "description": "גיטרה אקוסטית מוגברת Washburn Comfort G66SCE Spalt Maple",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wcg66sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wcg66sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wcg66sce.jpg",
-            "original": "/data/thumbnails/washburn_04_wcg66sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_wcg25sce",
-          "name": "גיטרה אקוסטית מוגברת Washburn Comfort G25SCE",
-          "description": "גיטרה אקוסטית מוגברת Washburn Comfort G25SCE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_wcg25sce.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_wcg25sce.jpg",
-            "high_res": "/data/thumbnails/washburn_04_wcg25sce.jpg",
-            "original": "/data/thumbnails/washburn_04_wcg25sce.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_eact42s",
-          "name": "גיטרה קלאסית מוגברת Washburn Festival EACT42S",
-          "description": "גיטרה קלאסית מוגברת Washburn Festival EACT42S",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_eact42s.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_eact42s.jpg",
-            "high_res": "/data/thumbnails/washburn_04_eact42s.jpg",
-            "original": "/data/thumbnails/washburn_04_eact42s.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_t24nmk",
-          "name": "גיטרה בס Washburn T24",
-          "description": "גיטרה בס Washburn T24",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_t24nmk.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_t24nmk.jpg",
-            "high_res": "/data/thumbnails/washburn_04_t24nmk.jpg",
-            "original": "/data/thumbnails/washburn_04_t24nmk.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_sdfsb",
-          "name": "גיטרה חשמלית Washburn Sonamaster SDFSB Deluxe",
-          "description": "גיטרה חשמלית Washburn Sonamaster SDFSB Deluxe",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_sdfsb.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_sdfsb.jpg",
-            "high_res": "/data/thumbnails/washburn_04_sdfsb.jpg",
-            "original": "/data/thumbnails/washburn_04_sdfsb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "washburn_04_gcdndlx",
           "name": "Washburn Deluxe Dreadnought Acoustic Guitar Case",
           "description": "Washburn Deluxe Dreadnought Acoustic Guitar Case",
@@ -1826,19 +209,6 @@
             "thumbnail": "/data/thumbnails/washburn_04_gcdndlx.jpg",
             "high_res": "/data/thumbnails/washburn_04_gcdndlx.jpg",
             "original": "/data/thumbnails/washburn_04_gcdndlx.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_sdftb",
-          "name": "גיטרה חשמלית Washburn Sonamaster SDFTB Deluxe",
-          "description": "גיטרה חשמלית Washburn Sonamaster SDFTB Deluxe",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_sdftb.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_sdftb.jpg",
-            "high_res": "/data/thumbnails/washburn_04_sdftb.jpg",
-            "original": "/data/thumbnails/washburn_04_sdftb.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1891,19 +261,6 @@
             "thumbnail": "/data/thumbnails/washburn_04_ws300hb.jpg",
             "high_res": "/data/thumbnails/washburn_04_ws300hb.jpg",
             "original": "/data/thumbnails/washburn_04_ws300hb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "washburn_04_m3swetwrk",
-          "name": "מנדולינה חשמלית Washburn Americana M3SWE",
-          "description": "מנדולינה חשמלית Washburn Americana M3SWE",
-          "images": {
-            "main": "/data/thumbnails/washburn_04_m3swetwrk.jpg",
-            "thumbnail": "/data/thumbnails/washburn_04_m3swetwrk.jpg",
-            "high_res": "/data/thumbnails/washburn_04_m3swetwrk.jpg",
-            "original": "/data/thumbnails/washburn_04_m3swetwrk.jpg"
           },
           "model_number": null,
           "sku": null

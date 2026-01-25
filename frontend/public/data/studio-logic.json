@@ -1,27 +1,23 @@
 {
-  "brand_identity": {
-    "id": "studio-logic",
-    "name": "STUDIO-LOGIC",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/studio-logic_logo.png",
-    "taxonomy_stats": {
-      "validated": 1,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Studio Logic",
   "products": [
     {
       "id": "studio_logic_14_numacompact_case",
       "name": "Studiologic Soft Case",
-      "brand": "studio-logic",
+      "description": "Studiologic Soft Case",
       "category": "accessories",
       "image_url": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
-      "description": "Studiologic Soft Case",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1969983-studiologic-soft-case",
+      "is_sold": true,
+      "price": 258.0,
+      "halilit_url": "https://www.halilit.com/items/1969983-studiologic-soft-case",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 258.0,
+        "original_price": 258.0
+      },
+      "brand": "Studio Logic",
+      "logo_url": "/assets/logos/studio-logic_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/studio_logic_14_numacompact_case.jpg",
@@ -34,9 +30,20 @@
       ]
     }
   ],
-  "brand_name": "Studio-Logic",
+  "generated_at": "2026-01-25T22:19:24.313628",
   "brand_slug": "studio-logic",
-  "refined_at": "2026-01-25T02:01:47.484187+00:00",
+  "refined_at": "2026-01-25T22:19:24.323277+00:00",
+  "brand_identity": {
+    "id": "studio-logic",
+    "name": "Studio Logic",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/studio-logic_logo.png",
+    "taxonomy_stats": {
+      "validated": 1,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [

@@ -1,28 +1,24 @@
 {
-  "brand_identity": {
-    "id": "innovative-percussion",
-    "name": "INNOVATIVE-PERCUSSION",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/innovative-percussion_logo.png",
-    "taxonomy_stats": {
-      "validated": 43,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Innovative Percussion",
   "products": [
     {
       "id": "innovative_percussion_28_ipsr",
       "name": "Innovative Percussion IP-SR",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ipsr.jpg",
       "description": "Innovative Percussion IP-SR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ipsr.jpg",
+      "product_url": "https://www.halilit.com/items/1658117-innovative-percussion-ip-sr-drumsticks",
+      "is_sold": true,
+      "price": 54.0,
+      "halilit_url": "https://www.halilit.com/items/1658117-innovative-percussion-ip-sr-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 54.0,
+        "original_price": 54.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ipsr.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ipsr.jpg",
@@ -30,21 +26,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ipsr.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_iphbn",
       "name": "Innovative Percussion IP-HB",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_iphbn.jpg",
       "description": "Innovative Percussion IP-HB",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_iphbn.jpg",
+      "product_url": "https://www.halilit.com/items/1658125-innovative-percussion-ip-hb-drumsticks",
+      "is_sold": true,
+      "price": 54.0,
+      "halilit_url": "https://www.halilit.com/items/1658125-innovative-percussion-ip-hb-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 54.0,
+        "original_price": 54.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_iphbn.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_iphbn.jpg",
@@ -52,21 +54,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_iphbn.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_nz1",
       "name": "Innovative Percussion NZ-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_nz1.jpg",
       "description": "Innovative Percussion NZ-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_nz1.jpg",
+      "product_url": "https://www.halilit.com/items/1657386-innovative-percussion-nz-1-drumsticks",
+      "is_sold": true,
+      "price": 59.0,
+      "halilit_url": "https://www.halilit.com/items/1657386-innovative-percussion-nz-1-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 59.0,
+        "original_price": 59.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_nz1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_nz1.jpg",
@@ -74,43 +82,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_nz1.jpg"
       },
       "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "innovative_percussion_28_lax1",
-      "name": "מקלות תופים Innovative Percussion LAX-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_lax1.jpg",
-      "description": "מקלות תופים Innovative Percussion LAX-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/innovative_percussion_28_lax1.jpg",
-        "thumbnail": "/data/thumbnails/innovative_percussion_28_lax1.jpg",
-        "high_res": "/data/thumbnails/innovative_percussion_28_lax1.jpg",
-        "original": "/data/thumbnails/innovative_percussion_28_lax1.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ip7a",
       "name": "Innovative Percussion IP-7A",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ip7a.jpg",
       "description": "Innovative Percussion IP-7A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ip7a.jpg",
+      "product_url": "https://www.halilit.com/items/1652588-innovative-percussion-ip-7a-drumsticks",
+      "is_sold": true,
+      "price": 67.0,
+      "halilit_url": "https://www.halilit.com/items/1652588-innovative-percussion-ip-7a-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 67.0,
+        "original_price": 67.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ip7a.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ip7a.jpg",
@@ -118,21 +110,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ip7a.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_bzw2",
       "name": "Innovative Percussion BZW-2",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_bzw2.jpg",
       "description": "Innovative Percussion BZW-2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_bzw2.jpg",
+      "product_url": "https://www.halilit.com/items/1658230-innovative-percussion-bzw-2-drumsticks",
+      "is_sold": true,
+      "price": 126.0,
+      "halilit_url": "https://www.halilit.com/items/1658230-innovative-percussion-bzw-2-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 126.0,
+        "original_price": 126.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_bzw2.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_bzw2.jpg",
@@ -140,21 +138,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_bzw2.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ip5a",
       "name": "Innovative Percussion IP-5A",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ip5a.jpg",
       "description": "Innovative Percussion IP-5A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ip5a.jpg",
+      "product_url": "https://www.halilit.com/items/1652604-innovative-percussion-ip-5a-drumsticks",
+      "is_sold": true,
+      "price": 67.0,
+      "halilit_url": "https://www.halilit.com/items/1652604-innovative-percussion-ip-5a-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 67.0,
+        "original_price": 67.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ip5a.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ip5a.jpg",
@@ -162,21 +166,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ip5a.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_se1",
       "name": "Innovative Percussion SE-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_se1.jpg",
       "description": "Innovative Percussion SE-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_se1.jpg",
+      "product_url": "https://www.halilit.com/items/1653635-innovative-percussion-se-1-drumsticks",
+      "is_sold": true,
+      "price": 54.0,
+      "halilit_url": "https://www.halilit.com/items/1653635-innovative-percussion-se-1-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 54.0,
+        "original_price": 54.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_se1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_se1.jpg",
@@ -184,21 +194,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_se1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ip5ab",
       "name": "Innovative Percussion IP-5AB",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ip5ab.jpg",
       "description": "Innovative Percussion IP-5AB",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ip5ab.jpg",
+      "product_url": "https://www.halilit.com/items/1652622-innovative-percussion-ip-5ab-drumsticks",
+      "is_sold": true,
+      "price": 67.0,
+      "halilit_url": "https://www.halilit.com/items/1652622-innovative-percussion-ip-5ab-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 67.0,
+        "original_price": 67.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ip5ab.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ip5ab.jpg",
@@ -206,21 +222,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ip5ab.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ip5am",
       "name": "Innovative Percussion IP-5AM",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ip5am.jpg",
       "description": "Innovative Percussion IP-5AM",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ip5am.jpg",
+      "product_url": "https://www.halilit.com/items/1658268-innovative-percussion-ip-5am-drumsticks",
+      "is_sold": true,
+      "price": 122.0,
+      "halilit_url": "https://www.halilit.com/items/1658268-innovative-percussion-ip-5am-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 122.0,
+        "original_price": 122.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ip5am.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ip5am.jpg",
@@ -228,21 +250,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ip5am.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ip5b",
       "name": "Innovative Percussion IP-5B",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ip5b.jpg",
       "description": "Innovative Percussion IP-5B",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ip5b.jpg",
+      "product_url": "https://www.halilit.com/items/1652637-innovative-percussion-ip-5b-drumsticks",
+      "is_sold": true,
+      "price": 67.0,
+      "halilit_url": "https://www.halilit.com/items/1652637-innovative-percussion-ip-5b-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 67.0,
+        "original_price": 67.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ip5b.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ip5b.jpg",
@@ -250,21 +278,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ip5b.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_jdi",
       "name": "Innovative Percussion JD-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_jdi.jpg",
       "description": "Innovative Percussion JD-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_jdi.jpg",
+      "product_url": "https://www.halilit.com/items/1657257-innovative-percussion-jd-1-drumsticks",
+      "is_sold": true,
+      "price": 62.0,
+      "halilit_url": "https://www.halilit.com/items/1657257-innovative-percussion-jd-1-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 62.0,
+        "original_price": 62.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_jdi.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_jdi.jpg",
@@ -272,21 +306,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_jdi.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ip2b",
       "name": "Innovative Percussion IP-2B",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ip2b.jpg",
       "description": "Innovative Percussion IP-2B",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ip2b.jpg",
+      "product_url": "https://www.halilit.com/items/1652655-innovative-percussion-ip-2b-drumsticks",
+      "is_sold": true,
+      "price": 67.0,
+      "halilit_url": "https://www.halilit.com/items/1652655-innovative-percussion-ip-2b-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 67.0,
+        "original_price": 67.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ip2b.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ip2b.jpg",
@@ -294,21 +334,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ip2b.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ipl8a",
       "name": "Innovative Percussion IP-L8A",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ipl8a.jpg",
       "description": "Innovative Percussion IP-L8A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ipl8a.jpg",
+      "product_url": "https://www.halilit.com/items/1652676-innovative-percussion-ip-l8a-drumsticks",
+      "is_sold": true,
+      "price": 54.0,
+      "halilit_url": "https://www.halilit.com/items/1652676-innovative-percussion-ip-l8a-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 54.0,
+        "original_price": 54.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ipl8a.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ipl8a.jpg",
@@ -316,21 +362,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ipl8a.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ipl3a",
       "name": "Innovative Percussion IP-L3A",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ipl3a.jpg",
       "description": "Innovative Percussion IP-L3A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ipl3a.jpg",
+      "product_url": "https://www.halilit.com/items/1652684-innovative-percussion-ip-l3a-drumsticks",
+      "is_sold": true,
+      "price": 54.0,
+      "halilit_url": "https://www.halilit.com/items/1652684-innovative-percussion-ip-l3a-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 54.0,
+        "original_price": 54.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ipl3a.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ipl3a.jpg",
@@ -338,21 +390,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ipl3a.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ipl9a",
       "name": "Innovative Percussion IP-L9A",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ipl9a.jpg",
       "description": "Innovative Percussion IP-L9A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ipl9a.jpg",
+      "product_url": "https://www.halilit.com/items/1652693-innovative-percussion-ip-l9a-drumsticks",
+      "is_sold": true,
+      "price": 54.0,
+      "halilit_url": "https://www.halilit.com/items/1652693-innovative-percussion-ip-l9a-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 54.0,
+        "original_price": 54.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ipl9a.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ipl9a.jpg",
@@ -360,21 +418,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ipl9a.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_jr1",
       "name": "Innovative Percussion JR-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_jr1.jpg",
       "description": "Innovative Percussion JR-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_jr1.jpg",
+      "product_url": "https://www.halilit.com/items/1657305-innovative-percussion-jr-1-drumsticks",
+      "is_sold": true,
+      "price": 59.0,
+      "halilit_url": "https://www.halilit.com/items/1657305-innovative-percussion-jr-1-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 59.0,
+        "original_price": 59.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_jr1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_jr1.jpg",
@@ -382,21 +446,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_jr1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_ipl1a",
       "name": "Innovative Percussion IP-L1A",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg",
       "description": "Innovative Percussion IP-L1A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg",
+      "product_url": "https://www.halilit.com/items/1652699-innovative-percussion-ip-l1a-drumsticks",
+      "is_sold": true,
+      "price": 54.0,
+      "halilit_url": "https://www.halilit.com/items/1652699-innovative-percussion-ip-l1a-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 54.0,
+        "original_price": 54.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg",
@@ -404,43 +474,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg"
       },
       "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "innovative_percussion_28_matt1",
-      "name": "מקלות תופים Innovative Percussion MATT-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_matt1.jpg",
-      "description": "מקלות תופים Innovative Percussion MATT-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/innovative_percussion_28_matt1.jpg",
-        "thumbnail": "/data/thumbnails/innovative_percussion_28_matt1.jpg",
-        "high_res": "/data/thumbnails/innovative_percussion_28_matt1.jpg",
-        "original": "/data/thumbnails/innovative_percussion_28_matt1.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_bb2b",
       "name": "Innovative Percussion BB-2",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_bb2b.jpg",
       "description": "Innovative Percussion BB-2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_bb2b.jpg",
+      "product_url": "https://www.halilit.com/items/4227859-innovative-percussion-bb-2",
+      "is_sold": true,
+      "price": 34.0,
+      "halilit_url": "https://www.halilit.com/items/4227859-innovative-percussion-bb-2",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 34.0,
+        "original_price": 34.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_bb2b.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_bb2b.jpg",
@@ -448,21 +502,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_bb2b.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_cw1",
       "name": "Innovative Percussion CW-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_cw1.jpg",
       "description": "Innovative Percussion CW-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_cw1.jpg",
+      "product_url": "https://www.halilit.com/items/1657377-innovative-percussion-cw-1-drumsticks",
+      "is_sold": true,
+      "price": 59.0,
+      "halilit_url": "https://www.halilit.com/items/1657377-innovative-percussion-cw-1-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 59.0,
+        "original_price": 59.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_cw1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_cw1.jpg",
@@ -470,21 +530,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_cw1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_brjr2",
       "name": "Innovative Percussion BR-JR2",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_brjr2.jpg",
       "description": "Innovative Percussion BR-JR2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_brjr2.jpg",
+      "product_url": "https://www.halilit.com/items/4202505-innovative-percussion-br-jr2",
+      "is_sold": true,
+      "price": 143.0,
+      "halilit_url": "https://www.halilit.com/items/4202505-innovative-percussion-br-jr2",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 143.0,
+        "original_price": 143.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_brjr2.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_brjr2.jpg",
@@ -492,21 +558,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_brjr2.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_brjri",
       "name": "Innovative Percussion BR-JR1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_brjri.jpg",
       "description": "Innovative Percussion BR-JR1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_brjri.jpg",
+      "product_url": "https://www.halilit.com/items/4202512-innovative-percussion-br-jr1",
+      "is_sold": true,
+      "price": 227.0,
+      "halilit_url": "https://www.halilit.com/items/4202512-innovative-percussion-br-jr1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 227.0,
+        "original_price": 227.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_brjri.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_brjri.jpg",
@@ -514,21 +586,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_brjri.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_brcw",
       "name": "Innovative Percussion BR-CW",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_brcw.jpg",
       "description": "Innovative Percussion BR-CW",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_brcw.jpg",
+      "product_url": "https://www.halilit.com/items/1658150-innovative-percussion-br-cw-drumsticks",
+      "is_sold": true,
+      "price": 311.0,
+      "halilit_url": "https://www.halilit.com/items/1658150-innovative-percussion-br-cw-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 311.0,
+        "original_price": 311.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_brcw.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_brcw.jpg",
@@ -536,21 +614,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_brcw.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_bzb1",
       "name": "Innovative Percussion BZB-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_bzb1.jpg",
       "description": "Innovative Percussion BZB-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_bzb1.jpg",
+      "product_url": "https://www.halilit.com/items/1658204-innovative-percussion-bzb-1-drumsticks",
+      "is_sold": true,
+      "price": 118.0,
+      "halilit_url": "https://www.halilit.com/items/1658204-innovative-percussion-bzb-1-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 118.0,
+        "original_price": 118.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_bzb1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_bzb1.jpg",
@@ -558,21 +642,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_bzb1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_bmz2",
       "name": "Innovative Percussion BMZ-2",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_bmz2.jpg",
       "description": "Innovative Percussion BMZ-2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_bmz2.jpg",
+      "product_url": "https://www.halilit.com/items/1658245-innovative-percussion-bmz-2-drumsticks",
+      "is_sold": true,
+      "price": 113.0,
+      "halilit_url": "https://www.halilit.com/items/1658245-innovative-percussion-bmz-2-drumsticks",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 113.0,
+        "original_price": 113.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_bmz2.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_bmz2.jpg",
@@ -580,21 +670,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_bmz2.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_wbr1",
       "name": "Innovative Percussion WBR-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_wbr1.jpg",
       "description": "Innovative Percussion WBR-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_wbr1.jpg",
+      "product_url": "https://www.halilit.com/items/4202696-innovative-percussion-wbr-1",
+      "is_sold": true,
+      "price": 143.0,
+      "halilit_url": "https://www.halilit.com/items/4202696-innovative-percussion-wbr-1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 143.0,
+        "original_price": 143.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_wbr1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_wbr1.jpg",
@@ -602,21 +698,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_wbr1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_wbr2",
       "name": "Innovative Percussion WBR-2",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_wbr2.jpg",
       "description": "Innovative Percussion WBR-2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_wbr2.jpg",
+      "product_url": "https://www.halilit.com/items/4202703-innovative-percussion-wbr-2",
+      "is_sold": true,
+      "price": 143.0,
+      "halilit_url": "https://www.halilit.com/items/4202703-innovative-percussion-wbr-2",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 143.0,
+        "original_price": 143.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_wbr2.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_wbr2.jpg",
@@ -624,21 +726,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_wbr2.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_wbr3",
       "name": "Innovative Percussion WBR-3",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_wbr3.jpg",
       "description": "Innovative Percussion WBR-3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_wbr3.jpg",
+      "product_url": "https://www.halilit.com/items/4202715-innovative-percussion-wbr-3",
+      "is_sold": true,
+      "price": 134.0,
+      "halilit_url": "https://www.halilit.com/items/4202715-innovative-percussion-wbr-3",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 134.0,
+        "original_price": 134.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_wbr3.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_wbr3.jpg",
@@ -646,21 +754,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_wbr3.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_bmz1",
       "name": "Innovative Percussion BMZ-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_bmz1.jpg",
       "description": "Innovative Percussion BMZ-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_bmz1.jpg",
+      "product_url": "https://www.halilit.com/items/4202471-innovative-percussion-bmz-1",
+      "is_sold": true,
+      "price": 126.0,
+      "halilit_url": "https://www.halilit.com/items/4202471-innovative-percussion-bmz-1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 126.0,
+        "original_price": 126.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_bmz1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_bmz1.jpg",
@@ -668,21 +782,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_bmz1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_br4",
       "name": "Innovative Percussion BR-4",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_br4.jpg",
       "description": "Innovative Percussion BR-4",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_br4.jpg",
+      "product_url": "https://www.halilit.com/items/4202491-innovative-percussion-br-4",
+      "is_sold": true,
+      "price": 109.0,
+      "halilit_url": "https://www.halilit.com/items/4202491-innovative-percussion-br-4",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 109.0,
+        "original_price": 109.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_br4.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_br4.jpg",
@@ -690,21 +810,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_br4.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_rs201",
       "name": "Innovative Percussion RS201",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_rs201.jpg",
       "description": "Innovative Percussion RS201",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_rs201.jpg",
+      "product_url": "https://www.halilit.com/items/4227920-innovative-percussion-rs201",
+      "is_sold": true,
+      "price": 268.0,
+      "halilit_url": "https://www.halilit.com/items/4227920-innovative-percussion-rs201",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 268.0,
+        "original_price": 268.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_rs201.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_rs201.jpg",
@@ -712,21 +838,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_rs201.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_rs251",
       "name": "Innovative Percussion RS251",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_rs251.jpg",
       "description": "Innovative Percussion RS251",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_rs251.jpg",
+      "product_url": "https://www.halilit.com/items/4227932-innovative-percussion-rs251",
+      "is_sold": true,
+      "price": 268.0,
+      "halilit_url": "https://www.halilit.com/items/4227932-innovative-percussion-rs251",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 268.0,
+        "original_price": 268.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_rs251.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_rs251.jpg",
@@ -734,21 +866,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_rs251.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_rs301",
       "name": "Innovative Percussion RS301",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_rs301.jpg",
       "description": "Innovative Percussion RS301",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_rs301.jpg",
+      "product_url": "https://www.halilit.com/items/4227943-innovative-percussion-rs301",
+      "is_sold": true,
+      "price": 268.0,
+      "halilit_url": "https://www.halilit.com/items/4227943-innovative-percussion-rs301",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 268.0,
+        "original_price": 268.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_rs301.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_rs301.jpg",
@@ -756,21 +894,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_rs301.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_cb1",
       "name": "Innovative Percussion CB-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_cb1.jpg",
       "description": "Innovative Percussion CB-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_cb1.jpg",
+      "product_url": "https://www.halilit.com/items/2312958--innovative-percussion-cb-1",
+      "is_sold": true,
+      "price": 210.0,
+      "halilit_url": "https://www.halilit.com/items/2312958--innovative-percussion-cb-1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 210.0,
+        "original_price": 210.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_cb1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_cb1.jpg",
@@ -778,21 +922,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_cb1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_kdb2",
       "name": "Innovative Percussion KDB-2",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_kdb2.jpg",
       "description": "Innovative Percussion KDB-2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_kdb2.jpg",
+      "product_url": "https://www.halilit.com/items/4202534-innovative-percussion-kdb2",
+      "is_sold": true,
+      "price": 151.0,
+      "halilit_url": "https://www.halilit.com/items/4202534-innovative-percussion-kdb2",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 151.0,
+        "original_price": 151.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_kdb2.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_kdb2.jpg",
@@ -800,21 +950,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_kdb2.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_kdbbp",
       "name": "Innovative Percussion KD-BBP",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_kdbbp.jpg",
       "description": "Innovative Percussion KD-BBP",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_kdbbp.jpg",
+      "product_url": "https://www.halilit.com/items/4202557-innovative-percussion-kd-bbp",
+      "is_sold": true,
+      "price": 151.0,
+      "halilit_url": "https://www.halilit.com/items/4202557-innovative-percussion-kd-bbp",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 151.0,
+        "original_price": 151.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_kdbbp.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_kdbbp.jpg",
@@ -822,21 +978,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_kdbbp.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_kdb1",
       "name": "Innovative Percussion KDB-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_kdb1.jpg",
       "description": "Innovative Percussion KDB-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_kdb1.jpg",
+      "product_url": "https://www.halilit.com/items/2724080--innovative-percussion-kdb1",
+      "is_sold": true,
+      "price": 134.0,
+      "halilit_url": "https://www.halilit.com/items/2724080--innovative-percussion-kdb1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 134.0,
+        "original_price": 134.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_kdb1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_kdb1.jpg",
@@ -844,21 +1006,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_kdb1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_dsb2",
       "name": "Innovative Percussion DSB-2",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_dsb2.jpg",
       "description": "Innovative Percussion DSB-2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_dsb2.jpg",
+      "product_url": "https://www.halilit.com/items/1658287-innovative-percussion-dsb-2-deluxe-drumset-stickbag",
+      "is_sold": true,
+      "price": 260.0,
+      "halilit_url": "https://www.halilit.com/items/1658287-innovative-percussion-dsb-2-deluxe-drumset-stickbag",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 260.0,
+        "original_price": 260.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_dsb2.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_dsb2.jpg",
@@ -866,21 +1034,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_dsb2.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_sb3",
       "name": "Innovative Percussion SB-3",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_sb3.jpg",
       "description": "Innovative Percussion SB-3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_sb3.jpg",
+      "product_url": "https://www.halilit.com/items/2724020-innovative-percussion-sb-3-deluxe-drumset-stickbag",
+      "is_sold": true,
+      "price": 101.0,
+      "halilit_url": "https://www.halilit.com/items/2724020-innovative-percussion-sb-3-deluxe-drumset-stickbag",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 101.0,
+        "original_price": 101.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_sb3.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_sb3.jpg",
@@ -888,21 +1062,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_sb3.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_rp1r",
       "name": "Innovative Percussion RP-1R",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_rp1r.jpg",
       "description": "Innovative Percussion RP-1R",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_rp1r.jpg",
+      "product_url": "https://www.halilit.com/items/1658309-innovative-percussion-rp1r-",
+      "is_sold": true,
+      "price": 311.0,
+      "halilit_url": "https://www.halilit.com/items/1658309-innovative-percussion-rp1r-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 311.0,
+        "original_price": 311.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_rp1r.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_rp1r.jpg",
@@ -910,21 +1090,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_rp1r.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_cpir",
       "name": "Innovative Percussion CP-1R",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_cpir.jpg",
       "description": "Innovative Percussion CP-1R",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_cpir.jpg",
+      "product_url": "https://www.halilit.com/items/2723293-innovative-percussion-cp1r-",
+      "is_sold": true,
+      "price": 311.0,
+      "halilit_url": "https://www.halilit.com/items/2723293-innovative-percussion-cp1r-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 311.0,
+        "original_price": 311.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_cpir.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_cpir.jpg",
@@ -932,21 +1118,27 @@
         "original": "/data/thumbnails/innovative_percussion_28_cpir.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "innovative_percussion_28_rpt1",
       "name": "Innovative Percussion RPT-1",
-      "brand": "innovative-percussion",
-      "category": "drums",
-      "image_url": "/data/thumbnails/innovative_percussion_28_rpt1.jpg",
       "description": "Innovative Percussion RPT-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/innovative_percussion_28_rpt1.jpg",
+      "product_url": "https://www.halilit.com/items/2724068-innovative-percussion-rpt-1-",
+      "is_sold": true,
+      "price": 34.0,
+      "halilit_url": "https://www.halilit.com/items/2724068-innovative-percussion-rpt-1-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 34.0,
+        "original_price": 34.0
+      },
+      "brand": "Innovative Percussion",
+      "logo_url": "/assets/logos/innovative-percussion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/innovative_percussion_28_rpt1.jpg",
         "thumbnail": "/data/thumbnails/innovative_percussion_28_rpt1.jpg",
@@ -954,15 +1146,26 @@
         "original": "/data/thumbnails/innovative_percussion_28_rpt1.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "Innovative-Percussion",
+  "generated_at": "2026-01-25T22:19:24.313467",
   "brand_slug": "innovative-percussion",
-  "refined_at": "2026-01-25T02:01:47.477341+00:00",
+  "refined_at": "2026-01-25T22:19:24.316164+00:00",
+  "brand_identity": {
+    "id": "innovative-percussion",
+    "name": "Innovative Percussion",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/innovative-percussion_logo.png",
+    "taxonomy_stats": {
+      "validated": 41,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
-    "drums": {
+    "accessories": {
       "General": [
         {
           "id": "innovative_percussion_28_ipsr",
@@ -999,19 +1202,6 @@
             "thumbnail": "/data/thumbnails/innovative_percussion_28_nz1.jpg",
             "high_res": "/data/thumbnails/innovative_percussion_28_nz1.jpg",
             "original": "/data/thumbnails/innovative_percussion_28_nz1.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "innovative_percussion_28_lax1",
-          "name": "מקלות תופים Innovative Percussion LAX-1",
-          "description": "מקלות תופים Innovative Percussion LAX-1",
-          "images": {
-            "main": "/data/thumbnails/innovative_percussion_28_lax1.jpg",
-            "thumbnail": "/data/thumbnails/innovative_percussion_28_lax1.jpg",
-            "high_res": "/data/thumbnails/innovative_percussion_28_lax1.jpg",
-            "original": "/data/thumbnails/innovative_percussion_28_lax1.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1194,19 +1384,6 @@
             "thumbnail": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg",
             "high_res": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg",
             "original": "/data/thumbnails/innovative_percussion_28_ipl1a.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "innovative_percussion_28_matt1",
-          "name": "מקלות תופים Innovative Percussion MATT-1",
-          "description": "מקלות תופים Innovative Percussion MATT-1",
-          "images": {
-            "main": "/data/thumbnails/innovative_percussion_28_matt1.jpg",
-            "thumbnail": "/data/thumbnails/innovative_percussion_28_matt1.jpg",
-            "high_res": "/data/thumbnails/innovative_percussion_28_matt1.jpg",
-            "original": "/data/thumbnails/innovative_percussion_28_matt1.jpg"
           },
           "model_number": null,
           "sku": null

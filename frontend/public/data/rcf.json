@@ -1,27 +1,23 @@
 {
-  "brand_identity": {
-    "id": "rcf",
-    "name": "RCF",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/rcf_logo.jpg",
-    "taxonomy_stats": {
-      "validated": 177,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Rcf",
   "products": [
     {
       "id": "rcf_61_art710a_mk5",
       "name": "RCF ART 710-A MK5",
-      "brand": "rcf",
+      "description": "RCF ART 710-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art710a_mk5.jpg",
-      "description": "RCF ART 710-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6603368-rcf-art-710a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 3115.0,
+      "halilit_url": "https://www.halilit.com/items/6603368-rcf-art-710a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3115.0,
+        "original_price": 3115.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art710a_mk5.jpg",
@@ -36,14 +32,20 @@
     {
       "id": "rcf_61_art708a_mk5",
       "name": "RCF ART 708-A MK5",
-      "brand": "rcf",
+      "description": "RCF ART 708-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art708a_mk5.jpg",
-      "description": "RCF ART 708-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6603469-rcf-art-708a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 2538.0,
+      "halilit_url": "https://www.halilit.com/items/6603469-rcf-art-708a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2538.0,
+        "original_price": 2538.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art708a_mk5.jpg",
@@ -58,14 +60,20 @@
     {
       "id": "rcf_61_art715a_mk5",
       "name": "RCF ART 715-A MK5",
-      "brand": "rcf",
+      "description": "RCF ART 715-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art715a_mk5.jpg",
-      "description": "RCF ART 715-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6603524-rcf-art-715a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 3865.0,
+      "halilit_url": "https://www.halilit.com/items/6603524-rcf-art-715a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3865.0,
+        "original_price": 3865.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art715a_mk5.jpg",
@@ -80,14 +88,20 @@
     {
       "id": "rcf_61_tt515_cover",
       "name": "RCF CVR TT 515 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR TT 515 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt515_cover.jpg",
-      "description": "RCF CVR TT 515 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6131471-rcf-cvr-tt-515-protection-cover",
+      "is_sold": true,
+      "price": 274.0,
+      "halilit_url": "https://www.halilit.com/items/6131471-rcf-cvr-tt-515-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 274.0,
+        "original_price": 274.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt515_cover.jpg",
@@ -102,14 +116,20 @@
     {
       "id": "rcf_61_compact06_hbr2x",
       "name": "RCF H-BR 2X COMPACT M 06",
-      "brand": "rcf",
+      "description": "RCF H-BR 2X COMPACT M 06",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_compact06_hbr2x.jpg",
-      "description": "RCF H-BR 2X COMPACT M 06",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4958483-rcf-h-br-2x-compact-m-06",
+      "is_sold": true,
+      "price": 333.0,
+      "halilit_url": "https://www.halilit.com/items/4958483-rcf-h-br-2x-compact-m-06",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 333.0,
+        "original_price": 333.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_compact06_hbr2x.jpg",
@@ -124,14 +144,20 @@
     {
       "id": "rcf_61_art735a_mk5",
       "name": "RCF ART 735-A MK5",
-      "brand": "rcf",
+      "description": "RCF ART 735-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art735a_mk5.jpg",
-      "description": "RCF ART 735-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6603799-rcf-art-735a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 5883.0,
+      "halilit_url": "https://www.halilit.com/items/6603799-rcf-art-735a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 5883.0,
+        "original_price": 5883.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art735a_mk5.jpg",
@@ -146,14 +172,20 @@
     {
       "id": "rcf_61_art732a_mk5",
       "name": "RCF ART 732-A MK5",
-      "brand": "rcf",
+      "description": "RCF ART 732-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art732a_mk5.jpg",
-      "description": "RCF ART 732-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6603549-rcf-art-732a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 5134.0,
+      "halilit_url": "https://www.halilit.com/items/6603549-rcf-art-732a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 5134.0,
+        "original_price": 5134.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art732a_mk5.jpg",
@@ -166,38 +198,22 @@
       ]
     },
     {
-      "id": "rcf_61_kxl4a_cover",
-      "name": "כיסוי מגן RCF CVR KXL 4-A Protection Cover",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_kxl4a_cover.jpg",
-      "description": "כיסוי מגן RCF CVR KXL 4-A Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_kxl4a_cover.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_kxl4a_cover.jpg",
-        "high_res": "/data/thumbnails/rcf_61_kxl4a_cover.jpg",
-        "original": "/data/thumbnails/rcf_61_kxl4a_cover.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_tt25a_mk2_cover",
       "name": "RCF CVR TT 25 II Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR TT 25 II Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt25a_mk2_cover.jpg",
-      "description": "RCF CVR TT 25 II Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5405473-rcf-cvr-tt-25-ii-protection-cover",
+      "is_sold": true,
+      "price": 398.0,
+      "halilit_url": "https://www.halilit.com/items/5405473-rcf-cvr-tt-25-ii-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 398.0,
+        "original_price": 398.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt25a_mk2_cover.jpg",
@@ -212,14 +228,20 @@
     {
       "id": "rcf_61_f10xr",
       "name": "RCF F 10XR",
-      "brand": "rcf",
+      "description": "RCF F 10XR",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_f10xr.jpg",
-      "description": "RCF F 10XR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2266924-rcf-f-10xr",
+      "is_sold": true,
+      "price": 1450.0,
+      "halilit_url": "https://www.halilit.com/items/2266924-rcf-f-10xr",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1450.0,
+        "original_price": 1450.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_f10xr.jpg",
@@ -234,14 +256,20 @@
     {
       "id": "rcf_61_compact05_hbr2x",
       "name": "RCF H-BR 2X COMPACT M 05",
-      "brand": "rcf",
+      "description": "RCF H-BR 2X COMPACT M 05",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_compact05_hbr2x.jpg",
-      "description": "RCF H-BR 2X COMPACT M 05",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4958254-rcf-h-br-2x-compact-m-05-pair-of-horizontal-bracket",
+      "is_sold": true,
+      "price": 333.0,
+      "halilit_url": "https://www.halilit.com/items/4958254-rcf-h-br-2x-compact-m-05-pair-of-horizontal-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 333.0,
+        "original_price": 333.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_compact05_hbr2x.jpg",
@@ -256,42 +284,26 @@
     {
       "id": "rcf_61_tts15a_cover",
       "name": "RCF CVR TTS 15 Padded Cover",
-      "brand": "rcf",
-      "category": "drums",
-      "image_url": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
       "description": "RCF CVR TTS 15 Padded Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
+      "product_url": "https://www.halilit.com/items/5465905-rcf-cvr-tts-15-padded-cover",
+      "is_sold": true,
+      "price": 624.0,
+      "halilit_url": "https://www.halilit.com/items/5465905-rcf-cvr-tts-15-padded-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 624.0,
+        "original_price": 624.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
         "high_res": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
         "original": "/data/thumbnails/rcf_61_tts15a_cover.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "rcf_61_nxl14a_cover",
-      "name": "כיסוי מגן RCF CVR NXL 14-A Protection Cover",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_nxl14a_cover.jpg",
-      "description": "כיסוי מגן RCF CVR NXL 14-A Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_nxl14a_cover.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_nxl14a_cover.jpg",
-        "high_res": "/data/thumbnails/rcf_61_nxl14a_cover.jpg",
-        "original": "/data/thumbnails/rcf_61_nxl14a_cover.jpg"
       },
       "category_hierarchy": [
         "accessories"
@@ -300,14 +312,20 @@
     {
       "id": "rcf_61_tt22amk2_cover",
       "name": "RCF CVR TT 22 II Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR TT 22 II Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt22amk2_cover.jpg",
-      "description": "RCF CVR TT 22 II Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6134068-rcf-cvr-tt-22-ii-protection-cover",
+      "is_sold": true,
+      "price": 376.0,
+      "halilit_url": "https://www.halilit.com/items/6134068-rcf-cvr-tt-22-ii-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 376.0,
+        "original_price": 376.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt22amk2_cover.jpg",
@@ -322,14 +340,20 @@
     {
       "id": "rcf_61_hdl20a",
       "name": "RCF HDL 20-A",
-      "brand": "rcf",
+      "description": "RCF HDL 20-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl20a.jpg",
-      "description": "RCF HDL 20-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/446516-rcf-hdl-20-a",
+      "is_sold": true,
+      "price": 13910.0,
+      "halilit_url": "https://www.halilit.com/items/446516-rcf-hdl-20-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 13910.0,
+        "original_price": 13910.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl20a.jpg",
@@ -344,14 +368,20 @@
     {
       "id": "rcf_61_compact08_hbr2x",
       "name": "RCF H-BR 2X COMPACT M 08",
-      "brand": "rcf",
+      "description": "RCF H-BR 2X COMPACT M 08",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_compact08_hbr2x.jpg",
-      "description": "RCF H-BR 2X COMPACT M 08",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4958518-rcf-h-br-2x-compact-m-08",
+      "is_sold": true,
+      "price": 483.0,
+      "halilit_url": "https://www.halilit.com/items/4958518-rcf-h-br-2x-compact-m-08",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 483.0,
+        "original_price": 483.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_compact08_hbr2x.jpg",
@@ -366,14 +396,20 @@
     {
       "id": "rcf_61_art745a_mk5",
       "name": "RCF ART 745-A MK5",
-      "brand": "rcf",
+      "description": "RCF ART 745-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art745a_mk5.jpg",
-      "description": "RCF ART 745-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6603839-rcf-art-745a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 8074.0,
+      "halilit_url": "https://www.halilit.com/items/6603839-rcf-art-745a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 8074.0,
+        "original_price": 8074.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art745a_mk5.jpg",
@@ -388,14 +424,20 @@
     {
       "id": "rcf_61_f12xr",
       "name": "RCF F 12XR",
-      "brand": "rcf",
+      "description": "RCF F 12XR",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_f12xr.jpg",
-      "description": "RCF F 12XR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2279494-rcf-f-12xr",
+      "is_sold": true,
+      "price": 2041.0,
+      "halilit_url": "https://www.halilit.com/items/2279494-rcf-f-12xr",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2041.0,
+        "original_price": 2041.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_f12xr.jpg",
@@ -410,14 +452,20 @@
     {
       "id": "rcf_61_swmbrcompm",
       "name": "RCF SWM-BR COMPACT M",
-      "brand": "rcf",
+      "description": "RCF SWM-BR COMPACT M",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_swmbrcompm.jpg",
-      "description": "RCF SWM-BR COMPACT M",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4958545-rcf-swm-br-compact-m",
+      "is_sold": true,
+      "price": 170.0,
+      "halilit_url": "https://www.halilit.com/items/4958545-rcf-swm-br-compact-m",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 170.0,
+        "original_price": 170.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_swmbrcompm.jpg",
@@ -432,14 +480,20 @@
     {
       "id": "rcf_61_hd10a_mk5",
       "name": "RCF HD 10-A MK5",
-      "brand": "rcf",
+      "description": "RCF HD 10-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hd10a_mk5.jpg",
-      "description": "RCF HD 10-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5844562-rcf-hd10-a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 3008.0,
+      "halilit_url": "https://www.halilit.com/items/5844562-rcf-hd10-a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3008.0,
+        "original_price": 3008.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hd10a_mk5.jpg",
@@ -454,14 +508,20 @@
     {
       "id": "rcf_61_sub702as_mk3_co",
       "name": "RCF CVR 005 Cover for SUB 702-AS MK3",
-      "brand": "rcf",
+      "description": "RCF CVR 005 Cover for SUB 702-AS MK3",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub702as_mk3_co.jpg",
-      "description": "RCF CVR 005 Cover for SUB 702-AS MK3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6796389-rcf-cvr-005-cover-for-sub-702-as-mk3",
+      "is_sold": true,
+      "price": 526.0,
+      "halilit_url": "https://www.halilit.com/items/6796389-rcf-cvr-005-cover-for-sub-702-as-mk3",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 526.0,
+        "original_price": 526.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub702as_mk3_co.jpg",
@@ -476,14 +536,20 @@
     {
       "id": "rcf_61_art912_ax",
       "name": "RCF ART 912-AX",
-      "brand": "rcf",
+      "description": "RCF ART 912-AX",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art912_ax.jpg",
-      "description": "RCF ART 912-AX",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5497450-rcf-art-912-ax-",
+      "is_sold": true,
+      "price": 3846.0,
+      "halilit_url": "https://www.halilit.com/items/5497450-rcf-art-912-ax-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3846.0,
+        "original_price": 3846.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art912_ax.jpg",
@@ -496,60 +562,22 @@
       ]
     },
     {
-      "id": "rcf_61_kx45a_cover",
-      "name": "כיסוי מגן RCF CVR KX 45-A Protection Cover",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_kx45a_cover.jpg",
-      "description": "כיסוי מגן RCF CVR KX 45-A Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_kx45a_cover.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_kx45a_cover.jpg",
-        "high_res": "/data/thumbnails/rcf_61_kx45a_cover.jpg",
-        "original": "/data/thumbnails/rcf_61_kx45a_cover.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "rcf_61_gtx10_cart",
-      "name": "עגלת נשיאה RCF KRT-WH 002 Cart",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_gtx10_cart.jpg",
-      "description": "עגלת נשיאה RCF KRT-WH 002 Cart",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_gtx10_cart.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_gtx10_cart.jpg",
-        "high_res": "/data/thumbnails/rcf_61_gtx10_cart.jpg",
-        "original": "/data/thumbnails/rcf_61_gtx10_cart.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_nxl24a_flybar",
       "name": "RCF NXL24A Fly Bar Kit",
-      "brand": "rcf",
+      "description": "RCF NXL24A Fly Bar Kit",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl24a_flybar.jpg",
-      "description": "RCF NXL24A Fly Bar Kit",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6699134-rcf-nxl24a-fly-bar-kit",
+      "is_sold": true,
+      "price": 1182.0,
+      "halilit_url": "https://www.halilit.com/items/6699134-rcf-nxl24a-fly-bar-kit",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1182.0,
+        "original_price": 1182.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl24a_flybar.jpg",
@@ -562,38 +590,22 @@
       ]
     },
     {
-      "id": "rcf_61_sub15ax_cover",
-      "name": "כיסוי מגן RCF CVR 004 Protection Cover",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_sub15ax_cover.jpg",
-      "description": "כיסוי מגן RCF CVR 004 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_sub15ax_cover.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_sub15ax_cover.jpg",
-        "high_res": "/data/thumbnails/rcf_61_sub15ax_cover.jpg",
-        "original": "/data/thumbnails/rcf_61_sub15ax_cover.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_f6x",
       "name": "RCF F 6X",
-      "brand": "rcf",
+      "description": "RCF F 6X",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_f6x.jpg",
-      "description": "RCF F 6X",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3938697-rcf-f-6x",
+      "is_sold": true,
+      "price": 1042.0,
+      "halilit_url": "https://www.halilit.com/items/3938697-rcf-f-6x",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1042.0,
+        "original_price": 1042.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_f6x.jpg",
@@ -608,14 +620,20 @@
     {
       "id": "rcf_61_nxl24a_flylinkkit",
       "name": "RCF NXL24 Link Accessory Kit",
-      "brand": "rcf",
+      "description": "RCF NXL24 Link Accessory Kit",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl24a_flylinkkit.jpg",
-      "description": "RCF NXL24 Link Accessory Kit",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6699147-rcf-nxl24-link-accessory-kit",
+      "is_sold": true,
+      "price": 902.0,
+      "halilit_url": "https://www.halilit.com/items/6699147-rcf-nxl24-link-accessory-kit",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 902.0,
+        "original_price": 902.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl24a_flylinkkit.jpg",
@@ -630,14 +648,20 @@
     {
       "id": "rcf_61_sub708_as_mk3",
       "name": "RCF SUB 708-AS MK3",
-      "brand": "rcf",
+      "description": "RCF SUB 708-AS MK3",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub708_as_mk3.jpg",
-      "description": "RCF SUB 708-AS MK3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6624397-rcf-sub-708-as-mk3-active-subwoofer",
+      "is_sold": true,
+      "price": 7757.0,
+      "halilit_url": "https://www.halilit.com/items/6624397-rcf-sub-708-as-mk3-active-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 7757.0,
+        "original_price": 7757.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub708_as_mk3.jpg",
@@ -652,14 +676,20 @@
     {
       "id": "rcf_61_tt808_cover",
       "name": "RCF CVR TT 808 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR TT 808 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt808_cover.jpg",
-      "description": "RCF CVR TT 808 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6405775-rcf-cvr-tt-808-protection-cover",
+      "is_sold": true,
+      "price": 354.0,
+      "halilit_url": "https://www.halilit.com/items/6405775-rcf-cvr-tt-808-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 354.0,
+        "original_price": 354.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt808_cover.jpg",
@@ -674,15 +704,21 @@
     {
       "id": "rcf_61_hd15a_cover",
       "name": "RCF CVR HD 15 Padded Cover",
-      "brand": "rcf",
-      "category": "drums",
-      "image_url": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
       "description": "RCF CVR HD 15 Padded Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
+      "product_url": "https://www.halilit.com/items/6699165-rcf-cvr-hd-15-padded-cover",
+      "is_sold": true,
+      "price": 440.0,
+      "halilit_url": "https://www.halilit.com/items/6699165-rcf-cvr-hd-15-padded-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 440.0,
+        "original_price": 440.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
@@ -690,20 +726,26 @@
         "original": "/data/thumbnails/rcf_61_hd15a_cover.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "rcf_61_nx32_cover",
       "name": "RCF CVR NX 32 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR NX 32 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx32_cover.jpg",
-      "description": "RCF CVR NX 32 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6131614-rcf-cvr-nx-32-protection-cover",
+      "is_sold": true,
+      "price": 314.0,
+      "halilit_url": "https://www.halilit.com/items/6131614-rcf-cvr-nx-32-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 314.0,
+        "original_price": 314.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx32_cover.jpg",
@@ -716,38 +758,22 @@
       ]
     },
     {
-      "id": "rcf_61_tt25cxa_cover",
-      "name": "כיסוי מגן RCF CVR TT 25-CXA Protection Cover",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg",
-      "description": "כיסוי מגן RCF CVR TT 25-CXA Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg",
-        "high_res": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg",
-        "original": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_flb_link_hdl50_30",
       "name": "RCF FLB-LINK-HDL50/30",
-      "brand": "rcf",
+      "description": "RCF FLB-LINK-HDL50/30",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_flb_link_hdl50_30.jpg",
-      "description": "RCF FLB-LINK-HDL50/30",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4958125-rcf-flb-link-hdl50-30",
+      "is_sold": true,
+      "price": 6338.0,
+      "halilit_url": "https://www.halilit.com/items/4958125-rcf-flb-link-hdl50-30",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6338.0,
+        "original_price": 6338.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_flb_link_hdl50_30.jpg",
@@ -762,14 +788,20 @@
     {
       "id": "rcf_61_tts18mk2_cover",
       "name": "RCF CVR TTS 18 II Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR TTS 18 II Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tts18mk2_cover.jpg",
-      "description": "RCF CVR TTS 18 II Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6631861-rcf-cvr-tts-18-ii-protection-cover",
+      "is_sold": true,
+      "price": 666.0,
+      "halilit_url": "https://www.halilit.com/items/6631861-rcf-cvr-tts-18-ii-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 666.0,
+        "original_price": 666.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tts18mk2_cover.jpg",
@@ -782,38 +814,22 @@
       ]
     },
     {
-      "id": "rcf_61_hdl30a_cart4x",
-      "name": "עגלת נשיאה RCF HDL 30-A Cart",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg",
-      "description": "עגלת נשיאה RCF HDL 30-A Cart",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg",
-        "high_res": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg",
-        "original": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_hdl26a",
       "name": "RCF HDL 26-A",
-      "brand": "rcf",
+      "description": "RCF HDL 26-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl26a.jpg",
-      "description": "RCF HDL 26-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6131663-rcf-hdl-26-a-active-two-way-line-array-module",
+      "is_sold": true,
+      "price": 11590.0,
+      "halilit_url": "https://www.halilit.com/items/6131663-rcf-hdl-26-a-active-two-way-line-array-module",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 11590.0,
+        "original_price": 11590.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl26a.jpg",
@@ -828,14 +844,20 @@
     {
       "id": "rcf_61_sub9016_cover",
       "name": "RCF CVR SUB 9016 Cover for SUB 9016-AS",
-      "brand": "rcf",
+      "description": "RCF CVR SUB 9016 Cover for SUB 9016-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9016_cover.jpg",
-      "description": "RCF CVR SUB 9016 Cover for SUB 9016-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8501976-rcf-cvr-sub-9016-cover-for-sub-9016-as",
+      "is_sold": true,
+      "price": 674.0,
+      "halilit_url": "https://www.halilit.com/items/8501976-rcf-cvr-sub-9016-cover-for-sub-9016-as",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 674.0,
+        "original_price": 674.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9016_cover.jpg",
@@ -850,14 +872,20 @@
     {
       "id": "rcf_61_nx910_cover",
       "name": "RCF CVR NX 910 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR NX 910 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx910_cover.jpg",
-      "description": "RCF CVR NX 910 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5405914-rcf-cvr-nx-910-protection-cover",
+      "is_sold": true,
+      "price": 376.0,
+      "halilit_url": "https://www.halilit.com/items/5405914-rcf-cvr-nx-910-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 376.0,
+        "original_price": 376.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx910_cover.jpg",
@@ -872,14 +900,20 @@
     {
       "id": "rcf_61_nxl44a_flybar",
       "name": "RCF NXL44A Fly bar Kit",
-      "brand": "rcf",
+      "description": "RCF NXL44A Fly bar Kit",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl44a_flybar.jpg",
-      "description": "RCF NXL44A Fly bar Kit",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6489054-rcf-nxl44a-fly-bar-kit",
+      "is_sold": true,
+      "price": 1486.0,
+      "halilit_url": "https://www.halilit.com/items/6489054-rcf-nxl44a-fly-bar-kit",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1486.0,
+        "original_price": 1486.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl44a_flybar.jpg",
@@ -894,14 +928,20 @@
     {
       "id": "rcf_61_hd12a_mk5",
       "name": "RCF HD 12A MK5",
-      "brand": "rcf",
+      "description": "RCF HD 12A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hd12a_mk5.jpg",
-      "description": "RCF HD 12A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6564834-rcf-hd12-a-mk5-active-two-way-speaker",
+      "is_sold": true,
+      "price": 3556.0,
+      "halilit_url": "https://www.halilit.com/items/6564834-rcf-hd12-a-mk5-active-two-way-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3556.0,
+        "original_price": 3556.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hd12a_mk5.jpg",
@@ -916,14 +956,20 @@
     {
       "id": "rcf_61_nx912_cover_new",
       "name": "RCF CVR NX 912 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR NX 912 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx912_cover_new.jpg",
-      "description": "RCF CVR NX 912 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6130407-rcf-cvr-nx-912-protection-cover",
+      "is_sold": true,
+      "price": 432.0,
+      "halilit_url": "https://www.halilit.com/items/6130407-rcf-cvr-nx-912-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 432.0,
+        "original_price": 432.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx912_cover_new.jpg",
@@ -938,14 +984,20 @@
     {
       "id": "rcf_61_art915_ax",
       "name": "RCF ART 915-AX",
-      "brand": "rcf",
+      "description": "RCF ART 915-AX",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art915_ax.jpg",
-      "description": "RCF ART 915-AX",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5464553-rcf-art-915-ax-professional-active-bluetooth-speaker-",
+      "is_sold": true,
+      "price": 4759.0,
+      "halilit_url": "https://www.halilit.com/items/5464553-rcf-art-915-ax-professional-active-bluetooth-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4759.0,
+        "original_price": 4759.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art915_ax.jpg",
@@ -960,14 +1012,20 @@
     {
       "id": "rcf_61_ttl4_cover",
       "name": "RCF CVR TT 4 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR TT 4 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_ttl4_cover.jpg",
-      "description": "RCF CVR TT 4 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7892973-rcf-cvr-tt-4-protection-cover",
+      "is_sold": true,
+      "price": 432.0,
+      "halilit_url": "https://www.halilit.com/items/7892973-rcf-cvr-tt-4-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 432.0,
+        "original_price": 432.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_ttl4_cover.jpg",
@@ -982,14 +1040,20 @@
     {
       "id": "rcf_61_nx915_cover",
       "name": "RCF CVR NX 915 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR NX 915 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx915_cover.jpg",
-      "description": "RCF CVR NX 915 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6130413-rcf-cvr-nx-915-protection-cover",
+      "is_sold": true,
+      "price": 474.0,
+      "halilit_url": "https://www.halilit.com/items/6130413-rcf-cvr-nx-915-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 474.0,
+        "original_price": 474.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx915_cover.jpg",
@@ -1004,14 +1068,20 @@
     {
       "id": "rcf_61_art712a_mk5",
       "name": "RCF ART 712-A MK5",
-      "brand": "rcf",
+      "description": "RCF ART 712-A MK5",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art712a_mk5.jpg",
-      "description": "RCF ART 712-A MK5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6603503-rcf-art-712a-mk5-active-speaker",
+      "is_sold": true,
+      "price": 3345.0,
+      "halilit_url": "https://www.halilit.com/items/6603503-rcf-art-712a-mk5-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3345.0,
+        "original_price": 3345.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art712a_mk5.jpg",
@@ -1026,14 +1096,20 @@
     {
       "id": "rcf_61_sub8008as_cover",
       "name": "RCF CVR SUB 8008 Cover for SUB 8008-AS",
-      "brand": "rcf",
+      "description": "RCF CVR SUB 8008 Cover for SUB 8008-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8008as_cover.jpg",
-      "description": "RCF CVR SUB 8008 Cover for SUB 8008-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7893245-rcf-cvr-sub-8008-cover-for-sub-8008-as",
+      "is_sold": true,
+      "price": 1091.0,
+      "halilit_url": "https://www.halilit.com/items/7893245-rcf-cvr-sub-8008-cover-for-sub-8008-as",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1091.0,
+        "original_price": 1091.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8008as_cover.jpg",
@@ -1048,14 +1124,20 @@
     {
       "id": "rcf_61_evoxj8_coverwh",
       "name": "RCF CVR-WH EVOX J Cover with Wheels",
-      "brand": "rcf",
+      "description": "RCF CVR-WH EVOX J Cover with Wheels",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evoxj8_coverwh.jpg",
-      "description": "RCF CVR-WH EVOX J Cover with Wheels",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588607-rcf-cvr-wh-evox-j-cover-with-wheels-",
+      "is_sold": true,
+      "price": 1128.0,
+      "halilit_url": "https://www.halilit.com/items/7588607-rcf-cvr-wh-evox-j-cover-with-wheels-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1128.0,
+        "original_price": 1128.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evoxj8_coverwh.jpg",
@@ -1070,42 +1152,26 @@
     {
       "id": "rcf_61_hdl30a_cover",
       "name": "RCF HDL30-A Amp Rain Cover",
-      "brand": "rcf",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
       "description": "RCF HDL30-A Amp Rain Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
+      "product_url": "https://www.halilit.com/items/7801881-rcf-hdl30-a-amp-rain-cover",
+      "is_sold": true,
+      "price": 1182.0,
+      "halilit_url": "https://www.halilit.com/items/7801881-rcf-hdl30-a-amp-rain-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1182.0,
+        "original_price": 1182.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
         "high_res": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
         "original": "/data/thumbnails/rcf_61_hdl30a_cover.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "rcf_61_ayrapro5",
-      "name": "מוניטור אולפני RCF AYRA PRO 5",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_ayrapro5.jpg",
-      "description": "מוניטור אולפני RCF AYRA PRO 5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_ayrapro5.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_ayrapro5.jpg",
-        "high_res": "/data/thumbnails/rcf_61_ayrapro5.jpg",
-        "original": "/data/thumbnails/rcf_61_ayrapro5.jpg"
       },
       "category_hierarchy": [
         "accessories"
@@ -1114,14 +1180,20 @@
     {
       "id": "rcf_61_art912a",
       "name": "RCF ART 912-A",
-      "brand": "rcf",
+      "description": "RCF ART 912-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art912a.jpg",
-      "description": "RCF ART 912-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4416542-rcf-art-912-a-professional-active-speaker-",
+      "is_sold": true,
+      "price": 3140.0,
+      "halilit_url": "https://www.halilit.com/items/4416542-rcf-art-912-a-professional-active-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3140.0,
+        "original_price": 3140.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art912a.jpg",
@@ -1136,14 +1208,20 @@
     {
       "id": "rcf_61_art910a",
       "name": "RCF ART 910-A",
-      "brand": "rcf",
+      "description": "RCF ART 910-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art910a.jpg",
-      "description": "RCF ART 910-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4424226-rcf-art-910-a-",
+      "is_sold": true,
+      "price": 3518.0,
+      "halilit_url": "https://www.halilit.com/items/4424226-rcf-art-910-a-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3518.0,
+        "original_price": 3518.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art910a.jpg",
@@ -1158,14 +1236,20 @@
     {
       "id": "rcf_61_art945a",
       "name": "RCF ART 945-A",
-      "brand": "rcf",
+      "description": "RCF ART 945-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art945a.jpg",
-      "description": "RCF ART 945-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4417849-rcf-art-945-a-",
+      "is_sold": true,
+      "price": 8825.0,
+      "halilit_url": "https://www.halilit.com/items/4417849-rcf-art-945-a-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 8825.0,
+        "original_price": 8825.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art945a.jpg",
@@ -1180,14 +1264,20 @@
     {
       "id": "rcf_61_sub702_as2",
       "name": "RCF SUB 702-AS II",
-      "brand": "rcf",
+      "description": "RCF SUB 702-AS II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub702_as2.jpg",
-      "description": "RCF SUB 702-AS II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1018682-rcf-sub-702-as-ii-active-subwoofer",
+      "is_sold": true,
+      "price": 2660.0,
+      "halilit_url": "https://www.halilit.com/items/1018682-rcf-sub-702-as-ii-active-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2660.0,
+        "original_price": 2660.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub702_as2.jpg",
@@ -1200,38 +1290,22 @@
       ]
     },
     {
-      "id": "rcf_61_sub15_ax",
-      "name": "סאבוופר RCF SUB 15-AX",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_sub15_ax.jpg",
-      "description": "סאבוופר RCF SUB 15-AX",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_sub15_ax.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_sub15_ax.jpg",
-        "high_res": "/data/thumbnails/rcf_61_sub15_ax.jpg",
-        "original": "/data/thumbnails/rcf_61_sub15_ax.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_art708a_mk4",
       "name": "RCF ART 708-A MK4",
-      "brand": "rcf",
+      "description": "RCF ART 708-A MK4",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art708a_mk4.jpg",
-      "description": "RCF ART 708-A MK4",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1572924-rcf-art-708a-mk4-active-speaker",
+      "is_sold": true,
+      "price": 1745.0,
+      "halilit_url": "https://www.halilit.com/items/1572924-rcf-art-708a-mk4-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1745.0,
+        "original_price": 1745.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art708a_mk4.jpg",
@@ -1246,14 +1320,20 @@
     {
       "id": "rcf_61_art910_ax",
       "name": "RCF ART 910-AX",
-      "brand": "rcf",
+      "description": "RCF ART 910-AX",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art910_ax.jpg",
-      "description": "RCF ART 910-AX",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5465920-rcf-art-910-ax-",
+      "is_sold": true,
+      "price": 3569.0,
+      "halilit_url": "https://www.halilit.com/items/5465920-rcf-art-910-ax-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3569.0,
+        "original_price": 3569.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art910_ax.jpg",
@@ -1266,38 +1346,22 @@
       ]
     },
     {
-      "id": "rcf_61_sub18_ax",
-      "name": "סאבוופר RCF SUB 18-AX",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_sub18_ax.jpg",
-      "description": "סאבוופר RCF SUB 18-AX",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_sub18_ax.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_sub18_ax.jpg",
-        "high_res": "/data/thumbnails/rcf_61_sub18_ax.jpg",
-        "original": "/data/thumbnails/rcf_61_sub18_ax.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_art935a",
       "name": "RCF ART 935-A",
-      "brand": "rcf",
+      "description": "RCF ART 935-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art935a.jpg",
-      "description": "RCF ART 935-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4943205-rcf-art-935-a-",
+      "is_sold": true,
+      "price": 6461.0,
+      "halilit_url": "https://www.halilit.com/items/4943205-rcf-art-935-a-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6461.0,
+        "original_price": 6461.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art935a.jpg",
@@ -1312,14 +1376,20 @@
     {
       "id": "rcf_61_sub708_as2",
       "name": "RCF SUB 708-AS II",
-      "brand": "rcf",
+      "description": "RCF SUB 708-AS II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub708_as2.jpg",
-      "description": "RCF SUB 708-AS II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5840254-RCF-SUB-708-AS-II-ACTIVE-SUBWOOFER",
+      "is_sold": true,
+      "price": 4230.0,
+      "halilit_url": "https://www.halilit.com/items/5840254-RCF-SUB-708-AS-II-ACTIVE-SUBWOOFER",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4230.0,
+        "original_price": 4230.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub708_as2.jpg",
@@ -1334,14 +1404,20 @@
     {
       "id": "rcf_61_sub705_as_mk3",
       "name": "RCF SUB 705-AS MK3",
-      "brand": "rcf",
+      "description": "RCF SUB 705-AS MK3",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub705_as_mk3.jpg",
-      "description": "RCF SUB 705-AS MK3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6542226-rcf-sub-705-as-mk3",
+      "is_sold": true,
+      "price": 6050.0,
+      "halilit_url": "https://www.halilit.com/items/6542226-rcf-sub-705-as-mk3",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6050.0,
+        "original_price": 6050.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub705_as_mk3.jpg",
@@ -1356,14 +1432,20 @@
     {
       "id": "rcf_61_sub8003_as3",
       "name": "RCF SUB 8003-AS MK3",
-      "brand": "rcf",
+      "description": "RCF SUB 8003-AS MK3",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8003_as3.jpg",
-      "description": "RCF SUB 8003-AS MK3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6565017-rcf-sub-8003-as-mk3",
+      "is_sold": true,
+      "price": 8746.0,
+      "halilit_url": "https://www.halilit.com/items/6565017-rcf-sub-8003-as-mk3",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 8746.0,
+        "original_price": 8746.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8003_as3.jpg",
@@ -1378,14 +1460,20 @@
     {
       "id": "rcf_61_sub905_as3",
       "name": "RCF SUB 905-AS MK3",
-      "brand": "rcf",
+      "description": "RCF SUB 905-AS MK3",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub905_as3.jpg",
-      "description": "RCF SUB 905-AS MK3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6467738-rcf-sub-905-as-mk3",
+      "is_sold": true,
+      "price": 7735.0,
+      "halilit_url": "https://www.halilit.com/items/6467738-rcf-sub-905-as-mk3",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 7735.0,
+        "original_price": 7735.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub905_as3.jpg",
@@ -1400,14 +1488,20 @@
     {
       "id": "rcf_61_art932a",
       "name": "RCF ART 932-A",
-      "brand": "rcf",
+      "description": "RCF ART 932-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art932a.jpg",
-      "description": "RCF ART 932-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6121897-rcf-art-932-a-professional-active-speaker",
+      "is_sold": true,
+      "price": 5883.0,
+      "halilit_url": "https://www.halilit.com/items/6121897-rcf-art-932-a-professional-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 5883.0,
+        "original_price": 5883.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art932a.jpg",
@@ -1422,14 +1516,20 @@
     {
       "id": "rcf_61_st15sma_mk2",
       "name": "RCF ST 15-SMA II",
-      "brand": "rcf",
+      "description": "RCF ST 15-SMA II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_st15sma_mk2.jpg",
-      "description": "RCF ST 15-SMA II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7583409-rcf-st-15-sma-ii-active-stage-monitor",
+      "is_sold": true,
+      "price": 4029.0,
+      "halilit_url": "https://www.halilit.com/items/7583409-rcf-st-15-sma-ii-active-stage-monitor",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4029.0,
+        "original_price": 4029.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_st15sma_mk2.jpg",
@@ -1444,14 +1544,20 @@
     {
       "id": "rcf_61_sub905_as2",
       "name": "RCF SUB 905-AS II",
-      "brand": "rcf",
+      "description": "RCF SUB 905-AS II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub905_as2.jpg",
-      "description": "RCF SUB 905-AS II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2503630-rcf-sub-905-as2",
+      "is_sold": true,
+      "price": 4351.0,
+      "halilit_url": "https://www.halilit.com/items/2503630-rcf-sub-905-as2",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4351.0,
+        "original_price": 4351.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub905_as2.jpg",
@@ -1466,14 +1572,20 @@
     {
       "id": "rcf_61_sub702_as_mk3",
       "name": "RCF SUB 702-AS MK3",
-      "brand": "rcf",
+      "description": "RCF SUB 702-AS MK3",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub702_as_mk3.jpg",
-      "description": "RCF SUB 702-AS MK3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6131165-rcf-sub-702-as-mk3-active-subwoofer",
+      "is_sold": true,
+      "price": 4848.0,
+      "halilit_url": "https://www.halilit.com/items/6131165-rcf-sub-702-as-mk3-active-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4848.0,
+        "original_price": 4848.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub702_as_mk3.jpg",
@@ -1486,38 +1598,22 @@
       ]
     },
     {
-      "id": "rcf_61_ayrapro6",
-      "name": "מוניטור אולפני RCF AYRA PRO 6",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_ayrapro6.jpg",
-      "description": "מוניטור אולפני RCF AYRA PRO 6",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_ayrapro6.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_ayrapro6.jpg",
-        "high_res": "/data/thumbnails/rcf_61_ayrapro6.jpg",
-        "original": "/data/thumbnails/rcf_61_ayrapro6.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_art915a",
       "name": "RCF ART 915-A",
-      "brand": "rcf",
+      "description": "RCF ART 915-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art915a.jpg",
-      "description": "RCF ART 915-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4424447-rcf-art-915-a-",
+      "is_sold": true,
+      "price": 4557.0,
+      "halilit_url": "https://www.halilit.com/items/4424447-rcf-art-915-a-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4557.0,
+        "original_price": 4557.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art915a.jpg",
@@ -1532,14 +1628,20 @@
     {
       "id": "rcf_61_sub8004_as",
       "name": "RCF SUB 8004-AS",
-      "brand": "rcf",
+      "description": "RCF SUB 8004-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8004_as.jpg",
-      "description": "RCF SUB 8004-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3181079-rcf-cvr-sub-705-ii",
+      "is_sold": true,
+      "price": 14120.0,
+      "halilit_url": "https://www.halilit.com/items/3181079-rcf-cvr-sub-705-ii",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 14120.0,
+        "original_price": 14120.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8004_as.jpg",
@@ -1554,14 +1656,20 @@
     {
       "id": "rcf_61_sub8008_as",
       "name": "RCF SUB 8008-AS",
-      "brand": "rcf",
+      "description": "RCF SUB 8008-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8008_as.jpg",
-      "description": "RCF SUB 8008-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5788274-rcf-sub-8008-as-professional-powered-dual-18-subwoofer",
+      "is_sold": true,
+      "price": 17281.0,
+      "halilit_url": "https://www.halilit.com/items/5788274-rcf-sub-8008-as-professional-powered-dual-18-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 17281.0,
+        "original_price": 17281.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8008_as.jpg",
@@ -1576,14 +1684,20 @@
     {
       "id": "rcf_61_sv7982",
       "name": "SV 7982 Wall-Mount Remote Control RCF",
-      "brand": "rcf",
+      "description": "SV 7982 Wall-Mount Remote Control RCF",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sv7982.jpg",
-      "description": "SV 7982 Wall-Mount Remote Control RCF",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7772837-sv-7982-wall-mount-remote-control",
+      "is_sold": true,
+      "price": 1269.0,
+      "halilit_url": "https://www.halilit.com/items/7772837-sv-7982-wall-mount-remote-control",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1269.0,
+        "original_price": 1269.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sv7982.jpg",
@@ -1598,14 +1712,20 @@
     {
       "id": "rcf_61_tt25cxa",
       "name": "RCF TT 25-CXA",
-      "brand": "rcf",
+      "description": "RCF TT 25-CXA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt25cxa.jpg",
-      "description": "RCF TT 25-CXA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6624488-rcf-tt-25-cxa",
+      "is_sold": true,
+      "price": 13172.0,
+      "halilit_url": "https://www.halilit.com/items/6624488-rcf-tt-25-cxa",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 13172.0,
+        "original_price": 13172.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt25cxa.jpg",
@@ -1620,14 +1740,20 @@
     {
       "id": "rcf_61_hdl6a",
       "name": "RCF HDL 6-A",
-      "brand": "rcf",
+      "description": "RCF HDL 6-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl6a.jpg",
-      "description": "RCF HDL 6-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1354745-rcf-hdl-6-a-line-array",
+      "is_sold": true,
+      "price": 7306.0,
+      "halilit_url": "https://www.halilit.com/items/1354745-rcf-hdl-6-a-line-array",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 7306.0,
+        "original_price": 7306.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl6a.jpg",
@@ -1642,14 +1768,20 @@
     {
       "id": "rcf_61_nx912_sma",
       "name": "RCF NX 912-SMA",
-      "brand": "rcf",
+      "description": "RCF NX 912-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx912_sma.jpg",
-      "description": "RCF NX 912-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6394620-rcf-nx-912-sma",
+      "is_sold": true,
+      "price": 6747.0,
+      "halilit_url": "https://www.halilit.com/items/6394620-rcf-nx-912-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6747.0,
+        "original_price": 6747.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx912_sma.jpg",
@@ -1664,14 +1796,20 @@
     {
       "id": "rcf_61_sub9004_as",
       "name": "RCF SUB 9004-AS",
-      "brand": "rcf",
+      "description": "RCF SUB 9004-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9004_as.jpg",
-      "description": "RCF SUB 9004-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5841159-RCF-SUB-9004-AS-ACTIVE-HIGH-POWER-SUBWOOFER",
+      "is_sold": true,
+      "price": 12533.0,
+      "halilit_url": "https://www.halilit.com/items/5841159-RCF-SUB-9004-AS-ACTIVE-HIGH-POWER-SUBWOOFER",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 12533.0,
+        "original_price": 12533.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9004_as.jpg",
@@ -1686,14 +1824,20 @@
     {
       "id": "rcf_61_sub9006_as",
       "name": "RCF SUB 9006-AS",
-      "brand": "rcf",
+      "description": "RCF SUB 9006-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9006_as.jpg",
-      "description": "RCF SUB 9006-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1424426-rcf-sub-9006-as-active-high-power-subwoofer",
+      "is_sold": true,
+      "price": 29504.0,
+      "halilit_url": "https://www.halilit.com/items/1424426-rcf-sub-9006-as-active-high-power-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 29504.0,
+        "original_price": 29504.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9006_as.jpg",
@@ -1708,14 +1852,20 @@
     {
       "id": "rcf_61_evoxj8_mix_w",
       "name": "EVOX JMIX8 White RCF",
-      "brand": "rcf",
+      "description": "EVOX JMIX8 White RCF",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evoxj8_mix_w.jpg",
-      "description": "EVOX JMIX8 White RCF",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1944644-rcf-evox-jmix-8-white",
+      "is_sold": true,
+      "price": 6232.0,
+      "halilit_url": "https://www.halilit.com/items/1944644-rcf-evox-jmix-8-white",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6232.0,
+        "original_price": 6232.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evoxj8_mix_w.jpg",
@@ -1730,14 +1880,20 @@
     {
       "id": "rcf_61_sub8006_as",
       "name": "RCF SUB 8006-AS",
-      "brand": "rcf",
+      "description": "RCF SUB 8006-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8006_as.jpg",
-      "description": "RCF SUB 8006-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1366365-rcf-sub-8006-as",
+      "is_sold": true,
+      "price": 23077.0,
+      "halilit_url": "https://www.halilit.com/items/1366365-rcf-sub-8006-as",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 23077.0,
+        "original_price": 23077.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8006_as.jpg",
@@ -1752,14 +1908,20 @@
     {
       "id": "rcf_61_sub9016_as",
       "name": "RCF SUB 9016-AS",
-      "brand": "rcf",
+      "description": "RCF SUB 9016-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9016_as.jpg",
-      "description": "RCF SUB 9016-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8501179-rcf-sub-9016-as-active-high-power-subwoofer",
+      "is_sold": true,
+      "price": 15808.0,
+      "halilit_url": "https://www.halilit.com/items/8501179-rcf-sub-9016-as-active-high-power-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 15808.0,
+        "original_price": 15808.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9016_as.jpg",
@@ -1774,14 +1936,20 @@
     {
       "id": "rcf_61_nx915_sma",
       "name": "RCF NX 915-SMA",
-      "brand": "rcf",
+      "description": "RCF NX 915-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx915_sma.jpg",
-      "description": "RCF NX 915-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6405600-rcf-nx-915-sma",
+      "is_sold": true,
+      "price": 7757.0,
+      "halilit_url": "https://www.halilit.com/items/6405600-rcf-nx-915-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 7757.0,
+        "original_price": 7757.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx915_sma.jpg",
@@ -1796,14 +1964,20 @@
     {
       "id": "rcf_61_compactm06",
       "name": "RCF COMPACT M 06",
-      "brand": "rcf",
+      "description": "RCF COMPACT M 06",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_compactm06.jpg",
-      "description": "RCF COMPACT M 06",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4957700-rcf-compact-m-06",
+      "is_sold": true,
+      "price": 1558.0,
+      "halilit_url": "https://www.halilit.com/items/4957700-rcf-compact-m-06",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1558.0,
+        "original_price": 1558.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_compactm06.jpg",
@@ -1818,14 +1992,20 @@
     {
       "id": "rcf_61_compactm05",
       "name": "RCF COMPACT M 05",
-      "brand": "rcf",
+      "description": "RCF COMPACT M 05",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_compactm05.jpg",
-      "description": "RCF COMPACT M 05",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4960557-rcf-compact-m-05",
+      "is_sold": true,
+      "price": 1182.0,
+      "halilit_url": "https://www.halilit.com/items/4960557-rcf-compact-m-05",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1182.0,
+        "original_price": 1182.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_compactm05.jpg",
@@ -1840,14 +2020,20 @@
     {
       "id": "rcf_61_compactm08",
       "name": "RCF COMPACT M 08",
-      "brand": "rcf",
+      "description": "RCF COMPACT M 08",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_compactm08.jpg",
-      "description": "RCF COMPACT M 08",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5405859-rcf-compact-m-08",
+      "is_sold": true,
+      "price": 2310.0,
+      "halilit_url": "https://www.halilit.com/items/5405859-rcf-compact-m-08",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2310.0,
+        "original_price": 2310.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_compactm08.jpg",
@@ -1862,14 +2048,20 @@
     {
       "id": "rcf_61_compactm04",
       "name": "RCF COMPACT M 04",
-      "brand": "rcf",
+      "description": "RCF COMPACT M 04",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_compactm04.jpg",
-      "description": "RCF COMPACT M 04",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5354704-rcf-compact-m-04",
+      "is_sold": true,
+      "price": 967.0,
+      "halilit_url": "https://www.halilit.com/items/5354704-rcf-compact-m-04",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 967.0,
+        "original_price": 967.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_compactm04.jpg",
@@ -1884,14 +2076,20 @@
     {
       "id": "rcf_61_evoxj8_cover",
       "name": "RCF EVOX J Cover",
-      "brand": "rcf",
+      "description": "RCF EVOX J Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evoxj8_cover.jpg",
-      "description": "RCF EVOX J Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2048768-rcf-evox-j8-cover",
+      "is_sold": true,
+      "price": 376.0,
+      "halilit_url": "https://www.halilit.com/items/2048768-rcf-evox-j8-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 376.0,
+        "original_price": 376.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evoxj8_cover.jpg",
@@ -1906,14 +2104,20 @@
     {
       "id": "rcf_61_nx915a",
       "name": "RCF NX 915-A",
-      "brand": "rcf",
+      "description": "RCF NX 915-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx915a.jpg",
-      "description": "RCF NX 915-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6130179-rcf-nx-915-a-professional-active-speaker-",
+      "is_sold": true,
+      "price": 6545.0,
+      "halilit_url": "https://www.halilit.com/items/6130179-rcf-nx-915-a-professional-active-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6545.0,
+        "original_price": 6545.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx915a.jpg",
@@ -1928,14 +2132,20 @@
     {
       "id": "rcf_61_nx945a",
       "name": "RCF NX 945-A",
-      "brand": "rcf",
+      "description": "RCF NX 945-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx945a.jpg",
-      "description": "RCF NX 945-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6467587-rcf-nx-945-a-professional-active-speaker-",
+      "is_sold": true,
+      "price": 8831.0,
+      "halilit_url": "https://www.halilit.com/items/6467587-rcf-nx-945-a-professional-active-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 8831.0,
+        "original_price": 8831.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx945a.jpg",
@@ -1950,14 +2160,20 @@
     {
       "id": "rcf_61_nx910a",
       "name": "RCF NX 910-A",
-      "brand": "rcf",
+      "description": "RCF NX 910-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx910a.jpg",
-      "description": "RCF NX 910-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5405761-rcf-nx-910-a-professional-active-speaker-",
+      "is_sold": true,
+      "price": 4840.0,
+      "halilit_url": "https://www.halilit.com/items/5405761-rcf-nx-910-a-professional-active-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4840.0,
+        "original_price": 4840.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx910a.jpg",
@@ -1972,14 +2188,20 @@
     {
       "id": "rcf_61_nx912a",
       "name": "RCF NX 912-A",
-      "brand": "rcf",
+      "description": "RCF NX 912-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx912a.jpg",
-      "description": "RCF NX 912-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6122129-rcf-nx-912-a-professional-active-speaker-",
+      "is_sold": true,
+      "price": 5648.0,
+      "halilit_url": "https://www.halilit.com/items/6122129-rcf-nx-912-a-professional-active-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 5648.0,
+        "original_price": 5648.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx912a.jpg",
@@ -1994,14 +2216,20 @@
     {
       "id": "rcf_61_nx985a",
       "name": "RCF NX 985-A",
-      "brand": "rcf",
+      "description": "RCF NX 985-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx985a.jpg",
-      "description": "RCF NX 985-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6130348-rcf-nx-985-a-professional-three-way-active-speaker-",
+      "is_sold": true,
+      "price": 11474.0,
+      "halilit_url": "https://www.halilit.com/items/6130348-rcf-nx-985-a-professional-three-way-active-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 11474.0,
+        "original_price": 11474.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx985a.jpg",
@@ -2016,14 +2244,20 @@
     {
       "id": "rcf_61_evox12_cover",
       "name": "RCF CVR EVOX 12 Protection Cover",
-      "brand": "rcf",
+      "description": "RCF CVR EVOX 12 Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evox12_cover.jpg",
-      "description": "RCF CVR EVOX 12 Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6132150-rcf-cvr-evox-12-protection-cover-",
+      "is_sold": true,
+      "price": 698.0,
+      "halilit_url": "https://www.halilit.com/items/6132150-rcf-cvr-evox-12-protection-cover-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 698.0,
+        "original_price": 698.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evox12_cover.jpg",
@@ -2038,14 +2272,20 @@
     {
       "id": "rcf_61_nx15_sma",
       "name": "RCF NX 15-SMA",
-      "brand": "rcf",
+      "description": "RCF NX 15-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx15_sma.jpg",
-      "description": "RCF NX 15-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/446503-rcf-nx-15-sma",
+      "is_sold": true,
+      "price": 9858.0,
+      "halilit_url": "https://www.halilit.com/items/446503-rcf-nx-15-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 9858.0,
+        "original_price": 9858.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx15_sma.jpg",
@@ -2060,14 +2300,20 @@
     {
       "id": "rcf_61_nx12_sma",
       "name": "RCF NX 12-SMA",
-      "brand": "rcf",
+      "description": "RCF NX 12-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx12_sma.jpg",
-      "description": "RCF NX 12-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/447622-rcf-nx-12-sma",
+      "is_sold": true,
+      "price": 8646.0,
+      "halilit_url": "https://www.halilit.com/items/447622-rcf-nx-12-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 8646.0,
+        "original_price": 8646.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx12_sma.jpg",
@@ -2082,14 +2328,20 @@
     {
       "id": "rcf_61_nx10_sma",
       "name": "RCF NX 10-SMA",
-      "brand": "rcf",
+      "description": "RCF NX 10-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx10_sma.jpg",
-      "description": "RCF NX 10-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/447190-rcf-nx-10-sma",
+      "is_sold": true,
+      "price": 6545.0,
+      "halilit_url": "https://www.halilit.com/items/447190-rcf-nx-10-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6545.0,
+        "original_price": 6545.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx10_sma.jpg",
@@ -2104,14 +2356,20 @@
     {
       "id": "rcf_61_nxl24a_mk2",
       "name": "RCF NXL 24-A MK2",
-      "brand": "rcf",
+      "description": "RCF NXL 24-A MK2",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl24a_mk2.jpg",
-      "description": "RCF NXL 24-A MK2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5190429-rcf-nxl-24-a-mk2-active-two-way-array",
+      "is_sold": true,
+      "price": 11070.0,
+      "halilit_url": "https://www.halilit.com/items/5190429-rcf-nxl-24-a-mk2-active-two-way-array",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 11070.0,
+        "original_price": 11070.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl24a_mk2.jpg",
@@ -2126,15 +2384,21 @@
     {
       "id": "rcf_61_nxl14a",
       "name": "RCF NXL 14-A Column Speaker",
-      "brand": "rcf",
-      "category": "studio",
-      "image_url": "/data/thumbnails/rcf_61_nxl14a.jpg",
       "description": "RCF NXL 14-A Column Speaker",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_nxl14a.jpg",
+      "product_url": "https://www.halilit.com/items/8499237-rcf-nxl-14-a-compact-active-point-source-speaker",
+      "is_sold": true,
+      "price": 6429.0,
+      "halilit_url": "https://www.halilit.com/items/8499237-rcf-nxl-14-a-compact-active-point-source-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6429.0,
+        "original_price": 6429.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl14a.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_nxl14a.jpg",
@@ -2142,20 +2406,26 @@
         "original": "/data/thumbnails/rcf_61_nxl14a.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "rcf_61_nxl44a_mk2",
       "name": "RCF NXL 44-A MK2",
-      "brand": "rcf",
+      "description": "RCF NXL 44-A MK2",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl44a_mk2.jpg",
-      "description": "RCF NXL 44-A MK2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5190498-rcf-nxl-44-a-mk2-active-two-way-array",
+      "is_sold": true,
+      "price": 14867.0,
+      "halilit_url": "https://www.halilit.com/items/5190498-rcf-nxl-44-a-mk2-active-two-way-array",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 14867.0,
+        "original_price": 14867.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl44a_mk2.jpg",
@@ -2170,14 +2440,20 @@
     {
       "id": "rcf_61_sub8006as_cover",
       "name": "RCF CVR SUB 8006-AS",
-      "brand": "rcf",
+      "description": "RCF CVR SUB 8006-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8006as_cover.jpg",
-      "description": "RCF CVR SUB 8006-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3422775-rcfcvr-sub-8006-as-protection-cover",
+      "is_sold": true,
+      "price": 1128.0,
+      "halilit_url": "https://www.halilit.com/items/3422775-rcfcvr-sub-8006-as-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1128.0,
+        "original_price": 1128.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8006as_cover.jpg",
@@ -2192,14 +2468,20 @@
     {
       "id": "rcf_61_sub8003as2_cover",
       "name": "RCF CVR SUB 8003-AS II",
-      "brand": "rcf",
+      "description": "RCF CVR SUB 8003-AS II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8003as2_cover.jpg",
-      "description": "RCF CVR SUB 8003-AS II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5841214-rcf-cvr-sub-8003-as-ii",
+      "is_sold": true,
+      "price": 380.0,
+      "halilit_url": "https://www.halilit.com/items/5841214-rcf-cvr-sub-8003-as-ii",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 380.0,
+        "original_price": 380.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8003as2_cover.jpg",
@@ -2214,14 +2496,20 @@
     {
       "id": "rcf_61_evoxj8_w",
       "name": "RCF EVOX J8 White",
-      "brand": "rcf",
+      "description": "RCF EVOX J8 White",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evoxj8_w.jpg",
-      "description": "RCF EVOX J8 White",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8668479-rcf-evox-j8-2-way-portable-array-white",
+      "is_sold": true,
+      "price": 4996.0,
+      "halilit_url": "https://www.halilit.com/items/8668479-rcf-evox-j8-2-way-portable-array-white",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4996.0,
+        "original_price": 4996.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evoxj8_w.jpg",
@@ -2236,14 +2524,20 @@
     {
       "id": "rcf_61_sub9007as_cover",
       "name": "RCF SUB 9007-AS Protection Cover",
-      "brand": "rcf",
+      "description": "RCF SUB 9007-AS Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9007as_cover.jpg",
-      "description": "RCF SUB 9007-AS Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1354826-rcf-sub-9007-as-protection-cover",
+      "is_sold": true,
+      "price": 665.0,
+      "halilit_url": "https://www.halilit.com/items/1354826-rcf-sub-9007-as-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 665.0,
+        "original_price": 665.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9007as_cover.jpg",
@@ -2258,14 +2552,20 @@
     {
       "id": "rcf_61_evox12",
       "name": "RCF EVOX 12",
-      "brand": "rcf",
+      "description": "RCF EVOX 12",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evox12.jpg",
-      "description": "RCF EVOX 12",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/827279-rcf-evox-12",
+      "is_sold": true,
+      "price": 11802.0,
+      "halilit_url": "https://www.halilit.com/items/827279-rcf-evox-12",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 11802.0,
+        "original_price": 11802.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evox12.jpg",
@@ -2280,14 +2580,20 @@
     {
       "id": "rcf_61_evoxj8",
       "name": "RCF EVOX J8",
-      "brand": "rcf",
+      "description": "RCF EVOX J8",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evoxj8.jpg",
-      "description": "RCF EVOX J8",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1734378-rcf-evox-j8-2-way-portable-array",
+      "is_sold": true,
+      "price": 4996.0,
+      "halilit_url": "https://www.halilit.com/items/1734378-rcf-evox-j8-2-way-portable-array",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4996.0,
+        "original_price": 4996.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evoxj8.jpg",
@@ -2302,14 +2608,20 @@
     {
       "id": "rcf_61_evox12_w",
       "name": "RCF EVOX 12 W",
-      "brand": "rcf",
+      "description": "RCF EVOX 12 W",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evox12_w.jpg",
-      "description": "RCF EVOX 12 W",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7771120-rcf-evox-12-w",
+      "is_sold": true,
+      "price": 11802.0,
+      "halilit_url": "https://www.halilit.com/items/7771120-rcf-evox-12-w",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 11802.0,
+        "original_price": 11802.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evox12_w.jpg",
@@ -2324,14 +2636,20 @@
     {
       "id": "rcf_61_evoxj8_mix",
       "name": "RCF EVOX JMIX8",
-      "brand": "rcf",
+      "description": "RCF EVOX JMIX8",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_evoxj8_mix.jpg",
-      "description": "RCF EVOX JMIX8",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1944574-rcf-evox-jmix-8",
+      "is_sold": true,
+      "price": 6232.0,
+      "halilit_url": "https://www.halilit.com/items/1944574-rcf-evox-jmix-8",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6232.0,
+        "original_price": 6232.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_evoxj8_mix.jpg",
@@ -2346,14 +2664,20 @@
     {
       "id": "rcf_61_tt052a",
       "name": "RCF TT052-A",
-      "brand": "rcf",
+      "description": "RCF TT052-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt052a.jpg",
-      "description": "RCF TT052-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/446494-rcf-tt052-a-",
+      "is_sold": true,
+      "price": 6125.0,
+      "halilit_url": "https://www.halilit.com/items/446494-rcf-tt052-a-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6125.0,
+        "original_price": 6125.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt052a.jpg",
@@ -2368,14 +2692,20 @@
     {
       "id": "rcf_61_tts15a",
       "name": "RCF TTS15-A",
-      "brand": "rcf",
+      "description": "RCF TTS15-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tts15a.jpg",
-      "description": "RCF TTS15-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2279483-rcf-tts15-a",
+      "is_sold": true,
+      "price": 11802.0,
+      "halilit_url": "https://www.halilit.com/items/2279483-rcf-tts15-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 11802.0,
+        "original_price": 11802.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tts15a.jpg",
@@ -2390,14 +2720,20 @@
     {
       "id": "rcf_61_tt25a_mk2",
       "name": "RCF TT 25-A II",
-      "brand": "rcf",
+      "description": "RCF TT 25-A II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt25a_mk2.jpg",
-      "description": "RCF TT 25-A II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1690441-rcf-tt-25-a-ii-active-speaker",
+      "is_sold": true,
+      "price": 15279.0,
+      "halilit_url": "https://www.halilit.com/items/1690441-rcf-tt-25-a-ii-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 15279.0,
+        "original_price": 15279.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt25a_mk2.jpg",
@@ -2412,14 +2748,20 @@
     {
       "id": "rcf_61_tt808as",
       "name": "RCF TT 808-AS",
-      "brand": "rcf",
+      "description": "RCF TT 808-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt808as.jpg",
-      "description": "RCF TT 808-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6059615-rcf-tt-808-as-professional-active-subwoofer",
+      "is_sold": true,
+      "price": 8986.0,
+      "halilit_url": "https://www.halilit.com/items/6059615-rcf-tt-808-as-professional-active-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 8986.0,
+        "original_price": 8986.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt808as.jpg",
@@ -2434,14 +2776,20 @@
     {
       "id": "rcf_61_tt10a",
       "name": "RCF TT 10-A",
-      "brand": "rcf",
+      "description": "RCF TT 10-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt10a.jpg",
-      "description": "RCF TT 10-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6624612-rcf-tt-10-a",
+      "is_sold": true,
+      "price": 9315.0,
+      "halilit_url": "https://www.halilit.com/items/6624612-rcf-tt-10-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 9315.0,
+        "original_price": 9315.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt10a.jpg",
@@ -2456,14 +2804,20 @@
     {
       "id": "rcf_61_tt22a_mk2",
       "name": "RCF TT 22-A II",
-      "brand": "rcf",
+      "description": "RCF TT 22-A II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt22a_mk2.jpg",
-      "description": "RCF TT 22-A II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6133883-rcf-tt-22-a-ii-active-speaker",
+      "is_sold": true,
+      "price": 13804.0,
+      "halilit_url": "https://www.halilit.com/items/6133883-rcf-tt-22-a-ii-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 13804.0,
+        "original_price": 13804.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt22a_mk2.jpg",
@@ -2478,14 +2832,20 @@
     {
       "id": "rcf_61_ttl4a",
       "name": "RCF TTL4-A",
-      "brand": "rcf",
+      "description": "RCF TTL4-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_ttl4a.jpg",
-      "description": "RCF TTL4-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6624652-rcf-ttl4-a",
+      "is_sold": true,
+      "price": 20653.0,
+      "halilit_url": "https://www.halilit.com/items/6624652-rcf-ttl4-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 20653.0,
+        "original_price": 20653.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_ttl4a.jpg",
@@ -2500,14 +2860,20 @@
     {
       "id": "rcf_61_tts18a_mk2",
       "name": "RCF TTS18-A II",
-      "brand": "rcf",
+      "description": "RCF TTS18-A II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tts18a_mk2.jpg",
-      "description": "RCF TTS18-A II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2236575-rcf-tts18-a-ii",
+      "is_sold": true,
+      "price": 21285.0,
+      "halilit_url": "https://www.halilit.com/items/2236575-rcf-tts18-a-ii",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 21285.0,
+        "original_price": 21285.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tts18a_mk2.jpg",
@@ -2522,14 +2888,20 @@
     {
       "id": "rcf_61_tt08a_mk2",
       "name": "RCF TT 08-A II",
-      "brand": "rcf",
+      "description": "RCF TT 08-A II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt08a_mk2.jpg",
-      "description": "RCF TT 08-A II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5405134-rcf-tt-08-a-ii",
+      "is_sold": true,
+      "price": 7628.0,
+      "halilit_url": "https://www.halilit.com/items/5405134-rcf-tt-08-a-ii",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 7628.0,
+        "original_price": 7628.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt08a_mk2.jpg",
@@ -2544,14 +2916,20 @@
     {
       "id": "rcf_61_tt515a",
       "name": "RCF TT 515-A",
-      "brand": "rcf",
+      "description": "RCF TT 515-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt515a.jpg",
-      "description": "RCF TT 515-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6131411-rcf-tt-515-a-active-speaker",
+      "is_sold": true,
+      "price": 7414.0,
+      "halilit_url": "https://www.halilit.com/items/6131411-rcf-tt-515-a-active-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 7414.0,
+        "original_price": 7414.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt515a.jpg",
@@ -2566,14 +2944,20 @@
     {
       "id": "rcf_61_ttl6a",
       "name": "RCF TTL6-A",
-      "brand": "rcf",
+      "description": "RCF TTL6-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_ttl6a.jpg",
-      "description": "RCF TTL6-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/853246-rcf-ttl6-a-active-3-way-line-array-module",
+      "is_sold": true,
+      "price": 30453.0,
+      "halilit_url": "https://www.halilit.com/items/853246-rcf-ttl6-a-active-3-way-line-array-module",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 30453.0,
+        "original_price": 30453.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_ttl6a.jpg",
@@ -2588,14 +2972,20 @@
     {
       "id": "rcf_61_sub9007_as",
       "name": "RCF SUB 9007-AS",
-      "brand": "rcf",
+      "description": "RCF SUB 9007-AS",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9007_as.jpg",
-      "description": "RCF SUB 9007-AS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1354813-rcf-sub-9007-as",
+      "is_sold": true,
+      "price": 23630.0,
+      "halilit_url": "https://www.halilit.com/items/1354813-rcf-sub-9007-as",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 23630.0,
+        "original_price": 23630.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9007_as.jpg",
@@ -2610,14 +3000,20 @@
     {
       "id": "rcf_61_hdm45a",
       "name": "RCF HDM 45-A",
-      "brand": "rcf",
+      "description": "RCF HDM 45-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdm45a.jpg",
-      "description": "RCF HDM 45-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2417229-rcf-hdm45-a",
+      "is_sold": true,
+      "price": 9062.0,
+      "halilit_url": "https://www.halilit.com/items/2417229-rcf-hdm45-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 9062.0,
+        "original_price": 9062.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdm45a.jpg",
@@ -2632,14 +3028,20 @@
     {
       "id": "rcf_61_ttl6a_flybar",
       "name": "RCF TTL6-A FLY BAR",
-      "brand": "rcf",
+      "description": "RCF TTL6-A FLY BAR",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_ttl6a_flybar.jpg",
-      "description": "RCF TTL6-A FLY BAR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6631853-rcf-ttl6-a-fly-bar",
+      "is_sold": true,
+      "price": 6232.0,
+      "halilit_url": "https://www.halilit.com/items/6631853-rcf-ttl6-a-fly-bar",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6232.0,
+        "original_price": 6232.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_ttl6a_flybar.jpg",
@@ -2652,38 +3054,22 @@
       ]
     },
     {
-      "id": "rcf_61_kxl4a_flybar",
-      "name": "מתקן תלייה RCF KXL 4-A Fly Bar",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg",
-      "description": "מתקן תלייה RCF KXL 4-A Fly Bar",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg",
-        "high_res": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg",
-        "original": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_p4228_wp",
       "name": "RCF P 4228 Weatherproof",
-      "brand": "rcf",
+      "description": "RCF P 4228 Weatherproof",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_p4228_wp.jpg",
-      "description": "RCF P 4228 Weatherproof",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7771205-rcf-p-4228-weatherproof-two-way-speaker-",
+      "is_sold": true,
+      "price": 7521.0,
+      "halilit_url": "https://www.halilit.com/items/7771205-rcf-p-4228-weatherproof-two-way-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 7521.0,
+        "original_price": 7521.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_p4228_wp.jpg",
@@ -2698,14 +3084,20 @@
     {
       "id": "rcf_61_hdl10a_flybar",
       "name": "RCF HDL 10-A FLY BAR",
-      "brand": "rcf",
+      "description": "RCF HDL 10-A FLY BAR",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl10a_flybar.jpg",
-      "description": "RCF HDL 10-A FLY BAR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/801705-rcf-fly-bar-hd-10-light",
+      "is_sold": true,
+      "price": 4996.0,
+      "halilit_url": "https://www.halilit.com/items/801705-rcf-fly-bar-hd-10-light",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4996.0,
+        "original_price": 4996.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl10a_flybar.jpg",
@@ -2720,14 +3112,20 @@
     {
       "id": "rcf_61_p1108t",
       "name": "RCF P 1108T",
-      "brand": "rcf",
+      "description": "RCF P 1108T",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_p1108t.jpg",
-      "description": "RCF P 1108T",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5426158-rcf-p-1108t-weatherproof-two-way-speaker-",
+      "is_sold": true,
+      "price": 3008.0,
+      "halilit_url": "https://www.halilit.com/items/5426158-rcf-p-1108t-weatherproof-two-way-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3008.0,
+        "original_price": 3008.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_p1108t.jpg",
@@ -2742,15 +3140,21 @@
     {
       "id": "rcf_61_mq50c_w",
       "name": "RCF CEILING SPEAKER MQ 50C",
-      "brand": "rcf",
-      "category": "studio",
-      "image_url": "/data/thumbnails/rcf_61_mq50c_w.jpg",
       "description": "RCF CEILING SPEAKER MQ 50C",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_mq50c_w.jpg",
+      "product_url": "https://www.halilit.com/items/446492-rcf-ceiling-speaker-mq-50c",
+      "is_sold": true,
+      "price": 495.0,
+      "halilit_url": "https://www.halilit.com/items/446492-rcf-ceiling-speaker-mq-50c",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 495.0,
+        "original_price": 495.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_mq50c_w.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_mq50c_w.jpg",
@@ -2758,20 +3162,26 @@
         "original": "/data/thumbnails/rcf_61_mq50c_w.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "rcf_61_hdl28a",
       "name": "RCF HDL 28-A",
-      "brand": "rcf",
+      "description": "RCF HDL 28-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl28a.jpg",
-      "description": "RCF HDL 28-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2236596-rcf-hdl-28-a",
+      "is_sold": true,
+      "price": 15700.0,
+      "halilit_url": "https://www.halilit.com/items/2236596-rcf-hdl-28-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 15700.0,
+        "original_price": 15700.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl28a.jpg",
@@ -2784,38 +3194,22 @@
       ]
     },
     {
-      "id": "rcf_61_ayratensub",
-      "name": "סאבוופר אולפני RCF AYRA 10 SUB",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_ayratensub.jpg",
-      "description": "סאבוופר אולפני RCF AYRA 10 SUB",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_ayratensub.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_ayratensub.jpg",
-        "high_res": "/data/thumbnails/rcf_61_ayratensub.jpg",
-        "original": "/data/thumbnails/rcf_61_ayratensub.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_m20x_bag",
       "name": "RCF M 20X BAG / E12",
-      "brand": "rcf",
+      "description": "RCF M 20X BAG / E12",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_m20x_bag.jpg",
-      "description": "RCF M 20X BAG / E12",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2721089-rcf-m-20x-bag-e12",
+      "is_sold": true,
+      "price": 398.0,
+      "halilit_url": "https://www.halilit.com/items/2721089-rcf-m-20x-bag-e12",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 398.0,
+        "original_price": 398.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_m20x_bag.jpg",
@@ -2830,14 +3224,20 @@
     {
       "id": "rcf_61_nx915_sma_cover",
       "name": "RCF CVR 010 Cover for NX 915-SMA",
-      "brand": "rcf",
+      "description": "RCF CVR 010 Cover for NX 915-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx915_sma_cover.jpg",
-      "description": "RCF CVR 010 Cover for NX 915-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588360-rcf-cvr-010-cover-for-nx-915-sma",
+      "is_sold": true,
+      "price": 480.0,
+      "halilit_url": "https://www.halilit.com/items/7588360-rcf-cvr-010-cover-for-nx-915-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 480.0,
+        "original_price": 480.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx915_sma_cover.jpg",
@@ -2852,14 +3252,20 @@
     {
       "id": "rcf_61_sub9006as_cover",
       "name": "RCF SUB 9006-AS Protection Cover",
-      "brand": "rcf",
+      "description": "RCF SUB 9006-AS Protection Cover",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9006as_cover.jpg",
-      "description": "RCF SUB 9006-AS Protection Cover",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3180557-rcf-sub-9006-as-protection-cover",
+      "is_sold": true,
+      "price": 1182.0,
+      "halilit_url": "https://www.halilit.com/items/3180557-rcf-sub-9006-as-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1182.0,
+        "original_price": 1182.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9006as_cover.jpg",
@@ -2874,14 +3280,20 @@
     {
       "id": "rcf_61_art715a_cover",
       "name": "RCF ART cover for ART 7 series 15",
-      "brand": "rcf",
+      "description": "RCF ART cover for ART 7 series 15",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art715a_cover.jpg",
-      "description": "RCF ART cover for ART 7 series 15",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3908112-rcf-art-cover-for-art-7-series-15",
+      "is_sold": true,
+      "price": 403.0,
+      "halilit_url": "https://www.halilit.com/items/3908112-rcf-art-cover-for-art-7-series-15",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 403.0,
+        "original_price": 403.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art715a_cover.jpg",
@@ -2896,14 +3308,20 @@
     {
       "id": "rcf_61_hdl6a_flybar",
       "name": "RCF HDL 6-A FLY BAR",
-      "brand": "rcf",
+      "description": "RCF HDL 6-A FLY BAR",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl6a_flybar.jpg",
-      "description": "RCF HDL 6-A FLY BAR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1354773-rcf-fl-b-hdl-6-fly-bar",
+      "is_sold": true,
+      "price": 3599.0,
+      "halilit_url": "https://www.halilit.com/items/1354773-rcf-fl-b-hdl-6-fly-bar",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3599.0,
+        "original_price": 3599.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl6a_flybar.jpg",
@@ -2918,14 +3336,20 @@
     {
       "id": "rcf_61_nx15sma_cover",
       "name": "RCF CVR NX15-SMA",
-      "brand": "rcf",
+      "description": "RCF CVR NX15-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx15sma_cover.jpg",
-      "description": "RCF CVR NX15-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7589399-rcf-cvr-nx15-sma-protection-cover",
+      "is_sold": true,
+      "price": 405.0,
+      "halilit_url": "https://www.halilit.com/items/7589399-rcf-cvr-nx15-sma-protection-cover",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 405.0,
+        "original_price": 405.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx15sma_cover.jpg",
@@ -2938,38 +3362,22 @@
       ]
     },
     {
-      "id": "rcf_61_kx45_a",
-      "name": "רמקול מוגבר RCF KX 45-A",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_kx45_a.jpg",
-      "description": "רמקול מוגבר RCF KX 45-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_kx45_a.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_kx45_a.jpg",
-        "high_res": "/data/thumbnails/rcf_61_kx45_a.jpg",
-        "original": "/data/thumbnails/rcf_61_kx45_a.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_art910a_flbr",
       "name": "RCF FL-BR ART 910 Flying Mount Bracket",
-      "brand": "rcf",
+      "description": "RCF FL-BR ART 910 Flying Mount Bracket",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art910a_flbr.jpg",
-      "description": "RCF FL-BR ART 910 Flying Mount Bracket",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6319162-rcf-fl-br-art-910-flying-mount-bracket",
+      "is_sold": true,
+      "price": 187.0,
+      "halilit_url": "https://www.halilit.com/items/6319162-rcf-fl-br-art-910-flying-mount-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 187.0,
+        "original_price": 187.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art910a_flbr.jpg",
@@ -2984,14 +3392,20 @@
     {
       "id": "rcf_61_art912a_vbr",
       "name": "RCF V-BR ART 912",
-      "brand": "rcf",
+      "description": "RCF V-BR ART 912",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art912a_vbr.jpg",
-      "description": "RCF V-BR ART 912",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6615621-rcf-v-br-art-912-vertical-bracket",
+      "is_sold": true,
+      "price": 272.0,
+      "halilit_url": "https://www.halilit.com/items/6615621-rcf-v-br-art-912-vertical-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 272.0,
+        "original_price": 272.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art912a_vbr.jpg",
@@ -3006,14 +3420,20 @@
     {
       "id": "rcf_61_art912a_flbr",
       "name": "RCF FL-BR ART 912 Flying Mount Bracket",
-      "brand": "rcf",
+      "description": "RCF FL-BR ART 912 Flying Mount Bracket",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art912a_flbr.jpg",
-      "description": "RCF FL-BR ART 912 Flying Mount Bracket",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6319174-rcf-fl-br-art-912-flying-mount-bracket",
+      "is_sold": true,
+      "price": 254.0,
+      "halilit_url": "https://www.halilit.com/items/6319174-rcf-fl-br-art-912-flying-mount-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 254.0,
+        "original_price": 254.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art912a_flbr.jpg",
@@ -3028,14 +3448,20 @@
     {
       "id": "rcf_61_nxl14a_pmkit",
       "name": "RCF PM-KIT NXL 14-A",
-      "brand": "rcf",
+      "description": "RCF PM-KIT NXL 14-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl14a_pmkit.jpg",
-      "description": "RCF PM-KIT NXL 14-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/8501067-rcf-pm-kit-nxl-14-a-stand-adapter",
+      "is_sold": true,
+      "price": 126.0,
+      "halilit_url": "https://www.halilit.com/items/8501067-rcf-pm-kit-nxl-14-a-stand-adapter",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 126.0,
+        "original_price": 126.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl14a_pmkit.jpg",
@@ -3050,14 +3476,20 @@
     {
       "id": "rcf_61_art915a_flbr",
       "name": "RCF FL-BR ART 915 Flying Mount Bracket",
-      "brand": "rcf",
+      "description": "RCF FL-BR ART 915 Flying Mount Bracket",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art915a_flbr.jpg",
-      "description": "RCF FL-BR ART 915 Flying Mount Bracket",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6319184-rcf-fl-br-art-915-flying-mount-bracket",
+      "is_sold": true,
+      "price": 272.0,
+      "halilit_url": "https://www.halilit.com/items/6319184-rcf-fl-br-art-915-flying-mount-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 272.0,
+        "original_price": 272.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art915a_flbr.jpg",
@@ -3072,14 +3504,20 @@
     {
       "id": "rcf_61_tt515_pmkit",
       "name": "RCF PM-KIT TT 515",
-      "brand": "rcf",
+      "description": "RCF PM-KIT TT 515",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tt515_pmkit.jpg",
-      "description": "RCF PM-KIT TT 515",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6131280-rcf-pm-kit-tt-515-stand-adapter",
+      "is_sold": true,
+      "price": 129.0,
+      "halilit_url": "https://www.halilit.com/items/6131280-rcf-pm-kit-tt-515-stand-adapter",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 129.0,
+        "original_price": 129.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tt515_pmkit.jpg",
@@ -3094,14 +3532,20 @@
     {
       "id": "rcf_61_art915a_vbr",
       "name": "RCF V-BR ART 915",
-      "brand": "rcf",
+      "description": "RCF V-BR ART 915",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art915a_vbr.jpg",
-      "description": "RCF V-BR ART 915",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6615633-rcf-v-br-art-915-vertical-bracket",
+      "is_sold": true,
+      "price": 290.0,
+      "halilit_url": "https://www.halilit.com/items/6615633-rcf-v-br-art-915-vertical-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 290.0,
+        "original_price": 290.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art915a_vbr.jpg",
@@ -3116,14 +3560,20 @@
     {
       "id": "rcf_61_sub8003as3_cover",
       "name": "RCF CVR 003 Cover for Subwoofer",
-      "brand": "rcf",
+      "description": "RCF CVR 003 Cover for Subwoofer",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8003as3_cover.jpg",
-      "description": "RCF CVR 003 Cover for Subwoofer",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7589458-rcf-cvr-003-cover-for-subwoofer",
+      "is_sold": true,
+      "price": 724.0,
+      "halilit_url": "https://www.halilit.com/items/7589458-rcf-cvr-003-cover-for-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 724.0,
+        "original_price": 724.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8003as3_cover.jpg",
@@ -3138,14 +3588,20 @@
     {
       "id": "rcf_61_f12xr_rm_kit",
       "name": "RCF RM-KIT F 12XR Rack Mount",
-      "brand": "rcf",
+      "description": "RCF RM-KIT F 12XR Rack Mount",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_f12xr_rm_kit.jpg",
-      "description": "RCF RM-KIT F 12XR Rack Mount",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7587925-rcf-rm-kit-f-12xr-rack-mount",
+      "is_sold": true,
+      "price": 116.0,
+      "halilit_url": "https://www.halilit.com/items/7587925-rcf-rm-kit-f-12xr-rack-mount",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 116.0,
+        "original_price": 116.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_f12xr_rm_kit.jpg",
@@ -3160,14 +3616,20 @@
     {
       "id": "rcf_61_nxl44a_flb_link",
       "name": "RCF FL-B LINK NXL 44-A",
-      "brand": "rcf",
+      "description": "RCF FL-B LINK NXL 44-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl44a_flb_link.jpg",
-      "description": "RCF FL-B LINK NXL 44-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588444-rcf-fl-b-link-nxl-44-a",
+      "is_sold": true,
+      "price": 1472.0,
+      "halilit_url": "https://www.halilit.com/items/7588444-rcf-fl-b-link-nxl-44-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1472.0,
+        "original_price": 1472.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl44a_flb_link.jpg",
@@ -3182,14 +3644,20 @@
     {
       "id": "rcf_61_mq100l_b",
       "name": "RCF MQ 100L",
-      "brand": "rcf",
+      "description": "RCF MQ 100L",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_mq100l_b.jpg",
-      "description": "RCF MQ 100L",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6624388-rcf-mq-100l-three-way-column-loudspeaker",
+      "is_sold": true,
+      "price": 725.0,
+      "halilit_url": "https://www.halilit.com/items/6624388-rcf-mq-100l-three-way-column-loudspeaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 725.0,
+        "original_price": 725.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_mq100l_b.jpg",
@@ -3204,14 +3672,20 @@
     {
       "id": "rcf_61_pm_kit_m20",
       "name": "RCF PM-KIT M20 Pole Mount",
-      "brand": "rcf",
+      "description": "RCF PM-KIT M20 Pole Mount",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_pm_kit_m20.jpg",
-      "description": "RCF PM-KIT M20 Pole Mount",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588489-rcf-pm-kit-m20-pole-mount",
+      "is_sold": true,
+      "price": 222.0,
+      "halilit_url": "https://www.halilit.com/items/7588489-rcf-pm-kit-m20-pole-mount",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 222.0,
+        "original_price": 222.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_pm_kit_m20.jpg",
@@ -3226,14 +3700,20 @@
     {
       "id": "rcf_61_mq100l_w",
       "name": "RCF MQ 100L",
-      "brand": "rcf",
+      "description": "RCF MQ 100L",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_mq100l_w.jpg",
-      "description": "RCF MQ 100L",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/447625-rcf-mq-100l-three-way-column-loudspeaker",
+      "is_sold": true,
+      "price": 1289.0,
+      "halilit_url": "https://www.halilit.com/items/447625-rcf-mq-100l-three-way-column-loudspeaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1289.0,
+        "original_price": 1289.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_mq100l_w.jpg",
@@ -3248,14 +3728,20 @@
     {
       "id": "rcf_61_sub8004as_cover",
       "name": "RCF SUB 8004-AS COVER",
-      "brand": "rcf",
+      "description": "RCF SUB 8004-AS COVER",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub8004as_cover.jpg",
-      "description": "RCF SUB 8004-AS COVER",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1612702-rcf-cover-sub-8004-as",
+      "is_sold": true,
+      "price": 590.0,
+      "halilit_url": "https://www.halilit.com/items/1612702-rcf-cover-sub-8004-as",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 590.0,
+        "original_price": 590.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub8004as_cover.jpg",
@@ -3270,14 +3756,20 @@
     {
       "id": "rcf_61_art912a_hbr",
       "name": "RCF H-BR ART 912",
-      "brand": "rcf",
+      "description": "RCF H-BR ART 912",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art912a_hbr.jpg",
-      "description": "RCF H-BR ART 912",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4418207-rcf-h-br-art-912-horizontal-bracket",
+      "is_sold": true,
+      "price": 254.0,
+      "halilit_url": "https://www.halilit.com/items/4418207-rcf-h-br-art-912-horizontal-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 254.0,
+        "original_price": 254.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art912a_hbr.jpg",
@@ -3292,14 +3784,20 @@
     {
       "id": "rcf_61_hdl30a_flybar",
       "name": "RCF HDL 30-A FLY BAR",
-      "brand": "rcf",
+      "description": "RCF HDL 30-A FLY BAR",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl30a_flybar.jpg",
-      "description": "RCF HDL 30-A FLY BAR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1489058-rcf-fly-bar-hdl-30",
+      "is_sold": true,
+      "price": 5909.0,
+      "halilit_url": "https://www.halilit.com/items/1489058-rcf-fly-bar-hdl-30",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 5909.0,
+        "original_price": 5909.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl30a_flybar.jpg",
@@ -3314,14 +3812,20 @@
     {
       "id": "rcf_61_hdl30a_stk_kit",
       "name": "RCF STCK-KIT 2X HDL 30",
-      "brand": "rcf",
+      "description": "RCF STCK-KIT 2X HDL 30",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl30a_stk_kit.jpg",
-      "description": "RCF STCK-KIT 2X HDL 30",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2525859-rcf-stck-kit-2x-hdl-30",
+      "is_sold": true,
+      "price": 988.0,
+      "halilit_url": "https://www.halilit.com/items/2525859-rcf-stck-kit-2x-hdl-30",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 988.0,
+        "original_price": 988.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl30a_stk_kit.jpg",
@@ -3336,14 +3840,20 @@
     {
       "id": "rcf_61_sub9006as_cart",
       "name": "RCF SUB 9006-AS CART",
-      "brand": "rcf",
+      "description": "RCF SUB 9006-AS CART",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9006as_cart.jpg",
-      "description": "RCF SUB 9006-AS CART",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1489068-rcf-sub-9006-as-front-kart",
+      "is_sold": true,
+      "price": 2686.0,
+      "halilit_url": "https://www.halilit.com/items/1489068-rcf-sub-9006-as-front-kart",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2686.0,
+        "original_price": 2686.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9006as_cart.jpg",
@@ -3358,15 +3868,21 @@
     {
       "id": "rcf_61_ac_pma",
       "name": "RCF AC PMA Speaker Pole Mount",
-      "brand": "rcf",
-      "category": "studio",
-      "image_url": "/data/thumbnails/rcf_61_ac_pma.jpg",
       "description": "RCF AC PMA Speaker Pole Mount",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_ac_pma.jpg",
+      "product_url": "https://www.halilit.com/items/6615998-rcf-ac-pma-speaker-pole-mount",
+      "is_sold": true,
+      "price": 162.0,
+      "halilit_url": "https://www.halilit.com/items/6615998-rcf-ac-pma-speaker-pole-mount",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 162.0,
+        "original_price": 162.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_ac_pma.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_ac_pma.jpg",
@@ -3374,20 +3890,26 @@
         "original": "/data/thumbnails/rcf_61_ac_pma.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "rcf_61_art910a_hbr",
       "name": "RCF H-BR ART 910",
-      "brand": "rcf",
+      "description": "RCF H-BR ART 910",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art910a_hbr.jpg",
-      "description": "RCF H-BR ART 910",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4722377-rcf-h-br-art-910-horizontal-bracket",
+      "is_sold": true,
+      "price": 254.0,
+      "halilit_url": "https://www.halilit.com/items/4722377-rcf-h-br-art-910-horizontal-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 254.0,
+        "original_price": 254.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art910a_hbr.jpg",
@@ -3402,14 +3924,20 @@
     {
       "id": "rcf_61_nx912_sma_cover",
       "name": "RCF CVR 011 Cover for NX 912-SMA",
-      "brand": "rcf",
+      "description": "RCF CVR 011 Cover for NX 912-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx912_sma_cover.jpg",
-      "description": "RCF CVR 011 Cover for NX 912-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588306-rcf-cvr-011-cover-for-nx-912-sma",
+      "is_sold": true,
+      "price": 447.0,
+      "halilit_url": "https://www.halilit.com/items/7588306-rcf-cvr-011-cover-for-nx-912-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 447.0,
+        "original_price": 447.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx912_sma_cover.jpg",
@@ -3424,14 +3952,20 @@
     {
       "id": "rcf_61_nxl44a_stacking",
       "name": "RCF STCK-KIT NXL 44-A",
-      "brand": "rcf",
+      "description": "RCF STCK-KIT NXL 44-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nxl44a_stacking.jpg",
-      "description": "RCF STCK-KIT NXL 44-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588568-rcf-fl-b-link-nxl-44-a",
+      "is_sold": true,
+      "price": 1773.0,
+      "halilit_url": "https://www.halilit.com/items/7588568-rcf-fl-b-link-nxl-44-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1773.0,
+        "original_price": 1773.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nxl44a_stacking.jpg",
@@ -3444,38 +3978,22 @@
       ]
     },
     {
-      "id": "rcf_61_kxl4_a",
-      "name": "רמקול מוגבר RCF KXL 4-A",
-      "brand": "rcf",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/rcf_61_kxl4_a.jpg",
-      "description": "רמקול מוגבר RCF KXL 4-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/rcf_61_kxl4_a.jpg",
-        "thumbnail": "/data/thumbnails/rcf_61_kxl4_a.jpg",
-        "high_res": "/data/thumbnails/rcf_61_kxl4_a.jpg",
-        "original": "/data/thumbnails/rcf_61_kxl4_a.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "rcf_61_hdl6a_polemount",
       "name": "RCF HDL 6-A Pole Mount Kit",
-      "brand": "rcf",
+      "description": "RCF HDL 6-A Pole Mount Kit",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl6a_polemount.jpg",
-      "description": "RCF HDL 6-A Pole Mount Kit",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1425638-rcf-hdl-6-a-pole-mount-kit",
+      "is_sold": true,
+      "price": 1450.0,
+      "halilit_url": "https://www.halilit.com/items/1425638-rcf-hdl-6-a-pole-mount-kit",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1450.0,
+        "original_price": 1450.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl6a_polemount.jpg",
@@ -3490,14 +4008,20 @@
     {
       "id": "rcf_61_nx10sma_cover",
       "name": "RCF CVR NX10-SMA",
-      "brand": "rcf",
+      "description": "RCF CVR NX10-SMA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_nx10sma_cover.jpg",
-      "description": "RCF CVR NX10-SMA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7588584-rcf-cvr-nx10-sma",
+      "is_sold": true,
+      "price": 396.0,
+      "halilit_url": "https://www.halilit.com/items/7588584-rcf-cvr-nx10-sma",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 396.0,
+        "original_price": 396.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_nx10sma_cover.jpg",
@@ -3512,14 +4036,20 @@
     {
       "id": "rcf_61_art915a_hbr",
       "name": "RCF H-BR ART 915",
-      "brand": "rcf",
+      "description": "RCF H-BR ART 915",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art915a_hbr.jpg",
-      "description": "RCF H-BR ART 915",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6615530-rcf-h-br-art-915-horizontal-bracket",
+      "is_sold": true,
+      "price": 254.0,
+      "halilit_url": "https://www.halilit.com/items/6615530-rcf-h-br-art-915-horizontal-bracket",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 254.0,
+        "original_price": 254.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art915a_hbr.jpg",
@@ -3534,15 +4064,21 @@
     {
       "id": "rcf_61_ac_pmx",
       "name": "RCF AC PMX Speaker Pole Mount",
-      "brand": "rcf",
-      "category": "studio",
-      "image_url": "/data/thumbnails/rcf_61_ac_pmx.jpg",
       "description": "RCF AC PMX Speaker Pole Mount",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_ac_pmx.jpg",
+      "product_url": "https://www.halilit.com/items/7589362-rcf-ac-pmx-speaker-pole-mount",
+      "is_sold": true,
+      "price": 1424.0,
+      "halilit_url": "https://www.halilit.com/items/7589362-rcf-ac-pmx-speaker-pole-mount",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1424.0,
+        "original_price": 1424.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_ac_pmx.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_ac_pmx.jpg",
@@ -3550,20 +4086,26 @@
         "original": "/data/thumbnails/rcf_61_ac_pmx.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "rcf_61_hdl28a_flybar",
       "name": "RCF FLY BAR HDL 28-A",
-      "brand": "rcf",
+      "description": "RCF FLY BAR HDL 28-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl28a_flybar.jpg",
-      "description": "RCF FLY BAR HDL 28-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2236660-rcf-fly-bar-hdl-28-a",
+      "is_sold": true,
+      "price": 5802.0,
+      "halilit_url": "https://www.halilit.com/items/2236660-rcf-fly-bar-hdl-28-a",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 5802.0,
+        "original_price": 5802.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl28a_flybar.jpg",
@@ -3578,14 +4120,20 @@
     {
       "id": "rcf_61_art712a_ac_hbr",
       "name": "RCF H-BR 2X ART 712",
-      "brand": "rcf",
+      "description": "RCF H-BR 2X ART 712",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art712a_ac_hbr.jpg",
-      "description": "RCF H-BR 2X ART 712",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6620158-rcf-h-br-2x-art-712",
+      "is_sold": true,
+      "price": 369.0,
+      "halilit_url": "https://www.halilit.com/items/6620158-rcf-h-br-2x-art-712",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 369.0,
+        "original_price": 369.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art712a_ac_hbr.jpg",
@@ -3600,15 +4148,21 @@
     {
       "id": "rcf_61_mq80p",
       "name": "RCF MQ 80P Indoor Outdoor Speaker",
-      "brand": "rcf",
-      "category": "studio",
-      "image_url": "/data/thumbnails/rcf_61_mq80p.jpg",
       "description": "RCF MQ 80P Indoor Outdoor Speaker",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/rcf_61_mq80p.jpg",
+      "product_url": "https://www.halilit.com/items/446490-rcf-mq-80p-indoor-outdoor-speaker",
+      "is_sold": true,
+      "price": 604.0,
+      "halilit_url": "https://www.halilit.com/items/446490-rcf-mq-80p-indoor-outdoor-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 604.0,
+        "original_price": 604.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_mq80p.jpg",
         "thumbnail": "/data/thumbnails/rcf_61_mq80p.jpg",
@@ -3616,20 +4170,26 @@
         "original": "/data/thumbnails/rcf_61_mq80p.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "rcf_61_art910_cover",
       "name": "RCF ART cover for ART 9 series 10",
-      "brand": "rcf",
+      "description": "RCF ART cover for ART 9 series 10",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art910_cover.jpg",
-      "description": "RCF ART cover for ART 9 series 10",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6132273-rcf-art-cover-for-art-9-series-10",
+      "is_sold": true,
+      "price": 393.0,
+      "halilit_url": "https://www.halilit.com/items/6132273-rcf-art-cover-for-art-9-series-10",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 393.0,
+        "original_price": 393.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art910_cover.jpg",
@@ -3644,14 +4204,20 @@
     {
       "id": "rcf_61_sub9007as_cart",
       "name": "RCF KRT-WH SUB 9007",
-      "brand": "rcf",
+      "description": "RCF KRT-WH SUB 9007",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_sub9007as_cart.jpg",
-      "description": "RCF KRT-WH SUB 9007",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6699103-rcf-krt-wh-sub-9007",
+      "is_sold": true,
+      "price": 1511.0,
+      "halilit_url": "https://www.halilit.com/items/6699103-rcf-krt-wh-sub-9007",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1511.0,
+        "original_price": 1511.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_sub9007as_cart.jpg",
@@ -3666,14 +4232,20 @@
     {
       "id": "rcf_61_ms520",
       "name": "RCF MS 520",
-      "brand": "rcf",
+      "description": "RCF MS 520",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_ms520.jpg",
-      "description": "RCF MS 520",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/447591-rcf-ms-520-multi-zone-music-and-paging-system",
+      "is_sold": true,
+      "price": 2417.0,
+      "halilit_url": "https://www.halilit.com/items/447591-rcf-ms-520-multi-zone-music-and-paging-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2417.0,
+        "original_price": 2417.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_ms520.jpg",
@@ -3688,14 +4260,20 @@
     {
       "id": "rcf_61_art912_cover",
       "name": "RCF ART cover for ART 9 series 12",
-      "brand": "rcf",
+      "description": "RCF ART cover for ART 9 series 12",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art912_cover.jpg",
-      "description": "RCF ART cover for ART 9 series 12",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4417900-rcf-art-cover-for-art-9-series-12",
+      "is_sold": true,
+      "price": 415.0,
+      "halilit_url": "https://www.halilit.com/items/4417900-rcf-art-cover-for-art-9-series-12",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 415.0,
+        "original_price": 415.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art912_cover.jpg",
@@ -3710,14 +4288,20 @@
     {
       "id": "rcf_61_dm41b",
       "name": "RCF DM 41 Black",
-      "brand": "rcf",
+      "description": "RCF DM 41 Black",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_dm41b.jpg",
-      "description": "RCF DM 41 Black",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2708845-rcf-dm-41-two-way-compact-speaker-",
+      "is_sold": true,
+      "price": 193.0,
+      "halilit_url": "https://www.halilit.com/items/2708845-rcf-dm-41-two-way-compact-speaker-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 193.0,
+        "original_price": 193.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_dm41b.jpg",
@@ -3732,14 +4316,20 @@
     {
       "id": "rcf_61_art712a_cover",
       "name": "RCF ART cover for ART 7 series 12\"",
-      "brand": "rcf",
+      "description": "RCF ART cover for ART 7 series 12\"",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art712a_cover.jpg",
-      "description": "RCF ART cover for ART 7 series 12\"",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3908250-rcf-art-cover-for-art-7-series-12-",
+      "is_sold": true,
+      "price": 358.0,
+      "halilit_url": "https://www.halilit.com/items/3908250-rcf-art-cover-for-art-7-series-12-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 358.0,
+        "original_price": 358.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art712a_cover.jpg",
@@ -3754,14 +4344,20 @@
     {
       "id": "rcf_61_art710a_cover",
       "name": "RCF ART cover for ART 7 series 10\"",
-      "brand": "rcf",
+      "description": "RCF ART cover for ART 7 series 10\"",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art710a_cover.jpg",
-      "description": "RCF ART cover for ART 7 series 10\"",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3908278-rcf-art-cover-for-art-7-series-10-",
+      "is_sold": true,
+      "price": 312.0,
+      "halilit_url": "https://www.halilit.com/items/3908278-rcf-art-cover-for-art-7-series-10-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 312.0,
+        "original_price": 312.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art710a_cover.jpg",
@@ -3776,14 +4372,20 @@
     {
       "id": "rcf_61_tts18_mk2_krt",
       "name": "RCF KRT-WH TTS 18 II",
-      "brand": "rcf",
+      "description": "RCF KRT-WH TTS 18 II",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_tts18_mk2_krt.jpg",
-      "description": "RCF KRT-WH TTS 18 II",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2525882-rcf-krt-wh-tts-18-ii",
+      "is_sold": true,
+      "price": 1934.0,
+      "halilit_url": "https://www.halilit.com/items/2525882-rcf-krt-wh-tts-18-ii",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1934.0,
+        "original_price": 1934.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_tts18_mk2_krt.jpg",
@@ -3798,14 +4400,20 @@
     {
       "id": "rcf_61_art708a_cover",
       "name": "RCF ART cover for ART 7 series 8",
-      "brand": "rcf",
+      "description": "RCF ART cover for ART 7 series 8",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art708a_cover.jpg",
-      "description": "RCF ART cover for ART 7 series 8",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3908316-rcf-art-cover-for-art-7-series-8",
+      "is_sold": true,
+      "price": 289.0,
+      "halilit_url": "https://www.halilit.com/items/3908316-rcf-art-cover-for-art-7-series-8",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 289.0,
+        "original_price": 289.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art708a_cover.jpg",
@@ -3820,14 +4428,20 @@
     {
       "id": "rcf_61_hdl50a",
       "name": "RCF HDL 50-A",
-      "brand": "rcf",
+      "description": "RCF HDL 50-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl50a.jpg",
-      "description": "RCF HDL 50-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1454306-rcf-hdl-50-a-line-array-module",
+      "is_sold": true,
+      "price": 24709.0,
+      "halilit_url": "https://www.halilit.com/items/1454306-rcf-hdl-50-a-line-array-module",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 24709.0,
+        "original_price": 24709.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl50a.jpg",
@@ -3842,14 +4456,20 @@
     {
       "id": "rcf_61_art915_cover",
       "name": "RCF ART cover for ART 9 series 15\"",
-      "brand": "rcf",
+      "description": "RCF ART cover for ART 9 series 15\"",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_art915_cover.jpg",
-      "description": "RCF ART cover for ART 9 series 15\"",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/6130158-rcf-art-cover-for-art-9-series-15",
+      "is_sold": true,
+      "price": 450.0,
+      "halilit_url": "https://www.halilit.com/items/6130158-rcf-art-cover-for-art-9-series-15",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 450.0,
+        "original_price": 450.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_art915_cover.jpg",
@@ -3864,14 +4484,20 @@
     {
       "id": "rcf_61_dm41",
       "name": "RCF DM 41",
-      "brand": "rcf",
+      "description": "RCF DM 41",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_dm41.jpg",
-      "description": "RCF DM 41",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2707702-rcf-dm-41-two-way-compact-speaker",
+      "is_sold": true,
+      "price": 193.0,
+      "halilit_url": "https://www.halilit.com/items/2707702-rcf-dm-41-two-way-compact-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 193.0,
+        "original_price": 193.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_dm41.jpg",
@@ -3886,14 +4512,20 @@
     {
       "id": "rcf_61_hdl30a",
       "name": "RCF HDL 30-A",
-      "brand": "rcf",
+      "description": "RCF HDL 30-A",
       "category": "accessories",
       "image_url": "/data/thumbnails/rcf_61_hdl30a.jpg",
-      "description": "RCF HDL 30-A",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1454588-rcf-hdl-30-a-line-array",
+      "is_sold": true,
+      "price": 19600.0,
+      "halilit_url": "https://www.halilit.com/items/1454588-rcf-hdl-30-a-line-array",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 19600.0,
+        "original_price": 19600.0
+      },
+      "brand": "Rcf",
+      "logo_url": "/assets/logos/rcf_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rcf_61_hdl30a.jpg",
@@ -3906,9 +4538,20 @@
       ]
     }
   ],
-  "brand_name": "Rcf",
+  "generated_at": "2026-01-25T22:19:25.560581",
   "brand_slug": "rcf",
-  "refined_at": "2026-01-25T02:01:47.830664+00:00",
+  "refined_at": "2026-01-25T22:19:25.887511+00:00",
+  "brand_identity": {
+    "id": "rcf",
+    "name": "Rcf",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/rcf_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 162,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
@@ -4004,19 +4647,6 @@
           "sku": null
         },
         {
-          "id": "rcf_61_kxl4a_cover",
-          "name": "כיסוי מגן RCF CVR KXL 4-A Protection Cover",
-          "description": "כיסוי מגן RCF CVR KXL 4-A Protection Cover",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_kxl4a_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_kxl4a_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_kxl4a_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_kxl4a_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "rcf_61_tt25a_mk2_cover",
           "name": "RCF CVR TT 25 II Protection Cover",
           "description": "RCF CVR TT 25 II Protection Cover",
@@ -4056,14 +4686,14 @@
           "sku": null
         },
         {
-          "id": "rcf_61_nxl14a_cover",
-          "name": "כיסוי מגן RCF CVR NXL 14-A Protection Cover",
-          "description": "כיסוי מגן RCF CVR NXL 14-A Protection Cover",
+          "id": "rcf_61_tts15a_cover",
+          "name": "RCF CVR TTS 15 Padded Cover",
+          "description": "RCF CVR TTS 15 Padded Cover",
           "images": {
-            "main": "/data/thumbnails/rcf_61_nxl14a_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_nxl14a_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_nxl14a_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_nxl14a_cover.jpg"
+            "main": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
+            "high_res": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
+            "original": "/data/thumbnails/rcf_61_tts15a_cover.jpg"
           },
           "model_number": null,
           "sku": null
@@ -4186,32 +4816,6 @@
           "sku": null
         },
         {
-          "id": "rcf_61_kx45a_cover",
-          "name": "כיסוי מגן RCF CVR KX 45-A Protection Cover",
-          "description": "כיסוי מגן RCF CVR KX 45-A Protection Cover",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_kx45a_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_kx45a_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_kx45a_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_kx45a_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_gtx10_cart",
-          "name": "עגלת נשיאה RCF KRT-WH 002 Cart",
-          "description": "עגלת נשיאה RCF KRT-WH 002 Cart",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_gtx10_cart.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_gtx10_cart.jpg",
-            "high_res": "/data/thumbnails/rcf_61_gtx10_cart.jpg",
-            "original": "/data/thumbnails/rcf_61_gtx10_cart.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "rcf_61_nxl24a_flybar",
           "name": "RCF NXL24A Fly Bar Kit",
           "description": "RCF NXL24A Fly Bar Kit",
@@ -4220,19 +4824,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_nxl24a_flybar.jpg",
             "high_res": "/data/thumbnails/rcf_61_nxl24a_flybar.jpg",
             "original": "/data/thumbnails/rcf_61_nxl24a_flybar.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_sub15ax_cover",
-          "name": "כיסוי מגן RCF CVR 004 Protection Cover",
-          "description": "כיסוי מגן RCF CVR 004 Protection Cover",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_sub15ax_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_sub15ax_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_sub15ax_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_sub15ax_cover.jpg"
           },
           "model_number": null,
           "sku": null
@@ -4290,6 +4881,19 @@
           "sku": null
         },
         {
+          "id": "rcf_61_hd15a_cover",
+          "name": "RCF CVR HD 15 Padded Cover",
+          "description": "RCF CVR HD 15 Padded Cover",
+          "images": {
+            "main": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
+            "high_res": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
+            "original": "/data/thumbnails/rcf_61_hd15a_cover.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "rcf_61_nx32_cover",
           "name": "RCF CVR NX 32 Protection Cover",
           "description": "RCF CVR NX 32 Protection Cover",
@@ -4298,19 +4902,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_nx32_cover.jpg",
             "high_res": "/data/thumbnails/rcf_61_nx32_cover.jpg",
             "original": "/data/thumbnails/rcf_61_nx32_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_tt25cxa_cover",
-          "name": "כיסוי מגן RCF CVR TT 25-CXA Protection Cover",
-          "description": "כיסוי מגן RCF CVR TT 25-CXA Protection Cover",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_tt25cxa_cover.jpg"
           },
           "model_number": null,
           "sku": null
@@ -4337,19 +4928,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_tts18mk2_cover.jpg",
             "high_res": "/data/thumbnails/rcf_61_tts18mk2_cover.jpg",
             "original": "/data/thumbnails/rcf_61_tts18mk2_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_hdl30a_cart4x",
-          "name": "עגלת נשיאה RCF HDL 30-A Cart",
-          "description": "עגלת נשיאה RCF HDL 30-A Cart",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg",
-            "high_res": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg",
-            "original": "/data/thumbnails/rcf_61_hdl30a_cart4x.jpg"
           },
           "model_number": null,
           "sku": null
@@ -4511,14 +5089,14 @@
           "sku": null
         },
         {
-          "id": "rcf_61_ayrapro5",
-          "name": "מוניטור אולפני RCF AYRA PRO 5",
-          "description": "מוניטור אולפני RCF AYRA PRO 5",
+          "id": "rcf_61_hdl30a_cover",
+          "name": "RCF HDL30-A Amp Rain Cover",
+          "description": "RCF HDL30-A Amp Rain Cover",
           "images": {
-            "main": "/data/thumbnails/rcf_61_ayrapro5.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_ayrapro5.jpg",
-            "high_res": "/data/thumbnails/rcf_61_ayrapro5.jpg",
-            "original": "/data/thumbnails/rcf_61_ayrapro5.jpg"
+            "main": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
+            "high_res": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
+            "original": "/data/thumbnails/rcf_61_hdl30a_cover.jpg"
           },
           "model_number": null,
           "sku": null
@@ -4576,19 +5154,6 @@
           "sku": null
         },
         {
-          "id": "rcf_61_sub15_ax",
-          "name": "סאבוופר RCF SUB 15-AX",
-          "description": "סאבוופר RCF SUB 15-AX",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_sub15_ax.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_sub15_ax.jpg",
-            "high_res": "/data/thumbnails/rcf_61_sub15_ax.jpg",
-            "original": "/data/thumbnails/rcf_61_sub15_ax.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "rcf_61_art708a_mk4",
           "name": "RCF ART 708-A MK4",
           "description": "RCF ART 708-A MK4",
@@ -4610,19 +5175,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_art910_ax.jpg",
             "high_res": "/data/thumbnails/rcf_61_art910_ax.jpg",
             "original": "/data/thumbnails/rcf_61_art910_ax.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_sub18_ax",
-          "name": "סאבוופר RCF SUB 18-AX",
-          "description": "סאבוופר RCF SUB 18-AX",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_sub18_ax.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_sub18_ax.jpg",
-            "high_res": "/data/thumbnails/rcf_61_sub18_ax.jpg",
-            "original": "/data/thumbnails/rcf_61_sub18_ax.jpg"
           },
           "model_number": null,
           "sku": null
@@ -4740,19 +5292,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_sub702_as_mk3.jpg",
             "high_res": "/data/thumbnails/rcf_61_sub702_as_mk3.jpg",
             "original": "/data/thumbnails/rcf_61_sub702_as_mk3.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_ayrapro6",
-          "name": "מוניטור אולפני RCF AYRA PRO 6",
-          "description": "מוניטור אולפני RCF AYRA PRO 6",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_ayrapro6.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_ayrapro6.jpg",
-            "high_res": "/data/thumbnails/rcf_61_ayrapro6.jpg",
-            "original": "/data/thumbnails/rcf_61_ayrapro6.jpg"
           },
           "model_number": null,
           "sku": null
@@ -5122,6 +5661,19 @@
           "sku": null
         },
         {
+          "id": "rcf_61_nxl14a",
+          "name": "RCF NXL 14-A Column Speaker",
+          "description": "RCF NXL 14-A Column Speaker",
+          "images": {
+            "main": "/data/thumbnails/rcf_61_nxl14a.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_nxl14a.jpg",
+            "high_res": "/data/thumbnails/rcf_61_nxl14a.jpg",
+            "original": "/data/thumbnails/rcf_61_nxl14a.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "rcf_61_nxl44a_mk2",
           "name": "RCF NXL 44-A MK2",
           "description": "RCF NXL 44-A MK2",
@@ -5421,19 +5973,6 @@
           "sku": null
         },
         {
-          "id": "rcf_61_kxl4a_flybar",
-          "name": "מתקן תלייה RCF KXL 4-A Fly Bar",
-          "description": "מתקן תלייה RCF KXL 4-A Fly Bar",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg",
-            "high_res": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg",
-            "original": "/data/thumbnails/rcf_61_kxl4a_flybar.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "rcf_61_p4228_wp",
           "name": "RCF P 4228 Weatherproof",
           "description": "RCF P 4228 Weatherproof",
@@ -5473,6 +6012,19 @@
           "sku": null
         },
         {
+          "id": "rcf_61_mq50c_w",
+          "name": "RCF CEILING SPEAKER MQ 50C",
+          "description": "RCF CEILING SPEAKER MQ 50C",
+          "images": {
+            "main": "/data/thumbnails/rcf_61_mq50c_w.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_mq50c_w.jpg",
+            "high_res": "/data/thumbnails/rcf_61_mq50c_w.jpg",
+            "original": "/data/thumbnails/rcf_61_mq50c_w.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "rcf_61_hdl28a",
           "name": "RCF HDL 28-A",
           "description": "RCF HDL 28-A",
@@ -5481,19 +6033,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_hdl28a.jpg",
             "high_res": "/data/thumbnails/rcf_61_hdl28a.jpg",
             "original": "/data/thumbnails/rcf_61_hdl28a.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_ayratensub",
-          "name": "סאבוופר אולפני RCF AYRA 10 SUB",
-          "description": "סאבוופר אולפני RCF AYRA 10 SUB",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_ayratensub.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_ayratensub.jpg",
-            "high_res": "/data/thumbnails/rcf_61_ayratensub.jpg",
-            "original": "/data/thumbnails/rcf_61_ayratensub.jpg"
           },
           "model_number": null,
           "sku": null
@@ -5572,19 +6111,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_nx15sma_cover.jpg",
             "high_res": "/data/thumbnails/rcf_61_nx15sma_cover.jpg",
             "original": "/data/thumbnails/rcf_61_nx15sma_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_kx45_a",
-          "name": "רמקול מוגבר RCF KX 45-A",
-          "description": "רמקול מוגבר RCF KX 45-A",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_kx45_a.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_kx45_a.jpg",
-            "high_res": "/data/thumbnails/rcf_61_kx45_a.jpg",
-            "original": "/data/thumbnails/rcf_61_kx45_a.jpg"
           },
           "model_number": null,
           "sku": null
@@ -5824,6 +6350,19 @@
           "sku": null
         },
         {
+          "id": "rcf_61_ac_pma",
+          "name": "RCF AC PMA Speaker Pole Mount",
+          "description": "RCF AC PMA Speaker Pole Mount",
+          "images": {
+            "main": "/data/thumbnails/rcf_61_ac_pma.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_ac_pma.jpg",
+            "high_res": "/data/thumbnails/rcf_61_ac_pma.jpg",
+            "original": "/data/thumbnails/rcf_61_ac_pma.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "rcf_61_art910a_hbr",
           "name": "RCF H-BR ART 910",
           "description": "RCF H-BR ART 910",
@@ -5858,19 +6397,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_nxl44a_stacking.jpg",
             "high_res": "/data/thumbnails/rcf_61_nxl44a_stacking.jpg",
             "original": "/data/thumbnails/rcf_61_nxl44a_stacking.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_kxl4_a",
-          "name": "רמקול מוגבר RCF KXL 4-A",
-          "description": "רמקול מוגבר RCF KXL 4-A",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_kxl4_a.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_kxl4_a.jpg",
-            "high_res": "/data/thumbnails/rcf_61_kxl4_a.jpg",
-            "original": "/data/thumbnails/rcf_61_kxl4_a.jpg"
           },
           "model_number": null,
           "sku": null
@@ -5915,6 +6441,19 @@
           "sku": null
         },
         {
+          "id": "rcf_61_ac_pmx",
+          "name": "RCF AC PMX Speaker Pole Mount",
+          "description": "RCF AC PMX Speaker Pole Mount",
+          "images": {
+            "main": "/data/thumbnails/rcf_61_ac_pmx.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_ac_pmx.jpg",
+            "high_res": "/data/thumbnails/rcf_61_ac_pmx.jpg",
+            "original": "/data/thumbnails/rcf_61_ac_pmx.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "rcf_61_hdl28a_flybar",
           "name": "RCF FLY BAR HDL 28-A",
           "description": "RCF FLY BAR HDL 28-A",
@@ -5936,6 +6475,19 @@
             "thumbnail": "/data/thumbnails/rcf_61_art712a_ac_hbr.jpg",
             "high_res": "/data/thumbnails/rcf_61_art712a_ac_hbr.jpg",
             "original": "/data/thumbnails/rcf_61_art712a_ac_hbr.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "rcf_61_mq80p",
+          "name": "RCF MQ 80P Indoor Outdoor Speaker",
+          "description": "RCF MQ 80P Indoor Outdoor Speaker",
+          "images": {
+            "main": "/data/thumbnails/rcf_61_mq80p.jpg",
+            "thumbnail": "/data/thumbnails/rcf_61_mq80p.jpg",
+            "high_res": "/data/thumbnails/rcf_61_mq80p.jpg",
+            "original": "/data/thumbnails/rcf_61_mq80p.jpg"
           },
           "model_number": null,
           "sku": null
@@ -6105,122 +6657,6 @@
             "thumbnail": "/data/thumbnails/rcf_61_hdl30a.jpg",
             "high_res": "/data/thumbnails/rcf_61_hdl30a.jpg",
             "original": "/data/thumbnails/rcf_61_hdl30a.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "drums": {
-      "General": [
-        {
-          "id": "rcf_61_tts15a_cover",
-          "name": "RCF CVR TTS 15 Padded Cover",
-          "description": "RCF CVR TTS 15 Padded Cover",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_tts15a_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_tts15a_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_hd15a_cover",
-          "name": "RCF CVR HD 15 Padded Cover",
-          "description": "RCF CVR HD 15 Padded Cover",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_hd15a_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_hd15a_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "guitars": {
-      "General": [
-        {
-          "id": "rcf_61_hdl30a_cover",
-          "name": "RCF HDL30-A Amp Rain Cover",
-          "description": "RCF HDL30-A Amp Rain Cover",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
-            "high_res": "/data/thumbnails/rcf_61_hdl30a_cover.jpg",
-            "original": "/data/thumbnails/rcf_61_hdl30a_cover.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "studio": {
-      "General": [
-        {
-          "id": "rcf_61_nxl14a",
-          "name": "RCF NXL 14-A Column Speaker",
-          "description": "RCF NXL 14-A Column Speaker",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_nxl14a.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_nxl14a.jpg",
-            "high_res": "/data/thumbnails/rcf_61_nxl14a.jpg",
-            "original": "/data/thumbnails/rcf_61_nxl14a.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_mq50c_w",
-          "name": "RCF CEILING SPEAKER MQ 50C",
-          "description": "RCF CEILING SPEAKER MQ 50C",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_mq50c_w.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_mq50c_w.jpg",
-            "high_res": "/data/thumbnails/rcf_61_mq50c_w.jpg",
-            "original": "/data/thumbnails/rcf_61_mq50c_w.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_ac_pma",
-          "name": "RCF AC PMA Speaker Pole Mount",
-          "description": "RCF AC PMA Speaker Pole Mount",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_ac_pma.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_ac_pma.jpg",
-            "high_res": "/data/thumbnails/rcf_61_ac_pma.jpg",
-            "original": "/data/thumbnails/rcf_61_ac_pma.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_ac_pmx",
-          "name": "RCF AC PMX Speaker Pole Mount",
-          "description": "RCF AC PMX Speaker Pole Mount",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_ac_pmx.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_ac_pmx.jpg",
-            "high_res": "/data/thumbnails/rcf_61_ac_pmx.jpg",
-            "original": "/data/thumbnails/rcf_61_ac_pmx.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "rcf_61_mq80p",
-          "name": "RCF MQ 80P Indoor Outdoor Speaker",
-          "description": "RCF MQ 80P Indoor Outdoor Speaker",
-          "images": {
-            "main": "/data/thumbnails/rcf_61_mq80p.jpg",
-            "thumbnail": "/data/thumbnails/rcf_61_mq80p.jpg",
-            "high_res": "/data/thumbnails/rcf_61_mq80p.jpg",
-            "original": "/data/thumbnails/rcf_61_mq80p.jpg"
           },
           "model_number": null,
           "sku": null

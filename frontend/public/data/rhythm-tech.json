@@ -1,27 +1,23 @@
 {
-  "brand_identity": {
-    "id": "rhythm-tech",
-    "name": "RHYTHM-TECH",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
-    "taxonomy_stats": {
-      "validated": 8,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Rhythm Tech",
   "products": [
     {
       "id": "rhythm_tech_rt_7903",
       "name": "Rhythm Tech Sideman",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech Sideman",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_7903.jpg",
-      "description": "Rhythm Tech Sideman",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339990-rhythm-tech-sideman",
+      "is_sold": true,
+      "price": 65.0,
+      "halilit_url": "https://www.halilit.com/items/4339990-rhythm-tech-sideman",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 65.0,
+        "original_price": 65.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_7903.jpg",
@@ -36,14 +32,20 @@
     {
       "id": "rhythm_tech_rt_8000",
       "name": "Rhythm Tech CABASA",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech CABASA",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_8000.jpg",
-      "description": "Rhythm Tech CABASA",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4340021-rhythm-tech-cabasa",
+      "is_sold": true,
+      "price": 145.0,
+      "halilit_url": "https://www.halilit.com/items/4340021-rhythm-tech-cabasa",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 145.0,
+        "original_price": 145.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_8000.jpg",
@@ -58,14 +60,20 @@
     {
       "id": "rhythm_tech_rt_8102",
       "name": "Rhythm Tech BAR CHIMES (DOUBLE ROW)",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech BAR CHIMES (DOUBLE ROW)",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_8102.jpg",
-      "description": "Rhythm Tech BAR CHIMES (DOUBLE ROW)",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4340008-rhythm-tech-bar-chimes-double-row-",
+      "is_sold": true,
+      "price": 444.0,
+      "halilit_url": "https://www.halilit.com/items/4340008-rhythm-tech-bar-chimes-double-row-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 444.0,
+        "original_price": 444.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_8102.jpg",
@@ -80,14 +88,20 @@
     {
       "id": "rhythm_tech_rt_6000",
       "name": "Rhythm Tech TRIGGER TRIANGLE",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech TRIGGER TRIANGLE",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_6000.jpg",
-      "description": "Rhythm Tech TRIGGER TRIANGLE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339922-rhythm-tech-trigger-triangle",
+      "is_sold": true,
+      "price": 218.0,
+      "halilit_url": "https://www.halilit.com/items/4339922-rhythm-tech-trigger-triangle",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 218.0,
+        "original_price": 218.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_6000.jpg",
@@ -102,14 +116,20 @@
     {
       "id": "rhythm_tech_rt_1412",
       "name": "Rhythm Tech Stick Jingler with Nickel Jingles",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech Stick Jingler with Nickel Jingles",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_1412.jpg",
-      "description": "Rhythm Tech Stick Jingler with Nickel Jingles",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339833-rhythm-tech-stick-jingler-with-nickel-jingles",
+      "is_sold": true,
+      "price": 65.0,
+      "halilit_url": "https://www.halilit.com/items/4339833-rhythm-tech-stick-jingler-with-nickel-jingles",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 65.0,
+        "original_price": 65.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_1412.jpg",
@@ -124,14 +144,20 @@
     {
       "id": "rhythm_tech_rt_7421",
       "name": "Rhythm Tech Hat Trick G2 Single Brass Jingles",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech Hat Trick G2 Single Brass Jingles",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_7421.jpg",
-      "description": "Rhythm Tech Hat Trick G2 Single Brass Jingles",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339868-rhythm-tech-hat-trick-g2-single-brass-jingles",
+      "is_sold": true,
+      "price": 121.0,
+      "halilit_url": "https://www.halilit.com/items/4339868-rhythm-tech-hat-trick-g2-single-brass-jingles",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 121.0,
+        "original_price": 121.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_7421.jpg",
@@ -146,14 +172,20 @@
     {
       "id": "rhythm_tech_rt_7423",
       "name": "Rhythm Tech Hat Trick G2 Double Row Brass Jingles",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech Hat Trick G2 Double Row Brass Jingles",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_7423.jpg",
-      "description": "Rhythm Tech Hat Trick G2 Double Row Brass Jingles",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339883-rhythm-tech-hat-trick-g2-double-row-brass-jingles",
+      "is_sold": true,
+      "price": 194.0,
+      "halilit_url": "https://www.halilit.com/items/4339883-rhythm-tech-hat-trick-g2-double-row-brass-jingles",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 194.0,
+        "original_price": 194.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_7423.jpg",
@@ -168,14 +200,20 @@
     {
       "id": "rhythm_tech_rt_rc11",
       "name": "Rhythm Tech 11\" Ribbon Crasher",
-      "brand": "rhythm-tech",
+      "description": "Rhythm Tech 11\" Ribbon Crasher",
       "category": "accessories",
       "image_url": "/data/thumbnails/rhythm_tech_rt_rc11.jpg",
-      "description": "Rhythm Tech 11\" Ribbon Crasher",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339935-rhythm-tech-11-ribbon-crasher",
+      "is_sold": true,
+      "price": 145.0,
+      "halilit_url": "https://www.halilit.com/items/4339935-rhythm-tech-11-ribbon-crasher",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 145.0,
+        "original_price": 145.0
+      },
+      "brand": "Rhythm Tech",
+      "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/rhythm_tech_rt_rc11.jpg",
@@ -188,9 +226,20 @@
       ]
     }
   ],
-  "brand_name": "Rhythm-Tech",
+  "generated_at": "2026-01-25T22:19:24.714920",
   "brand_slug": "rhythm-tech",
-  "refined_at": "2026-01-25T02:01:47.893394+00:00",
+  "refined_at": "2026-01-25T22:19:24.723787+00:00",
+  "brand_identity": {
+    "id": "rhythm-tech",
+    "name": "Rhythm Tech",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/rhythm-tech_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 8,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [

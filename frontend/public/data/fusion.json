@@ -1,27 +1,23 @@
 {
-  "brand_identity": {
-    "id": "fusion",
-    "name": "FUSION",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/fusion_logo.png",
-    "taxonomy_stats": {
-      "validated": 8,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Fusion",
   "products": [
     {
       "id": "fusion_78_pu02b",
       "name": "Fusion Premium Soprano & Concert Ukulele Bag",
-      "brand": "fusion",
+      "description": "Fusion Premium Soprano & Concert Ukulele Bag",
       "category": "accessories",
       "image_url": "/data/thumbnails/fusion_78_pu02b.jpg",
-      "description": "Fusion Premium Soprano & Concert Ukulele Bag",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5654755-fusion-premium-soprano-concert-ukulele-bag",
+      "is_sold": true,
+      "price": 159.0,
+      "halilit_url": "https://www.halilit.com/items/5654755-fusion-premium-soprano-concert-ukulele-bag",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 159.0,
+        "original_price": 159.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_pu02b.jpg",
@@ -36,14 +32,20 @@
     {
       "id": "fusion_78_ub01b",
       "name": "Fusion Urban Cornet Bag",
-      "brand": "fusion",
+      "description": "Fusion Urban Cornet Bag",
       "category": "accessories",
       "image_url": "/data/thumbnails/fusion_78_ub01b.jpg",
-      "description": "Fusion Urban Cornet Bag",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5069336-fusion-urban-cornet-bag",
+      "is_sold": true,
+      "price": 573.0,
+      "halilit_url": "https://www.halilit.com/items/5069336-fusion-urban-cornet-bag",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 573.0,
+        "original_price": 573.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_ub01b.jpg",
@@ -58,14 +60,20 @@
     {
       "id": "fusion_78_ub01bk",
       "name": "Fusion Urban Cornet Bag",
-      "brand": "fusion",
+      "description": "Fusion Urban Cornet Bag",
       "category": "accessories",
       "image_url": "/data/thumbnails/fusion_78_ub01bk.jpg",
-      "description": "Fusion Urban Cornet Bag",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5070083-fusion-urban-cornet-bag",
+      "is_sold": true,
+      "price": 573.0,
+      "halilit_url": "https://www.halilit.com/items/5070083-fusion-urban-cornet-bag",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 573.0,
+        "original_price": 573.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_ub01bk.jpg",
@@ -80,14 +88,20 @@
     {
       "id": "fusion_78_pw01bk",
       "name": "Fusion PW01BK",
-      "brand": "fusion",
+      "description": "Fusion PW01BK",
       "category": "accessories",
       "image_url": "/data/thumbnails/fusion_78_pw01bk.jpg",
-      "description": "Fusion PW01BK",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2320914-fusion-premium-alto-saxophone-bag",
+      "is_sold": true,
+      "price": 787.0,
+      "halilit_url": "https://www.halilit.com/items/2320914-fusion-premium-alto-saxophone-bag",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 787.0,
+        "original_price": 787.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_pw01bk.jpg",
@@ -102,14 +116,20 @@
     {
       "id": "fusion_78_uw02bk",
       "name": "Fusion UW02BK",
-      "brand": "fusion",
+      "description": "Fusion UW02BK",
       "category": "accessories",
       "image_url": "/data/thumbnails/fusion_78_uw02bk.jpg",
-      "description": "Fusion UW02BK",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/644167-fusion-bags-uw02bk",
+      "is_sold": true,
+      "price": 522.0,
+      "halilit_url": "https://www.halilit.com/items/644167-fusion-bags-uw02bk",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 522.0,
+        "original_price": 522.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_uw02bk.jpg",
@@ -124,14 +144,20 @@
     {
       "id": "fusion_78_uw03bk",
       "name": "Fusion UW-03 BK",
-      "brand": "fusion",
+      "description": "Fusion UW-03 BK",
       "category": "accessories",
       "image_url": "/data/thumbnails/fusion_78_uw03bk.jpg",
-      "description": "Fusion UW-03 BK",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/836021-fusion-bags-uw-03-bk",
+      "is_sold": true,
+      "price": 559.0,
+      "halilit_url": "https://www.halilit.com/items/836021-fusion-bags-uw-03-bk",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 559.0,
+        "original_price": 559.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_uw03bk.jpg",
@@ -146,14 +172,20 @@
     {
       "id": "fusion_78_pw02bk",
       "name": "Fusion PW02BK",
-      "brand": "fusion",
+      "description": "Fusion PW02BK",
       "category": "accessories",
       "image_url": "/data/thumbnails/fusion_78_pw02bk.jpg",
-      "description": "Fusion PW02BK",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/2325181-fusion-urban-saxophone-tenor-bag",
+      "is_sold": true,
+      "price": 904.0,
+      "halilit_url": "https://www.halilit.com/items/2325181-fusion-urban-saxophone-tenor-bag",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 904.0,
+        "original_price": 904.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_pw02bk.jpg",
@@ -168,15 +200,21 @@
     {
       "id": "fusion_78_f321k8b",
       "name": "Fusion Keyboard 08 (76-88 keys)",
-      "brand": "fusion",
-      "category": "keys",
-      "image_url": "/data/thumbnails/fusion_78_f321k8b.jpg",
       "description": "Fusion Keyboard 08 (76-88 keys)",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "keys",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/fusion_78_f321k8b.jpg",
+      "product_url": "https://www.halilit.com/items/1014276-fusion-bags-keyboard-08-76-88-keys-",
+      "is_sold": true,
+      "price": 545.0,
+      "halilit_url": "https://www.halilit.com/items/1014276-fusion-bags-keyboard-08-76-88-keys-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 545.0,
+        "original_price": 545.0
+      },
+      "brand": "Fusion",
+      "logo_url": "/assets/logos/fusion_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fusion_78_f321k8b.jpg",
         "thumbnail": "/data/thumbnails/fusion_78_f321k8b.jpg",
@@ -184,13 +222,24 @@
         "original": "/data/thumbnails/fusion_78_f321k8b.jpg"
       },
       "category_hierarchy": [
-        "keys"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "Fusion",
+  "generated_at": "2026-01-25T22:19:24.771609",
   "brand_slug": "fusion",
-  "refined_at": "2026-01-25T02:01:47.885850+00:00",
+  "refined_at": "2026-01-25T22:19:24.785888+00:00",
+  "brand_identity": {
+    "id": "fusion",
+    "name": "Fusion",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/fusion_logo.png",
+    "taxonomy_stats": {
+      "validated": 8,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
@@ -284,11 +333,7 @@
           },
           "model_number": null,
           "sku": null
-        }
-      ]
-    },
-    "keys": {
-      "General": [
+        },
         {
           "id": "fusion_78_f321k8b",
           "name": "Fusion Keyboard 08 (76-88 keys)",

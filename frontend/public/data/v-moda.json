@@ -1,27 +1,23 @@
 {
-  "brand_identity": {
-    "id": "v-moda",
-    "name": "V-MODA",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/v-moda_logo.png",
-    "taxonomy_stats": {
-      "validated": 25,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "V Moda",
   "products": [
     {
       "id": "v_moda_87_hexmlite_bk",
       "name": "V-MODA Hexamove Lite",
-      "brand": "v-moda",
+      "description": "V-MODA Hexamove Lite",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
-      "description": "V-MODA Hexamove Lite",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4573746-v-moda-hexamove-lite",
+      "is_sold": true,
+      "price": 409.0,
+      "halilit_url": "https://www.halilit.com/items/4573746-v-moda-hexamove-lite",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 409.0,
+        "original_price": 409.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_hexmlite_bk.jpg",
@@ -36,14 +32,20 @@
     {
       "id": "v_moda_87_hexmlite_wh",
       "name": "V-MODA Hexamove Lite",
-      "brand": "v-moda",
+      "description": "V-MODA Hexamove Lite",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
-      "description": "V-MODA Hexamove Lite",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4573661-v-moda-hexamove-lite",
+      "is_sold": true,
+      "price": 409.0,
+      "halilit_url": "https://www.halilit.com/items/4573661-v-moda-hexamove-lite",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 409.0,
+        "original_price": 409.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_hexmlite_wh.jpg",
@@ -58,14 +60,20 @@
     {
       "id": "v_moda_87_hexmpr_wh",
       "name": "V-MODA Hexamove Pro - White",
-      "brand": "v-moda",
+      "description": "V-MODA Hexamove Pro - White",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
-      "description": "V-MODA Hexamove Pro - White",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4416324-v-moda-hexamove-pro",
+      "is_sold": true,
+      "price": 577.0,
+      "halilit_url": "https://www.halilit.com/items/4416324-v-moda-hexamove-pro",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 577.0,
+        "original_price": 577.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_hexmpr_wh.jpg",
@@ -78,105 +86,23 @@
       ]
     },
     {
-      "id": "v_moda_87_s80bt_bk",
-      "name": "אוזניות אלחוטיות V-MODA S-80",
-      "brand": "v-moda",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
-      "description": "אוזניות אלחוטיות V-MODA S-80",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
-        "original": "/data/thumbnails/v_moda_87_s80bt_bk.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "v_moda_87_m200bk",
-      "name": "אוזניות V-MODA M-200",
-      "brand": "v-moda",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/v_moda_87_m200bk.jpg",
-      "description": "אוזניות V-MODA M-200",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_m200bk.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_m200bk.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_m200bk.jpg",
-        "original": "/data/thumbnails/v_moda_87_m200bk.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "v_moda_87_m100pro",
-      "name": "אוזניות V-MODA M-100 Pro",
-      "brand": "v-moda",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/v_moda_87_m100pro.jpg",
-      "description": "אוזניות V-MODA M-100 Pro",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_m100pro.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_m100pro.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_m100pro.jpg",
-        "original": "/data/thumbnails/v_moda_87_m100pro.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "v_moda_87_m10",
-      "name": "אוזניות V-MODA M-10",
-      "brand": "v-moda",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/v_moda_87_m10.jpg",
-      "description": "אוזניות V-MODA M-10",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_m10.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_m10.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_m10.jpg",
-        "original": "/data/thumbnails/v_moda_87_m10.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "v_moda_87_frziblack",
       "name": "V-MODA Forza Black IPhone Headphones",
-      "brand": "v-moda",
-      "category": "drums",
-      "image_url": "/data/thumbnails/v_moda_87_frziblack.jpg",
       "description": "V-MODA Forza Black IPhone Headphones",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frziblack.jpg",
+      "product_url": "https://www.halilit.com/items/1847410-v-moda-forza-black-iphone-headphones",
+      "is_sold": true,
+      "price": 551.0,
+      "halilit_url": "https://www.halilit.com/items/1847410-v-moda-forza-black-iphone-headphones",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 551.0,
+        "original_price": 551.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frziblack.jpg",
         "thumbnail": "/data/thumbnails/v_moda_87_frziblack.jpg",
@@ -184,65 +110,27 @@
         "original": "/data/thumbnails/v_moda_87_frziblack.jpg"
       },
       "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "v_moda_87_m200anc",
-      "name": "אוזניות אלחוטיות V-MODA M-200 ANC",
-      "brand": "v-moda",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/v_moda_87_m200anc.jpg",
-      "description": "אוזניות אלחוטיות V-MODA M-200 ANC",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_m200anc.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_m200anc.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_m200anc.jpg",
-        "original": "/data/thumbnails/v_moda_87_m200anc.jpg"
-      },
-      "category_hierarchy": [
         "accessories"
-      ]
-    },
-    {
-      "id": "v_moda_87_xfbtrouge",
-      "name": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
-      "brand": "v-moda",
-      "category": "live",
-      "image_url": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
-      "description": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "live",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
-        "original": "/data/thumbnails/v_moda_87_xfbtrouge.jpg"
-      },
-      "category_hierarchy": [
-        "live"
       ]
     },
     {
       "id": "v_moda_87_xsubk",
       "name": "V-MODA XS On-Ear Headphones Matte Black",
-      "brand": "v-moda",
-      "category": "drums",
-      "image_url": "/data/thumbnails/v_moda_87_xsubk.jpg",
       "description": "V-MODA XS On-Ear Headphones Matte Black",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_xsubk.jpg",
+      "product_url": "https://www.halilit.com/items/1866880-v-moda-xs-on-ear-headphones-matte-black",
+      "is_sold": true,
+      "price": 645.0,
+      "halilit_url": "https://www.halilit.com/items/1866880-v-moda-xs-on-ear-headphones-matte-black",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 645.0,
+        "original_price": 645.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_xsubk.jpg",
         "thumbnail": "/data/thumbnails/v_moda_87_xsubk.jpg",
@@ -250,42 +138,26 @@
         "original": "/data/thumbnails/v_moda_87_xsubk.jpg"
       },
       "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "v_moda_87_xfbt2mwhite",
-      "name": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
-      "brand": "v-moda",
-      "category": "live",
-      "image_url": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
-      "description": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "live",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
-        "original": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg"
-      },
-      "category_hierarchy": [
-        "live"
+        "accessories"
       ]
     },
     {
       "id": "v_moda_87_ccpblack",
       "name": "V-MODA CoilPro Cable",
-      "brand": "v-moda",
+      "description": "V-MODA CoilPro Cable",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_ccpblack.jpg",
-      "description": "V-MODA CoilPro Cable",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1870293-v-moda-coilpro-cable",
+      "is_sold": true,
+      "price": 105.0,
+      "halilit_url": "https://www.halilit.com/items/1870293-v-moda-coilpro-cable",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 105.0,
+        "original_price": 105.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_ccpblack.jpg",
@@ -300,14 +172,20 @@
     {
       "id": "v_moda_87_frzmagunblack",
       "name": "V-MODA Forza Metallo Gunblack Android",
-      "brand": "v-moda",
+      "description": "V-MODA Forza Metallo Gunblack Android",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
-      "description": "V-MODA Forza Metallo Gunblack Android",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1850132-v-moda-forza-metallo-gunblack-android",
+      "is_sold": true,
+      "price": 624.0,
+      "halilit_url": "https://www.halilit.com/items/1850132-v-moda-forza-metallo-gunblack-android",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 624.0,
+        "original_price": 624.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frzmagunblack.jpg",
@@ -320,38 +198,22 @@
       ]
     },
     {
-      "id": "v_moda_87_frzmwgunblack",
-      "name": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
-      "brand": "v-moda",
-      "category": "live",
-      "image_url": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
-      "description": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "live",
-      "images": {
-        "main": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
-        "thumbnail": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
-        "high_res": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
-        "original": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg"
-      },
-      "category_hierarchy": [
-        "live"
-      ]
-    },
-    {
       "id": "v_moda_87_frzmargold",
       "name": "V-MODA FORZA Metallo Rose Gold Android",
-      "brand": "v-moda",
+      "description": "V-MODA FORZA Metallo Rose Gold Android",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_frzmargold.jpg",
-      "description": "V-MODA FORZA Metallo Rose Gold Android",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1850174-v-moda-forza-metallo-rose-gold-android-headphones",
+      "is_sold": true,
+      "price": 462.0,
+      "halilit_url": "https://www.halilit.com/items/1850174-v-moda-forza-metallo-rose-gold-android-headphones",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 462.0,
+        "original_price": 462.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frzmargold.jpg",
@@ -366,14 +228,20 @@
     {
       "id": "v_moda_87_frzmirgold",
       "name": "V-MODA Forza Metallo Rose Gold IPhone",
-      "brand": "v-moda",
+      "description": "V-MODA Forza Metallo Rose Gold IPhone",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
-      "description": "V-MODA Forza Metallo Rose Gold IPhone",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1850215-v-moda-forza-metallo-rose-gold-iphone",
+      "is_sold": true,
+      "price": 462.0,
+      "halilit_url": "https://www.halilit.com/items/1850215-v-moda-forza-metallo-rose-gold-iphone",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 462.0,
+        "original_price": 462.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frzmirgold.jpg",
@@ -388,14 +256,20 @@
     {
       "id": "v_moda_87_frzawhite",
       "name": "V-MODA Forza White Android",
-      "brand": "v-moda",
+      "description": "V-MODA Forza White Android",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_frzawhite.jpg",
-      "description": "V-MODA Forza White Android",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1847499-v-moda-forza-white-android-headphones",
+      "is_sold": true,
+      "price": 357.0,
+      "halilit_url": "https://www.halilit.com/items/1847499-v-moda-forza-white-android-headphones",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 357.0,
+        "original_price": 357.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frzawhite.jpg",
@@ -410,14 +284,20 @@
     {
       "id": "v_moda_87_frzmigunblack",
       "name": "V-MODA Forza Metallo Gunblack Iphone",
-      "brand": "v-moda",
+      "description": "V-MODA Forza Metallo Gunblack Iphone",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
-      "description": "V-MODA Forza Metallo Gunblack Iphone",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1849838-v-moda-forza-metallo-gunblack-iphone-headphone",
+      "is_sold": true,
+      "price": 462.0,
+      "halilit_url": "https://www.halilit.com/items/1849838-v-moda-forza-metallo-gunblack-iphone-headphone",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 462.0,
+        "original_price": 462.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frzmigunblack.jpg",
@@ -432,14 +312,20 @@
     {
       "id": "v_moda_87_frzablack",
       "name": "V-MODA Forza Black Android",
-      "brand": "v-moda",
+      "description": "V-MODA Forza Black Android",
       "category": "accessories",
       "image_url": "/data/thumbnails/v_moda_87_frzablack.jpg",
-      "description": "V-MODA Forza Black Android",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1847543-v-moda-forza-black-android-headphones",
+      "is_sold": true,
+      "price": 357.0,
+      "halilit_url": "https://www.halilit.com/items/1847543-v-moda-forza-black-android-headphones",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 357.0,
+        "original_price": 357.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frzablack.jpg",
@@ -454,15 +340,21 @@
     {
       "id": "v_moda_87_vlct_bk",
       "name": "V-MODA In-Ear BassFit Wireless Headphones",
-      "brand": "v-moda",
-      "category": "drums",
-      "image_url": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
       "description": "V-MODA In-Ear BassFit Wireless Headphones",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
+      "product_url": "https://www.halilit.com/items/2721606-v-moda-in-ear-bassfit-wireless-headphones",
+      "is_sold": true,
+      "price": 519.0,
+      "halilit_url": "https://www.halilit.com/items/2721606-v-moda-in-ear-bassfit-wireless-headphones",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 519.0,
+        "original_price": 519.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
         "thumbnail": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
@@ -470,21 +362,27 @@
         "original": "/data/thumbnails/v_moda_87_vlct_bk.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "v_moda_87_frzmwwsilver",
       "name": "V-MODA Forza Metallo Wireless White Silver",
-      "brand": "v-moda",
-      "category": "live",
-      "image_url": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
       "description": "V-MODA Forza Metallo Wireless White Silver",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "live",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
+      "product_url": "https://www.halilit.com/items/1851252-v-moda-forza-metallo-wireless-white-silver",
+      "is_sold": true,
+      "price": 624.0,
+      "halilit_url": "https://www.halilit.com/items/1851252-v-moda-forza-metallo-wireless-white-silver",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 624.0,
+        "original_price": 624.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
         "thumbnail": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg",
@@ -492,21 +390,27 @@
         "original": "/data/thumbnails/v_moda_87_frzmwwsilver.jpg"
       },
       "category_hierarchy": [
-        "live"
+        "accessories"
       ]
     },
     {
       "id": "v_moda_87_vc3szor",
       "name": "V-MODA SpeakEazy 3-Button Cable Orange",
-      "brand": "v-moda",
-      "category": "studio",
-      "image_url": "/data/thumbnails/v_moda_87_vc3szor.jpg",
       "description": "V-MODA SpeakEazy 3-Button Cable Orange",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_vc3szor.jpg",
+      "product_url": "https://www.halilit.com/items/1870355-v-moda-speakeazy-3-button-cable-orange",
+      "is_sold": true,
+      "price": 84.0,
+      "halilit_url": "https://www.halilit.com/items/1870355-v-moda-speakeazy-3-button-cable-orange",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 84.0,
+        "original_price": 84.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_vc3szor.jpg",
         "thumbnail": "/data/thumbnails/v_moda_87_vc3szor.jpg",
@@ -514,21 +418,27 @@
         "original": "/data/thumbnails/v_moda_87_vc3szor.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "v_moda_87_remix_silver",
       "name": "V-MODA REMIX Bluetooth Speaker",
-      "brand": "v-moda",
-      "category": "studio",
-      "image_url": "/data/thumbnails/v_moda_87_remix_silver.jpg",
       "description": "V-MODA REMIX Bluetooth Speaker",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_remix_silver.jpg",
+      "product_url": "https://www.halilit.com/items/2013922-v-moda-remix-bluetooth-speaker",
+      "is_sold": true,
+      "price": 1080.0,
+      "halilit_url": "https://www.halilit.com/items/2013922-v-moda-remix-bluetooth-speaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1080.0,
+        "original_price": 1080.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_remix_silver.jpg",
         "thumbnail": "/data/thumbnails/v_moda_87_remix_silver.jpg",
@@ -536,21 +446,27 @@
         "original": "/data/thumbnails/v_moda_87_remix_silver.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "v_moda_87_boomprox",
       "name": "V-MODA BoomPro X Microphone",
-      "brand": "v-moda",
-      "category": "studio",
-      "image_url": "/data/thumbnails/v_moda_87_boomprox.jpg",
       "description": "V-MODA BoomPro X Microphone",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/v_moda_87_boomprox.jpg",
+      "product_url": "https://www.halilit.com/items/4416328-v-moda-boompro-x-microphone",
+      "is_sold": true,
+      "price": 268.0,
+      "halilit_url": "https://www.halilit.com/items/4416328-v-moda-boompro-x-microphone",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 268.0,
+        "original_price": 268.0
+      },
+      "brand": "V Moda",
+      "logo_url": "/assets/logos/v-moda_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/v_moda_87_boomprox.jpg",
         "thumbnail": "/data/thumbnails/v_moda_87_boomprox.jpg",
@@ -558,13 +474,24 @@
         "original": "/data/thumbnails/v_moda_87_boomprox.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "V-Moda",
+  "generated_at": "2026-01-25T22:19:24.687987",
   "brand_slug": "v-moda",
-  "refined_at": "2026-01-25T02:01:47.257526+00:00",
+  "refined_at": "2026-01-25T22:19:24.711467+00:00",
+  "brand_identity": {
+    "id": "v-moda",
+    "name": "V Moda",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/v-moda_logo.png",
+    "taxonomy_stats": {
+      "validated": 17,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
@@ -608,66 +535,27 @@
           "sku": null
         },
         {
-          "id": "v_moda_87_s80bt_bk",
-          "name": "אוזניות אלחוטיות V-MODA S-80",
-          "description": "אוזניות אלחוטיות V-MODA S-80",
+          "id": "v_moda_87_frziblack",
+          "name": "V-MODA Forza Black IPhone Headphones",
+          "description": "V-MODA Forza Black IPhone Headphones",
           "images": {
-            "main": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_s80bt_bk.jpg",
-            "original": "/data/thumbnails/v_moda_87_s80bt_bk.jpg"
+            "main": "/data/thumbnails/v_moda_87_frziblack.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_frziblack.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_frziblack.jpg",
+            "original": "/data/thumbnails/v_moda_87_frziblack.jpg"
           },
           "model_number": null,
           "sku": null
         },
         {
-          "id": "v_moda_87_m200bk",
-          "name": "אוזניות V-MODA M-200",
-          "description": "אוזניות V-MODA M-200",
+          "id": "v_moda_87_xsubk",
+          "name": "V-MODA XS On-Ear Headphones Matte Black",
+          "description": "V-MODA XS On-Ear Headphones Matte Black",
           "images": {
-            "main": "/data/thumbnails/v_moda_87_m200bk.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_m200bk.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_m200bk.jpg",
-            "original": "/data/thumbnails/v_moda_87_m200bk.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "v_moda_87_m100pro",
-          "name": "אוזניות V-MODA M-100 Pro",
-          "description": "אוזניות V-MODA M-100 Pro",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_m100pro.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_m100pro.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_m100pro.jpg",
-            "original": "/data/thumbnails/v_moda_87_m100pro.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "v_moda_87_m10",
-          "name": "אוזניות V-MODA M-10",
-          "description": "אוזניות V-MODA M-10",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_m10.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_m10.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_m10.jpg",
-            "original": "/data/thumbnails/v_moda_87_m10.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "v_moda_87_m200anc",
-          "name": "אוזניות אלחוטיות V-MODA M-200 ANC",
-          "description": "אוזניות אלחוטיות V-MODA M-200 ANC",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_m200anc.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_m200anc.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_m200anc.jpg",
-            "original": "/data/thumbnails/v_moda_87_m200anc.jpg"
+            "main": "/data/thumbnails/v_moda_87_xsubk.jpg",
+            "thumbnail": "/data/thumbnails/v_moda_87_xsubk.jpg",
+            "high_res": "/data/thumbnails/v_moda_87_xsubk.jpg",
+            "original": "/data/thumbnails/v_moda_87_xsubk.jpg"
           },
           "model_number": null,
           "sku": null
@@ -762,36 +650,6 @@
           },
           "model_number": null,
           "sku": null
-        }
-      ]
-    },
-    "drums": {
-      "General": [
-        {
-          "id": "v_moda_87_frziblack",
-          "name": "V-MODA Forza Black IPhone Headphones",
-          "description": "V-MODA Forza Black IPhone Headphones",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_frziblack.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_frziblack.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_frziblack.jpg",
-            "original": "/data/thumbnails/v_moda_87_frziblack.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "v_moda_87_xsubk",
-          "name": "V-MODA XS On-Ear Headphones Matte Black",
-          "description": "V-MODA XS On-Ear Headphones Matte Black",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_xsubk.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_xsubk.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_xsubk.jpg",
-            "original": "/data/thumbnails/v_moda_87_xsubk.jpg"
-          },
-          "model_number": null,
-          "sku": null
         },
         {
           "id": "v_moda_87_vlct_bk",
@@ -802,49 +660,6 @@
             "thumbnail": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
             "high_res": "/data/thumbnails/v_moda_87_vlct_bk.jpg",
             "original": "/data/thumbnails/v_moda_87_vlct_bk.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "live": {
-      "General": [
-        {
-          "id": "v_moda_87_xfbtrouge",
-          "name": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
-          "description": "אוזניות אלחוטיות V-MODA Crossfade Wireless Rouge",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_xfbtrouge.jpg",
-            "original": "/data/thumbnails/v_moda_87_xfbtrouge.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "v_moda_87_xfbt2mwhite",
-          "name": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
-          "description": "אוזניות אלחוטיות V-MODA Crossfade 2 Wireless Matte White",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg",
-            "original": "/data/thumbnails/v_moda_87_xfbt2mwhite.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "v_moda_87_frzmwgunblack",
-          "name": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
-          "description": "אוזניות אלחוטיות V-MODA Forza Metallo Wireless Gunmetal Black",
-          "images": {
-            "main": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
-            "thumbnail": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
-            "high_res": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg",
-            "original": "/data/thumbnails/v_moda_87_frzmwgunblack.jpg"
           },
           "model_number": null,
           "sku": null
@@ -861,11 +676,7 @@
           },
           "model_number": null,
           "sku": null
-        }
-      ]
-    },
-    "studio": {
-      "General": [
+        },
         {
           "id": "v_moda_87_vc3szor",
           "name": "V-MODA SpeakEazy 3-Button Cable Orange",

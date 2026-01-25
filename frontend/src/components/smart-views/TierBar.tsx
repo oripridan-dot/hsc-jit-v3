@@ -20,7 +20,6 @@ interface TierBarProps {
   onHoverProduct: (product: TierBarProduct | null) => void;
   onSelectProduct: (productId: string) => void;
 }
-
 export const TierBar = ({
   products,
   onHoverProduct,
@@ -31,7 +30,9 @@ export const TierBar = ({
   // 1. Calculate Global Price Extremes (Stable across zooms)
   const { globalMin, globalMax } = useMemo(() => {
     if (!products.length) return { globalMin: 0, globalMax: 10000 };
-    const prices = products.map((p) => p.price);
+    const prices = products.map(
+      (p) => p.pricing?.regular_price ?? p.price ?? 0,
+    );
     return { globalMin: Math.min(...prices), globalMax: Math.max(...prices) };
   }, [products]);
 
@@ -105,9 +106,11 @@ export const TierBar = ({
       <div className="absolute inset-x-0 bottom-16 top-0 overflow-hidden mx-12">
         <AnimatePresence mode="popLayout">
           {products.map((product) => {
-            if (!isVisible(product.price)) return null;
+            const productPrice =
+              product.pricing?.regular_price ?? product.price ?? 0;
+            if (!isVisible(productPrice)) return null;
 
-            const position = getPosition(product.price);
+            const position = getPosition(productPrice);
 
             // Randomize Y slightly to avoid total overlap
             // 20% to 60% range keeps it more centered vertically
@@ -131,11 +134,23 @@ export const TierBar = ({
                 <div className="absolute top-full left-1/2 w-px h-32 bg-gradient-to-b from-amber-500/50 to-transparent pointer-events-none group-hover:from-amber-400" />
 
                 {/* The Logo Orb */}
-                <div className="relative w-full h-full bg-black/80 backdrop-blur-sm rounded-lg border border-transparent hover:border-amber-500 hover:shadow-[0_0_15px_rgba(245,158,11,0.6)] flex items-center justify-center p-2 transition-all duration-200">
+                <div className="relative w-full h-full bg-black/80 backdrop-blur-sm rounded-lg border border-transparent hover:border-amber-500 hover:shadow-[0_0_15px_rgba(245,158,11,0.6)] flex items-center justify-center p-2 transition-all duration-200 overflow-hidden">
                   <img
                     src={product.logo_url}
                     alt={product.brand}
                     className="w-full h-full object-contain opacity-90"
+                    onError={(e) => {
+                      // Fallback: use product brand text
+                      e.currentTarget.style.display = "none";
+                      const parent = e.currentTarget.parentElement;
+                      if (parent && !parent.querySelector(".brand-fallback")) {
+                        const span = document.createElement("div");
+                        span.className =
+                          "brand-fallback text-[8px] font-bold text-amber-500 text-center px-1 leading-tight";
+                        span.textContent = product.brand.split(" ")[0];
+                        parent.appendChild(span);
+                      }
+                    }}
                   />
                 </div>
               </motion.button>
