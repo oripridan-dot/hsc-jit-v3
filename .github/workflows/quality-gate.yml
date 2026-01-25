@@ -54,7 +54,6 @@ jobs:
             echo "❌ JS Bundle too large: ${size}KB (max 600KB)"
             exit 1
           fi
-          fi
           echo "✅ Bundle size: ${size}KB"
       
       - name: Check for Unused Dependencies

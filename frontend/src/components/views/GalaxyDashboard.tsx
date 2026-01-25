@@ -1,13 +1,13 @@
-import { 
-  LayoutGrid, 
-  List, 
-  HelpCircle,
+import {
   Guitar,
+  HelpCircle,
+  LayoutGrid,
+  List,
+  Mic2,
   Music,
   Piano,
-  Mic2,
+  Plug,
   Speaker,
-  Plug
 } from "lucide-react";
 import React, { useState } from "react";
 import SPECTRUM_BRAND_COLORS from "../../lib/generatedSpectrumBrands.json";
