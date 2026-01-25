@@ -24,14 +24,12 @@ export async function safeFetch<T>(
     const result = schema.safeParse(json);
 
     if (!result.success) {
-      console.error(`🚨 Data Corruption in ${url}:`, result.error);
       // "Smarter Problem Handling": Return null instead of crashing the app
       return null;
     }
 
     return result.data;
   } catch (e) {
-    console.error(`⚠️ Fetch Exception for ${url}`, e);
     return null;
   }
 }

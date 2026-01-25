@@ -90,13 +90,10 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
             specs: loadedProduct.specifications,
           };
           setProduct(productData);
-          console.log("✅ Loaded product:", productData);
         } else {
-          console.warn("Product not found:", productId);
           setProduct(null);
         }
       } catch (error) {
-        console.error("Failed to load product:", error);
         setProduct(null);
       } finally {
         setLoading(false);
@@ -237,7 +234,6 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
             related={[]}
             onSelectProduct={(product) => {
               // Handle product selection from relationships
-              console.log("Selected related product:", product);
             }}
           />
         </div>

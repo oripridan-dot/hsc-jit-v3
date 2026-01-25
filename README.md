@@ -39,13 +39,13 @@ Open **http://localhost:5173** in your browser.
 
 **First time?** Start here based on your role:
 
-| Role | Start Here |
-|------|-----------|
-| 👤 **User** | [GETTING STARTED](docs/guides/GETTING_STARTED.md) - Run the app in 2 min |
-| 👨‍💻 **Developer** | [DEVELOPER GUIDE](docs/guides/DEVELOPER_GUIDE.md) - Understand architecture |
-| 🏗️ **DevOps** | [OPERATIONS GUIDE](docs/guides/OPERATIONS_GUIDE.md) - Deploy & maintain |
-| 📖 **API Reference** | [API DOCS](docs/guides/API_REFERENCE.md) - Every function & type |
-| 🏛️ **Architecture** | [SYSTEM DESIGN](docs/SYSTEM_ARCHITECTURE.md) - Deep dive |
+| Role                 | Start Here                                                                  |
+| -------------------- | --------------------------------------------------------------------------- |
+| 👤 **User**          | [GETTING STARTED](docs/guides/GETTING_STARTED.md) - Run the app in 2 min    |
+| 👨‍💻 **Developer**     | [DEVELOPER GUIDE](docs/guides/DEVELOPER_GUIDE.md) - Understand architecture |
+| 🏗️ **DevOps**        | [OPERATIONS GUIDE](docs/guides/OPERATIONS_GUIDE.md) - Deploy & maintain     |
+| 📖 **API Reference** | [API DOCS](docs/guides/API_REFERENCE.md) - Every function & type            |
+| 🏛️ **Architecture**  | [SYSTEM DESIGN](docs/SYSTEM_ARCHITECTURE.md) - Deep dive                    |
 
 **Full Index**: [docs/INDEX.md](docs/INDEX.md)
 
@@ -96,40 +96,45 @@ Browser (No API calls, instant load)
 
 ### Tech Stack
 
-| Layer | Technology | Why |
-|-------|-----------|-----|
-| **Frontend** | React 18 + TypeScript 5 | Type-safe, modern, fast |
-| **Build** | Vite 7 | Lightning-fast dev & production builds |
-| **Styling** | Tailwind CSS | Utility-first, responsive, accessible |
-| **State** | Zustand | Lightweight, performant, simple API |
-| **Search** | Fuse.js | Fast full-text search, no dependencies |
-| **Data** | Static JSON | Simple, fast, zero maintenance |
+| Layer        | Technology              | Why                                    |
+| ------------ | ----------------------- | -------------------------------------- |
+| **Frontend** | React 18 + TypeScript 5 | Type-safe, modern, fast                |
+| **Build**    | Vite 7                  | Lightning-fast dev & production builds |
+| **Styling**  | Tailwind CSS            | Utility-first, responsive, accessible  |
+| **State**    | Zustand                 | Lightweight, performant, simple API    |
+| **Search**   | Fuse.js                 | Fast full-text search, no dependencies |
+| **Data**     | Static JSON             | Simple, fast, zero maintenance         |
 
 ---
 
 ## 🎯 Key Features
 
 ### 1. Massive Product Database
+
 - 5,268 products across 79 brands
 - Real-time search with fuzzy matching
 - Detailed specs, pricing, images for each product
 
 ### 2. Smart Category System
+
 - 8 universal categories (Keys, Drums, Guitars, etc.)
 - Automatically consolidates brand-specific taxonomies
 - Filter products by category in <50ms
 
 ### 3. Cross-Brand Compatibility
+
 - Unified data schema across all brands
 - Price extraction from multiple locations
 - Image resolution with 6-step fallback chain
 
 ### 4. Responsive Design
+
 - Desktop, tablet, mobile optimized
 - Dark mode with brand-specific theming
 - WCAG AA accessible
 
 ### 5. Production Ready
+
 - Zero TypeScript errors
 - Optimized bundle (270KB gzipped)
 - Vercel, Docker, S3+CloudFront ready
@@ -139,43 +144,51 @@ Browser (No API calls, instant load)
 
 ## 📈 Performance
 
-| Metric | Value |
-|--------|-------|
-| **Bundle Size** | 184KB (minified), 58.84KB (gzipped) |
-| **First Load** | < 1 second |
-| **Search Speed** | < 50ms (500 results) |
-| **Lighthouse Score** | 95+ Performance, 100 Accessibility |
-| **Core Web Vitals** | LCP < 1.5s, FID < 100ms, CLS < 0.1 |
+| Metric               | Value                               |
+| -------------------- | ----------------------------------- |
+| **Bundle Size**      | 184KB (minified), 58.84KB (gzipped) |
+| **First Load**       | < 1 second                          |
+| **Search Speed**     | < 50ms (500 results)                |
+| **Lighthouse Score** | 95+ Performance, 100 Accessibility  |
+| **Core Web Vitals**  | LCP < 1.5s, FID < 100ms, CLS < 0.1  |
 
 ---
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 ```bash
 cd frontend
 vercel --prod
 ```
+
 Live in 30 seconds, automatic HTTPS, edge caching included.
 
 ### GitHub Pages
+
 ```bash
 pnpm run deploy
 ```
+
 Free hosting, automatic from git pushes.
 
 ### AWS S3 + CloudFront
+
 ```bash
 pnpm build
 aws s3 sync dist/ s3://bucket-name/
 ```
+
 Enterprise-grade, global CDN, DDoS protection.
 
 ### Docker
+
 ```bash
 docker build -t hsc-jit .
 docker run -p 80:80 hsc-jit
 ```
+
 Self-hosted option, full control.
 
 ---
@@ -235,32 +248,36 @@ hsc-jit-v3/
 ## 📖 Common Tasks
 
 ### Load Products by Category
-```typescript
-import { catalogLoader } from './lib/catalogLoader';
 
-const products = await catalogLoader.loadProductsByCategory('keys');
+```typescript
+import { catalogLoader } from "./lib/catalogLoader";
+
+const products = await catalogLoader.loadProductsByCategory("keys");
 // Returns all keyboards/pianos across all brands
 ```
 
 ### Search Products
-```typescript
-import { instantSearch } from './lib/instantSearch';
 
-const results = instantSearch.search('roland keyboard', {
-  keys: ['name', 'category', 'description'],
-  limit: 20
+```typescript
+import { instantSearch } from "./lib/instantSearch";
+
+const results = instantSearch.search("roland keyboard", {
+  keys: ["name", "category", "description"],
+  limit: 20,
 });
 ```
 
 ### Get Product Details
+
 ```typescript
-const product = await catalogLoader.findProductById('ROLAND-DP990F');
+const product = await catalogLoader.findProductById("ROLAND-DP990F");
 // Returns complete product with pricing, images, specs
 ```
 
 ### Format Price
+
 ```typescript
-import { getPrice } from './lib/priceFormatter';
+import { getPrice } from "./lib/priceFormatter";
 
 getPrice(product); // Returns "₪1,500" (formatted with commas)
 ```

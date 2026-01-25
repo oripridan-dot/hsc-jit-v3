@@ -186,7 +186,6 @@ function normalizeImages(product: RawProductInput): ProductImage[] {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function normalizeProducts(rawProducts: any[]): Product[] {
   if (!Array.isArray(rawProducts)) {
-    console.warn("Expected array of products, got:", typeof rawProducts);
     return [];
   }
 
@@ -194,7 +193,6 @@ export function normalizeProducts(rawProducts: any[]): Product[] {
     try {
       return normalizeProduct(p);
     } catch (error) {
-      console.warn("Failed to normalize product:", p, error);
       return normalizeProduct({}); // Return empty normalized product
     }
   });

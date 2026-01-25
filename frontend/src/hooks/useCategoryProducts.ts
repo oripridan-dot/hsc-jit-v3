@@ -33,7 +33,6 @@ export const useCategoryProducts = (subcategoryId: string | null) => {
 
         setProducts(filtered);
       } catch (err) {
-        console.error("Error loading category products", err);
         setProducts([]);
       } finally {
         setLoading(false);

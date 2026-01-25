@@ -44,11 +44,9 @@ export const SpectrumModule = () => {
           );
           setRawProducts(products);
         } else {
-          console.warn("Spectrum: Unknown data format", products);
           setRawProducts([]);
         }
       } catch (e) {
-        console.error("Spectrum Signal Lost:", e);
         setRawProducts([]);
       } finally {
         setLoading(false);

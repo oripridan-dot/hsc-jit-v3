@@ -183,7 +183,6 @@ export class SchemaValidator {
   static validateProduct(data: unknown) {
     const result = ProductSchema.safeParse(data);
     if (!result.success) {
-      console.error("❌ Product validation failed:", result.error.flatten());
       throw new Error(
         `Invalid product data: ${result.error.errors[0].message}`,
       );
@@ -194,7 +193,6 @@ export class SchemaValidator {
   static validateBrandFile(data: unknown) {
     const result = BrandFileSchema.safeParse(data);
     if (!result.success) {
-      console.error("❌ Brand file validation failed:", result.error.flatten());
       throw new Error(`Invalid brand file: ${result.error.errors[0].message}`);
     }
     return result.data;

@@ -43,15 +43,12 @@ export const useCategoryCatalog = (
               const indexData = (await indexRes.json()) as CatalogIndex;
               brandsToFetch = indexData.brands.map((b) => b.slug);
             } else {
-              console.error("Failed to fetch index.json");
             }
           } catch (e) {
-            console.error("Error loading index.json", e);
           }
         }
 
         if (brandsToFetch.length === 0) {
-          console.warn("No brands found to fetch");
           setLoading(false);
           return;
         }
@@ -105,7 +102,6 @@ export const useCategoryCatalog = (
 
         setProducts(filtered);
       } catch (err) {
-        console.error("Catalog load error:", err);
         setProducts([]);
       } finally {
         setLoading(false);

@@ -106,7 +106,6 @@ class CatalogLoader {
   async loadIndex(): Promise<MasterIndex> {
     if (this.index) return this.index;
 
-    console.log("📦 Loading Master Index...");
     try {
       const response = await fetch(`/data/index.json?v=${Date.now()}`);
       if (!response.ok) {
@@ -121,7 +120,6 @@ class CatalogLoader {
       );
       return this.index!;
     } catch (error) {
-      console.error("❌ Failed to load index.json", error);
       throw error;
     }
   }
@@ -228,7 +226,6 @@ class CatalogLoader {
       throw new Error(`Brand ${brandId} not found in index`);
     }
 
-    console.log(`📦 Loading brand: ${brandId} from ${brandEntry.data_file}`);
     const response = await fetch(
       `/data/${brandEntry.data_file}?v=${Date.now()}`,
     );
@@ -390,7 +387,6 @@ class CatalogLoader {
       // Load all brands in parallel
       const brandPromises = index.brands.map((b) =>
         this.loadBrand(b.id).catch((error) => {
-          console.error(`Failed to load ${b.id}:`, error);
           return null;
         }),
       );
@@ -456,7 +452,6 @@ class CatalogLoader {
         version: index.version,
       };
     } catch (error) {
-      console.error("Failed to get stats:", error);
       return {
         totalProducts: 0,
         totalVerified: 0,
@@ -515,7 +510,6 @@ class CatalogLoader {
           products.push(...matchingProducts);
         } catch {
           // Skip brands that fail to load
-          console.warn(`Failed to load ${brandEntry.id}, skipping...`);
         }
       }
 
@@ -546,7 +540,6 @@ class CatalogLoader {
           const catalog = await this.loadBrand(brandEntry.id);
           const product = catalog.products.find((p) => p.id === productId);
           if (product) {
-            console.log(`Found product ${productId} in brand ${brandEntry.id}`);
             return product;
           }
         } catch {
@@ -554,10 +547,8 @@ class CatalogLoader {
         }
       }
 
-      console.warn(`Product ${productId} not found in any brand catalog`);
       return null;
     } catch {
-      console.error(`Failed to find product ${productId}`);
       return null;
     }
   }
@@ -569,7 +560,6 @@ class CatalogLoader {
     this.index = null;
     this.brandCatalogs.clear();
     this.allProducts = [];
-    console.log("🗑️ Cache cleared");
   }
 }
 

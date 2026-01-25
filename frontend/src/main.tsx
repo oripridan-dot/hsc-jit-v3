@@ -6,18 +6,14 @@ import App from './App.tsx'
 const rootElement = document.getElementById('root');
 
 if (!rootElement) {
-  console.error('❌ Root element not found!');
 } else {
   try {
-    console.log('🚀 Starting React app...');
     createRoot(rootElement).render(
       <StrictMode>
         <App />
       </StrictMode>,
     );
-    console.log('✅ React app rendered');
   } catch (error) {
-    console.error('❌ React render error:', error);
     rootElement.innerHTML = `
       <div style="padding: 40px; font-family: system-ui; max-width: 600px; margin: 0 auto;">
         <h1 style="color: #ef4444;">Failed to Load Application</h1>

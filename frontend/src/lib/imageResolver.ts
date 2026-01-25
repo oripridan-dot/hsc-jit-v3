@@ -18,7 +18,6 @@ export function resolveProductImage(
   product: Product | null | undefined,
 ): string {
   if (!product) {
-    console.warn("⚠️ NO PRODUCT PROVIDED");
     return generatePlaceholderImage("Unknown");
   }
 
