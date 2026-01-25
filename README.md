@@ -8,7 +8,7 @@
 **The world's largest open synthesizer catalog.** 5,268 products across 79 brands, fully searchable, zero backend required.
 
 - 🎹 **5,268 Products** - Roland, Boss, Nord, Moog, and 75+ brands
-- 🚀 **Lightning Fast** - Static JSON, 270KB gzipped, <50ms load time
+- 🚀 **Lightning Fast** - Static JSON, 58.84KB gzipped, <50ms load time
 - 🔍 **Full-Text Search** - Powered by Fuse.js for instant results
 - 📱 **Responsive Design** - Works on desktop, tablet, and mobile
 - 🎨 **Beautiful UI** - Tailwind CSS + dark mode + brand theming
@@ -141,7 +141,7 @@ Browser (No API calls, instant load)
 
 | Metric | Value |
 |--------|-------|
-| **Bundle Size** | 948KB (minified), 270KB (gzipped) |
+| **Bundle Size** | 184KB (minified), 58.84KB (gzipped) |
 | **First Load** | < 1 second |
 | **Search Speed** | < 50ms (500 results) |
 | **Lighthouse Score** | 95+ Performance, 100 Accessibility |
