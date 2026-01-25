@@ -1,9 +1,29 @@
-import * as LucideIcons from "lucide-react";
-import { LayoutGrid, List } from "lucide-react";
+import { 
+  LayoutGrid, 
+  List, 
+  HelpCircle,
+  Guitar,
+  Music,
+  Piano,
+  Mic2,
+  Speaker,
+  Plug
+} from "lucide-react";
 import React, { useState } from "react";
 import SPECTRUM_BRAND_COLORS from "../../lib/generatedSpectrumBrands.json";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { useNavigationStore } from "../../store/navigationStore";
+
+// Icon map to avoid wildcard imports
+const ICON_MAP: Record<string, React.ElementType> = {
+  Guitar,
+  Music,
+  Piano,
+  Mic2,
+  Speaker,
+  Plug,
+  HelpCircle,
+};
 
 export const GalaxyDashboard = () => {
   const { goToSpectrum } = useNavigationStore();
@@ -60,11 +80,8 @@ export const GalaxyDashboard = () => {
           }
         >
           {UNIVERSAL_CATEGORIES.map((tribe, index) => {
-            // Dynamic Icon Resolution
-            const IconComponent =
-              (LucideIcons as unknown as Record<string, React.ElementType>)[
-                tribe.iconName
-              ] || LucideIcons.HelpCircle;
+            // Dynamic Icon Resolution with map
+            const IconComponent = ICON_MAP[tribe.iconName] || HelpCircle;
 
             if (viewMode === "list") {
               return (
