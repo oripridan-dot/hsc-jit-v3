@@ -259,10 +259,9 @@ class CatalogLoader {
 
     // Transform to BrandCatalog format with full validation
     // Handle both new format (brand_identity) and legacy format (brand_name)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const brandIdentity = data.brand_identity || {
       id: brandId,
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-explicit-any
       name: (data as any).brand_name || brandEntry.name || brandId,
     };
 
@@ -309,16 +308,15 @@ class CatalogLoader {
             }));
           }
           // Priority 3: Legacy Specs (Dict)
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
           else if (
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
             (p as any).specs &&
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
             typeof (p as any).specs === "object" &&
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
             !Array.isArray((p as any).specs)
           ) {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
             const specs = (p as any).specs;
             preview = Object.entries(specs)
               .slice(0, 4)

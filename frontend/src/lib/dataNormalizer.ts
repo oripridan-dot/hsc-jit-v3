@@ -80,7 +80,7 @@ export function normalizeProduct(input: any): Product {
       "",
 
     // Pricing: Try multiple locations
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+
     pricing: extractPrice(rawProduct),
 
     // Optional fields
@@ -90,7 +90,7 @@ export function normalizeProduct(input: any): Product {
     status: rawProduct.status || "IN_STOCK",
 
     // Media/Gallery
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+
     images: normalizeImages(rawProduct),
     official_gallery:
       rawProduct.official_gallery || rawProduct.media?.gallery || [],
@@ -110,7 +110,9 @@ export function normalizeProduct(input: any): Product {
     // Relationships
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     necessities: rawProduct.necessities,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     accessories: rawProduct.accessories,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     related: rawProduct.related,
 
     // Metadata

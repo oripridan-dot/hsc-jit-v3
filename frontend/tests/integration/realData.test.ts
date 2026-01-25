@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
 import fs from "fs";
 import path from "path";
 import { describe, expect, it } from "vitest";
