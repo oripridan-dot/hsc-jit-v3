@@ -29,6 +29,11 @@ except ImportError:
     # Fallback if imports fail (e.g. running script directly)
     def consolidate_category(brand, cat): return "general"
 
+try:
+    from services.relationship_engine import ProductRelationshipEngine
+except ImportError:
+    ProductRelationshipEngine = None
+
 class GenesisBuilder:
 
     """
@@ -110,6 +115,17 @@ class GenesisBuilder:
             
             if idx % 10 == 0:
                 print(f"   └─ {idx}/{len(blueprint)} products constructed")
+        
+        # 3. Discover Product Relationships (Optional)
+        # If we have the relationship engine, analyze all products for connections
+        if ProductRelationshipEngine and len(blueprint) > 5:
+            print(f"   🔗 Analyzing product relationships...")
+            try:
+                engine = ProductRelationshipEngine()
+                blueprint = list(engine.analyze_all_blueprints(blueprint).values())
+                print(f"   ✅ Relationship analysis complete")
+            except Exception as e:
+                print(f"   ⚠️ Relationship analysis skipped: {e}")
             
         self._update_catalog_index(blueprint)
         print(f"✨ Genesis Complete for {self.brand}: {len(self.products_built)} products.")
@@ -119,65 +135,69 @@ class GenesisBuilder:
         """
         Merges the Commercial Catalog (Halilit) with the Global Catalog (Brand).
         
-        Strategy:
-        1. If Commercial exists, it is the MASTER LIST (determines products getting IDs).
-        2. Global content is overlaid onto Commercial items via fuzzy match.
-        3. If no Commercial, fallback to Global.
+        IMPLEMENTS 'CHURCH AND STATE' SEPARATION:
+        - official_knowledge: Strictly from Manufacturer (Global)
+        - commercial_offer: Strictly from Retailer (Commercial)
         """
-        if not commercial:
-            print("   ℹ️  Using Global Catalog only (No commercial data)")
-            return global_data
-            
         merged = []
         from difflib import SequenceMatcher
         
-        print("   🔄 Merging Commercial & Global data...")
+        print("   🔄 Merging Commercial & Global data (Twin-Pipe Strategy)...")
         
-        for comm_item in commercial:
-            # Start with Commercial Data (Price, Stock, SKU, ID)
-            final_item = comm_item.copy()
-            
-            # Find Best Match in Global
-            best_match = None
-            best_score = 0.0
-            comm_name = comm_item.get('name', '').lower()
-            
-            for glob_item in global_data:
-                glob_name = glob_item.get('name', '').lower()
-                
-                # Check 1: Exact URL Slug Match? (If captured)
-                
-                # Check 2: Name Similarity
-                if comm_name and glob_name:
-                    ratio = SequenceMatcher(None, comm_name, glob_name).ratio()
-                    if ratio > 0.6 and ratio > best_score: # Threshold 0.6
-                        best_score = ratio
-                        best_match = glob_item
+        # Determine Master List
+        # If commercial data exists, it drives the product list (Sales-Driven).
+        # If not, we fall back to Global data (Catalog-Driven) for preview/dev.
+        master_list = commercial if commercial else global_data
+        is_sale_driven = bool(commercial)
 
-            if best_match:
-                # OVERLAY GLOBAL CONTENT
-                # We KEEP commercial ID, SKU, Pricing
-                # We OVERWRITE/FILL Content
-                
-                # Category (Use Global taxonomy if available)
-                if best_match.get('category') and best_match['category'].lower() != 'general':
-                    final_item['category'] = best_match['category']
+        for item in master_list:
+            
+            # 1. Establish Commercial Identity & Offer
+            if is_sale_driven:
+                comm_item = item
+                product_id = comm_item.get('id', comm_item.get('sku'))
+                commercial_offer = {
+                    "price": comm_item.get('price'),
+                    "in_stock": comm_item.get('in_stock', False),
+                    "sku": comm_item.get('sku'),
+                    "buy_url": comm_item.get('url'),
+                    "status": comm_item.get('status', 'scratch') # status tracking
+                }
+                match_target_name = comm_item.get('name', '').lower()
+            else:
+                # No commercial data
+                product_id = item.get('id', item.get('sku'))
+                commercial_offer = {}
+                match_target_name = item.get('name', '').lower()
 
-                # Description
-                if best_match.get('description') and len(best_match['description']) > len(final_item.get('description', '')):
-                    final_item['description'] = best_match['description']
+            # 2. Retrieve Official Knowledge (The "Vault")
+            official_knowledge = {}
+            
+            if not is_sale_driven:
+                # If we are iterating global items, the item IS the official knowledge
+                official_knowledge = item
+            else:
+                # We need to find the matching global item
+                best_match = None
+                best_score = 0.0
                 
-                # Specs
-                if best_match.get('specs'):
-                    final_item['specs'] = best_match.get('specs')
-                    
-                # Media - Merge lists? Or prefer Global?
-                # Global usually has better high-res images.
-                if best_match.get('image_url') and "placeholder" not in best_match['image_url']:
-                     final_item['remote_image'] = best_match['image_url'] # Use global image
+                for glob_item in global_data:
+                    glob_name = glob_item.get('name', '').lower()
+                    if match_target_name and glob_name:
+                         ratio = SequenceMatcher(None, match_target_name, glob_name).ratio()
+                         if ratio > 0.6 and ratio > best_score:
+                             best_score = ratio
+                             best_match = glob_item
                 
-                # Manuals / Docs (If extracted)
-                # (Assuming specs/downloads are in 'specs' dict or similar)
+                if best_match:
+                    official_knowledge = best_match
+
+            # 3. Construct "Church and State" Object
+            final_item = {
+                "id": product_id,
+                "official_knowledge": official_knowledge,
+                "commercial_offer": commercial_offer
+            }
             
             merged.append(final_item)
             
@@ -207,43 +227,50 @@ class GenesisBuilder:
                 "name": self.brand.upper()
             }
             
-        # Rebuild or Update Products List
-        # We prefer rebuilding from blueprint to ensure sync, 
-        # but we want to keep fields not in blueprint if they exist? 
-        # Actually, skeleton approach implies blueprint is source of truth for items.
-        
+        # Rebuild Products List
         new_products = []
         for item in blueprint:
             safe_id = item['id']
-            # Resolve Image URL
-            if item.get('image_url'):
-                public_url = item['image_url']
-            elif item.get('remote_image'):
-                public_url = item['remote_image']
-            else:
-                public_url = "/assets/placeholder_gear.png"
+            
+            # ACCESS DATA STREAMS
+            official = item.get('official_knowledge', {}) or {}
+            commercial = item.get('commercial_offer', {}) or {}
+            
+            # 1. Resolve Image URL (STRICT: Official Only)
+            # We explicitly reject commercial images here.
+            public_url = "/assets/placeholder_gear.png"
+            
+            if official.get('image_url') and "placeholder" not in official['image_url']:
+                public_url = official['image_url']
+            elif official.get('remote_image'):
+                 public_url = official['remote_image']
                 
-            # Smart Categorization
-            raw_cat = item.get('category', 'general')
-            final_cat = self._smart_categorize(item['name'], raw_cat)
+            # 2. Resolve Name (Prefer Official)
+            product_name = official.get('name') or commercial.get('name') or "Unknown Model"
+
+            # 3. Smart Categorization
+            raw_cat = official.get('category', 'general')
+            final_cat = self._smart_categorize(product_name, raw_cat)
             
             product_entry = {
                 "id": safe_id,
-                "name": item['name'],
+                "name": product_name,
                 "brand": self.brand,
                 "category": final_cat,
                 "image_url": public_url,
-                "description": item.get('description', ''),
+                "description": official.get('description', ''),
                 
                 # Extended Commerce Data (Halilit Integration)
-                "pricing": item.get('pricing', {}),
-                "sku": item.get('sku'),
-                "halilit_id": item.get('halilit_id'),
-                "halilit_url": item.get('url'),
+                "pricing": {"price": commercial.get('price')},
+                "stock_status": commercial.get('in_stock'),
+                "sku": commercial.get('sku'),
+                "halilit_url": commercial.get('buy_url'),
+                
+                # Official Media Assets (From brand official sites)
+                "official_manuals": official.get('official_manuals', []),
+                "official_gallery": official.get('official_gallery', []),
             }
             
-            # Carry over extra fields if needed? 
-            # For now, simplistic rebuild is safer for consistency.
             new_products.append(product_entry)
             
         catalog_data["products"] = new_products
@@ -256,7 +283,7 @@ class GenesisBuilder:
         Construct a single product's file structure and assets.
         
         Args:
-            item: Product dict from blueprint
+            item: Product dict from blueprint (Church & State Structured)
             
         Returns:
             True if successful, False otherwise
@@ -270,55 +297,58 @@ class GenesisBuilder:
             os.makedirs(product_folder, exist_ok=True)
             os.makedirs(image_folder, exist_ok=True)
 
+            # Unpack Streams
+            official = item.get('official_knowledge', {}) or {}
+            commercial = item.get('commercial_offer', {}) or {}
+
             # 2. Acquire Asset (Download Thumbnail)
-            # NOTE: Image downloads are deferred to background job for speed.
-            # For now, we store the remote URL and can download later.
+            # STRICT RULE: Only Official Images
             local_image_name = f"{safe_id}_thumb.jpg"
             local_image_full_path = os.path.join(image_folder, local_image_name)
             
-            # Use remote URL directly, or fall back to placeholder
-            if item.get('image_url'):
-                public_url = item['image_url']
-            elif item.get('remote_image'):
-                public_url = item['remote_image']  # Use remote URL for now
-            else:
-                public_url = "/assets/placeholder_gear.png"
+            public_url = "/assets/placeholder_gear.png"
+            if official.get('image_url') and "placeholder" not in official['image_url']:
+                 public_url = official['image_url']
+            elif official.get('remote_image'):
+                 public_url = official['remote_image']
 
-            # 3. Construct JSON State (The "Skeleton" Data Structure)
-            
-            # Normalize data source (support flat or nested 'intelligence')
-            intel = item.get('intelligence', item)
+            # 3. Construct JSON State
             
             # Determine Badge
             badges = []
-            if intel.get('is_sold'):
+            if commercial.get('buy_url'):
                 badges.append("HALILIT_CERTIFIED")
             else:
                 badges.append("GLOBAL_CATALOG")
 
-            description = item.get('description') or item.get('short_description') or ''
+            description = official.get('description') or official.get('short_description') or ''
+            product_name = official.get('name') or commercial.get('name') or "Unknown"
             
             # Smart Categorization
-            raw_cat = item.get('category', 'general')
-            final_cat = self._smart_categorize(item['name'], raw_cat)
+            raw_cat = official.get('category', 'general')
+            final_cat = self._smart_categorize(product_name, raw_cat)
 
             product_data = {
                 "id": safe_id,
-                "name": item['name'],
+                "name": product_name,
                 "brand": self.brand,
                 "category": final_cat,
                 "description": description,
                 "media": {
                     "thumbnail": public_url,
-                    "gallery": [],  # Empty for now
+                    "gallery": official.get('official_gallery', []),
                     "videos": []
                 },
                 "commercial": {
-                    "price": intel.get('price'),
-                    "link": intel.get('halilit_url') or intel.get('url'),
-                    "status": intel.get('status')
+                    "price": commercial.get('price'),
+                    "link": commercial.get('buy_url'),
+                    "status": commercial.get('status', 'unknown')
                 },
-                "specs": {},  # Waiting for heavy scrape
+                "official_knowledge": official, # Persist the Vault data
+                "specs": official.get('specs', {}),
+                "official_manuals": official.get('official_manuals', []),
+                "official_specs": official.get('official_specs', {}),
+                
                 "badges": badges,
                 "meta": {
                     "completeness": "SKELETON",

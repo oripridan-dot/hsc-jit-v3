@@ -2,9 +2,49 @@
 from typing import List, Dict, Any, Optional
 from models.product_hierarchy import ProductCore
 from models.category_consolidator import consolidate_category
+import os
+import glob
 
 class FrontendNormalizer:
     
+    @staticmethod
+    def _resolve_logo_url(brand: str) -> str:
+        """
+        Find the correct logo file for a brand.
+        Handles brand name variations (spaces -> hyphens, etc.)
+        """
+        # Convert brand name to potential filename patterns
+        brand_slug = brand.lower().replace(" ", "-").replace("_", "-")
+        
+        # Try to find logo in assets/logos directory
+        logos_dir = "frontend/public/assets/logos"
+        
+        # Try exact match with different extensions
+        for ext in ['png', 'svg', 'jpg', 'gif', 'webp']:
+            # Try with _logo suffix
+            logo_path = f"{logos_dir}/{brand_slug}_logo.{ext}"
+            if os.path.exists(logo_path):
+                return f"/assets/logos/{brand_slug}_logo.{ext}"
+            
+            # Try without _logo suffix
+            logo_path = f"{logos_dir}/{brand_slug}.{ext}"
+            if os.path.exists(logo_path):
+                return f"/assets/logos/{brand_slug}.{ext}"
+        
+        # Try partial matches (handles brands with slightly different names)
+        try:
+            # List all files and try fuzzy matching
+            if os.path.exists(logos_dir):
+                for filename in os.listdir(logos_dir):
+                    if filename.lower().startswith(brand_slug):
+                        return f"/assets/logos/{filename}"
+        except:
+            pass
+        
+        # Fallback to generic logo path
+        return f"/assets/logos/{brand_slug}_logo.png"
+    
+
     @staticmethod
     def normalize_product(product: ProductCore) -> Dict[str, Any]:
         """
@@ -52,7 +92,7 @@ class FrontendNormalizer:
             
             # Visuals
             "image_url": image_url,
-            "logo_url": f"/assets/logos/{product.brand.lower()}.png", # Ensure these exist!
+            "logo_url": FrontendNormalizer._resolve_logo_url(product.brand),
             
             # UX Data
             "specs_preview": specs_preview,
@@ -62,7 +102,13 @@ class FrontendNormalizer:
             "features": product.features,
             "tech_specs": [s.model_dump() for s in product.specifications],
             "manuals": product.manual_urls,
-            "drivers": product.support_url
+            "drivers": product.support_url,
+
+            # Rich Data Extensions (Added for v3.9.0)
+            "relationships": [r.model_dump() for r in product.relationships] if hasattr(product, 'relationships') and product.relationships else [],
+            "connectivity": product.connectivity.model_dump() if hasattr(product, 'connectivity') and product.connectivity else None,
+            "tier": product.tier.model_dump() if hasattr(product, 'tier') and product.tier else None,
+            "video_urls": product.video_urls if hasattr(product, 'video_urls') else []
         }
 
     @staticmethod

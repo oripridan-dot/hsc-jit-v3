@@ -1,0 +1,711 @@
+{
+  "brand_identity": {
+    "id": "nord",
+    "name": "NORD"
+  },
+  "products": [
+    {
+      "id": "nord_42-piano688",
+      "name": "Nord Piano 6 88-key",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Piano 6 88-key",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 1620013728.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-PIANO688",
+      "halilit_id": "42-PIANO688",
+      "halilit_url": "https://www.halilit.com/items/7971375-nord-piano-6-88-key",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-piano673",
+      "name": "Nord Piano 6 73-key",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Piano 6 73-key",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 1518012864.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-PIANO673",
+      "halilit_id": "42-PIANO673",
+      "halilit_url": "https://www.halilit.com/items/7966853-nord-piano-6-73-key",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-drum3p",
+      "name": "Nord Drum 3P",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Drum 3P",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 30962623.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-DRUM3P",
+      "halilit_id": "42-DRUM3P",
+      "halilit_url": "https://www.halilit.com/items/2363547-nord-drum-3p",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-casegrand",
+      "name": "Nord Grand Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Grand Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 19681667.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASEGRAND",
+      "halilit_id": "42-CASEGRAND",
+      "halilit_url": "https://www.halilit.com/items/6388869-nord-grand-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-stage473",
+      "name": "Nord Stage 4 73-Key",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Stage 4 73-Key",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 1827015483.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-STAGE473",
+      "halilit_id": "42-STAGE473",
+      "halilit_url": "https://www.halilit.com/items/5819653-nord-stage-4-73-key",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-stage4compact",
+      "name": "Nord Stage 4 Compact",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Stage 4 Compact",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 1733314688.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-STAGE4COMPACT",
+      "halilit_id": "42-STAGE4COMPACT",
+      "halilit_url": "https://www.halilit.com/items/5819657-nord-stage-4-compact",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-grand2",
+      "name": "Nord Grand 2",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Grand 2",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 1838115577.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-GRAND2",
+      "halilit_id": "42-GRAND2",
+      "halilit_url": "https://www.halilit.com/items/7481878-nord-grand-2-stage-keyboard",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-grand",
+      "name": "Nord Grand",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Grand",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 1433412147.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-GRAND",
+      "halilit_id": "42-GRAND",
+      "halilit_url": "https://www.halilit.com/items/2358960-nord-grand",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-stage488",
+      "name": "Nord Stage 4 88",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Stage 4 88",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 2014317070.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-STAGE488",
+      "halilit_id": "42-STAGE488",
+      "halilit_url": "https://www.halilit.com/items/5819637-nord-stage-4-88",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-electro6d73",
+      "name": "Nord Electro 6D 73-Key",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Electro 6D 73-Key",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 93837951.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-ELECTRO6D73",
+      "halilit_id": "42-ELECTRO6D73",
+      "halilit_url": "https://www.halilit.com/items/2351753-nord-electro-6d-73-key",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-electro6d61",
+      "name": "Nord Electro 6D 61",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Electro 6D 61",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 79756758.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-ELECTRO6D61",
+      "halilit_id": "42-ELECTRO6D61",
+      "halilit_url": "https://www.halilit.com/items/2352572-nord-electro-6d-61",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-sustainpedal",
+      "name": "Nord Sustain Pedal",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Sustain Pedal",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 206174.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-SUSTAINPEDAL",
+      "halilit_id": "42-SUSTAINPEDAL",
+      "halilit_url": "https://www.halilit.com/items/2368021-nord-sustain-pedal",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-triplepedal2",
+      "name": "Nord Triple Pedal 2",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Triple Pedal 2",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 14991270.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-TRIPLEPEDAL2",
+      "halilit_id": "42-TRIPLEPEDAL2",
+      "halilit_url": "https://www.halilit.com/items/6163268-nord-triple-pedal-2",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-standv4",
+      "name": "Nord Wood Keyboard Stand V4",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Wood Keyboard Stand V4",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 42713619.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-STANDV4",
+      "halilit_id": "42-STANDV4",
+      "halilit_url": "https://www.halilit.com/items/7269446-nord-wood-keyboard-stand-v4",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-singlepedal2",
+      "name": "Nord Single Pedal 2",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Single Pedal 2",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 562476.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-SINGLEPEDAL2",
+      "halilit_id": "42-SINGLEPEDAL2",
+      "halilit_url": "https://www.halilit.com/items/6163288-nord-single-pedal-2",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-wave2",
+      "name": "\u05e1\u05d9\u05e0\u05ea\u05d9\u05e1\u05d9\u05d9\u05d6\u05e8 Nord Wave 2",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "\u05e1\u05d9\u05e0\u05ea\u05d9\u05e1\u05d9\u05d9\u05d6\u05e8 Nord Wave 2",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 99188405.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-WAVE2",
+      "halilit_id": "42-WAVE2",
+      "halilit_url": "https://www.halilit.com/items/2975349-nord-wave-2-synthesizer",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-triplepedal",
+      "name": "Nord Triple Pedal",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Triple Pedal",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 857726.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-TRIPLEPEDAL",
+      "halilit_id": "42-TRIPLEPEDAL",
+      "halilit_url": "https://www.halilit.com/items/2368164-nord-triple-pedal",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-electro6hp",
+      "name": "Nord Electro 6 HP",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Electro 6 HP",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 103218746.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-ELECTRO6HP",
+      "halilit_id": "42-ELECTRO6HP",
+      "halilit_url": "https://www.halilit.com/items/2352562-nord-electro-6-hp",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-casestage76",
+      "name": "Nord Stage 3 HP76 Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Stage 3 HP76 Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 14521230.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASESTAGE76",
+      "halilit_id": "42-CASESTAGE76",
+      "halilit_url": "https://www.halilit.com/items/2360321-nord-stage-3-hp76-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-caseelectrohp",
+      "name": "Nord Electro HP Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Electro HP Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 843714.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASEELECTROHP",
+      "halilit_id": "42-CASEELECTROHP",
+      "halilit_url": "https://www.halilit.com/items/2360371-nord-electro-hp-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-casepianop73",
+      "name": "Nord Piano 5 73 Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Piano 5 73 Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 14521230.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASEPIANOP73",
+      "halilit_id": "42-CASEPIANOP73",
+      "halilit_url": "https://www.halilit.com/items/5069386-nord-piano-5-73-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-softcasewave2",
+      "name": "Nord Wave 2 Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Wave 2 Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 703595.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-SOFTCASEWAVE2",
+      "halilit_id": "42-SOFTCASEWAVE2",
+      "halilit_url": "https://www.halilit.com/items/4130928-nord-wave-2-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-caselead1a",
+      "name": "Nord Lead A1 Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Lead A1 Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 515436.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASELEAD1A",
+      "halilit_id": "42-CASELEAD1A",
+      "halilit_url": "https://www.halilit.com/items/2369909-nord-lead-a1-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-caseelec61/lead",
+      "name": "Nord Electro 61/Lead Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Electro 61/Lead Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 609516.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASEELEC61/LEAD",
+      "halilit_id": "42-CASEELEC61/LEAD",
+      "halilit_url": "https://www.halilit.com/items/2369951-nord-electro-61-lead-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-woodmstand",
+      "name": "Nord Wood Music Stand",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Wood Music Stand",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 656555.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-WOODMSTAND",
+      "halilit_id": "42-WOODMSTAND",
+      "halilit_url": "https://www.halilit.com/items/6514099-nord-wood-music-stand",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-caseelec73/comp",
+      "name": "Nord Electro/Stage 73 Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Electro/Stage 73 Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 749634.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASEELEC73/COMP",
+      "halilit_id": "42-CASEELEC73/COMP",
+      "halilit_url": "https://www.halilit.com/items/2369980-nord-electro-stage-73-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-lead1a",
+      "name": "Nord Lead A1",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Lead A1",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 68505805.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-LEAD1A",
+      "halilit_id": "42-LEAD1A",
+      "halilit_url": "https://www.halilit.com/items/2348488-nord-lead-a1",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-casestage/p88",
+      "name": "Nord Stage/Piano 88 Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Stage/Piano 88 Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 14521230.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASESTAGE/P88",
+      "halilit_id": "42-CASESTAGE/P88",
+      "halilit_url": "https://www.halilit.com/items/2360544-nord-stage-piano-88-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-standex",
+      "name": "Nord Keyboard Stand EX",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Keyboard Stand EX",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 656555.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-STANDEX",
+      "halilit_id": "42-STANDEX",
+      "halilit_url": "https://www.halilit.com/items/2368757-nord-keyboard-stand-ex",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-standv2",
+      "name": "Nord Music Stand V2",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Music Stand V2",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 281238.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-STANDV2",
+      "halilit_id": "42-STANDV2",
+      "halilit_url": "https://www.halilit.com/items/2368758-nord-music-stand-v2",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-casedrum39",
+      "name": "Nord Drum 3P Soft Case",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Drum 3P Soft Case",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 562476.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-CASEDRUM39",
+      "halilit_id": "42-CASEDRUM39",
+      "halilit_url": "https://www.halilit.com/items/2370009-nord-drum-3p-soft-case",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-organstand",
+      "name": "Nord Organ Stand",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Organ Stand",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 14061191.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-ORGANSTAND",
+      "halilit_id": "42-ORGANSTAND",
+      "halilit_url": "https://www.halilit.com/items/2368786-nord-organ-stand",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-dustcoverhp",
+      "name": "Nord Dust Cover HP",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Dust Cover HP",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 232196.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-DUSTCOVERHP",
+      "halilit_id": "42-DUSTCOVERHP",
+      "halilit_url": "https://www.halilit.com/items/4771619-nord-dust-cover-hp",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-dustcover88",
+      "name": "Nord Dust Cover 88",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Dust Cover 88",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 282238.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-DUSTCOVER88",
+      "halilit_id": "42-DUSTCOVER88",
+      "halilit_url": "https://www.halilit.com/items/4771454-nord-dust-cover-88",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-dustcover61",
+      "name": "Nord Dust Cover 61",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Dust Cover 61",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 222188.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-DUSTCOVER61",
+      "halilit_id": "42-DUSTCOVER61",
+      "halilit_url": "https://www.halilit.com/items/3772353-nord-dust-cover-61",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-dustcover73",
+      "name": "Nord Dust Cover 73",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Dust Cover 73",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 232196.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-DUSTCOVER73",
+      "halilit_id": "42-DUSTCOVER73",
+      "halilit_url": "https://www.halilit.com/items/3772643-nord-dust-cover-73",
+      "official_manuals": [],
+      "official_gallery": []
+    },
+    {
+      "id": "nord_42-pianomonitorv2",
+      "name": "Nord Piano Monitors V2",
+      "brand": "nord",
+      "category": "keys",
+      "image_url": "/assets/placeholder_gear.png",
+      "description": "Nord Piano Monitors V2",
+      "pricing": {
+        "currency": "ILS",
+        "regular_price": 25292143.0,
+        "eilat_price": null,
+        "sale_price": null
+      },
+      "sku": "42-PIANOMONITORV2",
+      "halilit_id": "42-PIANOMONITORV2",
+      "halilit_url": "https://www.halilit.com/items/3306649-nord-piano-monitors-v2",
+      "official_manuals": [],
+      "official_gallery": []
+    }
+  ]
+}

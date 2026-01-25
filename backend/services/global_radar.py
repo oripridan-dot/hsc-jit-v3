@@ -34,8 +34,20 @@ class GlobalRadar:
         self.headers = {
             'User-Agent': 'HSC-Radar/1.0 (reconnaissance mission)'
         }
+        self.radar_dir = "backend/data/radar"
         self.manifest_dir = "backend/data/strategic_manifests"
+        os.makedirs(self.radar_dir, exist_ok=True)
         os.makedirs(self.manifest_dir, exist_ok=True)
+
+    def save_radar_data(self, brand: str, data: List[Dict[str, Any]]):
+        """Saves lightweight radar data to JSON"""
+        filename = f"{brand.lower()}_global.json"
+        path = os.path.join(self.radar_dir, filename)
+        
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+        print(f"📡 [RADAR] Global scope saved to {path} ({len(data)} items)")
+
 
     def scan_roland_global(self) -> List[Dict[str, Any]]:
         """
@@ -86,6 +98,38 @@ class GlobalRadar:
                         # Extract product name
                         name_elem = p.find(['h2', 'h3', 'span', 'div'], class_=['name', 'title', 'product-name'])
                         if not name_elem:
+                            name_text = link if isinstance(link, str) else link.text.strip()
+                        else:
+                            name_text = name_elem.get_text(strip=True)
+
+                        if not name_text: continue
+
+                        # Create Radar Record
+                        discovered_nodes.append({
+                            "brand": "Roland",
+                            "model": name_text,
+                            "category": category_hint,
+                            "url": urljoin(category_url, link if isinstance(link, str) else link.get('href')),
+                            "status": "GLOBAL_DISCOVERY"
+                        })
+                    except Exception as e:
+                        logger.debug(f"Parsing error: {e}")
+
+            except Exception as e:
+                logger.error(f"Failed to scan {category_url}: {e}")
+
+        # Save to Radar
+        self.save_radar_data("roland", discovered_nodes)
+        return discovered_nodes
+
+    def scan_brand(self, brand_name: str, brand_url: str):
+        """Generic scanner interface"""
+        if brand_name.lower() == "roland":
+            return self.scan_roland_global()
+        else:
+            print(f"📡 Radar not calibrated for {brand_name} yet.")
+            return []
+
                             name_elem = p.find(['h2', 'h3'])
                         name = name_elem.text.strip() if name_elem else "Unknown"
 
@@ -286,14 +330,28 @@ class GlobalRadar:
         """
         Aggregates all radar scans into a Strategic Manifest.
         Saves to backend/data/strategic_manifests/strategic_manifest.json
+        Now also saves individual radar files for Gap Analysis.
         """
         print("\n🎯 COMPILING STRATEGIC MANIFEST...\n")
 
+        # Scan individually to save radar files
+        roland_data = self.scan_roland_global()
+        self.save_radar_data("roland", roland_data)
+        
+        nord_data = self.scan_nord_global()
+        self.save_radar_data("nord", nord_data)
+        
+        boss_data = self.scan_boss_global()
+        self.save_radar_data("boss", boss_data)
+        
+        moog_data = self.scan_moog_global()
+        self.save_radar_data("moog", moog_data)
+
         universe = {
-            "roland": self.scan_roland_global(),
-            "nord": self.scan_nord_global(),
-            "boss": self.scan_boss_global(),
-            "moog": self.scan_moog_global(),
+            "roland": roland_data,
+            "nord": nord_data,
+            "boss": boss_data,
+            "moog": moog_data,
         }
 
         # Calculate statistics

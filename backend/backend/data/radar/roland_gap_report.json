@@ -1,0 +1,134 @@
+{
+  "brand": "Roland",
+  "total_global": 14,
+  "total_local": 0,
+  "missing_count": 14,
+  "missing_products": [
+    {
+      "name": "FANTOM EX Upgrade",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/rc_fantom_ex_upgrade/",
+      "detected_tier": "Flagship",
+      "category_hint": "synthesizers",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "GAIA 2",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/gaia_2/",
+      "detected_tier": "Standard",
+      "category_hint": "synthesizers",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "SH-4d",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/sh-4d/",
+      "detected_tier": "Standard",
+      "category_hint": "synthesizers",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "JUNO-X",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/juno-x/",
+      "detected_tier": "Standard",
+      "category_hint": "synthesizers",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "TR-06",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/tr-06/",
+      "detected_tier": "Standard",
+      "category_hint": "synthesizers",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "FANTOM",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/fantom_series/",
+      "detected_tier": "Flagship",
+      "category_hint": "synthesizers",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "GO:KEYS 5",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/gokeys_5/",
+      "detected_tier": "Entry",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "GO:KEYS 3",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/gokeys_3/",
+      "detected_tier": "Entry",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "E-X10",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/e-x10/",
+      "detected_tier": "Standard",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "E-X50",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/e-x50/",
+      "detected_tier": "Standard",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "A-88MKII",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/a-88mk2/",
+      "detected_tier": "Standard",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "GO:PIANO with Alexa Built-in",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/gopiano_go-61p-a/",
+      "detected_tier": "Entry",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "FANTOM",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/fantom_series/",
+      "detected_tier": "Flagship",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    },
+    {
+      "name": "GO:PIANO88",
+      "brand": "roland",
+      "global_url": "https://www.roland.com/global/products/gopiano_go-88p/",
+      "detected_tier": "Entry",
+      "category_hint": "keyboards",
+      "source_domain": "roland.com",
+      "status": "DISCOVERED"
+    }
+  ]
+}

@@ -42,7 +42,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
-SOURCE_DIR = Path("data/vault/catalogs_brand")  # Where scraper outputs live (Data Vault)
+SOURCE_DIR = Path("data/blueprints")  # Where scraper outputs live (Data Vault)
 PUBLIC_DATA_PATH = Path("../frontend/public/data")  # The "Live" destination
 LOGOS_DIR = PUBLIC_DATA_PATH / "logos"  # Logo destination
 CATALOG_VERSION = "3.9.0"
@@ -155,7 +155,8 @@ class HalilitCatalog:
         """
         Manage brand logos. 
         PRIORITY 1: Use local override file in /assets/logos/ (Manual VIP treatment)
-        PRIORITY 2: Download from URL (Fallback)
+        PRIORITY 2: Fetch from official brand website (config/brand_maps.py)
+        PRIORITY 3: Download from provided URL
         """
         # PRIORITY 1: Check Manual Local Overrides
         # In Docker workspace, we map paths relative to frontend/public
@@ -169,7 +170,8 @@ class HalilitCatalog:
             f"{brand_slug}_logo.png",
             f"{brand_slug}_logo.jpg",
             f"{brand_slug}_logo.jpeg",
-            f"{brand_slug}_logo.webp"
+            f"{brand_slug}_logo.webp",
+            f"{brand_slug}_logo.gif"
         ]
         
         for filename in known_logo_files:
@@ -177,10 +179,22 @@ class HalilitCatalog:
             if local_file.exists():
                 logger.info(f"       ⭐ Using local VIP logo for {brand_slug}: {filename}")
                 return f"/assets/logos/{filename}"
-                
-        # PRIORITY 2: Download (Legacy fallback - largely unused now)
+        
+        # PRIORITY 2: Try to get official logo from BRAND_MAPS (official brand website)
+        official_logo_url = None
+        try:
+            from config.brand_maps import BRAND_MAPS
+            if brand_slug in BRAND_MAPS:
+                official_logo_url = BRAND_MAPS[brand_slug].get('logo_url')
+                if official_logo_url:
+                    logger.info(f"       📍 Using official brand logo from BRAND_MAPS: {official_logo_url}")
+                    logo_url = official_logo_url
+        except Exception as e:
+            logger.debug(f"      ℹ️ Could not load BRAND_MAPS: {e}")
+        
+        # PRIORITY 3: Download (if logo_url is available)
         if not logo_url or not logo_url.startswith('http'):
-            return logo_url
+            return logo_url or f"/assets/logos/{brand_slug}_logo.png"
         
         try:
             # Create logos directory
@@ -209,19 +223,30 @@ class HalilitCatalog:
                 return logo_url
         
         except Exception as e:
-            logger.info(f"      ⚪ Logo skipped: {e}")
+            logger.info(f"      ⚪ Logo download failed: {e}")
             # Fallback: return original URL and let browser fetch it
-            return logo_url
+            return logo_url or f"/assets/logos/{brand_slug}_logo.png"
     
+    def _strip_hebrew(self, text: str) -> str:
+        """Remove Hebrew characters from text."""
+        if not text:
+            return ""
+        return ''.join(char for char in text if not ("\u0590" <= char <= "\u05FF"))
+
     def _enforce_naming_convention(self, name: str) -> str:
         """
         Enforce Halilit Naming Standards:
-        1. Title Case (e.g. "GRAND PIANO" -> "Grand Piano")
-        2. Clean unnecessary spaces
-        3. Preserve known acronyms (optional expansion)
+        1. Remove Hebrew text to standardize on English-only catalog
+        2. Title Case (e.g. "GRAND PIANO" -> "Grand Piano")
+        3. Clean unnecessary spaces
+        4. Preserve known acronyms (optional expansion)
         """
         if not name:
             return ""
+        
+        # 0. Strip Hebrew Characters (Bilingual Cleanup)
+        # Often Halilit has "תיק לגיטרה Boss CB-20" -> We want "Boss CB-20"
+        name = self._strip_hebrew(name)
         
         # 1. Clean spaces
         clean_name = " ".join(name.split())
@@ -345,12 +370,115 @@ class HalilitCatalog:
                 raw_data = json.load(f)
             
             # Extract Brand Info
-            brand_name = raw_data.get('brand_name') or raw_data.get('name') or catalog_file.stem.replace('_', ' ').title()
+            if isinstance(raw_data, list):
+                # Blueprint Format (List of products)
+                # Cleanup filename: "cordoba-guitars_blueprint" -> "Cordoba Guitars"
+                brand_name = catalog_file.stem.replace('_blueprint', '').replace('-', ' ').replace('_', ' ').title()
+                
+                # FALLBACK: If blueprint is empty, try to load commercial data instead
+                if len(raw_data) == 0:
+                    base_slug = catalog_file.stem.replace('_blueprint', '')
+                    commercial_file = self.source_dir / f"{base_slug}_commercial.json"
+                    if commercial_file.exists():
+                        logger.info(f"      🔄 Blueprint empty, using commercial data: {base_slug}")
+                        with open(commercial_file, 'r', encoding='utf-8') as f:
+                            raw_data = json.load(f)
+                        if not isinstance(raw_data, list):
+                            raw_data = raw_data.get('products', [])
+                
+                # NORMALIZE: Convert list to expected dictionary structure
+                # This prevents "list indices must be integers" error later when doing raw_data['products'] = ...
+                # or when passing to _refine_brand_data
+                normalized_data = {
+                    "brand_name": brand_name,
+                    "products": raw_data,
+                    "generated_at": datetime.utcnow().isoformat()
+                }
+                raw_data = normalized_data
+                products = raw_data['products']
+            else:
+                # Legacy Format (Dict with products key)
+                brand_name = raw_data.get('brand_name') or raw_data.get('name') or catalog_file.stem.replace('_', ' ').title()
+                products = raw_data.get('products', [])
+
             # Remove "Catalog" or "Brand" suffix from brand name for slug
             brand_name_clean = brand_name.replace(' Catalog', '').replace(' Brand', '').strip()
             safe_slug = brand_name_clean.lower().replace(" ", "-").replace(".", "").replace("&", "and")
+
+            # --- MERGE: Halilit (commercial) with Brand Website Data (global) ---
+            # Strategy: Price & SKU from Halilit, description & specs from brand website
+            raw_data = self._merge_with_global_data(raw_data, safe_slug, catalog_file.stem)
             products = raw_data.get('products', [])
-            product_count = len(products)
+
+            # --- SAMPLING LOGIC (Hybrid: 100% Halilit, 20% Real) ---
+            commercial_products = []
+            real_products = []
+            
+            # Helper to detect Hebrew content (indicative of Halilit data)
+            def has_hebrew(text):
+                if not text: return False
+                return any("\u0590" <= char <= "\u05FF" for char in text)
+
+            for p in products:
+                # Data Repair: Ensure pricing object exists (Fixes "0 price" issue)
+                if not p.get('pricing'):
+                    p['pricing'] = {}
+                
+                # Map flat 'price' to pricing object if missing
+                if p.get('price') and not p['pricing'].get('regular_price'):
+                     try:
+                         val = float(p['price'])
+                         if val > 0:
+                             p['pricing']['regular_price'] = val
+                             p['pricing']['original_price'] = val
+                             logger.info(f"Fixed price for {p.get('name')}: {val}")
+                     except Exception as e:
+                         logger.warning(f"Failed to fix price for {p.get('name')}: {e}")
+
+                # 1. Commercial Validity: Has Price OR Halilit ID/URL
+                is_commercial_valid = (
+                    p.get('halilit_url') is not None or 
+                    p.get('halilit_id') is not None or
+                    (p.get('pricing') and p['pricing'].get('regular_price') is not None)
+                )
+                
+                # 2. Content Source: Hebrew = Halilit (Commercial Source)
+                is_hebrew_content = has_hebrew(p.get('name', '')) or has_hebrew(p.get('description', ''))
+                
+                if is_hebrew_content:
+                    # STRICT FILTER: User requested NO Hebrew data in UI.
+                    # We skip these products entirely.
+                    continue
+                else:
+                    # It is English/International. Treat as "Real" (Brand Source).
+                    # (Even if it has a price, if it's English, we treat it as high-quality Real data).
+                    # Actually, we should probably keep price if it has it, but put it in Real bucket?
+                    # The user wants "Real" data displayed.
+                    real_products.append(p)
+
+            # Include 100% of all data (Real + Commercial)
+            # Real: English/Brand website data (full specs, descriptions)
+            # Commercial: Hebrew/Halilit data (pricing, availability, SKU)
+            # Merge with intelligent deduplication
+            real_count = len(real_products)
+            commercial_count = len(commercial_products)
+            
+            # Build product ID set from real products to detect duplicates
+            real_ids = {p.get('id', p.get('name', '').lower().replace(' ', '-')) for p in real_products}
+            
+            # Include only commercial products that aren't already in real products
+            unique_commercial = []
+            for p in commercial_products:
+                prod_id = p.get('id', p.get('name', '').lower().replace(' ', '-'))
+                if prod_id not in real_ids:
+                    unique_commercial.append(p)
+            
+            # Merge: Real First (Good content), then Unique Commercial (Pricing/Inventory)
+            merged_products = real_products + unique_commercial
+            raw_data['products'] = merged_products
+            product_count = len(merged_products)
+            
+            logger.info(f"      📊 [100% FULL DATA] {brand_name}: {commercial_count} Halilit + {real_count} Brand Website - {len(commercial_products) - len(unique_commercial)} duplicates = {product_count} Total")
             
             logger.info(f"      🔨 {brand_name:20s} ({product_count:3d} products) → {safe_slug}.json")
             
@@ -398,6 +526,164 @@ class HalilitCatalog:
         except Exception as e:
             logger.error(f"      ❌ Error processing {catalog_file.name}: {e}")
             self.stats["errors"].append(str(e))
+    
+    def _merge_with_global_data(self, commercial_data: Dict, slug: str, stem: str) -> Dict:
+        """
+        Merges Halilit data (commercial) with brand website data (global).
+        
+        Strategy:
+        - Halilit is source for: price, SKU, halilit_id, halilit_url, availability
+        - Brand website is source for: description, specs, category, images, logo
+        - Product matching: fuzzy name matching (>0.6 similarity threshold)
+        - Language handling: prefer English content from brand site over Hebrew from Halilit
+        
+        Args:
+            commercial_data: Dict with products from Halilit blueprint
+            slug: Brand slug (e.g., "cordoba-guitars")
+            stem: Original filename stem (e.g., "cordoba-guitars_blueprint")
+            
+        Returns:
+            Merged data dict with enhanced product information
+        """
+        if 'products' not in commercial_data:
+            return commercial_data
+        
+        # Try to load global/brand website data if it exists
+        global_data = []
+        
+        # Patterns to check for global/brand data files
+        patterns = [
+            f"data/blueprints/{slug}_brand.json",
+            f"data/blueprints/{slug}-brand.json",
+            f"data/blueprints/{stem}_brand.json",  # If stem is different
+            f"data/blueprints/{stem}_commercial.json",  # Alternative source
+            f"data/blueprints/{slug}_commercial.json",  # Alternative source
+        ]
+        
+        for pattern in patterns:
+            try:
+                if Path(pattern).exists():
+                    with open(pattern, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        if isinstance(data, list):
+                            global_data = data
+                        elif isinstance(data, dict) and 'products' in data:
+                            global_data = data['products']
+                        logger.info(f"      📖 Loaded global data: {len(global_data)} products from {pattern}")
+                        break
+            except Exception as e:
+                logger.debug(f"      ℹ️ Global data not found at {pattern}: {e}")
+        
+        if not global_data:
+            logger.debug(f"      ℹ️ No brand website data found for {slug}, using Halilit-only")
+            return commercial_data
+        
+        # Merge: Use fuzzy matching on product names
+        from difflib import SequenceMatcher
+        
+        def has_hebrew(text):
+            """Check if text contains Hebrew characters"""
+            if not text:
+                return False
+            return any("\u0590" <= char <= "\u05FF" for char in text)
+        
+        merged_products = []
+        matched_global_indices = set()
+        
+        for comm_idx, comm_item in enumerate(commercial_data.get('products', [])):
+            final_item = comm_item.copy()
+            
+            # Find best match in global data (preferring products not yet matched)
+            best_match = None
+            best_score = 0.0
+            best_match_idx = -1
+            comm_name = comm_item.get('name', '').lower().strip()
+            
+            # Extract English part of name if Hebrew+English mixed
+            if comm_name and has_hebrew(comm_name):
+                # Try to extract English part
+                english_part = ''.join(char for char in comm_name if ord(char) < 128)
+                if english_part:
+                    comm_name = english_part.lower().strip()
+            
+            if comm_name:
+                for glob_idx, glob_item in enumerate(global_data):
+                    # Skip if already matched to avoid duplicates
+                    if glob_idx in matched_global_indices:
+                        continue
+                    
+                    glob_name = glob_item.get('name', '').lower().strip()
+                    if glob_name:
+                        ratio = SequenceMatcher(None, comm_name, glob_name).ratio()
+                        if ratio > best_score:
+                            best_score = ratio
+                            best_match = glob_item
+                            best_match_idx = glob_idx
+            
+            # If we found a good match (>0.6 similarity), overlay global content
+            if best_match and best_score > 0.6:
+                matched_global_indices.add(best_match_idx)
+                
+                # PRIORITY 1: BRAND WEBSITE DATA (preferred for content)
+                # PRIORITY 2: HALILIT DATA (for commerce)
+                
+                # === ENGLISH CONTENT (Brand Site Priority) ===
+                
+                # Name: Use brand site name if it's English and not Hebrew
+                if best_match.get('name') and not has_hebrew(best_match.get('name', '')):
+                    final_item['name'] = best_match['name']
+                
+                # Description: Always prefer brand site (usually English, detailed)
+                brand_desc = best_match.get('description', '').strip()
+                halilit_desc = final_item.get('description', '').strip()
+                
+                if brand_desc and (not halilit_desc or has_hebrew(halilit_desc) or len(brand_desc) > len(halilit_desc)):
+                    final_item['description'] = brand_desc
+                
+                # Specs: Always prefer brand site
+                if best_match.get('specs') and not final_item.get('specs'):
+                    final_item['specs'] = best_match['specs']
+                
+                # SKU - If brand website has it and Halilit doesn't, use brand website's
+                if best_match.get('sku') and not final_item.get('sku'):
+                    final_item['sku'] = best_match['sku']
+                
+                # Category: Prefer brand site taxonomy (usually in English)
+                brand_cat = best_match.get('category', '').lower()
+                if best_match.get('category') and brand_cat not in ['general', 'other', 'uncategorized']:
+                    if not final_item.get('category') or final_item.get('category').lower() in ['general', 'other', 'uncategorized']:
+                        final_item['category'] = best_match['category']
+                
+                # Image: Always prefer brand site images (higher quality, no watermark)
+                if best_match.get('image_url') and "placeholder" not in best_match.get('image_url', ''):
+                    final_item['remote_image'] = best_match['image_url']
+                
+                # Model number
+                if best_match.get('model_number') and not final_item.get('model_number'):
+                    final_item['model_number'] = best_match['model_number']
+            
+            # === HALILIT DATA (Commerce - Always Kept) ===
+            # These fields are preserved from Halilit (commerce data)
+            # - halilit_id, halilit_url, price, pricing, status, is_sold, product_url
+            
+            # Ensure pricing structure is correct
+            if not final_item.get('pricing'):
+                final_item['pricing'] = {}
+            
+            # If we have a flat price field, move it to pricing object
+            if final_item.get('price') and not final_item['pricing'].get('regular_price'):
+                try:
+                    price_val = float(final_item['price'])
+                    if price_val > 0:
+                        final_item['pricing']['regular_price'] = price_val
+                        final_item['pricing']['original_price'] = price_val
+                except (ValueError, TypeError):
+                    pass
+            
+            merged_products.append(final_item)
+        
+        commercial_data['products'] = merged_products
+        return commercial_data
     
     def _refine_brand_data(self, raw_data: Dict, brand_name: str, slug: str) -> Dict:
         """
@@ -454,10 +740,21 @@ class HalilitCatalog:
         taxonomy_stats = {"validated": 0, "normalized": 0, "uncategorized": 0}
         
         if 'products' in refined:
+            # Get brand logo URL for all products
+            brand_logo_url = refined['brand_identity'].get('logo_url')
+            
             for idx, product in enumerate(refined['products']):
                 # Ensure ID
                 if not product.get('id'):
                     product['id'] = f"{slug}-product-{idx}"
+
+                # --- FIX: Ensure Brand Name is present (Required by Schema) ---
+                if not product.get('brand'):
+                    product['brand'] = brand_name
+                
+                # Add brand logo to every product (for TierBar and SpectrumModule rendering)
+                if brand_logo_url and not product.get('logo_url'):
+                    product['logo_url'] = brand_logo_url
                 
                 # --- NAMING STANDARDIZATION ---
                 # Apply Title Case and Cleanup before any other processing
@@ -466,6 +763,16 @@ class HalilitCatalog:
                 if standardized_name != original_name:
                     # logger.info(f"      ✨ Renamed: {original_name} -> {standardized_name}")
                     product['name'] = standardized_name
+
+                # --- DESCRIPTION CLEANUP ---
+                # Remove Hebrew from description as well
+                original_desc = product.get('description', '')
+                if original_desc:
+                    cleaned_desc = self._strip_hebrew(original_desc)
+                    # Clean spaces
+                    cleaned_desc = " ".join(cleaned_desc.split())
+                    if cleaned_desc != original_desc:
+                         product['description'] = cleaned_desc
 
                 # --- TAXONOMY VALIDATION CHECKPOINT ---
                 raw_category = product.get('main_category') or product.get('category')

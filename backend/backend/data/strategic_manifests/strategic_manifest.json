@@ -1,0 +1,254 @@
+{
+  "timestamp": "2026-01-25 21:48:49.806933",
+  "total_products_discovered": 22,
+  "brands_scanned": [
+    "roland",
+    "nord",
+    "boss",
+    "moog"
+  ],
+  "brand_statistics": {
+    "roland": {
+      "total_discovered": 14,
+      "by_tier": {
+        "Entry": 4,
+        "Standard": 7,
+        "Professional": 0,
+        "Flagship": 3
+      }
+    },
+    "nord": {
+      "total_discovered": 0,
+      "by_tier": {
+        "Entry": 0,
+        "Standard": 0,
+        "Professional": 0,
+        "Flagship": 0
+      }
+    },
+    "boss": {
+      "total_discovered": 8,
+      "by_tier": {
+        "Entry": 0,
+        "Standard": 8,
+        "Professional": 0,
+        "Flagship": 0
+      }
+    },
+    "moog": {
+      "total_discovered": 0,
+      "by_tier": {
+        "Entry": 0,
+        "Standard": 0,
+        "Professional": 0,
+        "Flagship": 0
+      }
+    }
+  },
+  "products_by_brand": {
+    "roland": [
+      {
+        "name": "FANTOM EX Upgrade",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/rc_fantom_ex_upgrade/",
+        "detected_tier": "Flagship",
+        "category_hint": "synthesizers",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "GAIA 2",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/gaia_2/",
+        "detected_tier": "Standard",
+        "category_hint": "synthesizers",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "SH-4d",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/sh-4d/",
+        "detected_tier": "Standard",
+        "category_hint": "synthesizers",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "JUNO-X",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/juno-x/",
+        "detected_tier": "Standard",
+        "category_hint": "synthesizers",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "TR-06",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/tr-06/",
+        "detected_tier": "Standard",
+        "category_hint": "synthesizers",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "FANTOM",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/fantom_series/",
+        "detected_tier": "Flagship",
+        "category_hint": "synthesizers",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "GO:KEYS 5",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/gokeys_5/",
+        "detected_tier": "Entry",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "GO:KEYS 3",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/gokeys_3/",
+        "detected_tier": "Entry",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "E-X10",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/e-x10/",
+        "detected_tier": "Standard",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "E-X50",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/e-x50/",
+        "detected_tier": "Standard",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "A-88MKII",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/a-88mk2/",
+        "detected_tier": "Standard",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "GO:PIANO with Alexa Built-in",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/gopiano_go-61p-a/",
+        "detected_tier": "Entry",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "FANTOM",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/fantom_series/",
+        "detected_tier": "Flagship",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "GO:PIANO88",
+        "brand": "roland",
+        "global_url": "https://www.roland.com/global/products/gopiano_go-88p/",
+        "detected_tier": "Entry",
+        "category_hint": "keyboards",
+        "source_domain": "roland.com",
+        "status": "DISCOVERED"
+      }
+    ],
+    "nord": [],
+    "boss": [
+      {
+        "name": "Explore",
+        "brand": "boss",
+        "global_url": "https://www.boss.info/global/products/gx-1/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "Explore",
+        "brand": "boss",
+        "global_url": "https://www.boss.info/global/products/gx-1b/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "Explore",
+        "brand": "boss",
+        "global_url": "https://www.boss.info/global/products/xs-100/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "Explore",
+        "brand": "boss",
+        "global_url": "https://www.boss.info/global/products/xs-1/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "Explore",
+        "brand": "boss",
+        "global_url": "https://www.boss.info/global/products/px-1/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "Find Out More",
+        "brand": "boss",
+        "global_url": "https://www.boss.info/global/products/gx-10/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "Find Out More",
+        "brand": "boss",
+        "global_url": "https://www.roland.com/global/products/rc_boss_effects_pedals/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      },
+      {
+        "name": "Find Out More",
+        "brand": "boss",
+        "global_url": "https://www.boss.info/global/products/gt-1000/",
+        "detected_tier": "Standard",
+        "category_hint": "guitars",
+        "source_domain": "boss.info",
+        "status": "DISCOVERED"
+      }
+    ],
+    "moog": []
+  }
+}

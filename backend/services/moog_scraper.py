@@ -30,7 +30,7 @@ from services.scraper_enhancements import (
 )
 import asyncio
 import logging
-from typing import List, Dict, Optional, Set
+from typing import List, Dict, Optional, Set, Any
 from datetime import datetime
 from playwright.async_api import async_playwright, Page, TimeoutError as PlaywrightTimeoutError
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, AsyncRetrying
@@ -58,17 +58,132 @@ class MoogScraper:
         
         # Moog main categories
         self.category_urls = [
-            # Main products page
-            "https://www.moogmusic.com/products",
-            # Synthesizers
-            "https://www.moogmusic.com/products/synthesizers",
-            # Modules (Eurorack)
-            "https://www.moogmusic.com/products/modules",
-            # Accessories
-            "https://www.moogmusic.com/products/accessories",
-            # Effects
-            "https://www.moogmusic.com/products/effects",
+            # Adjusted based on actual site structure
+            "https://www.moogmusic.com/synthesizers",
+            "https://www.moogmusic.com/accessories", 
+            "https://www.moogmusic.com/theremins",
+            "https://www.moogmusic.com/controllers",
+            "https://www.moogmusic.com/merch"
         ]
+
+    async def scrape_and_return_raw(self, max_products: int = None) -> List[Dict[str, Any]]:
+        """
+        New Protocol Method (AS-IS): Scrape and return raw dictionaries.
+        Does NOT normalize or clean data.
+        """
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=['--disable-dev-shm-usage', '--no-sandbox', '--disable-gpu']
+            )
+            context = await browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+            )
+            page = await context.new_page()
+
+            raw_items = []
+            
+            try:
+                # Get all product URLs
+                urls = await self._get_product_urls(page, max_products)
+                
+                for i, url in enumerate(urls):
+                    if max_products and i >= max_products:
+                        break
+                        
+                    logger.info(f"   Scraping RAW [{i+1}/{len(urls)}]: {url}")
+                    try:
+                        raw_data = await self._scrape_raw_page(page, url)
+                        if raw_data:
+                            raw_items.append(raw_data)
+                    except Exception as e:
+                        logger.error(f"   Error capturing RAW {url}: {e}")
+                        
+            except Exception as e:
+                logger.error(f"Fatal error during RAW scraping: {e}")
+                raise
+            finally:
+                await browser.close()
+                
+            return raw_items
+
+    async def _scrape_raw_page(self, page: Page, url: str) -> Dict[str, Any]:
+        """
+        Extracts raw data elements without cleaning.
+        Generic implementation for Moog.
+        """
+        await self._navigate(page, url)
+        await asyncio.sleep(1) # Wait for JS
+        
+        # 1. Basic Metadata
+        try:
+             h1 = await page.locator('h1').first.inner_text()
+        except:
+             h1 = ""
+             
+        # 2. Raw Specs
+        raw_specs = []
+        tables = await page.locator('table').all()
+        for table in tables:
+            rows = await table.locator('tr').all()
+            for row in rows:
+                cells = await row.locator('td, th').all()
+                if len(cells) >= 2:
+                    k = await cells[0].inner_text()
+                    v = await cells[1].inner_text()
+                    raw_specs.append({"key": k, "value": v})
+        
+        # 3. Raw Images & Videos
+        images = []
+        imgs = await page.locator('img').all()
+        for img in imgs:
+             src = await img.get_attribute('src')
+             alt = await img.get_attribute('alt')
+             if src:
+                 if src.startswith('/'):
+                     src = f"https://www.moogmusic.com{src}"
+                 images.append({"url": src, "alt_text": alt})
+                 
+        videos = []
+        iframes = await page.locator('iframe').all()
+        for frame in iframes:
+            src = await frame.get_attribute('src')
+            if src: videos.append(src)
+            
+        # 4. Description Blocks
+        desc_text = ""
+        try:
+             # Moog specific content container
+             main_content = await page.evaluate("() => document.querySelector('.main-content') ? document.querySelector('.main-content').innerText : document.body.innerText")
+             desc_text = main_content
+        except:
+             pass
+
+        features = []
+        try:
+             lis = await page.locator('ul li').all()
+             for li in lis[:30]: 
+                  txt = await li.inner_text()
+                  if len(txt) > 10:
+                      features.append(txt)
+        except:
+             pass
+
+        return {
+            "source_url": url,
+            "brand": "Moog",
+            "model": h1,
+            "name": h1,
+            "description": desc_text,
+            "specifications": raw_specs,
+            "images": images,
+            "videos": videos,
+            "features": features,
+            "manuals": [],
+            "support_url": url,
+            "hierarchy": {},
+            "metadata": {"raw_capture": True}
+        }
 
     async def scrape_all_products(self, max_products: int = None) -> ProductCatalog:
         """
@@ -212,16 +327,38 @@ class MoogScraper:
 
                 # Find all product links on category page
                 try:
-                    # Try multiple selectors for Moog website
+                    # Broad discovery for Moog's structure (e.g. /synthesizers/model-name)
                     selectors = [
-                        'a[href*="/products/"]',
-                        'a.product-link',
-                        'a[class*="product"]',
-                        'div.product a',
-                        '.product-grid a',
-                        '.product-list a'
+                        'a.product-card__link',
+                        'a.product-link', 
+                        f'a[href*="{cat_url.split("/")[-1]}"]', # contained in link
+                        'div.grid a',
+                        'main a'
                     ]
                     
+                    found_on_page = 0
+                    
+                    # Also grab all links and filter by logic
+                    all_links = await page.locator('a').all()
+                    for link in all_links:
+                        href = await link.get_attribute('href')
+                        if not href: continue
+                        
+                        # Normalize relative
+                        if href.startswith('/'):
+                            href = f"https://www.moogmusic.com{href}"
+                        
+                        # Check if it looks like a product child of the current category
+                        # e.g. cat_url=.../synthesizers, href=.../synthesizers/subharmonicon
+                        if cat_url in href and len(href) > len(cat_url) + 1:
+                            # Avoid sub-collections if any? mostly products
+                            if href not in all_urls:
+                                all_urls.add(href)
+                                found_on_page += 1
+                                
+                    logger.info(f"   Found {found_on_page} candidates on {cat_url}")
+                    
+                    # Legacy selector method (backup)
                     for selector in selectors:
                         try:
                             links = await asyncio.wait_for(
