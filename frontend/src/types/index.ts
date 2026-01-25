@@ -165,7 +165,12 @@ export interface Product {
   item_code?: string | null;
   halilit_sku?: string | null;
   halilit_price?: number;
-  pricing?: ProductPricing;
+  pricing?: ProductPricing | number; // Updated to allow number
+  price?: number; // Legacy field
+  commercial?: {
+    price?: number;
+    link?: string;
+  }; // Legacy field
   availability?: "in-stock" | "pre-order" | "discontinued" | "unknown";
   warranty?: string;
 

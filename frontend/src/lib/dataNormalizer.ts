@@ -3,14 +3,64 @@
  * Normalizes all product data to a consistent format
  */
 
-import type { Product } from "../types";
+import type { Product, ProductPricing, ProductImage } from "../types";
+
+// Loose interface for incoming raw data
+interface RawProductInput {
+  id?: string;
+  name?: string;
+  brand?: string;
+  category?: string;
+  main_category?: string;
+  description?: string;
+  image_url?: string;
+  image?: string;
+  media?: {
+    thumbnail?: string;
+    gallery?: string[];
+  };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  pricing?: any;
+  price?: number;
+  logo_url?: string;
+  url?: string;
+  commercial?: {
+    link?: string;
+    price?: number;
+  };
+  sku?: string;
+  halilit_id?: string;
+  status?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  images?: any[];
+  official_gallery?: string[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  specifications?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  specs?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  official_specs?: any;
+  features?: string[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  official_manuals?: any;
+  manual_urls?: string[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  necessities?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  accessories?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  related?: any;
+}
 
 /**
  * Normalize a raw product from any brand to standard Product format
  * Handles differences in data structure across Roland, Boss, Nord, etc.
  */
-export function normalizeProduct(rawProduct: any): Product {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function normalizeProduct(input: any): Product {
+  const rawProduct = input as RawProductInput;
   // Start with a copy of the raw product
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const product: any = {
     id: rawProduct.id || "",
     name: rawProduct.name || "Unknown Product",
@@ -68,10 +118,12 @@ export function normalizeProduct(rawProduct: any): Product {
 /**
  * Extract price from various data structures
  */
-function extractPrice(product: any): any {
+function extractPrice(product: RawProductInput): ProductPricing {
   // Try direct pricing object first
   if (product.pricing && typeof product.pricing === "object") {
-    return product.pricing;
+    // We assume the raw pricing object matches sufficiently or cast it
+    // Using unknown cast to break 'any' chain if needed, but here we just return it
+    return product.pricing as ProductPricing;
   }
 
   // Try nested commercial pricing
@@ -100,7 +152,7 @@ function extractPrice(product: any): any {
 /**
  * Normalize images array to consistent format
  */
-function normalizeImages(product: any): any[] {
+function normalizeImages(product: RawProductInput): ProductImage[] {
   const images = product.images || [];
 
   // If empty, try to build from other sources
@@ -117,12 +169,14 @@ function normalizeImages(product: any): any[] {
     return [];
   }
 
-  return images;
+  // Assuming the array contains items compatible with ProductImage
+  return images as ProductImage[];
 }
 
 /**
  * Batch normalize products
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function normalizeProducts(rawProducts: any[]): Product[] {
   if (!Array.isArray(rawProducts)) {
     console.warn("Expected array of products, got:", typeof rawProducts);

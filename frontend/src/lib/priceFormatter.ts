@@ -9,7 +9,7 @@ import type { Product } from "../types";
  * Get displayable price from product
  * Tries multiple pricing locations
  */
-export function getPrice(product: Product | any): string {
+export function getPrice(product: Product): string {
   // Try direct pricing object
   if (product.pricing) {
     if (typeof product.pricing === "number") {
@@ -53,7 +53,7 @@ export function formatPrice(price: number | string): string {
 /**
  * Extract numeric price value
  */
-export function getPriceValue(product: Product | any): number {
+export function getPriceValue(product: Product): number {
   // Try direct pricing object
   if (product.pricing) {
     if (typeof product.pricing === "number") {
