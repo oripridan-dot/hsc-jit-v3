@@ -81,11 +81,11 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
             price: getPrice(loadedProduct),
             official_manuals: loadedProduct.official_manuals,
             official_gallery: loadedProduct.official_gallery,
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
             necessities: loadedProduct.necessities as any,
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
             accessories: loadedProduct.accessories as any,
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
             related: loadedProduct.related as any,
             specs: loadedProduct.specifications,
           };

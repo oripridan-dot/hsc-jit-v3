@@ -259,9 +259,10 @@ class CatalogLoader {
 
     // Transform to BrandCatalog format with full validation
     // Handle both new format (brand_identity) and legacy format (brand_name)
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const brandIdentity = data.brand_identity || {
       id: brandId,
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
       name: (data as any).brand_name || brandEntry.name || brandId,
     };
 
@@ -290,7 +291,7 @@ class CatalogLoader {
         }
 
         // Generate specs_preview if missing (for Data Stream UI)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
         if (!(p as any).specs_preview) {
           let preview: { key: string; val: string }[] = [];
 
@@ -308,6 +309,7 @@ class CatalogLoader {
             }));
           }
           // Priority 3: Legacy Specs (Dict)
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
           else if (
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (p as any).specs &&
@@ -316,7 +318,7 @@ class CatalogLoader {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             !Array.isArray((p as any).specs)
           ) {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment
             const specs = (p as any).specs;
             preview = Object.entries(specs)
               .slice(0, 4)
@@ -327,13 +329,13 @@ class CatalogLoader {
           }
 
           if (preview.length > 0) {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
             (p as any).specs_preview = preview;
           }
         }
 
         // Generate filters from subcategory (for 1176 Filter Engine)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
         if (!(p as any).filters) {
           const filters = new Set<string>();
           if (p.subcategory && p.subcategory !== "Uncategorized") {
@@ -351,7 +353,7 @@ class CatalogLoader {
             });
           }
           if (filters.size > 0) {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
             (p as any).filters = Array.from(filters);
           }
         }
