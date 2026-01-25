@@ -318,7 +318,9 @@ function getPrice(p: Product): number {
   const pricing = typeof p.pricing === "number" ? p.pricing : p.pricing;
   return (
     p.halilit_price ||
-    (pricing && typeof pricing === "object" ? pricing.regular_price || pricing.sale_price : pricing) ||
+    (pricing && typeof pricing === "object"
+      ? pricing.regular_price || pricing.sale_price
+      : pricing) ||
     0
   );
 }

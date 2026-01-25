@@ -210,19 +210,21 @@ export const SpectrumModule = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-x-12 gap-y-3 border-t border-zinc-900/80 pt-4">
-                {hoveredProduct.specs_preview?.map((spec: { key: string; val: string }, idx: number) => (
-                  <div
-                    key={idx}
-                    className="flex justify-between items-baseline group/spec"
-                  >
-                    <span className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider group-hover/spec:text-amber-500 transition-colors">
-                      {spec.key}
-                    </span>
-                    <span className="text-sm text-zinc-300 font-mono truncate text-right">
-                      {spec.val}
-                    </span>
-                  </div>
-                ))}
+                {hoveredProduct.specs_preview?.map(
+                  (spec: { key: string; val: string }, idx: number) => (
+                    <div
+                      key={idx}
+                      className="flex justify-between items-baseline group/spec"
+                    >
+                      <span className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider group-hover/spec:text-amber-500 transition-colors">
+                        {spec.key}
+                      </span>
+                      <span className="text-sm text-zinc-300 font-mono truncate text-right">
+                        {spec.val}
+                      </span>
+                    </div>
+                  ),
+                )}
               </div>
             </div>
           ) : (

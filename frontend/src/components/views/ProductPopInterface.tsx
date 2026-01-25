@@ -48,6 +48,7 @@ interface ProductData {
     price?: string;
     link?: string;
   };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   specs?: Record<string, any>;
 }
 
@@ -55,7 +56,7 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
   const { closeProductPop } = useNavigationStore();
   const [product, setProduct] = useState<ProductData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [selectedMediaIndex, setSelectedMediaIndex] = useState(0);
+  const [_selectedMediaIndex, _setSelectedMediaIndex] = useState(0);
 
   useEffect(() => {
     // Load product data from catalog
@@ -80,8 +81,11 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
             price: getPrice(loadedProduct),
             official_manuals: loadedProduct.official_manuals,
             official_gallery: loadedProduct.official_gallery,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             necessities: loadedProduct.necessities as any,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             accessories: loadedProduct.accessories as any,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             related: loadedProduct.related as any,
             specs: loadedProduct.specifications,
           };
@@ -147,15 +151,15 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
 
             {/* Media Thumbnail Preview */}
             <div className="bg-zinc-800 rounded-lg p-4 aspect-square flex items-center justify-center border border-zinc-700 overflow-hidden">
-              {product?.official_gallery?.[selectedMediaIndex] ? (
+              {product?.official_gallery?.[_selectedMediaIndex] ? (
                 <img
-                  src={product.official_gallery[selectedMediaIndex]}
+                  src={product.official_gallery[_selectedMediaIndex]}
                   alt={product.name}
                   className="w-full h-full object-contain"
-                  onError={(e) => {
+                  onError={(_e) => {
                     console.warn(
                       "Image failed to load:",
-                      product.official_gallery?.[selectedMediaIndex],
+                      product.official_gallery?.[_selectedMediaIndex],
                     );
                   }}
                 />
@@ -249,10 +253,10 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
 interface MediaBarProps {
   manuals: OfficialMedia[];
   gallery: string[];
-  productId: string;
+  productId?: string;
 }
 
-const MediaBar = ({ manuals, gallery, productId }: MediaBarProps) => {
+const MediaBar = ({ manuals, gallery }: MediaBarProps) => {
   const [activeTab, setActiveTab] = useState<"manuals" | "gallery">("manuals");
 
   if (manuals.length === 0 && gallery.length === 0) {

@@ -23,7 +23,8 @@ export const TierBar = ({
   const { globalMin, globalMax } = useMemo(() => {
     if (!products.length) return { globalMin: 0, globalMax: 10000 };
     const prices = products.map((p) => {
-      const pricing = typeof p.pricing === "number" ? p.pricing : p.pricing?.regular_price;
+      const pricing =
+        typeof p.pricing === "number" ? p.pricing : p.pricing?.regular_price;
       return pricing ?? p.price ?? 0;
     });
     return { globalMin: Math.min(...prices), globalMax: Math.max(...prices) };
@@ -44,10 +45,11 @@ export const TierBar = ({
   const [pullBackIntent, setPullBackIntent] = useState<"left" | "right" | null>(
     null,
   );
-
   // Reset zoom when product set changes significantly
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setZoomDomain(null);
+
     setDragRange([0, 1]);
   }, [products.length, globalMin, globalMax]);
 
@@ -99,7 +101,10 @@ export const TierBar = ({
       <div className="absolute inset-x-0 bottom-16 top-0 overflow-hidden mx-12">
         <AnimatePresence mode="popLayout">
           {products.map((product) => {
-            const pricing = typeof product.pricing === "number" ? product.pricing : product.pricing?.regular_price;
+            const pricing =
+              typeof product.pricing === "number"
+                ? product.pricing
+                : product.pricing?.regular_price;
             const productPrice = pricing ?? product.price ?? 0;
             if (!isVisible(productPrice)) return null;
 

@@ -14,7 +14,9 @@ export const PLACEHOLDER_COLORS = {
  * Resolve a valid image URL for a product
  * Prioritizes: product image > brand logo > generated placeholder
  */
-export function resolveProductImage(product: Product | null | undefined): string {
+export function resolveProductImage(
+  product: Product | null | undefined,
+): string {
   if (!product) {
     console.warn("⚠️ NO PRODUCT PROVIDED");
     return generatePlaceholderImage("Unknown");
@@ -121,7 +123,9 @@ export function generatePlaceholderImage(_productName: string): string {
 /**
  * Batch resolve images for multiple products
  */
-export function resolveProductImages(products: Product[]): Array<Product & { resolved_image_url: string }> {
+export function resolveProductImages(
+  products: Product[],
+): Array<Product & { resolved_image_url: string }> {
   return products.map((product) => ({
     ...product,
     resolved_image_url: resolveProductImage(product),

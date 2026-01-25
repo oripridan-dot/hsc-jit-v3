@@ -513,7 +513,7 @@ class CatalogLoader {
             return targetCategories.includes(productCategory);
           });
           products.push(...matchingProducts);
-        } catch (_error) {
+        } catch {
           // Skip brands that fail to load
           console.warn(`Failed to load ${brandEntry.id}, skipping...`);
         }
@@ -549,15 +549,15 @@ class CatalogLoader {
             console.log(`Found product ${productId} in brand ${brandEntry.id}`);
             return product;
           }
-        } catch (_error) {
+        } catch {
           // Continue searching other brands
         }
       }
 
       console.warn(`Product ${productId} not found in any brand catalog`);
       return null;
-    } catch (error) {
-      console.error(`Failed to find product ${productId}:`, error);
+    } catch {
+      console.error(`Failed to find product ${productId}`);
       return null;
     }
   }
