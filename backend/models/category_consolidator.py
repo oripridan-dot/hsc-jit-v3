@@ -6,8 +6,7 @@ It takes raw scraped data and routes it to specific Spectrum IDs.
 
 Architecture:
 1. Scraper gets "Raw Category" (e.g. "Solid Body Electric")
-2. Consolidator maps it to "Spectrum ID" (e.g. "electric-guitars")
-3. Frontend maps Spectrum ID to Galaxy (e.g. "guitars-bass") using taxonomy.json
+2. Consolidator maps it to "Tribe ID" (e.g. "guitars-bass")
 """
 
 from dataclasses import dataclass
@@ -23,102 +22,111 @@ class ConsolidatedCategory:
     sort_order: int
 
 # Reference for the 6 Galaxies (Tribes) - Source of Truth is taxonomy.json
+# IDs MUST match what SpectrumModule expects
 CONSOLIDATED_CATEGORIES: List[ConsolidatedCategory] = [
     ConsolidatedCategory("guitars-bass", "Guitars & Bass", "guitar", "var(--galaxy-orange)", "The Plucked Universe", 1),
     ConsolidatedCategory("drums-percussion", "Drums & Percussion", "drum", "var(--galaxy-red)", "The Struck Universe", 2),
     ConsolidatedCategory("keys-production", "Keys & Synths", "piano", "var(--galaxy-purple)", "The Synthesis Universe", 3),
     ConsolidatedCategory("studio-recording", "Studio & Recording", "mic", "var(--galaxy-blue)", "The Engineer's Universe", 4),
     ConsolidatedCategory("live-dj", "Live Sound & DJ", "speaker", "var(--galaxy-green)", "The Stage Universe", 5),
-    ConsolidatedCategory("accessories-utility", "General Utility", "plug", "var(--galaxy-gray)", "The Connection Universe", 6),
+    ConsolidatedCategory("accessories", "Accessories", "plug", "var(--galaxy-gray)", "The Connection Universe", 6),
 ]
 
-# The Logic: Mapping "Raw Scraped Terms" -> "Spectrum IDs"
+# The Logic: Mapping "Raw Scraped Terms" -> "Tribe IDs"
 SPECTRUM_MAP = {
     # --- GUITARS GALAXY ---
-    "electric guitar": "electric-guitars",
-    "solid body": "electric-guitars",
-    "hollow body": "electric-guitars",
-    "acoustic guitar": "acoustic-guitars",
-    "classical guitar": "acoustic-guitars",
-    "bass guitar": "bass-guitars",
-    "4-string bass": "bass-guitars",
-    "guitar amp": "guitar-amps",
-    "cabinet": "guitar-amps",
-    "pedal": "guitar-pedals",
-    "stompbox": "guitar-pedals",
-    "ukulele": "folk-instruments",
-    "banjo": "folk-instruments",
-    "guitar string": "guitar-accessories",
-    "pick": "guitar-accessories",
+    "electric guitar": "guitars-bass",
+    "solid body": "guitars-bass",
+    "hollow body": "guitars-bass",
+    "acoustic guitar": "guitars-bass",
+    "classical guitar": "guitars-bass",
+    "bass guitar": "guitars-bass",
+    "4-string bass": "guitars-bass",
+    "guitar amp": "guitars-bass",
+    "cabinet": "guitars-bass",
+    "pedal": "guitars-bass",
+    "stompbox": "guitars-bass",
+    "ukulele": "guitars-bass",
+    "banjo": "guitars-bass",
+    "guitar string": "guitars-bass", 
+    "pick": "guitars-bass",
+    "guitar strap": "guitars-bass",
 
     # --- DRUMS GALAXY ---
-    "drum kit": "acoustic-drums",
-    "shell pack": "acoustic-drums",
-    "snare": "snares",
-    "cymbal": "cymbals",
-    "electronic drum": "electronic-drums",
-    "v-drums": "electronic-drums",
-    "drumstick": "sticks-heads",
-    "drum head": "sticks-heads",
-    "cajon": "percussion",
-    "bongo": "percussion",
-    "drum hardware": "drum-hardware",
-    "cymbal stand": "drum-hardware",
+    "drum kit": "drums-percussion",
+    "shell pack": "drums-percussion",
+    "snare": "drums-percussion",
+    "cymbal": "drums-percussion",
+    "electronic drum": "drums-percussion",
+    "v-drums": "drums-percussion",
+    "drumstick": "drums-percussion",
+    "drum head": "drums-percussion",
+    "cajon": "drums-percussion",
+    "bongo": "drums-percussion",
+    "drum hardware": "drums-percussion",
+    "cymbal stand": "drums-percussion",
+    "pedal": "drums-percussion",
+    "bass drum": "drums-percussion",
 
     # --- KEYS GALAXY ---
-    "synthesizer": "synthesizers",
-    "eurorack": "eurorack",
-    "stage piano": "stage-pianos",
-    "digital piano": "stage-pianos",
-    "midi controller": "midi-controllers",
-    "keyboard": "midi-controllers", # Context check needed usually, but safe default
-    "groovebox": "grooveboxes",
-    "sampler": "grooveboxes",
+    "synthesizer": "keys-production",
+    "eurorack": "keys-production",
+    "stage piano": "keys-production",
+    "digital piano": "keys-production",
+    "midi controller": "keys-production",
+    "keyboard": "keys-production", 
+    "groovebox": "keys-production",
+    "sampler": "keys-production",
 
     # --- STUDIO GALAXY ---
-    "audio interface": "audio-interfaces",
-    "studio monitor": "studio-monitors",
-    "condenser microphone": "studio-microphones",
-    "ribbon microphone": "studio-microphones",
-    "daw": "software-plugins",
-    "plugin": "software-plugins",
-    "preamp": "outboard-gear",
-    "compressor": "outboard-gear",
+    "audio interface": "studio-recording",
+    "studio monitor": "studio-recording",
+    "condenser microphone": "studio-recording",
+    "ribbon microphone": "studio-recording",
+    "daw": "studio-recording",
+    "plugin": "studio-recording",
+    "preamp": "studio-recording",
+    "compressor": "studio-recording",
 
     # --- LIVE GALAXY ---
-    "pa speaker": "pa-systems",
-    "subwoofer": "pa-systems",
-    "live mixer": "live-mixers",
-    "dj controller": "dj-equipment",
-    "turntable": "dj-equipment",
-    "wireless microphone": "live-mics",
-    "moving head": "lighting",
-    "par can": "lighting",
+    "pa speaker": "live-dj",
+    "subwoofer": "live-dj",
+    "live mixer": "live-dj",
+    "dj controller": "live-dj",
+    "turntable": "live-dj",
+    "wireless microphone": "live-dj",
+    "moving head": "live-dj",
+    "par can": "live-dj",
 }
 
 def consolidate_category(raw_category_name: str, product_name: str = "") -> str:
     """
-    The Router: Takes a raw string and sends it to the correct Spectrum ID.
+    The Router: Takes a raw string and sends it to the correct Tribe ID.
     Ignores brand inputs - pure logic routing.
     """
     if not raw_category_name:
-        return "accessories-utility"
+        return "accessories"
 
     # 1. Normalize
+    if not isinstance(raw_category_name, str):
+         raw_category_name = str(raw_category_name)
+    if not isinstance(product_name, str):
+         product_name = str(product_name)
+
     search_term = f"{raw_category_name} {product_name}".lower()
 
     # 2. Iterate and Match
-    for keyword, spectrum_id in SPECTRUM_MAP.items():
+    for keyword, tribe_id in SPECTRUM_MAP.items():
         if keyword in search_term:
-            return spectrum_id
+            return tribe_id
             
-    # 3. Fallback to General Utility if no match
-    if "cable" in search_term: return "cables"
-    if "stand" in search_term: return "stands"
-    if "case" in search_term or "bag" in search_term: return "cases-bags"
-    if "power" in search_term: return "power-supplies"
+    # 3. Fallback
+    if "cable" in search_term: return "accessories"
+    if "stand" in search_term: return "accessories"
+    if "case" in search_term or "bag" in search_term: return "accessories"
+    if "power" in search_term: return "accessories"
     
-    return "accessories-utility" # The "Lost & Found" bin
+    return "accessories" # The "Lost & Found" bin
 
 # Legacy support / alias to match interface if needed
 def get_consolidated_category(cat_id):

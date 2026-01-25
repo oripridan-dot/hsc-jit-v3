@@ -416,3 +416,33 @@ A: Not in production. The app is static. If you need live updates, redesign the 
 **Version:** 3.9.0
 **Last Updated:** January 2026
 **Status:** Production-Ready
+
+## 🌌 7. Galaxy View: The "Deep Slot" Lighting Engine
+**Visual Directive:** The `CategoryShelf` must resemble a physical, deep industrial slot or server rack.
+**Lighting Logic:** The "Light Rig" sits deep inside the slot (Z-axis depth) and casts a "Brand Aura" that manifests the colors of the specific brands contained in that catalog.
+
+### **A. Spacial Rules (The "Deep Slot" CSS)**
+Every shelf MUST follow this layer composition (Z-Index order):
+1.  **Base (Z=0):** `bg-black` (The void).
+2.  **The Light Rig (Z=1):** A dynamic `radial-gradient` located at `bottom center`.
+    * *Rule:* It simulates a light source on the "floor" of the slot, shining upward.
+    * *Shape:* `circle at 50% 100%`.
+    * *Behavior:* `opacity-40` (Ambient) -> `opacity-100` (Hover/Active).
+3.  **The Depth Mask (Z=2):** An inset shadow overlay to create the 3D "walls".
+    * *Style:* `shadow-[inset_0_0_40px_rgba(0,0,0,0.8)]`.
+    * *Result:* Darkens the edges, making the center light look "deep" inside.
+4.  **The Grid (Z=3):** A subtle `scanline` or `grid` pattern (opacity 5%) to give texture to the light.
+5.  **Content (Z=10):** Text and badges floating *above* the light.
+
+### **B. Brand Aura Logic (The Colors)**
+Never hardcode colors. You MUST generate the gradient string dynamically based on the `products` prop:
+1.  **Sampling:** Identify the Top 2 Brands in the product list by frequency.
+2.  **Lookup:** Retrieve their HEX codes from `BRAND_COLORS`.
+3.  **Synthesis:** Construct the `radial-gradient` string:
+    * *Core (0%):* Primary Brand Color (e.g., Nord Red).
+    * *Mid (40%):* Secondary Brand Color (e.g., Moog Black/Grey) OR blend with Primary.
+    * *Edge (80%):* `transparent` (fading into the black void).
+    * *Fallback:* If no products, use `zinc-800` to `transparent`.
+
+**Example Copilot Prompt to use in code:**
+`// GENERATE AURA: Calculate 'shelfAtmosphere' using radial-gradient(circle at bottom) blending top 2 brand colors from 'products'.`

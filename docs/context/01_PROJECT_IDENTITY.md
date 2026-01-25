@@ -1,14 +1,22 @@
 # 🆔 01_PROJECT_IDENTITY.md
 
-**Generated:** 2026-01-24 22:57:26
+**Generated:** 2026-01-25 02:00:32
 
 ## 📌 Status
 - **Project:** HSC-JIT v3
 - **Version:** 3.9.0
-- **Branch:** `v3.9.0-pop-interface`
-- **Commit:** `32bd72be`
-- **Last Message:** Implement dynamic price curtains in TierBar and update catalogs
-- **Total Files Tracked:** 4835
+- **Branch:** `v3.9.1-20-percent-real`
+- **Commit:** `1a531cc1`
+- **Last Message:** Maint: System Deep Process & Cleanup (v3.9.0)
+
+- Removed redundant documentation
+
+- Cleaned up root level scripts
+
+- Updated System Version to 3.9.0
+
+- Regenerated Full Static Catalog (76 Brands)
+- **Total Files Tracked:** 4860
 
 ## 🎯 Primary Directive
 This project is a **STATIC** Single Page Application.
@@ -4185,6 +4193,7 @@ Every file in the repository (excluding git/node_modules):
 - `backend/generate_final_category_thumbnails.py`
 - `backend/generate_flagship_thumbnails.py`
 - `backend/generate_frontend_json.py`
+- `backend/generate_spectrum_brand_map.py`
 - `backend/heartbeat.py`
 - `backend/hydrate_env.sh`
 - `backend/mass_ingest_protocol.py`
@@ -4620,7 +4629,6 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/assets/thumbs/stands.svg`
 - `frontend/public/assets/thumbs/synth.svg`
 - `frontend/public/data/-eaw-eastern-acoustic-works-.json`
-- `frontend/public/data/accessories-utility.json`
 - `frontend/public/data/accessories.json`
 - `frontend/public/data/adam-audio.json`
 - `frontend/public/data/adams.json`
@@ -4639,10 +4647,12 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/category_thumbnails/_keys_mapping.json`
 - `frontend/public/data/category_thumbnails/accessories-cables_inspect.webp`
 - `frontend/public/data/category_thumbnails/accessories-cables_thumb.webp`
+- `frontend/public/data/category_thumbnails/accessories-cases-bags_thumb.webp`
 - `frontend/public/data/category_thumbnails/accessories-cases_inspect.webp`
 - `frontend/public/data/category_thumbnails/accessories-cases_thumb.webp`
 - `frontend/public/data/category_thumbnails/accessories-pedals_inspect.webp`
 - `frontend/public/data/category_thumbnails/accessories-pedals_thumb.webp`
+- `frontend/public/data/category_thumbnails/accessories-power-supplies_thumb.webp`
 - `frontend/public/data/category_thumbnails/accessories-power_inspect.webp`
 - `frontend/public/data/category_thumbnails/accessories-power_thumb.webp`
 - `frontend/public/data/category_thumbnails/accessories-stands_inspect.webp`
@@ -4662,6 +4672,7 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/category_thumbnails/drums-acoustic-drums_thumb.webp`
 - `frontend/public/data/category_thumbnails/drums-cymbals_inspect.webp`
 - `frontend/public/data/category_thumbnails/drums-cymbals_thumb.webp`
+- `frontend/public/data/category_thumbnails/drums-drum-hardware_thumb.webp`
 - `frontend/public/data/category_thumbnails/drums-drum-machines_inspect.webp`
 - `frontend/public/data/category_thumbnails/drums-drum-machines_thumb.webp`
 - `frontend/public/data/category_thumbnails/drums-electronic-drums_inspect.webp`
@@ -4670,9 +4681,12 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/category_thumbnails/drums-pads_thumb.webp`
 - `frontend/public/data/category_thumbnails/drums-percussion_inspect.webp`
 - `frontend/public/data/category_thumbnails/drums-percussion_thumb.webp`
+- `frontend/public/data/category_thumbnails/drums-snares_thumb.webp`
+- `frontend/public/data/category_thumbnails/drums-sticks-heads_thumb.webp`
 - `frontend/public/data/category_thumbnails/drums_thumbnail.svg`
 - `frontend/public/data/category_thumbnails/guitars-accessories_inspect.webp`
 - `frontend/public/data/category_thumbnails/guitars-accessories_thumb.webp`
+- `frontend/public/data/category_thumbnails/guitars-acoustic-guitars_thumb.webp`
 - `frontend/public/data/category_thumbnails/guitars-amplifiers_inspect.webp`
 - `frontend/public/data/category_thumbnails/guitars-amplifiers_thumb.webp`
 - `frontend/public/data/category_thumbnails/guitars-bass-guitars_inspect.webp`
@@ -4681,6 +4695,10 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/category_thumbnails/guitars-effects-pedals_thumb.webp`
 - `frontend/public/data/category_thumbnails/guitars-electric-guitars_inspect.webp`
 - `frontend/public/data/category_thumbnails/guitars-electric-guitars_thumb.webp`
+- `frontend/public/data/category_thumbnails/guitars-folk-instruments_thumb.webp`
+- `frontend/public/data/category_thumbnails/guitars-guitar-accessories_thumb.webp`
+- `frontend/public/data/category_thumbnails/guitars-guitar-amps_thumb.webp`
+- `frontend/public/data/category_thumbnails/guitars-guitar-pedals_thumb.webp`
 - `frontend/public/data/category_thumbnails/guitars-multi-effects_inspect.webp`
 - `frontend/public/data/category_thumbnails/guitars-multi-effects_thumb.webp`
 - `frontend/public/data/category_thumbnails/guitars_thumbnail.svg`
@@ -4688,21 +4706,32 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/category_thumbnails/keys-arrangers_thumb.webp`
 - `frontend/public/data/category_thumbnails/keys-controllers_inspect.webp`
 - `frontend/public/data/category_thumbnails/keys-controllers_thumb.webp`
+- `frontend/public/data/category_thumbnails/keys-eurorack_thumb.webp`
+- `frontend/public/data/category_thumbnails/keys-grooveboxes_thumb.webp`
+- `frontend/public/data/category_thumbnails/keys-keys-accessories_thumb.webp`
+- `frontend/public/data/category_thumbnails/keys-midi-controllers_thumb.webp`
 - `frontend/public/data/category_thumbnails/keys-organs_inspect.webp`
 - `frontend/public/data/category_thumbnails/keys-organs_thumb.webp`
 - `frontend/public/data/category_thumbnails/keys-stage-pianos_inspect.webp`
 - `frontend/public/data/category_thumbnails/keys-stage-pianos_thumb.webp`
+- `frontend/public/data/category_thumbnails/keys-synthesizers_thumb.webp`
 - `frontend/public/data/category_thumbnails/keys-synths_inspect.webp`
 - `frontend/public/data/category_thumbnails/keys-synths_thumb.webp`
 - `frontend/public/data/category_thumbnails/keys-workstations_inspect.webp`
 - `frontend/public/data/category_thumbnails/keys-workstations_thumb.webp`
 - `frontend/public/data/category_thumbnails/keys_thumbnail.svg`
+- `frontend/public/data/category_thumbnails/live-dj-equipment_thumb.webp`
 - `frontend/public/data/category_thumbnails/live-in-ear-monitoring_inspect.webp`
 - `frontend/public/data/category_thumbnails/live-in-ear-monitoring_thumb.webp`
+- `frontend/public/data/category_thumbnails/live-lighting_thumb.webp`
+- `frontend/public/data/category_thumbnails/live-live-accessories_thumb.webp`
+- `frontend/public/data/category_thumbnails/live-live-mics_thumb.webp`
+- `frontend/public/data/category_thumbnails/live-live-mixers_thumb.webp`
 - `frontend/public/data/category_thumbnails/live-mixers_inspect.webp`
 - `frontend/public/data/category_thumbnails/live-mixers_thumb.webp`
 - `frontend/public/data/category_thumbnails/live-pa-speakers_inspect.webp`
 - `frontend/public/data/category_thumbnails/live-pa-speakers_thumb.webp`
+- `frontend/public/data/category_thumbnails/live-pa-systems_thumb.webp`
 - `frontend/public/data/category_thumbnails/live-stage-boxes_inspect.webp`
 - `frontend/public/data/category_thumbnails/live-stage-boxes_thumb.webp`
 - `frontend/public/data/category_thumbnails/live-wireless-systems_inspect.webp`
@@ -4723,8 +4752,11 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/public/data/category_thumbnails/studio-outboard-gear_thumb.webp`
 - `frontend/public/data/category_thumbnails/studio-preamps_inspect.webp`
 - `frontend/public/data/category_thumbnails/studio-preamps_thumb.webp`
+- `frontend/public/data/category_thumbnails/studio-software-plugins_thumb.webp`
 - `frontend/public/data/category_thumbnails/studio-software_inspect.webp`
 - `frontend/public/data/category_thumbnails/studio-software_thumb.webp`
+- `frontend/public/data/category_thumbnails/studio-studio-accessories_thumb.webp`
+- `frontend/public/data/category_thumbnails/studio-studio-microphones_thumb.webp`
 - `frontend/public/data/category_thumbnails/studio-studio-monitors_inspect.webp`
 - `frontend/public/data/category_thumbnails/studio-studio-monitors_thumb.webp`
 - `frontend/public/data/category_thumbnails/studio_thumbnail.svg`
@@ -4825,6 +4857,7 @@ Every file in the repository (excluding git/node_modules):
 - `frontend/src/lib/categoryConsolidator.ts`
 - `frontend/src/lib/devTools.ts`
 - `frontend/src/lib/dynamicThumbnails.ts`
+- `frontend/src/lib/generatedSpectrumBrands.json`
 - `frontend/src/lib/index.ts`
 - `frontend/src/lib/instantSearch.ts`
 - `frontend/src/lib/safeFetch.ts`

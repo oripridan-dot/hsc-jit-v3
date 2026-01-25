@@ -1,88 +1,97 @@
-import { ArrowLeft, BarChart3, Maximize2, ScanLine } from "lucide-react";
-import { useMemo, useState } from "react";
-import { useCategoryProducts } from "../../hooks/useCategoryProducts";
+import { Activity, ArrowLeft, Maximize2, ScanLine, Search } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigationStore } from "../../store/navigationStore";
-import type { TierBarProduct } from "../smart-views/TierBar";
 import { TierBar } from "../smart-views/TierBar";
 import { Control } from "../ui/Control";
 import { Surface } from "../ui/Surface";
 
 export const SpectrumModule = () => {
-  const { activeSubcategoryId, activeFilters, goToGalaxy, openProductPop } =
-    useNavigationStore();
+  const { activeTribeId, goToGalaxy, openProductPop } = useNavigationStore();
 
-  // Fetch Data
-  const { products: rawProducts } = useCategoryProducts(activeSubcategoryId);
+  // --------------------------------------------------------------------------
+  // 1. DATA INGESTION (The Superfast Category Catalog)
+  // --------------------------------------------------------------------------
+  const [rawProducts, setRawProducts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  // Local State
-  const [hoveredProduct, setHoveredProduct] = useState<TierBarProduct | null>(
-    null,
-  );
+  useEffect(() => {
+    // Load the specific Tribe Catalog (e.g., "guitars-bass.json")
+    const loadCatalog = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(`/data/${activeTribeId}.json`);
+        const data = await response.json();
+        setRawProducts(data);
+      } catch (e) {
+        console.error("Spectrum Signal Lost:", e);
+      } finally {
+        setLoading(false);
+      }
+    };
+    if (activeTribeId) loadCatalog();
+  }, [activeTribeId]);
+
+  // --------------------------------------------------------------------------
+  // 2. THE 1176 ENGINE (Automatic Sub-Division)
+  // --------------------------------------------------------------------------
   const [activeFilter, setActiveFilter] = useState("ALL");
+  const [hoveredProduct, setHoveredProduct] = useState<any | null>(null);
 
-  // Filter Logic (Layer 3 Buttons)
-  const filteredProducts = useMemo<TierBarProduct[]>(() => {
+  // A. Extract Unique Filters dynamically from the data
+  //    This ensures buttons only exist if products exist for them.
+  const availableFilters = useMemo(() => {
+    const filterSet = new Set<string>();
+    rawProducts.forEach((p) => {
+      if (p.filters) p.filters.forEach((f: string) => filterSet.add(f));
+    });
+    return Array.from(filterSet).sort();
+  }, [rawProducts]);
+
+  // B. Apply Filter to TierBar
+  const filteredProducts = useMemo(() => {
     let base = rawProducts;
+
     if (activeFilter !== "ALL") {
-      base = rawProducts.filter(
-        (p) =>
-          // Best effort filtering based on available props
-          p.tags?.includes(activeFilter) ||
-          p.brand === activeFilter ||
-          p.specs?.some((s) => s.value === activeFilter),
-      );
+      base = rawProducts.filter((p) => p.filters?.includes(activeFilter));
     }
 
-    // Transform to TierBarProduct format
-    const transformed = base.map((p) => {
-      const price = p.halilit_data?.price || p.pricing?.regular_price || 0;
-
-      return {
-        id: p.id,
-        name: p.name,
-        brand: p.brand,
-        price: price,
-        logo_url: `/data/logos/${p.brand.toLowerCase()}_logo.jpg`,
-        image_url: p.image_url || p.image || "",
-        stock_status: p.availability || "unknown",
-        specs_preview:
-          p.specs
-            ?.slice(0, 4)
-            .map((s) => ({ key: s.key, val: s.value.toString() })) || [],
-        description: p.description,
-      };
-    });
-
     // Sort by price for the TierBar logic
-    return transformed.sort((a, b) => a.price - b.price);
+    return base.sort((a, b) => a.price - b.price);
   }, [rawProducts, activeFilter]);
 
+  // --------------------------------------------------------------------------
+  // 3. THE RENDER
+  // --------------------------------------------------------------------------
   return (
     <div className="flex flex-col h-full bg-[#0b0c10] text-white overflow-hidden relative">
-      {/* -----------------------------------------------------------
-          1. TOP DECK (1176 Filters)
-         ----------------------------------------------------------- */}
+      {/* --- TOP DECK: NAVIGATION & 1176 CONTROLS --- */}
       <Surface
         variant="panel"
-        className="h-16 flex items-center px-4 gap-4 z-30 !bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 shadow-2xl"
+        className="h-16 flex items-center px-4 gap-4 z-30 !bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 shadow-2xl shrink-0"
       >
         <Control
           onClick={goToGalaxy}
-          className="p-2 rounded-full hover:bg-zinc-800 text-zinc-400 hover:text-white"
+          className="p-2 rounded-full hover:bg-zinc-800 text-zinc-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />
         </Control>
 
         <div className="h-8 w-px bg-zinc-800 mx-2" />
 
-        <div className="flex gap-2 overflow-x-auto no-scrollbar py-2 mask-linear-fade flex-1">
+        <div className="flex items-center gap-1 overflow-x-auto no-scrollbar py-2 mask-linear-fade flex-1">
+          {/* Master Reset Button */}
           <Control
             variant="1176"
             label="ALL"
             active={activeFilter === "ALL"}
             onClick={() => setActiveFilter("ALL")}
           />
-          {activeFilters.map((filter) => (
+
+          {/* Separator */}
+          <div className="w-px h-4 bg-zinc-800 mx-1" />
+
+          {/* Dynamic Sub-Divisions */}
+          {availableFilters.map((filter) => (
             <Control
               key={filter}
               variant="1176"
@@ -92,37 +101,44 @@ export const SpectrumModule = () => {
             />
           ))}
         </div>
+
+        {/* Search/Context Indicator */}
+        <div className="hidden md:flex items-center gap-2 text-xs font-mono text-zinc-500 border border-zinc-800 rounded-full px-3 py-1 bg-black/50">
+          <Search className="w-3 h-3" />
+          <span>{activeTribeId?.toUpperCase().replace("-", " ")}</span>
+          <span className="text-zinc-700">|</span>
+          <span className="text-zinc-300">{filteredProducts.length}</span>
+        </div>
       </Surface>
 
-      {/* -----------------------------------------------------------
-          2. DATA SCREENS (Three-Panel Display)
-         ----------------------------------------------------------- */}
-      <div className="h-64 grid grid-cols-12 gap-1 p-1 bg-black border-b border-zinc-800 z-20">
-        {/* LEFT: Visual */}
+      {/* --- DATA SCREENS (The Flight Case Displays) --- */}
+      <div className="h-64 grid grid-cols-12 gap-1 p-1 bg-black border-b border-zinc-800 z-20 shrink-0">
+        {/* LEFT: VISUAL FEED */}
         <Surface
           variant="screen"
           active={!!hoveredProduct}
           className="col-span-3 bg-zinc-950 flex flex-col justify-center items-center p-4 relative overflow-hidden"
         >
           {hoveredProduct ? (
-            <>
+            <div className="relative w-full h-full flex items-center justify-center animate-fade-in">
               <img
                 src={hoveredProduct.image_url}
-                className="max-w-full max-h-full object-contain animate-fade-in z-10"
+                className="max-w-full max-h-full object-contain drop-shadow-2xl z-10"
                 alt="Preview"
               />
-              {/* Scan Grid Overlay */}
-              <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,0,0.03)_1px,transparent_1px)] bg-[size:100%_4px] pointer-events-none" />
-            </>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_70%)]" />
+            </div>
           ) : (
-            <ScanLine className="w-8 h-8 text-zinc-800 animate-pulse" />
+            <div className="flex flex-col items-center gap-2 opacity-30">
+              <ScanLine className="w-8 h-8 text-zinc-500" />
+            </div>
           )}
-          <div className="absolute top-2 left-2 text-[9px] text-zinc-600 font-mono">
+          <div className="absolute top-2 left-2 text-[9px] text-zinc-600 font-mono tracking-widest">
             VISUAL_FEED
           </div>
         </Surface>
 
-        {/* CENTER: Data */}
+        {/* CENTER: DATA STREAM */}
         <Surface
           variant="screen"
           active={!!hoveredProduct}
@@ -134,28 +150,35 @@ export const SpectrumModule = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <img
                     src={hoveredProduct.logo_url}
-                    className="h-5 opacity-80 invert"
+                    className="h-5 opacity-60 invert"
                     alt={hoveredProduct.brand}
                   />
-                  <span className="text-[9px] px-1.5 py-0.5 border border-emerald-900 bg-emerald-950/30 text-emerald-500 rounded font-mono">
-                    {hoveredProduct.stock_status}
-                  </span>
+                  <div className="flex gap-1">
+                    {hoveredProduct.filters?.slice(0, 3).map((f: string) => (
+                      <span
+                        key={f}
+                        className="text-[9px] px-1.5 py-0.5 border border-zinc-800 text-zinc-500 rounded font-mono uppercase"
+                      >
+                        {f}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <h1 className="text-3xl md:text-4xl font-black italic tracking-tighter text-white uppercase truncate">
+                <h1 className="text-3xl md:text-5xl font-black italic tracking-tighter text-white uppercase truncate">
                   {hoveredProduct.name}
                 </h1>
               </div>
 
-              <div className="grid grid-cols-2 gap-x-8 gap-y-2 border-t border-zinc-900 pt-4">
+              <div className="grid grid-cols-2 gap-x-12 gap-y-3 border-t border-zinc-900/80 pt-4">
                 {hoveredProduct.specs_preview?.map((spec: any, idx: number) => (
                   <div
                     key={idx}
-                    className="flex justify-between items-baseline border-b border-zinc-900/50 pb-1"
+                    className="flex justify-between items-baseline group/spec"
                   >
-                    <span className="text-[10px] text-zinc-500 font-bold uppercase tracking-wider">
+                    <span className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider group-hover/spec:text-amber-500 transition-colors">
                       {spec.key}
                     </span>
-                    <span className="text-sm text-zinc-300 font-mono truncate max-w-[120px] text-right">
+                    <span className="text-sm text-zinc-300 font-mono truncate text-right">
                       {spec.val}
                     </span>
                   </div>
@@ -163,27 +186,32 @@ export const SpectrumModule = () => {
               </div>
             </div>
           ) : (
-            <div className="h-full flex flex-col items-center justify-center text-zinc-700 gap-2">
-              <BarChart3 className="w-12 h-12 opacity-20" />
-              <span className="text-xs font-mono">HOVER TO DECODE SIGNAL</span>
+            <div className="h-full flex flex-col items-center justify-center text-zinc-800 gap-2">
+              <Activity className="w-12 h-12 opacity-20" />
+              <span className="text-xs font-mono tracking-widest">
+                AWAITING SIGNAL INPUT
+              </span>
             </div>
           )}
-          <div className="absolute top-2 left-2 text-[9px] text-emerald-700 font-mono">
+          <div className="absolute top-2 left-2 text-[9px] text-emerald-800 font-mono tracking-widest flex items-center gap-2">
+            <div
+              className={`w-1.5 h-1.5 rounded-full ${hoveredProduct ? "bg-emerald-500 animate-pulse" : "bg-zinc-800"}`}
+            />
             DATA_STREAM
           </div>
         </Surface>
 
-        {/* RIGHT: Action */}
+        {/* RIGHT: ACTION */}
         <Surface
           variant="screen"
           active={!!hoveredProduct}
-          className="col-span-3 bg-zinc-950 flex flex-col justify-center items-center p-6"
+          className="col-span-3 bg-zinc-950 flex flex-col justify-center items-center p-6 relative"
         >
-          {hoveredProduct && (
+          {hoveredProduct ? (
             <div className="animate-slide-up text-center w-full space-y-4">
               <div>
                 <div className="text-4xl font-black text-white tracking-tighter">
-                  ₪{hoveredProduct.price.toLocaleString()}
+                  ₪{(hoveredProduct.price || 0).toLocaleString()}
                 </div>
                 <div className="text-[9px] text-zinc-500 mt-1">
                   VAT INCLUDED
@@ -191,39 +219,33 @@ export const SpectrumModule = () => {
               </div>
               <button
                 onClick={() => openProductPop(hoveredProduct.id)}
-                className="w-full bg-amber-500 hover:bg-amber-400 text-black font-bold py-3 uppercase text-xs tracking-widest transition-all hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full bg-amber-500 hover:bg-amber-400 text-black font-bold py-3 uppercase text-xs tracking-widest transition-all hover:scale-105 flex items-center justify-center gap-2 clip-corner"
               >
                 <Maximize2 className="w-3 h-3" /> Inspect
               </button>
             </div>
-          )}
-          <div className="absolute top-2 left-2 text-[9px] text-zinc-600 font-mono">
+          ) : null}
+          <div className="absolute top-2 left-2 text-[9px] text-zinc-600 font-mono tracking-widest">
             TRANSACTION
           </div>
         </Surface>
       </div>
 
-      {/* -----------------------------------------------------------
-          3. TIER BAR (The Main Engine)
-         ----------------------------------------------------------- */}
-      <div className="flex-1 relative bg-gradient-to-b from-[#050505] to-[#0e0e10] p-8 flex flex-col justify-center">
-        {/* Background Grid Lines */}
-        <div
-          className="absolute inset-0 pointer-events-none opacity-10"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px)",
-            backgroundSize: "10% 25%",
-          }}
-        />
-
-        <div className="w-full max-w-[95%] mx-auto relative z-10 h-full flex items-end pb-12">
-          <TierBar
-            products={filteredProducts}
-            onHoverProduct={setHoveredProduct}
-            onSelectProduct={openProductPop}
-          />
-        </div>
+      {/* --- BOTTOM: TIER BAR ENGINE --- */}
+      <div className="flex-1 relative bg-gradient-to-b from-[#050505] to-[#0e0e10] p-4 flex flex-col justify-center overflow-hidden">
+        {loading ? (
+          <div className="absolute inset-0 flex items-center justify-center text-zinc-700 font-mono animate-pulse">
+            INITIALIZING SPECTRUM...
+          </div>
+        ) : (
+          <div className="w-full max-w-[98%] mx-auto relative z-10 h-full flex items-end pb-8">
+            <TierBar
+              products={filteredProducts}
+              onHoverProduct={setHoveredProduct}
+              onSelectProduct={openProductPop}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

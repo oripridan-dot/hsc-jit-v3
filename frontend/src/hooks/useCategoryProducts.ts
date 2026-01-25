@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import { catalogLoader } from "../lib/catalogLoader";
+import { getConsolidatedProductCategory } from "../lib/categoryConsolidator";
 import type { Product } from "../types";
-
-interface IndexBrand {
-  slug: string;
-}
 
 export const useCategoryProducts = (subcategoryId: string | null) => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -12,77 +9,28 @@ export const useCategoryProducts = (subcategoryId: string | null) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      setLoading(true);
+      // If we don't have a subcategory, we can't filter
+      // But we might want to loadAllProducts anyway for the cache?
+      // No, let's keep it specific.
       if (!subcategoryId) {
         setProducts([]);
         setLoading(false);
         return;
       }
 
+      setLoading(true);
+
       try {
-        // 1. Get List of Brands
-        let brandsToFetch: string[] = ["roland", "boss", "nord"]; // Defaults
-        try {
-          const indexRes = await fetch("/data/index.json");
-          if (indexRes.ok) {
-            const indexData = (await indexRes.json()) as {
-              brands?: IndexBrand[];
-            };
-            if (indexData.brands)
-              brandsToFetch = indexData.brands.map((b) => b.slug);
-          }
-        } catch {
-          console.warn("Could not load index.json, using defaults");
-        }
+        // 1. Efficiently load ALL products (leveraging catalogLoader cache)
+        const allProducts = await catalogLoader.loadAllProducts();
 
-        // 2. Load all catalogs
-        const allProducts: Product[] = [];
-        await Promise.all(
-          brandsToFetch.map(async (brand) => {
-            try {
-              const catalog = await catalogLoader.loadBrand(brand);
-              allProducts.push(...catalog.products);
-            } catch (e) {
-              console.warn(`Failed to load ${brand}`, e);
-            }
-          }),
-        );
-
-        // 3. Filter by Subcategory Logic
-        const getSearchTerms = (id: string) => {
-          switch (id) {
-            // Manual overrides for tricky IDs
-            case "dj-gear":
-              return ["dj"];
-            case "guitar-amps":
-              return ["amp"];
-            case "midi-controllers":
-              return ["midi", "controller"];
-            case "audio-interfaces":
-              return ["interface"];
-            case "monitors":
-              return ["monitor", "speaker"];
-            case "microphones":
-              return ["mic", "condenser", "dynamic"];
-            case "cables":
-              return ["cable"];
-            case "cases":
-              return ["case", "bag"];
-            case "stands":
-              return ["stand"];
-            default:
-              return id.split("-").filter((t) => t.length > 2);
-          }
-        };
-
-        const terms = getSearchTerms(subcategoryId);
+        // 2. Filter using the Single Source of Truth Logic
+        // This ensures what you see in the "Galaxy" view matches search/filtering elsewhere
         const filtered = allProducts.filter((p) => {
-          const searchString =
-            `${p.category || ""} ${p.family || ""} ${p.name || ""} ${p.tags?.join(" ") || ""}`.toLowerCase();
-          return terms.some((term) => searchString.includes(term));
+          const { spectrumId } = getConsolidatedProductCategory(p);
+          return spectrumId === subcategoryId;
         });
 
-        // Return valid Products
         setProducts(filtered);
       } catch (err) {
         console.error("Error loading category products", err);

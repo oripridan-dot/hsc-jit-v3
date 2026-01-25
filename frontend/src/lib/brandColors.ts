@@ -1,45 +1,47 @@
-export const BRAND_COLORS: Record<string, string> = {
-  // Major Brands
-  roland: "#ff6600", // Roland Orange
-  boss: "#0655aa", // Boss Blue
-  nord: "#d0021b", // Nord Red
-  moog: "#a88e2d", // Moog Gold/Wood
-  "akai-professional": "#e60012", // Akai Red
-  "universal-audio": "#00a2e8", // UAD Blue link
-  yamaha: "#4b0082", // Yamaha Violet
-  korg: "#006cb5", // Korg Blue
-  arturia: "#00b2a9", // Arturia Teal
-  focusrite: "#ca1313", // Focusrite Red
-  "adam-audio": "#000000", // Adam is Black/Yellow ribbon? lets go Yellow/Gold "#ffd700" to stand out against black bg
-  neumann: "#2f3137", // Neumann Geometric Gray/Badge
-  shure: "#22c55e", // Shure Green (often associated with their logo/branding online) or just generic Pro Audio green
-  "allen-heath": "#cc0000", // A&H Red
-  mackie: "#86bc25", // Mackie Green (Running Man)
-  behringer: "#ffcc00", // Behringer Yellow
-  esp: "#000000", // ESP Metal Black... maybe deep silvery grey? "#4b5563"
-  ibanez: "#c41230", // Ibanez Red
-  fender: "#e21c27", // Fender Red
-  gibson: "#000000", // Gibson Black/Gold
-  epiphone: "#880000", // Epiphone dark red
-  marshall: "#000000", // Gold on Black?
-  orange: "#ff7f00", // Orange Amps Orange
-  vox: "#3a1d21", // Vox Diamond pattern color? Or Gold.
+// frontend/src/lib/brandColors.ts
 
-  // Default fallback
-  default: "#ffffff",
+export const BRAND_COLORS: Record<string, string> = {
+  // --- SYNTHS & KEYS ---
+  nord: "#E1181F", // Iconic Nord Red
+  moog: "#222222", // Industrial Black/Wood
+  roland: "#FF6600", // Roland Orange
+  korg: "#005AC2", // Korg Blue
+  yamaha: "#4C2684", // Yamaha Violet/Blue
+  arturia: "#2C3E50", // Deep Slate
+  sequential: "#F1C40F", // Vintage Gold
+  "teenage engineering": "#888888", // Minimalist Grey
+
+  // --- GUITARS ---
+  fender: "#C41230", // Candy Apple Red
+  gibson: "#F39C12", // Goldtop Gold
+  ibanez: "#990000", // Deep Red
+  prs: "#660066", // Purple/Burst
+  esp: "#111111", // Metal Black
+  taylor: "#8B4513", // Saddle Brown
+  martin: "#D2691E", // Natural Wood
+
+  // --- DRUMS ---
+  pearl: "#2980B9", // Cool Blue
+  tama: "#27AE60", // Emerald
+  dw: "#C0392B", // Dark Red
+  "roland-vdrums": "#E67E22", // V-Drums Orange
+  alesis: "#8E44AD", // Purple
+
+  // --- PRO AUDIO ---
+  "allen-heath": "#D32F2F", // A&H Red
+  rcf: "#E67E22", // RCF Orange accent
+  shure: "#2ECC71", // Green (Mic Grille vibe)
+  sennheiser: "#2C3E50", // Tech Grey
+  neumann: "#3498DB", // Neumann Blue badge
+  ssl: "#BDC3C7", // Console Silver
+  "universal-audio": "#7F8C8D", // Hardware Silver/Grey
+  focusrite: "#34495E", // Blue/Grey
 };
 
-/**
- * Gets a representative color for a list of brands.
- * Returns the color of the first brand found, or the default.
- */
-export const getBrandColor = (brands?: string[]): string => {
-  if (!brands || brands.length === 0) return BRAND_COLORS.default;
-
-  for (const brand of brands) {
-    const key = brand.toLowerCase();
-    if (BRAND_COLORS[key]) return BRAND_COLORS[key];
-  }
-
-  return BRAND_COLORS.default;
+export const getBrandColor = (brandId: string): string => {
+  if (!brandId) return "#333333";
+  const normalized = brandId.toLowerCase().replace(/[^a-z0-9]/g, "-");
+  // Partial match fallback (e.g. "roland-corp" -> "roland")
+  const key = Object.keys(BRAND_COLORS).find((k) => normalized.includes(k));
+  return key ? BRAND_COLORS[key] : "#333333";
 };

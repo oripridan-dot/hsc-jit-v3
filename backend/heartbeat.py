@@ -60,7 +60,8 @@ def process_brand(brand_id: str):
         manager = MasterCatalogManager(brand_id)
         # In a real scenario, you might trigger a scrape here if needed
         return manager.load_master().products
-    except Exception:
+    except Exception as e:
+        logger.error(f"Error processing brand {brand_id}: {e}")
         return []
 
 def generate_manifest(total_products):

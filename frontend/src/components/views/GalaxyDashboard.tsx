@@ -1,6 +1,7 @@
 import * as LucideIcons from "lucide-react";
 import { LayoutGrid, List } from "lucide-react";
 import React, { useState } from "react";
+import SPECTRUM_BRAND_COLORS from "../../lib/generatedSpectrumBrands.json";
 import { UNIVERSAL_CATEGORIES } from "../../lib/universalCategories";
 import { useNavigationStore } from "../../store/navigationStore";
 
@@ -149,49 +150,88 @@ export const GalaxyDashboard = () => {
 
                   {/* The Modules (Subcategories) - Fit logic */}
                   <div className="relative z-10 grid grid-cols-2 2xl:grid-cols-3 gap-2 h-full content-start overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent pr-1">
-                    {tribe.spectrum.map((sub) => (
-                      <button
-                        key={sub.id}
-                        onClick={() => goToSpectrum(tribe.id, sub.id, [])}
-                        className="group/item relative flex flex-col items-center justify-between rounded-lg bg-[#030303] overflow-hidden transition-all duration-300 hover:bg-[#050505] shadow-[inset_0_2px_4px_rgba(0,0,0,1)] border border-white/5 aspect-[4/3] min-h-0"
-                      >
-                        {/* 1. Deep Shadow Layer (The Recess) */}
-                        <div className="absolute inset-0 pointer-events-none shadow-[inset_0_5px_15px_rgba(0,0,0,0.95)] z-20 rounded-lg" />
+                    {tribe.spectrum.map((sub) => {
+                      const rigColors =
+                        (SPECTRUM_BRAND_COLORS as Record<string, string[]>)[
+                          sub.id
+                        ] || (sub.glowColor ? [sub.glowColor] : [tribe.color]);
+                      const mainLight = rigColors[0];
 
-                        {/* 2. Soft Illumination (The "Dimmed Light") */}
-                        <div
-                          className="absolute inset-x-0 top-0 h-[80%] opacity-15 group-hover/item:opacity-30 transition-opacity duration-500"
-                          style={{
-                            background: `radial-gradient(circle at 50% 0%, ${tribe.color}, transparent 70%)`,
-                          }}
-                        />
+                      return (
+                        <button
+                          key={sub.id}
+                          onClick={() => goToSpectrum(tribe.id, sub.id, [])}
+                          className="group/item relative flex flex-col items-center justify-between rounded-lg bg-[#050505] overflow-hidden transition-all duration-300 hover:ring-1 hover:ring-white/10 shadow-[rgba(0,0,0,0.5)_0px_3px_8px] border border-white/5 aspect-[4/3] min-h-0"
+                        >
+                          {/* 1. The Stage Set (Wall & Floor) */}
+                          <div className="absolute inset-x-0 top-0 h-[75%] bg-gradient-to-b from-[#020202] via-[#080808] to-[#000000] z-0" />
+                          <div className="absolute inset-x-0 bottom-0 h-[25%] bg-[#050505] z-0 border-t border-white/[0.08]">
+                            {/* Floor Reflection - The hot spot where the light hits */}
+                            <div
+                              className="absolute inset-x-0 top-0 h-full opacity-40 group-hover/item:opacity-60 transition-opacity duration-500 mix-blend-screen"
+                              style={{
+                                background: `radial-gradient(ellipse 60% 80% at 50% 0%, ${mainLight}, transparent 70%)`,
+                              }}
+                            />
+                            {/* Floor Depth Gradient - Darkens foreground */}
+                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/90" />
+                          </div>
 
-                        {/* 3. Product Thumbnail - Standardized Size & Crop */}
-                        <div className="relative w-full h-full flex items-center justify-center p-2 z-10">
-                          <img
-                            src={sub.image}
-                            alt={sub.label}
-                            className="w-full h-full object-contain filter brightness-[0.7] contrast-[1.1] group-hover/item:brightness-100 group-hover/item:scale-110 transition-all duration-300 drop-shadow-lg"
-                          />
-                        </div>
-
-                        {/* 4. Label Plate */}
-                        <div className="w-full py-1 bg-[#08080a] border-t border-white/5 z-20 flex items-center justify-center relative shrink-0">
-                          {/* Top bevel on plate */}
-                          <div className="absolute top-0 inset-x-0 h-px bg-black/50" />
-
-                          <span className="text-[8px] font-black text-zinc-600 uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors truncate px-2">
-                            {sub.label}
-                          </span>
-
-                          {/* Active Indicator Color */}
+                          {/* 2. Stage Lighting Rig */}
+                          {/* The Main Beam - Focused Cone in the air (Wall) */}
                           <div
-                            className="absolute bottom-0 left-0 right-0 h-[2px] opacity-0 group-hover/item:opacity-100 transition-opacity"
-                            style={{ backgroundColor: tribe.color }}
+                            className="absolute inset-x-0 top-0 h-[75%] opacity-30 group-hover/item:opacity-50 transition-opacity duration-500 mix-blend-screen pointer-events-none z-10"
+                            style={{
+                              background: `radial-gradient(ellipse 20% 90% at 50% -10%, ${mainLight}, transparent 90%)`,
+                            }}
                           />
-                        </div>
-                      </button>
-                    ))}
+                          {/* Ambient Spill */}
+                          <div
+                            className="absolute inset-x-0 top-0 h-[75%] opacity-10 group-hover/item:opacity-20 transition-opacity duration-500 mix-blend-screen pointer-events-none z-10"
+                            style={{
+                              background: `radial-gradient(circle at 50% 0%, ${mainLight}, transparent 60%)`,
+                            }}
+                          />
+
+                          {/* The Light Fixtures (Source Dots) */}
+                          <div className="absolute top-[3px] left-0 right-0 flex justify-center gap-1.5 z-30 opacity-60 group-hover/item:opacity-100 transition-opacity">
+                            {rigColors.slice(0, 5).map((color, idx) => (
+                              <div
+                                key={idx}
+                                className="w-1 h-1 rounded-full blur-[0.5px] bg-white ring-1 ring-white/20"
+                                style={{
+                                  boxShadow: `0 0 6px 1px ${color}, 0 0 2px ${color}`,
+                                }}
+                              />
+                            ))}
+                          </div>
+
+                          {/* 3. Product Thumbnail */}
+                          <div className="relative w-full h-[85%] flex items-end justify-center pb-2 z-20 overflow-hidden transform group-hover/item:scale-105 transition-transform duration-500">
+                            {/* Shadow on Floor */}
+                            <div className="absolute bottom-2 w-1/2 h-2 bg-black/80 blur-md rounded-[100%]" />
+
+                            <img
+                              src={sub.image}
+                              alt={sub.label}
+                              className="w-[90%] h-[90%] object-contain filter brightness-[0.80] contrast-[1.1] saturate-[0.9] group-hover/item:brightness-105 group-hover/item:saturate-[1.1] transition-all duration-300 drop-shadow-2xl"
+                            />
+                          </div>
+
+                          {/* 4. Label Plate */}
+                          <div className="w-full py-1.5 bg-[#030303] border-t border-white/10 z-30 flex items-center justify-center relative shrink-0 shadow-lg">
+                            <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest group-hover/item:text-zinc-200 transition-colors truncate px-2">
+                              {sub.label}
+                            </span>
+                            {/* Active Indicator Color */}
+                            <div
+                              className="absolute bottom-0 left-0 right-0 h-[1px] opacity-0 group-hover/item:opacity-100 transition-opacity shadow-[0_0_8px_1px_rgba(255,255,255,0.2)]"
+                              style={{ backgroundColor: mainLight }}
+                            />
+                          </div>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
 

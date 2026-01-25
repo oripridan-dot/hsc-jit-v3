@@ -1,12 +1,8 @@
 """
 FINAL: Extract real product images and create category thumbnails.
 
-Maps 40 category thumbnails to actual products from your catalog:
-- Roland TD-02KV (V-Drums)
-- Akai MPD218 (Pads/Drum Machine)
-- Roland RD-2000 (Stage Piano)
-- Nord Drum 3P (Synthesizer)
-- And more...
+This script scans your ENTIRE product catalog (including Cordoba, Guild, etc.)
+and automatically finds the best representative image for each of the 40 Spectrum Categories.
 
 Output: WebP thumbnails in frontend/public/data/category_thumbnails/
 """
@@ -17,206 +13,352 @@ from pathlib import Path
 from PIL import Image, ImageEnhance
 import requests
 import io
-from typing import Optional
+import random
 
-class ProductThumbnailExtractor:
-    """Extract real product images and convert to category thumbnails"""
+# =============================================================================
+# 1. THE 40 SPECTRUM CATEGORIES (Target Output)
+# =============================================================================
+SPECTRUM_DEFINITIONS = {
+    # --- GUITARS ---
+    "electric-guitars": ["Electric Guitar", "Solid Body", "Telecaster", "Stratocaster", "Les Paul", "SG", "Electric"],
+    "acoustic-guitars": ["Acoustic Guitar", "Classical Guitar", "Dreadnought", "Concert", "Nylon String", "Steel String"],
+    "bass-guitars": ["Bass Guitar", "Precision Bass", "Jazz Bass", "4-String", "5-String"],
+    "guitar-amps": ["Guitar Amplifier", "Guitar Amp", "Combo Amp", "Cabinet", "Head"],
+    "guitar-pedals": ["Overdrive", "Distortion", "Reverb", "Delay", "Looper", "Fuzz", "Guitar Pedal", "Stompbox"],
+    "folk-instruments": ["Ukulele", "Banjo", "Mandolin", "Resonator"],
+    "guitar-accessories": ["Guitar Strings", "Guitar Strap", "Capo", "Pick", "Gig Bag", "Case"],
+
+    # --- DRUMS ---
+    "acoustic-drums": ["Drum Kit", "Shell Pack", "Acoustic Drum", "Bass Drum"],
+    "electronic-drums": ["Electronic Drum", "V-Drums", "Drum Module", "Electric Kit"],
+    "cymbals": ["Crash", "Ride", "Hi-Hat", "Splash", "China", "Cymbal"],
+    "snares": ["Snare Drum", "Snare"],
+    "sticks-heads": ["Drumsticks", "Drum Head", "Brushes"],
+    "percussion": ["Cajon", "Bongos", "Congas", "Djembe", "Shaker", "Tambourine", "Cowbell"],
+    "drum-hardware": ["Cymbal Stand", "Hi-Hat Stand", "Snare Stand", "Drum Pedal", "Throne"],
+
+    # --- KEYS ---
+    "synthesizers": ["Synthesizer", "Synth", "Analog Synth", "Polyphonic"],
+    "stage-pianos": ["Stage Piano", "Digital Piano", "Electric Piano"],
+    "midi-controllers": ["MIDI Controller", "Keyboard Controller", "Master Keyboard"],
+    "grooveboxes": ["Groovebox", "Sampler", "Drum Machine", "Sequencer"],
+    "eurorack": ["Eurorack", "Modular", "Module"],
+    "keys-accessories": ["Keyboard Stand", "Sustain Pedal"],
+
+    # --- STUDIO ---
+    "audio-interfaces": ["Audio Interface", "USB Interface", "Thunderbolt"],
+    "studio-monitors": ["Studio Monitor", "Reference Monitor", "Active Monitor"],
+    "studio-microphones": ["Condenser Microphone", "Dynamic Microphone", "Ribbon Microphone", "Studio Mic"],
+    "outboard-gear": ["Preamp", "Compressor", "Equalizer", "Channel Strip"],
+    "software-plugins": ["DAW", "Plugin", "VST", "Software"],
+    "studio-accessories": ["Pop Filter", "Shock Mount", "Acoustic Foam"],
+
+    # --- LIVE ---
+    "pa-systems": ["PA Speaker", "Active Speaker", "Subwoofer", "Line Array"],
+    "live-mixers": ["Mixing Console", "Digital Mixer", "Analog Mixer"],
+    "dj-equipment": ["DJ Controller", "Turntable", "DJ Mixer"],
+    "lighting": ["Moving Head", "Par Can", "Stage Light", "DMX"],
+    "live-mics": ["Wireless Microphone", "Handheld Mic", "Vocal Mic"],
+    "live-accessories": ["Speaker Stand", "Microphone Stand", "XLR Cable"],
+
+     # --- UTILITY ---
+    "cables": ["Instrument Cable", "Patch Cable", "Microphone Cable"],
+    "stands": ["Music Stand", "Guitar Stand"],
+    "cases-bags": ["Flight Case", "Soft Case"],
+    "power-supplies": ["Power Supply", "Battery"],
+}
+
+# =============================================================================
+# 2. HERO PRODUCTS (The "Golden List" for exact visual matches)
+# ONLY HTTP-ENABLED BRANDS (Roland, Boss, Nord)
+# =============================================================================
+HERO_PRODUCTS = {
+    # Guitars
+    "electric-guitars": "Boss EURUS GS-1",              # Electronic Guitar
+    "acoustic-guitars": "Boss Acoustic Singer",         # Acoustic Amp (Proxy - trusted image)
+    "bass-guitars": "Boss ME-90B",                      # Bass Multi-FX
+    "guitar-amps": "Boss Katana-100 Gen 3",             # Amplifier
+    "guitar-pedals": "Boss DS-1W",                      # Waza Craft Distortion
+    "folk-instruments": "Boss TU-05",                   # Clip-on Tuner (Proxy)
+    "guitar-accessories": "Boss WL-50",                 # Wireless System
     
-    # REAL PRODUCTS FROM YOUR CATALOG - Curated for recognition
-    PRODUCT_MAPPING = {
-        # Keys & Pianos
-        "keys-synths": "nord_42_drum3p",  # Nord Drum 3P - synthesizer
-        "keys-stage-pianos": "roland_87_rd2000",  # Roland RD-2000
-        "keys-controllers": "akai_professional_55_mpd218",  # Akai MPD218
-        "keys-arrangers": "roland_87_vad716sw",  # Roland VAD716
-        "keys-organs": "roland_87_vad716sw",  # Roland (electronic)
-        "keys-workstations": "roland_87_vad716sw",  # Roland workstation
-        
-        # Drums & Percussion (6)
-        "drums-electronic-drums": "roland_87_td02kv",  # Roland V-Drums TD-02KV
-        "drums-acoustic-drums": "roland_87_td02kv",  # Same kit
-        "drums-cymbals": "roland_87_td02kv",  # Part of kit
-        "drums-percussion": "roland_87_td02kv",  # Part of kit
-        "drums-drum-machines": "akai_professional_55_mpd218",  # Akai MPD218
-        "drums-pads": "akai_professional_55_mpd218",  # Akai pads
-        
-        # Guitars & Amps (6)
-        "guitars-electric-guitars": "roland_87_p6",  # P-6 sampler
-        "guitars-bass-guitars": "roland_87_p6",  # P-6
-        "guitars-amplifiers": "roland_87_p6",  # P-6
-        "guitars-effects-pedals": "roland_87_p6",  # P-6
-        "guitars-multi-effects": "roland_87_p6",  # P-6
-        "guitars-accessories": "akai_professional_55_mpd218",  # Akai
-        
-        # Studio & Recording (6)
-        "studio-audio-interfaces": "roland_44_apollo_twinx_x4",  # UA Apollo
-        "studio-studio-monitors": "roland_44_apollo_twinx_x4",  # UA Apollo
-        "studio-microphones": "roland_87_rtmics",  # Roland RT-MICS
-        "studio-outboard-gear": "roland_44_apollo_twinx_x4",  # UA
-        "studio-preamps": "roland_44_apollo_twinx_x4",  # UA
-        "studio-software": "roland_87_vad716sw",  # Roland (digital)
-        
-        # Live Sound (5)
-        "live-pa-speakers": "roland_87_v_stage76",  # Roland V-Stage
-        "live-mixers": "roland_87_v_stage76",  # V-Stage
-        "live-stage-boxes": "roland_87_v_stage76",  # V-Stage
-        "live-wireless-systems": "roland_87_v_stage76",  # V-Stage
-        "live-in-ear-monitoring": "roland_87_v_stage76",  # V-Stage
-        
-        # DJ & Production (5)
-        "dj-production": "roland_87_cbbdj202",  # Roland DJ equipment
-        "dj-dj-headphones": "roland_87_cbbdj202",  # Roland
-        "dj-samplers": "akai_professional_55_mpd218",  # Akai MPC-like
-        "dj-grooveboxes": "akai_professional_55_mpd218",  # Akai
-        "dj-accessories": "akai_professional_55_mpd218",  # Akai
-        
-        # Software & Cloud (3)
-        "software-daw": "roland_87_vad716sw",  # Digital
-        "software-plugins": "roland_87_vad716sw",  # Digital
-        "software-sound-libraries": "roland_87_vad716sw",  # Digital
-        
-        # Accessories (5)
-        "accessories-cables": "akai_professional_55_mpd218",  # Cable/accessory
-        "accessories-cases": "roland_87_cb404",  # Roland carrying case
-        "accessories-pedals": "akai_professional_55_mpd218",  # Pedal
-        "accessories-power": "akai_professional_55_mpd218",  # Power
-        "accessories-stands": "roland_87_p6",  # Stand
-    }
-    
+    # Drums
+    "acoustic-drums": "Roland VAD716",                  # V-Drums Acoustic Design
+    "electronic-drums": "Roland TD-50",                 # Flagship V-Drums
+    "cymbals": "Roland VH-14D",                         # Digital Hi-Hats
+    "snares": "Roland PD-140DS",                        # Digital Snare
+    "sticks-heads": "Roland DAP-3X",                    # Accessory Pack
+    "percussion": "Roland HandSonic HPD-20",            # Digital Hand Percussion
+    "drum-hardware": "Roland RDH-100",                  # Noise Eater Pedal
+
+    # Keys
+    "synthesizers": "Roland JUNO-X",                    # Synthesizer
+    "stage-pianos": "Nord Stage 4",                     # Flagship Piano
+    "midi-controllers": "Roland A-88MK2",               # MIDI Controller
+    "grooveboxes": "Roland MC-707",                     # Groovebox
+    "eurorack": "Roland SYSTEM-500",                    # Modular Comp
+    "keys-accessories": "Roland KSC-70",                # Stand
+
+    # Studio
+    "audio-interfaces": "Roland Rubix",                 # Interface
+    "studio-monitors": "Nord Piano Monitor",            # Monitors!
+    "studio-microphones": "Roland VT-4",                # Voice Transformer (Proxy)
+    "outboard-gear": "Boss RE-202",                     # Space Echo
+    "software-plugins": "Roland TR-8S",                 # Rhythm Performer (Proxy)
+    "studio-accessories": "Roland R-07",                # High Res Recorder
+
+    # Live
+    "pa-systems": "Roland CUBE Street EX",              # PA
+    "live-mixers": "Roland V-1HD",                      # Video Switcher (Visually complex mixer)
+    "dj-equipment": "Roland DJ-808",                    # DJ Controller
+    "lighting": "Roland VC-1-DMX",                      # DMX Controller
+    "live-mics": "Boss WL-30XLR",                       # Wireless Mic System
+    "live-accessories": "Boss FS-1-WL",                 # Wireless Footswitch
+
+    # Utility
+    "cables": "Roland RMC-B",                           # Cables
+    "cases-bags": "Roland CB-G88",                      # Case
+    "power-supplies": "Boss PSA",                       # Power Supply
+    "stands": "Roland KS-10Z",                          # Heavy Duty Stand
+}
+
+class AutoThumbnailGenerator:
     def __init__(self):
         self.data_dir = Path(__file__).parent.parent / "frontend" / "public" / "data"
         self.output_dir = self.data_dir / "category_thumbnails"
         self.output_dir.mkdir(exist_ok=True)
-        
-        # Load all products into memory
-        self.products = self.load_all_products()
-    
-    def load_all_products(self):
-        """Load all product catalogs"""
-        products = {}
-        
+        self.products = []
+
+    def load_catalog(self):
+        """Load ALL products from ALL json files"""
+        count = 0
+        print("📥 Loading entire catalog...")
         for json_file in self.data_dir.glob("*.json"):
             if json_file.name in ["index.json", "taxonomy.json"]:
                 continue
             
             try:
-                with open(json_file, 'r') as f:
+                with open(json_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
-                    for prod in data.get('products', []):
-                        pid = prod.get('id')
-                        if pid:
-                            products[pid] = prod
-            except:
-                pass
-        
-        return products
-    
-    def fetch_image(self, url: str) -> Optional[Image.Image]:
-        """Download image from URL"""
-        try:
-            response = requests.get(url, timeout=10)
-            response.raise_for_status()
-            return Image.open(io.BytesIO(response.content))
-        except Exception as e:
-            print(f"  ✗ Failed to fetch image: {str(e)[:50]}")
-            return None
-    
-    def process_to_webp(self, image: Image.Image, size: tuple, quality: int = 92) -> bytes:
-        """Convert image to optimized WebP"""
-        # Convert to RGB
-        if image.mode != 'RGB':
-            if image.mode == 'RGBA':
-                background = Image.new('RGB', image.size, (255, 255, 255))
-                background.paste(image, mask=image.split()[3])
-                image = background
-            else:
-                image = image.convert('RGB')
-        
-        # Resize maintaining aspect ratio
-        image.thumbnail(size, Image.Resampling.LANCZOS)
-        
-        # Enhance sharpness for clarity
-        enhancer = ImageEnhance.Sharpness(image)
-        image = enhancer.enhance(1.2)
-        
-        # Create canvas
-        final = Image.new('RGB', size, (255, 255, 255))
-        offset = ((size[0] - image.width) // 2, (size[1] - image.height) // 2)
-        final.paste(image, offset)
-        
-        # Export to WebP
-        buffer = io.BytesIO()
-        final.save(buffer, format='WEBP', quality=quality)
-        return buffer.getvalue()
-    
-    def generate_thumbnails(self):
-        """Extract product images and create thumbnails"""
-        print("\n📸 GENERATING CATEGORY THUMBNAILS\n")
-        print("=" * 70)
-        
-        success = 0
-        failed = 0
-        
-        for category, product_id in self.PRODUCT_MAPPING.items():
-            if product_id not in self.products:
-                print(f"✗ {category:30} - Product {product_id} not found")
-                failed += 1
-                continue
-            
-            product = self.products[product_id]
-            image_url = product.get('image_url') or product.get('image')
-            
-            if not image_url:
-                print(f"✗ {category:30} - No image URL")
-                failed += 1
-                continue
-            
-            # Fetch and process
-            print(f"→ {category:30}...", end=' ', flush=True)
-            
-            image = self.fetch_image(image_url)
-            if not image:
-                failed += 1
-                continue
-            
-            try:
-                # Create thumbnail (400x400)
-                thumb_data = self.process_to_webp(image, (400, 400), quality=92)
-                thumb_file = self.output_dir / f"{category}_thumb.webp"
-                with open(thumb_file, 'wb') as f:
-                    f.write(thumb_data)
-                
-                # Create inspect version (800x800)
-                inspect_data = self.process_to_webp(image, (800, 800), quality=95)
-                inspect_file = self.output_dir / f"{category}_inspect.webp"
-                with open(inspect_file, 'wb') as f:
-                    f.write(inspect_data)
-                
-                print(f"✓ ({len(thumb_data)//1024}KB + {len(inspect_data)//1024}KB)")
-                success += 1
-                
+                    if "products" in data:
+                        # Annotate with brand for debugging
+                        brand_name = data.get("brand_identity", {}).get("name", json_file.stem)
+                        for p in data["products"]:
+                            p["_source_brand"] = brand_name
+                            self.products.append(p)
+                            count += 1
             except Exception as e:
-                print(f"✗ {str(e)[:40]}")
-                failed += 1
+                print(f"⚠️ Failed to load {json_file.name}: {e}")
         
-        print("=" * 70)
-        print(f"\n✅ Generated {success} / {len(self.PRODUCT_MAPPING)} categories")
-        if failed > 0:
-            print(f"⚠️  Failed: {failed} categories")
-        
-        return success == len(self.PRODUCT_MAPPING)
+        print(f"✅ Loaded {count} products into memory.")
 
+    def find_best_image(self, spectrum_id: str, keywords: list) -> dict:
+        """Find the best product for a given category"""
+        candidates = []
+
+        for p in self.products:
+            # 1. Check if product has an image
+            img_url = self.get_image_url(p)
+            if not img_url:
+                continue
+
+            # 2. Score the match
+            score = 0
+            text = (p.get("name", "") + " " + p.get("category", "") + " " + p.get("description", "")).lower()
+            
+            for word in keywords:
+                if word.lower() in text:
+                    score += 10
+            
+            # Boost logic
+            name_lower = p.get("name", "").lower()
+            if any(k.lower() in name_lower for k in keywords):
+                score += 20 # Name match is better than description
+            
+            if score > 0:
+                candidates.append((score, p))
+
+        if not candidates:
+            return None
+
+        # Sort by score desc, then random shuffle top 5 to vary it? No, just best score.
+        # Prefer brands we know have good images (optional)
+        candidates.sort(key=lambda x: x[0], reverse=True)
+        
+        # Take the best one
+        return candidates[0][1]
+
+    def get_image_url(self, product):
+        """Robust image extractor matching frontend logic"""
+        if product.get("image_url") and isinstance(product["image_url"], str) and product["image_url"].startswith("http"):
+            return product["image_url"]
+        
+        images = product.get("images", [])
+        if isinstance(images, list) and images:
+            first = images[0]
+            if isinstance(first, str): return first
+            if isinstance(first, dict) and "url" in first: return first["url"]
+            
+        if isinstance(images, dict):
+            return images.get("main", "")
+            
+        return None
+
+    def process_image(self, img_url: str, output_path: Path):
+        """Download/Load, process (remove BG) and save WebP"""
+        try:
+            img = None
+            
+            # Case 1: Remote URL
+            if img_url.startswith("http"):
+                response = requests.get(img_url, timeout=5)
+                response.raise_for_status()
+                img = Image.open(io.BytesIO(response.content))
+            
+            # Case 2: Local Path
+            elif img_url.startswith("/data/"):
+                rel_path = img_url.replace("/data/", "", 1)
+                local_file = self.data_dir / rel_path
+                if not local_file.exists():
+                    print(f"File not found: {local_file}")
+                    return False
+                img = Image.open(local_file)
+            else:
+                return False
+
+            # Convert to RGBA
+            if img.mode != 'RGBA':
+                img = img.convert('RGBA')
+
+            # --- SMART BACKGROUND REMOVAL (Simple White Kill) ---
+            # Ideally use 'rembg' but it's heavy. We'll use a tolerance mask.
+            # Convert to numpy for speed? No, PIL is fine for simple stuff.
+            datas = img.getdata()
+            new_data = []
+            tolerance = 200 # Brightness threshold (0-255)
+            
+            # Check corners to see if it's a white-bg image
+            corners = [
+                img.getpixel((0,0)), 
+                img.getpixel((img.width-1, 0)), 
+                img.getpixel((0, img.height-1)), 
+                img.getpixel((img.width-1, img.height-1))
+            ]
+            is_white_bg = all(sum(c[:3]) > 700 for c in corners) # > 233 avg
+
+            if is_white_bg:
+                for item in datas:
+                    # If pixel is very bright/white, make transparent.
+                    # R>240 and G>240 and B>240
+                    if item[0] > 230 and item[1] > 230 and item[2] > 230:
+                        new_data.append((255, 255, 255, 0))
+                    else:
+                        new_data.append(item)
+                img.putdata(new_data)
+            
+            # Trim transparent borders (Auto-Crop)
+            bbox = img.getbbox()
+            if bbox:
+                img = img.crop(bbox)
+
+            # Create standard thumbnail size
+            target_size = (500, 500) # Higher res
+            
+            # Resize with padding (contain)
+            canvas = Image.new('RGBA', target_size, (0, 0, 0, 0))
+            img.thumbnail(target_size, Image.Resampling.LANCZOS)
+            
+            # Center on canvas
+            offset_x = (target_size[0] - img.width) // 2
+            offset_y = (target_size[1] - img.height) // 2
+            canvas.paste(img, (offset_x, offset_y), img if img.mode == 'RGBA' else None)
+            
+            # Enhance
+            enhancer = ImageEnhance.Contrast(canvas)
+            canvas = enhancer.enhance(1.1)
+            enhancer_sat = ImageEnhance.Color(canvas)
+            canvas = enhancer_sat.enhance(1.2) # Boost saturation for "Pop"
+            
+            # Save
+            canvas.save(output_path, "WEBP", quality=90)
+            return True
+
+        except Exception as e:
+            print(f"❌ Error processing image {img_url}: {e}")
+            return False
+
+    def run(self):
+        self.load_catalog()
+        
+        # Fallback
+        fallback_product = next((p for p in self.products if self.get_image_url(p) and self.get_image_url(p).startswith("http")), None)
+
+        print("\n🎨 Generating Category Thumbnails (Hero Mode)...")
+        
+        success_count = 0
+        
+        for spectrum_id, keywords in SPECTRUM_DEFINITIONS.items():
+            print(f"   🔍 {spectrum_id}:", end=" ")
+            
+            # 1. TRY HERO SEARCH FIRST
+            hero_term = HERO_PRODUCTS.get(spectrum_id)
+            product = None
+            
+            if hero_term:
+                # Exact name search first
+                for p in self.products:
+                    if hero_term.lower() in p.get("name", "").lower():
+                        # STRICT CHECK: Must be HTTP
+                        url = self.get_image_url(p)
+                        if url and url.startswith("http"):
+                             product = p
+                             print(f"[HERO MATCH: {hero_term}]", end=" ")
+                             break
+            
+            # 2. STANDARD KEYWORD SEARCH (Backfill)
+            if not product:
+                candidate = self.find_best_image(spectrum_id, keywords)
+                if candidate:
+                     url = self.get_image_url(candidate)
+                     if url and url.startswith("http"):
+                         product = candidate
+            
+            # 3. FALLBACK
+            used_fallback = False
+            if not product:
+                if fallback_product:
+                    product = fallback_product
+                    used_fallback = True
+                    print("[FALLBACK]", end=" ")
+                else:
+                    print("❌ SKIPPING")
+                    continue
+
+            img_url = self.get_image_url(product)
+            
+            # Naming Logic matching frontend/src/lib/universalCategories.ts
+            prefix = ""
+            if spectrum_id in ["electric-guitars", "acoustic-guitars", "bass-guitars", "guitar-amps", "guitar-pedals", "folk-instruments", "guitar-accessories"]: prefix = "guitars-"
+            elif spectrum_id in ["acoustic-drums", "electronic-drums", "cymbals", "snares", "sticks-heads", "percussion", "drum-hardware"]: prefix = "drums-"
+            elif spectrum_id in ["synthesizers", "stage-pianos", "midi-controllers", "grooveboxes", "eurorack", "keys-accessories"]: prefix = "keys-"
+            elif spectrum_id in ["audio-interfaces", "studio-monitors", "studio-microphones", "outboard-gear", "software-plugins", "studio-accessories"]: prefix = "studio-"
+            elif spectrum_id in ["pa-systems", "live-mixers", "dj-equipment", "lighting", "live-mics", "live-accessories"]: prefix = "live-"
+            else: prefix = "accessories-" 
+
+            filename = f"{prefix}{spectrum_id}_thumb.webp"
+            output_path = self.output_dir / filename
+            
+            # print(f"-> {filename}", end=" ")
+            
+            if self.process_image(img_url, output_path):
+                print(f"✅")
+                success_count += 1
+            else:
+                print(f"❌ Failed")
+
+
+        print(f"\n✨ Generation Complete! Created {success_count} thumbnails.")
 
 if __name__ == "__main__":
-    extractor = ProductThumbnailExtractor()
-    success = extractor.generate_thumbnails()
-    
-    if success:
-        print("\n🎉 All category thumbnails created successfully!")
-        print("✓ frontend/public/data/category_thumbnails/ updated")
-        print("\n📝 Next: Commit changes")
-        print("   git add frontend/public/data/category_thumbnails/")
-        print("   git commit -m 'feat: Add real product category thumbnails'")
-    else:
-        print("\n⚠️  Some categories failed. Please check product mappings.")
-        sys.exit(1)
+    generator = AutoThumbnailGenerator()
+    generator.run()

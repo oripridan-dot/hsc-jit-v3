@@ -29,7 +29,6 @@ class SystemArchitect:
     def execute_mandate(self):
         """Executes the cleanup and structure enforcement mandate."""
         self.enforce_structure()
-        self.consolidate_docs()
         self.purify_codebase()
         self.generate_integrity_report()
 
@@ -44,26 +43,6 @@ class SystemArchitect:
         
         self.log("✅ Directory structure is clean.")
         return True
-
-    def consolidate_docs(self):
-        """Moves markdown documentation from root to /docs."""
-        self.log("📚 Consolidating Documentation...")
-        moved_count = 0
-        docs_dir = os.path.join(self.ROOT_PATH, "docs")
-        
-        if not os.path.exists(docs_dir):
-            os.makedirs(docs_dir)
-            
-        for file in os.listdir(self.ROOT_PATH):
-            if file.endswith(".md") and file not in ["README.md", "AI_CONTEXT.md"]:
-                 src = os.path.join(self.ROOT_PATH, file)
-                 dst = os.path.join(docs_dir, file)
-                 os.rename(src, dst)
-                 self.log(f"  ➡️ Moved {file} to docs/")
-                 moved_count += 1
-                 
-        if moved_count == 0:
-            self.log("  ✅ Documentation is consolidated.")
 
     def purify_codebase(self):
         """Removes misplaced files by extension."""

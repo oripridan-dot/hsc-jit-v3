@@ -18,6 +18,7 @@ The backend is strictly for offline data generation. It contains:
 - `backend/generate_final_category_thumbnails.py`
 - `backend/generate_flagship_thumbnails.py`
 - `backend/generate_frontend_json.py`
+- `backend/generate_spectrum_brand_map.py`
 - `backend/heartbeat.py`
 - `backend/mass_ingest_protocol.py`
 - `backend/refine_skeleton.py`
@@ -59,7 +60,6 @@ The backend is strictly for offline data generation. It contains:
 ## 📄 Published Production Catalogs
 These files are the ONLY source of truth for the frontend:
 - `-eaw-eastern-acoustic-works-.json`
-- `accessories-utility.json`
 - `accessories.json`
 - `adam-audio.json`
 - `adams.json`
