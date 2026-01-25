@@ -29,7 +29,7 @@ export async function safeFetch<T>(
     }
 
     return result.data;
-  } catch (e) {
+  } catch {
     return null;
   }
 }

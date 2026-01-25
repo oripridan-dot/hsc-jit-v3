@@ -32,7 +32,7 @@ export const useCategoryProducts = (subcategoryId: string | null) => {
         });
 
         setProducts(filtered);
-      } catch (err) {
+      } catch {
         setProducts([]);
       } finally {
         setLoading(false);

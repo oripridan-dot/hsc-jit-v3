@@ -44,19 +44,17 @@ const devTools: HSCDevTools = {
     catalogLoader.clearCache();
   },
 
-  async refreshBrand(brandId: string) {
+  async refreshBrand(_brandId: string) {
     catalogLoader.clearCache();
   },
 
-  status() {
-  },
+  status() {},
 
   clearCache() {
     catalogLoader.clearCache();
   },
 
-  async checkUpdates() {
-  },
+  async checkUpdates() {},
 };
 
 // Export for use in App
@@ -74,7 +72,8 @@ export function initializeDevTools() {
         "%cUse: window.__hscdev.status() for available commands",
         "color: gray",
       );
-    } catch (error) {
+    } catch {
+      // Ignore errors in dev tools initialization
     }
   }
 }

@@ -93,7 +93,7 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
         } else {
           setProduct(null);
         }
-      } catch (error) {
+      } catch {
         setProduct(null);
       } finally {
         setLoading(false);
@@ -232,7 +232,7 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
             necessities={[]}
             accessories={[]}
             related={[]}
-            onSelectProduct={(product) => {
+            onSelectProduct={(_product) => {
               // Handle product selection from relationships
             }}
           />

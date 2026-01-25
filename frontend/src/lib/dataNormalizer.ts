@@ -192,7 +192,7 @@ export function normalizeProducts(rawProducts: any[]): Product[] {
   return rawProducts.map((p) => {
     try {
       return normalizeProduct(p);
-    } catch (error) {
+    } catch {
       return normalizeProduct({}); // Return empty normalized product
     }
   });

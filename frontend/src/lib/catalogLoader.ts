@@ -106,22 +106,18 @@ class CatalogLoader {
   async loadIndex(): Promise<MasterIndex> {
     if (this.index) return this.index;
 
-    try {
-      const response = await fetch(`/data/index.json?v=${Date.now()}`);
-      if (!response.ok) {
-        throw new Error("Failed to load master index");
-      }
-      const rawData: unknown = await response.json();
-
-      // ✅ Validate with Zod
-      this.index = SchemaValidator.validateMasterIndex(rawData);
-      console.log(
-        `✅ Master Index loaded and validated: ${this.index?.brands.length} brands`,
-      );
-      return this.index!;
-    } catch (error) {
-      throw error;
+    const response = await fetch(`/data/index.json?v=${Date.now()}`);
+    if (!response.ok) {
+      throw new Error("Failed to load master index");
     }
+    const rawData: unknown = await response.json();
+
+    // ✅ Validate with Zod
+    this.index = SchemaValidator.validateMasterIndex(rawData);
+    console.log(
+      `✅ Master Index loaded and validated: ${this.index?.brands.length} brands`,
+    );
+    return this.index!;
   }
 
   /**
@@ -386,7 +382,7 @@ class CatalogLoader {
 
       // Load all brands in parallel
       const brandPromises = index.brands.map((b) =>
-        this.loadBrand(b.id).catch((error) => {
+        this.loadBrand(b.id).catch(() => {
           return null;
         }),
       );
@@ -451,7 +447,7 @@ class CatalogLoader {
         buildTimestamp: index.build_timestamp,
         version: index.version,
       };
-    } catch (error) {
+    } catch {
       return {
         totalProducts: 0,
         totalVerified: 0,

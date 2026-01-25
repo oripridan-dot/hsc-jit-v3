@@ -46,7 +46,7 @@ export const SpectrumModule = () => {
         } else {
           setRawProducts([]);
         }
-      } catch (e) {
+      } catch {
         setRawProducts([]);
       } finally {
         setLoading(false);
