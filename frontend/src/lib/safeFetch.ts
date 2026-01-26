@@ -13,9 +13,6 @@ export async function safeFetch<T>(
   try {
     const res = await fetch(url);
     if (!res.ok) {
-      console.error(
-        `⚠️ Network Error for ${url}: ${res.status} ${res.statusText}`,
-      );
       return null;
     }
     const json: unknown = await res.json();

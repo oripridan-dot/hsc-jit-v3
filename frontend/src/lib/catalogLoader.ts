@@ -114,9 +114,6 @@ class CatalogLoader {
 
     // ✅ Validate with Zod
     this.index = SchemaValidator.validateMasterIndex(rawData);
-    console.log(
-      `✅ Master Index loaded and validated: ${this.index?.brands.length} brands`,
-    );
     return this.index!;
   }
 
@@ -226,9 +223,6 @@ class CatalogLoader {
       `/data/${brandEntry.data_file}?v=${Date.now()}`,
     );
     if (!response.ok) {
-      console.error(
-        `❌ Failed to load brand ${brandId}: HTTP ${response.status}`,
-      );
       throw new Error(`Failed to load brand: ${brandId}`);
     }
 
@@ -241,10 +235,6 @@ class CatalogLoader {
       const validated = SchemaValidator.validateBrandFile(rawData);
       data = validated as unknown as BrandFile;
     } catch (validationError) {
-      console.error(
-        `❌ Brand file validation failed for ${brandId}:`,
-        validationError,
-      );
       throw new Error(
         `Invalid brand data structure for ${brandId}: ${(validationError as Error).message}`,
       );
@@ -357,9 +347,6 @@ class CatalogLoader {
     catalog.products.sort((a, b) => a.name.localeCompare(b.name));
 
     this.brandCatalogs.set(brandId, catalog);
-    console.log(
-      `✅ Loaded and validated ${catalog.products.length} products for ${catalog.brand_name}`,
-    );
 
     return catalog;
   }
@@ -403,9 +390,6 @@ class CatalogLoader {
         })),
       );
 
-      console.log(
-        `✅ Loaded ${this.allProducts.length} total products from ${loadedCatalogs.length} brands`,
-      );
       return this.allProducts;
     } finally {
       this.loading = false;
@@ -484,10 +468,6 @@ class CatalogLoader {
       // If the categoryId is not a Galaxy ID, assume it is a raw Universal ID
       const targetCategories = galaxyMap[categoryId] || [categoryId];
 
-      console.log(
-        `🔍 Searching for products in categories: ${targetCategories.join(", ")} (Request: ${categoryId})`,
-      );
-
       // Load each brand and filter by category
       for (const brandEntry of index.brands) {
         try {
@@ -509,15 +489,8 @@ class CatalogLoader {
         }
       }
 
-      console.log(
-        `📦 Loaded ${products.length} products for category: ${categoryId}`,
-      );
       return products;
-    } catch (error) {
-      console.error(
-        `Failed to load products by category ${categoryId}:`,
-        error,
-      );
+    } catch (_error) {
       return [];
     }
   }

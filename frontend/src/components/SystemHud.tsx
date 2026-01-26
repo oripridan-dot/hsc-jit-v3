@@ -15,7 +15,7 @@ export const SystemHud = () => {
     fetch("/data/system_manifest.json")
       .then((res) => res.json())
       .then(setManifest)
-      .catch(() => console.log("HUD: System manifest not found (First run?)"));
+      .catch(() => {});
   }, []);
 
   if (!manifest) return null;

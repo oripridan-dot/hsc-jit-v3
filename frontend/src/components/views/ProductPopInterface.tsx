@@ -153,12 +153,7 @@ export const ProductPopInterface = ({ productId }: { productId: string }) => {
                   src={product.official_gallery[_selectedMediaIndex]}
                   alt={product.name}
                   className="w-full h-full object-contain"
-                  onError={(_e) => {
-                    console.warn(
-                      "Image failed to load:",
-                      product.official_gallery?.[_selectedMediaIndex],
-                    );
-                  }}
+                  onError={() => {}}
                 />
               ) : (
                 <div className="text-center">

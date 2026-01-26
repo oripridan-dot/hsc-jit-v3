@@ -22,10 +22,6 @@ export const SpectrumModule = () => {
     const loadCatalog = async () => {
       setLoading(true);
       try {
-        console.log(
-          "SpectrumModule: Loading products for category",
-          activeTribeId,
-        );
         const { catalogLoader } = await import("../../lib/catalogLoader");
 
         if (!activeTribeId) {
@@ -39,9 +35,6 @@ export const SpectrumModule = () => {
           await catalogLoader.loadProductsByCategory(activeTribeId);
 
         if (Array.isArray(products)) {
-          console.log(
-            `SpectrumModule: Loaded ${products.length} products for category ${activeTribeId}`,
-          );
           setRawProducts(products);
         } else {
           setRawProducts([]);
@@ -137,18 +130,10 @@ export const SpectrumModule = () => {
                   src={resolveProductImage(hoveredProduct)}
                   className="max-w-[90%] max-h-[90%] object-contain drop-shadow-2xl border-2 border-amber-500"
                   alt="Preview"
-                  onError={(e) => {
-                    console.error("❌ IMG LOAD FAILED:", {
-                      src: (e.target as HTMLImageElement).src,
-                      product: hoveredProduct?.name,
-                    });
+                  onError={(_e) => {
                     setImageLoadError(true);
                   }}
-                  onLoad={(e) => {
-                    console.log(
-                      "✅ IMG LOADED:",
-                      (e.currentTarget as HTMLImageElement).src,
-                    );
+                  onLoad={() => {
                     setImageLoadError(false);
                   }}
                 />

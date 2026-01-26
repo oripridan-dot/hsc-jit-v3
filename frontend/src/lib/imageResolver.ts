@@ -23,28 +23,16 @@ export function resolveProductImage(
 
   // 1. Try product image_url first (normalized)
   if (product.image_url && isValidImageUrl(product.image_url)) {
-    console.log("🖼️ RESOLVE IMAGE:", {
-      url: product.image_url,
-      product: product.name,
-    });
     return product.image_url;
   }
 
   // 2. Try product image field (alternative format)
   if (product.image && isValidImageUrl(product.image)) {
-    console.log("🖼️ RESOLVE IMAGE (alt):", {
-      url: product.image,
-      product: product.name,
-    });
     return product.image;
   }
 
   // 3. Try nested media thumbnail
   if (product.media?.thumbnail && isValidImageUrl(product.media.thumbnail)) {
-    console.log("🖼️ RESOLVE MEDIA THUMBNAIL:", {
-      url: product.media.thumbnail,
-      product: product.name,
-    });
     return product.media.thumbnail;
   }
 
@@ -56,31 +44,16 @@ export function resolveProductImage(
   ) {
     const firstImage = product.media.gallery[0];
     if (isValidImageUrl(firstImage)) {
-      console.log("🖼️ RESOLVE GALLERY IMAGE:", {
-        url: firstImage,
-        product: product.name,
-      });
       return firstImage;
     }
   }
 
   // 5. Fall back to brand logo
   if (product.logo_url && isValidImageUrl(product.logo_url)) {
-    console.log("📌 RESOLVE LOGO:", {
-      url: product.logo_url,
-      product: product.name,
-    });
     return product.logo_url;
   }
 
   // 6. Return a generic placeholder
-  console.warn("⚠️ RESOLVE PLACEHOLDER for:", {
-    product: product.name,
-    has_image_url: !!product.image_url,
-    has_image: !!product.image,
-    has_media: !!product.media,
-    has_logo_url: !!product.logo_url,
-  });
   return generatePlaceholderImage(product.name || product.brand || "Product");
 }
 

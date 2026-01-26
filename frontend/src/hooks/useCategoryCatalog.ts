@@ -78,13 +78,6 @@ export const useCategoryCatalog = (
         const results = await Promise.all(promises);
         aggregated = results.flat();
 
-        console.log(
-          `📦 [useCategoryCatalog] Loaded ${aggregated.length} products`,
-          brandId
-            ? `for brand: "${brandId}"`
-            : `from ${brandsToFetch.length} brands`,
-        );
-
         // Filter by CONSOLIDATED category
         const filtered = aggregated.filter((p) => {
           if (!category || category === "All") return true;
