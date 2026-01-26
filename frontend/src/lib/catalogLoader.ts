@@ -490,7 +490,7 @@ class CatalogLoader {
       }
 
       return products;
-    } catch (_error) {
+    } catch {
       return [];
     }
   }
