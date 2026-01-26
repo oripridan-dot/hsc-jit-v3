@@ -1,27 +1,23 @@
 {
-  "brand_identity": {
-    "id": "xvive",
-    "name": "XVIVE",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/xvive_logo.png",
-    "taxonomy_stats": {
-      "validated": 31,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Xvive",
   "products": [
     {
       "id": "xvive_35_t1",
       "name": "Xvive T1 Golden Brownie Distortion",
-      "brand": "xvive",
+      "description": "Xvive T1 Golden Brownie Distortion",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_t1.jpg",
-      "description": "Xvive T1 Golden Brownie Distortion",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4239942-xvive-t1-golden-brownie-distortion",
+      "is_sold": true,
+      "price": 231.0,
+      "halilit_url": "https://www.halilit.com/items/4239942-xvive-t1-golden-brownie-distortion",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 231.0,
+        "original_price": 231.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_t1.jpg",
@@ -36,14 +32,20 @@
     {
       "id": "xvive_35_v9",
       "name": "Xvive V9 LEMON SQUEEZER",
-      "brand": "xvive",
+      "description": "Xvive V9 LEMON SQUEEZER",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_v9.jpg",
-      "description": "Xvive V9 LEMON SQUEEZER",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339311-xvive-v13-mini-di",
+      "is_sold": true,
+      "price": 179.0,
+      "halilit_url": "https://www.halilit.com/items/4339311-xvive-v13-mini-di",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 179.0,
+        "original_price": 179.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_v9.jpg",
@@ -58,15 +60,21 @@
     {
       "id": "xvive_35_u2_red",
       "name": "Xvive U2 Wireless Guitar System",
-      "brand": "xvive",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/xvive_35_u2_red.jpg",
       "description": "Xvive U2 Wireless Guitar System",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u2_red.jpg",
+      "product_url": "https://www.halilit.com/items/5340334-xvive-u2-wireless-guitar-system",
+      "is_sold": true,
+      "price": 625.0,
+      "halilit_url": "https://www.halilit.com/items/5340334-xvive-u2-wireless-guitar-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 625.0,
+        "original_price": 625.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u2_red.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u2_red.jpg",
@@ -74,42 +82,26 @@
         "original": "/data/thumbnails/xvive_35_u2_red.jpg"
       },
       "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "xvive_35_v10",
-      "name": "פדל בוסטר Xvive V10 Amp Litone",
-      "brand": "xvive",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/xvive_35_v10.jpg",
-      "description": "פדל בוסטר Xvive V10 Amp Litone",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/xvive_35_v10.jpg",
-        "thumbnail": "/data/thumbnails/xvive_35_v10.jpg",
-        "high_res": "/data/thumbnails/xvive_35_v10.jpg",
-        "original": "/data/thumbnails/xvive_35_v10.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_o2",
       "name": "Xvive O2 SWEET LEO Overdrive",
-      "brand": "xvive",
+      "description": "Xvive O2 SWEET LEO Overdrive",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_o2.jpg",
-      "description": "Xvive O2 SWEET LEO Overdrive",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3908573-xvive-o2-sweet-leo-overdrive",
+      "is_sold": true,
+      "price": 231.0,
+      "halilit_url": "https://www.halilit.com/items/3908573-xvive-o2-sweet-leo-overdrive",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 231.0,
+        "original_price": 231.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_o2.jpg",
@@ -124,15 +116,21 @@
     {
       "id": "xvive_35_u2_gold",
       "name": "Xvive U2 Wireless Guitar System - Gold",
-      "brand": "xvive",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/xvive_35_u2_gold.jpg",
       "description": "Xvive U2 Wireless Guitar System - Gold",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u2_gold.jpg",
+      "product_url": "https://www.halilit.com/items/7821540-xvive-u2-complete-system-redwood",
+      "is_sold": true,
+      "price": 612.0,
+      "halilit_url": "https://www.halilit.com/items/7821540-xvive-u2-complete-system-redwood",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 612.0,
+        "original_price": 612.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u2_gold.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u2_gold.jpg",
@@ -140,20 +138,26 @@
         "original": "/data/thumbnails/xvive_35_u2_gold.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_o1",
       "name": "Xvive O1 Tube Squasher Overdrive",
-      "brand": "xvive",
+      "description": "Xvive O1 Tube Squasher Overdrive",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_o1.jpg",
-      "description": "Xvive O1 Tube Squasher Overdrive",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3908588-xvive-o1-tube-squasher-overdrive",
+      "is_sold": true,
+      "price": 218.0,
+      "halilit_url": "https://www.halilit.com/items/3908588-xvive-o1-tube-squasher-overdrive",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 218.0,
+        "original_price": 218.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_o1.jpg",
@@ -168,15 +172,21 @@
     {
       "id": "xvive_35_u2_wood",
       "name": "Xvive U2 Wireless Guitar System - Redwood",
-      "brand": "xvive",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/xvive_35_u2_wood.jpg",
       "description": "Xvive U2 Wireless Guitar System - Redwood",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u2_wood.jpg",
+      "product_url": "https://www.halilit.com/items/5416690-xvive-u2-complete-system-redwood",
+      "is_sold": true,
+      "price": 625.0,
+      "halilit_url": "https://www.halilit.com/items/5416690-xvive-u2-complete-system-redwood",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 625.0,
+        "original_price": 625.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u2_wood.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u2_wood.jpg",
@@ -184,21 +194,27 @@
         "original": "/data/thumbnails/xvive_35_u2_wood.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_v1",
       "name": "Xvive V1 Classic Rock Pedal",
-      "brand": "xvive",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/xvive_35_v1.jpg",
       "description": "Xvive V1 Classic Rock Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_v1.jpg",
+      "product_url": "https://www.halilit.com/items/445705-xvive-v1-classic-rock-pedal",
+      "is_sold": true,
+      "price": 239.0,
+      "halilit_url": "https://www.halilit.com/items/445705-xvive-v1-classic-rock-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 239.0,
+        "original_price": 239.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_v1.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_v1.jpg",
@@ -206,20 +222,26 @@
         "original": "/data/thumbnails/xvive_35_v1.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_v16",
       "name": "Xvive V16 Undulator Tremolo",
-      "brand": "xvive",
+      "description": "Xvive V16 Undulator Tremolo",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_v16.jpg",
-      "description": "Xvive V16 Undulator Tremolo",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339395-xvive-v16-undulator-tremolo",
+      "is_sold": true,
+      "price": 279.0,
+      "halilit_url": "https://www.halilit.com/items/4339395-xvive-v16-undulator-tremolo",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 279.0,
+        "original_price": 279.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_v16.jpg",
@@ -234,14 +256,20 @@
     {
       "id": "xvive_35_e1",
       "name": "Xvive ECHOMAN",
-      "brand": "xvive",
+      "description": "Xvive ECHOMAN",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_e1.jpg",
-      "description": "Xvive ECHOMAN",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4294973-xvive-t1-golden-brownie-distortion",
+      "is_sold": true,
+      "price": 428.0,
+      "halilit_url": "https://www.halilit.com/items/4294973-xvive-t1-golden-brownie-distortion",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 428.0,
+        "original_price": 428.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_e1.jpg",
@@ -256,15 +284,21 @@
     {
       "id": "xvive_35_t9",
       "name": "Xvive T9 In Ear Monitors",
-      "brand": "xvive",
-      "category": "studio",
-      "image_url": "/data/thumbnails/xvive_35_t9.jpg",
       "description": "Xvive T9 In Ear Monitors",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_t9.jpg",
+      "product_url": "https://www.halilit.com/items/7820976-xvive-t9-in-ear-monitors",
+      "is_sold": true,
+      "price": 897.0,
+      "halilit_url": "https://www.halilit.com/items/7820976-xvive-t9-in-ear-monitors",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 897.0,
+        "original_price": 897.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_t9.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_t9.jpg",
@@ -272,20 +306,26 @@
         "original": "/data/thumbnails/xvive_35_t9.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_u3d",
       "name": "Xvive U3D Stereo Bluetooth Receiver Set",
-      "brand": "xvive",
+      "description": "Xvive U3D Stereo Bluetooth Receiver Set",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_u3d.jpg",
-      "description": "Xvive U3D Stereo Bluetooth Receiver Set",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7821646-xvive-u3d-stereo-bluetooth-receiver-set",
+      "is_sold": true,
+      "price": 2038.0,
+      "halilit_url": "https://www.halilit.com/items/7821646-xvive-u3d-stereo-bluetooth-receiver-set",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2038.0,
+        "original_price": 2038.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u3d.jpg",
@@ -300,14 +340,20 @@
     {
       "id": "xvive_35_p3d",
       "name": "Xvive P3D Stereo Bluetooth Receiver Set",
-      "brand": "xvive",
+      "description": "Xvive P3D Stereo Bluetooth Receiver Set",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_p3d.jpg",
-      "description": "Xvive P3D Stereo Bluetooth Receiver Set",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7819972-xvive-p3d-stereo-bluetooth-receiver-set",
+      "is_sold": true,
+      "price": 419.0,
+      "halilit_url": "https://www.halilit.com/items/7819972-xvive-p3d-stereo-bluetooth-receiver-set",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 419.0,
+        "original_price": 419.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_p3d.jpg",
@@ -322,14 +368,20 @@
     {
       "id": "xvive_35_xv1r",
       "name": "Xvive XV1-R Portable Stereo Recorder",
-      "brand": "xvive",
+      "description": "Xvive XV1-R Portable Stereo Recorder",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_xv1r.jpg",
-      "description": "Xvive XV1-R Portable Stereo Recorder",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7823881-xvive-xv1-r-portable-stereo-recorder",
+      "is_sold": true,
+      "price": 428.0,
+      "halilit_url": "https://www.halilit.com/items/7823881-xvive-xv1-r-portable-stereo-recorder",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 428.0,
+        "original_price": 428.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_xv1r.jpg",
@@ -342,39 +394,23 @@
       ]
     },
     {
-      "id": "xvive_35_cu4",
-      "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
-      "brand": "xvive",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/xvive_35_cu4.jpg",
-      "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/xvive_35_cu4.jpg",
-        "thumbnail": "/data/thumbnails/xvive_35_cu4.jpg",
-        "high_res": "/data/thumbnails/xvive_35_cu4.jpg",
-        "original": "/data/thumbnails/xvive_35_cu4.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "xvive_35_u4",
       "name": "Xvive U4 In-Ear Monitor Wireless System",
-      "brand": "xvive",
-      "category": "studio",
-      "image_url": "/data/thumbnails/xvive_35_u4.jpg",
       "description": "Xvive U4 In-Ear Monitor Wireless System",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u4.jpg",
+      "product_url": "https://www.halilit.com/items/5622287-xvive-u4-in-ear-monitor-wireless-system",
+      "is_sold": true,
+      "price": 1044.0,
+      "halilit_url": "https://www.halilit.com/items/5622287-xvive-u4-in-ear-monitor-wireless-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1044.0,
+        "original_price": 1044.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u4.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u4.jpg",
@@ -382,20 +418,26 @@
         "original": "/data/thumbnails/xvive_35_u4.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_v13",
       "name": "Xvive V13 Mini DI",
-      "brand": "xvive",
+      "description": "Xvive V13 Mini DI",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_v13.jpg",
-      "description": "Xvive V13 Mini DI",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4295199-xvive-v13-mini-di",
+      "is_sold": true,
+      "price": 180.0,
+      "halilit_url": "https://www.halilit.com/items/4295199-xvive-v13-mini-di",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 180.0,
+        "original_price": 180.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_v13.jpg",
@@ -410,15 +452,21 @@
     {
       "id": "xvive_35_u7",
       "name": "Xvive U7 Saxophone and Trumpet Wireless System",
-      "brand": "xvive",
-      "category": "live",
-      "image_url": "/data/thumbnails/xvive_35_u7.jpg",
       "description": "Xvive U7 Saxophone and Trumpet Wireless System",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "live",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u7.jpg",
+      "product_url": "https://www.halilit.com/items/7821856-xvive-u7-saxophone-and-trumpet-wireless-system",
+      "is_sold": true,
+      "price": 948.0,
+      "halilit_url": "https://www.halilit.com/items/7821856-xvive-u7-saxophone-and-trumpet-wireless-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 948.0,
+        "original_price": 948.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u7.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u7.jpg",
@@ -426,20 +474,26 @@
         "original": "/data/thumbnails/xvive_35_u7.jpg"
       },
       "category_hierarchy": [
-        "live"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_ga1",
       "name": "Xvive GA-1",
-      "brand": "xvive",
+      "description": "Xvive GA-1",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_ga1.jpg",
-      "description": "Xvive GA-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339280-xvive-ga-1",
+      "is_sold": true,
+      "price": 81.0,
+      "halilit_url": "https://www.halilit.com/items/4339280-xvive-ga-1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 81.0,
+        "original_price": 81.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_ga1.jpg",
@@ -454,15 +508,21 @@
     {
       "id": "xvive_35_u8",
       "name": "Xvive U8 Acoustic Guitar Wireless System",
-      "brand": "xvive",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/xvive_35_u8.jpg",
       "description": "Xvive U8 Acoustic Guitar Wireless System",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u8.jpg",
+      "product_url": "https://www.halilit.com/items/7821911-xvive-u8-acoustic-guitar-wireless-system",
+      "is_sold": true,
+      "price": 948.0,
+      "halilit_url": "https://www.halilit.com/items/7821911-xvive-u8-acoustic-guitar-wireless-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 948.0,
+        "original_price": 948.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u8.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u8.jpg",
@@ -470,21 +530,27 @@
         "original": "/data/thumbnails/xvive_35_u8.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_u9",
       "name": "Xvive U9 Violin Wireless System",
-      "brand": "xvive",
-      "category": "live",
-      "image_url": "/data/thumbnails/xvive_35_u9.jpg",
       "description": "Xvive U9 Violin Wireless System",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "live",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u9.jpg",
+      "product_url": "https://www.halilit.com/items/7821922-xvive-u9-violin-wireless-system",
+      "is_sold": true,
+      "price": 948.0,
+      "halilit_url": "https://www.halilit.com/items/7821922-xvive-u9-violin-wireless-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 948.0,
+        "original_price": 948.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u9.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u9.jpg",
@@ -492,21 +558,27 @@
         "original": "/data/thumbnails/xvive_35_u9.jpg"
       },
       "category_hierarchy": [
-        "live"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_u4r",
       "name": "Xvive U4R In-Ear Monitor Wireless Receiver",
-      "brand": "xvive",
-      "category": "studio",
-      "image_url": "/data/thumbnails/xvive_35_u4r.jpg",
       "description": "Xvive U4R In-Ear Monitor Wireless Receiver",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u4r.jpg",
+      "product_url": "https://www.halilit.com/items/7821942-xvive-u4r-in-ear-monitor-wireless-receiver",
+      "is_sold": true,
+      "price": 561.0,
+      "halilit_url": "https://www.halilit.com/items/7821942-xvive-u4r-in-ear-monitor-wireless-receiver",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 561.0,
+        "original_price": 561.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u4r.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u4r.jpg",
@@ -514,20 +586,26 @@
         "original": "/data/thumbnails/xvive_35_u4r.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_v12",
       "name": "Xvive V12 ABY Mini",
-      "brand": "xvive",
+      "description": "Xvive V12 ABY Mini",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_v12.jpg",
-      "description": "Xvive V12 ABY Mini",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4295035-xvive-v12-aby-mini",
+      "is_sold": true,
+      "price": 180.0,
+      "halilit_url": "https://www.halilit.com/items/4295035-xvive-v12-aby-mini",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 180.0,
+        "original_price": 180.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_v12.jpg",
@@ -540,39 +618,23 @@
       ]
     },
     {
-      "id": "xvive_35_cu4r2",
-      "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
-      "brand": "xvive",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/xvive_35_cu4r2.jpg",
-      "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/xvive_35_cu4r2.jpg",
-        "thumbnail": "/data/thumbnails/xvive_35_cu4r2.jpg",
-        "high_res": "/data/thumbnails/xvive_35_cu4r2.jpg",
-        "original": "/data/thumbnails/xvive_35_cu4r2.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "xvive_35_u3",
       "name": "Xvive U3 Wireless Dynamic MIC/LINE System",
-      "brand": "xvive",
-      "category": "studio",
-      "image_url": "/data/thumbnails/xvive_35_u3.jpg",
       "description": "Xvive U3 Wireless Dynamic MIC/LINE System",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u3.jpg",
+      "product_url": "https://www.halilit.com/items/4339343-xvive-u3-wireless-dymanic-mic-line-system",
+      "is_sold": true,
+      "price": 946.0,
+      "halilit_url": "https://www.halilit.com/items/4339343-xvive-u3-wireless-dymanic-mic-line-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 946.0,
+        "original_price": 946.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u3.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u3.jpg",
@@ -580,21 +642,27 @@
         "original": "/data/thumbnails/xvive_35_u3.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_u3c",
       "name": "Xvive U3C Wireless Condenser Microphone System",
-      "brand": "xvive",
-      "category": "studio",
-      "image_url": "/data/thumbnails/xvive_35_u3c.jpg",
       "description": "Xvive U3C Wireless Condenser Microphone System",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_u3c.jpg",
+      "product_url": "https://www.halilit.com/items/5477284-xvive-u3c-wireless-condenser-microphone-system",
+      "is_sold": true,
+      "price": 1030.0,
+      "halilit_url": "https://www.halilit.com/items/5477284-xvive-u3c-wireless-condenser-microphone-system",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1030.0,
+        "original_price": 1030.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_u3c.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_u3c.jpg",
@@ -602,48 +670,32 @@
         "original": "/data/thumbnails/xvive_35_u3c.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_px",
       "name": "Xvive PX Portable 3-Channel Personal Mixer",
-      "brand": "xvive",
-      "category": "live",
-      "image_url": "/data/thumbnails/xvive_35_px.jpg",
       "description": "Xvive PX Portable 3-Channel Personal Mixer",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "live",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_px.jpg",
+      "product_url": "https://www.halilit.com/items/7820204-xvive-px-portable-3-channel-personal-mixer",
+      "is_sold": true,
+      "price": 510.0,
+      "halilit_url": "https://www.halilit.com/items/7820204-xvive-px-portable-3-channel-personal-mixer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 510.0,
+        "original_price": 510.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_px.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_px.jpg",
         "high_res": "/data/thumbnails/xvive_35_px.jpg",
         "original": "/data/thumbnails/xvive_35_px.jpg"
-      },
-      "category_hierarchy": [
-        "live"
-      ]
-    },
-    {
-      "id": "xvive_35_cu4r4",
-      "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
-      "brand": "xvive",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/xvive_35_cu4r4.jpg",
-      "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/xvive_35_cu4r4.jpg",
-        "thumbnail": "/data/thumbnails/xvive_35_cu4r4.jpg",
-        "high_res": "/data/thumbnails/xvive_35_cu4r4.jpg",
-        "original": "/data/thumbnails/xvive_35_cu4r4.jpg"
       },
       "category_hierarchy": [
         "accessories"
@@ -652,15 +704,21 @@
     {
       "id": "xvive_35_at1",
       "name": "Xvive AT-1 Portable Audio Tester",
-      "brand": "xvive",
-      "category": "studio",
-      "image_url": "/data/thumbnails/xvive_35_at1.jpg",
       "description": "Xvive AT-1 Portable Audio Tester",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/xvive_35_at1.jpg",
+      "product_url": "https://www.halilit.com/items/7812023-xvive-at-1-portable-audio-tester",
+      "is_sold": true,
+      "price": 757.0,
+      "halilit_url": "https://www.halilit.com/items/7812023-xvive-at-1-portable-audio-tester",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 757.0,
+        "original_price": 757.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_at1.jpg",
         "thumbnail": "/data/thumbnails/xvive_35_at1.jpg",
@@ -668,20 +726,26 @@
         "original": "/data/thumbnails/xvive_35_at1.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "xvive_35_d3",
       "name": "Xvive D3 Duet Looper",
-      "brand": "xvive",
+      "description": "Xvive D3 Duet Looper",
       "category": "accessories",
       "image_url": "/data/thumbnails/xvive_35_d3.jpg",
-      "description": "Xvive D3 Duet Looper",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4339433-xvive-d3-duet-looper",
+      "is_sold": true,
+      "price": 397.0,
+      "halilit_url": "https://www.halilit.com/items/4339433-xvive-d3-duet-looper",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 397.0,
+        "original_price": 397.0
+      },
+      "brand": "Xvive",
+      "logo_url": "/assets/logos/xvive_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/xvive_35_d3.jpg",
@@ -694,9 +758,20 @@
       ]
     }
   ],
-  "brand_name": "Xvive",
+  "generated_at": "2026-01-25T22:19:24.404513",
   "brand_slug": "xvive",
-  "refined_at": "2026-01-25T02:01:47.768229+00:00",
+  "refined_at": "2026-01-25T22:19:24.430511+00:00",
+  "brand_identity": {
+    "id": "xvive",
+    "name": "Xvive",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/xvive_logo.png",
+    "taxonomy_stats": {
+      "validated": 27,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
@@ -727,6 +802,19 @@
           "sku": null
         },
         {
+          "id": "xvive_35_u2_red",
+          "name": "Xvive U2 Wireless Guitar System",
+          "description": "Xvive U2 Wireless Guitar System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u2_red.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u2_red.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u2_red.jpg",
+            "original": "/data/thumbnails/xvive_35_u2_red.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "xvive_35_o2",
           "name": "Xvive O2 SWEET LEO Overdrive",
           "description": "Xvive O2 SWEET LEO Overdrive",
@@ -740,6 +828,19 @@
           "sku": null
         },
         {
+          "id": "xvive_35_u2_gold",
+          "name": "Xvive U2 Wireless Guitar System - Gold",
+          "description": "Xvive U2 Wireless Guitar System - Gold",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u2_gold.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u2_gold.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u2_gold.jpg",
+            "original": "/data/thumbnails/xvive_35_u2_gold.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "xvive_35_o1",
           "name": "Xvive O1 Tube Squasher Overdrive",
           "description": "Xvive O1 Tube Squasher Overdrive",
@@ -748,6 +849,32 @@
             "thumbnail": "/data/thumbnails/xvive_35_o1.jpg",
             "high_res": "/data/thumbnails/xvive_35_o1.jpg",
             "original": "/data/thumbnails/xvive_35_o1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_u2_wood",
+          "name": "Xvive U2 Wireless Guitar System - Redwood",
+          "description": "Xvive U2 Wireless Guitar System - Redwood",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u2_wood.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u2_wood.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u2_wood.jpg",
+            "original": "/data/thumbnails/xvive_35_u2_wood.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v1",
+          "name": "Xvive V1 Classic Rock Pedal",
+          "description": "Xvive V1 Classic Rock Pedal",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v1.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v1.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v1.jpg",
+            "original": "/data/thumbnails/xvive_35_v1.jpg"
           },
           "model_number": null,
           "sku": null
@@ -774,6 +901,19 @@
             "thumbnail": "/data/thumbnails/xvive_35_e1.jpg",
             "high_res": "/data/thumbnails/xvive_35_e1.jpg",
             "original": "/data/thumbnails/xvive_35_e1.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_t9",
+          "name": "Xvive T9 In Ear Monitors",
+          "description": "Xvive T9 In Ear Monitors",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_t9.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_t9.jpg",
+            "high_res": "/data/thumbnails/xvive_35_t9.jpg",
+            "original": "/data/thumbnails/xvive_35_t9.jpg"
           },
           "model_number": null,
           "sku": null
@@ -818,14 +958,14 @@
           "sku": null
         },
         {
-          "id": "xvive_35_cu4",
-          "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
-          "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive CU4",
+          "id": "xvive_35_u4",
+          "name": "Xvive U4 In-Ear Monitor Wireless System",
+          "description": "Xvive U4 In-Ear Monitor Wireless System",
           "images": {
-            "main": "/data/thumbnails/xvive_35_cu4.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_cu4.jpg",
-            "high_res": "/data/thumbnails/xvive_35_cu4.jpg",
-            "original": "/data/thumbnails/xvive_35_cu4.jpg"
+            "main": "/data/thumbnails/xvive_35_u4.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u4.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u4.jpg",
+            "original": "/data/thumbnails/xvive_35_u4.jpg"
           },
           "model_number": null,
           "sku": null
@@ -844,6 +984,19 @@
           "sku": null
         },
         {
+          "id": "xvive_35_u7",
+          "name": "Xvive U7 Saxophone and Trumpet Wireless System",
+          "description": "Xvive U7 Saxophone and Trumpet Wireless System",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_u7.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u7.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u7.jpg",
+            "original": "/data/thumbnails/xvive_35_u7.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "xvive_35_ga1",
           "name": "Xvive GA-1",
           "description": "Xvive GA-1",
@@ -852,127 +1005,6 @@
             "thumbnail": "/data/thumbnails/xvive_35_ga1.jpg",
             "high_res": "/data/thumbnails/xvive_35_ga1.jpg",
             "original": "/data/thumbnails/xvive_35_ga1.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_v12",
-          "name": "Xvive V12 ABY Mini",
-          "description": "Xvive V12 ABY Mini",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_v12.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_v12.jpg",
-            "high_res": "/data/thumbnails/xvive_35_v12.jpg",
-            "original": "/data/thumbnails/xvive_35_v12.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_cu4r2",
-          "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
-          "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R2",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_cu4r2.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_cu4r2.jpg",
-            "high_res": "/data/thumbnails/xvive_35_cu4r2.jpg",
-            "original": "/data/thumbnails/xvive_35_cu4r2.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_cu4r4",
-          "name": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
-          "description": "תיק נשיאה קשיח לאוזניות מוניטור Xvive U4R4",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_cu4r4.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_cu4r4.jpg",
-            "high_res": "/data/thumbnails/xvive_35_cu4r4.jpg",
-            "original": "/data/thumbnails/xvive_35_cu4r4.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_d3",
-          "name": "Xvive D3 Duet Looper",
-          "description": "Xvive D3 Duet Looper",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_d3.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_d3.jpg",
-            "high_res": "/data/thumbnails/xvive_35_d3.jpg",
-            "original": "/data/thumbnails/xvive_35_d3.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "guitars": {
-      "General": [
-        {
-          "id": "xvive_35_u2_red",
-          "name": "Xvive U2 Wireless Guitar System",
-          "description": "Xvive U2 Wireless Guitar System",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_u2_red.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_u2_red.jpg",
-            "high_res": "/data/thumbnails/xvive_35_u2_red.jpg",
-            "original": "/data/thumbnails/xvive_35_u2_red.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_v10",
-          "name": "פדל בוסטר Xvive V10 Amp Litone",
-          "description": "פדל בוסטר Xvive V10 Amp Litone",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_v10.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_v10.jpg",
-            "high_res": "/data/thumbnails/xvive_35_v10.jpg",
-            "original": "/data/thumbnails/xvive_35_v10.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_u2_gold",
-          "name": "Xvive U2 Wireless Guitar System - Gold",
-          "description": "Xvive U2 Wireless Guitar System - Gold",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_u2_gold.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_u2_gold.jpg",
-            "high_res": "/data/thumbnails/xvive_35_u2_gold.jpg",
-            "original": "/data/thumbnails/xvive_35_u2_gold.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_u2_wood",
-          "name": "Xvive U2 Wireless Guitar System - Redwood",
-          "description": "Xvive U2 Wireless Guitar System - Redwood",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_u2_wood.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_u2_wood.jpg",
-            "high_res": "/data/thumbnails/xvive_35_u2_wood.jpg",
-            "original": "/data/thumbnails/xvive_35_u2_wood.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_v1",
-          "name": "Xvive V1 Classic Rock Pedal",
-          "description": "Xvive V1 Classic Rock Pedal",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_v1.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_v1.jpg",
-            "high_res": "/data/thumbnails/xvive_35_v1.jpg",
-            "original": "/data/thumbnails/xvive_35_v1.jpg"
           },
           "model_number": null,
           "sku": null
@@ -989,33 +1021,16 @@
           },
           "model_number": null,
           "sku": null
-        }
-      ]
-    },
-    "studio": {
-      "General": [
-        {
-          "id": "xvive_35_t9",
-          "name": "Xvive T9 In Ear Monitors",
-          "description": "Xvive T9 In Ear Monitors",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_t9.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_t9.jpg",
-            "high_res": "/data/thumbnails/xvive_35_t9.jpg",
-            "original": "/data/thumbnails/xvive_35_t9.jpg"
-          },
-          "model_number": null,
-          "sku": null
         },
         {
-          "id": "xvive_35_u4",
-          "name": "Xvive U4 In-Ear Monitor Wireless System",
-          "description": "Xvive U4 In-Ear Monitor Wireless System",
+          "id": "xvive_35_u9",
+          "name": "Xvive U9 Violin Wireless System",
+          "description": "Xvive U9 Violin Wireless System",
           "images": {
-            "main": "/data/thumbnails/xvive_35_u4.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_u4.jpg",
-            "high_res": "/data/thumbnails/xvive_35_u4.jpg",
-            "original": "/data/thumbnails/xvive_35_u4.jpg"
+            "main": "/data/thumbnails/xvive_35_u9.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_u9.jpg",
+            "high_res": "/data/thumbnails/xvive_35_u9.jpg",
+            "original": "/data/thumbnails/xvive_35_u9.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1029,6 +1044,19 @@
             "thumbnail": "/data/thumbnails/xvive_35_u4r.jpg",
             "high_res": "/data/thumbnails/xvive_35_u4r.jpg",
             "original": "/data/thumbnails/xvive_35_u4r.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "xvive_35_v12",
+          "name": "Xvive V12 ABY Mini",
+          "description": "Xvive V12 ABY Mini",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_v12.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_v12.jpg",
+            "high_res": "/data/thumbnails/xvive_35_v12.jpg",
+            "original": "/data/thumbnails/xvive_35_v12.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1060,6 +1088,19 @@
           "sku": null
         },
         {
+          "id": "xvive_35_px",
+          "name": "Xvive PX Portable 3-Channel Personal Mixer",
+          "description": "Xvive PX Portable 3-Channel Personal Mixer",
+          "images": {
+            "main": "/data/thumbnails/xvive_35_px.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_px.jpg",
+            "high_res": "/data/thumbnails/xvive_35_px.jpg",
+            "original": "/data/thumbnails/xvive_35_px.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "xvive_35_at1",
           "name": "Xvive AT-1 Portable Audio Tester",
           "description": "Xvive AT-1 Portable Audio Tester",
@@ -1071,46 +1112,16 @@
           },
           "model_number": null,
           "sku": null
-        }
-      ]
-    },
-    "live": {
-      "General": [
-        {
-          "id": "xvive_35_u7",
-          "name": "Xvive U7 Saxophone and Trumpet Wireless System",
-          "description": "Xvive U7 Saxophone and Trumpet Wireless System",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_u7.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_u7.jpg",
-            "high_res": "/data/thumbnails/xvive_35_u7.jpg",
-            "original": "/data/thumbnails/xvive_35_u7.jpg"
-          },
-          "model_number": null,
-          "sku": null
         },
         {
-          "id": "xvive_35_u9",
-          "name": "Xvive U9 Violin Wireless System",
-          "description": "Xvive U9 Violin Wireless System",
+          "id": "xvive_35_d3",
+          "name": "Xvive D3 Duet Looper",
+          "description": "Xvive D3 Duet Looper",
           "images": {
-            "main": "/data/thumbnails/xvive_35_u9.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_u9.jpg",
-            "high_res": "/data/thumbnails/xvive_35_u9.jpg",
-            "original": "/data/thumbnails/xvive_35_u9.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "xvive_35_px",
-          "name": "Xvive PX Portable 3-Channel Personal Mixer",
-          "description": "Xvive PX Portable 3-Channel Personal Mixer",
-          "images": {
-            "main": "/data/thumbnails/xvive_35_px.jpg",
-            "thumbnail": "/data/thumbnails/xvive_35_px.jpg",
-            "high_res": "/data/thumbnails/xvive_35_px.jpg",
-            "original": "/data/thumbnails/xvive_35_px.jpg"
+            "main": "/data/thumbnails/xvive_35_d3.jpg",
+            "thumbnail": "/data/thumbnails/xvive_35_d3.jpg",
+            "high_res": "/data/thumbnails/xvive_35_d3.jpg",
+            "original": "/data/thumbnails/xvive_35_d3.jpg"
           },
           "model_number": null,
           "sku": null

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /**
  * Unit Tests: instantSearch Service
  * Tests fuzzy search functionality

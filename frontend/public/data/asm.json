@@ -1,164 +1,19 @@
 {
+  "brand_name": "Asm",
+  "products": [],
+  "generated_at": "2026-01-25T22:19:24.429474",
+  "brand_slug": "asm",
+  "refined_at": "2026-01-25T22:19:24.436489+00:00",
   "brand_identity": {
     "id": "asm",
-    "name": "ASM",
+    "name": "Asm",
     "brand_colors": {},
     "logo_url": "/assets/logos/asm_logo.png",
     "taxonomy_stats": {
-      "validated": 4,
+      "validated": 0,
       "normalized": 0,
       "uncategorized": 0
     }
   },
-  "products": [
-    {
-      "id": "asm_85_hskb",
-      "name": "סינתיסייזר ASM Hydrasynth Keyboard",
-      "brand": "asm",
-      "category": "keys",
-      "image_url": "/data/thumbnails/asm_85_hskb.jpg",
-      "description": "סינתיסייזר ASM Hydrasynth Keyboard",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "keys",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hskb.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hskb.jpg",
-        "high_res": "/data/thumbnails/asm_85_hskb.jpg",
-        "original": "/data/thumbnails/asm_85_hskb.jpg"
-      },
-      "category_hierarchy": [
-        "keys"
-      ]
-    },
-    {
-      "id": "asm_85_hsdr",
-      "name": "סינתיסייזר ASM Hydrasynth Desktop",
-      "brand": "asm",
-      "category": "keys",
-      "image_url": "/data/thumbnails/asm_85_hsdr.jpg",
-      "description": "סינתיסייזר ASM Hydrasynth Desktop",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "keys",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hsdr.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hsdr.jpg",
-        "high_res": "/data/thumbnails/asm_85_hsdr.jpg",
-        "original": "/data/thumbnails/asm_85_hsdr.jpg"
-      },
-      "category_hierarchy": [
-        "keys"
-      ]
-    },
-    {
-      "id": "asm_85_hsmk",
-      "name": "סינתיסייזר ASM Hydrasynth Explorer",
-      "brand": "asm",
-      "category": "keys",
-      "image_url": "/data/thumbnails/asm_85_hsmk.jpg",
-      "description": "סינתיסייזר ASM Hydrasynth Explorer",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "keys",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hsmk.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hsmk.jpg",
-        "high_res": "/data/thumbnails/asm_85_hsmk.jpg",
-        "original": "/data/thumbnails/asm_85_hsmk.jpg"
-      },
-      "category_hierarchy": [
-        "keys"
-      ]
-    },
-    {
-      "id": "asm_85_hslx",
-      "name": "סינתיסייזר ASM Hydrasynth Deluxe",
-      "brand": "asm",
-      "category": "keys",
-      "image_url": "/data/thumbnails/asm_85_hslx.jpg",
-      "description": "סינתיסייזר ASM Hydrasynth Deluxe",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "keys",
-      "images": {
-        "main": "/data/thumbnails/asm_85_hslx.jpg",
-        "thumbnail": "/data/thumbnails/asm_85_hslx.jpg",
-        "high_res": "/data/thumbnails/asm_85_hslx.jpg",
-        "original": "/data/thumbnails/asm_85_hslx.jpg"
-      },
-      "category_hierarchy": [
-        "keys"
-      ]
-    }
-  ],
-  "brand_name": "Asm",
-  "brand_slug": "asm",
-  "refined_at": "2026-01-25T02:01:47.232786+00:00",
-  "hierarchy": {
-    "keys": {
-      "General": [
-        {
-          "id": "asm_85_hskb",
-          "name": "סינתיסייזר ASM Hydrasynth Keyboard",
-          "description": "סינתיסייזר ASM Hydrasynth Keyboard",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hskb.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hskb.jpg",
-            "high_res": "/data/thumbnails/asm_85_hskb.jpg",
-            "original": "/data/thumbnails/asm_85_hskb.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "asm_85_hsdr",
-          "name": "סינתיסייזר ASM Hydrasynth Desktop",
-          "description": "סינתיסייזר ASM Hydrasynth Desktop",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hsdr.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hsdr.jpg",
-            "high_res": "/data/thumbnails/asm_85_hsdr.jpg",
-            "original": "/data/thumbnails/asm_85_hsdr.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "asm_85_hsmk",
-          "name": "סינתיסייזר ASM Hydrasynth Explorer",
-          "description": "סינתיסייזר ASM Hydrasynth Explorer",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hsmk.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hsmk.jpg",
-            "high_res": "/data/thumbnails/asm_85_hsmk.jpg",
-            "original": "/data/thumbnails/asm_85_hsmk.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "asm_85_hslx",
-          "name": "סינתיסייזר ASM Hydrasynth Deluxe",
-          "description": "סינתיסייזר ASM Hydrasynth Deluxe",
-          "images": {
-            "main": "/data/thumbnails/asm_85_hslx.jpg",
-            "thumbnail": "/data/thumbnails/asm_85_hslx.jpg",
-            "high_res": "/data/thumbnails/asm_85_hslx.jpg",
-            "original": "/data/thumbnails/asm_85_hslx.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    }
-  }
+  "hierarchy": {}
 }

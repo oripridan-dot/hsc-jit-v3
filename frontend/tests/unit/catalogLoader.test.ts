@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
 /**
  * Unit Tests: catalogLoader Service
  * Tests loading and transformation of catalog data

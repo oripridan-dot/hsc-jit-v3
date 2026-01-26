@@ -2,19 +2,19 @@ name: Quality Gate
 
 on:
   push:
-    branches: ['main', 'v3.7.4-*']
+    branches: ["main", "v3.7.4-*"]
   pull_request:
-    branches: ['main']
+    branches: ["main"]
 
 jobs:
   quality-check:
     name: Quality & Cleanup Verification
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -23,26 +23,26 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'pnpm'
+          node-version: "18"
+          cache: "pnpm"
           cache-dependency-path: frontend/pnpm-lock.yaml
 
       - name: Install dependencies
         working-directory: frontend
         run: pnpm install --frozen-lockfile
-      
+
       - name: TypeScript Compilation
         working-directory: frontend
         run: pnpm exec tsc --noEmit
-      
+
       - name: ESLint
         working-directory: frontend
         run: pnpm exec eslint src --max-warnings 0
-      
+
       - name: Production Build
         working-directory: frontend
         run: pnpm build
-      
+
       - name: Check Bundle Size (JS)
         working-directory: frontend
         run: |
@@ -54,9 +54,8 @@ jobs:
             echo "❌ JS Bundle too large: ${size}KB (max 600KB)"
             exit 1
           fi
-          fi
           echo "✅ Bundle size: ${size}KB"
-      
+
       - name: Check for Unused Dependencies
         working-directory: frontend
         run: |
@@ -66,7 +65,7 @@ jobs:
             cat depcheck.txt
             exit 1
           fi
-      
+
       - name: Check for console.log (except devTools)
         working-directory: frontend
         run: |
@@ -75,7 +74,7 @@ jobs:
             exit 1
           fi
           echo "✅ No unwanted console.log"
-      
+
       - name: Check for TODO/FIXME
         working-directory: frontend
         run: |
@@ -85,7 +84,7 @@ jobs:
             echo "⚠️ Too many TODO/FIXME comments ($count). Please clean up."
             exit 1
           fi
-      
+
       - name: Verify Static-First Architecture
         working-directory: frontend
         run: |
@@ -100,11 +99,11 @@ jobs:
             exit 1
           fi
           echo "✅ Static-first architecture verified"
-      
+
       - name: Run Tests
         working-directory: frontend
         run: pnpm test run
-      
+
       - name: Report
         if: always()
         run: |

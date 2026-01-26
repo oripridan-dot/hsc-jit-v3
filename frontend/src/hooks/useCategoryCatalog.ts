@@ -43,8 +43,8 @@ export const useCategoryCatalog = (
               const indexData = (await indexRes.json()) as CatalogIndex;
               brandsToFetch = indexData.brands.map((b) => b.slug);
             }
-          } catch (_e) {
-            // Ignore error
+          } catch {
+            // ignore
           }
         }
 
@@ -94,7 +94,7 @@ export const useCategoryCatalog = (
         });
 
         setProducts(filtered);
-      } catch (_err) {
+      } catch {
         setProducts([]);
       } finally {
         setLoading(false);

@@ -42,11 +42,14 @@ The backend is strictly for offline data generation. It contains:
 - `backend/services/local_blueprint_loader.py`
 - `backend/services/moog_scraper.py`
 - `backend/services/nord_scraper.py`
+- `backend/services/official_brand_base.py`
 - `backend/services/parsers/__init__.py`
 - `backend/services/parsers/cable_parser.py`
+- `backend/services/relationship_engine.py`
 - `backend/services/roland_scraper.py`
 - `backend/services/scraper_enhancements.py`
 - `backend/services/super_explorer.py`
+- `backend/services/unified_ingestor.py`
 - `backend/services/visual_extractor.py`
 - `backend/services/visual_factory.py`
 
@@ -79,6 +82,7 @@ These files are the ONLY source of truth for the frontend:
 - `drumdots.json`
 - `drums-percussion.json`
 - `dynaudio.json`
+- `eaw-eastern-acoustic-works.json`
 - `eden.json`
 - `encore.json`
 - `esp.json`
@@ -91,6 +95,7 @@ These files are the ONLY source of truth for the frontend:
 - `guild.json`
 - `guitars-bass.json`
 - `headliner-la-equipment-stands-.json`
+- `headliner-la-equipment-stands.json`
 - `headrush-fx.json`
 - `heritage-audio.json`
 - `hiwatt.json`
@@ -117,6 +122,7 @@ These files are the ONLY source of truth for the frontend:
 - `oberheim.json`
 - `on-stage.json`
 - `oscar-schmidt-acoustic-guitars-.json`
+- `oscar-schmidt-acoustic-guitars.json`
 - `paiste-cymbals.json`
 - `pearl.json`
 - `perri-s-leathers.json`
@@ -126,12 +132,14 @@ These files are the ONLY source of truth for the frontend:
 - `remo.json`
 - `rhythm-tech.json`
 - `rogers.json`
+- `roland-commercial.json`
 - `roland.json`
 - `santos-martinez.json`
 - `show.json`
 - `solar-guitars.json`
 - `spector.json`
 - `steinberg-.json`
+- `steinberg.json`
 - `studio-logic.json`
 - `studio-recording.json`
 - `system_manifest.json`

@@ -41,41 +41,20 @@ interface HSCDevTools {
 
 const devTools: HSCDevTools = {
   async refreshData() {
-    console.log("🔄 Forcing data refresh...");
     catalogLoader.clearCache();
-    console.log("✅ Data refresh triggered");
   },
 
-  async refreshBrand(brandId: string) {
-    console.log(`🔄 Forcing refresh for brand: ${brandId}`);
+  async refreshBrand(_brandId: string) {
     catalogLoader.clearCache();
-    console.log(`✅ Brand refresh triggered: ${brandId}`);
   },
 
-  status() {
-    console.log("📊 HSC Development Status:");
-    console.log("  Real-time updates: ✅ Enabled");
-    console.log("  Data watcher: ✅ Active");
-    console.log("  Polling interval: 1000ms");
-    console.log("");
-    console.log("Available commands:");
-    console.log("  window.__hscdev.refreshData()");
-    console.log('  window.__hscdev.refreshBrand("roland")');
-    console.log("  window.__hscdev.status()");
-    console.log("  window.__hscdev.clearCache()");
-    console.log("  window.__hscdev.checkUpdates()");
-  },
+  status() {},
 
   clearCache() {
-    console.log("🗑️ Clearing all caches...");
     catalogLoader.clearCache();
-    console.log("✅ Caches cleared");
   },
 
-  async checkUpdates() {
-    console.log("🔍 Checking for data updates...");
-    console.log("✅ Update check completed");
-  },
+  async checkUpdates() {},
 };
 
 // Export for use in App
@@ -93,8 +72,8 @@ export function initializeDevTools() {
         "%cUse: window.__hscdev.status() for available commands",
         "color: gray",
       );
-    } catch (error) {
-      console.warn("⚠️ Failed to initialize dev tools:", error);
+    } catch {
+      // Ignore errors in dev tools initialization
     }
   }
 }

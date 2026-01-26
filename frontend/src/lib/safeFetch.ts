@@ -26,7 +26,7 @@ export async function safeFetch<T>(
     }
 
     return result.data;
-  } catch (_e) {
+  } catch {
     return null;
   }
 }

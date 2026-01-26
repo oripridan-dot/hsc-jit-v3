@@ -1,556 +1,24 @@
 {
-  "brand_identity": {
-    "id": "maton-guitars",
-    "name": "MATON-GUITARS",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/maton-guitars_logo.png",
-    "taxonomy_stats": {
-      "validated": 28,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Maton Guitars",
   "products": [
-    {
-      "id": "maton_guitars_74_srs60c",
-      "name": "גיטרה אקוסטית מוגברת Maton SRS60C",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_srs60c.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton SRS60C",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_srs60c.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_srs60c.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_srs60c.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_srs60c.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_em100c",
-      "name": "גיטרה אקוסטית מוגברת Maton EM100C Messiah",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_em100c.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EM100C Messiah",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_em100c.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_em100c.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_em100c.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_em100c.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebg808_nashv",
-      "name": "גיטרה אקוסטית מוגברת Maton EBG808 Nashvill",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBG808 Nashvill",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_srs808c",
-      "name": "גיטרה אקוסטית מוגברת Maton SRS808C",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_srs808c.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton SRS808C",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_srs808c.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_srs808c.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_srs808c.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_srs808c.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_em6",
-      "name": "גיטרה אקוסטית מוגברת מיני Maton EM6",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_em6.jpg",
-      "description": "גיטרה אקוסטית מוגברת מיני Maton EM6",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_em6.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_em6.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_em6.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_em6.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_srs70c_12",
-      "name": "גיטרה אקוסטית מוגברת 12 מיתרים Maton SRS70C12",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg",
-      "description": "גיטרה אקוסטית מוגברת 12 מיתרים Maton SRS70C12",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ea808",
-      "name": "גיטרה אקוסטית מוגברת Maton Australian EA808",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ea808.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton Australian EA808",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ea808.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ea808.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ea808.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ea808.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebg808c_nashv",
-      "name": "גיטרה אקוסטית מוגברת Maton EBG808C Nashville",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBG808C Nashville",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebw808_lh",
-      "name": "גיטרה אקוסטית מוגברת שמאלית Maton EBW808 LH",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg",
-      "description": "גיטרה אקוסטית מוגברת שמאלית Maton EBW808 LH",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebg808c_mic_fix",
-      "name": "גיטרה אקוסטית מוגברת Maton EBG808C MicFix",
-      "brand": "maton-guitars",
-      "category": "studio",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBG808C MicFix",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg"
-      },
-      "category_hierarchy": [
-        "studio"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebw70c",
-      "name": "גיטרה אקוסטית מוגברת Maton EBW70C Blackwood",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebw70c.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBW70C Blackwood",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebw70c.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebw70c.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebw70c.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebw70c.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebg808_artist",
-      "name": "גיטרה אקוסטית מוגברת Maton EBG808 Artist",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBG808 Artist",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_em100c_808",
-      "name": "גיטרה אקוסטית מוגברת Maton EM100C 808 Messiah",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_em100c_808.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EM100C 808 Messiah",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_em100c_808.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_em100c_808.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_em100c_808.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_em100c_808.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_em100_808",
-      "name": "גיטרה אקוסטית מוגברת Maton EM100 808 Messiah",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_em100_808.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EM100 808 Messiah",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_em100_808.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_em100_808.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_em100_808.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_em100_808.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_te_personal_cust",
-      "name": "גיטרה אקוסטית מוגברת Maton Custom Shop TE Personal",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton Custom Shop TE Personal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_srs70c_lh",
-      "name": "גיטרה אקוסטית מוגברת שמאלית Maton SRS70C LH",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg",
-      "description": "גיטרה אקוסטית מוגברת שמאלית Maton SRS70C LH",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_srs70c",
-      "name": "גיטרה אקוסטית מוגברת Maton SRS70C",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_srs70c.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton SRS70C",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_srs70c.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_srs70c.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_srs70c.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_srs70c.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebg808te",
-      "name": "גיטרה אקוסטית מוגברת Maton EBG808TE",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebg808te.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBG808TE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebg808te.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808te.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebg808te.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebg808te.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebg808c_te",
-      "name": "גיטרה אקוסטית מוגברת Maton EBG808TEC",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBG808TEC",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebw808",
-      "name": "גיטרה אקוסטית מוגברת Maton EBW808",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebw808.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBW808",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebw808.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebw808.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebw808.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebw808.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_s70",
-      "name": "גיטרה אקוסטית Maton S70",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_s70.jpg",
-      "description": "גיטרה אקוסטית Maton S70",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_s70.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_s70.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_s70.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_s70.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_performer",
-      "name": "גיטרה אקוסטית מוגברת Maton Performer 2018",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_performer.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton Performer 2018",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_performer.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_performer.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_performer.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_performer.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_srs808",
-      "name": "גיטרה אקוסטית מוגברת Maton SRS808",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_srs808.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton SRS808",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_srs808.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_srs808.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_srs808.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_srs808.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "maton_guitars_74_ebw808c",
-      "name": "גיטרה אקוסטית מוגברת Maton EBW808C",
-      "brand": "maton-guitars",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/maton_guitars_74_ebw808c.jpg",
-      "description": "גיטרה אקוסטית מוגברת Maton EBW808C",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/maton_guitars_74_ebw808c.jpg",
-        "thumbnail": "/data/thumbnails/maton_guitars_74_ebw808c.jpg",
-        "high_res": "/data/thumbnails/maton_guitars_74_ebw808c.jpg",
-        "original": "/data/thumbnails/maton_guitars_74_ebw808c.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
     {
       "id": "maton_guitars_74_strap_bl",
       "name": "Maton Standard Guitar Strap",
-      "brand": "maton-guitars",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maton_guitars_74_strap_bl.jpg",
       "description": "Maton Standard Guitar Strap",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maton_guitars_74_strap_bl.jpg",
+      "product_url": "https://www.halilit.com/items/4338001-maton-standard-guitar-strap",
+      "is_sold": true,
+      "price": 294.0,
+      "halilit_url": "https://www.halilit.com/items/4338001-maton-standard-guitar-strap",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 294.0,
+        "original_price": 294.0
+      },
+      "brand": "Maton Guitars",
+      "logo_url": "/assets/logos/maton-guitars_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maton_guitars_74_strap_bl.jpg",
         "thumbnail": "/data/thumbnails/maton_guitars_74_strap_bl.jpg",
@@ -558,21 +26,27 @@
         "original": "/data/thumbnails/maton_guitars_74_strap_bl.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maton_guitars_74_strap_br",
       "name": "Maton Standard Guitar Strap",
-      "brand": "maton-guitars",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maton_guitars_74_strap_br.jpg",
       "description": "Maton Standard Guitar Strap",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maton_guitars_74_strap_br.jpg",
+      "product_url": "https://www.halilit.com/items/4338023-maton-standard-guitar-strap",
+      "is_sold": true,
+      "price": 294.0,
+      "halilit_url": "https://www.halilit.com/items/4338023-maton-standard-guitar-strap",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 294.0,
+        "original_price": 294.0
+      },
+      "brand": "Maton Guitars",
+      "logo_url": "/assets/logos/maton-guitars_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maton_guitars_74_strap_br.jpg",
         "thumbnail": "/data/thumbnails/maton_guitars_74_strap_br.jpg",
@@ -580,21 +54,27 @@
         "original": "/data/thumbnails/maton_guitars_74_strap_br.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maton_guitars_74_strap_dlx_bl",
       "name": "Maton Deluxe Guitar Strap",
-      "brand": "maton-guitars",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maton_guitars_74_strap_dlx_bl.jpg",
       "description": "Maton Deluxe Guitar Strap",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maton_guitars_74_strap_dlx_bl.jpg",
+      "product_url": "https://www.halilit.com/items/4338037-maton-deluxe-guitar-strap",
+      "is_sold": true,
+      "price": 338.0,
+      "halilit_url": "https://www.halilit.com/items/4338037-maton-deluxe-guitar-strap",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 338.0,
+        "original_price": 338.0
+      },
+      "brand": "Maton Guitars",
+      "logo_url": "/assets/logos/maton-guitars_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maton_guitars_74_strap_dlx_bl.jpg",
         "thumbnail": "/data/thumbnails/maton_guitars_74_strap_dlx_bl.jpg",
@@ -602,21 +82,27 @@
         "original": "/data/thumbnails/maton_guitars_74_strap_dlx_bl.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maton_guitars_74_strap_dlx_br",
       "name": "Maton Deluxe Guitar Strap",
-      "brand": "maton-guitars",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maton_guitars_74_strap_dlx_br.jpg",
       "description": "Maton Deluxe Guitar Strap",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maton_guitars_74_strap_dlx_br.jpg",
+      "product_url": "https://www.halilit.com/items/4338046-maton-deluxe-guitar-strap",
+      "is_sold": true,
+      "price": 338.0,
+      "halilit_url": "https://www.halilit.com/items/4338046-maton-deluxe-guitar-strap",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 338.0,
+        "original_price": 338.0
+      },
+      "brand": "Maton Guitars",
+      "logo_url": "/assets/logos/maton-guitars_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maton_guitars_74_strap_dlx_br.jpg",
         "thumbnail": "/data/thumbnails/maton_guitars_74_strap_dlx_br.jpg",
@@ -624,335 +110,26 @@
         "original": "/data/thumbnails/maton_guitars_74_strap_dlx_br.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "Maton-Guitars",
+  "generated_at": "2026-01-25T22:19:24.651553",
   "brand_slug": "maton-guitars",
-  "refined_at": "2026-01-25T02:01:47.849660+00:00",
+  "refined_at": "2026-01-25T22:19:24.682776+00:00",
+  "brand_identity": {
+    "id": "maton-guitars",
+    "name": "Maton Guitars",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/maton-guitars_logo.png",
+    "taxonomy_stats": {
+      "validated": 4,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
-      "General": [
-        {
-          "id": "maton_guitars_74_srs60c",
-          "name": "גיטרה אקוסטית מוגברת Maton SRS60C",
-          "description": "גיטרה אקוסטית מוגברת Maton SRS60C",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_srs60c.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_srs60c.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_srs60c.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_srs60c.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_em100c",
-          "name": "גיטרה אקוסטית מוגברת Maton EM100C Messiah",
-          "description": "גיטרה אקוסטית מוגברת Maton EM100C Messiah",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_em100c.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_em100c.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_em100c.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_em100c.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebg808_nashv",
-          "name": "גיטרה אקוסטית מוגברת Maton EBG808 Nashvill",
-          "description": "גיטרה אקוסטית מוגברת Maton EBG808 Nashvill",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebg808_nashv.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_srs808c",
-          "name": "גיטרה אקוסטית מוגברת Maton SRS808C",
-          "description": "גיטרה אקוסטית מוגברת Maton SRS808C",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_srs808c.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_srs808c.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_srs808c.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_srs808c.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_em6",
-          "name": "גיטרה אקוסטית מוגברת מיני Maton EM6",
-          "description": "גיטרה אקוסטית מוגברת מיני Maton EM6",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_em6.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_em6.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_em6.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_em6.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_srs70c_12",
-          "name": "גיטרה אקוסטית מוגברת 12 מיתרים Maton SRS70C12",
-          "description": "גיטרה אקוסטית מוגברת 12 מיתרים Maton SRS70C12",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_srs70c_12.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ea808",
-          "name": "גיטרה אקוסטית מוגברת Maton Australian EA808",
-          "description": "גיטרה אקוסטית מוגברת Maton Australian EA808",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ea808.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ea808.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ea808.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ea808.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebg808c_nashv",
-          "name": "גיטרה אקוסטית מוגברת Maton EBG808C Nashville",
-          "description": "גיטרה אקוסטית מוגברת Maton EBG808C Nashville",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebg808c_nashv.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebw808_lh",
-          "name": "גיטרה אקוסטית מוגברת שמאלית Maton EBW808 LH",
-          "description": "גיטרה אקוסטית מוגברת שמאלית Maton EBW808 LH",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebw808_lh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebw70c",
-          "name": "גיטרה אקוסטית מוגברת Maton EBW70C Blackwood",
-          "description": "גיטרה אקוסטית מוגברת Maton EBW70C Blackwood",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebw70c.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebw70c.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebw70c.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebw70c.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebg808_artist",
-          "name": "גיטרה אקוסטית מוגברת Maton EBG808 Artist",
-          "description": "גיטרה אקוסטית מוגברת Maton EBG808 Artist",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebg808_artist.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_em100c_808",
-          "name": "גיטרה אקוסטית מוגברת Maton EM100C 808 Messiah",
-          "description": "גיטרה אקוסטית מוגברת Maton EM100C 808 Messiah",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_em100c_808.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_em100c_808.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_em100c_808.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_em100c_808.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_em100_808",
-          "name": "גיטרה אקוסטית מוגברת Maton EM100 808 Messiah",
-          "description": "גיטרה אקוסטית מוגברת Maton EM100 808 Messiah",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_em100_808.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_em100_808.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_em100_808.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_em100_808.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_te_personal_cust",
-          "name": "גיטרה אקוסטית מוגברת Maton Custom Shop TE Personal",
-          "description": "גיטרה אקוסטית מוגברת Maton Custom Shop TE Personal",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_te_personal_cust.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_srs70c_lh",
-          "name": "גיטרה אקוסטית מוגברת שמאלית Maton SRS70C LH",
-          "description": "גיטרה אקוסטית מוגברת שמאלית Maton SRS70C LH",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_srs70c_lh.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_srs70c",
-          "name": "גיטרה אקוסטית מוגברת Maton SRS70C",
-          "description": "גיטרה אקוסטית מוגברת Maton SRS70C",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_srs70c.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_srs70c.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_srs70c.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_srs70c.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebg808te",
-          "name": "גיטרה אקוסטית מוגברת Maton EBG808TE",
-          "description": "גיטרה אקוסטית מוגברת Maton EBG808TE",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebg808te.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808te.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebg808te.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebg808te.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebg808c_te",
-          "name": "גיטרה אקוסטית מוגברת Maton EBG808TEC",
-          "description": "גיטרה אקוסטית מוגברת Maton EBG808TEC",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebg808c_te.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebw808",
-          "name": "גיטרה אקוסטית מוגברת Maton EBW808",
-          "description": "גיטרה אקוסטית מוגברת Maton EBW808",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebw808.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebw808.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebw808.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebw808.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_s70",
-          "name": "גיטרה אקוסטית Maton S70",
-          "description": "גיטרה אקוסטית Maton S70",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_s70.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_s70.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_s70.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_s70.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_performer",
-          "name": "גיטרה אקוסטית מוגברת Maton Performer 2018",
-          "description": "גיטרה אקוסטית מוגברת Maton Performer 2018",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_performer.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_performer.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_performer.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_performer.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_srs808",
-          "name": "גיטרה אקוסטית מוגברת Maton SRS808",
-          "description": "גיטרה אקוסטית מוגברת Maton SRS808",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_srs808.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_srs808.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_srs808.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_srs808.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maton_guitars_74_ebw808c",
-          "name": "גיטרה אקוסטית מוגברת Maton EBW808C",
-          "description": "גיטרה אקוסטית מוגברת Maton EBW808C",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebw808c.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebw808c.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebw808c.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebw808c.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "studio": {
-      "General": [
-        {
-          "id": "maton_guitars_74_ebg808c_mic_fix",
-          "name": "גיטרה אקוסטית מוגברת Maton EBG808C MicFix",
-          "description": "גיטרה אקוסטית מוגברת Maton EBG808C MicFix",
-          "images": {
-            "main": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg",
-            "thumbnail": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg",
-            "high_res": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg",
-            "original": "/data/thumbnails/maton_guitars_74_ebg808c_mic_fix.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "guitars": {
       "General": [
         {
           "id": "maton_guitars_74_strap_bl",

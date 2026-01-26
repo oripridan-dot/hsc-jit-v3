@@ -1,50 +1,24 @@
 {
-  "brand_identity": {
-    "id": "maestro-guitar-pedals-and-effects",
-    "name": "MAESTRO-GUITAR-PEDALS-AND-EFFECTS",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
-    "taxonomy_stats": {
-      "validated": 10,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Maestro Guitar Pedals And Effects",
   "products": [
-    {
-      "id": "maestro_guitar_pedals_and_effects_92_moctbp",
-      "name": "פדל בוסטר Maestro Titan Boost Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg",
-      "description": "פדל בוסטר Maestro Titan Boost Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg",
-        "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg",
-        "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg",
-        "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocopp",
       "name": "Maestro Orbit Phaser Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocopp.jpg",
       "description": "Maestro Orbit Phaser Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocopp.jpg",
+      "product_url": "https://www.halilit.com/items/5758002-maestro-orbit-phaser-pedal",
+      "is_sold": true,
+      "price": 581.0,
+      "halilit_url": "https://www.halilit.com/items/5758002-maestro-orbit-phaser-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 581.0,
+        "original_price": 581.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocopp.jpg",
         "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocopp.jpg",
@@ -52,21 +26,27 @@
         "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocopp.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocmtp",
       "name": "Maestro Mariner Tremolo Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocmtp.jpg",
       "description": "Maestro Mariner Tremolo Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocmtp.jpg",
+      "product_url": "https://www.halilit.com/items/5758029-maestro-mariner-tremolo-pedal-",
+      "is_sold": true,
+      "price": 623.0,
+      "halilit_url": "https://www.halilit.com/items/5758029-maestro-mariner-tremolo-pedal-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 623.0,
+        "original_price": 623.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocmtp.jpg",
         "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocmtp.jpg",
@@ -74,21 +54,27 @@
         "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocmtp.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocidp",
       "name": "Maestro Invader Distortion Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocidp.jpg",
       "description": "Maestro Invader Distortion Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocidp.jpg",
+      "product_url": "https://www.halilit.com/items/4898643-maestro-invader-distortion-pedal",
+      "is_sold": true,
+      "price": 586.0,
+      "halilit_url": "https://www.halilit.com/items/4898643-maestro-invader-distortion-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 586.0,
+        "original_price": 586.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocidp.jpg",
         "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocidp.jpg",
@@ -96,20 +82,26 @@
         "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocidp.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocacsp",
       "name": "Maestro Arcas Compressor Sustainer",
-      "brand": "maestro-guitar-pedals-and-effects",
+      "description": "Maestro Arcas Compressor Sustainer",
       "category": "accessories",
       "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
-      "description": "Maestro Arcas Compressor Sustainer",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5779852-maestro-arcas-compressor-sustainer-pedal-",
+      "is_sold": true,
+      "price": 581.0,
+      "halilit_url": "https://www.halilit.com/items/5779852-maestro-arcas-compressor-sustainer-pedal-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 581.0,
+        "original_price": 581.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
@@ -124,15 +116,21 @@
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocccp",
       "name": "Maestro Comet Chorus Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg",
       "description": "Maestro Comet Chorus Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg",
+      "product_url": "https://www.halilit.com/items/4898451-maestro-comet-chorus-pedal",
+      "is_sold": true,
+      "price": 586.0,
+      "halilit_url": "https://www.halilit.com/items/4898451-maestro-comet-chorus-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 586.0,
+        "original_price": 586.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg",
         "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg",
@@ -140,20 +138,26 @@
         "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocaefp",
       "name": "Maestro Agena Envelope Filter",
-      "brand": "maestro-guitar-pedals-and-effects",
+      "description": "Maestro Agena Envelope Filter",
       "category": "accessories",
       "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
-      "description": "Maestro Agena Envelope Filter",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5779875-maestro-agena-envelope-filter-pedal",
+      "is_sold": true,
+      "price": 623.0,
+      "halilit_url": "https://www.halilit.com/items/5779875-maestro-agena-envelope-filter-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 623.0,
+        "original_price": 623.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
@@ -168,15 +172,21 @@
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocddp",
       "name": "Maestro Discoverer Delay Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocddp.jpg",
       "description": "Maestro Discoverer Delay Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocddp.jpg",
+      "product_url": "https://www.halilit.com/items/4899545-maestro-discoverer-delay-pedal",
+      "is_sold": true,
+      "price": 625.0,
+      "halilit_url": "https://www.halilit.com/items/4899545-maestro-discoverer-delay-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 625.0,
+        "original_price": 625.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocddp.jpg",
         "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocddp.jpg",
@@ -184,21 +194,27 @@
         "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocddp.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocrop",
       "name": "Maestro Ranger Overdrive Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocrop.jpg",
       "description": "Maestro Ranger Overdrive Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocrop.jpg",
+      "product_url": "https://www.halilit.com/items/4898271-maestro-ranger-overdrive-pedal-",
+      "is_sold": true,
+      "price": 586.0,
+      "halilit_url": "https://www.halilit.com/items/4898271-maestro-ranger-overdrive-pedal-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 586.0,
+        "original_price": 586.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocrop.jpg",
         "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocrop.jpg",
@@ -206,21 +222,27 @@
         "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocrop.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "maestro_guitar_pedals_and_effects_92_mocftp",
       "name": "Maestro Fuzz-Tone FZ-M Pedal",
-      "brand": "maestro-guitar-pedals-and-effects",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg",
       "description": "Maestro Fuzz-Tone FZ-M Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg",
+      "product_url": "https://www.halilit.com/items/4899319-maestro-fuzz-tone-fz-m-pedal",
+      "is_sold": true,
+      "price": 586.0,
+      "halilit_url": "https://www.halilit.com/items/4899319-maestro-fuzz-tone-fz-m-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 586.0,
+        "original_price": 586.0
+      },
+      "brand": "Maestro Guitar Pedals And Effects",
+      "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg",
         "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg",
@@ -228,29 +250,27 @@
         "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "Maestro-Guitar-Pedals-And-Effects",
+  "generated_at": "2026-01-25T22:19:25.699395",
   "brand_slug": "maestro-guitar-pedals-and-effects",
-  "refined_at": "2026-01-25T02:01:47.320352+00:00",
+  "refined_at": "2026-01-25T22:19:25.836270+00:00",
+  "brand_identity": {
+    "id": "maestro-guitar-pedals-and-effects",
+    "name": "Maestro Guitar Pedals And Effects",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/maestro-guitar-pedals-and-effects_logo.png",
+    "taxonomy_stats": {
+      "validated": 9,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
-    "guitars": {
+    "accessories": {
       "General": [
-        {
-          "id": "maestro_guitar_pedals_and_effects_92_moctbp",
-          "name": "פדל בוסטר Maestro Titan Boost Pedal",
-          "description": "פדל בוסטר Maestro Titan Boost Pedal",
-          "images": {
-            "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg",
-            "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg",
-            "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg",
-            "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_moctbp.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
         {
           "id": "maestro_guitar_pedals_and_effects_92_mocopp",
           "name": "Maestro Orbit Phaser Pedal",
@@ -291,6 +311,19 @@
           "sku": null
         },
         {
+          "id": "maestro_guitar_pedals_and_effects_92_mocacsp",
+          "name": "Maestro Arcas Compressor Sustainer",
+          "description": "Maestro Arcas Compressor Sustainer",
+          "images": {
+            "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
+            "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
+            "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
+            "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
           "id": "maestro_guitar_pedals_and_effects_92_mocccp",
           "name": "Maestro Comet Chorus Pedal",
           "description": "Maestro Comet Chorus Pedal",
@@ -299,6 +332,19 @@
             "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg",
             "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg",
             "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocccp.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "maestro_guitar_pedals_and_effects_92_mocaefp",
+          "name": "Maestro Agena Envelope Filter",
+          "description": "Maestro Agena Envelope Filter",
+          "images": {
+            "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
+            "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
+            "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
+            "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg"
           },
           "model_number": null,
           "sku": null
@@ -338,36 +384,6 @@
             "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg",
             "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg",
             "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocftp.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "accessories": {
-      "General": [
-        {
-          "id": "maestro_guitar_pedals_and_effects_92_mocacsp",
-          "name": "Maestro Arcas Compressor Sustainer",
-          "description": "Maestro Arcas Compressor Sustainer",
-          "images": {
-            "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
-            "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
-            "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg",
-            "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocacsp.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "maestro_guitar_pedals_and_effects_92_mocaefp",
-          "name": "Maestro Agena Envelope Filter",
-          "description": "Maestro Agena Envelope Filter",
-          "images": {
-            "main": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
-            "thumbnail": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
-            "high_res": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg",
-            "original": "/data/thumbnails/maestro_guitar_pedals_and_effects_92_mocaefp.jpg"
           },
           "model_number": null,
           "sku": null

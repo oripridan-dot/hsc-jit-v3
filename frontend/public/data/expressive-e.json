@@ -1,49 +1,23 @@
 {
-  "brand_identity": {
-    "id": "expressive-e",
-    "name": "EXPRESSIVE-E",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/expressive-e_logo.jpg",
-    "taxonomy_stats": {
-      "validated": 4,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Expressive E",
   "products": [
-    {
-      "id": "expressive_e_22_xpeosm61",
-      "name": "סינתיסייזר פוליפוני Expressive E Osmose 61",
-      "brand": "expressive-e",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
-      "description": "סינתיסייזר פוליפוני Expressive E Osmose 61",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
-        "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
-        "high_res": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
-        "original": "/data/thumbnails/expressive_e_22_xpeosm61.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
     {
       "id": "expressive_e_22_touche",
       "name": "Expressive E Touché",
-      "brand": "expressive-e",
+      "description": "Expressive E Touché",
       "category": "accessories",
       "image_url": "/data/thumbnails/expressive_e_22_touche.jpg",
-      "description": "Expressive E Touché",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/1310046-expressive-e-touch-",
+      "is_sold": true,
+      "price": 1728.0,
+      "halilit_url": "https://www.halilit.com/items/1310046-expressive-e-touch-",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1728.0,
+        "original_price": 1728.0
+      },
+      "brand": "Expressive E",
+      "logo_url": "/assets/logos/expressive-e_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/expressive_e_22_touche.jpg",
@@ -56,38 +30,22 @@
       ]
     },
     {
-      "id": "expressive_e_22_xpeosm49",
-      "name": "סינתיסייזר פוליפוני Expressive E Osmose",
-      "brand": "expressive-e",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
-      "description": "סינתיסייזר פוליפוני Expressive E Osmose",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
-        "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
-        "high_res": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
-        "original": "/data/thumbnails/expressive_e_22_xpeosm49.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "expressive_e_22_touchese",
       "name": "Expressive E Touché SE",
-      "brand": "expressive-e",
+      "description": "Expressive E Touché SE",
       "category": "accessories",
       "image_url": "/data/thumbnails/expressive_e_22_touchese.jpg",
-      "description": "Expressive E Touché SE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3180487-expressive-e-touch-se",
+      "is_sold": true,
+      "price": 1659.0,
+      "halilit_url": "https://www.halilit.com/items/3180487-expressive-e-touch-se",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1659.0,
+        "original_price": 1659.0
+      },
+      "brand": "Expressive E",
+      "logo_url": "/assets/logos/expressive-e_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/expressive_e_22_touchese.jpg",
@@ -100,25 +58,23 @@
       ]
     }
   ],
-  "brand_name": "Expressive-E",
+  "generated_at": "2026-01-25T22:19:24.405807",
   "brand_slug": "expressive-e",
-  "refined_at": "2026-01-25T02:01:47.232287+00:00",
+  "refined_at": "2026-01-25T22:19:24.411267+00:00",
+  "brand_identity": {
+    "id": "expressive-e",
+    "name": "Expressive E",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/expressive-e_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 2,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
-        {
-          "id": "expressive_e_22_xpeosm61",
-          "name": "סינתיסייזר פוליפוני Expressive E Osmose 61",
-          "description": "סינתיסייזר פוליפוני Expressive E Osmose 61",
-          "images": {
-            "main": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
-            "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
-            "high_res": "/data/thumbnails/expressive_e_22_xpeosm61.jpg",
-            "original": "/data/thumbnails/expressive_e_22_xpeosm61.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
         {
           "id": "expressive_e_22_touche",
           "name": "Expressive E Touché",
@@ -128,19 +84,6 @@
             "thumbnail": "/data/thumbnails/expressive_e_22_touche.jpg",
             "high_res": "/data/thumbnails/expressive_e_22_touche.jpg",
             "original": "/data/thumbnails/expressive_e_22_touche.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "expressive_e_22_xpeosm49",
-          "name": "סינתיסייזר פוליפוני Expressive E Osmose",
-          "description": "סינתיסייזר פוליפוני Expressive E Osmose",
-          "images": {
-            "main": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
-            "thumbnail": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
-            "high_res": "/data/thumbnails/expressive_e_22_xpeosm49.jpg",
-            "original": "/data/thumbnails/expressive_e_22_xpeosm49.jpg"
           },
           "model_number": null,
           "sku": null

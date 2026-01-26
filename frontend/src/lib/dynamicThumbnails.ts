@@ -314,8 +314,14 @@ function findPremiumProduct(products: Product[]): CategoryThumbnail | null {
 }
 
 function getPrice(p: Product): number {
+  // Handle pricing as number or object
+  const pricing = typeof p.pricing === "number" ? p.pricing : p.pricing;
   return (
-    p.halilit_price || p.pricing?.regular_price || p.pricing?.sale_price || 0
+    p.halilit_price ||
+    (pricing && typeof pricing === "object"
+      ? pricing.regular_price || pricing.sale_price
+      : pricing) ||
+    0
   );
 }
 

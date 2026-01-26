@@ -29,8 +29,8 @@ export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
       if (isMounted && cached) {
         try {
           setCatalog(JSON.parse(cached));
-        } catch (_e) {
-          // Invalid cache
+        } catch {
+          // ignore
         }
       }
 
@@ -43,11 +43,11 @@ export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
           // Persist fresh data
           try {
             localStorage.setItem(storageKey, JSON.stringify(data));
-          } catch (_e) {
-            // Cache failure ignored
+          } catch {
+            // ignore
           }
         }
-      } catch (_err) {
+      } catch {
         // Only reset if we don't have cached data and error is critical?
         // Actually if fetch fails, we keep cached data usually.
         // But if no cache, ensure null.
@@ -92,8 +92,8 @@ export const useAllBrandCatalogs = () => {
             if (catalog) {
               brandMap.set(brandEntry.id, catalog);
             }
-          } catch (_err) {
-            // Failed to load individual catalog
+          } catch {
+            // ignore
           }
         }
 

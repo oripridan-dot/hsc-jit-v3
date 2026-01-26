@@ -1,6 +1,9 @@
 import { Activity, ArrowLeft, Maximize2, ScanLine, Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { resolveProductImage } from "../../lib/imageResolver";
+import { getPrice, getPriceValue } from "../../lib/priceFormatter";
 import { useNavigationStore } from "../../store/navigationStore";
+import type { Product } from "../../types";
 import { TierBar } from "../smart-views/TierBar";
 import { Control } from "../ui/Control";
 import { Surface } from "../ui/Surface";
@@ -11,19 +14,33 @@ export const SpectrumModule = () => {
   // --------------------------------------------------------------------------
   // 1. DATA INGESTION (The Superfast Category Catalog)
   // --------------------------------------------------------------------------
-  const [rawProducts, setRawProducts] = useState<any[]>([]);
+  const [rawProducts, setRawProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load the specific Tribe Catalog (e.g., "guitars-bass.json")
+    // Load products by category ID
     const loadCatalog = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`/data/${activeTribeId}.json`);
-        const data = await response.json();
-        setRawProducts(data);
-      } catch (_e) {
-        // Fail silently
+        const { catalogLoader } = await import("../../lib/catalogLoader");
+
+        if (!activeTribeId) {
+          setRawProducts([]);
+          setLoading(false);
+          return;
+        }
+
+        // Load all products that match the category
+        const products =
+          await catalogLoader.loadProductsByCategory(activeTribeId);
+
+        if (Array.isArray(products)) {
+          setRawProducts(products);
+        } else {
+          setRawProducts([]);
+        }
+      } catch {
+        setRawProducts([]);
       } finally {
         setLoading(false);
       }
@@ -35,7 +52,8 @@ export const SpectrumModule = () => {
   // 2. THE 1176 ENGINE (Automatic Sub-Division)
   // --------------------------------------------------------------------------
   const [activeFilter, setActiveFilter] = useState("ALL");
-  const [hoveredProduct, setHoveredProduct] = useState<any | null>(null);
+  const [hoveredProduct, setHoveredProduct] = useState<Product | null>(null);
+  const [imageLoadError, setImageLoadError] = useState(false);
 
   // A. Extract Unique Filters dynamically from the data
   //    This ensures buttons only exist if products exist for them.
@@ -47,6 +65,11 @@ export const SpectrumModule = () => {
     return Array.from(filterSet).sort();
   }, [rawProducts]);
 
+  // Reset image error state when product changes
+  useEffect(() => {
+    setImageLoadError(false);
+  }, [hoveredProduct]);
+
   // B. Apply Filter to TierBar
   const filteredProducts = useMemo(() => {
     let base = rawProducts;
@@ -56,7 +79,7 @@ export const SpectrumModule = () => {
     }
 
     // Sort by price for the TierBar logic
-    return base.sort((a, b) => a.price - b.price);
+    return base.sort((a, b) => getPriceValue(a) - getPriceValue(b));
   }, [rawProducts, activeFilter]);
 
   // --------------------------------------------------------------------------
@@ -64,7 +87,7 @@ export const SpectrumModule = () => {
   // --------------------------------------------------------------------------
   return (
     <div className="flex flex-col h-full bg-[#0b0c10] text-white overflow-hidden relative">
-      {/* --- TOP DECK: NAVIGATION & 1176 CONTROLS --- */}
+      {/* --- TOP DECK: SPECTRUM MODULE TITLE --- */}
       <Surface
         variant="panel"
         className="h-16 flex items-center px-4 gap-4 z-30 !bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 shadow-2xl shrink-0"
@@ -78,36 +101,17 @@ export const SpectrumModule = () => {
 
         <div className="h-8 w-px bg-zinc-800 mx-2" />
 
-        <div className="flex items-center gap-1 overflow-x-auto no-scrollbar py-2 mask-linear-fade flex-1">
-          {/* Master Reset Button */}
-          <Control
-            variant="1176"
-            label="ALL"
-            active={activeFilter === "ALL"}
-            onClick={() => setActiveFilter("ALL")}
-          />
-
-          {/* Separator */}
-          <div className="w-px h-4 bg-zinc-800 mx-1" />
-
-          {/* Dynamic Sub-Divisions */}
-          {availableFilters.map((filter) => (
-            <Control
-              key={filter}
-              variant="1176"
-              label={filter}
-              active={activeFilter === filter}
-              onClick={() => setActiveFilter(filter)}
-            />
-          ))}
-        </div>
-
-        {/* Search/Context Indicator */}
-        <div className="hidden md:flex items-center gap-2 text-xs font-mono text-zinc-500 border border-zinc-800 rounded-full px-3 py-1 bg-black/50">
-          <Search className="w-3 h-3" />
-          <span>{activeTribeId?.toUpperCase().replace("-", " ")}</span>
-          <span className="text-zinc-700">|</span>
-          <span className="text-zinc-300">{filteredProducts.length}</span>
+        {/* Active Search Title */}
+        <div className="flex-1 flex items-center gap-3">
+          <h2 className="text-2xl font-black italic tracking-tighter text-white uppercase">
+            {activeTribeId?.toUpperCase().replace("-", " ")}
+          </h2>
+          <div className="hidden md:flex items-center gap-2 text-xs font-mono text-zinc-500 border border-zinc-800 rounded-full px-3 py-1 bg-black/50">
+            <Search className="w-3 h-3" />
+            <span className="text-zinc-300">
+              {filteredProducts.length} results
+            </span>
+          </div>
         </div>
       </Surface>
 
@@ -117,16 +121,33 @@ export const SpectrumModule = () => {
         <Surface
           variant="screen"
           active={!!hoveredProduct}
-          className="col-span-3 bg-zinc-950 flex flex-col justify-center items-center p-4 relative overflow-hidden"
+          className="col-span-3 bg-zinc-950 flex flex-col justify-center items-center p-4 relative !overflow-visible"
         >
           {hoveredProduct ? (
-            <div className="relative w-full h-full flex items-center justify-center animate-fade-in">
-              <img
-                src={hoveredProduct.image_url}
-                className="max-w-full max-h-full object-contain drop-shadow-2xl z-10"
-                alt="Preview"
-              />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_70%)]" />
+            <div className="w-full h-full flex items-center justify-center relative">
+              {!imageLoadError ? (
+                <img
+                  src={resolveProductImage(hoveredProduct)}
+                  className="max-w-[90%] max-h-[90%] object-contain drop-shadow-2xl border-2 border-amber-500"
+                  alt="Preview"
+                  onError={(_e) => {
+                    setImageLoadError(true);
+                  }}
+                  onLoad={() => {
+                    setImageLoadError(false);
+                  }}
+                />
+              ) : (
+                <div className="flex flex-col items-center gap-3 text-zinc-600 text-center p-2">
+                  <div className="text-4xl opacity-20">📸</div>
+                  <div className="text-xs font-mono tracking-widest text-zinc-700">
+                    IMAGE FAILED TO LOAD
+                  </div>
+                  <div className="text-[8px] font-mono text-zinc-600 break-all max-w-full">
+                    {resolveProductImage(hoveredProduct)}
+                  </div>
+                </div>
+              )}
             </div>
           ) : (
             <div className="flex flex-col items-center gap-2 opacity-30">
@@ -164,25 +185,29 @@ export const SpectrumModule = () => {
                     ))}
                   </div>
                 </div>
-                <h1 className="text-3xl md:text-5xl font-black italic tracking-tighter text-white uppercase truncate">
-                  {hoveredProduct.name}
+                <h1 className="text-3xl md:text-5xl font-black italic tracking-tighter text-white uppercase line-clamp-2">
+                  {hoveredProduct.name
+                    .replace(/[\u0590-\u05FF]+\s*/g, "")
+                    .trim()}
                 </h1>
               </div>
 
               <div className="grid grid-cols-2 gap-x-12 gap-y-3 border-t border-zinc-900/80 pt-4">
-                {hoveredProduct.specs_preview?.map((spec: any, idx: number) => (
-                  <div
-                    key={idx}
-                    className="flex justify-between items-baseline group/spec"
-                  >
-                    <span className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider group-hover/spec:text-amber-500 transition-colors">
-                      {spec.key}
-                    </span>
-                    <span className="text-sm text-zinc-300 font-mono truncate text-right">
-                      {spec.val}
-                    </span>
-                  </div>
-                ))}
+                {hoveredProduct.specs_preview?.map(
+                  (spec: { key: string; val: string }, idx: number) => (
+                    <div
+                      key={idx}
+                      className="flex justify-between items-baseline group/spec"
+                    >
+                      <span className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider group-hover/spec:text-amber-500 transition-colors">
+                        {spec.key}
+                      </span>
+                      <span className="text-sm text-zinc-300 font-mono truncate text-right">
+                        {spec.val}
+                      </span>
+                    </div>
+                  ),
+                )}
               </div>
             </div>
           ) : (
@@ -211,7 +236,7 @@ export const SpectrumModule = () => {
             <div className="animate-slide-up text-center w-full space-y-4">
               <div>
                 <div className="text-4xl font-black text-white tracking-tighter">
-                  ₪{(hoveredProduct.price || 0).toLocaleString()}
+                  {getPrice(hoveredProduct)}
                 </div>
                 <div className="text-[9px] text-zinc-500 mt-1">
                   VAT INCLUDED
@@ -238,7 +263,7 @@ export const SpectrumModule = () => {
             INITIALIZING SPECTRUM...
           </div>
         ) : (
-          <div className="w-full max-w-[98%] mx-auto relative z-10 h-full flex items-end pb-8">
+          <div className="w-full max-w-[98%] mx-auto relative z-10 h-full flex items-end pb-20">
             <TierBar
               products={filteredProducts}
               onHoverProduct={setHoveredProduct}
@@ -247,6 +272,36 @@ export const SpectrumModule = () => {
           </div>
         )}
       </div>
+
+      {/* --- BOTTOM DECK: 1176 FILTER CONTROLS --- */}
+      <Surface
+        variant="panel"
+        className="h-16 flex items-center px-4 gap-4 z-30 !bg-zinc-900/90 backdrop-blur-md border-t border-zinc-800 shadow-2xl shrink-0"
+      >
+        <div className="flex items-center gap-1 overflow-x-auto no-scrollbar py-2 mask-linear-fade flex-1">
+          {/* Master Reset Button */}
+          <Control
+            variant="1176"
+            label="ALL"
+            active={activeFilter === "ALL"}
+            onClick={() => setActiveFilter("ALL")}
+          />
+
+          {/* Separator */}
+          <div className="w-px h-4 bg-zinc-800 mx-1" />
+
+          {/* Dynamic Sub-Divisions */}
+          {availableFilters.map((filter) => (
+            <Control
+              key={filter}
+              variant="1176"
+              label={filter}
+              active={activeFilter === filter}
+              onClick={() => setActiveFilter(filter)}
+            />
+          ))}
+        </div>
+      </Surface>
     </div>
   );
 };

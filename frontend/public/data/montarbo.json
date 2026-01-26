@@ -1,27 +1,23 @@
 {
-  "brand_identity": {
-    "id": "montarbo",
-    "name": "MONTARBO",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/montarbo_logo.jpg",
-    "taxonomy_stats": {
-      "validated": 22,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Montarbo",
   "products": [
     {
       "id": "montarbo_33_nettuno20kit",
       "name": "Montarbo Nettuno 20",
-      "brand": "montarbo",
+      "description": "Montarbo Nettuno 20",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
-      "description": "Montarbo Nettuno 20",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7107854-montarbo-nettuno-20",
+      "is_sold": true,
+      "price": 23641.0,
+      "halilit_url": "https://www.halilit.com/items/7107854-montarbo-nettuno-20",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 23641.0,
+        "original_price": 23641.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_nettuno20kit.jpg",
@@ -36,14 +32,20 @@
     {
       "id": "montarbo_33_mdi2p",
       "name": "Montarbo MDI-2P Direct Box",
-      "brand": "montarbo",
+      "description": "Montarbo MDI-2P Direct Box",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_mdi2p.jpg",
-      "description": "Montarbo MDI-2P Direct Box",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5844601-montarbo-mdi-2p-direct-box",
+      "is_sold": true,
+      "price": 726.0,
+      "halilit_url": "https://www.halilit.com/items/5844601-montarbo-mdi-2p-direct-box",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 726.0,
+        "original_price": 726.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_mdi2p.jpg",
@@ -58,15 +60,21 @@
     {
       "id": "montarbo_33_nettuno50_top",
       "name": "Montarbo Nettuno 50 Top Active Loudspeaker",
-      "brand": "montarbo",
-      "category": "studio",
-      "image_url": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
       "description": "Montarbo Nettuno 50 Top Active Loudspeaker",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "studio",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+      "product_url": "https://www.halilit.com/items/7160956-montarbo-nettuno-50-top-active-loudspeaker",
+      "is_sold": true,
+      "price": 16231.0,
+      "halilit_url": "https://www.halilit.com/items/7160956-montarbo-nettuno-50-top-active-loudspeaker",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 16231.0,
+        "original_price": 16231.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
         "thumbnail": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
@@ -74,20 +82,26 @@
         "original": "/data/thumbnails/montarbo_33_nettuno50_top.jpg"
       },
       "category_hierarchy": [
-        "studio"
+        "accessories"
       ]
     },
     {
       "id": "montarbo_33_mdi2u",
       "name": "Montarbo MDI-2U Direct Box",
-      "brand": "montarbo",
+      "description": "Montarbo MDI-2U Direct Box",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_mdi2u.jpg",
-      "description": "Montarbo MDI-2U Direct Box",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5844639-montarbo-mdi-2u-direct-box",
+      "is_sold": true,
+      "price": 775.0,
+      "halilit_url": "https://www.halilit.com/items/5844639-montarbo-mdi-2u-direct-box",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 775.0,
+        "original_price": 775.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_mdi2u.jpg",
@@ -102,14 +116,20 @@
     {
       "id": "montarbo_33_nettuno10",
       "name": "Montarbo Nettuno 10",
-      "brand": "montarbo",
+      "description": "Montarbo Nettuno 10",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_nettuno10.jpg",
-      "description": "Montarbo Nettuno 10",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7107253-montarbo-nettuno-10",
+      "is_sold": true,
+      "price": 14170.0,
+      "halilit_url": "https://www.halilit.com/items/7107253-montarbo-nettuno-10",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 14170.0,
+        "original_price": 14170.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_nettuno10.jpg",
@@ -124,14 +144,20 @@
     {
       "id": "montarbo_33_nettuno50sub",
       "name": "Montarbo Nettuno 50 Sub Active Subwoofer",
-      "brand": "montarbo",
+      "description": "Montarbo Nettuno 50 Sub Active Subwoofer",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
-      "description": "Montarbo Nettuno 50 Sub Active Subwoofer",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7163118-montarbo-nettuno-50-sub-active-subwoofer",
+      "is_sold": true,
+      "price": 16134.0,
+      "halilit_url": "https://www.halilit.com/items/7163118-montarbo-nettuno-50-sub-active-subwoofer",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 16134.0,
+        "original_price": 16134.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_nettuno50sub.jpg",
@@ -146,14 +172,20 @@
     {
       "id": "montarbo_33_b108",
       "name": "Montarbo B108",
-      "brand": "montarbo",
+      "description": "Montarbo B108",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_b108.jpg",
-      "description": "Montarbo B108",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4156997-montarbo-b108",
+      "is_sold": true,
+      "price": 2600.0,
+      "halilit_url": "https://www.halilit.com/items/4156997-montarbo-b108",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2600.0,
+        "original_price": 2600.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_b108.jpg",
@@ -168,14 +200,20 @@
     {
       "id": "montarbo_33_b112",
       "name": "Montarbo B112",
-      "brand": "montarbo",
+      "description": "Montarbo B112",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_b112.jpg",
-      "description": "Montarbo B112",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4157022-montarbo-b112",
+      "is_sold": true,
+      "price": 3307.0,
+      "halilit_url": "https://www.halilit.com/items/4157022-montarbo-b112",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3307.0,
+        "original_price": 3307.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_b112.jpg",
@@ -190,14 +228,20 @@
     {
       "id": "montarbo_33_b115",
       "name": "Montarbo B115",
-      "brand": "montarbo",
+      "description": "Montarbo B115",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_b115.jpg",
-      "description": "Montarbo B115",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4157035-montarbo-b115",
+      "is_sold": true,
+      "price": 3660.0,
+      "halilit_url": "https://www.halilit.com/items/4157035-montarbo-b115",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3660.0,
+        "original_price": 3660.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_b115.jpg",
@@ -212,14 +256,20 @@
     {
       "id": "montarbo_33_r115",
       "name": "Montarbo R115",
-      "brand": "montarbo",
+      "description": "Montarbo R115",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_r115.jpg",
-      "description": "Montarbo R115",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4213934-montarbo-r115",
+      "is_sold": true,
+      "price": 4955.0,
+      "halilit_url": "https://www.halilit.com/items/4213934-montarbo-r115",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4955.0,
+        "original_price": 4955.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_r115.jpg",
@@ -234,14 +284,20 @@
     {
       "id": "montarbo_33_r110",
       "name": "Montarbo R110",
-      "brand": "montarbo",
+      "description": "Montarbo R110",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_r110.jpg",
-      "description": "Montarbo R110",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4181289-montarbo-r110",
+      "is_sold": true,
+      "price": 3542.0,
+      "halilit_url": "https://www.halilit.com/items/4181289-montarbo-r110",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3542.0,
+        "original_price": 3542.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_r110.jpg",
@@ -256,14 +312,20 @@
     {
       "id": "montarbo_33_r112",
       "name": "Montarbo R112",
-      "brand": "montarbo",
+      "description": "Montarbo R112",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_r112.jpg",
-      "description": "Montarbo R112",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5619797-montarbo-r112",
+      "is_sold": true,
+      "price": 4250.0,
+      "halilit_url": "https://www.halilit.com/items/5619797-montarbo-r112",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4250.0,
+        "original_price": 4250.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_r112.jpg",
@@ -278,14 +340,20 @@
     {
       "id": "montarbo_33_b110",
       "name": "Montarbo B110",
-      "brand": "montarbo",
+      "description": "Montarbo B110",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_b110.jpg",
-      "description": "Montarbo B110",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4157017-montarbo-b110",
+      "is_sold": true,
+      "price": 2954.0,
+      "halilit_url": "https://www.halilit.com/items/4157017-montarbo-b110",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2954.0,
+        "original_price": 2954.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_b110.jpg",
@@ -300,14 +368,20 @@
     {
       "id": "montarbo_33_r108",
       "name": "Montarbo R108",
-      "brand": "montarbo",
+      "description": "Montarbo R108",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_r108.jpg",
-      "description": "Montarbo R108",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5619803-montarbo-r108",
+      "is_sold": true,
+      "price": 2954.0,
+      "halilit_url": "https://www.halilit.com/items/5619803-montarbo-r108",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2954.0,
+        "original_price": 2954.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_r108.jpg",
@@ -322,14 +396,20 @@
     {
       "id": "montarbo_33_mdh40",
       "name": "Montarbo MDH-40",
-      "brand": "montarbo",
+      "description": "Montarbo MDH-40",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_mdh40.jpg",
-      "description": "Montarbo MDH-40",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5844692-montarbo-mdh-40-professional-headphones",
+      "is_sold": true,
+      "price": 530.0,
+      "halilit_url": "https://www.halilit.com/items/5844692-montarbo-mdh-40-professional-headphones",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 530.0,
+        "original_price": 530.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_mdh40.jpg",
@@ -344,14 +424,20 @@
     {
       "id": "montarbo_33_r15s",
       "name": "Montarbo R15S",
-      "brand": "montarbo",
+      "description": "Montarbo R15S",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_r15s.jpg",
-      "description": "Montarbo R15S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4214018-montarbo-r15s",
+      "is_sold": true,
+      "price": 5790.0,
+      "halilit_url": "https://www.halilit.com/items/4214018-montarbo-r15s",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 5790.0,
+        "original_price": 5790.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_r15s.jpg",
@@ -366,14 +452,20 @@
     {
       "id": "montarbo_33_r18s",
       "name": "Montarbo R18S",
-      "brand": "montarbo",
+      "description": "Montarbo R18S",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_r18s.jpg",
-      "description": "Montarbo R18S",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4214201-montarbo-r18s",
+      "is_sold": true,
+      "price": 6732.0,
+      "halilit_url": "https://www.halilit.com/items/4214201-montarbo-r18s",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6732.0,
+        "original_price": 6732.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_r18s.jpg",
@@ -388,14 +480,20 @@
     {
       "id": "montarbo_33_l206",
       "name": "Montarbo L206",
-      "brand": "montarbo",
+      "description": "Montarbo L206",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_l206.jpg",
-      "description": "Montarbo L206",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4157118-montarbo-l206",
+      "is_sold": true,
+      "price": 3896.0,
+      "halilit_url": "https://www.halilit.com/items/4157118-montarbo-l206",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 3896.0,
+        "original_price": 3896.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_l206.jpg",
@@ -410,14 +508,20 @@
     {
       "id": "montarbo_33_cover_cvb110",
       "name": "Montarbo Cover for B110",
-      "brand": "montarbo",
+      "description": "Montarbo Cover for B110",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
-      "description": "Montarbo Cover for B110",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5715240-montarbo-cover-for-b110",
+      "is_sold": true,
+      "price": 226.0,
+      "halilit_url": "https://www.halilit.com/items/5715240-montarbo-cover-for-b110",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 226.0,
+        "original_price": 226.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_cover_cvb110.jpg",
@@ -432,14 +536,20 @@
     {
       "id": "montarbo_33_cover_cvb108",
       "name": "Montarbo Cover for B108",
-      "brand": "montarbo",
+      "description": "Montarbo Cover for B108",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
-      "description": "Montarbo Cover for B108",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5715268-montarbo-cover-for-b108",
+      "is_sold": true,
+      "price": 186.0,
+      "halilit_url": "https://www.halilit.com/items/5715268-montarbo-cover-for-b108",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 186.0,
+        "original_price": 186.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_cover_cvb108.jpg",
@@ -454,14 +564,20 @@
     {
       "id": "montarbo_33_cover_cvb112",
       "name": "Montarbo Cover for B112",
-      "brand": "montarbo",
+      "description": "Montarbo Cover for B112",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
-      "description": "Montarbo Cover for B112",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5715280-montarbo-cover-for-b112",
+      "is_sold": true,
+      "price": 226.0,
+      "halilit_url": "https://www.halilit.com/items/5715280-montarbo-cover-for-b112",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 226.0,
+        "original_price": 226.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_cover_cvb112.jpg",
@@ -476,14 +592,20 @@
     {
       "id": "montarbo_33_cover_cvb115",
       "name": "Montarbo Cover for B115",
-      "brand": "montarbo",
+      "description": "Montarbo Cover for B115",
       "category": "accessories",
       "image_url": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
-      "description": "Montarbo Cover for B115",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/5715288-montarbo-cover-for-b115",
+      "is_sold": true,
+      "price": 255.0,
+      "halilit_url": "https://www.halilit.com/items/5715288-montarbo-cover-for-b115",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 255.0,
+        "original_price": 255.0
+      },
+      "brand": "Montarbo",
+      "logo_url": "/assets/logos/montarbo_logo.jpg",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
@@ -496,9 +618,20 @@
       ]
     }
   ],
-  "brand_name": "Montarbo",
+  "generated_at": "2026-01-25T22:19:24.656890",
   "brand_slug": "montarbo",
-  "refined_at": "2026-01-25T02:01:47.322876+00:00",
+  "refined_at": "2026-01-25T22:19:24.675287+00:00",
+  "brand_identity": {
+    "id": "montarbo",
+    "name": "Montarbo",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/montarbo_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 22,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
@@ -524,6 +657,19 @@
             "thumbnail": "/data/thumbnails/montarbo_33_mdi2p.jpg",
             "high_res": "/data/thumbnails/montarbo_33_mdi2p.jpg",
             "original": "/data/thumbnails/montarbo_33_mdi2p.jpg"
+          },
+          "model_number": null,
+          "sku": null
+        },
+        {
+          "id": "montarbo_33_nettuno50_top",
+          "name": "Montarbo Nettuno 50 Top Active Loudspeaker",
+          "description": "Montarbo Nettuno 50 Top Active Loudspeaker",
+          "images": {
+            "main": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+            "thumbnail": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+            "high_res": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
+            "original": "/data/thumbnails/montarbo_33_nettuno50_top.jpg"
           },
           "model_number": null,
           "sku": null
@@ -771,23 +917,6 @@
             "thumbnail": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
             "high_res": "/data/thumbnails/montarbo_33_cover_cvb115.jpg",
             "original": "/data/thumbnails/montarbo_33_cover_cvb115.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        }
-      ]
-    },
-    "studio": {
-      "General": [
-        {
-          "id": "montarbo_33_nettuno50_top",
-          "name": "Montarbo Nettuno 50 Top Active Loudspeaker",
-          "description": "Montarbo Nettuno 50 Top Active Loudspeaker",
-          "images": {
-            "main": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
-            "thumbnail": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
-            "high_res": "/data/thumbnails/montarbo_33_nettuno50_top.jpg",
-            "original": "/data/thumbnails/montarbo_33_nettuno50_top.jpg"
           },
           "model_number": null,
           "sku": null

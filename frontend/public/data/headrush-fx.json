@@ -1,28 +1,24 @@
 {
-  "brand_identity": {
-    "id": "headrush-fx",
-    "name": "HEADRUSH-FX",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/headrush-fx_logo.png",
-    "taxonomy_stats": {
-      "validated": 13,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Headrush Fx",
   "products": [
     {
       "id": "headrush_fx_52_sheeranlooperx",
       "name": "HeadRush Sheeran Looper X",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg",
       "description": "HeadRush Sheeran Looper X",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg",
+      "product_url": "https://www.halilit.com/items/7456924-headrush-sheeran-looper-x",
+      "is_sold": true,
+      "price": 6096.0,
+      "halilit_url": "https://www.halilit.com/items/7456924-headrush-sheeran-looper-x",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 6096.0,
+        "original_price": 6096.0
+      },
+      "brand": "Headrush Fx",
+      "logo_url": "/assets/logos/headrush-fx_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg",
         "thumbnail": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg",
@@ -30,43 +26,27 @@
         "original": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg"
       },
       "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_frfr112mk2",
-      "name": "מוניטור מוגבר לגיטרה/בס Headrush FRFR-112 MK2",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg",
-      "description": "מוניטור מוגבר לגיטרה/בס Headrush FRFR-112 MK2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "headrush_fx_52_sheeranlooper_",
       "name": "+ HeadRush Sheeran Looper",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_sheeranlooper_.jpg",
       "description": "+ HeadRush Sheeran Looper",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/headrush_fx_52_sheeranlooper_.jpg",
+      "product_url": "https://www.halilit.com/items/6644810--headrush-sheeran-looper",
+      "is_sold": true,
+      "price": 1416.0,
+      "halilit_url": "https://www.halilit.com/items/6644810--headrush-sheeran-looper",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 1416.0,
+        "original_price": 1416.0
+      },
+      "brand": "Headrush Fx",
+      "logo_url": "/assets/logos/headrush-fx_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/headrush_fx_52_sheeranlooper_.jpg",
         "thumbnail": "/data/thumbnails/headrush_fx_52_sheeranlooper_.jpg",
@@ -74,131 +54,27 @@
         "original": "/data/thumbnails/headrush_fx_52_sheeranlooper_.jpg"
       },
       "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_hrcorexeuk",
-      "name": "מולטי אפקט HeadRush Core",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg",
-      "description": "מולטי אפקט HeadRush Core",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_autotune",
-      "name": "פדל HeadRush VX5 Vocal Effects",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_autotune.jpg",
-      "description": "פדל HeadRush VX5 Vocal Effects",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_autotune.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_autotune.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_autotune.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_autotune.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_mx5",
-      "name": "מולטי אפקט HeadRush MX5",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_mx5.jpg",
-      "description": "מולטי אפקט HeadRush MX5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_mx5.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_mx5.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_mx5.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_mx5.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_flex",
-      "name": "מולטי אפקט HeadRush Flex Prime",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_flex.jpg",
-      "description": "מולטי אפקט HeadRush Flex Prime",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_flex.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_flex.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_flex.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_flex.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_frfr108",
-      "name": "מוניטור מוגבר לגיטרה ובס Headrush FRFR-108",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_frfr108.jpg",
-      "description": "מוניטור מוגבר לגיטרה ובס Headrush FRFR-108",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_frfr108.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_frfr108.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_frfr108.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_frfr108.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "headrush_fx_52_looperboard",
       "name": "HeadRush Looperboard",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_looperboard.jpg",
       "description": "HeadRush Looperboard",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/headrush_fx_52_looperboard.jpg",
+      "product_url": "https://www.halilit.com/items/2495029-headrush-looperboard",
+      "is_sold": true,
+      "price": 4390.0,
+      "halilit_url": "https://www.halilit.com/items/2495029-headrush-looperboard",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 4390.0,
+        "original_price": 4390.0
+      },
+      "brand": "Headrush Fx",
+      "logo_url": "/assets/logos/headrush-fx_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/headrush_fx_52_looperboard.jpg",
         "thumbnail": "/data/thumbnails/headrush_fx_52_looperboard.jpg",
@@ -206,87 +82,27 @@
         "original": "/data/thumbnails/headrush_fx_52_looperboard.jpg"
       },
       "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_hrprime",
-      "name": "מולטי אפקט HeadRush Prime",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_hrprime.jpg",
-      "description": "מולטי אפקט HeadRush Prime",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_hrprime.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_hrprime.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_hrprime.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_hrprime.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_frfr108mk2",
-      "name": "קבינה לגיטרה ובס Headrush FRFR-108 MKII",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg",
-      "description": "קבינה לגיטרה ובס Headrush FRFR-108 MKII",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
-      ]
-    },
-    {
-      "id": "headrush_fx_52_hdrsh_pdb",
-      "name": "מולטי אפקט HeadRush Pedalboard",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg",
-      "description": "מולטי אפקט HeadRush Pedalboard",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
-      "images": {
-        "main": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg",
-        "thumbnail": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg",
-        "high_res": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg",
-        "original": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg"
-      },
-      "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     },
     {
       "id": "headrush_fx_52_hrexpression",
       "name": "HeadRush Expression Pedal",
-      "brand": "headrush-fx",
-      "category": "drums",
-      "image_url": "/data/thumbnails/headrush_fx_52_hrexpression.jpg",
       "description": "HeadRush Expression Pedal",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "drums",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/headrush_fx_52_hrexpression.jpg",
+      "product_url": "https://www.halilit.com/items/3180636-headrush-expression-pedal",
+      "is_sold": true,
+      "price": 684.0,
+      "halilit_url": "https://www.halilit.com/items/3180636-headrush-expression-pedal",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 684.0,
+        "original_price": 684.0
+      },
+      "brand": "Headrush Fx",
+      "logo_url": "/assets/logos/headrush-fx_logo.png",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/headrush_fx_52_hrexpression.jpg",
         "thumbnail": "/data/thumbnails/headrush_fx_52_hrexpression.jpg",
@@ -294,15 +110,26 @@
         "original": "/data/thumbnails/headrush_fx_52_hrexpression.jpg"
       },
       "category_hierarchy": [
-        "drums"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "Headrush-Fx",
+  "generated_at": "2026-01-25T22:19:25.016118",
   "brand_slug": "headrush-fx",
-  "refined_at": "2026-01-25T02:01:47.648151+00:00",
+  "refined_at": "2026-01-25T22:19:25.035451+00:00",
+  "brand_identity": {
+    "id": "headrush-fx",
+    "name": "Headrush Fx",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/headrush-fx_logo.png",
+    "taxonomy_stats": {
+      "validated": 4,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
-    "drums": {
+    "accessories": {
       "General": [
         {
           "id": "headrush_fx_52_sheeranlooperx",
@@ -313,19 +140,6 @@
             "thumbnail": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg",
             "high_res": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg",
             "original": "/data/thumbnails/headrush_fx_52_sheeranlooperx.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_frfr112mk2",
-          "name": "מוניטור מוגבר לגיטרה/בס Headrush FRFR-112 MK2",
-          "description": "מוניטור מוגבר לגיטרה/בס Headrush FRFR-112 MK2",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_frfr112mk2.jpg"
           },
           "model_number": null,
           "sku": null
@@ -344,71 +158,6 @@
           "sku": null
         },
         {
-          "id": "headrush_fx_52_hrcorexeuk",
-          "name": "מולטי אפקט HeadRush Core",
-          "description": "מולטי אפקט HeadRush Core",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_hrcorexeuk.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_autotune",
-          "name": "פדל HeadRush VX5 Vocal Effects",
-          "description": "פדל HeadRush VX5 Vocal Effects",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_autotune.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_autotune.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_autotune.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_autotune.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_mx5",
-          "name": "מולטי אפקט HeadRush MX5",
-          "description": "מולטי אפקט HeadRush MX5",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_mx5.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_mx5.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_mx5.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_mx5.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_flex",
-          "name": "מולטי אפקט HeadRush Flex Prime",
-          "description": "מולטי אפקט HeadRush Flex Prime",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_flex.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_flex.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_flex.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_flex.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_frfr108",
-          "name": "מוניטור מוגבר לגיטרה ובס Headrush FRFR-108",
-          "description": "מוניטור מוגבר לגיטרה ובס Headrush FRFR-108",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_frfr108.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_frfr108.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_frfr108.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_frfr108.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "headrush_fx_52_looperboard",
           "name": "HeadRush Looperboard",
           "description": "HeadRush Looperboard",
@@ -417,45 +166,6 @@
             "thumbnail": "/data/thumbnails/headrush_fx_52_looperboard.jpg",
             "high_res": "/data/thumbnails/headrush_fx_52_looperboard.jpg",
             "original": "/data/thumbnails/headrush_fx_52_looperboard.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_hrprime",
-          "name": "מולטי אפקט HeadRush Prime",
-          "description": "מולטי אפקט HeadRush Prime",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_hrprime.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_hrprime.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_hrprime.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_hrprime.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_frfr108mk2",
-          "name": "קבינה לגיטרה ובס Headrush FRFR-108 MKII",
-          "description": "קבינה לגיטרה ובס Headrush FRFR-108 MKII",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_frfr108mk2.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "headrush_fx_52_hdrsh_pdb",
-          "name": "מולטי אפקט HeadRush Pedalboard",
-          "description": "מולטי אפקט HeadRush Pedalboard",
-          "images": {
-            "main": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg",
-            "thumbnail": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg",
-            "high_res": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg",
-            "original": "/data/thumbnails/headrush_fx_52_hdrsh_pdb.jpg"
           },
           "model_number": null,
           "sku": null

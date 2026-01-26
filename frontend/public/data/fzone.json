@@ -1,357 +1,23 @@
 {
-  "brand_identity": {
-    "id": "fzone",
-    "name": "FZONE",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/fzone_logo.png",
-    "taxonomy_stats": {
-      "validated": 35,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Fzone",
   "products": [
-    {
-      "id": "fzone_35_fgb12141",
-      "name": "תיק לגיטרה אקוסטית Fzone FGB-121",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_fgb12141.jpg",
-      "description": "תיק לגיטרה אקוסטית Fzone FGB-121",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_fgb12141.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_fgb12141.jpg",
-        "high_res": "/data/thumbnails/fzone_35_fgb12141.jpg",
-        "original": "/data/thumbnails/fzone_35_fgb12141.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std6i8n_purple",
-      "name": "פאנטם Fzone STD6I8N Purple",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std6i8n_purple.jpg",
-      "description": "פאנטם Fzone STD6I8N Purple",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std6i8n_purple.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std6i8n_purple.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std6i8n_purple.jpg",
-        "original": "/data/thumbnails/fzone_35_std6i8n_purple.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std6i8n_red",
-      "name": "פאנטם Fzone STD6I8N Red",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std6i8n_red.jpg",
-      "description": "פאנטם Fzone STD6I8N Red",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std6i8n_red.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std6i8n_red.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std6i8n_red.jpg",
-        "original": "/data/thumbnails/fzone_35_std6i8n_red.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std8i11n_blue",
-      "name": "פאנטם Fzone STD8I11N Blue",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std8i11n_blue.jpg",
-      "description": "פאנטם Fzone STD8I11N Blue",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std8i11n_blue.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std8i11n_blue.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std8i11n_blue.jpg",
-        "original": "/data/thumbnails/fzone_35_std8i11n_blue.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std8i11n_gold",
-      "name": "פאנטם Fzone STD8I11N Gold",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std8i11n_gold.jpg",
-      "description": "פאנטם Fzone STD8I11N Gold",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std8i11n_gold.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std8i11n_gold.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std8i11n_gold.jpg",
-        "original": "/data/thumbnails/fzone_35_std8i11n_gold.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std8i11n_green",
-      "name": "פאנטם Fzone STD8I11N Green",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std8i11n_green.jpg",
-      "description": "פאנטם Fzone STD8I11N Green",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std8i11n_green.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std8i11n_green.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std8i11n_green.jpg",
-        "original": "/data/thumbnails/fzone_35_std8i11n_green.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std8i11n_purple",
-      "name": "פאנטם Fzone STD8I11N Purple",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std8i11n_purple.jpg",
-      "description": "פאנטם Fzone STD8I11N Purple",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std8i11n_purple.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std8i11n_purple.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std8i11n_purple.jpg",
-        "original": "/data/thumbnails/fzone_35_std8i11n_purple.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std8i11n_red",
-      "name": "פאנטם Fzone STD8I11N Red",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std8i11n_red.jpg",
-      "description": "פאנטם Fzone STD8I11N Red",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std8i11n_red.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std8i11n_red.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std8i11n_red.jpg",
-        "original": "/data/thumbnails/fzone_35_std8i11n_red.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std8i11n_rgrey",
-      "name": "פאנטם Fzone STD8I11N Gray",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg",
-      "description": "פאנטם Fzone STD8I11N Gray",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg",
-        "original": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std6i8n_blue",
-      "name": "פאנטם Fzone STD6I8N Blue",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std6i8n_blue.jpg",
-      "description": "פאנטם Fzone STD6I8N Blue",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std6i8n_blue.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std6i8n_blue.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std6i8n_blue.jpg",
-        "original": "/data/thumbnails/fzone_35_std6i8n_blue.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std6i8n_gold",
-      "name": "פאנטם Fzone STD6I8N Gold",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std6i8n_gold.jpg",
-      "description": "פאנטם Fzone STD6I8N Gold",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std6i8n_gold.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std6i8n_gold.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std6i8n_gold.jpg",
-        "original": "/data/thumbnails/fzone_35_std6i8n_gold.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_std6i8n_green",
-      "name": "פאנטם Fzone STD6I8N Green",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_std6i8n_green.jpg",
-      "description": "פאנטם Fzone STD6I8N Green",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_std6i8n_green.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_std6i8n_green.jpg",
-        "high_res": "/data/thumbnails/fzone_35_std6i8n_green.jpg",
-        "original": "/data/thumbnails/fzone_35_std6i8n_green.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_fgb12541",
-      "name": "תיק לגיטרה חשמלית Fzone FGB-125",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_fgb12541.jpg",
-      "description": "תיק לגיטרה חשמלית Fzone FGB-125",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_fgb12541.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_fgb12541.jpg",
-        "high_res": "/data/thumbnails/fzone_35_fgb12541.jpg",
-        "original": "/data/thumbnails/fzone_35_fgb12541.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_cub326",
-      "name": "תיק ליוקללה Fzone CUB-3",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_cub326.jpg",
-      "description": "תיק ליוקללה Fzone CUB-3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_cub326.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_cub326.jpg",
-        "high_res": "/data/thumbnails/fzone_35_cub326.jpg",
-        "original": "/data/thumbnails/fzone_35_cub326.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_fzu14rs",
-      "name": "יוקללה FZONE FZU-14RS",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_fzu14rs.jpg",
-      "description": "יוקללה FZONE FZU-14RS",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_fzu14rs.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_fzu14rs.jpg",
-        "high_res": "/data/thumbnails/fzone_35_fzu14rs.jpg",
-        "original": "/data/thumbnails/fzone_35_fzu14rs.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
     {
       "id": "fzone_35_fm310",
       "name": "FZONE FM-310",
-      "brand": "fzone",
+      "description": "FZONE FM-310",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_fm310.jpg",
-      "description": "FZONE FM-310",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4202993-fzone-fm-310",
+      "is_sold": true,
+      "price": 122.0,
+      "halilit_url": "https://www.halilit.com/items/4202993-fzone-fm-310",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 122.0,
+        "original_price": 122.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_fm310.jpg",
@@ -366,14 +32,20 @@
     {
       "id": "fzone_35_s2",
       "name": "FZONE S2",
-      "brand": "fzone",
+      "description": "FZONE S2",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_s2.jpg",
-      "description": "FZONE S2",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4202828-fzone-s-2",
+      "is_sold": true,
+      "price": 57.0,
+      "halilit_url": "https://www.halilit.com/items/4202828-fzone-s-2",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 57.0,
+        "original_price": 57.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_s2.jpg",
@@ -388,14 +60,20 @@
     {
       "id": "fzone_35_fzpc351",
       "name": "FZone FZP-C351 Pick",
-      "brand": "fzone",
+      "description": "FZone FZP-C351 Pick",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_fzpc351.jpg",
-      "description": "FZone FZP-C351 Pick",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7811671-fzone-fzp-c351-pick",
+      "is_sold": true,
+      "price": 2.0,
+      "halilit_url": "https://www.halilit.com/items/7811671-fzone-fzp-c351-pick",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2.0,
+        "original_price": 2.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_fzpc351.jpg",
@@ -408,38 +86,22 @@
       ]
     },
     {
-      "id": "fzone_35_fzu30eq",
-      "name": "יוקללה קונצרט מוגברת FZONE FZU-30EQ",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_fzu30eq.jpg",
-      "description": "יוקללה קונצרט מוגברת FZONE FZU-30EQ",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_fzu30eq.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_fzu30eq.jpg",
-        "high_res": "/data/thumbnails/fzone_35_fzu30eq.jpg",
-        "original": "/data/thumbnails/fzone_35_fzu30eq.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "fzone_35_fzpn351",
       "name": "FZone FZP-N351 Pick",
-      "brand": "fzone",
+      "description": "FZone FZP-N351 Pick",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_fzpn351.jpg",
-      "description": "FZone FZP-N351 Pick",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7922800-fzone-fzp-n351-pick",
+      "is_sold": true,
+      "price": 2.0,
+      "halilit_url": "https://www.halilit.com/items/7922800-fzone-fzp-n351-pick",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 2.0,
+        "original_price": 2.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_fzpn351.jpg",
@@ -452,60 +114,22 @@
       ]
     },
     {
-      "id": "fzone_35_mn5",
-      "name": "טיונר לגיטרה Fzone MN-5",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_mn5.jpg",
-      "description": "טיונר לגיטרה Fzone MN-5",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_mn5.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_mn5.jpg",
-        "high_res": "/data/thumbnails/fzone_35_mn5.jpg",
-        "original": "/data/thumbnails/fzone_35_mn5.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_mn6",
-      "name": "טיונר לגיטרה Fzone MN-6",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_mn6.jpg",
-      "description": "טיונר לגיטרה Fzone MN-6",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_mn6.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_mn6.jpg",
-        "high_res": "/data/thumbnails/fzone_35_mn6.jpg",
-        "original": "/data/thumbnails/fzone_35_mn6.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "fzone_35_s3",
       "name": "FZONE S3",
-      "brand": "fzone",
+      "description": "FZONE S3",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_s3.jpg",
-      "description": "FZONE S3",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/3233932-fzone-s-3",
+      "is_sold": true,
+      "price": 41.0,
+      "halilit_url": "https://www.halilit.com/items/3233932-fzone-s-3",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 41.0,
+        "original_price": 41.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_s3.jpg",
@@ -518,126 +142,22 @@
       ]
     },
     {
-      "id": "fzone_35_sc100",
-      "name": "כיסוי גומי לפתח התהודה Fzone SC-100",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_sc100.jpg",
-      "description": "כיסוי גומי לפתח התהודה Fzone SC-100",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_sc100.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_sc100.jpg",
-        "high_res": "/data/thumbnails/fzone_35_sc100.jpg",
-        "original": "/data/thumbnails/fzone_35_sc100.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_fzu110m",
-      "name": "יוקללה קונצרט FZONE FZU-110",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_fzu110m.jpg",
-      "description": "יוקללה קונצרט FZONE FZU-110",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_fzu110m.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_fzu110m.jpg",
-        "high_res": "/data/thumbnails/fzone_35_fzu110m.jpg",
-        "original": "/data/thumbnails/fzone_35_fzu110m.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_k9",
-      "name": "טיונר לגיטרה Fzone K9",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_k9.jpg",
-      "description": "טיונר לגיטרה Fzone K9",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_k9.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_k9.jpg",
-        "high_res": "/data/thumbnails/fzone_35_k9.jpg",
-        "original": "/data/thumbnails/fzone_35_k9.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_sc86",
-      "name": "כיסוי גומי לפתח התהודה Fzone SC-86",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_sc86.jpg",
-      "description": "כיסוי גומי לפתח התהודה Fzone SC-86",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_sc86.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_sc86.jpg",
-        "high_res": "/data/thumbnails/fzone_35_sc86.jpg",
-        "original": "/data/thumbnails/fzone_35_sc86.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_gst254",
-      "name": "סליידר זכוכית Fzone",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_gst254.jpg",
-      "description": "סליידר זכוכית Fzone",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_gst254.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_gst254.jpg",
-        "high_res": "/data/thumbnails/fzone_35_gst254.jpg",
-        "original": "/data/thumbnails/fzone_35_gst254.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "fzone_35_sw1",
       "name": "FZONE SW-1",
-      "brand": "fzone",
+      "description": "FZONE SW-1",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_sw1.jpg",
-      "description": "FZONE SW-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4204747-fzone-sw-1",
+      "is_sold": true,
+      "price": 8.0,
+      "halilit_url": "https://www.halilit.com/items/4204747-fzone-sw-1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 8.0,
+        "original_price": 8.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_sw1.jpg",
@@ -650,60 +170,22 @@
       ]
     },
     {
-      "id": "fzone_35_fzu31eq",
-      "name": "יוקללה קונצרט מוגברת FZONE FZU-31EQ",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_fzu31eq.jpg",
-      "description": "יוקללה קונצרט מוגברת FZONE FZU-31EQ",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_fzu31eq.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_fzu31eq.jpg",
-        "high_res": "/data/thumbnails/fzone_35_fzu31eq.jpg",
-        "original": "/data/thumbnails/fzone_35_fzu31eq.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
-      "id": "fzone_35_d100m",
-      "name": "יוקללה קונצרט FZONE FZU-D100",
-      "brand": "fzone",
-      "category": "accessories",
-      "image_url": "/data/thumbnails/fzone_35_d100m.jpg",
-      "description": "יוקללה קונצרט FZONE FZU-D100",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "accessories",
-      "images": {
-        "main": "/data/thumbnails/fzone_35_d100m.jpg",
-        "thumbnail": "/data/thumbnails/fzone_35_d100m.jpg",
-        "high_res": "/data/thumbnails/fzone_35_d100m.jpg",
-        "original": "/data/thumbnails/fzone_35_d100m.jpg"
-      },
-      "category_hierarchy": [
-        "accessories"
-      ]
-    },
-    {
       "id": "fzone_35_fc71_gold",
       "name": "FC-71 capo FZONE",
-      "brand": "fzone",
+      "description": "FC-71 capo FZONE",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_fc71_gold.jpg",
-      "description": "FC-71 capo FZONE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7811610-fc-71-capo",
+      "is_sold": true,
+      "price": 38.0,
+      "halilit_url": "https://www.halilit.com/items/7811610-fc-71-capo",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 38.0,
+        "original_price": 38.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_fc71_gold.jpg",
@@ -718,14 +200,20 @@
     {
       "id": "fzone_35_fc71_blue",
       "name": "FC-71 capo FZONE",
-      "brand": "fzone",
+      "description": "FC-71 capo FZONE",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_fc71_blue.jpg",
-      "description": "FC-71 capo FZONE",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/7922739-fc-71-capo",
+      "is_sold": true,
+      "price": 38.0,
+      "halilit_url": "https://www.halilit.com/items/7922739-fc-71-capo",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 38.0,
+        "original_price": 38.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_fc71_blue.jpg",
@@ -740,14 +228,20 @@
     {
       "id": "fzone_35_fc82",
       "name": "FZONE FC-82 Ukulele Capo",
-      "brand": "fzone",
+      "description": "FZONE FC-82 Ukulele Capo",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_fc82.jpg",
-      "description": "FZONE FC-82 Ukulele Capo",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4241577-fzone-fc-82-ukulele-capo",
+      "is_sold": true,
+      "price": 41.0,
+      "halilit_url": "https://www.halilit.com/items/4241577-fzone-fc-82-ukulele-capo",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 41.0,
+        "original_price": 41.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_fc82.jpg",
@@ -762,14 +256,20 @@
     {
       "id": "fzone_35_lk1",
       "name": "FZONE LK-1",
-      "brand": "fzone",
+      "description": "FZONE LK-1",
       "category": "accessories",
       "image_url": "/data/thumbnails/fzone_35_lk1.jpg",
-      "description": "FZONE LK-1",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
+      "product_url": "https://www.halilit.com/items/4204739-fzone-lk-1",
+      "is_sold": true,
+      "price": 24.0,
+      "halilit_url": "https://www.halilit.com/items/4204739-fzone-lk-1",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 24.0,
+        "original_price": 24.0
+      },
+      "brand": "Fzone",
+      "logo_url": "/assets/logos/fzone_logo.png",
       "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/fzone_35_lk1.jpg",
@@ -782,207 +282,23 @@
       ]
     }
   ],
-  "brand_name": "Fzone",
+  "generated_at": "2026-01-25T22:19:24.437077",
   "brand_slug": "fzone",
-  "refined_at": "2026-01-25T02:01:47.888914+00:00",
+  "refined_at": "2026-01-25T22:19:24.641098+00:00",
+  "brand_identity": {
+    "id": "fzone",
+    "name": "Fzone",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/fzone_logo.png",
+    "taxonomy_stats": {
+      "validated": 10,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
     "accessories": {
       "General": [
-        {
-          "id": "fzone_35_fgb12141",
-          "name": "תיק לגיטרה אקוסטית Fzone FGB-121",
-          "description": "תיק לגיטרה אקוסטית Fzone FGB-121",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_fgb12141.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_fgb12141.jpg",
-            "high_res": "/data/thumbnails/fzone_35_fgb12141.jpg",
-            "original": "/data/thumbnails/fzone_35_fgb12141.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std6i8n_purple",
-          "name": "פאנטם Fzone STD6I8N Purple",
-          "description": "פאנטם Fzone STD6I8N Purple",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std6i8n_purple.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std6i8n_purple.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std6i8n_purple.jpg",
-            "original": "/data/thumbnails/fzone_35_std6i8n_purple.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std6i8n_red",
-          "name": "פאנטם Fzone STD6I8N Red",
-          "description": "פאנטם Fzone STD6I8N Red",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std6i8n_red.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std6i8n_red.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std6i8n_red.jpg",
-            "original": "/data/thumbnails/fzone_35_std6i8n_red.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std8i11n_blue",
-          "name": "פאנטם Fzone STD8I11N Blue",
-          "description": "פאנטם Fzone STD8I11N Blue",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std8i11n_blue.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std8i11n_blue.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std8i11n_blue.jpg",
-            "original": "/data/thumbnails/fzone_35_std8i11n_blue.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std8i11n_gold",
-          "name": "פאנטם Fzone STD8I11N Gold",
-          "description": "פאנטם Fzone STD8I11N Gold",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std8i11n_gold.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std8i11n_gold.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std8i11n_gold.jpg",
-            "original": "/data/thumbnails/fzone_35_std8i11n_gold.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std8i11n_green",
-          "name": "פאנטם Fzone STD8I11N Green",
-          "description": "פאנטם Fzone STD8I11N Green",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std8i11n_green.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std8i11n_green.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std8i11n_green.jpg",
-            "original": "/data/thumbnails/fzone_35_std8i11n_green.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std8i11n_purple",
-          "name": "פאנטם Fzone STD8I11N Purple",
-          "description": "פאנטם Fzone STD8I11N Purple",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std8i11n_purple.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std8i11n_purple.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std8i11n_purple.jpg",
-            "original": "/data/thumbnails/fzone_35_std8i11n_purple.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std8i11n_red",
-          "name": "פאנטם Fzone STD8I11N Red",
-          "description": "פאנטם Fzone STD8I11N Red",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std8i11n_red.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std8i11n_red.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std8i11n_red.jpg",
-            "original": "/data/thumbnails/fzone_35_std8i11n_red.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std8i11n_rgrey",
-          "name": "פאנטם Fzone STD8I11N Gray",
-          "description": "פאנטם Fzone STD8I11N Gray",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg",
-            "original": "/data/thumbnails/fzone_35_std8i11n_rgrey.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std6i8n_blue",
-          "name": "פאנטם Fzone STD6I8N Blue",
-          "description": "פאנטם Fzone STD6I8N Blue",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std6i8n_blue.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std6i8n_blue.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std6i8n_blue.jpg",
-            "original": "/data/thumbnails/fzone_35_std6i8n_blue.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std6i8n_gold",
-          "name": "פאנטם Fzone STD6I8N Gold",
-          "description": "פאנטם Fzone STD6I8N Gold",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std6i8n_gold.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std6i8n_gold.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std6i8n_gold.jpg",
-            "original": "/data/thumbnails/fzone_35_std6i8n_gold.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_std6i8n_green",
-          "name": "פאנטם Fzone STD6I8N Green",
-          "description": "פאנטם Fzone STD6I8N Green",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_std6i8n_green.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_std6i8n_green.jpg",
-            "high_res": "/data/thumbnails/fzone_35_std6i8n_green.jpg",
-            "original": "/data/thumbnails/fzone_35_std6i8n_green.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_fgb12541",
-          "name": "תיק לגיטרה חשמלית Fzone FGB-125",
-          "description": "תיק לגיטרה חשמלית Fzone FGB-125",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_fgb12541.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_fgb12541.jpg",
-            "high_res": "/data/thumbnails/fzone_35_fgb12541.jpg",
-            "original": "/data/thumbnails/fzone_35_fgb12541.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_cub326",
-          "name": "תיק ליוקללה Fzone CUB-3",
-          "description": "תיק ליוקללה Fzone CUB-3",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_cub326.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_cub326.jpg",
-            "high_res": "/data/thumbnails/fzone_35_cub326.jpg",
-            "original": "/data/thumbnails/fzone_35_cub326.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_fzu14rs",
-          "name": "יוקללה FZONE FZU-14RS",
-          "description": "יוקללה FZONE FZU-14RS",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_fzu14rs.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_fzu14rs.jpg",
-            "high_res": "/data/thumbnails/fzone_35_fzu14rs.jpg",
-            "original": "/data/thumbnails/fzone_35_fzu14rs.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
         {
           "id": "fzone_35_fm310",
           "name": "FZONE FM-310",
@@ -1023,19 +339,6 @@
           "sku": null
         },
         {
-          "id": "fzone_35_fzu30eq",
-          "name": "יוקללה קונצרט מוגברת FZONE FZU-30EQ",
-          "description": "יוקללה קונצרט מוגברת FZONE FZU-30EQ",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_fzu30eq.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_fzu30eq.jpg",
-            "high_res": "/data/thumbnails/fzone_35_fzu30eq.jpg",
-            "original": "/data/thumbnails/fzone_35_fzu30eq.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "fzone_35_fzpn351",
           "name": "FZone FZP-N351 Pick",
           "description": "FZone FZP-N351 Pick",
@@ -1044,32 +347,6 @@
             "thumbnail": "/data/thumbnails/fzone_35_fzpn351.jpg",
             "high_res": "/data/thumbnails/fzone_35_fzpn351.jpg",
             "original": "/data/thumbnails/fzone_35_fzpn351.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_mn5",
-          "name": "טיונר לגיטרה Fzone MN-5",
-          "description": "טיונר לגיטרה Fzone MN-5",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_mn5.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_mn5.jpg",
-            "high_res": "/data/thumbnails/fzone_35_mn5.jpg",
-            "original": "/data/thumbnails/fzone_35_mn5.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_mn6",
-          "name": "טיונר לגיטרה Fzone MN-6",
-          "description": "טיונר לגיטרה Fzone MN-6",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_mn6.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_mn6.jpg",
-            "high_res": "/data/thumbnails/fzone_35_mn6.jpg",
-            "original": "/data/thumbnails/fzone_35_mn6.jpg"
           },
           "model_number": null,
           "sku": null
@@ -1088,71 +365,6 @@
           "sku": null
         },
         {
-          "id": "fzone_35_sc100",
-          "name": "כיסוי גומי לפתח התהודה Fzone SC-100",
-          "description": "כיסוי גומי לפתח התהודה Fzone SC-100",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_sc100.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_sc100.jpg",
-            "high_res": "/data/thumbnails/fzone_35_sc100.jpg",
-            "original": "/data/thumbnails/fzone_35_sc100.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_fzu110m",
-          "name": "יוקללה קונצרט FZONE FZU-110",
-          "description": "יוקללה קונצרט FZONE FZU-110",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_fzu110m.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_fzu110m.jpg",
-            "high_res": "/data/thumbnails/fzone_35_fzu110m.jpg",
-            "original": "/data/thumbnails/fzone_35_fzu110m.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_k9",
-          "name": "טיונר לגיטרה Fzone K9",
-          "description": "טיונר לגיטרה Fzone K9",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_k9.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_k9.jpg",
-            "high_res": "/data/thumbnails/fzone_35_k9.jpg",
-            "original": "/data/thumbnails/fzone_35_k9.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_sc86",
-          "name": "כיסוי גומי לפתח התהודה Fzone SC-86",
-          "description": "כיסוי גומי לפתח התהודה Fzone SC-86",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_sc86.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_sc86.jpg",
-            "high_res": "/data/thumbnails/fzone_35_sc86.jpg",
-            "original": "/data/thumbnails/fzone_35_sc86.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_gst254",
-          "name": "סליידר זכוכית Fzone",
-          "description": "סליידר זכוכית Fzone",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_gst254.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_gst254.jpg",
-            "high_res": "/data/thumbnails/fzone_35_gst254.jpg",
-            "original": "/data/thumbnails/fzone_35_gst254.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
           "id": "fzone_35_sw1",
           "name": "FZONE SW-1",
           "description": "FZONE SW-1",
@@ -1161,32 +373,6 @@
             "thumbnail": "/data/thumbnails/fzone_35_sw1.jpg",
             "high_res": "/data/thumbnails/fzone_35_sw1.jpg",
             "original": "/data/thumbnails/fzone_35_sw1.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_fzu31eq",
-          "name": "יוקללה קונצרט מוגברת FZONE FZU-31EQ",
-          "description": "יוקללה קונצרט מוגברת FZONE FZU-31EQ",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_fzu31eq.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_fzu31eq.jpg",
-            "high_res": "/data/thumbnails/fzone_35_fzu31eq.jpg",
-            "original": "/data/thumbnails/fzone_35_fzu31eq.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "fzone_35_d100m",
-          "name": "יוקללה קונצרט FZONE FZU-D100",
-          "description": "יוקללה קונצרט FZONE FZU-D100",
-          "images": {
-            "main": "/data/thumbnails/fzone_35_d100m.jpg",
-            "thumbnail": "/data/thumbnails/fzone_35_d100m.jpg",
-            "high_res": "/data/thumbnails/fzone_35_d100m.jpg",
-            "original": "/data/thumbnails/fzone_35_d100m.jpg"
           },
           "model_number": null,
           "sku": null

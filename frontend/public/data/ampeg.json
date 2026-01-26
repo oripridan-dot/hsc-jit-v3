@@ -1,50 +1,24 @@
 {
-  "brand_identity": {
-    "id": "ampeg",
-    "name": "AMPEG",
-    "brand_colors": {},
-    "logo_url": "/assets/logos/ampeg_logo.jpg",
-    "taxonomy_stats": {
-      "validated": 5,
-      "normalized": 0,
-      "uncategorized": 0
-    }
-  },
+  "brand_name": "Ampeg",
   "products": [
-    {
-      "id": "ampeg_63_classic",
-      "name": "פדל פראמפ לבס Ampeg Classic",
-      "brand": "ampeg",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/ampeg_63_classic.jpg",
-      "description": "פדל פראמפ לבס Ampeg Classic",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_classic.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_classic.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_classic.jpg",
-        "original": "/data/thumbnails/ampeg_63_classic.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
     {
       "id": "ampeg_63_scraemblarbass",
       "name": "Ampeg Scrambler Bass Overdrive",
-      "brand": "ampeg",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
       "description": "Ampeg Scrambler Bass Overdrive",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
+      "product_url": "https://www.halilit.com/items/1390181-ampeg-scrambler-bass-overdrive",
+      "is_sold": true,
+      "price": 367.0,
+      "halilit_url": "https://www.halilit.com/items/1390181-ampeg-scrambler-bass-overdrive",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 367.0,
+        "original_price": 367.0
+      },
+      "brand": "Ampeg",
+      "logo_url": "/assets/logos/ampeg_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
         "thumbnail": "/data/thumbnails/ampeg_63_scraemblarbass.jpg",
@@ -52,21 +26,27 @@
         "original": "/data/thumbnails/ampeg_63_scraemblarbass.jpg"
       },
       "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     },
     {
       "id": "ampeg_63_liquifier",
       "name": "Ampeg Liquifier Analog Chorus",
-      "brand": "ampeg",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/ampeg_63_liquifier.jpg",
       "description": "Ampeg Liquifier Analog Chorus",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
+      "category": "accessories",
+      "image_url": "/data/thumbnails/ampeg_63_liquifier.jpg",
+      "product_url": "https://www.halilit.com/items/3909033-ampeg-liquifier-analog-chorus",
+      "is_sold": true,
+      "price": 367.0,
+      "halilit_url": "https://www.halilit.com/items/3909033-ampeg-liquifier-analog-chorus",
+      "status": "IN_STOCK",
+      "pricing": {
+        "regular_price": 367.0,
+        "original_price": 367.0
+      },
+      "brand": "Ampeg",
+      "logo_url": "/assets/logos/ampeg_logo.jpg",
+      "main_category": "accessories",
       "images": {
         "main": "/data/thumbnails/ampeg_63_liquifier.jpg",
         "thumbnail": "/data/thumbnails/ampeg_63_liquifier.jpg",
@@ -74,73 +54,27 @@
         "original": "/data/thumbnails/ampeg_63_liquifier.jpg"
       },
       "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "ampeg_63_svtvr",
-      "name": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
-      "brand": "ampeg",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/ampeg_63_svtvr.jpg",
-      "description": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_svtvr.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_svtvr.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_svtvr.jpg",
-        "original": "/data/thumbnails/ampeg_63_svtvr.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
-      ]
-    },
-    {
-      "id": "ampeg_63_pf210he",
-      "name": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
-      "brand": "ampeg",
-      "category": "guitars",
-      "image_url": "/data/thumbnails/ampeg_63_pf210he.jpg",
-      "description": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
-      "pricing": {},
-      "sku": null,
-      "halilit_id": null,
-      "halilit_url": null,
-      "main_category": "guitars",
-      "images": {
-        "main": "/data/thumbnails/ampeg_63_pf210he.jpg",
-        "thumbnail": "/data/thumbnails/ampeg_63_pf210he.jpg",
-        "high_res": "/data/thumbnails/ampeg_63_pf210he.jpg",
-        "original": "/data/thumbnails/ampeg_63_pf210he.jpg"
-      },
-      "category_hierarchy": [
-        "guitars"
+        "accessories"
       ]
     }
   ],
-  "brand_name": "Ampeg",
+  "generated_at": "2026-01-25T22:19:24.449411",
   "brand_slug": "ampeg",
-  "refined_at": "2026-01-25T02:01:47.814991+00:00",
+  "refined_at": "2026-01-25T22:19:24.625280+00:00",
+  "brand_identity": {
+    "id": "ampeg",
+    "name": "Ampeg",
+    "brand_colors": {},
+    "logo_url": "/assets/logos/ampeg_logo.jpg",
+    "taxonomy_stats": {
+      "validated": 2,
+      "normalized": 0,
+      "uncategorized": 0
+    }
+  },
   "hierarchy": {
-    "guitars": {
+    "accessories": {
       "General": [
-        {
-          "id": "ampeg_63_classic",
-          "name": "פדל פראמפ לבס Ampeg Classic",
-          "description": "פדל פראמפ לבס Ampeg Classic",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_classic.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_classic.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_classic.jpg",
-            "original": "/data/thumbnails/ampeg_63_classic.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
         {
           "id": "ampeg_63_scraemblarbass",
           "name": "Ampeg Scrambler Bass Overdrive",
@@ -163,32 +97,6 @@
             "thumbnail": "/data/thumbnails/ampeg_63_liquifier.jpg",
             "high_res": "/data/thumbnails/ampeg_63_liquifier.jpg",
             "original": "/data/thumbnails/ampeg_63_liquifier.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "ampeg_63_svtvr",
-          "name": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
-          "description": "מגבר ראש לגיטרה בס Ampeg SVT-VR",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_svtvr.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_svtvr.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_svtvr.jpg",
-            "original": "/data/thumbnails/ampeg_63_svtvr.jpg"
-          },
-          "model_number": null,
-          "sku": null
-        },
-        {
-          "id": "ampeg_63_pf210he",
-          "name": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
-          "description": "קבינה לגיטרה בס Ampeg PF-210HE Portaflex",
-          "images": {
-            "main": "/data/thumbnails/ampeg_63_pf210he.jpg",
-            "thumbnail": "/data/thumbnails/ampeg_63_pf210he.jpg",
-            "high_res": "/data/thumbnails/ampeg_63_pf210he.jpg",
-            "original": "/data/thumbnails/ampeg_63_pf210he.jpg"
           },
           "model_number": null,
           "sku": null
