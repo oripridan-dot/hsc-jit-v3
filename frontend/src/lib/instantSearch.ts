@@ -1,22 +1,32 @@
 /**
- * Instant Search - v3.6
+ * Instant Search - v3.9
  * Client-side fuzzy search using Fuse.js
- * Replaces server-based search with instant in-memory search
+ * Decoupled from full catalog - uses lightweight search_index.json
  */
 
 import Fuse from "fuse.js";
-import { catalogLoader, type Product } from "./catalogLoader";
+
+export interface SearchItem {
+  id: string;
+  label: string;
+  brand: string;
+  brand_name: string;
+  category: string;
+  subcategory?: string;
+  keywords: string[];
+  description: string;
+  image_url?: string;
+}
 
 export interface SearchOptions {
   brand?: string;
   category?: string;
-  verifiedOnly?: boolean;
   limit?: number;
 }
 
 class InstantSearch {
-  private fuse: Fuse<Product> | null = null;
-  private products: Product[] = [];
+  private fuse: Fuse<SearchItem> | null = null;
+  private items: SearchItem[] = [];
   private initialized: boolean = false;
 
   /**
@@ -27,65 +37,65 @@ class InstantSearch {
       return;
     }
 
-    // Load all products
-    this.products = await catalogLoader.loadAllProducts();
+    try {
+      // Load optimized search index with cache busting
+      const response = await fetch(`/data/search_index.json?v=${Date.now()}`);
+      if (!response.ok)
+        throw new Error(`Failed to load search index: ${response.status}`);
+      this.items = await response.json();
 
-    // Configure Fuse.js for fuzzy search
-    this.fuse = new Fuse(this.products, {
-      keys: [
-        { name: "name", weight: 2.0 }, // Product name most important
-        { name: "brand", weight: 1.5 }, // Brand second
-        { name: "_brandName", weight: 1.5 }, // Brand name searchable
-        { name: "category", weight: 1.0 }, // Category third
-        { name: "description", weight: 0.8 }, // Search in description (added for "stage piano")
-        { name: "specifications.key", weight: 0.6 }, // Search in specs keys
-        { name: "specifications.value", weight: 0.6 }, // Search in specs values
-        { name: "connectivity.connector_a", weight: 1.2 }, // Connectivity
-        { name: "connectivity.connector_b", weight: 1.2 }, // Connectivity
-        { name: "connectivity.type", weight: 1.0 }, // Cable/Adapter
-        { name: "tier.level", weight: 0.8 }, // 'Entry'/'Pro' search
-      ],
-      threshold: 0.3, // 70% match required
-      includeScore: true,
-      useExtendedSearch: true,
-      minMatchCharLength: 2,
-      ignoreLocation: true, // Search anywhere in text
-    });
+      // Configure Fuse.js for fuzzy search
+      this.fuse = new Fuse(this.items, {
+        keys: [
+          { name: "label", weight: 2.0 }, // Product name
+          { name: "brand_name", weight: 1.5 }, // Brand name
+          { name: "keywords", weight: 1.2 }, // Keywords
+          { name: "category", weight: 1.0 }, // Category
+          { name: "subcategory", weight: 0.8 }, // Subcategory
+          { name: "description", weight: 0.5 }, // Description
+        ],
+        threshold: 0.3, // 70% match required
+        includeScore: true,
+        useExtendedSearch: true,
+        minMatchCharLength: 2,
+        ignoreLocation: true,
+      });
 
-    this.initialized = true;
+      this.initialized = true;
+      console.log(
+        `[InstantSearch] Initialized with ${this.items.length} items`,
+      );
+    } catch (error) {
+      console.error("[InstantSearch] Initialization failed:", error);
+    }
   }
 
   /**
    * Search products (instant, <50ms target)
    */
-  search(query: string, options?: SearchOptions): Product[] {
+  search(query: string, options?: SearchOptions): SearchItem[] {
     if (!this.fuse || !this.initialized) {
       return [];
     }
 
-    // If no query, return filtered products
+    // If no query, return filtered products (empty query = partial list)
     if (!query || query.trim().length < 2) {
-      let results = [...this.products];
+      // Logic: If plain list requested, apply filters to raw list
+      // Note: This might return too many results, relying on limit
+      let results = [...this.items];
       results = this.applyFilters(results, options);
-      results = results.slice(0, options?.limit || 100);
-
-      return results;
+      return results.slice(0, options?.limit || 20);
     }
 
     // Perform fuzzy search
-    const searchResults = this.fuse.search(query, {
-      limit: options?.limit || 200,
+    const fuseResults = this.fuse.search(query, {
+      limit: options?.limit || 20,
     });
 
-    let results = searchResults.map((result) => result.item);
+    let results = fuseResults.map((result) => result.item);
 
     // Apply filters
     results = this.applyFilters(results, options);
-
-    // Apply limit after filtering
-    if (options?.limit) {
-      results = results.slice(0, options.limit);
-    }
 
     return results;
   }
@@ -93,107 +103,22 @@ class InstantSearch {
   /**
    * Apply filters to results
    */
-  private applyFilters(results: Product[], options?: SearchOptions): Product[] {
+  private applyFilters(
+    results: SearchItem[],
+    options?: SearchOptions,
+  ): SearchItem[] {
     let filtered = results;
 
     if (options?.brand) {
-      filtered = filtered.filter((p) => p._brandId === options.brand);
+      filtered = filtered.filter((p) => p.brand === options.brand);
     }
 
     if (options?.category) {
-      filtered = filtered.filter(
-        (p) => p.category?.toLowerCase() === options.category?.toLowerCase(),
-      );
-    }
-
-    if (options?.verifiedOnly) {
-      filtered = filtered.filter((p) => p.verified);
+      filtered = filtered.filter((p) => p.category === options.category);
     }
 
     return filtered;
   }
-
-  /**
-   * Get products by brand (fast filter)
-   */
-  getByBrand(brandId: string, limit?: number): Product[] {
-    const results = this.products.filter((p) => p._brandId === brandId);
-    return limit ? results.slice(0, limit) : results;
-  }
-
-  /**
-   * Get products by category (fast filter)
-   */
-  getByCategory(category: string, limit?: number): Product[] {
-    const results = this.products.filter(
-      (p) => p.category?.toLowerCase() === category.toLowerCase(),
-    );
-    return limit ? results.slice(0, limit) : results;
-  }
-
-  /**
-   * Get all unique categories
-   */
-  getCategories(): string[] {
-    const categories = new Set(
-      this.products
-        .map((p) => p.category)
-        .filter((cat): cat is string => Boolean(cat)),
-    );
-    return Array.from(categories).sort();
-  }
-
-  /**
-   * Get all unique brands
-   */
-  getBrands(): Array<{ id: string; name: string; count: number }> {
-    const brandMap = new Map<
-      string,
-      { id: string; name: string; count: number }
-    >();
-
-    this.products.forEach((p) => {
-      if (p._brandId) {
-        const existing = brandMap.get(p._brandId);
-        if (existing) {
-          existing.count++;
-        } else {
-          brandMap.set(p._brandId, {
-            id: p._brandId,
-            name: p._brandName || p.brand,
-            count: 1,
-          });
-        }
-      }
-    });
-
-    return Array.from(brandMap.values()).sort((a, b) =>
-      a.name.localeCompare(b.name),
-    );
-  }
-
-  /**
-   * Get verified products only
-   */
-  getVerified(limit?: number): Product[] {
-    const results = this.products.filter((p) => p.verified);
-    return limit ? results.slice(0, limit) : results;
-  }
-
-  /**
-   * Get product count
-   */
-  getProductCount(): number {
-    return this.products.length;
-  }
-
-  /**
-   * Check if initialized
-   */
-  isInitialized(): boolean {
-    return this.initialized;
-  }
 }
 
-// Singleton instance
 export const instantSearch = new InstantSearch();

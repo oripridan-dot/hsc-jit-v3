@@ -45,7 +45,11 @@ export const SpectrumModule = () => {
         setLoading(false);
       }
     };
-    if (activeTribeId) loadCatalog();
+    if (activeTribeId) {
+      loadCatalog();
+    } else {
+      setLoading(false);
+    }
   }, [activeTribeId]);
 
   // --------------------------------------------------------------------------

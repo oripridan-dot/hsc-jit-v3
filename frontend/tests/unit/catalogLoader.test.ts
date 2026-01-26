@@ -4,7 +4,8 @@
  * Tests loading and transformation of catalog data
  */
 
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { catalogLoader } from "../../src/lib/catalogLoader";
 import type { BrandCatalog, MasterIndex, Product } from "../../src/types";
 import {
   mockBrandCatalog,
@@ -20,6 +21,11 @@ describe("catalogLoader - Static Catalog Loading", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     mockedFetch.mockClear();
+    catalogLoader.clearCache();
+  });
+
+  afterEach(() => {
+    catalogLoader.clearCache();
   });
 
   describe("loadIndex", () => {
@@ -110,6 +116,23 @@ describe("catalogLoader - Static Catalog Loading", () => {
       if (product.pricing) {
         expect(["ILS", "USD", "EUR"]).toContain(product.pricing.currency);
       }
+    });
+  });
+
+  describe("API Contract Snapshots", () => {
+    it("should ensure catalog structure matches API contract", async () => {
+      mockedFetch
+        .mockResolvedValueOnce({
+          ok: true,
+          json: async () => mockMasterIndex,
+        } as Response)
+        .mockResolvedValueOnce({
+          ok: true,
+          json: async () => mockBrandCatalog,
+        } as Response);
+
+      const catalog = await catalogLoader.loadBrand("roland");
+      expect(catalog).toMatchSnapshot();
     });
   });
 });
