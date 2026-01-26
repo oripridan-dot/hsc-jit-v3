@@ -1,7 +1,7 @@
 /**
  * Instant Search - v3.6
  * Client-side fuzzy search using Fuse.js
- * Replaces WebSocket/API-based search with instant in-memory search
+ * Replaces server-based search with instant in-memory search
  */
 
 import Fuse from "fuse.js";
