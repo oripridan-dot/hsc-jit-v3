@@ -22,8 +22,8 @@ export const SpectrumModule = () => {
         const response = await fetch(`/data/${activeTribeId}.json`);
         const data = await response.json();
         setRawProducts(data);
-      } catch (e) {
-        console.error("Spectrum Signal Lost:", e);
+      } catch (_e) {
+        // Fail silently
       } finally {
         setLoading(false);
       }

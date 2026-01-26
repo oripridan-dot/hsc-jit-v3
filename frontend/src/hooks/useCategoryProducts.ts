@@ -32,8 +32,7 @@ export const useCategoryProducts = (subcategoryId: string | null) => {
         });
 
         setProducts(filtered);
-      } catch (err) {
-        console.error("Error loading category products", err);
+      } catch (_err) {
         setProducts([]);
       } finally {
         setLoading(false);

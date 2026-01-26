@@ -105,7 +105,6 @@ class CatalogLoader {
   async loadIndex(): Promise<MasterIndex> {
     if (this.index) return this.index;
 
-    console.log("📦 Loading Master Index...");
     try {
       const response = await fetch(`/data/index.json?v=${Date.now()}`);
       if (!response.ok) {
@@ -115,12 +114,8 @@ class CatalogLoader {
 
       // ✅ Validate with Zod
       this.index = SchemaValidator.validateMasterIndex(rawData);
-      console.log(
-        `✅ Master Index loaded and validated: ${this.index?.brands.length} brands`,
-      );
       return this.index!;
     } catch (error) {
-      console.error("❌ Failed to load index.json", error);
       throw error;
     }
   }
@@ -227,14 +222,10 @@ class CatalogLoader {
       throw new Error(`Brand ${brandId} not found in index`);
     }
 
-    console.log(`📦 Loading brand: ${brandId} from ${brandEntry.data_file}`);
     const response = await fetch(
       `/data/${brandEntry.data_file}?v=${Date.now()}`,
     );
     if (!response.ok) {
-      console.error(
-        `❌ Failed to load brand ${brandId}: HTTP ${response.status}`,
-      );
       throw new Error(`Failed to load brand: ${brandId}`);
     }
 
@@ -247,10 +238,7 @@ class CatalogLoader {
       const validated = SchemaValidator.validateBrandFile(rawData);
       data = validated as unknown as BrandFile;
     } catch (validationError) {
-      console.error(
-        `❌ Brand file validation failed for ${brandId}:`,
-        validationError,
-      );
+
       throw new Error(
         `Invalid brand data structure for ${brandId}: ${(validationError as Error).message}`,
       );
@@ -293,9 +281,6 @@ class CatalogLoader {
     catalog.products.sort((a, b) => a.name.localeCompare(b.name));
 
     this.brandCatalogs.set(brandId, catalog);
-    console.log(
-      `✅ Loaded and validated ${catalog.products.length} products for ${catalog.brand_name}`,
-    );
 
     return catalog;
   }
@@ -318,8 +303,7 @@ class CatalogLoader {
 
       // Load all brands in parallel
       const brandPromises = index.brands.map((b) =>
-        this.loadBrand(b.id).catch((error) => {
-          console.error(`Failed to load ${b.id}:`, error);
+        this.loadBrand(b.id).catch(() => {
           return null;
         }),
       );
@@ -340,9 +324,6 @@ class CatalogLoader {
         })),
       );
 
-      console.log(
-        `✅ Loaded ${this.allProducts.length} total products from ${loadedCatalogs.length} brands`,
-      );
       return this.allProducts;
     } finally {
       this.loading = false;
@@ -384,8 +365,7 @@ class CatalogLoader {
         buildTimestamp: index.build_timestamp,
         version: index.version,
       };
-    } catch (error) {
-      console.error("Failed to get stats:", error);
+    } catch (_error) {
       return {
         totalProducts: 0,
         totalVerified: 0,
@@ -404,7 +384,6 @@ class CatalogLoader {
     this.index = null;
     this.brandCatalogs.clear();
     this.allProducts = [];
-    console.log("🗑️ Cache cleared");
   }
 }
 

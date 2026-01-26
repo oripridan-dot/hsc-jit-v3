@@ -42,16 +42,13 @@ export const useCategoryCatalog = (
             if (indexRes.ok) {
               const indexData = (await indexRes.json()) as CatalogIndex;
               brandsToFetch = indexData.brands.map((b) => b.slug);
-            } else {
-              console.error("Failed to fetch index.json");
             }
-          } catch (e) {
-            console.error("Error loading index.json", e);
+          } catch (_e) {
+            // Ignore error
           }
         }
 
         if (brandsToFetch.length === 0) {
-          console.warn("No brands found to fetch");
           setLoading(false);
           return;
         }
@@ -81,13 +78,6 @@ export const useCategoryCatalog = (
         const results = await Promise.all(promises);
         aggregated = results.flat();
 
-        console.log(
-          `📦 [useCategoryCatalog] Loaded ${aggregated.length} products`,
-          brandId
-            ? `for brand: "${brandId}"`
-            : `from ${brandsToFetch.length} brands`,
-        );
-
         // Filter by CONSOLIDATED category
         const filtered = aggregated.filter((p) => {
           if (!category || category === "All") return true;
@@ -104,8 +94,7 @@ export const useCategoryCatalog = (
         });
 
         setProducts(filtered);
-      } catch (err) {
-        console.error("Catalog load error:", err);
+      } catch (_err) {
         setProducts([]);
       } finally {
         setLoading(false);

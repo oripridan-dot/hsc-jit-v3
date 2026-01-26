@@ -29,8 +29,8 @@ export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
       if (isMounted && cached) {
         try {
           setCatalog(JSON.parse(cached));
-        } catch (e) {
-          console.warn(`Invalid cache for ${brandId}`, e);
+        } catch (_e) {
+          // Invalid cache
         }
       }
 
@@ -43,12 +43,11 @@ export const useBrandCatalog = (brandId?: string): BrandCatalog | null => {
           // Persist fresh data
           try {
             localStorage.setItem(storageKey, JSON.stringify(data));
-          } catch (e) {
-            console.warn("Failed to cache catalog", e);
+          } catch (_e) {
+            // Cache failure ignored
           }
         }
-      } catch (err) {
-        console.error(`Error loading catalog for ${brandId}:`, err);
+      } catch (_err) {
         // Only reset if we don't have cached data and error is critical?
         // Actually if fetch fails, we keep cached data usually.
         // But if no cache, ensure null.
@@ -93,8 +92,8 @@ export const useAllBrandCatalogs = () => {
             if (catalog) {
               brandMap.set(brandEntry.id, catalog);
             }
-          } catch (err) {
-            console.warn(`Failed to load catalog for ${brandEntry.id}:`, err);
+          } catch (_err) {
+            // Failed to load individual catalog
           }
         }
 
@@ -103,7 +102,6 @@ export const useAllBrandCatalogs = () => {
         const message =
           err instanceof Error ? err.message : "Failed to load catalogs";
         setError(message);
-        console.error("Error loading all catalogs:", err);
       } finally {
         setLoading(false);
       }

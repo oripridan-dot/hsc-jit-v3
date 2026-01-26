@@ -13,9 +13,6 @@ export async function safeFetch<T>(
   try {
     const res = await fetch(url);
     if (!res.ok) {
-      console.error(
-        `⚠️ Network Error for ${url}: ${res.status} ${res.statusText}`,
-      );
       return null;
     }
     const json: unknown = await res.json();
@@ -24,14 +21,12 @@ export async function safeFetch<T>(
     const result = schema.safeParse(json);
 
     if (!result.success) {
-      console.error(`🚨 Data Corruption in ${url}:`, result.error);
       // "Smarter Problem Handling": Return null instead of crashing the app
       return null;
     }
 
     return result.data;
-  } catch (e) {
-    console.error(`⚠️ Fetch Exception for ${url}`, e);
+  } catch (_e) {
     return null;
   }
 }

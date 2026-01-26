@@ -182,7 +182,6 @@ export class SchemaValidator {
   static validateProduct(data: unknown) {
     const result = ProductSchema.safeParse(data);
     if (!result.success) {
-      console.error("❌ Product validation failed:", result.error.flatten());
       throw new Error(
         `Invalid product data: ${result.error.errors[0].message}`,
       );
@@ -193,7 +192,6 @@ export class SchemaValidator {
   static validateBrandFile(data: unknown) {
     const result = BrandFileSchema.safeParse(data);
     if (!result.success) {
-      console.error("❌ Brand file validation failed:", result.error.flatten());
       throw new Error(`Invalid brand file: ${result.error.errors[0].message}`);
     }
     return result.data;
@@ -202,10 +200,6 @@ export class SchemaValidator {
   static validateMasterIndex(data: unknown) {
     const result = MasterIndexSchema.safeParse(data);
     if (!result.success) {
-      console.error(
-        "❌ Master index validation failed:",
-        result.error.flatten(),
-      );
       throw new Error(`Invalid index: ${result.error.errors[0].message}`);
     }
     return result.data;
@@ -214,10 +208,6 @@ export class SchemaValidator {
   static validateBrandIndexEntry(data: unknown) {
     const result = BrandIndexEntrySchema.safeParse(data);
     if (!result.success) {
-      console.error(
-        "❌ Brand index entry validation failed:",
-        result.error.flatten(),
-      );
       throw new Error(`Invalid brand entry: ${result.error.errors[0].message}`);
     }
     return result.data;

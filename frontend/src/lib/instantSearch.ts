@@ -24,12 +24,8 @@ class InstantSearch {
    */
   async initialize(): Promise<void> {
     if (this.initialized) {
-      console.log('🔍 Search already initialized');
       return;
     }
-
-    console.log('🔍 Initializing instant search...');
-    const startTime = performance.now();
 
     // Load all products
     this.products = await catalogLoader.loadAllProducts();
@@ -56,9 +52,6 @@ class InstantSearch {
       ignoreLocation: true,                      // Search anywhere in text
     });
 
-    const duration = Math.round(performance.now() - startTime);
-    console.log(`✅ Search initialized with ${this.products.length} products in ${duration}ms`);
-
     this.initialized = true;
   }
 
@@ -67,11 +60,8 @@ class InstantSearch {
    */
   search(query: string, options?: SearchOptions): Product[] {
     if (!this.fuse || !this.initialized) {
-      console.warn('⚠️ Search not initialized yet');
       return [];
     }
-
-    const startTime = performance.now();
 
     // If no query, return filtered products
     if (!query || query.trim().length < 2) {
@@ -79,8 +69,6 @@ class InstantSearch {
       results = this.applyFilters(results, options);
       results = results.slice(0, options?.limit || 100);
 
-      const duration = Math.round(performance.now() - startTime);
-      console.log(`🔍 Returned ${results.length} products (no search) in ${duration}ms`);
       return results;
     }
 
@@ -98,9 +86,6 @@ class InstantSearch {
     if (options?.limit) {
       results = results.slice(0, options.limit);
     }
-
-    const duration = Math.round(performance.now() - startTime);
-    console.log(`🔍 Search "${query}" returned ${results.length} products in ${duration}ms`);
 
     return results;
   }
