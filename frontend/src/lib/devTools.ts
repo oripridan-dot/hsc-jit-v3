@@ -63,15 +63,6 @@ export function initializeDevTools() {
     try {
       // @ts-expect-error - Intentionally adding to window for dev access
       window.__hscdev = devTools;
-
-      console.log(
-        "%c🔧 HSC Development Tools Initialized",
-        "color: cyan; font-weight: bold",
-      );
-      console.log(
-        "%cUse: window.__hscdev.status() for available commands",
-        "color: gray",
-      );
     } catch {
       // Ignore errors in dev tools initialization
     }
